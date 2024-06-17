@@ -1,0 +1,512 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jNFCC
+GUID=59094235-60F1-4752-9866-EEE2E2DF4010
+  Name=jNFCC
+  Class=DATAWINDOW
+  Caption=Controle de Notas
+  Order=0
+  Left=34
+  Width=420
+  Top=34
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Controle de Notas",,
+  Property=HyperLabel=#jNFCC,,,
+  Property=ViewAs=#FormView
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=C2B5C9EC-D206-49EC-9C89-293E81E2D911
+  Name=SC_NF
+  Class=FIXEDTEXT
+  Caption=Nf:
+  Order=1
+  Left=22
+  Width=19
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nf:",,
+  Property=HyperLabel=#SC_NF,,,
+
+CONTROL=FIXEDTEXT
+GUID=BDA67AB9-C955-4DE2-84F6-2A3BCB1325C3
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero:
+  Order=2
+  Left=93
+  Width=44
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=FIXEDTEXT
+GUID=21628B9D-849A-4732-AE04-F5EC6F29B5F6
+  Name=SC_VALOR
+  Class=FIXEDTEXT
+  Caption=Valor:
+  Order=3
+  Left=165
+  Width=32
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=#SC_VALOR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=F3437A6D-6367-4E4D-9F25-BBD8DF839FEA
+  Name=NF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=17
+  Width=68
+  Top=45
+  Height=20
+  Browseindex=0
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NF,,,
+  Property=HyperLabel=,"Nf:",,
+  Property=HyperLabel=,,,"NFCC_NF"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=30AC919C-13AC-429E-8B39-31C907D89057
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=89
+  Width=68
+  Top=45
+  Height=20
+  Browseindex=1
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"NFCC_NUMERO"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=F026EE61-1306-4470-9903-83BA85FE3596
+  Name=VALOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=165
+  Width=76
+  Top=45
+  Height=20
+  Browseindex=2
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#VALOR,,,
+  Property=HyperLabel=,"Valor",,
+  Property=HyperLabel=,,,"NFCC_VALOR"
+  Property=InheritClassName=rightSle
+
+CONTROL=PUSHBUTTON
+GUID=1014B86A-0D14-4ED5-9212-901555F902EE
+  Name=cmdordenar
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=285
+  Width=32
+  Top=25
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#cmdordenar,,,
+
+CONTROL=PUSHBUTTON
+GUID=99092731-232B-4B14-81D7-B41D3ABEAAFE
+  Name=buscaNUM
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=249
+  Width=32
+  Top=25
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaNUM,,,
+  Property=TooltipText="Localizar"
+
+CONTROL=FIXEDTEXT
+GUID=7F4FBC22-CA5B-4D19-A005-574D038CDEF5
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Ano
+  Order=9
+  Left=109
+  Width=36
+  Top=77
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ano",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=90B68842-FA83-468F-9DBC-EDBA5FA5FDA3
+  Name=ano
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=105
+  Width=47
+  Top=93
+  Height=20
+  Browseindex=4
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#ano,,,
+  Property=TooltipText="Ano Inicial"
+  Property=FieldSpec=PADRAO_num_04
+  Property=InheritClassName=rightSle
+  Property=HyperLabel=,"ano",,
+
+CONTROL=PUSHBUTTON
+GUID=A53ACC93-0D2F-4984-A3B9-DD8755253F60
+  Name=cmdmenos2
+  Class=PUSHBUTTON
+  Caption=-
+  Order=11
+  Left=153
+  Width=20
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-",,
+  Property=HyperLabel=#cmdmenos2,,,
+
+CONTROL=PUSHBUTTON
+GUID=1823DFF2-3CDB-435B-9162-58FABEDCEE98
+  Name=cmdmais2
+  Class=PUSHBUTTON
+  Caption=+
+  Order=12
+  Left=153
+  Width=20
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"+",,
+  Property=HyperLabel=#cmdmais2,,,
+
+CONTROL=PUSHBUTTON
+GUID=03901D2A-09E4-4500-8D08-039A748EFADF
+  Name=cmdmenos
+  Class=PUSHBUTTON
+  Caption=-
+  Order=13
+  Left=73
+  Width=20
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-",,
+  Property=HyperLabel=#cmdmenos,,,
+
+CONTROL=PUSHBUTTON
+GUID=59EF420C-58CD-418F-8F7E-7D8C69EF20E5
+  Name=cmdmais
+  Class=PUSHBUTTON
+  Caption=+
+  Order=14
+  Left=73
+  Width=20
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"+",,
+  Property=HyperLabel=#cmdmais,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=97DE71B2-E6DD-4D81-BD5F-8C76CC45A985
+  Name=mes
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=21
+  Width=47
+  Top=93
+  Height=20
+  Browseindex=3
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,"mes",,
+  Property=HyperLabel=#mes,,,
+  Property=TooltipText="Mes Inicial"
+  Property=FieldSpec=PADRAO_num_02
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=EE5070D8-A31A-472F-AFDF-5DB234ACA07F
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Mes
+  Order=16
+  Left=25
+  Width=36
+  Top=77
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mes",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=PUSHBUTTON
+GUID=0D1A0716-7067-44F8-8027-B79CF10C9808
+  Name=escFUN
+  Class=PUSHBUTTON
+  Caption=...
+  Order=17
+  Left=137
+  Width=23
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#escFUN,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=F5DD7E00-6CC3-4B0D-873C-DF9D635AB14C
+  Name=VALORVT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=21
+  Width=76
+  Top=148
+  Height=20
+  Browseindex=-1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#VALORVT,,,
+  Property=HyperLabel=,"Valor",,
+  Property=HyperLabel=,,,"NFCC_VALOR"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=22793064-2334-4670-B7FF-0439C3172588
+  Name=SC_VALOR1
+  Class=FIXEDTEXT
+  Caption=Vale Transporte
+  Order=19
+  Left=21
+  Width=77
+  Top=128
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Vale Transporte",,
+  Property=HyperLabel=#SC_VALOR1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=28DBFE5A-471F-475A-A502-B01DB89BF280
+  Name=VALORAM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=117
+  Width=76
+  Top=146
+  Height=20
+  Browseindex=-1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#VALORAM,,,
+  Property=HyperLabel=,"Valor",,
+  Property=HyperLabel=,,,"NFCC_VALOR"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=604C7C1E-1530-41D3-97A4-F9F4AAA7E0CA
+  Name=SC_VALOR2
+  Class=FIXEDTEXT
+  Caption=Assistencia Medica
+  Order=21
+  Left=117
+  Width=100
+  Top=126
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Assistencia Medica",,
+  Property=HyperLabel=#SC_VALOR2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=64E85E50-988F-4A4E-86DF-7D0603201AA1
+  Name=HORAS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=222
+  Width=76
+  Top=147
+  Height=20
+  Browseindex=-1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#HORAS,,,
+  Property=HyperLabel=,"Valor",,
+  Property=HyperLabel=,,,"NFCC_VALOR"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=5A05E771-59B2-4D8D-BEE8-437FE925BDC5
+  Name=SC_VALOR3
+  Class=FIXEDTEXT
+  Caption=Horas
+  Order=23
+  Left=223
+  Width=67
+  Top=127
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Horas",,
+  Property=HyperLabel=#SC_VALOR3,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jNFCC
+

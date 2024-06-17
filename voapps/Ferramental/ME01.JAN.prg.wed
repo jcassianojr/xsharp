@@ -1,0 +1,2247 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JME01
+GUID=C8F9AE12-4451-4E20-9383-43FA17A39A41
+  Name=JME01
+  Class=DATAWINDOW
+  Caption=Cadastro de Maquinas e Equipamentos
+  Order=0
+  Left=62
+  Width=710
+  Top=62
+  Height=648
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cadastro de Maquinas e Equipamentos",,
+  Property=HyperLabel=#JME01,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ClipperKeys=True
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=49D08BD1-FCEB-4822-87B8-5B65430B5898
+  Name=SC_FERRAM
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=1
+  Left=13
+  Width=64
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_FERRAM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=2146C099-67FD-455B-8C6B-2BAB162DFB7C
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=285
+  Width=396
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216348288
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"ME01_NOME"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=575532D3-E6D5-45CA-A811-9A80228CEC36
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Descriçao:
+  Order=22
+  Left=281
+  Width=82
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descriçao:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=2B7B3C8D-890B-49EF-A055-4AB4CB4BE0CD
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=26
+  Left=9
+  Width=84
+  Top=25
+  Height=24
+  Browseindex=0
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_04
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero",,
+  Property=HyperLabel=,,,"ME01_NUMERO"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=C36D845F-D4AE-45D7-856D-8F0C1127597B
+  Name=SC_FERRAM1
+  Class=FIXEDTEXT
+  Caption=Fabricante
+  Order=50
+  Left=169
+  Width=64
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fabricante",,
+  Property=HyperLabel=#SC_FERRAM1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=8E193B75-3011-46DE-904C-32B88C83B1C9
+  Name=FABRICANTE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=51
+  Left=169
+  Width=112
+  Top=29
+  Height=20
+  Browseindex=2
+  Browsesize=28
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_20
+  Property=HyperLabel=#FABRICANTE,,,
+  Property=HyperLabel=,"Ferram:",,
+  Property=HyperLabel=,,,"ME01_NUMERO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=TABCONTROL
+GUID=414B13AE-0C5E-49F0-B47E-D49B6162E2DF
+  Name=TABME01
+  Class=TABCONTROL
+  Caption=
+  Order=52
+  Left=13
+  Width=656
+  Top=61
+  Height=424
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#TABME01,,,
+  TabPageName=TABME01
+  TabPageCaption=Basico
+  TabPageDataAware=YES
+  TabPageName=TABME01_Page2
+  TabPageCaption=Preventiva/VidaUtil
+  TabPageDataAware=YES
+  TabPageName=TABME01_Page3
+  TabPageCaption=Dimensões/Elaborador
+  TabPageDataAware=YES
+
+CONTROL=PUSHBUTTON
+GUID=D8A84AC9-002C-4C7F-9EEB-21DE992DAE4C
+  Name=busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=53
+  Left=101
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#busca,,,
+
+CONTROL=PUSHBUTTON
+GUID=44DD1B2B-EA48-4862-B2A1-C5B0333A6CCC
+  Name=ordem
+  Class=PUSHBUTTON
+  Caption=
+  Order=54
+  Left=133
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#ordem,,,
+  Property=TooltipText="Ordenar Por Numero"
+
+SUBCONTROLSEND
+DESIGNEREND = JME01
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,TABME01
+GUID=C505DF3A-9086-4F34-B19C-FC26E0609049
+  Name=TABME01
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=34
+  Width=648
+  Top=34
+  Height=387
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#TABME01,,,
+  Property=ClipperKeys=True
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=CHECKBOX
+GUID=398F31AD-64C9-4B63-9901-1FB42E92BCCE
+  Name=LUB03
+  Class=CHECKBOX
+  Caption=Pneumatica
+  Order=4
+  Left=188
+  Width=76
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Pneumatica",,
+  Property=FieldSpec=LOGIC_FIELD
+  Property=HyperLabel=#LUB03,,,
+  Property=HyperLabel=,,,"ME01_LUB03"
+
+CONTROL=CHECKBOX
+GUID=E80EC067-33E7-46E8-8486-A10316B24BD1
+  Name=LUB05
+  Class=CHECKBOX
+  Caption=Cx. Engrenagem
+  Order=5
+  Left=108
+  Width=104
+  Top=161
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Cx. Engrenagem",,
+  Property=FieldSpec=LOGIC_FIELD
+  Property=HyperLabel=#LUB05,,,
+  Property=HyperLabel=,,,"ME01_LUB05"
+
+CONTROL=CHECKBOX
+GUID=4D520910-4693-45DF-8D37-7940A8AA393C
+  Name=LUB02
+  Class=CHECKBOX
+  Caption=de Graxa
+  Order=6
+  Left=108
+  Width=76
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"de Graxa",,
+  Property=FieldSpec=LOGIC_FIELD
+  Property=HyperLabel=#LUB02,,,
+  Property=HyperLabel=,,,"ME01_LUB02"
+
+CONTROL=CHECKBOX
+GUID=BBA109FE-E6B9-433A-ACAE-8B31ADE3D414
+  Name=LUB04
+  Class=CHECKBOX
+  Caption=Hidraulica
+  Order=7
+  Left=28
+  Width=76
+  Top=161
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Hidraulica",,
+  Property=FieldSpec=LOGIC_FIELD
+  Property=HyperLabel=#LUB04,,,
+  Property=HyperLabel=,,,"ME01_LUB04"
+
+CONTROL=CHECKBOX
+GUID=56998F98-4CA5-4ADB-B9BA-DBE5164FA10F
+  Name=LUB01
+  Class=CHECKBOX
+  Caption=Do Fuso
+  Order=8
+  Left=28
+  Width=76
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Do Fuso",,
+  Property=FieldSpec=LOGIC_FIELD
+  Property=HyperLabel=#LUB01,,,
+  Property=HyperLabel=,,,"ME01_LUB01"
+
+CONTROL=CHECKBOX
+GUID=C8578397-CA2B-40E6-AF12-935211565704
+  Name=LUBRI
+  Class=CHECKBOX
+  Caption=Requer Lubrificação
+  Order=9
+  Left=28
+  Width=132
+  Top=121
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Requer Lubrificação",,
+  Property=FieldSpec=LOGIC_FIELD
+  Property=HyperLabel=#LUBRI,,,
+  Property=HyperLabel=,,,"ME01_LUBRI"
+
+CONTROL=GROUPBOX
+GUID=43145DE3-A20F-4A9C-B0F9-228B54588519
+  Name=GroupBox3
+  Class=GROUPBOX
+  Caption=Dados Para Lubrificação
+  Order=10
+  Left=17
+  Width=323
+  Top=102
+  Height=95
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Dados Para Lubrificação",,
+  Property=HyperLabel=#GroupBox3,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=2C9DAD01-4CEA-43D6-8A90-1C134EF90C83
+  Name=DATADEV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=341
+  Width=99
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATADEV,,,
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=,,,"FERRAM_DATAP"
+  Property=InheritClassName=DateSle
+
+CONTROL=RADIOBUTTON
+GUID=27E56945-8AB2-4707-B87D-691360865E10
+  Name=theRadioButton3
+  Class=RADIOBUTTON
+  Caption=Devolvida
+  Order=12
+  Left=341
+  Width=80
+  Top=41
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Devolvida",,
+  Property=Value=D
+  Property=HyperLabel=#theRadioButton3,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=13BB67DF-4782-453B-A198-D74C23095876
+  Name=DATAOUT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=233
+  Width=100
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAOUT,,,
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=,,,"FERRAM_DATAP"
+  Property=InheritClassName=DateSle
+
+CONTROL=RADIOBUTTON
+GUID=464D9E59-C4DE-4082-B18F-52D126769CAE
+  Name=theRadioButton4
+  Class=RADIOBUTTON
+  Caption=Outras
+  Order=14
+  Left=233
+  Width=79
+  Top=41
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Outras",,
+  Property=Value=O
+  Property=HyperLabel=#theRadioButton4,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=817B860C-C34C-4191-B193-463256C717A5
+  Name=DATADES
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=129
+  Width=100
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATADES,,,
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=,,,"FERRAM_DATAP"
+  Property=InheritClassName=DateSle
+
+CONTROL=RADIOBUTTON
+GUID=26B1233D-E94E-432D-A527-902CB9762CB8
+  Name=theRadioButton2
+  Class=RADIOBUTTON
+  Caption=Inativa
+  Order=16
+  Left=133
+  Width=79
+  Top=41
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Inativa",,
+  Property=Value=I
+  Property=HyperLabel=#theRadioButton2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=A324BED9-0DB6-4AA6-9EBE-C38AA87F9DA0
+  Name=DATAATV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=25
+  Width=100
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAATV,,,
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=,,,"FERRAM_DATAP"
+  Property=InheritClassName=DateSle
+
+CONTROL=RADIOBUTTON
+GUID=0464A921-1A82-41C0-AA4D-87F827D165F1
+  Name=theRadioButton1
+  Class=RADIOBUTTON
+  Caption=Ativa
+  Order=18
+  Left=29
+  Width=59
+  Top=41
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Ativa",,
+  Property=Value=A
+  Property=HyperLabel=#theRadioButton1,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=4C0F1931-7DF3-4221-A6FD-D1BFEF69161B
+  Name=SITUACAO
+  Class=RADIOBUTTONGROUP
+  Caption=Situação
+  Order=19
+  Left=18
+  Width=443
+  Top=25
+  Height=72
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Situação",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#SITUACAO,,,
+
+CONTROL=FIXEDTEXT
+GUID=8A59E210-9E14-4440-9753-D827668DB8A0
+  Name=SC_DESTINO2
+  Class=FIXEDTEXT
+  Caption=Foto
+  Order=20
+  Left=545
+  Width=64
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Foto",,
+  Property=HyperLabel=#SC_DESTINO2,,,
+
+CONTROL=PUSHBUTTON
+GUID=38DA2806-77CD-4047-B6CF-410D68BB5165
+  Name=foto
+  Class=PUSHBUTTON
+  Caption=
+  Order=21
+  Left=545
+  Width=64
+  Top=21
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#foto,,,
+  Property=Image=ICO_CAMERA
+
+CONTROL=COMBOBOX
+GUID=64B1B2E4-FB75-4F9A-B768-D0C2773EEFA4
+  Name=TIPO
+  Class=COMBOBOX
+  Caption=
+  Order=22
+  Left=18
+  Width=239
+  Top=214
+  Height=59
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1075841282
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=FillUsing=Self:TABTIPO 
+  Property=HyperLabel=#TIPO,,,
+
+CONTROL=COMBOBOXEX
+GUID=E78F3959-0F8F-47C1-B0D2-062801C4442F
+  Name=GRUPO
+  Class=COMBOBOXEX
+  Caption=
+  Order=23
+  Left=313
+  Width=160
+  Top=209
+  Height=22
+  Browseindex=-1
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741826
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_03
+  Property=FillUsing=Self:PEGGRU 
+  Property=HyperLabel=#GRUPO,,,
+
+CONTROL=FIXEDTEXT
+GUID=5A8C5E55-7E0E-4F58-8696-EFFB5566ABFD
+  Name=SC_GRUPO
+  Class=FIXEDTEXT
+  Caption=Grupo:
+  Order=24
+  Left=269
+  Width=36
+  Top=209
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Grupo:",,
+  Property=HyperLabel=#SC_GRUPO,,,
+
+SUBCONTROLSEND
+DESIGNEREND = TABME01
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,TABME01_Page2
+GUID=41C52054-93A0-473D-B477-4CB4DBF77E34
+  Name=TABME01_Page2
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=18
+  Width=767
+  Top=18
+  Height=444
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#TABME01_Page2,,,
+  Property=ClipperKeys=True
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=29463B76-2B36-4166-86A6-1BE75181C54E
+  Name=DATHURG
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=173
+  Width=80
+  Top=301
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATHURG,,,
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=,,,"FERRAM_DATAP"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=9365F270-3628-4ECA-980E-BBC1AC58DCF6
+  Name=HRURG
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=94
+  Width=72
+  Top=302
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_2
+  Property=HyperLabel=#HRURG,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=A3F38157-DF56-417D-9F62-DA30AF093086
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=Critica
+  Order=3
+  Left=22
+  Width=72
+  Top=306
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Critica",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=90EC29B3-E69E-4913-B23C-5FBF28462CF6
+  Name=DATHPED
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=174
+  Width=80
+  Top=278
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATHPED,,,
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=,,,"FERRAM_DATAP"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=01BC636E-BB18-4FDE-90FD-3F98D3E595EF
+  Name=HRPRE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=94
+  Width=72
+  Top=278
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_2
+  Property=HyperLabel=#HRPRE,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=BD6B9AEA-F06E-43B5-8E08-5DF7FE189412
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=Preventiva
+  Order=6
+  Left=22
+  Width=72
+  Top=282
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Preventiva",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=C69651F5-E072-47BE-8C7F-0A68B7DB4F66
+  Name=DATHSAL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=174
+  Width=80
+  Top=254
+  Height=20
+  Browseindex=-1
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATHSAL,,,
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=,,,"FERRAM_DATAP"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=E0EDE939-F93E-4079-8385-442432A58C2D
+  Name=HRSAL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=94
+  Width=72
+  Top=254
+  Height=20
+  Browseindex=-1
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_2
+  Property=HyperLabel=#HRSAL,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=9D2F050F-C0A8-4A6F-92DF-1B66725E1CBE
+  Name=theFixedText12
+  Class=FIXEDTEXT
+  Caption=Saldo
+  Order=9
+  Left=22
+  Width=72
+  Top=258
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Saldo",,
+  Property=HyperLabel=#theFixedText12,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=6BE9C7CF-C842-43EC-ABAE-B7B71A147641
+  Name=HRBAS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=94
+  Width=72
+  Top=230
+  Height=20
+  Browseindex=-1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_2
+  Property=HyperLabel=#HRBAS,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=InheritClassName=rightSle
+
+CONTROL=GROUPBOX
+GUID=A7EBF509-C179-4FE4-A9DA-E1559F3E490F
+  Name=GroupBox2
+  Class=GROUPBOX
+  Caption=Posição de Preventiva Horas
+  Order=11
+  Left=13
+  Width=257
+  Top=205
+  Height=125
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Posição de Preventiva Horas",,
+  Property=HyperLabel=#GroupBox2,,,
+
+CONTROL=FIXEDTEXT
+GUID=B75783FD-B3A5-4C52-9435-F25534EA46AD
+  Name=theFixedText13
+  Class=FIXEDTEXT
+  Caption=Referencia:
+  Order=12
+  Left=22
+  Width=58
+  Top=230
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Referencia:",,
+  Property=HyperLabel=#theFixedText13,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=110F6825-9F54-41A4-9EE1-539F9892B461
+  Name=DATAURG
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=174
+  Width=80
+  Top=166
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAURG,,,
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=,,,"FERRAM_DATAP"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=37F10024-4BEF-4239-A238-E4E293588817
+  Name=QTDEURG
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=94
+  Width=72
+  Top=166
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDEURG,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=DDFEC2FA-3463-4EBD-87BF-B927BEA4E37D
+  Name=DATAPED
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=174
+  Width=80
+  Top=142
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAPED,,,
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=,,,"FERRAM_DATAP"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=5349D7C2-1185-4930-B610-24349C3CD725
+  Name=DATASALDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=173
+  Width=80
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATASALDO,,,
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=,,,"FERRAM_DATAP"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=0D84AB2E-4C58-4B3B-BB93-A6E10204398B
+  Name=QTDEPED
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=94
+  Width=72
+  Top=142
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDEPED,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=F1473C1F-B538-4844-8474-45D3DEBC78E7
+  Name=QTDESALDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=93
+  Width=72
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDESALDO,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=2064FC4B-7109-4819-A448-F4D497A8E826
+  Name=theFixedText8
+  Class=FIXEDTEXT
+  Caption=Critica
+  Order=19
+  Left=22
+  Width=72
+  Top=170
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Critica",,
+  Property=HyperLabel=#theFixedText8,,,
+
+CONTROL=FIXEDTEXT
+GUID=E3C4C433-147E-47A1-8A91-26FD857F6FAC
+  Name=theFixedText7
+  Class=FIXEDTEXT
+  Caption=Preventiva
+  Order=20
+  Left=22
+  Width=72
+  Top=146
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Preventiva",,
+  Property=HyperLabel=#theFixedText7,,,
+
+CONTROL=GROUPBOX
+GUID=CCCFC132-4562-4DA9-A4CD-39C227E4ED8E
+  Name=GroupBox1
+  Class=GROUPBOX
+  Caption=Posição de Preventiva Quantidade
+  Order=21
+  Left=13
+  Width=257
+  Top=69
+  Height=125
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Posição de Preventiva Quantidade",,
+  Property=HyperLabel=#GroupBox1,,,
+
+CONTROL=FIXEDTEXT
+GUID=ADA7FBD2-C9F0-46BB-91C9-390D24231CC6
+  Name=theFixedText6
+  Class=FIXEDTEXT
+  Caption=Saldo
+  Order=22
+  Left=21
+  Width=67
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Saldo",,
+  Property=HyperLabel=#theFixedText6,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=458F5184-6906-4F59-B2CD-324ECD2960DA
+  Name=QTDEBASE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=23
+  Left=93
+  Width=72
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDEBASE,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=F0C8C464-CDE7-4DC5-90C9-69B67ED7F704
+  Name=theFixedText4
+  Class=FIXEDTEXT
+  Caption=Referencia:
+  Order=24
+  Left=22
+  Width=58
+  Top=94
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Referencia:",,
+  Property=HyperLabel=#theFixedText4,,,
+
+CONTROL=PUSHBUTTON
+GUID=58781BB8-E536-48A9-B0FE-9D8A58285976
+  Name=cmdCalcular
+  Class=PUSHBUTTON
+  Caption=Calcular
+  Order=25
+  Left=265
+  Width=68
+  Top=29
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Calcular",,
+  Property=HyperLabel=#cmdCalcular,,,
+
+CONTROL=RADIOBUTTON
+GUID=1E6C7DCA-F7CF-4E87-A0B7-9C047D8EB818
+  Name=RB2
+  Class=RADIOBUTTON
+  Caption=Não
+  Order=26
+  Left=112
+  Width=50
+  Top=28
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Não",,
+  Property=Value=N
+  Property=HyperLabel=#RB2,,,
+
+CONTROL=RADIOBUTTON
+GUID=BB16FBD3-9979-48E8-A534-51DEA5845A06
+  Name=RB1
+  Class=RADIOBUTTON
+  Caption=Sim
+  Order=27
+  Left=33
+  Width=49
+  Top=29
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Sim",,
+  Property=Value=S
+  Property=HyperLabel=#RB1,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=6B0DB7F8-4184-41F8-A385-3A9D08935F59
+  Name=PREVER
+  Class=RADIOBUTTONGROUP
+  Caption=Requer Preventiva
+  Order=28
+  Left=13
+  Width=176
+  Top=9
+  Height=49
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Requer Preventiva",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#PREVER,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=264648A3-E663-4C6A-82EF-C2D057143CF9
+  Name=VDDURG
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=29
+  Left=441
+  Width=80
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#VDDURG,,,
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=,,,"FERRAM_DATAP"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=07D67BA3-3295-4B13-8233-48ECD3A05ECF
+  Name=VDURG
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=30
+  Left=361
+  Width=72
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#VDURG,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=2687BA3D-FF16-4003-A360-8B8B59AE6D29
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Critica
+  Order=31
+  Left=289
+  Width=72
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Critica",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=21ADDF09-5DD6-40AB-A787-ADCF85507148
+  Name=VDDPRE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=32
+  Left=441
+  Width=80
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#VDDPRE,,,
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=,,,"FERRAM_DATAP"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=8C0D579A-81B3-4466-AC28-9428775A426D
+  Name=VDPRE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=33
+  Left=361
+  Width=72
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#VDPRE,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=51F4E360-C7B9-42B3-B7EA-3E1D43A184C4
+  Name=theFixedText14
+  Class=FIXEDTEXT
+  Caption=Preventiva
+  Order=34
+  Left=289
+  Width=72
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Preventiva",,
+  Property=HyperLabel=#theFixedText14,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=5EECE5DD-8B34-473F-9735-E4F05E8E80F1
+  Name=QTDETOT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=35
+  Left=441
+  Width=80
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDETOT,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=B2A0E5FA-5D2F-40E5-9A88-8F59C5457593
+  Name=VDBAS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=36
+  Left=362
+  Width=72
+  Top=94
+  Height=20
+  Browseindex=-1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#VDBAS,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=2E4F7D1D-6A98-435B-B12F-EACE9FD57DD3
+  Name=theFixedText16
+  Class=FIXEDTEXT
+  Caption=Referencia:
+  Order=37
+  Left=290
+  Width=58
+  Top=94
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Referencia:",,
+  Property=HyperLabel=#theFixedText16,,,
+
+CONTROL=GROUPBOX
+GUID=699F41CD-5D1C-483A-A7C2-E857E1CDC66B
+  Name=GroupBox3
+  Class=GROUPBOX
+  Caption=Posição Vida Util Quantidade
+  Order=38
+  Left=281
+  Width=257
+  Top=69
+  Height=108
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Posição Vida Util Quantidade",,
+  Property=HyperLabel=#GroupBox3,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=F2AC574A-FE37-4688-9D53-118BB83CD123
+  Name=VDHDURG
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=39
+  Left=441
+  Width=80
+  Top=277
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_2
+  Property=HyperLabel=#VDHDURG,,,
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=,,,"FERRAM_DATAP"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=90663604-7138-4871-AA7B-35FAE4C28695
+  Name=VDHDPRE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=40
+  Left=441
+  Width=80
+  Top=253
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_2
+  Property=HyperLabel=#VDHDPRE,,,
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=,,,"FERRAM_DATAP"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=607C80B5-6173-4FC9-AE59-9535E1C39D29
+  Name=HRTOT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=41
+  Left=441
+  Width=80
+  Top=229
+  Height=20
+  Browseindex=-1
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_2
+  Property=HyperLabel=#HRTOT,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=8BC284B4-61B9-468F-A49F-006068F904C6
+  Name=VDHURG
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=42
+  Left=361
+  Width=72
+  Top=277
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_2
+  Property=HyperLabel=#VDHURG,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=7D9E4BC7-8D01-49AD-BD0B-2F10C5651E35
+  Name=VDHPRE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=43
+  Left=361
+  Width=72
+  Top=253
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_2
+  Property=HyperLabel=#VDHPRE,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=38E67D94-C2DD-4932-9B17-14B18493C02C
+  Name=VDHBAS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=44
+  Left=361
+  Width=72
+  Top=229
+  Height=20
+  Browseindex=-1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_2
+  Property=HyperLabel=#VDHBAS,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"FERRAM_CLIENTE"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=4EB3CA4F-95F2-4BB7-8AFA-766240CD86E6
+  Name=theFixedText15
+  Class=FIXEDTEXT
+  Caption=Critica
+  Order=45
+  Left=289
+  Width=72
+  Top=277
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Critica",,
+  Property=HyperLabel=#theFixedText15,,,
+
+CONTROL=FIXEDTEXT
+GUID=6288A49C-C241-47FB-A85E-E979A00C56F3
+  Name=theFixedText17
+  Class=FIXEDTEXT
+  Caption=Preventiva
+  Order=46
+  Left=289
+  Width=72
+  Top=253
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Preventiva",,
+  Property=HyperLabel=#theFixedText17,,,
+
+CONTROL=FIXEDTEXT
+GUID=5889BB73-EF9A-4D9D-9FB6-FDE567FADF0A
+  Name=theFixedText18
+  Class=FIXEDTEXT
+  Caption=Referencia:
+  Order=47
+  Left=289
+  Width=58
+  Top=229
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Referencia:",,
+  Property=HyperLabel=#theFixedText18,,,
+
+CONTROL=GROUPBOX
+GUID=05ED1213-B309-4B64-BCF6-CA8D02C5B8E1
+  Name=GroupBox4
+  Class=GROUPBOX
+  Caption=Posição Vida Util Horas
+  Order=48
+  Left=281
+  Width=257
+  Top=205
+  Height=108
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Posição Vida Util Horas",,
+  Property=HyperLabel=#GroupBox4,,,
+
+SUBCONTROLSEND
+DESIGNEREND = TABME01_Page2
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,TABME01_Page3
+GUID=EA6B2B4C-AF4D-41C4-91AD-06D8FAF4E34D
+  Name=TABME01_Page3
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=28
+  Width=648
+  Top=28
+  Height=438
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#TABME01_Page3,,,
+  Property=ClipperKeys=True
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=5D279A8B-4217-452F-A3D7-32B3779C20C0
+  Name=VISUALNUM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=21
+  Width=80
+  Top=25
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#VISUALNUM,,,
+  Property=HyperLabel=,"Ro:",,
+  Property=HyperLabel=,,,"RO_RO"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=E78A15CD-AE81-4891-97F6-6928F33E5C23
+  Name=VISUALNOM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=149
+  Width=384
+  Top=25
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#VISUALNOM,,,
+  Property=HyperLabel=,"Ro:",,
+  Property=HyperLabel=,,,"RO_RO"
+  Property=Background=255 255 200
+
+CONTROL=GROUPBOX
+GUID=73C1F090-ACD5-49D2-9B4E-87412D9CF2EF
+  Name=GroupBox1
+  Class=GROUPBOX
+  Caption=Elaborador
+  Order=3
+  Left=10
+  Width=539
+  Top=10
+  Height=91
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Elaborador",,
+  Property=HyperLabel=#GroupBox1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=068FE86D-72CB-48B8-8277-34FA72FEEA98
+  Name=VISUALOBS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=21
+  Width=476
+  Top=49
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#VISUALOBS,,,
+  Property=HyperLabel=,"Ro:",,
+  Property=HyperLabel=,,,"RO_RO"
+
+CONTROL=GROUPBOX
+GUID=F878D7EC-B47F-4443-A483-E42D9E042F3A
+  Name=GroupBox2
+  Class=GROUPBOX
+  Caption=Dimensoes
+  Order=6
+  Left=10
+  Width=539
+  Top=106
+  Height=263
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Dimensoes",,
+  Property=HyperLabel=#GroupBox2,,,
+
+CONTROL=FIXEDBITMAP
+GUID=E107D0F4-A23E-4BF9-83FD-37C0B46F5011
+  Name=FixedBitmap1
+  Class=FIXEDBITMAP
+  Caption=
+  Order=7
+  Left=21
+  Width=304
+  Top=129
+  Height=196
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=Yes
+  Deleted=2
+  Styles=1082130446
+  Exstyles=0
+  Property=HyperLabel=,"FERRAMBMP",,
+  Property=HyperLabel=#FixedBitmap1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=1A96C0B6-3EBF-4615-9C25-BEDC6FA39C6E
+  Name=MEDA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=377
+  Width=80
+  Top=137
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#MEDA,,,
+  Property=HyperLabel=,"Ro:",,
+  Property=HyperLabel=,,,"RO_RO"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=0F931E9D-AC51-46F3-8D89-0D40EAAA93E8
+  Name=MEDB
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=377
+  Width=80
+  Top=161
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#MEDB,,,
+  Property=HyperLabel=,"Ro:",,
+  Property=HyperLabel=,,,"RO_RO"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=6D1BB761-CFE9-41F5-ADF4-CA7BF5EC70F1
+  Name=MEDC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=377
+  Width=80
+  Top=185
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#MEDC,,,
+  Property=HyperLabel=,"Ro:",,
+  Property=HyperLabel=,,,"RO_RO"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=03E5DFE2-EB7C-40BB-A8AF-0E439DF76DB9
+  Name=MEDD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=377
+  Width=80
+  Top=209
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#MEDD,,,
+  Property=HyperLabel=,"Ro:",,
+  Property=HyperLabel=,,,"RO_RO"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=19C972D7-456F-4626-97AD-A83914C8E901
+  Name=MEDH
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=377
+  Width=80
+  Top=233
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#MEDH,,,
+  Property=HyperLabel=,"Ro:",,
+  Property=HyperLabel=,,,"RO_RO"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=4D8A6C8E-E7C8-4A83-A920-CE6B8B2ADBFE
+  Name=PESO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=377
+  Width=80
+  Top=257
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#PESO,,,
+  Property=HyperLabel=,"Ro:",,
+  Property=HyperLabel=,,,"RO_RO"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=1ED7CF99-0C10-4FB4-9E12-0E76D6E40E98
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=A
+  Order=14
+  Left=361
+  Width=12
+  Top=137
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"A",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=FIXEDTEXT
+GUID=F274227F-E406-407A-9380-5F895FBDB750
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=B
+  Order=15
+  Left=361
+  Width=12
+  Top=161
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"B",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=FIXEDTEXT
+GUID=9FA8BC89-5B07-476B-B07A-5A86E83C758B
+  Name=FixedText4
+  Class=FIXEDTEXT
+  Caption=C
+  Order=16
+  Left=361
+  Width=12
+  Top=185
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"C",,
+  Property=HyperLabel=#FixedText4,,,
+
+CONTROL=FIXEDTEXT
+GUID=E39E90E7-F485-4B7F-9377-AD2902F6B9AD
+  Name=FixedText5
+  Class=FIXEDTEXT
+  Caption=D
+  Order=17
+  Left=361
+  Width=12
+  Top=209
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"D",,
+  Property=HyperLabel=#FixedText5,,,
+
+CONTROL=FIXEDTEXT
+GUID=2564D347-C81D-4844-80F3-D59F2FBB3433
+  Name=FixedText6
+  Class=FIXEDTEXT
+  Caption=H
+  Order=18
+  Left=361
+  Width=12
+  Top=233
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"H",,
+  Property=HyperLabel=#FixedText6,,,
+
+CONTROL=FIXEDTEXT
+GUID=44097676-BEC4-4350-AD20-749AD7103926
+  Name=FixedText7
+  Class=FIXEDTEXT
+  Caption=Peso
+  Order=19
+  Left=349
+  Width=24
+  Top=257
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Peso",,
+  Property=HyperLabel=#FixedText7,,,
+
+CONTROL=PUSHBUTTON
+GUID=E12031A2-D18D-47F4-BADD-0FE30ADD6E7D
+  Name=escres
+  Class=PUSHBUTTON
+  Caption=...
+  Order=20
+  Left=105
+  Width=20
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#escres,,,
+
+CONTROL=PUSHBUTTON
+GUID=103F11BF-3AD5-4356-A349-920F1DB6B455
+  Name=PEGAVA
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=21
+  Left=125
+  Width=20
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#PEGAVA,,,
+
+SUBCONTROLSEND
+DESIGNEREND = TABME01_Page3
+

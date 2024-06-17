@@ -1,0 +1,319 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JRIFI
+GUID=1CFFDA6F-2409-4E13-AF9E-DE0E471A3E99
+  Name=JRIFI
+  Class=FORM:DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=0
+  Width=584
+  Top=0
+  Height=320
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,DataWindow Caption
+  Property=HyperLabel=JRIFI
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=EF40A948-D8A1-47D6-A261-DD9AC0EC1B3B
+  Name=MIN
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Min:
+  Order=8
+  Left=89
+  Width=84
+  Top=25
+  Height=20
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=,Min:
+  Property=HyperLabel=MIN
+  Property=HyperLabel=,,,RIFI_MIN
+  Property=FieldSpec=PADRAO_NUM_12_4
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=SINGLELINEEDIT
+GUID=D9D7B50C-5393-48FE-B641-AB55C3C3095B
+  Name=MAX
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Max:
+  Order=9
+  Left=177
+  Width=84
+  Top=25
+  Height=20
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Max:
+  Property=HyperLabel=MAX
+  Property=HyperLabel=,,,RIFI_MAX
+  Property=FieldSpec=PADRAO_NUM_12_4
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=SINGLELINEEDIT
+GUID=493EBA95-3D40-4146-A23E-F55912BD0D5C
+  Name=OK
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Ok:
+  Order=10
+  Left=261
+  Width=24
+  Top=25
+  Height=20
+  Browseindex=3
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=,Ok:
+  Property=HyperLabel=OK
+  Property=HyperLabel=,,,RIFI_OK
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=SINGLELINEEDIT
+GUID=D0461DF2-40B1-4359-B02F-37DD48D8399C
+  Name=INSTRUME
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Instrum
+  Order=13
+  Left=9
+  Width=460
+  Top=117
+  Height=20
+  Browseindex=2
+  Browsesize=24
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=,Instrum
+  Property=HyperLabel=INSTRUME
+  Property=HyperLabel=,,,RIFI_TOL
+  Property=FieldSpec=PADRAO_CHAR_150
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=SINGLELINEEDIT
+GUID=984DD4E5-8DCA-4206-A45A-4606334D716F
+  Name=TOL
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Tol:
+  Order=7
+  Left=9
+  Width=460
+  Top=69
+  Height=20
+  Browseindex=1
+  Browsesize=42
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=,Tol:
+  Property=HyperLabel=TOL
+  Property=HyperLabel=,,,RIFI_TOL
+  Property=FieldSpec=PADRAO_CHAR_150
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=SINGLELINEEDIT
+GUID=A903F453-C765-4219-99C3-453155ED0D14
+  Name=RIF
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Rif:
+  Order=6
+  Left=13
+  Width=68
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=,Rif:
+  Property=HyperLabel=RIF
+  Property=HyperLabel=,,,RIFI_RIF
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=PUSHBUTTON
+GUID=50C12063-47E8-403E-96D7-C79F4EFA13A4
+  Name=OKINT1
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Não OK
+  Order=12
+  Left=96
+  Width=80
+  Top=146
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Não OK
+  Property=HyperLabel=OKINT1
+  Property=TooltipText=Marca Item como Nao Ok
+CONTROL=PUSHBUTTON
+GUID=4303DACD-8510-49D7-A9AC-148C9E6F4925
+  Name=OKINT
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=OK
+  Order=11
+  Left=13
+  Width=80
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,OK
+  Property=HyperLabel=OKINT
+  Property=TooltipText=Marca Item como Ok
+CONTROL=FIXEDTEXT
+GUID=AA40AA89-D465-44CD-AEDF-13622079ECB7
+  Name=SC_RIF
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Rif:
+  Order=1
+  Left=13
+  Width=20
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Rif:
+  Property=HyperLabel=SC_RIF
+CONTROL=FIXEDTEXT
+GUID=504E2118-F031-4A33-AE4B-68492237D030
+  Name=SC_TOL
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Tolerancia/Especificado
+  Order=2
+  Left=9
+  Width=128
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Tolerancia/Especificado
+  Property=HyperLabel=SC_TOL
+CONTROL=FIXEDTEXT
+GUID=F414BF7A-42F2-4DB3-B6C3-8B016CA83355
+  Name=SC_MIN
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Min:
+  Order=3
+  Left=93
+  Width=24
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Min:
+  Property=HyperLabel=SC_MIN
+CONTROL=FIXEDTEXT
+GUID=862EB9F7-4D6F-4478-851D-CD3785145C9F
+  Name=SC_MAX
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Max:
+  Order=4
+  Left=181
+  Width=28
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Max:
+  Property=HyperLabel=SC_MAX
+CONTROL=FIXEDTEXT
+GUID=6DD1F20D-5231-4C64-BEF7-1655DC7CBA80
+  Name=SC_OK
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Ok:
+  Order=5
+  Left=265
+  Width=20
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ok:
+  Property=HyperLabel=SC_OK
+CONTROL=FIXEDTEXT
+GUID=9DADDED4-09B1-4F4D-A48C-652676666654
+  Name=SC_TOL1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Instrumento
+  Order=14
+  Left=9
+  Width=128
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Instrumento
+  Property=HyperLabel=SC_TOL1
+SUBCONTROLSEND
+DESIGNEREND = JRIFI
+
+

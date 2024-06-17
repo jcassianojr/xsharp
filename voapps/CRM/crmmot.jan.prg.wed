@@ -1,0 +1,109 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jcrmmot
+GUID=2EB2260C-03EE-4916-8924-BDA7A108779E
+  Name=jcrmmot
+  Class=DATAWINDOW
+  Caption=Motivos de Rastros Alternativos
+  Order=0
+  Left=12
+  Width=461
+  Top=12
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Motivos de Rastros Alternativos",,
+  Property=HyperLabel=#jcrmmot,,,
+  Property=ViewAs=#BrowseView
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=9D443892-0198-49E0-8DB4-4372492B1B40
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=1
+  Left=22
+  Width=40
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=3FE843FA-2DD4-4E5F-A845-4C1271FC1559
+  Name=SC_DIZER
+  Class=FIXEDTEXT
+  Caption=Dizer:
+  Order=2
+  Left=22
+  Width=32
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Dizer:",,
+  Property=HyperLabel=#SC_DIZER,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=A0FB733B-F984-4D2B-A8C7-9E2DAE4F9B2A
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=78
+  Width=36
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_02
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"CRMMOT_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=6BD4D35F-C86C-443A-8C1E-7D98D19AE877
+  Name=DIZER
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=78
+  Width=364
+  Top=50
+  Height=20
+  Browseindex=1
+  Browsesize=59
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#DIZER,,,
+  Property=HyperLabel=,"Dizer:",,
+  Property=HyperLabel=,,,"CRMMOT_DIZER"
+
+SUBCONTROLSEND
+DESIGNEREND = jcrmmot
+

@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="jferrami">
+    <Window Name="jferrami">
+      <Name>jferrami</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>12</Left>
+      <Top>12</Top>
+      <Width>592</Width>
+      <Height>320</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#jferrami,,,</HyperLabel>
+        <ViewAs>#BrowseView</ViewAs>
+      </ExProperties>
+    </Window>
+    <Control Name="LIN01">
+      <Name>LIN01</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>65</Left>
+      <Top>41</Top>
+      <Width>342</Width>
+      <Height>20</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>64</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_80</FieldSpec>
+        <HyperLabel>#LIN01,,,</HyperLabel>
+        <HyperLabel>,"Descricao",,</HyperLabel>
+        <HyperLabel>,,,"FERRAM_NOME"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_NOME">
+      <Name>SC_NOME</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Instrucao</Caption>
+      <Order>2</Order>
+      <Left>5</Left>
+      <Top>37</Top>
+      <Width>56</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Instrucao",,</HyperLabel>
+        <HyperLabel>#SC_NOME,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="ITEM">
+      <Name>ITEM</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>341</Left>
+      <Top>9</Top>
+      <Width>108</Width>
+      <Height>24</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082130560</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_03</FieldSpec>
+        <HyperLabel>#ITEM,,,</HyperLabel>
+        <HyperLabel>,"Item",,</HyperLabel>
+        <HyperLabel>,,,"FERRAM_FERRAM"</HyperLabel>
+        <InheritClassName>rightSLE</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="TEXTO">
+      <Name>TEXTO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Seq</Caption>
+      <Order>4</Order>
+      <Left>305</Left>
+      <Top>9</Top>
+      <Width>32</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Seq",,</HyperLabel>
+        <HyperLabel>#TEXTO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FERRAM">
+      <Name>FERRAM</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>65</Left>
+      <Top>9</Top>
+      <Width>232</Width>
+      <Height>24</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>23</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_24</FieldSpec>
+        <HyperLabel>#FERRAM,,,</HyperLabel>
+        <HyperLabel>,"Ferram:",,</HyperLabel>
+        <HyperLabel>,,,"FERRAM_FERRAM"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>12:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_FERRAM">
+      <Name>SC_FERRAM</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Ferramenta</Caption>
+      <Order>6</Order>
+      <Left>5</Left>
+      <Top>9</Top>
+      <Width>56</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ferramenta",,</HyperLabel>
+        <HyperLabel>#SC_FERRAM,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

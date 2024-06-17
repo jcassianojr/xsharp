@@ -1,0 +1,98 @@
+EMPTYSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		MENUITEM "CRM  - Recebimento Mercadorias", 28980
+		MENUITEM "CRM - Outros", 28981
+		MENUITEM "CRM - Outros Consulta", 28982
+		MENUITEM "RIRM - Inspeção de Materias", 28983
+		MENUITEM "RIST - Inspeção Serviços Terceiros", 28984
+		MENUITEM "SS - Controle Salt-Spray", 28985
+		POPUP "Comparativo Peso NF/Recebido"
+		BEGIN
+			MENUITEM "Normal Materia Prima", 28987
+			MENUITEM "Corte", 28988
+		END
+		POPUP "Programaçôes Especiais"
+		BEGIN
+			MENUITEM "Mao de Obra Cliente", 28990
+			MENUITEM "Programa RIRM/RIST", 28991
+			MENUITEM "Codigos especiais", 28992
+		END
+		POPUP "Controle de  Rastros"
+		BEGIN
+			MENUITEM "CRM", 28994
+			MENUITEM "CRM/Final", 28995
+			MENUITEM "Alternativos", 28996
+			MENUITEM "Ajustar", 28997
+		END
+		POPUP "Ensaios"
+		BEGIN
+			MENUITEM "CRMENS - Cadastro Tipos de Ensaios", 28999
+			MENUITEM "Materia Prima", 29000
+			MENUITEM "Componentes", 29001
+			MENUITEM "ETI", 29002
+			MENUITEM "Tratamento(ETI)", 29003
+			MENUITEM "Embalagem", 29004
+			MENUITEM "Sub-Produto", 29005
+			MENUITEM "Produto", 29006
+		END
+		POPUP "Itens Criticos/RACF"
+		BEGIN
+			MENUITEM "Itens Criticos", 29008
+			MENUITEM "Marcadas Racf", 29009
+		END
+		POPUP "Integracao"
+		BEGIN
+			MENUITEM "Importar AR->Controle Estoque", 29011
+			MENUITEM "Consulta LX-MC", 29012
+			MENUITEM "Checagem CRM/RIRM/RIST<>AR", 29013
+			MENUITEM "Sincronizar CRM/RIRM/RIST<>AR", 29014
+			MENUITEM "Sincronizar MC<>AR", 29015
+		END
+		MENUITEM SEPARATOR
+		MENUITEM "C&onfigurar Impressora ..", 29017
+		MENUITEM SEPARATOR
+		MENUITEM "Indexar os Arquivos", 29019
+		MENUITEM SEPARATOR
+		MENUITEM "&Sair\tAlt+F4", 29021
+	END
+	POPUP "&Relatorios"
+	BEGIN
+		MENUITEM "Recebimento de Mercadorias", 29023
+		MENUITEM "Inspeção Serviços Terceiros", 29024
+		MENUITEM "Inspeção e Ensaio Recebimento de Material", 29025
+		MENUITEM "Comparativo Peso NF/Recebido", 29026
+		MENUITEM "Relatorios Para Recebimento", 29027
+		MENUITEM "Controle de Estoque", 29028
+		MENUITEM "Controle de Rastro", 29029
+		MENUITEM "Controle de SS", 29030
+		POPUP "Etiquetas"
+		BEGIN
+			MENUITEM "Material Aprovado", 29032
+			MENUITEM "Identificação", 29033
+			MENUITEM "Solicitacao de Teste e Inspecao Laboratório", 29034
+		END
+		MENUITEM "WRPT", 29035
+		MENUITEM "WRPT Integrado", 29036
+		MENUITEM "LST View(logix)", 29037
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		POPUP "Email"
+		BEGIN
+			MENUITEM "Consulta", 29040
+			MENUITEM "Geral", 29041
+			MENUITEM "Configuracao", 29042
+		END
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Indice\tF1", 29044
+		MENUITEM "&Conteudo", 29045
+		MENUITEM SEPARATOR
+		MENUITEM "Atualizações", 29047
+		MENUITEM "&Sobre...", 32031
+	END
+End
+ 

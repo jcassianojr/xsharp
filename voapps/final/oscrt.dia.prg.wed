@@ -1,0 +1,245 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,_jescos
+GUID=D042268A-B574-4F0D-AD8C-A31B84FAA74A
+  Name=_jescos
+  Class=DATADIALOG
+  Caption=Escolher Os
+  Order=0
+  Left=30
+  Width=607
+  Top=30
+  Height=386
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escolher Os",,
+  Property=HyperLabel=#_jescos,,,
+
+SUBCONTROLSSTART
+CONTROL=SUBDATAWINDOW
+GUID=A52F99F7-D9AA-4FB0-BAA7-B8711CCAFE2E
+  Name=josc
+  Class=SUBDATAWINDOW
+  Caption=josc
+  Order=1
+  Left=9
+  Width=464
+  Top=37
+  Height=332
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#josc,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=86ED8CB9-0AAA-421D-A2BC-C73FF47764DC
+  Name=CBUSCA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=101
+  Width=136
+  Top=9
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082130560
+  Exstyles=512
+  Property=HyperLabel=#CBUSCA,,,
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=InheritClassName=rightSle
+
+CONTROL=PUSHBUTTON
+GUID=D5399634-43D5-45CE-9181-9AD3D074068F
+  Name=Busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=3
+  Left=241
+  Width=36
+  Top=9
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#Busca,,,
+
+CONTROL=FIXEDTEXT
+GUID=38935991-2E8A-4DBD-93F7-218AF9FCE0EF
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=4
+  Left=481
+  Width=64
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=D7973089-60A6-41B6-8C6D-7F957F443E63
+  Name=sair
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=481
+  Width=64
+  Top=89
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#sair,,,
+  Property=Image=ico_sair
+
+CONTROL=FIXEDTEXT
+GUID=6E680D14-3A96-4C04-90D3-92603D257268
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=Escolher
+  Order=7
+  Left=481
+  Width=64
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Escolher",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=PUSHBUTTON
+GUID=5ED671D0-2F9E-447A-8C8F-B1AD4913616C
+  Name=Escolher
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=481
+  Width=64
+  Top=13
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Escolher,,,
+  Property=Image=ico_ok
+
+CONTROL=SINGLELINEEDIT
+GUID=21700D57-242D-4EA9-B12B-649F4898A5F1
+  Name=OS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=33
+  Width=64
+  Top=9
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#OS,,,
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=EC202308-C814-446D-8E5E-6886E8E7FE08
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=OS
+  Order=10
+  Left=10
+  Width=23
+  Top=10
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"OS",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=F2334330-B7CC-4242-88B8-8F6BB659B993
+  Name=CODIGOINT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=281
+  Width=148
+  Top=9
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#CODIGOINT,,,
+  Property=InheritClassName=rightSle
+
+CONTROL=PUSHBUTTON
+GUID=7C20253B-9F01-451C-A01A-15EBA387DF30
+  Name=Busca1
+  Class=PUSHBUTTON
+  Caption=
+  Order=12
+  Left=433
+  Width=36
+  Top=9
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#Busca1,,,
+
+SUBCONTROLSEND
+DESIGNEREND = _jescos
+

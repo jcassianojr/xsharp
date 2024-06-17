@@ -1,0 +1,914 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JSM
+GUID=4F58B3DF-6A71-4BA4-85A6-D515BA3D20A4
+  Name=JSM
+  Class=FORM:DATAWINDOW
+  Caption=Solitação de Manutenção
+  Order=0
+  Left=0
+  Width=691
+  Top=0
+  Height=287
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Solitação de Manutenção
+  Property=HyperLabel=JSM
+  Property=InheritClassName=MYDataWindow
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+  Property=ClipperKeys=True
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=703BDD43-ED5F-4681-9ED2-749CC44F837C
+  Name=BTNPEGMP04
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=36
+  Left=201
+  Width=23
+  Top=113
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=BTNPEGMP04
+CONTROL=PUSHBUTTON
+GUID=428174FC-CB6B-48C1-8FAB-2B2D44A27CAF
+  Name=BTNPEGMA01
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=35
+  Left=201
+  Width=23
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=BTNPEGMA01
+CONTROL=PUSHBUTTON
+GUID=A625D6D8-6E0D-43E3-A5A5-0637DC70B1FA
+  Name=BTNPEGME01
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=37
+  Left=201
+  Width=23
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=BTNPEGME01
+CONTROL=DATETIMEPICKER
+GUID=ABE9EB1A-5B11-46D4-9FE0-03D3F8742146
+  Name=DATA
+  Class=CONTROL:TEXTCONTROL:DATETIMEPICKER
+  Caption=13/02/2021
+  Order=1
+  Left=177
+  Width=85
+  Top=17
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,13/02/2021
+  Property=HyperLabel=DATA
+  Property=FieldSpec=DATE_FIELD
+CONTROL=SINGLELINEEDIT
+GUID=257E8604-3780-49BC-BFCD-91AB60167FB2
+  Name=CODIGO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Codigo:
+  Order=2
+  Left=65
+  Width=136
+  Top=65
+  Height=20
+  Browseindex=2
+  Browsesize=24
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Codigo:
+  Property=HyperLabel=CODIGO
+  Property=HyperLabel=,,,SM_CODIGO
+  Property=FieldSpec=PADRAO_Char_24
+  Property=FocusSelect=FSEL_TRIM
+CONTROL=SINGLELINEEDIT
+GUID=D5B80FD1-9207-4413-818C-287E6D8DB7DD
+  Name=NOME
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Nome:
+  Order=3
+  Left=221
+  Width=408
+  Top=65
+  Height=20
+  Browseindex=5
+  Browsesize=20
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Nome:
+  Property=HyperLabel=NOME
+  Property=HyperLabel=,,,SM_NOME
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=FocusSelect=FSEL_HOME
+CONTROL=SINGLELINEEDIT
+GUID=52368225-9E57-4D7D-A730-AA5E99749969
+  Name=CLIENTE
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Cliente:
+  Order=4
+  Left=65
+  Width=110
+  Top=89
+  Height=20
+  Browseindex=3
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Cliente:
+  Property=HyperLabel=CLIENTE
+  Property=HyperLabel=,,,SM_CLIENTE
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSle
+  Property=FocusSelect=FSEL_TRIM
+CONTROL=SINGLELINEEDIT
+GUID=DAF56912-5EC9-4B8E-9C05-CD9E6ABAEA61
+  Name=CLINOME
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Clinome:
+  Order=5
+  Left=225
+  Width=406
+  Top=89
+  Height=20
+  Browseindex=4
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Clinome:
+  Property=HyperLabel=CLINOME
+  Property=HyperLabel=,,,SM_CLINOME
+  Property=FieldSpec=padrao_char_50
+CONTROL=SINGLELINEEDIT
+GUID=2B3D6C1B-35E7-449C-AF3D-1A279CFEBBDD
+  Name=REQNUM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Cliente:
+  Order=6
+  Left=65
+  Width=110
+  Top=113
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Cliente:
+  Property=HyperLabel=REQNUM
+  Property=HyperLabel=,,,SM_CLIENTE
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=5B9161CF-C166-4E76-BB58-2956B5287537
+  Name=REQNOME
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=C
+  Order=7
+  Left=225
+  Width=406
+  Top=113
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,C
+  Property=HyperLabel=REQNOME
+  Property=HyperLabel=,,,SM_CLINOME
+  Property=FieldSpec=padrao_char_40
+CONTROL=SINGLELINEEDIT
+GUID=0355D1DE-F7E7-4186-8DE7-688F54913F6D
+  Name=DEF01
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Def01:
+  Order=8
+  Left=21
+  Width=580
+  Top=161
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Def01:
+  Property=HyperLabel=DEF01
+  Property=HyperLabel=,,,SM_DEF01
+  Property=FieldSpec=padrao_char_80
+CONTROL=SINGLELINEEDIT
+GUID=7B9BC1AE-FD6D-44E0-B07E-BA5EBD23062F
+  Name=DEF02
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Def02:
+  Order=9
+  Left=21
+  Width=580
+  Top=181
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Def02:
+  Property=HyperLabel=DEF02
+  Property=HyperLabel=,,,SM_DEF02
+  Property=FieldSpec=padrao_char_30
+CONTROL=DATETIMEPICKER
+GUID=56E00B71-5CF5-488E-8150-194149BF7303
+  Name=DATAPP
+  Class=CONTROL:TEXTCONTROL:DATETIMEPICKER
+  Caption=13/02/2021
+  Order=10
+  Left=17
+  Width=85
+  Top=233
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,13/02/2021
+  Property=HyperLabel=DATAPP
+  Property=FieldSpec=date_field
+CONTROL=SINGLELINEEDIT
+GUID=F2F4D0ED-68E1-4ECF-B5A4-20154457671C
+  Name=datapar
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Datai:
+  Order=11
+  Left=149
+  Width=80
+  Top=233
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Datai:
+  Property=HyperLabel=datapar
+  Property=HyperLabel=,,,Sm_DATAI
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=ABC03FAB-65DD-4146-BA47-068721480A7C
+  Name=horapINI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Horaini:
+  Order=12
+  Left=261
+  Width=48
+  Top=233
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Horaini:
+  Property=HyperLabel=horapINI
+  Property=HyperLabel=,,,Sm_HORAINI
+  Property=FieldSpec=padrao_num_05_2
+  Property=InheritClassName=rightSle
+CONTROL=RADIOBUTTON
+GUID=906E638B-FD7A-4B61-ACF4-1E5E24A255AF
+  Name=theRadioButton1
+  Class=CONTROL:TEXTCONTROL:BUTTON:RADIOBUTTON
+  Caption=Máquina
+  Order=13
+  Left=301
+  Width=69
+  Top=29
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,Máquina
+  Property=HyperLabel=theRadioButton1
+  Property=Value=M
+CONTROL=RADIOBUTTON
+GUID=B321D318-FA40-4D4A-9F4F-E9A55A4B3FFC
+  Name=RadioButton5
+  Class=CONTROL:TEXTCONTROL:BUTTON:RADIOBUTTON
+  Caption=Outras
+  Order=14
+  Left=481
+  Width=60
+  Top=29
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,Outras
+  Property=HyperLabel=RadioButton5
+  Property=Value=O
+CONTROL=PUSHBUTTON
+GUID=19C45312-3028-4D2F-BC4A-322516B92118
+  Name=CmdConcluida
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Concluida
+  Order=16
+  Left=585
+  Width=80
+  Top=237
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Concluida
+  Property=HyperLabel=CmdConcluida
+CONTROL=CHECKBOX
+GUID=D5526589-AA97-4DEE-8BCB-122143441C23
+  Name=CONCLUIDA
+  Class=CONTROL:TEXTCONTROL:BUTTON:CHECKBOX
+  Caption=Concluida
+  Order=17
+  Left=585
+  Width=76
+  Top=213
+  Height=20
+  Browseindex=-1
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1207959555
+  Exstyles=0
+  Property=HyperLabel=,Concluida
+  Property=HyperLabel=CONCLUIDA
+  Property=HyperLabel=,,,SM_CONCLUIDA
+  Property=FieldSpec=logic_field
+CONTROL=FIXEDTEXT
+GUID=47131341-B028-415B-801A-917FFA4094CF
+  Name=SC_RO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Ro:
+  Order=18
+  Left=569
+  Width=20
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ro:
+  Property=HyperLabel=SC_RO
+CONTROL=SINGLELINEEDIT
+GUID=299059F3-596B-4766-B03E-17A1AAD48235
+  Name=RO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Ro:
+  Order=19
+  Left=569
+  Width=68
+  Top=37
+  Height=20
+  Browseindex=1
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=,Ro:
+  Property=HyperLabel=RO
+  Property=HyperLabel=,,,Sm_RO
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=FIXEDTEXT
+GUID=EBB18E26-7870-4B08-8FCD-FD5E2FF70C08
+  Name=SC_CLIENTE1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Solicitante
+  Order=20
+  Left=9
+  Width=50
+  Top=113
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Solicitante
+  Property=HyperLabel=SC_CLIENTE1
+CONTROL=PUSHBUTTON
+GUID=6C2F2050-0C46-4AEC-BC34-31F2F8B88372
+  Name=ESCRES
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=...
+  Order=21
+  Left=178
+  Width=23
+  Top=114
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,...
+  Property=HyperLabel=ESCRES
+CONTROL=PUSHBUTTON
+GUID=66649551-49E8-4FD5-848B-C4DF4D0656B3
+  Name=escfor
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=...
+  Order=22
+  Left=177
+  Width=23
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,...
+  Property=HyperLabel=escfor
+CONTROL=FIXEDTEXT
+GUID=3E465225-3D4E-4001-9A22-3B0B72B0321F
+  Name=SC_SM
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Sm:
+  Order=23
+  Left=9
+  Width=20
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Sm:
+  Property=HyperLabel=SC_SM
+CONTROL=FIXEDTEXT
+GUID=4BD2C330-D7E6-4211-A2D6-37D574EB72C1
+  Name=SC_DATA
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Data:
+  Order=24
+  Left=173
+  Width=40
+  Top=1
+  Height=14
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data:
+  Property=HyperLabel=SC_DATA
+CONTROL=RADIOBUTTON
+GUID=45C376E5-33B8-4317-975B-05CA3F8EBC8B
+  Name=theRadioButton2
+  Class=CONTROL:TEXTCONTROL:BUTTON:RADIOBUTTON
+  Caption=Ferramenta
+  Order=25
+  Left=393
+  Width=73
+  Top=29
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,Ferramenta
+  Property=HyperLabel=theRadioButton2
+  Property=Value=F
+CONTROL=SINGLELINEEDIT
+GUID=F3F9B031-4361-409F-86EE-7F9881381957
+  Name=SM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Sm:
+  Order=26
+  Left=29
+  Width=72
+  Top=9
+  Height=28
+  Browseindex=0
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=HyperLabel=,Sm:
+  Property=HyperLabel=SM
+  Property=HyperLabel=,,,SM_SM
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=NewFont=12:Times New Roman:Bold
+CONTROL=FIXEDTEXT
+GUID=C2C344C1-8658-4C26-AEFE-2B72D1D7EA77
+  Name=SC_CODIGO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Código:
+  Order=27
+  Left=9
+  Width=50
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Código:
+  Property=HyperLabel=SC_CODIGO
+CONTROL=FIXEDTEXT
+GUID=15D4EED3-4E38-4D10-BF03-C7E4657E6776
+  Name=SC_CLIENTE
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Cliente:
+  Order=28
+  Left=9
+  Width=50
+  Top=89
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Cliente:
+  Property=HyperLabel=SC_CLIENTE
+CONTROL=FIXEDTEXT
+GUID=1A74DCCA-61F5-4215-8779-25C33EE47BD8
+  Name=SC_DATAPP
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Proxima Produção:
+  Order=30
+  Left=13
+  Width=96
+  Top=213
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Proxima Produção:
+  Property=HyperLabel=SC_DATAPP
+CONTROL=RADIOBUTTON
+GUID=605B911B-B108-4877-8D73-5C9984D1B4F1
+  Name=theRadioButton3
+  Class=CONTROL:TEXTCONTROL:BUTTON:RADIOBUTTON
+  Caption=Minima
+  Order=32
+  Left=345
+  Width=70
+  Top=231
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,Minima
+  Property=HyperLabel=theRadioButton3
+  Property=Value=I
+CONTROL=RADIOBUTTON
+GUID=0A496584-A4A0-4FF0-904D-50F936054A90
+  Name=theRadioButton4
+  Class=CONTROL:TEXTCONTROL:BUTTON:RADIOBUTTON
+  Caption=Média
+  Order=33
+  Left=430
+  Width=60
+  Top=231
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,Média
+  Property=HyperLabel=theRadioButton4
+  Property=Value=E
+CONTROL=RADIOBUTTON
+GUID=1FF39975-227B-40B0-B05B-D9AFFEE301F3
+  Name=theRadioButton5
+  Class=CONTROL:TEXTCONTROL:BUTTON:RADIOBUTTON
+  Caption=Máxima
+  Order=34
+  Left=501
+  Width=66
+  Top=231
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,Máxima
+  Property=HyperLabel=theRadioButton5
+  Property=Value=A
+CONTROL=PUSHBUTTON
+GUID=F46435FB-EE6B-4B29-9FDD-2D04B994567A
+  Name=busca
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=38
+  Left=105
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=busca
+  Property=Image=ico_find
+CONTROL=PUSHBUTTON
+GUID=7DDDEE5E-8AA4-45CE-98E6-90E594379C83
+  Name=Escme01
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Maquina
+  Order=39
+  Left=113
+  Width=80
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Maquina
+  Property=HyperLabel=Escme01
+  Property=TooltipText=Escolher Uma Maquina/Equipamento
+CONTROL=PUSHBUTTON
+GUID=51820CB1-A7DB-4F5D-94AF-34411BFBC77D
+  Name=Escfer
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Ferramenta
+  Order=40
+  Left=33
+  Width=80
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ferramenta
+  Property=HyperLabel=Escfer
+  Property=TooltipText=Escolher Uma Ferramenta
+CONTROL=FIXEDTEXT
+GUID=31F79F71-5EE9-4E89-88F4-6F0CD283CD20
+  Name=theFixedText10
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Hora
+  Order=41
+  Left=233
+  Width=32
+  Top=233
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Hora
+  Property=HyperLabel=theFixedText10
+CONTROL=FIXEDTEXT
+GUID=CCB795DF-7A92-4F38-8E1E-E229D859B5A1
+  Name=theFixedText11
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Data
+  Order=42
+  Left=121
+  Width=26
+  Top=233
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data
+  Property=HyperLabel=theFixedText11
+CONTROL=PUSHBUTTON
+GUID=1DA84C01-1595-41FC-9559-80B56E13252A
+  Name=ordem
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=44
+  Left=141
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=ordem
+  Property=TooltipText=Ordenar Por Numero
+  Property=Image=ico_az
+CONTROL=GROUPBOX
+GUID=1268BCD8-8939-4250-B860-197BBA5FDB2A
+  Name=theGroupBox4
+  Class=CONTROL:TEXTCONTROL:GROUPBOX
+  Caption=Parada
+  Order=43
+  Left=113
+  Width=208
+  Top=213
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,Parada
+  Property=HyperLabel=theGroupBox4
+CONTROL=RADIOBUTTONGROUP
+GUID=88439C9E-5A77-4627-8EF4-8F04421B2DD3
+  Name=PRIOR
+  Class=CONTROL:TEXTCONTROL:RADIOBUTTONGROUP
+  Caption=Solitação de Manutenção
+  Order=31
+  Left=333
+  Width=247
+  Top=213
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,Solitação de Manutenção
+  Property=HyperLabel=PRIOR
+  Property=FieldSpec=PADRAO_CHAR_01
+CONTROL=RADIOBUTTONGROUP
+GUID=81A7B640-193E-48E2-9EEB-6F6E3CAD46DE
+  Name=TIPO
+  Class=CONTROL:TEXTCONTROL:RADIOBUTTONGROUP
+  Caption=Tipo
+  Order=15
+  Left=289
+  Width=264
+  Top=9
+  Height=49
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,Tipo
+  Property=HyperLabel=TIPO
+  Property=FieldSpec=PADRAO_CHAR_01
+CONTROL=GROUPBOX
+GUID=4784907D-5260-499F-BD62-4242630002C3
+  Name=theGroupBox1
+  Class=CONTROL:TEXTCONTROL:GROUPBOX
+  Caption=Defeito Apresentado/Descrição Manutenção
+  Order=29
+  Left=13
+  Width=629
+  Top=141
+  Height=68
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,Defeito Apresentado/Descrição Manutenção
+  Property=HyperLabel=theGroupBox1
+SUBCONTROLSEND
+DESIGNEREND = JSM
+
+

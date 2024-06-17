@@ -1,0 +1,384 @@
+DESIGNERSTART = VOMenu,,EMPTYSHELLMENU
+GUID=5A43EE60-E535-4A98-983D-4BBB9055EFF1
+Name=EMPTYSHELLMENU
+Toolbar=Flat Toolbar
+Show=Icon
+UseBands=No
+BaseID=15000
+SUBCONTROLSSTART
+  
+  CONTROL=MENUITEM
+  GUID=912486F9-820B-4E5E-9680-F5E00C406516
+  EventName=File
+  Caption=&Arquivo
+  Description=Opções de Arquivo
+  HelpContext=File
+  Enabled=Yes
+  Checked=No
+  ButtonPos=-1
+  MenuID=15001
+  SUBCONTROLSSTART
+    
+    CONTROL=MENUITEM
+    GUID=F5A7C4C8-D820-4A29-9E15-D6990E3468FA
+    EventName=XJBA01
+    Caption=Lançamentos
+    Description=Lançamentos
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15002
+    
+    CONTROL=MENUITEM
+    GUID=40D62A49-A87E-4794-BD89-FF420A722907
+    EventName=XJBA01ATU
+    Caption=Lançamentos so Compentencia
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15003
+    
+    CONTROL=MENUITEM
+    GUID=518CB6D9-0A31-47C2-9CDE-183160669066
+    EventName=XJBA01FEC
+    Caption=Lançamentos Mes Fechado
+    Description=Lançamentos Mes Fechado
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15004
+    
+    CONTROL=MENUITEM
+    GUID=AB32259C-AF29-4009-B2D5-3B1C6530C5E1
+    EventName=XJMF02
+    Caption=Contas Correntes
+    Description=Contas Correntes
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15005
+    
+    CONTROL=MENUITEM
+    GUID=E10D9B66-B8E6-4C4F-A269-337A8650961F
+    EventName=XJBC01
+    Caption=Historico
+    Description=Historico
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15006
+    
+    CONTROL=MENUITEM
+    GUID=6C10F4CD-A245-4F1C-92E9-A3F0C7FCD544
+    EventName=XJMI04
+    Caption=Codigo de Despesas
+    Description=Codigo de Despesas
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15007
+    
+    CONTROL=MENUITEM
+    GUID=7A1C8B90-BC0C-40A7-8ACD-0F779BD1FC2E
+    EventName=XJIMP
+    Caption=Importar Contas Pagas Manager
+    Description=Importar Contas Pagas Manager
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15008
+    
+    CONTROL=MENUITEM
+    GUID=C8BE8B52-96B9-4CA8-A007-1D91CC561488
+    EventName=XJBD01
+    Caption=Cadastro Contatos
+    Description=Cadastro Contatos
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15009
+    
+    CONTROL=MENUITEM
+    GUID=FA41A759-F20A-429E-9CAB-BBD4996EFCB3
+    EventName=XJBE01
+    Caption=Cadastro Itens
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15010
+    
+    CONTROL=MENUITEM
+    GUID=854CCD9E-81FD-4693-A1C9-DA1DD6C5110E
+    EventName=XJBF01
+    Caption=Compra Itens
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15011
+    
+    CONTROL=MENUITEM
+    GUID=917EC0FC-FF73-4A66-8B84-76323EE5CF8E
+    Caption=---------------------------------
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15012
+    
+    CONTROL=MENUITEM
+    GUID=42F8A0AD-5785-4B91-9183-09315EE22DD2
+    EventName=SAYCOM
+    Caption=Trocar Competencia
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15013
+    
+    CONTROL=MENUITEM
+    GUID=CA475A5F-F098-4994-8061-47EB632471B6
+    EventName=XINDEXAR
+    Caption=Indexar
+    Description=Indexar
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15014
+    
+    CONTROL=MENUITEM
+    GUID=FCC466DF-95D3-44A4-99BA-8341F6905FCE
+    EventName=FilePrinterSetup
+    Caption=C&onfigurar Impressora ..
+    Description=Configurar as Opções da Impressora
+    HelpContext=File_Printer_Setup
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15015
+    
+    CONTROL=MENUITEM
+    GUID=013EDC86-AAB7-4552-A6D7-62FD901F55DF
+    EventName=FileExit
+    Caption=&Sair
+    Description=Encerrar a Aplicação
+    HelpContext=File_Exit
+    Accelerator=Alt+F4
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15016
+ 
+ SUBCONTROLSEND
+  
+  CONTROL=MENUITEM
+  GUID=E049944D-9FA8-40B1-B2CF-7E24519075C9
+  EventName=XWRPTBCO
+  Caption=&Relatorios
+  Description=Relatorios
+  Enabled=Yes
+  Checked=No
+  ButtonBmp=Print
+  ButtonCaption=Print
+  ButtonToolTip=Print
+  ButtonPos=1
+  MenuID=15017
+  SUBCONTROLSSTART
+    
+    CONTROL=MENUITEM
+    GUID=64B3974C-0449-4D68-81EC-96BDF670CA7C
+    EventName=XWRPTBCO
+    Caption=Controle Bancario Banco
+    Description=Banco
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15018
+    
+    CONTROL=MENUITEM
+    GUID=3604EBEC-9041-4828-93E9-DBBC65D1B4F8
+    EventName=XWRPTMF
+    Caption=Bancos/Contas
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15019
+    
+    CONTROL=MENUITEM
+    GUID=7B39EB83-44EA-4FBD-B84E-93B80A803F19
+    EventName=XWRPTMI
+    Caption=Cod.Despesas/Historico
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15020
+    
+    CONTROL=MENUITEM
+    GUID=FFF74BE7-1A00-4F30-8C6E-5C1CF26070D4
+    EventName=XWRPT
+    Caption=WRPT
+    Description=Relatorios Gerais
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15021
+    
+    CONTROL=MENUITEM
+    GUID=2C7C79AA-4023-40C6-8B6F-8BC023D17CD2
+    EventName=XWRPTBCOI
+    Caption=Controle Bancario Integrado
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15022
+    
+    CONTROL=MENUITEM
+    GUID=443F2D20-94AD-4EBD-A4EA-597F24D9385D
+    EventName=XWRPTI
+    Caption=WRPT Integrado
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15023
+    
+    CONTROL=MENUITEM
+    GUID=7B21A019-5DAB-4EF6-B0BF-5CC12D58ECB9
+    EventName=LSTVIEW
+    Caption=LST Logix
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15024
+ 
+ SUBCONTROLSEND
+  
+  CONTROL=MENUITEM
+  GUID=2D5F4CA8-A198-4EE0-8A38-6471CAED0943
+  Caption=Utilitarios
+  Description=Utilitarios
+  Enabled=Yes
+  Checked=No
+  ButtonPos=-1
+  MenuID=15025
+  SUBCONTROLSSTART
+    
+    CONTROL=MENUITEM
+    GUID=F296BE98-9B03-4153-8E7F-48CDBF80573D
+    Caption=Email
+    Description=Email
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15026
+    SUBCONTROLSSTART
+      
+      CONTROL=MENUITEM
+      GUID=B1184310-A38A-46E5-8A86-61D416B2B886
+      EventName=XJMAIL
+      Caption=Consulta
+      Description=Consulta email
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      MenuID=15027
+      
+      CONTROL=MENUITEM
+      GUID=298BC6DE-D5F7-4935-B2A6-FE94D6C4B5D1
+      EventName=XJMAILGER
+      Caption=Geral
+      Description=GEral
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      MenuID=15028
+      
+      CONTROL=MENUITEM
+      GUID=D7D90475-91FF-4432-A903-99075822AC76
+      EventName=XJMAILCFG
+      Caption=Configurar
+      Description=Configurar Email
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      MenuID=15029
+  
+  SUBCONTROLSEND
+    
+    CONTROL=MENUITEM
+    GUID=CD001B74-2E90-4E2B-A931-E76F008E2FCF
+    EventName=JCHECK
+    Caption=Checar CGC/CPF/IE..
+    Description=Checar CGC/CPF/IE...
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15030
+ 
+ SUBCONTROLSEND
+  
+  CONTROL=MENUITEM
+  GUID=495FC6BA-855C-4BA3-9933-975BDEF79A1E
+  EventName=Help
+  Caption=&?
+  Description=Ajuda
+  Enabled=Yes
+  Checked=No
+  ButtonPos=-1
+  MenuID=15031
+  SUBCONTROLSSTART
+    
+    CONTROL=MENUITEM
+    GUID=FA3EF481-3201-44BF-B8C2-35D41CAC34FE
+    EventName=HelpCont
+    Caption=&Conteúdo
+    Description=Conteudo
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15032
+    
+    CONTROL=MENUITEM
+    GUID=8181A9F3-7CCD-4E7A-AC82-AE3CF204FF35
+    EventName=HelpIndex
+    Caption=&Indice
+    Description=Índice da Ajuda
+    HelpContext=Help_Index
+    Accelerator=F1
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15033
+    
+    CONTROL=MENUITEM
+    GUID=04BA35D3-6BB5-424D-8C8D-7CD75547C3C5
+    Caption=-------------------------
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15034
+    
+    CONTROL=MENUITEM
+    GUID=C2971274-A4B0-495E-A31C-0BB68C86892A
+    EventName=XVERSAO
+    Caption=Atualizacoes
+    Description=Atualizacoes
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    MenuID=15035
+    
+    CONTROL=MENUITEM
+    GUID=B9D188D3-A54D-4DFA-879E-B1FD82D36AF0
+    EventName=HelpAboutDialog
+    Caption=&Sobre...
+    Description=Sobre a Aplicação
+    Enabled=Yes
+    Checked=No
+    ButtonCaption=(Separator)
+    ButtonToolTip=(Separator)
+    ButtonPos=-1
+    MenuID=15036
+ 
+ SUBCONTROLSEND
+
+SUBCONTROLSEND
+DESIGNEREND = EMPTYSHELLMENU
+
+

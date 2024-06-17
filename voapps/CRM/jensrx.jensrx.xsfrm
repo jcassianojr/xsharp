@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="jensrx">
+    <Window Name="jensrx">
+      <Name>jensrx</Name>
+      <Class>DATADIALOG</Class>
+      <Caption>Checagem Certificado</Caption>
+      <Order>0</Order>
+      <Left>16</Left>
+      <Top>16</Top>
+      <Width>659</Width>
+      <Height>240</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checagem Certificado",,</HyperLabel>
+        <HyperLabel>#jensrx,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="jensr">
+      <Name>jensr</Name>
+      <Class>SUBDATAWINDOW</Class>
+      <Caption>jensr</Caption>
+      <Order>1</Order>
+      <Left>22</Left>
+      <Top>14</Top>
+      <Width>519</Width>
+      <Height>140</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>Yes</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#jensr,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText10">
+      <Name>theFixedText10</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>OK</Caption>
+      <Order>2</Order>
+      <Left>465</Left>
+      <Top>209</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"OK",,</HyperLabel>
+        <HyperLabel>#theFixedText10,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="OK">
+      <Name>OK</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>465</Left>
+      <Top>161</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#OK,,,</HyperLabel>
+        <Image>ICO_OK</Image>
+        <TooltipText>"Clique aqui Par Confirmar"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText9">
+      <Name>theFixedText9</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Retornar</Caption>
+      <Order>4</Order>
+      <Left>393</Left>
+      <Top>209</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Retornar",,</HyperLabel>
+        <HyperLabel>#theFixedText9,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Cancelar">
+      <Name>Cancelar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>393</Left>
+      <Top>161</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Cancelar,,,</HyperLabel>
+        <Image>ICO_SAIR</Image>
+        <TooltipText>"Clique aqui Para Cancelar"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="cmdcert">
+      <Name>cmdcert</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Conforme Certificado</Caption>
+      <Order>6</Order>
+      <Left>545</Left>
+      <Top>41</Top>
+      <Width>99</Width>
+      <Height>27</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073750016</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Conforme Certificado",,</HyperLabel>
+        <HyperLabel>#cmdcert,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JME01">
+    <Window Name="JME01">
+      <Name>JME01</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Cadastro de Maquinas e Equipamentos</Caption>
+      <Order>0</Order>
+      <Left>62</Left>
+      <Top>62</Top>
+      <Width>710</Width>
+      <Height>648</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Cadastro de Maquinas e Equipamentos",,</HyperLabel>
+        <HyperLabel>#JME01,,,</HyperLabel>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <ClipperKeys>True</ClipperKeys>
+        <ViewAs>#FormView</ViewAs>
+        <InheritClassName>MYDataWindow</InheritClassName>
+      </ExProperties>
+    </Window>
+    <Control Name="SC_FERRAM">
+      <Name>SC_FERRAM</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Codigo:</Caption>
+      <Order>1</Order>
+      <Left>13</Left>
+      <Top>9</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>#SC_FERRAM,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="NOME">
+      <Name>NOME</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>21</Order>
+      <Left>285</Left>
+      <Top>29</Top>
+      <Width>396</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>18</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1216348288</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_40</FieldSpec>
+        <HyperLabel>#NOME,,,</HyperLabel>
+        <HyperLabel>,"Nome:",,</HyperLabel>
+        <HyperLabel>,,,"ME01_NOME"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_NOME">
+      <Name>SC_NOME</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Descriçao:</Caption>
+      <Order>22</Order>
+      <Left>281</Left>
+      <Top>13</Top>
+      <Width>82</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Descriçao:",,</HyperLabel>
+        <HyperLabel>#SC_NOME,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="NUMERO">
+      <Name>NUMERO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>26</Order>
+      <Left>9</Left>
+      <Top>25</Top>
+      <Width>84</Width>
+      <Height>24</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>14</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1216350336</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_04</FieldSpec>
+        <HyperLabel>#NUMERO,,,</HyperLabel>
+        <HyperLabel>,"Numero",,</HyperLabel>
+        <HyperLabel>,,,"ME01_NUMERO"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>12:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_FERRAM1">
+      <Name>SC_FERRAM1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Fabricante</Caption>
+      <Order>50</Order>
+      <Left>169</Left>
+      <Top>9</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Fabricante",,</HyperLabel>
+        <HyperLabel>#SC_FERRAM1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FABRICANTE">
+      <Name>FABRICANTE</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>51</Order>
+      <Left>169</Left>
+      <Top>29</Top>
+      <Width>112</Width>
+      <Height>20</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>28</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1216350336</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_20</FieldSpec>
+        <HyperLabel>#FABRICANTE,,,</HyperLabel>
+        <HyperLabel>,"Ferram:",,</HyperLabel>
+        <HyperLabel>,,,"ME01_NUMERO"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="TABME01">
+      <Name>TABME01</Name>
+      <Class>TABCONTROL</Class>
+      <Caption>
+      </Caption>
+      <Order>52</Order>
+      <Left>13</Left>
+      <Top>61</Top>
+      <Width>656</Width>
+      <Height>424</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#TABME01,,,</HyperLabel>
+      </ExProperties>
+      <TabPages>
+        <TabPage Name="TABME01">
+          <Name>TABME01</Name>
+          <Caption>Basico</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TABME01_Page2">
+          <Name>TABME01_Page2</Name>
+          <Caption>Preventiva/VidaUtil</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TABME01_Page3">
+          <Name>TABME01_Page3</Name>
+          <Caption>Dimensões/Elaborador</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+      </TabPages>
+    </Control>
+    <Control Name="busca">
+      <Name>busca</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>53</Order>
+      <Left>101</Left>
+      <Top>17</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ICO_FIND</Image>
+        <HyperLabel>#busca,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="ordem">
+      <Name>ordem</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>54</Order>
+      <Left>133</Left>
+      <Top>17</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_az</Image>
+        <HyperLabel>#ordem,,,</HyperLabel>
+        <TooltipText>"Ordenar Por Numero"</TooltipText>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JRIFFEC">
+    <Window Name="JRIFFEC">
+      <Name>JRIFFEC</Name>
+      <Class>DATADIALOG</Class>
+      <Caption>Fechamento RIF</Caption>
+      <Order>0</Order>
+      <Left>26</Left>
+      <Top>26</Top>
+      <Width>371</Width>
+      <Height>144</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Fechamento RIF",,</HyperLabel>
+        <HyperLabel>#JRIFFEC,,,</HyperLabel>
+        <ClipperKeys>True</ClipperKeys>
+        <Use>&lt;Share Owner's&gt;</Use>
+      </ExProperties>
+    </Window>
+    <Control Name="RadioButton2">
+      <Name>RadioButton2</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Reprovado</Caption>
+      <Order>1</Order>
+      <Left>138</Left>
+      <Top>57</Top>
+      <Width>92</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Reprovado",,</HyperLabel>
+        <Value>R</Value>
+        <HyperLabel>#RadioButton2,,,</HyperLabel>
+        <TooltipText>"Marcar RIF Com Reprovado"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton1">
+      <Name>RadioButton1</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Aprovado</Caption>
+      <Order>2</Order>
+      <Left>56</Left>
+      <Top>57</Top>
+      <Width>71</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Aprovado",,</HyperLabel>
+        <Value>A</Value>
+        <HyperLabel>#RadioButton1,,,</HyperLabel>
+        <TooltipText>"Marcar RIF Com Aprovado"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Laudo">
+      <Name>Laudo</Name>
+      <Class>RADIOBUTTONGROUP</Class>
+      <Caption>Laudo</Caption>
+      <Order>3</Order>
+      <Left>45</Left>
+      <Top>41</Top>
+      <Width>195</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073872903</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Laudo",,</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_01</FieldSpec>
+        <HyperLabel>#Laudo,,,</HyperLabel>
+        <TooltipText>"Resultado do Laudo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText10">
+      <Name>theFixedText10</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>OK</Caption>
+      <Order>4</Order>
+      <Left>269</Left>
+      <Top>93</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"OK",,</HyperLabel>
+        <HyperLabel>#theFixedText10,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="OKx">
+      <Name>OKx</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>269</Left>
+      <Top>45</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#OKx,,,</HyperLabel>
+        <Image>ico_ok</Image>
+        <TooltipText>"Clique Para Concluir"</TooltipText>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

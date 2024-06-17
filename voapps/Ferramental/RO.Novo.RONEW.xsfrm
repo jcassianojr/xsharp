@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="RONEW">
+    <Window Name="RONEW">
+      <Name>RONEW</Name>
+      <Class>DIALOGWINDOW</Class>
+      <Caption>Novo Registro Ocorrencia</Caption>
+      <Order>0</Order>
+      <Left>42</Left>
+      <Top>42</Top>
+      <Width>412</Width>
+      <Height>240</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>2160590976</Styles>
+      <ExStyles>257</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Novo Registro Ocorrencia",,</HyperLabel>
+        <HyperLabel>#RONEW,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="theFixedText10">
+      <Name>theFixedText10</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>OK</Caption>
+      <Order>4</Order>
+      <Left>321</Left>
+      <Top>65</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"OK",,</HyperLabel>
+        <HyperLabel>#theFixedText10,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="cmd01">
+      <Name>cmd01</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>321</Left>
+      <Top>13</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741888</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#cmd01,,,</HyperLabel>
+        <Image>ico_ok</Image>
+        <TooltipText>"Cria o Registro Ocorrencia"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText9">
+      <Name>theFixedText9</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Retornar</Caption>
+      <Order>6</Order>
+      <Left>321</Left>
+      <Top>149</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Retornar",,</HyperLabel>
+        <HyperLabel>#theFixedText9,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="cmd02">
+      <Name>cmd02</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>321</Left>
+      <Top>101</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741888</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#cmd02,,,</HyperLabel>
+        <Image>ico_sair</Image>
+        <TooltipText>"Retornar Sem Criar o Registro Ocorrencia"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Escme01">
+      <Name>Escme01</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>M...</Caption>
+      <Order>8</Order>
+      <Left>129</Left>
+      <Top>89</Top>
+      <Width>24</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"M...",,</HyperLabel>
+        <HyperLabel>#Escme01,,,</HyperLabel>
+        <TooltipText>"Escolher Uma Maquina/Equipamento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Escfer">
+      <Name>Escfer</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>F...</Caption>
+      <Order>9</Order>
+      <Left>245</Left>
+      <Top>89</Top>
+      <Width>20</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"F...",,</HyperLabel>
+        <HyperLabel>#Escfer,,,</HyperLabel>
+        <TooltipText>"Escolher Uma Ferramenta"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="TIPO">
+      <Name>TIPO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>17</Left>
+      <Top>89</Top>
+      <Width>28</Width>
+      <Height>24</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1216350336</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#TIPO,,,</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>12:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="tipofer">
+      <Name>tipofer</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>F</Caption>
+      <Order>11</Order>
+      <Left>225</Left>
+      <Top>89</Top>
+      <Width>20</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"F",,</HyperLabel>
+        <HyperLabel>#tipofer,,,</HyperLabel>
+        <TooltipText>"Marca Tipo FerramentaF"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="tipom">
+      <Name>tipom</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>M</Caption>
+      <Order>12</Order>
+      <Left>105</Left>
+      <Top>89</Top>
+      <Width>24</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"M",,</HyperLabel>
+        <HyperLabel>#tipom,,,</HyperLabel>
+        <TooltipText>"Marca Tipo M Maquina/Equipamento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText13">
+      <Name>FixedText13</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>(M)áquina</Caption>
+      <Order>13</Order>
+      <Left>49</Left>
+      <Top>89</Top>
+      <Width>56</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Máquina",,</HyperLabel>
+        <HyperLabel>#FixedText13,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="GroupBox1">
+      <Name>GroupBox1</Name>
+      <Class>GROUPBOX</Class>
+      <Caption>Codigo</Caption>
+      <Order>14</Order>
+      <Left>9</Left>
+      <Top>73</Top>
+      <Width>268</Width>
+      <Height>72</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073872903</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Codigo",,</HyperLabel>
+        <HyperLabel>#GroupBox1,,,</HyperLabel>
+        <TooltipText>"Origem da Ocorrencia"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText14">
+      <Name>FixedText14</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>(F)erramenta</Caption>
+      <Order>15</Order>
+      <Left>157</Left>
+      <Top>89</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ferramenta",,</HyperLabel>
+        <HyperLabel>#FixedText14,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Text1">
+      <Name>Text1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Digite o Numero da SM:</Caption>
+      <Order>-1</Order>
+      <Left>13</Left>
+      <Top>13</Top>
+      <Width>138</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Digite o Numero da SM:",,</HyperLabel>
+        <HyperLabel>#Text1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="nSM">
+      <Name>nSM</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>-1</Order>
+      <Left>149</Left>
+      <Top>21</Top>
+      <Width>123</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#nSM,,,</HyperLabel>
+        <TooltipText>"Numero da Solicitacao de Manutençao"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText1">
+      <Name>theFixedText1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>ou Codigo Maquina/Ferramenta para Preventiva</Caption>
+      <Order>-1</Order>
+      <Left>9</Left>
+      <Top>29</Top>
+      <Width>136</Width>
+      <Height>44</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"ou Codigo Maquina/Ferramenta para Preventiva",,</HyperLabel>
+        <HyperLabel>#theFixedText1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="cFERRAM">
+      <Name>cFERRAM</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>-1</Order>
+      <Left>85</Left>
+      <Top>117</Top>
+      <Width>123</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#cFERRAM,,,</HyperLabel>
+        <TooltipText>"Codigo da Ferramenta/Maquina Equipamento"</TooltipText>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

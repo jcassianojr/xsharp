@@ -1,0 +1,594 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JFO_RELHR
+GUID=7E20DD89-B181-4A26-8107-E1A96E2C8A8A
+  Name=JFO_RELHR
+  Class=DATAWINDOW
+  Caption=Funcionarios/Horarios
+  Order=0
+  Left=58
+  Width=662
+  Top=58
+  Height=430
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Funcionarios/Horarios",,
+  Property=HyperLabel=#JFO_RELHR,,,
+  Property=ViewAs=#FormView
+  Property=ClipperKeys=True
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=4FEF9936-0296-4F29-A889-0E5D67AFAE4F
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero:
+  Order=1
+  Left=5
+  Width=48
+  Top=11
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=FIXEDTEXT
+GUID=61CE6069-5B95-41C4-B6B1-D2804E80EAFB
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=2
+  Left=170
+  Width=36
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=2474DC7D-E0B3-4BA8-8336-60C8065A263F
+  Name=SC_HFOL00
+  Class=FIXEDTEXT
+  Caption=Escala
+  Order=3
+  Left=13
+  Width=56
+  Top=166
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escala",,
+  Property=HyperLabel=#SC_HFOL00,,,
+
+CONTROL=FIXEDTEXT
+GUID=B5C3BB38-82F1-46EC-A982-7CBD9221FBAC
+  Name=SC_GRUPO
+  Class=FIXEDTEXT
+  Caption=Codigo Escala
+  Order=4
+  Left=196
+  Width=99
+  Top=189
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo Escala",,
+  Property=HyperLabel=#SC_GRUPO,,,
+
+CONTROL=FIXEDTEXT
+GUID=10B25784-4DD8-4FA3-BE88-55461F305918
+  Name=SC_ALMOCO
+  Class=FIXEDTEXT
+  Caption=Almoco:
+  Order=5
+  Left=170
+  Width=50
+  Top=123
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Almoco:",,
+  Property=HyperLabel=#SC_ALMOCO,,,
+
+CONTROL=FIXEDTEXT
+GUID=5AE57CBA-F509-4649-9201-A8B9D77D874B
+  Name=SC_HORREF
+  Class=FIXEDTEXT
+  Caption=Horario Referencia
+  Order=7
+  Left=194
+  Width=123
+  Top=162
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Horario Referencia",,
+  Property=HyperLabel=#SC_HORREF,,,
+
+CONTROL=FIXEDTEXT
+GUID=66E3C3E6-C954-486F-96D7-9F825CC743B8
+  Name=SC_MARALM
+  Class=FIXEDTEXT
+  Caption=Marca Amoço
+  Order=8
+  Left=14
+  Width=72
+  Top=123
+  Height=37
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Marca Amoço",,
+  Property=HyperLabel=#SC_MARALM,,,
+
+CONTROL=FIXEDTEXT
+GUID=8D78A448-77E4-499F-935F-74EA10059EFD
+  Name=SC_MARMES
+  Class=FIXEDTEXT
+  Caption=Controla Ponto
+  Order=9
+  Left=12
+  Width=90
+  Top=51
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Controla Ponto",,
+  Property=HyperLabel=#SC_MARMES,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=9DA12C6A-1FF4-4FE4-8E71-A330DF4D62D3
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=57
+  Width=68
+  Top=5
+  Height=20
+  Browseindex=0
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"FO_RELHR_NUMERO"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=A13773D5-ECE0-4338-84BB-40A58278B9D7
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=213
+  Width=242
+  Top=6
+  Height=20
+  Browseindex=1
+  Browsesize=22
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_30
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"FO_RELHR_NOME"
+
+CONTROL=SINGLELINEEDIT
+GUID=BF53A0C0-793C-48E2-B481-ED73BB4B047F
+  Name=HFOL00
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=78
+  Width=26
+  Top=165
+  Height=23
+  Browseindex=2
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#HFOL00,,,
+  Property=HyperLabel=,"Escala",,
+  Property=HyperLabel=,,,"FO_RELHR_HFOL00"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=E1968059-AE4C-438E-87B7-8049F9151BEB
+  Name=GRUPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=320
+  Width=44
+  Top=189
+  Height=22
+  Browseindex=3
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#GRUPO,,,
+  Property=HyperLabel=,"CodEsc",,
+  Property=HyperLabel=,,,"FO_RELHR_GRUPO"
+
+CONTROL=SINGLELINEEDIT
+GUID=B6909B14-875B-47AB-9CE8-7AAC7E0B346F
+  Name=ALMOCO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=222
+  Width=24
+  Top=123
+  Height=20
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#ALMOCO,,,
+  Property=HyperLabel=,"Almoco:",,
+  Property=HyperLabel=,,,"FO_RELHR_ALMOCO"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=78C3832E-C13F-4B24-BC2F-5A2F4C2D0EE0
+  Name=PADRAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=329
+  Width=24
+  Top=29
+  Height=20
+  Browseindex=8
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=1
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#PADRAO,,,
+  Property=HyperLabel=,"Padrao:",,
+  Property=HyperLabel=,,,"FO_RELHR_PADRAO"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=01C5F997-000C-44AC-B7D7-A3D0E77E4FAF
+  Name=HORREF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=321
+  Width=36
+  Top=161
+  Height=20
+  Browseindex=6
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#HORREF,,,
+  Property=HyperLabel=,"Horref:",,
+  Property=HyperLabel=,,,"FO_RELHR_HORREF"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=8B57D92E-98B5-4D8F-9A85-F6AA8FB32C5C
+  Name=MARALM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=77
+  Width=27
+  Top=123
+  Height=25
+  Browseindex=4
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#MARALM,,,
+  Property=HyperLabel=,"MarcaAlm",,
+  Property=HyperLabel=,,,"FO_RELHR_MARALM"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=44D84744-F579-472C-AE94-DE3A43CDB0F3
+  Name=MARMES
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=127
+  Width=24
+  Top=51
+  Height=20
+  Browseindex=7
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216348288
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#MARMES,,,
+  Property=HyperLabel=,"Inicia",,
+  Property=HyperLabel=,,,"FO_RELHR_MARMES"
+  Property=Background=255 255 200
+
+CONTROL=PUSHBUTTON
+GUID=947321F6-BF73-444A-81C7-15C89A4D3BA3
+  Name=buscaNUM
+  Class=PUSHBUTTON
+  Caption=
+  Order=19
+  Left=464
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaNUM,,,
+  Property=TooltipText="Localizar"
+
+CONTROL=PUSHBUTTON
+GUID=D9EAAD04-197C-4AB9-9212-D763A4B38DE2
+  Name=escFUN
+  Class=PUSHBUTTON
+  Caption=...
+  Order=20
+  Left=129
+  Width=23
+  Top=1
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#escFUN,,,
+
+CONTROL=PUSHBUTTON
+GUID=005FAF78-C79E-47BD-9DAE-F0BFAC38CBEE
+  Name=pegnome
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=21
+  Left=129
+  Width=23
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#pegnome,,,
+
+CONTROL=PUSHBUTTON
+GUID=4447C721-44F3-4004-A9C7-15729D329980
+  Name=cmdALM
+  Class=PUSHBUTTON
+  Caption=Faixa ABCDE
+  Order=111
+  Left=312
+  Width=96
+  Top=120
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Faixa ABCDE",,
+  Property=HyperLabel=#cmdALM,,,
+
+CONTROL=PUSHBUTTON
+GUID=FA3E013E-FCC5-4019-8B68-3AA76BD80D61
+  Name=cmdmaralm
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=112
+  Left=108
+  Width=63
+  Top=123
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdmaralm,,,
+
+CONTROL=PUSHBUTTON
+GUID=78FC557F-AAF0-47F9-88CB-8EC31A148F32
+  Name=cmdini
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=113
+  Left=159
+  Width=66
+  Top=52
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdini,,,
+
+CONTROL=PUSHBUTTON
+GUID=509C8B74-7A6D-4291-97D2-6E4800A0460D
+  Name=cmdesc
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=115
+  Left=109
+  Width=66
+  Top=164
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdesc,,,
+
+CONTROL=PUSHBUTTON
+GUID=CC9A150C-E8E0-4737-A5AB-5C1667624B5F
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=116
+  Left=365
+  Width=23
+  Top=163
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+
+CONTROL=PUSHBUTTON
+GUID=9D76EC27-3F9E-4C3E-B333-9FFD4263BE4E
+  Name=cmdordenar
+  Class=PUSHBUTTON
+  Caption=
+  Order=117
+  Left=499
+  Width=32
+  Top=6
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#cmdordenar,,,
+
+CONTROL=PUSHBUTTON
+GUID=7ADE39F1-6C52-4D33-9EAC-ACF574EF04FB
+  Name=cmdpad1
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=118
+  Left=250
+  Width=57
+  Top=120
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdpad1,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JFO_RELHR
+

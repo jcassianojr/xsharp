@@ -1,0 +1,537 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JPtoHor
+GUID=71DEDE3B-5ED5-48D2-B4CF-9E72404FAA1C
+  Name=JPtoHor
+  Class=DATAWINDOW
+  Caption=Horarios Escalas / Ajustes
+  Order=0
+  Left=32
+  Width=501
+  Top=32
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Horarios Escalas / Ajustes",,
+  Property=ViewAs=#FormView
+  Property=HyperLabel=#JPtoHor,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ClipperKeys=True
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=7642BB45-7D8C-4E82-A32A-3764F64445D3
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=1
+  Left=13
+  Width=47
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=9B818F42-1D6C-459F-960C-680ED42C7BEB
+  Name=SC_ENT
+  Class=FIXEDTEXT
+  Caption=Ent:
+  Order=2
+  Left=21
+  Width=24
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ent:",,
+  Property=HyperLabel=#SC_ENT,,,
+
+CONTROL=FIXEDTEXT
+GUID=2893003D-E0DF-4A01-8424-AB40CA6AC255
+  Name=SC_ALMI
+  Class=FIXEDTEXT
+  Caption=Almoco
+  Order=3
+  Left=93
+  Width=52
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Almoco",,
+  Property=HyperLabel=#SC_ALMI,,,
+
+CONTROL=FIXEDTEXT
+GUID=7A53415E-8679-4D55-8593-D6A4F11944E5
+  Name=SC_SAI
+  Class=FIXEDTEXT
+  Caption=Sai:
+  Order=5
+  Left=201
+  Width=24
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Sai:",,
+  Property=HyperLabel=#SC_SAI,,,
+
+CONTROL=FIXEDTEXT
+GUID=6A6E2833-0CF1-4866-A470-D816BFE4D31B
+  Name=SC_VIRADA
+  Class=FIXEDTEXT
+  Caption=Virada:
+  Order=6
+  Left=261
+  Width=36
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Virada:",,
+  Property=HyperLabel=#SC_VIRADA,,,
+
+CONTROL=FIXEDTEXT
+GUID=CB876DBB-C2CA-4A81-ACF2-BB3F61C0F6C7
+  Name=SC_CODAJU
+  Class=FIXEDTEXT
+  Caption=Codigo Ajuste
+  Order=7
+  Left=21
+  Width=72
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo Ajuste",,
+  Property=HyperLabel=#SC_CODAJU,,,
+
+CONTROL=FIXEDTEXT
+GUID=DBC93CA1-BD60-4030-8020-DD01BA8ED756
+  Name=SC_FORMAJU
+  Class=FIXEDTEXT
+  Caption=Formula Ajuste
+  Order=8
+  Left=101
+  Width=84
+  Top=81
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Formula Ajuste",,
+  Property=HyperLabel=#SC_FORMAJU,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=02F1A0AF-3C19-4B2C-B03F-D0E0AE118EE5
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=65
+  Width=50
+  Top=8
+  Height=28
+  Browseindex=0
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"FOPTOHOR_CODIGO"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=2856AAD0-D4B8-4837-B8F7-5D8B2CC7875F
+  Name=ENT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=21
+  Width=56
+  Top=53
+  Height=20
+  Browseindex=1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#ENT,,,
+  Property=HyperLabel=,"Ent:",,
+  Property=HyperLabel=,,,"FOPTOHOR_ENT"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=5D70D6E2-69C0-4C11-823A-02686854DEB1
+  Name=ALMI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=81
+  Width=56
+  Top=53
+  Height=20
+  Browseindex=2
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#ALMI,,,
+  Property=HyperLabel=,"Almi:",,
+  Property=HyperLabel=,,,"FOPTOHOR_ALMI"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=F1CF8B99-C09F-4862-A3AB-3C0BE9BC7AE7
+  Name=ALMF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=137
+  Width=56
+  Top=53
+  Height=20
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#ALMF,,,
+  Property=HyperLabel=,"Almf:",,
+  Property=HyperLabel=,,,"FOPTOHOR_ALMF"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=4EB4A608-508C-4E28-A85F-0D6D32980477
+  Name=SAI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=197
+  Width=56
+  Top=53
+  Height=20
+  Browseindex=4
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#SAI,,,
+  Property=HyperLabel=,"Sai:",,
+  Property=HyperLabel=,,,"FOPTOHOR_SAI"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=397E7670-46DC-4248-AF4E-AF35831EF4A1
+  Name=VIRADA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=261
+  Width=24
+  Top=53
+  Height=20
+  Browseindex=2
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#VIRADA,,,
+  Property=HyperLabel=,"Virada:",,
+  Property=HyperLabel=,,,"FOPTOHOR_VIRADA"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=1F303557-6E96-4AE3-BCF9-4641A28DA5EC
+  Name=CODAJU
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=21
+  Width=36
+  Top=101
+  Height=20
+  Browseindex=1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#CODAJU,,,
+  Property=HyperLabel=,"Codaju:",,
+  Property=HyperLabel=,,,"FOPTOHOR_CODAJU"
+
+CONTROL=SINGLELINEEDIT
+GUID=AD57A753-DE47-4026-A9FD-B02170162E3C
+  Name=FORMAJU
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=93
+  Width=400
+  Top=101
+  Height=20
+  Browseindex=0
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_60
+  Property=HyperLabel=#FORMAJU,,,
+  Property=HyperLabel=,"Formaju:",,
+  Property=HyperLabel=,,,"FOPTOHOR_FORMAJU"
+
+CONTROL=PUSHBUTTON
+GUID=33DC8C3E-DA9F-4986-B646-A4EB05270489
+  Name=buscaNUM
+  Class=PUSHBUTTON
+  Caption=
+  Order=17
+  Left=430
+  Width=32
+  Top=44
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaNUM,,,
+  Property=TooltipText="Localizar"
+
+CONTROL=PUSHBUTTON
+GUID=F2C83630-6CC4-401A-888D-71D4C6D0E270
+  Name=cmdvir
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=18
+  Left=285
+  Width=56
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdvir,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=944BEFE6-5632-4112-B775-F153EDBD745E
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=193
+  Width=264
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_30
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Formaju:",,
+  Property=HyperLabel=,,,"FOPTOHOR_NOME"
+
+CONTROL=FIXEDTEXT
+GUID=61D29F6C-EC67-41A9-B708-0CCD19B99FCB
+  Name=SC_ALMI1
+  Class=FIXEDTEXT
+  Caption=Descritivo
+  Order=20
+  Left=119
+  Width=70
+  Top=8
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descritivo",,
+  Property=HyperLabel=#SC_ALMI1,,,
+
+CONTROL=PUSHBUTTON
+GUID=B90FED72-8CA9-4616-98C8-393DBE2A5860
+  Name=pegdes
+  Class=PUSHBUTTON
+  Caption=...
+  Order=21
+  Left=461
+  Width=31
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=TooltipText="Gera Descritivo com Bases Nos Horarios"
+  Property=HyperLabel=#pegdes,,,
+
+CONTROL=PUSHBUTTON
+GUID=D7598103-2144-4D5F-8040-6EF6F44558FE
+  Name=cmdordenar
+  Class=PUSHBUTTON
+  Caption=
+  Order=22
+  Left=460
+  Width=32
+  Top=44
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#cmdordenar,,,
+
+CONTROL=FIXEDTEXT
+GUID=ECBF0CCF-1EC9-4F40-9A8E-FB8306C0075A
+  Name=SC_FOLOCO
+  Class=FIXEDTEXT
+  Caption=Folga
+  Order=23
+  Left=346
+  Width=40
+  Top=34
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Folga",,
+  Property=HyperLabel=#SC_FOLOCO,,,
+
+CONTROL=PUSHBUTTON
+GUID=384E05F8-69C5-4E29-B691-23898137527F
+  Name=cmdfol
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=24
+  Left=370
+  Width=52
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdfol,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=FA5556DA-4211-4A96-B314-B38861B10C1E
+  Name=FOLGASN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=25
+  Left=346
+  Width=24
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#FOLGASN,,,
+  Property=HyperLabel=,"Folga",,
+  Property=HyperLabel=,,,"FO_PON_FOLSN"
+  Property=Background=255 255 200
+
+SUBCONTROLSEND
+DESIGNEREND = JPtoHor
+

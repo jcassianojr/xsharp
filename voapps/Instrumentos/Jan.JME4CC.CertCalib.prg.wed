@@ -1,0 +1,1160 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JME4CC
+GUID=F1EEB585-0441-4413-9D1E-1C4D5E507877
+  Name=JME4CC
+  Class=DATAWINDOW
+  Caption=Certificado de Calibraçao
+  Order=0
+  Left=84
+  Width=666
+  Top=84
+  Height=463
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Certificado de Calibraçao",,
+  Property=HyperLabel=#JME4CC,,,
+  Property=ViewAs=#FormView
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=E5C590F1-A394-472F-A745-6D122860D6C8
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero:
+  Order=1
+  Left=10
+  Width=44
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=FIXEDTEXT
+GUID=A214C72C-8ED2-4A22-9FEE-2F6F28BDACE5
+  Name=SC_DATA
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=2
+  Left=157
+  Width=32
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=#SC_DATA,,,
+
+CONTROL=FIXEDTEXT
+GUID=7C81E635-3A8B-490D-A4D9-BEDCD4B4596C
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo/Desenho
+  Order=3
+  Left=257
+  Width=120
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo/Desenho",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=B06EE153-562B-4064-BA9C-AB5F2C621218
+  Name=SC_DATAREV
+  Class=FIXEDTEXT
+  Caption=Data Revisão
+  Order=4
+  Left=445
+  Width=68
+  Top=9
+  Height=17
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data Revisão",,
+  Property=HyperLabel=#SC_DATAREV,,,
+
+CONTROL=FIXEDTEXT
+GUID=87D74090-C53E-43AB-A88F-40626D1C2F52
+  Name=SC_CODME04A
+  Class=FIXEDTEXT
+  Caption=Instrumento
+  Order=5
+  Left=9
+  Width=78
+  Top=52
+  Height=14
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Instrumento",,
+  Property=HyperLabel=#SC_CODME04A,,,
+
+CONTROL=FIXEDTEXT
+GUID=FD896697-3998-4A08-87CE-DACDCC271175
+  Name=SC_CODME04
+  Class=FIXEDTEXT
+  Caption=Equipamento Usado Calibraçao
+  Order=6
+  Left=10
+  Width=107
+  Top=88
+  Height=38
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Equipamento Usado Calibraçao",,
+  Property=HyperLabel=#SC_CODME04,,,
+
+CONTROL=FIXEDTEXT
+GUID=4875FCD0-5635-4EFB-AEC3-5951405F1CD1
+  Name=SC_TEMPER
+  Class=FIXEDTEXT
+  Caption=Temperatura:
+  Order=8
+  Left=134
+  Width=64
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Temperatura:",,
+  Property=HyperLabel=#SC_TEMPER,,,
+
+CONTROL=FIXEDTEXT
+GUID=ED58233B-7479-46A3-9E4F-DFAF689D8425
+  Name=SC_UMIDADE
+  Class=FIXEDTEXT
+  Caption=Umidade:
+  Order=9
+  Left=220
+  Width=48
+  Top=46
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Umidade:",,
+  Property=HyperLabel=#SC_UMIDADE,,,
+
+CONTROL=FIXEDTEXT
+GUID=FF55B998-2A8C-4D23-9B60-1770CE9A6E3E
+  Name=SC_LAUDOF
+  Class=FIXEDTEXT
+  Caption=Laudo
+  Order=10
+  Left=13
+  Width=32
+  Top=385
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Laudo",,
+  Property=HyperLabel=#SC_LAUDOF,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=8803B31C-7A7A-442D-95E7-8CD93CF7A8D6
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=6
+  Width=76
+  Top=24
+  Height=24
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"ME4CC_NUMERO"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=16F61D61-FEEB-42BB-8FCF-78A52F82C617
+  Name=DATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=149
+  Width=100
+  Top=25
+  Height=20
+  Browseindex=2
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DATA,,,
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=,,,"ME4CC_DATA"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=71A07662-69BE-4166-B4F6-6D76B9EB8205
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=254
+  Width=180
+  Top=25
+  Height=20
+  Browseindex=1
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"ME4CC_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=1FAF4833-121E-4E74-B187-33309C991EE9
+  Name=DATAREV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=445
+  Width=102
+  Top=25
+  Height=20
+  Browseindex=9
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DATAREV,,,
+  Property=HyperLabel=,"Datarev:",,
+  Property=HyperLabel=,,,"ME4CC_DATAREV"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=FE177A2B-39A4-49EE-B6CC-89DC73E7705B
+  Name=CODME04A
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=11
+  Width=68
+  Top=67
+  Height=20
+  Browseindex=3
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_08
+  Property=HyperLabel=#CODME04A,,,
+  Property=HyperLabel=,"Instrum.",,
+  Property=HyperLabel=,,,"ME4CC_CODME04A"
+
+CONTROL=SINGLELINEEDIT
+GUID=99E89FFF-1F1C-494C-8870-9E73428D2CC8
+  Name=CODME04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=128
+  Width=68
+  Top=89
+  Height=20
+  Browseindex=4
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_08
+  Property=HyperLabel=#CODME04,,,
+  Property=HyperLabel=,"Equipto",,
+  Property=HyperLabel=,,,"ME4CC_CODME04"
+
+CONTROL=SINGLELINEEDIT
+GUID=A2217ED9-66A8-4D54-B9D9-06D3C8B3C2D5
+  Name=NOMME04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=245
+  Width=224
+  Top=89
+  Height=20
+  Browseindex=5
+  Browsesize=25
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_30
+  Property=HyperLabel=#NOMME04,,,
+  Property=HyperLabel=,"NomeEquipto",,
+  Property=HyperLabel=,,,"ME4CC_NOMME04"
+
+CONTROL=SINGLELINEEDIT
+GUID=4956FB02-C020-4311-ABEE-4EA490BAEDA9
+  Name=TEMPER
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=129
+  Width=81
+  Top=66
+  Height=20
+  Browseindex=10
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_10
+  Property=HyperLabel=#TEMPER,,,
+  Property=HyperLabel=,"Temper:",,
+  Property=HyperLabel=,,,"ME4CC_TEMPER"
+
+CONTROL=SINGLELINEEDIT
+GUID=959FD960-6E85-47EF-B8F6-653D6BB3C01E
+  Name=UMIDADE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=217
+  Width=59
+  Top=66
+  Height=20
+  Browseindex=8
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_05
+  Property=HyperLabel=#UMIDADE,,,
+  Property=HyperLabel=,"Umidade:",,
+  Property=HyperLabel=,,,"ME4CC_UMIDADE"
+
+CONTROL=CHECKBOX
+GUID=42CB22AD-ABF5-4886-8AF7-924C8F1724F6
+  Name=NOVO
+  Class=CHECKBOX
+  Caption=Novo
+  Order=23
+  Left=13
+  Width=51
+  Top=118
+  Height=20
+  Browseindex=7
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Novo",,
+  Property=FieldSpec=logic_field
+  Property=HyperLabel=#NOVO,,,
+  Property=HyperLabel=,,,"ME4CC_NOVO"
+
+CONTROL=CHECKBOX
+GUID=EAD7A816-B0F8-490B-8B5A-0F1AEE229688
+  Name=SUJOEXT
+  Class=CHECKBOX
+  Caption=Sujo Externo
+  Order=24
+  Left=66
+  Width=90
+  Top=119
+  Height=20
+  Browseindex=6
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Sujo Externo",,
+  Property=FieldSpec=logic_field
+  Property=HyperLabel=#SUJOEXT,,,
+  Property=HyperLabel=,,,"ME4CC_SUJOEXT"
+
+CONTROL=CHECKBOX
+GUID=EAA7E8CE-06FC-4C92-997C-C9BFFC78DCDE
+  Name=SUJOINT
+  Class=CHECKBOX
+  Caption=Sujo Interno
+  Order=25
+  Left=154
+  Width=89
+  Top=119
+  Height=20
+  Browseindex=5
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Sujo Interno",,
+  Property=FieldSpec=logic_field
+  Property=HyperLabel=#SUJOINT,,,
+  Property=HyperLabel=,,,"ME4CC_SUJOINT"
+
+CONTROL=CHECKBOX
+GUID=24B7C91A-88CB-4B14-9338-D30306B4BBB2
+  Name=DANIFIC
+  Class=CHECKBOX
+  Caption=Danificado
+  Order=26
+  Left=244
+  Width=100
+  Top=119
+  Height=20
+  Browseindex=4
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Danificado",,
+  Property=FieldSpec=logic_field
+  Property=HyperLabel=#DANIFIC,,,
+  Property=HyperLabel=,,,"ME4CC_DANIFIC"
+
+CONTROL=SINGLELINEEDIT
+GUID=6F703A84-57D0-4BAF-BEFA-B40CB78B9FC9
+  Name=LAUDOF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=27
+  Left=49
+  Width=32
+  Top=385
+  Height=28
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#LAUDOF,,,
+  Property=HyperLabel=,"Laudof:",,
+  Property=HyperLabel=,,,"ME4CC_LAUDOF"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=27908CA0-7FA1-4473-8A07-85CC0AA5E0FE
+  Name=LAUDOD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=28
+  Left=162
+  Width=105
+  Top=389
+  Height=20
+  Browseindex=2
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#LAUDOD,,,
+  Property=HyperLabel=,"Laudod:",,
+  Property=HyperLabel=,,,"ME4CC_LAUDOD"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=C5F5122B-507E-4F6E-A515-ADC39524C08E
+  Name=NUMTEC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=29
+  Left=273
+  Width=68
+  Top=389
+  Height=20
+  Browseindex=1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NUMTEC,,,
+  Property=HyperLabel=,"Numtec:",,
+  Property=HyperLabel=,,,"ME4CC_NUMTEC"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=42CCBE05-A7B1-4210-9426-943D0E081083
+  Name=NOMTEC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=30
+  Left=341
+  Width=292
+  Top=389
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_40
+  Property=HyperLabel=#NOMTEC,,,
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=,,,"ME4CC_NOMTEC"
+
+CONTROL=SUBDATAWINDOW
+GUID=E5B92DA1-3CE6-4E91-92B7-87A6A4948D26
+  Name=JME4CCI
+  Class=SUBDATAWINDOW
+  Caption=JME4CCI
+  Order=31
+  Left=9
+  Width=537
+  Top=157
+  Height=204
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JME4CCI,,,
+
+CONTROL=PUSHBUTTON
+GUID=EBC9EEFE-7B8C-4458-8CA0-38D996C4748D
+  Name=Proximo
+  Class=PUSHBUTTON
+  Caption=
+  Order=32
+  Left=593
+  Width=36
+  Top=256
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Proximo,,,
+  Property=Image=ICO_NEXT
+
+CONTROL=PUSHBUTTON
+GUID=D6711285-443F-4EB6-A464-62551AC84DE5
+  Name=Anterior
+  Class=PUSHBUTTON
+  Caption=
+  Order=33
+  Left=550
+  Width=36
+  Top=256
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Anterior,,,
+  Property=Image=ICO_PREVIOUS
+
+CONTROL=PUSHBUTTON
+GUID=5C8CEE68-89EE-45D3-AAAE-9DAEAA3EEA5E
+  Name=Excluir
+  Class=PUSHBUTTON
+  Caption=Excluir
+  Order=34
+  Left=549
+  Width=80
+  Top=229
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Excluir",,
+  Property=HyperLabel=#Excluir,,,
+
+CONTROL=PUSHBUTTON
+GUID=0DC34972-E01A-4145-9589-8BB504484896
+  Name=Incluir
+  Class=PUSHBUTTON
+  Caption=Incluir
+  Order=35
+  Left=549
+  Width=80
+  Top=209
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Incluir",,
+  Property=HyperLabel=#Incluir,,,
+
+CONTROL=PUSHBUTTON
+GUID=97369CE1-AB5E-49FF-9CDB-2DE282A68916
+  Name=ALTERAR
+  Class=PUSHBUTTON
+  Caption=Alterar Itens
+  Order=36
+  Left=549
+  Width=80
+  Top=181
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Alterar Itens",,
+  Property=HyperLabel=#ALTERAR,,,
+
+CONTROL=PUSHBUTTON
+GUID=619D4940-E547-4F9E-81D4-77E338790693
+  Name=TABULAR
+  Class=PUSHBUTTON
+  Caption=Ver Itens
+  Order=37
+  Left=549
+  Width=80
+  Top=161
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ver Itens",,
+  Property=HyperLabel=#TABULAR,,,
+
+CONTROL=PUSHBUTTON
+GUID=ADFF8939-D1F3-4C93-BE40-544260120313
+  Name=LaudoSim
+  Class=PUSHBUTTON
+  Caption=LaudoSim
+  Order=38
+  Left=549
+  Width=80
+  Top=290
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"LaudoSim",,
+  Property=HyperLabel=#LaudoSim,,,
+
+CONTROL=PUSHBUTTON
+GUID=A515CF15-8579-4EBA-B2F1-45E6C9571B6C
+  Name=pegres
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=40
+  Left=369
+  Width=19
+  Top=369
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#pegres,,,
+
+CONTROL=PUSHBUTTON
+GUID=46709848-B87D-4490-B308-586746055B80
+  Name=escres
+  Class=PUSHBUTTON
+  Caption=...
+  Order=41
+  Left=345
+  Width=19
+  Top=369
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#escres,,,
+
+CONTROL=PUSHBUTTON
+GUID=D82B05F9-7347-4F8B-8A0D-98535ACDA6DF
+  Name=ESCTIP
+  Class=PUSHBUTTON
+  Caption=
+  Order=42
+  Left=83
+  Width=19
+  Top=67
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#ESCTIP,,,
+  Property=Image=ICO_FIND
+
+CONTROL=PUSHBUTTON
+GUID=50E9901E-486D-43A7-80A7-C7324C9CEC59
+  Name=ESCINS
+  Class=PUSHBUTTON
+  Caption=
+  Order=43
+  Left=200
+  Width=19
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#ESCINS,,,
+  Property=Image=ICO_FIND
+
+CONTROL=PUSHBUTTON
+GUID=BC7331FE-96B8-4ABD-ACFD-364CEF45C65B
+  Name=ediTIP
+  Class=PUSHBUTTON
+  Caption=E
+  Order=44
+  Left=105
+  Width=19
+  Top=66
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"E",,
+  Property=HyperLabel=#ediTIP,,,
+
+CONTROL=PUSHBUTTON
+GUID=6F371BD0-5EC6-4637-8656-5F41402298BC
+  Name=ediINS
+  Class=PUSHBUTTON
+  Caption=E
+  Order=45
+  Left=222
+  Width=19
+  Top=90
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"E",,
+  Property=HyperLabel=#ediINS,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=F68ECE6C-576C-4E17-A74C-3EEBD2FD29F6
+  Name=INSTRU
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=46
+  Left=392
+  Width=152
+  Top=66
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#INSTRU,,,
+  Property=HyperLabel=,"Umidade:",,
+  Property=HyperLabel=,,,"ME4CC_UMIDADE"
+
+CONTROL=FIXEDTEXT
+GUID=C53BFC08-D85C-4DC7-9F6A-C190C9F27CD3
+  Name=SC_UMIDADE1
+  Class=FIXEDTEXT
+  Caption=Instrução
+  Order=47
+  Left=393
+  Width=48
+  Top=49
+  Height=15
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Instrução",,
+  Property=HyperLabel=#SC_UMIDADE1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=8C430141-4821-419F-B28C-A25E8736A23F
+  Name=VALPAD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=48
+  Left=280
+  Width=104
+  Top=66
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#VALPAD,,,
+  Property=HyperLabel=,"Datarev:",,
+  Property=HyperLabel=,,,"ME4CC_DATAREV"
+  Property=InheritClassName=DateSle
+
+CONTROL=FIXEDTEXT
+GUID=635DA420-D14C-4ACC-9009-19ECAEEACA9C
+  Name=SC_DATAREV1
+  Class=FIXEDTEXT
+  Caption=Validade Padrão
+  Order=49
+  Left=284
+  Width=92
+  Top=50
+  Height=15
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Validade Padrão",,
+  Property=HyperLabel=#SC_DATAREV1,,,
+
+CONTROL=PUSHBUTTON
+GUID=D228D5BB-64D1-4A02-9DA7-37A08B8DA464
+  Name=LaudoNao
+  Class=PUSHBUTTON
+  Caption=LaudoNao
+  Order=50
+  Left=549
+  Width=80
+  Top=313
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"LaudoNao",,
+  Property=HyperLabel=#LaudoNao,,,
+
+CONTROL=PUSHBUTTON
+GUID=BEE8A8A1-B923-40C9-AF0F-E986EC66C469
+  Name=LaudNao
+  Class=PUSHBUTTON
+  Caption=LaudoNao
+  Order=51
+  Left=85
+  Width=69
+  Top=397
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"LaudoNao",,
+  Property=HyperLabel=#LaudNao,,,
+
+CONTROL=PUSHBUTTON
+GUID=8BCEC8EA-6AC7-438D-A9BE-D3CB0671FA6C
+  Name=LaudSim
+  Class=PUSHBUTTON
+  Caption=LaudoSim
+  Order=52
+  Left=85
+  Width=68
+  Top=373
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"LaudoSim",,
+  Property=HyperLabel=#LaudSim,,,
+
+CONTROL=PUSHBUTTON
+GUID=A0BB8364-3EFA-4C80-BD65-B6BCDEF446B5
+  Name=duplicar
+  Class=PUSHBUTTON
+  Caption=Duplicar
+  Order=53
+  Left=475
+  Width=68
+  Top=88
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Duplicar",,
+  Property=HyperLabel=#duplicar,,,
+  Property=TooltipText="Cria uma Novo OCC com base nesta"
+
+CONTROL=PUSHBUTTON
+GUID=67F14533-3055-43CB-A8AE-08AADB75AAD3
+  Name=poroc
+  Class=PUSHBUTTON
+  Caption=
+  Order=54
+  Left=117
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_AZ
+  Property=HyperLabel=#poroc,,,
+  Property=TooltipText="Ordenar Por Numero"
+
+CONTROL=PUSHBUTTON
+GUID=420AFBB9-F666-4903-A4C0-E0392A010206
+  Name=buscaoc
+  Class=PUSHBUTTON
+  Caption=
+  Order=55
+  Left=85
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscaoc,,,
+  Property=TooltipText="Localizar Um Nº OCC"
+
+CONTROL=PUSHBUTTON
+GUID=80512BD9-004A-43DD-A2E7-681B85F0A8AB
+  Name=cmdMat
+  Class=PUSHBUTTON
+  Caption=Matematico
+  Order=56
+  Left=550
+  Width=80
+  Top=338
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Matematico",,
+  Property=HyperLabel=#cmdMat,,,
+
+CONTROL=PUSHBUTTON
+GUID=55C5B326-8F6A-463B-B7F8-ADFD888DFBCE
+  Name=CMDPLAB
+  Class=PUSHBUTTON
+  Caption=PLAB
+  Order=57
+  Left=450
+  Width=68
+  Top=47
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"PLAB",,
+  Property=HyperLabel=#CMDPLAB,,,
+
+CONTROL=CHECKBOX
+GUID=ECD82C4C-E430-4F2B-B270-44027FE7A436
+  Name=DISPLIN
+  Class=CHECKBOX
+  Caption=Disp.Linear
+  Order=58
+  Left=340
+  Width=100
+  Top=118
+  Height=20
+  Browseindex=-1
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Disp.Linear",,
+  Property=FieldSpec=logic_field
+  Property=HyperLabel=#DISPLIN,,,
+  Property=HyperLabel=,,,"ME4CC_DANIFIC"
+
+CONTROL=CHECKBOX
+GUID=61488B2A-B13B-461E-A613-8F05F9022BE5
+  Name=DISPMAT
+  Class=CHECKBOX
+  Caption=Disp.Mate
+  Order=59
+  Left=441
+  Width=100
+  Top=118
+  Height=20
+  Browseindex=-1
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Disp.Mate",,
+  Property=FieldSpec=logic_field
+  Property=HyperLabel=#DISPMAT,,,
+  Property=HyperLabel=,,,"ME4CC_DANIFIC"
+
+SUBCONTROLSEND
+DESIGNEREND = JME4CC
+

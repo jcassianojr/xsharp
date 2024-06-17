@@ -1,0 +1,387 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JVCE
+GUID=8594882B-BD01-4390-9616-29A4B17D857E
+  Name=JVCE
+  Class=DATAWINDOW
+  Caption=Composição do Produto
+  Order=0
+  Left=38
+  Width=647
+  Top=38
+  Height=187
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Composição do Produto",,
+  Property=HyperLabel=#JVCE,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=,,"Composição do Produto",
+  Property=FocusSelect=FSEL_HOME
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=4D559507-8B4C-4EF9-BC36-9F49ED198124
+  Name=QTDDE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=89
+  Width=137
+  Top=117
+  Height=18
+  Browseindex=4
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_10_5
+  Property=HyperLabel=#QTDDE,,,
+  Property=HyperLabel=,"Quantidade",,
+  Property=HyperLabel=,,,"VMS03_CODCOMP"
+
+CONTROL=FIXEDTEXT
+GUID=AB5B094A-2B5A-4E64-BB07-F328AE4DDACD
+  Name=SC_CODCOMP1
+  Class=FIXEDTEXT
+  Caption=Qtdde
+  Order=2
+  Left=13
+  Width=56
+  Top=117
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#SC_CODCOMP1,,,
+  Property=HyperLabel=,"Qtdde",,
+
+CONTROL=SINGLELINEEDIT
+GUID=5988A8CC-882B-488A-8A58-89FA2994E1A5
+  Name=ORIGEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=321
+  Width=137
+  Top=117
+  Height=18
+  Browseindex=2
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#ORIGEM,,,
+  Property=HyperLabel=,"Origem",,
+  Property=HyperLabel=,,,"VMS03_CODCOMP"
+
+CONTROL=FIXEDTEXT
+GUID=7B7943A1-A5D7-472B-861D-346D70D9CDE3
+  Name=SC_CODCOMP2
+  Class=FIXEDTEXT
+  Caption=Origem
+  Order=4
+  Left=245
+  Width=56
+  Top=117
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Origem",,
+  Property=HyperLabel=#SC_CODCOMP2,,,
+
+CONTROL=FIXEDTEXT
+GUID=FEDF8A46-812C-4F0D-9F22-02E54873DB9C
+  Name=SC_CODCOMP3
+  Class=FIXEDTEXT
+  Caption=obs:
+  Order=5
+  Left=13
+  Width=56
+  Top=141
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"obs:",,
+  Property=HyperLabel=#SC_CODCOMP3,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=ED8AE5B2-EBBF-43B4-AAA7-1EDD36FC5D8B
+  Name=OBS01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=89
+  Width=410
+  Top=145
+  Height=18
+  Browseindex=-1
+  Browsesize=36
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_80
+  Property=HyperLabel=#OBS01,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"VMS03_NOMECOMP"
+  Property=FocusSelect=FSEL_HOME
+
+CONTROL=RADIOBUTTONGROUP
+GUID=7E8C31A4-9B41-4FF7-B5E1-A24C16ECF432
+  Name=TIPOENT
+  Class=RADIOBUTTONGROUP
+  Caption=Tipo
+  Order=-1
+  Left=7
+  Width=564
+  Top=7
+  Height=60
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Tipo",,
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#TIPOENT,,,
+
+CONTROL=RADIOBUTTON
+GUID=AAD45B07-2AB1-40E4-9CF3-AF628DAC19F2
+  Name=theRadioButton1
+  Class=RADIOBUTTON
+  Caption=Materia Prima
+  Order=-1
+  Left=49
+  Width=102
+  Top=19
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Materia Prima",,
+  Property=Value=M
+  Property=HyperLabel=#theRadioButton1,,,
+
+CONTROL=RADIOBUTTON
+GUID=90889DB5-5AAF-4134-A683-68BAC3CEFAD3
+  Name=theRadioButton2
+  Class=RADIOBUTTON
+  Caption=Terceiros/Tratamentos
+  Order=-1
+  Left=167
+  Width=160
+  Top=19
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Terceiros/Tratamentos",,
+  Property=HyperLabel=#theRadioButton2,,,
+  Property=Value=T
+
+CONTROL=RADIOBUTTON
+GUID=62E3D865-4798-470E-B982-6424A2F5F8F2
+  Name=theRadioButton4
+  Class=RADIOBUTTON
+  Caption=Componente
+  Order=-1
+  Left=342
+  Width=100
+  Top=19
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Componente",,
+  Property=Value=C
+  Property=HyperLabel=#theRadioButton4,,,
+
+CONTROL=RADIOBUTTON
+GUID=520FBAFF-84D4-49B4-8BB6-1C13B726B5FC
+  Name=theRadioButton3
+  Class=RADIOBUTTON
+  Caption=Ferramental
+  Order=-1
+  Left=457
+  Width=96
+  Top=19
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Ferramental",,
+  Property=HyperLabel=#theRadioButton3,,,
+  Property=Value=F
+
+CONTROL=PUSHBUTTON
+GUID=4B630A16-8DD4-48DE-8BF1-BE0F2F83A6C2
+  Name=cmdescmp
+  Class=PUSHBUTTON
+  Caption=---
+  Order=-1
+  Left=61
+  Width=66
+  Top=37
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"---",,
+  Property=HyperLabel=#cmdescmp,,,
+
+CONTROL=PUSHBUTTON
+GUID=8F134B4D-AC5B-44FE-BBBD-F552D5A85B9A
+  Name=cmdesctr
+  Class=PUSHBUTTON
+  Caption=---
+  Order=-1
+  Left=205
+  Width=66
+  Top=37
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"---",,
+  Property=HyperLabel=#cmdesctr,,,
+
+CONTROL=PUSHBUTTON
+GUID=C4CE23BA-27A1-446D-ACFE-6938FB07EE1F
+  Name=cmdescco
+  Class=PUSHBUTTON
+  Caption=---
+  Order=-1
+  Left=361
+  Width=66
+  Top=37
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"---",,
+  Property=HyperLabel=#cmdescco,,,
+
+CONTROL=FIXEDTEXT
+GUID=0552FCED-602C-474D-819A-58A19CBB81C0
+  Name=SC_CODCOMP
+  Class=FIXEDTEXT
+  Caption=Componente
+  Order=-1
+  Left=13
+  Width=84
+  Top=73
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Componente",,
+  Property=HyperLabel=#SC_CODCOMP,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=247D46D7-E041-4EC2-B6E4-F194748FD881
+  Name=CODCOMP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=13
+  Width=137
+  Top=91
+  Height=18
+  Browseindex=1
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODCOMP,,,
+  Property=HyperLabel=,"Cod. Componente:",,
+  Property=HyperLabel=,,,"VMS03_CODCOMP"
+  Property=FocusSelect=FSEL_HOME
+
+CONTROL=SINGLELINEEDIT
+GUID=46B8D0B4-5CE7-49B7-9F80-0B7B628A74B7
+  Name=NOMECOMP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=161
+  Width=410
+  Top=91
+  Height=18
+  Browseindex=3
+  Browsesize=36
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_120
+  Property=HyperLabel=#NOMECOMP,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"VMS03_NOMECOMP"
+  Property=FocusSelect=FSEL_HOME
+
+SUBCONTROLSEND
+DESIGNEREND = JVCE
+

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JETTAB_03">
+    <Window Name="JETTAB_03">
+      <Name>JETTAB_03</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>24</Left>
+      <Top>157</Top>
+      <Width>575</Width>
+      <Height>79</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#JETTAB_03,,,</HyperLabel>
+        <Use>&lt;Share Owner's&gt;</Use>
+      </ExProperties>
+    </Window>
+    <Control Name="OBE01">
+      <Name>OBE01</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>77</Left>
+      <Top>5</Top>
+      <Width>400</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_60</FieldSpec>
+        <HyperLabel>#OBE01,,,</HyperLabel>
+        <HyperLabel>,"Obe01:",,</HyperLabel>
+        <HyperLabel>,,,"VPORC_OBE01"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="OBE02">
+      <Name>OBE02</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>77</Left>
+      <Top>25</Top>
+      <Width>400</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_60</FieldSpec>
+        <HyperLabel>#OBE02,,,</HyperLabel>
+        <HyperLabel>,"Obe02:",,</HyperLabel>
+        <HyperLabel>,,,"VPORC_OBE02"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="OBE03">
+      <Name>OBE03</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>77</Left>
+      <Top>45</Top>
+      <Width>400</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_60</FieldSpec>
+        <HyperLabel>#OBE03,,,</HyperLabel>
+        <HyperLabel>,"Obe03:",,</HyperLabel>
+        <HyperLabel>,,,"VPORC_OBE03"</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

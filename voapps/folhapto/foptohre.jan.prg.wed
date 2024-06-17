@@ -1,0 +1,1347 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JPTOHRE
+GUID=798C0878-DA21-4408-906C-7C997C8810E4
+  Name=JPTOHRE
+  Class=DATAWINDOW
+  Caption=Horarios Padrao
+  Order=0
+  Left=66
+  Width=601
+  Top=66
+  Height=333
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Horarios Padrao",,
+  Property=HyperLabel=#JPTOHRE,,,
+  Property=ClipperKeys=True
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=7350ECA1-F3E0-4DB8-82E3-0234F5671E86
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=156
+  Width=264
+  Top=9
+  Height=20
+  Browseindex=1
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"noME",,
+  Property=HyperLabel=,,,"FOPTOHOR_NOME"
+
+CONTROL=SINGLELINEEDIT
+GUID=65516633-B5AA-4BAC-9F97-F683452C8FF1
+  Name=HENT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=60
+  Width=48
+  Top=71
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HENT,,,
+  Property=HyperLabel=,"Hent:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HENT"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=EE1B0218-1755-4EFC-A1E3-5B01D97C932D
+  Name=HALS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=112
+  Width=48
+  Top=71
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALS,,,
+  Property=HyperLabel=,"Hals:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALS"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=7D80448E-83EA-4D7C-BD9D-E98402BE3854
+  Name=HALE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=164
+  Width=48
+  Top=71
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALE,,,
+  Property=HyperLabel=,"Hale:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALE"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=36988C6A-6671-40AF-9F75-11B3E941E5E0
+  Name=HSAI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=216
+  Width=48
+  Top=71
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HSAI,,,
+  Property=HyperLabel=,"Hsai:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HSAI"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=1A02C388-F722-457D-9E83-66E1617EB870
+  Name=HFOL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=268
+  Width=24
+  Top=71
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216415872
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#HFOL,,,
+  Property=HyperLabel=,"Hfol00:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HFOL00"
+
+CONTROL=SINGLELINEEDIT
+GUID=7D585010-19DF-42E3-9651-CF828895C5E0
+  Name=HENT02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=60
+  Width=48
+  Top=99
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HENT02,,,
+  Property=HyperLabel=,"Hent03:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HENT03"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=B9F7AD6C-1E72-462D-8367-69422F83BAFD
+  Name=HALS02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=112
+  Width=48
+  Top=99
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALS02,,,
+  Property=HyperLabel=,"Hals02:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALS02"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=A19790AF-B427-49A8-BB68-E519A32125DC
+  Name=HALE02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=164
+  Width=48
+  Top=99
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALE02,,,
+  Property=HyperLabel=,"Hale02:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALE02"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=3C52D63B-8B3E-4470-B208-96DB5C02A265
+  Name=HSAI02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=216
+  Width=48
+  Top=99
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HSAI02,,,
+  Property=HyperLabel=,"Hsai02:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HSAI02"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=8B8B16A1-CE8E-468C-8697-A9A96AAD35D6
+  Name=HFOL02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=268
+  Width=24
+  Top=99
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#HFOL02,,,
+  Property=HyperLabel=,"Hfol02:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HFOL02"
+
+CONTROL=SINGLELINEEDIT
+GUID=36FC02E0-2F09-4200-8156-39C8865E67F9
+  Name=HENT03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=60
+  Width=48
+  Top=123
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HENT03,,,
+  Property=HyperLabel=,"Hent03:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HENT03"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=846CE966-E039-4D4A-88C5-A9F76FF9BFB5
+  Name=HALS03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=112
+  Width=48
+  Top=123
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALS03,,,
+  Property=HyperLabel=,"Hals03:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALS03"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=A8596576-923D-4429-9840-C28CD0BFD971
+  Name=HALE03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=164
+  Width=48
+  Top=123
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALE03,,,
+  Property=HyperLabel=,"Hale03:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALE03"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=E93BBDEC-BB23-4E28-B580-14E685AD9DED
+  Name=HSAI03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=216
+  Width=48
+  Top=123
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HSAI03,,,
+  Property=HyperLabel=,"Hsai03:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HSAI03"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=5BE31CFB-3D77-43A8-AC41-A99847F7C10D
+  Name=HFOL03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=268
+  Width=24
+  Top=123
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#HFOL03,,,
+  Property=HyperLabel=,"Hfol03:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HFOL03"
+
+CONTROL=SINGLELINEEDIT
+GUID=090E47D6-44F1-46F5-92D9-018A61327716
+  Name=HENT04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=60
+  Width=48
+  Top=147
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HENT04,,,
+  Property=HyperLabel=,"Hent04:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HENT04"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=8AD77499-D4CD-480E-8147-756EE5303ECB
+  Name=HALS04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=112
+  Width=48
+  Top=147
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALS04,,,
+  Property=HyperLabel=,"Hals04:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALS04"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=B58EAF95-F96E-48BF-AF6C-3A56C0581D41
+  Name=HALE04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=164
+  Width=48
+  Top=147
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALE04,,,
+  Property=HyperLabel=,"Hale04:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALE04"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=36986005-D164-4E4C-A6B1-1EEA71192D8A
+  Name=HSAI04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=216
+  Width=48
+  Top=147
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HSAI04,,,
+  Property=HyperLabel=,"Hsai04:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HSAI04"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=482ACBF2-C4BA-46AC-9492-FFDF9231FF5E
+  Name=HFOL04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=268
+  Width=24
+  Top=147
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#HFOL04,,,
+  Property=HyperLabel=,"Hfol04:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HFOL04"
+
+CONTROL=SINGLELINEEDIT
+GUID=27DDCCDB-9D1A-4707-A1E5-A81116139A91
+  Name=HENT05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=60
+  Width=48
+  Top=171
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HENT05,,,
+  Property=HyperLabel=,"Hent03:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HENT03"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=E1728417-3377-4A6A-AF91-91F47A5A3242
+  Name=HALS05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=23
+  Left=112
+  Width=48
+  Top=171
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALS05,,,
+  Property=HyperLabel=,"Hals05:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALS05"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=7A93BC0B-DA05-43D6-A3AD-679FD1CB44F2
+  Name=HALE05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=24
+  Left=164
+  Width=48
+  Top=171
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALE05,,,
+  Property=HyperLabel=,"Hale05:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALE05"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=A8BB481D-9CE7-46FC-BD89-EB99E65E723A
+  Name=HSAI05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=25
+  Left=216
+  Width=48
+  Top=171
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HSAI05,,,
+  Property=HyperLabel=,"Hsai05:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HSAI05"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=FEC9EAFA-50F3-408A-9DA7-65013B57E130
+  Name=HFOL05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=26
+  Left=268
+  Width=24
+  Top=171
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#HFOL05,,,
+  Property=HyperLabel=,"Hfol05:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HFOL05"
+
+CONTROL=SINGLELINEEDIT
+GUID=BB26011A-5826-4731-905C-D2445003E7E8
+  Name=HENT06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=27
+  Left=60
+  Width=48
+  Top=195
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HENT06,,,
+  Property=HyperLabel=,"Hent03:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HENT03"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=D8F89FBB-1824-473B-8256-73C8B1801BB9
+  Name=HALS06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=28
+  Left=112
+  Width=48
+  Top=195
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALS06,,,
+  Property=HyperLabel=,"Hals06:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALS06"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=47975462-0F8A-49EE-9F00-6DC691B06DA9
+  Name=HALE06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=29
+  Left=164
+  Width=48
+  Top=195
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALE06,,,
+  Property=HyperLabel=,"Hale06:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALE06"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=6EA41E0D-2AB8-408C-9104-0036061B0D30
+  Name=HSAI06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=30
+  Left=216
+  Width=48
+  Top=195
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HSAI06,,,
+  Property=HyperLabel=,"Hsai06:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HSAI06"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=FFBBCCAF-BD9F-4271-B961-7EBC0D877FC3
+  Name=HFOL06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=31
+  Left=268
+  Width=24
+  Top=194
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#HFOL06,,,
+  Property=HyperLabel=,"Hfol06:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HFOL06"
+
+CONTROL=SINGLELINEEDIT
+GUID=E02A396F-BD27-4170-B2E4-B88A5BCDB8BE
+  Name=HENT07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=32
+  Left=60
+  Width=48
+  Top=219
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HENT07,,,
+  Property=HyperLabel=,"Hent07:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HENT07"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=A8FD7A08-C345-4666-A34B-4E694A45D4B0
+  Name=HALS07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=33
+  Left=112
+  Width=48
+  Top=219
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALS07,,,
+  Property=HyperLabel=,"Hals07:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALS07"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=2F6B8F84-5345-423F-B106-A165DE012E2D
+  Name=HALE07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=34
+  Left=164
+  Width=48
+  Top=219
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALE07,,,
+  Property=HyperLabel=,"Hale07:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALE07"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=3FF253FE-C75E-4527-8192-4A861CE01FC3
+  Name=HSAI07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=35
+  Left=216
+  Width=48
+  Top=219
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HSAI07,,,
+  Property=HyperLabel=,"Hsai07:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HSAI07"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=E9FDD0CD-8BBE-41D1-A5BB-D847C791DFF3
+  Name=HFOL07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=36
+  Left=268
+  Width=24
+  Top=219
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#HFOL07,,,
+  Property=HyperLabel=,"Hfol07:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HFOL07"
+
+CONTROL=SINGLELINEEDIT
+GUID=2ABEED96-D9D3-4B5F-A5DB-6A76BECB914B
+  Name=HENT01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=37
+  Left=60
+  Width=48
+  Top=243
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HENT01,,,
+  Property=HyperLabel=,"Hent01:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HENT01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=9436F314-FBE8-41F3-9F69-2192FDB095B1
+  Name=HALS01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=38
+  Left=112
+  Width=48
+  Top=243
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALS01,,,
+  Property=HyperLabel=,"Hals01:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALS01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=28233E07-2C35-4883-87E4-8B79AAC19A64
+  Name=HALE01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=39
+  Left=164
+  Width=48
+  Top=243
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HALE01,,,
+  Property=HyperLabel=,"Hale01:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HALE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=B2D2555F-3297-4506-8BD3-BFC164DC1653
+  Name=HSAI01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=40
+  Left=216
+  Width=48
+  Top=243
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HSAI01,,,
+  Property=HyperLabel=,"Hsai01:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HSAI01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=BA9C754C-1C6E-4273-8248-97BD0DE2167A
+  Name=HFOL01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=41
+  Left=268
+  Width=24
+  Top=243
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#HFOL01,,,
+  Property=HyperLabel=,"Hfol01:",,
+  Property=HyperLabel=,,,"FOPTOHRE_HFOL01"
+
+CONTROL=FIXEDTEXT
+GUID=F9A90A6D-59E1-4142-AFF6-8C64D5990BBC
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=74
+  Left=9
+  Width=39
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=D5E6035A-7E66-486B-BB2E-762F724180F5
+  Name=SC_HENT
+  Class=FIXEDTEXT
+  Caption=Entrada
+  Order=75
+  Left=53
+  Width=48
+  Top=53
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Entrada",,
+  Property=HyperLabel=#SC_HENT,,,
+
+CONTROL=FIXEDTEXT
+GUID=3AE78168-92E6-4773-A4E5-4CC403338690
+  Name=SC_HSAI
+  Class=FIXEDTEXT
+  Caption=Saida
+  Order=76
+  Left=209
+  Width=28
+  Top=53
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Saida",,
+  Property=HyperLabel=#SC_HSAI,,,
+
+CONTROL=FIXEDTEXT
+GUID=D7794F0E-982C-4A6A-9735-57ECBE1DAFF4
+  Name=SC_HALS
+  Class=FIXEDTEXT
+  Caption=Refeiçao
+  Order=77
+  Left=125
+  Width=60
+  Top=53
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Refeiçao",,
+  Property=HyperLabel=#SC_HALS,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=3F89EDAB-FCDF-40BC-B05C-4D0A5EA29753
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=78
+  Left=53
+  Width=36
+  Top=9
+  Height=20
+  Browseindex=0
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"FOPTOHRE_CODIGO"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=6EC5481C-C813-4DA9-863D-5865BA8D0C28
+  Name=SC_HSAI1
+  Class=FIXEDTEXT
+  Caption=Folga
+  Order=79
+  Left=261
+  Width=28
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Folga",,
+  Property=HyperLabel=#SC_HSAI1,,,
+
+CONTROL=FIXEDTEXT
+GUID=B0C778AD-E199-4020-A346-A7EA9D8D1E5E
+  Name=FixedText5
+  Class=FIXEDTEXT
+  Caption=Padrao
+  Order=80
+  Left=5
+  Width=36
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Padrao",,
+  Property=HyperLabel=#FixedText5,,,
+
+CONTROL=FIXEDTEXT
+GUID=F22B19D4-8CB3-42DF-8911-EEB2DF208AA1
+  Name=FixedText6
+  Class=FIXEDTEXT
+  Caption=Segunda
+  Order=81
+  Left=5
+  Width=48
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Segunda",,
+  Property=HyperLabel=#FixedText6,,,
+
+CONTROL=FIXEDTEXT
+GUID=EFFF0588-B7D9-43EF-B90B-C8E001F9D3D6
+  Name=FixedText7
+  Class=FIXEDTEXT
+  Caption=Terça
+  Order=82
+  Left=5
+  Width=36
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Terça",,
+  Property=HyperLabel=#FixedText7,,,
+
+CONTROL=FIXEDTEXT
+GUID=B3B4D616-3046-431B-A0DE-A3C5C5F71962
+  Name=FixedText8
+  Class=FIXEDTEXT
+  Caption=Quarta
+  Order=83
+  Left=5
+  Width=36
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Quarta",,
+  Property=HyperLabel=#FixedText8,,,
+
+CONTROL=FIXEDTEXT
+GUID=CF23C5E9-947A-46B0-B704-CCEB4A705595
+  Name=FixedText9
+  Class=FIXEDTEXT
+  Caption=Quinta
+  Order=84
+  Left=5
+  Width=36
+  Top=169
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Quinta",,
+  Property=HyperLabel=#FixedText9,,,
+
+CONTROL=FIXEDTEXT
+GUID=D7B52206-DF5E-4402-92CC-427BD5308639
+  Name=FixedText10
+  Class=FIXEDTEXT
+  Caption=Sexta
+  Order=85
+  Left=5
+  Width=36
+  Top=193
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Sexta",,
+  Property=HyperLabel=#FixedText10,,,
+
+CONTROL=FIXEDTEXT
+GUID=0BFFACB7-D475-4ABD-A695-CB98D333310F
+  Name=FixedText11
+  Class=FIXEDTEXT
+  Caption=Sabado
+  Order=86
+  Left=5
+  Width=40
+  Top=217
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Sabado",,
+  Property=HyperLabel=#FixedText11,,,
+
+CONTROL=FIXEDTEXT
+GUID=E2F41EAD-B928-478A-AAEC-212F29387BC0
+  Name=FixedText12
+  Class=FIXEDTEXT
+  Caption=Domingo
+  Order=87
+  Left=5
+  Width=48
+  Top=241
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Domingo",,
+  Property=HyperLabel=#FixedText12,,,
+
+CONTROL=FIXEDTEXT
+GUID=BC47FEB3-DE7E-4FCC-81ED-6481B8E6D0DD
+  Name=FixedText13
+  Class=FIXEDTEXT
+  Caption=Horarios  Normais
+  Order=88
+  Left=53
+  Width=88
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Horarios  Normais",,
+  Property=HyperLabel=#FixedText13,,,
+
+CONTROL=PUSHBUTTON
+GUID=48FF6483-D717-4F43-9FD0-92FB686F9F31
+  Name=pegdes
+  Class=PUSHBUTTON
+  Caption=...
+  Order=93
+  Left=421
+  Width=31
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=TooltipText="Gera Descritivo com Bases Nos Horarios"
+  Property=HyperLabel=#pegdes,,,
+
+CONTROL=FIXEDTEXT
+GUID=42A9BA72-6BC5-44D7-A19D-3BED66E99189
+  Name=SC_ALMI1
+  Class=FIXEDTEXT
+  Caption=Descritivo
+  Order=94
+  Left=94
+  Width=61
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descritivo",,
+  Property=HyperLabel=#SC_ALMI1,,,
+
+CONTROL=PUSHBUTTON
+GUID=A7A253BD-45C0-4B36-AFF0-70DD6BF42E65
+  Name=buscaNUM
+  Class=PUSHBUTTON
+  Caption=
+  Order=95
+  Left=362
+  Width=32
+  Top=41
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaNUM,,,
+  Property=TooltipText="Localizar"
+
+CONTROL=PUSHBUTTON
+GUID=52A4ED66-7A15-4A83-80DF-785D3EE0E8D3
+  Name=cmdordenar
+  Class=PUSHBUTTON
+  Caption=
+  Order=96
+  Left=412
+  Width=32
+  Top=44
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#cmdordenar,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JPTOHRE
+

@@ -1,0 +1,63 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,_JME04
+GUID=144FC82B-B288-4017-B1E9-6D1044816F28
+  Name=_JME04
+  Class=DATADIALOG
+  Caption=Instrumentos
+  Order=0
+  Left=16
+  Width=765
+  Top=16
+  Height=460
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Instrumentos",,
+  Property=HyperLabel=#_JME04,,,
+
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=C39AF0F3-137C-4D47-932D-3E00C3A4BEF9
+  Name=Encerrar
+  Class=PUSHBUTTON
+  Caption=
+  Order=2
+  Left=705
+  Width=52
+  Top=1
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Encerrar,,,
+  Property=Image=ico_sair
+
+CONTROL=SUBDATAWINDOW
+GUID=98421DC0-8A32-4051-907D-FEC759B713BE
+  Name=JINS
+  Class=SUBDATAWINDOW
+  Caption=JINS
+  Order=3
+  Left=9
+  Width=751
+  Top=41
+  Height=399
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JINS,,,
+
+SUBCONTROLSEND
+DESIGNEREND = _JME04
+

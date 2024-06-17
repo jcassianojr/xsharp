@@ -1,0 +1,844 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jfo_poco
+GUID=66B80F97-56F9-4151-81F3-DA7D734BCB58
+  Name=jfo_poco
+  Class=DATAWINDOW
+  Caption=Ocorrencias
+  Order=0
+  Left=56
+  Width=571
+  Top=56
+  Height=221
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ocorrencias",,
+  Property=ClipperKeys=True
+  Property=Menu=STANDARDSHELLMENU
+  Property=HyperLabel=#jfo_poco,,,
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=045EDB24-D6FE-4F44-886D-FB418F1BFD8B
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero:
+  Order=1
+  Left=13
+  Width=65
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=FIXEDTEXT
+GUID=F9C9CA92-93B7-4EFA-920A-D44A5BE88C79
+  Name=SC_OCOINI
+  Class=FIXEDTEXT
+  Caption=Periodo
+  Order=2
+  Left=157
+  Width=51
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Periodo",,
+  Property=HyperLabel=#SC_OCOINI,,,
+
+CONTROL=FIXEDTEXT
+GUID=324FD7C6-24CF-43DA-B472-FBCEA009C03F
+  Name=SC_OCOCOD
+  Class=FIXEDTEXT
+  Caption=Cod:
+  Order=4
+  Left=345
+  Width=44
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cod:",,
+  Property=HyperLabel=#SC_OCOCOD,,,
+
+CONTROL=FIXEDTEXT
+GUID=6310C16F-16BC-4280-B677-90DF21BDA3EB
+  Name=SC_OCOMOT
+  Class=FIXEDTEXT
+  Caption=Mot/Obs
+  Order=5
+  Left=17
+  Width=44
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mot/Obs",,
+  Property=HyperLabel=#SC_OCOMOT,,,
+
+CONTROL=FIXEDTEXT
+GUID=E3FC371E-120E-4151-8537-7A61A5C910E2
+  Name=SC_OCOSUB
+  Class=FIXEDTEXT
+  Caption=Sub
+  Order=6
+  Left=405
+  Width=44
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Sub",,
+  Property=HyperLabel=#SC_OCOSUB,,,
+
+CONTROL=FIXEDTEXT
+GUID=33E720FF-5252-4EF8-9D84-17408E52ACA2
+  Name=SC_OCOALM
+  Class=FIXEDTEXT
+  Caption=Almoco
+  Order=11
+  Left=16
+  Width=48
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Almoco",,
+  Property=HyperLabel=#SC_OCOALM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=B4E29693-033D-4DE5-8006-89DE735003D5
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=13
+  Width=68
+  Top=29
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"FO_POCO_NUMERO"
+
+CONTROL=SINGLELINEEDIT
+GUID=F15F961A-6DA4-4F3F-A1F2-84D5B540109D
+  Name=OCOCOD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=341
+  Width=36
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#OCOCOD,,,
+  Property=HyperLabel=,"cod",,
+  Property=HyperLabel=,,,"FO_POCO_OCOCOD"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=4BF1517F-EDFD-49E9-A371-B7F1E96496DD
+  Name=OCOMOT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=73
+  Width=400
+  Top=117
+  Height=20
+  Browseindex=8
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_60
+  Property=HyperLabel=#OCOMOT,,,
+  Property=HyperLabel=,"Obs/Mot",,
+  Property=HyperLabel=,,,"FO_POCO_OCOMOT"
+
+CONTROL=SINGLELINEEDIT
+GUID=865BD1F8-4B2C-4701-9A38-19CC00DE5726
+  Name=OCOSUB
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=409
+  Width=36
+  Top=29
+  Height=20
+  Browseindex=2
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#OCOSUB,,,
+  Property=HyperLabel=,"Sub",,
+  Property=HyperLabel=,,,"FO_POCO_OCOSUB"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=71419EE4-B68F-48C1-B3A2-424CAEA7B1B8
+  Name=OCOBCO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=69
+  Width=24
+  Top=89
+  Height=20
+  Browseindex=3
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#OCOBCO,,,
+  Property=HyperLabel=,"bco",,
+  Property=HyperLabel=,,,"FO_POCO_OCOBCO"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=09DDAC72-83D0-4969-8084-EAB82A27D1EF
+  Name=OCORED
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=395
+  Width=24
+  Top=61
+  Height=20
+  Browseindex=4
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#OCORED,,,
+  Property=HyperLabel=,"red",,
+  Property=HyperLabel=,,,"FO_POCO_OCORED"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=CECA1FBF-42F4-40CD-9A16-02F24628F40F
+  Name=OCOFOL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=213
+  Width=24
+  Top=61
+  Height=20
+  Browseindex=5
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#OCOFOL,,,
+  Property=HyperLabel=,"folga",,
+  Property=HyperLabel=,,,"FO_POCO_OCOFOL"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=A3A6AB7B-46BF-4B73-8AF4-3092FF0DD2E8
+  Name=OCOEXT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=213
+  Width=24
+  Top=85
+  Height=20
+  Browseindex=6
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#OCOEXT,,,
+  Property=HyperLabel=,"extra",,
+  Property=HyperLabel=,,,"FO_POCO_OCOEXT"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=822F616F-2FB4-4F66-A85F-BD9AD2FD785E
+  Name=OCOALM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=69
+  Width=24
+  Top=61
+  Height=20
+  Browseindex=7
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#OCOALM,,,
+  Property=HyperLabel=,"alm",,
+  Property=HyperLabel=,,,"FO_POCO_OCOALM"
+  Property=Background=255 255 200
+
+CONTROL=DATETIMEPICKER
+GUID=3EF5F85B-5A95-4B22-8456-FF801E46C7E0
+  Name=ocoini
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=23
+  Left=113
+  Width=110
+  Top=31
+  Height=22
+  Browseindex=9
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#ocoini,,,
+  Property=HyperLabel=,"Ini",,
+
+CONTROL=DATETIMEPICKER
+GUID=4D971BE7-8D80-4919-BE42-073C3CE8BE02
+  Name=ocofim
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=24
+  Left=224
+  Width=112
+  Top=30
+  Height=22
+  Browseindex=10
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#ocofim,,,
+  Property=HyperLabel=,"fim",,
+
+CONTROL=PUSHBUTTON
+GUID=ED4DC4EE-FCDC-4FB7-A76E-006D1B015573
+  Name=cmdfol
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=25
+  Left=244
+  Width=57
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdfol,,,
+
+CONTROL=FIXEDTEXT
+GUID=ADE8A510-2425-47C4-9C55-B67D1376F31E
+  Name=SC_FOLOCO
+  Class=FIXEDTEXT
+  Caption=Folga
+  Order=26
+  Left=169
+  Width=40
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Folga",,
+  Property=HyperLabel=#SC_FOLOCO,,,
+
+CONTROL=PUSHBUTTON
+GUID=994D2E5A-F745-420B-B3E6-961233F768D1
+  Name=cmdext
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=27
+  Left=244
+  Width=57
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdext,,,
+
+CONTROL=PUSHBUTTON
+GUID=1EE86378-5B44-41E8-856B-1A7A25C9779C
+  Name=cmdbco
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=28
+  Left=101
+  Width=60
+  Top=89
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdbco,,,
+
+CONTROL=FIXEDTEXT
+GUID=CCCD44F6-12B4-4B9E-BA28-C0AE659737F4
+  Name=SC_EXTOCO
+  Class=FIXEDTEXT
+  Caption=Extra:
+  Order=29
+  Left=169
+  Width=40
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Extra:",,
+  Property=HyperLabel=#SC_EXTOCO,,,
+
+CONTROL=FIXEDTEXT
+GUID=EBB42CB7-7791-4A13-A9E5-77C44B34F8D5
+  Name=SC_BCOOCO
+  Class=FIXEDTEXT
+  Caption=Banco
+  Order=30
+  Left=17
+  Width=44
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Banco",,
+  Property=HyperLabel=#SC_BCOOCO,,,
+
+CONTROL=PUSHBUTTON
+GUID=4EDFD41D-F7AC-4653-8F03-36FBFB15FF5C
+  Name=cmdALM
+  Class=PUSHBUTTON
+  Caption= ABCDE
+  Order=31
+  Left=101
+  Width=52
+  Top=65
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=," ABCDE",,
+  Property=HyperLabel=#cmdALM,,,
+
+CONTROL=PUSHBUTTON
+GUID=91537BC0-48A4-4F67-92C6-3AF11B0B2F44
+  Name=cmdred
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=32
+  Left=419
+  Width=58
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdred,,,
+
+CONTROL=FIXEDTEXT
+GUID=4FA744D9-19D1-4FC8-AAA9-7BC6ABE75D66
+  Name=SC_REDOCO
+  Class=FIXEDTEXT
+  Caption=Reduçao Horario
+  Order=33
+  Left=309
+  Width=88
+  Top=61
+  Height=30
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Reduçao Horario",,
+  Property=HyperLabel=#SC_REDOCO,,,
+
+CONTROL=PUSHBUTTON
+GUID=2178CDB4-E8DE-41A4-8B9C-CD3D5DB6586B
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=34
+  Left=381
+  Width=23
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+
+CONTROL=PUSHBUTTON
+GUID=988FC178-F5EA-4D5F-AFED-8B595C3A8865
+  Name=escFUN
+  Class=PUSHBUTTON
+  Caption=...
+  Order=35
+  Left=85
+  Width=23
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#escFUN,,,
+
+CONTROL=PUSHBUTTON
+GUID=5A2AACE3-D795-4B58-B2F6-C75776E971BC
+  Name=escSUB
+  Class=PUSHBUTTON
+  Caption=...
+  Order=36
+  Left=453
+  Width=23
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#escSUB,,,
+
+CONTROL=PUSHBUTTON
+GUID=A705FE64-0C4E-44B2-A49D-12333E567467
+  Name=buscaNUM
+  Class=PUSHBUTTON
+  Caption=
+  Order=37
+  Left=489
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaNUM,,,
+  Property=TooltipText="Localizar"
+
+CONTROL=PUSHBUTTON
+GUID=2E62D079-FE7C-41C0-A151-657CA0AAE0BA
+  Name=cmdordenar
+  Class=PUSHBUTTON
+  Caption=
+  Order=38
+  Left=489
+  Width=32
+  Top=49
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#cmdordenar,,,
+
+CONTROL=PUSHBUTTON
+GUID=32B4E640-515D-4198-A1D1-60C13E195CD9
+  Name=cmdext2
+  Class=PUSHBUTTON
+  Caption=Sim/Nao/Pular
+  Order=39
+  Left=193
+  Width=104
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao/Pular",,
+  Property=HyperLabel=#cmdext2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=D45953C4-2CF4-453E-ADE8-FD35AB6C47C5
+  Name=ABONA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=40
+  Left=165
+  Width=24
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#ABONA,,,
+  Property=HyperLabel=,,,"FO_POCO_OCOEXT"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=84ED2D38-6DF9-4A91-810E-391298A219B3
+  Name=SC_EXTOCO2
+  Class=FIXEDTEXT
+  Caption=Abonar:
+  Order=41
+  Left=17
+  Width=44
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Abonar:",,
+  Property=HyperLabel=#SC_EXTOCO2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=C5A2F25C-BD57-4E4A-97CC-021363C78D69
+  Name=HRREL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=42
+  Left=93
+  Width=68
+  Top=165
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HRREL,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"FO_POCO_NUMERO"
+
+CONTROL=PUSHBUTTON
+GUID=A7E78B5B-A5AB-4FE7-A7CC-43F34A165396
+  Name=cmdext1
+  Class=PUSHBUTTON
+  Caption=(P)ular(A)traso(M)edico(F)alta Acid(T)raba Ad(V)ertencia (C)rach
+  Order=44
+  Left=193
+  Width=316
+  Top=165
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073815552
+  Exstyles=0
+  Property=HyperLabel=,"PularAtrasoMedicoFalta AcidTraba AdVertencia Cracha FaltaJus",,
+  Property=HyperLabel=#cmdext1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=50AC72A6-66CD-4164-92E7-6697F6A14F6B
+  Name=CESTA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=45
+  Left=165
+  Width=24
+  Top=165
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#CESTA,,,
+  Property=HyperLabel=,,,"FO_POCO_OCOEXT"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=FE5D07CA-1601-493A-9464-F75BDF2C9EF2
+  Name=SC_EXTOCO1
+  Class=FIXEDTEXT
+  Caption=Cesta Basica:
+  Order=46
+  Left=13
+  Width=80
+  Top=165
+  Height=35
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cesta Basica:",,
+  Property=HyperLabel=#SC_EXTOCO1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=5CD9C775-A6D7-4D91-AEF1-8CA70FB17B13
+  Name=HRABO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=47
+  Left=93
+  Width=68
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#HRABO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"FO_POCO_NUMERO"
+
+SUBCONTROLSEND
+DESIGNEREND = jfo_poco
+

@@ -1,0 +1,304 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jcesta
+GUID=74CF6013-D847-4AFC-ACB5-5DF6328942F1
+  Name=jcesta
+  Class=DATAWINDOW
+  Caption=Cesta Basica
+  Order=0
+  Left=26
+  Width=527
+  Top=26
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cesta Basica",,
+  Property=HyperLabel=#jcesta,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=B1A02143-E705-4816-938D-A5B1EDEFC52F
+  Name=obs
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=69
+  Width=292
+  Top=81
+  Height=20
+  Browseindex=3
+  Browsesize=36
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#obs,,,
+  Property=HyperLabel=,"OBS:",,
+  Property=HyperLabel=,,,"FO_PES_HT"
+
+CONTROL=PUSHBUTTON
+GUID=496638C7-6994-4066-9B4E-1A1909759F14
+  Name=cmdhora
+  Class=PUSHBUTTON
+  Caption=(S)im(N)ao(V)ale
+  Order=2
+  Left=101
+  Width=92
+  Top=53
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073750272
+  Exstyles=0
+  Property=HyperLabel=,"SimNaoVale",,
+  Property=HyperLabel=#cmdhora,,,
+
+CONTROL=FIXEDTEXT
+GUID=31E13DED-B8E5-4D39-9C5E-43B12C0DDE42
+  Name=SC_TIPO
+  Class=FIXEDTEXT
+  Caption=Sair Lista:
+  Order=3
+  Left=9
+  Width=52
+  Top=57
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Sair Lista:",,
+  Property=HyperLabel=#SC_TIPO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=E2C796D1-E6C9-4A86-A608-9DC9629F24B1
+  Name=CESTA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=69
+  Width=28
+  Top=53
+  Height=24
+  Browseindex=2
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#CESTA,,,
+  Property=HyperLabel=,,,"FO_PES_TIPO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=B52EB9B4-B4EF-4E83-9A01-5CF3643DB79E
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=5
+  Left=157
+  Width=36
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=82377077-A76F-41EF-A63C-2E1CA919A3D2
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=197
+  Width=296
+  Top=21
+  Height=24
+  Browseindex=1
+  Browsesize=21
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_30
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"FO_PES_NOME"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=F8C42F4B-C2DA-4945-B367-5BF7D03C943A
+  Name=cmdordenar
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=109
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#cmdordenar,,,
+
+CONTROL=PUSHBUTTON
+GUID=9B7ABA5C-829D-4116-82E9-C64B0C4F95AE
+  Name=buscaNUM
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=73
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaNUM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=6ED78695-C57E-4B65-86BB-280296C94EA5
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=5
+  Width=64
+  Top=25
+  Height=24
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"FO_PES_NUMERO"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=1B5EB726-7701-4FDD-AC6D-8DECEF5F503B
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero:
+  Order=10
+  Left=5
+  Width=44
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=FIXEDTEXT
+GUID=107705F0-1969-4BF6-8858-DE86D016702B
+  Name=SC_TIPO1
+  Class=FIXEDTEXT
+  Caption=OBS:
+  Order=11
+  Left=9
+  Width=52
+  Top=81
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"OBS:",,
+  Property=HyperLabel=#SC_TIPO1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=5896701F-6624-406B-9536-1FA30D7F73BA
+  Name=ADMITIDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=277
+  Width=104
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#ADMITIDO,,,
+  Property=HyperLabel=,"Admitido:",,
+  Property=HyperLabel=,,,"FO_PES_ADMITIDO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=323ECA81-AA79-4CE4-9B18-4D14DBBA15F0
+  Name=SC_ADMITIDO
+  Class=FIXEDTEXT
+  Caption=Admitido:
+  Order=13
+  Left=225
+  Width=48
+  Top=53
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Admitido:",,
+  Property=HyperLabel=#SC_ADMITIDO,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jcesta
+

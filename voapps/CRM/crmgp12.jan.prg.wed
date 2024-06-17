@@ -1,0 +1,67 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JCRMGP12
+GUID=5DAADC55-34FD-4E72-B6AF-B1C5BA44079D
+  Name=JCRMGP12
+  Class=DATAWINDOW
+  Caption=Marcada GP12
+  Order=0
+  Left=14
+  Width=420
+  Top=14
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Marcada GP12",,
+  Property=Menu=STANDARDSHELLMENU
+  Property=HyperLabel=#JCRMGP12,,,
+  Property=ViewAs=#BrowseView
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=6EE0C44B-C7C4-4E26-B799-D4AE32D1582C
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=118
+  Width=155
+  Top=30
+  Height=20
+  Browseindex=0
+  Browsesize=34
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo",,
+
+CONTROL=FIXEDTEXT
+GUID=09D0F526-4EC3-48F5-A267-AFA0C6E00C28
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Codigo
+  Order=2
+  Left=14
+  Width=80
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo",,
+  Property=HyperLabel=#FixedText1,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JCRMGP12
+

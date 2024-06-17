@@ -1,0 +1,228 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,_JMAILCFG
+GUID=3781A10B-8CCD-4F50-9A4E-1D8C3E68441F
+  Name=_JMAILCFG
+  Class=FORM:DATAWINDOW
+  Caption=Configuracao Email Interno
+  Order=0
+  Left=0
+  Width=501
+  Top=0
+  Height=320
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Configuracao Email Interno
+  Property=HyperLabel=_JMAILCFG
+  Property=HyperLabel=,,,mailcfg
+  Property=InheritClassName=MYDataWindow
+  Property=Menu=STANDARDSHELLMENU
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=32544457-7C0B-46F3-BBD3-0472CE629CE1
+  Name=SC_ERRO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Erro:
+  Order=1
+  Left=22
+  Width=28
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Erro:
+  Property=HyperLabel=SC_ERRO
+CONTROL=FIXEDTEXT
+GUID=2902EA03-1C1E-43CB-97CF-B85A02D2125C
+  Name=SC_ASSUNTO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Assunto:
+  Order=2
+  Left=22
+  Width=44
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Assunto:
+  Property=HyperLabel=SC_ASSUNTO
+CONTROL=SINGLELINEEDIT
+GUID=180F1085-0095-41A9-A36B-BFC8FD79138F
+  Name=ERRO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Erro:
+  Order=3
+  Left=82
+  Width=68
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=,Erro:
+  Property=HyperLabel=ERRO
+  Property=HyperLabel=,,,mailerro_ERRO
+  Property=FieldSpec=PADRAO_CHAR_08
+  Property=TooltipText=Codigo do Erro da Mesagens
+CONTROL=SINGLELINEEDIT
+GUID=87F94DBB-7C6B-4B98-B102-5AD2D2AD42A8
+  Name=ASSUNTO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Assunto:
+  Order=4
+  Left=82
+  Width=400
+  Top=50
+  Height=20
+  Browseindex=1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Assunto:
+  Property=HyperLabel=ASSUNTO
+  Property=HyperLabel=,,,mailerro_ASSUNTO
+  Property=FieldSpec=PADRAO_CHAR_120
+CONTROL=SUBDATAWINDOW
+GUID=ED018870-6935-4697-B7E1-9F3806C328ED
+  Name=JMAILPARA
+  Class=CONTROL:SUBDATAWINDOW
+  Caption=JMAILPARA
+  Order=5
+  Left=22
+  Width=367
+  Top=90
+  Height=140
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=JMAILPARA
+  Property=HyperLabel=,JMAILPARA
+CONTROL=PUSHBUTTON
+GUID=90A92096-DE7B-474E-8286-458B47EFD67A
+  Name=EXCLUIR
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Excluir
+  Order=6
+  Left=401
+  Width=80
+  Top=121
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,Excluir
+  Property=HyperLabel=EXCLUIR
+  Property=TooltipText=Exclui o Destinatario em Destaque
+CONTROL=PUSHBUTTON
+GUID=82E32C14-B248-432C-A5AB-2A10D46E7881
+  Name=INCLUIR
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Incluir
+  Order=7
+  Left=401
+  Width=80
+  Top=93
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,Incluir
+  Property=HyperLabel=INCLUIR
+  Property=TooltipText=Inclui um Destinatario
+CONTROL=FIXEDTEXT
+GUID=EF032BD6-7051-4DCC-817E-4BE7C1FC02A8
+  Name=x2
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Ajuda
+  Order=8
+  Left=413
+  Width=48
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,Ajuda
+  Property=HyperLabel=x2
+CONTROL=PUSHBUTTON
+GUID=8FED306F-37AB-4F3E-BBB4-386DD9FAE756
+  Name=Ajuda
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=9
+  Left=413
+  Width=48
+  Top=161
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=Ajuda
+  Property=HyperLabel=,,,login
+  Property=TooltipText=Clique Para Acessar a Ajuda
+  Property=Image=ico_ajuda
+CONTROL=PUSHBUTTON
+GUID=AF7BF34F-62D2-4A12-9E68-F2085656CCCA
+  Name=busca
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=10
+  Left=161
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=busca
+  Property=TooltipText=Localizar
+  Property=Image=ico_find
+SUBCONTROLSEND
+DESIGNEREND = _JMAILCFG
+
+

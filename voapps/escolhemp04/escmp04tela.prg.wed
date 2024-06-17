@@ -1,0 +1,233 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,escmp04x
+GUID=1D20E353-BC83-4522-8A1F-5E2782DC6F79
+  Name=escmp04x
+  Class=DATADIALOG
+  Caption=Escolher
+  Order=0
+  Left=34
+  Width=561
+  Top=34
+  Height=326
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escolher",,
+  Property=HyperLabel=#escmp04x,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SUBDATAWINDOW
+GUID=922DC3E4-DF20-40B8-9E8A-BE58182C26EA
+  Name=jescmp04
+  Class=SUBDATAWINDOW
+  Caption=jescmp04
+  Order=1
+  Left=9
+  Width=440
+  Top=41
+  Height=244
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#jescmp04,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=77D1ED2F-C0E3-4C2F-8542-5B48D1A91909
+  Name=CBUSCA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=149
+  Width=231
+  Top=9
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#CBUSCA,,,
+  Property=TooltipText="Digite o Dado para Busca"
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=FIXEDTEXT
+GUID=4229CE6C-01A8-47CE-8841-251B3E6049DF
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=3
+  Left=485
+  Width=64
+  Top=217
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=6C012523-3D03-4E2B-A709-E2E14D40C31B
+  Name=cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=4
+  Left=485
+  Width=64
+  Top=169
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#cancelar,,,
+  Property=Image=ico_sair
+  Property=TooltipText="Retornar sem Escolher"
+
+CONTROL=FIXEDTEXT
+GUID=1C5FC5D8-6BA4-45F5-A873-E0ED790D6EDF
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=Escolher
+  Order=5
+  Left=485
+  Width=64
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Escolher",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=PUSHBUTTON
+GUID=BCD0EBDB-04E2-4821-BDD3-1BAFA4CBA4A7
+  Name=Escolher
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=485
+  Width=64
+  Top=85
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Escolher,,,
+  Property=Image=ico_ok
+  Property=TooltipText="Escolher o Item da Lista"
+
+CONTROL=PUSHBUTTON
+GUID=2F6C3535-C7F6-4313-BD0C-625AFA976572
+  Name=Busca
+  Class=PUSHBUTTON
+  Caption=Nome
+  Order=8
+  Left=385
+  Width=40
+  Top=9
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#Busca,,,
+  Property=TooltipText="Buscar Nome"
+  Property=HyperLabel=,"Nome",,
+
+CONTROL=PUSHBUTTON
+GUID=2A43707E-A7BE-4FEF-8E40-7BA3EA58E976
+  Name=PushButton3
+  Class=PUSHBUTTON
+  Caption=Busca Detalhada
+  Order=9
+  Left=433
+  Width=72
+  Top=9
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073815552
+  Exstyles=0
+  Property=HyperLabel=,"Busca Detalhada",,
+  Property=HyperLabel=#PushButton3,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=D37D663B-5749-4528-AC95-33265C1D3F20
+  Name=CBUSCA1
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=9
+  Width=84
+  Top=9
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#CBUSCA1,,,
+  Property=TooltipText="Digite o Dado para Busca"
+  Property=FieldSpec=padrao_num_08
+  Property=FocusSelect=FSEL_ALL
+  Property=InheritClassName=rightSle
+
+CONTROL=PUSHBUTTON
+GUID=B6016E19-6779-4715-A638-D314F898ABD9
+  Name=Busca1
+  Class=PUSHBUTTON
+  Caption=Numero
+  Order=11
+  Left=97
+  Width=48
+  Top=9
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Numero",,
+  Property=HyperLabel=#Busca1,,,
+  Property=TooltipText="Buscar Numero"
+
+SUBCONTROLSEND
+DESIGNEREND = escmp04x
+

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
+  <PropertyGroup>
+    <ProjectGuid>D7F7CEDE-3FAE-42AF-B6E3-3E8B7917DE3C</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Engenharia</RootNamespace>
+    <AssemblyName>Engenharia</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Name>Engenharia</Name>
+    <Nologo>true</Nologo>
+    <GenerateFullPaths>true</GenerateFullPaths>
+    <Dialect>VO</Dialect>
+    <LB>true</LB>
+    <OutputName>Engenharia</OutputName>
+    <StartupObject />
+    <ApplicationIcon />
+    <Prefer32Bit>True</Prefer32Bit>
+    <VulcanCompatibleResources>False</VulcanCompatibleResources>
+    <AZ>false</AZ>
+    <CS>false</CS>
+    <OVF>true</OVF>
+    <Unsafe>true</Unsafe>
+    <INS>true</INS>
+    <NS>false</NS>
+    <VO1>true</VO1>
+    <VO2>true</VO2>
+    <VO3>true</VO3>
+    <VO4>true</VO4>
+    <VO5>true</VO5>
+    <VO6>true</VO6>
+    <VO7>true</VO7>
+    <VO8>true</VO8>
+    <VO9>true</VO9>
+    <VO10>true</VO10>
+    <VO11>false</VO11>
+    <VO12>false</VO12>
+    <VO13>true</VO13>
+    <VO14>false</VO14>
+    <VO15>true</VO15>
+    <VO16>true</VO16>
+    <MemVar>false</MemVar>
+    <Undeclared>false</Undeclared>
+    <NoStandardDefs>false</NoStandardDefs>
+    <EnforceSelf>True</EnforceSelf>
+    <IncludePaths />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
+    <PlatformTarget>x86</PlatformTarget>
+    <EmitDebugInformation>true</EmitDebugInformation>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
+    <UseSharedCompilation>true</UseSharedCompilation>
+    <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
+    <WarningLevel>4</WarningLevel>
+    <PPO>false</PPO>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Label="Configuration">
+    <PlatformTarget>x86</PlatformTarget>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <EmitDebugInformation>false</EmitDebugInformation>
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseSharedCompilation>true</UseSharedCompilation>
+    <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
+    <PPO>false</PPO>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\mlibwvo27\mlibwvo27.xsproj">
+      <Name>mlibwvo27</Name>
+      <Project>{4bf79407-1c84-4cb1-88e6-d3f435490afb}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <ProjectReference Include="..\Login\Login.xsproj">
+      <Name>Login</Name>
+      <Project>{C74D47F3-832A-4082-8F2D-17E303CBB3DA}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mail\Mail.xsproj">
+      <Name>Mail</Name>
+      <Project>{82484E5D-4FD7-4F59-9077-821F3F7C750B}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <Reference Include="XSharp.Core">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="XSharp.RT">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="XSharp.VO">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VORDDClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOGUIClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOSystemClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOWin32APILibrary">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menus.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Menus.EMPTYSHELLMENU_Accelerator.rc">
+      <DependentUpon>Menus.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="Menus.EMPTYSHELLMENU.rc">
+      <DependentUpon>Menus.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="Menus.EMPTYSHELLMENU.xsmnu">
+      <DependentUpon>Menus.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="LC.JAN.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="LC.JAN.JLC.rc">
+      <DependentUpon>LC.JAN.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="LC.JAN.JLC.xsfrm">
+      <DependentUpon>LC.JAN.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="LCT.JAN.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="LCT.JAN.JLCT.rc">
+      <DependentUpon>LCT.JAN.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="LCT.JAN.JLCT.xsfrm">
+      <DependentUpon>LCT.JAN.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="X.Classes.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="funcoes.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Start.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc">
+      <DependentUpon>Start.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="Start.VS_VERSION_INFO.rc">
+      <DependentUpon>Start.prg</DependentUpon>
+    </NativeResource>
+    <Compile Include="xclassesshell.prg">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
+  <ProjectExtensions>
+    <ProjectCapabilities>
+      <ProjectConfigurationsDeclaredAsItems />
+    </ProjectCapabilities>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+</Project>

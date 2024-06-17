@@ -1,0 +1,52 @@
+PARTIAL CLASS JFIRMA
+METHOD APPEND() 
+	alert("Operaçao Bloqueada")
+
+METHOD buscaNUM( ) 
+	SELF:KeyFind()
+
+METHOD CMDCHECKUF( ) 
+		ufCheck(SELF:SERVER:FIELDGET("ESTADO"))
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTFGRP("EMP","")	
+
+
+METHOD cmdordenar( ) 
+	SELF:KeyFIND()
+
+METHOD cmdPESSOA( ) 
+SELF:server:FIELDPUT("PESSOA",SIMNAO(SELF:SERVER:FIELDGET("PESSOA"),{"F","J","O"}))	
+
+METHOD DELETE() 
+	alert("Operaçao Bloqueada")
+	
+
+METHOD escUF( ) 
+	LOCAL oESC AS XESCFO_TAB
+oESC:=XESCFO_TAB{SELF,"UF  ",SELF:SERVER:FIELDGET("ESTADO")}
+oESC:SHOW()	
+IF Oesc:lok
+   SELF:SERVER:FIELDPUT("ESTADO",oESC:cCODIGO)
+ENDIF						
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+ FabCenterWindow( SELF )
+ RETURN SELF
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+
+
+END CLASS

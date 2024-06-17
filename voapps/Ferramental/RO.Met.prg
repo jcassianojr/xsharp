@@ -1,0 +1,767 @@
+PARTIAL CLASS JRO
+METHOD ALTERAR  
+SELF:oSFJROI:VIEWFORM()
+
+METHOD ANTERIOR 
+SELF:oSFJROI:Browser:SuspendUpdate()
+SELF:oSFJROI:SkipPREVIOUS()
+IF SELF:oSFJROI:Server:BOF
+	SELF:oSFJROI:SkipNEXT()
+ENDIF
+SELF:oSFJROI:Browser:RestoreUpdate()
+
+METHOD APPEND() 
+LOCAL nRO AS DWORD
+LOCAL oFERRAM,oFAPUBAI,oFAPUFER AS USEREDE
+LOCAL oRONEW AS RONEW
+LOCAL oSM AS USEREDE
+LOCAL aCAMPOS,aDAD,aFERRAM,aREQ AS ARRAY  
+
+aCAMPOS:={}
+aFERRAM:={}
+oRONEW:=RONEW{}
+oRONEW:SHOW()
+IF ! oRONEW:LOK
+    alert("Inclusão Cancelada ou sem numero Solicitaçao de manutenção ou codigo ferramenta")
+    RETURN .f.
+ENDIF
+
+aREQ:={0,""}
+//Solicitação de Manutencao
+IF oRONEW:nSM>0
+	SELF:server:setorder(2)
+	SELF:server:gotop()
+	IF SELF:server:seek( oRONEW:nSM)
+	   alert("Solicitação Manutenção já utilizada")
+	   RETURN .f.
+	ENDIF
+    aDAD:={zCURINI,"SM.DBF",zCURDIR}
+    oSM:=USEREDE{aDAD}
+    IF oSM:nERRO#0
+	    alert("Erro ao abrir solicitação de Manutenção")
+	    RETURN .f.
+	ENDIF
+	oSM:GOTOP()
+	IF ! oSM:SEEK(oRONEW:nSM)
+	    alert("Erro  solicitação de Manutenção não encontrada")
+	    RETURN .f.
+	ENDIF
+	aCAMPOS:={}
+	AAdd(aCAMPOS,oSM:FIELDGET("TIPO"))    //1
+	AAdd(aCAMPOS,oSM:FIELDGET("CODIGO"))  //2
+	AAdd(aCAMPOS,oSM:FIELDGET("NOME"))    //3
+	AAdd(aCAMPOS,"C")         //4
+	AAdd(aCAMPOS,oRONEW:nSM)  //5
+	AAdd(aCAMPOS,oSM:FIELDGET("DEF01"))   //6
+	AAdd(aCAMPOS,oSM:FIELDGET("DEF02"))	  //7
+//	AAdd(aCAMPOS,oSM:FIELDGET("DEF03"))	  //8
+    AAdd(aCAMPOS,"")	  //8   Campo Nao Mas Usado
+	AAdd(aCAMPOS,oSM:FIELDGET("CLIENTE"))	  //9
+	AAdd(aCAMPOS,oSM:FIELDGET("CLINOME"))	  //10	
+    AAdd(aCAMPOS,"") //11
+    AAdd(aCAMPOS,"") //12
+	AAdd(aCAMPOS,"") //13
+	AAdd(aCAMPOS,"") //14		
+    AAdd(aCAMPOS,"") //15
+	AAdd(aCAMPOS,oSM:FIELDGET("DATAPAR")) //16
+    AAdd(aCAMPOS,oSM:FIELDGET("HORAPINI")) //17
+	aREQ[1]:=oSM:FIELDGET("REQNUM")
+	aREQ[2]:=oSM:FIELDGET("REQNOME")	
+	oSM:CLOSE()
+ENDIF
+//Final Solicitação
+
+
+//Pega Dados se for Preventiva
+IF ! Empty(oRONEW:cFERRAM)
+	aDAD:={zCURINI,IF(oRONEW:CTIPO="F","FERRAM.DBF","ME01.DBF"),zCURDIR}
+	oFERRAM:=USEREDE{aDAD}
+  	IF oFERRAM:nERRO#0
+      alert("Erro ao abrir cadastro de ferramenta/maquina")
+      RETURN .f.
+	ENDIF
+	oFERRAM:GOTOP()
+	IF ! oFERRAM:SEEK(oRONEW:cFERRAM)
+		 oFERRAM:CLOSE()
+	    alert("Erro  ferramenta/maquina não encontrada")		
+	    RETURN .f.
+	ENDIF
+	IF Empty(oFERRAM:FIELDGET("QTDEPED"))
+       alert("Erro ferramenta/maquina não atingiu quantidade preventiva")
+	    IF ! MDG("Gerar Preventiva desconsiderando o limite")
+ 			 oFERRAM:CLOSE()				
+ 			 RETURN .f.
+	    ENDIF
+	ENDIF
+	aCAMPOS:={}
+	AAdd(aCAMPOS,oRONEW:CTIPO)   //1
+	AAdd(aCAMPOS,oRONEW:cFERRAM) //2
+	AAdd(aCAMPOS,oFERRAM:FIELDGET("NOME"))   //3
+	AAdd(aCAMPOS,"P")	           //4
+	AAdd(aCAMPOS,0)              //5
+	AAdd(aCAMPOS,"")             //6
+	AAdd(aCAMPOS,"")             //7
+	AAdd(aCAMPOS,"")	           //8
+   IF oRONEW:CTIPO="F"	
+ 	  AAdd(aCAMPOS,oFERRAM:FIELDGET("CLIENTE")) //9
+	  AAdd(aCAMPOS,oFERRAM:FIELDGET("COGCLI"))  //10
+	  AAdd(aCAMPOS,"") //11
+	  AAdd(aCAMPOS,"") //12
+	  AAdd(aCAMPOS,"") //13
+	  AAdd(aCAMPOS,"") //14		
+      AAdd(aCAMPOS,"") //15
+   ENDIF
+   IF oRONEW:CTIPO="M"	
+ 	  AAdd(aCAMPOS,0) //9
+	  AAdd(aCAMPOS,"")  //10
+ 	  AAdd(aCAMPOS,oFERRAM:FIELDGET("CONTABIL")) //11
+	  AAdd(aCAMPOS,oFERRAM:FIELDGET("SETOR"))  //12	
+ 	  AAdd(aCAMPOS,oFERRAM:FIELDGET("FABRICANTE")) //13
+	  AAdd(aCAMPOS,oFERRAM:FIELDGET("MODELO"))  //14
+      AAdd(aCAMPOS,oFERRAM:FIELDGET("GRUPO"))  //15
+	ENDIF		
+	oFERRAM:CLOSE()	
+    AAdd(aCAMPOS,CToD(Space(8))) //16
+    AAdd(aCAMPOS,0) //17
+ENDIF
+
+//Baixa de Saldo Preventiva
+IF ! Empty(oRONEW:cFERRAM)
+	aDAD:={zCURINI,IF(oRONEW:CTIPO="F","FERRAM.DBF","ME01.DBF"),zCURDIR}
+	oFERRAM:=USEREDE{aDAD}
+	IF oFERRAM:nERRO#0
+     alert("Erro ao abrir cadastro de ferramenta")
+     RETURN .f.
+	ENDIF
+	aDAD:={zCURINI,IF(oRONEW:CTIPO="F","FAPUFER.DBF","FAPUMAQ.DBF"),zCURDIR}
+	oFAPUFER:=USEREDE{aDAD}
+	IF oFAPUFER:nERRO#0
+	    alert("Erro ao abrir cadastro de uso ferramenta")
+	    oFERRAM:CLOSE()
+	    RETURN .f.
+	ENDIF
+	aDAD:={zCURINI,IF(oRONEW:CTIPO="F","FAPUBAI.DBF","MAPUBAI.DBF"),zCURDIR}
+	oFAPUBAI:=USEREDE{aDAD}
+	IF oFAPUBAI:nERRO#0
+	    alert("Erro ao abrir cadastro de uso ferramenta baixadas")
+	    oFAPUFER:CLOSE()
+	    oFERRAM:CLOSE()
+	    RETURN .f.
+	ENDIF
+   oFERRAM:GOTOP()
+   IF ! oFERRAM:SEEK(aCAMPOS[2])
+	  	 oFAPUFER:CLOSE()
+	  	 oFAPUBAI:CLOSE()
+		 oFERRAM:CLOSE()
+       alert("Erro  ferramenta não encontrada")
+	    RETURN .f.
+	ENDIF
+	aFERRAM:={}
+	AAdd(aFERRAM,oFERRAM:FIELDGET("QTDESALDO"))     //1
+	AAdd(aFERRAM,oFERRAM:FIELDGET("QTDEPED"))       //2
+	AAdd(aFERRAM,oFERRAM:FIELDGET("QTDEURG"))       //3
+	AAdd(aFERRAM,oFERRAM:FIELDGET("DATASALDO"))     //4
+	AAdd(aFERRAM,oFERRAM:FIELDGET("DATAPED"))       //5
+	AAdd(aFERRAM,oFERRAM:FIELDGET("DATAURG"))       //6
+	AAdd(aFERRAM,oFERRAM:FIELDGET("QTDETOT"))	      //7
+	AAdd(aFERRAM,oFERRAM:FIELDGET("HRSAL"))         //8
+	AAdd(aFERRAM,oFERRAM:FIELDGET("HRPRE"))         //9
+	AAdd(aFERRAM,oFERRAM:FIELDGET("HRURG"))         //10
+	AAdd(aFERRAM,oFERRAM:FIELDGET("HRSAL"))         //11
+	AAdd(aFERRAM,oFERRAM:FIELDGET("DATHPED"))       //12
+	AAdd(aFERRAM,oFERRAM:FIELDGET("DATHURG"))	      //13
+	AAdd(aFERRAM,oFERRAM:FIELDGET("HRTOT"))	      //14
+  	oFERRAM:FIELDPUT("QTDESALDO",0)
+	oFERRAM:FIELDPUT("QTDEPED",0)	
+	oFERRAM:FIELDPUT("QTDEURG",0)		
+	oFERRAM:FIELDPUT("DATASALDO",CToD(Space(8)))
+	oFERRAM:FIELDPUT("DATAPED",CToD(Space(8)))
+	oFERRAM:FIELDPUT("DATAURG",CToD(Space(8)))	
+  	oFERRAM:FIELDPUT("HRSAL",0)
+	oFERRAM:FIELDPUT("HRPRE",0)	
+	oFERRAM:FIELDPUT("HRURG",0)		
+	oFERRAM:FIELDPUT("DATHSAL",CToD(Space(8)))
+	oFERRAM:FIELDPUT("DATHPED",CToD(Space(8)))
+	oFERRAM:FIELDPUT("DATHURG",CToD(Space(8)))
+	oFERRAM:CLOSE()
+	oFAPUFER:SETORDER(2)
+  	oFAPUFER:GOTOP()
+	oFAPUFER:SEEK(aCAMPOS[2])
+	WHILE oFAPUFER:FIELDGET("FERRAM")=aCAMPOS[2] .AND. ! oFAPUFER:EOF
+         oFAPUBAI:APPEND()
+         oFAPUBAI:FIELDPUT("SEQ",oFAPUFER:FIELDGET("SEQ"))
+         oFAPUBAI:FIELDPUT("QTDE",oFAPUFER:FIELDGET("QTDE"))
+         oFAPUBAI:FIELDPUT("HORAS",oFAPUFER:FIELDGET("HORAS"))
+	      oFAPUBAI:FIELDPUT("FERRAM",oFAPUFER:FIELDGET("FERRAM"))
+	      oFAPUFER:DELETE()
+	      oFAPUFER:SKIP()
+	ENDDO
+	oFAPUFER:CLOSE()
+	oFAPUBAI:CLOSE()
+ENDIF
+//Final Baixa Saldo Preventiva Ferramenta
+
+SELF:server:setorder(1)
+SELF:server:gobottom()
+nRO:=SELF:Server:RO
+nRO++
+SELF:SERVER:SUSPENDNOTIFICATION()
+SUPER:append()
+SELF:server:FIELDPUT("RO",nRO)
+SELF:server:FIELDPUT("data",Today())
+SELF:server:FIELDPUT("sm",oRONEW:nSM)
+SELF:server:FIELDPUT("tipo",aCAMPOS[1])
+SELF:server:FIELDPUT("ferram",aCAMPOS[2])
+SELF:server:FIELDPUT("nome",aCAMPOS[3])
+SELF:server:FIELDPUT("tiporo",aCAMPOS[4])
+SELF:server:FIELDPUT("sm",aCAMPOS[5])
+SELF:server:FIELDPUT("DEFEITO",aCAMPOS[6])
+SELF:server:FIELDPUT("DEFEIT2",aCAMPOS[7])
+SELF:server:FIELDPUT("DEFEIT3",aCAMPOS[8])
+SELF:server:FIELDPUT("CLIENTE",aCAMPOS[9])
+SELF:server:FIELDPUT("CLINOME",aCAMPOS[10])
+SELF:server:FIELDPUT("DATAPAR",aCAMPOS[16])
+SELF:server:FIELDPUT("HORAPINI",aCAMPOS[17])
+SELF:server:FIELDPUT("REQNUM",aREQ[1])
+SELF:server:FIELDPUT("REQNOME",aREQ[2])
+IF ! Empty(oRONEW:cFERRAM)  				//Preventiva  Grava Saldo
+     SELF:server:FIELDPUT("qtdesaldo",aFERRAM[1])
+     SELF:server:FIELDPUT("qtdeped",aFERRAM[2])
+     SELF:server:FIELDPUT("qtdeurg",aFERRAM[3])
+     SELF:server:FIELDPUT("datasaldo",aFERRAM[4])
+     SELF:server:FIELDPUT("dataped",aFERRAM[5])
+     SELF:server:FIELDPUT("dataurg",aFERRAM[6])    //Final Preventiva
+     SELF:server:FIELDPUT("qtdeTOT",aFERRAM[7])
+     SELF:server:FIELDPUT("HRsal",aFERRAM[8])
+     SELF:server:FIELDPUT("HRPRE",aFERRAM[9])
+     SELF:server:FIELDPUT("HRurg",aFERRAM[10])
+     SELF:server:FIELDPUT("datHsal",aFERRAM[11])
+     SELF:server:FIELDPUT("datHped",aFERRAM[12])
+     SELF:server:FIELDPUT("datHurg",aFERRAM[13])    //Final Preventiva
+     SELF:server:FIELDPUT("HRTOT",aFERRAM[14])
+ENDIF
+SELF:SERVER:resetnotification()
+SELF:SERVER:notify(notifyappend)
+
+
+//Grava o RO No SM
+IF (oRONEW:nSM>0)
+    aDAD:={zCURINI,"SM.DBF",zCURDIR}
+    oSM:=USEREDE{aDAD}
+    IF oSM:nERRO=0
+  		oSM:GOTOP()
+		IF oSM:SEEK(oRONEW:nSM)
+	      oSM:FIELDPUT("RO",nRO)
+	   ENDIF
+	ENDIF
+	oSM:CLOSE()
+ENDIF	
+
+//Preventiva Ferramenta Lista de Verificaçao
+IF ! (oRONEW:nSM>0) .AND. aCAMPOS[1]="F"
+   SELF:Checkfer()
+ENDIF
+//Final Preventiva
+
+
+
+//Preventiva Maquina Lista de Verificaçao
+IF ! (oRONEW:nSM>0) .AND. aCAMPOS[1]="M"	
+   SELF:CHECKMAQ()
+ENDIF
+//Final Preventiva
+RETURN .t.
+
+METHOD busca( ) 
+	SELF:KeyFind()
+//LOCAL oBUSCA AS xBUSCA
+//oBUSCA:=xBUSCA{SELF,"Localizar","Digite o Nº "}
+//oBUSCA:lMES:=.T.
+//oBUSCA:SHOW()
+//IF oBUSCA:lOK
+//   SELF:SERVER:SETORDER(1)
+//   SELF:SERVER:GOTOP()
+//   SELF:SERVER:SEEK(Val(oBUSCA:cBUSCA))
+//ENDIF
+	
+
+METHOD Checkfer( ) 
+LOCAL aDAD AS ARRAY
+LOCAL aRETU AS ARRAY
+LOCAL oLVF,oLVFP,oLVFI AS USEREDE	
+ARETU:=PEGFERRAM(SELF:SERVER:FIELDGET("FERRAM"))
+IF SELF:SERVER:TIPO<>"F" .AND. SELF:SERVER:TIPORO<>"P"
+   RETURN .f.	
+ENDIF	
+aDAD:={zCURINI,"LVF.DBF",zCURDIR}
+oLVF:=USEREDE{aDAD}
+IF oLVF:nERRO#0
+   RETURN .f.
+ENDIF
+oLVF:GOTOP()
+IF ! oLVF:SEEK(SELF:SERVER:RO)
+   oLVF:append()
+   oLVF:FIELDPUT("LVF",SELF:SERVER:RO)
+   oLVF:FIELDPUT("data",SELF:SERVER:DATA)
+   oLVF:FIELDPUT("OBS01","Limpeza e Lubrificação")
+   oLVF:FIELDPUT("FERRAM",SELF:SERVER:FERRAM)
+   oLVF:FIELDPUT("NOME",SELF:SERVER:NOME)
+   oLVF:FIELDPUT("CLIENTE",SELF:SERVER:CLIENTE)
+   oLVF:FIELDPUT("CLINOME",SELF:SERVER:CLINOME)
+   oLVF:FIELDPUT("RO",SELF:SERVER:RO)
+   oLVF:cLOSE()
+   aDAD:={zCURINI,"LVFP.DBF",zCURDIR}
+   oLVFP:=USEREDE{aDAD}
+   IF oLVFP:nERRO#0	
+	  RETURN .f.
+   ENDIF
+   aDAD:={zCURINI,"LVFI.DBF",zCURDIR}
+	oLVFI:=USEREDE{aDAD}
+	IF oLVFI:nERRO#0
+	   oLVFP:CLOSE()
+	   RETURN .f.
+	ENDIF
+	oLVFP:GOTOP()
+	WHILE ! oLVFP:EOF
+	 	oLVFI:APPEND()
+		IF Empty(oLVFP:FIELDGET("GRUPO")) .OR. oLVFP:FIELDGET("GRUPO")=aretu[5]
+           Olvfi:FIELDPUT("LVF",SELF:SERVER:R0)
+	       oLVFI:FIELDPUT("ITEM",oLVFP:FIELDGET("ITEM"))
+	       oLVFI:FIELDPUT("DESCRI",oLVFP:FIELDGET("DESCRI"))
+	  	   oLVFI:commit()
+	  	ENDIF
+		oLVFP:SKIP()
+	ENDDO
+    oLVFP:CLOSE()
+    oLVFI:CLOSE()
+ELSE
+  oLVF:CLOSE()
+ENDIF
+
+METHOD CheckList( ) 
+IF SELF:SERVER:FIELDGET("TIPO")="F"
+   SELF:checkfer()	
+ENDIF	
+IF SELF:SERVER:FIELDGET("TIPO")="M"
+   SELF:checkmaq()	
+ENDIF	
+
+METHOD CHECKMAQ 
+LOCAL aDAD,aMAQ AS ARRAY
+LOCAL oLVM,oLVMP,oLVMI AS USEREDE	
+LOCAL cGRUPO AS STRING
+LOCAL nITEM AS DWORD
+
+IF SELF:SERVER:TIPO<>"M" .AND. SELF:SERVER:TIPORO<>"P"
+   RETURN .f.	
+ENDIF	
+
+cGRUPO:=""    //Joga Variavel Fixar Problema Comparacao ARQUIVO
+aMAQ:=PEGME01(AllTrim(SELF:SERVER:FERRAM),ZCURINI,ZCURDIR)
+IF aMAQ[1]
+   cGRUPO:=aMAQ[7]
+ENDIF
+
+
+aDAD:={zCURINI,"LVM.DBF",zCURDIR}
+oLVM:=USEREDE{aDAD}
+IF oLVM:nERRO#0
+   RETURN .f.
+ENDIF	
+aDAD:={zCURINI,"LVMI.DBF",zCURDIR}
+oLVMI:=USEREDE{aDAD}
+IF oLVMI:nERRO#0
+   oLVM:CLOSE()
+   RETURN .f.
+ENDIF
+oLVM:GOTOP()
+IF ! oLVM:SEEK(SELF:SERVER:RO)
+   oLVM:append()
+   oLVM:FIELDPUT("LVM",SELF:SERVER:RO)
+   oLVM:FIELDPUT("data",SELF:SERVER:DATA)
+   oLVM:FIELDPUT("OBS01","Limpeza e Lubrificação")
+   oLVM:FIELDPUT("NUMERO",SELF:SERVER:FERRAM)
+   oLVM:FIELDPUT("NOME",aMAQ[2])
+   oLVM:FIELDPUT("RO",SELF:SERVER:RO)
+   oLVM:FIELDPUT("CONTABIL",aMAQ[3])
+   oLVM:FIELDPUT("SETOR",aMAQ[4])
+   oLVM:FIELDPUT("FABRICANTE",aMAQ[5])	
+   oLVM:FIELDPUT("MODELO",aMAQ[6])			
+   oLVM:commit()
+	nITEM:=0	
+	aDAD:={zCURINI,"LVMP.DBF",zCURDIR}
+	oLVMP:=USEREDE{aDAD}
+	IF oLVMP:nERRO=0
+	   oLVMP:GOTOP()
+	   WHILE ! oLVMP:EOF
+	 	 	IF Empty(oLVMP:FIELDGET("GRUPO")) .OR. (cGRUPO=oLVMP:FIELDGET("GRUPO"))
+	 	 		nITEM++
+    	 	 	oLVMI:APPEND()	
+	   		    oLVMI:FIELDPUT("LVM",SELF:SERVER:RO)
+	   	        oLVMI:FIELDPUT("ITEM",nITEM)
+	      	    oLVMI:FIELDPUT("DESCRI",oLVMP:FIELDGET("DESCRI"))
+		  		oLVMI:commit()
+	  		ENDIF
+			oLVMP:SKIP()
+	   ENDDO
+	   oLVMP:CLOSE()
+	ENDIF
+ENDIF
+oLVMI:CLOSE()
+oLVM:CLOSE()
+
+
+METHOD cmdConcluida() 
+LOCAL aDAD AS ARRAY	
+LOCAL oARQ,oMOV,oSM,OFERRAM AS USEREDE
+LOCAL nESTQXXX,nESTQYYY,VAR1,VAR2,VAR3 AS FLOAT
+LOCAL X AS DWORD
+LOCAL xDIAS //Deixada sem tipo pode ser negativa
+LOCAL yCODIGO,eCHAVE AS STRING
+LOCAL aCODIGO AS ARRAY
+LOCAL lBAIXA AS LOGIC
+lBAIXA:=.T.
+aCODIGO:={"","","GERAL"}    
+xdias:=0
+
+IF Empty(SELF:SErVER:FIELDGET("DATA"))
+   alert("Data Nao Preenchida")	
+   RETURN .f.
+ENDIF	
+IF Empty(SELF:SErVER:FIELDGET("HORA"))
+   alert("Hora Nao Prenchida")	
+   RETURN .f.
+ENDIF	
+
+
+IF Empty(SELF:SErVER:FIELDGET("TECNICO"))
+   alert("Tecnico Nao Preenchido")	
+   RETURN .f.
+ENDIF	
+
+IF Empty(SELF:SErVER:FIELDGET("TECNOME"))
+   alert("Nome Tecnico Nao Preenchido")	
+   RETURN .f.
+ENDIF	
+
+IF Empty(SELF:SErVER:FIELDGET("REQNUM"))
+   alert("Numero do Requisitante Nao Preenchido")	
+   RETURN .f.
+ENDIF	
+
+IF Empty(SELF:SErVER:FIELDGET("REQNOME"))
+   alert("Nome do Requisitante Nao Preenchido")	
+   RETURN .f.
+ENDIF	
+
+IF SELF:SErVER:FIELDGET("TIPORO")="C"  .and. (SELF:SErVER:FIELDGET("TIPO")="M" .OR. SELF:SErVER:FIELDGET("TIPO")="F")
+   IF Empty(SELF:SErVER:FIELDGET("DATAPAR"))
+      alert("Data Parada Nao Preenchida")	
+      IF ! MDG("Deseja Concluir Mesmo assim")
+         RETURN .f.
+      ENDIF
+   ENDIF	
+   IF Empty(SELF:SErVER:FIELDGET("HORAPAR"))
+      alert("Hora Parada Nao Prenchida")	
+      IF ! MDG("Deseja Concluir Mesmo assim")
+         RETURN .f.
+      ENDIF
+   ENDIF	
+ENDIF
+
+
+IF SELF:SERVER:CONCLUIDA
+	alert("Já Marcada Como Concluida")
+	RETURN .f.	
+ENDIF	
+SELF:SERVER:CONCLUIDA:=.T.	
+aDAD:={zCURINI,"SM.DBF",zCURDIR}
+oSM:=USEREDE{aDAD}
+IF oSM:nERRO#0
+   alert("Erro Abrindo SM.DBF")
+ELSE	
+   oSM:GOTOP()
+  IF ! oSM:SEEK(SELF:sERVER:FIELDGET("SM"))
+	 oSM:CLOSE()
+	 alert("Solicitação Não Encontrada")
+  ELSE
+	 oSM:FIELDPUT("CONCLUIDA",.t.)
+	 oSM:CLOSE()		
+  ENDIF	
+ENDIF
+
+
+//Baixa Somente Ferramenta
+IF SELF:SERVER:FIELDGET("TIPO")#"F"
+	RETURN .f.
+ENDIF	
+
+
+//Pegando Grupo Da Ferramenta
+aCODIGO[1]:=AllTrim(SELF:SERVER:FIELDGET("FERRAM"))
+aDAD:={zCURINI,"FERRAM.DBF",zCURDIR}
+oFERRAM:=USEREDE{aDAD}
+IF oFERRAM:nERRO#0
+   alert("Erro Abrindo: FERRAM.DBF - Baixa Não Efetuada")
+   RETU NIL
+ENDIF
+oFERRAM:GOTOP()
+IF oFERRAM:SEEK(SELF:SERVER:FIELDGET("FERRAM"))
+	IF ! Empty(oFERRAM:FIELDGET("GRUPO"))
+		aCODIGO[2]:=AllTrim(oFERRAM:FIELDGET("GRUPO"))
+	ENDIF	
+ENDIF	
+oFERRAM:CLOSE()
+
+
+//Abrindo os Arquivos
+aDAD:={zCURINI,"FERGI.DBF",zCURDIR}
+oARQ:=USEREDE{aDAD}
+IF oARQ:nERRO#0
+   alert("Erro Abrindo: FERGI.DBF")
+   RETU NIL
+ENDIF
+oARQ:SetOrder(2)
+aDAD:={zCURINI,"FE99.DBF",zCURDIR}
+oMOV:=USEREDE{aDAD}
+IF oMOV:nERRO#0
+   oARQ:CLOSE()
+   alert("Erro Abrindo: FE99.DBF")
+   RETU NIL
+ENDIF
+
+
+//Gravando o Estoque
+SELF:oSFJROI:SERVER:SUSPENDNOTIFICATION()
+SELF:oSFJROI:server:GOTOP()	
+WHILE ! SELF:oSFJROI:server:EOF
+	
+   FOR X:=1 TO 3
+  	   nESTQXXX := 0
+       nESTQYYY := 0
+   	   yCODIGO := aCODIGO[X]
+       eCHAVE:=PadR(yCODIGO,24)+SELF:oSFJROI:SERVER:FIELDGET("CODIGO")
+       oARQ:GOTOP()
+       IF oARQ:SEEK(eCHAVE) .AND. lBAIXA
+       	  lBAIXA:=.F.
+          oARQ:FIELDPUT("ESTQSAI",oARQ:FIELDGET("ESTQSAI")+SELF:oSFJROI:server:FIELDGET("QTDE"))
+	      //Gravando o Saldo de Estoque Anterior
+   	      nESTQXXX       := oARQ:FIELDGET("ESTQSAL")
+          oARQ:FIELDPUT("ESTQSAL",oARQ:FIELDGET("ESTQINI") + oARQ:FIELDGET("ESTQENT") - oARQ:FIELDGET("ESTQSAI"))
+	      //Gravando o Saldo de Estoque Atual
+          nESTQYYY       := oARQ:FIELDGET("ESTQSAL")
+          oARQ:FIELDPUT("SAIMIN",oARQ:FIELDGET("SAIMIN")+ SELF:oSFJROI:server:FIELDGET("QTDE"))
+          //Calculando o Estoque Minimo
+          VAR1:=0
+          IF ! Empty(oARQ:FIELDGET("DATMIN"))
+             xDIAS:= SELF:server:FIELDGET("DATA") - oARQ:FIELDGET("DATMIN")
+          ENDIF
+          IF xDIAS>0
+	         VAR1:= oARQ:FIELDGET("SAIMIN") / xDIAS
+	      ENDIF
+          VAR2 := oARQ:FIELDGET("DIASENT") * VAR1
+          VAR3 := oARQ:FIELDGET("DIASEST") * VAR1
+          oARQ:FIELDPUT("ESTQMIN",VAR2 + VAR3)
+	      IF xDIAS > 30 // zMEDIA Balancei o Saldo quando maior que a media
+   	         oARQ:FIELDPUT("DATMIN",SELF:SERVER:FIELDGET("DATA") - 30) // *ZMEDIA
+      	     oARQ:FIELDPUT("SAIMIN",VAR1 * 30)  // *ZMEDIA
+	      ENDIF
+          oMOV:APPEND()
+          oMOV:FIELDPUT("ARQUIVO","RO")
+          oMOV:FIELDPUT("DOCUMENTO",Str(SELF:SERVER:FIELDGET("RO"),8)+yCODIGO+"/"+SELF:oSFJROI:SERVER:FIELDGET("CODIGO"))
+          oMOV:FIELDPUT("DATA",SELF:SERVER:FIELDGET("DATA"))
+          oMOV:FIELDPUT("USUARIO",ZUSER)
+          oMOV:FIELDPUT("QTDE",oSFJROI:server:FIELDGET("QTDE"))
+          oMOV:FIELDPUT("OLDQTDE",0)
+          oMOV:FIELDPUT("NUMERO",SELF:SERVER:FIELDGET("RO"))
+          oMOV:FIELDPUT("CODIGO",yCODIGO+"/"+SELF:Osfjroi:SERVER:FIELDGET("CODIGO"))
+          oMOV:FIELDPUT("ESTQXXX",nESTQXXX)
+          oMOV:FIELDPUT("ESTQYYY",nESTQYYY)
+       ENDIF
+   NEXT X
+   SELF:oSFJROI:server:SKIP()
+ENDDO	
+SELF:oSFJROI:SERVER:resetnotification()
+SELF:oSFJROI:SERVER:notify(notifyfilechange)	
+oARQ:CLOSE()
+oMOV:CLOSE()
+RETU .T.
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("FR","RO")	
+
+METHOD DELETE() 
+//LOCAL nRO AS DWORD
+LOCAL oLVF,oLVFI AS USEREDE
+LOCAL aDAD AS ARRAY
+LOCAL cTIPO AS STRING
+LOCAL cCAMPO AS STRING
+IF  ! MDG("Apagar Registro") .AND. SELF:SERVER:LOCKcurrentrecord()
+    RETURN .f.
+ENDIF
+//nRO:=SELF:SERVER:RO
+GRAVALOG(SELF:SERVER:FIELDGET("RO"),"DEL","RO")	
+
+//Apagando Itens
+SELF:oSFJROI:SERVER:SUSPENDNOTIFICATION()
+SELF:oSFJROI:server:GOTOP()	
+WHILE ! oSFJROI:server:EOF
+ 	SELF:oSFJROI:server:delete()
+ENDDO	
+SELF:oSFJROI:SERVER:resetnotification()
+SELF:oSFJROI:SERVER:notify(notifyfilechange)	
+
+//Apagando Master
+SELF:server:delete()
+SELF:server:unlock()
+SELF:server:skip(-1)
+IF SELF:SERVER:BOF
+   SELF:SERVER:GOTOP()
+ENDIF
+
+cTIPO:=SELF:SERVER:FIELDGET("TIPO")
+cCAMPO:=IF(ctipo="F","LVF","LVM")
+//Apagando Lista
+aDAD:={zCURINI,IF(cTIPO="F","LVF.DBF","LVM.DBF"),zCURDIR}
+oLVF:=USEREDE{aDAD}
+IF oLVF:nERRO=0
+   oLVF:GOTOP()
+   IF oLVF:SEEK(SELF:SERVER:RO)
+      oLVF:DELETE()
+   ENDIF
+   oLVF:CLOSE()
+ENDIF
+aDAD:={zCURINI,IF(cTIPO="F","LVFI.DBF","LVMI.DBF"),zCURDIR}
+oLVFI:=USEREDE{aDAD}
+IF oLVFI:nERRO=0
+   oLVFI:GOTOP()
+   oLVFI:SEEK(SELF:SERVER:RO)
+   WHILE (oLVFI:FIELDGET(cCAMPO))=SELF:SERVER:FIELDGET("RO") .AND. ! oLVFI:EOF
+      oLVFI:DELETE()
+      oLVFI:SKIP()
+   ENDDO
+   oLVFI:CLOSE()
+ENDIF
+
+
+METHOD escres1( ) 
+LOCAL oESCMP04 AS XESCMP04
+oESCMP04:=XESCMP04{SELF}
+IF oESCMP04:LOK
+   SELF:SERVER:FIELDPUT("TECNICO",oESCMP04:NUMERO)
+   SELF:SERVER:FIELDPUT("TECNOME",oESCMP04:NOME)
+ENDIF
+
+METHOD escres2( ) 
+LOCAL oESCMP04 AS XESCMP04
+oESCMP04:=XESCMP04{SELF}
+IF oESCMP04:LOK
+   SELF:SERVER:FIELDPUT("REQNUM",oESCMP04:NUMERO)
+   SELF:SERVER:FIELDPUT("REQNOME",oESCMP04:NOME)
+ENDIF
+
+METHOD EXCLUIR 
+SELF:oSFJROI:SERVER:SUSPENDNOTIFICATION()
+IF MDG("Apagar Registro") .AND. SELF:oSFJROI:server:LockCurrentRecord()
+    SELF:oSFJROI:server:delete()
+    SELF:oSFJROI:server:unlock()
+    SELF:oSFJROI:server:skip(-1)
+ ENDIF	
+SELF:oSFJROI:SERVER:resetnotification()
+SELF:oSFJROI:SERVER:notify(notifyfilechange)
+
+METHOD INCLUIR 
+LOCAL nRO AS DWORD
+nRO:=SELF:SERVER:RO
+SELF:oSFJROI:SERVER:SUSPENDNOTIFICATION()
+SELF:oSFJROI:SERVER:APPEND()
+SELF:oSFJROI:SERVER:RO:=nRO
+SELF:oSFJROI:SERVER:commit()
+SELF:oSFJROI:SERVER:resetnotification()
+SELF:oSFJROI:SERVER:notify(notifyappend)
+
+METHOD ListBoxSelect( oControlEvent ) 
+	LOCAL oControl AS Control
+	LOCAL aRESP AS ARRAY
+	oControl := IIf( oControlEvent == NULL_OBJECT, NULL_OBJECT, oControlEvent:Control )
+	SUPER:ListBoxSelect( oControlEvent )
+	//Put your changes here
+	DO CASE
+	       CASE oCONTROL:NAMESYM==#AREA
+                             aRESP:=PEGMP05(SELF:SERVER:AREA,ZCURINI,ZCURDIR)
+                             IF aRESP[1]=.T.
+                                  SELF:SERVER:DESCRI:=aRESP[4]
+                             ENDIF
+	ENDCASE
+RETURN NIL
+
+METHOD pegcli( ) 
+LOCAL aFER AS ARRAY
+   aFER:=PEGMA01(SELF:SERVER:CLIENTE,ZCURINI,ZCURDIR)
+           IF aFER[1]=.T.
+              SELF:SERVER:CLINOME:=aFER[2]
+           ENDIF	
+
+METHOD pegfer( ) 
+LOCAL aFER AS ARRAY
+           aFER:=PEGFERRAM(SELF:SERVER:FERRAM)
+           IF aFER[1]=.T.
+              SELF:SERVER:NOME:=aFER[2]
+              IF ! Empty(aFER[3])
+                  SELF:SERVER:CLIENTE:=aFER[3]
+              ENDIF
+           ENDIF
+	
+
+
+METHOD PEGsol( ) 
+LOCAL aFER,aCOM AS ARRAY
+aCOM:={zMES,zANO,ZEMPRESA}
+	           aFER:=PEGMP04(SELF:SERVER:REQNUM,ZCURINI,ZCURDIR,aCOM)
+           IF aFER[1]=.T.
+              SELF:SERVER:REQNOME:=aFER[2]
+           ENDIF
+
+
+METHOD pegtec( ) 
+LOCAL aFER,ACOM AS ARRAY
+aCOM:={zMES,zANO,ZEMPRESA}
+	   aFER:=PEGMP04(SELF:SERVER:TECNICO,ZCURINI,ZCURDIR,aCOM)
+           IF aFER[1]=.T.
+              SELF:SERVER:TECNOME:=aFER[2]
+           ENDIF
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+    FabCenterWindow( SELF ) 
+        oDCAREA:FillUsing(PEGCOMBO("MP05.DBF","DESCRI","CODIGO"))
+
+ RETURN SELF
+
+METHOD PROXIMO 
+SELF:oSFJROI:Browser:SuspendUpdate()
+SELF:oSFJROI:SkipNext()
+IF SELF:oSFJROI:Server:Eof
+	SELF:oSFJROI:SkipPrevious()
+ENDIF
+SELF:oSFJROI:Browser:RestoreUpdate()
+
+METHOD TABULAR  
+SELF:oSFJROI:VIEWTABLE()
+
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+   SELF:oSFJROI:Server:COMMIT()
+
+
+
+END CLASS

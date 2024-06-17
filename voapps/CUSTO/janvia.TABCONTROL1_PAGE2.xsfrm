@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="TabControl1_Page2">
+    <Window Name="TabControl1_Page2">
+      <Name>TabControl1_Page2</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>24</Left>
+      <Top>61</Top>
+      <Width>751</Width>
+      <Height>322</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#TabControl1_Page2,,,</HyperLabel>
+        <ClipperKeys>True</ClipperKeys>
+        <Use>&lt;Share Owner's&gt;</Use>
+      </ExProperties>
+    </Window>
+    <Control Name="FT15">
+      <Name>FT15</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Em caso negativo, qual(is) equipamento(s) necessita(m)?</Caption>
+      <Order>4</Order>
+      <Left>175</Left>
+      <Top>31</Top>
+      <Width>344</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Em caso negativo, qualis equipamentos necessitam?",,</HyperLabel>
+        <HyperLabel>#FT15,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="VIA01">
+      <Name>VIA01</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>31</Left>
+      <Top>55</Top>
+      <Width>672</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#VIA01,,,</HyperLabel>
+        <FieldSpec>padraO_CHAr_50</FieldSpec>
+        <FocusSelect>FSEL_HOME</FocusSelect>
+      </ExProperties>
+    </Control>
+    <Control Name="VIA02">
+      <Name>VIA02</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>31</Left>
+      <Top>73</Top>
+      <Width>672</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#VIA02,,,</HyperLabel>
+        <FieldSpec>padrao_char_50</FieldSpec>
+        <FocusSelect>FSEL_HOME</FocusSelect>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText32">
+      <Name>theFixedText32</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Quais</Caption>
+      <Order>10</Order>
+      <Left>169</Left>
+      <Top>133</Top>
+      <Width>40</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Quais",,</HyperLabel>
+        <HyperLabel>#theFixedText32,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="OBSF01">
+      <Name>OBSF01</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>11</Order>
+      <Left>31</Left>
+      <Top>157</Top>
+      <Width>672</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_50</FieldSpec>
+        <HyperLabel>#OBSF01,,,</HyperLabel>
+        <HyperLabel>,"Obsf01:",,</HyperLabel>
+        <HyperLabel>,,,"VIABILI_OBSF01"</HyperLabel>
+        <FocusSelect>FSEL_HOME</FocusSelect>
+      </ExProperties>
+    </Control>
+    <Control Name="OBSF02">
+      <Name>OBSF02</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>12</Order>
+      <Left>31</Left>
+      <Top>175</Top>
+      <Width>672</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_50</FieldSpec>
+        <HyperLabel>#OBSF02,,,</HyperLabel>
+        <HyperLabel>,"Obsf02:",,</HyperLabel>
+        <HyperLabel>,,,"VIABILI_OBSF02"</HyperLabel>
+        <FocusSelect>FSEL_HOME</FocusSelect>
+      </ExProperties>
+    </Control>
+    <Control Name="GroupBox1">
+      <Name>GroupBox1</Name>
+      <Class>GROUPBOX</Class>
+      <Caption>É viável Tecnicamente</Caption>
+      <Order>13</Order>
+      <Left>13</Left>
+      <Top>13</Top>
+      <Width>719</Width>
+      <Height>92</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073872903</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"É viável Tecnicamente",,</HyperLabel>
+        <HyperLabel>#GroupBox1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="VIAVEL">
+      <Name>VIAVEL</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>14</Order>
+      <Left>38</Left>
+      <Top>30</Top>
+      <Width>35</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_01</FieldSpec>
+        <HyperLabel>#VIAVEL,,,</HyperLabel>
+        <Background>255 255 200</Background>
+      </ExProperties>
+    </Control>
+    <Control Name="cmdviAVEL">
+      <Name>cmdviAVEL</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Sim/Nao</Caption>
+      <Order>15</Order>
+      <Left>81</Left>
+      <Top>29</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Sim/Nao",,</HyperLabel>
+        <HyperLabel>#cmdviAVEL,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="GroupBox2">
+      <Name>GroupBox2</Name>
+      <Class>GROUPBOX</Class>
+      <Caption>Faltam Especificaçoes/e ou Normar Engenharia </Caption>
+      <Order>16</Order>
+      <Left>18</Left>
+      <Top>110</Top>
+      <Width>707</Width>
+      <Height>107</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073872903</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Faltam Especificaçoes/e ou Normar Engenharia ",,</HyperLabel>
+        <HyperLabel>#GroupBox2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FESP">
+      <Name>FESP</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>17</Order>
+      <Left>37</Left>
+      <Top>129</Top>
+      <Width>35</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_01</FieldSpec>
+        <HyperLabel>#FESP,,,</HyperLabel>
+        <Background>255 255 200</Background>
+      </ExProperties>
+    </Control>
+    <Control Name="cmdFESP">
+      <Name>cmdFESP</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Sim/Nao</Caption>
+      <Order>18</Order>
+      <Left>77</Left>
+      <Top>129</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Sim/Nao",,</HyperLabel>
+        <HyperLabel>#cmdFESP,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

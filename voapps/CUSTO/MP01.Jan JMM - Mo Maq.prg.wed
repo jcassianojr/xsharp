@@ -1,0 +1,370 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JMM
+GUID=5F02DB00-B005-4830-A33B-7FF7C9E63A01
+  Name=JMM
+  Class=DATAWINDOW
+  Caption=Tabela Mao de Obra Maquina
+  Order=0
+  Left=44
+  Width=492
+  Top=44
+  Height=164
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Tabela Mao de Obra Maquina",,
+  Property=HyperLabel=#JMM,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+  Property=ClipperKeys=True
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=D9EB6907-6915-482A-BD98-FA141D711DB3
+  Name=SC_VALOR1
+  Class=FIXEDTEXT
+  Caption=Cod.Reduzido
+  Order=1
+  Left=9
+  Width=80
+  Top=97
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cod.Reduzido",,
+  Property=HyperLabel=#SC_VALOR1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=9248E63F-6962-461B-9A63-95CF5DA02CDC
+  Name=CODFOLHA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=9
+  Width=76
+  Top=113
+  Height=18
+  Browseindex=2
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#CODFOLHA,,,
+  Property=HyperLabel=,"Red",,
+  Property=HyperLabel=,,,"MP01_VALOR"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=3EEF319F-8DAB-4826-9DF9-23A3C78DF375
+  Name=COGCUSTO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=93
+  Width=116
+  Top=113
+  Height=18
+  Browseindex=-1
+  Browsesize=19
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_20
+  Property=HyperLabel=#COGCUSTO,,,
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=,,,"MP01_VALOR"
+
+CONTROL=FIXEDTEXT
+GUID=4648EC4D-F117-45B9-9E44-3881A349338A
+  Name=SC_VALOR2
+  Class=FIXEDTEXT
+  Caption=Cognome
+  Order=4
+  Left=93
+  Width=80
+  Top=93
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cognome",,
+  Property=HyperLabel=#SC_VALOR2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=3F8AD815-5D39-4D99-8263-9C70AA60207F
+  Name=COGNOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=269
+  Width=140
+  Top=29
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_10
+  Property=HyperLabel=#COGNOME,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"MP01_CODIGO"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=796E952D-E100-48D1-870B-801318C3CC33
+  Name=FT4
+  Class=FIXEDTEXT
+  Caption=Cognome PCP
+  Order=6
+  Left=269
+  Width=80
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cognome PCP",,
+  Property=HyperLabel=,,"Area na Empresa",
+  Property=HyperLabel=#FT4,,,
+
+CONTROL=PUSHBUTTON
+GUID=0B3BA52E-AFEC-4C84-9135-D0F8D51EC693
+  Name=porcod
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=449
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_AZ
+  Property=HyperLabel=#porcod,,,
+
+CONTROL=PUSHBUTTON
+GUID=4F98836A-E993-4FDC-BA91-4C6D23FCD6A9
+  Name=buscacod
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=417
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscacod,,,
+
+CONTROL=FIXEDTEXT
+GUID=A5603DF0-3CB6-4605-B315-A7F55EE84FC3
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=-1
+  Left=9
+  Width=47
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=C4BBE561-7130-4B8B-AA0F-7606F92D0952
+  Name=FT3
+  Class=FIXEDTEXT
+  Caption=Area
+  Order=-1
+  Left=117
+  Width=80
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Area",,
+  Property=HyperLabel=,,"Area na Empresa",
+  Property=HyperLabel=#FT3,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=DC5B3E21-F3DB-4431-86E5-62856BAAFCBF
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=5
+  Width=106
+  Top=29
+  Height=18
+  Browseindex=0
+  Browsesize=19
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Tabela Mao de Obra Maquina",,
+  Property=HyperLabel=,,,"MP01_CODIGO"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=2AEEA215-D430-4203-83EF-5D04268494BC
+  Name=AREA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=117
+  Width=146
+  Top=29
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#AREA,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"MP01_CODIGO"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=43A7F878-AF72-48D8-8F13-C4B61ED20CBF
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=-1
+  Left=9
+  Width=40
+  Top=53
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=A4363F25-7D6A-4964-9CB6-61E99C094880
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=9
+  Width=308
+  Top=69
+  Height=18
+  Browseindex=1
+  Browsesize=36
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"MP01_NOME"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=91736D55-20D7-41B3-8F73-B6E36D870FC7
+  Name=SC_VALOR
+  Class=FIXEDTEXT
+  Caption=Valor Custo
+  Order=-1
+  Left=217
+  Width=80
+  Top=93
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valor Custo",,
+  Property=HyperLabel=#SC_VALOR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=3F22A797-F0D6-4C69-8304-243C0D876A3E
+  Name=VALOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=217
+  Width=146
+  Top=113
+  Height=18
+  Browseindex=3
+  Browsesize=19
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=HyperLabel=#VALOR,,,
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=,,,"MP01_VALOR"
+  Property=InheritClassName=rightSle
+
+SUBCONTROLSEND
+DESIGNEREND = JMM
+

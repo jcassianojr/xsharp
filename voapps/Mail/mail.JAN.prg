@@ -1,0 +1,276 @@
+#region DEFINES
+STATIC DEFINE JMAIL_AJUDA := 127
+STATIC DEFINE JMAIL_ANTERIOR := 123
+STATIC DEFINE JMAIL_ASSUNTO := 114
+STATIC DEFINE JMAIL_DATA := 110
+STATIC DEFINE JMAIL_DE := 112
+STATIC DEFINE JMAIL_DELETAR := 118
+STATIC DEFINE JMAIL_DESTINO := 113
+STATIC DEFINE JMAIL_ENCERRAR := 116
+STATIC DEFINE JMAIL_ERRO := 109
+STATIC DEFINE JMAIL_FIXEDTEXT1 := 124
+STATIC DEFINE JMAIL_HORA := 111
+STATIC DEFINE JMAIL_IMPRIMIR := 125
+STATIC DEFINE JMAIL_INCLUIR := 120
+STATIC DEFINE JMAIL_NUMERO := 108
+STATIC DEFINE JMAIL_PROXIMO := 122
+STATIC DEFINE JMAIL_SC_ASSUNTO := 106
+STATIC DEFINE JMAIL_SC_DATA := 102
+STATIC DEFINE JMAIL_SC_DE := 104
+STATIC DEFINE JMAIL_SC_DESTINO := 105
+STATIC DEFINE JMAIL_SC_DESTINO1 := 117
+STATIC DEFINE JMAIL_SC_DESTINO2 := 119
+STATIC DEFINE JMAIL_SC_DESTINO3 := 121
+STATIC DEFINE JMAIL_SC_ERRO := 101
+STATIC DEFINE JMAIL_SC_HORA := 103
+STATIC DEFINE JMAIL_SC_NUMERO := 100
+STATIC DEFINE JMAIL_SC_TEXTO := 107
+STATIC DEFINE JMAIL_TEXTO := 115
+STATIC DEFINE JMAIL_X2 := 126
+#endregion
+
+PARTIAL CLASS JMAIL INHERIT DATADIALOG
+PROTECT oDBNUMERO AS DataColumn
+PROTECT oDBDATA AS DataColumn
+PROTECT oDBDE AS DataColumn
+PROTECT oDBASSUNTO AS DataColumn
+PROTECT oDCSC_NUMERO AS FIXEDTEXT
+PROTECT oDCSC_ERRO AS FIXEDTEXT
+PROTECT oDCSC_DATA AS FIXEDTEXT
+PROTECT oDCSC_HORA AS FIXEDTEXT
+PROTECT oDCSC_DE AS FIXEDTEXT
+PROTECT oDCSC_DESTINO AS FIXEDTEXT
+PROTECT oDCSC_ASSUNTO AS FIXEDTEXT
+PROTECT oDCSC_TEXTO AS FIXEDTEXT
+PROTECT oDCNUMERO AS SINGLELINEEDIT
+PROTECT oDCERRO AS SINGLELINEEDIT
+PROTECT oDCDATA AS SINGLELINEEDIT
+PROTECT oDCHORA AS SINGLELINEEDIT
+PROTECT oDCDE AS SINGLELINEEDIT
+PROTECT oDCDESTINO AS SINGLELINEEDIT
+PROTECT oDCASSUNTO AS SINGLELINEEDIT
+PROTECT oDCTEXTO AS MULTILINEEDIT
+PROTECT oCCEncerrar AS PUSHBUTTON
+PROTECT oDCSC_DESTINO1 AS FIXEDTEXT
+PROTECT oCCDeletar AS PUSHBUTTON
+PROTECT oDCSC_DESTINO2 AS FIXEDTEXT
+PROTECT oCCIncluir AS PUSHBUTTON
+PROTECT oDCSC_DESTINO3 AS FIXEDTEXT
+PROTECT oCCProximo AS PUSHBUTTON
+PROTECT oCCAnterior AS PUSHBUTTON
+PROTECT oDCFixedText1 AS FIXEDTEXT
+PROTECT oCCimprimir AS PUSHBUTTON
+PROTECT oDCx2 AS FIXEDTEXT
+PROTECT oCCAjuda AS PUSHBUTTON
+
+// User code starts here (DO NOT remove this line)  ##USER##
+
+ACCESS ASSUNTO
+RETURN SELF:FieldGet( #ASSUNTO )
+
+ASSIGN ASSUNTO( uValue )
+SELF:FieldPut( #ASSUNTO , uValue )
+
+ACCESS DATA
+RETURN SELF:FieldGet( #DATA )
+
+ASSIGN DATA( uValue )
+SELF:FieldPut( #DATA , uValue )
+
+ACCESS DE
+RETURN SELF:FieldGet( #DE )
+
+ASSIGN DE( uValue )
+SELF:FieldPut( #DE , uValue )
+
+ACCESS DESTINO
+RETURN SELF:FieldGet( #DESTINO )
+
+ASSIGN DESTINO( uValue )
+SELF:FieldPut( #DESTINO , uValue )
+
+ACCESS ERRO
+RETURN SELF:FieldGet( #ERRO )
+
+ASSIGN ERRO( uValue )
+SELF:FieldPut( #ERRO , uValue )
+
+ACCESS HORA
+RETURN SELF:FieldGet( #HORA )
+
+ASSIGN HORA( uValue )
+SELF:FieldPut( #HORA , uValue )
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)
+
+	SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+	SUPER(oWindow , ResourceID{"JMAIL" , _GetInst()},iCtlID)
+
+	SELF:oDCSC_NUMERO := FIXEDTEXT{SELF , ResourceID{ JMAIL_SC_NUMERO  , _GetInst() } }
+	SELF:oDCSC_NUMERO:HyperLabel := HyperLabel{#SC_NUMERO , "Numero:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_ERRO := FIXEDTEXT{SELF , ResourceID{ JMAIL_SC_ERRO  , _GetInst() } }
+	SELF:oDCSC_ERRO:HyperLabel := HyperLabel{#SC_ERRO , "Erro:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_DATA := FIXEDTEXT{SELF , ResourceID{ JMAIL_SC_DATA  , _GetInst() } }
+	SELF:oDCSC_DATA:HyperLabel := HyperLabel{#SC_DATA , "Data:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_HORA := FIXEDTEXT{SELF , ResourceID{ JMAIL_SC_HORA  , _GetInst() } }
+	SELF:oDCSC_HORA:HyperLabel := HyperLabel{#SC_HORA , "Hora:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_DE := FIXEDTEXT{SELF , ResourceID{ JMAIL_SC_DE  , _GetInst() } }
+	SELF:oDCSC_DE:HyperLabel := HyperLabel{#SC_DE , "De:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_DESTINO := FIXEDTEXT{SELF , ResourceID{ JMAIL_SC_DESTINO  , _GetInst() } }
+	SELF:oDCSC_DESTINO:HyperLabel := HyperLabel{#SC_DESTINO , "Destino:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_ASSUNTO := FIXEDTEXT{SELF , ResourceID{ JMAIL_SC_ASSUNTO  , _GetInst() } }
+	SELF:oDCSC_ASSUNTO:HyperLabel := HyperLabel{#SC_ASSUNTO , "Assunto:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_TEXTO := FIXEDTEXT{SELF , ResourceID{ JMAIL_SC_TEXTO  , _GetInst() } }
+	SELF:oDCSC_TEXTO:HyperLabel := HyperLabel{#SC_TEXTO , "Texto:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCNUMERO := SINGLELINEEDIT{SELF , ResourceID{ JMAIL_NUMERO  , _GetInst() } }
+	SELF:oDCNUMERO:FieldSpec := PADRAO_NUM_08{}
+	SELF:oDCNUMERO:TooltipText := "Numero de Controle da Mensagem"
+	SELF:oDCNUMERO:HyperLabel := HyperLabel{#NUMERO , "Numero:" , NULL_STRING , "MAIL_NUMERO"}
+
+	SELF:oDCERRO := SINGLELINEEDIT{SELF , ResourceID{ JMAIL_ERRO  , _GetInst() } }
+	SELF:oDCERRO:FieldSpec := PADRAO_CHAR_08{}
+	SELF:oDCERRO:TooltipText := "Codigo do Sistema da Mensagem"
+	SELF:oDCERRO:HyperLabel := HyperLabel{#ERRO , "Erro:" , NULL_STRING , "MAIL_ERRO"}
+
+	SELF:oDCDATA := SINGLELINEEDIT{SELF , ResourceID{ JMAIL_DATA  , _GetInst() } }
+	SELF:oDCDATA:FieldSpec := DATE_FIELD{}
+	SELF:oDCDATA:TooltipText := "Data Criaçao Mensagem"
+	SELF:oDCDATA:HyperLabel := HyperLabel{#DATA , "Data:" , NULL_STRING , "MAIL_DATA"}
+
+	SELF:oDCHORA := SINGLELINEEDIT{SELF , ResourceID{ JMAIL_HORA  , _GetInst() } }
+	SELF:oDCHORA:FieldSpec := time_long{}
+	SELF:oDCHORA:TooltipText := "Hora Criaçao da Mensagem"
+	SELF:oDCHORA:HyperLabel := HyperLabel{#HORA , "Hora:" , NULL_STRING , "MAIL_HORA"}
+
+	SELF:oDCDE := SINGLELINEEDIT{SELF , ResourceID{ JMAIL_DE  , _GetInst() } }
+	SELF:oDCDE:FieldSpec := PADRAO_CHAR_12{}
+	SELF:oDCDE:TooltipText := "Remetente da Mensagem"
+	SELF:oDCDE:HyperLabel := HyperLabel{#DE , "De:" , NULL_STRING , "MAIL_DE"}
+
+	SELF:oDCDESTINO := SINGLELINEEDIT{SELF , ResourceID{ JMAIL_DESTINO  , _GetInst() } }
+	SELF:oDCDESTINO:FieldSpec := PADRAO_CHAR_12{}
+	SELF:oDCDESTINO:TooltipText := "Destinataio da Mensagem"
+	SELF:oDCDESTINO:HyperLabel := HyperLabel{#DESTINO , "Destino:" , NULL_STRING , "MAIL_DESTINO"}
+
+	SELF:oDCASSUNTO := SINGLELINEEDIT{SELF , ResourceID{ JMAIL_ASSUNTO  , _GetInst() } }
+	SELF:oDCASSUNTO:FieldSpec := PADRAO_CHAR_120{}
+	SELF:oDCASSUNTO:TooltipText := "Assunto da Mensagem"
+	SELF:oDCASSUNTO:HyperLabel := HyperLabel{#ASSUNTO , "Assunto:" , NULL_STRING , "MAIL_ASSUNTO"}
+
+	SELF:oDCTEXTO := MULTILINEEDIT{SELF , ResourceID{ JMAIL_TEXTO  , _GetInst() } }
+	SELF:oDCTEXTO:FieldSpec := MEMO_FIELD{}
+	SELF:oDCTEXTO:TooltipText := "Conteudo da Mensagem"
+	SELF:oDCTEXTO:HyperLabel := HyperLabel{#TEXTO , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oCCEncerrar := PUSHBUTTON{SELF , ResourceID{ JMAIL_ENCERRAR  , _GetInst() } }
+	SELF:oCCEncerrar:TooltipText := "Encerrar Consulta Mensagens"
+	SELF:oCCEncerrar:Image := ico_sair{}
+	SELF:oCCEncerrar:HyperLabel := HyperLabel{#Encerrar , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_DESTINO1 := FIXEDTEXT{SELF , ResourceID{ JMAIL_SC_DESTINO1  , _GetInst() } }
+	SELF:oDCSC_DESTINO1:HyperLabel := HyperLabel{#SC_DESTINO1 , "Encerrar" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCDeletar := PUSHBUTTON{SELF , ResourceID{ JMAIL_DELETAR  , _GetInst() } }
+	SELF:oCCDeletar:TooltipText := "Arquiva a Mensagem"
+	SELF:oCCDeletar:Image := ico_mailarq{}
+	SELF:oCCDeletar:HyperLabel := HyperLabel{#Deletar , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_DESTINO2 := FIXEDTEXT{SELF , ResourceID{ JMAIL_SC_DESTINO2  , _GetInst() } }
+	SELF:oDCSC_DESTINO2:HyperLabel := HyperLabel{#SC_DESTINO2 , "Marcar Lida" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCIncluir := PUSHBUTTON{SELF , ResourceID{ JMAIL_INCLUIR  , _GetInst() } }
+	SELF:oCCIncluir:TooltipText := "Criar Uma Nova Mensagem"
+	SELF:oCCIncluir:Image := ico_mail{}
+	SELF:oCCIncluir:HyperLabel := HyperLabel{#Incluir , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_DESTINO3 := FIXEDTEXT{SELF , ResourceID{ JMAIL_SC_DESTINO3  , _GetInst() } }
+	SELF:oDCSC_DESTINO3:HyperLabel := HyperLabel{#SC_DESTINO3 , "Nova" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCProximo := PUSHBUTTON{SELF , ResourceID{ JMAIL_PROXIMO  , _GetInst() } }
+	SELF:oCCProximo:TooltipText := "Retorna Uma Mensagem"
+	SELF:oCCProximo:Image := ico_next{}
+	SELF:oCCProximo:HyperLabel := HyperLabel{#Proximo , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oCCAnterior := PUSHBUTTON{SELF , ResourceID{ JMAIL_ANTERIOR  , _GetInst() } }
+	SELF:oCCAnterior:TooltipText := "Avança Uma Mensagem"
+	SELF:oCCAnterior:Image := ico_previous{}
+	SELF:oCCAnterior:HyperLabel := HyperLabel{#Anterior , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFixedText1 := FIXEDTEXT{SELF , ResourceID{ JMAIL_FIXEDTEXT1  , _GetInst() } }
+	SELF:oDCFixedText1:HyperLabel := HyperLabel{#FixedText1 , "Imprimir" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCimprimir := PUSHBUTTON{SELF , ResourceID{ JMAIL_IMPRIMIR  , _GetInst() } }
+	SELF:oCCimprimir:TooltipText := "Imprimir a Mensagem"
+	SELF:oCCimprimir:Image := ico_print{}
+	SELF:oCCimprimir:HyperLabel := HyperLabel{#imprimir , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCx2 := FIXEDTEXT{SELF , ResourceID{ JMAIL_X2  , _GetInst() } }
+	SELF:oDCx2:HyperLabel := HyperLabel{#x2 , "Ajuda" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCAjuda := PUSHBUTTON{SELF , ResourceID{ JMAIL_AJUDA  , _GetInst() } }
+	SELF:oCCAjuda:TooltipText := "Clique Para Acessar a Ajuda"
+	SELF:oCCAjuda:Image := ico_ajuda{}
+	SELF:oCCAjuda:HyperLabel := HyperLabel{#Ajuda , NULL_STRING , NULL_STRING , "login"}
+
+	SELF:Caption := "Email Interno"
+	SELF:HyperLabel := HyperLabel{#JMAIL , "Email Interno" , NULL_STRING , "mail"}
+	IF !IsNil(oServer)
+		SELF:Use(oServer)
+	ENDIF
+
+	SELF:Browser := DataBrowser{SELF}
+
+	SELF:oDBNUMERO := DataColumn{PADRAO_NUM_08{}}
+	SELF:oDBNUMERO:Width := 8
+	SELF:oDBNUMERO:HyperLabel := SELF:oDCNUMERO:HyperLabel
+	SELF:oDBNUMERO:Caption := "Numero:"
+	SELF:Browser:AddColumn(SELF:oDBNUMERO)
+
+	SELF:oDBDATA := DataColumn{DATE_FIELD{}}
+	SELF:oDBDATA:Width := 15
+	SELF:oDBDATA:HyperLabel := SELF:oDCDATA:HyperLabel
+	SELF:oDBDATA:Caption := "Data:"
+	SELF:Browser:AddColumn(SELF:oDBDATA)
+
+	SELF:oDBDE := DataColumn{PADRAO_CHAR_12{}}
+	SELF:oDBDE:Width := 13
+	SELF:oDBDE:HyperLabel := SELF:oDCDE:HyperLabel
+	SELF:oDBDE:Caption := "De:"
+	SELF:Browser:AddColumn(SELF:oDBDE)
+
+	SELF:oDBASSUNTO := DataColumn{PADRAO_CHAR_120{}}
+	SELF:oDBASSUNTO:Width := 36
+	SELF:oDBASSUNTO:HyperLabel := SELF:oDCASSUNTO:HyperLabel
+	SELF:oDBASSUNTO:Caption := "Assunto:"
+	SELF:Browser:AddColumn(SELF:oDBASSUNTO)
+
+	SELF:ViewAs(#FormView)
+
+
+	SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN
+
+
+ACCESS NUMERO
+RETURN SELF:FieldGet( #NUMERO )
+
+ASSIGN NUMERO( uValue )
+SELF:FieldPut( #NUMERO , uValue )
+
+ACCESS TEXTO
+RETURN SELF:FieldGet( #TEXTO )
+
+ASSIGN TEXTO( uValue )
+SELF:FieldPut( #TEXTO , uValue )
+
+END CLASS

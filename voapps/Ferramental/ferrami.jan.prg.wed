@@ -1,0 +1,154 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jferrami
+GUID=5935038C-E611-41A5-B7F8-58BD3BBDDD2E
+  Name=jferrami
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=12
+  Width=592
+  Top=12
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#jferrami,,,
+  Property=ViewAs=#BrowseView
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=8DFEC477-5B29-474C-9A3F-3B140D65B59E
+  Name=LIN01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=65
+  Width=342
+  Top=41
+  Height=20
+  Browseindex=2
+  Browsesize=64
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_80
+  Property=HyperLabel=#LIN01,,,
+  Property=HyperLabel=,"Descricao",,
+  Property=HyperLabel=,,,"FERRAM_NOME"
+
+CONTROL=FIXEDTEXT
+GUID=47BD0C46-C5C9-4ED3-B6D8-4159F06D03E3
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Instrucao
+  Order=2
+  Left=5
+  Width=56
+  Top=37
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Instrucao",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=115F0F59-3AED-4EC7-A8AF-3386024E3EF9
+  Name=ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=341
+  Width=108
+  Top=9
+  Height=24
+  Browseindex=1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#ITEM,,,
+  Property=HyperLabel=,"Item",,
+  Property=HyperLabel=,,,"FERRAM_FERRAM"
+  Property=InheritClassName=rightSLE
+
+CONTROL=FIXEDTEXT
+GUID=207A6FB9-338C-4E33-802A-EC6EBF76FE43
+  Name=TEXTO
+  Class=FIXEDTEXT
+  Caption=Seq
+  Order=4
+  Left=305
+  Width=32
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Seq",,
+  Property=HyperLabel=#TEXTO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=C84E7680-543A-4B45-B2B8-D648A1431666
+  Name=FERRAM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=65
+  Width=232
+  Top=9
+  Height=24
+  Browseindex=0
+  Browsesize=23
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#FERRAM,,,
+  Property=HyperLabel=,"Ferram:",,
+  Property=HyperLabel=,,,"FERRAM_FERRAM"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=7D919EE8-7218-4C6F-8DB9-3E7E12768B80
+  Name=SC_FERRAM
+  Class=FIXEDTEXT
+  Caption=Ferramenta
+  Order=6
+  Left=5
+  Width=56
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ferramenta",,
+  Property=HyperLabel=#SC_FERRAM,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jferrami
+

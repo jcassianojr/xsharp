@@ -1,0 +1,183 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,escme04
+GUID=EAFD41A9-E4A8-4CD2-A8FF-BB8A0B326AEB
+  Name=escme04
+  Class=DATADIALOG
+  Caption=Escolher
+  Order=0
+  Left=52
+  Width=561
+  Top=52
+  Height=326
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escolher",,
+  Property=HyperLabel=#escme04,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SUBDATAWINDOW
+GUID=EE4DA84A-D24C-4ECB-BE3A-9100631B07A4
+  Name=jins
+  Class=SUBDATAWINDOW
+  Caption=jins
+  Order=1
+  Left=9
+  Width=464
+  Top=37
+  Height=280
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#jins,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=136E4261-E827-4B3C-9441-EB9002F6F862
+  Name=CBUSCA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=9
+  Width=156
+  Top=9
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#CBUSCA,,,
+
+CONTROL=PUSHBUTTON
+GUID=212C2B1A-AE84-4557-AF35-6155FAB8AE7C
+  Name=Busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=169
+  Width=24
+  Top=9
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#Busca,,,
+
+CONTROL=FIXEDTEXT
+GUID=3D02FBB9-9EB2-4FE0-A8D7-CFC1B4368A8B
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=6
+  Left=485
+  Width=64
+  Top=217
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=289F91B6-09B5-442A-97D0-59EA618F96AF
+  Name=sair
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=485
+  Width=64
+  Top=169
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#sair,,,
+  Property=Image=ICO_SAIR
+
+CONTROL=FIXEDTEXT
+GUID=6DFCB23C-7888-40A2-A921-866DF8677C57
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=Escolher
+  Order=9
+  Left=485
+  Width=64
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Escolher",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=PUSHBUTTON
+GUID=28692057-09E8-43E9-9DB2-8D44D3FA7FA4
+  Name=Escolher
+  Class=PUSHBUTTON
+  Caption=
+  Order=10
+  Left=485
+  Width=64
+  Top=85
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Escolher,,,
+  Property=Image=ICO_OK
+
+CONTROL=PUSHBUTTON
+GUID=8751DEDB-C8E1-49F4-849E-AFFC12E5D010
+  Name=PushButton3
+  Class=PUSHBUTTON
+  Caption=Busca Detalhada
+  Order=11
+  Left=197
+  Width=120
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Busca Detalhada",,
+  Property=HyperLabel=#PushButton3,,,
+
+SUBCONTROLSEND
+DESIGNEREND = escme04
+

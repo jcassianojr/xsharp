@@ -1,0 +1,386 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JME01CR
+GUID=F2196F2E-9C2F-413F-B327-24393284CCB9
+  Name=JME01CR
+  Class=DATAWINDOW
+  Caption=Cronograma Manutencao Maquinas
+  Order=0
+  Left=42
+  Width=420
+  Top=42
+  Height=165
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cronograma Manutencao Maquinas",,
+  Property=HyperLabel=#JME01CR,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=83E576B5-F4A3-43E3-B4D1-DF34C0BDBC9F
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=1
+  Left=22
+  Width=40
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=29985984-B163-4755-9048-0F7E9B313F74
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=2
+  Left=22
+  Width=36
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=753DE12A-E4B0-4F0D-9815-6332895A6B8E
+  Name=SC_PROGRAMA
+  Class=FIXEDTEXT
+  Caption=Programa:
+  Order=3
+  Left=22
+  Width=52
+  Top=74
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Programa:",,
+  Property=HyperLabel=#SC_PROGRAMA,,,
+
+CONTROL=FIXEDTEXT
+GUID=C6507DD4-E18D-44D4-B84B-A59F8CFE0D81
+  Name=SC_EFETUADA
+  Class=FIXEDTEXT
+  Caption=Efetuada:
+  Order=4
+  Left=22
+  Width=52
+  Top=98
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Efetuada:",,
+  Property=HyperLabel=#SC_EFETUADA,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=A18E6694-2E6C-416B-9D98-CA1EB4BD1FD0
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=90
+  Width=40
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_04
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"ME01CR_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=FF685092-262F-4713-A737-97D41AFA5111
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=89
+  Width=292
+  Top=49
+  Height=20
+  Browseindex=1
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"ME01CR_NOME"
+
+CONTROL=SINGLELINEEDIT
+GUID=811C1830-075C-4A55-B5D1-397AE5C5385F
+  Name=PROGRAMA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=90
+  Width=79
+  Top=74
+  Height=20
+  Browseindex=2
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#PROGRAMA,,,
+  Property=HyperLabel=,"Programa:",,
+  Property=HyperLabel=,,,"ME01CR_PROGRAMA"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=8661B893-2791-411C-BE6E-C6AF4C134735
+  Name=EFETUADA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=90
+  Width=68
+  Top=98
+  Height=20
+  Browseindex=3
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#EFETUADA,,,
+  Property=HyperLabel=,"Efetuada:",,
+  Property=HyperLabel=,,,"ME01CR_EFETUADA"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=84038A05-C96D-442C-8B80-DFDB65356020
+  Name=escfor
+  Class=PUSHBUTTON
+  Caption=...
+  Order=9
+  Left=138
+  Width=19
+  Top=22
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#escfor,,,
+
+CONTROL=PUSHBUTTON
+GUID=2FE85B4F-62AB-4BC1-970D-DFC39173E536
+  Name=Fechar
+  Class=PUSHBUTTON
+  Caption=Fechar
+  Order=10
+  Left=173
+  Width=80
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fechar",,
+  Property=HyperLabel=#Fechar,,,
+
+CONTROL=PUSHBUTTON
+GUID=F67E03A1-B630-4821-AEC1-645E6AF69F0F
+  Name=pegcod
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=11
+  Left=161
+  Width=19
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#pegcod,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=2593D6FD-341E-41EC-AAC0-E6DD398B04C7
+  Name=LVM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=205
+  Width=68
+  Top=101
+  Height=20
+  Browseindex=4
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#LVM,,,
+  Property=HyperLabel=,"LVM",,
+  Property=HyperLabel=,,,"ME01CR_EFETUADA"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=68AC3498-E445-4BF3-9C19-CEB92F9DAE69
+  Name=SC_EFETUADA1
+  Class=FIXEDTEXT
+  Caption=LVM
+  Order=13
+  Left=169
+  Width=36
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"LVM",,
+  Property=HyperLabel=#SC_EFETUADA1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=7871069A-D384-4DE1-AC79-1FED8E3A4B80
+  Name=CANO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=321
+  Width=68
+  Top=105
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_04
+  Property=HyperLabel=#CANO,,,
+  Property=HyperLabel=,,,"ME01CR_EFETUADA"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=3CA19DFC-5E1E-4759-B158-07346146D634
+  Name=SC_EFETUADA2
+  Class=FIXEDTEXT
+  Caption=Ano
+  Order=15
+  Left=285
+  Width=36
+  Top=105
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ano",,
+  Property=HyperLabel=#SC_EFETUADA2,,,
+
+CONTROL=PUSHBUTTON
+GUID=348BEE96-5961-4623-ADC1-6367A8BC1FC8
+  Name=ordem
+  Class=PUSHBUTTON
+  Caption=
+  Order=16
+  Left=233
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#ordem,,,
+  Property=TooltipText="Ordenar Por Numero"
+
+CONTROL=PUSHBUTTON
+GUID=5CB2ACE0-0A11-4098-8C5B-A887D1A75F03
+  Name=busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=17
+  Left=193
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#busca,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JME01CR
+

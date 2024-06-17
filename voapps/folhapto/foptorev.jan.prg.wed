@@ -1,0 +1,614 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JFOPTO_REV
+GUID=FD0B5224-B9D8-4A1F-9125-80922AA1403A
+  Name=JFOPTO_REV
+  Class=DATAWINDOW
+  Caption=Escala de Revesamento
+  Order=0
+  Left=44
+  Width=466
+  Top=44
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escala de Revesamento",,
+  Property=HyperLabel=#JFOPTO_REV,,,
+  Property=ViewAs=#FormView
+  Property=ClipperKeys=True
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=F8311824-E6E8-44DA-9A72-A762313C791F
+  Name=SC_GRUPO
+  Class=FIXEDTEXT
+  Caption=Grupo:
+  Order=1
+  Left=13
+  Width=36
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Grupo:",,
+  Property=HyperLabel=#SC_GRUPO,,,
+
+CONTROL=FIXEDTEXT
+GUID=F1D71664-D1CC-4A8D-8AB2-D07F667228A1
+  Name=SC_DATA
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=2
+  Left=57
+  Width=32
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=#SC_DATA,,,
+
+CONTROL=FIXEDTEXT
+GUID=1FE33368-C04B-465D-AE63-B969B0F9766D
+  Name=SC_CODREV
+  Class=FIXEDTEXT
+  Caption=Horario
+  Order=3
+  Left=141
+  Width=60
+  Top=8
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Horario",,
+  Property=HyperLabel=#SC_CODREV,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=78D13B92-57EC-41E8-A15C-383979AD3B00
+  Name=GRUPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=13
+  Width=31
+  Top=29
+  Height=20
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#GRUPO,,,
+  Property=HyperLabel=,"Grupo:",,
+  Property=HyperLabel=,,,"FOPTOREV_GRUPO"
+
+CONTROL=SINGLELINEEDIT
+GUID=95ACCB3D-9381-4D8F-A9F0-03FEE976AAD8
+  Name=CODREV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=157
+  Width=36
+  Top=29
+  Height=20
+  Browseindex=2
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#CODREV,,,
+  Property=HyperLabel=,"Cod",,
+  Property=HyperLabel=,,,"FOPTOREV_CODREV"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=6413D715-D05B-4419-8ABF-B4DC0A1C0293
+  Name=ENTREV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=17
+  Width=56
+  Top=73
+  Height=20
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#ENTREV,,,
+  Property=HyperLabel=,"Ent:",,
+  Property=HyperLabel=,,,"FOPTOREV_ENTREV"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=BFC9295F-F3ED-4C8E-8AAA-69E56BA39CCE
+  Name=ALIREV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=77
+  Width=56
+  Top=73
+  Height=20
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#ALIREV,,,
+  Property=HyperLabel=,"RefS",,
+  Property=HyperLabel=,,,"FOPTOREV_ALIREV"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=42D361E6-B955-44E3-B82B-3725927C9736
+  Name=ALSREV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=137
+  Width=56
+  Top=73
+  Height=20
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#ALSREV,,,
+  Property=HyperLabel=,"RefE",,
+  Property=HyperLabel=,,,"FOPTOREV_ALSREV"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=0CFE95FE-9C91-4D6B-8522-A0CAD3EC3ACD
+  Name=SAIREV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=197
+  Width=56
+  Top=73
+  Height=20
+  Browseindex=6
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#SAIREV,,,
+  Property=HyperLabel=,"Sai:",,
+  Property=HyperLabel=,,,"FOPTOREV_SAIREV"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=D4BD0B51-D83B-4FFB-8660-F3014B4134F0
+  Name=VIRADA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=257
+  Width=24
+  Top=73
+  Height=20
+  Browseindex=7
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#VIRADA,,,
+  Property=HyperLabel=,"Virada:",,
+  Property=HyperLabel=,,,"FOPTOREV_VIRADA"
+  Property=Background=255 255 200
+
+CONTROL=PUSHBUTTON
+GUID=DF4775A3-4BF1-4CB3-9D95-3CE184D65D58
+  Name=cmdvir
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=18
+  Left=285
+  Width=60
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdvir,,,
+
+CONTROL=FIXEDTEXT
+GUID=F0A21009-5064-440C-A0A9-501E1AA23441
+  Name=SC_VIRADA1
+  Class=FIXEDTEXT
+  Caption=Virada:
+  Order=19
+  Left=261
+  Width=62
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Virada:",,
+  Property=HyperLabel=#SC_VIRADA1,,,
+
+CONTROL=FIXEDTEXT
+GUID=9562AC92-B2EC-4815-9C78-9541881C223B
+  Name=SC_SAI
+  Class=FIXEDTEXT
+  Caption=Saida:
+  Order=20
+  Left=201
+  Width=51
+  Top=57
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Saida:",,
+  Property=HyperLabel=#SC_SAI,,,
+
+CONTROL=FIXEDTEXT
+GUID=26C0794C-223D-41E5-873A-B69DF1D99773
+  Name=SC_ALMI
+  Class=FIXEDTEXT
+  Caption=refeicao
+  Order=21
+  Left=112
+  Width=52
+  Top=53
+  Height=15
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"refeicao",,
+  Property=HyperLabel=#SC_ALMI,,,
+
+CONTROL=FIXEDTEXT
+GUID=4F421368-5A83-4B3A-A6EB-92DAF85B899A
+  Name=SC_ENT
+  Class=FIXEDTEXT
+  Caption=Entrada:
+  Order=22
+  Left=21
+  Width=24
+  Top=57
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Entrada:",,
+  Property=HyperLabel=#SC_ENT,,,
+
+CONTROL=PUSHBUTTON
+GUID=0CC84B8C-15EB-4080-983D-40C49DF46F53
+  Name=eschor
+  Class=PUSHBUTTON
+  Caption=Horario
+  Order=23
+  Left=209
+  Width=68
+  Top=8
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Horario",,
+  Property=HyperLabel=#eschor,,,
+
+CONTROL=PUSHBUTTON
+GUID=E835A060-21B4-4666-9817-2AE80DADBB46
+  Name=cmdDO
+  Class=PUSHBUTTON
+  Caption=Domingo
+  Order=24
+  Left=355
+  Width=64
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Domingo",,
+  Property=HyperLabel=#cmdDO,,,
+
+CONTROL=PUSHBUTTON
+GUID=0333961E-AEBD-44E2-AFDE-E2B4D7FDD4C2
+  Name=cmdfo
+  Class=PUSHBUTTON
+  Caption=Folga
+  Order=25
+  Left=281
+  Width=64
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Folga",,
+  Property=HyperLabel=#cmdfo,,,
+
+CONTROL=PUSHBUTTON
+GUID=53E7C50A-0F2D-4F44-B89C-67FEE1D53A25
+  Name=CmdZerar
+  Class=PUSHBUTTON
+  Caption=Zerar
+  Order=26
+  Left=81
+  Width=80
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Zerar",,
+  Property=HyperLabel=#CmdZerar,,,
+
+CONTROL=PUSHBUTTON
+GUID=A48DD6C5-DA59-4CAB-9934-B8CDC23F6E6C
+  Name=buscaNUM
+  Class=PUSHBUTTON
+  Caption=
+  Order=27
+  Left=375
+  Width=32
+  Top=102
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaNUM,,,
+  Property=TooltipText="Localizar"
+
+CONTROL=PUSHBUTTON
+GUID=8A19DC54-1C14-459A-8F54-002DBDA60EA8
+  Name=ESCCOD
+  Class=PUSHBUTTON
+  Caption=Codigo
+  Order=28
+  Left=208
+  Width=68
+  Top=28
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Codigo",,
+  Property=HyperLabel=#ESCCOD,,,
+
+CONTROL=PUSHBUTTON
+GUID=58806FC0-0CA7-4322-99B7-3170DB5B58CE
+  Name=cmdordenar
+  Class=PUSHBUTTON
+  Caption=
+  Order=29
+  Left=406
+  Width=32
+  Top=102
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#cmdordenar,,,
+
+CONTROL=PUSHBUTTON
+GUID=BFC49DD8-E86B-446A-A87B-92D9B54BC10E
+  Name=cmdDO1
+  Class=PUSHBUTTON
+  Caption=Feriado
+  Order=30
+  Left=282
+  Width=64
+  Top=8
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Feriado",,
+  Property=HyperLabel=#cmdDO1,,,
+
+CONTROL=PUSHBUTTON
+GUID=DB064B3D-4AF9-4B40-B921-E29DB10FC16F
+  Name=cmdDO2
+  Class=PUSHBUTTON
+  Caption=Sabado
+  Order=31
+  Left=354
+  Width=64
+  Top=8
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sabado",,
+  Property=HyperLabel=#cmdDO2,,,
+
+CONTROL=PUSHBUTTON
+GUID=D845F047-BFDF-43E6-83F2-026E065FB38C
+  Name=cmdfol
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=32
+  Left=374
+  Width=60
+  Top=74
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdfol,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=068B0EFF-C667-4EBB-AC20-78DB29E67EEB
+  Name=FOLGASN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=33
+  Left=346
+  Width=24
+  Top=73
+  Height=20
+  Browseindex=8
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#FOLGASN,,,
+  Property=HyperLabel=,"Folga",,
+  Property=HyperLabel=,,,"FO_PON_FOLSN"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=84D33A14-06F9-4415-9D1A-D125E7EBBCCD
+  Name=SC_FOLOCO
+  Class=FIXEDTEXT
+  Caption=Folga
+  Order=34
+  Left=347
+  Width=40
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Folga",,
+  Property=HyperLabel=#SC_FOLOCO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=0771A3E2-B63A-4ADF-9B7A-14A812A60F61
+  Name=DATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=35
+  Left=49
+  Width=104
+  Top=28
+  Height=20
+  Browseindex=1
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=InheritClassName=DateSle
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATA,,,
+  Property=HyperLabel=,"Data",,
+
+SUBCONTROLSEND
+DESIGNEREND = JFOPTO_REV
+

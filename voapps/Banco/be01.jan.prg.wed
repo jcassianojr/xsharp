@@ -1,0 +1,164 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jbe01
+GUID=FB5F6E66-EA9A-4D5F-A5A3-3B76219DD143
+  Name=jbe01
+  Class=DATAWINDOW
+  Caption=Itens
+  Order=0
+  Left=20
+  Width=503
+  Top=20
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Itens",,
+  Property=HyperLabel=#jbe01,,,
+  Property=ViewAs=#FormView
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=2907DBA2-F2F4-464C-A8F1-27AA7F18E8F1
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Codigo
+  Order=1
+  Left=10
+  Width=80
+  Top=14
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=FIXEDTEXT
+GUID=A20C9869-7785-44B8-989A-51DA67DAE7EF
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Nome
+  Order=2
+  Left=9
+  Width=80
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=312CB75F-33D7-4486-96E5-E4955236A38A
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=101
+  Width=156
+  Top=17
+  Height=20
+  Browseindex=0
+  Browsesize=19
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#CODIGO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=4CAFCAE6-A6AE-44FD-B325-C07A7F422D68
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=101
+  Width=268
+  Top=45
+  Height=21
+  Browseindex=1
+  Browsesize=38
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#NOME,,,
+
+CONTROL=PUSHBUTTON
+GUID=3E5B8351-9CE2-4609-831C-7DD55D979A19
+  Name=pornum
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=301
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_AZ
+  Property=HyperLabel=#pornum,,,
+
+CONTROL=PUSHBUTTON
+GUID=05078BB6-29EA-48CD-9D4A-72CED113C023
+  Name=buscanum
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=269
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscanum,,,
+
+CONTROL=SUBDATAWINDOW
+GUID=8FA37422-9205-453E-9D54-9990E8501121
+  Name=JBF01
+  Class=SUBDATAWINDOW
+  Caption=JBF01
+  Order=7
+  Left=13
+  Width=468
+  Top=85
+  Height=212
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JBF01,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jbe01
+

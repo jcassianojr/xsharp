@@ -1,0 +1,446 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,crmJanTri
+GUID=2C70F431-C5EA-4AD0-A443-9B8D7B467AFC
+  Name=crmJanTri
+  Class=DATADIALOG
+  Caption=Operacao Triangular Checagem
+  Order=0
+  Left=43
+  Width=628
+  Top=28
+  Height=245
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Operacao Triangular Checagem",,
+  Property=Use=<Share Owner's>
+  Property=HyperLabel=#crmJanTri,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=7A5155D7-3E38-4CB2-B7FC-DF004F56E801
+  Name=PRECOPR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=85
+  Width=84
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=0
+  Property=HyperLabel=#PRECOPR,,,
+  Property=FocusSelect=FSEL_ALL
+  Property=FieldSpec=PADRAO_NUM_15_6
+
+CONTROL=FIXEDTEXT
+GUID=7C1B117F-3B5A-4CFF-8F5A-CD8A3456F5B9
+  Name=FT18
+  Class=FIXEDTEXT
+  Caption=Preço Pedido
+  Order=8
+  Left=9
+  Width=76
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Preço Pedido",,
+  Property=HyperLabel=#FT18,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=025B524F-058E-4213-8F3B-5B260BC40F20
+  Name=QTDEB
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=165
+  Width=80
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082204288
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#QTDEB,,,
+  Property=FocusSelect=FSEL_ALL
+  Property=TooltipText="Qtde 2 Nora Fiscal"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=96896EA8-73E1-4B49-923E-51F109C5315D
+  Name=QTDEA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=165
+  Width=80
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082204288
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#QTDEA,,,
+  Property=FocusSelect=FSEL_ALL
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=DFC392BE-0A08-457A-A6EA-F48EC316DDCF
+  Name=FT16
+  Class=FIXEDTEXT
+  Caption=Qtde
+  Order=13
+  Left=133
+  Width=28
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtde",,
+  Property=HyperLabel=#FT16,,,
+
+CONTROL=FIXEDTEXT
+GUID=E8FC5E80-1B71-49B6-912C-FD9862ED5E68
+  Name=FT15
+  Class=FIXEDTEXT
+  Caption=Qtde
+  Order=14
+  Left=133
+  Width=28
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtde",,
+  Property=HyperLabel=#FT15,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=269CFF81-F0BF-474A-B0D5-69CAC48D3C32
+  Name=PRECO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=45
+  Width=84
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082204288
+  Exstyles=0
+  Property=HyperLabel=#PRECO,,,
+  Property=FocusSelect=FSEL_ALL
+  Property=FieldSpec=PADRAO_NUM_15_6
+  Property=TooltipText="Preço da Nota Fiscal"
+  Property=InheritClassName=rightSle
+
+CONTROL=PUSHBUTTON
+GUID=960CC071-A15E-4E4E-93FF-FAA81BBE29A7
+  Name=cmdGeraAut
+  Class=PUSHBUTTON
+  Caption=Gerar Autorizacao Preco
+  Order=16
+  Left=269
+  Width=124
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1207959552
+  Exstyles=0
+  Property=HyperLabel=,"Gerar Autorizacao Preco",,
+  Property=HyperLabel=#cmdGeraAut,,,
+  Property=TooltipText="Outras Entradas"
+
+CONTROL=SINGLELINEEDIT
+GUID=822D6CE7-44B0-4656-BA67-0486EE2FEE90
+  Name=AUT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=333
+  Width=56
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216358528
+  Exstyles=0
+  Property=HyperLabel=#AUT,,,
+  Property=FocusSelect=FSEL_ALL
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=TooltipText="Autorizaçao Para Recebimento com Divergencias"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=F04608EA-4169-4DFB-A82F-138211DAD161
+  Name=FT8
+  Class=FIXEDTEXT
+  Caption=Autorizacao
+  Order=18
+  Left=269
+  Width=60
+  Top=13
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Autorizacao",,
+  Property=HyperLabel=#FT8,,,
+
+CONTROL=FIXEDTEXT
+GUID=56D26FAB-AB40-4964-94A2-C129071D6A79
+  Name=FT19
+  Class=FIXEDTEXT
+  Caption=Preço
+  Order=19
+  Left=5
+  Width=40
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Preço",,
+  Property=HyperLabel=#FT19,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=0EDED462-B3C9-40FD-B7C8-200A3D941ACD
+  Name=PGTO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=77
+  Width=352
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=#PGTO,,,
+  Property=HyperLabel=,,,"MY04_NUMMB01"
+
+CONTROL=FIXEDTEXT
+GUID=CF2E89C1-1405-47C5-9865-FC3F35F25F3B
+  Name=SC_NUMMB4
+  Class=FIXEDTEXT
+  Caption=Pgto
+  Order=21
+  Left=13
+  Width=32
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pgto",,
+  Property=HyperLabel=#SC_NUMMB4,,,
+
+CONTROL=FIXEDTEXT
+GUID=B9C0AC15-A1DE-4D3D-8567-1410C18C4807
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=22
+  Left=550
+  Width=52
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=PUSHBUTTON
+GUID=3C9F8C76-8F89-4DE6-94FE-3637BC8E9180
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=23
+  Left=550
+  Width=52
+  Top=65
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ICO_SAIR
+  Property=TooltipText="Encerra os Lançamento"
+
+CONTROL=FIXEDTEXT
+GUID=F1F1F3A8-5CE6-48E6-B5F4-AA50D1FD8457
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=24
+  Left=550
+  Width=52
+  Top=45
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=A5995EFF-503D-4393-93FA-7CD27313BF60
+  Name=INCLUIR
+  Class=PUSHBUTTON
+  Caption=
+  Order=25
+  Left=550
+  Width=52
+  Top=5
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#INCLUIR,,,
+  Property=Image=ICO_OK
+  Property=TooltipText="Inclui O Lançamento"
+
+CONTROL=SINGLELINEEDIT
+GUID=0BB72CCF-C14E-424D-BE55-E0CA04FC71AC
+  Name=PEITE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=26
+  Left=285
+  Width=44
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216358528
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#PEITE,,,
+  Property=FocusSelect=FSEL_ALL
+  Property=TooltipText="Item do Pedido de Compras"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=081F0310-D88E-46EE-B638-ED550F38B9EA
+  Name=PEPED
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=27
+  Left=225
+  Width=56
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216358528
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#PEPED,,,
+  Property=FocusSelect=FSEL_ALL
+  Property=TooltipText="Numero do Pedido de Compras"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=E7850FA5-2DAB-4502-BCA3-54A6DF9CAD77
+  Name=FT6
+  Class=FIXEDTEXT
+  Caption=Pedido
+  Order=28
+  Left=177
+  Width=48
+  Top=65
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pedido",,
+  Property=HyperLabel=#FT6,,,
+
+SUBCONTROLSEND
+DESIGNEREND = crmJanTri
+

@@ -1,0 +1,505 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,_smartfind
+GUID=DBE5E81E-66E5-4757-ADB6-5BE96AFA31F4
+  Name=_smartfind
+  Class=DATADIALOG
+  Caption=DataDialog Caption
+  Order=0
+  Left=20
+  Width=533
+  Top=20
+  Height=341
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataDialog Caption",,
+  Property=HyperLabel=#_smartfind,,,
+
+SUBCONTROLSSTART
+CONTROL=LISTBOX
+GUID=3160840B-C8A1-4C35-BDD8-8DC68E315FE9
+  Name=Keyselect
+  Class=LISTBOX
+  Caption=
+  Order=1
+  Left=13
+  Width=196
+  Top=25
+  Height=80
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1084231937
+  Exstyles=512
+  Property=HyperLabel=#Keyselect,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=6D7438B9-87FA-4F1C-8113-AC9F7931517A
+  Name=key1
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=145
+  Width=120
+  Top=133
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#key1,,,
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=SINGLELINEEDIT
+GUID=132D120F-68F4-4DDE-864C-D3FDE359BAFF
+  Name=key2
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=145
+  Width=120
+  Top=161
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#key2,,,
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=SINGLELINEEDIT
+GUID=4077A7B9-538D-48F3-B6A0-A94AA91F626A
+  Name=key3
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=145
+  Width=120
+  Top=189
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#key3,,,
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=SINGLELINEEDIT
+GUID=E90394CE-D9E4-4E09-B235-664F5C95C1CD
+  Name=key4
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=145
+  Width=120
+  Top=217
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#key4,,,
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=SINGLELINEEDIT
+GUID=82A06948-29BB-43EA-A9C1-56ACC1576B82
+  Name=key5
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=145
+  Width=120
+  Top=245
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#key5,,,
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=SINGLELINEEDIT
+GUID=1798B102-F50F-4D78-8A51-DBAC0B2D50E6
+  Name=key6
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=145
+  Width=120
+  Top=273
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#key6,,,
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=SINGLELINEEDIT
+GUID=70E72387-355B-4460-912A-1F41CF295980
+  Name=key7
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=145
+  Width=120
+  Top=301
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#key7,,,
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=CHECKBOX
+GUID=DAA88EA9-0BC0-45BF-8D27-4042F7AB1167
+  Name=KeepOpenCheckBox
+  Class=CHECKBOX
+  Caption=&Manter Janela Visivel
+  Order=9
+  Left=233
+  Width=121
+  Top=93
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741827
+  Exstyles=0
+  Property=HyperLabel=,"&Manter Janela Visivel",,
+  Property=HyperLabel=#KeepOpenCheckBox,,,
+
+CONTROL=CHECKBOX
+GUID=C0437762-C784-47E9-9DA2-AC523DA8E4B4
+  Name=IncrementCheckBox
+  Class=CHECKBOX
+  Caption=&Busca Incremental
+  Order=10
+  Left=365
+  Width=121
+  Top=93
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741827
+  Exstyles=0
+  Property=HyperLabel=,"&Busca Incremental",,
+  Property=HyperLabel=#IncrementCheckBox,,,
+
+CONTROL=FIXEDTEXT
+GUID=999870FC-A26D-45D6-A602-82A53C6BA1FE
+  Name=Cue1
+  Class=FIXEDTEXT
+  Caption=Indexkey1
+  Order=11
+  Left=29
+  Width=110
+  Top=133
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Indexkey1",,
+  Property=HyperLabel=#Cue1,,,
+
+CONTROL=FIXEDTEXT
+GUID=10DF0BB8-F4F1-46C7-A2C3-F126A6A0B359
+  Name=Cue2
+  Class=FIXEDTEXT
+  Caption=Indexkey2
+  Order=12
+  Left=29
+  Width=110
+  Top=161
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Indexkey2",,
+  Property=HyperLabel=#Cue2,,,
+
+CONTROL=FIXEDTEXT
+GUID=9C75DF62-F4BD-42F2-988A-8C6E49E061E3
+  Name=Cue3
+  Class=FIXEDTEXT
+  Caption=Indexkey3
+  Order=13
+  Left=29
+  Width=110
+  Top=189
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Indexkey3",,
+  Property=HyperLabel=#Cue3,,,
+
+CONTROL=FIXEDTEXT
+GUID=6CC5AF40-379D-44BB-84DD-75790071DD3C
+  Name=Cue4
+  Class=FIXEDTEXT
+  Caption=Indexkey4
+  Order=14
+  Left=29
+  Width=110
+  Top=217
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Indexkey4",,
+  Property=HyperLabel=#Cue4,,,
+
+CONTROL=FIXEDTEXT
+GUID=D2B30576-5080-4CE4-AF19-B8E76A832607
+  Name=Cue5
+  Class=FIXEDTEXT
+  Caption=Indexkey5
+  Order=15
+  Left=29
+  Width=110
+  Top=245
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Indexkey5",,
+  Property=HyperLabel=#Cue5,,,
+
+CONTROL=FIXEDTEXT
+GUID=245900F1-69D9-4D0D-997E-84BC8B4DFFB7
+  Name=Cue6
+  Class=FIXEDTEXT
+  Caption=Indexkey6
+  Order=16
+  Left=29
+  Width=110
+  Top=273
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Indexkey6",,
+  Property=HyperLabel=#Cue6,,,
+
+CONTROL=FIXEDTEXT
+GUID=9E2F9632-39AD-43C7-8C03-CC4EC517E32C
+  Name=Cue7
+  Class=FIXEDTEXT
+  Caption=Indexkey7
+  Order=17
+  Left=29
+  Width=110
+  Top=301
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Indexkey7",,
+  Property=HyperLabel=#Cue7,,,
+
+CONTROL=GROUPBOX
+GUID=AD264575-4B07-4483-ADA3-C8800D27CCBC
+  Name=GroupBox1
+  Class=GROUPBOX
+  Caption=Localizar
+  Order=18
+  Left=5
+  Width=508
+  Top=9
+  Height=110
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Localizar",,
+  Property=HyperLabel=#GroupBox1,,,
+
+CONTROL=PUSHBUTTON
+GUID=27A06935-598A-4AA5-9994-66BF5EA8C10F
+  Name=ExitPB
+  Class=PUSHBUTTON
+  Caption=
+  Order=19
+  Left=361
+  Width=64
+  Top=21
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#ExitPB,,,
+  Property=Image=ico_sair
+  Property=TooltipText="Clique aqui Para Cancelar"
+
+CONTROL=FIXEDTEXT
+GUID=75667018-39C2-4733-B943-322B450848CE
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Encerrar
+  Order=20
+  Left=369
+  Width=64
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Encerrar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=CDE1CA5E-3B17-477F-80B2-40C20494F3FC
+  Name=FindPB
+  Class=PUSHBUTTON
+  Caption=
+  Order=21
+  Left=217
+  Width=64
+  Top=21
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#FindPB,,,
+  Property=TooltipText="Localizar"
+  Property=Image=ico_find
+
+CONTROL=FIXEDTEXT
+GUID=EAE2A4BE-F3BF-48DA-BB70-EF1F82496593
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=Localizar
+  Order=22
+  Left=217
+  Width=64
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Localizar",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=72ECF068-4F47-4429-AD49-BE562383E2E6
+  Name=IndexPB
+  Class=PUSHBUTTON
+  Caption=
+  Order=23
+  Left=293
+  Width=64
+  Top=21
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#IndexPB,,,
+
+CONTROL=FIXEDTEXT
+GUID=B6FDF29C-AD84-46D6-9840-63F0CB236ED1
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=Ordenar
+  Order=24
+  Left=293
+  Width=64
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Ordenar",,
+  Property=HyperLabel=#theFixedText11,,,
+
+SUBCONTROLSEND
+DESIGNEREND = _smartfind
+

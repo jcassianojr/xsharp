@@ -1,0 +1,1083 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JACO
+GUID=4A898795-B483-4482-B3FA-DA1C00EE820E
+  Name=JACO
+  Class=DATAWINDOW
+  Caption=Ação Corretiva
+  Order=0
+  Left=28
+  Width=691
+  Top=23
+  Height=485
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Ação Corretiva",,
+  Property=ViewAs=#FormView
+  Property=HyperLabel=#JACO,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ClipperKeys=True
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=85485C1F-CDA5-43DE-BBAB-90AE56E804C6
+  Name=ediTIP
+  Class=PUSHBUTTON
+  Caption=E
+  Order=1
+  Left=441
+  Width=19
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"E",,
+  Property=HyperLabel=#ediTIP,,,
+
+CONTROL=PUSHBUTTON
+GUID=4BCDE8F7-3F76-409A-90DA-B0A553BFEE9F
+  Name=ESCTIP
+  Class=PUSHBUTTON
+  Caption=
+  Order=2
+  Left=421
+  Width=19
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#ESCTIP,,,
+  Property=Image=ICO_FIND
+
+CONTROL=PUSHBUTTON
+GUID=6F7A4C22-95EE-459A-96B0-76CEDEA0B51A
+  Name=poroc
+  Class=PUSHBUTTON
+  Caption=
+  Order=3
+  Left=125
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_AZ
+  Property=HyperLabel=#poroc,,,
+  Property=TooltipText="Ordenar Por Numero"
+
+CONTROL=PUSHBUTTON
+GUID=CD4131AA-4BDD-461F-969C-B2BE09A30D71
+  Name=buscaoc
+  Class=PUSHBUTTON
+  Caption=
+  Order=4
+  Left=93
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscaoc,,,
+  Property=TooltipText="Localizar Um Nº OCC"
+
+CONTROL=FIXEDTEXT
+GUID=C3DC3806-870C-41A9-8B8A-0D6EFE302DE1
+  Name=SC_OCD
+  Class=FIXEDTEXT
+  Caption=Numéro
+  Order=-1
+  Left=9
+  Width=49
+  Top=5
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numéro",,
+  Property=HyperLabel=#SC_OCD,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=CC7CC014-3C46-4C58-9F41-CCD20646E571
+  Name=MOTIVO
+  Class=RADIOBUTTONGROUP
+  Caption=Tipo
+  Order=-1
+  Left=481
+  Width=202
+  Top=9
+  Height=46
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Tipo",,
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#MOTIVO,,,
+
+CONTROL=FIXEDTEXT
+GUID=5761216B-AACB-4620-BE48-458AB3DE84C1
+  Name=SC_DATAOCD
+  Class=FIXEDTEXT
+  Caption=Data Ocorrencia
+  Order=-1
+  Left=165
+  Width=96
+  Top=13
+  Height=14
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data Ocorrencia",,
+  Property=HyperLabel=#SC_DATAOCD,,,
+
+CONTROL=FIXEDTEXT
+GUID=C16BFDD8-F6C3-4448-A48D-058B69C96549
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=-1
+  Left=281
+  Width=50
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=778CA89D-CDA5-459E-8875-FD8110D84D04
+  Name=OCD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=5
+  Width=84
+  Top=21
+  Height=20
+  Browseindex=0
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#OCD,,,
+  Property=HyperLabel=,"Numero",,
+  Property=HyperLabel=,,,"ME04D_OCD"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=RADIOBUTTON
+GUID=9D7AC34E-8CAB-4DB4-974C-651686ABD981
+  Name=RB1
+  Class=RADIOBUTTON
+  Caption=Danificado
+  Order=-1
+  Left=499
+  Width=80
+  Top=27
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Danificado",,
+  Property=Value=D
+  Property=HyperLabel=#RB1,,,
+
+CONTROL=RADIOBUTTON
+GUID=BF8A62A9-D5A9-490A-99CD-361ED37B6DC8
+  Name=RB2
+  Class=RADIOBUTTON
+  Caption=Descalibrado
+  Order=-1
+  Left=587
+  Width=88
+  Top=27
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Descalibrado",,
+  Property=Value=E
+  Property=HyperLabel=#RB2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=A820631E-BF3E-4885-9AF3-420502D459CD
+  Name=DATAOCD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=161
+  Width=110
+  Top=29
+  Height=20
+  Browseindex=2
+  Browsesize=29
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DATAOCD,,,
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=,,,"ME04D_DATAOCD"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=0FA784DB-605E-436D-A67E-5A2D0A91D0AB
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=277
+  Width=196
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=31
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"ME04D_CODIGO"
+
+CONTROL=FIXEDTEXT
+GUID=A6D3FF73-9DD3-424E-88B0-2A983C314932
+  Name=SC_OBS01
+  Class=FIXEDTEXT
+  Caption=Descrição da Ocorrência
+  Order=-1
+  Left=9
+  Width=128
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descrição da Ocorrência",,
+  Property=HyperLabel=#SC_OBS01,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=83E2100F-9A17-4981-95FD-EC9A3440006D
+  Name=INVALIDA
+  Class=RADIOBUTTONGROUP
+  Caption=Invalida os Resultado Inspeção
+  Order=-1
+  Left=481
+  Width=200
+  Top=61
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Invalida os Resultado Inspeção",,
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#INVALIDA,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=E4D757D4-EB6B-427F-8048-5092912ED7D4
+  Name=OBS01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=9
+  Width=460
+  Top=65
+  Height=20
+  Browseindex=2
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#OBS01,,,
+  Property=HyperLabel=,"Obs01:",,
+  Property=HyperLabel=,,,"ME04D_OBS01"
+
+CONTROL=RADIOBUTTON
+GUID=D711581E-FCDC-4DD6-B0E6-6C2422F78C2F
+  Name=RB3
+  Class=RADIOBUTTON
+  Caption=Sim
+  Order=-1
+  Left=501
+  Width=52
+  Top=77
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Sim",,
+  Property=Value=S
+  Property=HyperLabel=#RB3,,,
+
+CONTROL=RADIOBUTTON
+GUID=C0512A16-2070-43D2-8C7D-1E938D323F50
+  Name=RB4
+  Class=RADIOBUTTON
+  Caption=Não
+  Order=-1
+  Left=589
+  Width=59
+  Top=77
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Não",,
+  Property=Value=N
+  Property=HyperLabel=#RB4,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=7FFB2158-3BD4-45F1-8F0F-CBCBDB5490FF
+  Name=OBS02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=9
+  Width=460
+  Top=85
+  Height=20
+  Browseindex=3
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#OBS02,,,
+  Property=HyperLabel=,"Obs02:",,
+  Property=HyperLabel=,,,"ME04D_OBS02"
+
+CONTROL=SINGLELINEEDIT
+GUID=40553DF2-8405-4559-BF3E-9DE55A5A99B5
+  Name=OBS03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=9
+  Width=460
+  Top=105
+  Height=20
+  Browseindex=4
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#OBS03,,,
+  Property=HyperLabel=,"Obs03:",,
+  Property=HyperLabel=,,,"ME04D_OBS03"
+
+CONTROL=RADIOBUTTONGROUP
+GUID=3130585A-6AC6-46CE-B6DE-E7D439F4133B
+  Name=INSPECAO
+  Class=RADIOBUTTONGROUP
+  Caption=Resultado da Reinspeção
+  Order=-1
+  Left=481
+  Width=200
+  Top=113
+  Height=46
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Resultado da Reinspeção",,
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#INSPECAO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=C05DDB86-A3A7-4F64-857B-263BA34A5BE3
+  Name=FREQ1
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=145
+  Width=220
+  Top=129
+  Height=20
+  Browseindex=11
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#FREQ1,,,
+  Property=HyperLabel=,"Freq1:",,
+  Property=HyperLabel=,,,"ME04D_FREQ1"
+
+CONTROL=FIXEDTEXT
+GUID=959F93E6-2F81-4BC5-9DA7-CE9ED57F1222
+  Name=SC_FREQ1
+  Class=FIXEDTEXT
+  Caption=Frequencia de Calibração:
+  Order=-1
+  Left=9
+  Width=132
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Frequencia de Calibração:",,
+  Property=HyperLabel=#SC_FREQ1,,,
+
+CONTROL=RADIOBUTTON
+GUID=38B08BA4-BD2C-4254-8973-48AB6FA4055D
+  Name=RB5
+  Class=RADIOBUTTON
+  Caption=Aprovado
+  Order=-1
+  Left=501
+  Width=80
+  Top=133
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Aprovado",,
+  Property=Value=A
+  Property=HyperLabel=#RB5,,,
+
+CONTROL=RADIOBUTTON
+GUID=935E8D98-7ECC-4E51-A443-3B9A64108269
+  Name=RB6
+  Class=RADIOBUTTON
+  Caption=Rejeitado
+  Order=-1
+  Left=589
+  Width=76
+  Top=133
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Rejeitado",,
+  Property=Value=R
+  Property=HyperLabel=#RB6,,,
+
+CONTROL=FIXEDTEXT
+GUID=37388F72-7FFF-4AEB-8811-CEFAB26C165C
+  Name=SC_FREQ2
+  Class=FIXEDTEXT
+  Caption=Freq. Calibibração  Atual
+  Order=-1
+  Left=9
+  Width=124
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Freq. Calibibração  Atual",,
+  Property=HyperLabel=#SC_FREQ2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=4B52CCB2-4AE8-4BE7-A7B2-5B7735D0A23A
+  Name=FREQ2
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=145
+  Width=220
+  Top=149
+  Height=20
+  Browseindex=12
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#FREQ2,,,
+  Property=HyperLabel=,"Freq2:",,
+  Property=HyperLabel=,,,"ME04D_FREQ2"
+
+CONTROL=GROUPBOX
+GUID=14EDAAD6-F2C9-48A1-9252-9C50CCCFB5BE
+  Name=theGroupBox1
+  Class=GROUPBOX
+  Caption=Caso Haja produtos não expedidos
+  Order=-1
+  Left=9
+  Width=672
+  Top=173
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Caso Haja produtos não expedidos",,
+  Property=HyperLabel=#theGroupBox1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=F12DC17F-87EE-4BB3-A788-045E627D00FB
+  Name=VERIFI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=97
+  Width=220
+  Top=189
+  Height=20
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#VERIFI,,,
+  Property=HyperLabel=,"Verifi:",,
+  Property=HyperLabel=,,,"ME04D_VERIFI"
+
+CONTROL=FIXEDTEXT
+GUID=5DB763D2-E41F-4BD2-A954-151D3392D27A
+  Name=SC_CODIGOS
+  Class=FIXEDTEXT
+  Caption=Peças
+  Order=-1
+  Left=325
+  Width=40
+  Top=189
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Peças",,
+  Property=HyperLabel=#SC_CODIGOS,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=91CC2407-D0E4-4E17-9CD3-181345A96A15
+  Name=CODIGOS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=361
+  Width=316
+  Top=189
+  Height=20
+  Browseindex=6
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODIGOS,,,
+  Property=HyperLabel=,"Codigos:",,
+  Property=HyperLabel=,,,"ME04D_CODIGOS"
+
+CONTROL=FIXEDTEXT
+GUID=0A75D236-67CB-4D62-82C4-E2723ED3A91D
+  Name=SC_VERIFI
+  Class=FIXEDTEXT
+  Caption=Verificado Por:
+  Order=-1
+  Left=17
+  Width=80
+  Top=193
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Verificado Por:",,
+  Property=HyperLabel=#SC_VERIFI,,,
+
+CONTROL=GROUPBOX
+GUID=C10EB6DC-C3A0-4899-ADDB-117E6913650A
+  Name=theGroupBox2
+  Class=GROUPBOX
+  Caption=Caso os Produtos foram expedidos:
+  Order=-1
+  Left=9
+  Width=672
+  Top=229
+  Height=92
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Caso os Produtos foram expedidos:",,
+  Property=HyperLabel=#theGroupBox2,,,
+
+CONTROL=FIXEDTEXT
+GUID=D4BE34F7-B324-4C5E-A709-8F28687DA796
+  Name=SC_CLINOME
+  Class=FIXEDTEXT
+  Caption=Cliente
+  Order=-1
+  Left=21
+  Width=40
+  Top=249
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cliente",,
+  Property=HyperLabel=#SC_CLINOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=CDD8DF1B-020D-4E00-9AB0-2CAAA87EB650
+  Name=CLINOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=65
+  Width=304
+  Top=249
+  Height=20
+  Browseindex=7
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_40
+  Property=HyperLabel=#CLINOME,,,
+  Property=HyperLabel=,"Clinome:",,
+  Property=HyperLabel=,,,"ME04D_CLINOME"
+
+CONTROL=FIXEDTEXT
+GUID=6540488B-0601-4902-9A86-D747D4086470
+  Name=SC_NF
+  Class=FIXEDTEXT
+  Caption=Nota Fiscal:
+  Order=-1
+  Left=373
+  Width=60
+  Top=249
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nota Fiscal:",,
+  Property=HyperLabel=#SC_NF,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=26F97AE0-2019-4F95-80D5-1D4A9E9341B0
+  Name=NF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=437
+  Width=200
+  Top=249
+  Height=20
+  Browseindex=8
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_30
+  Property=HyperLabel=#NF,,,
+  Property=HyperLabel=,"Nf:",,
+  Property=HyperLabel=,,,"ME04D_NF"
+
+CONTROL=FIXEDTEXT
+GUID=74FF6FAA-26C7-4112-B874-400FA34B5507
+  Name=SC_ACLI01
+  Class=FIXEDTEXT
+  Caption=Ação Junto ao Cliente
+  Order=-1
+  Left=21
+  Width=104
+  Top=273
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ação Junto ao Cliente",,
+  Property=HyperLabel=#SC_ACLI01,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=22B554C5-9AB0-4F12-A91E-4998D1B4FBD7
+  Name=ACLI01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=133
+  Width=490
+  Top=273
+  Height=20
+  Browseindex=9
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#ACLI01,,,
+  Property=HyperLabel=,"Acli01:",,
+  Property=HyperLabel=,,,"ME04D_ACLI01"
+
+CONTROL=SINGLELINEEDIT
+GUID=D6DE587E-C5BC-49A5-AEB9-B58A89AA9555
+  Name=ACLI02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=133
+  Width=490
+  Top=293
+  Height=20
+  Browseindex=10
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#ACLI02,,,
+  Property=HyperLabel=,"Acli02:",,
+  Property=HyperLabel=,,,"ME04D_ACLI02"
+
+CONTROL=RADIOBUTTONGROUP
+GUID=78D87CF0-A119-4814-BD8F-3CDF036567AB
+  Name=INCIDE
+  Class=RADIOBUTTONGROUP
+  Caption=A ocorrência é reincidente
+  Order=-1
+  Left=9
+  Width=152
+  Top=325
+  Height=50
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"A ocorrência é reincidente",,
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#INCIDE,,,
+
+CONTROL=FIXEDTEXT
+GUID=E188A398-C9AE-4C72-9CC0-C831A2E4AE08
+  Name=SC_RESPON
+  Class=FIXEDTEXT
+  Caption=Responsável:
+  Order=-1
+  Left=169
+  Width=72
+  Top=333
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Responsável:",,
+  Property=HyperLabel=#SC_RESPON,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=AC5DDF62-1A67-418A-90F1-A875C98A7C95
+  Name=RESPON
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=249
+  Width=404
+  Top=333
+  Height=20
+  Browseindex=17
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_30
+  Property=HyperLabel=#RESPON,,,
+  Property=HyperLabel=,"Respon:",,
+  Property=HyperLabel=,,,"ME04D_RESPON"
+
+CONTROL=RADIOBUTTON
+GUID=AF1E7E33-653B-4024-AFC8-0A5FDD1484BB
+  Name=RB7
+  Class=RADIOBUTTON
+  Caption=Sim
+  Order=-1
+  Left=17
+  Width=60
+  Top=345
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Sim",,
+  Property=Value=S
+  Property=HyperLabel=#RB7,,,
+
+CONTROL=RADIOBUTTON
+GUID=97CA591E-097F-481B-89A4-DFC4772EBA82
+  Name=theRadioButton7
+  Class=RADIOBUTTON
+  Caption=Não
+  Order=-1
+  Left=89
+  Width=44
+  Top=345
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Não",,
+  Property=Value=N
+  Property=HyperLabel=#theRadioButton7,,,
+
+CONTROL=FIXEDTEXT
+GUID=09D9B054-15A3-4E06-B83D-F72B77D64FC7
+  Name=SC_ACOR01
+  Class=FIXEDTEXT
+  Caption=Ação Corretiva
+  Order=-1
+  Left=9
+  Width=72
+  Top=381
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ação Corretiva",,
+  Property=HyperLabel=#SC_ACOR01,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=A0DA7AA3-9F13-40FD-A52A-6512773C0D5C
+  Name=ACOR01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=89
+  Width=490
+  Top=385
+  Height=20
+  Browseindex=13
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_75
+  Property=HyperLabel=#ACOR01,,,
+  Property=HyperLabel=,"Acor01:",,
+  Property=HyperLabel=,,,"ME04D_ACOR01"
+
+CONTROL=SINGLELINEEDIT
+GUID=26B55C6B-267B-4F84-B1B7-B2BBB1495F43
+  Name=ACOR02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=89
+  Width=490
+  Top=405
+  Height=20
+  Browseindex=14
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_75
+  Property=HyperLabel=#ACOR02,,,
+  Property=HyperLabel=,"Acor02:",,
+  Property=HyperLabel=,,,"ME04D_ACOR02"
+
+CONTROL=SINGLELINEEDIT
+GUID=D34D6292-984E-491A-A709-C1EB8B26BA39
+  Name=ACOR03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=89
+  Width=490
+  Top=425
+  Height=20
+  Browseindex=15
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_75
+  Property=HyperLabel=#ACOR03,,,
+  Property=HyperLabel=,"Acor03:",,
+  Property=HyperLabel=,,,"ME04D_ACOR03"
+
+CONTROL=SINGLELINEEDIT
+GUID=77C8E80F-1F15-4CD6-92D1-B8D8F110AB14
+  Name=ACOR04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=89
+  Width=490
+  Top=445
+  Height=20
+  Browseindex=16
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_75
+  Property=HyperLabel=#ACOR04,,,
+  Property=HyperLabel=,"Acor04:",,
+  Property=HyperLabel=,,,"ME04D_ACOR04"
+
+SUBCONTROLSEND
+DESIGNEREND = JACO
+

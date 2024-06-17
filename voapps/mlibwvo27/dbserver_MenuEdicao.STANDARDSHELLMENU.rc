@@ -1,0 +1,40 @@
+ STANDARDSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		MENUITEM "Imprimir", 27144
+		MENUITEM "C&onfigurar Impressora ..", 27145
+		MENUITEM SEPARATOR
+		MENUITEM "&Fechar", 27147
+	END
+	POPUP "&Editar"
+	BEGIN
+		MENUITEM "&Inserir  Registro", 27149
+		MENUITEM "&Deletar Registro", 27150
+		MENUITEM SEPARATOR
+		MENUITEM "&Primeiro\tCtrl+Home", 27152
+		MENUITEM "&Anterior", 27153
+		MENUITEM "Pro&Ximo", 27154
+		MENUITEM "&Ultimo\tCtrl+End", 27155
+		MENUITEM SEPARATOR
+		MENUITEM "Busca Avançada", 27157
+		MENUITEM "Busca Indexada/Ordenação", 27158
+		MENUITEM SEPARATOR
+		MENUITEM "Filtrar Dados", 27160
+		MENUITEM "Apagar Filtro", 27161
+	END
+	POPUP "&Visualizar"
+	BEGIN
+		MENUITEM "&Editar\tShift+F2", 27163
+		MENUITEM "&Exiblir\tF2", 27164
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Indice\tF1", 27166
+		MENUITEM "&Ajuda de Contexto\tCtrl+F1", 27167
+		MENUITEM "&Usando a Ajuda", 27168
+		MENUITEM SEPARATOR
+		MENUITEM "&Sobre...", 27170
+	END
+End
+ 

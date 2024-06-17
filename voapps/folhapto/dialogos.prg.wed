@@ -1,0 +1,344 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,DiaPad
+GUID=CB5A1E8F-21F9-4B65-A1A8-CB7BD133AC3A
+  Name=DiaPad
+  Class=DATADIALOG
+  Caption=Informaçoes
+  Order=0
+  Left=40
+  Width=490
+  Top=40
+  Height=162
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Informaçoes",,
+  Property=HyperLabel=#DiaPad,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=703F125E-9DC5-43AB-9445-B884065BED73
+  Name=texto01
+  Class=FIXEDTEXT
+  Caption=campo01
+  Order=1
+  Left=9
+  Width=80
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"campo01",,
+  Property=HyperLabel=#texto01,,,
+
+CONTROL=FIXEDTEXT
+GUID=8C9DBA78-72C7-4BB6-BA6B-DDE863528221
+  Name=texto02
+  Class=FIXEDTEXT
+  Caption=campo02
+  Order=2
+  Left=9
+  Width=80
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"campo02",,
+  Property=HyperLabel=#texto02,,,
+
+CONTROL=FIXEDTEXT
+GUID=CB5E7538-6311-43D8-884A-3E1EDB88782B
+  Name=per
+  Class=FIXEDTEXT
+  Caption=Periodo
+  Order=3
+  Left=9
+  Width=80
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Periodo",,
+  Property=HyperLabel=#per,,,
+
+CONTROL=FIXEDTEXT
+GUID=0E714764-AE72-430D-9DE0-383DBB0C8991
+  Name=texto04
+  Class=FIXEDTEXT
+  Caption=campo04
+  Order=4
+  Left=9
+  Width=72
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"campo04",,
+  Property=HyperLabel=#texto04,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=DDE3228C-5938-4275-91E8-34BF94E85F2F
+  Name=campo01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=90
+  Width=83
+  Top=6
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#campo01,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=B415AEDF-F9B8-46BF-8A63-CDFF31996CD0
+  Name=campo02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=89
+  Width=84
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#campo02,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=62A49D14-82DF-4066-AD55-EAAC501FD288
+  Name=campo04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=85
+  Width=248
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#campo04,,,
+
+CONTROL=FIXEDTEXT
+GUID=66916B5D-5FDE-4C35-B197-C0BF5C3C0CE1
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=10
+  Left=413
+  Width=64
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=C19C0B4B-F125-492F-855D-698F8EFADFB0
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=11
+  Left=413
+  Width=64
+  Top=5
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ico_ok
+  Property=TooltipText="Clique aqui Par Confirmar"
+
+CONTROL=FIXEDTEXT
+GUID=21D01608-1E16-4FEB-97B5-A764E83EA25A
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=12
+  Left=413
+  Width=64
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=505C9B27-0411-4E1F-8246-B943AFBD0299
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=13
+  Left=413
+  Width=64
+  Top=77
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ico_sair
+  Property=TooltipText="Clique aqui Para Cancelar"
+
+CONTROL=PUSHBUTTON
+GUID=F239C643-D380-4E57-A934-5AED64A02B51
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=14
+  Left=181
+  Width=19
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+
+CONTROL=FIXEDTEXT
+GUID=D29FD95D-072B-42C7-B35F-D2C25A4136AE
+  Name=texto03
+  Class=FIXEDTEXT
+  Caption=campo03
+  Order=15
+  Left=9
+  Width=72
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"campo03",,
+  Property=HyperLabel=#texto03,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=8644C5DE-6213-4DEC-A7B4-5A19BCF095BA
+  Name=campo03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=89
+  Width=84
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#campo03,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=F9621DFB-3A20-4912-9720-EFB11EA61836
+  Name=DINI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=89
+  Width=104
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=InheritClassName=DateSle
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DINI,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=813D0AB2-99C6-4259-8F98-E11461F347AA
+  Name=DFIM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=201
+  Width=104
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+  Property=HyperLabel=#DFIM,,,
+
+SUBCONTROLSEND
+DESIGNEREND = DiaPad
+

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="jcrmtr">
+    <Window Name="jcrmtr">
+      <Name>jcrmtr</Name>
+      <Class>DATADIALOG</Class>
+      <Caption>DataDialog Caption</Caption>
+      <Order>0</Order>
+      <Left>18</Left>
+      <Top>18</Top>
+      <Width>329</Width>
+      <Height>124</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataDialog Caption",,</HyperLabel>
+        <Use>&lt;Share Owner's&gt;</Use>
+        <HyperLabel>#jcrmtr,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="SC_NRNOTA">
+      <Name>SC_NRNOTA</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Nr Nota A:</Caption>
+      <Order>1</Order>
+      <Left>22</Left>
+      <Top>26</Top>
+      <Width>51</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Nr Nota A:",,</HyperLabel>
+        <HyperLabel>#SC_NRNOTA,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_NRNOTB">
+      <Name>SC_NRNOTB</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Nr Nota B:</Caption>
+      <Order>2</Order>
+      <Left>22</Left>
+      <Top>50</Top>
+      <Width>51</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Nr Nota B:",,</HyperLabel>
+        <HyperLabel>#SC_NRNOTB,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="NRNOTA">
+      <Name>NRNOTA</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>78</Left>
+      <Top>26</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#NRNOTA,,,</HyperLabel>
+        <HyperLabel>,"Nrnota:",,</HyperLabel>
+        <HyperLabel>,,,"Crm_NRNOTA"</HyperLabel>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="NRNOTB">
+      <Name>NRNOTB</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>78</Left>
+      <Top>50</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#NRNOTB,,,</HyperLabel>
+        <HyperLabel>,"Nrnotb:",,</HyperLabel>
+        <HyperLabel>,,,"Crm_NRNOTB"</HyperLabel>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText10">
+      <Name>theFixedText10</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>OK</Caption>
+      <Order>5</Order>
+      <Left>237</Left>
+      <Top>69</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"OK",,</HyperLabel>
+        <HyperLabel>#theFixedText10,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="INCLUIR">
+      <Name>INCLUIR</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>237</Left>
+      <Top>21</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#INCLUIR,,,</HyperLabel>
+        <Image>ICO_OK</Image>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

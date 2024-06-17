@@ -1,0 +1,61 @@
+ EMPTYSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		POPUP "Instrumentos"
+		BEGIN
+			MENUITEM "Instrumentos", 28390
+			MENUITEM "Ação Corretiva", 28391
+			MENUITEM "Ordem de Calibração", 28392
+			MENUITEM "Certificado de Calibração", 28393
+			MENUITEM "RRM - Repetibilidade Instrumentos", 28394
+			MENUITEM "Requisições", 28395
+			MENUITEM "Fotos", 28396
+			MENUITEM "Sincronizar MC", 28397
+		END
+		POPUP "Utilitarios"
+		BEGIN
+			MENUITEM "Requisicoes", 28399
+			MENUITEM "Utilitarios", 28400
+			MENUITEM "Fotos", 28401
+		END
+		POPUP "Cadastro Auxiliares"
+		BEGIN
+			MENUITEM "Areas da Empresa", 28403
+			MENUITEM "Mao de Obra Operador", 28404
+			MENUITEM "Tecnicos", 28405
+			MENUITEM "Fornecedores", 28406
+		END
+		MENUITEM SEPARATOR
+		MENUITEM "Indexar", 28408
+		MENUITEM "C&onfigurar Impressora ..", 28409
+		MENUITEM SEPARATOR
+		MENUITEM "&Sair\tAlt+F4", 28411
+	END
+	POPUP "&Relatórios"
+	BEGIN
+		MENUITEM "Relatorios Instrumentos", 28413
+		MENUITEM "WRPT", 28414
+		MENUITEM "WRPT Integrados", 28415
+		MENUITEM "lstview logix", 28416
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		POPUP "Email"
+		BEGIN
+			MENUITEM "Consulta", 28419
+			MENUITEM "Geral", 28420
+			MENUITEM "Configuracao", 28421
+		END
+		MENUITEM "Checar CGC/CPF/IE...", 28422
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Indice\tF1", 28424
+		MENUITEM "&Usando a Ajuda", 28425
+		MENUITEM SEPARATOR
+		MENUITEM "Atualizações", 28427
+		MENUITEM "&Sobre...", 28428
+	END
+End
+ 

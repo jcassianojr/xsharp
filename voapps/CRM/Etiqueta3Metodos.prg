@@ -1,0 +1,79 @@
+﻿PARTIAL CLASS ETIQ03
+METHOD btnPEGMA01( ) 
+LOCAL aCLI AS ARRAY
+aCLI:=PEGMA01(SELF:SERVER:NCLI,ZCURINI,ZCURDIR)
+IF aCLI[1]=.T.
+   SELF:SERVER:CLIENTE:=aCLI[2]
+ENDIF
+	
+
+METHOD btnPEGMS01( ) 
+LOCAL aPRO AS ARRAY
+aPRO:=PEGMS01(SELF:SERVER:CODIGO)
+IF aPRO[1]=.T.
+   SELF:SERVER:NOME:=aPRO[2]
+ENDIF
+	
+
+METHOD Cancelar( ) 
+	SELF:EndWindow()
+
+METHOD esccod( ) 
+LOCAL oESC AS XESCCOD	
+oESC:=XESCCOD{SELF,"MS01.DBF"}
+oESC:SHOW()	
+IF Oesc:lok
+    SELF:SERVER:FIELDPUT("CODIGO",oESC:CODIGO)
+    SELF:SERVER:FIELDPUT("NOME",oESC:NOME)
+ENDIF					
+
+METHOD escfor( ) 
+LOCAL oESC AS XESCNUM	
+oESC:=XESCNUM{SELF,"MA01.DBF"}
+oESC:SHOW()	
+IF Oesc:lok
+    SELF:SERVER:FIELDPUT("NCLI",oESC:NUMERO)
+    SELF:SERVER:FIELDPUT("CLIENTE",oESC:NOME)
+ENDIF	
+
+METHOD foto( ) 
+LOCAL oFOTOVIEW AS fotoview	
+LOCAL cCODIGO AS STRING
+cCODIGO:=TIRAOUT(StrTran(AllTrim(SELF:oDCCODIGO:TextValue)," ",""))
+IF Empty(cCODIGO)	
+   alert("Codigo Produto Nao Preenchido")	
+   RETU
+ENDIF	
+OFOTOVIEW:=fotoview{SELF,ZDIRFOTO+cCODIGO+".JPG"}
+OFOTOVIEW:SHOW()
+	
+
+METHOD imprimir( ) 
+//LOCAL oRUN AS APP
+LOCAL cVORETRUN,cPARAM AS STRING
+LOCAL nFout AS PTR
+
+SELF:server:Commit()
+GRAVALOG("ETIQUET3","IMP","CRM_ETIQ")	
+//oRUN:=APP{SELF}
+//oRUN:RUN("CARETRUN.EXE "+PEGINIVAL(ZCURINI,"RET_ETIQ03","CAMINHO"))
+cVORETRUN:=PEGINIVAL(ZCURINI,"PATH","VORETRUN")+ "VORETRUN"
+	cPARAM:=PEGINIVAL(ZCURINI,"RET_ETIQ03","CAMINHO")+"$NNNNNSSSN$#MANA5CRM#"
+	nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz(cVORETRUN),String2Psz(cPARAM),String2Psz(""),1)
+    ShellExecuteErro(nFout) 
+//     hwnd,   lpOperation,  lpFile,   lpParameters,   lpDirectory,    SW_SHOWNORMAL = 1//fica no diretorio atual ondes estao os dbfs
+
+RETU SELF
+
+
+
+		
+
+METHOD PostInit(oWindow,iCtlID,oServer,uExtra) 
+	//Put your PostInit additions here
+	 FabCenterWindow( SELF )
+	RETURN NIL
+
+
+
+END CLASS

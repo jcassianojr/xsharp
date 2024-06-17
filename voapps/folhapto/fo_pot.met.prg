@@ -1,0 +1,65 @@
+PARTIAL CLASS JFo_pot
+METHOD APPEND() 
+	alert("Operaçao Bloqueada")
+
+METHOD buscaNUM( ) 
+	SELF:KeyFind()
+
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTFGRP("PTO","TOT")	
+
+
+METHOD cmdordenar( ) 
+	SELF:KEYFIND()
+
+METHOD DELETE() 
+	alert("Operaçao Bloqueada")
+	
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+ FabCenterWindow( SELF )
+ RETURN SELF
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+
+END CLASS
+PARTIAL CLASS XJFO_POT
+METHOD buscaNUM( ) 
+LOCAL oBUSCA AS XBUSCA
+oBUSCA:=XBUSCA{SELF,"Localizar ","Digite Nº Funcionario"}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF oBUSCA:lOK
+   SELF:SERVER:SETORDER(1)
+   SELF:SERVER:GOTOP()
+   SELF:SERVER:SEEK(Val(oBUSCA:cBUSCA))
+ENDIF	
+
+END CLASS
+PARTIAL CLASS XJFO_PTT
+METHOD buscaNUM( ) 
+LOCAL oBUSCA AS XBUSCA
+oBUSCA:=XBUSCA{SELF,"Localizar ","Digite Nº Funcionario"}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF oBUSCA:lOK
+   SELF:SERVER:SETORDER(1)
+   SELF:SERVER:GOTOP()
+   SELF:SERVER:SEEK(Str(Val(oBUSCA:cBUSCA),8))
+ENDIF	
+
+
+END CLASS

@@ -1,0 +1,72 @@
+PARTIAL CLASS JACO
+METHOD APPEND() 
+LOCAL nOCD AS DWORD
+IF PEGINIVAL(ZCURINI,"ME04D.DBF","INCLUI")="N"
+   alert("Inclusao Bloqueada")
+   RETURN .f.
+ENDIF
+SELF:server:setorder(1)
+SELF:server:gobottom()
+nOCD:=SELF:Server:OCD
+nOCD++
+SUPER:append()
+SELF:SERVER:FIELDPUT("OCD",nOCD)
+SELF:server:FIELDPUT("DATAOCD",Today())
+RETURN      .t.
+
+METHOD buscaoc( ) 
+	SELF:KeyFind()
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("M4","")	
+
+METHOD DELETE() 
+IF  MDG("Apagar Registro") .AND. SELF:SERVER:LOCKcurrentrecord()
+	SELF:server:delete()
+	SELF:server:unlock()
+	SELF:server:skip(-1)
+ENDIF	
+
+METHOD ediTIP( ) 
+LOCAL oJAN AS XJme04
+LOCAL cCODIGO AS STRING
+IF ! entramenu("INS",1)
+	RETU SELF
+ENDIF	
+cCODIGO:=AllTrim(SELF:SERVER:FIELDGET("CODIGO"))
+oJAN:=XJme04{SELF,cCODIGO,zCURINI,zCURDIR}
+oJAN:SHOW()
+
+METHOD ESCTIP( ) 
+LOCAL oJAN AS XESCME04
+LOCAL cFILTRO AS STRING
+//cFILTRO:="CODTIPO='DC'.OR.CODTIPO='CCL'"
+cFILTRO:=""
+oJAN:=XESCME04{SELF,cFILTRO}
+oJAN:SHOW()
+IF oJAN:lOK
+   SELF:SERVEr:FIELDPUT("CODIGO",oJAN:cCODIGO)	
+ENDIF	
+
+METHOD poroc( ) 
+	SELF:KeyFind()
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+       FabCenterWindow( SELF )
+ RETURN SELF
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+
+
+END CLASS

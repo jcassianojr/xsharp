@@ -1,0 +1,757 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JOCC
+GUID=4B812DB1-525F-452B-BF2B-9D74DBE0C2DA
+  Name=JOCC
+  Class=DATAWINDOW
+  Caption=Ordem Calibracao
+  Order=0
+  Left=78
+  Width=625
+  Top=78
+  Height=364
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Ordem Calibracao",,
+  Property=HyperLabel=#JOCC,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ClipperKeys=True
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=DATETIMEPICKER
+GUID=D124EEC9-4C18-4FD4-AAFA-F53A3350DD5B
+  Name=DATA
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=1
+  Left=349
+  Width=85
+  Top=17
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DATA,,,
+  Property=TooltipText="Data"
+
+CONTROL=SUBDATAWINDOW
+GUID=BAF7E8F1-EE81-4494-88F6-96DB0D73872D
+  Name=JOCCI
+  Class=SUBDATAWINDOW
+  Caption=JOCCI
+  Order=2
+  Left=5
+  Width=479
+  Top=109
+  Height=227
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JOCCI,,,
+
+CONTROL=PUSHBUTTON
+GUID=CE42D5F4-0221-4E8D-ACF2-935FE1DF655C
+  Name=Excluir
+  Class=PUSHBUTTON
+  Caption=Excluir
+  Order=5
+  Left=493
+  Width=80
+  Top=185
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Excluir",,
+  Property=HyperLabel=#Excluir,,,
+  Property=TooltipText="Excluir o Item em Destaque"
+
+CONTROL=PUSHBUTTON
+GUID=DF2D570D-3B08-47E7-AD1E-22008BB78ECB
+  Name=Incluir
+  Class=PUSHBUTTON
+  Caption=Incluir
+  Order=6
+  Left=493
+  Width=80
+  Top=161
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Incluir",,
+  Property=HyperLabel=#Incluir,,,
+  Property=TooltipText="Incluir um novo Item"
+
+CONTROL=PUSHBUTTON
+GUID=B9964030-247C-4406-89BC-100C29EA17BA
+  Name=ALTERAR
+  Class=PUSHBUTTON
+  Caption=Alterar Iten
+  Order=7
+  Left=493
+  Width=80
+  Top=133
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Alterar Iten",,
+  Property=HyperLabel=#ALTERAR,,,
+  Property=TooltipText="Altera o Item em Destaque"
+
+CONTROL=PUSHBUTTON
+GUID=654B3391-6535-4B6B-A26C-D8554BC70EDD
+  Name=TABULAR
+  Class=PUSHBUTTON
+  Caption=Ver Itens
+  Order=8
+  Left=493
+  Width=80
+  Top=109
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ver Itens",,
+  Property=HyperLabel=#TABULAR,,,
+  Property=TooltipText="Visualiza todos os Itens"
+
+CONTROL=PUSHBUTTON
+GUID=41A67616-151F-48A9-8FAC-CDED22015FF7
+  Name=assinar
+  Class=PUSHBUTTON
+  Caption=Assinar
+  Order=9
+  Left=493
+  Width=80
+  Top=281
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Assinar",,
+  Property=HyperLabel=#assinar,,,
+  Property=TooltipText="Assinar o Item em destaque"
+
+CONTROL=FIXEDTEXT
+GUID=20F6AA75-E4DA-43BB-A92D-FA868B278C0A
+  Name=SC_DATAP
+  Class=FIXEDTEXT
+  Caption=Datap:
+  Order=10
+  Left=57
+  Width=1
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Datap:",,
+  Property=HyperLabel=#SC_DATAP,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=B8D3F27C-AE3A-413C-BB00-168D6ACB4064
+  Name=DATAP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=389
+  Width=84
+  Top=45
+  Height=20
+  Browseindex=2
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DATAP,,,
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=,,,"ME04C_DATAP"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=0AA1D36F-F496-4D70-AC21-93BBD4EB188B
+  Name=Proxima
+  Class=PUSHBUTTON
+  Caption=Proxima
+  Order=12
+  Left=481
+  Width=68
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Proxima",,
+  Property=HyperLabel=#Proxima,,,
+  Property=TooltipText="Atualiza Proxima Calibraçao Cad. Instrumento"
+
+CONTROL=PUSHBUTTON
+GUID=7EE21F5B-0A40-4E83-B5C7-F190FF4B38E7
+  Name=ESCFOR
+  Class=PUSHBUTTON
+  Caption=
+  Order=13
+  Left=166
+  Width=27
+  Top=46
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#ESCFOR,,,
+  Property=TooltipText="Escolher Fornecedor"
+  Property=Image=ICO_FIND
+
+CONTROL=PUSHBUTTON
+GUID=9EE876DA-1B8B-4A62-A2F9-68B9D925B08F
+  Name=Proximo
+  Class=PUSHBUTTON
+  Caption=
+  Order=14
+  Left=537
+  Width=36
+  Top=213
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Proximo,,,
+  Property=Image=ICO_NEXT
+  Property=TooltipText="Avança um Icone"
+
+CONTROL=PUSHBUTTON
+GUID=4BA7018A-CA88-4009-8752-36197221D26B
+  Name=Anterior
+  Class=PUSHBUTTON
+  Caption=
+  Order=15
+  Left=493
+  Width=36
+  Top=213
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Anterior,,,
+  Property=Image=ICO_PREVIOUS
+  Property=TooltipText="Retorna um Icone"
+
+CONTROL=PUSHBUTTON
+GUID=728E3161-319A-49C5-BC4F-A3377796398C
+  Name=pegFOR
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=16
+  Left=197
+  Width=27
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#pegFOR,,,
+  Property=TooltipText="Preenche Campo Cognome conforme nº Fornecedor"
+
+CONTROL=PUSHBUTTON
+GUID=146E0451-0967-4B4B-9AFC-E3F615E4D1A3
+  Name=ediTIP
+  Class=PUSHBUTTON
+  Caption=E
+  Order=17
+  Left=313
+  Width=19
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"E",,
+  Property=HyperLabel=#ediTIP,,,
+  Property=TooltipText="Editar Instrumento"
+
+CONTROL=PUSHBUTTON
+GUID=D7ED88CE-5813-402B-BE00-206C3747C4EE
+  Name=ESCTIP
+  Class=PUSHBUTTON
+  Caption=
+  Order=18
+  Left=293
+  Width=19
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#ESCTIP,,,
+  Property=TooltipText="Escolher Instrumento"
+  Property=Image=ICO_FIND
+
+CONTROL=FIXEDTEXT
+GUID=AECA214C-B771-4DBC-88DA-ED2FE0225BD9
+  Name=SC_CERTIFI1
+  Class=FIXEDTEXT
+  Caption=Certif.Interno
+  Order=19
+  Left=289
+  Width=68
+  Top=69
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Certif.Interno",,
+  Property=HyperLabel=,,"Numero do Certificado",
+  Property=HyperLabel=#SC_CERTIFI1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=DD5935F6-8ED5-42F3-B676-0591DF1D6770
+  Name=NFCC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=357
+  Width=64
+  Top=69
+  Height=18
+  Browseindex=-1
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NFCC,,,
+  Property=HyperLabel=,"Fornecedor",,
+  Property=HyperLabel=,,,"ME04C_CODFOR"
+  Property=TooltipText="Nº do Certificado Interno"
+
+CONTROL=PUSHBUTTON
+GUID=351203B3-6433-4CDE-A265-87DAA558AEF6
+  Name=importar
+  Class=PUSHBUTTON
+  Caption=Importar
+  Order=21
+  Left=425
+  Width=56
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Importar",,
+  Property=HyperLabel=#importar,,,
+  Property=TooltipText="Retorna Dados do Certificado Interno"
+
+CONTROL=PUSHBUTTON
+GUID=74A23933-6C8F-4F1F-AD80-10FB9E0FC16A
+  Name=AssinarTo
+  Class=PUSHBUTTON
+  Caption=Assinar Todas
+  Order=22
+  Left=493
+  Width=80
+  Top=309
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Assinar Todas",,
+  Property=HyperLabel=#AssinarTo,,,
+  Property=TooltipText="Assinar Todos os Itens"
+
+CONTROL=PUSHBUTTON
+GUID=1C2A9C68-7BE5-41C3-933C-2B6D0C2A2D66
+  Name=Laudo
+  Class=PUSHBUTTON
+  Caption=Laudo
+  Order=23
+  Left=493
+  Width=80
+  Top=249
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Laudo",,
+  Property=HyperLabel=#Laudo,,,
+  Property=TooltipText="Preenche o Laudo Apr.Rep Cond"
+
+CONTROL=PUSHBUTTON
+GUID=124E7F64-982F-41CE-91C3-67142E701C49
+  Name=duplicar
+  Class=PUSHBUTTON
+  Caption=Duplicar
+  Order=24
+  Left=437
+  Width=68
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Duplicar",,
+  Property=HyperLabel=#duplicar,,,
+  Property=TooltipText="Cria uma Novo OCC com base nesta"
+
+CONTROL=PUSHBUTTON
+GUID=B53FECD6-E732-42B7-92C5-95E161754F0D
+  Name=poroc
+  Class=PUSHBUTTON
+  Caption=
+  Order=25
+  Left=117
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_AZ
+  Property=HyperLabel=#poroc,,,
+  Property=TooltipText="Ordenar Por Numero"
+
+CONTROL=PUSHBUTTON
+GUID=6E16BF60-23A4-469E-BB86-C3B202FEA023
+  Name=buscaoc
+  Class=PUSHBUTTON
+  Caption=
+  Order=26
+  Left=85
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscaoc,,,
+  Property=TooltipText="Localizar Um Nº OCC"
+
+CONTROL=FIXEDTEXT
+GUID=68988BC4-D3B2-4CB3-AD33-1F81C062C9AE
+  Name=SC_OCC
+  Class=FIXEDTEXT
+  Caption=Ordem:
+  Order=-1
+  Left=5
+  Width=40
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ordem:",,
+  Property=HyperLabel=,,"Numero da Ordem de Calibração",
+  Property=HyperLabel=#SC_OCC,,,
+
+CONTROL=FIXEDTEXT
+GUID=054E2AE7-9233-45F0-BED0-B2D22649F094
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Código:
+  Order=-1
+  Left=157
+  Width=50
+  Top=5
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Código:",,
+  Property=HyperLabel=,,"Código do Instrumento",
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=456B1316-1142-403C-B2B6-80F6BF5E095D
+  Name=SC_DATA
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=-1
+  Left=349
+  Width=40
+  Top=5
+  Height=12
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=,,"Data da Calibração",
+  Property=HyperLabel=#SC_DATA,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=F125C677-CDD1-4342-AE32-E3E896C21DC8
+  Name=OCC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=5
+  Width=72
+  Top=21
+  Height=24
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#OCC,,,
+  Property=HyperLabel=,"Occ:",,
+  Property=HyperLabel=,,,"ME04C_OCC"
+  Property=TooltipText="Numero da Ordem Calibraçao"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=BF228C87-D6E9-481B-8011-C9E43B3E2C81
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=157
+  Width=130
+  Top=21
+  Height=18
+  Browseindex=1
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_10
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"ME04C_CODIGO"
+  Property=TooltipText="Codigo do Instrumento"
+
+CONTROL=SINGLELINEEDIT
+GUID=1CFE0E6F-AB9C-4A6F-B78E-4ECE798AAC07
+  Name=COGFOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=233
+  Width=150
+  Top=45
+  Height=18
+  Browseindex=5
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#COGFOR,,,
+  Property=HyperLabel=,"Cognome",,
+  Property=HyperLabel=,,,"ME04C_COGFOR"
+  Property=TooltipText="Cognome do Fornecedor"
+
+CONTROL=FIXEDTEXT
+GUID=04980760-B8BD-4577-8572-680D52C102C0
+  Name=SC_CODFOR
+  Class=FIXEDTEXT
+  Caption=Fornecedor
+  Order=-1
+  Left=7
+  Width=66
+  Top=49
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fornecedor",,
+  Property=HyperLabel=,,"Codigo do Fornecedor",
+  Property=HyperLabel=#SC_CODFOR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=16A5B0FA-4C71-47C8-ADC8-788AB31C9037
+  Name=CODFOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=77
+  Width=84
+  Top=49
+  Height=18
+  Browseindex=4
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#CODFOR,,,
+  Property=HyperLabel=,"Fornecedor",,
+  Property=HyperLabel=,,,"ME04C_CODFOR"
+  Property=TooltipText="Nº do Fornecedor"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=646AA76C-1EA7-44A1-8840-7B751025CD82
+  Name=SC_CERTIFI
+  Class=FIXEDTEXT
+  Caption=Certificado:
+  Order=-1
+  Left=5
+  Width=64
+  Top=73
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Certificado:",,
+  Property=HyperLabel=,,"Numero do Certificado",
+  Property=HyperLabel=#SC_CERTIFI,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=B0E1C1E3-317C-46B6-84EE-F5ACB4B9EED6
+  Name=CERTIFI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=77
+  Width=130
+  Top=73
+  Height=18
+  Browseindex=3
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_10
+  Property=HyperLabel=#CERTIFI,,,
+  Property=HyperLabel=,"Certificado",,
+  Property=HyperLabel=,,,"ME04C_CERTIFI"
+  Property=TooltipText="Nº do Certificado"
+
+SUBCONTROLSEND
+DESIGNEREND = JOCC
+

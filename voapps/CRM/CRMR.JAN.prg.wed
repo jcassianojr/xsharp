@@ -1,0 +1,533 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JCRMR
+GUID=7E2C8480-6316-4823-8C86-6E72A5AF05C4
+  Name=JCRMR
+  Class=DATAWINDOW
+  Caption=Controle de Rastros
+  Order=0
+  Left=42
+  Width=499
+  Top=42
+  Height=162
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Controle de Rastros",,
+  Property=ClipperKeys=True
+  Property=Menu=STANDARDSHELLMENU
+  Property=HyperLabel=#JCRMR,,,
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=FE03D2A8-34E1-4BB7-AA14-D41309D7D301
+  Name=DATAF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=233
+  Width=88
+  Top=65
+  Height=20
+  Browseindex=6
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAF,,,
+  Property=HyperLabel=,"Fec",,
+  Property=HyperLabel=,,,"CRMR_DATAF"
+  Property=TooltipText="Data Fechamento do Rastro"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=9FDF924D-28BE-4FAF-B447-E4711FAC89E5
+  Name=OBS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=65
+  Width=332
+  Top=93
+  Height=20
+  Browseindex=8
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#OBS,,,
+  Property=HyperLabel=,"Obs",,
+  Property=HyperLabel=,,,"CRMR_DATAF"
+  Property=TooltipText="Observaçoes sobre Fechamento"
+
+CONTROL=SINGLELINEEDIT
+GUID=BFA9FD7C-567D-412A-AD15-4A792C4233DC
+  Name=PRODUTO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=65
+  Width=164
+  Top=117
+  Height=20
+  Browseindex=7
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_50
+  Property=HyperLabel=#PRODUTO,,,
+  Property=HyperLabel=,"Produto",,
+  Property=HyperLabel=,,,"CRMR_DATAF"
+  Property=TooltipText="Produto"
+
+CONTROL=FIXEDTEXT
+GUID=DBD9A3C6-FBA4-4CE5-B27C-49164228C360
+  Name=SC_RASTRO
+  Class=FIXEDTEXT
+  Caption=Rastro:
+  Order=4
+  Left=21
+  Width=40
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rastro:",,
+  Property=HyperLabel=#SC_RASTRO,,,
+
+CONTROL=FIXEDTEXT
+GUID=D8CFE612-CD8C-47BF-84B0-DB3E4F4F3A65
+  Name=SC_RASTRON
+  Class=FIXEDTEXT
+  Caption=Numero
+  Order=5
+  Left=105
+  Width=44
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero",,
+  Property=HyperLabel=#SC_RASTRON,,,
+
+CONTROL=FIXEDTEXT
+GUID=9C7F48F8-8A12-4DE3-B20B-A4E0363A3655
+  Name=SC_RASTROA
+  Class=FIXEDTEXT
+  Caption=Ano
+  Order=6
+  Left=221
+  Width=36
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ano",,
+  Property=HyperLabel=#SC_RASTROA,,,
+
+CONTROL=FIXEDTEXT
+GUID=903BB2CE-22A0-47D5-8F61-1C43D0050F53
+  Name=SC_CRM
+  Class=FIXEDTEXT
+  Caption=Crm:
+  Order=7
+  Left=17
+  Width=24
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Crm:",,
+  Property=HyperLabel=#SC_CRM,,,
+
+CONTROL=FIXEDTEXT
+GUID=8D8E99D8-9335-4215-9DE4-842605D0EAE9
+  Name=SC_RIRM
+  Class=FIXEDTEXT
+  Caption=Rirm:
+  Order=8
+  Left=89
+  Width=28
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rirm:",,
+  Property=HyperLabel=#SC_RIRM,,,
+
+CONTROL=FIXEDTEXT
+GUID=D0784E87-AEE0-4B92-B0CC-0D89236EA2F4
+  Name=SC_RIST
+  Class=FIXEDTEXT
+  Caption=Rist:
+  Order=9
+  Left=161
+  Width=24
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rist:",,
+  Property=HyperLabel=#SC_RIST,,,
+
+CONTROL=FIXEDTEXT
+GUID=A881F5B9-8C42-4EF4-BC68-F194BFA9BBB1
+  Name=SC_DATAF
+  Class=FIXEDTEXT
+  Caption=Fechamento
+  Order=10
+  Left=237
+  Width=64
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fechamento",,
+  Property=HyperLabel=#SC_DATAF,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=D778541D-F849-47F4-B28E-77CF3B079555
+  Name=RASTRO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=17
+  Width=84
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216348288
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_12
+  Property=HyperLabel=#RASTRO,,,
+  Property=HyperLabel=,"Rastro:",,
+  Property=HyperLabel=,,,"CRMR_RASTRO"
+
+CONTROL=SINGLELINEEDIT
+GUID=FCF060F6-986E-4B0F-9204-C230792A3F0B
+  Name=RASTRON
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=105
+  Width=68
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216348288
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RASTRON,,,
+  Property=HyperLabel=,"Nº ",,
+  Property=HyperLabel=,,,"CRMR_RASTRON"
+
+CONTROL=SINGLELINEEDIT
+GUID=53749970-C09E-42F6-9930-624E870B9B36
+  Name=RASTROA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=217
+  Width=40
+  Top=21
+  Height=20
+  Browseindex=1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216348288
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_04
+  Property=HyperLabel=#RASTROA,,,
+  Property=HyperLabel=,"Ano",,
+  Property=HyperLabel=,,,"CRMR_RASTROA"
+
+CONTROL=SINGLELINEEDIT
+GUID=E3C43F79-3CBF-4E78-A9F6-6C3362FBF767
+  Name=CRM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=17
+  Width=68
+  Top=65
+  Height=20
+  Browseindex=2
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216348288
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#CRM,,,
+  Property=HyperLabel=,"Crm:",,
+  Property=HyperLabel=,,,"CRMR_CRM"
+
+CONTROL=SINGLELINEEDIT
+GUID=E9AAA7AE-6973-4031-B49C-83A5F45295AC
+  Name=RIRM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=89
+  Width=68
+  Top=65
+  Height=20
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216348288
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RIRM,,,
+  Property=HyperLabel=,"Rirm:",,
+  Property=HyperLabel=,,,"CRMR_RIRM"
+
+CONTROL=SINGLELINEEDIT
+GUID=912AEF9D-5999-4B70-A36B-A82C6121022C
+  Name=RIST
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=161
+  Width=68
+  Top=65
+  Height=20
+  Browseindex=4
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216348288
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RIST,,,
+  Property=HyperLabel=,"Rist:",,
+  Property=HyperLabel=,,,"CRMR_RIST"
+
+CONTROL=FIXEDTEXT
+GUID=9B8F852C-AC46-4E99-A9C8-A098EE3CB869
+  Name=SC_RIST1
+  Class=FIXEDTEXT
+  Caption=Obs:
+  Order=17
+  Left=17
+  Width=44
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Obs:",,
+  Property=HyperLabel=#SC_RIST1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=0EE80545-C678-4E1D-9614-74B26094D37C
+  Name=DATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=269
+  Width=68
+  Top=21
+  Height=20
+  Browseindex=5
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATA,,,
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=,,,"CRMR_DATAF"
+
+CONTROL=FIXEDTEXT
+GUID=5B72FC30-874C-40C0-82DC-024F6CCE7B98
+  Name=SC_DATAF1
+  Class=FIXEDTEXT
+  Caption=Data
+  Order=19
+  Left=269
+  Width=44
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=#SC_DATAF1,,,
+
+CONTROL=FIXEDTEXT
+GUID=2D0F5C49-2EEC-4F5F-9108-CFFE0CD62B5E
+  Name=SC_RIST2
+  Class=FIXEDTEXT
+  Caption=Produto
+  Order=20
+  Left=17
+  Width=44
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Produto",,
+  Property=HyperLabel=#SC_RIST2,,,
+
+CONTROL=PUSHBUTTON
+GUID=8275B1C4-3C7F-4D82-A26C-90BEF6B99BF2
+  Name=buscacrm
+  Class=PUSHBUTTON
+  Caption=
+  Order=21
+  Left=177
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscacrm,,,
+
+CONTROL=PUSHBUTTON
+GUID=04DE7287-16CE-481A-A195-3341A27C4724
+  Name=cmdHoje
+  Class=PUSHBUTTON
+  Caption=H
+  Order=22
+  Left=329
+  Width=24
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"H",,
+  Property=TooltipText="Marca Fechamento com a Data de Hoje"
+  Property=HyperLabel=#cmdHoje,,,
+
+CONTROL=PUSHBUTTON
+GUID=9A80B484-C6B5-405D-9F47-A7DDF63C6BEA
+  Name=foto
+  Class=PUSHBUTTON
+  Caption=
+  Order=23
+  Left=365
+  Width=48
+  Top=17
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#foto,,,
+  Property=Image=ICO_CAMERA
+
+CONTROL=FIXEDTEXT
+GUID=ED45516C-892F-4ED6-A299-AB35CBB59E4E
+  Name=SC_DESTINO2
+  Class=FIXEDTEXT
+  Caption=Foto
+  Order=24
+  Left=365
+  Width=48
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Foto",,
+  Property=HyperLabel=#SC_DESTINO2,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JCRMR
+

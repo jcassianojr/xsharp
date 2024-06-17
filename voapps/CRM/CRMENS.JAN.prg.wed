@@ -1,0 +1,154 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JCRMENS
+GUID=7B459010-B042-4393-B6EE-DDC4EEBF6D24
+  Name=JCRMENS
+  Class=DATAWINDOW
+  Caption=Cadastro de Ensaios
+  Order=0
+  Left=22
+  Width=479
+  Top=22
+  Height=130
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cadastro de Ensaios",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JCRMENS,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=16971FDF-5448-411D-A228-9125C1CC1CC0
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=1
+  Left=22
+  Width=40
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=D5C44830-A58A-4E64-A229-930B712E0B55
+  Name=SC_DESCRICAO
+  Class=FIXEDTEXT
+  Caption=Descricao:
+  Order=2
+  Left=22
+  Width=56
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descricao:",,
+  Property=HyperLabel=#SC_DESCRICAO,,,
+
+CONTROL=FIXEDTEXT
+GUID=6370D23A-CE0C-4B4E-9897-B1CB1872BDC9
+  Name=SC_VALOR
+  Class=FIXEDTEXT
+  Caption=Tempo
+  Order=3
+  Left=22
+  Width=47
+  Top=74
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tempo",,
+  Property=HyperLabel=#SC_VALOR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=8AAF3F0E-124E-443D-AF39-BF3390979576
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=94
+  Width=96
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=21
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_10
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"CRMENS_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=171EB83D-605D-4356-B6FF-45CE1108E8E3
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=94
+  Width=292
+  Top=50
+  Height=20
+  Browseindex=1
+  Browsesize=30
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Descricao:",,
+  Property=HyperLabel=,,,"CRMENS_DESCRICAO"
+
+CONTROL=SINGLELINEEDIT
+GUID=F2718A91-02AF-4885-96DC-8BC7B7FEB321
+  Name=VALOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=94
+  Width=148
+  Top=74
+  Height=20
+  Browseindex=2
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_8
+  Property=HyperLabel=#VALOR,,,
+  Property=HyperLabel=,"Tempo",,
+  Property=HyperLabel=,,,"CRMENS_VALOR"
+  Property=InheritClassName=rightSle
+
+SUBCONTROLSEND
+DESIGNEREND = JCRMENS
+

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JMailPara">
+    <Window Name="JMailPara">
+      <Name>JMailPara</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>12</Left>
+      <Top>12</Top>
+      <Width>420</Width>
+      <Height>320</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <ViewAs>#BrowseView</ViewAs>
+        <HyperLabel>#JMailPara,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="SC_ERRO">
+      <Name>SC_ERRO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Erro:</Caption>
+      <Order>1</Order>
+      <Left>22</Left>
+      <Top>26</Top>
+      <Width>28</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Erro:",,</HyperLabel>
+        <HyperLabel>#SC_ERRO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DESTINO">
+      <Name>SC_DESTINO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Destino:</Caption>
+      <Order>2</Order>
+      <Left>22</Left>
+      <Top>50</Top>
+      <Width>44</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Destino:",,</HyperLabel>
+        <HyperLabel>#SC_DESTINO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="ERRO">
+      <Name>ERRO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>82</Left>
+      <Top>26</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>19</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_08</FieldSpec>
+        <HyperLabel>#ERRO,,,</HyperLabel>
+        <HyperLabel>,"Erro:",,</HyperLabel>
+        <HyperLabel>,,,"MAILPARA_ERRO"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="DESTINO">
+      <Name>DESTINO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>82</Left>
+      <Top>50</Top>
+      <Width>96</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>19</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_12</FieldSpec>
+        <HyperLabel>#DESTINO,,,</HyperLabel>
+        <HyperLabel>,"Destino:",,</HyperLabel>
+        <HyperLabel>,,,"MAILPARA_DESTINO"</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

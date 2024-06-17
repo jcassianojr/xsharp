@@ -1,0 +1,277 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JME4CCI
+GUID=E8AED20B-6181-46E5-8961-32F3D50F0188
+  Name=JME4CCI
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=24
+  Width=540
+  Top=24
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JME4CCI,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=95DD0488-06AC-499E-AD8F-86A7EAFAC8D6
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero:
+  Order=1
+  Left=22
+  Width=44
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=FIXEDTEXT
+GUID=8A3C97B0-C13B-43C9-83C7-D026EDA31218
+  Name=SC_DIMENSAO
+  Class=FIXEDTEXT
+  Caption=Dimensao:
+  Order=2
+  Left=22
+  Width=56
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Dimensao:",,
+  Property=HyperLabel=#SC_DIMENSAO,,,
+
+CONTROL=FIXEDTEXT
+GUID=364633B4-A534-4DFF-BA0C-34AAA6BE2C86
+  Name=SC_ENCONTRA
+  Class=FIXEDTEXT
+  Caption=Encontra:
+  Order=3
+  Left=22
+  Width=52
+  Top=74
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Encontra:",,
+  Property=HyperLabel=#SC_ENCONTRA,,,
+
+CONTROL=FIXEDTEXT
+GUID=3A716424-5556-4093-BB52-042761D22F07
+  Name=SC_TENDENCIA
+  Class=FIXEDTEXT
+  Caption=Tendencia:
+  Order=4
+  Left=22
+  Width=60
+  Top=98
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tendencia:",,
+  Property=HyperLabel=#SC_TENDENCIA,,,
+
+CONTROL=FIXEDTEXT
+GUID=1547A8A3-A468-4325-919C-11E8BCC33640
+  Name=SC_LAUDO
+  Class=FIXEDTEXT
+  Caption=Laudo:
+  Order=5
+  Left=22
+  Width=36
+  Top=122
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Laudo:",,
+  Property=HyperLabel=#SC_LAUDO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=D8CEFACA-CB47-4CFD-85FB-42D7EE92C056
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=98
+  Width=68
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"ME4CCI_NUMERO"
+
+CONTROL=SINGLELINEEDIT
+GUID=C0D3B3A9-2288-45A2-AD51-95C27BDA048F
+  Name=DIMENSAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=98
+  Width=335
+  Top=50
+  Height=20
+  Browseindex=0
+  Browsesize=41
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#DIMENSAO,,,
+  Property=HyperLabel=,"Dimensao:",,
+  Property=HyperLabel=,,,"ME4CCI_DIMENSAO"
+
+CONTROL=SINGLELINEEDIT
+GUID=1F5C81D8-E902-4198-BA45-C95638115E72
+  Name=ENCONTRA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=98
+  Width=224
+  Top=74
+  Height=20
+  Browseindex=1
+  Browsesize=21
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_30
+  Property=HyperLabel=#ENCONTRA,,,
+  Property=HyperLabel=,"Encontra:",,
+  Property=HyperLabel=,,,"ME4CCI_ENCONTRA"
+
+CONTROL=SINGLELINEEDIT
+GUID=A04D7381-B5D0-429A-AB97-1BD64307DBF6
+  Name=TENDENCIA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=98
+  Width=84
+  Top=98
+  Height=20
+  Browseindex=2
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_10
+  Property=HyperLabel=#TENDENCIA,,,
+  Property=HyperLabel=,"Tendencia:",,
+  Property=HyperLabel=,,,"ME4CCI_TENDENCIA"
+
+CONTROL=SINGLELINEEDIT
+GUID=B2B701B4-EBBE-4998-B73F-F7C0B2E465A4
+  Name=LAUDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=98
+  Width=24
+  Top=122
+  Height=20
+  Browseindex=4
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#LAUDO,,,
+  Property=HyperLabel=,"Laudo:",,
+  Property=HyperLabel=,,,"ME4CCI_LAUDO"
+
+CONTROL=SINGLELINEEDIT
+GUID=63007637-F80E-475C-96B3-CF2BEB4AA39A
+  Name=INCTOT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=97
+  Width=84
+  Top=149
+  Height=20
+  Browseindex=3
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_10
+  Property=HyperLabel=#INCTOT,,,
+  Property=HyperLabel=,"Inc Tot",,
+  Property=HyperLabel=,,,"ME4CCI_TENDENCIA"
+
+CONTROL=FIXEDTEXT
+GUID=507CD15B-2FAC-49DF-9BB7-3259646567E5
+  Name=SC_TENDENCIA1
+  Class=FIXEDTEXT
+  Caption=Incerteza
+  Order=12
+  Left=21
+  Width=60
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Incerteza",,
+  Property=HyperLabel=#SC_TENDENCIA1,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JME4CCI
+

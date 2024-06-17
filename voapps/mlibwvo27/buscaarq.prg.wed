@@ -1,0 +1,167 @@
+DESIGNERSTART = VOWindowEditor,DIALOGWINDOW,buscaArq
+GUID=72D16F4D-E6AA-4932-B1D4-E036420A9D71
+  Name=buscaArq
+  Class=DIALOGWINDOW
+  Caption=Localizar
+  Order=0
+  Left=48
+  Width=475
+  Top=48
+  Height=168
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=2160590980
+  Exstyles=257
+  Property=HyperLabel=,"Localizar",,
+  Property=HyperLabel=#buscaArq,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=3DA17EBC-5BB2-4F5B-80A3-EBB84CB2C3B7
+  Name=Titulo
+  Class=FIXEDTEXT
+  Caption=Buscar:
+  Order=2
+  Left=13
+  Width=372
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Buscar:",,
+  Property=HyperLabel=#Titulo,,,
+
+CONTROL=FIXEDTEXT
+GUID=12BF9C3A-164A-47C1-B17E-DDB6CE873DC0
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=5
+  Left=245
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=D493A12C-176A-4672-B0FE-93E4203172F9
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=245
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ICO_SAIR
+  Property=TooltipText="Clique aqui Para Cancelar"
+
+CONTROL=FIXEDTEXT
+GUID=EDD6F3B9-F2AF-4351-BC18-33F55214F940
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=7
+  Left=317
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=3ACB245E-3810-4F65-B8BD-3474F89FE1CB
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=317
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ICO_OK
+  Property=TooltipText="Clique aqui Par Confirmar"
+
+CONTROL=SINGLELINEEDIT
+GUID=47A007CB-F3E2-47FD-BB75-C772A7ABF522
+  Name=Arquivo
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=13
+  Width=372
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#Arquivo,,,
+  Property=InheritClassName=pbFileSLE
+  Property=TooltipText="Nome do Arquivo"
+
+CONTROL=PUSHBUTTON
+GUID=CD62B100-2A99-40D8-AC34-9B4387FEB47A
+  Name=PushButton2
+  Class=PUSHBUTTON
+  Caption=Limpar
+  Order=10
+  Left=389
+  Width=40
+  Top=33
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Limpar",,
+  Property=HyperLabel=#PushButton2,,,
+
+SUBCONTROLSEND
+DESIGNEREND = buscaArq
+

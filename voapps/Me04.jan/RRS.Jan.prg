@@ -1,0 +1,1153 @@
+#region DEFINES
+STATIC DEFINE JRRS_AMA01 := 111
+STATIC DEFINE JRRS_AMA02 := 113
+STATIC DEFINE JRRS_AMA03 := 115
+STATIC DEFINE JRRS_AMA04 := 117
+STATIC DEFINE JRRS_AMA05 := 119
+STATIC DEFINE JRRS_AMAA01 := 112
+STATIC DEFINE JRRS_AMAA02 := 114
+STATIC DEFINE JRRS_AMAA03 := 116
+STATIC DEFINE JRRS_AMAA04 := 118
+STATIC DEFINE JRRS_AMAA05 := 120
+STATIC DEFINE JRRS_AMB01 := 121
+STATIC DEFINE JRRS_AMB02 := 123
+STATIC DEFINE JRRS_AMB03 := 125
+STATIC DEFINE JRRS_AMB04 := 127
+STATIC DEFINE JRRS_AMB05 := 129
+STATIC DEFINE JRRS_AMBB01 := 122
+STATIC DEFINE JRRS_AMBB02 := 124
+STATIC DEFINE JRRS_AMBB03 := 126
+STATIC DEFINE JRRS_AMBB04 := 128
+STATIC DEFINE JRRS_AMBB05 := 130
+STATIC DEFINE JRRS_ASSINAR := 193
+STATIC DEFINE JRRS_AVA := 151
+STATIC DEFINE JRRS_AVAN := 109
+STATIC DEFINE JRRS_AVB := 152
+STATIC DEFINE JRRS_AVBN := 110
+STATIC DEFINE JRRS_BUSCANUM := 204
+STATIC DEFINE JRRS_CALCULAR := 153
+STATIC DEFINE JRRS_CARAC := 105
+STATIC DEFINE JRRS_CLIENTE := 101
+STATIC DEFINE JRRS_CLINOME := 144
+STATIC DEFINE JRRS_CMDCHECAR := 200
+STATIC DEFINE JRRS_CMDDUPLICAR := 205
+STATIC DEFINE JRRS_DATA := 100
+STATIC DEFINE JRRS_DATASS := 194
+STATIC DEFINE JRRS_DESCII := 147
+STATIC DEFINE JRRS_DESCRI := 103
+STATIC DEFINE JRRS_DESENHO := 102
+STATIC DEFINE JRRS_DIFMED := 175
+STATIC DEFINE JRRS_ESCAVA := 138
+STATIC DEFINE JRRS_ESCAVB := 139
+STATIC DEFINE JRRS_ESCCOD := 137
+STATIC DEFINE JRRS_ESCFOR := 136
+STATIC DEFINE JRRS_ESPEC := 106
+STATIC DEFINE JRRS_FATANOV := 174
+STATIC DEFINE JRRS_FATANT := 173
+STATIC DEFINE JRRS_FIXEDTEXT24 := 198
+STATIC DEFINE JRRS_FIXEDTEXT25 := 199
+STATIC DEFINE JRRS_FOTO := 202
+STATIC DEFINE JRRS_FT10 := 141
+STATIC DEFINE JRRS_FT11 := 154
+STATIC DEFINE JRRS_FT12 := 168
+STATIC DEFINE JRRS_FT13 := 169
+STATIC DEFINE JRRS_FT14 := 172
+STATIC DEFINE JRRS_FT15 := 176
+STATIC DEFINE JRRS_FT16 := 178
+STATIC DEFINE JRRS_FT17 := 180
+STATIC DEFINE JRRS_FT18 := 182
+STATIC DEFINE JRRS_FT19 := 184
+STATIC DEFINE JRRS_FT20 := 186
+STATIC DEFINE JRRS_FT21 := 188
+STATIC DEFINE JRRS_FT22 := 190
+STATIC DEFINE JRRS_FT23 := 192
+STATIC DEFINE JRRS_GB1 := 156
+STATIC DEFINE JRRS_INSTRU := 104
+STATIC DEFINE JRRS_K01 := 167
+STATIC DEFINE JRRS_K02 := 170
+STATIC DEFINE JRRS_K03 := 171
+STATIC DEFINE JRRS_MEDAA := 165
+STATIC DEFINE JRRS_MEDBB := 166
+STATIC DEFINE JRRS_MEDIA := 163
+STATIC DEFINE JRRS_MEDIB := 164
+STATIC DEFINE JRRS_MEDMED := 181
+STATIC DEFINE JRRS_NOMASS := 195
+STATIC DEFINE JRRS_NUMASS := 196
+STATIC DEFINE JRRS_OBS01 := 131
+STATIC DEFINE JRRS_OBS02 := 132
+STATIC DEFINE JRRS_PEGAVA := 159
+STATIC DEFINE JRRS_PEGAVB := 160
+STATIC DEFINE JRRS_PEGMA01 := 157 
+STATIC DEFINE JRRS_PEGMS01 := 158
+STATIC DEFINE JRRS_POROV := 203
+STATIC DEFINE JRRS_PRR := 135
+STATIC DEFINE JRRS_PUSHBUTTON17 := 206
+STATIC DEFINE JRRS_RP := 183
+STATIC DEFINE JRRS_RR := 134
+STATIC DEFINE JRRS_RRS := 142
+STATIC DEFINE JRRS_SC_AVA := 150
+STATIC DEFINE JRRS_SC_CARAC := 148
+STATIC DEFINE JRRS_SC_CLIENTE := 143
+STATIC DEFINE JRRS_SC_DESENHO := 145
+STATIC DEFINE JRRS_SC_DESTINO2 := 201
+STATIC DEFINE JRRS_SC_ESPEC := 133
+STATIC DEFINE JRRS_SC_INSTRU := 146
+STATIC DEFINE JRRS_SC_RRS := 140
+STATIC DEFINE JRRS_THEFIXEDTEXT12 := 155
+STATIC DEFINE JRRS_THEFIXEDTEXT30 := 149
+STATIC DEFINE JRRS_THEFIXEDTEXT31 := 197
+STATIC DEFINE JRRS_THESINGLELINEEDIT34 := 146 
+STATIC DEFINE JRRS_TOLMAX := 108
+STATIC DEFINE JRRS_TOLMIN := 107
+STATIC DEFINE JRRS_TOTALA := 161
+STATIC DEFINE JRRS_TOTALB := 162
+STATIC DEFINE JRRS_VA := 189
+STATIC DEFINE JRRS_VE := 191
+STATIC DEFINE JRRS_VP := 187
+STATIC DEFINE JRRS_VT := 185
+STATIC DEFINE JRRS_XMAX := 179
+STATIC DEFINE JRRS_XMIN := 177
+#endregion
+
+PARTIAL CLASS JRRS INHERIT MYDataWindow
+PROTECT oDBRRS AS DataColumn
+PROTECT oDBDATA AS DataColumn
+PROTECT oDBDESENHO AS DataColumn
+PROTECT oDBDESCRI AS DataColumn
+PROTECT oDBCLIENTE AS DataColumn
+PROTECT oDBCLINOME AS DataColumn
+PROTECT oDCDATA AS DATETIMEPICKER
+PROTECT oDCCLIENTE AS rightSle
+PROTECT oDCDESENHO AS SINGLELINEEDIT
+PROTECT oDCDESCRI AS SINGLELINEEDIT
+PROTECT oDCINSTRU AS COMBOBOX
+PROTECT oDCCARAC AS SINGLELINEEDIT
+PROTECT oDCESPEC AS SINGLELINEEDIT
+PROTECT oDCTOLMIN AS SINGLELINEEDIT
+PROTECT oDCTOLMAX AS SINGLELINEEDIT
+PROTECT oDCAVAN AS SINGLELINEEDIT
+PROTECT oDCAVBN AS SINGLELINEEDIT
+PROTECT oDCAMA01 AS SINGLELINEEDIT
+PROTECT oDCAMAA01 AS SINGLELINEEDIT
+PROTECT oDCAMA02 AS SINGLELINEEDIT
+PROTECT oDCAMAA02 AS SINGLELINEEDIT
+PROTECT oDCAMA03 AS SINGLELINEEDIT
+PROTECT oDCAMAA03 AS SINGLELINEEDIT
+PROTECT oDCAMA04 AS SINGLELINEEDIT
+PROTECT oDCAMAA04 AS SINGLELINEEDIT
+PROTECT oDCAMA05 AS SINGLELINEEDIT
+PROTECT oDCAMAA05 AS SINGLELINEEDIT
+PROTECT oDCAMB01 AS SINGLELINEEDIT
+PROTECT oDCAMBB01 AS SINGLELINEEDIT
+PROTECT oDCAMB02 AS SINGLELINEEDIT
+PROTECT oDCAMBB02 AS SINGLELINEEDIT
+PROTECT oDCAMB03 AS SINGLELINEEDIT
+PROTECT oDCAMBB03 AS SINGLELINEEDIT
+PROTECT oDCAMB04 AS SINGLELINEEDIT
+PROTECT oDCAMBB04 AS SINGLELINEEDIT
+PROTECT oDCAMB05 AS SINGLELINEEDIT
+PROTECT oDCAMBB05 AS SINGLELINEEDIT
+PROTECT oDCOBS01 AS SINGLELINEEDIT
+PROTECT oDCOBS02 AS SINGLELINEEDIT
+PROTECT oDCSC_ESPEC AS FIXEDTEXT
+PROTECT oDCRR AS SINGLELINEEDIT
+PROTECT oDCPRR AS SINGLELINEEDIT
+PROTECT oCCescfor AS PUSHBUTTON
+PROTECT oCCesccod AS PUSHBUTTON
+PROTECT oCCescava AS PUSHBUTTON
+PROTECT oCCescavb AS PUSHBUTTON
+PROTECT oDCSC_RRS AS FIXEDTEXT
+PROTECT oDCFT10 AS FIXEDTEXT
+PROTECT oDCRRS AS SINGLELINEEDIT
+PROTECT oDCSC_CLIENTE AS FIXEDTEXT
+PROTECT oDCCLINOME AS SINGLELINEEDIT
+PROTECT oDCSC_DESENHO AS FIXEDTEXT
+PROTECT oDCSC_INSTRU AS FIXEDTEXT
+PROTECT oDCDESCII AS SINGLELINEEDIT
+PROTECT oDCSC_CARAC AS FIXEDTEXT
+PROTECT oDCtheFixedText30 AS FIXEDTEXT
+PROTECT oDCSC_AVA AS FIXEDTEXT
+PROTECT oDCAVA AS SINGLELINEEDIT
+PROTECT oDCAVB AS SINGLELINEEDIT
+PROTECT oCCCalcular AS PUSHBUTTON
+PROTECT oDCFT11 AS FIXEDTEXT
+PROTECT oDCtheFixedText12 AS FIXEDTEXT
+PROTECT oDCGB1 AS GROUPBOX
+PROTECT oCCbtnpegma01 AS PUSHBUTTON
+PROTECT oCCbtnpegms01 AS PUSHBUTTON
+PROTECT oCCpegava AS PUSHBUTTON
+PROTECT oCCpegavb AS PUSHBUTTON
+PROTECT oDCTOTALA AS SINGLELINEEDIT
+PROTECT oDCTOTALB AS SINGLELINEEDIT
+PROTECT oDCMEDIA AS SINGLELINEEDIT
+PROTECT oDCMEDIB AS SINGLELINEEDIT
+PROTECT oDCMEDAA AS SINGLELINEEDIT
+PROTECT oDCMEDBB AS SINGLELINEEDIT
+PROTECT oDCK01 AS SINGLELINEEDIT
+PROTECT oDCFT12 AS FIXEDTEXT
+PROTECT oDCFT13 AS FIXEDTEXT
+PROTECT oDCK02 AS SINGLELINEEDIT
+PROTECT oDCK03 AS SINGLELINEEDIT
+PROTECT oDCFT14 AS FIXEDTEXT
+PROTECT oCCfatant AS PUSHBUTTON
+PROTECT oCCfatanov AS PUSHBUTTON
+PROTECT oDCDIFMED AS SINGLELINEEDIT
+PROTECT oDCFT15 AS FIXEDTEXT
+PROTECT oDCXMIN AS SINGLELINEEDIT
+PROTECT oDCFT16 AS FIXEDTEXT
+PROTECT oDCXMAX AS SINGLELINEEDIT
+PROTECT oDCFT17 AS FIXEDTEXT
+PROTECT oDCMEDMED AS SINGLELINEEDIT
+PROTECT oDCFT18 AS FIXEDTEXT
+PROTECT oDCRP AS SINGLELINEEDIT
+PROTECT oDCFT19 AS FIXEDTEXT
+PROTECT oDCVT AS SINGLELINEEDIT
+PROTECT oDCFT20 AS FIXEDTEXT
+PROTECT oDCVP AS SINGLELINEEDIT
+PROTECT oDCFT21 AS FIXEDTEXT
+PROTECT oDCVA AS SINGLELINEEDIT
+PROTECT oDCFT22 AS FIXEDTEXT
+PROTECT oDCVE AS SINGLELINEEDIT
+PROTECT oDCFT23 AS FIXEDTEXT
+PROTECT oCCAssinar AS PUSHBUTTON
+PROTECT oDCDATASS AS SINGLELINEEDIT
+PROTECT oDCNOMASS AS SINGLELINEEDIT
+PROTECT oDCNUMASS AS SINGLELINEEDIT
+PROTECT oDCtheFixedText31 AS FIXEDTEXT
+PROTECT oDCFixedText24 AS FIXEDTEXT
+PROTECT oDCFixedText25 AS FIXEDTEXT
+PROTECT oCCcmdChecar AS PUSHBUTTON
+PROTECT oDCSC_DESTINO2 AS FIXEDTEXT
+PROTECT oCCfoto AS PUSHBUTTON
+PROTECT oCCporov AS PUSHBUTTON
+PROTECT oCCbuscanum AS PUSHBUTTON
+PROTECT oCCcmdDuplicar AS PUSHBUTTON
+PROTECT oCCPushButton17 AS PUSHBUTTON
+
+// User code starts here (DO NOT remove this line)  ##USER##
+
+ACCESS AMA01
+RETURN SELF:FieldGet( #AMA01 )
+
+ASSIGN AMA01( uValue )
+SELF:FieldPut( #AMA01 , uValue )
+
+ACCESS AMA02
+RETURN SELF:FieldGet( #AMA02 )
+
+ASSIGN AMA02( uValue )
+SELF:FieldPut( #AMA02 , uValue )
+
+ACCESS AMA03
+RETURN SELF:FieldGet( #AMA03 )
+
+ASSIGN AMA03( uValue )
+SELF:FieldPut( #AMA03 , uValue )
+
+ACCESS AMA04
+RETURN SELF:FieldGet( #AMA04 )
+
+ASSIGN AMA04( uValue )
+SELF:FieldPut( #AMA04 , uValue )
+
+ACCESS AMA05
+RETURN SELF:FieldGet( #AMA05 )
+
+ASSIGN AMA05( uValue )
+SELF:FieldPut( #AMA05 , uValue )
+
+ACCESS AMAA01
+RETURN SELF:FieldGet( #AMAA01 )
+
+ASSIGN AMAA01( uValue )
+SELF:FieldPut( #AMAA01 , uValue )
+
+ACCESS AMAA02
+RETURN SELF:FieldGet( #AMAA02 )
+
+ASSIGN AMAA02( uValue )
+SELF:FieldPut( #AMAA02 , uValue )
+
+ACCESS AMAA03
+RETURN SELF:FieldGet( #AMAA03 )
+
+ASSIGN AMAA03( uValue )
+SELF:FieldPut( #AMAA03 , uValue )
+
+ACCESS AMAA04
+RETURN SELF:FieldGet( #AMAA04 )
+
+ASSIGN AMAA04( uValue )
+SELF:FieldPut( #AMAA04 , uValue )
+
+ACCESS AMAA05
+RETURN SELF:FieldGet( #AMAA05 )
+
+ASSIGN AMAA05( uValue )
+SELF:FieldPut( #AMAA05 , uValue )
+
+ACCESS AMB01
+RETURN SELF:FieldGet( #AMB01 )
+
+ASSIGN AMB01( uValue )
+SELF:FieldPut( #AMB01 , uValue )
+
+ACCESS AMB02
+RETURN SELF:FieldGet( #AMB02 )
+
+ASSIGN AMB02( uValue )
+SELF:FieldPut( #AMB02 , uValue )
+
+ACCESS AMB03
+RETURN SELF:FieldGet( #AMB03 )
+
+ASSIGN AMB03( uValue )
+SELF:FieldPut( #AMB03 , uValue )
+
+ACCESS AMB04
+RETURN SELF:FieldGet( #AMB04 )
+
+ASSIGN AMB04( uValue )
+SELF:FieldPut( #AMB04 , uValue )
+
+ACCESS AMB05
+RETURN SELF:FieldGet( #AMB05 )
+
+ASSIGN AMB05( uValue )
+SELF:FieldPut( #AMB05 , uValue )
+
+ACCESS AMBB01
+RETURN SELF:FieldGet( #AMBB01 )
+
+ASSIGN AMBB01( uValue )
+SELF:FieldPut( #AMBB01 , uValue )
+
+ACCESS AMBB02
+RETURN SELF:FieldGet( #AMBB02 )
+
+ASSIGN AMBB02( uValue )
+SELF:FieldPut( #AMBB02 , uValue )
+
+ACCESS AMBB03
+RETURN SELF:FieldGet( #AMBB03 )
+
+ASSIGN AMBB03( uValue )
+SELF:FieldPut( #AMBB03 , uValue )
+
+ACCESS AMBB04
+RETURN SELF:FieldGet( #AMBB04 )
+
+ASSIGN AMBB04( uValue )
+SELF:FieldPut( #AMBB04 , uValue )
+
+ACCESS AMBB05
+RETURN SELF:FieldGet( #AMBB05 )
+
+ASSIGN AMBB05( uValue )
+SELF:FieldPut( #AMBB05 , uValue )
+
+ACCESS AVA
+RETURN SELF:FieldGet( #AVA )
+
+ASSIGN AVA( uValue )
+SELF:FieldPut( #AVA , uValue )
+
+ACCESS AVAN
+RETURN SELF:FieldGet( #AVAN )
+
+ASSIGN AVAN( uValue )
+SELF:FieldPut( #AVAN , uValue )
+
+ACCESS AVB
+RETURN SELF:FieldGet( #AVB )
+
+ASSIGN AVB( uValue )
+SELF:FieldPut( #AVB , uValue )
+
+ACCESS AVBN
+RETURN SELF:FieldGet( #AVBN )
+
+ASSIGN AVBN( uValue )
+SELF:FieldPut( #AVBN , uValue )
+
+ACCESS CARAC
+RETURN SELF:FieldGet( #CARAC )
+
+ASSIGN CARAC( uValue )
+SELF:FieldPut( #CARAC , uValue )
+
+ACCESS CLIENTE
+RETURN SELF:FieldGet( #CLIENTE )
+
+ASSIGN CLIENTE( uValue )
+SELF:FieldPut( #CLIENTE , uValue )
+
+ACCESS CLINOME
+RETURN SELF:FieldGet( #CLINOME )
+
+ASSIGN CLINOME( uValue )
+SELF:FieldPut( #CLINOME , uValue )
+
+ACCESS DATASS
+RETURN SELF:FieldGet( #DATASS )
+
+ASSIGN DATASS( uValue )
+SELF:FieldPut( #DATASS , uValue )
+
+ACCESS DESCII
+RETURN SELF:FieldGet( #DESCII )
+
+ASSIGN DESCII( uValue )
+SELF:FieldPut( #DESCII , uValue )
+
+ACCESS DESCRI
+RETURN SELF:FieldGet( #DESCRI )
+
+ASSIGN DESCRI( uValue )
+SELF:FieldPut( #DESCRI , uValue )
+
+ACCESS DESENHO
+RETURN SELF:FieldGet( #DESENHO )
+
+ASSIGN DESENHO( uValue )
+SELF:FieldPut( #DESENHO , uValue )
+
+ACCESS DIFMED
+RETURN SELF:FieldGet( #DIFMED )
+
+ASSIGN DIFMED( uValue )
+SELF:FieldPut( #DIFMED , uValue )
+
+ACCESS ESPEC
+RETURN SELF:FieldGet( #ESPEC )
+
+ASSIGN ESPEC( uValue )
+SELF:FieldPut( #ESPEC , uValue )
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)
+	LOCAL oFont AS Font
+
+	SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+	SUPER(oWindow , ResourceID{"JRRS" , _GetInst()},iCtlID)
+
+	SELF:oDCDATA := DATETIMEPICKER{SELF , ResourceID{ JRRS_DATA  , _GetInst() } }
+	SELF:oDCDATA:FieldSpec := date_field{}
+	SELF:oDCDATA:HyperLabel := HyperLabel{#DATA , "Data" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCCLIENTE := rightSle{SELF , ResourceID{ JRRS_CLIENTE  , _GetInst() } }
+	SELF:oDCCLIENTE:FieldSpec := padrao_num_08{}
+	SELF:oDCCLIENTE:HyperLabel := HyperLabel{#CLIENTE , "Repetibilidade  e Reprodutibilidade" , NULL_STRING , "RRS_CLIENTE"}
+
+	SELF:oDCDESENHO := SINGLELINEEDIT{SELF , ResourceID{ JRRS_DESENHO  , _GetInst() } }
+	SELF:oDCDESENHO:FieldSpec := padrao_char_24{}
+	SELF:oDCDESENHO:HyperLabel := HyperLabel{#DESENHO , "Desenho:" , NULL_STRING , "RRS_DESENHO"}
+
+	SELF:oDCDESCRI := SINGLELINEEDIT{SELF , ResourceID{ JRRS_DESCRI  , _GetInst() } }
+	SELF:oDCDESCRI:FieldSpec := padrao_char_40{}
+	SELF:oDCDESCRI:HyperLabel := HyperLabel{#DESCRI , "Descrição:" , NULL_STRING , "RRS_DESCRI"}
+
+	SELF:oDCINSTRU := COMBOBOX{SELF , ResourceID{ JRRS_INSTRU  , _GetInst() } }
+	SELF:oDCINSTRU:FillUsing( SELF:TABINS() )
+	SELF:oDCINSTRU:FieldSpec := padrao_char_08{}
+	SELF:oDCINSTRU:HyperLabel := HyperLabel{#INSTRU , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCCARAC := SINGLELINEEDIT{SELF , ResourceID{ JRRS_CARAC  , _GetInst() } }
+	SELF:oDCCARAC:FieldSpec := padrao_char_40{}
+	SELF:oDCCARAC:HyperLabel := HyperLabel{#CARAC , "Carac:" , NULL_STRING , "RRS_CARAC"}
+
+	SELF:oDCESPEC := SINGLELINEEDIT{SELF , ResourceID{ JRRS_ESPEC  , _GetInst() } }
+	SELF:oDCESPEC:FieldSpec := padrao_char_40{}
+	SELF:oDCESPEC:HyperLabel := HyperLabel{#ESPEC , "Espec:" , NULL_STRING , "RRS_ESPEC"}
+
+	SELF:oDCTOLMIN := SINGLELINEEDIT{SELF , ResourceID{ JRRS_TOLMIN  , _GetInst() } }
+	SELF:oDCTOLMIN:FieldSpec := padrao_num_09_5{}
+	SELF:oDCTOLMIN:HyperLabel := HyperLabel{#TOLMIN , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCTOLMAX := SINGLELINEEDIT{SELF , ResourceID{ JRRS_TOLMAX  , _GetInst() } }
+	SELF:oDCTOLMAX:FieldSpec := padrao_num_09_5{}
+	SELF:oDCTOLMAX:HyperLabel := HyperLabel{#TOLMAX , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCAVAN := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AVAN  , _GetInst() } }
+	SELF:oDCAVAN:FieldSpec := padrao_num_08{}
+	SELF:oDCAVAN:HyperLabel := HyperLabel{#AVAN , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCAVBN := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AVBN  , _GetInst() } }
+	SELF:oDCAVBN:FieldSpec := padrao_num_08{}
+	SELF:oDCAVBN:HyperLabel := HyperLabel{#AVBN , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCAMA01 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMA01  , _GetInst() } }
+	SELF:oDCAMA01:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMA01:HyperLabel := HyperLabel{#AMA01 , "Ama01:" , NULL_STRING , "RRS_AMA01"}
+
+	SELF:oDCAMAA01 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMAA01  , _GetInst() } }
+	SELF:oDCAMAA01:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMAA01:HyperLabel := HyperLabel{#AMAA01 , "Amaa01:" , NULL_STRING , "RRS_AMAA01"}
+
+	SELF:oDCAMA02 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMA02  , _GetInst() } }
+	SELF:oDCAMA02:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMA02:HyperLabel := HyperLabel{#AMA02 , "Ama02:" , NULL_STRING , "RRS_AMA02"}
+
+	SELF:oDCAMAA02 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMAA02  , _GetInst() } }
+	SELF:oDCAMAA02:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMAA02:HyperLabel := HyperLabel{#AMAA02 , "Amaa02:" , NULL_STRING , "RRS_AMAA02"}
+
+	SELF:oDCAMA03 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMA03  , _GetInst() } }
+	SELF:oDCAMA03:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMA03:HyperLabel := HyperLabel{#AMA03 , "Ama03:" , NULL_STRING , "RRS_AMA03"}
+
+	SELF:oDCAMAA03 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMAA03  , _GetInst() } }
+	SELF:oDCAMAA03:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMAA03:HyperLabel := HyperLabel{#AMAA03 , "Amaa03:" , NULL_STRING , "RRS_AMAA03"}
+
+	SELF:oDCAMA04 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMA04  , _GetInst() } }
+	SELF:oDCAMA04:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMA04:HyperLabel := HyperLabel{#AMA04 , "Ama04:" , NULL_STRING , "RRS_AMA04"}
+
+	SELF:oDCAMAA04 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMAA04  , _GetInst() } }
+	SELF:oDCAMAA04:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMAA04:HyperLabel := HyperLabel{#AMAA04 , "Amaa04:" , NULL_STRING , "RRS_AMAA04"}
+
+	SELF:oDCAMA05 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMA05  , _GetInst() } }
+	SELF:oDCAMA05:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMA05:HyperLabel := HyperLabel{#AMA05 , "Ama05:" , NULL_STRING , "RRS_AMA05"}
+
+	SELF:oDCAMAA05 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMAA05  , _GetInst() } }
+	SELF:oDCAMAA05:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMAA05:HyperLabel := HyperLabel{#AMAA05 , "Amaa05:" , NULL_STRING , "RRS_AMAA05"}
+
+	SELF:oDCAMB01 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMB01  , _GetInst() } }
+	SELF:oDCAMB01:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMB01:HyperLabel := HyperLabel{#AMB01 , "Amb01:" , NULL_STRING , "RRS_AMB01"}
+
+	SELF:oDCAMBB01 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMBB01  , _GetInst() } }
+	SELF:oDCAMBB01:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMBB01:HyperLabel := HyperLabel{#AMBB01 , "Ambb01:" , NULL_STRING , "RRS_AMBB01"}
+
+	SELF:oDCAMB02 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMB02  , _GetInst() } }
+	SELF:oDCAMB02:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMB02:HyperLabel := HyperLabel{#AMB02 , "Amb02:" , NULL_STRING , "RRS_AMB02"}
+
+	SELF:oDCAMBB02 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMBB02  , _GetInst() } }
+	SELF:oDCAMBB02:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMBB02:HyperLabel := HyperLabel{#AMBB02 , "Ambb02:" , NULL_STRING , "RRS_AMBB02"}
+
+	SELF:oDCAMB03 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMB03  , _GetInst() } }
+	SELF:oDCAMB03:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMB03:HyperLabel := HyperLabel{#AMB03 , "Amb03:" , NULL_STRING , "RRS_AMB03"}
+
+	SELF:oDCAMBB03 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMBB03  , _GetInst() } }
+	SELF:oDCAMBB03:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMBB03:HyperLabel := HyperLabel{#AMBB03 , "Ambb03:" , NULL_STRING , "RRS_AMBB03"}
+
+	SELF:oDCAMB04 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMB04  , _GetInst() } }
+	SELF:oDCAMB04:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMB04:HyperLabel := HyperLabel{#AMB04 , "Amb04:" , NULL_STRING , "RRS_AMB04"}
+
+	SELF:oDCAMBB04 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMBB04  , _GetInst() } }
+	SELF:oDCAMBB04:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMBB04:HyperLabel := HyperLabel{#AMBB04 , "Ambb04:" , NULL_STRING , "RRS_AMBB04"}
+
+	SELF:oDCAMB05 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMB05  , _GetInst() } }
+	SELF:oDCAMB05:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMB05:HyperLabel := HyperLabel{#AMB05 , "Amb05:" , NULL_STRING , "RRS_AMB05"}
+
+	SELF:oDCAMBB05 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AMBB05  , _GetInst() } }
+	SELF:oDCAMBB05:FieldSpec := padrao_num_10_4{}
+	SELF:oDCAMBB05:HyperLabel := HyperLabel{#AMBB05 , "Ambb05:" , NULL_STRING , "RRS_AMBB05"}
+
+	SELF:oDCOBS01 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_OBS01  , _GetInst() } }
+	SELF:oDCOBS01:FieldSpec := padrao_char_50{}
+	SELF:oDCOBS01:HyperLabel := HyperLabel{#OBS01 , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCOBS02 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_OBS02  , _GetInst() } }
+	SELF:oDCOBS02:FieldSpec := padrao_char_50{}
+	SELF:oDCOBS02:HyperLabel := HyperLabel{#OBS02 , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_ESPEC := FIXEDTEXT{SELF , ResourceID{ JRRS_SC_ESPEC  , _GetInst() } }
+	SELF:oDCSC_ESPEC:HyperLabel := HyperLabel{#SC_ESPEC , "Especificação:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCRR := SINGLELINEEDIT{SELF , ResourceID{ JRRS_RR  , _GetInst() } }
+	SELF:oDCRR:FieldSpec := padrao_num_07_5{}
+	SELF:oDCRR:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCRR:Font( oFont )
+	SELF:oDCRR:HyperLabel := HyperLabel{#RR , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCPRR := SINGLELINEEDIT{SELF , ResourceID{ JRRS_PRR  , _GetInst() } }
+	SELF:oDCPRR:FieldSpec := padrao_num_10_5{}
+	SELF:oDCPRR:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCPRR:Font( oFont )
+	SELF:oDCPRR:HyperLabel := HyperLabel{#PRR , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oCCescfor := PUSHBUTTON{SELF , ResourceID{ JRRS_ESCFOR  , _GetInst() } }
+	SELF:oCCescfor:HyperLabel := HyperLabel{#escfor , "..." , NULL_STRING , NULL_STRING}
+
+	SELF:oCCesccod := PUSHBUTTON{SELF , ResourceID{ JRRS_ESCCOD  , _GetInst() } }
+	SELF:oCCesccod:HyperLabel := HyperLabel{#esccod , "..." , NULL_STRING , NULL_STRING}
+
+	SELF:oCCescava := PUSHBUTTON{SELF , ResourceID{ JRRS_ESCAVA  , _GetInst() } }
+	SELF:oCCescava:HyperLabel := HyperLabel{#escava , "..." , NULL_STRING , NULL_STRING}
+
+	SELF:oCCescavb := PUSHBUTTON{SELF , ResourceID{ JRRS_ESCAVB  , _GetInst() } }
+	SELF:oCCescavb:HyperLabel := HyperLabel{#escavb , "..." , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_RRS := FIXEDTEXT{SELF , ResourceID{ JRRS_SC_RRS  , _GetInst() } }
+	SELF:oDCSC_RRS:HyperLabel := HyperLabel{#SC_RRS , "Rrs:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT10 := FIXEDTEXT{SELF , ResourceID{ JRRS_FT10  , _GetInst() } }
+	SELF:oDCFT10:HyperLabel := HyperLabel{#FT10 , "Data" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCRRS := SINGLELINEEDIT{SELF , ResourceID{ JRRS_RRS  , _GetInst() } }
+	SELF:oDCRRS:FieldSpec := padrao_num_08{}
+	SELF:oDCRRS:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 12 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCRRS:Font( oFont )
+	SELF:oDCRRS:HyperLabel := HyperLabel{#RRS , "Rrs:" , NULL_STRING , "RRS_RRS"}
+
+	SELF:oDCSC_CLIENTE := FIXEDTEXT{SELF , ResourceID{ JRRS_SC_CLIENTE  , _GetInst() } }
+	SELF:oDCSC_CLIENTE:HyperLabel := HyperLabel{#SC_CLIENTE , "Cliente:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCCLINOME := SINGLELINEEDIT{SELF , ResourceID{ JRRS_CLINOME  , _GetInst() } }
+	SELF:oDCCLINOME:FieldSpec := padrao_char_40{}
+	SELF:oDCCLINOME:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCCLINOME:Font( oFont )
+	SELF:oDCCLINOME:HyperLabel := HyperLabel{#CLINOME , "Clinome:" , NULL_STRING , "RRS_CLINOME"}
+
+	SELF:oDCSC_DESENHO := FIXEDTEXT{SELF , ResourceID{ JRRS_SC_DESENHO  , _GetInst() } }
+	SELF:oDCSC_DESENHO:HyperLabel := HyperLabel{#SC_DESENHO , "Desenho:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_INSTRU := FIXEDTEXT{SELF , ResourceID{ JRRS_SC_INSTRU  , _GetInst() } }
+	SELF:oDCSC_INSTRU:HyperLabel := HyperLabel{#SC_INSTRU , "Instrumento:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCDESCII := SINGLELINEEDIT{SELF , ResourceID{ JRRS_DESCII  , _GetInst() } }
+	SELF:oDCDESCII:FieldSpec := padrao_char_25{}
+	SELF:oDCDESCII:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCDESCII:Font( oFont )
+	SELF:oDCDESCII:HyperLabel := HyperLabel{#DESCII , "Descii:" , NULL_STRING , "RRS_DESCII"}
+
+	SELF:oDCSC_CARAC := FIXEDTEXT{SELF , ResourceID{ JRRS_SC_CARAC  , _GetInst() } }
+	SELF:oDCSC_CARAC:HyperLabel := HyperLabel{#SC_CARAC , "Caracteristicas:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCtheFixedText30 := FIXEDTEXT{SELF , ResourceID{ JRRS_THEFIXEDTEXT30  , _GetInst() } }
+	SELF:oDCtheFixedText30:HyperLabel := HyperLabel{#theFixedText30 , "Avaliação B:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_AVA := FIXEDTEXT{SELF , ResourceID{ JRRS_SC_AVA  , _GetInst() } }
+	SELF:oDCSC_AVA:HyperLabel := HyperLabel{#SC_AVA , "Avaliação A:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCAVA := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AVA  , _GetInst() } }
+	SELF:oDCAVA:FieldSpec := padrao_char_40{}
+	SELF:oDCAVA:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCAVA:Font( oFont )
+	SELF:oDCAVA:HyperLabel := HyperLabel{#AVA , "Ava:" , NULL_STRING , "RRS_AVA"}
+
+	SELF:oDCAVB := SINGLELINEEDIT{SELF , ResourceID{ JRRS_AVB  , _GetInst() } }
+	SELF:oDCAVB:FieldSpec := padrao_char_40{}
+	SELF:oDCAVB:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCAVB:Font( oFont )
+	SELF:oDCAVB:HyperLabel := HyperLabel{#AVB , "Avb:" , NULL_STRING , "RRS_AVB"}
+
+	SELF:oCCCalcular := PUSHBUTTON{SELF , ResourceID{ JRRS_CALCULAR  , _GetInst() } }
+	SELF:oCCCalcular:HyperLabel := HyperLabel{#Calcular , "Calcular" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT11 := FIXEDTEXT{SELF , ResourceID{ JRRS_FT11  , _GetInst() } }
+	SELF:oDCFT11:HyperLabel := HyperLabel{#FT11 , "RR" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCtheFixedText12 := FIXEDTEXT{SELF , ResourceID{ JRRS_THEFIXEDTEXT12  , _GetInst() } }
+	SELF:oDCtheFixedText12:HyperLabel := HyperLabel{#theFixedText12 , "RR%" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCGB1 := GROUPBOX{SELF , ResourceID{ JRRS_GB1  , _GetInst() } }
+	SELF:oDCGB1:HyperLabel := HyperLabel{#GB1 , "Observações" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCbtnpegma01 := PUSHBUTTON{SELF , ResourceID{ JRRS_BTNPEGMA01  , _GetInst() } }
+	SELF:oCCbtnpegma01:HyperLabel := HyperLabel{#btnpegma01 , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCbtnpegms01 := PUSHBUTTON{SELF , ResourceID{ JRRS_BTNPEGMS01  , _GetInst() } }
+	SELF:oCCbtnpegms01:HyperLabel := HyperLabel{#btnpegms01 , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCpegava := PUSHBUTTON{SELF , ResourceID{ JRRS_PEGAVA  , _GetInst() } }
+	SELF:oCCpegava:HyperLabel := HyperLabel{#pegava , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCpegavb := PUSHBUTTON{SELF , ResourceID{ JRRS_PEGAVB  , _GetInst() } }
+	SELF:oCCpegavb:HyperLabel := HyperLabel{#pegavb , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCTOTALA := SINGLELINEEDIT{SELF , ResourceID{ JRRS_TOTALA  , _GetInst() } }
+	SELF:oDCTOTALA:FieldSpec := padrao_num_11_4{}
+	SELF:oDCTOTALA:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCTOTALA:Font( oFont )
+	SELF:oDCTOTALA:HyperLabel := HyperLabel{#TOTALA , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCTOTALB := SINGLELINEEDIT{SELF , ResourceID{ JRRS_TOTALB  , _GetInst() } }
+	SELF:oDCTOTALB:FieldSpec := padrao_num_11_4{}
+	SELF:oDCTOTALB:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCTOTALB:Font( oFont )
+	SELF:oDCTOTALB:HyperLabel := HyperLabel{#TOTALB , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCMEDIA := SINGLELINEEDIT{SELF , ResourceID{ JRRS_MEDIA  , _GetInst() } }
+	SELF:oDCMEDIA:FieldSpec := padrao_num_11_4{}
+	SELF:oDCMEDIA:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCMEDIA:Font( oFont )
+	SELF:oDCMEDIA:HyperLabel := HyperLabel{#MEDIA , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCMEDIB := SINGLELINEEDIT{SELF , ResourceID{ JRRS_MEDIB  , _GetInst() } }
+	SELF:oDCMEDIB:FieldSpec := padrao_num_11_4{}
+	SELF:oDCMEDIB:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCMEDIB:Font( oFont )
+	SELF:oDCMEDIB:HyperLabel := HyperLabel{#MEDIB , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCMEDAA := SINGLELINEEDIT{SELF , ResourceID{ JRRS_MEDAA  , _GetInst() } }
+	SELF:oDCMEDAA:FieldSpec := padrao_num_07_4{}
+	SELF:oDCMEDAA:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCMEDAA:Font( oFont )
+	SELF:oDCMEDAA:HyperLabel := HyperLabel{#MEDAA , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCMEDBB := SINGLELINEEDIT{SELF , ResourceID{ JRRS_MEDBB  , _GetInst() } }
+	SELF:oDCMEDBB:FieldSpec := padrao_num_07_4{}
+	SELF:oDCMEDBB:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCMEDBB:Font( oFont )
+	SELF:oDCMEDBB:HyperLabel := HyperLabel{#MEDBB , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCK01 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_K01  , _GetInst() } }
+	SELF:oDCK01:FieldSpec := padrao_num_06_4{}
+	SELF:oDCK01:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCK01:Font( oFont )
+	SELF:oDCK01:HyperLabel := HyperLabel{#K01 , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT12 := FIXEDTEXT{SELF , ResourceID{ JRRS_FT12  , _GetInst() } }
+	SELF:oDCFT12:HyperLabel := HyperLabel{#FT12 , "K01" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT13 := FIXEDTEXT{SELF , ResourceID{ JRRS_FT13  , _GetInst() } }
+	SELF:oDCFT13:HyperLabel := HyperLabel{#FT13 , "K02" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCK02 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_K02  , _GetInst() } }
+	SELF:oDCK02:FieldSpec := padrao_num_06_4{}
+	SELF:oDCK02:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCK02:Font( oFont )
+	SELF:oDCK02:HyperLabel := HyperLabel{#K02 , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCK03 := SINGLELINEEDIT{SELF , ResourceID{ JRRS_K03  , _GetInst() } }
+	SELF:oDCK03:FieldSpec := padrao_num_06_4{}
+	SELF:oDCK03:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCK03:Font( oFont )
+	SELF:oDCK03:HyperLabel := HyperLabel{#K03 , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT14 := FIXEDTEXT{SELF , ResourceID{ JRRS_FT14  , _GetInst() } }
+	SELF:oDCFT14:HyperLabel := HyperLabel{#FT14 , "K03" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCfatant := PUSHBUTTON{SELF , ResourceID{ JRRS_FATANT  , _GetInst() } }
+	SELF:oCCfatant:HyperLabel := HyperLabel{#fatant , "4.56 3.65 2.08" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCfatanov := PUSHBUTTON{SELF , ResourceID{ JRRS_FATANOV  , _GetInst() } }
+	SELF:oCCfatanov:HyperLabel := HyperLabel{#fatanov , "0.8862 0.7071 0.4030" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCDIFMED := SINGLELINEEDIT{SELF , ResourceID{ JRRS_DIFMED  , _GetInst() } }
+	SELF:oDCDIFMED:FieldSpec := padrao_num_07_4{}
+	SELF:oDCDIFMED:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCDIFMED:Font( oFont )
+	SELF:oDCDIFMED:HyperLabel := HyperLabel{#DIFMED , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT15 := FIXEDTEXT{SELF , ResourceID{ JRRS_FT15  , _GetInst() } }
+	SELF:oDCFT15:HyperLabel := HyperLabel{#FT15 , "Xdif" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCXMIN := SINGLELINEEDIT{SELF , ResourceID{ JRRS_XMIN  , _GetInst() } }
+	SELF:oDCXMIN:FieldSpec := padrao_num_11_4{}
+	SELF:oDCXMIN:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCXMIN:Font( oFont )
+	SELF:oDCXMIN:HyperLabel := HyperLabel{#XMIN , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT16 := FIXEDTEXT{SELF , ResourceID{ JRRS_FT16  , _GetInst() } }
+	SELF:oDCFT16:HyperLabel := HyperLabel{#FT16 , "Xmin" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCXMAX := SINGLELINEEDIT{SELF , ResourceID{ JRRS_XMAX  , _GetInst() } }
+	SELF:oDCXMAX:FieldSpec := padrao_num_11_4{}
+	SELF:oDCXMAX:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCXMAX:Font( oFont )
+	SELF:oDCXMAX:HyperLabel := HyperLabel{#XMAX , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT17 := FIXEDTEXT{SELF , ResourceID{ JRRS_FT17  , _GetInst() } }
+	SELF:oDCFT17:HyperLabel := HyperLabel{#FT17 , "Xmax" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCMEDMED := SINGLELINEEDIT{SELF , ResourceID{ JRRS_MEDMED  , _GetInst() } }
+	SELF:oDCMEDMED:FieldSpec := padrao_num_07_4{}
+	SELF:oDCMEDMED:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCMEDMED:Font( oFont )
+	SELF:oDCMEDMED:HyperLabel := HyperLabel{#MEDMED , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT18 := FIXEDTEXT{SELF , ResourceID{ JRRS_FT18  , _GetInst() } }
+	SELF:oDCFT18:HyperLabel := HyperLabel{#FT18 , "R" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCRP := SINGLELINEEDIT{SELF , ResourceID{ JRRS_RP  , _GetInst() } }
+	SELF:oDCRP:FieldSpec := padrao_num_11_5{}
+	SELF:oDCRP:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCRP:Font( oFont )
+	SELF:oDCRP:HyperLabel := HyperLabel{#RP , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT19 := FIXEDTEXT{SELF , ResourceID{ JRRS_FT19  , _GetInst() } }
+	SELF:oDCFT19:HyperLabel := HyperLabel{#FT19 , "RP" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCVT := SINGLELINEEDIT{SELF , ResourceID{ JRRS_VT  , _GetInst() } }
+	SELF:oDCVT:FieldSpec := padrao_num_10_5{}
+	SELF:oDCVT:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCVT:Font( oFont )
+	SELF:oDCVT:HyperLabel := HyperLabel{#VT , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT20 := FIXEDTEXT{SELF , ResourceID{ JRRS_FT20  , _GetInst() } }
+	SELF:oDCFT20:HyperLabel := HyperLabel{#FT20 , "VT" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCVP := SINGLELINEEDIT{SELF , ResourceID{ JRRS_VP  , _GetInst() } }
+	SELF:oDCVP:FieldSpec := padrao_num_10_5{}
+	SELF:oDCVP:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCVP:Font( oFont )
+	SELF:oDCVP:HyperLabel := HyperLabel{#VP , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT21 := FIXEDTEXT{SELF , ResourceID{ JRRS_FT21  , _GetInst() } }
+	SELF:oDCFT21:HyperLabel := HyperLabel{#FT21 , "VP" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCVA := SINGLELINEEDIT{SELF , ResourceID{ JRRS_VA  , _GetInst() } }
+	SELF:oDCVA:FieldSpec := padrao_num_07_5{}
+	SELF:oDCVA:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCVA:Font( oFont )
+	SELF:oDCVA:HyperLabel := HyperLabel{#VA , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT22 := FIXEDTEXT{SELF , ResourceID{ JRRS_FT22  , _GetInst() } }
+	SELF:oDCFT22:HyperLabel := HyperLabel{#FT22 , "VA" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCVE := SINGLELINEEDIT{SELF , ResourceID{ JRRS_VE  , _GetInst() } }
+	SELF:oDCVE:FieldSpec := padrao_num_07_5{}
+	SELF:oDCVE:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCVE:Font( oFont )
+	SELF:oDCVE:HyperLabel := HyperLabel{#VE , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT23 := FIXEDTEXT{SELF , ResourceID{ JRRS_FT23  , _GetInst() } }
+	SELF:oDCFT23:HyperLabel := HyperLabel{#FT23 , "VE" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCAssinar := PUSHBUTTON{SELF , ResourceID{ JRRS_ASSINAR  , _GetInst() } }
+	SELF:oCCAssinar:HyperLabel := HyperLabel{#Assinar , "Assinar" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCDATASS := SINGLELINEEDIT{SELF , ResourceID{ JRRS_DATASS  , _GetInst() } }
+	SELF:oDCDATASS:FieldSpec := date_field{}
+	SELF:oDCDATASS:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCDATASS:Font( oFont )
+	SELF:oDCDATASS:HyperLabel := HyperLabel{#DATASS , "Insnum:" , NULL_STRING , "RIF_INSNUM"}
+
+	SELF:oDCNOMASS := SINGLELINEEDIT{SELF , ResourceID{ JRRS_NOMASS  , _GetInst() } }
+	SELF:oDCNOMASS:FieldSpec := padrao_char_40{}
+	SELF:oDCNOMASS:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCNOMASS:Font( oFont )
+	SELF:oDCNOMASS:HyperLabel := HyperLabel{#NOMASS , "Insnom:" , NULL_STRING , "RIF_INSNOM"}
+
+	SELF:oDCNUMASS := SINGLELINEEDIT{SELF , ResourceID{ JRRS_NUMASS  , _GetInst() } }
+	SELF:oDCNUMASS:FieldSpec := padrao_num_08{}
+	SELF:oDCNUMASS:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCNUMASS:Font( oFont )
+	SELF:oDCNUMASS:HyperLabel := HyperLabel{#NUMASS , "Insnum:" , NULL_STRING , "RIF_INSNUM"}
+
+	SELF:oDCtheFixedText31 := FIXEDTEXT{SELF , ResourceID{ JRRS_THEFIXEDTEXT31  , _GetInst() } }
+	SELF:oDCtheFixedText31:HyperLabel := HyperLabel{#theFixedText31 , "Tolerancia" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFixedText24 := FIXEDTEXT{SELF , ResourceID{ JRRS_FIXEDTEXT24  , _GetInst() } }
+	SELF:oDCFixedText24:HyperLabel := HyperLabel{#FixedText24 , "Min" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFixedText25 := FIXEDTEXT{SELF , ResourceID{ JRRS_FIXEDTEXT25  , _GetInst() } }
+	SELF:oDCFixedText25:HyperLabel := HyperLabel{#FixedText25 , "Max" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCcmdChecar := PUSHBUTTON{SELF , ResourceID{ JRRS_CMDCHECAR  , _GetInst() } }
+	SELF:oCCcmdChecar:TooltipText := "Inicia Checagem Preenchimento"
+	SELF:oCCcmdChecar:HyperLabel := HyperLabel{#cmdChecar , "Checar Todos RRS" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_DESTINO2 := FIXEDTEXT{SELF , ResourceID{ JRRS_SC_DESTINO2  , _GetInst() } }
+	SELF:oDCSC_DESTINO2:HyperLabel := HyperLabel{#SC_DESTINO2 , "Foto" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCfoto := PUSHBUTTON{SELF , ResourceID{ JRRS_FOTO  , _GetInst() } }
+	SELF:oCCfoto:Image := ICO_CAMERA{}
+	SELF:oCCfoto:HyperLabel := HyperLabel{#foto , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oCCporov := PUSHBUTTON{SELF , ResourceID{ JRRS_POROV  , _GetInst() } }
+	SELF:oCCporov:TooltipText := "Ordenar"
+	SELF:oCCporov:Image := ICO_AZ{}
+	SELF:oCCporov:HyperLabel := HyperLabel{#porov , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oCCbuscanum := PUSHBUTTON{SELF , ResourceID{ JRRS_BUSCANUM  , _GetInst() } }
+	SELF:oCCbuscanum:TooltipText := "Localizar"
+	SELF:oCCbuscanum:Image := ICO_FIND{}
+	SELF:oCCbuscanum:HyperLabel := HyperLabel{#buscanum , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oCCcmdDuplicar := PUSHBUTTON{SELF , ResourceID{ JRRS_CMDDUPLICAR  , _GetInst() } }
+	SELF:oCCcmdDuplicar:HyperLabel := HyperLabel{#cmdDuplicar , "Duplicar" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCPushButton17 := PUSHBUTTON{SELF , ResourceID{ JRRS_PUSHBUTTON17  , _GetInst() } }
+	SELF:oCCPushButton17:HyperLabel := HyperLabel{#PushButton17 , "Gravar RRM" , NULL_STRING , NULL_STRING}
+
+	SELF:Caption := "Repetibilidade  e Reprodutibilidade"
+	SELF:Menu := STANDARDSHELLMENU{}
+	SELF:ClipperKeys := TRUE
+	SELF:HyperLabel := HyperLabel{#JRRS , "Repetibilidade  e Reprodutibilidade" , NULL_STRING , NULL_STRING}
+	IF !IsNil(oServer)
+		SELF:Use(oServer)
+	ENDIF
+
+	SELF:Browser := DataBrowser{SELF}
+
+	SELF:oDBRRS := DataColumn{padrao_num_08{}}
+	SELF:oDBRRS:Width := 6
+	SELF:oDBRRS:HyperLabel := SELF:oDCRRS:HyperLabel
+	SELF:oDBRRS:Caption := "Rrs:"
+	SELF:Browser:AddColumn(SELF:oDBRRS)
+
+	SELF:oDBDATA := DataColumn{date_field{}}
+	SELF:oDBDATA:Width := 10
+	SELF:oDBDATA:HyperLabel := SELF:oDCDATA:HyperLabel
+	SELF:oDBDATA:Caption := "Data"
+	SELF:Browser:AddColumn(SELF:oDBDATA)
+
+	SELF:oDBDESENHO := DataColumn{padrao_char_24{}}
+	SELF:oDBDESENHO:Width := 15
+	SELF:oDBDESENHO:HyperLabel := SELF:oDCDESENHO:HyperLabel
+	SELF:oDBDESENHO:Caption := "Desenho:"
+	SELF:Browser:AddColumn(SELF:oDBDESENHO)
+
+	SELF:oDBDESCRI := DataColumn{padrao_char_40{}}
+	SELF:oDBDESCRI:Width := 16
+	SELF:oDBDESCRI:HyperLabel := SELF:oDCDESCRI:HyperLabel
+	SELF:oDBDESCRI:Caption := "Descrição:"
+	SELF:Browser:AddColumn(SELF:oDBDESCRI)
+
+	SELF:oDBCLIENTE := DataColumn{padrao_num_08{}}
+	SELF:oDBCLIENTE:Width := 9
+	SELF:oDBCLIENTE:HyperLabel := SELF:oDCCLIENTE:HyperLabel
+	SELF:oDBCLIENTE:Caption := "Repetibilidade  e Reprodutibilidade"
+	SELF:Browser:AddColumn(SELF:oDBCLIENTE)
+
+	SELF:oDBCLINOME := DataColumn{padrao_char_40{}}
+	SELF:oDBCLINOME:Width := 13
+	SELF:oDBCLINOME:HyperLabel := SELF:oDCCLINOME:HyperLabel
+	SELF:oDBCLINOME:Caption := "Clinome:"
+	SELF:Browser:AddColumn(SELF:oDBCLINOME)
+
+	SELF:ViewAs(#FormView)
+
+
+	SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN
+
+
+ACCESS INSTRU
+RETURN SELF:FieldGet( #INSTRU )
+
+ASSIGN INSTRU( uValue )
+SELF:FieldPut( #INSTRU , uValue )
+
+ACCESS K01
+RETURN SELF:FieldGet( #K01 )
+
+ASSIGN K01( uValue )
+SELF:FieldPut( #K01 , uValue )
+
+ACCESS K02
+RETURN SELF:FieldGet( #K02 )
+
+ASSIGN K02( uValue )
+SELF:FieldPut( #K02 , uValue )
+
+ACCESS K03
+RETURN SELF:FieldGet( #K03 )
+
+ASSIGN K03( uValue )
+SELF:FieldPut( #K03 , uValue )
+
+ACCESS MEDAA
+RETURN SELF:FieldGet( #MEDAA )
+
+ASSIGN MEDAA( uValue )
+SELF:FieldPut( #MEDAA , uValue )
+
+ACCESS MEDBB
+RETURN SELF:FieldGet( #MEDBB )
+
+ASSIGN MEDBB( uValue )
+SELF:FieldPut( #MEDBB , uValue )
+
+ACCESS MEDIA
+RETURN SELF:FieldGet( #MEDIA )
+
+ASSIGN MEDIA( uValue )
+SELF:FieldPut( #MEDIA , uValue )
+
+ACCESS MEDIB
+RETURN SELF:FieldGet( #MEDIB )
+
+ASSIGN MEDIB( uValue )
+SELF:FieldPut( #MEDIB , uValue )
+
+ACCESS MEDMED
+RETURN SELF:FieldGet( #MEDMED )
+
+ASSIGN MEDMED( uValue )
+SELF:FieldPut( #MEDMED , uValue )
+
+ACCESS NOMASS
+RETURN SELF:FieldGet( #NOMASS )
+
+ASSIGN NOMASS( uValue )
+SELF:FieldPut( #NOMASS , uValue )
+
+ACCESS NUMASS
+RETURN SELF:FieldGet( #NUMASS )
+
+ASSIGN NUMASS( uValue )
+SELF:FieldPut( #NUMASS , uValue )
+
+ACCESS OBS01
+RETURN SELF:FieldGet( #OBS01 )
+
+ASSIGN OBS01( uValue )
+SELF:FieldPut( #OBS01 , uValue )
+
+ACCESS OBS02
+RETURN SELF:FieldGet( #OBS02 )
+
+ASSIGN OBS02( uValue )
+SELF:FieldPut( #OBS02 , uValue )
+
+ACCESS PRR
+RETURN SELF:FieldGet( #PRR )
+
+ASSIGN PRR( uValue )
+SELF:FieldPut( #PRR , uValue )
+
+ACCESS RP
+RETURN SELF:FieldGet( #RP )
+
+ASSIGN RP( uValue )
+SELF:FieldPut( #RP , uValue )
+
+ACCESS RR
+RETURN SELF:FieldGet( #RR )
+
+ASSIGN RR( uValue )
+SELF:FieldPut( #RR , uValue )
+
+ACCESS RRS
+RETURN SELF:FieldGet( #RRS )
+
+ASSIGN RRS( uValue )
+SELF:FieldPut( #RRS , uValue )
+
+ACCESS TOLMAX
+RETURN SELF:FieldGet( #TOLMAX )
+
+ASSIGN TOLMAX( uValue )
+SELF:FieldPut( #TOLMAX , uValue )
+
+ACCESS TOLMIN
+RETURN SELF:FieldGet( #TOLMIN )
+
+ASSIGN TOLMIN( uValue )
+SELF:FieldPut( #TOLMIN , uValue )
+
+ACCESS TOTALA
+RETURN SELF:FieldGet( #TOTALA )
+
+ASSIGN TOTALA( uValue )
+SELF:FieldPut( #TOTALA , uValue )
+
+ACCESS TOTALB
+RETURN SELF:FieldGet( #TOTALB )
+
+ASSIGN TOTALB( uValue )
+SELF:FieldPut( #TOTALB , uValue )
+
+ACCESS VA
+RETURN SELF:FieldGet( #VA )
+
+ASSIGN VA( uValue )
+SELF:FieldPut( #VA , uValue )
+
+ACCESS VE
+RETURN SELF:FieldGet( #VE )
+
+ASSIGN VE( uValue )
+SELF:FieldPut( #VE , uValue )
+
+ACCESS VP
+RETURN SELF:FieldGet( #VP )
+
+ASSIGN VP( uValue )
+SELF:FieldPut( #VP , uValue )
+
+ACCESS VT
+RETURN SELF:FieldGet( #VT )
+
+ASSIGN VT( uValue )
+SELF:FieldPut( #VT , uValue )
+
+ACCESS XMAX
+RETURN SELF:FieldGet( #XMAX )
+
+ASSIGN XMAX( uValue )
+SELF:FieldPut( #XMAX , uValue )
+
+ACCESS XMIN
+RETURN SELF:FieldGet( #XMIN )
+
+ASSIGN XMIN( uValue )
+SELF:FieldPut( #XMIN , uValue )
+
+END CLASS
+STATIC DEFINE JRRS_BTNPEGMA01 := 157
+STATIC DEFINE JRRS_BTNPEGMS01 := 158

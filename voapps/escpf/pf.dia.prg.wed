@@ -1,0 +1,342 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JPFDIA
+GUID=50F6028D-557A-4483-829A-77175F7D8368
+  Name=JPFDIA
+  Class=DATADIALOG
+  Caption=Escolhendo Processo Fabricação
+  Order=0
+  Left=32
+  Width=745
+  Top=32
+  Height=590
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escolhendo Processo Fabricação",,
+  Property=HyperLabel=#JPFDIA,,,
+
+SUBCONTROLSSTART
+CONTROL=SUBDATAWINDOW
+GUID=A2AFA99A-21D4-4C91-8708-DA68B2A9D0C0
+  Name=JPF
+  Class=SUBDATAWINDOW
+  Caption=JPF
+  Order=1
+  Left=9
+  Width=555
+  Top=37
+  Height=486
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JPF,,,
+
+CONTROL=FIXEDTEXT
+GUID=F2047492-83EB-4FF2-A2A0-06E566A43CCB
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=2
+  Left=584
+  Width=64
+  Top=257
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=949EAFFF-1BDA-426D-A056-AA56FFF0F51B
+  Name=sair
+  Class=PUSHBUTTON
+  Caption=
+  Order=3
+  Left=588
+  Width=64
+  Top=204
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#sair,,,
+  Property=Image=ico_sair
+
+CONTROL=FIXEDTEXT
+GUID=CD9AE5AD-6BBE-46FA-BFB2-F78DBB580BA4
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=Escolher
+  Order=4
+  Left=583
+  Width=64
+  Top=185
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Escolher",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=PUSHBUTTON
+GUID=625B2397-B948-4576-9754-6CE0717DB6E0
+  Name=Escolher
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=588
+  Width=64
+  Top=137
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Escolher,,,
+  Property=Image=ico_ok
+
+CONTROL=FIXEDTEXT
+GUID=7DF6281B-D4F2-4B08-AB41-FF3652606E5B
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=Codigo
+  Order=6
+  Left=571
+  Width=44
+  Top=55
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Codigo",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=96E084B6-92BA-421A-AD4E-F12C18A01854
+  Name=CBUSCA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=9
+  Width=550
+  Top=9
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#CBUSCA,,,
+
+CONTROL=PUSHBUTTON
+GUID=133698E0-E19D-4CDC-92C0-52E2FCE1152C
+  Name=Busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=573
+  Width=44
+  Top=11
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#Busca,,,
+
+CONTROL=FIXEDTEXT
+GUID=BA8F5718-2949-4314-82C4-4E6071000B1A
+  Name=theFixedText12
+  Class=FIXEDTEXT
+  Caption=CodFinal
+  Order=9
+  Left=621
+  Width=44
+  Top=54
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"CodFinal",,
+  Property=HyperLabel=#theFixedText12,,,
+
+CONTROL=PUSHBUTTON
+GUID=CA90C01A-44B7-47C5-A6D3-31CB99D9D00E
+  Name=Buscacodfin
+  Class=PUSHBUTTON
+  Caption=
+  Order=10
+  Left=620
+  Width=44
+  Top=9
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#Buscacodfin,,,
+
+CONTROL=FIXEDTEXT
+GUID=CA2BF79D-3349-49C3-BC92-7FB5FB39DDEE
+  Name=theFixedText13
+  Class=FIXEDTEXT
+  Caption=PF
+  Order=11
+  Left=573
+  Width=44
+  Top=118
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"PF",,
+  Property=HyperLabel=#theFixedText13,,,
+
+CONTROL=PUSHBUTTON
+GUID=FE7D0CC1-DA2C-4F87-AA45-567C080AE731
+  Name=BuscaPF
+  Class=PUSHBUTTON
+  Caption=
+  Order=12
+  Left=574
+  Width=44
+  Top=76
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#BuscaPF,,,
+
+CONTROL=PUSHBUTTON
+GUID=12642438-10C0-4466-938C-B3BFAA217AE5
+  Name=Busca3d
+  Class=PUSHBUTTON
+  Caption=
+  Order=13
+  Left=624
+  Width=44
+  Top=75
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#Busca3d,,,
+
+CONTROL=FIXEDTEXT
+GUID=F273EF2F-0499-4527-8656-FFBD486DC811
+  Name=theFixedText14
+  Class=FIXEDTEXT
+  Caption=CodRed
+  Order=14
+  Left=625
+  Width=44
+  Top=119
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"CodRed",,
+  Property=HyperLabel=#theFixedText14,,,
+
+CONTROL=FIXEDTEXT
+GUID=70BF37A3-4FA3-49A5-9E08-B5AB174874BA
+  Name=theFixedText15
+  Class=FIXEDTEXT
+  Caption=CodInt
+  Order=15
+  Left=667
+  Width=44
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"CodInt",,
+  Property=HyperLabel=#theFixedText15,,,
+
+CONTROL=PUSHBUTTON
+GUID=4696A50A-CA74-40ED-B090-AC025F8F48FF
+  Name=BuscacodINT
+  Class=PUSHBUTTON
+  Caption=
+  Order=16
+  Left=669
+  Width=44
+  Top=10
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#BuscacodINT,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JPFDIA
+

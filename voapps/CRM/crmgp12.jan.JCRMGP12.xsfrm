@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JCRMGP12">
+    <Window Name="JCRMGP12">
+      <Name>JCRMGP12</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Marcada GP12</Caption>
+      <Order>0</Order>
+      <Left>14</Left>
+      <Top>14</Top>
+      <Width>420</Width>
+      <Height>320</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Marcada GP12",,</HyperLabel>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <HyperLabel>#JCRMGP12,,,</HyperLabel>
+        <ViewAs>#BrowseView</ViewAs>
+      </ExProperties>
+    </Window>
+    <Control Name="CODIGO">
+      <Name>CODIGO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>118</Left>
+      <Top>30</Top>
+      <Width>155</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>34</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_24</FieldSpec>
+        <HyperLabel>#CODIGO,,,</HyperLabel>
+        <HyperLabel>,"Codigo",,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText1">
+      <Name>FixedText1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Codigo</Caption>
+      <Order>2</Order>
+      <Left>14</Left>
+      <Top>26</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Codigo",,</HyperLabel>
+        <HyperLabel>#FixedText1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

@@ -1,0 +1,153 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JMOP
+GUID=6AB58169-57FE-45A3-B914-8AC7C818AB0F
+  Name=JMOP
+  Class=DATAWINDOW
+  Caption=Mão de Obra Operador
+  Order=0
+  Left=14
+  Width=420
+  Top=14
+  Height=156
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Mão de Obra Operador",,
+  Property=HyperLabel=#JMOP,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ClipperKeys=True
+  Property=ViewAs=#BrowseView
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=B2AA0DB8-1D42-4515-98D6-E0955643DB87
+  Name=AREA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=61
+  Width=150
+  Top=57
+  Height=18
+  Browseindex=2
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=padrao_char_02
+  Property=HyperLabel=#AREA,,,
+  Property=HyperLabel=,"Area",,
+  Property=HyperLabel=,,,"MP02_AREA"
+
+CONTROL=FIXEDTEXT
+GUID=6BEE8B8E-444C-4DBE-ABAB-4131B11CAEC1
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Código:
+  Order=-1
+  Left=7
+  Width=50
+  Top=7
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Código:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=AA23E577-EF08-4002-909B-726CC7B8E3E8
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=61
+  Width=150
+  Top=7
+  Height=18
+  Browseindex=0
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=padrao_char_12
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"MP02_CODIGO"
+
+CONTROL=FIXEDTEXT
+GUID=5010BF7D-5E19-49DD-80F8-00FA4EDC57A6
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=-1
+  Left=7
+  Width=40
+  Top=31
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=36004AD8-1C2D-4931-8EA8-9990766C35CB
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=61
+  Width=310
+  Top=31
+  Height=18
+  Browseindex=1
+  Browsesize=27
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=padrao_char_30
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"MP02_NOME"
+
+CONTROL=FIXEDTEXT
+GUID=1BBA9E0D-7646-45AC-8FA2-D1A3BD9FDF2F
+  Name=SC_AREA
+  Class=FIXEDTEXT
+  Caption=Área:
+  Order=-1
+  Left=7
+  Width=40
+  Top=55
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Área:",,
+  Property=HyperLabel=#SC_AREA,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JMOP
+

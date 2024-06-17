@@ -1,0 +1,240 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JCOT
+GUID=23624424-C131-4163-B429-38F5A147A676
+  Name=JCOT
+  Class=DATAWINDOW
+  Caption=Cotações
+  Order=0
+  Left=20
+  Width=637
+  Top=20
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cotações",,
+  Property=HyperLabel=#JCOT,,,
+  Property=ClipperKeys=True
+  Property=ViewAs=#BrowseView
+  Property=Menu=STANDARDSHELLMENU
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=7BC62028-88BB-42F5-A282-45238085DCD1
+  Name=CLICOG
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=325
+  Width=96
+  Top=97
+  Height=20
+  Browseindex=5
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_char_12
+  Property=HyperLabel=#CLICOG,,,
+  Property=HyperLabel=,"Cognome",,
+  Property=HyperLabel=,,,"VIABIII_CLICOG"
+
+CONTROL=SINGLELINEEDIT
+GUID=0CD92B96-7E87-455D-85AA-679B1AF51195
+  Name=CLIFOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=249
+  Width=68
+  Top=97
+  Height=20
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#CLIFOR,,,
+  Property=HyperLabel=,"No.",,
+  Property=HyperLabel=,,,"VIABIII_CLIFOR"
+
+CONTROL=FIXEDTEXT
+GUID=4DE06841-0808-4334-BDD6-DA4FD6EAB202
+  Name=SC_CLIFOR
+  Class=FIXEDTEXT
+  Caption=Fornecedor
+  Order=3
+  Left=253
+  Width=60
+  Top=81
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fornecedor",,
+  Property=HyperLabel=#SC_CLIFOR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=D36759E4-B2B6-401E-8C07-E85597C23296
+  Name=PRECOUN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=201
+  Width=36
+  Top=97
+  Height=20
+  Browseindex=2
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_char_02
+  Property=HyperLabel=#PRECOUN,,,
+  Property=HyperLabel=,"UN",,
+  Property=HyperLabel=,,,"VIABIII_PRECOUN"
+
+CONTROL=FIXEDTEXT
+GUID=DE388CA6-756C-4F72-ABE1-CDA319B24627
+  Name=SC_PRECOUN
+  Class=FIXEDTEXT
+  Caption=Unidade
+  Order=5
+  Left=201
+  Width=48
+  Top=81
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Unidade",,
+  Property=HyperLabel=#SC_PRECOUN,,,
+
+CONTROL=FIXEDTEXT
+GUID=E4CB53C7-6E2C-48C5-B6A8-D9569C0AA8D6
+  Name=SC_PRECODT
+  Class=FIXEDTEXT
+  Caption=Data
+  Order=6
+  Left=133
+  Width=44
+  Top=81
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=#SC_PRECODT,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=42B3F485-C8B0-4B74-832B-1D8C79DCAA7C
+  Name=PRECODT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=129
+  Width=68
+  Top=97
+  Height=20
+  Browseindex=3
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#PRECODT,,,
+  Property=HyperLabel=,"Em:",,
+  Property=HyperLabel=,,,"VIABIII_PRECODT"
+
+CONTROL=SINGLELINEEDIT
+GUID=0F78F52D-D915-4A6F-BE3C-27DB7A8B3635
+  Name=PRECO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=21
+  Width=96
+  Top=97
+  Height=20
+  Browseindex=1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#PRECO,,,
+  Property=HyperLabel=,"Preco:",,
+  Property=HyperLabel=,,,"VIABIII_PRECO"
+
+CONTROL=GROUPBOX
+GUID=D9FFFCAC-D179-4CB4-8191-76516DE3100F
+  Name=GroupBox1
+  Class=GROUPBOX
+  Caption=Cotação
+  Order=9
+  Left=9
+  Width=472
+  Top=13
+  Height=112
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Cotação",,
+  Property=HyperLabel=#GroupBox1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=ABBBF08B-70C7-405F-80CC-7420E9945553
+  Name=DADO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=17
+  Width=440
+  Top=37
+  Height=20
+  Browseindex=0
+  Browsesize=40
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_char_255
+  Property=HyperLabel=#DADO,,,
+  Property=HyperLabel=,"Dado:",,
+  Property=HyperLabel=,,,"VIABIII_DADO"
+  Property=FocusSelect=FSEL_HOME
+
+SUBCONTROLSEND
+DESIGNEREND = JCOT
+

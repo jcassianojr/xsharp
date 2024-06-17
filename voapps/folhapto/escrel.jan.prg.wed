@@ -1,0 +1,165 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JESCREL
+GUID=5255A6DF-58C6-44D1-9CEC-0539F7CD05ED
+  Name=JESCREL
+  Class=DATADIALOG
+  Caption=Escolher Relogio
+  Order=0
+  Left=18
+  Width=262
+  Top=18
+  Height=152
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escolher Relogio",,
+  Property=HyperLabel=#JESCREL,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=5DA82EE6-98EA-4640-B28E-E4D4E3C0840C
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=1
+  Left=173
+  Width=64
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=138EF7EF-E41E-47C6-A780-363768BFA7AA
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=2
+  Left=173
+  Width=64
+  Top=13
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ico_sair
+  Property=TooltipText="Clique aqui Para Cancelar"
+
+CONTROL=PUSHBUTTON
+GUID=64A294F9-9101-4CB9-8E6A-524881F276C2
+  Name=Botao1
+  Class=PUSHBUTTON
+  Caption=Relogio
+  Order=3
+  Left=25
+  Width=131
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Relogio",,
+  Property=HyperLabel=#Botao1,,,
+
+CONTROL=PUSHBUTTON
+GUID=EEFDF9A6-3E96-4D38-95F5-03D173E1A408
+  Name=Botao2
+  Class=PUSHBUTTON
+  Caption=Refeitorio
+  Order=4
+  Left=25
+  Width=131
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Refeitorio",,
+  Property=HyperLabel=#Botao2,,,
+
+CONTROL=PUSHBUTTON
+GUID=F52ADC25-4D07-4B6B-BD96-F7D05AAFCDF7
+  Name=Botao3
+  Class=PUSHBUTTON
+  Caption=Portaria
+  Order=5
+  Left=25
+  Width=131
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Portaria",,
+  Property=HyperLabel=#Botao3,,,
+
+CONTROL=PUSHBUTTON
+GUID=0B8A7498-EC84-4F09-8E00-C78ADA12AFD8
+  Name=Botao4
+  Class=PUSHBUTTON
+  Caption=Rodbel
+  Order=6
+  Left=25
+  Width=131
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Rodbel",,
+  Property=HyperLabel=#Botao4,,,
+
+CONTROL=PUSHBUTTON
+GUID=7CDC9B08-EF9D-4BC5-82CA-7B148D97504E
+  Name=Botao5
+  Class=PUSHBUTTON
+  Caption=RelogioII
+  Order=7
+  Left=25
+  Width=131
+  Top=105
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"RelogioII",,
+  Property=HyperLabel=#Botao5,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JESCREL
+

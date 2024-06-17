@@ -1,0 +1,987 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JOSC
+GUID=A60552A3-071A-4313-9B26-3EE0F88E6FE2
+  Name=JOSC
+  Class=DATAWINDOW
+  Caption=Controle Ordem Servicos
+  Order=0
+  Left=94
+  Width=684
+  Top=94
+  Height=246
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Controle Ordem Servicos",,
+  Property=HyperLabel=#JOSC,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=DATETIMEPICKER
+GUID=4EBDD409-3DBB-468F-847C-D325D1FCFB24
+  Name=DATA
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=1
+  Left=177
+  Width=112
+  Top=21
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATA,,,
+  Property=TooltipText="Data Abertura Ordem Serviço"
+
+CONTROL=SINGLELINEEDIT
+GUID=84C73AD6-3739-4DAB-AB2D-15B7B2224DFB
+  Name=CLINOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=181
+  Width=248
+  Top=49
+  Height=20
+  Browseindex=2
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_CHAR_50
+  Property=HyperLabel=#CLINOME,,,
+  Property=HyperLabel=,"Nome",,
+  Property=HyperLabel=,,,"OSCRT_CLIENTE"
+  Property=TooltipText="Razao Social do Cliente"
+
+CONTROL=SINGLELINEEDIT
+GUID=02BE2D81-3B98-47BA-A627-C882EB8B9EDA
+  Name=CODCLI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=545
+  Width=130
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_CHAR_24
+  Property=HyperLabel=#CODCLI,,,
+  Property=TooltipText="Observações sobre entrega"
+
+CONTROL=SINGLELINEEDIT
+GUID=BD1CDE31-4054-46F3-85F3-967687FC8EF7
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=277
+  Width=264
+  Top=77
+  Height=20
+  Browseindex=4
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_CHAR_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Descrição",,
+  Property=HyperLabel=,,,"OSCRT_CLIENTE"
+  Property=TooltipText="Descriçao do Produto"
+
+CONTROL=SINGLELINEEDIT
+GUID=4F4D724E-7038-44B5-8C62-095514189E5C
+  Name=CODIGOINT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=545
+  Width=130
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_CHAR_24
+  Property=HyperLabel=#CODIGOINT,,,
+  Property=TooltipText="Observações sobre entrega"
+
+CONTROL=SINGLELINEEDIT
+GUID=63D2299F-C572-4BC4-BA05-38A4F0FDDAC5
+  Name=PEDIDOCLI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=9
+  Width=180
+  Top=121
+  Height=20
+  Browseindex=5
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_CHAR_20
+  Property=HyperLabel=#PEDIDOCLI,,,
+  Property=HyperLabel=,"Pedido",,
+  Property=HyperLabel=,,,"OSCRT_PEDIDOCLI"
+  Property=TooltipText="Numero do Pedido do Cliente"
+
+CONTROL=SINGLELINEEDIT
+GUID=1FFA5846-DD77-44E6-83E9-282E20B510FA
+  Name=PEDCLIITE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=193
+  Width=32
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_NUM_03
+  Property=HyperLabel=#PEDCLIITE,,,
+  Property=TooltipText="Observações sobre entrega"
+
+CONTROL=SINGLELINEEDIT
+GUID=B136F997-1787-4510-B111-1D2390AAA0B1
+  Name=DELIVERY
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=337
+  Width=130
+  Top=122
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_CHAR_20
+  Property=HyperLabel=#DELIVERY,,,
+  Property=TooltipText="Observações sobre entrega"
+
+CONTROL=SINGLELINEEDIT
+GUID=647D8E27-AB10-42D8-B0B8-425633AC6504
+  Name=STOCK
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=473
+  Width=130
+  Top=123
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_CHAR_20
+  Property=HyperLabel=#STOCK,,,
+  Property=TooltipText="Observações sobre entrega"
+
+CONTROL=SINGLELINEEDIT
+GUID=D0E37F7C-A185-44B8-99F9-347B6870869B
+  Name=OBS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=45
+  Width=276
+  Top=201
+  Height=20
+  Browseindex=7
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_CHAR_30
+  Property=HyperLabel=#OBS,,,
+  Property=HyperLabel=,"Obs:",,
+  Property=HyperLabel=,,,"OSCRT_OBS"
+  Property=TooltipText="Observações"
+
+CONTROL=SINGLELINEEDIT
+GUID=A070D5CD-AB29-44CF-B398-E2534E5545A8
+  Name=PEDCLIOBS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=232
+  Width=98
+  Top=122
+  Height=20
+  Browseindex=6
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_CHAR_10
+  Property=HyperLabel=#PEDCLIOBS,,,
+  Property=TooltipText="Observações sobre entrega"
+
+CONTROL=SINGLELINEEDIT
+GUID=75BB79D3-3FCB-4295-96DF-E3AFDC3CADDA
+  Name=OS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=9
+  Width=80
+  Top=21
+  Height=24
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_NUM_08
+  Property=HyperLabel=#OS,,,
+  Property=HyperLabel=,"Controle Ordem Servicos",,
+  Property=HyperLabel=,,,"OSCRT_OS"
+  Property=TooltipText="Numero da Ordem de Servico"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=C33DF1D9-6B8D-4614-A3CB-B2D5F7DF1E53
+  Name=CLIENTE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=49
+  Width=68
+  Top=49
+  Height=24
+  Browseindex=1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_NUM_08
+  Property=HyperLabel=#CLIENTE,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"OSCRT_CLIENTE"
+  Property=TooltipText="Numero do Cadastro do Cliente"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=992FD30D-27DD-4207-95B1-A356E8B7D53E
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=53
+  Width=164
+  Top=77
+  Height=24
+  Browseindex=3
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_CHAR_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"OSCRT_CODIGO"
+  Property=TooltipText="Codigo do Produto"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=9C495EE0-8918-4D2C-A4C3-ECCE0D3D5B66
+  Name=escfor
+  Class=PUSHBUTTON
+  Caption=...
+  Order=15
+  Left=121
+  Width=27
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#escfor,,,
+  Property=TooltipText="Exibir Lista de Cliente "
+
+CONTROL=PUSHBUTTON
+GUID=8374B876-7BFC-4934-8ECE-5BA8AA91508C
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=16
+  Left=221
+  Width=27
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+  Property=TooltipText="Exibe Lista de ProdutosPCP"
+
+CONTROL=SINGLELINEEDIT
+GUID=67F62E13-A990-4256-B900-0ACB71287C92
+  Name=PF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=153
+  Width=56
+  Top=165
+  Height=20
+  Browseindex=8
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_NUM_08
+  Property=HyperLabel=#PF,,,
+  Property=HyperLabel=,"Não",,
+  Property=HyperLabel=,,,"OSCRT_CLIENTE"
+  Property=TooltipText="Numero do Processo de Fabricação"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=RADIOBUTTONGROUP
+GUID=B45A17B4-FFD8-43AF-A863-563DC13D6636
+  Name=EMUSO
+  Class=RADIOBUTTONGROUP
+  Caption=Em Uso PF
+  Order=18
+  Left=9
+  Width=224
+  Top=149
+  Height=47
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1208090631
+  Exstyles=0
+  Property=HyperLabel=,"Em Uso PF",,
+  Property=FieldSpec=padrao_CHAR_01
+  Property=HyperLabel=#EMUSO,,,
+  Property=TooltipText="Processo de Fabricaçao em Uso Sim/Nao"
+
+CONTROL=RADIOBUTTON
+GUID=36F21265-229D-4B4C-8DD4-E1B666CB8226
+  Name=RadioButton1
+  Class=RADIOBUTTON
+  Caption=Sim
+  Order=19
+  Left=20
+  Width=55
+  Top=168
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1207959561
+  Exstyles=0
+  Property=HyperLabel=,"Sim",,
+  Property=Value=S
+  Property=HyperLabel=#RadioButton1,,,
+  Property=TooltipText="Processo em Uso"
+
+CONTROL=RADIOBUTTON
+GUID=20006D9A-6A89-46E3-9F6E-37B9193B7E01
+  Name=RadioButton2
+  Class=RADIOBUTTON
+  Caption=Não
+  Order=20
+  Left=84
+  Width=60
+  Top=168
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1207959561
+  Exstyles=0
+  Property=HyperLabel=,"Não",,
+  Property=Value=N
+  Property=HyperLabel=#RadioButton2,,,
+  Property=TooltipText="Processo nao está em uso"
+
+CONTROL=FIXEDTEXT
+GUID=2E7289F1-04F8-4691-A20A-7911676DEE30
+  Name=SC_OS
+  Class=FIXEDTEXT
+  Caption=Os:
+  Order=21
+  Left=13
+  Width=30
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Os:",,
+  Property=HyperLabel=#SC_OS,,,
+
+CONTROL=FIXEDTEXT
+GUID=A66299E0-8523-4A16-AF53-238746539A02
+  Name=SC_DATA
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=22
+  Left=177
+  Width=40
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=#SC_DATA,,,
+
+CONTROL=FIXEDTEXT
+GUID=42DA971D-1315-451A-8FE0-DD4ACE595D4C
+  Name=SC_CLIENTE
+  Class=FIXEDTEXT
+  Caption=Cliente:
+  Order=23
+  Left=9
+  Width=36
+  Top=53
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=#SC_CLIENTE,,,
+
+CONTROL=FIXEDTEXT
+GUID=75AABA9A-743B-4210-B4B8-7BE450911475
+  Name=SC_PEDIDOCLI
+  Class=FIXEDTEXT
+  Caption=Pedido Cliente:
+  Order=24
+  Left=9
+  Width=80
+  Top=105
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pedido Cliente:",,
+  Property=HyperLabel=#SC_PEDIDOCLI,,,
+
+CONTROL=FIXEDTEXT
+GUID=C0E915A4-71BD-4AE8-9AC5-4215148C4818
+  Name=FT7
+  Class=FIXEDTEXT
+  Caption=Obs
+  Order=25
+  Left=237
+  Width=37
+  Top=105
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Obs",,
+  Property=HyperLabel=#FT7,,,
+
+CONTROL=FIXEDTEXT
+GUID=D124CBDA-60C8-4269-B05C-32B4C5948D5F
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Produto:
+  Order=26
+  Left=9
+  Width=44
+  Top=77
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Produto:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=D0FE6083-80A2-43CF-8506-09CB78337415
+  Name=SC_OBS
+  Class=FIXEDTEXT
+  Caption=Obs:
+  Order=27
+  Left=13
+  Width=28
+  Top=201
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Obs:",,
+  Property=HyperLabel=#SC_OBS,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=4BE7683D-FCAE-4B44-951C-3F943AC95D5D
+  Name=ATIVO
+  Class=RADIOBUTTONGROUP
+  Caption=Em uso
+  Order=28
+  Left=361
+  Width=261
+  Top=153
+  Height=43
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Em uso",,
+  Property=FieldSpec=padrao_CHAR_01
+  Property=HyperLabel=#ATIVO,,,
+  Property=TooltipText="Ordem Esta Ativa Sim/Não"
+
+CONTROL=RADIOBUTTON
+GUID=6EEE2F35-651A-4A42-9D52-DE761090FAF5
+  Name=RadioButton3
+  Class=RADIOBUTTON
+  Caption=Sim
+  Order=29
+  Left=385
+  Width=42
+  Top=169
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Sim",,
+  Property=Value=S
+  Property=HyperLabel=#RadioButton3,,,
+
+CONTROL=RADIOBUTTON
+GUID=BD74B3D3-069F-47C0-9040-FEFC3CD0825E
+  Name=RadioButton4
+  Class=RADIOBUTTON
+  Caption=Não
+  Order=30
+  Left=440
+  Width=49
+  Top=168
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Não",,
+  Property=Value=N
+  Property=HyperLabel=#RadioButton4,,,
+
+CONTROL=PUSHBUTTON
+GUID=382F490D-22BE-4E45-97B5-5DCFC199BD1E
+  Name=pegcli
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=31
+  Left=149
+  Width=28
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#pegcli,,,
+  Property=TooltipText="Retorna a Razao Social do Cliente"
+
+CONTROL=PUSHBUTTON
+GUID=E1E8E51F-F8B2-42D7-B0FB-864B72DE46CC
+  Name=pegpro
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=32
+  Left=249
+  Width=27
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#pegpro,,,
+  Property=TooltipText="Retorna a Descrição do Produto"
+
+CONTROL=PUSHBUTTON
+GUID=F4E61CDC-F58B-4CF4-9404-3DAD0B6A4FF9
+  Name=poros
+  Class=PUSHBUTTON
+  Caption=
+  Order=33
+  Left=133
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_AZ
+  Property=HyperLabel=#poros,,,
+  Property=TooltipText="Clique para ordenar por Numero"
+
+CONTROL=PUSHBUTTON
+GUID=BA7BE91B-806B-49AE-908E-C13532836965
+  Name=buscaos
+  Class=PUSHBUTTON
+  Caption=
+  Order=34
+  Left=101
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscaos,,,
+  Property=TooltipText="Clique Para Localizar Por Numero"
+
+CONTROL=PUSHBUTTON
+GUID=59A48701-9A5E-4113-B520-BDAA48FF2D71
+  Name=chkclipro
+  Class=PUSHBUTTON
+  Caption=Checar Cliente Produto
+  Order=35
+  Left=337
+  Width=138
+  Top=203
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Checar Cliente Produto",,
+  Property=TooltipText="Verificar os Nomes Clientes Produtos"
+  Property=HyperLabel=#chkclipro,,,
+
+CONTROL=FIXEDTEXT
+GUID=401C9867-E43E-4BC8-9ECF-0D0CE1C319C7
+  Name=SC_DESTINO2
+  Class=FIXEDTEXT
+  Caption=Foto
+  Order=36
+  Left=617
+  Width=48
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Foto",,
+  Property=HyperLabel=#SC_DESTINO2,,,
+
+CONTROL=PUSHBUTTON
+GUID=9324FCFE-46E5-400A-A6C2-0540DEE15379
+  Name=foto
+  Class=PUSHBUTTON
+  Caption=
+  Order=37
+  Left=617
+  Width=48
+  Top=105
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#foto,,,
+  Property=Image=ICO_CAMERA
+
+CONTROL=FIXEDTEXT
+GUID=2FDD7158-6D88-4082-8BC1-9D76066BEB3F
+  Name=SC_DATA1
+  Class=FIXEDTEXT
+  Caption=Item
+  Order=38
+  Left=193
+  Width=28
+  Top=105
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item",,
+  Property=HyperLabel=#SC_DATA1,,,
+
+CONTROL=FIXEDTEXT
+GUID=FEB892BE-95C0-404F-A7A1-9E7728F75320
+  Name=FT11
+  Class=FIXEDTEXT
+  Caption=Codigo Integrado
+  Order=39
+  Left=545
+  Width=128
+  Top=29
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo Integrado",,
+  Property=HyperLabel=#FT11,,,
+
+CONTROL=PUSHBUTTON
+GUID=D1CAB049-8C66-46EC-BC34-296067FA8EF3
+  Name=sinclx
+  Class=PUSHBUTTON
+  Caption=Importar  LX
+  Order=40
+  Left=484
+  Width=80
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Importar  LX",,
+  Property=HyperLabel=#sinclx,,,
+
+CONTROL=FIXEDTEXT
+GUID=22204E3E-16B3-4736-8BA5-188E7C351505
+  Name=FT10
+  Class=FIXEDTEXT
+  Caption=Delivery
+  Order=41
+  Left=339
+  Width=47
+  Top=104
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Delivery",,
+  Property=HyperLabel=#FT10,,,
+
+CONTROL=FIXEDTEXT
+GUID=2C59E182-9ED4-4453-8DC0-46CE3BEC9362
+  Name=FT12
+  Class=FIXEDTEXT
+  Caption=Stock
+  Order=42
+  Left=475
+  Width=37
+  Top=106
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Stock",,
+  Property=HyperLabel=#FT12,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=AADD6A63-1C5B-4739-AF52-B374C75BECF3
+  Name=DATAIMP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=43
+  Left=301
+  Width=89
+  Top=21
+  Height=23
+  Browseindex=-1
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=0
+  Property=HyperLabel=#DATAIMP,,,
+  Property=HyperLabel=,"Não",,
+  Property=TooltipText="Numero do Processo de Fabricação"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=B7A6EF70-FA69-47D3-A48D-170EB08D8FBD
+  Name=SC_DATA2
+  Class=FIXEDTEXT
+  Caption=Ultima Importacao
+  Order=44
+  Left=301
+  Width=115
+  Top=3
+  Height=17
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ultima Importacao",,
+  Property=HyperLabel=#SC_DATA2,,,
+
+CONTROL=RADIOBUTTON
+GUID=A912E684-9CBA-4164-BAC1-9F9133248C64
+  Name=RadioButton5
+  Class=RADIOBUTTON
+  Caption=Preliminar>1200
+  Order=45
+  Left=507
+  Width=100
+  Top=169
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Preliminar>1200",,
+  Property=Value=P
+  Property=HyperLabel=#RadioButton5,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JOSC
+

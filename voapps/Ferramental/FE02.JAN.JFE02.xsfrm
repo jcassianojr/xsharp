@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JFE02">
+    <Window Name="JFE02">
+      <Name>JFE02</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Consumo Mensal</Caption>
+      <Order>0</Order>
+      <Left>26</Left>
+      <Top>26</Top>
+      <Width>420</Width>
+      <Height>320</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Consumo Mensal",,</HyperLabel>
+        <ViewAs>#BrowseView</ViewAs>
+        <HyperLabel>#JFE02,,,</HyperLabel>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <InheritClassName>MYDataWindow</InheritClassName>
+      </ExProperties>
+    </Window>
+    <Control Name="CODIGO">
+      <Name>CODIGO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>197</Left>
+      <Top>25</Top>
+      <Width>152</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>15</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_20</FieldSpec>
+        <HyperLabel>#CODIGO,,,</HyperLabel>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>,,,"FE02_CODIGO"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CODIGO">
+      <Name>SC_CODIGO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Codigo:</Caption>
+      <Order>2</Order>
+      <Left>197</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>#SC_CODIGO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_USO">
+      <Name>SC_USO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Uso:</Caption>
+      <Order>3</Order>
+      <Left>97</Left>
+      <Top>49</Top>
+      <Width>28</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Uso:",,</HyperLabel>
+        <HyperLabel>#SC_USO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="USO">
+      <Name>USO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>97</Left>
+      <Top>69</Top>
+      <Width>124</Width>
+      <Height>20</Height>
+      <BrowseIndex>4</BrowseIndex>
+      <BrowseSize>11</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_num_16_6</FieldSpec>
+        <HyperLabel>#USO,,,</HyperLabel>
+        <HyperLabel>,"Uso:",,</HyperLabel>
+        <HyperLabel>,,,"FE02_USO"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="MES">
+      <Name>MES</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>57</Left>
+      <Top>69</Top>
+      <Width>36</Width>
+      <Height>20</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>5</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_num_02</FieldSpec>
+        <HyperLabel>#MES,,,</HyperLabel>
+        <HyperLabel>,"Mes:",,</HyperLabel>
+        <HyperLabel>,,,"FE02_MES"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_MES">
+      <Name>SC_MES</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Mes:</Caption>
+      <Order>6</Order>
+      <Left>57</Left>
+      <Top>49</Top>
+      <Width>28</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Mes:",,</HyperLabel>
+        <HyperLabel>#SC_MES,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_ANO">
+      <Name>SC_ANO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Ano:</Caption>
+      <Order>7</Order>
+      <Left>21</Left>
+      <Top>49</Top>
+      <Width>28</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ano:",,</HyperLabel>
+        <HyperLabel>#SC_ANO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="ANO">
+      <Name>ANO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>13</Left>
+      <Top>69</Top>
+      <Width>40</Width>
+      <Height>20</Height>
+      <BrowseIndex>3</BrowseIndex>
+      <BrowseSize>10</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_num_04</FieldSpec>
+        <HyperLabel>#ANO,,,</HyperLabel>
+        <HyperLabel>,"Ano:",,</HyperLabel>
+        <HyperLabel>,,,"FE02_ANO"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="TIPO">
+      <Name>TIPO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>9</Order>
+      <Left>9</Left>
+      <Top>25</Top>
+      <Width>180</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>16</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_24</FieldSpec>
+        <HyperLabel>#TIPO,,,</HyperLabel>
+        <HyperLabel>,"Grupo",,</HyperLabel>
+        <HyperLabel>,,,"FE02_TIPO"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_TIPO">
+      <Name>SC_TIPO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Grupo:</Caption>
+      <Order>10</Order>
+      <Left>9</Left>
+      <Top>9</Top>
+      <Width>92</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Grupo:",,</HyperLabel>
+        <HyperLabel>#SC_TIPO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

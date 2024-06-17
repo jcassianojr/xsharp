@@ -1,0 +1,236 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jpf
+GUID=8AA706D5-5C55-4FED-A492-7F0B66995287
+  Name=jpf
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=18
+  Width=620
+  Top=18
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#jpf,,,
+  Property=Use=pfsql
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=B9A19B94-21CB-41A7-8E48-7C70E76F404A
+  Name=SC_PF
+  Class=FIXEDTEXT
+  Caption=Pf:
+  Order=1
+  Left=22
+  Width=16
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pf:",,
+  Property=HyperLabel=#SC_PF,,,
+
+CONTROL=FIXEDTEXT
+GUID=2686799E-4236-47A9-8D86-33FA14B51054
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=2
+  Left=22
+  Width=40
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=0EE1C081-A89C-42E1-8DF7-9A2695C6B7FC
+  Name=SC_CODFINAL
+  Class=FIXEDTEXT
+  Caption=Codfinal:
+  Order=3
+  Left=22
+  Width=44
+  Top=74
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codfinal:",,
+  Property=HyperLabel=#SC_CODFINAL,,,
+
+CONTROL=FIXEDTEXT
+GUID=81FF40FA-D246-45CA-9CD9-06E2641DF48B
+  Name=SC_DESCR
+  Class=FIXEDTEXT
+  Caption=Descr:
+  Order=4
+  Left=22
+  Width=36
+  Top=98
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descr:",,
+  Property=HyperLabel=#SC_DESCR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=3E00DB4C-1D07-49A3-A635-676B5AE4646F
+  Name=PF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=82
+  Width=75
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=pfsql_PF
+  Property=HyperLabel=#PF,,,
+  Property=HyperLabel=,"Pf:",,
+  Property=HyperLabel=,,,"PF_PF"
+
+CONTROL=SINGLELINEEDIT
+GUID=3C0C2DD2-2590-4EE8-9DB8-A8482AB4DA5E
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=82
+  Width=180
+  Top=50
+  Height=20
+  Browseindex=1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=pfsql_CODIGO
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"PF_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=43F9D652-3F4B-4E77-AF11-5A5203BC7289
+  Name=CODFINAL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=82
+  Width=171
+  Top=74
+  Height=20
+  Browseindex=2
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=pfsql_CODFINAL
+  Property=HyperLabel=#CODFINAL,,,
+  Property=HyperLabel=,"Codfinal:",,
+  Property=HyperLabel=,,,"PF_CODFINAL"
+
+CONTROL=SINGLELINEEDIT
+GUID=6020E9B6-3D6C-484F-9E1B-3E445B9A46B3
+  Name=DESCR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=82
+  Width=292
+  Top=98
+  Height=20
+  Browseindex=4
+  Browsesize=26
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=pfsql_DESCR
+  Property=HyperLabel=#DESCR,,,
+  Property=HyperLabel=,"Descriçao",,
+  Property=HyperLabel=,,,"PF_DESCR"
+
+CONTROL=SINGLELINEEDIT
+GUID=D48EF1B1-8724-448A-A307-505815A3D24E
+  Name=CODIGOINT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=81
+  Width=180
+  Top=125
+  Height=20
+  Browseindex=3
+  Browsesize=21
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=pfsql_CODIGOINT
+  Property=HyperLabel=#CODIGOINT,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"PF_CODIGO"
+
+CONTROL=FIXEDTEXT
+GUID=BEE664CB-6F7D-4985-81FC-ED44ED8005CB
+  Name=SC_CODIGO1
+  Class=FIXEDTEXT
+  Caption=Codigo INT:
+  Order=11
+  Left=21
+  Width=52
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo INT:",,
+  Property=HyperLabel=#SC_CODIGO1,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jpf
+

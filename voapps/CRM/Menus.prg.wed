@@ -1,0 +1,635 @@
+DESIGNERSTART = VOMenu,,EMPTYSHELLMENU
+GUID=E66C7964-D68E-498C-94D7-1F4E8344C09A
+Name=EMPTYSHELLMENU
+Toolbar=No Toolbar
+Show=Icon
+UseBands=No
+BaseID=15000
+SUBCONTROLSSTART
+  
+  CONTROL=MENUITEM
+  GUID=DC5ADCA9-F3F9-4096-B32A-1271CB982ECA
+  EventName=File
+  Caption=&Arquivo
+  Description=Opções de Arquivo
+  HelpContext=File
+  Enabled=Yes
+  Checked=No
+  ButtonPos=-1
+  SUBCONTROLSSTART
+    
+    CONTROL=MENUITEM
+    GUID=608A13C0-B30E-42D2-8B8A-1DA6D68831F4
+    EventName=XJCRM
+    Caption=CRM  - Recebimento Mercadorias
+    Description=CRM  - Recebimento Mercadorias
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=C3A1BD9B-F7F1-4634-93B3-22EB28DF6B6D
+    EventName=XJMY04
+    Caption=CRM - Outros
+    Description=CRM - Outros Recebimentos
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=E180B81C-A8A5-4524-BEB9-D3FA5B76453B
+    EventName=XJREQ
+    Caption=CRM - Outros Consulta
+    Description=CRM - Outros Consulta
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=F6440459-98E9-4A9F-BBF3-A5657367EC0E
+    EventName=XJRIRM
+    Caption=RIRM - Inspeção de Materias
+    Description=RIRM - Inspeção de Materias
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=8C4BCEA6-743C-4BFD-AF09-BDF0D3D790E2
+    EventName=XJRIST
+    Caption=RIST - Inspeção Serviços Terceiros
+    Description=RIST - Inspeção Serviços Terceiros
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=87DAD739-B1F4-44A6-A13F-523937F9501E
+    EventName=xJCRMSS
+    Caption=SS - Controle Salt-Spray
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=11EEE221-D42C-4E4B-B07B-6961E4FAB2E7
+    Caption=Comparativo Peso NF/Recebido
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    SUBCONTROLSSTART
+      
+      CONTROL=MENUITEM
+      GUID=B9F86435-4904-499B-9BB7-727A35B65151
+      EventName=XJCRGEX
+      Caption=Normal Materia Prima
+      Description=Comparativo Peso NF/Recebido
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=5611C0ED-E605-44E9-A81B-CBE249E13966
+      EventName=XJCRGEC
+      Caption=Corte
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+  
+  SUBCONTROLSEND
+    
+    CONTROL=MENUITEM
+    GUID=3B868204-3292-4830-BF9F-417FA997207F
+    Caption=Programaçôes Especiais
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    SUBCONTROLSSTART
+      
+      CONTROL=MENUITEM
+      GUID=8E405860-2460-46D5-830E-2D834D12515D
+      EventName=XJPEMO
+      Caption=Mao de Obra Cliente
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=5F5CFB77-4243-49C0-8AD3-14EAF8B2769D
+      EventName=XJPETR
+      Caption=Programa RIRM/RIST
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=E662C701-3E09-4D19-AB73-1BA5928C92EB
+      EventName=XJCRMCESP
+      Caption=Codigos especiais
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+  
+  SUBCONTROLSEND
+    
+    CONTROL=MENUITEM
+    GUID=E825D47F-8171-423C-8A3C-A44DD81FF04E
+    Caption=Controle de  Rastros
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    SUBCONTROLSSTART
+      
+      CONTROL=MENUITEM
+      GUID=9390A4A5-7FA6-4B50-A882-CE40A97F9FFD
+      EventName=XJCRMR
+      Caption=CRM
+      Description=Controle de Rastro
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=B9BE2716-059D-4B73-BDEF-CC7C7325605C
+      EventName=XJCRMFN
+      Caption=CRM/Final
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=6E4945E1-DC2E-4FF9-B407-1430592A0759
+      EventName=XJCRMA
+      Caption=Alternativos
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=95950017-8F3C-4C9C-BCF3-8FAECC17F0D9
+      EventName=AJURASTRO
+      Caption=Ajustar
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+  
+  SUBCONTROLSEND
+    
+    CONTROL=MENUITEM
+    GUID=6C3491F3-791B-41B6-9037-D17C43AC43E1
+    Caption=Ensaios
+    Description=Ensaios
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    SUBCONTROLSSTART
+      
+      CONTROL=MENUITEM
+      GUID=FE275E77-6F59-4801-811E-AEEBCBCDD794
+      EventName=XJCRMENS
+      Caption=CRMENS - Cadastro Tipos de Ensaios
+      Description=CRMENS - Cadastro Tipos de Ensaios
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=019528F5-B1BD-4882-B4BA-931FE3404ECB
+      EventName=XJENSMP
+      Caption=Materia Prima
+      Description=Materia Prima
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=D45A8164-A4EA-481D-8116-E2FFB3CFCC54
+      EventName=XJENSCO
+      Caption=Componentes
+      Description=Componentes
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=EFF3AF02-7B09-4157-A2CD-1421347CDE77
+      EventName=XJENSETI
+      Caption=ETI
+      Description=ETI
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=B8DBEAD9-B134-40E5-852C-468B751EEEFC
+      EventName=XJENSMP03
+      Caption=Tratamento(ETI)
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=43EC1A4A-CC97-47A2-95A6-7682A6906B51
+      EventName=XJENSMR01
+      Caption=Embalagem
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=47FCEF29-9448-4859-898A-5E990861AD40
+      EventName=XJENSMQ01
+      Caption=Sub-Produto
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=54AB9EC6-B1C2-4437-856E-D28A6573C5C7
+      EventName=XJENSMS01
+      Caption=Produto
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+  
+  SUBCONTROLSEND
+    
+    CONTROL=MENUITEM
+    GUID=BB2F0BFF-CC10-4041-98DF-6D267B8C0CD6
+    Caption=Itens Criticos/RACF
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    SUBCONTROLSSTART
+      
+      CONTROL=MENUITEM
+      GUID=C04D45AD-8765-4F73-B365-8C68C38104BE
+      EventName=XJCRMGP12
+      Caption=Itens Criticos
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=343161BC-9807-4946-AF42-61C4E339FCB4
+      EventName=XJCRM3L
+      Caption=Marcadas Racf
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+  
+  SUBCONTROLSEND
+    
+    CONTROL=MENUITEM
+    GUID=8774A050-5C8D-47F1-A8EC-85656E028B89
+    Caption=Integracao
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    SUBCONTROLSSTART
+      
+      CONTROL=MENUITEM
+      GUID=121839CC-0677-42B8-8789-246CCAC760AA
+      EventName=XJIMPAR
+      Caption=Importar AR->Controle Estoque
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=5F464902-47C2-4067-A4E2-43D1F9120B73
+      EventName=jlxpro
+      Caption=Consulta LX-MC
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=A94DC82F-600A-4F7C-B7C6-AE5AD1700156
+      EventName=XJCRMAR
+      Caption=Checagem CRM/RIRM/RIST<>AR
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=A5D0F60B-B951-48A8-93B1-8F87CAC27F52
+      EventName=CHECKAR
+      Caption=Sincronizar CRM/RIRM/RIST<>AR
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=6B4B97C3-81F7-48FF-94BC-BC069E32195E
+      EventName=XIMPQEK
+      Caption=Sincronizar MC<>AR
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+  
+  SUBCONTROLSEND
+    
+    CONTROL=MENUITEM
+    GUID=75B15084-5DFE-4144-B956-B8B26B24CCDA
+    Caption=------------------------
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=4C51078F-ABC8-4432-A9A9-0936FD67935D
+    EventName=fileprintersetup
+    Caption=C&onfigurar Impressora ..
+    Description=Configurar as Opções da Impressora
+    HelpContext=File_Printer_Setup
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=748E0C16-164E-4B7E-804C-8CC3F999D9AE
+    Caption=------------------------
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=FE522E5A-CFB4-4AEA-9A5B-7A0FFC1EE420
+    EventName=XINDEXAR
+    Caption=Indexar os Arquivos
+    Description=Indexar os Arquivos
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=82F24D6F-74EF-4AB7-97EF-4450C6238382
+    Caption=-------------------------
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=2A98D884-3F0B-40BA-BA8C-480E16198DBC
+    EventName=FileExit
+    Caption=&Sair
+    Description=Encerrar a Aplicação
+    HelpContext=File_Exit
+    Accelerator=Alt+F4
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+ 
+ SUBCONTROLSEND
+  
+  CONTROL=MENUITEM
+  GUID=85AA63D2-C574-4AE1-9E70-5E0FF95DA6EC
+  Caption=&Relatorios
+  Enabled=Yes
+  Checked=No
+  ButtonPos=-1
+  SUBCONTROLSSTART
+    
+    CONTROL=MENUITEM
+    GUID=3F1FE92C-D27A-403B-B430-9B2206E9F1DF
+    EventName=XIMPCRM
+    Caption=Recebimento de Mercadorias
+    Description=Recebimento de Mercadorias
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=159013BE-152D-43D3-A28D-63D6441460D7
+    EventName=XIMPRIST
+    Caption=Inspeção Serviços Terceiros
+    Description=Inspeção Serviços Terceiros
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=95530EC4-4DD0-4167-8825-85CFACB101F6
+    EventName=XIMPRIRM
+    Caption=Inspeção e Ensaio Recebimento de Material
+    Description=Inspeção e Ensaio Recebimento de Material
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=19D7653F-08B4-47AF-95AD-4AAACA1BE0BA
+    EventName=XIMPCREX
+    Caption=Comparativo Peso NF/Recebido
+    Description=Comparativo Peso NF/Recebido
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=45F0DB4D-0E2F-4AFD-AA94-91110A610B36
+    EventName=XIMPPEMW
+    Caption=Relatorios Para Recebimento
+    Description=Relatorios Para Recebimento
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=3F942048-E79E-4038-8839-F13F32A95DED
+    EventName=XIMPEST
+    Caption=Controle de Estoque
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=8A40EDCB-D8F5-4BBE-9B94-D3ABD176B62F
+    EventName=XIMPRAST
+    Caption=Controle de Rastro
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=BB185145-2AC4-4E77-B365-635DECC29638
+    EventName=XIMPSS
+    Caption=Controle de SS
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=58F921D8-9042-4985-85EC-7ECCEB33E731
+    Caption=Etiquetas
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    SUBCONTROLSSTART
+      
+      CONTROL=MENUITEM
+      GUID=85214DBB-983D-4EC9-8BD4-2702B199CF34
+      EventName=ETIQ01
+      Caption=Material Aprovado
+      Description=Material Aprovado
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=AEE08B11-52F0-410F-8F34-2980819B75F5
+      EventName=ETIQ02
+      Caption=Identificação
+      Description=Identificação
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=FA1B0F41-1D5F-455F-AA39-DDC8B96E31F8
+      EventName=etiq03
+      Caption=Solicitacao de Teste e Inspecao Laboratório
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+  
+  SUBCONTROLSEND
+    
+    CONTROL=MENUITEM
+    GUID=67598AD2-5B00-44BB-A27C-998E8F5FA19D
+    EventName=XWRPT
+    Caption=WRPT
+    Description=WRPT
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=69F12B58-922A-45A1-ACB3-E5D3B7F73FB7
+    EventName=XWRPTI
+    Caption=WRPT Integrado
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=ECB198D3-E1F9-4A9A-BCF2-1C5355AF4CBE
+    Caption=LST View(logix)
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+ 
+ SUBCONTROLSEND
+  
+  CONTROL=MENUITEM
+  GUID=266BB3A7-20BF-4818-9815-981651EEF1A7
+  Caption=Utilitarios
+  Enabled=Yes
+  Checked=No
+  ButtonPos=-1
+  SUBCONTROLSSTART
+    
+    CONTROL=MENUITEM
+    GUID=D9A1296F-6AD5-49EB-965D-883367E02A05
+    Caption=Email
+    Description=Email
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    SUBCONTROLSSTART
+      
+      CONTROL=MENUITEM
+      GUID=559E3A2B-2992-47DD-9331-7487C9BDFB24
+      EventName=XJMAIL
+      Caption=Consulta
+      Description=Consulta
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=E65C1C5D-1144-41FF-B9A4-10B72DEE24BB
+      EventName=XJMAILGER
+      Caption=Geral
+      Description=GEral
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+      
+      CONTROL=MENUITEM
+      GUID=BC90A6FD-964A-4D01-A4E7-115E7085EF00
+      EventName=XJMAILCFG
+      Caption=Configuraçao
+      Description=Configuraçao
+      Enabled=Yes
+      Checked=No
+      ButtonPos=-1
+  
+  SUBCONTROLSEND
+ 
+ SUBCONTROLSEND
+  
+  CONTROL=MENUITEM
+  GUID=B500538C-22E1-47F3-B22E-F62929778F8A
+  EventName=Help
+  Caption=&?
+  Description=Ajuda
+  Enabled=Yes
+  Checked=No
+  ButtonPos=-1
+  SUBCONTROLSSTART
+    
+    CONTROL=MENUITEM
+    GUID=205C7392-11BC-441E-AF96-58CB2952474F
+    EventName=HelpIndex
+    Caption=&Indice
+    Description=Índice da Ajuda
+    HelpContext=Help_Index
+    Accelerator=F1
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=25A8FE73-D1A9-4A6B-A88C-52303AD058B1
+    EventName=HelpCont
+    Caption=&Conteudo
+    Description=Como usar a Ajuda
+    HelpContext=Help_UsingHelp
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=27199C0C-41C3-407F-9A63-7B75EED5BA72
+    Caption=-------------------------
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=4BDB2386-84C2-4CF9-9F36-A1E53C1E46CF
+    EventName=XVERSAO
+    Caption=Atualizações
+    Description=Atualizações
+    Enabled=Yes
+    Checked=No
+    ButtonPos=-1
+    
+    CONTROL=MENUITEM
+    GUID=B587D5E4-3C82-4920-B5FE-17ECA454F042
+    EventName=HelpAboutDialog
+    Caption=&Sobre...
+    Description=Sobre a Aplicação
+    Enabled=Yes
+    Checked=No
+    ButtonBmp=Help
+    ButtonPos=2
+ 
+ SUBCONTROLSEND
+
+SUBCONTROLSEND
+DESIGNEREND = EMPTYSHELLMENU
+
+

@@ -1,0 +1,376 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jrifpr
+GUID=38F9D35F-907A-48D1-AFFC-36629509BF4D
+  Name=jrifpr
+  Class=DATAWINDOW
+  Caption=Controle RIF/Produo
+  Order=0
+  Left=26
+  Width=434
+  Top=26
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Controle RIF/Produo",,
+  Property=ViewAs=#FormView
+  Property=Menu=STANDARDSHELLMENU
+  Property=HyperLabel=#jrifpr,,,
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=C016F595-4793-4CFF-8587-F974C37694FF
+  Name=SC_PRODUTO
+  Class=FIXEDTEXT
+  Caption=Produto:
+  Order=1
+  Left=13
+  Width=48
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Produto:",,
+  Property=HyperLabel=#SC_PRODUTO,,,
+
+CONTROL=FIXEDTEXT
+GUID=FAAF30C9-ED4B-43F7-88FA-2008751C425C
+  Name=SC_RIFULT
+  Class=FIXEDTEXT
+  Caption=Ultima RIF
+  Order=4
+  Left=249
+  Width=52
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ultima RIF",,
+  Property=HyperLabel=#SC_RIFULT,,,
+
+CONTROL=FIXEDTEXT
+GUID=2AF8B29E-A41A-489F-BE04-B6070DA60EAB
+  Name=SC_RIFTOT
+  Class=FIXEDTEXT
+  Caption=Qtde Total
+  Order=5
+  Left=249
+  Width=52
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtde Total",,
+  Property=HyperLabel=#SC_RIFTOT,,,
+
+CONTROL=FIXEDTEXT
+GUID=D3F59942-78EC-4A2B-A593-E1AD7EE05CC5
+  Name=SC_SEL100
+  Class=FIXEDTEXT
+  Caption=Seleção 100%
+  Order=6
+  Left=9
+  Width=76
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Seleção 100%",,
+  Property=HyperLabel=#SC_SEL100,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=A07A8FE1-3A13-4F35-A4E6-514982EB99BC
+  Name=PRODUTO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=65
+  Width=180
+  Top=9
+  Height=20
+  Browseindex=0
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#PRODUTO,,,
+  Property=HyperLabel=,"Produto:",,
+  Property=HyperLabel=,,,"rifpr_PRODUTO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=262AF950-D539-4AC1-8E14-E1AC8D5E5BDC
+  Name=QTDE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=161
+  Width=80
+  Top=33
+  Height=20
+  Browseindex=2
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#QTDE,,,
+  Property=HyperLabel=,"Qtde:",,
+  Property=HyperLabel=,,,"rifpr_QTDE"
+  Property=NewFont=10:Times New Roman:Bold
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=4DED9019-ABFA-4FFB-9873-2D180BFE85E4
+  Name=RIF1200
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=89
+  Width=68
+  Top=33
+  Height=20
+  Browseindex=1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RIF1200,,,
+  Property=HyperLabel=,"Rif1200:",,
+  Property=HyperLabel=,,,"rifpr_RIF1200"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=41D8D5B4-F948-4EE3-B457-9F2414DE2050
+  Name=RIFULT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=301
+  Width=68
+  Top=5
+  Height=20
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RIFULT,,,
+  Property=HyperLabel=,"Rifult:",,
+  Property=HyperLabel=,,,"rifpr_RIFULT"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=3E1620CC-9146-4972-9EC0-4544DA996A44
+  Name=RIFTOT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=301
+  Width=116
+  Top=29
+  Height=20
+  Browseindex=6
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_15
+  Property=HyperLabel=#RIFTOT,,,
+  Property=HyperLabel=,"Riftot:",,
+  Property=HyperLabel=,,,"rifpr_RIFTOT"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=CF591794-79DF-4377-B559-DE61187F5537
+  Name=SEL100
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=161
+  Width=92
+  Top=53
+  Height=20
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#SEL100,,,
+  Property=HyperLabel=,"Sel100:",,
+  Property=HyperLabel=,,,"rifpr_SEL100"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=ED88193F-C8F3-423C-818E-1145C77BF79C
+  Name=RIFSEL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=89
+  Width=68
+  Top=53
+  Height=21
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RIFSEL,,,
+  Property=HyperLabel=,"Rifsel:",,
+  Property=HyperLabel=,,,"rifpr_RIFSEL"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=1F83DAC9-929E-4070-A30D-174740BA2FDF
+  Name=FixedText7
+  Class=FIXEDTEXT
+  Caption=1200 Pecas
+  Order=15
+  Left=9
+  Width=60
+  Top=33
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"1200 Pecas",,
+  Property=HyperLabel=#FixedText7,,,
+
+CONTROL=PUSHBUTTON
+GUID=E0B5968A-FD8A-4049-B747-1AC277E32616
+  Name=porov
+  Class=PUSHBUTTON
+  Caption=
+  Order=16
+  Left=353
+  Width=32
+  Top=53
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#porov,,,
+
+CONTROL=PUSHBUTTON
+GUID=2AFFBE3E-B90B-4BA5-B44C-797099A8505A
+  Name=buscaov
+  Class=PUSHBUTTON
+  Caption=
+  Order=17
+  Left=317
+  Width=32
+  Top=53
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaov,,,
+
+CONTROL=FIXEDTEXT
+GUID=E224F142-199D-4618-9ED2-BA6E69513BF3
+  Name=SC_DESTINO2
+  Class=FIXEDTEXT
+  Caption=Foto
+  Order=18
+  Left=269
+  Width=40
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Foto",,
+  Property=HyperLabel=#SC_DESTINO2,,,
+
+CONTROL=PUSHBUTTON
+GUID=7CD5D999-7CA2-441A-B331-2E4A4441F291
+  Name=foto
+  Class=PUSHBUTTON
+  Caption=
+  Order=19
+  Left=269
+  Width=40
+  Top=53
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#foto,,,
+  Property=Image=ico_camera
+  Property=TooltipText="Exibe foto do produto"
+
+SUBCONTROLSEND
+DESIGNEREND = jrifpr
+

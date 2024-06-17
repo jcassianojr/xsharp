@@ -1,0 +1,632 @@
+CLASS XJRIF INHERIT JRIF
+
+METHOD ALTERAR  
+SELF:oSFJRIFI:VIEWFORM()
+
+METHOD ANTERIOR 
+SELF:oSFJRIFI:Browser:SuspendUpdate()
+SELF:oSFJRIFI:SkipPREVIOUS()
+IF SELF:oSFJRIFI:Server:BOF
+	SELF:oSFJRIFI:SkipNEXT()
+ENDIF
+SELF:oSFJRIFI:Browser:RestoreUpdate()
+
+METHOD APPEND() 
+LOCAL oSERVER AS USEREDE	
+LOCAL nRIF,nOS,X AS DWORD
+LOCAL oBUSCA AS JESCOS
+LOCAL aDAD,aOS,aPC,aOBS,aINS,acom AS ARRAY
+LOCAL oConn AS SQLConnection
+LOCAL oREG AS SQLSelect
+LOCAL cTOL,cSQL,cPCFTIPO,cINS AS STRING
+LOCAL dDATA,dLANC
+LOCAL oJAN AS XJRifDia
+LOCAL oJANOBS AS XJRIFOBS
+aCOM:={zMES,zANO,ZEMPRESA}
+
+dLANC:=Today()
+
+
+aOS:={}
+aPC:={}
+aINS:={}
+aOBS:={}
+oBUSCA:=JESCOS{SELF}
+oBUSCA:SHOW()
+AltD()
+IF ! oBUSCA:lOK
+   RETURN .f.
+ENDIF	
+nOS:=oBUSCA:nOS
+IF Empty(nOS)
+   alert("Nº OS em Branco")	
+   RETURN .f.
+ENDIF
+SELF:POINTER:=POINTER{POINTERHOURGLASS}
+aDAD:={zCURINI,"OSCRT.DBF",zCURDIR}
+oSERVER:=USEREDE{aDAD}
+IF oSERVER:nERRO#0
+    SELF:POINTER:=POINTER{}		
+    RETURN .f.
+ENDIF
+oSERVER:GOTOP()
+IF oSERVER:SEEK(nOS)
+   AAdd(aos,oSERVER:FIELDGET("CLIENTE")) //1
+   AAdd(aos,oSERVER:FIELDGET("CODIGO"))  //2
+   AAdd(aos,oSERVER:FIELDGET("PF"))      //3
+   AAdd(aos,oSERVER:FIELDGET("EMUSO"))   //4
+   AAdd(aos,oSERVER:FIELDGET("ATIVO"))   //5
+   AAdd(aos,oSERVER:FIELDGET("NOME"))   //6
+   AAdd(AOS,oSERVER:FIELDGET("CODIGOINT")) //7
+   AAdd(aoBs,oSERVER:FIELDGET("OBSFIN01"))
+   AAdd(aoBs,oSERVER:FIELDGET("OBSFIN02"))
+   AAdd(aoBs,oSERVER:FIELDGET("OBSFIN03"))
+   AAdd(aoBs,oSERVER:FIELDGET("OBSFIN04"))
+   AAdd(aoBs,oSERVER:FIELDGET("OBSFIN05"))
+   AAdd(aoBs,oSERVER:FIELDGET("OBSFIN06"))
+ELSE
+   oSERVER:CLOSE()
+   ENVIARIF("RIF00001","",nOS,0)
+   SELF:POINTER:=POINTER{}		
+   alert("OS Não Encontrado","Os Não Encontrado")
+   RETURN .F.
+ENDIF
+oSERVER:CLOSE()	
+
+IF Empty(aOS[3]) .OR. aOS[3]=0
+   ENVIARIF("RIF00004",aOS[2],nOS,0)
+   SELF:POINTER:=POINTER{}		
+   alert("OS Sem Numero PF","Os Sem Numero PF")
+   RETURN .F.
+ENDIF	
+
+IF Empty(aOS[1]) .OR. aOS[1]=0
+   ENVIARIF("RIF00008",aOS[2],nOS,0)
+   SELF:POINTER:=POINTER{}		
+   alert("OS Sem Numero Cliente","Os Sem Numero Cliente")
+   RETURN .F.
+ENDIF	
+
+
+IF aOS[4]="N"
+   ENVIARIF("RIF00005",aOS[2],nOS,aOS[3])
+   SELF:POINTER:=POINTER{}		
+   alert("OS-Produto Fora uso Qualidade","Os Bloqueada")
+   RETURN .F.
+ENDIF	
+
+IF aOS[4]="P"
+   ENVIARIF("RIF00013",aOS[2],nOS,aOS[3])
+   SELF:POINTER:=POINTER{}		
+   alert("OS-Produto/Prelimar Quantidade","Os Bloqueada")
+   RETURN .F.
+ENDIF	
+
+IF aOS[5]="N"
+   ENVIARIF("RIF00006",aOS[2],nOS,aOS[3])
+   SELF:POINTER:=POINTER{}		
+   alert("OS-Produto Fora uso PCP","Os Bloqueada")
+   RETURN .F.
+ENDIF	
+
+
+IF Empty(aOS[6])
+   ENVIARIF("RIF00012",aOS[2],nOS,0)
+   SELF:POINTER:=POINTER{}		
+   alert("OS Com Descritivo Produto em Branco","Os Descritivo Produto em Branco")
+   RETURN .F.
+ENDIF	
+
+SELF:POINTER:=POINTER{}		
+
+oJAN:=XJRifDia{SELF,aOS[2],nOS,aOS[3],aOS[6],DToC(dLANC)}
+oJAN:SHOW()
+
+
+IF ! oJAN:lRETU
+   ENVIARIF("RIF00007",aOS[2],nOS,aOS[3])
+   alert("Inclusão Cancelada","Cancelamento")
+   RETURN .F.	
+ENDIF
+
+
+//oJAN:=XJRifDia{SELF,DToC(dLANC)}
+//oJAN:SHOW()
+//Acima Junto Outros dados
+
+IF ! oJAN:lRETU
+   ENVIARIF("RIF00007",aOS[2],nOS,aOS[3])
+   alert("Inclusão Cancelada","Cancelamento")
+   RETURN .F.	
+ENDIF
+
+
+
+IF ! Empty(aOBS[1])
+   oJANOBS:=XJRIFOBS{SELF,aOBS}
+   oJANOBS:SHOW()
+ENDIF
+
+SELF:POINTER:=POINTER{POINTERHOURGLASS}
+oConn := SQLConnection{}
+IF ! oConn:connect("pf","","")
+  SELF:POINTER:=POINTER{}			
+  alert("Erro Conecção")	
+  RETURN .F.
+ENDIF
+
+cSQL:="SELECT CLIDAT,PCFTIPO FROM PF WHERE PF="+AllTrim(Str(aOS[3]))
+oreg:= SQLSelect{cSQL,oconn}
+IF oREG:RecCount>0
+   dDATA   :=FIXDATA(oREG:FIELDGET("CLIDAT"))
+   cPCFTIPO:=FIXSTR(oREG:FIELDGET("PCFTIPO"))
+ELSE
+   oREG:cLOSE()
+   oConn:Disconnect()	
+   ENVIARIF("RIF00002",aOS[2],nOS,0)
+//   ENVIARIF("RIF00002",0,nOS,aOS[3])
+   SELF:POINTER:=POINTER{}		
+   alert("PF Não Encontrado","PF Não Encontrado")
+   RETURN .F.
+ENDIF
+oREG:Close()
+
+cSQL:="SELECT ESPE,TOL,CODME04,INSTR,CAPA FROM PFCO WHERE SSQ=99 AND PF="+AllTrim(Str(aOS[3]))
+oreg:= SQLSelect{cSQL,oconn}
+IF oREG:RecCount>0
+	WHILE ! OREG:EoF		
+		cTOL:=AllTrim(FIXSTR(oREG:FIELDGET("ESPE")))
+		cTOL+=" "+AllTrim(FIXSTR(oREG:FIELDGET("TOL")))
+        cINS:=AllTrim(FIXSTR(oREG:FIELDGET("CODME04")))+" "		
+        cINS+=AllTrim(FIXSTR(oREG:FIELDGET("INSTR")))+" "		
+        cINS+=AllTrim(FIXSTR(oREG:FIELDGET("CAPA")))
+		AAdd(aPC,cTOL)
+		AAdd(aINS,CINS)
+  	    Oreg:Skip()
+	ENDDO
+ELSE
+   oREG:cLOSE()
+   oConn:Disconnect()		
+   ENVIARIF("RIF00003",aOS[2],nOS,0)
+   SELF:POINTER:=POINTER{}		
+//   ENVIARIF("RIF00003",0,nOS,aOS[3])
+   alert("PC Não Encontrado","PC Não Encontrado")
+   RETURN .F.
+ENDIF
+oREG:Close()
+oConn:Disconnect()
+
+
+SELF:server:setorder(1)
+SELF:server:gobottom()
+nRIF:=SELF:Server:FIELDGET("RIF")
+nRIF++
+SELF:SERVER:SUSPENDNOTIFICATION()
+SUPER:append()
+SELF:SERVER:FIELDPUT("RIF",nRIF)
+SELF:SERVER:FIELDPUT("OS",nOS)
+SELF:SERVER:FIELDPUT("DATA",Today())
+SELF:SERVER:FIELDPUT("INSNUM",ZFOLHA)
+SELF:SERVER:FIELDPUT("CLIENTE",aOS[1])
+SELF:SERVER:FIELDPUT("CODIGO",aOS[2])
+SELF:SERVER:FIELDPUT("CODIGOINT",aOS[7])
+SELF:SERVER:FIELDPUT("PF",aOS[3])
+SELF:SERVER:FIELDPUT("REVDATA",dDATA)
+SELF:SERVER:FIELDPUT("PCFTIPO",cPCFTIPO)
+aDAD:=PEGMP04(ZFOLHA,ZCURINI,ZCURDIR,acom)
+IF aDAD[1]=.T.
+   SELF:SERVER:FIELDPUT("INSNOM",aDAD[2])
+ENDIF
+aDAD:=PEGMS01(SELF:SERVER:CODIGO)
+IF aDAD[1]=.T.
+   SELF:SERVER:NOME:=aDAD[2]
+ENDIF
+aDAD:=PEGMA01(SELF:SERVER:FIELDGET("CLIENTE"),zcurini,zcurdir)
+IF aDAD[1]=.T.
+    SELF:SERVER:CLINOME:=aDAD[2]
+ENDIF
+SELF:oSFJRIFI:SERVER:SUSPENDNOTIFICATION()
+FOR X:=1 TO Len(aPC)
+  	SELF:oSFJRIFI:SERVER:APPEND()
+    SELF:oSFJRIFI:SERVER:FIELDPUT("RIF",nRIF)
+   	SELF:oSFJRIFI:SERVER:FIELDPUT("TOL",aPC[X])
+    SELF:oSFJRIFI:SERVER:FIELDPUT("INSTRUME",aINS[X])
+NEXT X
+SELF:oSFJRIFI:SERVER:commit()
+SELF:oSFJRIFI:SERVER:resetnotification()
+SELF:oSFJRIFI:SERVER:notify(notifyFILECHANGE)
+SELF:SERVER:resetnotification()
+SELF:SERVER:notify(notifyappend)
+SELF:POINTER:=POINTER{}		
+RETURN .t.
+
+
+METHOD Buscadat() 
+LOCAL oBUSCA AS xBUSCA
+oBUSCA:=xBUSCA{SELF,"Localizar...","Digite data da RIF",DToC(Today())}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF oBUSCA:lOK
+   SELF:SERVER:SETORDER(3)
+   SELF:SERVER:GOTOP()
+   SELF:SERVER:SEEK(CToD(oBUSCA:cBUSCA))
+ENDIF
+
+
+METHOD Buscaov() 
+	SELF:KeyFind()
+//LOCAL oBUSCA AS xBUSCA
+//oBUSCA:=xBUSCA{SELF,"Localizar...","Digite Nº RIF"}
+//oBUSCA:lMES:=.T.
+//oBUSCA:SHOW()
+//IF oBUSCA:lOK
+//   SELF:SERVER:SETORDER(1)
+//   SELF:SERVER:GOTOP()
+//   SELF:SERVER:SEEK(Val(oBUSCA:cBUSCA))
+//ENDIF
+
+METHOD chkclipro( ) 
+LOCAL aDAD AS ARRAY	
+alert("Operacao Pode Demorar conf Qtde RIF")	
+SELF:SERVER:GOTOP()
+WHILE ! SELF:SERVER:EOF
+   IF Empty(SELF:SERVER:FIELDGET("CODIGOINT"))
+   	  aDAD:=PEGMSEXT(SELF:SERVER:FIELDGET("CODIGO"),.F.)
+   	  IF aDAD[1] .AND. ! Empty(aDAD[7])
+         SELF:SERVER:FIELDPUT("CODIGOINT",aDAD[7])
+      ENDIF
+   ENDIF
+   SELF:SERVER:SKIP()
+ENDDO	
+SELF:SERVER:GOTOP()
+alert("Checagem Concluida")	
+
+METHOD cmdaltdef( ) 
+LOCAL oSERVER AS USEREDE
+LOCAL ADAD AS ARRAY
+LOCAL cBUSCA AS STRING
+cBUSCA:=SELF:SERVER:FIELDGET("RASTRO")
+aDAD:={zCURINI,"CRMA.DBF",zCURDIR}
+oSERVER:=USEREDE{aDAD}
+IF oSERVER:nERRO#0
+    RETU SELF
+ENDIF
+oSERVER:SetOrder(2)
+oSERVER:GOTOP()
+IF oSERVER:Seek(cBUSCA)
+   IF ! Empty(oSERVER:FIELDGET("RASTROOK"))	
+      SELF:SERVER:FIELDPUT("RASTRO",oSERVER:FIELDGET("RASTROOK"))
+   ENDIF
+ENDIF
+oSERVER:CLOSE()
+
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD cmdimp( ) 
+LOCAL x AS DWORD
+LOCAL cVORETRUN,cPARAM AS STRING
+LOCAL nFout AS PTR
+IF Empty(SELF:SERVER:FIELDGET("LAUDO"))
+   alert("Ainda nao Fechado")
+   RETURN .f.
+ENDIF	
+FOR X:=1 TO 1000 //Da Um tempo Evitar connection close commit dos dados recem digitados 
+	NOP
+NEXT
+
+IF MDG("Imprimir Transferencia","Imprimir")
+	cVORETRUN:=PEGINIVAL(ZCURINI,"PATH","VORETRUN")+ "VORETRUN"
+	cPARAM:=PEGINIVAL(ZCURINI,"RET_046","CAMINHO")+"$NNNNNSSSN$#MANA5FIN#"
+	nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz(cVORETRUN),String2Psz(cPARAM),String2Psz(""),1)  
+    ShellExecuteErro(nFout) 
+//     hwnd,   lpOperation,  lpFile,   lpParameters,   lpDirectory,    SW_SHOWNORMAL = 1//fica no diretorio atual ondes estao os dbfs
+
+	
+ENDIF	
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("RIF","")	
+
+
+METHOD cmdtrcras( ) 
+LOCAL oJAN AS JRIFRASTRO
+IF ! Empty(SELF:SERVER:FIELDGET("LAUDO"))
+   IF ! entramenu("FIN",7)
+  	  alert("Fechamento Já fornecido")
+      RETURN .F.
+   ELSE
+  	  IF ! MDG("Fechamento Já fornecido Alterar Mesmo Assim")
+         RETURN .F.
+      ENDIF
+   ENDIF
+ ENDIF	
+OJAN:=JRIFRASTRO{SELF,"",SELF:SERVER:FIELDGET("CODIGO")}
+oJAN:SHOW()
+IF Ojan:lOK
+   SELF:SERVER:FIELDPUT("RASTRO",oJAN:cRETU)
+ELSE
+   SELF:SERVER:FIELDPUT("RASTRO",Space(14))
+ENDIF
+	
+
+METHOD DELETE() 
+IF ! entramenu("FIN",2)
+	RETU SELF
+ENDIF	
+//IF ! Empty(SELF:SERVER:FIELDGET("LAUDO"))
+//   alert("Fechamento Já fornecido")
+//   RETURN .F.
+//ENDIF			
+IF MDG("Apagar Registro") .AND. SELF:SERVER:LOCKcurrentrecord()
+   SELF:SERVER:SUSPENDNOTIFICATION()
+   SELF:oSFJRIFI:SERVER:SUSPENDNOTIFICATION()
+   SELF:oSFJRIFI:SERVER:gotop()
+   WHILE ! SELF:oSFJRIFI:SERVER:eof
+	 	SELF:oSFJRIFI:SERVER:delete()
+	 	SELF:oSFJRIFI:SERVER:skip()	
+      ENDDO
+	SELF:oSFJRIFI:SERVER:resetnotification()
+	SELF:oSFJRIFI:SERVER:notify(notifyfilechange)
+	SELF:server:delete()
+	SELF:server:unlock()
+	SELF:SERVER:RESETNOTIFICATION()
+	SELF:SERVER:Notify(notifyfilechange)
+	SELF:SERVER:SKIP(1)
+	IF SELF:server:Bof
+	   SELF:server:gotop()
+	ENDIF	
+	GRAVALOG(SELF:SERVER:RIF,"DEL","RIF")	
+ENDIF	
+
+METHOD Excluir( ) 
+IF ! Empty(SELF:SERVER:FIELDGET("LAUDO"))
+   alert("Fechamento Já fornecido")
+   RETURN .F.
+ENDIF		
+IF  MDG("Apagar Registro") .AND. SELF:oSFJRIFI:server:LockCurrentRecord()
+    SELF:oSFJRIFI:SERVER:SUSPENDNOTIFICATION()	
+    SELF:oSFJRIFI:server:delete()
+    SELF:oSFJRIFI:server:unlock()
+    SELF:oSFJRIFI:SERVER:resetnotification()
+	SELF:oSFJRIFI:SERVER:notify(notifyfilechange)
+    SELF:oSFJRIFI:server:GOTOP()		
+	WHILE ! SELF:oSFJRIFI:serveR:EOf
+		SELF:oSFJRIFI:server:Skip()
+    ENDDO		
+    SELF:oSFJRIFI:server:GOTOP()	
+ENDIF		
+
+METHOD FECHAR 
+LOCAL oJRIFfec AS JRIFFEC	
+LOCAL lITENS AS LOGIC
+lITENS:=.T.
+IF Empty(SELF:SERVER:QTDE)
+   alert("Quantidade não fornecido")
+   RETURN .F.	
+ENDIF	
+IF Empty(SELF:SERVER:RASTRO)
+   alert("Rastro não fornecido")
+   RETURN .F.	
+ENDIF	
+IF Empty(SELF:SERVER:ISIII)
+   alert("Inspeção não fornecido")
+   RETURN .F.	
+ENDIF	
+IF ! Empty(SELF:SERVER:FIELDGET("LAUDO"))
+   alert("Fechamento Já fornecido")
+   RETURN .F.
+ENDIF	
+SELF:oSFJRIFI:server:GOTOP()		
+WHILE ! SELF:oSFJRIFI:serveR:EOf
+  IF Empty(SELF:oSFJRIFI:SERVER:FIELDGET("OK"))
+	 lITENS:=.F.	
+  ENDIF		
+  SELF:oSFJRIFI:server:Skip()
+ENDDO		
+SELF:oSFJRIFI:server:GOTOP()	
+IF ! lITENS
+   alert("Itens não preenchidos")
+   RETURN .F.
+ENDIF	
+oJRIFfec:=JRIFfec{SELF}
+oJRIFfec:SHOW()
+SELF:cmdimp()
+
+METHOD foto( ) 
+LOCAL oFOTOVIEW AS fotoview	
+LOCAL cCODIGO AS STRING
+cCODIGO:=TIRAOUT(StrTran(AllTrim(SELF:SERVER:FIELDGET("CODIGO"))," ",""))
+IF Empty(cCODIGO)	
+   alert("Codigo Produto Nao Preenchido")	
+   RETURN .F.
+ENDIF	
+OFOTOVIEW:=fotoview{SELF,ZDIRFOTO+cCODIGO+".JPG"}
+OFOTOVIEW:SHOW()
+	
+
+CONSTRUCTOR(oOWNER) 
+LOCAL oSERVER,oSERVE2 AS USEREDE
+LOCAL aDAD AS ARRAY
+IF ! entramenu("FIN",1)
+	RETU SELF
+ENDIF	
+aDAD:={zCURINI,"RIF.DBF",zCURDIR}
+oSERVER:=USEREDE{aDAD}
+IF oSERVER:nERRO#0
+    RETU SELF
+ENDIF
+aDAD:={zCURINI,"RIFI.DBF",zCURDIR}
+oSERVE2:=USEREDE{aDAD}
+IF oSERVE2:nERRO#0
+	oSERVER:Close() //Fecha Master
+   RETU SELF
+ENDIF
+SUPER(oOWNER,,oSERVER)
+SELF:oSFJRIFI:USE(oSERVE2)
+SELF:Browser:SetStandardStyle(gBsreadonly)
+SELF:SetSelectiveRelation(oSFJRIFI,"RIF")
+SELF:SHOW()			
+
+
+
+METHOD OK1( ) 
+IF ! Empty(SELF:SERVER:FIELDGET("LAUDO"))
+   alert("Fechamento Já fornecido")
+   RETURN .F.
+ENDIF	
+   SELF:oSFJRIFI:server:OK:="N"	
+
+
+METHOD OKCLICK() 
+IF ! Empty(SELF:SERVER:FIELDGET("LAUDO"))
+   alert("Fechamento Já fornecido")
+   RETURN .F.
+ENDIF
+SELF:oSFJRIFI:server:OK:="S"
+
+
+METHOD OKint( ) 
+   SELF:oSFJRIFI:server:OK:="S"
+	
+
+METHOD OKint1( ) 
+   SELF:oSFJRIFI:server:OK:="N"	
+
+METHOD OKrif() 
+IF ! Empty(SELF:SERVER:FIELDGET("LAUDO"))
+   alert("Fechamento Já fornecido")
+   RETURN .F.
+ENDIF
+SELF:oSFJRIFI:server:OK:="S"
+
+
+
+
+METHOD pegsev( ) 	
+LOCAL nQTDE,nENSA AS DWORD
+LOCAL oSERVER AS USEREDE
+LOCAL aDAD AS ARRAY
+LOCAL cCODIGO AS STRING
+LOCAL lSEL100 AS LOGIC
+LOCAL oJAN AS XJRifDia
+
+
+IF ! Empty(SELF:SERVER:FIELDGET("LAUDO"))
+   alert("Fechamento Já fornecido")
+   RETURN .F.
+ENDIF	
+nQTDE:=SELF:SERVER:FIELDGET("QTDE")	
+nENSA:=nQTDE
+DO CASE
+   CASE nQTDE>500000 ; nENSA:=169
+   CASE nQTDE>150000 ; nENSA:=143
+   CASE nQTDE> 35000 ; nENSA:=119	
+   CASE nQTDE> 10000 ; nENSA:=96
+   CASE nQTDE>  3200 ; nENSA:=77
+//   CASE nQTDE>  1200 ; nENSA:=68
+//   CASE nQTDE>   500 ; nENSA:=68
+   CASE nQTDE>   280 ; nENSA:=68
+//   CASE nQTDE>   150 ; nENSA:=32
+//   CASE nQTDE>    90 ; nENSA:=32
+//   CASE nQTDE>    50 ; nENSA:=32
+   CASE nQTDE>    25 ; nENSA:=32
+ENDCASE	
+IF SELF:SERVER:FIELDGET("PCFTIPO")="C" .OR. SELF:SERVER:FIELDGET("PCFTIPO")="X"
+   nENSA:=nENSA*2	
+ENDIF		
+IF Nensa>Nqtde
+   Nensa:=nqtde
+ENDIF	
+
+
+lSEL100:=.F.
+cCODIGO:=SELF:SERVER:FIELDGET("CODIGO")
+aDAD:={zCURINI,"RIFPR.DBF",zCURDIR}
+oSERVER:=USEREDE{aDAD}
+IF oSERVER:nERRO#0
+    RETU SELF
+ENDIF
+oSERVER:GOTOP()
+IF oSERVER:SEEK(cCODIGO)
+   IF ! Empty(oSERVER:FIELDGET("SEL100")) .AND. Empty(oSERVER:FIELDGET("RIFSEL"))	
+   	  lSEL100:=.T.
+   ENDIF	
+ENDIF	
+oSERVER:CLOSE()
+
+IF lSEL100
+   oJAN:=XJRifDia{SELF,"Produto Seleçao 100%"}
+   oJAN:SHOW()
+   nensa:=SELF:SERVER:FIELDGET("QTDE")	
+ENDIF
+
+//Grava os Ensaios
+SELF:SERVER:FIELDPUT("ISIII",Nensa)
+SELF:oDCRASTRO:SetFocus()
+
+METHOD PORDAT 
+	SELF:SERVER:SETORDER(3)	
+
+METHOD POROV 
+	SELF:KeyFind()
+//	SELF:SERVER:SETORDER(1)
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+       FabCenterWindow( SELF )
+ RETURN SELF
+
+METHOD PROXIMO 
+SELF:oSFJRIFI:Browser:SuspendUpdate()
+SELF:oSFJRIFI:SkipNext()
+IF SELF:oSFJRIFI:Server:Eof
+	SELF:oSFJRIFI:SkipPrevious()
+ENDIF
+SELF:oSFJRIFI:Browser:RestoreUpdate()
+
+METHOD TABULAR  
+SELF:oSFJRIFI:VIEWTABLE()
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+   SELF:oSFJRIFI:SERVER:Commit()
+
+
+
+METHOD trcdata() 
+LOCAL oBUSCA AS xBUSCA	
+LOCAL aERRO AS ARRAY
+LOCAL dDATA,dDATOLD AS DATE
+IF ! entramenu("FIN",4)
+	RETU SELF
+ENDIF		
+dDATOLD:=SELF:SERVER:DATA
+oBUSCA:=xBUSCA{SELF,"Alterar...","Digite data da RIF",DToC(SELF:SERVER:DATA)}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF oBUSCA:lOK
+   dDATA:=CToD(oBUSCA:cBUSCA)
+   IF IsDate(dDATA)
+   	  IF ! Empty(dDATA)
+         SELF:SERVER:FIELDPUT("DATA",dDATA)
+         Aerro:={}
+         AAdd(aERRO,"RIF No:"+StrTRIM(SELF:SERVER:RIF,8,0))
+         AAdd(aErRo,"Data Antiga"+DToC(Ddatold))
+         AAdd(aErRo,"Data Nova"+DToC(Ddata))
+         EMAILINT("RIF00009",ZUSER,aERRO,ZCURINI,zCURDIR)			
+      ENDIF
+   ENDIF
+ENDIF
+
+
+
+
+
+
+END CLASS

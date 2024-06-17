@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="_Indexar">
+    <Window Name="_Indexar">
+      <Name>_Indexar</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Indexar Arquivos</Caption>
+      <Order>0</Order>
+      <Left>32</Left>
+      <Top>32</Top>
+      <Width>382</Width>
+      <Height>153</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Indexar Arquivos",,</HyperLabel>
+        <HyperLabel>#_Indexar,,,</HyperLabel>
+        <HyperLabel>,,,"Indexar"</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="Cancelar">
+      <Name>Cancelar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>189</Left>
+      <Top>73</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Cancelar,,,</HyperLabel>
+        <Image>ICO_SAIR</Image>
+        <TooltipText>"Clique Para Cancelar Indexação"</TooltipText>
+        <HyperLabel>,,,"Indexar"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText9">
+      <Name>theFixedText9</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Retornar</Caption>
+      <Order>2</Order>
+      <Left>189</Left>
+      <Top>121</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Retornar",,</HyperLabel>
+        <HyperLabel>#theFixedText9,,,</HyperLabel>
+        <HyperLabel>,,,"Indexar"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText10">
+      <Name>theFixedText10</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>OK</Caption>
+      <Order>3</Order>
+      <Left>261</Left>
+      <Top>121</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"OK",,</HyperLabel>
+        <HyperLabel>#theFixedText10,,,</HyperLabel>
+        <HyperLabel>,,,"Indexar"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="PushButton1">
+      <Name>PushButton1</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>261</Left>
+      <Top>73</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#PushButton1,,,</HyperLabel>
+        <Image>ICO_OK</Image>
+        <TooltipText>"Clique para Iniciar a Indexação"</TooltipText>
+        <HyperLabel>,,,"Indexar"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="x2">
+      <Name>x2</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Ajuda</Caption>
+      <Order>5</Order>
+      <Left>45</Left>
+      <Top>117</Top>
+      <Width>60</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ajuda",,</HyperLabel>
+        <HyperLabel>#x2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Ajuda">
+      <Name>Ajuda</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>45</Left>
+      <Top>73</Top>
+      <Width>60</Width>
+      <Height>44</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741888</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Ajuda,,,</HyperLabel>
+        <Image>ICO_AJUDA</Image>
+        <TooltipText>"Clique Para Acessar a Ajuda"</TooltipText>
+        <HyperLabel>,,,"login"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText1">
+      <Name>theFixedText1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Indexar Arquivos</Caption>
+      <Order>-1</Order>
+      <Left>49</Left>
+      <Top>29</Top>
+      <Width>280</Width>
+      <Height>40</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Indexar Arquivos",,</HyperLabel>
+        <NewFont>24:MS Sans Serif:Bold</NewFont>
+        <HyperLabel>#theFixedText1,,,</HyperLabel>
+        <HyperLabel>,,,"Indexar"</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

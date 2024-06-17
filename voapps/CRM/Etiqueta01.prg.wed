@@ -1,0 +1,417 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,ETIQ01
+GUID=4F1111D9-DC47-47DF-9C86-3F6586D11FD9
+  Name=ETIQ01
+  Class=DATADIALOG
+  Caption=Etiqueta de Material Aprovado
+  Order=0
+  Left=28
+  Width=410
+  Top=28
+  Height=157
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Etiqueta de Material Aprovado",,
+  Property=HyperLabel=#ETIQ01,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=B69B0D5B-4FBC-49B0-B7D3-603A5F8C64BF
+  Name=nRIRM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=77
+  Width=68
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=#nRIRM,,,
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=FocusSelect=FSEL_ALL
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=B593739C-F5B2-46FC-AE7D-954907CD8F4F
+  Name=ARITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=149
+  Width=44
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082204288
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#ARITEM,,,
+  Property=FocusSelect=FSEL_ALL
+  Property=TooltipText="Item do Pedido de Compras"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=5F541CCC-9720-47EC-8B69-48E6023247F6
+  Name=NQTDE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=77
+  Width=80
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=#NQTDE,,,
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=FocusSelect=FSEL_ALL
+  Property=InheritClassName=rightSle
+  Property=HyperLabel=,"1",,
+
+CONTROL=SINGLELINEEDIT
+GUID=A7EB70C2-686E-4310-A29C-4B2FC84A5B0A
+  Name=cRASTRO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=77
+  Width=130
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_12
+  Property=HyperLabel=#cRASTRO,,,
+  Property=HyperLabel=,"Rastro:",,
+  Property=HyperLabel=,,,"CRME01_RASTRO"
+  Property=FocusSelect=FSEL_ALL
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=73B5042D-FD44-4254-A693-C52D2408910A
+  Name=MDATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=77
+  Width=112
+  Top=85
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+  Property=HyperLabel=#MDATA,,,
+
+CONTROL=FIXEDTEXT
+GUID=381A776B-6276-4AD8-870C-DDDB47314394
+  Name=FT3
+  Class=FIXEDTEXT
+  Caption=Rirm/Rist
+  Order=6
+  Left=9
+  Width=48
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rirm/Rist",,
+  Property=HyperLabel=#FT3,,,
+
+CONTROL=FIXEDTEXT
+GUID=11CFB835-C0A7-4D13-B4EE-7E6C6886F063
+  Name=SC_RASTRO
+  Class=FIXEDTEXT
+  Caption=Rastro:
+  Order=7
+  Left=13
+  Width=50
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rastro:",,
+  Property=HyperLabel=#SC_RASTRO,,,
+
+CONTROL=FIXEDTEXT
+GUID=32701E22-6F04-481B-9367-762FC6BE26E6
+  Name=SC_DATA
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=8
+  Left=13
+  Width=40
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=#SC_DATA,,,
+
+CONTROL=FIXEDTEXT
+GUID=8DF94B86-716C-4077-9B4F-FA879DA029F3
+  Name=FT1
+  Class=FIXEDTEXT
+  Caption=Quantidade
+  Order=9
+  Left=9
+  Width=66
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Quantidade",,
+  Property=HyperLabel=#FT1,,,
+
+CONTROL=PUSHBUTTON
+GUID=69A96BB3-1706-4F16-A39D-3A1ED36C7830
+  Name=IMPORTAR
+  Class=PUSHBUTTON
+  Caption=Rirm
+  Order=10
+  Left=197
+  Width=32
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rirm",,
+  Property=HyperLabel=#IMPORTAR,,,
+
+CONTROL=PUSHBUTTON
+GUID=9EBD98AD-22C2-477B-8BEC-9D8F153C4173
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=11
+  Left=329
+  Width=64
+  Top=77
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ICO_SAIR
+
+CONTROL=FIXEDTEXT
+GUID=08FC7403-232C-469C-8664-7E11DC64EB49
+  Name=theFixedText13
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=12
+  Left=329
+  Width=64
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText13,,,
+
+CONTROL=FIXEDTEXT
+GUID=D9231CC5-C8E5-4E57-B9E2-2917C9815B53
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Imprimir
+  Order=13
+  Left=333
+  Width=60
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Imprimir",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=PUSHBUTTON
+GUID=7A77B98E-FF21-4C30-95E2-873DE1A1301D
+  Name=imprimir
+  Class=PUSHBUTTON
+  Caption=
+  Order=14
+  Left=333
+  Width=60
+  Top=5
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#imprimir,,,
+  Property=Image=ICO_PRINT
+
+CONTROL=FIXEDTEXT
+GUID=738B2F9F-0190-4211-ABF4-2D942E51EB91
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Conf Imp
+  Order=15
+  Left=253
+  Width=56
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Conf Imp",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=PUSHBUTTON
+GUID=532CF5EC-A538-405D-B006-9FF1104E6465
+  Name=CONFIMP
+  Class=PUSHBUTTON
+  Caption=
+  Order=16
+  Left=253
+  Width=60
+  Top=81
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#CONFIMP,,,
+  Property=Image=ICO_PRINTCFG
+
+CONTROL=PUSHBUTTON
+GUID=E20A515C-776A-4B13-B3F4-A26011D9E58A
+  Name=IMPORTAR1
+  Class=PUSHBUTTON
+  Caption=Rist
+  Order=17
+  Left=233
+  Width=28
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rist",,
+  Property=HyperLabel=#IMPORTAR1,,,
+
+CONTROL=PUSHBUTTON
+GUID=B341A34B-3463-472A-B2AE-618BA9AD3E12
+  Name=PEGAR
+  Class=PUSHBUTTON
+  Caption=AR
+  Order=18
+  Left=265
+  Width=24
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"AR",,
+  Property=HyperLabel=#PEGAR,,,
+
+CONTROL=PUSHBUTTON
+GUID=007FD089-A89D-4158-9B7E-F817055C1645
+  Name=PEGMC
+  Class=PUSHBUTTON
+  Caption=MC
+  Order=19
+  Left=293
+  Width=20
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"MC",,
+  Property=HyperLabel=#PEGMC,,,
+
+SUBCONTROLSEND
+DESIGNEREND = ETIQ01
+

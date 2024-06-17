@@ -1,0 +1,275 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JCAL
+GUID=D9726F84-2123-4152-8A73-EA7115056D42
+  Name=JCAL
+  Class=DATADIALOG
+  Caption=Calibração
+  Order=0
+  Left=28
+  Width=392
+  Top=28
+  Height=147
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Calibração",,
+  Property=HyperLabel=#JCAL,,,
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=4BAB4DFB-5AA2-4158-93C0-B51DADF8337F
+  Name=CALPRO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=173
+  Width=90
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#CALPRO,,,
+  Property=HyperLabel=,"Calpro:",,
+  Property=HyperLabel=,,,"ME04_CALPRO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=674837CC-6CDE-486D-A446-5854BC6E7A0A
+  Name=SC_CALPRO
+  Class=FIXEDTEXT
+  Caption=Próxima
+  Order=4
+  Left=177
+  Width=48
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Próxima",,
+  Property=HyperLabel=#SC_CALPRO,,,
+
+CONTROL=DATETIMEPICKER
+GUID=A125DA25-F9A3-468C-B94B-F15424EAA686
+  Name=CALULT
+  Class=DATETIMEPICKER
+  Caption=03/10/2006
+  Order=5
+  Left=85
+  Width=85
+  Top=37
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#CALULT,,,
+
+CONTROL=FIXEDTEXT
+GUID=1C07A3E5-95AC-48A9-916C-2F2FD9858CE6
+  Name=SC_CALULT
+  Class=FIXEDTEXT
+  Caption=Ultima
+  Order=6
+  Left=85
+  Width=50
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ultima",,
+  Property=HyperLabel=,,"Data da Ultima Calibração",
+  Property=HyperLabel=#SC_CALULT,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=04E945DB-6653-45B2-B3CD-2B5C31662537
+  Name=CALIBRAR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=25
+  Width=52
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#CALIBRAR,,,
+  Property=HyperLabel=,"Calibrar:",,
+  Property=HyperLabel=,,,"ME04_CALIBRAR"
+
+CONTROL=FIXEDTEXT
+GUID=46AE5A1A-1BB7-4CB0-AC1E-B82FB108AFDA
+  Name=SC_CALIBRAR1
+  Class=FIXEDTEXT
+  Caption=Meses
+  Order=8
+  Left=25
+  Width=56
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Meses",,
+  Property=HyperLabel=#SC_CALIBRAR1,,,
+
+CONTROL=FIXEDTEXT
+GUID=EEC4C305-4617-4132-8D50-901CA5EA2F67
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=9
+  Left=281
+  Width=64
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=0871C6F4-0F93-47B5-BDE9-BB535A8D1CD1
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=10
+  Left=281
+  Width=64
+  Top=13
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ico_ok
+
+CONTROL=SINGLELINEEDIT
+GUID=870D6F86-6068-4ECB-8D20-8ACF8B50A69F
+  Name=DATAEXT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=81
+  Width=88
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAEXT,,,
+  Property=HyperLabel=,"Calibrar:",,
+  Property=HyperLabel=,,,"ME04_CALIBRAR"
+  Property=InheritClassName=DateSle
+
+CONTROL=FIXEDTEXT
+GUID=DC6C98AD-0797-4A59-81F8-186A984BA8E0
+  Name=SC_CALIBRAR2
+  Class=FIXEDTEXT
+  Caption=Data Extensão
+  Order=12
+  Left=81
+  Width=92
+  Top=65
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data Extensão",,
+  Property=HyperLabel=#SC_CALIBRAR2,,,
+
+CONTROL=PUSHBUTTON
+GUID=571631D3-B892-46F9-9C4D-0FA6CEE882C7
+  Name=ultano
+  Class=PUSHBUTTON
+  Caption=Ultimo Dia Ano
+  Order=13
+  Left=174
+  Width=87
+  Top=82
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ultimo Dia Ano",,
+  Property=HyperLabel=#ultano,,,
+
+CONTROL=PUSHBUTTON
+GUID=B6F1A1A7-A65A-4D6F-80C1-0BE740885989
+  Name=Apagar
+  Class=PUSHBUTTON
+  Caption=Apagar
+  Order=14
+  Left=173
+  Width=88
+  Top=105
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Apagar",,
+  Property=HyperLabel=#Apagar,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JCAL
+

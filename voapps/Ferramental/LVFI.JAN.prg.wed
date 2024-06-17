@@ -1,0 +1,281 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JLVFI
+GUID=5ECBBE5F-76C1-4409-B2DA-3550584388FE
+  Name=JLVFI
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=20
+  Width=681
+  Top=20
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#JLVFI,,,
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=35C41711-3D2A-45F6-B80B-CCBE594CEB29
+  Name=SC_LVF
+  Class=FIXEDTEXT
+  Caption=Lvf:
+  Order=-1
+  Left=21
+  Width=30
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Lvf:",,
+  Property=HyperLabel=#SC_LVF,,,
+
+CONTROL=FIXEDTEXT
+GUID=F7CF0F2B-F289-4768-9808-80AA15851EAD
+  Name=SC_ITEM
+  Class=FIXEDTEXT
+  Caption=Item:
+  Order=-1
+  Left=105
+  Width=40
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=#SC_ITEM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=7376772E-0FB4-460A-8C7E-4DD6A6AC186A
+  Name=LVF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=21
+  Width=76
+  Top=25
+  Height=26
+  Browseindex=0
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#LVF,,,
+  Property=HyperLabel=,"Lvf:",,
+  Property=HyperLabel=,,,"LVFI_LVF"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=30EC5BBF-6EB7-4CDB-B422-8A9CDCDAA925
+  Name=ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=105
+  Width=60
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#ITEM,,,
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=,,,"LVFI_ITEM"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=B98C8D93-6ABB-4561-8140-B0003B15C970
+  Name=SC_DESCRI
+  Class=FIXEDTEXT
+  Caption=Descrição:
+  Order=-1
+  Left=21
+  Width=64
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descrição:",,
+  Property=HyperLabel=#SC_DESCRI,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=DF775D95-E1AE-4ACF-B3B7-7EBE9E6F668E
+  Name=DESCRI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=21
+  Width=550
+  Top=81
+  Height=20
+  Browseindex=2
+  Browsesize=28
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_50
+  Property=HyperLabel=#DESCRI,,,
+  Property=HyperLabel=,"Descrição:",,
+  Property=HyperLabel=,,,"LVFI_DESCRI"
+
+CONTROL=RADIOBUTTONGROUP
+GUID=EEDDBE6C-8686-42EC-BE6E-25617F9DB1CC
+  Name=OPER01
+  Class=RADIOBUTTONGROUP
+  Caption=Normal
+  Order=-1
+  Left=22
+  Width=229
+  Top=112
+  Height=49
+  Browseindex=3
+  Browsesize=16
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Normal",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#OPER01,,,
+
+CONTROL=RADIOBUTTON
+GUID=E4CB98F1-E22F-4027-BB38-AFD6F77FC5EA
+  Name=theRadioButton2
+  Class=RADIOBUTTON
+  Caption=Não
+  Order=-1
+  Left=131
+  Width=60
+  Top=131
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Não",,
+  Property=Value=N
+  Property=HyperLabel=#theRadioButton2,,,
+
+CONTROL=RADIOBUTTON
+GUID=975EF9BA-51AC-417C-902C-4E9BF499C654
+  Name=theRadioButton1
+  Class=RADIOBUTTON
+  Caption=Sim
+  Order=-1
+  Left=42
+  Width=59
+  Top=132
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Sim",,
+  Property=Value=S
+  Property=HyperLabel=#theRadioButton1,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=89897CE9-3A28-4FB1-813A-84FD38C15388
+  Name=OPER02
+  Class=RADIOBUTTONGROUP
+  Caption=Reparar
+  Order=-1
+  Left=21
+  Width=229
+  Top=171
+  Height=49
+  Browseindex=4
+  Browsesize=20
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Reparar",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#OPER02,,,
+
+CONTROL=RADIOBUTTON
+GUID=E660979F-82A8-491D-BEC7-0AA449F16AE3
+  Name=theRadioButton3
+  Class=RADIOBUTTON
+  Caption=Sim
+  Order=-1
+  Left=41
+  Width=60
+  Top=191
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Sim",,
+  Property=Value=S
+  Property=HyperLabel=#theRadioButton3,,,
+
+CONTROL=RADIOBUTTON
+GUID=8AF1176E-C4A0-46E6-B8F7-3E216492A664
+  Name=theRadioButton4
+  Class=RADIOBUTTON
+  Caption=Não
+  Order=-1
+  Left=132
+  Width=59
+  Top=192
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Não",,
+  Property=Value=N
+  Property=HyperLabel=#theRadioButton4,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JLVFI
+

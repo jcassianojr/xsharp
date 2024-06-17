@@ -1,0 +1,1543 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JRO
+GUID=D94324C5-4B81-4C35-ACA6-D89EE7516BFD
+  Name=JRO
+  Class=FORM:DATAWINDOW
+  Caption=Registro de Ocorrencia
+  Order=0
+  Left=0
+  Width=738
+  Top=0
+  Height=556
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Registro de Ocorrencia
+  Property=HyperLabel=JRO
+  Property=InheritClassName=MYDataWindow
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+  Property=ClipperKeys=True
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=COMBOBOX
+GUID=486CEE3B-9CD7-4933-8F56-16A87F9E130B
+  Name=AREA
+  Class=CONTROL:TEXTCONTROL:BASELISTBOX:COMBOBOX
+  Caption=
+  Order=2
+  Left=281
+  Width=160
+  Top=25
+  Height=77
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1075904898
+  Exstyles=0
+  Property=HyperLabel=AREA
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=TooltipText=Area 
+CONTROL=DATETIMEPICKER
+GUID=BCAEC07D-E78E-4785-9A6F-838C234C9D70
+  Name=DATA
+  Class=CONTROL:TEXTCONTROL:DATETIMEPICKER
+  Caption=Registro de Ocorrencia
+  Order=1
+  Left=189
+  Width=85
+  Top=25
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,Registro de Ocorrencia
+  Property=HyperLabel=DATA
+  Property=FieldSpec=DATE_FIELD
+  Property=TooltipText=Data Ocorrencia
+CONTROL=SINGLELINEEDIT
+GUID=3F21A82D-9BD0-4246-BEAD-23E4FBD3A41D
+  Name=DESCRI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Descri:
+  Order=3
+  Left=445
+  Width=282
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Descri:
+  Property=HyperLabel=DESCRI
+  Property=HyperLabel=,,,RO_DESCRI
+  Property=FieldSpec=PADRAO_CHAR_20
+  Property=TooltipText=Descriçao
+CONTROL=SINGLELINEEDIT
+GUID=75D9D1DF-C889-47A1-8020-BB9324291213
+  Name=TECNICO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Ro:
+  Order=4
+  Left=281
+  Width=72
+  Top=117
+  Height=19
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Ro:
+  Property=HyperLabel=TECNICO
+  Property=HyperLabel=,,,RO_RO
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSle
+  Property=TooltipText=Numero do Tecnico
+CONTROL=SINGLELINEEDIT
+GUID=3984FA14-CD41-479B-BED6-29BE9FD5C925
+  Name=REQNUM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Ro:
+  Order=5
+  Left=281
+  Width=72
+  Top=141
+  Height=19
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Ro:
+  Property=HyperLabel=REQNUM
+  Property=HyperLabel=,,,RO_RO
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSle
+  Property=TooltipText=Numero do Soliciatante
+CONTROL=SINGLELINEEDIT
+GUID=CE07A5B4-170C-46D5-B755-1667C132400E
+  Name=DEFEITO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Defeito:
+  Order=6
+  Left=81
+  Width=490
+  Top=189
+  Height=20
+  Browseindex=3
+  Browsesize=27
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Defeito:
+  Property=HyperLabel=DEFEITO
+  Property=HyperLabel=,,,RO_DEFEITO
+  Property=FieldSpec=PADRAO_CHAR_80
+  Property=TooltipText=Descriçao do Defeito
+CONTROL=SINGLELINEEDIT
+GUID=B3DA74D0-5780-4528-93A5-5AB2563973C1
+  Name=DEFEIT2
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Defeito:
+  Order=7
+  Left=81
+  Width=490
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Defeito:
+  Property=HyperLabel=DEFEIT2
+  Property=HyperLabel=,,,RO_DEFEITO
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=TooltipText=Descriçao do Defeito
+CONTROL=SINGLELINEEDIT
+GUID=B13EAC29-B18E-4A3C-95D9-C4643BAC8B72
+  Name=DEFEIT3
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Defeito:
+  Order=8
+  Left=81
+  Width=490
+  Top=225
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Defeito:
+  Property=HyperLabel=DEFEIT3
+  Property=HyperLabel=,,,RO_DEFEITO
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=TooltipText=Descriçao do Defeito
+CONTROL=SINGLELINEEDIT
+GUID=C4B5C3B5-2E73-42BE-8B31-107845FEB2D6
+  Name=SOLUCAO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Solucao:
+  Order=9
+  Left=81
+  Width=490
+  Top=249
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Solucao:
+  Property=HyperLabel=SOLUCAO
+  Property=HyperLabel=,,,RO_SOLUCAO
+  Property=FieldSpec=PADRAO_CHAR_200
+  Property=TooltipText=Descriçao da Solucao 
+CONTROL=SINGLELINEEDIT
+GUID=8994FA8F-56AD-4EA4-B259-A09DB328EFAF
+  Name=SOLUCA2
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Solucao:
+  Order=10
+  Left=81
+  Width=490
+  Top=269
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Solucao:
+  Property=HyperLabel=SOLUCA2
+  Property=HyperLabel=,,,RO_SOLUCA2
+  Property=FieldSpec=PADRAO_CHAR_80
+  Property=TooltipText=Descriçao da Solucao 
+CONTROL=SINGLELINEEDIT
+GUID=A133A327-9B0F-45B5-A8F4-032170BB8A32
+  Name=SOLUCA3
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Solucao:
+  Order=11
+  Left=81
+  Width=490
+  Top=289
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Solucao:
+  Property=HyperLabel=SOLUCA3
+  Property=HyperLabel=,,,RO_SOLUCA2
+  Property=FieldSpec=PADRAO_CHAR_80
+  Property=TooltipText=Descriçao da Solucao 
+CONTROL=SINGLELINEEDIT
+GUID=7F356C50-CE70-4A3D-93DA-BBBBAD66EE80
+  Name=SOLUCA4
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Solucao:
+  Order=12
+  Left=81
+  Width=490
+  Top=305
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Solucao:
+  Property=HyperLabel=SOLUCA4
+  Property=HyperLabel=,,,RO_SOLUCA2
+  Property=FieldSpec=PADRAO_CHAR_80
+  Property=TooltipText=Descriçao da Solucao 
+CONTROL=SINGLELINEEDIT
+GUID=3F8D2A39-3BB8-46BB-91F1-6C72EDB81630
+  Name=DATAINI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Datai:
+  Order=13
+  Left=49
+  Width=92
+  Top=345
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Datai:
+  Property=HyperLabel=DATAINI
+  Property=HyperLabel=,,,Sm_DATAI
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=7AECF7ED-58BC-40D7-9B3D-0785BBCD929E
+  Name=HORAINI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Horaini:
+  Order=14
+  Left=49
+  Width=48
+  Top=369
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Horaini:
+  Property=HyperLabel=HORAINI
+  Property=HyperLabel=,,,Sm_HORAINI
+  Property=FieldSpec=padrao_num_05_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=6D6FBDB4-A403-48A1-BC53-6AF719E649D2
+  Name=DATAFIM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Datat:
+  Order=15
+  Left=221
+  Width=88
+  Top=349
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Datat:
+  Property=HyperLabel=DATAFIM
+  Property=HyperLabel=,,,Sm_DATAT
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=DAD4FA2C-0478-4467-A32B-E4B27B9A21D5
+  Name=HORAFIM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Horafim:
+  Order=16
+  Left=221
+  Width=48
+  Top=373
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Horafim:
+  Property=HyperLabel=HORAFIM
+  Property=HyperLabel=,,,Sm_HORAFIM
+  Property=FieldSpec=padrao_num_05_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=5B9E2B7E-27AF-418F-9E8C-233C5F345089
+  Name=HORA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Hora:
+  Order=17
+  Left=317
+  Width=48
+  Top=373
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Hora:
+  Property=HyperLabel=HORA
+  Property=HyperLabel=,,,RO_HORA
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=TooltipText=Hora da Ocorrencia
+CONTROL=SINGLELINEEDIT
+GUID=D482BA75-13C7-423B-A7D8-339525EDCA63
+  Name=datapar
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Datai:
+  Order=18
+  Left=437
+  Width=88
+  Top=349
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Datai:
+  Property=HyperLabel=datapar
+  Property=HyperLabel=,,,Sm_DATAI
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=01728355-1E50-4122-9293-4EDDD79038E8
+  Name=horapINI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Horaini:
+  Order=19
+  Left=437
+  Width=48
+  Top=373
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Horaini:
+  Property=HyperLabel=horapINI
+  Property=HyperLabel=,,,Sm_HORAINI
+  Property=FieldSpec=padrao_num_05_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=DD0CA0DD-A428-4B67-9A41-4F9BB31B1ABD
+  Name=horapar
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=545
+  Width=48
+  Top=373
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=horapar
+  Property=HyperLabel=,,,Sm_HORAINI
+  Property=FieldSpec=padrao_num_05_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=4BA2DA2C-B402-458B-962C-16CEA7727CC9
+  Name=CLINOME
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Clinome:
+  Order=21
+  Left=401
+  Width=326
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=HyperLabel=,Clinome:
+  Property=HyperLabel=CLINOME
+  Property=HyperLabel=,,,RO_CLINOME
+  Property=FieldSpec=PADRAO_CHAR_50
+  Property=Background=255 255 200
+  Property=TooltipText=Nome do Cliente
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=SINGLELINEEDIT
+GUID=1FEECEF4-9AEA-4E30-9EB8-1E5258968138
+  Name=CLIENTE
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Cliente:
+  Order=22
+  Left=281
+  Width=72
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=HyperLabel=,Cliente:
+  Property=HyperLabel=CLIENTE
+  Property=HyperLabel=,,,RO_CLIENTE
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=Background=255 255 200
+  Property=TooltipText=Numero do Cliente
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=FIXEDTEXT
+GUID=4596C7F1-3B75-4D02-A7E8-C33D0C8387DE
+  Name=SC_CLIENTE
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Cliente:
+  Order=23
+  Left=229
+  Width=40
+  Top=93
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Cliente:
+  Property=HyperLabel=SC_CLIENTE
+CONTROL=CHECKBOX
+GUID=90A6013C-3C82-40DC-9D4F-1B4F10615F60
+  Name=CONCLUIDA
+  Class=CONTROL:TEXTCONTROL:BUTTON:CHECKBOX
+  Caption=Concluida
+  Order=24
+  Left=493
+  Width=76
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1207959555
+  Exstyles=0
+  Property=HyperLabel=,Concluida
+  Property=HyperLabel=CONCLUIDA
+  Property=HyperLabel=,,,RO_CONCLUIDA
+  Property=FieldSpec=LOGIC_FIELD
+  Property=TooltipText=Indica se Ja foi Concludia
+CONTROL=PUSHBUTTON
+GUID=F4FEF4A1-650A-40F1-B5BF-37115BCBA0DF
+  Name=CmdConcluida
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Concluida
+  Order=25
+  Left=493
+  Width=80
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Concluida
+  Property=HyperLabel=CmdConcluida
+  Property=TooltipText=Clique Para Concluir o Registro Ocorrencai
+CONTROL=FIXEDTEXT
+GUID=4AAD2C15-1786-4152-A903-F85598157944
+  Name=SC_SM
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Sm:
+  Order=26
+  Left=661
+  Width=24
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Sm:
+  Property=HyperLabel=SC_SM
+CONTROL=SINGLELINEEDIT
+GUID=B85073E8-A603-46D8-AD91-918C5684C123
+  Name=SM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Sm:
+  Order=27
+  Left=661
+  Width=68
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=,Sm:
+  Property=HyperLabel=SM
+  Property=HyperLabel=,,,RO_SM
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=Background=255 255 200
+  Property=TooltipText=Numero da Solicitaçao Manutençao
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=PUSHBUTTON
+GUID=11E4528D-F153-4ECE-906C-6F4D7AEB641D
+  Name=Tabular
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Ver Itens
+  Order=28
+  Left=617
+  Width=64
+  Top=445
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ver Itens
+  Property=HyperLabel=Tabular
+  Property=TooltipText=Ver Todos Itens
+CONTROL=PUSHBUTTON
+GUID=470C9E6F-9D58-4EFD-B260-CEF24A380BA4
+  Name=Alterar
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Alterar
+  Order=29
+  Left=561
+  Width=52
+  Top=445
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Alterar
+  Property=HyperLabel=Alterar
+  Property=TooltipText=Alterar o Item
+CONTROL=PUSHBUTTON
+GUID=6A2DBF32-749F-46AE-95F8-2C9D8CF1BD21
+  Name=Excluir
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Excluir
+  Order=30
+  Left=617
+  Width=64
+  Top=409
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Excluir
+  Property=HyperLabel=Excluir
+  Property=TooltipText=Excluir um Item
+CONTROL=PUSHBUTTON
+GUID=B2C8B6B2-95BB-43C4-817E-824FF539203C
+  Name=Incluir
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Incluir
+  Order=31
+  Left=561
+  Width=52
+  Top=409
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Incluir
+  Property=HyperLabel=Incluir
+  Property=TooltipText=Incluir Um Item
+CONTROL=SUBDATAWINDOW
+GUID=C740694F-3838-4380-8617-E3080CEAC3B5
+  Name=JROI
+  Class=CONTROL:SUBDATAWINDOW
+  Caption=JROI
+  Order=32
+  Left=9
+  Width=543
+  Top=409
+  Height=104
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=JROI
+  Property=RelationString=#RO
+  Property=Order=ROI
+  Property=HyperLabel=,JROI
+CONTROL=PUSHBUTTON
+GUID=B6200A9B-FB17-4E7F-81C2-C60F675B2D34
+  Name=Proximo
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=33
+  Left=621
+  Width=60
+  Top=477
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=Proximo
+  Property=TooltipText=Avança Um Item
+  Property=Image=ico_next
+CONTROL=PUSHBUTTON
+GUID=1ED3DC5E-F5A8-4FA5-A4BB-4697F12A3E72
+  Name=Anterior
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=34
+  Left=561
+  Width=60
+  Top=477
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=Anterior
+  Property=TooltipText=Retorna um Item
+  Property=Image=ico_previous
+CONTROL=PUSHBUTTON
+GUID=E28700B2-6D82-4E0F-A365-B9745A72BDFB
+  Name=CheckList
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Checar Lista Verificacao
+  Order=35
+  Left=577
+  Width=80
+  Top=53
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073750016
+  Exstyles=0
+  Property=HyperLabel=,Checar Lista Verificacao
+  Property=HyperLabel=CheckList
+  Property=TooltipText=Checar Lista de Verificaçao
+CONTROL=SINGLELINEEDIT
+GUID=81479D7A-D0B4-46D6-BE1D-9C3BCE68F4CD
+  Name=REQNOME
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Nome:
+  Order=36
+  Left=401
+  Width=280
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=HyperLabel=,Nome:
+  Property=HyperLabel=REQNOME
+  Property=HyperLabel=,,,RO_TECNOME
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=Background=255 255 200
+  Property=TooltipText=Nome do Solicitante
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=FIXEDTEXT
+GUID=2804D280-E384-40BA-AC23-0029A9ECE75E
+  Name=theFixedText9
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Solicitante
+  Order=37
+  Left=229
+  Width=52
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Solicitante
+  Property=HyperLabel=theFixedText9
+CONTROL=SINGLELINEEDIT
+GUID=39DD5EA3-9E93-474A-BC8F-6DB5BB794355
+  Name=TIPO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Ro:
+  Order=40
+  Left=21
+  Width=24
+  Top=149
+  Height=19
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=HyperLabel=,Ro:
+  Property=HyperLabel=TIPO
+  Property=HyperLabel=,,TIPO
+  Property=HyperLabel=,,,RO_RO
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=SINGLELINEEDIT
+GUID=F319458B-2C8B-44EC-9AA1-06FC6EAF1AEF
+  Name=TIPORO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Ro:
+  Order=41
+  Left=21
+  Width=24
+  Top=101
+  Height=19
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=HyperLabel=,Ro:
+  Property=HyperLabel=TIPORO
+  Property=HyperLabel=,,TIPO
+  Property=HyperLabel=,,,RO_RO
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=FIXEDTEXT
+GUID=F92CD891-7FE1-46B5-97EE-6CA8240CCD6A
+  Name=FixedText12
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Corretiva Preventiva
+  Order=42
+  Left=57
+  Width=132
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Corretiva Preventiva
+  Property=HyperLabel=FixedText12
+CONTROL=FIXEDTEXT
+GUID=C2131EF2-E5BA-44F6-949F-31BEC22CBD5D
+  Name=FixedText13
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Máquina Ferramenta Outras
+  Order=43
+  Left=53
+  Width=159
+  Top=149
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Máquina Ferramenta Outras
+  Property=HyperLabel=FixedText13
+CONTROL=PUSHBUTTON
+GUID=6FA3B2F7-099D-4499-AEDD-8D6F60342486
+  Name=escres1
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=...
+  Order=44
+  Left=361
+  Width=16
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,...
+  Property=HyperLabel=escres1
+  Property=TooltipText=Clique Para Escolher um tecnico
+CONTROL=PUSHBUTTON
+GUID=E88D43E5-8694-45B3-AD35-B5FF5F1DA4E0
+  Name=escres2
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=...
+  Order=45
+  Left=361
+  Width=16
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,...
+  Property=HyperLabel=escres2
+  Property=TooltipText=Clique para Escolher o Solciitante
+CONTROL=PUSHBUTTON
+GUID=DDC8F502-E0F4-4916-A393-890A26FFBF8B
+  Name=busca
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=46
+  Left=89
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=busca
+  Property=TooltipText=Localizar  Registro Pelo Numero
+  Property=Image=ico_find
+CONTROL=FIXEDTEXT
+GUID=E12B1F22-DB18-454B-BCAC-4DB92B5E11EE
+  Name=SC_RO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Ro:
+  Order=47
+  Left=9
+  Width=30
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ro:
+  Property=HyperLabel=SC_RO
+CONTROL=FIXEDTEXT
+GUID=73FE7589-B65F-4B20-8BF8-32C053E46582
+  Name=SC_AREA
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Area:
+  Order=48
+  Left=277
+  Width=40
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Area:
+  Property=HyperLabel=SC_AREA
+CONTROL=SINGLELINEEDIT
+GUID=54B7C579-1469-414D-8069-F2B77393A492
+  Name=RO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Ro:
+  Order=49
+  Left=9
+  Width=72
+  Top=21
+  Height=23
+  Browseindex=-1
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=HyperLabel=,Ro:
+  Property=HyperLabel=RO
+  Property=HyperLabel=,,,RO_RO
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=Background=255 255 200
+  Property=TooltipText=Numero do Registro de Ocorrencia
+  Property=NewFont=12:Times New Roman:Bold
+CONTROL=FIXEDTEXT
+GUID=CBA1373D-8254-41F4-ABCF-1A46B3FBAA48
+  Name=SC_FERRAM
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Ferramenta/Maquina
+  Order=50
+  Left=9
+  Width=140
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ferramenta/Maquina
+  Property=HyperLabel=SC_FERRAM
+CONTROL=FIXEDTEXT
+GUID=3C8F542F-8400-4672-89E6-F617AE1E6D7E
+  Name=SC_HORA
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Qtde Hora:
+  Order=51
+  Left=321
+  Width=52
+  Top=349
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Qtde Hora:
+  Property=HyperLabel=SC_HORA
+CONTROL=FIXEDTEXT
+GUID=BEC5FD39-7F41-4CB2-975F-D6FE77E3F290
+  Name=SC_DATA
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Data:
+  Order=52
+  Left=197
+  Width=40
+  Top=9
+  Height=14
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data:
+  Property=HyperLabel=SC_DATA
+CONTROL=SINGLELINEEDIT
+GUID=7B96936A-1C2B-4C24-9821-114932DB9CAF
+  Name=FERRAM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Codigo
+  Order=53
+  Left=9
+  Width=150
+  Top=61
+  Height=20
+  Browseindex=1
+  Browsesize=24
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=HyperLabel=,Codigo
+  Property=HyperLabel=FERRAM
+  Property=HyperLabel=,,,RO_FERRAM
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=Background=255 255 200
+  Property=TooltipText=Codigo da Marquina/Ferramenta
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=SINGLELINEEDIT
+GUID=BA070C36-F5B8-45F5-B990-33E74D28D8E1
+  Name=NOME
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Nome:
+  Order=54
+  Left=193
+  Width=284
+  Top=61
+  Height=20
+  Browseindex=2
+  Browsesize=23
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=HyperLabel=,Nome:
+  Property=HyperLabel=NOME
+  Property=HyperLabel=,,,RO_NOME
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=Background=255 255 200
+  Property=TooltipText=Descriçao da Maquina/Ferramenta
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=FIXEDTEXT
+GUID=49DD279F-2318-4AF8-BF17-058ADE9AC377
+  Name=theFixedText8
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Tecnico
+  Order=55
+  Left=229
+  Width=52
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Tecnico
+  Property=HyperLabel=theFixedText8
+CONTROL=SINGLELINEEDIT
+GUID=2D4047BE-A44F-4B9F-9777-41976D2BC0E5
+  Name=TECNOME
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Nome:
+  Order=56
+  Left=401
+  Width=280
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=HyperLabel=,Nome:
+  Property=HyperLabel=TECNOME
+  Property=HyperLabel=,,,RO_TECNOME
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=Background=255 255 200
+  Property=TooltipText=Nome do Tecnico
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=FIXEDTEXT
+GUID=A4E9BF78-CE89-4B98-808B-F102EF064770
+  Name=SC_DEFEITO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Defeito Apresentado ou Descrição Manutenção
+  Order=57
+  Left=13
+  Width=64
+  Top=193
+  Height=68
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Defeito Apresentado ou Descrição Manutenção
+  Property=HyperLabel=SC_DEFEITO
+CONTROL=FIXEDTEXT
+GUID=042A83B5-09DF-4C69-9F14-F823A2A7D97F
+  Name=SC_SOLUCAO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Solução:
+  Order=58
+  Left=17
+  Width=60
+  Top=253
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Solução:
+  Property=HyperLabel=SC_SOLUCAO
+CONTROL=PUSHBUTTON
+GUID=8B229A54-10A5-49F7-9BB6-C49FA6F4446F
+  Name=PEGsol
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=59
+  Left=377
+  Width=19
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=PEGsol
+CONTROL=PUSHBUTTON
+GUID=B29F749D-14B4-4B12-A0F3-EC08928AC1A0
+  Name=pegtec
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=60
+  Left=377
+  Width=19
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=pegtec
+CONTROL=PUSHBUTTON
+GUID=1E010709-622F-4D7A-8825-64945F9452A0
+  Name=pegcli
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=61
+  Left=377
+  Width=19
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=pegcli
+CONTROL=PUSHBUTTON
+GUID=C1A0A8B4-FC62-463F-AB4C-BA39BF656959
+  Name=pegfer
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=62
+  Left=165
+  Width=19
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=pegfer
+CONTROL=FIXEDTEXT
+GUID=B53F8D35-E9D0-4774-8BEC-3A4B961F3ED5
+  Name=theFixedText10
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Hora
+  Order=63
+  Left=185
+  Width=24
+  Top=369
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Hora
+  Property=HyperLabel=theFixedText10
+CONTROL=FIXEDTEXT
+GUID=2F59ED96-516B-43B9-81C6-433C44CC5D6C
+  Name=theFixedText12
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Data
+  Order=64
+  Left=185
+  Width=26
+  Top=349
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data
+  Property=HyperLabel=theFixedText12
+CONTROL=FIXEDTEXT
+GUID=42096453-A7DF-409A-96C3-30ACF1D2E20D
+  Name=theFixedText13
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Hora
+  Order=66
+  Left=17
+  Width=28
+  Top=369
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Hora
+  Property=HyperLabel=theFixedText13
+CONTROL=FIXEDTEXT
+GUID=9C9DBD62-1490-423E-A66A-0E32539AD556
+  Name=theFixedText6
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Data
+  Order=68
+  Left=17
+  Width=26
+  Top=345
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data
+  Property=HyperLabel=theFixedText6
+CONTROL=FIXEDTEXT
+GUID=6CCEA51E-B0B2-4640-ACB9-F4B5528617DE
+  Name=theFixedText14
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Hora
+  Order=69
+  Left=405
+  Width=32
+  Top=373
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Hora
+  Property=HyperLabel=theFixedText14
+CONTROL=FIXEDTEXT
+GUID=002A5974-A8F7-4854-AD56-3151BC47CF3B
+  Name=theFixedText15
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Data
+  Order=71
+  Left=405
+  Width=26
+  Top=349
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data
+  Property=HyperLabel=theFixedText15
+CONTROL=FIXEDTEXT
+GUID=11C6AEB9-0EEF-416A-B9EF-772252ED8887
+  Name=SC_HORA2
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Qtde Hora:
+  Order=72
+  Left=541
+  Width=52
+  Top=349
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Qtde Hora:
+  Property=HyperLabel=SC_HORA2
+CONTROL=PUSHBUTTON
+GUID=40250069-CA46-4208-8730-79CB1B8E0190
+  Name=ordem
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=73
+  Left=121
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=ordem
+  Property=TooltipText=Ordenar Por Numero
+  Property=Image=ico_az
+CONTROL=GROUPBOX
+GUID=E3A14389-E156-4B4E-8B97-99D715D493D5
+  Name=GroupBox1
+  Class=CONTROL:TEXTCONTROL:GROUPBOX
+  Caption=Origem
+  Order=38
+  Left=9
+  Width=207
+  Top=133
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,Origem
+  Property=HyperLabel=GroupBox1
+  Property=TooltipText=Origem da Ocorrencia
+CONTROL=GROUPBOX
+GUID=ED8C5BA1-8C17-45F8-A964-773504FD12F4
+  Name=GroupBox2
+  Class=CONTROL:TEXTCONTROL:GROUPBOX
+  Caption=Tipo de Ocorrencia
+  Order=39
+  Left=9
+  Width=207
+  Top=85
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,Tipo de Ocorrencia
+  Property=HyperLabel=GroupBox2
+  Property=TooltipText=Tipo de Ocorrencia
+CONTROL=GROUPBOX
+GUID=1DB16ABF-AF12-4EFF-B559-B7599FD80C6C
+  Name=theGroupBox2
+  Class=CONTROL:TEXTCONTROL:GROUPBOX
+  Caption=Início
+  Order=67
+  Left=9
+  Width=148
+  Top=329
+  Height=72
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,Início
+  Property=HyperLabel=theGroupBox2
+CONTROL=GROUPBOX
+GUID=5210E0E7-F802-4416-95B3-FFCD42571970
+  Name=theGroupBox4
+  Class=CONTROL:TEXTCONTROL:GROUPBOX
+  Caption=Parada
+  Order=70
+  Left=397
+  Width=208
+  Top=333
+  Height=68
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,Parada
+  Property=HyperLabel=theGroupBox4
+CONTROL=GROUPBOX
+GUID=D647916B-20D2-4C4B-8BCC-63850DE458BE
+  Name=theGroupBox3
+  Class=CONTROL:TEXTCONTROL:GROUPBOX
+  Caption=Termino
+  Order=65
+  Left=169
+  Width=220
+  Top=333
+  Height=68
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,Termino
+  Property=HyperLabel=theGroupBox3
+SUBCONTROLSEND
+DESIGNEREND = JRO
+
+

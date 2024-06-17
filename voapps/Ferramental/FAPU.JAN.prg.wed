@@ -1,0 +1,446 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JFAPU
+GUID=CA9FCBAD-EFFF-44C1-991D-35258ABBB291
+  Name=JFAPU
+  Class=DATAWINDOW
+  Caption=Apurar Uso de Ferramentas
+  Order=0
+  Left=40
+  Width=708
+  Top=42
+  Height=324
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Apurar Uso de Ferramentas",,
+  Property=HyperLabel=#JFAPU,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ClipperKeys=True
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=DATETIMEPICKER
+GUID=D9DFA0F2-695B-478C-9A71-0549854D6E10
+  Name=DINI
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=1
+  Left=177
+  Width=85
+  Top=21
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DINI,,,
+
+CONTROL=DATETIMEPICKER
+GUID=C0701C17-C29D-4A83-BA90-D934BBB1896C
+  Name=DFIM
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=2
+  Left=277
+  Width=85
+  Top=21
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DFIM,,,
+
+CONTROL=PUSHBUTTON
+GUID=293EF04A-78E0-444D-9E31-8F37F0CF9BE2
+  Name=Tabular
+  Class=PUSHBUTTON
+  Caption=Tabular
+  Order=5
+  Left=577
+  Width=80
+  Top=169
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tabular",,
+  Property=HyperLabel=#Tabular,,,
+
+CONTROL=PUSHBUTTON
+GUID=3FA8B244-FBAC-40E8-A6E8-1ACD227CEE03
+  Name=Alterar
+  Class=PUSHBUTTON
+  Caption=Alterar
+  Order=6
+  Left=577
+  Width=80
+  Top=145
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Alterar",,
+  Property=HyperLabel=#Alterar,,,
+
+CONTROL=PUSHBUTTON
+GUID=813A0094-B217-4F0E-8614-07A986BB203F
+  Name=Excluir
+  Class=PUSHBUTTON
+  Caption=Excluir
+  Order=7
+  Left=577
+  Width=80
+  Top=109
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Excluir",,
+  Property=HyperLabel=#Excluir,,,
+
+CONTROL=PUSHBUTTON
+GUID=68FF2076-C115-4771-8678-7970D6A8787A
+  Name=Incluir
+  Class=PUSHBUTTON
+  Caption=Incluir
+  Order=8
+  Left=577
+  Width=80
+  Top=85
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Incluir",,
+  Property=HyperLabel=#Incluir,,,
+
+CONTROL=SUBDATAWINDOW
+GUID=BA81391B-1291-45EA-B9F2-ACD59F1967AC
+  Name=JFAPUI
+  Class=SUBDATAWINDOW
+  Caption=JFAPUI
+  Order=9
+  Left=9
+  Width=543
+  Top=85
+  Height=160
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=RelationString="#SEQ"
+  Property=HyperLabel=#JFAPUI,,,
+  Property=Order="FAPUI"
+
+CONTROL=PUSHBUTTON
+GUID=E9EC18EE-91C5-44AD-8917-776853672CEF
+  Name=Proximo
+  Class=PUSHBUTTON
+  Caption=
+  Order=10
+  Left=613
+  Width=48
+  Top=197
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Proximo,,,
+  Property=Image=ico_next
+
+CONTROL=PUSHBUTTON
+GUID=DDB1B17C-F2FE-4F9F-AA62-5DD435FFA338
+  Name=Anterior
+  Class=PUSHBUTTON
+  Caption=
+  Order=11
+  Left=565
+  Width=48
+  Top=197
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Anterior,,,
+  Property=Image=ico_previous
+
+CONTROL=CHECKBOX
+GUID=E6D1B514-6ED2-47DC-AC11-9A2AC1673A0C
+  Name=PCPLIB
+  Class=CHECKBOX
+  Caption=Liberado PCP
+  Order=14
+  Left=13
+  Width=88
+  Top=53
+  Height=20
+  Browseindex=3
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1207959555
+  Exstyles=0
+  Property=HyperLabel=,"Liberado PCP",,
+  Property=FieldSpec=logic_field
+  Property=HyperLabel=#PCPLIB,,,
+  Property=HyperLabel=,,,"FAPU_PCPLIB"
+
+CONTROL=SINGLELINEEDIT
+GUID=1872CF56-8538-479D-9201-8878EC24B8ED
+  Name=PCPNUM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=125
+  Width=68
+  Top=53
+  Height=20
+  Browseindex=1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#PCPNUM,,,
+  Property=HyperLabel=,"Pcpnum:",,
+  Property=HyperLabel=,,,"FAPU_PCPNUM"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=467ABC8C-8E4D-4B64-B4E9-9B62E76DA63F
+  Name=PCPDAT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=205
+  Width=68
+  Top=53
+  Height=20
+  Browseindex=2
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#PCPDAT,,,
+  Property=HyperLabel=,"Pcpdat:",,
+  Property=HyperLabel=,,,"FAPU_PCPDAT"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=3232863D-F10F-4A0B-9176-843D686B3170
+  Name=Liberar
+  Class=PUSHBUTTON
+  Caption=Liberar
+  Order=17
+  Left=285
+  Width=80
+  Top=53
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1207959552
+  Exstyles=0
+  Property=HyperLabel=,"Liberar",,
+  Property=HyperLabel=#Liberar,,,
+
+CONTROL=PUSHBUTTON
+GUID=D31C66FE-9C67-4788-81D2-DE2428608691
+  Name=ordem
+  Class=PUSHBUTTON
+  Caption=
+  Order=18
+  Left=113
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#ordem,,,
+  Property=TooltipText="Ordenar Por Numero"
+
+CONTROL=PUSHBUTTON
+GUID=6D87D656-BE54-49D5-BCFF-DF3C11B242EB
+  Name=busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=19
+  Left=77
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#busca,,,
+
+CONTROL=FIXEDTEXT
+GUID=6A63632B-7C29-4E42-ABD9-23ACEC0DAEE9
+  Name=SC_DINI
+  Class=FIXEDTEXT
+  Caption=Periodo
+  Order=-1
+  Left=177
+  Width=84
+  Top=5
+  Height=12
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Periodo",,
+  Property=HyperLabel=#SC_DINI,,,
+
+CONTROL=FIXEDTEXT
+GUID=56D1AE9B-C9DC-4BA1-B524-B3D41577F4A7
+  Name=SC_SEQ
+  Class=FIXEDTEXT
+  Caption=Seq:
+  Order=-1
+  Left=13
+  Width=30
+  Top=7
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Seq:",,
+  Property=HyperLabel=#SC_SEQ,,,
+
+CONTROL=CHECKBOX
+GUID=24E1DCC1-5E55-4B8A-9140-43A06B8DC305
+  Name=APURADO
+  Class=CHECKBOX
+  Caption=Apurado
+  Order=-1
+  Left=369
+  Width=78
+  Top=17
+  Height=24
+  Browseindex=4
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1207959558
+  Exstyles=0
+  Property=HyperLabel=,"Apurado",,
+  Property=FieldSpec=LOGIC_FIELD
+  Property=HyperLabel=#APURADO,,,
+  Property=HyperLabel=,,,"FAPU_APURADO"
+
+CONTROL=SINGLELINEEDIT
+GUID=52C8FA67-7424-4F47-A0BA-DC46D61C5573
+  Name=SEQ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=5
+  Width=68
+  Top=21
+  Height=22
+  Browseindex=0
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#SEQ,,,
+  Property=HyperLabel=,"Seq:",,
+  Property=HyperLabel=,,,"FAPU_SEQ"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=54A25171-41B4-46B1-9BE4-E7B8848F8E64
+  Name=cmdApurar
+  Class=PUSHBUTTON
+  Caption=Apurar
+  Order=-1
+  Left=457
+  Width=80
+  Top=21
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Apurar",,
+  Property=HyperLabel=#cmdApurar,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JFAPU
+

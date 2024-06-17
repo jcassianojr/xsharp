@@ -1,0 +1,50 @@
+PARTIAL CLASS JPTOALM
+METHOD APPEND 	
+LOCAL oJAN AS JMESANO
+oJAN:=JMESANO{SELF}
+oJAN:SHOW()	
+SELF:sERVER:GOTOP()
+IF ! SELF:SERVER:sEEK(Str(oJAN:nANO,4)+Str(oJAN:NMES,2))
+//   SELF:server:SUPER
+   SUPER:APPEND()
+   SELF:SERVER:FIELDPUT("ANO",OJAN:NANO)
+   SELF:SERVER:FIELDPUT("MES",OJAN:NMES)	
+   SELF:SERVER:FIELDPUT("MESEXT",MESSTR(oJAN:NANO,oJAN:NMES,1,1))	
+ENDIF	
+
+
+
+
+METHOD buscaNUM( ) 
+	SELF:KeyFind()
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTFGRP("PTO","TAB")	
+
+
+METHOD cmdordenar( ) 
+	SELF:KeyFind()
+
+METHOD delete 
+alert("Operaçao Bloqueada")	
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+ FabCenterWindow( SELF )
+ RETURN SELF
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+
+
+END CLASS

@@ -1,0 +1,99 @@
+PARTIAL CLASS JME01CR
+METHOD append 
+SUPER:Append()
+SELF:SERVER:FIELDPUT("PROGRAMA",Today())
+SELF:SERVER:FIELDPUT("ANO",ZANO)
+SELF:SERVER:FIELDPUT("CANO",ZCANO)
+	
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("FR","CRG")	
+
+METHOD delete 
+IF ! Empty(SELF:SERVER:FIELDGET("efetuada"))
+   alert("Fechamento Já fornecido")
+   RETUrn .f.
+ENDIF			
+IF  MDG("Apagar Registro") .AND. SELF:SERVER:LOCKcurrentrecord()
+	SELF:server:delete()
+	SELF:server:unlock()
+	SELF:SERVER:SKIP()
+	IF SELF:server:eof
+	   SELF:server:gobottom()
+	ENDIF	
+ENDIF	
+
+METHOD escfor 
+LOCAL oESC AS XESCNUM	
+oESC:=XESCNUM{SELF,"ME01.DBF"}
+oESC:SHOW()	
+IF oESC:LOK
+    SELF:SERVER:FIELDPUT("CODIGO",oESC:NUMERO)
+    SELF:SERVER:FIELDPUT("NOME",oESC:NOME)
+ENDIF
+
+
+METHOD FECHAR
+LOCAL oBUSCA AS xBUSCA
+LOCAL oSERVER AS USEREDE
+LOCAL aDAD AS ARRAY
+IF ! Empty(SELF:SERVER:FIELDGET("efetuada"))
+   alert("Fechamento Já fornecido")
+   RETUrn .f.
+ENDIF			
+oBUSCA:=xBUSCA{SELF,"Fechar Cronograma","Digite o Nº Da Lista Verificacao Maquina "}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF ! oBUSCA:lOK
+   RETUrn .f.
+ENDIF
+aDAD:={zCURINI,"LVM.DBF",zCURDIR}
+oSERVER:=USEREDE{aDAD}
+IF oSERVER:nERRO#0
+    RETUrn .f.
+ENDIF
+oSERVER:GOTOP()
+IF ! oSERVER:SEEK(Val(oBUSCA:cBUSCA))
+   oSERVER:CLOSE()
+   alert("Lista de Verificacao de Maquina nao Encontrado")
+   RETUrn .f.	
+ENDIF	
+IF AllTrim(SELF:SERVER:FIELDGET("CODIGO"))<>AllTrim(oSERVER:FIELDGET("NUMERO"))
+   oSERVER:CLOSE()
+   alert("Maquina LVM Nao e a mesma da programação")
+   RETUrn .f.		
+ENDIF	
+SELF:SERVER:FIELDPUT("CODIGO",AllTrim(SELF:SERVER:FIELDPUT("CODIGO")))
+SELF:SERVER:FIELDPUT("EFETUADA",oSERVER:FIELDGET("DATA"))
+SELF:SERVER:FIELDPUT("LVM",Val(oBUSCA:cBUSCA))
+oSERVER:CLOSE()
+RETURN	.t.
+	
+
+METHOD pegcod
+LOCAL aDAD AS ARRAY	
+aDAD:=PEGME01(AllTrim(SELF:SERVER:CODIGO),ZCURINI,ZCURDIR)
+IF aDAD[1]=.T.
+   SELF:SERVER:FIELDPUT("NOME",aDAD[2])
+ENDIF		
+SELF:SERVER:FIELDPUT("CODIGO",AllTrim(SELF:SERVER:FIELDPUT("CODIGO")))
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+    FabCenterWindow( SELF )
+ RETURN SELF
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+
+
+END CLASS

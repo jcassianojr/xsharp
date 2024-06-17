@@ -1,0 +1,112 @@
+﻿CLASS XJCRMCESP INHERIT JCRMCESP
+
+METHOD APPEND() 
+LOCAL nNUMERO AS DWORD
+SELF:server:setorder(1)
+SELF:server:gobottom()
+nNUMERO:=SELF:Server:FIELDGET("NUMERO")
+nNUMERO++
+SUPER:append()
+SELF:SERVER:FIELDPUT("NUMERO",nNUMERO)
+RETURN SELF
+
+METHOD buscar( ) 
+	SELF:KeyFind()
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+
+METHOD DELETE() 
+IF  MDG("Apagar Registro") .AND. SELF:SERVER:LOCKcurrentrecord()
+	SELF:server:delete()
+	SELF:server:unlock()
+	SELF:server:skip(-1)
+	IF SELF:SERVER:BOF
+	   SELF:SERVER:GOTOP()	
+	ENDIF	
+ENDIF	
+
+METHOD esccod( ) 
+LOCAL oESC AS XESCCOD	
+LOCAL Ctipo AS STRING
+cTIPO:=SELF:server:FIELDGET("TIPOENT")
+DO CASE
+	CASE CtipO="M"
+       oESC:=XESCCOD{SELF,"MU01.DBF"}		
+	CASE Ctipo="C"
+       oESC:=XESCCOD{SELF,"MT01.DBF"}		
+	CASE Ctipo="T"
+       oESC:=XESCCOD{SELF,"MP03.DBF"}		
+	OTHERWISE
+       oESC:=XESCCOD{SELF,"MS01.DBF"}
+ENDCASE
+oESC:SHOW()	
+IF Oesc:lok
+    SELF:SERVER:FIELDPUT("CODIGO",oESC:CODIGO)
+    SELF:pegcod()
+ENDIF				
+
+CONSTRUCTOR(oOWNER) 
+LOCAL oSERVER AS USEREDE
+LOCAL aDAD AS ARRAY
+IF ! entramenu("CRM",25)
+	RETU SELF
+ENDIF	
+aDAD:={zCURINI,"CRMCESP.DBF",zCURDIR}
+oSERVER:=USEREDE{aDAD}
+IF oSERVER:nERRO#0
+    RETU SELF
+ENDIF
+SUPER(oOWNER,,oSERVER)
+SELF:Browser:SetStandardStyle(gBsreadonly)
+SELF:SHOW()	
+
+
+METHOD pegcod() 
+LOCAL Aretu AS ARRAY
+LOCAL Ctipo AS STRING
+LOCAL cCODIGO AS STRING
+Ctipo:=SELF:server:FIELDGET("TIPOENT")
+CCODIGO:=SELF:server:FIELDGET("CODIGO")
+aretu:={}	
+DO CASE
+	CASE Ctipo="M"
+       ARETU:=PEGMU01(CCODIGO,zcurini,zcurdir)
+	CASE Ctipo="C"
+       ARETU:=PEGMT01(CCODIGO,zcurini,zcurdir)
+	CASE Ctipo="T"
+       ARETU:=PEGMP03(CCODIGO,zcurini,zcurdir)
+ENDCASE	
+IF aRETU[1]
+    IF Ctipo="T"	
+       SELF:SERVER:FIELDPUT("NOME",ARETU[8])
+
+    ELSE
+       SELF:SERVER:FIELDPUT("NOME",ARETU[2])
+    ENDIF
+ENDIF			
+
+METHOD PostInit(oWindow,iCtlID,oServer,uExtra) 
+	//Put your PostInit additions here
+	 FabCenterWindow( SELF )
+	RETURN NIL
+
+
+METHOD TIPOC( ) 
+		 SELF:SERVER:FIELDPUT("TIPOENT","C")	
+
+METHOD TIPOM( ) 
+	 SELF:SERVER:FIELDPUT("TIPOENT","M")	
+
+METHOD TIPOT( ) 
+		 SELF:SERVER:FIELDPUT("TIPOENT","T")	
+
+
+END CLASS

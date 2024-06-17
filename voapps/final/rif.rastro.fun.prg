@@ -1,0 +1,60 @@
+﻿FUNCTION CHECKALT(cTIPCOD,nRASTRONUM,nRASTROANO)
+LOCAL oSERVER AS USEREDE
+LOCAL ADAD AS ARRAY
+LOCAL cBUSCA AS STRING
+LOCAL nERRO AS WORD
+LOCAL lRETU AS LOGIC
+nERRO:=0
+lRETU:=.F.
+cBUSCA:=cTIPCOD+StrZero(nRASTRONUM,4)+"/"+StrZero(nRASTROANO,4)
+aDAD:={zCURINI,"CRMA.DBF",zCURDIR}
+oSERVER:=USEREDE{aDAD}
+IF oSERVER:nERRO#0
+    RETU lRETU
+ENDIF
+oSERVER:SetOrder(2)
+oSERVER:GOTOP()
+IF  oSERVER:Seek(cBUSCA)
+   lRETU:=.T.
+ELSE	
+   nERRO:=1	
+ENDIF
+oSERVER:CLOSE()
+IF nERRO=1
+   alert("Rastro Alternativo nao Encontrado")
+ENDIF
+RETU lRETU
+
+FUNCTION CRIARASTRO(cTIPCOD,nRASTROnum,nRASTROANO,nRASTROITEM)
+LOCAL cRASTRO:=""
+IF ValType(cTIPCOD)<>"C"
+   cTIPCOD:=""
+ENDIF
+IF (NRASTRONUM)<1
+   alert("Nº Rastro nao Pode Ser zero")
+   RETU Crastro
+ENDIF
+IF ctIPCOD=="A"
+   IF ! CHECKALT(cTIPCOD,nRASTRONUM,nRASTROANO)
+   	  RETU  crastro
+    ENDIF	
+ENDIF
+DO CASE
+   CASE ctIPCOD="AR"
+   	   IF ValType(Nrastroitem)<>"N"
+          NRASTROITEM:=0		
+ 	   ENDIF	
+	   IF (NRASTROITEM)<1
+          alert("Nº Item do Rastro nao Pode Ser zero")		
+          RETU  crastro		
+	   ENDIF	
+       cRASTRO:=cTIPCOD+"-"+StrZero(NRASTRONUM,6)+"-"+StrZero(NRASTROITEM,2)
+   CASE ctIPCOD="OP"
+   	   cRASTRO:=cTIPCOD+"-"+StrZero(NRASTRONUM,6)+"/"+StrZero(NRASTROANO,4)
+   OTHERWISE
+      cRASTRO:=cTIPCOD+StrZero(NRASTRONUM,4)+"/"+StrZero(NRASTROANO,4)
+ENDCASE
+RETU crastro
+	
+
+

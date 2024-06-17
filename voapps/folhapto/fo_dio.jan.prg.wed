@@ -1,0 +1,236 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jfo_dio
+GUID=B615C1CB-2D97-42DE-92D7-EBB45CD20C7E
+  Name=jfo_dio
+  Class=DATAWINDOW
+  Caption=Arquivo MIgrado
+  Order=0
+  Left=36
+  Width=420
+  Top=36
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Arquivo MIgrado",,
+  Property=HyperLabel=#jfo_dio,,,
+  Property=ViewAs=#BrowseView
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=88A5F10A-EC6F-400E-807A-D921B6D5CD54
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero:
+  Order=1
+  Left=17
+  Width=44
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=FIXEDTEXT
+GUID=3CF44FED-5432-4DFA-8A85-5589D57F5F82
+  Name=SC_DATA
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=3
+  Left=129
+  Width=32
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=#SC_DATA,,,
+
+CONTROL=FIXEDTEXT
+GUID=99F6C0E0-3D20-4BBB-AF74-8938692BB7FC
+  Name=SC_HORA
+  Class=FIXEDTEXT
+  Caption=Hora:
+  Order=4
+  Left=205
+  Width=32
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Hora:",,
+  Property=HyperLabel=#SC_HORA,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=3E09152B-54A6-4698-A0E1-56597A160D8A
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=17
+  Width=84
+  Top=33
+  Height=20
+  Browseindex=0
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"FO_DIO_NUMERO"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=4887EA94-6398-4A60-87D8-947613C1F9E7
+  Name=DATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=109
+  Width=84
+  Top=33
+  Height=20
+  Browseindex=1
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=#DATA,,,
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=,,,"FO_DIO_DATA"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=314EB772-775F-42BA-93DA-8E1CC5C2941D
+  Name=HORA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=201
+  Width=56
+  Top=33
+  Height=20
+  Browseindex=2
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=#HORA,,,
+  Property=HyperLabel=,"Hora:",,
+  Property=HyperLabel=,,,"FO_DIO_HORA"
+  Property=Background=255 255 200
+
+CONTROL=PUSHBUTTON
+GUID=1FF79E29-183B-4830-AD18-F7BA252D9E99
+  Name=buscaNUM
+  Class=PUSHBUTTON
+  Caption=
+  Order=11
+  Left=273
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaNUM,,,
+  Property=TooltipText="Localizar"
+
+CONTROL=PUSHBUTTON
+GUID=E8D06521-6885-408C-BAD3-A19828BC53EB
+  Name=cmdordenar
+  Class=PUSHBUTTON
+  Caption=
+  Order=12
+  Left=309
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#cmdordenar,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=7A28608B-3080-4A36-A45F-89AAEF2B812B
+  Name=RELOGIO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=13
+  Width=56
+  Top=81
+  Height=20
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=#RELOGIO,,,
+  Property=HyperLabel=,"Relogio",,
+  Property=HyperLabel=,,,"FO_DIO_HORA"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=082246E3-3F0A-4EA3-94A0-566B2E243F64
+  Name=SC_HORA1
+  Class=FIXEDTEXT
+  Caption=Relogio
+  Order=14
+  Left=17
+  Width=44
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Relogio",,
+  Property=HyperLabel=#SC_HORA1,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jfo_dio
+

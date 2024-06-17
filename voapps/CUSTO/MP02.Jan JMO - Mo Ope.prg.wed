@@ -1,0 +1,241 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JMO
+GUID=1065ADD0-00B7-44D1-9A21-F2C9C988B015
+  Name=JMO
+  Class=DATAWINDOW
+  Caption=Mao de Obra Operador
+  Order=0
+  Left=20
+  Width=490
+  Top=20
+  Height=183
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Mao de Obra Operador",,
+  Property=ViewAs=#FormView
+  Property=Menu=STANDARDSHELLMENU
+  Property=HyperLabel=#JMO,,,
+  Property=ClipperKeys=True
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=06D09250-CC32-47E5-9902-0A8D730D8F19
+  Name=porcod
+  Class=PUSHBUTTON
+  Caption=
+  Order=1
+  Left=425
+  Width=32
+  Top=57
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_AZ
+  Property=HyperLabel=#porcod,,,
+
+CONTROL=PUSHBUTTON
+GUID=43FE6F77-65CF-4090-8457-4D9002E4B6D4
+  Name=buscacod
+  Class=PUSHBUTTON
+  Caption=
+  Order=2
+  Left=393
+  Width=32
+  Top=57
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscacod,,,
+
+CONTROL=FIXEDTEXT
+GUID=2E02A56F-DC38-48D4-B9BC-C40D4ADF2533
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=-1
+  Left=13
+  Width=47
+  Top=7
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=2A083E1F-3849-4E80-8C1B-627BA3F0E58A
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=-1
+  Left=163
+  Width=40
+  Top=7
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=B4770ED8-A1A6-4427-B635-502960E600A3
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=13
+  Width=146
+  Top=25
+  Height=18
+  Browseindex=0
+  Browsesize=19
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"MP02_CODIGO"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=CCE0D624-0B72-4854-9CB3-96A20C7AAC5C
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=163
+  Width=308
+  Top=25
+  Height=18
+  Browseindex=1
+  Browsesize=32
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"MP02_NOME"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=698A2E8E-6E4B-4E15-991E-3C3E6B8B98C6
+  Name=FT3
+  Class=FIXEDTEXT
+  Caption=Area
+  Order=-1
+  Left=13
+  Width=49
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Area",,
+  Property=HyperLabel=#FT3,,,
+
+CONTROL=FIXEDTEXT
+GUID=1C858A22-11F9-4459-A6F7-4654D68A4148
+  Name=SC_VALOR
+  Class=FIXEDTEXT
+  Caption=Valor:
+  Order=-1
+  Left=163
+  Width=37
+  Top=49
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=#SC_VALOR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=643E0D3D-9D80-454F-A78B-DF9389C3130E
+  Name=AREA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=13
+  Width=138
+  Top=67
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#AREA,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"MP02_CODIGO"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=8918ED34-7670-42AC-BF16-643F4E403016
+  Name=VALORC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=163
+  Width=146
+  Top=67
+  Height=18
+  Browseindex=2
+  Browsesize=24
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=HyperLabel=#VALORC,,,
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=,,,"MP02_VALOR"
+  Property=FocusSelect=FSEL_HOME
+  Property=InheritClassName=rightSle
+
+SUBCONTROLSEND
+DESIGNEREND = JMO
+

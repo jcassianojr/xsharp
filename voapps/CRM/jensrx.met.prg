@@ -1,0 +1,60 @@
+﻿CLASS XJENSRX INHERIT JENSRX
+	EXPORT lOK AS LOGIC
+	
+
+METHOD Cancelar( ) 
+    SELF:LOK := FALSE
+	SELF:EndWindow()
+
+METHOD cmdcert( ) 
+SELF:oSFJENSR:server:FIELDPUT("CHECADO","S")	
+IF ! SELF:oSFJENSR:SERVER:EOF
+    SELF:oSFJENSR:SERVER:SKIP()	
+ENDIF	
+IF SELF:oSFJENSR:SERVER:EOF
+   SELF:OK()	
+ENDIF	
+
+	
+
+CONSTRUCTOR(oOWNER,cARQ,cCODIGO) 
+LOCAL aDAD AS ARRAY
+LOCAL oORI AS USEREDE	
+LOCAL cVAR AS STRING
+
+    SUPER(oOWNER)
+	SELF:LOK := FALSE
+
+	ADAD:={zCURINI,cARQ,zCURDIR}
+    oORI:=USEREDE{aDAD}
+    IF oORI:nERRO=0
+    	cVAR:="CODIGO='"+AllTrim(cCODIGO)+"'"
+        oORI:SETFILTER(cVAR)
+        oORI:GOTOP()
+      	AltD()
+        SELF:OSFJENSR:USE(oORI)
+        SELF:oSFJENSR:VIEWTABLE()
+    ENDIF
+	RETURN SELF
+
+
+METHOD OK( ) 	
+SELF:oSFJENSR:server:gotop()
+WHILE ! SELF:oSFJENSR:server:eof	
+   IF Empty(SELF:oSFJENSR:SERVER:FIELDGET("CHECADO"))
+	  alert("Checado Nao Preenchido")
+	  RETU
+   ENDIF		
+   SELF:oSFJENSR:SERVER:Skip()
+ENDDO
+SELF:LOK := TRUE	
+SELF:EndWindow()
+
+METHOD PostInit(oWindow,iCtlID,oServer,uExtra) 
+	//Put your PostInit additions here
+	 FabCenterWindow( SELF )
+	RETURN NIL
+
+
+
+END CLASS

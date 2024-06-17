@@ -1,0 +1,187 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JLVMP
+GUID=A0D20486-C3CD-457D-A9F3-9AFD640FC4A6
+  Name=JLVMP
+  Class=FORM:DATAWINDOW
+  Caption=Lista de Verificação Máquina 
+  Order=0
+  Left=0
+  Width=493
+  Top=0
+  Height=320
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Lista de Verificação Máquina 
+  Property=HyperLabel=JLVMP
+  Property=InheritClassName=MYDataWindow
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=0B21DC67-2DC4-429E-BC08-F4C1547F4EBF
+  Name=DESCRI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Descrição:
+  Order=5
+  Left=65
+  Width=400
+  Top=49
+  Height=20
+  Browseindex=1
+  Browsesize=24
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Descrição:
+  Property=HyperLabel=DESCRI
+  Property=HyperLabel=,,,Lvmp_DESCRI
+  Property=FieldSpec=PADRAO_CHAR_200
+CONTROL=SINGLELINEEDIT
+GUID=91110589-57B1-4962-A32F-388220A3D243
+  Name=ITEM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Item:
+  Order=4
+  Left=9
+  Width=32
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Item:
+  Property=HyperLabel=ITEM
+  Property=HyperLabel=,,,Lvmp_ITEM
+  Property=FieldSpec=PADRAO_NUM_03
+CONTROL=COMBOBOXEX
+GUID=4563EB28-4AC5-47B9-AA44-7AE844F14E06
+  Name=GRUPO
+  Class=CONTROL:TEXTCONTROL:BASELISTBOX:COMBOBOX:COMBOBOXEX
+  Caption=Grupo
+  Order=6
+  Left=57
+  Width=160
+  Top=85
+  Height=22
+  Browseindex=1
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807362
+  Exstyles=0
+  Property=HyperLabel=,Grupo
+  Property=HyperLabel=GRUPO
+  Property=FieldSpec=PADRAO_CHAR_03
+CONTROL=FIXEDTEXT
+GUID=7396F545-AD35-4038-BA9D-CFD9BC647F08
+  Name=SC_ITEM
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Item:
+  Order=1
+  Left=9
+  Width=28
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Item:
+  Property=HyperLabel=SC_ITEM
+CONTROL=FIXEDTEXT
+GUID=4485D2A4-598C-437B-8DD8-DC0723D04E03
+  Name=SC_DESCRI
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Descrição:
+  Order=2
+  Left=9
+  Width=56
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Descrição:
+  Property=HyperLabel=SC_DESCRI
+CONTROL=FIXEDTEXT
+GUID=1AE3C183-2704-4834-AA09-F7F551375E31
+  Name=SC_GRUPO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Grupo:
+  Order=3
+  Left=13
+  Width=36
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Grupo:
+  Property=HyperLabel=SC_GRUPO
+CONTROL=PUSHBUTTON
+GUID=811C6A58-FEC3-4E1E-B47F-24FD8FE9F3E8
+  Name=ordem
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=7
+  Left=93
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=ordem
+  Property=TooltipText=Ordenar Por Numero
+  Property=Image=ico_az
+CONTROL=PUSHBUTTON
+GUID=1AF151AC-6F1E-4E0E-9F89-32B18ED98F09
+  Name=busca
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=8
+  Left=61
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=busca
+  Property=Image=ICO_FIND
+SUBCONTROLSEND
+DESIGNEREND = JLVMP
+
+

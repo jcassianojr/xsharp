@@ -1,0 +1,217 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JLVFP
+GUID=76484A5C-7F69-43BB-86E2-F7DAC62CCA98
+  Name=JLVFP
+  Class=DATAWINDOW
+  Caption=Lista de Verificação
+  Order=0
+  Left=30
+  Width=681
+  Top=30
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Lista de Verificação",,
+  Property=HyperLabel=#JLVFP,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ClipperKeys=True
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=RADIOBUTTON
+GUID=F6287142-785C-4412-8AFE-B772B96439DF
+  Name=RadioButton7
+  Class=RADIOBUTTON
+  Caption=Dispositivo
+  Order=1
+  Left=125
+  Width=79
+  Top=81
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Dispositivo",,
+  Property=Value=D
+  Property=HyperLabel=#RadioButton7,,,
+
+CONTROL=RADIOBUTTON
+GUID=7D9B1568-1D6F-46F3-A153-8A9EBD47F2C0
+  Name=RadioButton6
+  Class=RADIOBUTTON
+  Caption=Ferramenta
+  Order=2
+  Left=25
+  Width=80
+  Top=81
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Ferramenta",,
+  Property=Value=F
+  Property=HyperLabel=#RadioButton6,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=58A536F2-A9DF-4EDB-8C12-A4A325AD87C2
+  Name=GRUPO
+  Class=RADIOBUTTONGROUP
+  Caption=Tipo
+  Order=3
+  Left=13
+  Width=204
+  Top=61
+  Height=51
+  Browseindex=1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Tipo",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#GRUPO,,,
+
+CONTROL=PUSHBUTTON
+GUID=BC3DD4E1-6739-42CB-8ACD-1FC18D8DD235
+  Name=ordem
+  Class=PUSHBUTTON
+  Caption=
+  Order=4
+  Left=125
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#ordem,,,
+  Property=TooltipText="Ordenar Por Numero"
+
+CONTROL=PUSHBUTTON
+GUID=5A946A7A-E8FA-49D0-B0A2-EA6C5613F4C1
+  Name=busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=93
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#busca,,,
+
+CONTROL=FIXEDTEXT
+GUID=2142EF85-6D34-4ED5-B0A8-F09A6468C599
+  Name=SC_DESCRI
+  Class=FIXEDTEXT
+  Caption=Descrição:
+  Order=-1
+  Left=169
+  Width=70
+  Top=9
+  Height=30
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descrição:",,
+  Property=HyperLabel=#SC_DESCRI,,,
+
+CONTROL=FIXEDTEXT
+GUID=963B2266-3F88-4BDC-B4FF-89A3D6064AF4
+  Name=SC_ITEM
+  Class=FIXEDTEXT
+  Caption=Item:
+  Order=-1
+  Left=11
+  Width=40
+  Top=11
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=#SC_ITEM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=51E2E771-EC51-4725-8F2E-3FBE60EEE1F4
+  Name=ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=9
+  Width=40
+  Top=29
+  Height=20
+  Browseindex=0
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#ITEM,,,
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=,,,"LVFP_ITEM"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=10BF5F88-2D15-4D59-A0F4-C37E4566328A
+  Name=DESCRI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=169
+  Width=500
+  Top=33
+  Height=20
+  Browseindex=2
+  Browsesize=50
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_60
+  Property=HyperLabel=#DESCRI,,,
+  Property=HyperLabel=,"Descricao",,
+  Property=HyperLabel=,,,"LVFP_DESCRI"
+
+SUBCONTROLSEND
+DESIGNEREND = JLVFP
+

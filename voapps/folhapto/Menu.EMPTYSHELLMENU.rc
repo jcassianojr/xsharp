@@ -1,0 +1,159 @@
+ EMPTYSHELLMENU MENU
+Begin
+	POPUP "&Arquivo/Cadastro"
+	BEGIN
+		MENUITEM "Empresa", 21780
+		MENUITEM "Contas", 21781
+		MENUITEM "Depto", 21782
+		POPUP "Funcoes"
+		BEGIN
+			MENUITEM "Funcoes", 21784
+			MENUITEM "Cbo Novo", 21785
+			MENUITEM "Cbo Antigo", 21786
+		END
+		POPUP "Horarios/Escalas"
+		BEGIN
+			MENUITEM "Turnos", 21788
+			MENUITEM "Horarios Referencia", 21789
+			MENUITEM "Horarios Escala/Ajustes", 21790
+			MENUITEM "Horarios/Funcionarios", 21791
+			MENUITEM "Escala Padrao", 21792
+			MENUITEM "Escala do Mes", 21793
+		END
+		POPUP "Tabelas"
+		BEGIN
+			MENUITEM "Feriados/Eventos", 21795
+			MENUITEM "Faltas/Atrasos", 21796
+			MENUITEM "Auxiliares", 21797
+			MENUITEM "Tabela Refeição", 21798
+			MENUITEM "Assistencia Medica", 21799
+			MENUITEM "Assistencia Odontologica", 21800
+			MENUITEM "Arredondamento", 21801
+			MENUITEM "Notas Montagem Troco", 21802
+		END
+		POPUP "Funcionarios"
+		BEGIN
+			MENUITEM "Funcionarios", 21804
+			MENUITEM "Treinamento", 21805
+			MENUITEM "Historico", 21806
+			MENUITEM "Checagem CCusto/Unid/Depto", 21807
+		END
+		POPUP "Cesta Basica"
+		BEGIN
+			MENUITEM "Gerar Arquivo", 21809
+			MENUITEM "Alterar", 21810
+		END
+		POPUP "Controle de Horas"
+		BEGIN
+			MENUITEM "Gerar Compencia", 21812
+			MENUITEM "Alterar", 21813
+		END
+		POPUP "Fotos"
+		BEGIN
+			MENUITEM "Editar Fotos", 21815
+			MENUITEM "Funcionario(Ponto)-->Fotos", 21816
+			MENUITEM "Ver Fotos LX", 21817
+			MENUITEM "Ver Fotos DTM", 21818
+		END
+		MENUITEM "Controle NF/Funcionario", 21819
+		MENUITEM SEPARATOR
+		MENUITEM "Trocar Competencia/Firma", 21821
+		MENUITEM "C&onfigurar Impressora ..", 21822
+		MENUITEM "&Ordenar Arquivos", 21823
+		MENUITEM SEPARATOR
+		MENUITEM "&Sair\tAlt+F4", 21825
+	END
+	POPUP "Relogio"
+	BEGIN
+		MENUITEM "Copiar Arquivo", 21827
+		MENUITEM "Importar Arquivo TXT Relogio", 21828
+		MENUITEM "Arquivos Migrados", 21829
+		MENUITEM "Arquivos Migraçao", 21830
+		MENUITEM "XWEBREL-Consulta", 21831
+		MENUITEM "XWEBREL-Importacao", 21832
+	END
+	POPUP "Ponto"
+	BEGIN
+		MENUITEM "Movimento", 21854
+		POPUP "Totais"
+		BEGIN
+			MENUITEM "Atual", 21836
+			MENUITEM "Totalizar Competencia", 21837
+			MENUITEM "Acumulado", 21838
+		END
+		POPUP "Correções"
+		BEGIN
+			MENUITEM "Troca de Horarios Trabalho", 21840
+			MENUITEM "Horarios", 21841
+			MENUITEM "Ocorrencias", 21842
+			MENUITEM "Creditos/Debitos Horas", 21843
+		END
+		POPUP "Crachas Provisorios"
+		BEGIN
+			MENUITEM "Utilizacao", 21845
+			MENUITEM "Utilizacao Arquivadas", 21846
+		END
+		POPUP "Banco de Horas"
+		BEGIN
+			MENUITEM "Requisiçoes", 21848
+			MENUITEM "Saldos ", 21849
+			MENUITEM "Saldos Arquivados", 21850
+		END
+		POPUP "Escala de Revezamento"
+		BEGIN
+			MENUITEM "Da Competencia", 21852
+			MENUITEM "Padrao", 21853
+		END
+		POPUP "Movimento"
+		BEGIN
+			MENUITEM "Movimento", 21855
+			MENUITEM "Competencia", 21856
+			MENUITEM "Iniciar Mes", 21857
+			MENUITEM "Excluir Demitidos", 21858
+		END
+	END
+	POPUP "&Relatórios"
+	BEGIN
+		POPUP "Arquivos Exp/Imp"
+		BEGIN
+			MENUITEM "TXT Relogio", 21861
+			MENUITEM "TXT Exportado Totais Folha", 21862
+			MENUITEM "TXT Exportado Totais Refeitorio", 21863
+		END
+		MENUITEM "WRPT Folha/Ponto", 21864
+		MENUITEM "WRPT Modulo RH", 21865
+		MENUITEM "WRPT Geral", 21866
+		MENUITEM "WRPT Modulo Integrado", 21867
+		MENUITEM "Ponto Relatorios DOS", 21868
+		MENUITEM "lstview logix", 21869
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		MENUITEM "Checagem CPF/CGC..", 21871
+		MENUITEM "Criar Folha de Ponto", 21872
+	END
+	POPUP "Integracao"
+	BEGIN
+		MENUITEM "Ferias              (LX)-->Ocorrencias Ponto", 21874
+		MENUITEM "Afastamento   (LX)-->Ocorrencias Ponto", 21875
+		MENUITEM "Funcionarios   (LX)-->Funcionarios Ponto", 21876
+		MENUITEM "Ferias              (LX)-->Relatorios Aquisitivos", 21877
+		MENUITEM "Funcionarios (LX)->Horas", 21878
+		MENUITEM "Funcionario(Ponto)-->Funcionario(Treinamento)", 21879
+		MENUITEM "Funcionario(Ponto)-->Fotos", 21880
+		MENUITEM "Funcionario(Ponto)-->Mpoint", 21881
+		MENUITEM "Funcionario(Ponto)-->Historico", 21882
+		MENUITEM "RBTEMPO          -->Funcionarios Ponto", 21883
+		MENUITEM "Dirf                    (LX)->IRRF", 21884
+		MENUITEM "Funcionario(LX)->EGA", 21885
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Indice\tF1", 21887
+		MENUITEM "&Conteudo", 21888
+		MENUITEM "Atualizaçoes", 21889
+		MENUITEM SEPARATOR
+		MENUITEM "&Sobre...", 32031
+	END
+End
+ 

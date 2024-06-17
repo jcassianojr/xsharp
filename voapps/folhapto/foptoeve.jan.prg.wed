@@ -1,0 +1,576 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JPtoEve
+GUID=AB9A40ED-EE54-49E7-8D24-18E7BCD49E52
+  Name=JPtoEve
+  Class=DATAWINDOW
+  Caption=Eventos/Feriados
+  Order=0
+  Left=34
+  Width=420
+  Top=34
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Eventos/Feriados",,
+  Property=ViewAs=#FormView
+  Property=ClipperKeys=True
+  Property=HyperLabel=#JPtoEve,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=C05A04C8-2652-4C7E-9DC9-4AA694B63602
+  Name=SC_DIA
+  Class=FIXEDTEXT
+  Caption=Dia:
+  Order=1
+  Left=17
+  Width=24
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Dia:",,
+  Property=HyperLabel=#SC_DIA,,,
+
+CONTROL=FIXEDTEXT
+GUID=29F6B0AE-A6EA-4A10-99C5-D751809D076D
+  Name=SC_MES
+  Class=FIXEDTEXT
+  Caption=Mes:
+  Order=2
+  Left=77
+  Width=28
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mes:",,
+  Property=HyperLabel=#SC_MES,,,
+
+CONTROL=FIXEDTEXT
+GUID=D3F1FE75-A328-4E3B-949A-006A2471EE70
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=3
+  Left=133
+  Width=57
+  Top=6
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=BD0E1DCF-7396-40D4-B2AB-C0A6C3A2A02C
+  Name=SC_DESCRICAO
+  Class=FIXEDTEXT
+  Caption=Descricao:
+  Order=4
+  Left=17
+  Width=56
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descricao:",,
+  Property=HyperLabel=#SC_DESCRICAO,,,
+
+CONTROL=FIXEDTEXT
+GUID=C25210F8-F294-4D0D-9323-999CA3CF1AA0
+  Name=SC_BCOSN
+  Class=FIXEDTEXT
+  Caption=Banco Horas 
+  Order=5
+  Left=13
+  Width=112
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Banco Horas ",,
+  Property=HyperLabel=#SC_BCOSN,,,
+
+CONTROL=FIXEDTEXT
+GUID=FA3202F0-1684-4D83-AC7E-2586F0CC518E
+  Name=SC_REDSN
+  Class=FIXEDTEXT
+  Caption=Reduçao Jornada 
+  Order=6
+  Left=13
+  Width=120
+  Top=105
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Reduçao Jornada ",,
+  Property=HyperLabel=#SC_REDSN,,,
+
+CONTROL=FIXEDTEXT
+GUID=A72BBCD2-EBC8-4D83-94A7-57D6AC428A42
+  Name=SC_FOLSN
+  Class=FIXEDTEXT
+  Caption=Folga 
+  Order=7
+  Left=13
+  Width=79
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Folga ",,
+  Property=HyperLabel=#SC_FOLSN,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=00293A00-BBCC-49D1-85FA-FD079BC8BB57
+  Name=DIA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=17
+  Width=36
+  Top=25
+  Height=20
+  Browseindex=1
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082204288
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_02
+  Property=HyperLabel=#DIA,,,
+  Property=HyperLabel=,"Dia:",,
+  Property=HyperLabel=,,,"FOPTOEVE_DIA"
+  Property=TooltipText="Dia do Mes ou Semana"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=91A233D3-2D72-49C4-BFA4-2BA14EC05E21
+  Name=MES
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=73
+  Width=36
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082204288
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_02
+  Property=HyperLabel=#MES,,,
+  Property=HyperLabel=,"Mes:",,
+  Property=HyperLabel=,,,"FOPTOEVE_MES"
+  Property=TooltipText="Mes"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=4D466816-0638-4D29-8435-90A6A5F2888D
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=133
+  Width=36
+  Top=25
+  Height=20
+  Browseindex=2
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"FOPTOEVE_CODIGO"
+  Property=TooltipText="Codigo"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=F1F57645-B905-4125-84F5-F4EA13F9249E
+  Name=DESCRICAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=77
+  Width=292
+  Top=49
+  Height=20
+  Browseindex=3
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#DESCRICAO,,,
+  Property=HyperLabel=,"Descricao:",,
+  Property=HyperLabel=,,,"FOPTOEVE_DESCRICAO"
+  Property=TooltipText="Descriçao do Evento"
+
+CONTROL=SINGLELINEEDIT
+GUID=7713EB29-4EC1-4A53-97B4-B1C73510B7E6
+  Name=BCOSN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=141
+  Width=24
+  Top=81
+  Height=20
+  Browseindex=4
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350344
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#BCOSN,,,
+  Property=HyperLabel=,"Bcosn:",,
+  Property=HyperLabel=,,,"FOPTOEVE_BCOSN"
+  Property=TooltipText="Banco Horas Sim/Nao"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=25D89F31-4FC2-498F-AA13-C4F6C8036432
+  Name=REDSN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=141
+  Width=24
+  Top=101
+  Height=20
+  Browseindex=6
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350344
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#REDSN,,,
+  Property=HyperLabel=,"Redsn:",,
+  Property=HyperLabel=,,,"FOPTOEVE_REDSN"
+  Property=TooltipText="Reduçao de Jornada Sim/Nao"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=95D045DE-DC9B-4874-9DB1-841E8A2164DD
+  Name=FOLSN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=141
+  Width=24
+  Top=121
+  Height=20
+  Browseindex=5
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350344
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#FOLSN,,,
+  Property=HyperLabel=,"Folsn:",,
+  Property=HyperLabel=,,,"FOPTOEVE_FOLSN"
+  Property=TooltipText="Folga Sim Nao"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=CEF917B9-C802-4B59-8776-69AD3C1EA366
+  Name=FixedText7
+  Class=FIXEDTEXT
+  Caption=1 - Domingo  2 - Segunda 3 - Terça 4 - Quarta 5 - Quinta 6 - Sex
+  Order=15
+  Left=13
+  Width=384
+  Top=169
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"1 - Domingo  2 - Segunda 3 - Terça 4 - Quarta 5 - Quinta 6 - Sexta  7 - Sabado ",,
+  Property=HyperLabel=#FixedText7,,,
+
+CONTROL=FIXEDTEXT
+GUID=229EC152-4678-43FB-8557-A654E3DA8DD2
+  Name=FixedText8
+  Class=FIXEDTEXT
+  Caption=Para Dias da Semana Deixe o Mes com 0(Zero) e o Dia com valores 
+  Order=16
+  Left=14
+  Width=387
+  Top=146
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Para Dias da Semana Deixe o Mes com 0Zero e o Dia com valores abaixo",,
+  Property=HyperLabel=#FixedText8,,,
+
+CONTROL=PUSHBUTTON
+GUID=A8680C5A-6BF3-4B9B-A748-1D471EE859F9
+  Name=cmdbco
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=17
+  Left=169
+  Width=80
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdbco,,,
+
+CONTROL=PUSHBUTTON
+GUID=D0E4BC4B-CE7B-46BC-9705-466461E3574A
+  Name=cmdred
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=18
+  Left=169
+  Width=80
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdred,,,
+
+CONTROL=PUSHBUTTON
+GUID=45D7EDA6-4C34-47A4-A046-D35E861DE0BF
+  Name=cmdfol
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=19
+  Left=169
+  Width=80
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdfol,,,
+
+CONTROL=PUSHBUTTON
+GUID=7B058CEF-5572-4D22-9561-63FC1CCAC068
+  Name=cmdmenos
+  Class=PUSHBUTTON
+  Caption=-
+  Order=20
+  Left=109
+  Width=20
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"-",,
+  Property=HyperLabel=#cmdmenos,,,
+
+CONTROL=PUSHBUTTON
+GUID=15E17ED6-F863-4E26-AEF6-FF2326949D51
+  Name=cmdmais
+  Class=PUSHBUTTON
+  Caption=+
+  Order=21
+  Left=109
+  Width=20
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"+",,
+  Property=HyperLabel=#cmdmais,,,
+
+CONTROL=PUSHBUTTON
+GUID=1CF607DA-C775-4365-9FE9-B80A4F0F2800
+  Name=cmddmen
+  Class=PUSHBUTTON
+  Caption=-
+  Order=22
+  Left=53
+  Width=20
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"-",,
+  Property=HyperLabel=#cmddmen,,,
+
+CONTROL=PUSHBUTTON
+GUID=25D57E74-3367-4D4E-9957-E138A80D0044
+  Name=cmddmai
+  Class=PUSHBUTTON
+  Caption=+
+  Order=23
+  Left=53
+  Width=20
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"+",,
+  Property=HyperLabel=#cmddmai,,,
+
+CONTROL=PUSHBUTTON
+GUID=A2C2D2B1-8309-4782-9AC3-9CFBE256EFFB
+  Name=ESCCOD
+  Class=PUSHBUTTON
+  Caption=...
+  Order=24
+  Left=173
+  Width=20
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#ESCCOD,,,
+
+CONTROL=PUSHBUTTON
+GUID=728D20EE-CEC6-42B1-BB48-305C6EA58FFB
+  Name=cmdordenar
+  Class=PUSHBUTTON
+  Caption=
+  Order=25
+  Left=241
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#cmdordenar,,,
+
+CONTROL=PUSHBUTTON
+GUID=7D2AA99C-B4BC-432F-A2B9-39F27FFA987D
+  Name=buscaNUM
+  Class=PUSHBUTTON
+  Caption=
+  Order=26
+  Left=205
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaNUM,,,
+  Property=TooltipText="Localizar"
+
+SUBCONTROLSEND
+DESIGNEREND = JPtoEve
+

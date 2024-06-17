@@ -1,0 +1,33 @@
+AAREGXICO ICON c:\develop\vo\ICO\REGEX.ICO
+1 VERSIONINFO
+ FILEVERSION 		1,0,0,1
+ PRODUCTVERSION 	1,0,0,1
+ FILEFLAGSMASK 		0x3fL
+ FILEFLAGS 			0x00L
+ FILEOS             4
+ FILETYPE 			1
+ FILESUBTYPE 		0x0L
+begin
+    BLOCK "StringFileInfo"
+    begin
+        BLOCK "040904b0"
+        begin
+            VALUE "Comments", "HS_RegEx Interface DLL\0"
+            VALUE "CompanyName", "Wolfgang Riedmann - Meran\11http://www.riedmann.it\11wolfgang@riedmann.it\11(+39) 0473 201 239\0"
+            VALUE "FileDescription", "Interface for HS_RegEx\0"
+            VALUE "FileVersion", "1.0"
+            VALUE "InternalName", "RegEx28\0"
+            VALUE "LegalCopyright", "Copyright \251 1994-2009 Wolfgang Riedmann\0"
+            VALUE "OriginalFilename", "RegEx28.dll\0"
+            VALUE "ProductName", "HS_RegEx DLL\0"
+            VALUE "ProductVersion", "1.00"
+        end
+    end
+    BLOCK "VarFileInfo"
+    begin
+        VALUE "Translation", 0x409, 1200
+    end
+end
+
+
+

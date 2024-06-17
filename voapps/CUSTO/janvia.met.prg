@@ -1,0 +1,241 @@
+﻿CLASS XJANVIA INHERIT JANVIA
+
+METHOD APPEND(oOWNER) 
+alert("Operação Bloqueada")
+
+
+METHOD buscanumero( ) 
+SELF:KeyFind()	
+
+
+METHOD CMDANUAL 
+LOCAL oBUSCA AS XBUSCA
+LOCAL cVALOR
+IF ! Empty(SELF:server:FIELDGET("DATAPRE")) .AND. SELF:SERVER:FIELDGET("QTDEANO")>0
+	alert("Ja preenchiada")
+	RETU
+ENDIF
+IF Empty(SELF:SERVER:FIELDGET("QTDEANO"))
+   cVALOR:=Val(StrTran(SELF:SERVER:FIELDGET("EAC"),".",""))
+ELSE
+   cVALOR:=SELF:SERVER:FIELDGET("QTDEANO")
+ENDIF
+cVALOR:=Str(cVALOR)
+oBUSCA:=XBUSCA{SELF,"Lote Anual","Digite qtde Lote Anual",cVALOR}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF oBUSCA:lOK	
+	SELF:SERVER:FIELDPUT("QTDEANO",Val(oBUSCA:cBUSCA))
+ENDIF	
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("CU","VIA")	
+
+
+METHOD CMDlote 
+LOCAL oBUSCA AS XBUSCA
+LOCAL cVALOR
+IF ! Empty(SELF:server:FIELDGET("DATAPRE")) .AND. SELF:SERVER:FIELDGET("LOTEMIN")>0
+	alert("Ja preenchiada")
+	RETU
+ENDIF
+cVALOR:=Str(SELF:SERVER:FIELDGET("LOTEMIN"))
+oBUSCA:=XBUSCA{SELF,"Lote Minimo","Digite qtde Lote Minimo",cVALOR}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF oBUSCA:lOK	
+	SELF:SERVER:FIELDPUT("LOTEMIN",Val(oBUSCA:cBUSCA))
+ENDIF	
+
+METHOD DELETE(Oowner) 
+alert("Operação Bloqueada")
+
+
+METHOD editar 
+SELF:oSFJVIII:ViewForm()	
+
+METHOD Email 
+LOCAL aERRO AS ARRAY
+LOCAL cTIPO,cDADO AS STRING
+aERRO:={}
+cTIPO:=SELF:oSFJVIII:SERVER:FIELDGET("TIPO")
+cDADO:=SELF:oSFJVIII:SERVER:FIELDGET("DADO")
+AAdd(aERRO," Viabilidade No:"+StrTRIM(SELF:server:FIELDGET("OV"),8,0))
+DO CASE
+   CASE cTIPO="C"
+   	    AAdd(aERRO,"Cotação: "+cDADO)
+   	    EMAILINT("CUSTO001",ZUSER,aERRO,ZCURINI,zCURDIR)	
+   	    alert("Email Enviado","Email")
+   CASE cTIPO="D"
+   	    AAdd(aERRO,"Desenho: "+cDADO)
+   	    EMAILINT("CUSTO002",ZUSER,aERRO,ZCURINI,zCURDIR)	
+   	    alert("Email Enviado","Email")
+   CASE cTIPO="N"
+   	    AAdd(aERRO,"Norma: "+cDADO)
+   	    EMAILINT("CUSTO002",ZUSER,aERRO,ZCURINI,zCURDIR)	
+  	    alert("Email Enviado","Email")
+ENDCASE		
+
+
+
+METHOD EmailFIM 
+LOCAL aERRO AS ARRAY
+IF Empty(SELF:SERVER:FIELDGET("QTDEANO"))
+   alert("Quantidade anual Nao Preenchida")
+   RETU
+ENDIF	
+IF Empty(SELF:SERVER:FIELDGET("LOTEMIN"))
+   alert("Quantidade Minima Nao Preenchida")
+   RETU
+ENDIF	
+SELF:SERVER:FIELDPUT("DATAPRE",Today())
+aERRO:={}
+AAdd(aERRO," Viabilidade No:"+StrTRIM(SELF:server:FIELDGET("OV"),8,0))
+AAdd(aERRO," Preenchida: "+DToC(SELF:SERVER:FIELDGET("DATAPRE")))
+EMAILINT("CUSTO004",ZUSER,aERRO,ZCURINI,zCURDIR)	
+GRVVIAREV(SELF:server:FIELDGET("OV"),SELF:server:FIELDGET("REV"),"M","Marcada Viabilidade Preenchida")
+
+METHOD EXCLUIR 
+IF ! MDG("Apagar Registro") .AND. SELF:oSFJVIII:server:LockCurrentRecord()
+   RETU
+ENDIF
+SELF:oSFJVIII:SERVER:SUSPENDNOTIFICATION()
+SELF:oSFJVIII:server:delete()
+SELF:oSFJVIII:server:unlock()
+IF !   SELF:oSFJVIII:server:bof
+   SELF:oSFJVIII:server:skip(-1)
+ELSE
+  IF ! SELF:oSFJVIII:server:eof
+      SELF:oSFJVIII:server:skip()
+  ENDIF
+ENDIF
+SELF:oSFJVIII:SERVER:resetnotification()
+SELF:oSFJVIII:SERVER:notify(notifyfilechange)
+SELF:oSFJVIII:Browser:REFRESH()
+
+CONSTRUCTOR(oOWNER) 	
+LOCAL oSERVER,oSERVE2,oSERVE3 AS USEREDE
+LOCAL aDAD AS ARRAY
+IF ! entramenu("CUS",1)
+	RETU SELF
+ENDIF	
+aDAD:={zCURINI,"VIABILI.DBF",zCURDIR}
+oSERVER:=USEREDE{aDAD}
+IF oSERVER:nERRO#0
+    RETU SELF
+ENDIF
+oSERVER:SetFilter("EMPTY(ORCAMENTO)")
+aDAD:={zCURINI,"VIABIII.DBF",zCURDIR}
+oSERVE2:=USEREDE{aDAD}
+IF oSERVE2:nERRO#0
+	oSERVER:Close() //Fecha Master
+   RETU SELF
+ENDIF
+oSERVE2:SetOrder(2)
+
+
+aDAD:={zCURINI,"VIAREV.DBF",zCURDIR}
+oSERVE3:=USEREDE{aDAD}
+IF oSERVE3:nERRO#0
+	oSERVE2:CLOSE()
+	oSERVER:Close() //Fecha Master
+   RETU SELF
+ENDIF
+
+SUPER(oOWNER,,oSERVER)
+SELF:Browser:SetStandardStyle(gBsreadonly)
+SELF:OSFJVIII:USE(oSERVE2)
+SELF:SetSelectiveRelation(oSFJVIII,"OV")
+SELF:OSFJVIII:Browser:SetStandardStyle(gBsreadonly)
+SELF:oSFJVIII:VIEWTABLE()	
+
+
+SELF:OSFJVIAREV:USE(oSERVE3)
+SELF:SetSelectiveRelation(oSFJVIAREV,"OV")
+SELF:oSFJVIAREV:Browser:SetStandardStyle(gBsreadonly)
+SELF:oSFJVIAREV:ViewTable()	
+
+SELF:SHOW()
+
+METHOD ListBoxSelect( oControlEvent ) 
+	LOCAL oControl AS Control
+//	LOCAL uValue AS USUAL
+	LOCAL aCOM AS ARRAY
+	oControl := IIf( oControlEvent == NULL_OBJECT, NULL_OBJECT, oControlEvent:Control )
+	SUPER:ListBoxSelect( oControlEvent )
+	//Put your changes here
+        DO CASE
+	       CASE oCONTROL:NAMESYM==#COMPRADOR
+                             aCOM:=PEGMC(SELF:SERVER:COMPRADOR,"MC02.DBF")
+                             IF aCOM[1]=.T.
+                                  SELF:SERVER:COMCOMP:=aCOM[2]
+                             ENDIF
+        ENDCASE
+RETURN NIL
+
+
+METHOD NOVO 
+LOCAL nOV AS DWORD
+LOCAL nITEM AS WORD
+nOV:=SELF:SERVER:OV
+SELF:oSFJVIII:SERVER:GOBOTTOM()
+nITEM:=SELF:oSFJVIII:SERVER:ITEM
+nITEM++
+SELF:oSFJVIII:SERVER:GOBOTTOM()
+SELF:oSFJVIII:SERVER:SUSPENDNOTIFICATION()
+SELF:oSFJVIII:SERVER:APPEND()
+SELF:oSFJVIII:SERVER:FIELDPUT("OV",nOV)
+SELF:oSFJVIII:server:FIELDPUT("ITEM",nITEM)
+SELF:oSFJVIII:server:FIELDPUT("DATAI",SELF:SERVER:FIELDGET("PRAZO"))
+SELF:oSFJVIII:SERVER:commit()
+SELF:oSFJVIII:SERVER:resetnotification()
+SELF:oSFJVIII:SERVER:notify(notifyappend)
+SELF:oSFJVIII:Browser:REFRESH()
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+    FabCenterWindow( SELF )
+ RETURN SELF
+
+METHOD RENUM 
+LOCAL nITEM AS WORD
+nITEM:=1
+SELF:oSFJVIII:SERVER:SUSPENDNOTIFICATION()
+SELF:oSFJVIII:server:GOTOP()
+WHILE ! oSFJVIII:server:EOF
+  SELF:oSFJVIII:server:FIELDPUT("ITEM",nITEM)
+  SELF:oSFJVIII:server:SKIP()
+  nITEM++
+ENDDO
+SELF:oSFJVIII:server:GOTOP()
+SELF:oSFJVIII:SERVER:resetnotification()
+SELF:oSFJVIII:SERVER:notify(notifyfilechange)
+
+METHOD SITUACAO 
+IF SELF:oSFJVIII:server:SITUACAO="S"
+   SELF:oSFJVIII:server:SITUACAO:="N"
+ELSE
+   SELF:oSFJVIII:server:FIELDPUT("SITUACAO","S")
+   SELF:oSFJVIII:server:FIELDPUT("SITUSER",ZUSER)
+   SELF:oSFJVIII:server:FIELDPUT("SITDATA",Today())
+   SELF:oSFJVIII:server:FIELDPUT("SITHOTA",Time())
+ENDIF
+
+METHOD tabular 
+SELF:oSFJVIII:VIEWTABLE()	
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+   SELF:oSFJVIII:SERVER:Commit()
+
+
+
+END CLASS

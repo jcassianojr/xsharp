@@ -1,0 +1,238 @@
+CLASS XJOSC INHERIT JOSC
+
+METHOD append() 
+	alert("Operaçao Bloqueada")
+RETURN	.f.
+
+
+METHOD buscaov( ) 
+	SELF:KeyFind()
+
+METHOD chkclipro( ) 
+LOCAL oPROGWIN AS PROGWIN
+LOCAL cCODIGO AS STRING
+LOCAL nCLIENTE AS DWORD
+//LOCAL nLASTREC,nPOS AS DWORD
+//LOCAL nPERC AS WORD
+	
+alert("Operacao Pode Demorar conf Qtde OS")	
+
+oProgWin := ProgWin{}
+oProgWin:Caption:="Sincronizando dados"
+oProgWin:SHOW()
+
+oPROGWIN:ntotal:=SELF:SERVER:RecCount
+oPROGWIN:reset()
+oPROGWIN:TITULO("Checando...",.F.)
+//nLASTREC:=SELF:SERVER:RecCount
+//nPOS:=1
+
+
+SELF:SERVER:GOTOP()
+WHILE ! SELF:SERVER:EOF
+//	nPerc := INT(100* nPOS/ nLASTREC)
+//   nPOS++
+//   oProgWin:oDcProgBar:Position := nPerc
+//   oProgWin:oDCMessage:textValue:=StrZero(npos,8)+"/"+StrZero(nLASTREC,8)
+  oPROGWIN:TITULO("Checando",.t.)
+   IF Empty(SELF:SERVER:FIELDGET("CLINOME")) .OR. Empty(SELF:SERVER:FIELDGET("CODCLI"))	
+      SELF:pegcli()
+   ENDIF
+   IF Empty(SELF:SERVER:FIELDGET("NOME")) .OR. Empty(SELF:SERVER:FIELDGET("CODIGOINT")) .OR. Empty(SELF:SERVER:FIELDGET("CODCLI"))				
+      SELF:PEGPRO()
+   ENDIF
+   SELF:SERVER:SKIP()
+   oPROGWIN:SKIP(1)
+ENDDO	
+SELF:SERVER:GOTOP()
+IF ! MDG("Apagar Duplicidades")
+	oPROGWIN:EndDialog()
+   RETURN .F.
+ENDIF	
+oPROGWIN:reset()
+oPROGWIN:TITULO("Checando...",.F.)
+SELF:SERVER:setorder(2)
+SELF:SERVER:GOTOP()
+WHILE ! SELF:SERVER:EOF
+   cCODIGO:=SELF:SERVER:FIELDGET("CODIGO")
+   nCLIENTE:=SELF:SERVER:FIELDGET("CLIENTE")
+   oPROGWIN:TITULO("Checando",.t.)
+   SELF:SERVER:SKIP()
+   oPROGWIN:SKIP(1)
+   IF ! SELF:SERVER:EOF
+   	  IF cCODIGO=SELF:SERVER:FIELDGET("CODIGO") .AND. nCLIENTE=SELF:SERVER:FIELDGET("CLIENTE")
+   	  	 SELF:SERVER:Delete()
+   	  ENDIF
+   ENDIF	
+ENDDO	
+SELF:SERVER:setorder(1)
+SELF:SERVER:GOTOP()
+OPROGWIN:EndDialog()
+alert("Checagem Concluida")
+	
+
+METHOD CHKPF( ) 
+LOCAL oPROGWIN AS PROGWIN
+LOCAL cSQL AS STRING
+LOCAL oConn AS SQLConnection
+LOCAL oREG AS SQLSelect
+
+	
+alert("Operacao Pode Demorar conf Qtde OS")	
+
+oProgWin := ProgWin{}
+oProgWin:Caption:="Sincronizando dados"
+oProgWin:SHOW()
+
+oPROGWIN:ntotal:=SELF:SERVER:RecCount
+oPROGWIN:reset()
+oPROGWIN:TITULO("Checando...",.F.)
+
+oConn := SQLConnection{}
+IF ! oConn:connect("pf","","")
+  SELF:POINTER:=POINTER{}			
+  alert("Erro Conecção")	
+  RETURN .F.
+ENDIF
+
+
+SELF:SERVER:GOTOP()
+WHILE ! SELF:SERVER:EOF
+  oPROGWIN:TITULO("Checando",.t.)
+  IF SELF:server:FIELDGET("PF")=0 //tenta codigo
+     cSQL:="SELECT PF FROM PF WHERE CODIGO='"+AllTrim(SELF:SERVER:FIELDGET("CODIGO"))+"' AND NOT BLOQUEADO"
+     oreg:= SQLSelect{cSQL,oconn}
+     IF oREG:RecCount>0
+        SELF:server:FIELDPUT("PF",oREG:FIELDGET("PF"))
+     ENDIF
+     oREG:cLOSE()
+  ENDIF
+  IF SELF:server:FIELDGET("PF")=0 //tenta codigoINT
+     cSQL:="SELECT PF FROM PF WHERE CODIGOINT='"+AllTrim(SELF:SERVER:FIELDGET("CODIGOINT"))+"' NOT BLOQUEADO"
+     oreg:= SQLSelect{cSQL,oconn}
+     IF oREG:RecCount>0
+        SELF:server:FIELDPUT("PF",oREG:FIELDGET("PF"))
+     ENDIF
+     oREG:cLOSE()
+  ENDIF
+
+  SELF:SERVER:SKIP()
+  oPROGWIN:SKIP(1)
+ENDDO	
+SELF:SERVER:GOTOP()
+oConn:Disconnect()	
+oPROGWIN:EndDialog()
+
+
+alert("Checagem Concluida")
+
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("RIF","")	
+
+
+METHOD DELETE() 
+	alert("Operaçao Bloqueada")
+RETURN	.f.
+
+METHOD foto( ) 
+LOCAL oFOTOVIEW AS fotoview	
+LOCAL cCODIGO AS STRING
+cCODIGO:=TIRAOUT(StrTran(AllTrim(SELF:SERVER:FIELDGET("CODIGO"))," ",""))
+IF Empty(cCODIGO)	
+   alert("Codigo Produto Nao Preenchido")	
+   RETURN .F.
+ENDIF	
+OFOTOVIEW:=fotoview{SELF,ZDIRFOTO+cCODIGO+".JPG",cCODIGO}
+OFOTOVIEW:SHOW()
+
+	
+
+CONSTRUCTOR(oOWNER) 
+LOCAL oSERVER AS USEREDE
+LOCAL aDAD AS ARRAY
+IF ! entramenu("FIN",3)
+	RETU SELF
+ENDIF	
+aDAD:={zCURINI,"OSCRT.DBF",zCURDIR}
+oSERVER:=USEREDE{aDAD}
+IF oSERVER:nERRO#0
+    RETU SELF
+ENDIF
+SUPER(oOWNER,,oSERVER)
+SELF:Browser:SetStandardStyle(gBsreadonly)
+SELF:SHOW()			
+
+METHOD pegcli( ) 
+LOCAL aDAD AS ARRAY	
+           aDAD:=PEGMA01(SELF:SERVER:FIELDGET("CLIENTE"),ZCURINI,ZCURDIR)
+           IF aDAD[1]=.T.
+         	  IF ! Empty(ADAD[2])
+                 SELF:SERVER:FIELDPUT("CLINOME",aDAD[2])
+              ENDIF
+              IF Empty(SELF:SERVER:FIELDGET("CODCLI"))
+              	 IF ! Empty(ADAD[6])
+                    SELF:SERVER:FIELDPUT("CODCLI",aDAD[6])
+                 ENDIF
+              ENDIF
+
+           ENDIF
+	
+
+METHOD PEGPRO( ) 
+LOCAL aDAD AS ARRAY
+LOCAL cCODIGO AS STRING
+SELF:SERVER:FIELDPUT("CODIGO",AllTrim(SELF:SERVER:FIELDGET("CODIGO")))
+SELF:SERVER:FIELDPUT("PEDIDOCLI",AllTrim(SELF:SERVER:FIELDGET("PEDIDOCLI")))
+cCODIGO:=AllTrim(SELF:SERVER:FIELDGET("CODIGO"))
+aDAD:=PEGMSEXT(cCODIGO,.T.)
+IF aDAD[1]
+   IF ! Empty(ADAD[2]) .AND. Empty(SELF:SERVER:FIELDGET("NOME"))
+      SELF:SERVER:FIELDPUT("NOME",aDAD[2])
+   ENDIF
+   IF ! Empty(ADAD[7]) .AND. Empty(SELF:SERVER:FIELDGET("CODIGOINT"))
+       SELF:SERVER:FIELDPUT("CODIGOINT",aDAD[7])
+   ENDIF
+   IF ! Empty(ADAD[10]) .AND. Empty(SELF:SERVER:FIELDGET("CODCLI"))
+      SELF:SERVER:FIELDPUT("CODCLI",aDAD[10])
+   ENDIF
+   IF ! Empty(aDAD[11]) .AND. Empty(SELF:SERVER:FIELDGET("DELIVERY"))
+       SELF:SERVER:FIELDPUT("DELIVERY",aDAD[11])	
+   ENDIF
+   IF ! Empty(aDAD[12]) .AND. Empty(SELF:SERVER:FIELDGET("STOCK"))
+      SELF:SERVER:FIELDPUT("STOCK",aDAD[12])	
+   ENDIF
+ENDIF
+
+	
+
+METHOD porov( ) 
+	SELF:KeyFind()
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+ RETURN SELF
+
+METHOD PushButton3( ) 
+	LOCAL oJAN AS XJPFDIA
+
+oJAN:=XJPFDIA{SELF,SELF:SERVER:FIELDGET("CODIGO")}
+oJAN:SHOW()	
+IF oJAN:lOK
+   SELF:SERVER:FIELDPUT("PF",ojan:nPF)
+ENDIF	
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+
+
+END CLASS

@@ -1,0 +1,653 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jctrhor
+GUID=4B6BD689-D2B8-4170-95C2-684C481FCD1E
+  Name=jctrhor
+  Class=DATAWINDOW
+  Caption=Controle Horas
+  Order=0
+  Left=22
+  Width=494
+  Top=22
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Controle Horas",,
+  Property=Menu=STANDARDSHELLMENU
+  Property=HyperLabel=#jctrhor,,,
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=83630A01-1BCC-43E3-8235-AE6DFDFD80C5
+  Name=SC_DEPTO
+  Class=FIXEDTEXT
+  Caption=Depto:
+  Order=1
+  Left=17
+  Width=36
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Depto:",,
+  Property=HyperLabel=#SC_DEPTO,,,
+
+CONTROL=FIXEDTEXT
+GUID=EC7AC04D-DAA7-4948-BF38-A10BA2580B7D
+  Name=SC_SETOR
+  Class=FIXEDTEXT
+  Caption=Setor:
+  Order=2
+  Left=61
+  Width=36
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Setor:",,
+  Property=HyperLabel=#SC_SETOR,,,
+
+CONTROL=FIXEDTEXT
+GUID=21C5D322-961F-45B3-9E52-860AA319F18C
+  Name=SC_SECAO
+  Class=FIXEDTEXT
+  Caption=Secao:
+  Order=3
+  Left=109
+  Width=36
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Secao:",,
+  Property=HyperLabel=#SC_SECAO,,,
+
+CONTROL=FIXEDTEXT
+GUID=14EBF313-5763-4438-B002-52EB5098AC76
+  Name=SC_NOMEC
+  Class=FIXEDTEXT
+  Caption=Nome
+  Order=4
+  Left=157
+  Width=40
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome",,
+  Property=HyperLabel=#SC_NOMEC,,,
+
+CONTROL=FIXEDTEXT
+GUID=29E22777-62B5-4B88-82B6-0FB3A0E83ABA
+  Name=SC_ANO
+  Class=FIXEDTEXT
+  Caption=Ano:
+  Order=5
+  Left=285
+  Width=28
+  Top=9
+  Height=12
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ano:",,
+  Property=HyperLabel=#SC_ANO,,,
+
+CONTROL=FIXEDTEXT
+GUID=6F998E61-2AD3-4C02-B312-9057891C3119
+  Name=SC_MES
+  Class=FIXEDTEXT
+  Caption=Mes:
+  Order=6
+  Left=329
+  Width=28
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mes:",,
+  Property=HyperLabel=#SC_MES,,,
+
+CONTROL=FIXEDTEXT
+GUID=BC3B7354-365D-41A1-B9CB-A510E34EAB44
+  Name=SC_QTFUN
+  Class=FIXEDTEXT
+  Caption=Qtde Funcionarios
+  Order=7
+  Left=21
+  Width=100
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtde Funcionarios",,
+  Property=HyperLabel=#SC_QTFUN,,,
+
+CONTROL=FIXEDTEXT
+GUID=8BC2227A-0BE6-414F-9727-2CA2A6214B7B
+  Name=SC_HRTRA
+  Class=FIXEDTEXT
+  Caption=Horas Trabalhadas
+  Order=8
+  Left=21
+  Width=100
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Horas Trabalhadas",,
+  Property=HyperLabel=#SC_HRTRA,,,
+
+CONTROL=FIXEDTEXT
+GUID=2F4A8984-F033-4A1F-BD88-1D80C0BA3DF8
+  Name=SC_HRDSR
+  Class=FIXEDTEXT
+  Caption=Horas DSR
+  Order=9
+  Left=17
+  Width=104
+  Top=113
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Horas DSR",,
+  Property=HyperLabel=#SC_HRDSR,,,
+
+CONTROL=FIXEDTEXT
+GUID=E0F8203F-DD01-4366-ADFB-5E230C26D652
+  Name=SC_HRNJU
+  Class=FIXEDTEXT
+  Caption=Horas Nao Justificadas
+  Order=10
+  Left=17
+  Width=124
+  Top=137
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Horas Nao Justificadas",,
+  Property=HyperLabel=#SC_HRNJU,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=9521FF23-309B-4AD0-AFD4-4124492599A1
+  Name=DEPTO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=17
+  Width=40
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_04
+  Property=HyperLabel=#DEPTO,,,
+  Property=HyperLabel=,"Depto:",,
+  Property=HyperLabel=,,,"CTRHOR_DEPTO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=FDCAD418-C1E6-482B-9B1D-DFDE0F04D98B
+  Name=SETOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=61
+  Width=40
+  Top=25
+  Height=20
+  Browseindex=1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_03
+  Property=HyperLabel=#SETOR,,,
+  Property=HyperLabel=,"Setor:",,
+  Property=HyperLabel=,,,"CTRHOR_SETOR"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=F5EE8EF6-183C-4324-8CE4-2DFA8617C8AE
+  Name=SECAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=105
+  Width=40
+  Top=25
+  Height=20
+  Browseindex=2
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_03
+  Property=HyperLabel=#SECAO,,,
+  Property=HyperLabel=,"Secao:",,
+  Property=HyperLabel=,,,"CTRHOR_SECAO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=144C21F5-27D7-40CB-AE42-BD8E67A6381A
+  Name=NOMEC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=153
+  Width=128
+  Top=25
+  Height=20
+  Browseindex=3
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_char_15
+  Property=HyperLabel=#NOMEC,,,
+  Property=HyperLabel=,"Nomec:",,
+  Property=HyperLabel=,,,"CTRHOR_NOMEC"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=23FCFE42-D180-4B0F-BFA6-7E38B8A29EBE
+  Name=ANO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=285
+  Width=40
+  Top=25
+  Height=20
+  Browseindex=4
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_04
+  Property=HyperLabel=#ANO,,,
+  Property=HyperLabel=,"Ano:",,
+  Property=HyperLabel=,,,"CTRHOR_ANO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=F141845F-F56B-4923-8E72-87C5EEABB161
+  Name=MES
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=329
+  Width=32
+  Top=25
+  Height=20
+  Browseindex=5
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_02
+  Property=HyperLabel=#MES,,,
+  Property=HyperLabel=,"Mes:",,
+  Property=HyperLabel=,,,"CTRHOR_MES"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=DF780E92-9666-4CE1-87DB-02C3149D2D36
+  Name=QTFUN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=149
+  Width=40
+  Top=65
+  Height=20
+  Browseindex=6
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_04
+  Property=HyperLabel=#QTFUN,,,
+  Property=HyperLabel=,"Qtfun:",,
+  Property=HyperLabel=,,,"CTRHOR_QTFUN"
+
+CONTROL=SINGLELINEEDIT
+GUID=BF070A7E-A347-41B2-884D-C4CB67394F8C
+  Name=HRTRA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=149
+  Width=60
+  Top=89
+  Height=20
+  Browseindex=7
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_07_2
+  Property=HyperLabel=#HRTRA,,,
+  Property=HyperLabel=,"Hrtra:",,
+  Property=HyperLabel=,,,"CTRHOR_HRTRA"
+
+CONTROL=SINGLELINEEDIT
+GUID=45579F05-3F1F-4CE4-A55C-669A1C69F6B5
+  Name=HRDSR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=149
+  Width=60
+  Top=113
+  Height=20
+  Browseindex=8
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_07_2
+  Property=HyperLabel=#HRDSR,,,
+  Property=HyperLabel=,"Hrdsr:",,
+  Property=HyperLabel=,,,"CTRHOR_HRDSR"
+
+CONTROL=SINGLELINEEDIT
+GUID=FBD3B1D4-6FA2-4D2E-8AB7-A3E583127A40
+  Name=HRNJU
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=149
+  Width=60
+  Top=137
+  Height=20
+  Browseindex=9
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_07_2
+  Property=HyperLabel=#HRNJU,,,
+  Property=HyperLabel=,"Hrnju:",,
+  Property=HyperLabel=,,,"CTRHOR_HRNJU"
+
+CONTROL=SINGLELINEEDIT
+GUID=A37FD034-6DF1-4349-9FA6-596A1BD585C2
+  Name=HRJUS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=149
+  Width=60
+  Top=161
+  Height=20
+  Browseindex=10
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_07_2
+  Property=HyperLabel=#HRJUS,,,
+  Property=HyperLabel=,"Hrjus:",,
+  Property=HyperLabel=,,,"CTRHOR_HRJUS"
+
+CONTROL=FIXEDTEXT
+GUID=54C60533-49D7-4BAF-943D-2764D4B76C14
+  Name=SC_HRNJU1
+  Class=FIXEDTEXT
+  Caption=Horas Justificadas
+  Order=23
+  Left=17
+  Width=124
+  Top=161
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Horas Justificadas",,
+  Property=HyperLabel=#SC_HRNJU1,,,
+
+CONTROL=PUSHBUTTON
+GUID=6368A1CE-CDFE-43FE-91AB-C649A280074E
+  Name=cmdordenar
+  Class=PUSHBUTTON
+  Caption=
+  Order=24
+  Left=321
+  Width=32
+  Top=101
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#cmdordenar,,,
+
+CONTROL=PUSHBUTTON
+GUID=EF9DE7EA-A751-4059-808C-9EC327DC2293
+  Name=buscaNUM
+  Class=PUSHBUTTON
+  Caption=
+  Order=25
+  Left=281
+  Width=32
+  Top=101
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaNUM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=16680C06-947E-4966-A1DB-89769ABCDB70
+  Name=MODIRETA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=26
+  Left=361
+  Width=24
+  Top=65
+  Height=24
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#MODIRETA,,,
+  Property=HyperLabel=,"Chapa:",,
+  Property=HyperLabel=,,,"FO_PES_CHAPA"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=719A7DB1-2EB7-4CB8-9E9B-61071A84FBAD
+  Name=UNIFUN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=27
+  Left=257
+  Width=100
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_char_10
+  Property=HyperLabel=#UNIFUN,,,
+  Property=HyperLabel=,"Chapa:",,
+  Property=HyperLabel=,,,"FO_PES_CHAPA"
+  Property=InheritClassName=rightSle
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=6907E8C4-FEC0-4C8A-BC7F-827B05600F8B
+  Name=SC_CHAPA2
+  Class=FIXEDTEXT
+  Caption=Unid.Funcional
+  Order=28
+  Left=285
+  Width=76
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Unid.Funcional",,
+  Property=HyperLabel=#SC_CHAPA2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=5A18E12D-ADF7-4E47-9AA7-2359195B7836
+  Name=CCUSTO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=29
+  Left=213
+  Width=40
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#CCUSTO,,,
+  Property=HyperLabel=,"Chapa:",,
+  Property=HyperLabel=,,,"FO_PES_CHAPA"
+  Property=InheritClassName=rightSle
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=68795A23-B66B-4708-8ABC-4361F5C69E73
+  Name=SC_CHAPA1
+  Class=FIXEDTEXT
+  Caption=CentroCusto
+  Order=30
+  Left=217
+  Width=60
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"CentroCusto",,
+  Property=HyperLabel=#SC_CHAPA1,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jctrhor
+

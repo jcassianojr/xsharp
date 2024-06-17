@@ -1,0 +1,31 @@
+ JRLI DIALOGEX  26, 24, 279, 246
+STYLE	1073741824
+FONT	8, "MS Shell Dlg"
+BEGIN
+	CONTROL	"Rl:", 100, "Static", 1073741824, 5, 4, 11, 13
+	CONTROL	"Maquina", 101, "Static", 1073741824, 37, 4, 35, 13
+	CONTROL	"Rl:", 102, "Edit", 2048|128|1073741824|134217728|8388608, 16, 4, 15, 13, 512
+	CONTROL	"Maq", 103, "Edit", 2048|128|1073741824|134217728|8388608, 69, 4, 32, 13, 512
+	CONTROL	"Fuso", 104, "Button", 7|131072|1073741824, 12, 24, 244, 32
+	CONTROL	"Satisfatorio", 105, "Button", 9|1073741824, 26, 36, 53, 12
+	CONTROL	"Não Satisf.", 106, "Button", 9|1073741824, 98, 36, 54, 11
+	CONTROL	"Não Aplicado", 107, "Button", 9|1073741824, 160, 36, 80, 11
+	CONTROL	"Graxa", 108, "Button", 7|131072|1073741824, 12, 63, 244, 31
+	CONTROL	"Satisfatorio", 109, "Button", 9|1073741824, 26, 76, 53, 12
+	CONTROL	"Não Satisf", 110, "Button", 9|1073741824, 98, 76, 54, 11
+	CONTROL	"Não Aplicado", 111, "Button", 9|1073741824, 160, 76, 80, 11
+	CONTROL	"Pneumatica", 112, "Button", 7|131072|1073741824, 12, 101, 244, 31
+	CONTROL	"Satisfatorio", 113, "Button", 9|1073741824, 26, 115, 53, 12
+	CONTROL	"Não Satisf.", 114, "Button", 9|1073741824, 98, 115, 54, 11
+	CONTROL	"Não Aplicado", 115, "Button", 9|1073741824, 160, 115, 80, 11
+	CONTROL	"Hidraulica", 116, "Button", 7|131072|1073741824, 12, 139, 244, 32
+	CONTROL	"Satisfatorio", 117, "Button", 9|1073741824, 26, 153, 53, 11
+	CONTROL	"Não Satisf.", 118, "Button", 9|1073741824, 98, 152, 54, 11
+	CONTROL	"Não Aplicado", 119, "Button", 9|1073741824, 160, 152, 80, 11
+	CONTROL	"Caixa de Engrenagem", 120, "Button", 7|131072|1073741824, 11, 177, 247, 32
+	CONTROL	"Satisfatorio", 121, "Button", 9|1073741824, 24, 192, 55, 11
+	CONTROL	"Não Satisf.", 122, "Button", 9|1073741824, 98, 192, 54, 11
+	CONTROL	"Não Aplicado", 123, "Button", 9|1073741824, 162, 192, 59, 11
+END
+
+

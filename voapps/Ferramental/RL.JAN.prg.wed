@@ -1,0 +1,275 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JRL
+GUID=87EF67DE-2CCB-473F-8BE4-F60E0AA6D314
+  Name=JRL
+  Class=DATAWINDOW
+  Caption=Registro de Lubrificação
+  Order=0
+  Left=40
+  Width=672
+  Top=40
+  Height=461
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Registro de Lubrificação",,
+  Property=HyperLabel=#JRL,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ClipperKeys=True
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=2DBA36F8-196E-4994-B7AD-88D2A4C21342
+  Name=SC_RL
+  Class=FIXEDTEXT
+  Caption=Rl:
+  Order=1
+  Left=9
+  Width=16
+  Top=9
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rl:",,
+  Property=HyperLabel=#SC_RL,,,
+
+CONTROL=FIXEDTEXT
+GUID=7FB637CA-9289-4B54-82BC-6B35C34EE5D7
+  Name=SC_DATA
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=2
+  Left=201
+  Width=32
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=#SC_DATA,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=6D776DA1-4605-43E0-89C7-EA275ADB082B
+  Name=RL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=25
+  Width=72
+  Top=9
+  Height=24
+  Browseindex=0
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RL,,,
+  Property=HyperLabel=,"Rl:",,
+  Property=HyperLabel=,,,"Rl_RL"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=1BA0638B-1231-43F8-AA6E-C45F05ACAB17
+  Name=DATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=237
+  Width=104
+  Top=9
+  Height=20
+  Browseindex=1
+  Browsesize=33
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATA,,,
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=,,,"Rl_DATA"
+  Property=InheritClassName=DateSle
+
+CONTROL=SUBDATAWINDOW
+GUID=0D796BA6-2104-4873-BB91-2CB5D8A9E962
+  Name=JRLI
+  Class=SUBDATAWINDOW
+  Caption=JRLI
+  Order=5
+  Left=9
+  Width=496
+  Top=45
+  Height=388
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JRLI,,,
+
+CONTROL=PUSHBUTTON
+GUID=2AA525DF-8782-483D-B67E-3A9B37BBE74C
+  Name=Proximo
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=589
+  Width=60
+  Top=113
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Proximo,,,
+  Property=Image=ico_next
+
+CONTROL=PUSHBUTTON
+GUID=22230C8F-BF98-418A-8261-6BFFFA321E99
+  Name=Anterior
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=529
+  Width=60
+  Top=113
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Anterior,,,
+  Property=Image=ico_previous
+
+CONTROL=PUSHBUTTON
+GUID=CCEA0C4B-9639-4A3D-84D8-AA358208A206
+  Name=Tabular
+  Class=PUSHBUTTON
+  Caption=Tabular
+  Order=8
+  Left=545
+  Width=80
+  Top=85
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tabular",,
+  Property=HyperLabel=#Tabular,,,
+
+CONTROL=PUSHBUTTON
+GUID=10371F72-AF59-4DC8-8FCC-A90914D74699
+  Name=Alterar
+  Class=PUSHBUTTON
+  Caption=Alterar
+  Order=9
+  Left=545
+  Width=80
+  Top=61
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Alterar",,
+  Property=HyperLabel=#Alterar,,,
+
+CONTROL=PUSHBUTTON
+GUID=A8C34AEF-84F4-4C5D-991E-F88BF74EB5E1
+  Name=Checar
+  Class=PUSHBUTTON
+  Caption=Checar
+  Order=10
+  Left=549
+  Width=80
+  Top=149
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Checar",,
+  Property=HyperLabel=#Checar,,,
+
+CONTROL=PUSHBUTTON
+GUID=02C2C8ED-C44A-4161-9436-3E3A12DC5D31
+  Name=busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=11
+  Left=101
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#busca,,,
+
+CONTROL=PUSHBUTTON
+GUID=5F45778A-B654-42CB-93A7-DF9B24E8C84A
+  Name=ordem
+  Class=PUSHBUTTON
+  Caption=
+  Order=12
+  Left=137
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#ordem,,,
+  Property=TooltipText="Ordenar Por Numero"
+
+SUBCONTROLSEND
+DESIGNEREND = JRL
+

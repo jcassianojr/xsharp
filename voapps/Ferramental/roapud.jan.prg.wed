@@ -1,0 +1,248 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jroapud
+GUID=3B587AC3-0EB9-4DDE-8FA2-6FDCF3AF1C96
+  Name=jroapud
+  Class=DATAWINDOW
+  Caption=Apuracao Dias Entre Ocorrencias
+  Order=0
+  Left=26
+  Width=420
+  Top=26
+  Height=143
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Apuracao Dias Entre Ocorrencias",,
+  Property=HyperLabel=#jroapud,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=B29B391F-F3DF-4DF8-BA00-FE6D9C57F692
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Periodo
+  Order=1
+  Left=21
+  Width=80
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Periodo",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=3AE81BA7-F4F7-494D-AFCF-1888559F331A
+  Name=diaini
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=21
+  Width=99
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+  Property=HyperLabel=#diaini,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=65CCDAB8-4C12-4098-8884-20A0CE93BD06
+  Name=diafim
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=125
+  Width=99
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+  Property=HyperLabel=#diafim,,,
+
+CONTROL=FIXEDTEXT
+GUID=9BCAC228-4F0F-4A62-AC5C-88A6F3BA4030
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=4
+  Left=341
+  Width=64
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=A6ACEBE7-AFF2-4EB4-B3D1-A24EB1406264
+  Name=sair
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=341
+  Width=64
+  Top=29
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#sair,,,
+  Property=Image=ICO_SAIR
+
+CONTROL=PUSHBUTTON
+GUID=E242A8D1-ED94-4F73-9F0E-93994086E205
+  Name=CmdApurar
+  Class=PUSHBUTTON
+  Caption=Apurar
+  Order=6
+  Left=233
+  Width=80
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Apurar",,
+  Property=HyperLabel=#CmdApurar,,,
+
+CONTROL=FIXEDTEXT
+GUID=57A61B20-0DE9-49C9-8444-B3DCD3D3C180
+  Name=txtdiz
+  Class=FIXEDTEXT
+  Caption=
+  Order=7
+  Left=21
+  Width=292
+  Top=113
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#txtdiz,,,
+
+CONTROL=RADIOBUTTON
+GUID=CC4F017D-5E7F-4059-B99A-20F5C68F3D6F
+  Name=DataInicial
+  Class=RADIOBUTTON
+  Caption=Data Inicial
+  Order=8
+  Left=121
+  Width=84
+  Top=77
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Data Inicial",,
+  Property=Value=I
+  Property=HyperLabel=#DataInicial,,,
+
+CONTROL=RADIOBUTTON
+GUID=276CF7C0-4BE2-4CD7-8F50-B2131ADD2FF1
+  Name=RadioButton1
+  Class=RADIOBUTTON
+  Caption=Data
+  Order=9
+  Left=45
+  Width=53
+  Top=77
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=Value=D
+  Property=HyperLabel=#RadioButton1,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=231E47AF-5780-4CA4-A8CE-5AB913FEEB23
+  Name=Datauso
+  Class=RADIOBUTTONGROUP
+  Caption=Usar
+  Order=10
+  Left=25
+  Width=304
+  Top=61
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Usar",,
+  Property=HyperLabel=#Datauso,,,
+
+CONTROL=RADIOBUTTON
+GUID=AD356FB5-B7B7-4DD5-84C7-BC66E2C6B093
+  Name=datafinal
+  Class=RADIOBUTTON
+  Caption=Data Final
+  Order=11
+  Left=226
+  Width=83
+  Top=78
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Data Final",,
+  Property=Value=F
+  Property=HyperLabel=#datafinal,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jroapud
+

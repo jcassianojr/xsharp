@@ -1,0 +1,95 @@
+CLASS XJBD01 INHERIT JBD01	
+
+METHOD APPEND() 
+LOCAL nNUMERO AS DWORD
+SELF:server:setorder(1)
+SELF:server:gobottom()
+nNUMERO:=SELF:Server:NUMERO
+nNUMERO++
+SUPER:append()
+SELF:SERVER:FIELDPUT("NUMERO",nNUMERO)
+RETURN   .T.
+
+METHOD buscanum( ) 
+	SELF:KEYFIND()
+//LOCAL oBUSCA AS XBUSCA
+//oBUSCA:=XBUSCA{SELF,"Localizar Contato","Digite Número Contato"}
+//oBUSCA:lMES:=.T.
+//oBUSCA:SHOW()
+//IF oBUSCA:lOK
+//   SELF:SERVER:SETORDER(1)
+//   SELF:SERVER:GOTOP()
+//   SELF:SERVER:SEEK(Val(oBUSCA:cBUSCA))
+//ENDIF
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("","")	
+
+
+METHOD DELETE() 
+IF ! MDG("Apagar Registro") .AND. SELF:SERVER:LockCurrentRecord()
+	RETU SELF
+ENDIF	
+SELF:server:delete()
+SELF:server:unlock()
+SELF:server:skip(-1)
+IF SELF:SERVER:BOF
+	SELF:SErVER:GOTOP()
+ENDIF	
+
+
+CONSTRUCTOR(oOWNER) 
+LOCAL oSERVER,oSERVE2 AS USEREDE
+LOCAL aDAD AS ARRAY
+IF ! entramenu("BCO",7)
+	RETU SELF
+ENDIF	
+aDAD:={zCURINI,"BD01.DBF",zCURDIR}
+oSERVER:=USEREDE{aDAD}
+IF oSERVER:nERRO#0
+    RETU SELF
+ENDIF
+aDAD:={zCURINI,"BF01.DBF",zCURDIR}
+oSERVE2:=USEREDE{aDAD}
+IF oSERVE2:nERRO#0
+   oSERVER:Close() //Fecha Master
+   RETU SELF
+ENDIF
+
+SUPER(oOWNER,,oSERVER)
+SELF:Browser:SetStandardStyle(gBsreadonly)
+
+
+oSERVE2:SETORDER(2)
+SELF:oSFJBF01:USE(oSERVE2)
+SELF:SetSelectiveRelation(oSFJBF01,"NUMERO")
+SELF:OSFJBF01:Browser:SetStandardStyle(gBsreadonly)
+SELF:oSFJBF01:VIEWTABLE()
+
+
+SELF:SHOW()
+
+
+METHOD porNUM( ) 
+	SELF:KeyFind()
+//	SELF:SERVER:SETORDER(1)
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+    FabCenterWindow( SELF )
+ RETURN SELF
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+
+END CLASS

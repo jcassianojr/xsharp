@@ -1,0 +1,292 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,escfer
+GUID=488732DC-5DA6-40F6-A626-E167C67645D0
+  Name=escfer
+  Class=DATADIALOG
+  Caption=Escolher
+  Order=0
+  Left=48
+  Width=561
+  Top=48
+  Height=326
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escolher",,
+  Property=HyperLabel=#escfer,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SUBDATAWINDOW
+GUID=48249B04-E139-4A3A-8A62-280AD506B781
+  Name=jferESC
+  Class=SUBDATAWINDOW
+  Caption=jferESC
+  Order=1
+  Left=9
+  Width=452
+  Top=37
+  Height=272
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#jferESC,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=0260E6AB-1EE9-44D8-86D1-DDAF68B8127F
+  Name=CBUSCA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=9
+  Width=228
+  Top=9
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#CBUSCA,,,
+
+CONTROL=PUSHBUTTON
+GUID=E2DF25DD-2FA8-44BC-8454-17B53178BE61
+  Name=Busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=241
+  Width=24
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#Busca,,,
+
+CONTROL=FIXEDTEXT
+GUID=1C74C38F-E3E4-498A-93C2-12C55C10D26E
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=7
+  Left=485
+  Width=64
+  Top=257
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=51F7E903-66CA-4AC0-B210-60B72134A4AE
+  Name=sair
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=485
+  Width=64
+  Top=209
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#sair,,,
+  Property=Image=ico_sair
+
+CONTROL=PUSHBUTTON
+GUID=4E7C18F8-A49F-48BF-BDE0-48FBE6D88C3A
+  Name=Escolher
+  Class=PUSHBUTTON
+  Caption=
+  Order=9
+  Left=485
+  Width=64
+  Top=85
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Escolher,,,
+  Property=Image=ico_ok
+
+CONTROL=FIXEDTEXT
+GUID=2225EB67-CEBC-48E7-9D9E-705576934B17
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=Escolher
+  Order=10
+  Left=485
+  Width=64
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Escolher",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=PUSHBUTTON
+GUID=B54D9189-D710-4A29-ABD8-2F8170F5F3F5
+  Name=PushButton4
+  Class=PUSHBUTTON
+  Caption=Busca Detalhada
+  Order=11
+  Left=269
+  Width=100
+  Top=9
+  Height=25
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Busca Detalhada",,
+  Property=HyperLabel=#PushButton4,,,
+
+SUBCONTROLSEND
+DESIGNEREND = escfer
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jferESC
+GUID=E125847E-F3C6-49A0-8D3A-E4048195113A
+  Name=jferESC
+  Class=DATAWINDOW
+  Caption=Escolha Pesquisa
+  Order=0
+  Left=36
+  Width=524
+  Top=36
+  Height=259
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escolha Pesquisa",,
+  Property=HyperLabel=#jferESC,,,
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=7266595D-0CFE-49EA-9854-878607012761
+  Name=SC_FERRAM
+  Class=FIXEDTEXT
+  Caption=Ferram:
+  Order=1
+  Left=22
+  Width=40
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ferram:",,
+  Property=HyperLabel=#SC_FERRAM,,,
+
+CONTROL=FIXEDTEXT
+GUID=633497BE-B808-42C2-8287-269372124313
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=2
+  Left=22
+  Width=36
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=697D7D31-3316-434F-A54F-B98BC0D1C36C
+  Name=FERRAM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=78
+  Width=180
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=37
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#FERRAM,,,
+  Property=HyperLabel=,"Ferramenta:",,
+  Property=HyperLabel=,,,"FERRAM_FERRAM"
+
+CONTROL=SINGLELINEEDIT
+GUID=414A250D-6C16-478F-98ED-D40DB370BA24
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=78
+  Width=292
+  Top=50
+  Height=20
+  Browseindex=1
+  Browsesize=45
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"FERRAM_NOME"
+
+SUBCONTROLSEND
+DESIGNEREND = jferESC
+

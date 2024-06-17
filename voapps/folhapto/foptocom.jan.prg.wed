@@ -1,0 +1,349 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JPTOCOM
+GUID=2FBE8969-E625-4050-93D3-DCB138EB5807
+  Name=JPTOCOM
+  Class=DATAWINDOW
+  Caption=Competencia
+  Order=0
+  Left=36
+  Width=476
+  Top=36
+  Height=103
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Competencia",,
+  Property=ViewAs=#FormView
+  Property=HyperLabel=#JPTOCOM,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=824C69E4-0889-45C3-9A2E-70F2AB2A2B39
+  Name=SC_MES
+  Class=FIXEDTEXT
+  Caption=Mes:
+  Order=1
+  Left=21
+  Width=26
+  Top=3
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mes:",,
+  Property=HyperLabel=#SC_MES,,,
+
+CONTROL=FIXEDTEXT
+GUID=F101E74B-EA51-4287-A690-8474BABAE975
+  Name=SC_ANO
+  Class=FIXEDTEXT
+  Caption=Ano:
+  Order=2
+  Left=61
+  Width=25
+  Top=3
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ano:",,
+  Property=HyperLabel=#SC_ANO,,,
+
+CONTROL=FIXEDTEXT
+GUID=885179F5-DD7B-45B1-975C-23586760435D
+  Name=SC_MESEXT
+  Class=FIXEDTEXT
+  Caption=MesExtenso:
+  Order=3
+  Left=109
+  Width=79
+  Top=3
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"MesExtenso:",,
+  Property=HyperLabel=#SC_MESEXT,,,
+
+CONTROL=FIXEDTEXT
+GUID=B4D5AD6A-4441-4ADC-9922-056FA8F13586
+  Name=SC_DATAINI
+  Class=FIXEDTEXT
+  Caption=Periodo
+  Order=4
+  Left=13
+  Width=53
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Periodo",,
+  Property=HyperLabel=#SC_DATAINI,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=ADFECA16-E21F-4163-B130-0F30723E87BD
+  Name=MES
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=19
+  Width=33
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_02
+  Property=HyperLabel=#MES,,,
+  Property=HyperLabel=,"Mes:",,
+  Property=HyperLabel=,,,"FOPTOCOM_MES"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=6B25ABE8-AC94-4602-A2E0-314B5881FC1D
+  Name=ANO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=61
+  Width=40
+  Top=25
+  Height=20
+  Browseindex=1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_04
+  Property=HyperLabel=#ANO,,,
+  Property=HyperLabel=,"Ano:",,
+  Property=HyperLabel=,,,"FOPTOCOM_ANO"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=C367A5BB-E83B-4F88-80CB-B7B4E31B4245
+  Name=MESEXT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=107
+  Width=82
+  Top=25
+  Height=20
+  Browseindex=3
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_10
+  Property=HyperLabel=#MESEXT,,,
+  Property=HyperLabel=,"Mesext:",,
+  Property=HyperLabel=,,,"FOPTOCOM_MESEXT"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=598C562B-4DE6-470B-9E76-4ADD000CAA10
+  Name=DATAINI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=68
+  Width=108
+  Top=53
+  Height=20
+  Browseindex=4
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAINI,,,
+  Property=HyperLabel=,"Inicio",,
+  Property=HyperLabel=,,,"FOPTOCOM_DATAINI"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=540E315B-FB47-4FB7-8FAF-3438DBE0590C
+  Name=DATAFIM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=194
+  Width=108
+  Top=51
+  Height=20
+  Browseindex=5
+  Browsesize=19
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAFIM,,,
+  Property=HyperLabel=,"Fim",,
+  Property=HyperLabel=,,,"FOPTOCOM_DATAFIM"
+  Property=InheritClassName=DateSle
+
+CONTROL=PUSHBUTTON
+GUID=5F303CCE-2D5E-4B23-B54D-A1AB577754E9
+  Name=cmdordenar
+  Class=PUSHBUTTON
+  Caption=
+  Order=11
+  Left=312
+  Width=32
+  Top=43
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#cmdordenar,,,
+
+CONTROL=PUSHBUTTON
+GUID=C664872E-AC84-4DB2-B862-08B4CC03F189
+  Name=buscaNUM
+  Class=PUSHBUTTON
+  Caption=
+  Order=12
+  Left=314
+  Width=32
+  Top=6
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaNUM,,,
+  Property=TooltipText="Localizar"
+
+CONTROL=SINGLELINEEDIT
+GUID=A29A4B73-6356-4D12-949D-D2CC47D8DF61
+  Name=EMPRESA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=197
+  Width=33
+  Top=25
+  Height=20
+  Browseindex=2
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_02
+  Property=HyperLabel=#EMPRESA,,,
+  Property=HyperLabel=,"emp",,
+  Property=HyperLabel=,,,"FOPTOCOM_MES"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=C162485B-00E2-4C02-8463-E7D5EA87EC4A
+  Name=SC_MES1
+  Class=FIXEDTEXT
+  Caption=Empresa
+  Order=14
+  Left=193
+  Width=55
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#SC_MES1,,,
+  Property=HyperLabel=,"Empresa",,
+
+CONTROL=SINGLELINEEDIT
+GUID=2830B509-C442-4617-83B8-FB00A7B491DD
+  Name=FECHADO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=253
+  Width=33
+  Top=24
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#FECHADO,,,
+  Property=HyperLabel=,"Mes:",,
+  Property=HyperLabel=,,,"FOPTOCOM_MES"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=A2D065DF-6801-4AD2-BDD4-AE5C61508471
+  Name=SC_MES2
+  Class=FIXEDTEXT
+  Caption=Fechado
+  Order=16
+  Left=251
+  Width=63
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fechado",,
+  Property=HyperLabel=#SC_MES2,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JPTOCOM
+

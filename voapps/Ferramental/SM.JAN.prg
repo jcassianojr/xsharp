@@ -1,0 +1,446 @@
+#region DEFINES
+STATIC DEFINE JSM_BUSCA := 137
+STATIC DEFINE JSM_CLIENTE := 103
+STATIC DEFINE JSM_CLINOME := 104
+STATIC DEFINE JSM_CMDCONCLUIDA := 115
+STATIC DEFINE JSM_CODIGO := 101
+STATIC DEFINE JSM_CONCLUIDA := 116
+STATIC DEFINE JSM_DATA := 100
+STATIC DEFINE JSM_DATAPAR := 110
+STATIC DEFINE JSM_DATAPP := 109
+STATIC DEFINE JSM_DEF01 := 107
+STATIC DEFINE JSM_DEF02 := 108
+STATIC DEFINE JSM_ESCFER := 139
+STATIC DEFINE JSM_ESCFOR := 121
+STATIC DEFINE JSM_ESCME01 := 138
+STATIC DEFINE JSM_ESCRES := 120
+STATIC DEFINE JSM_HORAPINI := 111
+STATIC DEFINE JSM_NOME := 102
+STATIC DEFINE JSM_ORDEM := 143
+STATIC DEFINE JSM_PEGMA01 := 134 
+STATIC DEFINE JSM_PEGME01 := 136 
+STATIC DEFINE JSM_PEGMP04 := 135
+STATIC DEFINE JSM_PRIOR := 130
+STATIC DEFINE JSM_RADIOBUTTON5 := 113
+STATIC DEFINE JSM_REQNOME := 106
+STATIC DEFINE JSM_REQNUM := 105
+STATIC DEFINE JSM_RO := 118
+STATIC DEFINE JSM_SC_CLIENTE := 127
+STATIC DEFINE JSM_SC_CLIENTE1 := 119
+STATIC DEFINE JSM_SC_CODIGO := 126
+STATIC DEFINE JSM_SC_DATA := 123
+STATIC DEFINE JSM_SC_DATAI := 126 
+STATIC DEFINE JSM_SC_DATAPP := 129
+STATIC DEFINE JSM_SC_DATAT := 128 
+STATIC DEFINE JSM_SC_DEF01 := 114 
+STATIC DEFINE JSM_SC_DEF02 := 116 
+STATIC DEFINE JSM_SC_DEF03 := 118 
+STATIC DEFINE JSM_SC_DEF04 := 120 
+STATIC DEFINE JSM_SC_DEF05 := 122 
+STATIC DEFINE JSM_SC_HORAFIM := 132 
+STATIC DEFINE JSM_SC_HORAINI := 130 
+STATIC DEFINE JSM_SC_NOME := 108 
+STATIC DEFINE JSM_SC_PRIOR := 126 
+STATIC DEFINE JSM_SC_RO := 117
+STATIC DEFINE JSM_SC_SM := 122
+STATIC DEFINE JSM_SM := 125
+STATIC DEFINE JSM_THEFIXEDTEXT10 := 140
+STATIC DEFINE JSM_THEFIXEDTEXT11 := 141
+STATIC DEFINE JSM_THEGROUPBOX1 := 128
+STATIC DEFINE JSM_THEGROUPBOX4 := 142
+STATIC DEFINE JSM_THERADIOBUTTON1 := 112
+STATIC DEFINE JSM_THERADIOBUTTON2 := 124
+STATIC DEFINE JSM_THERADIOBUTTON3 := 131
+STATIC DEFINE JSM_THERADIOBUTTON4 := 132
+STATIC DEFINE JSM_THERADIOBUTTON5 := 133
+STATIC DEFINE JSM_TIPO := 114
+#endregion
+
+PARTIAL CLASS JSM INHERIT MYDataWindow
+PROTECT oDBSM AS DataColumn
+PROTECT oDBRO AS DataColumn
+PROTECT oDBCODIGO AS DataColumn
+PROTECT oDBCLIENTE AS DataColumn
+PROTECT oDBCLINOME AS DataColumn
+PROTECT oDBNOME AS DataColumn
+PROTECT oDCDATA AS DATETIMEPICKER
+PROTECT oDCCODIGO AS SINGLELINEEDIT
+PROTECT oDCNOME AS SINGLELINEEDIT
+PROTECT oDCCLIENTE AS rightSle
+PROTECT oDCCLINOME AS SINGLELINEEDIT
+PROTECT oDCREQNUM AS rightSle
+PROTECT oDCREQNOME AS SINGLELINEEDIT
+PROTECT oDCDEF01 AS SINGLELINEEDIT
+PROTECT oDCDEF02 AS SINGLELINEEDIT
+PROTECT oDCDATAPP AS DATETIMEPICKER
+PROTECT oDCdatapar AS DateSle
+PROTECT oDChorapINI AS rightSle
+PROTECT oCCtheRadioButton1 AS RADIOBUTTON
+PROTECT oCCRadioButton5 AS RADIOBUTTON
+PROTECT oDCTIPO AS RADIOBUTTONGROUP
+PROTECT oCCCmdConcluida AS PUSHBUTTON
+PROTECT oDCCONCLUIDA AS CHECKBOX
+PROTECT oDCSC_RO AS FIXEDTEXT
+PROTECT oDCRO AS SINGLELINEEDIT
+PROTECT oDCSC_CLIENTE1 AS FIXEDTEXT
+PROTECT oCCESCRES AS PUSHBUTTON
+PROTECT oCCescfor AS PUSHBUTTON
+PROTECT oDCSC_SM AS FIXEDTEXT
+PROTECT oDCSC_DATA AS FIXEDTEXT
+PROTECT oCCtheRadioButton2 AS RADIOBUTTON
+PROTECT oDCSM AS SINGLELINEEDIT
+PROTECT oDCSC_CODIGO AS FIXEDTEXT
+PROTECT oDCSC_CLIENTE AS FIXEDTEXT
+PROTECT oDCtheGroupBox1 AS GROUPBOX
+PROTECT oDCSC_DATAPP AS FIXEDTEXT
+PROTECT oDCPRIOR AS RADIOBUTTONGROUP
+PROTECT oCCtheRadioButton3 AS RADIOBUTTON
+PROTECT oCCtheRadioButton4 AS RADIOBUTTON
+PROTECT oCCtheRadioButton5 AS RADIOBUTTON
+PROTECT oCCBTNPEGMA01 AS PUSHBUTTON
+PROTECT oCCBTNPEGMP04 AS PUSHBUTTON
+PROTECT oCCBTNPEGME01 AS PUSHBUTTON
+PROTECT oCCbusca AS PUSHBUTTON
+PROTECT oCCEscme01 AS PUSHBUTTON
+PROTECT oCCEscfer AS PUSHBUTTON
+PROTECT oDCtheFixedText10 AS FIXEDTEXT
+PROTECT oDCtheFixedText11 AS FIXEDTEXT
+PROTECT oDCtheGroupBox4 AS GROUPBOX
+PROTECT oCCordem AS PUSHBUTTON
+
+// User code starts here (DO NOT remove this line)  ##USER##
+
+ACCESS CLIENTE
+RETURN SELF:FieldGet( #CLIENTE )
+
+ASSIGN CLIENTE( uValue )
+SELF:FieldPut( #CLIENTE , uValue )
+
+ACCESS CLINOME
+RETURN SELF:FieldGet( #CLINOME )
+
+ASSIGN CLINOME( uValue )
+SELF:FieldPut( #CLINOME , uValue )
+
+ACCESS CODIGO
+RETURN SELF:FieldGet( #CODIGO )
+
+ASSIGN CODIGO( uValue )
+SELF:FieldPut( #CODIGO , uValue )
+
+ACCESS CONCLUIDA
+RETURN SELF:FieldGet( #CONCLUIDA )
+
+ASSIGN CONCLUIDA( uValue )
+SELF:FieldPut( #CONCLUIDA , uValue )
+
+ACCESS datapar
+RETURN SELF:FieldGet( #datapar )
+
+ASSIGN datapar( uValue )
+SELF:FieldPut( #datapar , uValue )
+
+ACCESS DEF01
+RETURN SELF:FieldGet( #DEF01 )
+
+ASSIGN DEF01( uValue )
+SELF:FieldPut( #DEF01 , uValue )
+
+ACCESS DEF02
+RETURN SELF:FieldGet( #DEF02 )
+
+ASSIGN DEF02( uValue )
+SELF:FieldPut( #DEF02 , uValue )
+
+ACCESS horapINI
+RETURN SELF:FieldGet( #horapINI )
+
+ASSIGN horapINI( uValue )
+SELF:FieldPut( #horapINI , uValue )
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)
+	LOCAL oFont AS Font
+
+	SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+	SUPER(oWindow , ResourceID{"JSM" , _GetInst()},iCtlID)
+
+	SELF:oDCDATA := DATETIMEPICKER{SELF , ResourceID{ JSM_DATA  , _GetInst() } }
+	SELF:oDCDATA:FieldSpec := DATE_FIELD{}
+	SELF:oDCDATA:HyperLabel := HyperLabel{#DATA , "13/02/2021" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCCODIGO := SINGLELINEEDIT{SELF , ResourceID{ JSM_CODIGO  , _GetInst() } }
+	SELF:oDCCODIGO:FieldSpec := PADRAO_Char_24{}
+	SELF:oDCCODIGO:FocusSelect := FSEL_TRIM
+	SELF:oDCCODIGO:HyperLabel := HyperLabel{#CODIGO , "Codigo:" , NULL_STRING , "SM_CODIGO"}
+
+	SELF:oDCNOME := SINGLELINEEDIT{SELF , ResourceID{ JSM_NOME  , _GetInst() } }
+	SELF:oDCNOME:FieldSpec := PADRAO_CHAR_40{}
+	SELF:oDCNOME:FocusSelect := FSEL_HOME
+	SELF:oDCNOME:HyperLabel := HyperLabel{#NOME , "Nome:" , NULL_STRING , "SM_NOME"}
+
+	SELF:oDCCLIENTE := rightSle{SELF , ResourceID{ JSM_CLIENTE  , _GetInst() } }
+	SELF:oDCCLIENTE:FieldSpec := PADRAO_NUM_08{}
+	SELF:oDCCLIENTE:FocusSelect := FSEL_TRIM
+	SELF:oDCCLIENTE:HyperLabel := HyperLabel{#CLIENTE , "Cliente:" , NULL_STRING , "SM_CLIENTE"}
+
+	SELF:oDCCLINOME := SINGLELINEEDIT{SELF , ResourceID{ JSM_CLINOME  , _GetInst() } }
+	SELF:oDCCLINOME:FieldSpec := padrao_char_50{}
+	SELF:oDCCLINOME:HyperLabel := HyperLabel{#CLINOME , "Clinome:" , NULL_STRING , "SM_CLINOME"}
+
+	SELF:oDCREQNUM := rightSle{SELF , ResourceID{ JSM_REQNUM  , _GetInst() } }
+	SELF:oDCREQNUM:FieldSpec := PADRAO_NUM_08{}
+	SELF:oDCREQNUM:HyperLabel := HyperLabel{#REQNUM , "Cliente:" , NULL_STRING , "SM_CLIENTE"}
+
+	SELF:oDCREQNOME := SINGLELINEEDIT{SELF , ResourceID{ JSM_REQNOME  , _GetInst() } }
+	SELF:oDCREQNOME:FieldSpec := padrao_char_40{}
+	SELF:oDCREQNOME:HyperLabel := HyperLabel{#REQNOME , "C" , NULL_STRING , "SM_CLINOME"}
+
+	SELF:oDCDEF01 := SINGLELINEEDIT{SELF , ResourceID{ JSM_DEF01  , _GetInst() } }
+	SELF:oDCDEF01:FieldSpec := padrao_char_80{}
+	SELF:oDCDEF01:HyperLabel := HyperLabel{#DEF01 , "Def01:" , NULL_STRING , "SM_DEF01"}
+
+	SELF:oDCDEF02 := SINGLELINEEDIT{SELF , ResourceID{ JSM_DEF02  , _GetInst() } }
+	SELF:oDCDEF02:FieldSpec := padrao_char_30{}
+	SELF:oDCDEF02:HyperLabel := HyperLabel{#DEF02 , "Def02:" , NULL_STRING , "SM_DEF02"}
+
+	SELF:oDCDATAPP := DATETIMEPICKER{SELF , ResourceID{ JSM_DATAPP  , _GetInst() } }
+	SELF:oDCDATAPP:FieldSpec := date_field{}
+	SELF:oDCDATAPP:HyperLabel := HyperLabel{#DATAPP , "13/02/2021" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCdatapar := DateSle{SELF , ResourceID{ JSM_DATAPAR  , _GetInst() } }
+	SELF:oDCdatapar:FieldSpec := date_field{}
+	SELF:oDCdatapar:HyperLabel := HyperLabel{#datapar , "Datai:" , NULL_STRING , "Sm_DATAI"}
+
+	SELF:oDChorapINI := rightSle{SELF , ResourceID{ JSM_HORAPINI  , _GetInst() } }
+	SELF:oDChorapINI:FieldSpec := padrao_num_05_2{}
+	SELF:oDChorapINI:HyperLabel := HyperLabel{#horapINI , "Horaini:" , NULL_STRING , "Sm_HORAINI"}
+
+	SELF:oCCtheRadioButton1 := RADIOBUTTON{SELF , ResourceID{ JSM_THERADIOBUTTON1  , _GetInst() } }
+	SELF:oCCtheRadioButton1:HyperLabel := HyperLabel{#theRadioButton1 , "Máquina" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCRadioButton5 := RADIOBUTTON{SELF , ResourceID{ JSM_RADIOBUTTON5  , _GetInst() } }
+	SELF:oCCRadioButton5:HyperLabel := HyperLabel{#RadioButton5 , "Outras" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCTIPO := RADIOBUTTONGROUP{SELF , ResourceID{ JSM_TIPO  , _GetInst() } }
+	SELF:oDCTIPO:FieldSpec := PADRAO_CHAR_01{}
+	SELF:oDCTIPO:HyperLabel := HyperLabel{#TIPO , "Tipo" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCCmdConcluida := PUSHBUTTON{SELF , ResourceID{ JSM_CMDCONCLUIDA  , _GetInst() } }
+	SELF:oCCCmdConcluida:HyperLabel := HyperLabel{#CmdConcluida , "Concluida" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCCONCLUIDA := CHECKBOX{SELF , ResourceID{ JSM_CONCLUIDA  , _GetInst() } }
+	SELF:oDCCONCLUIDA:FieldSpec := logic_field{}
+	SELF:oDCCONCLUIDA:HyperLabel := HyperLabel{#CONCLUIDA , "Concluida" , NULL_STRING , "SM_CONCLUIDA"}
+
+	SELF:oDCSC_RO := FIXEDTEXT{SELF , ResourceID{ JSM_SC_RO  , _GetInst() } }
+	SELF:oDCSC_RO:HyperLabel := HyperLabel{#SC_RO , "Ro:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCRO := SINGLELINEEDIT{SELF , ResourceID{ JSM_RO  , _GetInst() } }
+	SELF:oDCRO:FieldSpec := PADRAO_NUM_08{}
+	SELF:oDCRO:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCRO:Font( oFont )
+	SELF:oDCRO:HyperLabel := HyperLabel{#RO , "Ro:" , NULL_STRING , "Sm_RO"}
+
+	SELF:oDCSC_CLIENTE1 := FIXEDTEXT{SELF , ResourceID{ JSM_SC_CLIENTE1  , _GetInst() } }
+	SELF:oDCSC_CLIENTE1:HyperLabel := HyperLabel{#SC_CLIENTE1 , "Solicitante" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCESCRES := PUSHBUTTON{SELF , ResourceID{ JSM_ESCRES  , _GetInst() } }
+	SELF:oCCESCRES:HyperLabel := HyperLabel{#ESCRES , "..." , NULL_STRING , NULL_STRING}
+
+	SELF:oCCescfor := PUSHBUTTON{SELF , ResourceID{ JSM_ESCFOR  , _GetInst() } }
+	SELF:oCCescfor:HyperLabel := HyperLabel{#escfor , "..." , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_SM := FIXEDTEXT{SELF , ResourceID{ JSM_SC_SM  , _GetInst() } }
+	SELF:oDCSC_SM:HyperLabel := HyperLabel{#SC_SM , "Sm:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_DATA := FIXEDTEXT{SELF , ResourceID{ JSM_SC_DATA  , _GetInst() } }
+	SELF:oDCSC_DATA:HyperLabel := HyperLabel{#SC_DATA , "Data:" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCtheRadioButton2 := RADIOBUTTON{SELF , ResourceID{ JSM_THERADIOBUTTON2  , _GetInst() } }
+	SELF:oCCtheRadioButton2:HyperLabel := HyperLabel{#theRadioButton2 , "Ferramenta" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSM := SINGLELINEEDIT{SELF , ResourceID{ JSM_SM  , _GetInst() } }
+	SELF:oDCSM:FieldSpec := PADRAO_NUM_08{}
+	oFont := Font{  , 12 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCSM:Font( oFont )
+	SELF:oDCSM:HyperLabel := HyperLabel{#SM , "Sm:" , NULL_STRING , "SM_SM"}
+
+	SELF:oDCSC_CODIGO := FIXEDTEXT{SELF , ResourceID{ JSM_SC_CODIGO  , _GetInst() } }
+	SELF:oDCSC_CODIGO:HyperLabel := HyperLabel{#SC_CODIGO , "Código:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_CLIENTE := FIXEDTEXT{SELF , ResourceID{ JSM_SC_CLIENTE  , _GetInst() } }
+	SELF:oDCSC_CLIENTE:HyperLabel := HyperLabel{#SC_CLIENTE , "Cliente:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCtheGroupBox1 := GROUPBOX{SELF , ResourceID{ JSM_THEGROUPBOX1  , _GetInst() } }
+	SELF:oDCtheGroupBox1:HyperLabel := HyperLabel{#theGroupBox1 , "Defeito Apresentado/Descrição Manutenção" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_DATAPP := FIXEDTEXT{SELF , ResourceID{ JSM_SC_DATAPP  , _GetInst() } }
+	SELF:oDCSC_DATAPP:HyperLabel := HyperLabel{#SC_DATAPP , "Proxima Produção:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCPRIOR := RADIOBUTTONGROUP{SELF , ResourceID{ JSM_PRIOR  , _GetInst() } }
+	SELF:oDCPRIOR:FieldSpec := PADRAO_CHAR_01{}
+	SELF:oDCPRIOR:HyperLabel := HyperLabel{#PRIOR , "Solitação de Manutenção" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCtheRadioButton3 := RADIOBUTTON{SELF , ResourceID{ JSM_THERADIOBUTTON3  , _GetInst() } }
+	SELF:oCCtheRadioButton3:HyperLabel := HyperLabel{#theRadioButton3 , "Minima" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCtheRadioButton4 := RADIOBUTTON{SELF , ResourceID{ JSM_THERADIOBUTTON4  , _GetInst() } }
+	SELF:oCCtheRadioButton4:HyperLabel := HyperLabel{#theRadioButton4 , "Média" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCtheRadioButton5 := RADIOBUTTON{SELF , ResourceID{ JSM_THERADIOBUTTON5  , _GetInst() } }
+	SELF:oCCtheRadioButton5:HyperLabel := HyperLabel{#theRadioButton5 , "Máxima" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCBTNPEGMA01 := PUSHBUTTON{SELF , ResourceID{ JSM_BTNPEGMA01  , _GetInst() } }
+	SELF:oCCBTNPEGMA01:HyperLabel := HyperLabel{#BTNPEGMA01 , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCBTNPEGMP04 := PUSHBUTTON{SELF , ResourceID{ JSM_BTNPEGMP04  , _GetInst() } }
+	SELF:oCCBTNPEGMP04:HyperLabel := HyperLabel{#BTNPEGMP04 , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCBTNPEGME01 := PUSHBUTTON{SELF , ResourceID{ JSM_BTNPEGME01  , _GetInst() } }
+	SELF:oCCBTNPEGME01:HyperLabel := HyperLabel{#BTNPEGME01 , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCbusca := PUSHBUTTON{SELF , ResourceID{ JSM_BUSCA  , _GetInst() } }
+	SELF:oCCbusca:Image := ico_find{}
+	SELF:oCCbusca:HyperLabel := HyperLabel{#busca , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oCCEscme01 := PUSHBUTTON{SELF , ResourceID{ JSM_ESCME01  , _GetInst() } }
+	SELF:oCCEscme01:TooltipText := "Escolher Uma Maquina/Equipamento"
+	SELF:oCCEscme01:HyperLabel := HyperLabel{#Escme01 , "Maquina" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCEscfer := PUSHBUTTON{SELF , ResourceID{ JSM_ESCFER  , _GetInst() } }
+	SELF:oCCEscfer:TooltipText := "Escolher Uma Ferramenta"
+	SELF:oCCEscfer:HyperLabel := HyperLabel{#Escfer , "Ferramenta" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCtheFixedText10 := FIXEDTEXT{SELF , ResourceID{ JSM_THEFIXEDTEXT10  , _GetInst() } }
+	SELF:oDCtheFixedText10:HyperLabel := HyperLabel{#theFixedText10 , "Hora" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCtheFixedText11 := FIXEDTEXT{SELF , ResourceID{ JSM_THEFIXEDTEXT11  , _GetInst() } }
+	SELF:oDCtheFixedText11:HyperLabel := HyperLabel{#theFixedText11 , "Data" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCtheGroupBox4 := GROUPBOX{SELF , ResourceID{ JSM_THEGROUPBOX4  , _GetInst() } }
+	SELF:oDCtheGroupBox4:HyperLabel := HyperLabel{#theGroupBox4 , "Parada" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCordem := PUSHBUTTON{SELF , ResourceID{ JSM_ORDEM  , _GetInst() } }
+	SELF:oCCordem:TooltipText := "Ordenar Por Numero"
+	SELF:oCCordem:Image := ico_az{}
+	SELF:oCCordem:HyperLabel := HyperLabel{#ordem , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCTIPO:FillUsing({ ;
+	                       {SELF:oCCtheRadioButton1, "M"}, ;
+	                       {SELF:oCCRadioButton5, "O"}, ;
+	                       {SELF:oCCtheRadioButton2, "F"} ;
+	                       })
+
+	SELF:oDCPRIOR:FillUsing({ ;
+	                        {SELF:oCCtheRadioButton3, "I"}, ;
+	                        {SELF:oCCtheRadioButton4, "E"}, ;
+	                        {SELF:oCCtheRadioButton5, "A"} ;
+	                        })
+
+	SELF:Caption := "Solitação de Manutenção"
+	SELF:Menu := STANDARDSHELLMENU{}
+	SELF:ClipperKeys := TRUE
+	SELF:HyperLabel := HyperLabel{#JSM , "Solitação de Manutenção" , NULL_STRING , NULL_STRING}
+	IF !IsNil(oServer)
+		SELF:Use(oServer)
+	ENDIF
+
+	SELF:Browser := DataBrowser{SELF}
+
+	SELF:oDBSM := DataColumn{PADRAO_NUM_08{}}
+	SELF:oDBSM:Width := 11
+	SELF:oDBSM:HyperLabel := SELF:oDCSM:HyperLabel
+	SELF:oDBSM:Caption := "Sm:"
+	SELF:Browser:AddColumn(SELF:oDBSM)
+
+	SELF:oDBRO := DataColumn{PADRAO_NUM_08{}}
+	SELF:oDBRO:Width := 12
+	SELF:oDBRO:HyperLabel := SELF:oDCRO:HyperLabel
+	SELF:oDBRO:Caption := "Ro:"
+	SELF:Browser:AddColumn(SELF:oDBRO)
+
+	SELF:oDBCODIGO := DataColumn{PADRAO_Char_24{}}
+	SELF:oDBCODIGO:Width := 24
+	SELF:oDBCODIGO:HyperLabel := SELF:oDCCODIGO:HyperLabel
+	SELF:oDBCODIGO:Caption := "Codigo:"
+	SELF:Browser:AddColumn(SELF:oDBCODIGO)
+
+	SELF:oDBCLIENTE := DataColumn{PADRAO_NUM_08{}}
+	SELF:oDBCLIENTE:Width := 9
+	SELF:oDBCLIENTE:HyperLabel := SELF:oDCCLIENTE:HyperLabel
+	SELF:oDBCLIENTE:Caption := "Cliente:"
+	SELF:Browser:AddColumn(SELF:oDBCLIENTE)
+
+	SELF:oDBCLINOME := DataColumn{padrao_char_50{}}
+	SELF:oDBCLINOME:Width := 17
+	SELF:oDBCLINOME:HyperLabel := SELF:oDCCLINOME:HyperLabel
+	SELF:oDBCLINOME:Caption := "Clinome:"
+	SELF:Browser:AddColumn(SELF:oDBCLINOME)
+
+	SELF:oDBNOME := DataColumn{PADRAO_CHAR_40{}}
+	SELF:oDBNOME:Width := 20
+	SELF:oDBNOME:HyperLabel := SELF:oDCNOME:HyperLabel
+	SELF:oDBNOME:Caption := "Nome:"
+	SELF:Browser:AddColumn(SELF:oDBNOME)
+
+	SELF:ViewAs(#FormView)
+
+
+	SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN
+
+
+ACCESS NOME
+RETURN SELF:FieldGet( #NOME )
+
+ASSIGN NOME( uValue )
+SELF:FieldPut( #NOME , uValue )
+
+METHOD ordem( ) 
+	SELF:KeyFind()
+
+ACCESS PRIOR
+RETURN SELF:FieldGet( #PRIOR )
+
+ASSIGN PRIOR( uValue )
+SELF:FieldPut( #PRIOR , uValue )
+
+ACCESS REQNOME
+RETURN SELF:FieldGet( #REQNOME )
+
+ASSIGN REQNOME( uValue )
+SELF:FieldPut( #REQNOME , uValue )
+
+ACCESS REQNUM
+RETURN SELF:FieldGet( #REQNUM )
+
+ASSIGN REQNUM( uValue )
+SELF:FieldPut( #REQNUM , uValue )
+
+ACCESS RO
+RETURN SELF:FieldGet( #RO )
+
+ASSIGN RO( uValue )
+SELF:FieldPut( #RO , uValue )
+
+ACCESS SM
+RETURN SELF:FieldGet( #SM )
+
+ASSIGN SM( uValue )
+SELF:FieldPut( #SM , uValue )
+
+ACCESS TIPO
+RETURN SELF:FieldGet( #TIPO )
+
+ASSIGN TIPO( uValue )
+SELF:FieldPut( #TIPO , uValue )
+
+END CLASS
+STATIC DEFINE JSM_BTNPEGMA01 := 134
+STATIC DEFINE JSM_BTNPEGME01 := 136
+STATIC DEFINE JSM_BTNPEGMP04 := 135

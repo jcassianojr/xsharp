@@ -1,0 +1,280 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JLVMI
+GUID=5C33B2CC-837E-4B20-88D4-960F5E90699F
+  Name=JLVMI
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=22
+  Width=501
+  Top=22
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JLVMI,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=FE6CB1B9-51A7-484D-A17A-A92F17860C83
+  Name=SC_LVM
+  Class=FIXEDTEXT
+  Caption=Lvm:
+  Order=1
+  Left=13
+  Width=28
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Lvm:",,
+  Property=HyperLabel=#SC_LVM,,,
+
+CONTROL=FIXEDTEXT
+GUID=5704002D-E76C-42B4-BAF1-63B423790054
+  Name=SC_ITEM
+  Class=FIXEDTEXT
+  Caption=Item:
+  Order=2
+  Left=85
+  Width=28
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=#SC_ITEM,,,
+
+CONTROL=FIXEDTEXT
+GUID=435D1D85-54E9-468D-A03B-1D957D7586DB
+  Name=SC_DESCRI
+  Class=FIXEDTEXT
+  Caption=Descrição:
+  Order=3
+  Left=13
+  Width=132
+  Top=53
+  Height=12
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descrição:",,
+  Property=HyperLabel=#SC_DESCRI,,,
+
+CONTROL=FIXEDTEXT
+GUID=FE1AFE3E-6601-4380-9900-7F7F797DBC0A
+  Name=SC_OPER01
+  Class=FIXEDTEXT
+  Caption=Reparar:
+  Order=4
+  Left=129
+  Width=44
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Reparar:",,
+  Property=HyperLabel=#SC_OPER01,,,
+
+CONTROL=FIXEDTEXT
+GUID=3082405C-E263-4EE8-9164-7D06AE3BF76A
+  Name=SC_OPER02
+  Class=FIXEDTEXT
+  Caption=Normal:
+  Order=5
+  Left=181
+  Width=44
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Normal:",,
+  Property=HyperLabel=#SC_OPER02,,,
+
+CONTROL=FIXEDTEXT
+GUID=9531C750-1671-4475-AA69-CC789A4DAFEC
+  Name=SC_OPER03
+  Class=FIXEDTEXT
+  Caption=Aplicavel
+  Order=6
+  Left=229
+  Width=44
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Aplicavel",,
+  Property=HyperLabel=#SC_OPER03,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=9F299A11-58E1-44E4-892B-71E3AF42B780
+  Name=LVM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=13
+  Width=68
+  Top=29
+  Height=20
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#LVM,,,
+  Property=HyperLabel=,"Lvm:",,
+  Property=HyperLabel=,,,"Lvmi_LVM"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=F4D08DDA-A75F-4F56-BC90-383539C21018
+  Name=ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=85
+  Width=36
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#ITEM,,,
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=,,,"Lvmi_ITEM"
+  Property=InheritClassName=SearchSLE
+
+CONTROL=SINGLELINEEDIT
+GUID=3458D425-34D6-48C0-AB0F-F05EBD74C7A9
+  Name=DESCRI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=9
+  Width=400
+  Top=69
+  Height=20
+  Browseindex=2
+  Browsesize=34
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_150
+  Property=HyperLabel=#DESCRI,,,
+  Property=HyperLabel=,"Descrição:",,
+  Property=HyperLabel=,,,"Lvmi_DESCRI"
+
+CONTROL=SINGLELINEEDIT
+GUID=42F2B4AC-61EB-4CF7-BDBB-DC4EE03A5876
+  Name=OPER01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=133
+  Width=24
+  Top=29
+  Height=20
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#OPER01,,,
+  Property=HyperLabel=,"Normal",,
+  Property=HyperLabel=,,,"Lvmi_OPER01"
+
+CONTROL=SINGLELINEEDIT
+GUID=4F082D9F-73E9-4569-9B9C-2C006A2C8F55
+  Name=OPER02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=185
+  Width=24
+  Top=29
+  Height=20
+  Browseindex=4
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#OPER02,,,
+  Property=HyperLabel=,"Reparar",,
+  Property=HyperLabel=,,,"Lvmi_OPER02"
+
+CONTROL=SINGLELINEEDIT
+GUID=CD6AE7C0-E2C6-411C-AF8F-F1039212C10C
+  Name=OPER03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=237
+  Width=24
+  Top=29
+  Height=20
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#OPER03,,,
+  Property=HyperLabel=,"Aplicavel",,
+  Property=HyperLabel=,,,"Lvmi_OPER03"
+
+SUBCONTROLSEND
+DESIGNEREND = JLVMI
+

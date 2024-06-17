@@ -1,0 +1,534 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JRLI
+GUID=9FFA7E7F-608C-4C2C-A79E-0E396ECACF14
+  Name=JRLI
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=42
+  Width=420
+  Top=42
+  Height=401
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#JRLI,,,
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=41F94376-7D41-4455-AA64-5BFC76F0290A
+  Name=SC_RL
+  Class=FIXEDTEXT
+  Caption=Rl:
+  Order=1
+  Left=9
+  Width=16
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rl:",,
+  Property=HyperLabel=#SC_RL,,,
+
+CONTROL=FIXEDTEXT
+GUID=02E6E789-FCA1-4099-99B2-87302A989BC8
+  Name=SC_CODME01
+  Class=FIXEDTEXT
+  Caption=Maquina
+  Order=2
+  Left=57
+  Width=52
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Maquina",,
+  Property=HyperLabel=#SC_CODME01,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=87608037-C4ED-412B-A4B1-48CDA6AAF6BA
+  Name=RL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=25
+  Width=23
+  Top=9
+  Height=20
+  Browseindex=0
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RL,,,
+  Property=HyperLabel=,"Rl:",,
+  Property=HyperLabel=,,,"Rli_RL"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=5A061783-89AF-4E79-B62A-819252B038DD
+  Name=CODME01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=105
+  Width=48
+  Top=9
+  Height=20
+  Browseindex=1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_05
+  Property=HyperLabel=#CODME01,,,
+  Property=HyperLabel=,"Maq",,
+  Property=HyperLabel=,,,"Rli_CODME01"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=RADIOBUTTONGROUP
+GUID=F0FB19C2-B1F4-435F-9AD7-B5C7B4DB36D0
+  Name=LUB01
+  Class=RADIOBUTTONGROUP
+  Caption=Fuso
+  Order=10
+  Left=19
+  Width=367
+  Top=41
+  Height=51
+  Browseindex=2
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Fuso",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#LUB01,,,
+
+CONTROL=RADIOBUTTON
+GUID=A39A8E30-2517-4754-AC50-1FB1605A8F45
+  Name=RadioButton1
+  Class=RADIOBUTTON
+  Caption=Satisfatorio
+  Order=11
+  Left=41
+  Width=79
+  Top=61
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Satisfatorio",,
+  Property=Value=S
+  Property=HyperLabel=#RadioButton1,,,
+
+CONTROL=RADIOBUTTON
+GUID=050D5AF0-A2AE-46E9-9A38-0BFF89923F87
+  Name=RadioButton2
+  Class=RADIOBUTTON
+  Caption=Não Satisf.
+  Order=12
+  Left=149
+  Width=80
+  Top=60
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Não Satisf.",,
+  Property=Value=N
+  Property=HyperLabel=#RadioButton2,,,
+
+CONTROL=RADIOBUTTON
+GUID=87429609-1674-4483-9D59-0417D8A3CE3D
+  Name=RadioButton3
+  Class=RADIOBUTTON
+  Caption=Não Aplicado
+  Order=13
+  Left=242
+  Width=120
+  Top=60
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Não Aplicado",,
+  Property=Value=A
+  Property=HyperLabel=#RadioButton3,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=039BF0C6-0D5E-4B5D-818D-542071854AB6
+  Name=LUB02
+  Class=RADIOBUTTONGROUP
+  Caption=Graxa
+  Order=30
+  Left=19
+  Width=367
+  Top=104
+  Height=51
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Graxa",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#LUB02,,,
+
+CONTROL=RADIOBUTTON
+GUID=FFB36BB5-2BA3-48D7-B361-1B51A5EDF4B4
+  Name=RadioButton16
+  Class=RADIOBUTTON
+  Caption=Satisfatorio
+  Order=31
+  Left=41
+  Width=79
+  Top=125
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Satisfatorio",,
+  Property=Value=S
+  Property=HyperLabel=#RadioButton16,,,
+
+CONTROL=RADIOBUTTON
+GUID=B3149D11-3969-419D-9097-EFB08D537CC3
+  Name=RadioButton17
+  Class=RADIOBUTTON
+  Caption=Não Satisf
+  Order=32
+  Left=149
+  Width=80
+  Top=125
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Não Satisf",,
+  Property=Value=N
+  Property=HyperLabel=#RadioButton17,,,
+
+CONTROL=RADIOBUTTON
+GUID=C8862AE6-0DCC-48D7-8A84-08BBC04627AF
+  Name=RadioButton18
+  Class=RADIOBUTTON
+  Caption=Não Aplicado
+  Order=33
+  Left=242
+  Width=120
+  Top=125
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Não Aplicado",,
+  Property=Value=A
+  Property=HyperLabel=#RadioButton18,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=BA4D24C3-58CF-4456-A02F-9C1BD62A920B
+  Name=LUB03
+  Class=RADIOBUTTONGROUP
+  Caption=Pneumatica
+  Order=34
+  Left=19
+  Width=367
+  Top=166
+  Height=51
+  Browseindex=4
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Pneumatica",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#LUB03,,,
+
+CONTROL=RADIOBUTTON
+GUID=0B40017C-AF3F-4C9D-A965-1673DD69E5CA
+  Name=RadioButton6
+  Class=RADIOBUTTON
+  Caption=Satisfatorio
+  Order=35
+  Left=41
+  Width=79
+  Top=189
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Satisfatorio",,
+  Property=Value=S
+  Property=HyperLabel=#RadioButton6,,,
+
+CONTROL=RADIOBUTTON
+GUID=19FFE7D9-70ED-41E4-A8A0-4408318825D2
+  Name=RadioButton7
+  Class=RADIOBUTTON
+  Caption=Não Satisf.
+  Order=36
+  Left=149
+  Width=80
+  Top=189
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Não Satisf.",,
+  Property=Value=N
+  Property=HyperLabel=#RadioButton7,,,
+
+CONTROL=RADIOBUTTON
+GUID=33C5C9D0-462F-4CCE-B18B-50AA1503312D
+  Name=RadioButton8
+  Class=RADIOBUTTON
+  Caption=Não Aplicado
+  Order=37
+  Left=242
+  Width=120
+  Top=189
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Não Aplicado",,
+  Property=Value=A
+  Property=HyperLabel=#RadioButton8,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=EF640290-02D1-44BF-ADCF-EC4D03C048DE
+  Name=LUB04
+  Class=RADIOBUTTONGROUP
+  Caption=Hidraulica
+  Order=38
+  Left=19
+  Width=367
+  Top=228
+  Height=51
+  Browseindex=5
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Hidraulica",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#LUB04,,,
+
+CONTROL=RADIOBUTTON
+GUID=21AA44A2-C58C-4836-A190-C67EFC40F1DE
+  Name=RadioButton9
+  Class=RADIOBUTTON
+  Caption=Satisfatorio
+  Order=40
+  Left=41
+  Width=79
+  Top=250
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Satisfatorio",,
+  Property=Value=S
+  Property=HyperLabel=#RadioButton9,,,
+
+CONTROL=RADIOBUTTON
+GUID=04BC4C48-B3D5-4F88-8114-6C867DB1C112
+  Name=RadioButton11
+  Class=RADIOBUTTON
+  Caption=Não Satisf.
+  Order=42
+  Left=149
+  Width=80
+  Top=249
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Não Satisf.",,
+  Property=Value=N
+  Property=HyperLabel=#RadioButton11,,,
+
+CONTROL=RADIOBUTTON
+GUID=7200C344-38E8-4830-B7D5-24DDF384641A
+  Name=RadioButton13
+  Class=RADIOBUTTON
+  Caption=Não Aplicado
+  Order=44
+  Left=242
+  Width=120
+  Top=249
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Não Aplicado",,
+  Property=Value=A
+  Property=HyperLabel=#RadioButton13,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=503CAD44-E4D9-4D5D-A58D-43CEE6A87415
+  Name=LUB05
+  Class=RADIOBUTTONGROUP
+  Caption=Caixa de Engrenagem
+  Order=45
+  Left=18
+  Width=371
+  Top=290
+  Height=51
+  Browseindex=6
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Caixa de Engrenagem",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#LUB05,,,
+
+CONTROL=RADIOBUTTON
+GUID=9ADBF5F1-9432-4BB3-8F4A-3D003932543C
+  Name=RadioButton12
+  Class=RADIOBUTTON
+  Caption=Satisfatorio
+  Order=46
+  Left=37
+  Width=83
+  Top=313
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Satisfatorio",,
+  Property=Value=S
+  Property=HyperLabel=#RadioButton12,,,
+
+CONTROL=RADIOBUTTON
+GUID=2A68AE2B-26F9-45BB-960C-329963BF2338
+  Name=RadioButton14
+  Class=RADIOBUTTON
+  Caption=Não Satisf.
+  Order=47
+  Left=149
+  Width=80
+  Top=313
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Não Satisf.",,
+  Property=Value=N
+  Property=HyperLabel=#RadioButton14,,,
+
+CONTROL=RADIOBUTTON
+GUID=6ED45957-B7D4-4F31-887F-B6FB30D90394
+  Name=RadioButton15
+  Class=RADIOBUTTON
+  Caption=Não Aplicado
+  Order=48
+  Left=245
+  Width=88
+  Top=313
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Não Aplicado",,
+  Property=Value=A
+  Property=HyperLabel=#RadioButton15,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JRLI
+

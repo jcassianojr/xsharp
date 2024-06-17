@@ -1,0 +1,152 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,J01
+GUID=0477F1D1-76D2-4A2F-84C6-AFAD6CE37EC1
+  Name=J01
+  Class=DATADIALOG
+  Caption=Certificado/Rastro
+  Order=0
+  Left=26
+  Width=345
+  Top=26
+  Height=75
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Certificado/Rastro",,
+  Property=Use=<Share Owner's>
+  Property=ClipperKeys=True
+  Property=HyperLabel=#J01,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=FD330845-53D6-4A51-B838-DBA878D2BBB6
+  Name=SC_CERT
+  Class=FIXEDTEXT
+  Caption=Certificado:
+  Order=1
+  Left=5
+  Width=79
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Certificado:",,
+  Property=HyperLabel=#SC_CERT,,,
+
+CONTROL=FIXEDTEXT
+GUID=6E37932B-9600-4437-82D9-71B67F09A4FF
+  Name=SC_RASTRO
+  Class=FIXEDTEXT
+  Caption=Rastro:
+  Order=2
+  Left=5
+  Width=76
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rastro:",,
+  Property=HyperLabel=#SC_RASTRO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=E4FDF18D-DD2F-478B-A494-6A9FD109F787
+  Name=CERT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=89
+  Width=152
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#CERT,,,
+  Property=HyperLabel=,"Cert:",,
+  Property=HyperLabel=,,,"Crm_CERT"
+  Property=FocusSelect=FSEL_HOME
+  Property=FieldSpec=padrao_char_40
+
+CONTROL=SINGLELINEEDIT
+GUID=6A8004F4-8A9E-4664-9CB7-48D9A4F7731A
+  Name=RASTRO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=89
+  Width=84
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#RASTRO,,,
+  Property=HyperLabel=,"Rastro:",,
+  Property=HyperLabel=,,,"Crm_RASTRO"
+  Property=FocusSelect=FSEL_HOME
+  Property=FieldSpec=padraO_CHAR_12
+
+CONTROL=FIXEDTEXT
+GUID=7A0CA822-F4C7-4AE2-9ACF-DA12D921FF23
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=6
+  Left=245
+  Width=64
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=4271448A-DF25-40C0-BE6A-40DABA48D2A1
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=245
+  Width=64
+  Top=5
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ico_ok
+
+SUBCONTROLSEND
+DESIGNEREND = J01
+

@@ -1,0 +1,651 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jensR
+GUID=FEF1F99F-6F55-4103-9EE4-09846DFC92CF
+  Name=jensR
+  Class=DATAWINDOW
+  Caption=Ensaios Certificado
+  Order=0
+  Left=30
+  Width=593
+  Top=30
+  Height=234
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ensaios Certificado",,
+  Property=ViewAs=#FormView
+  Property=HyperLabel=#jensR,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=349409C4-F0B1-4242-80EE-9A1FC33CA5CF
+  Name=ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=185
+  Width=44
+  Top=9
+  Height=20
+  Browseindex=1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#ITEM,,,
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=,,,"MU01I_ITEM"
+  Property=TooltipText="Nº Sequencia"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=383248BC-436E-4F18-A7BF-A131BDDE15B4
+  Name=ESPE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=85
+  Width=400
+  Top=37
+  Height=20
+  Browseindex=3
+  Browsesize=43
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_60
+  Property=HyperLabel=#ESPE,,,
+  Property=HyperLabel=,"Especificado:",,
+  Property=HyperLabel=,,,"MU01I_ESPE"
+  Property=TooltipText="Especificado"
+
+CONTROL=SINGLELINEEDIT
+GUID=EE06D619-6ECC-4460-BFAA-14E80DF4334A
+  Name=ENCO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=85
+  Width=400
+  Top=61
+  Height=20
+  Browseindex=11
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_60
+  Property=HyperLabel=#ENCO,,,
+  Property=HyperLabel=,"Enco:",,
+  Property=HyperLabel=,,,"MU01I_ENCO"
+  Property=TooltipText="Pre Dizer Encontrado"
+
+CONTROL=SINGLELINEEDIT
+GUID=8AAA4330-2D2A-486E-8985-B39430D1279E
+  Name=VALPAD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=41
+  Width=68
+  Top=105
+  Height=20
+  Browseindex=2
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08_2
+  Property=HyperLabel=#VALPAD,,,
+  Property=HyperLabel=,"Valpad:",,
+  Property=HyperLabel=,,,"MU01I_VALPAD"
+  Property=TooltipText="Valor Padrao"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=41FAC118-4697-4217-A4C9-745A32351E31
+  Name=VALMAX
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=117
+  Width=68
+  Top=105
+  Height=20
+  Browseindex=9
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08_2
+  Property=HyperLabel=#VALMAX,,,
+  Property=HyperLabel=,"Valmax:",,
+  Property=HyperLabel=,,,"MU01I_VALMAX"
+  Property=TooltipText="Valor Maximo"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=FEC3ABBA-80CD-4D80-B954-37C108B04873
+  Name=VALMIN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=193
+  Width=68
+  Top=105
+  Height=20
+  Browseindex=8
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08_2
+  Property=HyperLabel=#VALMIN,,,
+  Property=HyperLabel=,"Valmin:",,
+  Property=HyperLabel=,,,"MU01I_VALMIN"
+  Property=TooltipText="Valro Minimo"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=10E42807-A25E-4339-86C3-787AA4EE0B30
+  Name=TOLMAX
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=321
+  Width=68
+  Top=105
+  Height=20
+  Browseindex=6
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08_2
+  Property=HyperLabel=#TOLMAX,,,
+  Property=HyperLabel=,"Tolmax:",,
+  Property=HyperLabel=,,,"MU01I_TOLMAX"
+  Property=TooltipText="Tolerancia Maxima"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=030D3D0C-63BD-4DBA-9A32-58EF34C65260
+  Name=TOLMIN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=389
+  Width=68
+  Top=105
+  Height=20
+  Browseindex=7
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08_2
+  Property=HyperLabel=#TOLMIN,,,
+  Property=HyperLabel=,"Tolmin:",,
+  Property=HyperLabel=,,,"MU01I_TOLMIN"
+  Property=TooltipText="Tolerancia Minima"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=C3E0DADA-0CB8-41B0-85A8-27A63BCE7711
+  Name=UNIDADE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=37
+  Width=44
+  Top=145
+  Height=20
+  Browseindex=5
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_03
+  Property=HyperLabel=#UNIDADE,,,
+  Property=HyperLabel=,"Unidade:",,
+  Property=HyperLabel=,,,"MU01I_UNIDADE"
+  Property=TooltipText="Unidade"
+
+CONTROL=SINGLELINEEDIT
+GUID=5871DA72-CD1B-406E-BA93-9B7449861CE4
+  Name=TIPA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=89
+  Width=44
+  Top=145
+  Height=20
+  Browseindex=2
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_03
+  Property=HyperLabel=#TIPA,,,
+  Property=HyperLabel=,"Tipa:",,
+  Property=HyperLabel=,,,"MU01I_TIPA"
+  Property=TooltipText="Tipo "
+
+CONTROL=SINGLELINEEDIT
+GUID=574E40C9-549B-4361-B96D-98B765687A2F
+  Name=UNIDREF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=141
+  Width=40
+  Top=145
+  Height=20
+  Browseindex=3
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_04
+  Property=HyperLabel=#UNIDREF,,,
+  Property=HyperLabel=,"Unidref:",,
+  Property=HyperLabel=,,,"MU01I_UNIDREF"
+  Property=TooltipText="Unidade de Referencia"
+
+CONTROL=SINGLELINEEDIT
+GUID=2033DF8E-99A4-48B4-82B1-36A420B28C30
+  Name=QTDEREF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=193
+  Width=68
+  Top=145
+  Height=20
+  Browseindex=0
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08_2
+  Property=HyperLabel=#QTDEREF,,,
+  Property=HyperLabel=,"Qtderef:",,
+  Property=HyperLabel=,,,"MU01I_QTDEREF"
+  Property=TooltipText="Quantidade de Referencia"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=F17B715D-EA25-4AE3-A250-EAC5E5F85A31
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=13
+  Left=13
+  Width=40
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=ED90554D-D3B6-4A8F-9084-D4B0D7859E5C
+  Name=SC_ITEM
+  Class=FIXEDTEXT
+  Caption=Item:
+  Order=14
+  Left=153
+  Width=28
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=#SC_ITEM,,,
+
+CONTROL=FIXEDTEXT
+GUID=C9CEC25D-469C-4E9F-9E80-5CF85F259D6C
+  Name=SC_ESPE
+  Class=FIXEDTEXT
+  Caption=Espeificado:
+  Order=15
+  Left=13
+  Width=68
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Espeificado:",,
+  Property=HyperLabel=#SC_ESPE,,,
+
+CONTROL=FIXEDTEXT
+GUID=D6FCF0D3-7BA0-459A-8213-E3B4E8B9157F
+  Name=SC_ENCO
+  Class=FIXEDTEXT
+  Caption=Encontrado:
+  Order=16
+  Left=13
+  Width=64
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Encontrado:",,
+  Property=HyperLabel=#SC_ENCO,,,
+
+CONTROL=FIXEDTEXT
+GUID=94E4A4F0-4D8C-4D82-9BAC-E3CCD955AEB1
+  Name=SC_VALPAD
+  Class=FIXEDTEXT
+  Caption=Padrao
+  Order=17
+  Left=45
+  Width=40
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Padrao",,
+  Property=HyperLabel=#SC_VALPAD,,,
+
+CONTROL=FIXEDTEXT
+GUID=031A4296-9CC1-4B72-B91E-F176FAEB91CC
+  Name=SC_VALMAX
+  Class=FIXEDTEXT
+  Caption=max:
+  Order=18
+  Left=121
+  Width=40
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"max:",,
+  Property=HyperLabel=#SC_VALMAX,,,
+
+CONTROL=FIXEDTEXT
+GUID=8D9886D7-C136-44D2-854F-49AE1AD3A100
+  Name=SC_VALMIN
+  Class=FIXEDTEXT
+  Caption=min:
+  Order=19
+  Left=193
+  Width=40
+  Top=89
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"min:",,
+  Property=HyperLabel=#SC_VALMIN,,,
+
+CONTROL=FIXEDTEXT
+GUID=1AE14896-CAF6-4474-8C3B-0F229162E753
+  Name=SC_TOLMAX
+  Class=FIXEDTEXT
+  Caption=Max:
+  Order=20
+  Left=321
+  Width=64
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Max:",,
+  Property=HyperLabel=#SC_TOLMAX,,,
+
+CONTROL=FIXEDTEXT
+GUID=A44AB807-9ACF-4269-9ECE-749FBE1C94E7
+  Name=SC_TOLMIN
+  Class=FIXEDTEXT
+  Caption=min:
+  Order=21
+  Left=397
+  Width=40
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"min:",,
+  Property=HyperLabel=#SC_TOLMIN,,,
+
+CONTROL=FIXEDTEXT
+GUID=EAAA42D9-185C-4000-9800-07AECA0E9C6A
+  Name=SC_UNIDADE
+  Class=FIXEDTEXT
+  Caption=Unidade:
+  Order=22
+  Left=37
+  Width=48
+  Top=129
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Unidade:",,
+  Property=HyperLabel=#SC_UNIDADE,,,
+
+CONTROL=FIXEDTEXT
+GUID=C70A8E33-5287-4E15-8D31-A159CC650693
+  Name=SC_TIPA
+  Class=FIXEDTEXT
+  Caption=Tipo:
+  Order=23
+  Left=89
+  Width=28
+  Top=129
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tipo:",,
+  Property=HyperLabel=#SC_TIPA,,,
+
+CONTROL=FIXEDTEXT
+GUID=B977C3B9-D846-4F17-BA0D-D6BDC6F205C5
+  Name=SC_UNIDREF
+  Class=FIXEDTEXT
+  Caption=Unid Ref
+  Order=24
+  Left=141
+  Width=52
+  Top=129
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Unid Ref",,
+  Property=HyperLabel=#SC_UNIDREF,,,
+
+CONTROL=FIXEDTEXT
+GUID=BDF9CE19-0ED3-4BAE-850F-577B40EC3A7B
+  Name=SC_QTDEREF
+  Class=FIXEDTEXT
+  Caption=Qtderef:
+  Order=25
+  Left=197
+  Width=44
+  Top=129
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtderef:",,
+  Property=HyperLabel=#SC_QTDEREF,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=421DC4DA-053F-47E4-8DC1-CA9ABAAFA3FF
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=26
+  Left=61
+  Width=84
+  Top=9
+  Height=20
+  Browseindex=0
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216348288
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_10
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"MU01I_CODIGO"
+
+CONTROL=FIXEDTEXT
+GUID=D293EFF1-BE97-45A2-8DE1-43D9EF71C0A2
+  Name=SC_VALPAD1
+  Class=FIXEDTEXT
+  Caption=Valor
+  Order=27
+  Left=9
+  Width=32
+  Top=105
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valor",,
+  Property=HyperLabel=#SC_VALPAD1,,,
+
+CONTROL=FIXEDTEXT
+GUID=C1462CD6-2567-41C1-87C7-2359F9EA023F
+  Name=SC_VALPAD2
+  Class=FIXEDTEXT
+  Caption=Tolerancia
+  Order=28
+  Left=265
+  Width=52
+  Top=105
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tolerancia",,
+  Property=HyperLabel=#SC_VALPAD2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=FFAB8800-D3E9-4656-8A99-67E4ED76B697
+  Name=checado
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=29
+  Left=297
+  Width=80
+  Top=145
+  Height=20
+  Browseindex=4
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,"c",,
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#checado,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jensR
+

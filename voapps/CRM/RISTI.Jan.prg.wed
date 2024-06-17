@@ -1,0 +1,407 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JRISTI
+GUID=D2B00412-FDA9-4AA5-96A3-FBD928DC6DAF
+  Name=JRISTI
+  Class=DATAWINDOW
+  Caption=Laudo:  (A)provado (C)ondicional (R)ejeitado (E)sperando Resulta
+  Order=0
+  Left=46
+  Width=586
+  Top=46
+  Height=192
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Laudo:  Aprovado Condicional Rejeitado Esperando Resultado",,
+  Property=Menu=STANDARDSHELLMENU
+  Property=HyperLabel=#JRISTI,,,
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=D9981B0F-3718-4051-9485-E4EA81ED768C
+  Name=SC_ITEM1
+  Class=FIXEDTEXT
+  Caption=Tipo
+  Order=1
+  Left=217
+  Width=40
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tipo",,
+  Property=HyperLabel=#SC_ITEM1,,,
+
+CONTROL=COMBOBOX
+GUID=1D09DE27-0BD9-4F1C-8137-EE28E28CF03B
+  Name=TIPA
+  Class=COMBOBOX
+  Caption=
+  Order=3
+  Left=213
+  Width=199
+  Top=33
+  Height=77
+  Browseindex=2
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1075904770
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_03
+  Property=HyperLabel=#TIPA,,,
+  Property=HyperLabel=,"Tipo",,
+
+CONTROL=SINGLELINEEDIT
+GUID=03E9229E-4F01-4816-AA45-391A1A7C8091
+  Name=LAUDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=361
+  Width=40
+  Top=121
+  Height=18
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#LAUDO,,,
+  Property=HyperLabel=,"Laudo",,
+  Property=HyperLabel=,,,"RIRMI_RIRM"
+
+CONTROL=FIXEDTEXT
+GUID=6192A30F-0ABC-4C20-BA24-02FA141C4AA6
+  Name=SC_RIRM1
+  Class=FIXEDTEXT
+  Caption=Laudo:  (A)provado (C)ondicional (R)ejeitado (E)sperando Resulta
+  Order=5
+  Left=17
+  Width=328
+  Top=121
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Laudo:  Aprovado Condicional Rejeitado Esperando Resultado",,
+  Property=HyperLabel=#SC_RIRM1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=4CC2E842-D69C-461D-B924-705993D26866
+  Name=DATAENV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=57
+  Width=76
+  Top=149
+  Height=18
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAENV,,,
+  Property=HyperLabel=,"Rist:",,
+  Property=HyperLabel=,,,"RISTI_RIST"
+
+CONTROL=FIXEDTEXT
+GUID=9F67AB81-8E03-48A3-8AB5-80D460DA14F4
+  Name=SC_RIST1
+  Class=FIXEDTEXT
+  Caption=Envio
+  Order=8
+  Left=13
+  Width=40
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Envio",,
+  Property=HyperLabel=#SC_RIST1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=6667BBC8-4838-4F4F-9930-0AEA1902C58D
+  Name=HORAENV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=141
+  Width=76
+  Top=149
+  Height=18
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_05
+  Property=HyperLabel=#HORAENV,,,
+  Property=HyperLabel=,"Rist:",,
+  Property=HyperLabel=,,,"RISTI_RIST"
+
+CONTROL=SINGLELINEEDIT
+GUID=752DE8AE-E6C4-44FF-95AD-246B19B51B24
+  Name=DATALAU
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=405
+  Width=76
+  Top=121
+  Height=18
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATALAU,,,
+  Property=HyperLabel=,"Rist:",,
+  Property=HyperLabel=,,,"RISTI_RIST"
+
+CONTROL=SINGLELINEEDIT
+GUID=BAA4D76E-7449-4A9A-AC32-16ABB2DB381D
+  Name=PULAAPU
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=429
+  Width=32
+  Top=33
+  Height=18
+  Browseindex=6
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#PULAAPU,,,
+  Property=HyperLabel=,"Apu",,
+  Property=HyperLabel=,,,"RIRMI_ITEM"
+
+CONTROL=FIXEDTEXT
+GUID=F642109D-8EC0-49E5-B8BC-43BA111FB59B
+  Name=SC_ITEM2
+  Class=FIXEDTEXT
+  Caption=Apurar
+  Order=12
+  Left=429
+  Width=40
+  Top=13
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Apurar",,
+  Property=HyperLabel=#SC_ITEM2,,,
+
+CONTROL=FIXEDTEXT
+GUID=27B5CAC9-4384-4BB4-9699-D5E1C0E5E8C4
+  Name=SC_RIST
+  Class=FIXEDTEXT
+  Caption=Rist:
+  Order=-1
+  Left=11
+  Width=30
+  Top=11
+  Height=30
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rist:",,
+  Property=HyperLabel=#SC_RIST,,,
+
+CONTROL=FIXEDTEXT
+GUID=E42F9D40-57D5-4601-8FC9-076E980900ED
+  Name=SC_ITEM
+  Class=FIXEDTEXT
+  Caption=Item:
+  Order=-1
+  Left=131
+  Width=40
+  Top=11
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=#SC_ITEM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=941D1139-8308-4B69-A91D-4E37882D787E
+  Name=RIST
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=13
+  Width=110
+  Top=31
+  Height=18
+  Browseindex=0
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RIST,,,
+  Property=HyperLabel=,"Rist:",,
+  Property=HyperLabel=,,,"RISTI_RIST"
+
+CONTROL=SINGLELINEEDIT
+GUID=AB67E592-85EE-43E9-A771-0FF99D664C74
+  Name=ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=131
+  Width=70
+  Top=31
+  Height=18
+  Browseindex=1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#ITEM,,,
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=,,,"RISTI_ITEM"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=392D8AD0-2DA5-417A-85C9-16ABB941173E
+  Name=SC_ESPE
+  Class=FIXEDTEXT
+  Caption=Espeficação:
+  Order=-1
+  Left=13
+  Width=90
+  Top=61
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Espeficação:",,
+  Property=HyperLabel=#SC_ESPE,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=6AADDBB0-2AA2-4A66-BF66-F8C32CA00606
+  Name=ESPE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=121
+  Width=400
+  Top=61
+  Height=18
+  Browseindex=3
+  Browsesize=23
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_60
+  Property=HyperLabel=#ESPE,,,
+  Property=HyperLabel=,"Espeficado",,
+  Property=HyperLabel=,,,"RISTI_ESPE"
+
+CONTROL=FIXEDTEXT
+GUID=3B9C6F6E-86DD-4E50-A2B3-5692320D3EB9
+  Name=SC_ENCO
+  Class=FIXEDTEXT
+  Caption=Encontrado:
+  Order=-1
+  Left=13
+  Width=96
+  Top=85
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Encontrado:",,
+  Property=HyperLabel=#SC_ENCO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=8285827D-5850-45AD-8FF8-55F94995D6C7
+  Name=ENCO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=121
+  Width=400
+  Top=85
+  Height=18
+  Browseindex=4
+  Browsesize=30
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_45
+  Property=HyperLabel=#ENCO,,,
+  Property=HyperLabel=,"Encontrado",,
+  Property=HyperLabel=,,,"RISTI_ENCO"
+
+SUBCONTROLSEND
+DESIGNEREND = JRISTI
+

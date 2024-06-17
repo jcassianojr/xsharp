@@ -1,0 +1,147 @@
+DESIGNERSTART = VOWindowEditor,DIALOGWINDOW,buscaDATA
+GUID=40FCB8AD-1C1E-4BBC-8EEC-7008135A4B9B
+  Name=buscaDATA
+  Class=DIALOGWINDOW
+  Caption=Localizar
+  Order=0
+  Left=40
+  Width=400
+  Top=40
+  Height=168
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=2160590980
+  Exstyles=257
+  Property=HyperLabel=,"Localizar",,
+  Property=HyperLabel=#buscaDATA,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=F39D0573-CD59-420B-BE33-ACDAB5E2AD1F
+  Name=obs
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=13
+  Width=372
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082197120
+  Exstyles=512
+  Property=HyperLabel=#obs,,,
+  Property=TooltipText="Digite a Informaçao"
+  Property=InheritClassName=DateSle
+
+CONTROL=FIXEDTEXT
+GUID=11D82EFA-9D59-4F66-85BC-6B6514FA2F08
+  Name=Titulo
+  Class=FIXEDTEXT
+  Caption=Buscar:
+  Order=2
+  Left=13
+  Width=372
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Buscar:",,
+  Property=HyperLabel=#Titulo,,,
+
+CONTROL=FIXEDTEXT
+GUID=978C9211-BBFC-4B73-A399-E85E4204A0FA
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=5
+  Left=245
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=7709F112-FAD0-4B4B-AE5E-113DF20BF0B2
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=245
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ICO_SAIR
+  Property=TooltipText="Clique aqui Para Cancelar"
+
+CONTROL=FIXEDTEXT
+GUID=527B9146-D6C1-43FC-81F7-01F83A7E6A84
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=7
+  Left=317
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=56225912-4DD4-4FDC-8965-B2F348186A08
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=317
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ICO_OK
+  Property=TooltipText="Clique aqui Par Confirmar"
+
+SUBCONTROLSEND
+DESIGNEREND = buscaDATA
+

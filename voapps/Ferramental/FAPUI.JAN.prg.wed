@@ -1,0 +1,198 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JFAPUI
+GUID=E9C65D36-E27B-40A0-9A3E-D44C40EA74C2
+  Name=JFAPUI
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=16
+  Width=420
+  Top=16
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JFAPUI,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=C1BCAF46-1F74-4541-9DED-56925CC1EEBB
+  Name=SC_SEQ
+  Class=FIXEDTEXT
+  Caption=Seq:
+  Order=1
+  Left=9
+  Width=28
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Seq:",,
+  Property=HyperLabel=#SC_SEQ,,,
+
+CONTROL=FIXEDTEXT
+GUID=AD010F32-F177-447F-BF0D-D8B078B9399C
+  Name=SC_FERRAM
+  Class=FIXEDTEXT
+  Caption=Fer/Maq
+  Order=2
+  Left=89
+  Width=51
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fer/Maq",,
+  Property=HyperLabel=#SC_FERRAM,,,
+
+CONTROL=FIXEDTEXT
+GUID=F501ED79-AE49-4D02-84F3-DEA83CF1E658
+  Name=SC_QTDE
+  Class=FIXEDTEXT
+  Caption=Qtde:
+  Order=3
+  Left=9
+  Width=32
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtde:",,
+  Property=HyperLabel=#SC_QTDE,,,
+
+CONTROL=FIXEDTEXT
+GUID=D0176337-2212-45E1-9D26-8D50F7F8CA7D
+  Name=SC_HORAS
+  Class=FIXEDTEXT
+  Caption=Horas:
+  Order=4
+  Left=145
+  Width=36
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Horas:",,
+  Property=HyperLabel=#SC_HORAS,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=11E0F17D-D1AD-4E8E-93E9-29CD140AE1D3
+  Name=SEQ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=37
+  Width=44
+  Top=9
+  Height=24
+  Browseindex=0
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#SEQ,,,
+  Property=HyperLabel=,"Seq:",,
+  Property=HyperLabel=,,,"fapui_SEQ"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=4AA290BB-0423-4CC8-9784-4A07641776E0
+  Name=FERRAM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=141
+  Width=180
+  Top=9
+  Height=20
+  Browseindex=1
+  Browsesize=21
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#FERRAM,,,
+  Property=HyperLabel=,"Fer/Maq:",,
+  Property=HyperLabel=,,,"fapui_FERRAM"
+
+CONTROL=SINGLELINEEDIT
+GUID=C09BB94A-E887-4735-88D5-6A79971ADF8B
+  Name=QTDE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=41
+  Width=96
+  Top=37
+  Height=20
+  Browseindex=3
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12
+  Property=HyperLabel=#QTDE,,,
+  Property=HyperLabel=,"Qtde:",,
+  Property=HyperLabel=,,,"fapui_QTDE"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=06A78B49-D87D-4C4B-BE47-EC0C4DDF275E
+  Name=HORAS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=181
+  Width=76
+  Top=37
+  Height=20
+  Browseindex=2
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#HORAS,,,
+  Property=HyperLabel=,"Horas:",,
+  Property=HyperLabel=,,,"fapui_HORAS"
+  Property=InheritClassName=rightSle
+
+SUBCONTROLSEND
+DESIGNEREND = JFAPUI
+

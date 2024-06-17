@@ -1,0 +1,109 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jescmp04
+GUID=E9F500E7-721D-4432-8E61-6220982D9A6F
+  Name=jescmp04
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=22
+  Width=524
+  Top=22
+  Height=259
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#jescmp04,,,
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=B2C6C18B-3E1C-43D3-B666-D20D50B687CC
+  Name=SC_TECNICO
+  Class=FIXEDTEXT
+  Caption=Técnico:
+  Order=1
+  Left=17
+  Width=48
+  Top=17
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Técnico:",,
+  Property=HyperLabel=#SC_TECNICO,,,
+
+CONTROL=FIXEDTEXT
+GUID=9038547C-3567-4332-8DC6-35D09D936BB5
+  Name=SC_NOMTEC
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=2
+  Left=73
+  Width=52
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOMTEC,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=C27356BF-C186-4714-865A-E619E9A3AD5C
+  Name=TECNICO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=17
+  Width=48
+  Top=33
+  Height=20
+  Browseindex=0
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#TECNICO,,,
+  Property=HyperLabel=,"Tecnico:",,
+  Property=HyperLabel=,,,"Mp04_TECNICO"
+
+CONTROL=SINGLELINEEDIT
+GUID=1B6F0700-2B66-4DD6-9B2E-23AB55DE465A
+  Name=NOMTEC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=75
+  Width=292
+  Top=32
+  Height=20
+  Browseindex=1
+  Browsesize=67
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#NOMTEC,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"Mp04_NOMTEC"
+
+SUBCONTROLSEND
+DESIGNEREND = jescmp04
+

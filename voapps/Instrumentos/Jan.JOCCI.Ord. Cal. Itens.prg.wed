@@ -1,0 +1,458 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JOCCI
+GUID=CBA92856-043C-414D-8351-42EEE72F1231
+  Name=JOCCI
+  Class=DATAWINDOW
+  Caption=Itens da Ordem Calibração
+  Order=0
+  Left=26
+  Width=489
+  Top=26
+  Height=150
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Itens da Ordem Calibração",,
+  Property=HyperLabel=#JOCCI,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=1F5B5714-E65E-4B90-A466-57A655168840
+  Name=ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=65
+  Width=70
+  Top=21
+  Height=18
+  Browseindex=1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_03
+  Property=HyperLabel=#ITEM,,,
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=,,,"ME04CI_ITEM"
+  Property=FocusSelect=FSEL_ALL
+  Property=TooltipText="Sequencia/Item"
+
+CONTROL=SINGLELINEEDIT
+GUID=F1841745-D696-4396-B349-20D7BB9EAF0D
+  Name=NRELAT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=137
+  Width=80
+  Top=21
+  Height=18
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_05
+  Property=HyperLabel=#NRELAT,,,
+  Property=FocusSelect=FSEL_ALL
+  Property=TooltipText="Nº Relatorio"
+
+CONTROL=SINGLELINEEDIT
+GUID=627EB9B4-181A-4C32-9538-5EF0D70AA395
+  Name=ESPECI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=221
+  Width=232
+  Top=21
+  Height=18
+  Browseindex=2
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_30
+  Property=HyperLabel=#ESPECI,,,
+  Property=HyperLabel=,"Especificado",,
+  Property=HyperLabel=,,,"ME04CI_ESPECI"
+  Property=FocusSelect=FSEL_ALL
+  Property=TooltipText="Especificicado"
+
+CONTROL=SINGLELINEEDIT
+GUID=AEE6F289-9A2A-495F-AAF4-B01A2CBE4120
+  Name=ENCTR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=9
+  Width=130
+  Top=61
+  Height=20
+  Browseindex=3
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_30
+  Property=HyperLabel=#ENCTR,,,
+  Property=HyperLabel=,"Encontrado",,
+  Property=HyperLabel=,,,"ME04CI_ENCTR"
+  Property=FocusSelect=FSEL_ALL
+  Property=TooltipText="Encontrado"
+
+CONTROL=SINGLELINEEDIT
+GUID=60F69235-59E7-4F04-82BD-A86129EEA440
+  Name=DESVIO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=145
+  Width=130
+  Top=61
+  Height=20
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_10
+  Property=HyperLabel=#DESVIO,,,
+  Property=HyperLabel=,"Desvio:",,
+  Property=HyperLabel=,,,"ME04CI_DESVIO"
+  Property=FocusSelect=FSEL_ALL
+  Property=TooltipText="Desvio"
+
+CONTROL=SINGLELINEEDIT
+GUID=6F8862AC-3184-4E7D-8A65-2CC19714F2E5
+  Name=INCTOT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=9
+  Width=130
+  Top=101
+  Height=20
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_10
+  Property=HyperLabel=#INCTOT,,,
+  Property=HyperLabel=,"Inc.Tot.",,
+  Property=HyperLabel=,,,"ME04CI_INCTOT"
+  Property=FocusSelect=FSEL_ALL
+  Property=TooltipText="Incerteza Total"
+
+CONTROL=FIXEDTEXT
+GUID=2954130C-BA2C-42FC-83E6-753C7659F642
+  Name=SC_OCC
+  Class=FIXEDTEXT
+  Caption=Occ:
+  Order=7
+  Left=9
+  Width=40
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Occ:",,
+  Property=HyperLabel=#SC_OCC,,,
+
+CONTROL=FIXEDTEXT
+GUID=ADB5076E-CA09-4961-95EB-4E3CD40C85A0
+  Name=SC_ITEM
+  Class=FIXEDTEXT
+  Caption=Item:
+  Order=8
+  Left=65
+  Width=40
+  Top=5
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=#SC_ITEM,,,
+
+CONTROL=FIXEDTEXT
+GUID=302C60DA-A29A-480E-AB4F-0B031D9AA7AF
+  Name=theFixedText7
+  Class=FIXEDTEXT
+  Caption=No.Relat
+  Order=9
+  Left=137
+  Width=80
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"No.Relat",,
+  Property=HyperLabel=#theFixedText7,,,
+
+CONTROL=FIXEDTEXT
+GUID=F5DB6C51-BC0A-48C0-88B4-A8166875E921
+  Name=SC_ESPECI
+  Class=FIXEDTEXT
+  Caption=Especificado:
+  Order=10
+  Left=221
+  Width=99
+  Top=5
+  Height=12
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Especificado:",,
+  Property=HyperLabel=#SC_ESPECI,,,
+
+CONTROL=FIXEDTEXT
+GUID=ED81EA06-E2CA-4575-81D8-6267C24E4907
+  Name=SC_ENCTR
+  Class=FIXEDTEXT
+  Caption=Encontrado:
+  Order=11
+  Left=9
+  Width=89
+  Top=45
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Encontrado:",,
+  Property=HyperLabel=#SC_ENCTR,,,
+
+CONTROL=FIXEDTEXT
+GUID=F71B4B2C-C357-492C-A07F-F7B157B3B98C
+  Name=SC_DESVIO
+  Class=FIXEDTEXT
+  Caption=Desvio:
+  Order=12
+  Left=145
+  Width=50
+  Top=45
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Desvio:",,
+  Property=HyperLabel=#SC_DESVIO,,,
+
+CONTROL=FIXEDTEXT
+GUID=7D94FFF6-D18E-46FC-B716-742BAF01CD2B
+  Name=SC_INCTOT
+  Class=FIXEDTEXT
+  Caption=Incr. Total:
+  Order=13
+  Left=9
+  Width=109
+  Top=85
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Incr. Total:",,
+  Property=HyperLabel=#SC_INCTOT,,,
+
+CONTROL=FIXEDTEXT
+GUID=B05B7DE0-88A8-4C1A-8917-F8251AE1B97B
+  Name=SC_LAUDO
+  Class=FIXEDTEXT
+  Caption=Laudo:
+  Order=14
+  Left=145
+  Width=50
+  Top=85
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Laudo:",,
+  Property=HyperLabel=#SC_LAUDO,,,
+
+CONTROL=FIXEDTEXT
+GUID=D73593C3-649C-42D8-9DD3-EDC6089FB39C
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=Em:
+  Order=15
+  Left=213
+  Width=32
+  Top=85
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Em:",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=FIXEDTEXT
+GUID=FEF21F38-93E7-4BA7-B116-38C4612965E0
+  Name=theFixedText8
+  Class=FIXEDTEXT
+  Caption=Nome
+  Order=16
+  Left=317
+  Width=48
+  Top=81
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome",,
+  Property=HyperLabel=#theFixedText8,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=973B3853-363B-4152-8D98-6A96B3A4675D
+  Name=OCC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=9
+  Width=50
+  Top=21
+  Height=18
+  Browseindex=0
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#OCC,,,
+  Property=HyperLabel=,"Occ:",,
+  Property=HyperLabel=,,,"ME04CI_OCC"
+  Property=TooltipText="Numero da Ordem Calibraçao"
+
+CONTROL=SINGLELINEEDIT
+GUID=5E4BC6D6-AED4-4C58-937C-572B864D3374
+  Name=LAUDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=145
+  Width=60
+  Top=101
+  Height=20
+  Browseindex=6
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216348288
+  Exstyles=0
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#LAUDO,,,
+  Property=HyperLabel=,"Laudo:",,
+  Property=HyperLabel=,,,"ME04CI_LAUDO"
+  Property=FocusSelect=FSEL_ALL
+  Property=TooltipText="Laudo"
+
+CONTROL=SINGLELINEEDIT
+GUID=C2C44314-0E05-44D7-8347-E878CAA9C04D
+  Name=ASSDAT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=213
+  Width=100
+  Top=101
+  Height=20
+  Browseindex=1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#ASSDAT,,,
+  Property=TooltipText="Data Assinatura Laudo"
+
+CONTROL=SINGLELINEEDIT
+GUID=60686AB5-7719-412D-B806-91AA3D773999
+  Name=ASSNOM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=317
+  Width=119
+  Top=101
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_char_10
+  Property=HyperLabel=#ASSNOM,,,
+  Property=TooltipText="Nome de quem Assinou"
+
+SUBCONTROLSEND
+DESIGNEREND = JOCCI
+

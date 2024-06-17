@@ -1,0 +1,11 @@
+﻿FUNCTION TEXTO3L(aRETU)
+LOCAL cTEXTO	
+   cTEXTO:="RACF:"+Str(aRETU[3],8)+CHR(13)+CHR(10)
+   cTEXTO+=AllTrim(aRETU[4])+CHR(13)+CHR(10)
+   cTEXTO+=AllTrim(aRETU[5])+CHR(13)+CHR(10)
+   cTEXTO+=AllTrim(aRETU[6])+CHR(13)+CHR(10)
+   cTEXTO+=AllTrim(aRETU[7])+CHR(13)+CHR(10)
+   cTEXTO+=AllTrim(aRETU[8])+CHR(13)+CHR(10)
+RETU cTEXTO
+
+

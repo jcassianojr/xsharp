@@ -1,0 +1,720 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JFERGI
+GUID=ECF2E645-91E4-4B8C-9E29-17836FA7C83D
+  Name=JFERGI
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=42
+  Width=420
+  Top=42
+  Height=250
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JFERGI,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=177B171E-D801-48A9-BB4C-DF67E4ADFC45
+  Name=SC_FERRAM
+  Class=FIXEDTEXT
+  Caption=Ferramenta /Grupo
+  Order=1
+  Left=5
+  Width=64
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ferramenta /Grupo",,
+  Property=HyperLabel=#SC_FERRAM,,,
+
+CONTROL=FIXEDTEXT
+GUID=CB80A8CF-53A6-44BE-B6BD-344B89615962
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=2
+  Left=13
+  Width=36
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=DDE15B5F-3B4D-4A5C-B0FB-C971168B8DC5
+  Name=SC_SAIMIN
+  Class=FIXEDTEXT
+  Caption=CMM Mvto:
+  Order=3
+  Left=137
+  Width=88
+  Top=169
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"CMM Mvto:",,
+  Property=HyperLabel=#SC_SAIMIN,,,
+
+CONTROL=FIXEDTEXT
+GUID=0B98DB7D-B0DC-47D2-A6E9-AC8ED6A962B3
+  Name=SC_ESTQMIN
+  Class=FIXEDTEXT
+  Caption=Minimo Movto
+  Order=4
+  Left=237
+  Width=80
+  Top=169
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Minimo Movto",,
+  Property=HyperLabel=#SC_ESTQMIN,,,
+
+CONTROL=FIXEDTEXT
+GUID=BFA81F35-335F-4A55-A26D-85F18FDEE7D4
+  Name=SC_ESTQENT
+  Class=FIXEDTEXT
+  Caption=Entradas:
+  Order=5
+  Left=13
+  Width=48
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Entradas:",,
+  Property=HyperLabel=#SC_ESTQENT,,,
+
+CONTROL=FIXEDTEXT
+GUID=4EBA5BFB-DE9E-4550-80FB-A6F5A3EE8AFC
+  Name=SC_ESTQSAI
+  Class=FIXEDTEXT
+  Caption=Saidas
+  Order=6
+  Left=13
+  Width=48
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Saidas",,
+  Property=HyperLabel=#SC_ESTQSAI,,,
+
+CONTROL=FIXEDTEXT
+GUID=5DB20565-1565-445C-A6CF-E409E818D1D4
+  Name=SC_ESTQINI
+  Class=FIXEDTEXT
+  Caption=Inicial
+  Order=7
+  Left=13
+  Width=48
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Inicial",,
+  Property=HyperLabel=#SC_ESTQINI,,,
+
+CONTROL=FIXEDTEXT
+GUID=65C5D986-E7FC-4B65-9CF7-9D6DB91111D2
+  Name=SC_ESTQSAL
+  Class=FIXEDTEXT
+  Caption=Saldo
+  Order=8
+  Left=13
+  Width=48
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Saldo",,
+  Property=HyperLabel=#SC_ESTQSAL,,,
+
+CONTROL=FIXEDTEXT
+GUID=ED7DA70A-0C19-4CD4-A736-237ECFB5B6EC
+  Name=SC_DIASENT
+  Class=FIXEDTEXT
+  Caption=Dias Entrega:
+  Order=9
+  Left=269
+  Width=72
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Dias Entrega:",,
+  Property=HyperLabel=#SC_DIASENT,,,
+
+CONTROL=FIXEDTEXT
+GUID=AADA040B-9866-4502-90C4-DEE127521130
+  Name=SC_DIASEST
+  Class=FIXEDTEXT
+  Caption=Dias Estoque
+  Order=10
+  Left=269
+  Width=72
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Dias Estoque",,
+  Property=HyperLabel=#SC_DIASEST,,,
+
+CONTROL=FIXEDTEXT
+GUID=7ED3952A-9EFE-4340-826D-FF09A55D0527
+  Name=SC_DATABALAN
+  Class=FIXEDTEXT
+  Caption=Em:
+  Order=11
+  Left=165
+  Width=32
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Em:",,
+  Property=HyperLabel=#SC_DATABALAN,,,
+
+CONTROL=FIXEDTEXT
+GUID=F3AC4D23-A5EB-486E-9546-9D39EB77F1A5
+  Name=SC_MINDI
+  Class=FIXEDTEXT
+  Caption=Minimo Indicado
+  Order=13
+  Left=173
+  Width=92
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Minimo Indicado",,
+  Property=HyperLabel=#SC_MINDI,,,
+
+CONTROL=FIXEDTEXT
+GUID=82C21351-3F4B-4A76-AACA-A242B12DB1D6
+  Name=SC_CAUTO
+  Class=FIXEDTEXT
+  Caption=Disparar com:
+  Order=15
+  Left=173
+  Width=88
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Disparar com:",,
+  Property=HyperLabel=#SC_CAUTO,,,
+
+CONTROL=FIXEDTEXT
+GUID=9B73B1FC-FAC4-43AF-833A-E7B9BF2C1118
+  Name=SC_CCM
+  Class=FIXEDTEXT
+  Caption=Ccm Apurado
+  Order=16
+  Left=13
+  Width=72
+  Top=169
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ccm Apurado",,
+  Property=HyperLabel=#SC_CCM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=138B8063-4FE2-42D8-A5E4-4CED0EF44673
+  Name=FERRAM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=61
+  Width=132
+  Top=9
+  Height=20
+  Browseindex=0
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#FERRAM,,,
+  Property=HyperLabel=,"Ferramenta/Grupo",,
+  Property=HyperLabel=,,,"Fergi_FERRAM"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=D0AA73C2-EA2B-4B41-888A-7E0278B82BE6
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=61
+  Width=276
+  Top=33
+  Height=20
+  Browseindex=1
+  Browsesize=37
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=,,,"Fergi_NOME"
+
+CONTROL=SINGLELINEEDIT
+GUID=977B5D96-D9FE-4CEA-B4AC-B6AD2AA8E4BA
+  Name=SAIMIN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=137
+  Width=96
+  Top=185
+  Height=20
+  Browseindex=2
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#SAIMIN,,,
+  Property=HyperLabel=,"Saimin:",,
+  Property=HyperLabel=,,,"Fergi_SAIMIN"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=9065D7D6-B1A8-4B80-81D6-85CE7CDE38C6
+  Name=ESTQMIN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=237
+  Width=96
+  Top=185
+  Height=20
+  Browseindex=3
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#ESTQMIN,,,
+  Property=HyperLabel=,"Estqmin:",,
+  Property=HyperLabel=,,,"Fergi_ESTQMIN"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=10A8E6DD-885C-40DA-B094-BBD7B42E8AE3
+  Name=ESTQENT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=65
+  Width=96
+  Top=101
+  Height=20
+  Browseindex=4
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#ESTQENT,,,
+  Property=HyperLabel=,"Estqent:",,
+  Property=HyperLabel=,,,"Fergi_ESTQENT"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=21DA603C-E701-437C-85B3-7B10C0F3DE01
+  Name=ESTQSAI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=65
+  Width=96
+  Top=121
+  Height=20
+  Browseindex=5
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#ESTQSAI,,,
+  Property=HyperLabel=,"Estqsai:",,
+  Property=HyperLabel=,,,"Fergi_ESTQSAI"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=C7F47820-22E4-4918-8704-022AEE1D6EBE
+  Name=ESTQINI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=23
+  Left=65
+  Width=96
+  Top=81
+  Height=20
+  Browseindex=6
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#ESTQINI,,,
+  Property=HyperLabel=,"Estqini:",,
+  Property=HyperLabel=,,,"Fergi_ESTQINI"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=53A9F5FA-7EEB-496E-85B2-AB2CB9D1B522
+  Name=ESTQSAL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=24
+  Left=65
+  Width=96
+  Top=141
+  Height=20
+  Browseindex=3
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#ESTQSAL,,,
+  Property=HyperLabel=,"Estoque",,
+  Property=HyperLabel=,,,"Fergi_ESTQSAL"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=8649095E-3E46-4186-B108-8CB1742571EF
+  Name=DIASENT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=25
+  Left=341
+  Width=44
+  Top=73
+  Height=20
+  Browseindex=8
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#DIASENT,,,
+  Property=HyperLabel=,"Diasent:",,
+  Property=HyperLabel=,,,"Fergi_DIASENT"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=4B159D24-A9E0-4F24-B3D1-1C1AF5A8279E
+  Name=DIASEST
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=26
+  Left=341
+  Width=44
+  Top=93
+  Height=20
+  Browseindex=9
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#DIASEST,,,
+  Property=HyperLabel=,"Diasest:",,
+  Property=HyperLabel=,,,"Fergi_DIASEST"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=8E7AAD1C-8ED7-4BCA-A9BC-584B20058E26
+  Name=DATABALAN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=27
+  Left=193
+  Width=68
+  Top=81
+  Height=20
+  Browseindex=10
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATABALAN,,,
+  Property=HyperLabel=,"Databalan:",,
+  Property=HyperLabel=,,,"Fergi_DATABALAN"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=555958FD-C52D-42D3-8FE3-6B656451E7A0
+  Name=MINDI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=29
+  Left=261
+  Width=96
+  Top=117
+  Height=20
+  Browseindex=11
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#MINDI,,,
+  Property=HyperLabel=,"Mindi:",,
+  Property=HyperLabel=,,,"Fergi_MINDI"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=28208D7F-D428-4388-AC35-DDA2BA7D96EC
+  Name=CAUTO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=31
+  Left=261
+  Width=96
+  Top=137
+  Height=20
+  Browseindex=12
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_3
+  Property=HyperLabel=#CAUTO,,,
+  Property=HyperLabel=,"Cauto:",,
+  Property=HyperLabel=,,,"Fergi_CAUTO"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=B629244E-E0BF-4CE0-B8E1-D6AF98CE6B81
+  Name=CCM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=32
+  Left=13
+  Width=120
+  Top=185
+  Height=20
+  Browseindex=13
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_15_6
+  Property=HyperLabel=#CCM,,,
+  Property=HyperLabel=,"Ccm:",,
+  Property=HyperLabel=,,,"Fergi_CCM"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=CD5A94E1-BA98-47A4-8F83-1125D6491EA0
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=33
+  Left=201
+  Width=40
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=486712EA-0AD7-4C34-BFF9-08F51ED4C417
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=34
+  Left=241
+  Width=152
+  Top=9
+  Height=20
+  Browseindex=1
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_20
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"Fergi_CODIGO"
+
+CONTROL=FIXEDTEXT
+GUID=D8C93E20-0DBE-4044-9AF4-60DE824D08C5
+  Name=SC_DESENHO
+  Class=FIXEDTEXT
+  Caption=Desenho:
+  Order=35
+  Left=9
+  Width=52
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Desenho:",,
+  Property=HyperLabel=#SC_DESENHO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=2B19CC73-E6F2-4CC5-855C-01C024834DCE
+  Name=DESENHO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=36
+  Left=61
+  Width=276
+  Top=53
+  Height=20
+  Browseindex=2
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#DESENHO,,,
+  Property=HyperLabel=,"Desenho:",,
+  Property=HyperLabel=,,,"Fergi_DESENHO"
+
+SUBCONTROLSEND
+DESIGNEREND = JFERGI
+

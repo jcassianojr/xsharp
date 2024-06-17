@@ -1,0 +1,521 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,_jrifrastro
+GUID=0B961B59-539D-4167-88FE-4633346F4DB6
+  Name=_jrifrastro
+  Class=FORM:DATADIALOG
+  Caption=Informe o Rastro
+  Order=0
+  Left=0
+  Width=624
+  Top=0
+  Height=173
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Informe o Rastro
+  Property=HyperLabel=_jrifrastro
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=AB228877-AB74-4FB9-B5A4-3AA77AC6838C
+  Name=cRASTRO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Codigo
+  Order=25
+  Left=253
+  Width=100
+  Top=32
+  Height=20
+  Browseindex=4
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Codigo
+  Property=HyperLabel=cRASTRO
+  Property=FieldSpec=padrao_CHAR_12
+  Property=TooltipText=Numero da Rastreabilidade
+  Property=FocusSelect=FSEL_ALL
+CONTROL=PUSHBUTTON
+GUID=47EBA1F4-B4F4-4C85-9AFA-53AACEE872CC
+  Name=cmdgera
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Rastro-->
+  Order=16
+  Left=193
+  Width=56
+  Top=32
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,Rastro-->
+  Property=HyperLabel=cmdgera
+  Property=TooltipText=Clique Para Gerar o Nº Rastreabilidade
+CONTROL=SINGLELINEEDIT
+GUID=3A0A4E2A-7B84-4A7C-B1B9-A72F3C0E4E18
+  Name=RASTROANO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=141
+  Width=48
+  Top=32
+  Height=20
+  Browseindex=1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=RASTROANO
+  Property=FieldSpec=padrao_NUM_04
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=PUSHBUTTON
+GUID=95940560-6BEA-4540-A5D9-4F759304B791
+  Name=cmdmenos2
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-
+  Order=11
+  Left=189
+  Width=20
+  Top=8
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-
+  Property=HyperLabel=cmdmenos2
+CONTROL=PUSHBUTTON
+GUID=48C8A338-1515-4A52-AEBE-367DFA64C7CD
+  Name=cmdmais2
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=+
+  Order=12
+  Left=169
+  Width=20
+  Top=8
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,+
+  Property=HyperLabel=cmdmais2
+CONTROL=FIXEDTEXT
+GUID=1E7ED4EB-AD84-4FA0-ACC1-A8E5597CF5CA
+  Name=FixedText4
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Ano
+  Order=10
+  Left=145
+  Width=24
+  Top=8
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ano
+  Property=HyperLabel=FixedText4
+CONTROL=SINGLELINEEDIT
+GUID=3B260EC4-38D6-4338-9327-E7769EADCE2D
+  Name=RASTROITEM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=113
+  Width=28
+  Top=32
+  Height=20
+  Browseindex=3
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=RASTROITEM
+  Property=FieldSpec=padrao_NUM_04
+  Property=InheritClassName=rightSle
+  Property=TooltipText=Numero da Rastreabilidade
+CONTROL=PUSHBUTTON
+GUID=D0F89C50-9D16-441A-B10B-148D5EB3365B
+  Name=cmdzera
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Zera
+  Order=17
+  Left=97
+  Width=28
+  Top=8
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,Zera
+  Property=HyperLabel=cmdzera
+  Property=TooltipText=Apaga o Numero Rastro Gerado
+CONTROL=SINGLELINEEDIT
+GUID=C9192339-FDFF-46B8-975B-CFA45A6909DE
+  Name=TIPCOD
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=5
+  Width=36
+  Top=32
+  Height=20
+  Browseindex=2
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=TIPCOD
+  Property=FieldSpec=padrao_CHAR_02
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=SINGLELINEEDIT
+GUID=A2977DD6-6D87-47F5-8B7E-A9476FA856BC
+  Name=RASTRONUM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=40
+  Width=72
+  Top=32
+  Height=20
+  Browseindex=0
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=RASTRONUM
+  Property=FieldSpec=padrao_NUM_08
+  Property=InheritClassName=rightSle
+CONTROL=FIXEDTEXT
+GUID=48464B73-CB42-4EB9-A556-FE2E45F7B214
+  Name=theFixedText10
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=OK
+  Order=4
+  Left=365
+  Width=64
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,OK
+  Property=HyperLabel=theFixedText10
+CONTROL=PUSHBUTTON
+GUID=D97AF504-D3C2-4ED5-A2B9-5DDBDD1F2A70
+  Name=OK
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=5
+  Left=365
+  Width=64
+  Top=5
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=OK
+  Property=Image=ico_ok
+CONTROL=FIXEDTEXT
+GUID=B5DE6DA6-3B3D-49EC-8B64-A3DB56DB4A7B
+  Name=theFixedText9
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Cancelar
+  Order=6
+  Left=441
+  Width=64
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,Cancelar
+  Property=HyperLabel=theFixedText9
+CONTROL=PUSHBUTTON
+GUID=EB779068-607B-4B8B-93C8-19713485F703
+  Name=Cancelar
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=7
+  Left=445
+  Width=64
+  Top=5
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=Cancelar
+  Property=Image=ico_sair
+CONTROL=FIXEDTEXT
+GUID=6B719B03-2B41-48E2-A4C9-C7BEB4BC6B01
+  Name=FixedText2
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Tipo
+  Order=8
+  Left=5
+  Width=35
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Tipo
+  Property=HyperLabel=FixedText2
+CONTROL=FIXEDTEXT
+GUID=5C0641C1-D0D6-4FDB-A6A5-E7F20415A8CE
+  Name=FixedText3
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Rastro
+  Order=9
+  Left=49
+  Width=35
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Rastro
+  Property=HyperLabel=FixedText3
+CONTROL=FIXEDTEXT
+GUID=43E6AA6E-5F74-4B1C-9249-E461063278A4
+  Name=info
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=
+  Order=13
+  Left=9
+  Width=600
+  Top=89
+  Height=80
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=info
+  Property=TextColor=255 0 0
+  Property=Background=255 255 255
+  Property=NewFont=12:Microsoft Sans Serif
+CONTROL=PUSHBUTTON
+GUID=507552DF-2A93-4A39-A44E-F21702450E68
+  Name=cmdbusca
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=14
+  Left=221
+  Width=32
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=cmdbusca
+  Property=Image=ico_find
+CONTROL=PUSHBUTTON
+GUID=1EC66084-DE28-45DE-876B-EF3CE990C6E5
+  Name=cmdAR
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=AR
+  Order=18
+  Left=101
+  Width=24
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,AR
+  Property=HyperLabel=cmdAR
+  Property=TooltipText=Marca CRMSem Tipo
+CONTROL=PUSHBUTTON
+GUID=64483B66-8AA5-40F5-BC04-70522AEC3036
+  Name=cmdcrm
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=CRM
+  Order=19
+  Left=189
+  Width=28
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,CRM
+  Property=HyperLabel=cmdcrm
+  Property=TooltipText=Marca CRMSem Tipo
+CONTROL=PUSHBUTTON
+GUID=0BC14835-719D-4C44-8F18-F65E4AD10DD8
+  Name=cmdalt
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Alt
+  Order=20
+  Left=157
+  Width=28
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,Alt
+  Property=HyperLabel=cmdalt
+  Property=TooltipText=Marca o Rastro como alternativo
+CONTROL=PUSHBUTTON
+GUID=2ADFA495-A088-47DD-87E9-EE74BD39B1B3
+  Name=cmdB
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=B
+  Order=21
+  Left=69
+  Width=28
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,B
+  Property=HyperLabel=cmdB
+  Property=TooltipText=Marca o Rastro como Beneficiamento
+CONTROL=PUSHBUTTON
+GUID=AC6B22D9-3625-4923-8065-D3A212C8CCD1
+  Name=cmdso
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=SO
+  Order=22
+  Left=37
+  Width=28
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,SO
+  Property=HyperLabel=cmdso
+  Property=TooltipText=Marca o Rastro como Solda
+CONTROL=PUSHBUTTON
+GUID=42CE12B6-667F-4850-85CA-6DC6EA5CDBB0
+  Name=cmdmO
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=MO
+  Order=23
+  Left=5
+  Width=28
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,MO
+  Property=HyperLabel=cmdmO
+  Property=TooltipText=Marca O Rastro Como Montagem
+CONTROL=PUSHBUTTON
+GUID=820F492F-6C04-47D0-B2F1-92DF5AE3AB39
+  Name=cmdop
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=OP
+  Order=24
+  Left=129
+  Width=24
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,OP
+  Property=HyperLabel=cmdop
+  Property=TooltipText=Marca CRMSem Tipo
+SUBCONTROLSEND
+DESIGNEREND = _jrifrastro
+
+

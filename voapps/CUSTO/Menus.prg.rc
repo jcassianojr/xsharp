@@ -1,0 +1,86 @@
+EMPTYSHELLMENU ACCELERATORS
+Begin
+	115, 21813, ALT, VIRTKEY
+	112, 21830, VIRTKEY
+End
+ 
+EMPTYSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		MENUITEM "&Viabilidade...", 32001
+		POPUP "Mão De Obra"
+		BEGIN
+			MENUITEM "Máquina", 21782
+			MENUITEM "Operador", 21783
+			MENUITEM "Terceiros", 21784
+		END
+		POPUP "Estimativa Processo"
+		BEGIN
+			MENUITEM "Em Aberto", 21786
+			MENUITEM "Assinar", 21787
+			MENUITEM "Nova Revisao", 21788
+			MENUITEM "Concluidas", 21789
+			MENUITEM "Revisoes Antigas", 21790
+			MENUITEM "Produtos", 21791
+		END
+		POPUP "Cadastro Apoio"
+		BEGIN
+			MENUITEM "Técnicos", 21793
+			MENUITEM "Area &Industriais", 21794
+			MENUITEM "C&lientes", 21795
+			MENUITEM "&Zona de Vendas", 21796
+		END
+		POPUP "Planilhas Orcamentos"
+		BEGIN
+			MENUITEM "Planil&ha Orçamentos", 21798
+			MENUITEM "Planilha de Orcamentos Fechadas", 21799
+			MENUITEM "Mar&kup", 21800
+			MENUITEM "Cotações", 21801
+			MENUITEM "Prod&utos", 21802
+			MENUITEM "&Equipamentos", 21803
+			MENUITEM "&Componente", 21804
+			MENUITEM "Materia &Prima", 21805
+		END
+		POPUP "Analise de Custos"
+		BEGIN
+			MENUITEM "Analise de Custo", 21807
+			MENUITEM "Produtos", 21808
+		END
+		MENUITEM SEPARATOR
+		MENUITEM "C&onfigurar Impressora ..", 21810
+		MENUITEM "&Indexar", 21811
+		MENUITEM SEPARATOR
+		MENUITEM "&Sair\tAlt+F4", 21813
+	END
+	POPUP "&Relatorios"
+	BEGIN
+		MENUITEM "Custos (Todos)", 21815
+		MENUITEM "Viabilidade", 21816
+		MENUITEM "Estimativa", 21817
+		MENUITEM "Planilha de Orçamento", 21818
+		MENUITEM "Analise de Custo", 21819
+		MENUITEM "WRPT", 21820
+		MENUITEM "WRPT Integrado", 21821
+		MENUITEM "LST View", 21822
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		POPUP "Email"
+		BEGIN
+			MENUITEM "Consulta", 21825
+			MENUITEM "Geral", 21826
+			MENUITEM "Configuracao", 21827
+		END
+		MENUITEM "Checar CGC/CPF/IE...", 21828
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Indice\tF1", 21830
+		MENUITEM "&Usando a Ajuda", 21831
+		MENUITEM SEPARATOR
+		MENUITEM "Atualizações", 21833
+		MENUITEM "&Sobre...", 32031
+	END
+End
+ 

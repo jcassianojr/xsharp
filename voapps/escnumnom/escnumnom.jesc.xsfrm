@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="jesc">
+    <Window Name="jesc">
+      <Name>jesc</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Escolha Pesquisa</Caption>
+      <Order>0</Order>
+      <Left>30</Left>
+      <Top>30</Top>
+      <Width>524</Width>
+      <Height>259</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Escolha Pesquisa",,</HyperLabel>
+        <HyperLabel>#jesc,,,</HyperLabel>
+        <ViewAs>#BrowseView</ViewAs>
+        <ClipperKeys>True</ClipperKeys>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <InheritClassName>MYDataWindow</InheritClassName>
+      </ExProperties>
+    </Window>
+    <Control Name="SC_TECNICO">
+      <Name>SC_TECNICO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>No.</Caption>
+      <Order>1</Order>
+      <Left>17</Left>
+      <Top>17</Top>
+      <Width>48</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"No.",,</HyperLabel>
+        <HyperLabel>#SC_TECNICO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_NOMTEC">
+      <Name>SC_NOMTEC</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Descrição/Nome:</Caption>
+      <Order>2</Order>
+      <Left>96</Left>
+      <Top>17</Top>
+      <Width>134</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Descrição/Nome:",,</HyperLabel>
+        <HyperLabel>#SC_NOMTEC,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="NUMERO">
+      <Name>NUMERO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>17</Left>
+      <Top>33</Top>
+      <Width>72</Width>
+      <Height>22</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>11</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#NUMERO,,,</HyperLabel>
+        <HyperLabel>,"No.",,</HyperLabel>
+        <Background>255 255 200</Background>
+      </ExProperties>
+    </Control>
+    <Control Name="NOME">
+      <Name>NOME</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>93</Left>
+      <Top>34</Top>
+      <Width>292</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>67</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#NOME,,,</HyperLabel>
+        <HyperLabel>,"Nome/Descrição:",,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

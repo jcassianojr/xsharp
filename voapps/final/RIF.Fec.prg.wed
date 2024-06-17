@@ -1,0 +1,133 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JRIFFEC
+GUID=218E6C90-95DC-4CC3-935F-B04BCDF44058
+  Name=JRIFFEC
+  Class=DATADIALOG
+  Caption=Fechamento RIF
+  Order=0
+  Left=26
+  Width=371
+  Top=26
+  Height=144
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fechamento RIF",,
+  Property=HyperLabel=#JRIFFEC,,,
+  Property=ClipperKeys=True
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=RADIOBUTTON
+GUID=73DB5D7E-A261-4499-9F44-2EE9B1019FE9
+  Name=RadioButton2
+  Class=RADIOBUTTON
+  Caption=Reprovado
+  Order=1
+  Left=138
+  Width=92
+  Top=57
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Reprovado",,
+  Property=Value=R
+  Property=HyperLabel=#RadioButton2,,,
+  Property=TooltipText="Marcar RIF Com Reprovado"
+
+CONTROL=RADIOBUTTON
+GUID=5C25CCE3-91FF-44B4-AC98-4886A3EFB124
+  Name=RadioButton1
+  Class=RADIOBUTTON
+  Caption=Aprovado
+  Order=2
+  Left=56
+  Width=71
+  Top=57
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Aprovado",,
+  Property=Value=A
+  Property=HyperLabel=#RadioButton1,,,
+  Property=TooltipText="Marcar RIF Com Aprovado"
+
+CONTROL=RADIOBUTTONGROUP
+GUID=CDD58077-FE4D-4A01-B21A-08D3D6664DA7
+  Name=Laudo
+  Class=RADIOBUTTONGROUP
+  Caption=Laudo
+  Order=3
+  Left=45
+  Width=195
+  Top=41
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Laudo",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#Laudo,,,
+  Property=TooltipText="Resultado do Laudo"
+
+CONTROL=FIXEDTEXT
+GUID=A64A6197-926A-4DA2-9933-12DCB43980E6
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=4
+  Left=269
+  Width=64
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=90B799DA-D9E3-4A50-B54F-6E0A1AE277B5
+  Name=OKx
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=269
+  Width=64
+  Top=45
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OKx,,,
+  Property=Image=ico_ok
+  Property=TooltipText="Clique Para Concluir"
+
+SUBCONTROLSEND
+DESIGNEREND = JRIFFEC
+

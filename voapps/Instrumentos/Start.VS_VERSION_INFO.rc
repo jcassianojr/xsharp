@@ -1,0 +1,32 @@
+1 VERSIONINFO
+ FILEVERSION 		1,0,0,1
+ PRODUCTVERSION 	1,0,0,1
+ FILEFLAGSMASK 		0x3fL
+ FILEFLAGS 			0x00L
+ FILEOS             4
+ FILETYPE 			1
+ FILESUBTYPE 		0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Modulo de Instrumentos.\0"
+            VALUE "CompanyName", "Softec Sistemas.\0"
+            VALUE "FileDescription", "Instrumentos\0"
+            VALUE "FileVersion", "1, 0, 0, %V%\0"
+            VALUE "InternalName", "Instrumentos\0"
+            VALUE "LegalCopyright", "Copyright \251 2004\0"
+            VALUE "OriginalFilename", "Instrumentos.EXE\0"
+            VALUE "ProductName", "Instrumentos\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+

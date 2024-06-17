@@ -1,0 +1,175 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,_Indexar
+GUID=82CB2463-C93B-4C07-B047-23F757A1DF3F
+  Name=_Indexar
+  Class=DATAWINDOW
+  Caption=Indexar Arquivos
+  Order=0
+  Left=32
+  Width=382
+  Top=32
+  Height=153
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Indexar Arquivos",,
+  Property=HyperLabel=#_Indexar,,,
+  Property=HyperLabel=,,,"Indexar"
+
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=F49470BE-40F7-4C2B-A46A-4291592B54F4
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=1
+  Left=189
+  Width=64
+  Top=73
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ICO_SAIR
+  Property=TooltipText="Clique Para Cancelar Indexação"
+  Property=HyperLabel=,,,"Indexar"
+
+CONTROL=FIXEDTEXT
+GUID=2EC4FA89-A096-46A1-BF6A-E8068B9F0C24
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=2
+  Left=189
+  Width=64
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+  Property=HyperLabel=,,,"Indexar"
+
+CONTROL=FIXEDTEXT
+GUID=F7B93C6C-5D2B-4C8F-8FFB-BFA2E1E282FA
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=3
+  Left=261
+  Width=64
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+  Property=HyperLabel=,,,"Indexar"
+
+CONTROL=PUSHBUTTON
+GUID=42584BD7-842F-4597-AAA9-E371912E7CD8
+  Name=PushButton1
+  Class=PUSHBUTTON
+  Caption=
+  Order=4
+  Left=261
+  Width=64
+  Top=73
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#PushButton1,,,
+  Property=Image=ICO_OK
+  Property=TooltipText="Clique para Iniciar a Indexação"
+  Property=HyperLabel=,,,"Indexar"
+
+CONTROL=FIXEDTEXT
+GUID=5EAED256-468F-40EA-954E-DD1FAF86D023
+  Name=x2
+  Class=FIXEDTEXT
+  Caption=Ajuda
+  Order=5
+  Left=45
+  Width=60
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Ajuda",,
+  Property=HyperLabel=#x2,,,
+
+CONTROL=PUSHBUTTON
+GUID=ECB3CCF0-7328-4F58-AF6F-E0102424FA72
+  Name=Ajuda
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=45
+  Width=60
+  Top=73
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Ajuda,,,
+  Property=Image=ICO_AJUDA
+  Property=TooltipText="Clique Para Acessar a Ajuda"
+  Property=HyperLabel=,,,"login"
+
+CONTROL=FIXEDTEXT
+GUID=059B5143-E53E-4CD6-8AC1-FECF5171B087
+  Name=theFixedText1
+  Class=FIXEDTEXT
+  Caption=Indexar Arquivos
+  Order=-1
+  Left=49
+  Width=280
+  Top=29
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Indexar Arquivos",,
+  Property=NewFont=24:MS Sans Serif:Bold
+  Property=HyperLabel=#theFixedText1,,,
+  Property=HyperLabel=,,,"Indexar"
+
+SUBCONTROLSEND
+DESIGNEREND = _Indexar
+

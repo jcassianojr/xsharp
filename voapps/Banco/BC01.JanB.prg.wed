@@ -1,0 +1,194 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JBBC01
+GUID=2A0BB4FC-A79C-4F72-BCC0-57C987349AD7
+  Name=JBBC01
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=10
+  Width=481
+  Top=10
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JBBC01,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=D40130DD-1D10-4855-A19B-4C97A0666CC3
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=-1
+  Left=22
+  Width=50
+  Top=22
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=3880975E-FAA0-4243-AD67-7DE17F04450F
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=102
+  Width=70
+  Top=22
+  Height=23
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_04
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Código:",,
+  Property=HyperLabel=,,,"BC01_CODIGO"
+
+CONTROL=FIXEDTEXT
+GUID=7CBD44DD-DE6D-4044-9332-7372F22BAA70
+  Name=SC_DESCRICAO
+  Class=FIXEDTEXT
+  Caption=Descricao:
+  Order=-1
+  Left=21
+  Width=70
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descricao:",,
+  Property=HyperLabel=#SC_DESCRICAO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=CB018730-F591-45F2-8870-294C694BEFFC
+  Name=DESCRICAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=101
+  Width=360
+  Top=49
+  Height=20
+  Browseindex=1
+  Browsesize=41
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_35
+  Property=HyperLabel=#DESCRICAO,,,
+  Property=HyperLabel=,"Descrição:",,
+  Property=HyperLabel=,,,"BC01_DESCRICAO"
+
+CONTROL=SINGLELINEEDIT
+GUID=5B9B0DF9-6869-4954-8D13-B8D4A9C7CBDC
+  Name=TIPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=101
+  Width=40
+  Top=73
+  Height=20
+  Browseindex=2
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#TIPO,,,
+  Property=HyperLabel=,"Tipo:",,
+  Property=HyperLabel=,,,"BC01_TIPO"
+
+CONTROL=FIXEDTEXT
+GUID=5979D78A-8594-4328-B646-36674F6FA714
+  Name=SC_TIPO
+  Class=FIXEDTEXT
+  Caption=Tipo:
+  Order=-1
+  Left=21
+  Width=40
+  Top=77
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tipo:",,
+  Property=HyperLabel=#SC_TIPO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=142B3616-6EC1-4359-B7AE-14BB804B4F28
+  Name=ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=101
+  Width=70
+  Top=97
+  Height=20
+  Browseindex=3
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHar_03
+  Property=HyperLabel=#ITEM,,,
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=,,,"BC01_ITEM"
+
+CONTROL=FIXEDTEXT
+GUID=DAC4BF62-021A-4C81-802A-8F9DEC473105
+  Name=SC_ITEM
+  Class=FIXEDTEXT
+  Caption=Item:
+  Order=-1
+  Left=21
+  Width=40
+  Top=101
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=#SC_ITEM,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JBBC01
+

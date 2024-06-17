@@ -1,0 +1,397 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,esccod
+GUID=B6509625-AE95-4E81-BABC-FF73AFC42D5F
+  Name=esccod
+  Class=DATADIALOG
+  Caption=Escolher
+  Order=0
+  Left=52
+  Width=667
+  Top=52
+  Height=358
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escolher",,
+  Property=HyperLabel=#esccod,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SUBDATAWINDOW
+GUID=74650864-5BFC-4148-B40B-35EFE2820970
+  Name=jescC
+  Class=SUBDATAWINDOW
+  Caption=jescC
+  Order=1
+  Left=9
+  Width=580
+  Top=37
+  Height=312
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#jescC,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=8AE62B2B-2295-4B03-AFD4-8FA40E76995C
+  Name=CBUSCA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=9
+  Width=220
+  Top=9
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#CBUSCA,,,
+
+CONTROL=PUSHBUTTON
+GUID=7A06ED8E-C9F7-4D22-9C16-5CC26591DC08
+  Name=Busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=317
+  Width=28
+  Top=5
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#Busca,,,
+
+CONTROL=FIXEDTEXT
+GUID=C971BFD4-1159-420A-8094-2775EF22E80A
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=6
+  Left=597
+  Width=64
+  Top=213
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=A98D3E34-800C-41A4-893F-F57353B7A1AC
+  Name=sair
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=597
+  Width=64
+  Top=165
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#sair,,,
+  Property=Image=ICO_SAIR
+
+CONTROL=FIXEDTEXT
+GUID=EF6B71AB-C635-4C71-93F4-D346742188C9
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=Busca Nome
+  Order=8
+  Left=349
+  Width=40
+  Top=5
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Busca Nome",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=FIXEDTEXT
+GUID=EF2C1E44-4863-4102-9011-558107FA766D
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=Escolher
+  Order=9
+  Left=597
+  Width=64
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Escolher",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=PUSHBUTTON
+GUID=FDB43623-CE4C-46A0-8632-D9239ECB5526
+  Name=Escolher
+  Class=PUSHBUTTON
+  Caption=
+  Order=10
+  Left=597
+  Width=64
+  Top=85
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Escolher,,,
+  Property=Image=ICO_OK
+
+CONTROL=FIXEDTEXT
+GUID=141A2A5D-CFD5-46DE-97A2-AA4B20E9965A
+  Name=theFixedText12
+  Class=FIXEDTEXT
+  Caption=Busca Codigo
+  Order=11
+  Left=265
+  Width=48
+  Top=5
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Busca Codigo",,
+  Property=HyperLabel=#theFixedText12,,,
+
+CONTROL=PUSHBUTTON
+GUID=B18AA32B-8EC6-433B-B275-04D1F2B2829C
+  Name=BuscaCOD
+  Class=PUSHBUTTON
+  Caption=
+  Order=12
+  Left=233
+  Width=28
+  Top=5
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#BuscaCOD,,,
+
+CONTROL=PUSHBUTTON
+GUID=C22FA863-2E49-4858-B4BC-21D2F2AC0AA2
+  Name=PushButton4
+  Class=PUSHBUTTON
+  Caption=Busca Detalhada
+  Order=13
+  Left=393
+  Width=100
+  Top=5
+  Height=25
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Busca Detalhada",,
+  Property=HyperLabel=#PushButton4,,,
+
+SUBCONTROLSEND
+DESIGNEREND = esccod
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jescc
+GUID=2FE876B7-2484-4765-ADE7-01E0EF33EE87
+  Name=jescc
+  Class=DATAWINDOW
+  Caption=Escolha Pesquisa
+  Order=0
+  Left=40
+  Width=524
+  Top=40
+  Height=259
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escolha Pesquisa",,
+  Property=HyperLabel=#jescc,,,
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=BAEC78DC-2277-4B67-A0E3-1E34EBA06625
+  Name=SC_TECNICO
+  Class=FIXEDTEXT
+  Caption=Codigo
+  Order=1
+  Left=17
+  Width=48
+  Top=17
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo",,
+  Property=HyperLabel=#SC_TECNICO,,,
+
+CONTROL=FIXEDTEXT
+GUID=24717EAF-2FEE-4006-A249-5AA46E1C51C4
+  Name=SC_NOMTEC
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=2
+  Left=73
+  Width=52
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOMTEC,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=6CECF29F-A83A-48E2-AE5F-70A56200218A
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=17
+  Width=48
+  Top=33
+  Height=20
+  Browseindex=0
+  Browsesize=24
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo",,
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=73550C09-CE9D-4624-ACD6-87C3430B4A0C
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=73
+  Width=292
+  Top=33
+  Height=20
+  Browseindex=1
+  Browsesize=67
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216348288
+  Exstyles=512
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=45354D3F-CFE1-40BF-98D9-36CB70A4CE6A
+  Name=pornum
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=413
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_AZ
+  Property=HyperLabel=#pornum,,,
+  Property=TooltipText="Clique para ordenar por Numero"
+
+CONTROL=PUSHBUTTON
+GUID=7D762DF5-434C-4B53-95AD-E1BBEB1BC5B8
+  Name=buscanum
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=381
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscanum,,,
+  Property=TooltipText="Clique Para Localizar Por Numero"
+
+SUBCONTROLSEND
+DESIGNEREND = jescc
+

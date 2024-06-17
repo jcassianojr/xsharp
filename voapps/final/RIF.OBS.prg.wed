@@ -1,0 +1,190 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JRIFOBS
+GUID=AE836C07-E5D1-4AAD-88A7-A4DA0F295452
+  Name=JRIFOBS
+  Class=DATADIALOG
+  Caption=Observações
+  Order=0
+  Left=22
+  Width=549
+  Top=22
+  Height=240
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Observações",,
+  Property=HyperLabel=#JRIFOBS,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=7DE2AC98-5551-49AB-B331-CDE5FC9FF01E
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=13
+  Left=457
+  Width=64
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=760957B0-5EE2-45F0-807C-697BC01743FA
+  Name=OKx
+  Class=PUSHBUTTON
+  Caption=
+  Order=14
+  Left=457
+  Width=64
+  Top=29
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OKx,,,
+  Property=Image=ico_ok
+
+CONTROL=FIXEDTEXT
+GUID=D9019A1C-2AC6-4E66-B26E-EF22A682E85D
+  Name=linha01
+  Class=FIXEDTEXT
+  Caption=Fixed Text
+  Order=15
+  Left=13
+  Width=415
+  Top=13
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fixed Text",,
+  Property=NewFont=16:Times New Roman
+  Property=HyperLabel=#linha01,,,
+
+CONTROL=FIXEDTEXT
+GUID=056869C7-B8B1-4832-AB25-EA4FF1B5F76D
+  Name=linha02
+  Class=FIXEDTEXT
+  Caption=Fixed Text
+  Order=16
+  Left=13
+  Width=415
+  Top=45
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fixed Text",,
+  Property=NewFont=16:Times New Roman
+  Property=HyperLabel=#linha02,,,
+
+CONTROL=FIXEDTEXT
+GUID=0490BC6E-4D91-4BCA-9E1E-ADDC6D083016
+  Name=linha03
+  Class=FIXEDTEXT
+  Caption=Fixed Text
+  Order=17
+  Left=13
+  Width=415
+  Top=77
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fixed Text",,
+  Property=NewFont=16:Times New Roman
+  Property=HyperLabel=#linha03,,,
+
+CONTROL=FIXEDTEXT
+GUID=C851C898-8407-4FD7-A0C1-1B285037D95E
+  Name=linha04
+  Class=FIXEDTEXT
+  Caption=Fixed Text
+  Order=18
+  Left=13
+  Width=415
+  Top=109
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fixed Text",,
+  Property=NewFont=16:Times New Roman
+  Property=HyperLabel=#linha04,,,
+
+CONTROL=FIXEDTEXT
+GUID=2F9F51D1-E867-4B8C-A936-FECE48C60407
+  Name=linha05
+  Class=FIXEDTEXT
+  Caption=Fixed Text
+  Order=19
+  Left=13
+  Width=415
+  Top=141
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fixed Text",,
+  Property=NewFont=16:Times New Roman
+  Property=HyperLabel=#linha05,,,
+
+CONTROL=FIXEDTEXT
+GUID=02AB7C85-3C21-4AFF-964C-F0C02CA7CBB4
+  Name=linha06
+  Class=FIXEDTEXT
+  Caption=Fixed Text
+  Order=20
+  Left=13
+  Width=415
+  Top=173
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fixed Text",,
+  Property=NewFont=16:Times New Roman
+  Property=HyperLabel=#linha06,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JRIFOBS
+

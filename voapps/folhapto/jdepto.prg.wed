@@ -1,0 +1,450 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jdepto
+GUID=0FA88832-8A98-48AC-BB30-7D5946B8A616
+  Name=jdepto
+  Class=DATAWINDOW
+  Caption=Departamentos
+  Order=0
+  Left=32
+  Width=439
+  Top=32
+  Height=428
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Departamentos",,
+  Property=ViewAs=#FormView
+  Property=HyperLabel=#jdepto,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=6EC584B3-8461-4178-B5F9-142A3B5F8DBF
+  Name=SC_DEPTO
+  Class=FIXEDTEXT
+  Caption=Depto:
+  Order=1
+  Left=11
+  Width=39
+  Top=10
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Depto:",,
+  Property=HyperLabel=#SC_DEPTO,,,
+
+CONTROL=FIXEDTEXT
+GUID=69F00403-83BB-4A99-B8F9-DC51A37D417F
+  Name=SC_SECAO
+  Class=FIXEDTEXT
+  Caption=Secao:
+  Order=2
+  Left=109
+  Width=43
+  Top=7
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Secao:",,
+  Property=HyperLabel=#SC_SECAO,,,
+
+CONTROL=FIXEDTEXT
+GUID=1D6F2C3D-410D-4A75-A84E-B74C164FDD37
+  Name=SC_SETOR
+  Class=FIXEDTEXT
+  Caption=Setor:
+  Order=3
+  Left=213
+  Width=38
+  Top=8
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Setor:",,
+  Property=HyperLabel=#SC_SETOR,,,
+
+CONTROL=FIXEDTEXT
+GUID=63495A6B-6086-44AF-A983-863F952B4D95
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=4
+  Left=11
+  Width=57
+  Top=38
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=C4A8CE76-4CD9-4CFD-B134-DE0C73B323F8
+  Name=SC_NOMER
+  Class=FIXEDTEXT
+  Caption=Reduzido
+  Order=5
+  Left=8
+  Width=65
+  Top=66
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Reduzido",,
+  Property=HyperLabel=#SC_NOMER,,,
+
+CONTROL=FIXEDTEXT
+GUID=0CDF21FE-AC45-4820-8610-1C408D43D0CE
+  Name=SC_NOMEC
+  Class=FIXEDTEXT
+  Caption=Cognome
+  Order=6
+  Left=8
+  Width=68
+  Top=90
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cognome",,
+  Property=HyperLabel=#SC_NOMEC,,,
+
+CONTROL=FIXEDTEXT
+GUID=51229DE4-1D65-4DB3-9A84-3B28D172846F
+  Name=SC_CCUSTO
+  Class=FIXEDTEXT
+  Caption=Ccusto:
+  Order=14
+  Left=10
+  Width=43
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ccusto:",,
+  Property=HyperLabel=#SC_CCUSTO,,,
+
+CONTROL=FIXEDTEXT
+GUID=7844023A-99AA-4CC1-A82A-A75D2626BB4C
+  Name=SC_UNIFUN
+  Class=FIXEDTEXT
+  Caption=Unifun:
+  Order=15
+  Left=124
+  Width=37
+  Top=116
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Unifun:",,
+  Property=HyperLabel=#SC_UNIFUN,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=97E6B6B5-C38E-42AE-8250-BB4324E1F5D1
+  Name=DEPTO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=54
+  Width=48
+  Top=8
+  Height=25
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_04
+  Property=HyperLabel=#DEPTO,,,
+  Property=HyperLabel=,"Depto:",,
+  Property=HyperLabel=,,,"depto_DEPTO"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=6A41CE35-38BE-460E-858F-25889230270E
+  Name=SECAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=157
+  Width=51
+  Top=6
+  Height=26
+  Browseindex=1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#SECAO,,,
+  Property=HyperLabel=,"Secao:",,
+  Property=HyperLabel=,,,"depto_SECAO"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=848A6F76-5059-402B-A9A8-463135307DCA
+  Name=SETOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=258
+  Width=57
+  Top=7
+  Height=25
+  Browseindex=2
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#SETOR,,,
+  Property=HyperLabel=,"Setor:",,
+  Property=HyperLabel=,,,"depto_SETOR"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=0EEB8EDE-11A0-4976-84ED-794591F6CC5C
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=87
+  Width=292
+  Top=39
+  Height=20
+  Browseindex=3
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_char_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"depto_NOME"
+
+CONTROL=SINGLELINEEDIT
+GUID=0026D75E-1337-4635-B474-7DCD4C4BC200
+  Name=NOMER
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=82
+  Width=187
+  Top=63
+  Height=20
+  Browseindex=3
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_char_25
+  Property=HyperLabel=#NOMER,,,
+  Property=HyperLabel=,"Nomer:",,
+  Property=HyperLabel=,,,"depto_NOMER"
+
+CONTROL=SINGLELINEEDIT
+GUID=67E41CEE-636E-411B-B4C8-88FF730EB43D
+  Name=NOMEC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=80
+  Width=117
+  Top=89
+  Height=20
+  Browseindex=5
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_char_15
+  Property=HyperLabel=#NOMEC,,,
+  Property=HyperLabel=,"Nomec:",,
+  Property=HyperLabel=,,,"depto_NOMEC"
+
+CONTROL=SINGLELINEEDIT
+GUID=5A2E15C9-F89E-4D37-BE21-CCEDD437A9EA
+  Name=CCUSTO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=30
+  Left=61
+  Width=54
+  Top=116
+  Height=20
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#CCUSTO,,,
+  Property=HyperLabel=,"Ccusto:",,
+  Property=HyperLabel=,,,"depto_CCUSTO"
+
+CONTROL=SINGLELINEEDIT
+GUID=5E6D4F39-C419-47C1-A7EF-0E1C05D940E7
+  Name=UNIFUN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=31
+  Left=169
+  Width=82
+  Top=117
+  Height=20
+  Browseindex=5
+  Browsesize=16
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_char_10
+  Property=HyperLabel=#UNIFUN,,,
+  Property=HyperLabel=,"Unifun:",,
+  Property=HyperLabel=,,,"depto_UNIFUN"
+
+CONTROL=PUSHBUTTON
+GUID=3201ABCE-EB0F-45A9-9C79-0C26552130F2
+  Name=cmdbco1
+  Class=PUSHBUTTON
+  Caption=(D)ireta (I)ndireta (A)dministracao (C)omercial
+  Order=33
+  Left=157
+  Width=229
+  Top=146
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073750016
+  Exstyles=0
+  Property=HyperLabel=,"Direta Indireta Administracao Comercial",,
+  Property=HyperLabel=#cmdbco1,,,
+
+CONTROL=PUSHBUTTON
+GUID=14FE288E-9DBC-4181-B594-B396F9CA82DC
+  Name=cmdbco
+  Class=PUSHBUTTON
+  Caption=(S)im (N)ao 
+  Order=34
+  Left=83
+  Width=70
+  Top=147
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Sim Nao ",,
+  Property=HyperLabel=#cmdbco,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=E9234918-32B4-4B50-873B-AEB4408B4EC6
+  Name=MODIRETA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=35
+  Left=59
+  Width=24
+  Top=146
+  Height=24
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#MODIRETA,,,
+  Property=HyperLabel=,"Chapa:",,
+  Property=HyperLabel=,,,"FO_PES_CHAPA"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=16458193-425A-41F4-842A-A99E52741A2D
+  Name=escunid
+  Class=PUSHBUTTON
+  Caption=
+  Order=36
+  Left=255
+  Width=23
+  Top=118
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#escunid,,,
+  Property=Image=ICO_FIND
+
+SUBCONTROLSEND
+DESIGNEREND = jdepto
+

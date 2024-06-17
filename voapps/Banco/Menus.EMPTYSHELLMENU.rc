@@ -1,0 +1,50 @@
+ EMPTYSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		MENUITEM "Lançamentos", 28543
+		MENUITEM "Lançamentos so Compentencia", 28544
+		MENUITEM "Lançamentos Mes Fechado", 28545
+		MENUITEM "Contas Correntes", 28546
+		MENUITEM "Historico", 28547
+		MENUITEM "Codigo de Despesas", 28548
+		MENUITEM "Importar Contas Pagas Manager", 28549
+		MENUITEM "Cadastro Contatos", 28550
+		MENUITEM "Cadastro Itens", 28551
+		MENUITEM "Compra Itens", 28552
+		MENUITEM SEPARATOR
+		MENUITEM "Trocar Competencia", 28554
+		MENUITEM "Indexar", 28555
+		MENUITEM "C&onfigurar Impressora ..", 28556
+		MENUITEM "&Sair\tAlt+F4", 28557
+	END
+	POPUP "&Relatorios"
+	BEGIN
+		MENUITEM "Controle Bancario Banco", 28559
+		MENUITEM "Bancos/Contas", 28560
+		MENUITEM "Cod.Despesas/Historico", 28561
+		MENUITEM "WRPT", 28562
+		MENUITEM "Controle Bancario Integrado", 28563
+		MENUITEM "WRPT Integrado", 28564
+		MENUITEM "LST Logix", 28565
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		POPUP "Email"
+		BEGIN
+			MENUITEM "Consulta", 28568
+			MENUITEM "Geral", 28569
+			MENUITEM "Configurar", 28570
+		END
+		MENUITEM "Checar CGC/CPF/IE...", 28571
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Conteúdo", 28573
+		MENUITEM "&Indice\tF1", 28574
+		MENUITEM SEPARATOR
+		MENUITEM "Atualizacoes", 28576
+		MENUITEM "&Sobre...", 32031
+	END
+End
+ 

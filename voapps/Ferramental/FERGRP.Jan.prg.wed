@@ -1,0 +1,508 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JFERGRP
+GUID=8024D1E9-87C2-41FF-905A-E5D22EC9B31F
+  Name=JFERGRP
+  Class=DATADIALOG
+  Caption=Grupos
+  Order=0
+  Left=50
+  Width=668
+  Top=50
+  Height=295
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Grupos",,
+  Property=HyperLabel=#JFERGRP,,,
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDatadialog
+
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=CD968BED-536D-4DBC-A6F1-FCB1A167DD35
+  Name=Entrada
+  Class=PUSHBUTTON
+  Caption=Entrada Estoque
+  Order=1
+  Left=561
+  Width=88
+  Top=189
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Entrada Estoque",,
+  Property=HyperLabel=#Entrada,,,
+  Property=TooltipText="Entradas para codigo"
+
+CONTROL=PUSHBUTTON
+GUID=7BC98CD2-B932-44F1-9078-09423E1064E8
+  Name=BALANCO
+  Class=PUSHBUTTON
+  Caption=Balanco
+  Order=2
+  Left=561
+  Width=88
+  Top=165
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Balanco",,
+  Property=HyperLabel=#BALANCO,,,
+  Property=TooltipText="Inicia o Saldo do Codigo"
+
+CONTROL=PUSHBUTTON
+GUID=6B3D11D2-A3B0-4A23-84C7-0CFC2C7047B9
+  Name=Tabular
+  Class=PUSHBUTTON
+  Caption=Tabular
+  Order=3
+  Left=561
+  Width=80
+  Top=117
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tabular",,
+  Property=HyperLabel=#Tabular,,,
+  Property=TooltipText="Visualiza Todos os Codigo do Grupo"
+
+CONTROL=PUSHBUTTON
+GUID=0BFBFC2F-5750-4DC1-AC5A-4326E6B0C636
+  Name=Alterar
+  Class=PUSHBUTTON
+  Caption=Alterar
+  Order=4
+  Left=561
+  Width=80
+  Top=93
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Alterar",,
+  Property=HyperLabel=#Alterar,,,
+  Property=TooltipText="Altera o Codigo em Destaque"
+
+CONTROL=PUSHBUTTON
+GUID=60A46EE8-1F64-4AA0-A56B-6FE03AC51589
+  Name=Excluir
+  Class=PUSHBUTTON
+  Caption=Excluir
+  Order=5
+  Left=561
+  Width=80
+  Top=69
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Excluir",,
+  Property=HyperLabel=#Excluir,,,
+  Property=TooltipText="Exclui o o Codigo em Destaque da Lista "
+
+CONTROL=PUSHBUTTON
+GUID=590388AE-8E12-43AE-AC3B-D6CC7F96B2C4
+  Name=Incluir
+  Class=PUSHBUTTON
+  Caption=Incluir
+  Order=6
+  Left=561
+  Width=80
+  Top=45
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Incluir",,
+  Property=HyperLabel=#Incluir,,,
+  Property=TooltipText="Inclui um Codigo para o Grupo"
+
+CONTROL=SUBDATAWINDOW
+GUID=F0FD48AA-5FE0-4AC1-B966-63F9120A97E1
+  Name=JFERGI
+  Class=SUBDATAWINDOW
+  Caption=JFERGI
+  Order=7
+  Left=9
+  Width=543
+  Top=61
+  Height=215
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=RelationString="#GRUPO"
+  Property=Order="FERGI"
+  Property=HyperLabel=#JFERGI,,,
+
+CONTROL=FIXEDTEXT
+GUID=146A31EF-F28F-4ED0-8B49-B179EFFE9133
+  Name=SC_GRUPO
+  Class=FIXEDTEXT
+  Caption=Grupo/Final
+  Order=8
+  Left=5
+  Width=64
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Grupo/Final",,
+  Property=HyperLabel=#SC_GRUPO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=7E67782C-4F3A-4340-AEAA-4FA7F0A0730E
+  Name=GRUPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=73
+  Width=188
+  Top=5
+  Height=28
+  Browseindex=0
+  Browsesize=43
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#GRUPO,,,
+  Property=HyperLabel=,"Grupo:",,
+  Property=HyperLabel=,,,"FERGRP_GRUPO"
+  Property=TooltipText="Codigo do Grupo"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=340BE0B9-87EB-4440-9403-0ECDFEB9467F
+  Name=Proximo
+  Class=PUSHBUTTON
+  Caption=
+  Order=10
+  Left=601
+  Width=40
+  Top=141
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Proximo,,,
+  Property=Image=ICO_NEXT
+  Property=TooltipText="Avança um Codigo"
+
+CONTROL=PUSHBUTTON
+GUID=B86C6E73-6A91-4D9D-AD19-E1547DAB5430
+  Name=Anterior
+  Class=PUSHBUTTON
+  Caption=
+  Order=11
+  Left=561
+  Width=36
+  Top=141
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Anterior,,,
+  Property=Image=ICO_PREVIOUS
+  Property=TooltipText="Retorno um Codigo"
+
+CONTROL=PUSHBUTTON
+GUID=52DA3148-6DE3-4388-A87F-12CCF489D5F2
+  Name=Saida
+  Class=PUSHBUTTON
+  Caption=Saida Estoque
+  Order=12
+  Left=561
+  Width=88
+  Top=213
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Saida Estoque",,
+  Property=HyperLabel=#Saida,,,
+  Property=TooltipText="Saidas de Estoque  Para o Codigo"
+
+CONTROL=PUSHBUTTON
+GUID=DD7ED197-D746-4A3F-BDB9-97B616D66A16
+  Name=busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=13
+  Left=265
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#busca,,,
+  Property=TooltipText="Localizar Um Grupo"
+
+CONTROL=PUSHBUTTON
+GUID=6CDB023C-61CD-4215-84C6-F88ACEC96EC1
+  Name=Proximo1
+  Class=PUSHBUTTON
+  Caption=
+  Order=14
+  Left=337
+  Width=40
+  Top=9
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Proximo1,,,
+  Property=Image=ICO_NEXT
+  Property=TooltipText="Avancar um Grupo"
+
+CONTROL=PUSHBUTTON
+GUID=78B0354A-A706-4A09-8F39-738C735F40B5
+  Name=Anterior1
+  Class=PUSHBUTTON
+  Caption=
+  Order=15
+  Left=301
+  Width=36
+  Top=9
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Anterior1,,,
+  Property=Image=ICO_PREVIOUS
+  Property=TooltipText="Retornar Um Grupo"
+
+CONTROL=FIXEDTEXT
+GUID=377B5E69-9315-4906-8267-F48112976DA2
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=16
+  Left=493
+  Width=56
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=B10FCA3E-0F47-4383-B3E5-7D0868DBD960
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=17
+  Left=497
+  Width=52
+  Top=5
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ICO_SAIR
+  Property=TooltipText="Encerra Edicáo"
+
+CONTROL=FIXEDTEXT
+GUID=5EFB4473-4B51-42A3-ADC2-FC2A4D2E3C85
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=novo
+  Order=18
+  Left=381
+  Width=48
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"novo",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=374B4726-012C-4D17-A38B-D3E7A530E8E2
+  Name=novo
+  Class=PUSHBUTTON
+  Caption=
+  Order=19
+  Left=381
+  Width=52
+  Top=5
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#novo,,,
+  Property=Image=ICO_NEW
+  Property=TooltipText="Incluir um Novo Grupo"
+
+CONTROL=PUSHBUTTON
+GUID=17CD005C-75AF-4A85-95DC-0F7BCE0382AA
+  Name=deletar
+  Class=PUSHBUTTON
+  Caption=
+  Order=20
+  Left=437
+  Width=52
+  Top=5
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#deletar,,,
+  Property=Image=ICO_DELETE
+  Property=TooltipText="Excluir o Grupo Atual"
+
+CONTROL=FIXEDTEXT
+GUID=1DA5FC49-A3DA-4F72-B7BA-F5FD7CEAB9E2
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=excluir
+  Order=21
+  Left=437
+  Width=48
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"excluir",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=FIXEDTEXT
+GUID=22699B87-63BD-4D41-B649-F0FD187B41B3
+  Name=theFixedText12
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=22
+  Left=585
+  Width=52
+  Top=269
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText12,,,
+
+CONTROL=PUSHBUTTON
+GUID=83267EBA-0C61-43BB-A176-A223FF296558
+  Name=Cancelar1
+  Class=PUSHBUTTON
+  Caption=
+  Order=23
+  Left=585
+  Width=52
+  Top=237
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Cancelar1,,,
+  Property=Image=ICO_SAIR
+  Property=TooltipText="Encerra Ediçao"
+
+SUBCONTROLSEND
+DESIGNEREND = JFERGRP
+

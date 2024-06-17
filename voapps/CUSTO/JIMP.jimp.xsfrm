@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="jimp">
+    <Window Name="jimp">
+      <Name>jimp</Name>
+      <Class>DIALOGWINDOW</Class>
+      <Caption>Importar Produto</Caption>
+      <Order>0</Order>
+      <Left>28</Left>
+      <Top>31</Top>
+      <Width>400</Width>
+      <Height>240</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>2160590980</Styles>
+      <ExStyles>257</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Importar Produto",,</HyperLabel>
+        <HyperLabel>#jimp,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="CODIGO">
+      <Name>CODIGO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>5</Left>
+      <Top>57</Top>
+      <Width>372</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#CODIGO,,,</HyperLabel>
+        <TooltipText>"Codigo do Produto"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText1">
+      <Name>FixedText1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Codigo de Produto</Caption>
+      <Order>4</Order>
+      <Left>9</Left>
+      <Top>41</Top>
+      <Width>152</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Codigo de Produto",,</HyperLabel>
+        <HyperLabel>#FixedText1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Geraplan">
+      <Name>Geraplan</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Gerar Nova Planilha de Orçamento</Caption>
+      <Order>6</Order>
+      <Left>5</Left>
+      <Top>93</Top>
+      <Width>209</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807363</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Gerar Nova Planilha de Orçamento",,</HyperLabel>
+        <HyperLabel>#Geraplan,,,</HyperLabel>
+        <TooltipText>"Marque para Gerar Planilha de Orçamento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText10">
+      <Name>theFixedText10</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>OK</Caption>
+      <Order>7</Order>
+      <Left>317</Left>
+      <Top>129</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"OK",,</HyperLabel>
+        <HyperLabel>#theFixedText10,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="OK">
+      <Name>OK</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>317</Left>
+      <Top>81</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#OK,,,</HyperLabel>
+        <Image>ico_ok</Image>
+        <TooltipText>"Clique Para Iniciar"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText9">
+      <Name>theFixedText9</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Retornar</Caption>
+      <Order>9</Order>
+      <Left>245</Left>
+      <Top>129</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Retornar",,</HyperLabel>
+        <HyperLabel>#theFixedText9,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Cancelar">
+      <Name>Cancelar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>245</Left>
+      <Top>81</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Cancelar,,,</HyperLabel>
+        <Image>ico_sair</Image>
+        <TooltipText>"Clique Para Cancelar"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText2">
+      <Name>FixedText2</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Viabilidade</Caption>
+      <Order>11</Order>
+      <Left>9</Left>
+      <Top>9</Top>
+      <Width>80</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Viabilidade",,</HyperLabel>
+        <HyperLabel>#FixedText2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="nVIABILIDADE">
+      <Name>nVIABILIDADE</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>12</Order>
+      <Left>85</Left>
+      <Top>5</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#nVIABILIDADE,,,</HyperLabel>
+        <TooltipText>"Numero da Viabilidade"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="cmbBuscaVia">
+      <Name>cmbBuscaVia</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>--&gt;</Caption>
+      <Order>13</Order>
+      <Left>156</Left>
+      <Top>7</Top>
+      <Width>41</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"--&gt;",,</HyperLabel>
+        <TooltipText>"Clique Para Localizar Codigo da Viabilidade"</TooltipText>
+        <HyperLabel>#cmbBuscaVia,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

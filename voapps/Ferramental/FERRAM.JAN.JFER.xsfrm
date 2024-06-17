@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JFER">
+    <Window Name="JFER">
+      <Name>JFER</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Cadastro de Ferramentas</Caption>
+      <Order>0</Order>
+      <Left>92</Left>
+      <Top>92</Top>
+      <Width>842</Width>
+      <Height>528</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Cadastro de Ferramentas",,</HyperLabel>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <HyperLabel>#JFER,,,</HyperLabel>
+        <ViewAs>#FormView</ViewAs>
+        <ClipperKeys>True</ClipperKeys>
+        <InheritClassName>MYDataWindow</InheritClassName>
+      </ExProperties>
+    </Window>
+    <Control Name="NOME">
+      <Name>NOME</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>201</Left>
+      <Top>37</Top>
+      <Width>342</Width>
+      <Height>20</Height>
+      <BrowseIndex>4</BrowseIndex>
+      <BrowseSize>6</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_40</FieldSpec>
+        <HyperLabel>#NOME,,,</HyperLabel>
+        <HyperLabel>,"Nome:",,</HyperLabel>
+        <HyperLabel>,,,"FERRAM_NOME"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="TabControl1">
+      <Name>TabControl1</Name>
+      <Class>TABCONTROL</Class>
+      <Caption>Cadastro de Ferramentas</Caption>
+      <Order>2</Order>
+      <Left>9</Left>
+      <Top>61</Top>
+      <Width>651</Width>
+      <Height>355</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#TabControl1,,,</HyperLabel>
+        <HyperLabel>,"Cadastro de Ferramentas",,</HyperLabel>
+      </ExProperties>
+      <TabPages>
+        <TabPage Name="TABCONTROL1_PAGE1">
+          <Name>TABCONTROL1_PAGE1</Name>
+          <Caption>Basico</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TABCONTROL1_PAGE2">
+          <Name>TABCONTROL1_PAGE2</Name>
+          <Caption>Preventiva/Vida Util</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TABCONTROL1_PAGE3">
+          <Name>TABCONTROL1_PAGE3</Name>
+          <Caption>Dimensões/Elaborador</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TABCONTROL1_PAGE4">
+          <Name>TABCONTROL1_PAGE4</Name>
+          <Caption>Tecnicas</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TABCONTROL1_PAGE5">
+          <Name>TABCONTROL1_PAGE5</Name>
+          <Caption>Tecnicas II</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+      </TabPages>
+    </Control>
+    <Control Name="SC_FERRAM">
+      <Name>SC_FERRAM</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Ferramenta</Caption>
+      <Order>12</Order>
+      <Left>5</Left>
+      <Top>9</Top>
+      <Width>56</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ferramenta",,</HyperLabel>
+        <HyperLabel>#SC_FERRAM,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_NOME">
+      <Name>SC_NOME</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Descriçao da Ferramenta</Caption>
+      <Order>13</Order>
+      <Left>5</Left>
+      <Top>37</Top>
+      <Width>190</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Descriçao da Ferramenta",,</HyperLabel>
+        <HyperLabel>#SC_NOME,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FERRAM">
+      <Name>FERRAM</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>14</Order>
+      <Left>65</Left>
+      <Top>9</Top>
+      <Width>232</Width>
+      <Height>24</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>23</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_24</FieldSpec>
+        <HyperLabel>#FERRAM,,,</HyperLabel>
+        <HyperLabel>,"Ferram:",,</HyperLabel>
+        <HyperLabel>,,,"FERRAM_FERRAM"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>12:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="cmdCalcular">
+      <Name>cmdCalcular</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Calcular</Caption>
+      <Order>15</Order>
+      <Left>473</Left>
+      <Top>9</Top>
+      <Width>68</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Calcular",,</HyperLabel>
+        <HyperLabel>#cmdCalcular,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="busca">
+      <Name>busca</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>16</Order>
+      <Left>569</Left>
+      <Top>9</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ICO_FIND</Image>
+        <HyperLabel>#busca,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="TEXTO">
+      <Name>TEXTO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Numero</Caption>
+      <Order>17</Order>
+      <Left>301</Left>
+      <Top>9</Top>
+      <Width>48</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Numero",,</HyperLabel>
+        <HyperLabel>#TEXTO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="NUMERO">
+      <Name>NUMERO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>18</Order>
+      <Left>353</Left>
+      <Top>9</Top>
+      <Width>108</Width>
+      <Height>24</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>13</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#NUMERO,,,</HyperLabel>
+        <HyperLabel>,"Numero",,</HyperLabel>
+        <HyperLabel>,,,"FERRAM_FERRAM"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>12:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="porCOD">
+      <Name>porCOD</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>20</Order>
+      <Left>605</Left>
+      <Top>9</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ICO_AZ</Image>
+        <HyperLabel>#porCOD,,,</HyperLabel>
+        <TooltipText>"Ordenar Por Numero"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="jferrami">
+      <Name>jferrami</Name>
+      <Class>SUBDATAWINDOW</Class>
+      <Caption>jferrami</Caption>
+      <Order>21</Order>
+      <Left>9</Left>
+      <Top>421</Top>
+      <Width>600</Width>
+      <Height>104</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>Yes</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#jferrami,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Proximo">
+      <Name>Proximo</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>22</Order>
+      <Left>637</Left>
+      <Top>505</Top>
+      <Width>24</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741888</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Proximo,,,</HyperLabel>
+        <Image>ICO_NEXT</Image>
+        <TooltipText>"Avança um Codigo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Anterior">
+      <Name>Anterior</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>23</Order>
+      <Left>613</Left>
+      <Top>505</Top>
+      <Width>24</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741888</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Anterior,,,</HyperLabel>
+        <Image>ICO_PREVIOUS</Image>
+        <TooltipText>"Retorno um Codigo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Tabular">
+      <Name>Tabular</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Tabular</Caption>
+      <Order>24</Order>
+      <Left>613</Left>
+      <Top>481</Top>
+      <Width>48</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Tabular",,</HyperLabel>
+        <HyperLabel>#Tabular,,,</HyperLabel>
+        <TooltipText>"Visualiza Todos os Codigo do Grupo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Alterar">
+      <Name>Alterar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Alterar</Caption>
+      <Order>25</Order>
+      <Left>613</Left>
+      <Top>461</Top>
+      <Width>48</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Alterar",,</HyperLabel>
+        <HyperLabel>#Alterar,,,</HyperLabel>
+        <TooltipText>"Altera o Codigo em Destaque"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Excluir">
+      <Name>Excluir</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Excluir</Caption>
+      <Order>26</Order>
+      <Left>613</Left>
+      <Top>441</Top>
+      <Width>48</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Excluir",,</HyperLabel>
+        <HyperLabel>#Excluir,,,</HyperLabel>
+        <TooltipText>"Exclui o o Codigo em Destaque da Lista "</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Incluir">
+      <Name>Incluir</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Incluir</Caption>
+      <Order>27</Order>
+      <Left>613</Left>
+      <Top>421</Top>
+      <Width>48</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Incluir",,</HyperLabel>
+        <HyperLabel>#Incluir,,,</HyperLabel>
+        <TooltipText>"Inclui um Codigo para o Grupo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="CLIENTE">
+      <Name>CLIENTE</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>-1</Order>
+      <Left>13</Left>
+      <Top>205</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>1</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#CLIENTE,,,</HyperLabel>
+        <HyperLabel>,"Cliente:",,</HyperLabel>
+        <HyperLabel>,,,"FERRAM_CLIENTE"</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

@@ -1,0 +1,100 @@
+ EMPTYSHELLMENU ACCELERATORS
+Begin
+	115, 28478, ALT, VIRTKEY
+	112, 28504, VIRTKEY
+End
+ 
+ EMPTYSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		POPUP "Ferramentas"
+		BEGIN
+			MENUITEM "Cadastro", 28445
+			MENUITEM "Fotos ", 28446
+			MENUITEM "Sincronicar Cadastro Fotos", 28447
+		END
+		POPUP "Maquinas/Equipamentos"
+		BEGIN
+			MENUITEM "Cadastro", 28449
+			MENUITEM "Fotos", 28450
+			MENUITEM "Sincronicar Cadastro Fotos", 28451
+			MENUITEM "Cronograma", 28452
+		END
+		POPUP "Regstro de Ocorrencia"
+		BEGIN
+			MENUITEM "Registro de Ocorrência", 28454
+			MENUITEM "Calculas Dias Entre Ocorrencias", 28455
+		END
+		MENUITEM "Correção de Saldos", 28456
+		MENUITEM "Registro de Lubrificação", 28457
+		POPUP "Itens de Estoque"
+		BEGIN
+			MENUITEM "Controle Grupo", 28459
+			MENUITEM "Consumo Mensal", 28460
+			MENUITEM "Apurar Consumo Mensal", 28461
+			MENUITEM "Calcular Consumo Mensal", 28462
+		END
+		POPUP "Lista de Verificação Ferramenta"
+		BEGIN
+			MENUITEM "Lista  ", 28464
+			MENUITEM "Itens Pré Cadastrados", 28465
+		END
+		POPUP "Lista de Verificação Equipamento"
+		BEGIN
+			MENUITEM "Lista", 28467
+			MENUITEM "Itens Pré Cadastrados", 28468
+		END
+		MENUITEM "Solicitação de Manutenção", 28469
+		POPUP "Apurações"
+		BEGIN
+			MENUITEM "Ferramentas", 28471
+			MENUITEM "Máquinas", 28472
+			MENUITEM "PCP - Liberar Ferramentas", 28473
+			MENUITEM "PCP - Liberar Maquinas", 28474
+		END
+		MENUITEM "Registro de Horas Gastas", 28475
+		MENUITEM "Indexar", 28476
+		MENUITEM "C&onfigurar Impressora ..", 28477
+		MENUITEM "&Sair\tAlt+F4", 28478
+	END
+	POPUP "&Relatorios"
+	BEGIN
+		MENUITEM "Programa de Manutenção Ferramentas", 28480
+		MENUITEM "Programa de Manutenção Maquinas", 28481
+		MENUITEM "Cronograma de Manutençao Maquinas", 28482
+		MENUITEM "Registro de Ocorrencias", 28483
+		MENUITEM "Lista de Verificaçao de Ferramentas", 28484
+		MENUITEM "LIsta de Verificação de Maquinas", 28485
+		MENUITEM "Registro de Lubrificação", 28486
+		MENUITEM "Solicitação de Manutenção", 28487
+		MENUITEM "Ferramentas", 28488
+		MENUITEM "Maquinas/Equipamentos", 28489
+		MENUITEM "Outros", 28490
+		MENUITEM "Registro Horas Gastas", 28491
+		MENUITEM "WRPT ", 28492
+		MENUITEM "WRPT Grupo FR", 28493
+		MENUITEM "WRPT Grupo ME", 28494
+		MENUITEM "WRPT Integrado", 28495
+		MENUITEM "lstview logix", 28496
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		POPUP "Email"
+		BEGIN
+			MENUITEM "Consulta", 28499
+			MENUITEM "Geral", 28500
+			MENUITEM "Configuracao", 28501
+		END
+		MENUITEM "Checar CGC/CPF/IE...", 28502
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Indice\tF1", 28504
+		MENUITEM "&Usando a Ajuda", 28505
+		MENUITEM SEPARATOR
+		MENUITEM "Atualizações", 28507
+		MENUITEM "&Sobre...", 28508
+	END
+End
+ 

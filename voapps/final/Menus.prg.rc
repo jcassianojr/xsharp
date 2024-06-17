@@ -1,0 +1,49 @@
+ EMPTYSHELLMENU ACCELERATORS
+Begin
+	115, 28553, ALT, VIRTKEY
+	112, 28566, VIRTKEY
+End
+ 
+ EMPTYSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		MENUITEM "RIF - Registro de Inspecao Final", 28543
+		MENUITEM "OSCRT - Controle de Os", 28544
+		MENUITEM "Marcar Produto Seleção 100%", 28545
+		MENUITEM "Desmarcar Produto Seleção 100%", 28546
+		MENUITEM "RIF/Produto 1200/Sel 100%", 28547
+		MENUITEM SEPARATOR
+		MENUITEM "Indexar", 28549
+		MENUITEM SEPARATOR
+		MENUITEM "C&onfigurar Impressora ..", 28551
+		MENUITEM SEPARATOR
+		MENUITEM "&Sair\tAlt+F4", 28553
+	END
+	POPUP "&Relatorios"
+	BEGIN
+		MENUITEM "Relatorios Final", 28555
+		MENUITEM "WRPT", 28556
+		MENUITEM "WRPT Integrado", 28557
+		MENUITEM "lst view logix", 28558
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		POPUP "Email"
+		BEGIN
+			MENUITEM "Consulta", 28561
+			MENUITEM "Geral", 28562
+			MENUITEM "Configuração", 28563
+		END
+		MENUITEM "Checar CGC/CPF/IE...", 28564
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Indice\tF1", 28566
+		MENUITEM "&Usando a Ajuda", 28567
+		MENUITEM SEPARATOR
+		MENUITEM "Atualizações", 28569
+		MENUITEM "&Sobre...", 32031
+	END
+End
+ 

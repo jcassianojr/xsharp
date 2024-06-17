@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="ESCMP">
+    <Window Name="ESCMP">
+      <Name>ESCMP</Name>
+      <Class>DATADIALOG</Class>
+      <Caption>DataDialog Caption</Caption>
+      <Order>0</Order>
+      <Left>18</Left>
+      <Top>18</Top>
+      <Width>728</Width>
+      <Height>302</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataDialog Caption",,</HyperLabel>
+        <HyperLabel>#ESCMP,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="LISTBOX">
+      <Name>LISTBOX</Name>
+      <Class>LISTBOX</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>14</Left>
+      <Top>13</Top>
+      <Width>631</Width>
+      <Height>262</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1084293123</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#LISTBOX,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText9">
+      <Name>theFixedText9</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Retornar</Caption>
+      <Order>4</Order>
+      <Left>653</Left>
+      <Top>133</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Retornar",,</HyperLabel>
+        <HyperLabel>#theFixedText9,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="cmdCancelar">
+      <Name>cmdCancelar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>653</Left>
+      <Top>85</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#cmdCancelar,,,</HyperLabel>
+        <Image>ico_sair</Image>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText11">
+      <Name>theFixedText11</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Escolher</Caption>
+      <Order>6</Order>
+      <Left>653</Left>
+      <Top>61</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Escolher",,</HyperLabel>
+        <HyperLabel>#theFixedText11,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Escolher">
+      <Name>Escolher</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>653</Left>
+      <Top>13</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Escolher,,,</HyperLabel>
+        <Image>ico_ok</Image>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

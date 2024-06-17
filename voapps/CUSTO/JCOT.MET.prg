@@ -1,0 +1,37 @@
+﻿CLASS XJCOT INHERIT JCOT
+
+METHOD APPEND(oOWNER) 
+alert("Operação Bloqueada")
+
+METHOD DELETE(oOWNER) 
+alert("Operação Bloqueada")
+
+
+
+
+CONSTRUCTOR(oOWNER) 
+LOCAL oSERVER AS USEREDE
+LOCAL aDAD AS ARRAY
+IF ! ENTRAMENU("CUS",21)
+	RETU SELF
+ENDIF	
+aDAD:={zCURINI,"VIABIII.DBF",zCURDIR}
+oSERVER:=USEREDE{aDAD,,.T.}
+IF oSERVER:nERRO#0
+    RETU SELF
+ENDIF
+oserver:SetFilter("TIPO='C'")
+SUPER(oOWNER,,oSERVER)
+SELF:Browser:SetStandardStyle(gBsreadonly)
+SELF:SHOW()		
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+ RETURN SELF
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+
+
+END CLASS

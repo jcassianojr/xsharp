@@ -1,0 +1,319 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jcrmcesp
+GUID=EBFAF270-58CD-40B8-B542-0BD4C65C1439
+  Name=jcrmcesp
+  Class=DATAWINDOW
+  Caption=Codigos Especiais RIRM/RIST
+  Order=0
+  Left=24
+  Width=706
+  Top=24
+  Height=149
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigos Especiais RIRM/RIST",,
+  Property=Menu=STANDARDSHELLMENU
+  Property=HyperLabel=#jcrmcesp,,,
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=45956853-CBE9-4125-9F2E-6A405B83D72C
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero:
+  Order=1
+  Left=17
+  Width=44
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=FIXEDTEXT
+GUID=EBECE79F-E942-4112-824E-211F8B9D3923
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=2
+  Left=25
+  Width=36
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=133743A1-2F76-424A-971E-7D13D17B0B5A
+  Name=SC_TIPOENT
+  Class=FIXEDTEXT
+  Caption=Tipoent:
+  Order=3
+  Left=21
+  Width=44
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tipoent:",,
+  Property=HyperLabel=#SC_TIPOENT,,,
+
+CONTROL=FIXEDTEXT
+GUID=952A17C0-E043-40F9-9A2D-833A19FC6D89
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=4
+  Left=25
+  Width=40
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=8DF20CA6-169E-45E4-8F40-414983B7F2D4
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=73
+  Width=68
+  Top=21
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"CRMCESP_NUMERO"
+
+CONTROL=SINGLELINEEDIT
+GUID=DF200064-6236-4CBB-87F0-DD1D5B237337
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=77
+  Width=512
+  Top=97
+  Height=20
+  Browseindex=3
+  Browsesize=64
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"CRMCESP_NOME"
+
+CONTROL=SINGLELINEEDIT
+GUID=C5349502-C133-48D5-86A7-118A25B72E79
+  Name=TIPOENT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=77
+  Width=24
+  Top=45
+  Height=20
+  Browseindex=1
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#TIPOENT,,,
+  Property=HyperLabel=,"T",,
+  Property=HyperLabel=,,,"CRMCESP_TIPOENT"
+
+CONTROL=SINGLELINEEDIT
+GUID=5E53B02D-16A2-490A-B2E1-5CB1C644BDD7
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=77
+  Width=180
+  Top=73
+  Height=20
+  Browseindex=2
+  Browsesize=29
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo",,
+  Property=HyperLabel=,,,"CRMCESP_CODIGO"
+
+CONTROL=PUSHBUTTON
+GUID=D713C387-0D3A-4E83-9A45-AE11EA180E20
+  Name=pegcod
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=9
+  Left=361
+  Width=24
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#pegcod,,,
+  Property=TooltipText="Escolher Cliente/Fornecedor"
+
+CONTROL=PUSHBUTTON
+GUID=F7DF0C37-3625-4CBE-996C-81C390F72CED
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=10
+  Left=329
+  Width=23
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+
+CONTROL=PUSHBUTTON
+GUID=6CB681C6-DD00-4ADA-9096-85A60C8B8AAD
+  Name=TIPOC
+  Class=PUSHBUTTON
+  Caption=(C)omponente
+  Order=11
+  Left=173
+  Width=68
+  Top=45
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Componente",,
+  Property=HyperLabel=#TIPOC,,,
+  Property=TooltipText="Marca Tipo Como Componete"
+
+CONTROL=PUSHBUTTON
+GUID=B3D1FE1B-4983-47F7-BAAF-72C3112BDD27
+  Name=TIPOT
+  Class=PUSHBUTTON
+  Caption=(T)rat/Serviço
+  Order=12
+  Left=249
+  Width=72
+  Top=45
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Trat/Serviço",,
+  Property=HyperLabel=#TIPOT,,,
+  Property=TooltipText="Marca Tipo Como Tratamento/Servicos"
+
+CONTROL=PUSHBUTTON
+GUID=B395081D-45A8-4ACA-A4B0-4B88F76DFA0E
+  Name=TIPOM
+  Class=PUSHBUTTON
+  Caption=(M)at.Prima
+  Order=13
+  Left=105
+  Width=60
+  Top=45
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mat.Prima",,
+  Property=HyperLabel=#TIPOM,,,
+  Property=TooltipText="Marca Tipo Como Materia Prima"
+
+CONTROL=PUSHBUTTON
+GUID=FBE5A614-7F1D-49D0-A46D-2AE2ECCAB0B5
+  Name=buscar
+  Class=PUSHBUTTON
+  Caption=
+  Order=14
+  Left=157
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscar,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jcrmcesp
+

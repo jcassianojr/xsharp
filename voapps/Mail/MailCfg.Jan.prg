@@ -1,0 +1,97 @@
+#region DEFINES
+STATIC DEFINE _JMAILCFG_AJUDA := 108
+STATIC DEFINE _JMAILCFG_ASSUNTO := 103
+STATIC DEFINE _JMAILCFG_BUSCA := 109
+STATIC DEFINE _JMAILCFG_ERRO := 102
+STATIC DEFINE _JMAILCFG_EXCLUIR := 105
+STATIC DEFINE _JMAILCFG_INCLUIR := 106
+STATIC DEFINE _JMAILCFG_JMAILPARA := 104
+STATIC DEFINE _JMAILCFG_SC_ASSUNTO := 101
+STATIC DEFINE _JMAILCFG_SC_ERRO := 100
+STATIC DEFINE _JMAILCFG_X2 := 107
+#endregion
+
+PARTIAL CLASS _JMAILCFG INHERIT MYDataWindow
+PROTECT oDCSC_ERRO AS FIXEDTEXT
+PROTECT oDCSC_ASSUNTO AS FIXEDTEXT
+PROTECT oDCERRO AS SINGLELINEEDIT
+PROTECT oDCASSUNTO AS SINGLELINEEDIT
+PROTECT oSFJMAILPARA AS JMAILPARA
+PROTECT oCCEXCLUIR AS PUSHBUTTON
+PROTECT oCCINCLUIR AS PUSHBUTTON
+PROTECT oDCx2 AS FIXEDTEXT
+PROTECT oCCAjuda AS PUSHBUTTON
+PROTECT oCCbusca AS PUSHBUTTON
+
+// User code starts here (DO NOT remove this line)  ##USER##
+
+ACCESS ASSUNTO
+RETURN SELF:FieldGet( #ASSUNTO )
+
+ASSIGN ASSUNTO( uValue )
+SELF:FieldPut( #ASSUNTO , uValue )
+
+ACCESS ERRO
+RETURN SELF:FieldGet( #ERRO )
+
+ASSIGN ERRO( uValue )
+SELF:FieldPut( #ERRO , uValue )
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)
+
+	SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+	SUPER(oWindow , ResourceID{"_JMAILCFG" , _GetInst()},iCtlID)
+
+	SELF:oDCSC_ERRO := FIXEDTEXT{SELF , ResourceID{ _JMAILCFG_SC_ERRO  , _GetInst() } }
+	SELF:oDCSC_ERRO:HyperLabel := HyperLabel{#SC_ERRO , "Erro:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_ASSUNTO := FIXEDTEXT{SELF , ResourceID{ _JMAILCFG_SC_ASSUNTO  , _GetInst() } }
+	SELF:oDCSC_ASSUNTO:HyperLabel := HyperLabel{#SC_ASSUNTO , "Assunto:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCERRO := SINGLELINEEDIT{SELF , ResourceID{ _JMAILCFG_ERRO  , _GetInst() } }
+	SELF:oDCERRO:FieldSpec := PADRAO_CHAR_08{}
+	SELF:oDCERRO:TooltipText := "Codigo do Erro da Mesagens"
+	SELF:oDCERRO:HyperLabel := HyperLabel{#ERRO , "Erro:" , NULL_STRING , "mailerro_ERRO"}
+
+	SELF:oDCASSUNTO := SINGLELINEEDIT{SELF , ResourceID{ _JMAILCFG_ASSUNTO  , _GetInst() } }
+	SELF:oDCASSUNTO:FieldSpec := PADRAO_CHAR_120{}
+	SELF:oDCASSUNTO:HyperLabel := HyperLabel{#ASSUNTO , "Assunto:" , NULL_STRING , "mailerro_ASSUNTO"}
+
+	SELF:oCCEXCLUIR := PUSHBUTTON{SELF , ResourceID{ _JMAILCFG_EXCLUIR  , _GetInst() } }
+	SELF:oCCEXCLUIR:TooltipText := "Exclui o Destinatario em Destaque"
+	SELF:oCCEXCLUIR:HyperLabel := HyperLabel{#EXCLUIR , "Excluir" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCINCLUIR := PUSHBUTTON{SELF , ResourceID{ _JMAILCFG_INCLUIR  , _GetInst() } }
+	SELF:oCCINCLUIR:TooltipText := "Inclui um Destinatario"
+	SELF:oCCINCLUIR:HyperLabel := HyperLabel{#INCLUIR , "Incluir" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCx2 := FIXEDTEXT{SELF , ResourceID{ _JMAILCFG_X2  , _GetInst() } }
+	SELF:oDCx2:HyperLabel := HyperLabel{#x2 , "Ajuda" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCAjuda := PUSHBUTTON{SELF , ResourceID{ _JMAILCFG_AJUDA  , _GetInst() } }
+	SELF:oCCAjuda:TooltipText := "Clique Para Acessar a Ajuda"
+	SELF:oCCAjuda:Image := ico_ajuda{}
+	SELF:oCCAjuda:HyperLabel := HyperLabel{#Ajuda , NULL_STRING , NULL_STRING , "login"}
+
+	SELF:oCCbusca := PUSHBUTTON{SELF , ResourceID{ _JMAILCFG_BUSCA  , _GetInst() } }
+	SELF:oCCbusca:TooltipText := "Localizar"
+	SELF:oCCbusca:Image := ico_find{}
+	SELF:oCCbusca:HyperLabel := HyperLabel{#busca , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:Caption := "Configuracao Email Interno"
+	SELF:Menu := STANDARDSHELLMENU{}
+	SELF:HyperLabel := HyperLabel{#_JMAILCFG , "Configuracao Email Interno" , NULL_STRING , "mailcfg"}
+	IF !IsNil(oServer)
+		SELF:Use(oServer)
+	ENDIF
+
+	SELF:oSFJMAILPARA := JMAILPARA{SELF , _JMAILCFG_JMAILPARA }
+	SELF:oSFJMAILPARA:Show()
+
+	SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN
+
+
+END CLASS

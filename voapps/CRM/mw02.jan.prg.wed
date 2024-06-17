@@ -1,0 +1,216 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jmw02
+GUID=2C752E9B-A0FA-4277-8746-62C76C164256
+  Name=jmw02
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=18
+  Width=505
+  Top=18
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#jmw02,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=14655E42-81E5-4C19-AA5E-D0BC0BD93E48
+  Name=SC_COMPED
+  Class=FIXEDTEXT
+  Caption=Comped:
+  Order=1
+  Left=22
+  Width=48
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Comped:",,
+  Property=HyperLabel=#SC_COMPED,,,
+
+CONTROL=FIXEDTEXT
+GUID=1AF169CF-DD37-49E3-B6F4-19C93C7803F7
+  Name=SC_ITEM
+  Class=FIXEDTEXT
+  Caption=Item:
+  Order=2
+  Left=22
+  Width=28
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=#SC_ITEM,,,
+
+CONTROL=FIXEDTEXT
+GUID=9253C56C-69B8-4F4E-8465-0325A34188CA
+  Name=SC_ITECOD
+  Class=FIXEDTEXT
+  Caption=Itecod:
+  Order=3
+  Left=22
+  Width=36
+  Top=74
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Itecod:",,
+  Property=HyperLabel=#SC_ITECOD,,,
+
+CONTROL=FIXEDTEXT
+GUID=0C325B20-959B-4626-B897-66FBFA222297
+  Name=SC_ITENOM
+  Class=FIXEDTEXT
+  Caption=Itenom:
+  Order=4
+  Left=22
+  Width=40
+  Top=98
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Itenom:",,
+  Property=HyperLabel=#SC_ITENOM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=9D5569EC-C1AE-4DE6-A2B8-D90F7152E816
+  Name=COMPED
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=86
+  Width=68
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#COMPED,,,
+  Property=HyperLabel=,,,"MW02_COMPED"
+  Property=HyperLabel=,"Pedido",,
+
+CONTROL=SINGLELINEEDIT
+GUID=FC3D078B-2366-438B-9A3A-CADA8AA64DA8
+  Name=ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=86
+  Width=44
+  Top=50
+  Height=20
+  Browseindex=1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#ITEM,,,
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=,,,"MW02_ITEM"
+
+CONTROL=SINGLELINEEDIT
+GUID=834E3F40-5318-4EF5-9045-5F10533CC761
+  Name=ITECOD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=133
+  Width=96
+  Top=77
+  Height=20
+  Browseindex=3
+  Browsesize=19
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#ITECOD,,,
+  Property=HyperLabel=,"Codigo",,
+  Property=HyperLabel=,,,"MW02_ITECOD"
+
+CONTROL=SINGLELINEEDIT
+GUID=A67F6411-A56E-4E1E-90B9-9BCAA3CB9839
+  Name=ITENOM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=85
+  Width=400
+  Top=105
+  Height=20
+  Browseindex=4
+  Browsesize=38
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_200
+  Property=HyperLabel=#ITENOM,,,
+  Property=HyperLabel=,"Nome",,
+  Property=HyperLabel=,,,"MW02_ITENOM"
+
+CONTROL=SINGLELINEEDIT
+GUID=6C9EEDCF-6739-44FB-BDBD-84CE5D606611
+  Name=ITETIP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=85
+  Width=44
+  Top=77
+  Height=20
+  Browseindex=2
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#ITETIP,,,
+  Property=HyperLabel=,"T",,
+  Property=HyperLabel=,,,"MW02_ITEM"
+
+SUBCONTROLSEND
+DESIGNEREND = jmw02
+

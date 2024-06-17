@@ -1,0 +1,51 @@
+﻿CLASS Xescolhemp INHERIT ESCMP
+	EXPORT cTIPO AS STRING
+	EXPORT aRETU AS ARRAY
+	EXPORT lOK AS LOGIC
+
+METHOD cmdCancelar() 
+LOK:=.F.	
+aRETU:={.F.,"","",0}
+SELF:EndWINDOW()
+
+METHOD Escolher() 
+LOCAL aUSO AS ARRAY
+LOK:=.T.
+aRETU:={.F.,"","",0,0}
+aUSO:={}
+IF ODCLISTBOX:CURRENTITEMNO>0
+   aRETU[1]:=.T.
+   aRETU[2]:=ODCLISTBOX:VALUE
+   aRETU[3]:=ODCLISTBOX:TEXTVALUE
+   aUSO:=VS3PRECO(cTIPO,aRETU[2],.F.)
+   aRETU[4]:=aUSO[1]
+   aRETU[5]:=aUSO[4]
+ENDIF	
+ SELF:EndWINDOW()
+	
+	
+
+CONSTRUCTOR(oOWNER,cTIPOENT) 
+SUPER(oOWNER)
+cTIPO:=cTIPOENT
+DO CASE
+	CASE cTIPO="M" ;  oDCLISTBOX:FillUsing(aMU01) //MP
+	CASE cTIPO="C" ;  oDCLISTBOX:FillUsing(aMT01) //Componente
+	CASE cTIPO="E" ;  oDCLISTBOX:FillUsing(aMP01) //Equipamentos
+	CASE cTIPO="H" ;  oDCLISTBOX:FillUsing(aMP02) //Homem
+	CASE cTIPO="T" ;  oDCLISTBOX:FillUsing(aMP03) //Terceiros
+	CASE cTIPO="I" ;  oDCLISTBOX:FillUsing(aETI) //ETI
+	OTHERWISE ;  {{"",""}}
+ENDCASE
+SELF:oDCLISTBOX:FillUsing(ZARR)
+SELF:SHOW()
+
+
+METHOD PostInit(oWindow,iCtlID,oServer,uExtra) 
+	//Put your PostInit additions here
+	 FabCenterWindow( SELF )
+	RETURN NIL
+
+
+
+END CLASS

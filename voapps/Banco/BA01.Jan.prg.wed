@@ -1,0 +1,884 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JBA01
+GUID=36C2D31B-5B5E-497B-90E7-C8F9D25091C6
+  Name=JBA01
+  Class=FORM:DATAWINDOW
+  Caption=Lançamentos
+  Order=0
+  Left=0
+  Width=686
+  Top=0
+  Height=412
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Lançamentos
+  Property=HyperLabel=JBA01
+  Property=InheritClassName=MYDataWindow
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+  Property=ClipperKeys=True
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=F3845D78-A2F4-4C16-ACDC-F8409D97409B
+  Name=buscaov
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=40
+  Left=597
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=buscaov
+  Property=TooltipText=Clique Para Localizar Por Numero
+  Property=Image=ICO_FIND
+CONTROL=SINGLELINEEDIT
+GUID=23BCB2C5-F367-4908-BFD7-E2FA86744194
+  Name=VALOR
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Valor:
+  Order=15
+  Left=429
+  Width=104
+  Top=29
+  Height=20
+  Browseindex=4
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=4096
+  Property=HyperLabel=,Valor:
+  Property=HyperLabel=VALOR
+  Property=HyperLabel=,,,BA01_VALOR
+  Property=FieldSpec=padrao_NUM_12_2
+  Property=TooltipText=Valor 
+  Property=Picture=9999999.99
+  Property=FocusSelect=FSEL_ALL
+CONTROL=FIXEDTEXT
+GUID=B53BF220-0B8F-4F28-B0E6-5741CC1D46A8
+  Name=SC_VALOR
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Valor:
+  Order=6
+  Left=433
+  Width=40
+  Top=13
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Valor:
+  Property=HyperLabel=SC_VALOR
+CONTROL=FIXEDTEXT
+GUID=FFE05575-678D-4822-9027-DFDD6CE729AE
+  Name=SC_NUMERO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Numero:
+  Order=1
+  Left=11
+  Width=60
+  Top=11
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Numero:
+  Property=HyperLabel=SC_NUMERO
+CONTROL=FIXEDTEXT
+GUID=7B31CDB9-47B4-41E5-8599-9FA1A193237B
+  Name=theFixedText8
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=D
+  Order=2
+  Left=101
+  Width=30
+  Top=11
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,D
+  Property=HyperLabel=theFixedText8
+CONTROL=FIXEDTEXT
+GUID=5367387A-AD91-4455-8B59-17A6A9165F35
+  Name=SC_DATA
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Data:
+  Order=3
+  Left=141
+  Width=40
+  Top=11
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data:
+  Property=HyperLabel=SC_DATA
+CONTROL=FIXEDTEXT
+GUID=CA2BA25A-E297-465C-8C81-002408C699B5
+  Name=SC_NRCONTA
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Banco
+  Order=4
+  Left=237
+  Width=60
+  Top=9
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Banco
+  Property=HyperLabel=SC_NRCONTA
+CONTROL=FIXEDTEXT
+GUID=1E270441-8987-449D-8675-1B80912622AC
+  Name=SC_DATADEP
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Data Deposito
+  Order=5
+  Left=325
+  Width=100
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data Deposito
+  Property=HyperLabel=SC_DATADEP
+CONTROL=FIXEDTEXT
+GUID=37262418-00DF-44C6-8EC4-E7E7CAC13A37
+  Name=theFixedText7
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Historico
+  Order=7
+  Left=13
+  Width=50
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Historico
+  Property=HyperLabel=theFixedText7
+CONTROL=FIXEDTEXT
+GUID=2A0806BD-E538-450E-9D98-ABCE91AD4F86
+  Name=SC_ITEM
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Codigo Despesa
+  Order=8
+  Left=9
+  Width=94
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Codigo Despesa
+  Property=HyperLabel=SC_ITEM
+CONTROL=FIXEDTEXT
+GUID=58E4C8F3-25E0-4EB0-8C59-939174B80539
+  Name=SC_ITEM1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Tipo
+  Order=9
+  Left=197
+  Width=32
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Tipo
+  Property=HyperLabel=SC_ITEM1
+CONTROL=SINGLELINEEDIT
+GUID=A0BA4F38-F62B-485E-B2EB-6903F8A30644
+  Name=NUMERO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Numero:
+  Order=10
+  Left=11
+  Width=80
+  Top=31
+  Height=19
+  Browseindex=1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Numero:
+  Property=HyperLabel=NUMERO
+  Property=HyperLabel=,,,BA01_NUMERO
+  Property=TooltipText=Numero Documento
+  Property=Picture=9999999
+CONTROL=SINGLELINEEDIT
+GUID=780C4C9B-2540-41C2-BECE-AAE5C4DEEEA0
+  Name=SUB
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Sub
+  Order=11
+  Left=101
+  Width=30
+  Top=31
+  Height=19
+  Browseindex=2
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Sub
+  Property=HyperLabel=SUB
+  Property=HyperLabel=,,,BA01_NUMERO
+  Property=FieldSpec=padrao_CHAR_01
+  Property=TooltipText=Sub Codigo Documento A/B..
+CONTROL=DATETIMEPICKER
+GUID=7BFF3027-F881-46CD-8AFD-52AF128385B8
+  Name=Data
+  Class=CONTROL:TEXTCONTROL:DATETIMEPICKER
+  Caption=Data
+  Order=12
+  Left=141
+  Width=89
+  Top=29
+  Height=22
+  Browseindex=0
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,Data
+  Property=HyperLabel=Data
+  Property=FieldSpec=DATE_FIELD
+  Property=TooltipText=Data Lançamento
+CONTROL=SINGLELINEEDIT
+GUID=6336841F-EB25-40BC-AEE7-26D429252E14
+  Name=NRCONTA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Conta
+  Order=13
+  Left=237
+  Width=80
+  Top=29
+  Height=19
+  Browseindex=3
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Conta
+  Property=HyperLabel=NRCONTA
+  Property=HyperLabel=,,,BA01_NUMERO
+  Property=FieldSpec=padrao_NUM_02
+  Property=InheritClassName=rightSle
+  Property=TooltipText=Numero do Banco
+  Property=Picture=9999999
+CONTROL=DATETIMEPICKER
+GUID=40A7A7CE-228F-404E-BA57-3C7814AB30D8
+  Name=DATADEP
+  Class=CONTROL:TEXTCONTROL:DATETIMEPICKER
+  Caption=14/02/2021
+  Order=14
+  Left=325
+  Width=100
+  Top=29
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,14/02/2021
+  Property=HyperLabel=DATADEP
+  Property=FieldSpec=DATE_FIELD
+  Property=TooltipText=Data de Deposito
+CONTROL=SINGLELINEEDIT
+GUID=AFE2083B-C3A3-4FDB-BCD3-CA1E09576649
+  Name=CODIGO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Codigo
+  Order=16
+  Left=61
+  Width=50
+  Top=61
+  Height=20
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Codigo
+  Property=HyperLabel=CODIGO
+  Property=FieldSpec=padrao_CHAR_04
+  Property=TooltipText=Historico
+CONTROL=PUSHBUTTON
+GUID=0F10C8D6-DCE8-4B73-ABFF-FEE6F242C384
+  Name=Acha
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Acha
+  Order=17
+  Left=117
+  Width=49
+  Top=61
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Acha
+  Property=HyperLabel=Acha
+CONTROL=PUSHBUTTON
+GUID=755BF771-CC37-49A1-8049-A068F1130602
+  Name=Localiza
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=...
+  Order=18
+  Left=145
+  Width=24
+  Top=141
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,...
+  Property=HyperLabel=Localiza
+  Property=TooltipText=Localiza um Documento
+CONTROL=SINGLELINEEDIT
+GUID=24608B4F-24BE-4215-8EA3-666763FE0FE2
+  Name=mNUMERO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Numero:
+  Order=19
+  Left=21
+  Width=80
+  Top=141
+  Height=19
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=0
+  Property=HyperLabel=,Numero:
+  Property=HyperLabel=mNUMERO
+  Property=HyperLabel=,,,BA01_NUMERO
+  Property=FieldSpec=PADRAO_num_08
+  Property=InheritClassName=rightSle
+  Property=TooltipText=Numero Documento Localizar
+CONTROL=SINGLELINEEDIT
+GUID=CE5A9513-50B4-45B5-8CAD-1A50D1580F38
+  Name=mSUB
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Numero:
+  Order=20
+  Left=109
+  Width=30
+  Top=141
+  Height=19
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=0
+  Property=HyperLabel=,Numero:
+  Property=HyperLabel=mSUB
+  Property=HyperLabel=,,,BA01_NUMERO
+  Property=FieldSpec=PADRAO_char_01
+  Property=TooltipText=Sub documento a Localizar
+CONTROL=SINGLELINEEDIT
+GUID=0609599F-C909-45F4-A7B6-31D4921575EB
+  Name=HISTORICO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Historico:
+  Order=21
+  Left=177
+  Width=290
+  Top=61
+  Height=20
+  Browseindex=6
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Historico:
+  Property=HyperLabel=HISTORICO
+  Property=HyperLabel=,,,BA01_HISTORICO
+  Property=FieldSpec=padrao_char_30
+  Property=TooltipText=Descrição do Historico
+CONTROL=PUSHBUTTON
+GUID=A5F582AE-A518-4F01-B67B-7A3B4BA1E102
+  Name=ORDCN
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Cta/Numero
+  Order=22
+  Left=329
+  Width=80
+  Top=141
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Cta/Numero
+  Property=HyperLabel=ORDCN
+  Property=TooltipText=Ordena Conta Numero Lancamento
+CONTROL=PUSHBUTTON
+GUID=ADD7980D-F7DB-46A8-85B2-8E7DDE963598
+  Name=ORDNUM
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Numero
+  Order=23
+  Left=505
+  Width=60
+  Top=141
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Numero
+  Property=HyperLabel=ORDNUM
+  Property=TooltipText=Ordena Numero de Lançamento
+CONTROL=PUSHBUTTON
+GUID=039F472F-CE50-4CB2-AB01-F5D370EB2F6A
+  Name=OrdData
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Data
+  Order=24
+  Left=417
+  Width=80
+  Top=141
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data
+  Property=HyperLabel=OrdData
+  Property=TooltipText=Ordena Data de Lancamento
+CONTROL=PUSHBUTTON
+GUID=1E2623B1-12D1-4C68-99AF-21D7D2AB52F1
+  Name=PorCodigo
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Ordem de Código
+  Order=25
+  Left=17
+  Width=110
+  Top=197
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ordem de Código
+  Property=HyperLabel=PorCodigo
+  Property=TooltipText=Ordena Lista Codigo
+CONTROL=PUSHBUTTON
+GUID=C1288A33-DB38-422F-A8AE-702FEFD27159
+  Name=PorDescr
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Ordem Descrição
+  Order=26
+  Left=137
+  Width=120
+  Top=197
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ordem Descrição
+  Property=HyperLabel=PorDescr
+  Property=TooltipText=Ordena Lista Por Descriçao
+CONTROL=SINGLELINEEDIT
+GUID=ADAE7B8A-EDC6-416B-A89C-EC3FD90DC173
+  Name=mBUSCA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=27
+  Left=269
+  Width=170
+  Top=197
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=0
+  Property=HyperLabel=mBUSCA
+  Property=FieldSpec=PADRAO_CHAR_35
+CONTROL=PUSHBUTTON
+GUID=989B241A-B5F3-4F4F-9634-BAB7B2F2A9A3
+  Name=Busca
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Busca
+  Order=28
+  Left=449
+  Width=80
+  Top=197
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Busca
+  Property=HyperLabel=Busca
+  Property=TooltipText=Localiza um Codigo
+CONTROL=PUSHBUTTON
+GUID=6522E224-5F29-442E-8482-1761FE7CAA41
+  Name=Escolha
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Escolher
+  Order=29
+  Left=537
+  Width=80
+  Top=197
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Escolher
+  Property=HyperLabel=Escolha
+  Property=TooltipText=Escolhe o Codigo em Destaque
+CONTROL=SUBDATAWINDOW
+GUID=55935A35-C7D4-4851-B2DA-51C707F0FAAD
+  Name=JBBC01
+  Class=CONTROL:SUBDATAWINDOW
+  Caption=JBBC01
+  Order=30
+  Left=17
+  Width=620
+  Top=225
+  Height=140
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=JBBC01
+  Property=HyperLabel=,JBBC01
+CONTROL=DATETIMEPICKER
+GUID=AF5639EF-902D-4D2D-8247-6DEADC81EAA2
+  Name=mDATA
+  Class=CONTROL:TEXTCONTROL:DATETIMEPICKER
+  Caption=14/02/2021
+  Order=31
+  Left=177
+  Width=89
+  Top=141
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,14/02/2021
+  Property=HyperLabel=mDATA
+  Property=FieldSpec=date_field
+  Property=TooltipText=Data a Localizar
+CONTROL=PUSHBUTTON
+GUID=F913E919-3701-42CA-880E-A037CB0D2E23
+  Name=AchaData
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=...
+  Order=32
+  Left=273
+  Width=24
+  Top=141
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,...
+  Property=HyperLabel=AchaData
+  Property=TooltipText=Localizar Uma Data
+CONTROL=SINGLELINEEDIT
+GUID=B99BA970-3534-4C1B-B01C-75831F04DC98
+  Name=ITEM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Item
+  Order=33
+  Left=105
+  Width=80
+  Top=93
+  Height=19
+  Browseindex=7
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Item
+  Property=HyperLabel=ITEM
+  Property=HyperLabel=,,,BA01_ITEM
+  Property=FieldSpec=padrAO_char_04
+  Property=TooltipText=Codigo de Despesa
+CONTROL=SINGLELINEEDIT
+GUID=B47737B7-BD45-4F46-BC32-B1C9FCF87C52
+  Name=TIPO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Tipo
+  Order=34
+  Left=229
+  Width=34
+  Top=85
+  Height=27
+  Browseindex=8
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198152
+  Exstyles=0
+  Property=HyperLabel=,Tipo
+  Property=HyperLabel=TIPO
+  Property=HyperLabel=,,,BA01_NUMERO
+  Property=FieldSpec=PADRAO_char_01
+  Property=Background=255 255 200
+  Property=TooltipText=Tipo Credito Debito
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=PUSHBUTTON
+GUID=25EF9B54-CAA1-479E-A134-E796AA6E32FB
+  Name=cmdtipo
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Credito Debito
+  Order=38
+  Left=269
+  Width=92
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,Credito Debito
+  Property=HyperLabel=cmdtipo
+CONTROL=PUSHBUTTON
+GUID=3191F1BF-7D4F-470F-8E2D-AE0DECF60F5B
+  Name=porov
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=39
+  Left=629
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=porov
+  Property=TooltipText=Clique para ordenar por Numero
+  Property=Image=ICO_AZ
+CONTROL=SINGLELINEEDIT
+GUID=C6AA3F58-0D07-4417-9C17-ACD8F470C05F
+  Name=CHAVE
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Tipo
+  Order=41
+  Left=113
+  Width=452
+  Top=385
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198152
+  Exstyles=0
+  Property=HyperLabel=,Tipo
+  Property=HyperLabel=CHAVE
+  Property=HyperLabel=,,,BA01_NUMERO
+  Property=FieldSpec=PADRAO_char_24
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=FIXEDTEXT
+GUID=66AC2B7D-35CD-4214-A480-9EA3F80E9783
+  Name=SC_DATA1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Chave Importacao
+  Order=42
+  Left=13
+  Width=96
+  Top=385
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Chave Importacao
+  Property=HyperLabel=SC_DATA1
+CONTROL=GROUPBOX
+GUID=83A761DA-4CF7-4698-80B9-2D8243D1D2D7
+  Name=GroupBox2
+  Class=CONTROL:TEXTCONTROL:GROUPBOX
+  Caption=Ordenar
+  Order=36
+  Left=313
+  Width=268
+  Top=117
+  Height=56
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,Ordenar
+  Property=HyperLabel=GroupBox2
+CONTROL=GROUPBOX
+GUID=B39F1564-3FA7-4374-BC7A-24FD6DF489A3
+  Name=GroupBox1
+  Class=CONTROL:TEXTCONTROL:GROUPBOX
+  Caption=Localizar
+  Order=35
+  Left=10
+  Width=299
+  Top=118
+  Height=55
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,Localizar
+  Property=HyperLabel=GroupBox1
+CONTROL=GROUPBOX
+GUID=D79349F1-7954-40BC-B0FE-6B80808EEC10
+  Name=GroupBox3
+  Class=CONTROL:TEXTCONTROL:GROUPBOX
+  Caption=Numero:
+  Order=37
+  Left=9
+  Width=647
+  Top=177
+  Height=200
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,Numero:
+  Property=HyperLabel=GroupBox3
+SUBCONTROLSEND
+DESIGNEREND = JBA01
+
+

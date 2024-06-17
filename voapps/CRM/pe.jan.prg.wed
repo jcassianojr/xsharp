@@ -1,0 +1,299 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jpe
+GUID=D1671DAA-53CA-4142-A1ED-5963263B0C02
+  Name=jpe
+  Class=DATAWINDOW
+  Caption=Programa Entrega
+  Order=0
+  Left=22
+  Width=589
+  Top=22
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Programa Entrega",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#jpe,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=33A8B5AF-B476-4F64-9AAA-B701C2E1ED8B
+  Name=SC_PEDIDO
+  Class=FIXEDTEXT
+  Caption=Pedido:
+  Order=1
+  Left=22
+  Width=40
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pedido:",,
+  Property=HyperLabel=#SC_PEDIDO,,,
+
+CONTROL=FIXEDTEXT
+GUID=BA8456AE-049E-47D0-97E8-F3587F69E267
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=2
+  Left=22
+  Width=40
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=29A05624-F1FD-40F2-B358-B7D609E9E6B9
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=3
+  Left=22
+  Width=36
+  Top=74
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=3AC42024-F3BE-49AA-926D-001BAA47958B
+  Name=SC_FORNECEDO
+  Class=FIXEDTEXT
+  Caption=Fornecedo:
+  Order=4
+  Left=22
+  Width=60
+  Top=98
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fornecedo:",,
+  Property=HyperLabel=#SC_FORNECEDO,,,
+
+CONTROL=FIXEDTEXT
+GUID=D87FB465-699F-4AA7-8136-A5AC67776BE0
+  Name=SC_COGNOME
+  Class=FIXEDTEXT
+  Caption=Cognome:
+  Order=5
+  Left=22
+  Width=52
+  Top=122
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cognome:",,
+  Property=HyperLabel=#SC_COGNOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=E6CE7B39-188F-4B6C-85C8-28404A67E7AB
+  Name=PEDIDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=98
+  Width=48
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216413824
+  Exstyles=512
+  Property=FieldSpec=padrao_num_05
+  Property=HyperLabel=#PEDIDO,,,
+  Property=HyperLabel=,"Pedido:",,
+  Property=HyperLabel=,,,"PE_PEDIDO"
+
+CONTROL=SINGLELINEEDIT
+GUID=28D3579D-FD41-462F-B76B-7F656642CD31
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=98
+  Width=84
+  Top=50
+  Height=20
+  Browseindex=2
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216413824
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"PE_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=83FBCE61-4787-4006-9C79-6FE24F151771
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=98
+  Width=364
+  Top=74
+  Height=20
+  Browseindex=3
+  Browsesize=27
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216413824
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_50
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"PE_NOME"
+
+CONTROL=SINGLELINEEDIT
+GUID=1E74CBFF-B6C1-4CC9-BE15-623C5C9C6DED
+  Name=FORNECEDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=98
+  Width=68
+  Top=98
+  Height=20
+  Browseindex=4
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216413824
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#FORNECEDO,,,
+  Property=HyperLabel=,"No.Forn.",,
+  Property=HyperLabel=,,,"PE_FORNECEDO"
+
+CONTROL=SINGLELINEEDIT
+GUID=1EEEE66D-28BB-46B8-ACB3-25E13836856D
+  Name=COGNOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=98
+  Width=120
+  Top=122
+  Height=20
+  Browseindex=5
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216413824
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_15
+  Property=HyperLabel=#COGNOME,,,
+  Property=HyperLabel=,"Cognome:",,
+  Property=HyperLabel=,,,"PE_COGNOME"
+
+CONTROL=SINGLELINEEDIT
+GUID=15EEE435-5E8B-4A9E-9485-1E1E8188A4FD
+  Name=aplicacao
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=2
+  Width=80
+  Top=2
+  Height=20
+  Browseindex=6
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=1
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,"Aplicacao",,
+  Property=FieldSpec=PADRAO_CHAR_50
+  Property=HyperLabel=#aplicacao,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=7A61497E-7064-4160-96C4-2C76B1DD3128
+  Name=LOCENT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=101
+  Width=48
+  Top=157
+  Height=20
+  Browseindex=1
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216413824
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_01
+  Property=HyperLabel=#LOCENT,,,
+  Property=HyperLabel=,,,"PE_PEDIDO"
+  Property=HyperLabel=,"Ent",,
+
+CONTROL=FIXEDTEXT
+GUID=8A1E98EB-0C4F-42D9-8A63-E30900B30990
+  Name=SC_PEDIDO1
+  Class=FIXEDTEXT
+  Caption=Entregar
+  Order=13
+  Left=25
+  Width=40
+  Top=157
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Entregar",,
+  Property=HyperLabel=#SC_PEDIDO1,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jpe
+

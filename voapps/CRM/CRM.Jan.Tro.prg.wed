@@ -1,0 +1,151 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,jcrmtr
+GUID=CA0467FB-6497-427C-9BF4-7650052B5843
+  Name=jcrmtr
+  Class=DATADIALOG
+  Caption=DataDialog Caption
+  Order=0
+  Left=18
+  Width=329
+  Top=18
+  Height=124
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataDialog Caption",,
+  Property=Use=<Share Owner's>
+  Property=HyperLabel=#jcrmtr,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=8CAC9488-344B-4EDB-9C93-00887C1CEAB6
+  Name=SC_NRNOTA
+  Class=FIXEDTEXT
+  Caption=Nr Nota A:
+  Order=1
+  Left=22
+  Width=51
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nr Nota A:",,
+  Property=HyperLabel=#SC_NRNOTA,,,
+
+CONTROL=FIXEDTEXT
+GUID=A55B1D7D-76F5-45F2-99CD-D146ECE46389
+  Name=SC_NRNOTB
+  Class=FIXEDTEXT
+  Caption=Nr Nota B:
+  Order=2
+  Left=22
+  Width=51
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nr Nota B:",,
+  Property=HyperLabel=#SC_NRNOTB,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=F04DF9D9-20B7-4B6F-A488-26D407EA18C7
+  Name=NRNOTA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=78
+  Width=68
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#NRNOTA,,,
+  Property=HyperLabel=,"Nrnota:",,
+  Property=HyperLabel=,,,"Crm_NRNOTA"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=BD1D169E-81E0-4324-9F2C-299148616C32
+  Name=NRNOTB
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=78
+  Width=68
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#NRNOTB,,,
+  Property=HyperLabel=,"Nrnotb:",,
+  Property=HyperLabel=,,,"Crm_NRNOTB"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=3D7DEA17-BC8C-460C-B85A-68553D0A4F0E
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=5
+  Left=237
+  Width=64
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=5A57C89E-1BDB-4D3C-AD06-43D96556095B
+  Name=INCLUIR
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=237
+  Width=64
+  Top=21
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#INCLUIR,,,
+  Property=Image=ICO_OK
+
+SUBCONTROLSEND
+DESIGNEREND = jcrmtr
+

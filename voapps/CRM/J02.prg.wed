@@ -1,0 +1,290 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,J02
+GUID=4FE93E99-B3E3-42AD-AB54-983233213A82
+  Name=J02
+  Class=DATADIALOG
+  Caption=Laudo
+  Order=0
+  Left=30
+  Width=671
+  Top=30
+  Height=233
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Laudo",,
+  Property=HyperLabel=#J02,,,
+  Property=ClipperKeys=True
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=DATETIMEPICKER
+GUID=578C1EB5-DA9A-4975-B992-B4CDB47E974D
+  Name=DATAL
+  Class=DATETIMEPICKER
+  Caption=01/04/2021
+  Order=1
+  Left=489
+  Width=85
+  Top=93
+  Height=22
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAL,,,
+
+CONTROL=FIXEDTEXT
+GUID=F49D7F88-45F9-4954-B196-D9C371BF2B97
+  Name=SC_DATAL
+  Class=FIXEDTEXT
+  Caption=Data Laudo:
+  Order=2
+  Left=485
+  Width=100
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data Laudo:",,
+  Property=HyperLabel=#SC_DATAL,,,
+
+CONTROL=RADIOBUTTON
+GUID=41B60938-9FE2-4F4E-84B3-0BEA5AD2FEA1
+  Name=RB3
+  Class=RADIOBUTTON
+  Caption=Rejeitado
+  Order=3
+  Left=309
+  Width=79
+  Top=93
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Rejeitado",,
+  Property=Value=R
+  Property=HyperLabel=#RB3,,,
+
+CONTROL=RADIOBUTTON
+GUID=372C6207-4879-4BC3-B73F-168428DF4D58
+  Name=RB2
+  Class=RADIOBUTTON
+  Caption=Aprovado Condicional
+  Order=4
+  Left=126
+  Width=169
+  Top=93
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Aprovado Condicional",,
+  Property=Value=C
+  Property=HyperLabel=#RB2,,,
+
+CONTROL=RADIOBUTTON
+GUID=3A8A0A7B-4C2D-4296-9FB1-84F93ECBCDF3
+  Name=RB1
+  Class=RADIOBUTTON
+  Caption=Aprovado
+  Order=5
+  Left=21
+  Width=90
+  Top=93
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Aprovado",,
+  Property=Value=A
+  Property=HyperLabel=#RB1,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=EFCDABF9-C527-4240-81B3-8365B129120B
+  Name=LAUDOF
+  Class=RADIOBUTTONGROUP
+  Caption=Laudo Final
+  Order=6
+  Left=9
+  Width=459
+  Top=73
+  Height=49
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073938439
+  Exstyles=0
+  Property=HyperLabel=,"Laudo Final",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#LAUDOF,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=5F52F6E3-2F5E-4AA9-B346-F51FA00685FD
+  Name=CARGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=301
+  Width=317
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216348288
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#CARGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=CF769EA1-738A-4FBF-B90A-080FFD9AD2C4
+  Name=theFixedText14
+  Class=FIXEDTEXT
+  Caption=Cargo:
+  Order=8
+  Left=217
+  Width=80
+  Top=45
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cargo:",,
+  Property=HyperLabel=#theFixedText14,,,
+
+CONTROL=FIXEDTEXT
+GUID=D6B34166-22E5-4EAA-A154-60C6C8DC9F01
+  Name=theFixedText13
+  Class=FIXEDTEXT
+  Caption=Responsável:
+  Order=9
+  Left=217
+  Width=80
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073743872
+  Exstyles=0
+  Property=HyperLabel=,"Responsável:",,
+  Property=HyperLabel=#theFixedText13,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=330BB0FA-0A37-456E-B627-0DD7CE9C7360
+  Name=RESPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=305
+  Width=316
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216348288
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#RESPO,,,
+
+CONTROL=COMBOBOX
+GUID=F54EA499-190F-453E-BBF9-88B0315BE0A5
+  Name=AREA
+  Class=COMBOBOX
+  Caption=
+  Order=11
+  Left=9
+  Width=196
+  Top=13
+  Height=188
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1075904770
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#AREA,,,
+
+CONTROL=FIXEDTEXT
+GUID=B81472F7-07D1-4F01-BF89-B280F2A0C505
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=13
+  Left=577
+  Width=64
+  Top=181
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=8C999B0A-A045-4073-A544-D41AED56E704
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=14
+  Left=577
+  Width=64
+  Top=133
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ico_ok
+
+SUBCONTROLSEND
+DESIGNEREND = J02
+

@@ -1,0 +1,666 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,jfiltro
+GUID=3ACEFCC7-08FF-4B55-A7CA-78768C64B067
+  Name=jfiltro
+  Class=DATADIALOG
+  Caption=DataDialog Caption
+  Order=0
+  Left=68
+  Width=600
+  Top=68
+  Height=369
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataDialog Caption",,
+  Property=HyperLabel=#jfiltro,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=2D7E41A1-805B-4D0F-9DFF-58639C9EEE7A
+  Name=arquivo
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=69
+  Width=432
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#arquivo,,,
+
+CONTROL=FIXEDTEXT
+GUID=556EA50A-2246-4B4C-B6AF-287972CC7747
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Arquivo
+  Order=3
+  Left=13
+  Width=47
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Arquivo",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=MULTILINEEDIT
+GUID=80729A39-C6EE-4E14-BD69-4A128B43800A
+  Name=filtro
+  Class=MULTILINEEDIT
+  Caption=
+  Order=4
+  Left=65
+  Width=435
+  Top=29
+  Height=60
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1218449605
+  Exstyles=512
+  Property=HyperLabel=#filtro,,,
+
+CONTROL=FIXEDTEXT
+GUID=960E1476-28D3-4F8D-8796-57E9ABECBD60
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Filtro
+  Order=5
+  Left=13
+  Width=51
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Filtro",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=43C2B71A-33E1-4435-9B27-7E5543ED5B53
+  Name=VALINI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=65
+  Width=432
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216413824
+  Exstyles=512
+  Property=HyperLabel=#VALINI,,,
+
+CONTROL=FIXEDTEXT
+GUID=8AD0DB97-70AA-4719-99DF-A0CCA72A667C
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=DO
+  Order=7
+  Left=17
+  Width=47
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DO",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=DB3BFDF0-F21D-45B0-AB83-E90B3093650E
+  Name=VALFIM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=65
+  Width=432
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216413824
+  Exstyles=512
+  Property=HyperLabel=#VALFIM,,,
+
+CONTROL=FIXEDTEXT
+GUID=EF48CCAB-8F63-4BFD-B09D-55FD649521D3
+  Name=FixedText4
+  Class=FIXEDTEXT
+  Caption=AO
+  Order=9
+  Left=17
+  Width=47
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"AO",,
+  Property=HyperLabel=#FixedText4,,,
+
+CONTROL=LISTBOX
+GUID=1CBA01D5-5B79-4312-BD94-D8DF228FC72B
+  Name=GRID
+  Class=LISTBOX
+  Caption=
+  Order=10
+  Left=5
+  Width=368
+  Top=169
+  Height=196
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1084297475
+  Exstyles=512
+  Property=HyperLabel=#GRID,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=55C2A2CE-E525-4681-8CC0-9B7141A04EB1
+  Name=CAMPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=381
+  Width=80
+  Top=173
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=#CAMPO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=BFBD1674-16C3-448D-AC25-87780B7FDE1A
+  Name=CAMTIP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=381
+  Width=60
+  Top=193
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=#CAMTIP,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=C3BD33EB-5ED6-4F28-8E12-BEF888B22A77
+  Name=CAMSIZ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=381
+  Width=60
+  Top=213
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=#CAMSIZ,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=F6E851AF-26AC-44AF-A2A7-D611E7F8679F
+  Name=CAMDEC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=381
+  Width=60
+  Top=233
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=#CAMDEC,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=A027171A-37CE-4138-A126-CDD20A00610F
+  Name=CTIPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=17
+  Width=32
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=#CTIPO,,,
+  Property=HyperLabel=,"E",,
+
+CONTROL=PUSHBUTTON
+GUID=D7B51AF4-74CB-4866-B874-91A33B8800CA
+  Name=Cmdtipo
+  Class=PUSHBUTTON
+  Caption=(E) (O)u (B)ranco
+  Order=17
+  Left=53
+  Width=152
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1208025088
+  Exstyles=0
+  Property=HyperLabel=,"E Ou Branco",,
+  Property=HyperLabel=#Cmdtipo,,,
+
+CONTROL=FIXEDTEXT
+GUID=01B365B5-2905-4DBB-B296-B892308BD6B8
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=18
+  Left=521
+  Width=64
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=4F9BC1E4-3CD2-44EA-8D6E-170259057847
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=19
+  Left=521
+  Width=64
+  Top=93
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1208025152
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ico_ok
+  Property=TooltipText="Clique aqui Par Confirmar"
+
+CONTROL=FIXEDTEXT
+GUID=1E9BEE39-724B-4168-B368-241FEDFE565E
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Encerrar
+  Order=20
+  Left=521
+  Width=64
+  Top=217
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Encerrar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=D4C19AA0-D66F-4A8C-B080-D3AB6699ECD8
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=21
+  Left=521
+  Width=64
+  Top=169
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ico_sair
+  Property=TooltipText="Clique aqui Para Cancelar"
+
+CONTROL=SINGLELINEEDIT
+GUID=9523B7A3-1DDF-4589-AFDF-01C1089A8B38
+  Name=COPER
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=213
+  Width=32
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=#COPER,,,
+  Property=HyperLabel=,">=",,
+
+CONTROL=PUSHBUTTON
+GUID=F795D9E8-4182-44EF-94C4-66D6EC776434
+  Name=cmdmanual
+  Class=PUSHBUTTON
+  Caption=Manual
+  Order=23
+  Left=382
+  Width=80
+  Top=258
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Manual",,
+  Property=HyperLabel=#cmdmanual,,,
+
+CONTROL=PUSHBUTTON
+GUID=981484AF-E4B7-4C57-9CB3-14653BC5BF0F
+  Name=cmdzerar
+  Class=PUSHBUTTON
+  Caption=Zerar Filtro
+  Order=25
+  Left=381
+  Width=84
+  Top=281
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Zerar Filtro",,
+  Property=HyperLabel=#cmdzerar,,,
+
+CONTROL=PUSHBUTTON
+GUID=B8093954-DCF0-44A1-9621-CFFB326F2CAA
+  Name=cmdmenor
+  Class=PUSHBUTTON
+  Caption=<
+  Order=26
+  Left=249
+  Width=28
+  Top=141
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"<",,
+  Property=HyperLabel=#cmdmenor,,,
+  Property=TooltipText="Menor"
+
+CONTROL=PUSHBUTTON
+GUID=A8C0DE81-A950-4565-9D90-518735350268
+  Name=cmdmenorigual
+  Class=PUSHBUTTON
+  Caption=<=
+  Order=27
+  Left=277
+  Width=28
+  Top=141
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"<=",,
+  Property=HyperLabel=#cmdmenorigual,,,
+  Property=TooltipText="Menor Igual Que"
+
+CONTROL=PUSHBUTTON
+GUID=5E3DC6E9-FEB2-45D0-A12B-43C6561A897E
+  Name=cmdigual
+  Class=PUSHBUTTON
+  Caption==
+  Order=28
+  Left=305
+  Width=30
+  Top=141
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"=",,
+  Property=HyperLabel=#cmdigual,,,
+  Property=TooltipText="Igual"
+
+CONTROL=PUSHBUTTON
+GUID=33BB9A9E-7B6E-42EB-BE76-BF94E21280CF
+  Name=cmdexato
+  Class=PUSHBUTTON
+  Caption===
+  Order=29
+  Left=333
+  Width=30
+  Top=141
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"==",,
+  Property=HyperLabel=#cmdexato,,,
+  Property=TooltipText="Exatamente Igual"
+
+CONTROL=PUSHBUTTON
+GUID=9C62CD4F-7240-4F99-A2B0-683215F76A8B
+  Name=cmdmaiorigual
+  Class=PUSHBUTTON
+  Caption==>
+  Order=30
+  Left=361
+  Width=30
+  Top=141
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"=>",,
+  Property=HyperLabel=#cmdmaiorigual,,,
+  Property=TooltipText="Maior Igual Que"
+
+CONTROL=PUSHBUTTON
+GUID=2E93A507-0842-4077-BC6E-BA428FE5FE85
+  Name=cmdmaior
+  Class=PUSHBUTTON
+  Caption=>
+  Order=31
+  Left=389
+  Width=30
+  Top=141
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,">",,
+  Property=HyperLabel=#cmdmaior,,,
+  Property=TooltipText="Maior que"
+
+CONTROL=PUSHBUTTON
+GUID=E3C60663-8DE1-4602-A103-228A1305F91E
+  Name=cmddiferente
+  Class=PUSHBUTTON
+  Caption=#
+  Order=32
+  Left=417
+  Width=28
+  Top=141
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"#",,
+  Property=HyperLabel=#cmddiferente,,,
+  Property=TooltipText="Diferente"
+
+CONTROL=PUSHBUTTON
+GUID=4E24B5EB-1D2E-4250-AC12-5E2E4EDCAED1
+  Name=cmdcontem
+  Class=PUSHBUTTON
+  Caption=$
+  Order=33
+  Left=445
+  Width=28
+  Top=141
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"$",,
+  Property=HyperLabel=#cmdcontem,,,
+  Property=TooltipText="Contem o Dado"
+
+CONTROL=FIXEDTEXT
+GUID=FF893E54-7878-4A5E-A8BA-4CDD913040D4
+  Name=txtfiltrar
+  Class=FIXEDTEXT
+  Caption=Filtrar
+  Order=34
+  Left=521
+  Width=64
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Filtrar",,
+  Property=HyperLabel=#txtfiltrar,,,
+
+CONTROL=PUSHBUTTON
+GUID=5EAC80AB-931E-4B28-96C5-62117D58ED48
+  Name=filtrar
+  Class=PUSHBUTTON
+  Caption=
+  Order=35
+  Left=521
+  Width=64
+  Top=13
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#filtrar,,,
+  Property=Image=ico_filtro
+  Property=TooltipText="Clique aqui Para Cancelar"
+
+SUBCONTROLSEND
+DESIGNEREND = jfiltro
+

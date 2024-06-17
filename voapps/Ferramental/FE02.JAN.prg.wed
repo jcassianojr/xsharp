@@ -1,0 +1,247 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JFE02
+GUID=C74EAB85-04BE-4E66-B505-6C1C1A475DCA
+  Name=JFE02
+  Class=DATAWINDOW
+  Caption=Consumo Mensal
+  Order=0
+  Left=26
+  Width=420
+  Top=26
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Consumo Mensal",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JFE02,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=D7B73227-673D-460A-B31A-E2F88B6D6295
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=197
+  Width=152
+  Top=25
+  Height=20
+  Browseindex=1
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"FE02_CODIGO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=3DA0C0A0-F249-46B0-AC44-CE296143EA53
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=2
+  Left=197
+  Width=40
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=EC5DED96-D4D2-423E-AB75-796867C11999
+  Name=SC_USO
+  Class=FIXEDTEXT
+  Caption=Uso:
+  Order=3
+  Left=97
+  Width=28
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Uso:",,
+  Property=HyperLabel=#SC_USO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=4B59F35E-71EB-42BB-AA3E-AD35E0FCC21C
+  Name=USO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=97
+  Width=124
+  Top=69
+  Height=20
+  Browseindex=4
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_16_6
+  Property=HyperLabel=#USO,,,
+  Property=HyperLabel=,"Uso:",,
+  Property=HyperLabel=,,,"FE02_USO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=F241E937-38C0-47AD-8DEE-F1CEF72A1955
+  Name=MES
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=57
+  Width=36
+  Top=69
+  Height=20
+  Browseindex=2
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_02
+  Property=HyperLabel=#MES,,,
+  Property=HyperLabel=,"Mes:",,
+  Property=HyperLabel=,,,"FE02_MES"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=EA91335F-7795-4431-82F8-3D1B759142B6
+  Name=SC_MES
+  Class=FIXEDTEXT
+  Caption=Mes:
+  Order=6
+  Left=57
+  Width=28
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mes:",,
+  Property=HyperLabel=#SC_MES,,,
+
+CONTROL=FIXEDTEXT
+GUID=962869AE-18A3-4465-B61B-345FD25F16C7
+  Name=SC_ANO
+  Class=FIXEDTEXT
+  Caption=Ano:
+  Order=7
+  Left=21
+  Width=28
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ano:",,
+  Property=HyperLabel=#SC_ANO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=176D756A-745C-4296-9154-F69CC6A07A3D
+  Name=ANO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=13
+  Width=40
+  Top=69
+  Height=20
+  Browseindex=3
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_04
+  Property=HyperLabel=#ANO,,,
+  Property=HyperLabel=,"Ano:",,
+  Property=HyperLabel=,,,"FE02_ANO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=E5647C5C-EE19-4751-AD24-C02FC8EFBA17
+  Name=TIPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=9
+  Width=180
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=16
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#TIPO,,,
+  Property=HyperLabel=,"Grupo",,
+  Property=HyperLabel=,,,"FE02_TIPO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=38C9C23A-1F57-44AA-9FFA-7CB78F0F544F
+  Name=SC_TIPO
+  Class=FIXEDTEXT
+  Caption=Grupo:
+  Order=10
+  Left=9
+  Width=92
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Grupo:",,
+  Property=HyperLabel=#SC_TIPO,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JFE02
+

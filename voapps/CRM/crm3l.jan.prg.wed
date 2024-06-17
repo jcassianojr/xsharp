@@ -1,0 +1,261 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jcrm3l
+GUID=2BC98647-9607-4D8B-986B-E89350E217AB
+  Name=jcrm3l
+  Class=DATAWINDOW
+  Caption=Marcadas Racf
+  Order=0
+  Left=20
+  Width=635
+  Top=20
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Marcadas Racf",,
+  Property=HyperLabel=#jcrm3l,,,
+  Property=ViewAs=#BrowseView
+  Property=Menu=STANDARDSHELLMENU
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=30641E6B-7701-4F6A-B64B-2046B1A7DEBF
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=21
+  Width=155
+  Top=33
+  Height=20
+  Browseindex=0
+  Browsesize=34
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo",,
+
+CONTROL=FIXEDTEXT
+GUID=6347861D-1C1B-4F7A-9DCC-CBE3E04206F7
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Codigo
+  Order=2
+  Left=21
+  Width=47
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=52E22C91-2639-472C-BD5D-8AFE9E1DE058
+  Name=DESC05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=17
+  Width=580
+  Top=141
+  Height=20
+  Browseindex=1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_90
+  Property=HyperLabel=#DESC05,,,
+  Property=HyperLabel=,"Desc03:",,
+  Property=HyperLabel=,,,"RACF_DESC03"
+
+CONTROL=SINGLELINEEDIT
+GUID=E7BBDBB2-860D-404A-82B1-69F80A5DC61B
+  Name=DESC04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=17
+  Width=580
+  Top=121
+  Height=20
+  Browseindex=2
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_90
+  Property=HyperLabel=#DESC04,,,
+  Property=HyperLabel=,"Desc03:",,
+  Property=HyperLabel=,,,"RACF_DESC03"
+
+CONTROL=SINGLELINEEDIT
+GUID=93D41F61-A574-4FC4-A7A2-E6F6F2A7DC31
+  Name=DESC03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=17
+  Width=580
+  Top=101
+  Height=20
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_90
+  Property=HyperLabel=#DESC03,,,
+  Property=HyperLabel=,"Desc03:",,
+  Property=HyperLabel=,,,"RACF_DESC03"
+
+CONTROL=SINGLELINEEDIT
+GUID=C255ABC1-81C6-4C14-B24C-A0984E9569C8
+  Name=DESC02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=17
+  Width=580
+  Top=85
+  Height=20
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_90
+  Property=HyperLabel=#DESC02,,,
+  Property=HyperLabel=,"Desc02:",,
+  Property=HyperLabel=,,,"RACF_DESC02"
+
+CONTROL=SINGLELINEEDIT
+GUID=7D669913-EB97-44DE-ADB4-F252D3AD775B
+  Name=DESC01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=17
+  Width=580
+  Top=65
+  Height=20
+  Browseindex=3
+  Browsesize=31
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_90
+  Property=HyperLabel=#DESC01,,,
+  Property=HyperLabel=,"Erro",,
+  Property=HyperLabel=,,,"RACF_DESC01"
+
+CONTROL=FIXEDTEXT
+GUID=F22CD4B6-F676-4F24-A6E3-EAD27D0E32BD
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Racf
+  Order=8
+  Left=193
+  Width=44
+  Top=13
+  Height=15
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Racf",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=FIXEDTEXT
+GUID=184D6B7A-3678-46C9-8813-246C1B883877
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=Vezes
+  Order=9
+  Left=281
+  Width=80
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Vezes",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=BA5ADCD6-A379-4CB2-861D-071B07F0A2F9
+  Name=RACF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=189
+  Width=80
+  Top=33
+  Height=20
+  Browseindex=1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSle
+  Property=HyperLabel=#RACF,,,
+  Property=HyperLabel=,"Racf",,
+
+CONTROL=SINGLELINEEDIT
+GUID=BCB11A53-1CDA-48D2-9EB1-1C33D423AB97
+  Name=NVEZES
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=281
+  Width=80
+  Top=33
+  Height=20
+  Browseindex=2
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSle
+  Property=HyperLabel=#NVEZES,,,
+  Property=HyperLabel=,"Falta",,
+
+SUBCONTROLSEND
+DESIGNEREND = jcrm3l
+

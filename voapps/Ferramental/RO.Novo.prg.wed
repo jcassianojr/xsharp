@@ -1,0 +1,352 @@
+DESIGNERSTART = VOWindowEditor,DIALOGWINDOW,RONEW
+GUID=01C2121E-8379-4A5F-810D-79CF0C87A8E0
+  Name=RONEW
+  Class=DIALOGWINDOW
+  Caption=Novo Registro Ocorrencia
+  Order=0
+  Left=42
+  Width=412
+  Top=42
+  Height=240
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=2160590976
+  Exstyles=257
+  Property=HyperLabel=,"Novo Registro Ocorrencia",,
+  Property=HyperLabel=#RONEW,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=4B085E0E-1B45-47AD-9AD2-7C166D86F251
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=4
+  Left=321
+  Width=64
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=AB6A347F-D712-4685-9B88-1B3899E8DF4A
+  Name=cmd01
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=321
+  Width=64
+  Top=13
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#cmd01,,,
+  Property=Image=ico_ok
+  Property=TooltipText="Cria o Registro Ocorrencia"
+
+CONTROL=FIXEDTEXT
+GUID=1BB28ECC-FF9D-4AEC-8291-7440545BA55A
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=6
+  Left=321
+  Width=64
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=8743EA23-E92A-4DD9-9E2D-8D297104E158
+  Name=cmd02
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=321
+  Width=64
+  Top=101
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#cmd02,,,
+  Property=Image=ico_sair
+  Property=TooltipText="Retornar Sem Criar o Registro Ocorrencia"
+
+CONTROL=PUSHBUTTON
+GUID=60682446-BD3A-4AA8-9535-D504B444220A
+  Name=Escme01
+  Class=PUSHBUTTON
+  Caption=M...
+  Order=8
+  Left=129
+  Width=24
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"M...",,
+  Property=HyperLabel=#Escme01,,,
+  Property=TooltipText="Escolher Uma Maquina/Equipamento"
+
+CONTROL=PUSHBUTTON
+GUID=2B181B0B-7A88-4B3D-B55B-783C36C56185
+  Name=Escfer
+  Class=PUSHBUTTON
+  Caption=F...
+  Order=9
+  Left=245
+  Width=20
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"F...",,
+  Property=HyperLabel=#Escfer,,,
+  Property=TooltipText="Escolher Uma Ferramenta"
+
+CONTROL=SINGLELINEEDIT
+GUID=35CCC140-B048-4C2C-9BD2-C4C6C5621659
+  Name=TIPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=17
+  Width=28
+  Top=89
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=#TIPO,,,
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=EF959AA2-4950-4E35-AB98-06A36C6D68B3
+  Name=tipofer
+  Class=PUSHBUTTON
+  Caption=F
+  Order=11
+  Left=225
+  Width=20
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"F",,
+  Property=HyperLabel=#tipofer,,,
+  Property=TooltipText="Marca Tipo FerramentaF"
+
+CONTROL=PUSHBUTTON
+GUID=857DF7E4-A4AB-4A25-9B6C-4406C2361353
+  Name=tipom
+  Class=PUSHBUTTON
+  Caption=M
+  Order=12
+  Left=105
+  Width=24
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"M",,
+  Property=HyperLabel=#tipom,,,
+  Property=TooltipText="Marca Tipo M Maquina/Equipamento"
+
+CONTROL=FIXEDTEXT
+GUID=0B218F93-3745-46C8-A979-8DAD1910FB49
+  Name=FixedText13
+  Class=FIXEDTEXT
+  Caption=(M)áquina
+  Order=13
+  Left=49
+  Width=56
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Máquina",,
+  Property=HyperLabel=#FixedText13,,,
+
+CONTROL=GROUPBOX
+GUID=1F339669-9F08-4265-A89A-57550FAA31CF
+  Name=GroupBox1
+  Class=GROUPBOX
+  Caption=Codigo
+  Order=14
+  Left=9
+  Width=268
+  Top=73
+  Height=72
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Codigo",,
+  Property=HyperLabel=#GroupBox1,,,
+  Property=TooltipText="Origem da Ocorrencia"
+
+CONTROL=FIXEDTEXT
+GUID=CDB99695-8DE1-4060-938D-597DFC0CBB6E
+  Name=FixedText14
+  Class=FIXEDTEXT
+  Caption=(F)erramenta
+  Order=15
+  Left=157
+  Width=68
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ferramenta",,
+  Property=HyperLabel=#FixedText14,,,
+
+CONTROL=FIXEDTEXT
+GUID=A1498B56-5481-40F5-B600-7F213C229887
+  Name=Text1
+  Class=FIXEDTEXT
+  Caption=Digite o Numero da SM:
+  Order=-1
+  Left=13
+  Width=138
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Digite o Numero da SM:",,
+  Property=HyperLabel=#Text1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=ED60500B-2242-4D10-A8E0-F09BFBA47C2B
+  Name=nSM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=149
+  Width=123
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=#nSM,,,
+  Property=TooltipText="Numero da Solicitacao de Manutençao"
+
+CONTROL=FIXEDTEXT
+GUID=92B0D5BE-50D3-49AB-98CC-153BD596AA09
+  Name=theFixedText1
+  Class=FIXEDTEXT
+  Caption=ou Codigo Maquina/Ferramenta para Preventiva
+  Order=-1
+  Left=9
+  Width=136
+  Top=29
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"ou Codigo Maquina/Ferramenta para Preventiva",,
+  Property=HyperLabel=#theFixedText1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=813929C5-0DD0-4378-827B-FF5F51A39ADA
+  Name=cFERRAM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=85
+  Width=123
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=#cFERRAM,,,
+  Property=TooltipText="Codigo da Ferramenta/Maquina Equipamento"
+
+SUBCONTROLSEND
+DESIGNEREND = RONEW
+

@@ -1,0 +1,2204 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JEP
+GUID=821A6A4C-54E4-49A9-85A4-5EBFF0C77D85
+  Name=JEP
+  Class=DATAWINDOW
+  Caption=Estimativa Processo
+  Order=0
+  Left=97
+  Width=748
+  Top=23
+  Height=857
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Estimativa Processo",,
+  Property=Menu=STANDARDSHELLMENU
+  Property=HyperLabel=#JEP,,,
+  Property=ViewAs=#FormView
+  Property=ClipperKeys=True
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=011AE6E7-40F5-48A5-9D99-C172B8515D8F
+  Name=ImpMANA5
+  Class=PUSHBUTTON
+  Caption=&Importar PCP
+  Order=1
+  Left=597
+  Width=88
+  Top=229
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"&Importar PCP",,
+  Property=HyperLabel=#ImpMANA5,,,
+
+CONTROL=FIXEDTEXT
+GUID=E6A8DCD3-593D-4FF0-AC10-3473BDA655DD
+  Name=SC_REV
+  Class=FIXEDTEXT
+  Caption=Rev:
+  Order=3
+  Left=173
+  Width=28
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rev:",,
+  Property=HyperLabel=#SC_REV,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=1835BB45-4DCC-4288-9061-86B1F63BA5FE
+  Name=REV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=201
+  Width=24
+  Top=57
+  Height=24
+  Browseindex=2
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#REV,,,
+  Property=HyperLabel=,"Rev:",,
+  Property=HyperLabel=,,,"VPORC_REV"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=693018ED-AAFE-4B60-B329-E1AE2660B4A4
+  Name=Proxim2
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=645
+  Width=32
+  Top=377
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Proxim2,,,
+  Property=Image=ico_next
+
+CONTROL=PUSHBUTTON
+GUID=9152D8AE-C356-4606-8029-DC69DB313BA9
+  Name=Anterio2
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=613
+  Width=32
+  Top=377
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Anterio2,,,
+  Property=Image=ico_previous
+
+CONTROL=SINGLELINEEDIT
+GUID=BD2A3B7E-4C70-42B1-A59E-537D1083DF9C
+  Name=PRAZO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=477
+  Width=82
+  Top=89
+  Height=19
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#PRAZO,,,
+  Property=HyperLabel=,"Lmes:",,
+  Property=HyperLabel=,,,"VPORC_PRAZO"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=527342C5-8EA6-4C41-81D0-9D3B4E4A2437
+  Name=theFixedText22
+  Class=FIXEDTEXT
+  Caption=Prazo
+  Order=12
+  Left=441
+  Width=36
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Prazo",,
+  Property=HyperLabel=#theFixedText22,,,
+
+CONTROL=FIXEDTEXT
+GUID=7CF2A569-2499-48AE-8ABE-071FEE8885A1
+  Name=theFixedText23
+  Class=FIXEDTEXT
+  Caption=Viabilidade
+  Order=13
+  Left=525
+  Width=56
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Viabilidade",,
+  Property=HyperLabel=#theFixedText23,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=678BA089-A44B-4D86-84F8-9C137EBBF597
+  Name=VIABILI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=581
+  Width=80
+  Top=57
+  Height=28
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#VIABILI,,,
+  Property=HyperLabel=,"Lmes:",,
+  Property=HyperLabel=,,,"VPORC_PRAZO"
+  Property=NewFont=12:Times New Roman:Bold
+  Property=Background=255 255 200
+
+CONTROL=PUSHBUTTON
+GUID=B3DDCBB5-95B9-4D9B-8750-061E2044CFE4
+  Name=cmdtETI
+  Class=PUSHBUTTON
+  Caption=I
+  Order=15
+  Left=637
+  Width=20
+  Top=209
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"I",,
+  Property=HyperLabel=#cmdtETI,,,
+
+CONTROL=PUSHBUTTON
+GUID=A1D54EB8-0AA0-45E1-9705-5A218D138B6A
+  Name=cmdtTR
+  Class=PUSHBUTTON
+  Caption=T
+  Order=16
+  Left=657
+  Width=20
+  Top=209
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"T",,
+  Property=HyperLabel=#cmdtTR,,,
+
+CONTROL=PUSHBUTTON
+GUID=603AB263-7F32-4142-88FA-9B90C8C79E09
+  Name=cmdtmp
+  Class=PUSHBUTTON
+  Caption=M
+  Order=17
+  Left=617
+  Width=20
+  Top=209
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"M",,
+  Property=HyperLabel=#cmdtmp,,,
+
+CONTROL=PUSHBUTTON
+GUID=94B8DC9B-2B81-4D5F-B7D3-A837C4DF8302
+  Name=cmdtco
+  Class=PUSHBUTTON
+  Caption=C
+  Order=18
+  Left=597
+  Width=20
+  Top=209
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"C",,
+  Property=HyperLabel=#cmdtco,,,
+
+CONTROL=PUSHBUTTON
+GUID=5B9775DF-9A86-4EE2-8E36-EBA4DDD67ACC
+  Name=SubMaq
+  Class=PUSHBUTTON
+  Caption=SubMaq
+  Order=23
+  Left=669
+  Width=48
+  Top=417
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"SubMaq",,
+  Property=HyperLabel=#SubMaq,,,
+  Property=TooltipText="Incluir Uma Sub Maquina"
+
+CONTROL=SINGLELINEEDIT
+GUID=8E2D2B2D-F5FD-4F00-81BD-2E2ECC6D2373
+  Name=SUB
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=24
+  Left=641
+  Width=28
+  Top=417
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=#SUB,,,
+  Property=HyperLabel=,,,"VPORC_CLIENTE"
+
+CONTROL=PUSHBUTTON
+GUID=44E0A105-A05A-432B-AB4F-0384448591D2
+  Name=cmdescmp02b
+  Class=PUSHBUTTON
+  Caption=..Op2
+  Order=26
+  Left=685
+  Width=32
+  Top=397
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"..Op2",,
+  Property=HyperLabel=#cmdescmp02b,,,
+
+CONTROL=PUSHBUTTON
+GUID=C0976171-1AC4-4A3C-A0FC-2AB79BD161E0
+  Name=cmdescmp01
+  Class=PUSHBUTTON
+  Caption=..E
+  Order=27
+  Left=617
+  Width=24
+  Top=417
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"..E",,
+  Property=HyperLabel=#cmdescmp01,,,
+
+CONTROL=PUSHBUTTON
+GUID=CC089DFF-6653-4AB1-8EC5-DDAD38E54B78
+  Name=cmdescmp02
+  Class=PUSHBUTTON
+  Caption=..Op1
+  Order=28
+  Left=685
+  Width=32
+  Top=377
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"..Op1",,
+  Property=HyperLabel=#cmdescmp02,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=CAC1BFDD-2692-41F3-88DD-0EB6367326D0
+  Name=PROJETO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=29
+  Left=217
+  Width=218
+  Top=89
+  Height=18
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=0
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#PROJETO,,,
+  Property=HyperLabel=,"Normat:",,
+  Property=HyperLabel=,,,"VIABILI_NORMAT"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=896AF1FF-E62E-447E-BB0E-8C710CCD8E87
+  Name=SC_EAC2
+  Class=FIXEDTEXT
+  Caption=Projeto
+  Order=30
+  Left=173
+  Width=44
+  Top=89
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Projeto",,
+  Property=HyperLabel=#SC_EAC2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=2ADAFE90-B340-4337-AE1F-9A5FA73F0A86
+  Name=DUNS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=31
+  Left=41
+  Width=128
+  Top=89
+  Height=18
+  Browseindex=-1
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_char_30
+  Property=HyperLabel=#DUNS,,,
+  Property=HyperLabel=,"Eac:",,
+  Property=HyperLabel=,,,"VIABILI_EAC"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=33AFAA1D-A4B2-4932-B700-4DDD51C47417
+  Name=SC_EAC1
+  Class=FIXEDTEXT
+  Caption=Duns
+  Order=32
+  Left=9
+  Width=32
+  Top=89
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Duns",,
+  Property=HyperLabel=#SC_EAC1,,,
+
+CONTROL=PUSHBUTTON
+GUID=A99EF802-096A-4EA2-B9EE-C2E3817AE2CF
+  Name=porov
+  Class=PUSHBUTTON
+  Caption=
+  Order=43
+  Left=613
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#porov,,,
+
+CONTROL=PUSHBUTTON
+GUID=60C9D29E-25C2-4D14-8D00-55BFC2F589D6
+  Name=buscaov
+  Class=PUSHBUTTON
+  Caption=
+  Order=44
+  Left=577
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaov,,,
+
+CONTROL=FIXEDTEXT
+GUID=CB3844AF-1A72-497E-972C-C36311AFF3A0
+  Name=FixedText12
+  Class=FIXEDTEXT
+  Caption=Liberaçao
+  Order=45
+  Left=13
+  Width=55
+  Top=461
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Liberaçao",,
+  Property=HyperLabel=#FixedText12,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=14B96070-2B17-4D65-BFF9-79A7FC88D74D
+  Name=ELANOM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=46
+  Left=149
+  Width=252
+  Top=461
+  Height=18
+  Browseindex=-1
+  Browsesize=23
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_char_40
+  Property=HyperLabel=#ELANOM,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"VPORC_NOME"
+  Property=FocusSelect=FSEL_HOME
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=2652FC6C-875B-46FD-9BA5-345DBC6E28F4
+  Name=ELANUM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=47
+  Left=69
+  Width=76
+  Top=461
+  Height=18
+  Browseindex=-1
+  Browsesize=20
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#ELANUM,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"VPORC_CODIGO"
+  Property=FocusSelect=FSEL_HOME
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=615E0F78-F37F-4A8D-8AA2-3D46149CD5CA
+  Name=ELADAT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=48
+  Left=405
+  Width=76
+  Top=461
+  Height=18
+  Browseindex=-1
+  Browsesize=20
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#ELADAT,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"VPORC_CODIGO"
+  Property=FocusSelect=FSEL_HOME
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=A5F088CD-E80F-46C4-96B4-CCA9846E05EF
+  Name=ELAHOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=49
+  Left=485
+  Width=76
+  Top=461
+  Height=18
+  Browseindex=-1
+  Browsesize=20
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_char_08
+  Property=HyperLabel=#ELAHOR,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"VPORC_CODIGO"
+  Property=FocusSelect=FSEL_HOME
+  Property=Background=255 255 200
+
+CONTROL=TABCONTROL
+GUID=970A1FA2-D99A-4C3D-9D20-F20D3B1169A5
+  Name=JEPTAB
+  Class=TABCONTROL
+  Caption=
+  Order=50
+  Left=5
+  Width=716
+  Top=657
+  Height=144
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#JEPTAB,,,
+  TabPageName=JETTAB_01
+  TabPageCaption=Obs Geral
+  TabPageDataAware=YES
+  TabPageName=JETTAB_02
+  TabPageCaption=Obs Custo
+  TabPageDataAware=YES
+  TabPageName=JETTAB_03
+  TabPageCaption=Obs Engenharia
+  TabPageDataAware=YES
+  TabPageName=JEPTAB_PAGE4
+  TabPageCaption=Obs: Planilha
+  TabPageDataAware=YES
+
+CONTROL=PUSHBUTTON
+GUID=DC393387-19C0-4910-AD3B-70A34ECB7504
+  Name=escT
+  Class=PUSHBUTTON
+  Caption=..T
+  Order=51
+  Left=657
+  Width=20
+  Top=189
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"..T",,
+  Property=HyperLabel=#escT,,,
+
+CONTROL=PUSHBUTTON
+GUID=78D2DD9C-77D3-431C-8F02-666D9C75FDB7
+  Name=escI
+  Class=PUSHBUTTON
+  Caption=..I
+  Order=52
+  Left=637
+  Width=20
+  Top=189
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"..I",,
+  Property=HyperLabel=#escI,,,
+
+CONTROL=PUSHBUTTON
+GUID=ADB6D80F-D448-451F-A654-99AB2DE3FACA
+  Name=escM
+  Class=PUSHBUTTON
+  Caption=..M
+  Order=53
+  Left=617
+  Width=20
+  Top=189
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"..M",,
+  Property=HyperLabel=#escM,,,
+
+CONTROL=PUSHBUTTON
+GUID=A595474E-CC60-464D-9904-124FF8B711EE
+  Name=escC
+  Class=PUSHBUTTON
+  Caption=..C
+  Order=54
+  Left=597
+  Width=20
+  Top=189
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"..C",,
+  Property=HyperLabel=#escC,,,
+
+CONTROL=PUSHBUTTON
+GUID=FF617164-CBB6-4F4B-A5FA-EA5D65581839
+  Name=VerPcp
+  Class=PUSHBUTTON
+  Caption=Ver Pcp
+  Order=55
+  Left=613
+  Width=80
+  Top=261
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Ver Pcp",,
+  Property=HyperLabel=#VerPcp,,,
+
+CONTROL=PUSHBUTTON
+GUID=45164222-38DC-4845-AFE0-1957C97095AA
+  Name=Imp
+  Class=PUSHBUTTON
+  Caption=Imp
+  Order=56
+  Left=681
+  Width=32
+  Top=173
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Imp",,
+  Property=HyperLabel=#Imp,,,
+
+CONTROL=PUSHBUTTON
+GUID=E4D41684-470E-4FBD-9D5D-3819821C0ADB
+  Name=Nac
+  Class=PUSHBUTTON
+  Caption=Nac.
+  Order=57
+  Left=681
+  Width=32
+  Top=157
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Nac.",,
+  Property=HyperLabel=#Nac,,,
+
+CONTROL=PUSHBUTTON
+GUID=783DD07D-A29B-4710-B85A-8911A01565BC
+  Name=Proximo
+  Class=PUSHBUTTON
+  Caption=
+  Order=58
+  Left=629
+  Width=32
+  Top=157
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Proximo,,,
+  Property=Image=ico_next
+
+CONTROL=PUSHBUTTON
+GUID=E66C13E7-9C66-401F-83B4-BE8139107B87
+  Name=Anterior
+  Class=PUSHBUTTON
+  Caption=
+  Order=59
+  Left=597
+  Width=32
+  Top=157
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Anterior,,,
+  Property=Image=ico_previous
+
+CONTROL=FIXEDTEXT
+GUID=D9EE6E0F-F6FB-4F3F-AEB2-8CB4DF52C87D
+  Name=FixedText34
+  Class=FIXEDTEXT
+  Caption=Capacidade Produtiva
+  Order=60
+  Left=597
+  Width=115
+  Top=441
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Capacidade Produtiva",,
+  Property=HyperLabel=#FixedText34,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=2EFC00DF-1FA5-4C5E-B504-2B6DC6085E34
+  Name=CAPPRO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=61
+  Left=565
+  Width=172
+  Top=461
+  Height=18
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_05
+  Property=HyperLabel=#CAPPRO,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"VPORC_CLIENTE"
+
+CONTROL=PUSHBUTTON
+GUID=2683BA0C-13F4-48AF-A496-B1C2482A19C3
+  Name=ImpEst
+  Class=PUSHBUTTON
+  Caption=&Imp Estimativa
+  Order=62
+  Left=561
+  Width=88
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"&Imp Estimativa",,
+  Property=HyperLabel=#ImpEst,,,
+
+CONTROL=PUSHBUTTON
+GUID=AE58C3E6-3FFB-43F7-9134-306A8BEE844D
+  Name=CHECAR
+  Class=PUSHBUTTON
+  Caption=Checar
+  Order=63
+  Left=657
+  Width=64
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Checar",,
+  Property=HyperLabel=#CHECAR,,,
+
+CONTROL=FIXEDTEXT
+GUID=8AF93215-91A3-40C0-A21C-4E29F38CE615
+  Name=SC_DESTINO2
+  Class=FIXEDTEXT
+  Caption=Foto
+  Order=66
+  Left=689
+  Width=48
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Foto",,
+  Property=HyperLabel=#SC_DESTINO2,,,
+
+CONTROL=PUSHBUTTON
+GUID=5228512D-A915-496B-8864-487FE4E8F31D
+  Name=foto
+  Class=PUSHBUTTON
+  Caption=
+  Order=67
+  Left=689
+  Width=48
+  Top=13
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#foto,,,
+  Property=Image=ico_camera
+
+CONTROL=SINGLELINEEDIT
+GUID=FAEE1502-A7BD-4F06-BFBC-3AA5E9F2F253
+  Name=OVREV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=68
+  Left=665
+  Width=24
+  Top=57
+  Height=28
+  Browseindex=-1
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#OVREV,,,
+  Property=HyperLabel=,"Ov:",,
+  Property=HyperLabel=,,,"VIABILI_OV"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=6817324D-72D6-47D0-B0AB-471915890D1E
+  Name=EmailVIA
+  Class=PUSHBUTTON
+  Caption=Email
+  Order=71
+  Left=629
+  Width=80
+  Top=629
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Email",,
+  Property=HyperLabel=#EmailVIA,,,
+
+CONTROL=SUBDATAWINDOW
+GUID=97E3F136-1C61-436D-8190-A1DC9A5DA63A
+  Name=JVIII
+  Class=SUBDATAWINDOW
+  Caption=
+  Order=75
+  Left=5
+  Width=608
+  Top=569
+  Height=84
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JVIII,,,
+
+CONTROL=PUSHBUTTON
+GUID=3AA2918C-3F69-46EB-9FBE-735167F044A5
+  Name=EditarVIA
+  Class=PUSHBUTTON
+  Caption=Editar
+  Order=76
+  Left=677
+  Width=48
+  Top=589
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Editar",,
+  Property=HyperLabel=#EditarVIA,,,
+
+CONTROL=PUSHBUTTON
+GUID=39561A70-84B9-4D3C-A7FA-81DE00850BF2
+  Name=TabularVIA
+  Class=PUSHBUTTON
+  Caption=Ver Itens
+  Order=77
+  Left=629
+  Width=48
+  Top=589
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Ver Itens",,
+  Property=HyperLabel=#TabularVIA,,,
+
+CONTROL=PUSHBUTTON
+GUID=6E749770-8BF8-4990-B118-960959522965
+  Name=SituacaoVIA
+  Class=PUSHBUTTON
+  Caption=Situação
+  Order=78
+  Left=629
+  Width=80
+  Top=609
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Situação",,
+  Property=HyperLabel=#SituacaoVIA,,,
+
+CONTROL=PUSHBUTTON
+GUID=455BA20E-0689-4185-AE72-5DB884357B84
+  Name=ExcluirVIA
+  Class=PUSHBUTTON
+  Caption=Excluir
+  Order=79
+  Left=677
+  Width=48
+  Top=569
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Excluir",,
+  Property=HyperLabel=#ExcluirVIA,,,
+
+CONTROL=PUSHBUTTON
+GUID=784073F9-0877-4FED-9ABA-44B99800BB97
+  Name=NovoVIA
+  Class=PUSHBUTTON
+  Caption=Novo
+  Order=80
+  Left=629
+  Width=48
+  Top=569
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Novo",,
+  Property=HyperLabel=#NovoVIA,,,
+
+CONTROL=SUBDATAWINDOW
+GUID=06C8A602-3057-443C-8D79-21833FCA3C96
+  Name=JVIAREV
+  Class=SUBDATAWINDOW
+  Caption=
+  Order=81
+  Left=9
+  Width=720
+  Top=485
+  Height=80
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JVIAREV,,,
+
+CONTROL=PUSHBUTTON
+GUID=5CCEC082-53AC-435D-AD1F-F58E06D84DAD
+  Name=cmdescmp2
+  Class=PUSHBUTTON
+  Caption=FX
+  Order=82
+  Left=693
+  Width=24
+  Top=353
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"FX",,
+  Property=HyperLabel=#cmdescmp2,,,
+
+CONTROL=FIXEDTEXT
+GUID=BDEA0257-4942-4A59-AD97-B2C9CED1A45B
+  Name=SC_CLIENTE
+  Class=FIXEDTEXT
+  Caption=Cliente:
+  Order=-1
+  Left=77
+  Width=47
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=#SC_CLIENTE,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=7FA1FC03-CE4A-4712-96D3-C5D34B28CF11
+  Name=CLIENTE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=129
+  Width=66
+  Top=5
+  Height=18
+  Browseindex=4
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#CLIENTE,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"VPORC_CLIENTE"
+  Property=FocusSelect=FSEL_HOME
+  Property=Background=255 255 200
+
+CONTROL=GROUPBOX
+GUID=89D31E7E-056D-4FA5-B34B-0DF92DB2BCE8
+  Name=theGroupBox1
+  Class=GROUPBOX
+  Caption=Lotes
+  Order=-1
+  Left=233
+  Width=340
+  Top=5
+  Height=52
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Lotes",,
+  Property=HyperLabel=#theGroupBox1,,,
+
+CONTROL=FIXEDTEXT
+GUID=0E1C6F1C-AD8E-4DAD-9A68-31215621B62D
+  Name=SC_OV
+  Class=FIXEDTEXT
+  Caption=Ov:
+  Order=-1
+  Left=7
+  Width=24
+  Top=7
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ov:",,
+  Property=HyperLabel=#SC_OV,,,
+
+CONTROL=FIXEDTEXT
+GUID=B5987A60-9325-4396-BC54-103C6DDB31B5
+  Name=theFixedText20
+  Class=FIXEDTEXT
+  Caption=Mensal
+  Order=-1
+  Left=341
+  Width=56
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mensal",,
+  Property=HyperLabel=#theFixedText20,,,
+
+CONTROL=FIXEDTEXT
+GUID=E18C1652-1DB4-40DA-9E40-6E565D69DDCA
+  Name=theFixedText21
+  Class=FIXEDTEXT
+  Caption=Minimo
+  Order=-1
+  Left=457
+  Width=46
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Minimo",,
+  Property=HyperLabel=#theFixedText21,,,
+
+CONTROL=FIXEDTEXT
+GUID=352D825F-9CAB-4122-BB36-3BD83197A4D3
+  Name=theFixedText19
+  Class=FIXEDTEXT
+  Caption=Anual
+  Order=-1
+  Left=241
+  Width=40
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Anual",,
+  Property=HyperLabel=#theFixedText19,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=62096F69-1471-4028-899C-B400CC321978
+  Name=OV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=9
+  Width=60
+  Top=25
+  Height=18
+  Browseindex=0
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#OV,,,
+  Property=HyperLabel=,"Ov:",,
+  Property=HyperLabel=,,,"VPORC_OV"
+  Property=FocusSelect=FSEL_HOME
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=618D7678-5CA6-4682-8EDF-7AF8C54D1AED
+  Name=COGCLI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=77
+  Width=146
+  Top=25
+  Height=18
+  Browseindex=5
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_Char_12
+  Property=HyperLabel=#COGCLI,,,
+  Property=HyperLabel=,"Cognome",,
+  Property=HyperLabel=,,,"VPORC_COGCLI"
+  Property=FocusSelect=FSEL_HOME
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=7C8339EB-75B5-45E1-A8C0-3E269DBCCC36
+  Name=LANU
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=237
+  Width=96
+  Top=29
+  Height=19
+  Browseindex=5
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_num_07
+  Property=HyperLabel=#LANU,,,
+  Property=HyperLabel=,"Lanu:",,
+  Property=HyperLabel=,,,"VPORC_LANU"
+  Property=FocusSelect=FSEL_HOME
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=17D1804C-5D1D-4618-AAF1-C3522C713043
+  Name=LMES
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=337
+  Width=114
+  Top=29
+  Height=19
+  Browseindex=6
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=padrao_num_07
+  Property=HyperLabel=#LMES,,,
+  Property=HyperLabel=,"Lmes:",,
+  Property=HyperLabel=,,,"VPORC_LMES"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=7BDBF61C-884D-4191-ACA9-38FB9B426F4D
+  Name=LMIN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=453
+  Width=114
+  Top=29
+  Height=19
+  Browseindex=7
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_num_07
+  Property=HyperLabel=#LMIN,,,
+  Property=HyperLabel=,"Lmin:",,
+  Property=HyperLabel=,,,"VPORC_LMIN"
+  Property=FocusSelect=FSEL_HOME
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=354644B7-E4DD-44DB-919F-2B7E7C3EDBF7
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=-1
+  Left=5
+  Width=47
+  Top=45
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=DEE70DEA-03FF-4780-96C2-914E25B74C59
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=5
+  Width=160
+  Top=57
+  Height=26
+  Browseindex=1
+  Browsesize=20
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"VPORC_CODIGO"
+  Property=FocusSelect=FSEL_HOME
+  Property=NewFont=12:Times New Roman:Bold
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=0B286FAE-322A-43EE-B6EB-8326B7332933
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=269
+  Width=252
+  Top=65
+  Height=18
+  Browseindex=3
+  Browsesize=23
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_char_75
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"VPORC_NOME"
+  Property=FocusSelect=FSEL_HOME
+  Property=Background=255 255 200
+
+CONTROL=PUSHBUTTON
+GUID=EF5F82FC-D406-4102-A93B-778E95CE55F6
+  Name=TABULAR
+  Class=PUSHBUTTON
+  Caption=Ver Itens
+  Order=-1
+  Left=597
+  Width=56
+  Top=109
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Ver Itens",,
+  Property=HyperLabel=#TABULAR,,,
+
+CONTROL=PUSHBUTTON
+GUID=443EA9FE-582D-44A4-AF37-5A1432E241E9
+  Name=ALTERAR
+  Class=PUSHBUTTON
+  Caption=Editar Item
+  Order=-1
+  Left=657
+  Width=60
+  Top=109
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Editar Item",,
+  Property=HyperLabel=#ALTERAR,,,
+
+CONTROL=SUBDATAWINDOW
+GUID=B89851F1-C1FC-4634-9511-64B78CA28456
+  Name=JVCE
+  Class=SUBDATAWINDOW
+  Caption=JVCE
+  Order=-1
+  Left=9
+  Width=582
+  Top=113
+  Height=144
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JVCE,,,
+
+CONTROL=PUSHBUTTON
+GUID=6CF08DB1-1413-4F83-8179-ADEF2596A937
+  Name=Incluir
+  Class=PUSHBUTTON
+  Caption=Incluir
+  Order=-1
+  Left=597
+  Width=56
+  Top=133
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Incluir",,
+  Property=HyperLabel=#Incluir,,,
+
+CONTROL=PUSHBUTTON
+GUID=A816FCC6-69EE-4C36-AA8F-E4E68494E314
+  Name=Excluir
+  Class=PUSHBUTTON
+  Caption=Excluir
+  Order=-1
+  Left=657
+  Width=60
+  Top=133
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Excluir",,
+  Property=HyperLabel=#Excluir,,,
+
+CONTROL=SUBDATAWINDOW
+GUID=63E620F0-CCCB-4FA7-AD31-31EFC35F2A6C
+  Name=JSEQ
+  Class=SUBDATAWINDOW
+  Caption=JSEQ
+  Order=-1
+  Left=9
+  Width=600
+  Top=261
+  Height=196
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JSEQ,,,
+
+CONTROL=PUSHBUTTON
+GUID=25DEADB0-C6DA-4454-9224-7BC529C8712E
+  Name=TABULA2
+  Class=PUSHBUTTON
+  Caption=Ver Itens
+  Order=-1
+  Left=613
+  Width=80
+  Top=281
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Ver Itens",,
+  Property=HyperLabel=#TABULA2,,,
+
+CONTROL=PUSHBUTTON
+GUID=1A166ED1-D0BD-4179-AB6A-5B719243D849
+  Name=ALTERA2
+  Class=PUSHBUTTON
+  Caption=Editar Item
+  Order=-1
+  Left=613
+  Width=80
+  Top=305
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Editar Item",,
+  Property=HyperLabel=#ALTERA2,,,
+
+CONTROL=PUSHBUTTON
+GUID=C50B8B12-B88F-46E0-8772-0AECF0E3996A
+  Name=INCLUI2
+  Class=PUSHBUTTON
+  Caption=Incluir
+  Order=-1
+  Left=613
+  Width=80
+  Top=329
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Incluir",,
+  Property=HyperLabel=#INCLUI2,,,
+
+CONTROL=PUSHBUTTON
+GUID=CF850620-700B-4215-9018-B4B78AE71E33
+  Name=EXCLUI2
+  Class=PUSHBUTTON
+  Caption=Excluir
+  Order=-1
+  Left=613
+  Width=80
+  Top=353
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Excluir",,
+  Property=HyperLabel=#EXCLUI2,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JEP
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JETTAB_01
+GUID=1C3BE442-5EFE-4370-8C00-7257745EAC8E
+  Name=JETTAB_01
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=21
+  Width=575
+  Top=202
+  Height=186
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#JETTAB_01,,,
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=6E308DD7-126E-4DDB-BE7B-612905B3217C
+  Name=OBS01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=77
+  Width=400
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_80
+  Property=HyperLabel=#OBS01,,,
+  Property=HyperLabel=,"Obs01:",,
+  Property=HyperLabel=,,,"VPORC_OBS01"
+
+CONTROL=SINGLELINEEDIT
+GUID=516D0D45-300E-4A19-9CE6-1E2BD818D3B7
+  Name=OBS02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=77
+  Width=400
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_80
+  Property=HyperLabel=#OBS02,,,
+  Property=HyperLabel=,"Obs02:",,
+  Property=HyperLabel=,,,"VPORC_OBS02"
+
+CONTROL=SINGLELINEEDIT
+GUID=CAEDA900-BFB9-4DB7-9F48-1850E2FD8B04
+  Name=OBS03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=77
+  Width=400
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_80
+  Property=HyperLabel=#OBS03,,,
+  Property=HyperLabel=,"Obs03:",,
+  Property=HyperLabel=,,,"VPORC_OBS03"
+
+CONTROL=SINGLELINEEDIT
+GUID=B750080C-02FA-4F32-B55F-797FE341D918
+  Name=OBS04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=77
+  Width=400
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_80
+  Property=HyperLabel=#OBS04,,,
+  Property=HyperLabel=,"Obs04:",,
+  Property=HyperLabel=,,,"VPORC_OBS04"
+
+CONTROL=SINGLELINEEDIT
+GUID=FD5B65FF-7E25-43CB-9C7C-2F4DB7F400D4
+  Name=OBS05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=77
+  Width=400
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_80
+  Property=HyperLabel=#OBS05,,,
+  Property=HyperLabel=,"Obs05:",,
+  Property=HyperLabel=,,,"VPORC_OBS05"
+
+CONTROL=SINGLELINEEDIT
+GUID=5C5328AA-1E60-4C79-8A1F-99AFCFED7AB9
+  Name=OBS06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=77
+  Width=400
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_80
+  Property=HyperLabel=#OBS06,,,
+  Property=HyperLabel=,"Obs05:",,
+  Property=HyperLabel=,,,"VPORC_OBS05"
+
+CONTROL=SINGLELINEEDIT
+GUID=637A6E02-45A5-45F4-8E16-E5A66CE66EB8
+  Name=OBS07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=77
+  Width=400
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_80
+  Property=HyperLabel=#OBS07,,,
+  Property=HyperLabel=,"Obs05:",,
+  Property=HyperLabel=,,,"VPORC_OBS05"
+
+CONTROL=SINGLELINEEDIT
+GUID=207DB7DE-85EB-46BC-9394-7CD140FEA35E
+  Name=OBS08
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=77
+  Width=400
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_80
+  Property=HyperLabel=#OBS08,,,
+  Property=HyperLabel=,"Obs05:",,
+  Property=HyperLabel=,,,"VPORC_OBS05"
+
+SUBCONTROLSEND
+DESIGNEREND = JETTAB_01
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JETTAB_02
+GUID=14F903E9-ECDB-4644-922E-CA4E850816D5
+  Name=JETTAB_02
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=12
+  Width=575
+  Top=348
+  Height=165
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#JETTAB_02,,,
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=FFEB6386-C87C-4B61-B8B8-AB9A38F72650
+  Name=OBC01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=77
+  Width=400
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_80
+  Property=HyperLabel=#OBC01,,,
+  Property=HyperLabel=,"padrao_char_80",,
+  Property=HyperLabel=,,,"VPORC_OBC01"
+
+CONTROL=SINGLELINEEDIT
+GUID=8242F2A2-AA2C-4CBF-9AB5-30A6CD800E54
+  Name=OBC02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=77
+  Width=400
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_80
+  Property=HyperLabel=#OBC02,,,
+  Property=HyperLabel=,"padrao_char_80",,
+  Property=HyperLabel=,,,"VPORC_OBC02"
+
+CONTROL=SINGLELINEEDIT
+GUID=813104B2-3F31-4C17-BE61-D6726CDF3A97
+  Name=OBC03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=77
+  Width=400
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_80
+  Property=HyperLabel=#OBC03,,,
+  Property=HyperLabel=,"padrao_char_80",,
+  Property=HyperLabel=,,,"VPORC_OBC03"
+
+CONTROL=SINGLELINEEDIT
+GUID=2484E29F-55B6-41FF-9CE4-ADFC1CCB0BED
+  Name=OBC04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=77
+  Width=400
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_80
+  Property=HyperLabel=#OBC04,,,
+  Property=HyperLabel=,"padrao_char_80",,
+  Property=HyperLabel=,,,"VPORC_OBC04"
+
+CONTROL=SINGLELINEEDIT
+GUID=D102DEE7-549B-437B-A525-2DB70DF87AD1
+  Name=OBC05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=77
+  Width=400
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_80
+  Property=HyperLabel=#OBC05,,,
+  Property=HyperLabel=,"padrao_char_80",,
+  Property=HyperLabel=,,,"VPORC_OBC05"
+
+SUBCONTROLSEND
+DESIGNEREND = JETTAB_02
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JETTAB_03
+GUID=174B880E-7041-4269-8337-FE030B02CD4D
+  Name=JETTAB_03
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=24
+  Width=575
+  Top=157
+  Height=79
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#JETTAB_03,,,
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=B7128A1E-20FC-4635-B926-5116A5B8ACDB
+  Name=OBE01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=77
+  Width=400
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_60
+  Property=HyperLabel=#OBE01,,,
+  Property=HyperLabel=,"Obe01:",,
+  Property=HyperLabel=,,,"VPORC_OBE01"
+
+CONTROL=SINGLELINEEDIT
+GUID=BEA848E4-3061-42E7-AE04-F7F4C85426E2
+  Name=OBE02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=77
+  Width=400
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_60
+  Property=HyperLabel=#OBE02,,,
+  Property=HyperLabel=,"Obe02:",,
+  Property=HyperLabel=,,,"VPORC_OBE02"
+
+CONTROL=SINGLELINEEDIT
+GUID=B642791D-1C57-434A-88CA-9A5DB838A4D3
+  Name=OBE03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=77
+  Width=400
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_60
+  Property=HyperLabel=#OBE03,,,
+  Property=HyperLabel=,"Obe03:",,
+  Property=HyperLabel=,,,"VPORC_OBE03"
+
+SUBCONTROLSEND
+DESIGNEREND = JETTAB_03
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JEPTAB_Page4
+GUID=6B95B9AF-59E1-4E6A-A6A3-2825262CF8D1
+  Name=JEPTAB_Page4
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=10
+  Width=575
+  Top=250
+  Height=118
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#JEPTAB_Page4,,,
+  Property=ViewAs=#FormView
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=34955E43-8D5A-449E-B181-964D167A82F9
+  Name=OBSP01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=82
+  Width=400
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_60
+  Property=HyperLabel=#OBSP01,,,
+  Property=HyperLabel=,"Obsp01:",,
+  Property=HyperLabel=,,,"VPORC_OBSP01"
+
+CONTROL=SINGLELINEEDIT
+GUID=892D49C4-63EA-4235-AF07-613D8FC59546
+  Name=OBSP02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=82
+  Width=400
+  Top=50
+  Height=20
+  Browseindex=1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_60
+  Property=HyperLabel=#OBSP02,,,
+  Property=HyperLabel=,"Obsp02:",,
+  Property=HyperLabel=,,,"VPORC_OBSP02"
+
+SUBCONTROLSEND
+DESIGNEREND = JEPTAB_Page4
+

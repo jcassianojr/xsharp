@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JRIFOBS">
+    <Window Name="JRIFOBS">
+      <Name>JRIFOBS</Name>
+      <Class>DATADIALOG</Class>
+      <Caption>Observações</Caption>
+      <Order>0</Order>
+      <Left>22</Left>
+      <Top>22</Top>
+      <Width>549</Width>
+      <Height>240</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Observações",,</HyperLabel>
+        <HyperLabel>#JRIFOBS,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="theFixedText10">
+      <Name>theFixedText10</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>OK</Caption>
+      <Order>13</Order>
+      <Left>457</Left>
+      <Top>77</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"OK",,</HyperLabel>
+        <HyperLabel>#theFixedText10,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="OKx">
+      <Name>OKx</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>14</Order>
+      <Left>457</Left>
+      <Top>29</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#OKx,,,</HyperLabel>
+        <Image>ico_ok</Image>
+      </ExProperties>
+    </Control>
+    <Control Name="linha01">
+      <Name>linha01</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Fixed Text</Caption>
+      <Order>15</Order>
+      <Left>13</Left>
+      <Top>13</Top>
+      <Width>415</Width>
+      <Height>28</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Fixed Text",,</HyperLabel>
+        <NewFont>16:Times New Roman</NewFont>
+        <HyperLabel>#linha01,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="linha02">
+      <Name>linha02</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Fixed Text</Caption>
+      <Order>16</Order>
+      <Left>13</Left>
+      <Top>45</Top>
+      <Width>415</Width>
+      <Height>28</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Fixed Text",,</HyperLabel>
+        <NewFont>16:Times New Roman</NewFont>
+        <HyperLabel>#linha02,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="linha03">
+      <Name>linha03</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Fixed Text</Caption>
+      <Order>17</Order>
+      <Left>13</Left>
+      <Top>77</Top>
+      <Width>415</Width>
+      <Height>28</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Fixed Text",,</HyperLabel>
+        <NewFont>16:Times New Roman</NewFont>
+        <HyperLabel>#linha03,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="linha04">
+      <Name>linha04</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Fixed Text</Caption>
+      <Order>18</Order>
+      <Left>13</Left>
+      <Top>109</Top>
+      <Width>415</Width>
+      <Height>28</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Fixed Text",,</HyperLabel>
+        <NewFont>16:Times New Roman</NewFont>
+        <HyperLabel>#linha04,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="linha05">
+      <Name>linha05</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Fixed Text</Caption>
+      <Order>19</Order>
+      <Left>13</Left>
+      <Top>141</Top>
+      <Width>415</Width>
+      <Height>28</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Fixed Text",,</HyperLabel>
+        <NewFont>16:Times New Roman</NewFont>
+        <HyperLabel>#linha05,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="linha06">
+      <Name>linha06</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Fixed Text</Caption>
+      <Order>20</Order>
+      <Left>13</Left>
+      <Top>173</Top>
+      <Width>415</Width>
+      <Height>28</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Fixed Text",,</HyperLabel>
+        <NewFont>16:Times New Roman</NewFont>
+        <HyperLabel>#linha06,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

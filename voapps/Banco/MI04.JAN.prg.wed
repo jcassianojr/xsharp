@@ -1,0 +1,152 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JMI04
+GUID=C2AF7EC3-A65A-474A-AEEC-11DA13F515A3
+  Name=JMI04
+  Class=DATAWINDOW
+  Caption=Codigos de Despesas
+  Order=0
+  Left=24
+  Width=457
+  Top=24
+  Height=157
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigos de Despesas",,
+  Property=ClipperKeys=True
+  Property=Menu=STANDARDSHELLMENU
+  Property=HyperLabel=#JMI04,,,
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=3DA6AEB5-F8B9-4009-95BC-3EF20CF2938B
+  Name=SC_CONTA
+  Class=FIXEDTEXT
+  Caption=Conta:
+  Order=1
+  Left=22
+  Width=36
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Conta:",,
+  Property=HyperLabel=#SC_CONTA,,,
+
+CONTROL=FIXEDTEXT
+GUID=795B7A47-B770-4F89-A1B2-C97D107A902F
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=2
+  Left=22
+  Width=36
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=2A527400-4173-4086-B5E4-AA506ED274AD
+  Name=CONTA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=77
+  Width=92
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216348544
+  Exstyles=512
+  Property=FieldSpec=padrao_char_11
+  Property=HyperLabel=#CONTA,,,
+  Property=HyperLabel=,"Conta:",,
+  Property=HyperLabel=,,,"MI04_CONTA"
+
+CONTROL=SINGLELINEEDIT
+GUID=D815C12E-C2FA-4CEB-B4B8-525A967EBC52
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=74
+  Width=364
+  Top=50
+  Height=20
+  Browseindex=1
+  Browsesize=61
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216348544
+  Exstyles=512
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"MI04_NOME"
+
+CONTROL=PUSHBUTTON
+GUID=9E50DF30-0706-48D3-B9BE-63C8CBE06DA0
+  Name=pornum
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=221
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_AZ
+  Property=HyperLabel=#pornum,,,
+
+CONTROL=PUSHBUTTON
+GUID=4EF7C7B3-9F08-427E-90C9-808088437A8B
+  Name=buscanum
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=189
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscanum,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JMI04
+

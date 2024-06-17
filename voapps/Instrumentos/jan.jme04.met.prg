@@ -1,0 +1,180 @@
+CLASS XJINS INHERIT JINS
+
+METHOD APPEND(oOWNER) 
+LOCAL oBUSCA AS xBUSCA
+IF PEGINIVAL(ZCURINI,"ME04.DBF","INCLUI")="N"
+   alert("Inclusao Bloqueada")
+   RETURN .f.
+ENDIF
+
+oBUSCA:=xBUSCA{oOWNER,"Incluir","Digite o Codigo "}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF oBUSCA:lOK
+   SELF:server:setorder(1)
+   SELF:server:gotop()
+   IF ! SELF:server:seek(oBUSCA:cBUSCA)
+      SUPER:append()
+      SELF:SERVER:FIELDPUT("CODIGO",oBUSCA:cBUSCA)
+      SELF:SERVER:FIELDPUT("CODTIPO","CCL")
+      alert("Necessario Realizar Estudo MSA")
+   ELSE
+      alert("Já Cadastrado")
+   ENDIF	
+ENDIF
+RETURN  .t.
+
+
+
+METHOD busca( ) 
+	SELF:KeyFind()
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("M4","")	
+
+METHOD escfor( ) 
+LOCAL oESC AS XESCNUM	
+LOCAL aFORN AS ARRAY
+oESC:=XESCNUM{SELF,ZCURINI,ZCURDIR,"MB01.DBF"}
+oESC:SHOW()	
+IF oESC:LOK
+    SELF:SERVER:FIELDPUT("CODFOR",oESC:NUMERO)
+    aFORN:=PEGMB01(SELF:SERVER:CODFOR,ZCURINI,ZCURDIR)
+    IF aFORN[1]=.T.
+       SELF:SERVER:FIELDPUT("COGFOR",aFORN[3])
+    ENDIF
+ENDIF
+
+METHOD foto( ) 
+LOCAL cARQ,CCODIGO AS STRING
+LOCAL nFout AS PTR
+IF ! entramenu("INS",11)
+	RETU SELF
+ENDIF		
+cARQ:=PEGINIVAL(ZCURINI,"PATH","IMGJPG")
+CCODIGO:=SELF:SERVER:FIELDGET("CODIGO")
+nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("IMGJPG"),String2Psz(CCODIGO+"#{IMGME04}"),String2Psz(carq),SW_SHOWNORMAL) 
+ShellExecuteErro(nFout) 
+
+
+CONSTRUCTOR(oOWNER) 
+LOCAL oSERVER AS USEREDE
+LOCAL aDAD AS ARRAY
+IF ! ENTRAMENU("INS",1)
+	RETU SELF
+ENDIF	
+aDAD:={zCURINI,"ME04.DBF",ZCURDIR}
+oSERVER:=USEREDE{aDAD}
+IF oSERVER:nERRO#0
+    RETU SELF
+ENDIF
+SUPER(oOWNER,,oSERVER)
+SELF:Browser:SetStandardStyle(gBsreadonly)
+SELF:Menu := STANDARDSHELLMENU{}
+SELF:SHOW()				
+
+METHOD ListBoxSelect( oControlEvent ) 
+	LOCAL oControl AS Control
+	oControl := IIf( oControlEvent == NULL_OBJECT, NULL_OBJECT, oControlEvent:Control )
+	SUPER:ListBoxSelect( oControlEvent )
+	DO CASE
+	       CASE oCONTROL:NAMESYM==#CODTIPO
+			    SELF:SERVER:FIELDPUT("TIPO",SELF:odcCodtipo:textvalue)
+	       CASE oCONTROL:NAMESYM==#ESCAPL			
+	       		SELF:SERVER:FIELDPUT("APLIC",SELF:odcESCAPL:textvalue)
+	 ENDCASE
+	
+	//Put your changes here
+RETURN NIL
+
+METHOD pegcal( ) 
+LOCAL oJAN 	AS jCAL
+oJAN:=JCAL{SELF}
+oJAN:SHOW()
+
+
+METHOD pegFOR( ) 
+LOCAL aFORN AS ARRAY	
+    aFORN:=PEGMB01(SELF:SERVER:CODFOR,ZCURINI,ZCURDIR)
+    IF aFORN[1]=.T.
+       SELF:SERVER:FIELDPUT("COGFOR",aFORN[3])
+    ENDIF
+
+METHOD pornum( ) 
+	SELF:KEYFIND()
+
+METHOD PushButton6( ) 
+	SELF:SERVER:FIELDPUT("NORMA","CONFORME DESENHO")
+
+METHOD PushButton7( ) 
+SELF:SERVER:FIELDPUT("NORMA","CONFORME CERTIFICADO")
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+
+END CLASS
+CLASS XJINU INHERIT XJINS
+	
+
+METHOD APPEND(oOWNER) 
+LOCAL oBUSCA AS xBUSCA
+IF PEGINIVAL(ZCURINI,"ME06.DBF","INCLUI")="N"
+   alert("Inclusao Bloqueada")
+   RETURN .f.
+ENDIF
+
+oBUSCA:=xBUSCA{oOWNER,"Incluir","Digite o Codigo "}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF oBUSCA:lOK
+   SELF:server:setorder(1)
+   SELF:server:gotop()
+   IF ! SELF:server:seek(oBUSCA:cBUSCA)
+      SUPER:append()
+      SELF:SERVER:FIELDPUT("CODIGO",oBUSCA:cBUSCA)
+//      SELF:SERVER:FIELDPUT("CODTIPO","CCL")
+//      alert("Necessario Realizar Estudo MSA")
+   ELSE
+      alert("Já Cadastrado")
+   ENDIF	
+ENDIF
+RETURN   .t.
+
+METHOD foto( ) 
+LOCAL cARQ,CCODIGO AS STRING
+LOCAL nFout AS PTR
+IF ! entramenu("INS",12)
+	RETU SELF
+ENDIF		
+cARQ:=PEGINIVAL(ZCURINI,"PATH","IMGJPG")
+CCODIGO:=SELF:SERVER:FIELDGET("CODIGO")
+nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("IMGJPG"),String2Psz(CCODIGO+"#{IMGME06}"),String2Psz(carq),SW_SHOWNORMAL) 
+ShellExecuteErro(nFout) 
+
+CONSTRUCTOR(oOWNER) 
+LOCAL oSERVER AS USEREDE
+LOCAL aDAD AS ARRAY
+IF ! entramenu("INS",13)
+	RETU SELF
+ENDIF	
+aDAD:={zCURINI,"ME06.DBF",ZCURDIR}
+oSERVER:=USEREDE{aDAD}
+IF oSERVER:nERRO#0
+    RETU SELF
+ENDIF
+SUPER(oOWNER,,oSERVER)
+SELF:Browser:SetStandardStyle(gBsreadonly)
+SELF:CAPTION:="Utilitarios"
+SELF:SHOW()				
+
+
+END CLASS

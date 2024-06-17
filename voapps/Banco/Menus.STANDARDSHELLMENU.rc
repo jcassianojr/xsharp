@@ -1,0 +1,48 @@
+ STANDARDSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		MENUITEM "&Abrir...\tCtrl+A", 20947
+		MENUITEM "&Fechar", 20948
+		MENUITEM "Fechar  &Tudo", 20949
+		MENUITEM SEPARATOR
+		MENUITEM "&Configurar Impressora", 20951
+		MENUITEM SEPARATOR
+		MENUITEM "&Sair\tAlt+F4", 20953
+	END
+	POPUP "&Editar"
+	BEGIN
+		MENUITEM "&Recortar\tCtrl+X", 20955
+		MENUITEM "&Copiar\tCtrl+C", 20956
+		MENUITEM "C&olar\tCtrl+V", 20957
+		MENUITEM SEPARATOR
+		MENUITEM "&Inserir  Registro", 20959
+		MENUITEM "&Deletar Registro", 20960
+		MENUITEM SEPARATOR
+		MENUITEM "&Anterior", 20962
+		MENUITEM "&Posterior", 20963
+		MENUITEM "&Ultimo\tCtrl+End", 20964
+		MENUITEM "&Primeiro\tCtrl+Home", 20965
+		MENUITEM "&Encontrar Registro", 20966
+	END
+	POPUP "&Visualizar"
+	BEGIN
+		MENUITEM "&Formulário\tShift+F2", 20968
+		MENUITEM "&Tabela\tF2", 20969
+		MENUITEM "&Exibir por", 20970
+	END
+	POPUP "&Janela"
+	BEGIN
+		MENUITEM "&Cascata", 20972
+		MENUITEM "&Tilulos", 20973
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Indice\tF1", 20975
+		MENUITEM "&Ajuda de Contexto\tCtrl+F1", 20976
+		MENUITEM "&Usando a Ajuda", 20977
+		MENUITEM SEPARATOR
+		MENUITEM "&Sobre...", 20979
+	END
+End
+ 

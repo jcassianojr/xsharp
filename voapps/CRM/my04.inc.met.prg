@@ -1,0 +1,448 @@
+CLASS XJMY04 INHERIT JMY04
+
+
+METHOD Cancelar( )  
+	SELF:EndWindow()
+	
+	
+
+METHOD escped( ) 
+LOCAL oJAN AS Xescmw02
+oJAN:=Xescmw02{SELF,ZCURINI,ZCURDIR,"ITETIP<>'M' .AND. ITETIP<>'T' .AND. ITETIP<>'C'"}
+oJAN:SHOW()
+IF oJAN:lOK
+   SELF:os:=Str(oJAN:NUMERO,8)	
+   SELF:item:=Str(Ojan:ITEM,3)
+   SELF:PEGPED()
+ENDIF		
+
+
+METHOD imprimir1( ) 
+SELF:XWRPTGRP("CRM","PEMW")		
+
+
+CONSTRUCTOR(oOWNER) 
+IF ! entramenu("CRM",12)
+	RETU SELF
+ENDIF	
+SUPER(oOWNER)
+SELF:DATA:=Today()
+SELF:SHOW()	
+
+METHOD muddat( ) 
+	SELF:oDCDATA:enable()
+
+METHOD OK( ) 
+LOCAL oMW01,oMW02,oMW01BX,oMW02BX AS USEMANA5
+LOCAL oMY04,oAUT AS USeREDE
+LOCAL aDAD AS ARRAY
+LOCAL Nnumero,nFIELD,nPEDIDO,nITEM,nAUT,J AS DWORD
+LOCAL lCARTA,lPRECO,lCARGA,lAPAGA AS LOGIC
+LOCAL cPEDIDO AS STRING
+LOCAL aMAIL AS ARRAY
+
+//self:data passa gravaestq se em branco vira today
+
+nPEDIDO:=Val(SELF:oDCOS:TextValue)
+nITEM:=Val(SELF:oDCITEM:TEXTVALUE)
+nAUT:=Val(SELF:oDCAUT:TextValue)
+IF Left(SELF:oDCcodigo:TextValue,2)="**"
+   alert("Item com ** Verificar Pedido Compras/Programa")	
+   RETU	
+ENDIF	
+
+IF Empty(nPEDIDO)
+   alert("Necessário numero Pedido","Erro")
+   SELF:oDCos:SetFocus()
+   RETU
+ENDIF
+IF Empty(nITEM)
+   alert("Necessário Item Pedido","Erro")
+   SELF:oDCitem:SetFocus()
+   RETU
+ENDIF
+IF Empty(SELF:NRNOTA)
+   alert("Necessário Numero de Nota Fiscal","Erro")
+   SELF:oDCNRNOTA:SetFocus()
+   RETU
+ENDIF
+IF Empty(SELF:QTDE)
+   alert("Necessário Quantidade","Erro")
+   SELF:oDCQTDE:SetFocus()
+   RETU
+ENDIF
+IF Empty(SELF:PRCMY04)
+   alert("Necessário Preço","Erro")
+   SELF:oDCPRCMY04:SetFocus()
+   RETU
+ENDIF
+IF SELF:PRCMW02<>SELF:PRCMY04 .AND. Empty(nAUT)
+   alert("Preço Divergente Requer Autorizaçao","Erro")
+   SELF:oDCAUT:SetFocus()
+   RETU
+ENDIF
+IF SELF:QTDE>(SELF:QTDEINI*1.1) .AND. Empty(nAUT)
+   alert("Carga Excedente Requer Autorizaçao","Erro")
+   SELF:oDCAUT:SetFocus()
+   RETU
+ENDIF
+IF SELF:QTDE<(SELF:QTDEINI*.9) .AND. Empty(nAUT) .and. (SELF:oDCCARGA:Value)<>.T.
+   alert("Carga Inferior Requer Autorizaçao","Erro")
+   SELF:oDCCarga:Enable()
+   SELF:oDCAUT:SetFocus()
+   RETU
+ENDIF
+IF SELF:TIPO2=="C" .AND. SELF:oDCMTCO:Value<>.T.
+   alert("Componentes Entrada Via CRM","Erro")
+   SELF:oDCMTCO:Enable()
+   SELF:oDCMTCO:SetFocus()
+   RETU
+ENDIF	
+IF SELF:TIPO2=="T" .AND. SELF:oDCMTCO:Value<>.T.
+   alert("Tratamento Entrada Via CRM","Erro")
+   SELF:oDCMTCO:Enable()
+   SELF:oDCMTCO:SetFocus()
+   RETU
+ENDIF	
+IF SELF:TIPO2=="M" .AND. SELF:oDCMTCO:Value<>.T.
+   alert("Materia Prima Entrada Via CRM","Erro")
+   SELF:oDCMTCO:Enable()
+   SELF:oDCMTCO:SetFocus()
+   RETU
+ENDIF	
+
+lCARTA:=.F.
+lCARGA:=.F.
+lPRECO:=.F.
+
+IF nAUT>0
+	aDAD:={zCURINI,"AUT.DBF",zCURDIR,aDIR}
+	oAUT:=USErede{aDAD}
+	IF oAUT:nERRO=0
+	   oAUT:GOTOP()
+	   IF ! oAUT:SEEK(nAUT)
+		  oAUT:CLOSE()
+		  alert("Autorizaçao Não Encontrada")
+		  RETU
+	   ENDIF	
+	   IF oAUT:FIELDGET("USADA")
+		  oAUT:CLOSE()
+		  alert("Autorização Já Utilizada")	
+		  RETU
+ 	   ENDIF	
+       IF Empty(oAUT:FIELDGET("MOTIVO"))
+		  oAUT:CLOSE()
+		  alert("Autorização Sem Motivo")	
+		  RETU
+      ENDIF	
+      lCARTA:=IF(oAUT:FIELDGET("CARTA")="S",.T.,.F.)	
+      oAUT:FIELDPUT("USADA",.T.)
+      oAUT:FIELDPUT("DATABX",Today())
+      oAUT:CLOSE()
+   ELSE
+      alert("Erro Abrindo Autorizações")
+      RETU
+	ENDIF	
+ENDIF
+
+cPEDIDO:=StrTRIM(SELF:OS,8,0)+"/"+StrTRIM(SELF:ITEM,3,0)
+
+
+aDAD:={zCURINI,"MY04.DBF",ZCURDIR,aDIR}
+oMY04:=USEREDE{aDAD}
+IF oMY04:nERRO#0
+    RETURN
+ENDIF
+oMY04:SetOrder(1)
+oMY04:GoBottom()
+nNUMERO:=oMY04:FIELDGET("NUMERO")
+nNUMERO++
+oMY04:Append()
+oMY04:FIELDPUT("NUMERO",nNUMERO)
+oMY04:FIELDPUT("DATA",Today())
+oMY04:FIELDPUT("TIPO1","E")
+oMY04:FIELDPUT("TIPO3","CRM")
+oMY04:FIELDPUT("DISTRI","N")
+oMY04:FIELDPUT("QTDE",SELF:QTDE)
+oMY04:FIELDPUT("QTDEINI",SELF:QTDEINI)
+oMY04:FIELDPUT("QTDESAL",(SELF:QTDEINI)-(SELF:QTDE))
+oMY04:FIELDPUT("TECNICO",ZFOLHA)
+oMY04:FIELDPUT("TIPO2",SELF:TIPO2)
+oMY04:FIELDPUT("CODIGO",SELF:CODIGO)
+oMY04:FIELDPUT("UNID",SELF:UNID)
+oMY04:FIELDPUT("OS",nPEDIDO)
+oMY04:FIELDPUT("ITEM",nITEM)
+oMY04:FIELDPUT("OBS",SELF:OBS)
+oMY04:FIELDPUT("RASTRO",SELF:RASTRO)
+oMY04:FIELDPUT("NRNOTA",SELF:NRNOTA)
+oMY04:FIELDPUT("NUMMB01",SELF:NUMMB01)
+oMY04:FIELDPUT("PRCMW02",SELF:PRCMW02)
+oMY04:FIELDPUT("PRCMY04",SELF:PRCMY04)
+oMY04:FIELDPUT("CODDEP",SELF:DEP)
+oMY04:FIELDPUT("AUT",nAUT)
+oMY04:Close()
+
+
+aDAD:={}
+AAdd(aDAD,SELF:CODIGO)
+AAdd(aDAD,SELF:QTDE)
+AAdd(aDAD,SELF:DATA)
+AAdd(aDAD,nNUMERO)
+AAdd(ADAD,SELF:NUMMB01)
+AAdd(aDAD,"MY04E")
+AAdd(aDAD,SELF:TIPO2)
+AAdd(aDAD,"E+")
+AAdd(aDAD,SELF:RASTRO)
+AAdd(aDAD,0)
+AAdd(aDAD,"I")
+GRAVAESTQ(aDAD)
+
+
+
+
+lAPAGA:=.F.
+aDAD:={zCURINI,"MW02",ZCURDIR,aDIR}
+oMW02:=USEMANA5{aDAD}
+aDAD:={zCURINI,"MW01",ZCURDIR,aDIR}
+oMW01:=USEMANA5{aDAD}
+WHILE oMW02:nERRO#0 .OR. oMW01:nERRO#0 //Fica Até Abrir
+    aDAD:={zCURINI,"MW02",ZCURDIR,aDIR}
+    oMW02:=USEMANA5{aDAD}
+    aDAD:={zCURINI,"MW01",ZCURDIR,aDIR}
+    oMW01:=USEMANA5{aDAD}	
+ENDDO	
+oMW02:GOTOP()
+IF oMW02:SEEK(Str(nPEDIDO,8)+Str(nITEM,3))
+   lAPAGA:=.T.
+   WHILE ! oMW02:RLOCK()  
+   	  NOP
+   ENDDO
+   oMW02:FIELDPUT("ITEENT",oMW02:FIELDGET("ITEENT")+SELF:QTDE)
+   oMW02:FIELDPUT("RECNUM",nNUMERO)
+   oMW02:FIELDPUT("RECNOT",SELF:NRNOTA)
+   oMW02:FIELDPUT("REQDAT",Today())
+   oMW02:Unlock()
+ENDIF
+oMW02:GOTOP()
+oMW02:SEEK(Str(nPEDIDO,8))
+WHILE nPEDIDO=oMW02:FIELDGET("COMPED") .AND. ! Omw02:EOF
+   WHILE ! oMW02:RLOCK() 
+   	  NOP
+   ENDDO
+   oMW02:FIELDPUT("ITESAL",oMW02:FIELDGET("ITEQTD")-oMW02:FIELDGET("ITEENT"))
+   IF oMW02:FIELDGET("ITESAL")>0
+      lAPAGA:=.F.
+   ENDIF
+   oMW02:Unlock()
+   oMW02:SKIP()
+ENDDO
+IF lAPAGA
+   aDAD:={zCURINI,"MW02BX",ZCURDIR,aDIR}
+   oMW02BX:=USEMANA5{aDAD}
+   aDAD:={zCURINI,"MW01BX",ZCURDIR,aDIR}
+   oMW01BX:=USEMANA5{aDAD}
+   WHILE oMW02BX:nERRO#0 .OR. oMW01BX:nERRO#0 //Fica Até Abrir
+      aDAD:={zCURINI,"MW02BX",ZCURDIR,aDIR}
+      oMW02BX:=USEMANA5{aDAD}
+      aDAD:={zCURINI,"MW01BX",ZCURDIR,aDIR}
+      oMW01BX:=USEMANA5{aDAD}	
+   ENDDO
+   nFIELD:=oMW01:FCOUNT
+   oMW01:GOTOP()
+   IF oMW01:SEEK(nPEDIDO)
+      oMW01BX:Append()
+      FOR J:=1 TO nFIELD
+          oMW01BX:FIELDPUT(oMW01:FieldName(J),oMW01:FIELDGET(oMW01:FieldName(J)))
+      NEXT J
+      OMW01BX:FIELDPUT("COMDFEC",Today())
+      WHILE ! oMW01:RLOCK() 
+      	 NOP
+      ENDDO
+      oMW01:Delete()
+      nFIELD:=oMW02:FCOUNT
+      oMW02:SEEK(Str(nPEDIDO,8))
+      WHILE nPEDIDO=oMW02:FIELDGET("COMPED") .AND. ! oMW02:EOF
+     	 oMW02BX:Append()
+         FOR J:=1 TO nFIELD
+             oMW02BX:FIELDPUT(oMW02:FieldName(J),oMW02:FIELDGET(oMW02:FieldName(J)))
+         NEXT J
+         WHILE ! oMW02:RLOCK() 
+         	NOP
+         ENDDO
+         oMW02:Delete()
+         oMW02:SKIP()
+      ENDDO
+   ENDIF
+   oMW01BX:CLOSE()
+   oMW02BX:CLOSE()	
+ENDIF
+oMW01:CLOSE()
+oMW02:CLOSE()
+
+
+IF SELF:PRCMW02<>SELF:PRCMY04
+   lPRECO:=.T.
+ENDIF
+IF SELF:QTDE>(SELF:QTDEINI*1.1)
+   lCARGA:=.T.	
+ENDIF	
+IF SELF:QTDE<(SELF:QTDEINI*.9)
+   lCARGA:=.T.	
+ENDIF	
+aMAIL:={}
+IF lCARTA .OR. lPRECO .OR. lCARGA
+   AAdd(aMAIL,"Pedido_No:"+cPEDIDO)
+   AAdd(aMAIL," Requisicao:"+StrTRIM(Nnumero,8,0))	
+   AAdd(aMAIL," Nota:"+StrTRIM(SELF:NRNOTA,8,0))
+   IF nAUT>0
+      AAdd(aMAIL," Autorizaçao:"+StrTRIM(Naut,8,0))
+   ENDIF	
+   IF lPRECO
+      AAdd(aMAIL," Preco:"+StrTRIM(SELF:PRCMW02,15,6))
+   ENDIF
+   IF lPRECO
+      AAdd(aMAIL," Preco:"+StrTRIM(SELF:PRCMY04,15,6))
+   ENDIF
+   IF lCARGA
+      AAdd(aMAIL," Peso:"+StrTRIM(SELF:QTDEINI,15,6))
+      AAdd(aMAIL," Peso:"+StrTRIM(SELF:QTDE,15,6))
+      AAdd(aMAIL," Fornecedor:"+StrTRIM(SELF:NUMMB01,8,0)+"/"+AllTrim(SELF:COGNOME))
+      IF ! Empty(SELF:CODIGO)
+         AAdd(aMAIL," Codigo:"+AllTrim(SELF:CODIGO))
+      ENDIF
+   ENDIF
+   IF lPRECO
+      EMAILINT("CRM00001",ZUSER,aMAIL,ZCURINI,zCURDIR)	
+   ENDIF
+   IF lCARGA
+      EMAILINT("CRM00004",ZUSER,aMAIL,ZCURINI,zCURDIR)	
+   ENDIF
+   IF lCARTA
+      EMAILINT("CRM00002",ZUSER,aMAIL,ZCURINI,zCURDIR)	
+ 	  alert("Requer Carta Correção")
+   ENDIF
+ENDIF	
+
+alert("Requisição No"+Str(nNUMERO),"Numero Requisição")
+
+IF lAPAGA
+   alert("Pedido Liquidado")
+ENDIF	
+SELF:zerar()
+IF ! lAPAGA
+  SELF:oDCOS:TextValue:=Str(NPEDIDO)
+  SELF:oDCITEM:TEXTVALUE:=Str(nITEM+1)
+ENDIF	
+
+METHOD PEGPED( ) 
+LOCAL oMW01,oMW02 AS USEMANA5	
+LOCAL ADAD AS ARRAY
+LOCAL nSALDO AS FLOAT
+	
+ADAD:={zCURINI,"MW01",ZCURDIR,aDIR}
+oMW01:=USEMANA5{aDAD}
+IF oMW01:nERRO#0
+   RETU
+ENDIF
+oMW01:GOTOP()
+IF ! oMW01:SEEK(SELF:OS)
+   oMW01:CLOSE()
+   alert("Pedido Não Encontrado","Erro Busca")
+   SELF:zerar()
+   RETU
+ENDIF	
+IF oMW01:FIELDGET("CONTRATO")=="S"
+   oMW01:CLOSE()
+   alert("Pedido de Contrato - Bloqueado Recebimento","Erro Busca")
+   SELF:zerar()
+   RETU	
+ENDIF	
+IF oMW01:FIELDGET("RECEBER")=="N"
+   oMW01:CLOSE()
+   alert("Pedido Bloqueado Recebimento","Erro Busca")
+   RETU	
+ENDIF	
+SELF:NUMMB01:=oMW01:FIELDGET("comfor")
+SELF:COGNOME:=oMW01:FIELDGET("COMCOG")
+IF ! Empty(oMW01:FIELDGET("COMDPRAZ"))
+  SELF:PRAZO:=DToC(oMW01:FIELDGET("COMDPRAZ"))+" "+AllTrim(oMW01:FIELDGET("COMPRAZ"))
+ELSE
+  SELF:PRAZO:=AllTrim(oMW01:FIELDGET("COMPRAZ"))
+ENDIF
+SELF:PGTO:=oMW01:FIELDGET("COMCPAG")+"-"+AllTrim(oMW01:FIELDGET("COMCPAGD"))
+SELF:ODCOS:Disable()
+Omw01:close()
+
+
+
+ADAD:={zCURINI,"MW02",ZCURDIR,aDIR}
+oMW02:=USEMANA5{aDAD}
+IF oMW02:nERRO#0
+   RETU
+ENDIF
+oMW02:GOTOP()
+IF ! oMW02:SEEK(Str(SELF:OS,8)+Str(SELF:ITEM,3))
+   oMW02:CLOSE()
+   alert("Item do Pedido Não Encontrado","Erro Busca")
+   SELF:zerar()
+   RETU
+ENDIF	
+SELF:TIPO2 :=oMW02:FIELDGET("ITETIP")
+SELF:CODIGO:=oMW02:FIELDGET("ITECOD")
+SELF:UNID:=oMW02:FIELDGET("ITEUNI")
+SELF:PRCMW02:=oMW02:FIELDGET("ITEPRC")
+nSALDO:=oMW02:FIELDGET("ITEQTD")-oMW02:FIELDGET("ITEENT")
+IF nSALDO<0
+   nSALDO:=0
+ENDIF	
+SELF:QTDEINI:=Nsaldo
+SELF:IPI:=oMW02:FIELDGET("ITEIPI")
+SELF:DEP:=oMW02:FIELDGET("CODDEP")
+SELF:NOME:=oMW02:FIELDGET("ITENOM")
+IF ! Empty(oMW02:FIELDGET("ITEO01"))
+   SELF:OBS:=	oMW02:FIELDGET("ITEO01")
+ELSE
+   SELF:OBS:=	oMW02:FIELDGET("RECO01")
+ENDIF	
+SELF:oDCITEM:Disable()
+OMW02:CLOSE()
+
+METHOD PostInit(oWindow,iCtlID,oServer,uExtra) 
+	//Put your PostInit additions here
+	 FabCenterWindow( SELF )
+	RETURN NIL
+
+
+METHOD zera( ) 
+	SELF:zerar()
+
+METHOD zerar 
+SELF:os:=0
+SELF:ITEM:=0
+SELF:NUMMB01:=0
+SELF:COGNOME:=""
+SELF:NRNOTA:=0
+SELF:unid:=""
+SELF:qtde:=0
+SELF:QTDEINI:=0
+SELF:PRCMW02:=0
+SELF:PRCMY04:=0
+SELF:tipo2:=""
+SELF:codigo:=""
+SELF:data:=CToD("  /  /    ")
+SELF:rastro:=""
+SELF:aut:=0
+SELF:IPI:=""
+SELF:dep:=""
+SELF:nome:=""
+SELF:PGTO:=""
+SELF:PRAZO:=""
+SELF:OBS:=""
+SELF:oDCCarga:VALUE:=.F.
+SELF:oDCMTCO:Value:=.F.
+SELF:ODCOS:Enable()
+SELF:oDCITEM:Enable()	
+	
+
+
+END CLASS

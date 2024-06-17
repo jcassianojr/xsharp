@@ -1,0 +1,770 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jpemo
+GUID=B6829303-0825-4E31-89BB-21850C8C3749
+  Name=jpemo
+  Class=DATAWINDOW
+  Caption=Programas
+  Order=0
+  Left=32
+  Width=744
+  Top=32
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Programas",,
+  Property=HyperLabel=#jpemo,,,
+  Property=ViewAs=#FormView
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=0EC9213A-6562-4F54-AFA6-45EC6A0648FF
+  Name=SC_PEDIDO
+  Class=FIXEDTEXT
+  Caption=Pedido:
+  Order=1
+  Left=21
+  Width=40
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pedido:",,
+  Property=HyperLabel=#SC_PEDIDO,,,
+
+CONTROL=FIXEDTEXT
+GUID=69F3FB16-A06E-4A84-AA0E-607E1B6D83C7
+  Name=SC_TIPPED
+  Class=FIXEDTEXT
+  Caption=T
+  Order=2
+  Left=17
+  Width=20
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"T",,
+  Property=HyperLabel=#SC_TIPPED,,,
+
+CONTROL=FIXEDTEXT
+GUID=7C685946-AEE0-41C9-BAA7-9C2CE2450C8F
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=3
+  Left=189
+  Width=40
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=EFCAEAA9-E1EE-432F-A9B8-AD837712D910
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=4
+  Left=9
+  Width=36
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=1FF475D1-12BE-42B1-987F-FA0845015E51
+  Name=SC_FORNECEDO
+  Class=FIXEDTEXT
+  Caption=Fornecedor/Cliente
+  Order=5
+  Left=425
+  Width=104
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fornecedor/Cliente",,
+  Property=HyperLabel=#SC_FORNECEDO,,,
+
+CONTROL=FIXEDTEXT
+GUID=F352D919-C38B-42D0-8DC6-97C67F97225B
+  Name=SC_UNID
+  Class=FIXEDTEXT
+  Caption=Unid:
+  Order=7
+  Left=381
+  Width=28
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Unid:",,
+  Property=HyperLabel=#SC_UNID,,,
+
+CONTROL=FIXEDTEXT
+GUID=816823BD-CEEA-46E1-B84B-4A93651D9B5D
+  Name=SC_COMPRAS
+  Class=FIXEDTEXT
+  Caption=Compras:
+  Order=9
+  Left=133
+  Width=48
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Compras:",,
+  Property=HyperLabel=#SC_COMPRAS,,,
+
+CONTROL=FIXEDTEXT
+GUID=F8C38FFF-6784-4C92-8ABD-8AACDFA837EB
+  Name=SC_APLICACAO
+  Class=FIXEDTEXT
+  Caption=Aplicacao:
+  Order=11
+  Left=17
+  Width=56
+  Top=121
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Aplicacao:",,
+  Property=HyperLabel=#SC_APLICACAO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=5CF11AF8-E568-4617-B600-AB87F5BE06CF
+  Name=PEDIDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=69
+  Width=48
+  Top=13
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#PEDIDO,,,
+  Property=HyperLabel=,"Pedido:",,
+  Property=HyperLabel=,,,"pemo_PEDIDO"
+
+CONTROL=SINGLELINEEDIT
+GUID=5CDEA122-F662-4722-ACA2-3A3162F1C9EF
+  Name=TIPPED
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=13
+  Width=24
+  Top=57
+  Height=20
+  Browseindex=3
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#TIPPED,,,
+  Property=HyperLabel=,"T",,
+  Property=HyperLabel=,,,"pemo_TIPPED"
+
+CONTROL=SINGLELINEEDIT
+GUID=CBFACDF5-6ADE-4706-A395-386C06F8D89D
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=189
+  Width=180
+  Top=61
+  Height=20
+  Browseindex=4
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"pemo_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=A7BD7D64-A3F0-4DA7-B6BA-8630E315C803
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=9
+  Width=364
+  Top=97
+  Height=20
+  Browseindex=5
+  Browsesize=30
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"pemo_NOME"
+
+CONTROL=SINGLELINEEDIT
+GUID=7CCE6464-B111-40F8-8552-EA7DED31F946
+  Name=FORNECEDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=521
+  Width=68
+  Top=9
+  Height=20
+  Browseindex=7
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#FORNECEDO,,,
+  Property=HyperLabel=,"For/Cli",,
+  Property=HyperLabel=,,,"pemo_FORNECEDO"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=01038FB1-AA9F-4661-A40C-B93E5203DBC2
+  Name=COGNOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=517
+  Width=120
+  Top=33
+  Height=20
+  Browseindex=8
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_char_15
+  Property=HyperLabel=#COGNOME,,,
+  Property=HyperLabel=,"Cognome:",,
+  Property=HyperLabel=,,,"pemo_COGNOME"
+
+CONTROL=SINGLELINEEDIT
+GUID=C62D6641-C0C3-407C-B2FB-FEFAC779DEF2
+  Name=UNID
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=377
+  Width=36
+  Top=61
+  Height=20
+  Browseindex=9
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_02
+  Property=HyperLabel=#UNID,,,
+  Property=HyperLabel=,"Unid:",,
+  Property=HyperLabel=,,,"pemo_UNID"
+
+CONTROL=SINGLELINEEDIT
+GUID=ED59BFBD-CB67-492C-A875-F16CA41539D4
+  Name=NOM2
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=369
+  Width=364
+  Top=97
+  Height=20
+  Browseindex=6
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#NOM2,,,
+  Property=HyperLabel=,"Nom2:",,
+  Property=HyperLabel=,,,"pemo_NOM2"
+
+CONTROL=SINGLELINEEDIT
+GUID=70D157C7-D616-4642-BE47-44C1A8F7C3F8
+  Name=COMPRAS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=185
+  Width=68
+  Top=9
+  Height=20
+  Browseindex=1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#COMPRAS,,,
+  Property=HyperLabel=,"Compras:",,
+  Property=HyperLabel=,,,"pemo_COMPRAS"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=C1708BAF-62C1-446A-8B75-78F152B76EF7
+  Name=COMITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=321
+  Width=44
+  Top=9
+  Height=20
+  Browseindex=2
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_03
+  Property=HyperLabel=#COMITEM,,,
+  Property=HyperLabel=,"Item",,
+  Property=HyperLabel=,,,"pemo_COMITEM"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=F843988C-FFBD-434F-88E3-72092CD7B237
+  Name=APLICACAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=77
+  Width=364
+  Top=121
+  Height=20
+  Browseindex=10
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#APLICACAO,,,
+  Property=HyperLabel=,"Aplicacao:",,
+  Property=HyperLabel=,,,"pemo_APLICACAO"
+
+CONTROL=PUSHBUTTON
+GUID=5BB8F8C0-61F5-43E9-89C9-0CE4F3EE1109
+  Name=CHKPED
+  Class=PUSHBUTTON
+  Caption=Buscar
+  Order=23
+  Left=369
+  Width=48
+  Top=9
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Buscar",,
+  Property=HyperLabel=#CHKPED,,,
+  Property=TooltipText="Localizar"
+
+CONTROL=PUSHBUTTON
+GUID=70A73158-E015-41D5-A8D0-9A153258E404
+  Name=escped2
+  Class=PUSHBUTTON
+  Caption=M
+  Order=24
+  Left=301
+  Width=16
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"M",,
+  Property=HyperLabel=#escped2,,,
+  Property=TooltipText="Pedidos Materia Prima"
+
+CONTROL=PUSHBUTTON
+GUID=12F9DBCC-EBF9-4AD0-8FCE-AD0EF61D4CCB
+  Name=escped1
+  Class=PUSHBUTTON
+  Caption=C
+  Order=25
+  Left=281
+  Width=16
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"C",,
+  Property=HyperLabel=#escped1,,,
+  Property=TooltipText="Pedidos Componentes"
+
+CONTROL=PUSHBUTTON
+GUID=8DDEBB93-242F-4166-B18D-928F0F052842
+  Name=escped
+  Class=PUSHBUTTON
+  Caption=T
+  Order=26
+  Left=261
+  Width=16
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"T",,
+  Property=HyperLabel=#escped,,,
+  Property=TooltipText="Pedidos Tratamento"
+
+CONTROL=PUSHBUTTON
+GUID=D6783279-DE73-4E2F-8E4F-E6EFA70839F0
+  Name=pegfor
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=27
+  Left=617
+  Width=24
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#pegfor,,,
+  Property=TooltipText="trazer descritivo cliente"
+
+CONTROL=PUSHBUTTON
+GUID=EB63155B-80A6-416E-8B0E-CEB515F4B2F2
+  Name=ESCFOR
+  Class=PUSHBUTTON
+  Caption=...
+  Order=28
+  Left=593
+  Width=24
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#ESCFOR,,,
+  Property=TooltipText="Escolher Cliente/Fornecedor"
+
+CONTROL=PUSHBUTTON
+GUID=DAD3E5F4-A045-4485-8EDA-38B0C1FD6B95
+  Name=TIPOT
+  Class=PUSHBUTTON
+  Caption=(T)rat/Serviço
+  Order=29
+  Left=45
+  Width=72
+  Top=65
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Trat/Serviço",,
+  Property=HyperLabel=#TIPOT,,,
+  Property=TooltipText="Marca Tipo Como Tratamento/Servicos"
+
+CONTROL=PUSHBUTTON
+GUID=1D7AC368-4B37-47A0-B5CA-470DD83E61AE
+  Name=TIPOC
+  Class=PUSHBUTTON
+  Caption=(C)omponente
+  Order=30
+  Left=109
+  Width=68
+  Top=41
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Componente",,
+  Property=HyperLabel=#TIPOC,,,
+  Property=TooltipText="Marca Tipo Como Componete"
+
+CONTROL=PUSHBUTTON
+GUID=8A7315A5-97CB-4E2B-A3F0-5BE664334937
+  Name=TIPOM
+  Class=PUSHBUTTON
+  Caption=(M)at.Prima
+  Order=31
+  Left=45
+  Width=60
+  Top=41
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mat.Prima",,
+  Property=HyperLabel=#TIPOM,,,
+  Property=TooltipText="Marca Tipo Como Materia Prima"
+
+CONTROL=PUSHBUTTON
+GUID=C2F4E032-62E2-43E7-B1B8-A8FC8B1362E7
+  Name=pegcod
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=32
+  Left=249
+  Width=20
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#pegcod,,,
+  Property=TooltipText="trazer discritivo codigo"
+
+CONTROL=PUSHBUTTON
+GUID=4D2CC834-24EF-46BD-9776-27C530E050E6
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=33
+  Left=233
+  Width=16
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+
+CONTROL=PUSHBUTTON
+GUID=391264C8-D6C4-44B7-8C31-9294D348241B
+  Name=esccod1
+  Class=PUSHBUTTON
+  Caption=...
+  Order=34
+  Left=445
+  Width=23
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod1,,,
+  Property=TooltipText="Escolher Aplicacao"
+
+CONTROL=SINGLELINEEDIT
+GUID=FC58153A-295B-4600-9254-95B870BD8DDE
+  Name=codavu
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=35
+  Left=273
+  Width=52
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#codavu,,,
+  Property=HyperLabel=,"Compras:",,
+  Property=HyperLabel=,,,"pemo_COMPRAS"
+  Property=InheritClassName=rightSle
+  Property=TooltipText="codigos especias de entrega"
+
+CONTROL=PUSHBUTTON
+GUID=6885ED34-7016-46FE-BD5B-42FB812B0EAB
+  Name=esccod2
+  Class=PUSHBUTTON
+  Caption=...
+  Order=36
+  Left=329
+  Width=16
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod2,,,
+  Property=TooltipText="escolher codigo especial de entrega"
+
+CONTROL=PUSHBUTTON
+GUID=49A42780-1EAC-4458-A244-DB764FB33BD1
+  Name=pegcod1
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=37
+  Left=345
+  Width=20
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#pegcod1,,,
+  Property=TooltipText="trazer descritivo codigo especial"
+
+CONTROL=PUSHBUTTON
+GUID=88A1A3D4-29D1-4569-A181-CD37B1A40E9F
+  Name=busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=38
+  Left=669
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#busca,,,
+  Property=TooltipText="Localizar"
+
+SUBCONTROLSEND
+DESIGNEREND = jpemo
+

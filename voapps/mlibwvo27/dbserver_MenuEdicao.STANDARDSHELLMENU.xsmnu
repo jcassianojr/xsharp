@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOMenu Name="STANDARDSHELLMENU">
+    <Name>STANDARDSHELLMENU</Name>
+    <Toolbar>Raised Toolbar</Toolbar>
+    <Show>Icon</Show>
+    <UseBands>No</UseBands>
+    <Inherit>
+    </Inherit>
+    <ToolbarInherit>
+    </ToolbarInherit>
+    <MenuItems>
+      <MenuItem>
+        <Caption>&amp;Arquivo</Caption>
+        <EventName>File</EventName>
+        <ID>
+        </ID>
+        <Description>Opções de Arquivo</Description>
+        <HelpContext>File</HelpContext>
+        <Accelerator>None</Accelerator>
+        <Enabled>Yes</Enabled>
+        <Checked>No</Checked>
+        <ButtonBmp>
+        </ButtonBmp>
+        <ButtonCaption>
+        </ButtonCaption>
+        <ButtonToolTip>
+        </ButtonToolTip>
+        <ButtonPos>-1</ButtonPos>
+        <MenuItems>
+          <MenuItem>
+            <Caption>Imprimir</Caption>
+            <EventName>cmdimprimir</EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>Print</ButtonBmp>
+            <ButtonCaption>Imprimir</ButtonCaption>
+            <ButtonToolTip>Imprimir</ButtonToolTip>
+            <ButtonPos>17</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>C&amp;onfigurar Impressora ..</Caption>
+            <EventName>FILEPRINTSETUP</EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>Configurar Impressora</ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>-------------------------</Caption>
+            <EventName>
+            </EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>
+            </ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>&amp;Fechar</Caption>
+            <EventName>DESTROY</EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>Close</ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>Encerrar Edição</ButtonToolTip>
+            <ButtonPos>1</ButtonPos>
+          </MenuItem>
+        </MenuItems>
+      </MenuItem>
+      <MenuItem>
+        <Caption>&amp;Editar</Caption>
+        <EventName>Edit</EventName>
+        <ID>
+        </ID>
+        <Description>Editar  Informação</Description>
+        <HelpContext>Edit</HelpContext>
+        <Accelerator>None</Accelerator>
+        <Enabled>Yes</Enabled>
+        <Checked>No</Checked>
+        <ButtonBmp>
+        </ButtonBmp>
+        <ButtonCaption>
+        </ButtonCaption>
+        <ButtonToolTip>
+        </ButtonToolTip>
+        <ButtonPos>-1</ButtonPos>
+        <MenuItems>
+          <MenuItem>
+            <Caption>&amp;Inserir  Registro</Caption>
+            <EventName>Append</EventName>
+            <ID>
+            </ID>
+            <Description>Inserir um novo registrado</Description>
+            <HelpContext>Append</HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>3D Frame</ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>Novo Registro</ButtonToolTip>
+            <ButtonPos>3</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>&amp;Deletar Registro</Caption>
+            <EventName>Delete</EventName>
+            <ID>
+            </ID>
+            <Description>Deletar um registro</Description>
+            <HelpContext>Delete</HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>Delete</ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>Deletar Registro</ButtonToolTip>
+            <ButtonPos>4</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>-------------------------</Caption>
+            <EventName>
+            </EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>
+            </ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>&amp;Primeiro</Caption>
+            <EventName>GOTOP</EventName>
+            <ID>
+            </ID>
+            <Description>Ir Para o Primeiro Registo</Description>
+            <HelpContext>GOTOP</HelpContext>
+            <Accelerator>Ctrl+Home</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>Start Record</ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>Primeiro Registro</ButtonToolTip>
+            <ButtonPos>6</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>&amp;Anterior</Caption>
+            <EventName>SkipPrevious</EventName>
+            <ID>
+            </ID>
+            <Description>Voltar Registro Anterior</Description>
+            <HelpContext>SkipPrevious</HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>Previous Record</ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>Registro Anterior</ButtonToolTip>
+            <ButtonPos>7</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>Pro&amp;Ximo</Caption>
+            <EventName>SkipNext</EventName>
+            <ID>
+            </ID>
+            <Description>Ir para o registro posterior</Description>
+            <HelpContext>SkipNext</HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>Next Record</ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>Proximo Regisrto</ButtonToolTip>
+            <ButtonPos>8</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>&amp;Ultimo</Caption>
+            <EventName>GoBottom</EventName>
+            <ID>
+            </ID>
+            <Description>Ir para o último registro</Description>
+            <HelpContext>GoBottom</HelpContext>
+            <Accelerator>Ctrl+End</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>End Record</ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>Ultimo Registro</ButtonToolTip>
+            <ButtonPos>9</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>---</Caption>
+            <EventName>
+            </EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>
+            </ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>Busca Avançada</Caption>
+            <EventName>buscaAvancada</EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>Find</ButtonBmp>
+            <ButtonCaption>Busca Avançada</ButtonCaption>
+            <ButtonToolTip>Busca Avançada</ButtonToolTip>
+            <ButtonPos>13</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>Busca Indexada/Ordenação</Caption>
+            <EventName>KEYFIND</EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>Arrow</ButtonBmp>
+            <ButtonCaption>Busca Indexada/Ordenação</ButtonCaption>
+            <ButtonToolTip>Busca Indexada/Ordenação</ButtonToolTip>
+            <ButtonPos>14</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>--</Caption>
+            <EventName>
+            </EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>
+            </ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>Filtrar Dados</Caption>
+            <EventName>cmdfiltrar</EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>Function</ButtonBmp>
+            <ButtonCaption>Filtrar Dados</ButtonCaption>
+            <ButtonToolTip>Filtrar Dados</ButtonToolTip>
+            <ButtonPos>15</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>Apagar Filtro</Caption>
+            <EventName>cmddelfiltro</EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>Page Normal</ButtonBmp>
+            <ButtonCaption>Apagar Filtro</ButtonCaption>
+            <ButtonToolTip>Apagar Filtro</ButtonToolTip>
+            <ButtonPos>16</ButtonPos>
+          </MenuItem>
+        </MenuItems>
+      </MenuItem>
+      <MenuItem>
+        <Caption>&amp;Visualizar</Caption>
+        <EventName>View</EventName>
+        <ID>
+        </ID>
+        <Description>Opções de Visualizar</Description>
+        <HelpContext>
+        </HelpContext>
+        <Accelerator>None</Accelerator>
+        <Enabled>Yes</Enabled>
+        <Checked>No</Checked>
+        <ButtonBmp>
+        </ButtonBmp>
+        <ButtonCaption>
+        </ButtonCaption>
+        <ButtonToolTip>
+        </ButtonToolTip>
+        <ButtonPos>-1</ButtonPos>
+        <MenuItems>
+          <MenuItem>
+            <Caption>&amp;Editar</Caption>
+            <EventName>ViewForm</EventName>
+            <ID>
+            </ID>
+            <Description>Ver por tela de edição</Description>
+            <HelpContext>ViewForm</HelpContext>
+            <Accelerator>Shift+F2</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>View Form</ButtonBmp>
+            <ButtonCaption>Modo de Edição</ButtonCaption>
+            <ButtonToolTip>Modo de Edição</ButtonToolTip>
+            <ButtonPos>11</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>&amp;Exiblir</Caption>
+            <EventName>ViewTable</EventName>
+            <ID>
+            </ID>
+            <Description>Visualizar em Forma de Tabela</Description>
+            <HelpContext>ViewTable</HelpContext>
+            <Accelerator>F2</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>View Table</ButtonBmp>
+            <ButtonCaption>Modo de Exibiçao</ButtonCaption>
+            <ButtonToolTip>Modo de Exibiçao</ButtonToolTip>
+            <ButtonPos>12</ButtonPos>
+          </MenuItem>
+        </MenuItems>
+      </MenuItem>
+      <MenuItem>
+        <Caption>&amp;?</Caption>
+        <EventName>Help</EventName>
+        <ID>
+        </ID>
+        <Description>Opções da Ajuda</Description>
+        <HelpContext>
+        </HelpContext>
+        <Accelerator>None</Accelerator>
+        <Enabled>Yes</Enabled>
+        <Checked>No</Checked>
+        <ButtonBmp>
+        </ButtonBmp>
+        <ButtonCaption>
+        </ButtonCaption>
+        <ButtonToolTip>
+        </ButtonToolTip>
+        <ButtonPos>-1</ButtonPos>
+        <MenuItems>
+          <MenuItem>
+            <Caption>&amp;Indice</Caption>
+            <EventName>HelpIndex</EventName>
+            <ID>
+            </ID>
+            <Description>Índice da Ajuda</Description>
+            <HelpContext>Help_Index</HelpContext>
+            <Accelerator>F1</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>Ajuda</ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>&amp;Ajuda de Contexto</Caption>
+            <EventName>HelpContext</EventName>
+            <ID>
+            </ID>
+            <Description>Ajuda de Contexto</Description>
+            <HelpContext>Help_ContextHelp</HelpContext>
+            <Accelerator>Ctrl+F1</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>Ajuda de Contexto</ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>&amp;Usando a Ajuda</Caption>
+            <EventName>HelpUsingHelp</EventName>
+            <ID>
+            </ID>
+            <Description>Como Usar a Ajuda</Description>
+            <HelpContext>Help_UsingHelp</HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>Usando a Ajuda</ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>-------------------------</Caption>
+            <EventName>
+            </EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>
+            </ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>&amp;Sobre...</Caption>
+            <EventName>HelpAboutDialog</EventName>
+            <ID>IDM_HELP_ABOUT</ID>
+            <Description>Sobre a Aplicação</Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>Sobre O Sistema</ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+          </MenuItem>
+        </MenuItems>
+      </MenuItem>
+    </MenuItems>
+  </VOMenu>
+</Designers>

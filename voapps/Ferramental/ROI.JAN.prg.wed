@@ -1,0 +1,155 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JROI
+GUID=A8F2AD35-482B-4282-8634-8424110F6070
+  Name=JROI
+  Class=DATAWINDOW
+  Caption=Itens RO
+  Order=0
+  Left=18
+  Width=420
+  Top=18
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Itens RO",,
+  Property=HyperLabel=#JROI,,,
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=7AF5CC53-C8CB-47D9-9122-69CAA8069A3D
+  Name=QTDE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=241
+  Width=68
+  Top=25
+  Height=20
+  Browseindex=2
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#QTDE,,,
+  Property=HyperLabel=,"Qtde:",,
+  Property=HyperLabel=,,,"Roi_QTDE"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=3738FCCA-4B07-4476-BAFA-72C1A5079417
+  Name=SC_QTDE
+  Class=FIXEDTEXT
+  Caption=Qtde:
+  Order=2
+  Left=245
+  Width=32
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtde:",,
+  Property=HyperLabel=#SC_QTDE,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=BC4805F6-D3A0-40BD-BB0D-098D3DA72207
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=85
+  Width=152
+  Top=25
+  Height=20
+  Browseindex=1
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_20
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"Roi_CODIGO"
+
+CONTROL=FIXEDTEXT
+GUID=4E571341-1A35-4049-B37C-EC5B1E9B65DF
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=4
+  Left=85
+  Width=40
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=A8BEC60D-95B7-44F1-9E51-18900BF341B6
+  Name=RO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=5
+  Width=76
+  Top=25
+  Height=24
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RO,,,
+  Property=HyperLabel=,"Ro:",,
+  Property=HyperLabel=,,,"Roi_RO"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=B0A19FF2-4DB9-42F8-9D0B-3C16294FD465
+  Name=SC_RO
+  Class=FIXEDTEXT
+  Caption=Ro:
+  Order=6
+  Left=13
+  Width=20
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ro:",,
+  Property=HyperLabel=#SC_RO,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JROI
+

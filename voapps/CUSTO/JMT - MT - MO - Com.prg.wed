@@ -1,0 +1,346 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JMT
+GUID=97FB30C3-0054-4A43-95D2-CECA5FFD2725
+  Name=JMT
+  Class=DATAWINDOW
+  Caption=Ultimos Preços
+  Order=0
+  Left=46
+  Width=642
+  Top=46
+  Height=133
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Ultimos Preços",,
+  Property=ViewAs=#FormView
+  Property=HyperLabel=#JMT,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ClipperKeys=True
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=82C98DE8-6850-4C67-9551-AACDDDCC3426
+  Name=ULTUND
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=137
+  Width=32
+  Top=69
+  Height=18
+  Browseindex=3
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=padrao_char_02
+  Property=HyperLabel=#ULTUND,,,
+  Property=HyperLabel=,"UN",,
+  Property=HyperLabel=,,,"MP03_CODIGO"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=6BC5577C-487D-4EC5-ABD8-E45DC2194792
+  Name=theFixedText5
+  Class=FIXEDTEXT
+  Caption=Un
+  Order=2
+  Left=141
+  Width=28
+  Top=49
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Un",,
+  Property=HyperLabel=#theFixedText5,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=92F757D3-D70A-4081-AAFE-006ECD8C9300
+  Name=ULTDATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=173
+  Width=76
+  Top=69
+  Height=18
+  Browseindex=4
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#ULTDATA,,,
+  Property=HyperLabel=,"Em",,
+  Property=HyperLabel=,,,"MP03_CODIGO"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=A21FEDC1-90AF-43C4-8E52-1610F4F14BB4
+  Name=theFixedText6
+  Class=FIXEDTEXT
+  Caption=Data
+  Order=4
+  Left=177
+  Width=56
+  Top=53
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=#theFixedText6,,,
+
+CONTROL=PUSHBUTTON
+GUID=9D88E705-79A1-41BC-B1AC-A8BF925247DA
+  Name=porov
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=497
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#porov,,,
+
+CONTROL=PUSHBUTTON
+GUID=0665BBB1-A604-43F1-9325-A0E91457F57E
+  Name=buscaov
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=461
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaov,,,
+
+CONTROL=FIXEDTEXT
+GUID=05A94E9F-3A68-4EB6-AE24-42D841047BD4
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=-1
+  Left=7
+  Width=47
+  Top=7
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=BEBF441F-1E8D-47CC-A0F6-C8CAD8AADFC2
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=-1
+  Left=163
+  Width=40
+  Top=7
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=AD76D8FC-455A-4602-9BEE-BE5CA5097706
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=7
+  Width=146
+  Top=25
+  Height=18
+  Browseindex=0
+  Browsesize=20
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"MP03_CODIGO"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=4CCAE707-AF2A-424B-93F5-EE54A85972A7
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=157
+  Width=296
+  Top=25
+  Height=18
+  Browseindex=1
+  Browsesize=26
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=padrao_char_100
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"MP03_NOME"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=8049B466-5ECE-494F-ABC6-9638E405CCAF
+  Name=theFixedText4
+  Class=FIXEDTEXT
+  Caption=Ultimo Preço
+  Order=-1
+  Left=9
+  Width=90
+  Top=53
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ultimo Preço",,
+  Property=HyperLabel=#theFixedText4,,,
+
+CONTROL=FIXEDTEXT
+GUID=9AEBA83C-3F58-4801-97BD-64379EBCBC82
+  Name=SC_VALOR
+  Class=FIXEDTEXT
+  Caption=Custo
+  Order=-1
+  Left=345
+  Width=37
+  Top=53
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Custo",,
+  Property=HyperLabel=#SC_VALOR,,,
+
+CONTROL=PUSHBUTTON
+GUID=07AA0C76-D075-4230-B786-110FFD1FF6C9
+  Name=cmdCOPIA
+  Class=PUSHBUTTON
+  Caption=Copia
+  Order=-1
+  Left=257
+  Width=80
+  Top=65
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Copia",,
+  Property=HyperLabel=#cmdCOPIA,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=20B2B4B6-CA3C-4DD5-A21A-91104F92F6DD
+  Name=ULTPRC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=9
+  Width=126
+  Top=69
+  Height=18
+  Browseindex=2
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=padrao_num_15_6
+  Property=HyperLabel=#ULTPRC,,,
+  Property=HyperLabel=,"Ult.Preço",,
+  Property=HyperLabel=,,,"MP03_CODIGO"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=72EA1F3F-080E-4A64-925A-2F35A098643E
+  Name=CUSTF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=345
+  Width=120
+  Top=69
+  Height=18
+  Browseindex=5
+  Browsesize=16
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_15_6
+  Property=HyperLabel=#CUSTF,,,
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=,,,"MP03_VALOR"
+  Property=InheritClassName=rightSle
+
+SUBCONTROLSEND
+DESIGNEREND = JMT
+

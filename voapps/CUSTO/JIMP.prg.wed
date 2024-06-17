@@ -1,0 +1,228 @@
+DESIGNERSTART = VOWindowEditor,DIALOGWINDOW,jimp
+GUID=8329735A-36FC-43EB-B229-7398EF53C0F5
+  Name=jimp
+  Class=DIALOGWINDOW
+  Caption=Importar Produto
+  Order=0
+  Left=28
+  Width=400
+  Top=31
+  Height=240
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=2160590980
+  Exstyles=257
+  Property=HyperLabel=,"Importar Produto",,
+  Property=HyperLabel=#jimp,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=4DF4CD7F-74A5-4C95-A704-D682A152A0CC
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=5
+  Width=372
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#CODIGO,,,
+  Property=TooltipText="Codigo do Produto"
+
+CONTROL=FIXEDTEXT
+GUID=784E1748-CA44-4847-9694-EC46CB9DDCEF
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Codigo de Produto
+  Order=4
+  Left=9
+  Width=152
+  Top=41
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo de Produto",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=CHECKBOX
+GUID=809EEAF0-160B-46A2-9AE1-B4C544208D28
+  Name=Geraplan
+  Class=CHECKBOX
+  Caption=Gerar Nova Planilha de Orçamento
+  Order=6
+  Left=5
+  Width=209
+  Top=93
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Gerar Nova Planilha de Orçamento",,
+  Property=HyperLabel=#Geraplan,,,
+  Property=TooltipText="Marque para Gerar Planilha de Orçamento"
+
+CONTROL=FIXEDTEXT
+GUID=8D4107AE-0ACD-4E7D-94E4-81288CF6C731
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=7
+  Left=317
+  Width=64
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=63AF59D9-15E1-46AE-A6C6-0D6436D00D50
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=317
+  Width=64
+  Top=81
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ico_ok
+  Property=TooltipText="Clique Para Iniciar"
+
+CONTROL=FIXEDTEXT
+GUID=843F2E3D-A08F-40A2-AAA8-483E09CD17D4
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=9
+  Left=245
+  Width=64
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=B5AC9E96-F1E1-485E-86AF-930D04991D25
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=10
+  Left=245
+  Width=64
+  Top=81
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ico_sair
+  Property=TooltipText="Clique Para Cancelar"
+
+CONTROL=FIXEDTEXT
+GUID=EA56A76B-53A5-4B9C-8D1D-C755B2F1DC38
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Viabilidade
+  Order=11
+  Left=9
+  Width=80
+  Top=9
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Viabilidade",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=48DB51BC-413B-4B84-9528-6AF1565713CC
+  Name=nVIABILIDADE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=85
+  Width=68
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#nVIABILIDADE,,,
+  Property=TooltipText="Numero da Viabilidade"
+
+CONTROL=PUSHBUTTON
+GUID=763AA079-5142-47B5-9B2D-731B71B3606A
+  Name=cmbBuscaVia
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=13
+  Left=156
+  Width=41
+  Top=7
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=TooltipText="Clique Para Localizar Codigo da Viabilidade"
+  Property=HyperLabel=#cmbBuscaVia,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jimp
+

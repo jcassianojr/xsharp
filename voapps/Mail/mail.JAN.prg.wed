@@ -1,0 +1,589 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JMAIL
+GUID=FA013C80-1E0F-483A-B676-59FF0CEABC16
+  Name=JMAIL
+  Class=FORM:DATADIALOG
+  Caption=Email Interno
+  Order=0
+  Left=0
+  Width=590
+  Top=0
+  Height=230
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Email Interno
+  Property=HyperLabel=JMAIL
+  Property=HyperLabel=,,,mail
+  Property=ViewAs=#FormView
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=B5DD98B6-BA71-4A73-B88E-4F981432FE81
+  Name=SC_NUMERO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Numero:
+  Order=1
+  Left=9
+  Width=44
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Numero:
+  Property=HyperLabel=SC_NUMERO
+CONTROL=FIXEDTEXT
+GUID=E49D963D-4ABB-48C5-800E-AA30519AC608
+  Name=SC_ERRO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Erro:
+  Order=2
+  Left=137
+  Width=28
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Erro:
+  Property=HyperLabel=SC_ERRO
+CONTROL=FIXEDTEXT
+GUID=7F078463-BC96-4B92-AD0F-3DB44FB43116
+  Name=SC_DATA
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Data:
+  Order=3
+  Left=241
+  Width=32
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data:
+  Property=HyperLabel=SC_DATA
+CONTROL=FIXEDTEXT
+GUID=F5E898BE-1B03-47A0-BAA3-F2487D9B52CB
+  Name=SC_HORA
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Hora:
+  Order=4
+  Left=353
+  Width=32
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Hora:
+  Property=HyperLabel=SC_HORA
+CONTROL=FIXEDTEXT
+GUID=D3DF7973-3755-429B-8887-A491D482C4F6
+  Name=SC_DE
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=De:
+  Order=5
+  Left=9
+  Width=20
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,De:
+  Property=HyperLabel=SC_DE
+CONTROL=FIXEDTEXT
+GUID=9D7AC942-191D-4243-A90D-4385DCFC1A8C
+  Name=SC_DESTINO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Destino:
+  Order=6
+  Left=169
+  Width=44
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Destino:
+  Property=HyperLabel=SC_DESTINO
+CONTROL=FIXEDTEXT
+GUID=A232C9FE-6046-442F-A4F5-2F290D095AA9
+  Name=SC_ASSUNTO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Assunto:
+  Order=7
+  Left=5
+  Width=44
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Assunto:
+  Property=HyperLabel=SC_ASSUNTO
+CONTROL=FIXEDTEXT
+GUID=8F274F94-0E29-4A69-BDA6-3803F36C5D45
+  Name=SC_TEXTO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Texto:
+  Order=8
+  Left=9
+  Width=36
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Texto:
+  Property=HyperLabel=SC_TEXTO
+CONTROL=SINGLELINEEDIT
+GUID=DF703D37-863A-4F33-BBE7-4C3721D8FC68
+  Name=NUMERO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Numero:
+  Order=9
+  Left=61
+  Width=68
+  Top=9
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=512
+  Property=HyperLabel=,Numero:
+  Property=HyperLabel=NUMERO
+  Property=HyperLabel=,,,MAIL_NUMERO
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=TooltipText=Numero de Controle da Mensagem
+CONTROL=SINGLELINEEDIT
+GUID=191871E7-3405-495A-879E-B3C0B5535F5A
+  Name=ERRO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Erro:
+  Order=10
+  Left=165
+  Width=68
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=512
+  Property=HyperLabel=,Erro:
+  Property=HyperLabel=ERRO
+  Property=HyperLabel=,,,MAIL_ERRO
+  Property=FieldSpec=PADRAO_CHAR_08
+  Property=TooltipText=Codigo do Sistema da Mensagem
+CONTROL=SINGLELINEEDIT
+GUID=8FBC2B4C-1861-4A2D-AC18-B2A01C585FE6
+  Name=DATA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Data:
+  Order=11
+  Left=273
+  Width=68
+  Top=9
+  Height=20
+  Browseindex=1
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=512
+  Property=HyperLabel=,Data:
+  Property=HyperLabel=DATA
+  Property=HyperLabel=,,,MAIL_DATA
+  Property=FieldSpec=DATE_FIELD
+  Property=TooltipText=Data Criaçao Mensagem
+CONTROL=SINGLELINEEDIT
+GUID=E477207D-E511-4259-B796-3D4ADBD1B2EF
+  Name=HORA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Hora:
+  Order=12
+  Left=385
+  Width=68
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=512
+  Property=HyperLabel=,Hora:
+  Property=HyperLabel=HORA
+  Property=HyperLabel=,,,MAIL_HORA
+  Property=FieldSpec=time_long
+  Property=TooltipText=Hora Criaçao da Mensagem
+CONTROL=SINGLELINEEDIT
+GUID=FED0C559-55E7-4F2E-B88E-E727F670B023
+  Name=DE
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=De:
+  Order=13
+  Left=61
+  Width=96
+  Top=33
+  Height=20
+  Browseindex=2
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=512
+  Property=HyperLabel=,De:
+  Property=HyperLabel=DE
+  Property=HyperLabel=,,,MAIL_DE
+  Property=FieldSpec=PADRAO_CHAR_12
+  Property=TooltipText=Remetente da Mensagem
+CONTROL=SINGLELINEEDIT
+GUID=B883E1A2-55F7-42AC-AD91-F242222E19AA
+  Name=DESTINO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Destino:
+  Order=14
+  Left=213
+  Width=96
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216413824
+  Exstyles=512
+  Property=HyperLabel=,Destino:
+  Property=HyperLabel=DESTINO
+  Property=HyperLabel=,,,MAIL_DESTINO
+  Property=FieldSpec=PADRAO_CHAR_12
+  Property=TooltipText=Destinataio da Mensagem
+CONTROL=SINGLELINEEDIT
+GUID=BF567982-6B78-4856-A797-76D81CD3EBF9
+  Name=ASSUNTO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Assunto:
+  Order=15
+  Left=61
+  Width=396
+  Top=85
+  Height=20
+  Browseindex=3
+  Browsesize=36
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=512
+  Property=HyperLabel=,Assunto:
+  Property=HyperLabel=ASSUNTO
+  Property=HyperLabel=,,,MAIL_ASSUNTO
+  Property=FieldSpec=PADRAO_CHAR_120
+  Property=TooltipText=Assunto da Mensagem
+CONTROL=MULTILINEEDIT
+GUID=342087C6-0F62-4EDE-BFC5-1B86DC4F3651
+  Name=TEXTO
+  Class=CONTROL:TEXTCONTROL:EDIT:MULTILINEEDIT
+  Caption=
+  Order=16
+  Left=57
+  Width=399
+  Top=113
+  Height=111
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216420036
+  Exstyles=512
+  Property=HyperLabel=TEXTO
+  Property=FieldSpec=MEMO_FIELD
+  Property=TooltipText=Conteudo da Mensagem
+CONTROL=PUSHBUTTON
+GUID=6F79B366-002E-4B93-9773-4586DF19EF82
+  Name=Encerrar
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=17
+  Left=521
+  Width=48
+  Top=77
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=Encerrar
+  Property=TooltipText=Encerrar Consulta Mensagens
+  Property=Image=ico_sair
+CONTROL=FIXEDTEXT
+GUID=A7896B0C-F713-4B4D-A455-B2C5999D8BB1
+  Name=SC_DESTINO1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Encerrar
+  Order=18
+  Left=521
+  Width=52
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,Encerrar
+  Property=HyperLabel=SC_DESTINO1
+CONTROL=PUSHBUTTON
+GUID=B4BB309B-387E-4AC2-8EA3-5A9B56312AA3
+  Name=Deletar
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=19
+  Left=465
+  Width=48
+  Top=5
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=Deletar
+  Property=TooltipText=Arquiva a Mensagem
+  Property=Image=ico_mailarq
+CONTROL=FIXEDTEXT
+GUID=1AE46FD9-409B-4FEB-842E-86E53E466576
+  Name=SC_DESTINO2
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Marcar Lida
+  Order=20
+  Left=465
+  Width=48
+  Top=49
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,Marcar Lida
+  Property=HyperLabel=SC_DESTINO2
+CONTROL=PUSHBUTTON
+GUID=BA14E594-98F4-4AE8-9EF7-45BFBBDB1D00
+  Name=Incluir
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=21
+  Left=465
+  Width=48
+  Top=77
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=Incluir
+  Property=TooltipText=Criar Uma Nova Mensagem
+  Property=Image=ico_mail
+CONTROL=FIXEDTEXT
+GUID=F7C39641-5882-495F-8F90-3D1330ADB927
+  Name=SC_DESTINO3
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Nova
+  Order=22
+  Left=461
+  Width=52
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,Nova
+  Property=HyperLabel=SC_DESTINO3
+CONTROL=PUSHBUTTON
+GUID=DEC3AE48-2A47-4200-8E5B-F775AE369F72
+  Name=Proximo
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=23
+  Left=397
+  Width=48
+  Top=33
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=Proximo
+  Property=TooltipText=Retorna Uma Mensagem
+  Property=Image=ico_next
+CONTROL=PUSHBUTTON
+GUID=281250F4-6DE6-40B2-B71F-307E9D6C158F
+  Name=Anterior
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=24
+  Left=345
+  Width=48
+  Top=33
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=Anterior
+  Property=TooltipText=Avança Uma Mensagem
+  Property=Image=ico_previous
+CONTROL=FIXEDTEXT
+GUID=A591A7F4-6816-43B5-AF52-1D9EA3D95D0A
+  Name=FixedText1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Imprimir
+  Order=25
+  Left=521
+  Width=48
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,Imprimir
+  Property=HyperLabel=FixedText1
+CONTROL=PUSHBUTTON
+GUID=875C2BBB-8361-4EF8-AB81-4FF19CA9C54E
+  Name=imprimir
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=26
+  Left=521
+  Width=48
+  Top=5
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=imprimir
+  Property=TooltipText=Imprimir a Mensagem
+  Property=Image=ico_print
+CONTROL=FIXEDTEXT
+GUID=6A6D23EF-6EA4-4E02-87AA-CED2AEC714A0
+  Name=x2
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Ajuda
+  Order=27
+  Left=465
+  Width=48
+  Top=185
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,Ajuda
+  Property=HyperLabel=x2
+CONTROL=PUSHBUTTON
+GUID=2AF715B0-B1AB-4085-A7DC-CFC442E5C05E
+  Name=Ajuda
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=28
+  Left=465
+  Width=48
+  Top=141
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=Ajuda
+  Property=HyperLabel=,,,login
+  Property=TooltipText=Clique Para Acessar a Ajuda
+  Property=Image=ico_ajuda
+SUBCONTROLSEND
+DESIGNEREND = JMAIL
+
+

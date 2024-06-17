@@ -1,0 +1,105 @@
+DESIGNERSTART = VOWindowEditor,DIALOGWINDOW,ProgWin
+GUID=C25F6F8C-2002-4F9F-89C4-AF431CAD2DA2
+  Name=ProgWin
+  Class=DIALOGWINDOW
+  Caption=
+  Order=0
+  Left=18
+  Width=383
+  Top=18
+  Height=191
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=2160068740
+  Exstyles=257
+  Property=Modeless=Yes
+  Property=HyperLabel=#ProgWin,,,
+  Property=ExpCtls=Yes
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=1F03EF6C-BE4F-4933-9E12-16A3BF810B72
+  Name=Message
+  Class=FIXEDTEXT
+  Caption=
+  Order=1
+  Left=21
+  Width=303
+  Top=13
+  Height=26
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#Message,,,
+
+CONTROL=PROGRESSBAR
+GUID=6186582D-70F2-4308-9E84-8E7B458F3E46
+  Name=ProgBar
+  Class=PROGRESSBAR
+  Caption=
+  Order=2
+  Left=17
+  Width=309
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Range=0,
+  Property=Range=,100
+  Property=HyperLabel=#ProgBar,,,
+
+CONTROL=PROGRESSBAR
+GUID=D191D6DE-7387-4271-88EC-4EF985A4B8E1
+  Name=ProgSubBar
+  Class=PROGRESSBAR
+  Caption=
+  Order=3
+  Left=17
+  Width=309
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Range=0,
+  Property=Range=,100
+  Property=HyperLabel=#ProgSubBar,,,
+
+CONTROL=FIXEDTEXT
+GUID=47EEF436-B4A4-4EE5-A921-BD5705AF1363
+  Name=SubMessage
+  Class=FIXEDTEXT
+  Caption=
+  Order=4
+  Left=21
+  Width=303
+  Top=73
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#SubMessage,,,
+
+SUBCONTROLSEND
+DESIGNEREND = ProgWin
+

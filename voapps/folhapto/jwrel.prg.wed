@@ -1,0 +1,446 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,jwrel
+GUID=B313B4A5-6426-4F57-80A7-4755A017F4CC
+  Name=jwrel
+  Class=DATADIALOG
+  Caption=DataDialog Caption
+  Order=0
+  Left=46
+  Width=400
+  Top=46
+  Height=231
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataDialog Caption",,
+  Property=HyperLabel=#jwrel,,,
+
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=C4EF974B-1DB3-4BB2-882E-94B5D2DD60B2
+  Name=PushButton1
+  Class=PUSHBUTTON
+  Caption=OK
+  Order=1
+  Left=313
+  Width=78
+  Top=37
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#PushButton1,,,
+
+CONTROL=PUSHBUTTON
+GUID=5B1AEDB0-CE1B-4BC4-A8A9-816F39BDA06F
+  Name=cmdcancel
+  Class=PUSHBUTTON
+  Caption=Cancela
+  Order=2
+  Left=313
+  Width=76
+  Top=61
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Cancela",,
+  Property=HyperLabel=#cmdcancel,,,
+
+CONTROL=FIXEDTEXT
+GUID=CDD06C18-4FDC-4B0B-9158-8741706351A6
+  Name=per
+  Class=FIXEDTEXT
+  Caption=Periodo
+  Order=3
+  Left=9
+  Width=80
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Periodo",,
+  Property=HyperLabel=#per,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=07E0C389-0102-4193-9209-F8ADAE87970C
+  Name=DFIM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=197
+  Width=104
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+  Property=HyperLabel=#DFIM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=55FA072F-D2FF-4AD7-8AD8-9911C7DF8B02
+  Name=DINI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=89
+  Width=104
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=InheritClassName=DateSle
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DINI,,,
+
+CONTROL=FIXEDTEXT
+GUID=4602E0E9-4CAC-42A4-A560-63886F68A904
+  Name=per1
+  Class=FIXEDTEXT
+  Caption=Funcionario
+  Order=6
+  Left=5
+  Width=80
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Funcionario",,
+  Property=HyperLabel=#per1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=95447BA6-C26D-48F4-B2C4-747AA6249878
+  Name=FINI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=125
+  Width=68
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSLE
+  Property=HyperLabel=#FINI,,,
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=SINGLELINEEDIT
+GUID=7B178E01-9118-424D-B844-28FD7901B80F
+  Name=FFIM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=233
+  Width=68
+  Top=33
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSLE
+  Property=HyperLabel=#FFIM,,,
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=FIXEDTEXT
+GUID=D55C38A8-C0B7-42EB-B326-18E300826106
+  Name=per2
+  Class=FIXEDTEXT
+  Caption=Relogios
+  Order=9
+  Left=9
+  Width=60
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Relogios",,
+  Property=HyperLabel=#per2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=1C0C2999-BD5D-4F50-BCBF-3699FB37329C
+  Name=REL01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=89
+  Width=44
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_04
+  Property=InheritClassName=rightSLE
+  Property=HyperLabel=#REL01,,,
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=SINGLELINEEDIT
+GUID=C53DFEE5-C6CB-4FA6-B3A6-258603CFB4C0
+  Name=REL02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=137
+  Width=44
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_04
+  Property=InheritClassName=rightSLE
+  Property=HyperLabel=#REL02,,,
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=SINGLELINEEDIT
+GUID=9052F1D1-CA31-4C16-AD2B-7EBAF688E7CD
+  Name=REL03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=185
+  Width=44
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_04
+  Property=InheritClassName=rightSLE
+  Property=HyperLabel=#REL03,,,
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=SINGLELINEEDIT
+GUID=C16A7677-DC46-4411-8A8E-D55DF4182C9F
+  Name=REL04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=233
+  Width=44
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_04
+  Property=InheritClassName=rightSLE
+  Property=HyperLabel=#REL04,,,
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=CHECKBOX
+GUID=587D0F91-6FE0-4199-B716-57D1CA6EA0AF
+  Name=chkexp
+  Class=CHECKBOX
+  Caption=Exportar 
+  Order=14
+  Left=16
+  Width=66
+  Top=121
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Exportar ",,
+  Property=HyperLabel=#chkexp,,,
+
+CONTROL=PUSHBUTTON
+GUID=C53F76F4-EB6B-4C7A-A8F3-7D0A679299CA
+  Name=cmdbco
+  Class=PUSHBUTTON
+  Caption=Layout A/B/C
+  Order=15
+  Left=108
+  Width=92
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Layout A/B/C",,
+  Property=HyperLabel=#cmdbco,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=1F933A43-BC5B-433E-8002-EE84A10D4D29
+  Name=LAYOUT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=80
+  Width=24
+  Top=120
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350344
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#LAYOUT,,,
+  Property=HyperLabel=,"Bcosn:",,
+  Property=HyperLabel=,,,"FOPTOEVE_BCOSN"
+  Property=TooltipText="Banco Horas Sim/Nao"
+  Property=Background=255 255 200
+
+CONTROL=CHECKBOX
+GUID=58E16E13-78C1-4919-9977-6F53C799E1F3
+  Name=chkativos
+  Class=CHECKBOX
+  Caption=Somente Funcionarios Da Empresa em Uso
+  Order=17
+  Left=75
+  Width=231
+  Top=147
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Somente Funcionarios Da Empresa em Uso",,
+  Property=HyperLabel=#chkativos,,,
+
+CONTROL=PUSHBUTTON
+GUID=112CFDA3-80E6-4FC8-8FA3-DDD25C225511
+  Name=cmdbco1
+  Class=PUSHBUTTON
+  Caption=(C)redencial(N)umero
+  Order=18
+  Left=237
+  Width=132
+  Top=122
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"CredencialNumero",,
+  Property=HyperLabel=#cmdbco1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=990637DB-775E-428A-ABAB-54A0955073A7
+  Name=TIPOCRE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=207
+  Width=24
+  Top=122
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350344
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#TIPOCRE,,,
+  Property=HyperLabel=,"Bcosn:",,
+  Property=HyperLabel=,,,"FOPTOEVE_BCOSN"
+  Property=TooltipText="Banco Horas Sim/Nao"
+  Property=Background=255 255 200
+
+CONTROL=CHECKBOX
+GUID=6AA8D220-DA77-4389-9C15-2F18BDFC7CCC
+  Name=TipoEntSai
+  Class=CHECKBOX
+  Caption=Somente Exportar Entradas
+  Order=20
+  Left=75
+  Width=229
+  Top=166
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Somente Exportar Entradas",,
+  Property=HyperLabel=#TipoEntSai,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jwrel
+

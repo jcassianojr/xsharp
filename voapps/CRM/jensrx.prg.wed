@@ -1,0 +1,145 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,jensrx
+GUID=0520A1B3-19A6-4C08-A94E-AE659701CBDC
+  Name=jensrx
+  Class=DATADIALOG
+  Caption=Checagem Certificado
+  Order=0
+  Left=16
+  Width=659
+  Top=16
+  Height=240
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Checagem Certificado",,
+  Property=HyperLabel=#jensrx,,,
+
+SUBCONTROLSSTART
+CONTROL=SUBDATAWINDOW
+GUID=7E51FC13-1D84-49CB-A2A0-4C022063F1B6
+  Name=jensr
+  Class=SUBDATAWINDOW
+  Caption=jensr
+  Order=1
+  Left=22
+  Width=519
+  Top=14
+  Height=140
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#jensr,,,
+
+CONTROL=FIXEDTEXT
+GUID=580F55A1-1111-49E3-A22A-510B288E25D2
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=2
+  Left=465
+  Width=64
+  Top=209
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=592E5603-58E3-4916-99D3-9329BA7E9D50
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=3
+  Left=465
+  Width=64
+  Top=161
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ICO_OK
+  Property=TooltipText="Clique aqui Par Confirmar"
+
+CONTROL=FIXEDTEXT
+GUID=87B4F280-7186-45E2-8E36-8EF0EC9CFCE6
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=4
+  Left=393
+  Width=64
+  Top=209
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=E0EC644E-6EFB-4E29-9B7D-8E0412A89406
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=393
+  Width=64
+  Top=161
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ICO_SAIR
+  Property=TooltipText="Clique aqui Para Cancelar"
+
+CONTROL=PUSHBUTTON
+GUID=C8389663-86B2-459A-BB03-DBC5F87BE94D
+  Name=cmdcert
+  Class=PUSHBUTTON
+  Caption=Conforme Certificado
+  Order=6
+  Left=545
+  Width=99
+  Top=41
+  Height=27
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073750016
+  Exstyles=0
+  Property=HyperLabel=,"Conforme Certificado",,
+  Property=HyperLabel=#cmdcert,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jensrx
+

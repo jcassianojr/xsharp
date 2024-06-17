@@ -1,0 +1,162 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,escmw02
+GUID=7658B2B9-5E67-4ED9-9587-AC9CB6A0CEF5
+  Name=escmw02
+  Class=DATADIALOG
+  Caption=Escolher Pedido
+  Order=0
+  Left=30
+  Width=687
+  Top=30
+  Height=354
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escolher Pedido",,
+  Property=HyperLabel=#escmw02,,,
+
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=F5986248-9C26-4499-A1EA-611BA57FB462
+  Name=escolher
+  Class=PUSHBUTTON
+  Caption=escolher
+  Order=2
+  Left=581
+  Width=80
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"escolher",,
+  Property=HyperLabel=#escolher,,,
+
+CONTROL=SUBDATAWINDOW
+GUID=69BE633D-12FD-4A77-BB56-B690194F4D30
+  Name=jmw02
+  Class=SUBDATAWINDOW
+  Caption=jmw02
+  Order=3
+  Left=25
+  Width=539
+  Top=45
+  Height=295
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#jmw02,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=872E7A8F-E982-40A3-BE4E-9ABCB71F1313
+  Name=cBUSCA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=22
+  Width=527
+  Top=10
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#cBUSCA,,,
+
+CONTROL=FIXEDTEXT
+GUID=563C9444-92A9-4255-8919-A753EE8A7CBA
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=6
+  Left=585
+  Width=64
+  Top=197
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=0D5971DD-9B71-4BF5-A7D5-3175A6B045E7
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=585
+  Width=64
+  Top=149
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ico_sair
+
+CONTROL=PUSHBUTTON
+GUID=AE35D26A-9A2A-4CD7-B707-6B2575A1274A
+  Name=busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=593
+  Width=44
+  Top=5
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#busca,,,
+
+CONTROL=FIXEDTEXT
+GUID=F4C75F46-E67A-4AA5-B718-B062C5CE84E1
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=Busca
+  Order=9
+  Left=593
+  Width=44
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Busca",,
+  Property=HyperLabel=#theFixedText10,,,
+
+SUBCONTROLSEND
+DESIGNEREND = escmw02
+

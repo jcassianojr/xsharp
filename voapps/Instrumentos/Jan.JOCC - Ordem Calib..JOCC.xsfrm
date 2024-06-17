@@ -1,0 +1,806 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JOCC">
+    <Window Name="JOCC">
+      <Name>JOCC</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Ordem Calibracao</Caption>
+      <Order>0</Order>
+      <Left>78</Left>
+      <Top>78</Top>
+      <Width>625</Width>
+      <Height>364</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ordem Calibracao",,</HyperLabel>
+        <HyperLabel>#JOCC,,,</HyperLabel>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <ClipperKeys>True</ClipperKeys>
+        <ViewAs>#FormView</ViewAs>
+        <InheritClassName>MYDataWindow</InheritClassName>
+      </ExProperties>
+    </Window>
+    <Control Name="DATA">
+      <Name>DATA</Name>
+      <Class>DATETIMEPICKER</Class>
+      <Caption>13/02/2021</Caption>
+      <Order>1</Order>
+      <Left>349</Left>
+      <Top>17</Top>
+      <Width>85</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>date_field</FieldSpec>
+        <HyperLabel>#DATA,,,</HyperLabel>
+        <TooltipText>"Data"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="JOCCI">
+      <Name>JOCCI</Name>
+      <Class>SUBDATAWINDOW</Class>
+      <Caption>JOCCI</Caption>
+      <Order>2</Order>
+      <Left>5</Left>
+      <Top>109</Top>
+      <Width>479</Width>
+      <Height>227</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>Yes</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#JOCCI,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Excluir">
+      <Name>Excluir</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Excluir</Caption>
+      <Order>5</Order>
+      <Left>493</Left>
+      <Top>185</Top>
+      <Width>80</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Excluir",,</HyperLabel>
+        <HyperLabel>#Excluir,,,</HyperLabel>
+        <TooltipText>"Excluir o Item em Destaque"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Incluir">
+      <Name>Incluir</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Incluir</Caption>
+      <Order>6</Order>
+      <Left>493</Left>
+      <Top>161</Top>
+      <Width>80</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Incluir",,</HyperLabel>
+        <HyperLabel>#Incluir,,,</HyperLabel>
+        <TooltipText>"Incluir um novo Item"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="ALTERAR">
+      <Name>ALTERAR</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Alterar Iten</Caption>
+      <Order>7</Order>
+      <Left>493</Left>
+      <Top>133</Top>
+      <Width>80</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Alterar Iten",,</HyperLabel>
+        <HyperLabel>#ALTERAR,,,</HyperLabel>
+        <TooltipText>"Altera o Item em Destaque"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="TABULAR">
+      <Name>TABULAR</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Ver Itens</Caption>
+      <Order>8</Order>
+      <Left>493</Left>
+      <Top>109</Top>
+      <Width>80</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ver Itens",,</HyperLabel>
+        <HyperLabel>#TABULAR,,,</HyperLabel>
+        <TooltipText>"Visualiza todos os Itens"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="assinar">
+      <Name>assinar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Assinar</Caption>
+      <Order>9</Order>
+      <Left>493</Left>
+      <Top>281</Top>
+      <Width>80</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Assinar",,</HyperLabel>
+        <HyperLabel>#assinar,,,</HyperLabel>
+        <TooltipText>"Assinar o Item em destaque"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DATAP">
+      <Name>SC_DATAP</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Datap:</Caption>
+      <Order>10</Order>
+      <Left>57</Left>
+      <Top>26</Top>
+      <Width>1</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Datap:",,</HyperLabel>
+        <HyperLabel>#SC_DATAP,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="DATAP">
+      <Name>DATAP</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>11</Order>
+      <Left>389</Left>
+      <Top>45</Top>
+      <Width>84</Width>
+      <Height>20</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>10</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>date_field</FieldSpec>
+        <HyperLabel>#DATAP,,,</HyperLabel>
+        <HyperLabel>,"Data",,</HyperLabel>
+        <HyperLabel>,,,"ME04C_DATAP"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="Proxima">
+      <Name>Proxima</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Proxima</Caption>
+      <Order>12</Order>
+      <Left>481</Left>
+      <Top>45</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Proxima",,</HyperLabel>
+        <HyperLabel>#Proxima,,,</HyperLabel>
+        <TooltipText>"Atualiza Proxima Calibraçao Cad. Instrumento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="ESCFOR">
+      <Name>ESCFOR</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>13</Order>
+      <Left>166</Left>
+      <Top>46</Top>
+      <Width>27</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#ESCFOR,,,</HyperLabel>
+        <TooltipText>"Escolher Fornecedor"</TooltipText>
+        <Image>ICO_FIND</Image>
+      </ExProperties>
+    </Control>
+    <Control Name="Proximo">
+      <Name>Proximo</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>14</Order>
+      <Left>537</Left>
+      <Top>213</Top>
+      <Width>36</Width>
+      <Height>28</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741888</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Proximo,,,</HyperLabel>
+        <Image>ICO_NEXT</Image>
+        <TooltipText>"Avança um Icone"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Anterior">
+      <Name>Anterior</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>15</Order>
+      <Left>493</Left>
+      <Top>213</Top>
+      <Width>36</Width>
+      <Height>28</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741888</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Anterior,,,</HyperLabel>
+        <Image>ICO_PREVIOUS</Image>
+        <TooltipText>"Retorna um Icone"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="pegFOR">
+      <Name>pegFOR</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>--&gt;</Caption>
+      <Order>16</Order>
+      <Left>197</Left>
+      <Top>45</Top>
+      <Width>27</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"--&gt;",,</HyperLabel>
+        <HyperLabel>#pegFOR,,,</HyperLabel>
+        <TooltipText>"Preenche Campo Cognome conforme nº Fornecedor"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="ediTIP">
+      <Name>ediTIP</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>E</Caption>
+      <Order>17</Order>
+      <Left>313</Left>
+      <Top>17</Top>
+      <Width>19</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"E",,</HyperLabel>
+        <HyperLabel>#ediTIP,,,</HyperLabel>
+        <TooltipText>"Editar Instrumento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="ESCTIP">
+      <Name>ESCTIP</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>18</Order>
+      <Left>293</Left>
+      <Top>17</Top>
+      <Width>19</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#ESCTIP,,,</HyperLabel>
+        <TooltipText>"Escolher Instrumento"</TooltipText>
+        <Image>ICO_FIND</Image>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CERTIFI1">
+      <Name>SC_CERTIFI1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Certif.Interno</Caption>
+      <Order>19</Order>
+      <Left>289</Left>
+      <Top>69</Top>
+      <Width>68</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Certif.Interno",,</HyperLabel>
+        <HyperLabel>,,"Numero do Certificado",</HyperLabel>
+        <HyperLabel>#SC_CERTIFI1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="NFCC">
+      <Name>NFCC</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>20</Order>
+      <Left>357</Left>
+      <Top>69</Top>
+      <Width>64</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>14</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_num_08</FieldSpec>
+        <HyperLabel>#NFCC,,,</HyperLabel>
+        <HyperLabel>,"Fornecedor",,</HyperLabel>
+        <HyperLabel>,,,"ME04C_CODFOR"</HyperLabel>
+        <TooltipText>"Nº do Certificado Interno"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="importar">
+      <Name>importar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Importar</Caption>
+      <Order>21</Order>
+      <Left>425</Left>
+      <Top>69</Top>
+      <Width>56</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Importar",,</HyperLabel>
+        <HyperLabel>#importar,,,</HyperLabel>
+        <TooltipText>"Retorna Dados do Certificado Interno"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="AssinarTo">
+      <Name>AssinarTo</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Assinar Todas</Caption>
+      <Order>22</Order>
+      <Left>493</Left>
+      <Top>309</Top>
+      <Width>80</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Assinar Todas",,</HyperLabel>
+        <HyperLabel>#AssinarTo,,,</HyperLabel>
+        <TooltipText>"Assinar Todos os Itens"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Laudo">
+      <Name>Laudo</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Laudo</Caption>
+      <Order>23</Order>
+      <Left>493</Left>
+      <Top>249</Top>
+      <Width>80</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Laudo",,</HyperLabel>
+        <HyperLabel>#Laudo,,,</HyperLabel>
+        <TooltipText>"Preenche o Laudo Apr.Rep Cond"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="duplicar">
+      <Name>duplicar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Duplicar</Caption>
+      <Order>24</Order>
+      <Left>437</Left>
+      <Top>17</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Duplicar",,</HyperLabel>
+        <HyperLabel>#duplicar,,,</HyperLabel>
+        <TooltipText>"Cria uma Novo OCC com base nesta"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="poroc">
+      <Name>poroc</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>25</Order>
+      <Left>117</Left>
+      <Top>5</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ICO_AZ</Image>
+        <HyperLabel>#poroc,,,</HyperLabel>
+        <TooltipText>"Ordenar Por Numero"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="buscaoc">
+      <Name>buscaoc</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>26</Order>
+      <Left>85</Left>
+      <Top>5</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ICO_FIND</Image>
+        <HyperLabel>#buscaoc,,,</HyperLabel>
+        <TooltipText>"Localizar Um Nº OCC"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_OCC">
+      <Name>SC_OCC</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Ordem:</Caption>
+      <Order>-1</Order>
+      <Left>5</Left>
+      <Top>5</Top>
+      <Width>40</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ordem:",,</HyperLabel>
+        <HyperLabel>,,"Numero da Ordem de Calibração",</HyperLabel>
+        <HyperLabel>#SC_OCC,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CODIGO">
+      <Name>SC_CODIGO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Código:</Caption>
+      <Order>-1</Order>
+      <Left>157</Left>
+      <Top>5</Top>
+      <Width>50</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Código:",,</HyperLabel>
+        <HyperLabel>,,"Código do Instrumento",</HyperLabel>
+        <HyperLabel>#SC_CODIGO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DATA">
+      <Name>SC_DATA</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Data:</Caption>
+      <Order>-1</Order>
+      <Left>349</Left>
+      <Top>5</Top>
+      <Width>40</Width>
+      <Height>12</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Data:",,</HyperLabel>
+        <HyperLabel>,,"Data da Calibração",</HyperLabel>
+        <HyperLabel>#SC_DATA,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="OCC">
+      <Name>OCC</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>-1</Order>
+      <Left>5</Left>
+      <Top>21</Top>
+      <Width>72</Width>
+      <Height>24</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_num_08</FieldSpec>
+        <HyperLabel>#OCC,,,</HyperLabel>
+        <HyperLabel>,"Occ:",,</HyperLabel>
+        <HyperLabel>,,,"ME04C_OCC"</HyperLabel>
+        <TooltipText>"Numero da Ordem Calibraçao"</TooltipText>
+        <Background>255 255 200</Background>
+        <NewFont>12:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="CODIGO">
+      <Name>CODIGO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>-1</Order>
+      <Left>157</Left>
+      <Top>21</Top>
+      <Width>130</Width>
+      <Height>18</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>13</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_10</FieldSpec>
+        <HyperLabel>#CODIGO,,,</HyperLabel>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>,,,"ME04C_CODIGO"</HyperLabel>
+        <TooltipText>"Codigo do Instrumento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="COGFOR">
+      <Name>COGFOR</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>-1</Order>
+      <Left>233</Left>
+      <Top>45</Top>
+      <Width>150</Width>
+      <Height>18</Height>
+      <BrowseIndex>5</BrowseIndex>
+      <BrowseSize>15</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_20</FieldSpec>
+        <HyperLabel>#COGFOR,,,</HyperLabel>
+        <HyperLabel>,"Cognome",,</HyperLabel>
+        <HyperLabel>,,,"ME04C_COGFOR"</HyperLabel>
+        <TooltipText>"Cognome do Fornecedor"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CODFOR">
+      <Name>SC_CODFOR</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Fornecedor</Caption>
+      <Order>-1</Order>
+      <Left>7</Left>
+      <Top>49</Top>
+      <Width>66</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Fornecedor",,</HyperLabel>
+        <HyperLabel>,,"Codigo do Fornecedor",</HyperLabel>
+        <HyperLabel>#SC_CODFOR,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="CODFOR">
+      <Name>CODFOR</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>-1</Order>
+      <Left>77</Left>
+      <Top>49</Top>
+      <Width>84</Width>
+      <Height>18</Height>
+      <BrowseIndex>4</BrowseIndex>
+      <BrowseSize>14</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_num_08</FieldSpec>
+        <HyperLabel>#CODFOR,,,</HyperLabel>
+        <HyperLabel>,"Fornecedor",,</HyperLabel>
+        <HyperLabel>,,,"ME04C_CODFOR"</HyperLabel>
+        <TooltipText>"Nº do Fornecedor"</TooltipText>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CERTIFI">
+      <Name>SC_CERTIFI</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Certificado:</Caption>
+      <Order>-1</Order>
+      <Left>5</Left>
+      <Top>73</Top>
+      <Width>64</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Certificado:",,</HyperLabel>
+        <HyperLabel>,,"Numero do Certificado",</HyperLabel>
+        <HyperLabel>#SC_CERTIFI,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="CERTIFI">
+      <Name>CERTIFI</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>-1</Order>
+      <Left>77</Left>
+      <Top>73</Top>
+      <Width>130</Width>
+      <Height>18</Height>
+      <BrowseIndex>3</BrowseIndex>
+      <BrowseSize>14</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_10</FieldSpec>
+        <HyperLabel>#CERTIFI,,,</HyperLabel>
+        <HyperLabel>,"Certificado",,</HyperLabel>
+        <HyperLabel>,,,"ME04C_CERTIFI"</HyperLabel>
+        <TooltipText>"Nº do Certificado"</TooltipText>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

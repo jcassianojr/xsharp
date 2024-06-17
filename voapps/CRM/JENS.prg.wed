@@ -1,0 +1,1056 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JENS
+GUID=69BAA038-8A51-4AA7-B203-87D39B355F58
+  Name=JENS
+  Class=DATAWINDOW
+  Caption=Ensaios
+  Order=0
+  Left=83
+  Width=716
+  Top=80
+  Height=434
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Menu=STANDARDSHELLMENU
+  Property=HyperLabel=,"Ensaios",,
+  Property=HyperLabel=#JENS,,,
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=12704031-8ECD-4A48-9F23-A14EB5465E9A
+  Name=nPF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=37
+  Width=40
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#nPF,,,
+  Property=TooltipText="Nº PF para Importar"
+  Property=FieldSpec=PADRAO_NUM_05
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=5D371F89-07CC-483B-B1B3-1CA243E1707C
+  Name=nSEQ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=133
+  Width=40
+  Top=113
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#nSEQ,,,
+  Property=TooltipText="Nº Seq Importar"
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=E25C0249-7DEE-47C8-B1E9-F853EC9BDABB
+  Name=nSSQ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=173
+  Width=40
+  Top=113
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#nSSQ,,,
+  Property=TooltipText="Nº Ssq Importar"
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=4A8DF5F5-57C3-42C2-A2DC-EA2790AE3D60
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=4
+  Left=13
+  Width=40
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=B7AFA68D-16CA-4DAB-BF74-2F5AB31DD591
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=5
+  Left=17
+  Width=36
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=2120381F-9CAB-4C59-8A46-2F9AD55D3949
+  Name=SC_APLICACAO
+  Class=FIXEDTEXT
+  Caption=Aplicacao:
+  Order=6
+  Left=189
+  Width=56
+  Top=5
+  Height=12
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Aplicacao:",,
+  Property=HyperLabel=#SC_APLICACAO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=868AE1A6-C7D0-4597-9FB9-6B6730E62327
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=9
+  Width=136
+  Top=21
+  Height=28
+  Browseindex=0
+  Browsesize=19
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"MU01_CODIGO"
+  Property=TooltipText="Codigo"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=E0BA3178-79A7-49CF-B6F5-6B5F008E1876
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=57
+  Width=249
+  Top=53
+  Height=20
+  Browseindex=1
+  Browsesize=41
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_50
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"MU01_NOME"
+  Property=TooltipText="Descriçao"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=80C70AF8-6073-4FEA-8508-59A5145216AC
+  Name=NOM2
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=57
+  Width=491
+  Top=73
+  Height=20
+  Browseindex=2
+  Browsesize=22
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_50
+  Property=HyperLabel=#NOM2,,,
+  Property=HyperLabel=,"Nom2:",,
+  Property=HyperLabel=,,,"MU01_NOM2"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=A1EB25F9-481D-47E3-807C-1F6C4FED08F5
+  Name=APLICACAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=189
+  Width=340
+  Top=21
+  Height=28
+  Browseindex=3
+  Browsesize=27
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_50
+  Property=HyperLabel=#APLICACAO,,,
+  Property=HyperLabel=,"Aplicacao:",,
+  Property=HyperLabel=,,,"MU01_APLICACAO"
+  Property=TooltipText="Aplicacao"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=51E83E7A-8E3C-40FD-8477-5D80B9B49754
+  Name=IMPPFSEQ
+  Class=PUSHBUTTON
+  Caption=PF Seq/SSQ
+  Order=11
+  Left=221
+  Width=88
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"PF Seq/SSQ",,
+  Property=HyperLabel=#IMPPFSEQ,,,
+  Property=TooltipText="Importar Plano Controle Seq/ssq"
+
+CONTROL=PUSHBUTTON
+GUID=168C6F9D-7ABA-4185-B2AA-DBE77B7BD45B
+  Name=Editar
+  Class=PUSHBUTTON
+  Caption=E&ditar
+  Order=12
+  Left=529
+  Width=48
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"E&ditar",,
+  Property=HyperLabel=#Editar,,,
+  Property=TooltipText="Edita o Item em destaque"
+
+CONTROL=PUSHBUTTON
+GUID=A5D73969-FA8A-4125-A943-CA2198620EAD
+  Name=Tabular
+  Class=PUSHBUTTON
+  Caption=&Ver Itens
+  Order=13
+  Left=593
+  Width=60
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"&Ver Itens",,
+  Property=HyperLabel=#Tabular,,,
+  Property=TooltipText="Visualiza todos os Itens"
+
+CONTROL=PUSHBUTTON
+GUID=C634265D-7B24-434E-B47D-CFF908EB7D7B
+  Name=buscacodigo
+  Class=PUSHBUTTON
+  Caption=
+  Order=17
+  Left=153
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscacodigo,,,
+  Property=TooltipText="Localiza um Codigo"
+
+CONTROL=PUSHBUTTON
+GUID=CD0AB5ED-891A-41F4-81AC-29A913B0D601
+  Name=Excluir
+  Class=PUSHBUTTON
+  Caption=Excluir
+  Order=18
+  Left=593
+  Width=60
+  Top=169
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Excluir",,
+  Property=HyperLabel=#Excluir,,,
+  Property=TooltipText="Exclui o Item e Destaque"
+
+CONTROL=PUSHBUTTON
+GUID=57172334-3353-4015-AE79-B5A2AA54C2DA
+  Name=Incluir
+  Class=PUSHBUTTON
+  Caption=Incluir
+  Order=19
+  Left=529
+  Width=48
+  Top=169
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Incluir",,
+  Property=HyperLabel=#Incluir,,,
+  Property=TooltipText="Inclui um Novo Item"
+
+CONTROL=SUBDATAWINDOW
+GUID=89CAB3BD-D03D-41F2-9A62-3A8016699A10
+  Name=JENSI
+  Class=SUBDATAWINDOW
+  Caption=JENSI
+  Order=20
+  Left=5
+  Width=520
+  Top=141
+  Height=112
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JENSI,,,
+  Property=HyperLabel=,"Ensaios",,
+
+CONTROL=FIXEDTEXT
+GUID=62F3F755-FBC4-4754-AED3-B6E19F5A5630
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=PF
+  Order=21
+  Left=17
+  Width=20
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"PF",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=FIXEDTEXT
+GUID=067FFD3E-65AE-4624-93AA-A07480041981
+  Name=FixedText4
+  Class=FIXEDTEXT
+  Caption=Seq/Ssq
+  Order=22
+  Left=153
+  Width=48
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Seq/Ssq",,
+  Property=HyperLabel=#FixedText4,,,
+
+CONTROL=PUSHBUTTON
+GUID=6777C6C2-87D4-4747-B666-0C480EF4F7B4
+  Name=IMPPFcom
+  Class=PUSHBUTTON
+  Caption=PF Componente
+  Order=23
+  Left=221
+  Width=88
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"PF Componente",,
+  Property=HyperLabel=#IMPPFcom,,,
+  Property=TooltipText="Importar Plano Controle Componente"
+
+CONTROL=PUSHBUTTON
+GUID=136A7158-915F-4684-8DB9-03F57A6C0FA8
+  Name=Excluir1
+  Class=PUSHBUTTON
+  Caption=Excluir Todos
+  Order=24
+  Left=593
+  Width=72
+  Top=193
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Excluir Todos",,
+  Property=HyperLabel=#Excluir1,,,
+  Property=TooltipText="Exclui Todos os Itens"
+
+CONTROL=PUSHBUTTON
+GUID=53686C03-6CB4-4D3C-B0B2-AB5828339308
+  Name=CMDRENUM
+  Class=PUSHBUTTON
+  Caption=Renumerar
+  Order=25
+  Left=529
+  Width=56
+  Top=193
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Renumerar",,
+  Property=HyperLabel=#CMDRENUM,,,
+  Property=TooltipText="Exclui Todos os Itens"
+
+CONTROL=PUSHBUTTON
+GUID=BF55C1EA-7558-480F-A875-1F7DF19A05F9
+  Name=IMPPFSEQ1
+  Class=PUSHBUTTON
+  Caption=PFP Seq/SSQ
+  Order=26
+  Left=313
+  Width=92
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"PFP Seq/SSQ",,
+  Property=HyperLabel=#IMPPFSEQ1,,,
+  Property=TooltipText="Importar Plano Controle Preliminar Seq/ssq"
+
+CONTROL=PUSHBUTTON
+GUID=72834DF6-DBD2-41D3-AE8D-6C9AA331FB34
+  Name=IMPPFcom1
+  Class=PUSHBUTTON
+  Caption=PFP Componente
+  Order=27
+  Left=313
+  Width=92
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"PFP Componente",,
+  Property=HyperLabel=#IMPPFcom1,,,
+  Property=TooltipText="Importar Plano Controle Preliminar Componente"
+
+CONTROL=PUSHBUTTON
+GUID=443F7506-E53A-40D6-8C51-7AB30F10FEC5
+  Name=IMPPFcom2
+  Class=PUSHBUTTON
+  Caption=PF Receb.
+  Order=28
+  Left=409
+  Width=88
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"PF Receb.",,
+  Property=HyperLabel=#IMPPFcom2,,,
+  Property=TooltipText="Importar Plano Controle Recebimento"
+
+CONTROL=PUSHBUTTON
+GUID=0B4D978F-1BDD-4597-847E-3B8113B5FC10
+  Name=IMPPFcom3
+  Class=PUSHBUTTON
+  Caption=PFP Recebimento
+  Order=29
+  Left=409
+  Width=88
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"PFP Recebimento",,
+  Property=HyperLabel=#IMPPFcom3,,,
+  Property=TooltipText="Importar Plano Controle Preliminar Recebimento"
+
+CONTROL=SUBDATAWINDOW
+GUID=23D5D6AE-979D-4F06-B7FD-29DF801C3F0F
+  Name=JCRMENS
+  Class=SUBDATAWINDOW
+  Caption=JCRMENS
+  Order=30
+  Left=5
+  Width=520
+  Top=349
+  Height=80
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JCRMENS,,,
+
+CONTROL=PUSHBUTTON
+GUID=A5B064E0-64B8-4BAB-B204-195A5E8ADB17
+  Name=CHKTIPO
+  Class=PUSHBUTTON
+  Caption=Checar Tipo
+  Order=31
+  Left=561
+  Width=80
+  Top=113
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Checar Tipo",,
+  Property=HyperLabel=#CHKTIPO,,,
+
+CONTROL=PUSHBUTTON
+GUID=545A5F6B-E6E8-455A-B0DB-AD86619F151B
+  Name=cmdesctipa
+  Class=PUSHBUTTON
+  Caption=Escolher Ensaios
+  Order=32
+  Left=545
+  Width=112
+  Top=357
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escolher Ensaios",,
+  Property=HyperLabel=#cmdesctipa,,,
+
+CONTROL=PUSHBUTTON
+GUID=3DB4ED3F-442E-4228-AA3C-16D98636AB54
+  Name=cmdmargp12
+  Class=PUSHBUTTON
+  Caption=Marcar GP12
+  Order=33
+  Left=565
+  Width=100
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Marcar GP12",,
+  Property=HyperLabel=#cmdmargp12,,,
+
+CONTROL=PUSHBUTTON
+GUID=1FB14BD9-C7EE-4761-BB94-40F3D351F460
+  Name=cmddesgp12
+  Class=PUSHBUTTON
+  Caption=DesMarcar GP12
+  Order=34
+  Left=565
+  Width=100
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"DesMarcar GP12",,
+  Property=HyperLabel=#cmddesgp12,,,
+
+CONTROL=PUSHBUTTON
+GUID=FE1F0535-AB20-4901-B32C-E88895FD643D
+  Name=cmdvergp12
+  Class=PUSHBUTTON
+  Caption=Verificar GP12
+  Order=35
+  Left=565
+  Width=100
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Verificar GP12",,
+  Property=HyperLabel=#cmdvergp12,,,
+
+CONTROL=PUSHBUTTON
+GUID=06EFE4D1-82BA-44F1-8CE8-5C375D7E9474
+  Name=cmdvergp13
+  Class=PUSHBUTTON
+  Caption=Verificar Mar Racf
+  Order=36
+  Left=565
+  Width=104
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Verificar Mar Racf",,
+  Property=HyperLabel=#cmdvergp13,,,
+
+CONTROL=SUBDATAWINDOW
+GUID=22F80173-555A-4E57-9C98-A97304A7F42C
+  Name=JENSR
+  Class=SUBDATAWINDOW
+  Caption=JENSR
+  Order=37
+  Left=5
+  Width=520
+  Top=257
+  Height=88
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JENSR,,,
+
+CONTROL=PUSHBUTTON
+GUID=15F5D73E-D190-4361-BFAC-CB4B08151FB0
+  Name=cmdesctipa1
+  Class=PUSHBUTTON
+  Caption=Escolher Conf Certi.
+  Order=38
+  Left=545
+  Width=112
+  Top=385
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escolher Conf Certi.",,
+  Property=HyperLabel=#cmdesctipa1,,,
+
+CONTROL=PUSHBUTTON
+GUID=70C0ECB0-159D-4633-94E4-43D229EA0CA3
+  Name=Excluir2
+  Class=PUSHBUTTON
+  Caption=Excluir Todos
+  Order=39
+  Left=597
+  Width=72
+  Top=301
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Excluir Todos",,
+  Property=HyperLabel=#Excluir2,,,
+  Property=TooltipText="Exclui Todos os Itens"
+
+CONTROL=PUSHBUTTON
+GUID=0DEC7C3D-0A53-4244-BD5D-577656DB50A9
+  Name=CMDRENUM1
+  Class=PUSHBUTTON
+  Caption=Renumerar
+  Order=40
+  Left=529
+  Width=64
+  Top=301
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Renumerar",,
+  Property=HyperLabel=#CMDRENUM1,,,
+  Property=TooltipText="Exclui Todos os Itens"
+
+CONTROL=PUSHBUTTON
+GUID=C2D25FA3-F8B6-444E-AF09-B3E299D2AECB
+  Name=Excluir3
+  Class=PUSHBUTTON
+  Caption=Excluir
+  Order=41
+  Left=605
+  Width=60
+  Top=277
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Excluir",,
+  Property=HyperLabel=#Excluir3,,,
+  Property=TooltipText="Exclui o Item e Destaque"
+
+CONTROL=PUSHBUTTON
+GUID=FB10FAF6-F190-4096-9587-E0675953292C
+  Name=Incluir1
+  Class=PUSHBUTTON
+  Caption=Incluir
+  Order=42
+  Left=529
+  Width=56
+  Top=277
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Incluir",,
+  Property=HyperLabel=#Incluir1,,,
+  Property=TooltipText="Inclui um Novo Item"
+
+CONTROL=PUSHBUTTON
+GUID=796ACE57-DF8C-4F3D-BE17-C5155A8FAFFB
+  Name=Tabular1
+  Class=PUSHBUTTON
+  Caption=&Ver Itens
+  Order=43
+  Left=605
+  Width=60
+  Top=253
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"&Ver Itens",,
+  Property=HyperLabel=#Tabular1,,,
+  Property=TooltipText="Visualiza todos os Itens"
+
+CONTROL=PUSHBUTTON
+GUID=81EE1A36-34A2-4D2B-BDAE-1CE61F1489C9
+  Name=Editar1
+  Class=PUSHBUTTON
+  Caption=E&ditar
+  Order=44
+  Left=529
+  Width=56
+  Top=253
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"E&ditar",,
+  Property=HyperLabel=#Editar1,,,
+  Property=TooltipText="Edita o Item em destaque"
+
+CONTROL=PUSHBUTTON
+GUID=9E529DD5-AF10-4097-83DC-1CF501CBD0E9
+  Name=cmdimp
+  Class=PUSHBUTTON
+  Caption=Importar
+  Order=45
+  Left=613
+  Width=52
+  Top=329
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Importar",,
+  Property=HyperLabel=#cmdimp,,,
+
+CONTROL=PUSHBUTTON
+GUID=F3FE7066-038E-475F-B4F1-4A081B91F439
+  Name=cmdimp1
+  Class=PUSHBUTTON
+  Caption=Importar
+  Order=46
+  Left=613
+  Width=52
+  Top=221
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Importar",,
+  Property=HyperLabel=#cmdimp1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=5EBFEC26-A2DF-4975-A4F3-0EA01115A0B3
+  Name=codimp01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=47
+  Left=529
+  Width=80
+  Top=221
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#codimp01,,,
+  Property=TooltipText="Codigo para Importar"
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=AE508450-5EDD-4804-ABB5-B8786F8DE32F
+  Name=codimp02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=48
+  Left=529
+  Width=80
+  Top=329
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#codimp02,,,
+  Property=TooltipText="Codigo para Importar"
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=5E755E30-D470-4C05-8315-AC9242B44950
+  Name=CODIGOINT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=49
+  Left=404
+  Width=130
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_CHAR_24
+  Property=HyperLabel=#CODIGOINT,,,
+  Property=TooltipText="Observações sobre entrega"
+
+CONTROL=FIXEDTEXT
+GUID=F7413FF4-1D59-4C47-8FFE-D136E8DD9C16
+  Name=FT10
+  Class=FIXEDTEXT
+  Caption=Codigo Integrado
+  Order=50
+  Left=313
+  Width=84
+  Top=54
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo Integrado",,
+  Property=HyperLabel=#FT10,,,
+
+CONTROL=PUSHBUTTON
+GUID=92394478-4FFC-4715-BB8F-F37C53808620
+  Name=escPF
+  Class=PUSHBUTTON
+  Caption=...
+  Order=51
+  Left=81
+  Width=27
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#escPF,,,
+  Property=TooltipText="Escolher o PF"
+  Property=Image=ico_FIND
+  Property=HyperLabel=,"...",,
+
+CONTROL=PUSHBUTTON
+GUID=F7607765-2EF6-4910-8053-9BAC113121A9
+  Name=ImpMC
+  Class=PUSHBUTTON
+  Caption=MC
+  Order=52
+  Left=665
+  Width=28
+  Top=221
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"MC",,
+  Property=HyperLabel=#ImpMC,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JENS
+

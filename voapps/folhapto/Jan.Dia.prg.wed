@@ -1,0 +1,226 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JDIA
+GUID=A27F2B94-FC17-440E-A717-35DEA6CDB3DE
+  Name=JDIA
+  Class=DATADIALOG
+  Caption=Troca de Data Trabalho
+  Order=0
+  Left=42
+  Width=270
+  Top=42
+  Height=116
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Troca de Data Trabalho",,
+  Property=HyperLabel=#JDIA,,,
+  Property=HyperLabel=,,,"JDIA"
+
+SUBCONTROLSSTART
+CONTROL=DATETIMEPICKER
+GUID=EE2CC18F-3DFA-4344-BD67-8C0DAC99BCCF
+  Name=DIA
+  Class=DATETIMEPICKER
+  Caption=20/09/2010
+  Order=1
+  Left=5
+  Width=99
+  Top=29
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DIA,,,
+  Property=TooltipText="Dia de Trabalho"
+
+CONTROL=FIXEDTEXT
+GUID=CA81A114-692C-40F5-831C-96F6BCADC0B7
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Dia de Trabalho
+  Order=2
+  Left=5
+  Width=96
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Dia de Trabalho",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=FIXEDTEXT
+GUID=51D1FC69-C8F9-4CC3-86A7-103EBBD34FF8
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=3
+  Left=201
+  Width=64
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=1D3FA5A3-79B8-430A-B736-5B44E1555005
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=4
+  Left=201
+  Width=64
+  Top=13
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ico_ok
+  Property=TooltipText="Clique Para Concluir"
+
+CONTROL=SINGLELINEEDIT
+GUID=68B5092E-25FE-4F7D-B4CC-1EE0240616EF
+  Name=EMPRESA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=109
+  Width=60
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,"1",,
+  Property=HyperLabel=#EMPRESA,,,
+  Property=TooltipText="Numero da Empresa"
+
+CONTROL=FIXEDTEXT
+GUID=693E6094-5B3F-4A8E-8398-25ADE6615C73
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Empresa
+  Order=6
+  Left=113
+  Width=56
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Empresa",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=PUSHBUTTON
+GUID=AE9C3203-BD76-4037-A888-7FD6082B312B
+  Name=cmdmais
+  Class=PUSHBUTTON
+  Caption=+
+  Order=7
+  Left=169
+  Width=20
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"+",,
+  Property=HyperLabel=#cmdmais,,,
+
+CONTROL=PUSHBUTTON
+GUID=F8FBBCA3-8414-4D99-854D-E3799960563B
+  Name=cmdmenos
+  Class=PUSHBUTTON
+  Caption=-
+  Order=8
+  Left=169
+  Width=20
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"-",,
+  Property=HyperLabel=#cmdmenos,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=775C4204-CD01-4F34-A035-1AF7BF419FF5
+  Name=senha
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=85
+  Width=80
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196128
+  Exstyles=512
+  Property=HyperLabel=#senha,,,
+
+CONTROL=FIXEDTEXT
+GUID=F38FA019-2381-4CC3-83FB-FE5542C0DA98
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=Senha Admin
+  Order=10
+  Left=5
+  Width=76
+  Top=65
+  Height=38
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Senha Admin",,
+  Property=HyperLabel=#FixedText3,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JDIA
+

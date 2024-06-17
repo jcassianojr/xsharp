@@ -1,0 +1,405 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JRIMI
+GUID=57DEC483-81D6-4150-B53C-6001A339673E
+  Name=JRIMI
+  Class=DATAWINDOW
+  Caption=Itens Inspeção e Ensaio Recebimento de Material
+  Order=0
+  Left=46
+  Width=580
+  Top=46
+  Height=204
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Itens Inspeção e Ensaio Recebimento de Material",,
+  Property=Menu=STANDARDSHELLMENU
+  Property=HyperLabel=#JRIMI,,,
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=8DE6B2DA-C150-4303-8273-8A9F0B400B8C
+  Name=ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=93
+  Width=70
+  Top=29
+  Height=18
+  Browseindex=1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#ITEM,,,
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=,,,"RIRMI_ITEM"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=F1E02830-B4E1-4E4C-B496-82F9DABBFE63
+  Name=QTITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=169
+  Width=128
+  Top=29
+  Height=18
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=HyperLabel=#QTITEM,,,
+  Property=HyperLabel=,"Qtdde",,
+  Property=HyperLabel=,,,"RIRMI_QTITEM"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=96A1071D-2686-4A25-8F6C-988ACB4C4D7F
+  Name=UNIITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=305
+  Width=64
+  Top=29
+  Height=18
+  Browseindex=4
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_04
+  Property=HyperLabel=#UNIITEM,,,
+  Property=HyperLabel=,"Unid.",,
+
+CONTROL=SINGLELINEEDIT
+GUID=22D68F72-D5FB-45F2-AC36-FF83C920BB32
+  Name=ESPE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=97
+  Width=400
+  Top=85
+  Height=18
+  Browseindex=5
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_60
+  Property=HyperLabel=#ESPE,,,
+  Property=HyperLabel=,"Especificado:",,
+  Property=HyperLabel=,,,"RIRMI_ESPE"
+
+CONTROL=SINGLELINEEDIT
+GUID=8B14ED53-9776-4E60-919F-A2FC51BA1335
+  Name=ENCO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=97
+  Width=400
+  Top=109
+  Height=18
+  Browseindex=6
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#ENCO,,,
+  Property=HyperLabel=,"Encontrado",,
+  Property=HyperLabel=,,,"RIRMI_ENCO"
+
+CONTROL=SINGLELINEEDIT
+GUID=19B8323D-D87E-4B83-86D0-B4E48532F90A
+  Name=LAUDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=349
+  Width=40
+  Top=141
+  Height=18
+  Browseindex=7
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#LAUDO,,,
+  Property=HyperLabel=,"Laudo",,
+  Property=HyperLabel=,,,"RIRMI_RIRM"
+
+CONTROL=FIXEDTEXT
+GUID=1F361CDD-6875-48C3-8BCB-587036AA2071
+  Name=SC_RIRM1
+  Class=FIXEDTEXT
+  Caption=Laudo:  (A)provado (C)ondicional (R)ejeitado (E)sperando Resulta
+  Order=7
+  Left=5
+  Width=328
+  Top=141
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Laudo:  Aprovado Condicional Rejeitado Esperando Resultado",,
+  Property=HyperLabel=#SC_RIRM1,,,
+
+CONTROL=FIXEDTEXT
+GUID=98F62C78-68AC-4DED-9AC3-3CFD3F03741F
+  Name=SC_RIRM
+  Class=FIXEDTEXT
+  Caption=Rirm:
+  Order=8
+  Left=9
+  Width=40
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rirm:",,
+  Property=HyperLabel=#SC_RIRM,,,
+
+CONTROL=FIXEDTEXT
+GUID=AFC34DBB-1667-4BE3-9093-075CFD7AF368
+  Name=SC_ITEM
+  Class=FIXEDTEXT
+  Caption=Item:
+  Order=9
+  Left=93
+  Width=40
+  Top=9
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=#SC_ITEM,,,
+
+CONTROL=FIXEDTEXT
+GUID=2FFED051-703D-4583-A396-DE45A132B2CE
+  Name=SC_QTITEM
+  Class=FIXEDTEXT
+  Caption=Quantidade
+  Order=10
+  Left=169
+  Width=80
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Quantidade",,
+  Property=HyperLabel=#SC_QTITEM,,,
+
+CONTROL=FIXEDTEXT
+GUID=22330861-5C2A-4DE9-ABD7-4540809417D5
+  Name=FT5
+  Class=FIXEDTEXT
+  Caption=Unidade
+  Order=11
+  Left=305
+  Width=57
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Unidade",,
+  Property=HyperLabel=#FT5,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=5369BEA6-CEF9-452C-8E61-189B9F034C2C
+  Name=RIRM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=9
+  Width=70
+  Top=29
+  Height=18
+  Browseindex=0
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RIRM,,,
+  Property=HyperLabel=,"Rirm:",,
+  Property=HyperLabel=,,,"RIRMI_RIRM"
+
+CONTROL=FIXEDTEXT
+GUID=CB407674-3E6D-4602-89E6-3AB6FC7D1950
+  Name=FT6
+  Class=FIXEDTEXT
+  Caption=Descrição
+  Order=13
+  Left=7
+  Width=80
+  Top=55
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descrição",,
+  Property=HyperLabel=#FT6,,,
+
+CONTROL=COMBOBOX
+GUID=45BEF60F-B55F-46C8-B979-DE9FEADBE8F2
+  Name=TIPA
+  Class=COMBOBOX
+  Caption=
+  Order=14
+  Left=97
+  Width=199
+  Top=55
+  Height=77
+  Browseindex=2
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1075839234
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_03
+  Property=HyperLabel=#TIPA,,,
+  Property=HyperLabel=,"Tipo",,
+
+CONTROL=FIXEDTEXT
+GUID=5C645CF7-2B80-4091-A024-0EF68EB9239D
+  Name=SC_ESPE
+  Class=FIXEDTEXT
+  Caption=Especificado:
+  Order=15
+  Left=7
+  Width=78
+  Top=85
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Especificado:",,
+  Property=HyperLabel=#SC_ESPE,,,
+
+CONTROL=FIXEDTEXT
+GUID=8530E8B0-FD7B-40BD-807C-C1DAEC8A6A4E
+  Name=SC_ENCO
+  Class=FIXEDTEXT
+  Caption=Encontrado:
+  Order=16
+  Left=7
+  Width=74
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Encontrado:",,
+  Property=HyperLabel=#SC_ENCO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=13A89FF2-A7AA-4A03-9978-AEC087051EE2
+  Name=PULAAPU
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=381
+  Width=32
+  Top=33
+  Height=18
+  Browseindex=8
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#PULAAPU,,,
+  Property=HyperLabel=,"Apu",,
+  Property=HyperLabel=,,,"RIRMI_ITEM"
+
+CONTROL=FIXEDTEXT
+GUID=F6B43A9D-1F99-4B6E-92E4-D92BED2A35FA
+  Name=SC_ITEM1
+  Class=FIXEDTEXT
+  Caption=Apurar
+  Order=18
+  Left=381
+  Width=40
+  Top=13
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Apurar",,
+  Property=HyperLabel=#SC_ITEM1,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JRIMI
+

@@ -1,0 +1,324 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jbf01
+GUID=2FF9463D-7476-4A63-B72D-A73839D0BCB8
+  Name=jbf01
+  Class=DATAWINDOW
+  Caption=Itens Comprados
+  Order=0
+  Left=24
+  Width=525
+  Top=24
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Itens Comprados",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#jbf01,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=DD334C55-2025-4933-BA74-C7EE299B443B
+  Name=SC_VENDA
+  Class=FIXEDTEXT
+  Caption=Venda:
+  Order=1
+  Left=9
+  Width=40
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Venda:",,
+  Property=HyperLabel=#SC_VENDA,,,
+
+CONTROL=FIXEDTEXT
+GUID=211495D5-E89B-4B5C-A042-904824ADE566
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero:
+  Order=2
+  Left=101
+  Width=44
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=FIXEDTEXT
+GUID=D1160566-CFBD-42A3-9B06-56F52A2C10A2
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=3
+  Left=201
+  Width=40
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=0ACA9DF7-C606-4D56-B8C4-8C6DC2A97E30
+  Name=SC_DATA
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=4
+  Left=17
+  Width=32
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=#SC_DATA,,,
+
+CONTROL=FIXEDTEXT
+GUID=27BE7C2B-A14C-4562-8AEC-FC1438003FD8
+  Name=SC_VALOR
+  Class=FIXEDTEXT
+  Caption=Valor:
+  Order=5
+  Left=17
+  Width=32
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=#SC_VALOR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=2A5A745D-DA4D-4EA9-B1F9-6D3CAA4A62FA
+  Name=VENDA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=9
+  Width=76
+  Top=29
+  Height=20
+  Browseindex=0
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#VENDA,,,
+  Property=HyperLabel=,"Venda:",,
+  Property=HyperLabel=,,,"BF01_VENDA"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=756E1A96-C12A-49FF-A622-865FA94B88CF
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=93
+  Width=68
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"BF01_NUMERO"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=F5E31260-84CA-48FF-BD38-DE5193EBD191
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=197
+  Width=180
+  Top=29
+  Height=20
+  Browseindex=2
+  Browsesize=22
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"BF01_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=AC3CE60A-33BF-49D8-99CE-1A9D725975F3
+  Name=DATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=53
+  Width=124
+  Top=57
+  Height=20
+  Browseindex=3
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DATA,,,
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=,,,"BF01_DATA"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=47689CF5-F821-44D9-B5A9-4D200716732D
+  Name=VALOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=57
+  Width=80
+  Top=85
+  Height=20
+  Browseindex=4
+  Browsesize=16
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_10_2
+  Property=HyperLabel=#VALOR,,,
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=,,,"BF01_VALOR"
+  Property=InheritClassName=rightSle
+
+CONTROL=PUSHBUTTON
+GUID=D04FA0CC-68B5-4DC6-AB81-6F2ED6F1CA1A
+  Name=pornum
+  Class=PUSHBUTTON
+  Caption=
+  Order=11
+  Left=337
+  Width=32
+  Top=61
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_AZ
+  Property=HyperLabel=#pornum,,,
+
+CONTROL=PUSHBUTTON
+GUID=0F3D450E-A2C6-4BA3-B0BF-261A5109C645
+  Name=buscanum
+  Class=PUSHBUTTON
+  Caption=
+  Order=12
+  Left=301
+  Width=32
+  Top=61
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscanum,,,
+
+CONTROL=PUSHBUTTON
+GUID=6A4D9A8E-E90B-41D4-9AC9-05B45F32D378
+  Name=ESCFOR
+  Class=PUSHBUTTON
+  Caption=...
+  Order=13
+  Left=165
+  Width=28
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#ESCFOR,,,
+  Property=TooltipText="Escolher Cliente/Fornecedor"
+
+CONTROL=PUSHBUTTON
+GUID=D9807C93-0897-48B1-8483-820473F794E9
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=14
+  Left=381
+  Width=30
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+  Property=TooltipText="Escolher Cliente/Fornecedor"
+
+SUBCONTROLSEND
+DESIGNEREND = jbf01
+

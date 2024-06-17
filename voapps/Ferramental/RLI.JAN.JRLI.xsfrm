@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JRLI">
+    <Window Name="JRLI">
+      <Name>JRLI</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>42</Left>
+      <Top>42</Top>
+      <Width>420</Width>
+      <Height>401</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#JRLI,,,</HyperLabel>
+        <ViewAs>#BrowseView</ViewAs>
+        <ClipperKeys>True</ClipperKeys>
+      </ExProperties>
+    </Window>
+    <Control Name="SC_RL">
+      <Name>SC_RL</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Rl:</Caption>
+      <Order>1</Order>
+      <Left>9</Left>
+      <Top>9</Top>
+      <Width>16</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Rl:",,</HyperLabel>
+        <HyperLabel>#SC_RL,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CODME01">
+      <Name>SC_CODME01</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Maquina</Caption>
+      <Order>2</Order>
+      <Left>57</Left>
+      <Top>9</Top>
+      <Width>52</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Maquina",,</HyperLabel>
+        <HyperLabel>#SC_CODME01,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RL">
+      <Name>RL</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>25</Left>
+      <Top>9</Top>
+      <Width>23</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>4</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1216350336</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#RL,,,</HyperLabel>
+        <HyperLabel>,"Rl:",,</HyperLabel>
+        <HyperLabel>,,,"Rli_RL"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="CODME01">
+      <Name>CODME01</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>9</Order>
+      <Left>105</Left>
+      <Top>9</Top>
+      <Width>48</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1216350336</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_05</FieldSpec>
+        <HyperLabel>#CODME01,,,</HyperLabel>
+        <HyperLabel>,"Maq",,</HyperLabel>
+        <HyperLabel>,,,"Rli_CODME01"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="LUB01">
+      <Name>LUB01</Name>
+      <Class>RADIOBUTTONGROUP</Class>
+      <Caption>Fuso</Caption>
+      <Order>10</Order>
+      <Left>19</Left>
+      <Top>41</Top>
+      <Width>367</Width>
+      <Height>51</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>8</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073872903</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Fuso",,</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_01</FieldSpec>
+        <HyperLabel>#LUB01,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton1">
+      <Name>RadioButton1</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Satisfatorio</Caption>
+      <Order>11</Order>
+      <Left>41</Left>
+      <Top>61</Top>
+      <Width>79</Width>
+      <Height>19</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Satisfatorio",,</HyperLabel>
+        <Value>S</Value>
+        <HyperLabel>#RadioButton1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton2">
+      <Name>RadioButton2</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Não Satisf.</Caption>
+      <Order>12</Order>
+      <Left>149</Left>
+      <Top>60</Top>
+      <Width>80</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Não Satisf.",,</HyperLabel>
+        <Value>N</Value>
+        <HyperLabel>#RadioButton2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton3">
+      <Name>RadioButton3</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Não Aplicado</Caption>
+      <Order>13</Order>
+      <Left>242</Left>
+      <Top>60</Top>
+      <Width>120</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Não Aplicado",,</HyperLabel>
+        <Value>A</Value>
+        <HyperLabel>#RadioButton3,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="LUB02">
+      <Name>LUB02</Name>
+      <Class>RADIOBUTTONGROUP</Class>
+      <Caption>Graxa</Caption>
+      <Order>30</Order>
+      <Left>19</Left>
+      <Top>104</Top>
+      <Width>367</Width>
+      <Height>51</Height>
+      <BrowseIndex>3</BrowseIndex>
+      <BrowseSize>8</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073872903</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Graxa",,</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_01</FieldSpec>
+        <HyperLabel>#LUB02,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton16">
+      <Name>RadioButton16</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Satisfatorio</Caption>
+      <Order>31</Order>
+      <Left>41</Left>
+      <Top>125</Top>
+      <Width>79</Width>
+      <Height>19</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Satisfatorio",,</HyperLabel>
+        <Value>S</Value>
+        <HyperLabel>#RadioButton16,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton17">
+      <Name>RadioButton17</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Não Satisf</Caption>
+      <Order>32</Order>
+      <Left>149</Left>
+      <Top>125</Top>
+      <Width>80</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Não Satisf",,</HyperLabel>
+        <Value>N</Value>
+        <HyperLabel>#RadioButton17,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton18">
+      <Name>RadioButton18</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Não Aplicado</Caption>
+      <Order>33</Order>
+      <Left>242</Left>
+      <Top>125</Top>
+      <Width>120</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Não Aplicado",,</HyperLabel>
+        <Value>A</Value>
+        <HyperLabel>#RadioButton18,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="LUB03">
+      <Name>LUB03</Name>
+      <Class>RADIOBUTTONGROUP</Class>
+      <Caption>Pneumatica</Caption>
+      <Order>34</Order>
+      <Left>19</Left>
+      <Top>166</Top>
+      <Width>367</Width>
+      <Height>51</Height>
+      <BrowseIndex>4</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073872903</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Pneumatica",,</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_01</FieldSpec>
+        <HyperLabel>#LUB03,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton6">
+      <Name>RadioButton6</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Satisfatorio</Caption>
+      <Order>35</Order>
+      <Left>41</Left>
+      <Top>189</Top>
+      <Width>79</Width>
+      <Height>19</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Satisfatorio",,</HyperLabel>
+        <Value>S</Value>
+        <HyperLabel>#RadioButton6,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton7">
+      <Name>RadioButton7</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Não Satisf.</Caption>
+      <Order>36</Order>
+      <Left>149</Left>
+      <Top>189</Top>
+      <Width>80</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Não Satisf.",,</HyperLabel>
+        <Value>N</Value>
+        <HyperLabel>#RadioButton7,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton8">
+      <Name>RadioButton8</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Não Aplicado</Caption>
+      <Order>37</Order>
+      <Left>242</Left>
+      <Top>189</Top>
+      <Width>120</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Não Aplicado",,</HyperLabel>
+        <Value>A</Value>
+        <HyperLabel>#RadioButton8,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="LUB04">
+      <Name>LUB04</Name>
+      <Class>RADIOBUTTONGROUP</Class>
+      <Caption>Hidraulica</Caption>
+      <Order>38</Order>
+      <Left>19</Left>
+      <Top>228</Top>
+      <Width>367</Width>
+      <Height>51</Height>
+      <BrowseIndex>5</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073872903</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Hidraulica",,</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_01</FieldSpec>
+        <HyperLabel>#LUB04,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton9">
+      <Name>RadioButton9</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Satisfatorio</Caption>
+      <Order>40</Order>
+      <Left>41</Left>
+      <Top>250</Top>
+      <Width>79</Width>
+      <Height>19</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Satisfatorio",,</HyperLabel>
+        <Value>S</Value>
+        <HyperLabel>#RadioButton9,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton11">
+      <Name>RadioButton11</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Não Satisf.</Caption>
+      <Order>42</Order>
+      <Left>149</Left>
+      <Top>249</Top>
+      <Width>80</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Não Satisf.",,</HyperLabel>
+        <Value>N</Value>
+        <HyperLabel>#RadioButton11,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton13">
+      <Name>RadioButton13</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Não Aplicado</Caption>
+      <Order>44</Order>
+      <Left>242</Left>
+      <Top>249</Top>
+      <Width>120</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Não Aplicado",,</HyperLabel>
+        <Value>A</Value>
+        <HyperLabel>#RadioButton13,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="LUB05">
+      <Name>LUB05</Name>
+      <Class>RADIOBUTTONGROUP</Class>
+      <Caption>Caixa de Engrenagem</Caption>
+      <Order>45</Order>
+      <Left>18</Left>
+      <Top>290</Top>
+      <Width>371</Width>
+      <Height>51</Height>
+      <BrowseIndex>6</BrowseIndex>
+      <BrowseSize>10</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073872903</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Caixa de Engrenagem",,</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_01</FieldSpec>
+        <HyperLabel>#LUB05,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton12">
+      <Name>RadioButton12</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Satisfatorio</Caption>
+      <Order>46</Order>
+      <Left>37</Left>
+      <Top>313</Top>
+      <Width>83</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Satisfatorio",,</HyperLabel>
+        <Value>S</Value>
+        <HyperLabel>#RadioButton12,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton14">
+      <Name>RadioButton14</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Não Satisf.</Caption>
+      <Order>47</Order>
+      <Left>149</Left>
+      <Top>313</Top>
+      <Width>80</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Não Satisf.",,</HyperLabel>
+        <Value>N</Value>
+        <HyperLabel>#RadioButton14,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RadioButton15">
+      <Name>RadioButton15</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Não Aplicado</Caption>
+      <Order>48</Order>
+      <Left>245</Left>
+      <Top>313</Top>
+      <Width>88</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Não Aplicado",,</HyperLabel>
+        <Value>A</Value>
+        <HyperLabel>#RadioButton15,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

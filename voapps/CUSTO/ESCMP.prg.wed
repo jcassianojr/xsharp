@@ -1,0 +1,123 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,ESCMP
+GUID=1A1945B9-2266-48AB-9C16-D0DF5B75CB5F
+  Name=ESCMP
+  Class=DATADIALOG
+  Caption=DataDialog Caption
+  Order=0
+  Left=18
+  Width=728
+  Top=18
+  Height=302
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataDialog Caption",,
+  Property=HyperLabel=#ESCMP,,,
+
+SUBCONTROLSSTART
+CONTROL=LISTBOX
+GUID=F0E07EEC-0B2D-4729-8953-C776CC5DE95A
+  Name=LISTBOX
+  Class=LISTBOX
+  Caption=
+  Order=1
+  Left=14
+  Width=631
+  Top=13
+  Height=262
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1084293123
+  Exstyles=0
+  Property=HyperLabel=#LISTBOX,,,
+
+CONTROL=FIXEDTEXT
+GUID=5D22CE9C-6A50-459E-9495-F09107E4CFD0
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=4
+  Left=653
+  Width=64
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=3EC53948-391C-4BD8-B67E-722162021EB8
+  Name=cmdCancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=653
+  Width=64
+  Top=85
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#cmdCancelar,,,
+  Property=Image=ico_sair
+
+CONTROL=FIXEDTEXT
+GUID=80A64687-EB45-4DB6-88C9-CF7FBC4A184C
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=Escolher
+  Order=6
+  Left=653
+  Width=64
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Escolher",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=PUSHBUTTON
+GUID=8A8909D7-E04A-4F99-994A-83BE1153F794
+  Name=Escolher
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=653
+  Width=64
+  Top=13
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Escolher,,,
+  Property=Image=ico_ok
+
+SUBCONTROLSEND
+DESIGNEREND = ESCMP
+

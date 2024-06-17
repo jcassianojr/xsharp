@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="jrifpr">
+    <Window Name="jrifpr">
+      <Name>jrifpr</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Controle RIF/Produo</Caption>
+      <Order>0</Order>
+      <Left>26</Left>
+      <Top>26</Top>
+      <Width>434</Width>
+      <Height>320</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Controle RIF/Produo",,</HyperLabel>
+        <ViewAs>#FormView</ViewAs>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <HyperLabel>#jrifpr,,,</HyperLabel>
+        <InheritClassName>MYDataWindow</InheritClassName>
+      </ExProperties>
+    </Window>
+    <Control Name="SC_PRODUTO">
+      <Name>SC_PRODUTO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Produto:</Caption>
+      <Order>1</Order>
+      <Left>13</Left>
+      <Top>9</Top>
+      <Width>48</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Produto:",,</HyperLabel>
+        <HyperLabel>#SC_PRODUTO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_RIFULT">
+      <Name>SC_RIFULT</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Ultima RIF</Caption>
+      <Order>4</Order>
+      <Left>249</Left>
+      <Top>9</Top>
+      <Width>52</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ultima RIF",,</HyperLabel>
+        <HyperLabel>#SC_RIFULT,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_RIFTOT">
+      <Name>SC_RIFTOT</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Qtde Total</Caption>
+      <Order>5</Order>
+      <Left>249</Left>
+      <Top>29</Top>
+      <Width>52</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Qtde Total",,</HyperLabel>
+        <HyperLabel>#SC_RIFTOT,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_SEL100">
+      <Name>SC_SEL100</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Seleção 100%</Caption>
+      <Order>6</Order>
+      <Left>9</Left>
+      <Top>57</Top>
+      <Width>76</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Seleção 100%",,</HyperLabel>
+        <HyperLabel>#SC_SEL100,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="PRODUTO">
+      <Name>PRODUTO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>65</Left>
+      <Top>9</Top>
+      <Width>180</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>14</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_24</FieldSpec>
+        <HyperLabel>#PRODUTO,,,</HyperLabel>
+        <HyperLabel>,"Produto:",,</HyperLabel>
+        <HyperLabel>,,,"rifpr_PRODUTO"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="QTDE">
+      <Name>QTDE</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>9</Order>
+      <Left>161</Left>
+      <Top>33</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>6</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#QTDE,,,</HyperLabel>
+        <HyperLabel>,"Qtde:",,</HyperLabel>
+        <HyperLabel>,,,"rifpr_QTDE"</HyperLabel>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+        <Background>255 255 200</Background>
+      </ExProperties>
+    </Control>
+    <Control Name="RIF1200">
+      <Name>RIF1200</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>89</Left>
+      <Top>33</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#RIF1200,,,</HyperLabel>
+        <HyperLabel>,"Rif1200:",,</HyperLabel>
+        <HyperLabel>,,,"rifpr_RIF1200"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="RIFULT">
+      <Name>RIFULT</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>11</Order>
+      <Left>301</Left>
+      <Top>5</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>5</BrowseIndex>
+      <BrowseSize>8</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082198144</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#RIFULT,,,</HyperLabel>
+        <HyperLabel>,"Rifult:",,</HyperLabel>
+        <HyperLabel>,,,"rifpr_RIFULT"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="RIFTOT">
+      <Name>RIFTOT</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>12</Order>
+      <Left>301</Left>
+      <Top>29</Top>
+      <Width>116</Width>
+      <Height>20</Height>
+      <BrowseIndex>6</BrowseIndex>
+      <BrowseSize>12</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_15</FieldSpec>
+        <HyperLabel>#RIFTOT,,,</HyperLabel>
+        <HyperLabel>,"Riftot:",,</HyperLabel>
+        <HyperLabel>,,,"rifpr_RIFTOT"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="SEL100">
+      <Name>SEL100</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>13</Order>
+      <Left>161</Left>
+      <Top>53</Top>
+      <Width>92</Width>
+      <Height>20</Height>
+      <BrowseIndex>3</BrowseIndex>
+      <BrowseSize>8</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>DATE_FIELD</FieldSpec>
+        <HyperLabel>#SEL100,,,</HyperLabel>
+        <HyperLabel>,"Sel100:",,</HyperLabel>
+        <HyperLabel>,,,"rifpr_SEL100"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="RIFSEL">
+      <Name>RIFSEL</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>14</Order>
+      <Left>89</Left>
+      <Top>53</Top>
+      <Width>68</Width>
+      <Height>21</Height>
+      <BrowseIndex>4</BrowseIndex>
+      <BrowseSize>8</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#RIFSEL,,,</HyperLabel>
+        <HyperLabel>,"Rifsel:",,</HyperLabel>
+        <HyperLabel>,,,"rifpr_RIFSEL"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText7">
+      <Name>FixedText7</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>1200 Pecas</Caption>
+      <Order>15</Order>
+      <Left>9</Left>
+      <Top>33</Top>
+      <Width>60</Width>
+      <Height>21</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"1200 Pecas",,</HyperLabel>
+        <HyperLabel>#FixedText7,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="porov">
+      <Name>porov</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>16</Order>
+      <Left>353</Left>
+      <Top>53</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_az</Image>
+        <HyperLabel>#porov,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="buscaov">
+      <Name>buscaov</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>17</Order>
+      <Left>317</Left>
+      <Top>53</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_find</Image>
+        <HyperLabel>#buscaov,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DESTINO2">
+      <Name>SC_DESTINO2</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Foto</Caption>
+      <Order>18</Order>
+      <Left>269</Left>
+      <Top>85</Top>
+      <Width>40</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Foto",,</HyperLabel>
+        <HyperLabel>#SC_DESTINO2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="foto">
+      <Name>foto</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>19</Order>
+      <Left>269</Left>
+      <Top>53</Top>
+      <Width>40</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741888</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#foto,,,</HyperLabel>
+        <Image>ico_camera</Image>
+        <TooltipText>"Exibe foto do produto"</TooltipText>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

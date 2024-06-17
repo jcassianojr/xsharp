@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JCONTAS">
+    <Window Name="JCONTAS">
+      <Name>JCONTAS</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Plano de Contas</Caption>
+      <Order>0</Order>
+      <Left>22</Left>
+      <Top>22</Top>
+      <Width>420</Width>
+      <Height>320</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Plano de Contas",,</HyperLabel>
+        <ViewAs>#FormView</ViewAs>
+        <ClipperKeys>True</ClipperKeys>
+        <HyperLabel>#JCONTAS,,,</HyperLabel>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <InheritClassName>MYDataWindow</InheritClassName>
+      </ExProperties>
+    </Window>
+    <Control Name="SC_CODIGO">
+      <Name>SC_CODIGO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Codigo:</Caption>
+      <Order>1</Order>
+      <Left>21</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>#SC_CODIGO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DESCR">
+      <Name>SC_DESCR</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Descr:</Caption>
+      <Order>2</Order>
+      <Left>17</Left>
+      <Top>41</Top>
+      <Width>36</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Descr:",,</HyperLabel>
+        <HyperLabel>#SC_DESCR,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="CODIGO">
+      <Name>CODIGO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>61</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>8</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1216350336</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_04</FieldSpec>
+        <HyperLabel>#CODIGO,,,</HyperLabel>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>,,,"CONTAS_CODIGO"</HyperLabel>
+        <TooltipText>"Numero da Conta"</TooltipText>
+        <Background>255 255 200</Background>
+      </ExProperties>
+    </Control>
+    <Control Name="DESCR">
+      <Name>DESCR</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>61</Left>
+      <Top>41</Top>
+      <Width>260</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>35</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_35</FieldSpec>
+        <HyperLabel>#DESCR,,,</HyperLabel>
+        <HyperLabel>,"Descr:",,</HyperLabel>
+        <HyperLabel>,,,"CONTAS_DESCR"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="buscaNUM">
+      <Name>buscaNUM</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>105</Left>
+      <Top>5</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_find</Image>
+        <HyperLabel>#buscaNUM,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="cmdordenar">
+      <Name>cmdordenar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>141</Left>
+      <Top>5</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_az</Image>
+        <HyperLabel>#cmdordenar,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

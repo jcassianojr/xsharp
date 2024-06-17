@@ -1,0 +1,480 @@
+DESIGNERSTART = VOWindowEditor,DIALOGWINDOW,_LogonDialog
+GUID=4AA47D5E-0BAC-4002-AEBE-AE1CEC077C89
+  Name=_LogonDialog
+  Class=FORM:DIALOGWINDOW
+  Caption=Acesso ao Sistema:
+  Order=0
+  Left=0
+  Width=370
+  Top=0
+  Height=200
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=3234332800
+  Exstyles=0
+  Property=HyperLabel=,Acesso ao Sistema:
+  Property=HyperLabel=_LogonDialog
+  Property=HyperLabel=,,,login
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=27AF18C8-8A9A-430A-A0FC-78FE28076573
+  Name=OKButton
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=3
+  Left=294
+  Width=60
+  Top=9
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=OKButton
+  Property=HyperLabel=,,,login
+  Property=TooltipText=Clique Para Acessar o Sistema
+  Property=Image=ICO_CHAVE2
+CONTROL=SINGLELINEEDIT
+GUID=78CA5E42-43AF-4D8E-A66E-370687E1C567
+  Name=empresa
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=173
+  Width=47
+  Top=73
+  Height=20
+  Browseindex=4
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=512
+  Property=HyperLabel=empresa
+  Property=FieldSpec=PADRAO_num_04
+  Property=TooltipText=Ano Inicial
+CONTROL=SINGLELINEEDIT
+GUID=DDE9FE87-C3A2-4979-8AED-D2442296A3A6
+  Name=ano
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=93
+  Width=47
+  Top=73
+  Height=20
+  Browseindex=3
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=512
+  Property=HyperLabel=ano
+  Property=FieldSpec=PADRAO_num_04
+  Property=TooltipText=Ano Inicial
+  Property=FocusSelect=FSEL_ALL
+CONTROL=SINGLELINEEDIT
+GUID=EDBFF55F-6D19-4525-A285-6FF2A9F51283
+  Name=mes
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=1
+  Order=4
+  Left=9
+  Width=47
+  Top=73
+  Height=20
+  Browseindex=2
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=512
+  Property=HyperLabel=,1
+  Property=HyperLabel=mes
+  Property=FieldSpec=PADRAO_num_02
+  Property=TooltipText=Mes Inicial
+  Property=FocusSelect=FSEL_ALL
+CONTROL=SINGLELINEEDIT
+GUID=6B9F5A6A-A21C-405E-8714-E10A7D42FCEF
+  Name=Password
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=149
+  Width=127
+  Top=25
+  Height=26
+  Browseindex=1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196136
+  Exstyles=0
+  Property=HyperLabel=Password
+  Property=HyperLabel=,,,login
+  Property=TooltipText=Digite Sua Senha de Acesso
+  Property=FocusSelect=FSEL_ALL
+CONTROL=SINGLELINEEDIT
+GUID=34862863-A5C2-4509-844D-5CDDAF5A13F3
+  Name=Name
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=13
+  Width=127
+  Top=25
+  Height=26
+  Browseindex=0
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=Name
+  Property=HyperLabel=,,,login
+  Property=TooltipText=Digite o Nome Para Acesso ao Sistema
+  Property=FocusSelect=FSEL_ALL
+CONTROL=PUSHBUTTON
+GUID=BD169B9C-0399-4DB4-8C61-39B22BBE6A07
+  Name=CancelButton
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=7
+  Left=293
+  Width=60
+  Top=81
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=CancelButton
+  Property=HyperLabel=,,,login
+  Property=TooltipText=Clique para  Não Acessar 
+  Property=Image=ICO_SAIR
+CONTROL=FIXEDTEXT
+GUID=FA3957BC-2AF4-4F2B-9FBA-6F0CCD8F268A
+  Name=theFixedText1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=&Nome:
+  Order=8
+  Left=13
+  Width=42
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,&Nome:
+  Property=HyperLabel=theFixedText1
+CONTROL=FIXEDTEXT
+GUID=D471FE94-35DC-40B4-BA22-7C4D7A1DB8E8
+  Name=theFixedText2
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=&Senha:
+  Order=9
+  Left=149
+  Width=44
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,&Senha:
+  Property=HyperLabel=theFixedText2
+CONTROL=FIXEDTEXT
+GUID=C5562455-9FFB-4C0F-89AD-131FBA74A724
+  Name=x
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Cancelar
+  Order=10
+  Left=293
+  Width=60
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,Cancelar
+  Property=HyperLabel=x
+CONTROL=FIXEDTEXT
+GUID=6BBCC4B4-D6A8-4C4B-9557-876E534860FB
+  Name=x1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Acessar
+  Order=11
+  Left=293
+  Width=60
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,Acessar
+  Property=HyperLabel=x1
+CONTROL=FIXEDTEXT
+GUID=89ACA3A0-26B2-4C49-9842-3F1F820609FB
+  Name=x2
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Ajuda
+  Order=12
+  Left=13
+  Width=60
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,Ajuda
+  Property=HyperLabel=x2
+CONTROL=PUSHBUTTON
+GUID=C04C7CC7-F1A6-4211-A6D9-C964B179F3E2
+  Name=Ajuda
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=13
+  Left=13
+  Width=60
+  Top=105
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=Ajuda
+  Property=HyperLabel=,,,login
+  Property=TooltipText=Clique Para Acessar a Ajuda
+  Property=Image=ICO_AJUDA
+CONTROL=PUSHBUTTON
+GUID=F90EA3D5-966C-4951-824D-A2CB932E182C
+  Name=cmdmenos2
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-
+  Order=14
+  Left=141
+  Width=20
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-
+  Property=HyperLabel=cmdmenos2
+CONTROL=PUSHBUTTON
+GUID=7C156015-AF4B-4F7C-82E4-139183DCA983
+  Name=cmdmais2
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=+
+  Order=15
+  Left=141
+  Width=20
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,+
+  Property=HyperLabel=cmdmais2
+CONTROL=FIXEDTEXT
+GUID=7CD986C0-FF0D-4BA6-B595-42B95BC1A98D
+  Name=FixedText2
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Ano
+  Order=16
+  Left=97
+  Width=36
+  Top=57
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ano
+  Property=HyperLabel=FixedText2
+CONTROL=PUSHBUTTON
+GUID=ECD1AB1E-809B-4AEB-957D-192B87472781
+  Name=cmdmenos
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-
+  Order=17
+  Left=61
+  Width=20
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-
+  Property=HyperLabel=cmdmenos
+CONTROL=PUSHBUTTON
+GUID=65988D47-E6A0-45D8-9F0E-E36564E96401
+  Name=cmdmais
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=+
+  Order=18
+  Left=61
+  Width=20
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,+
+  Property=HyperLabel=cmdmais
+CONTROL=FIXEDTEXT
+GUID=366691CF-F3E2-4E6C-A7AC-C5E4BB22429B
+  Name=FixedText1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Mes
+  Order=19
+  Left=13
+  Width=36
+  Top=57
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Mes
+  Property=HyperLabel=FixedText1
+CONTROL=PUSHBUTTON
+GUID=C977E894-7F14-4A20-9A3D-5FFF363358BB
+  Name=cmdmenos3
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-
+  Order=20
+  Left=225
+  Width=20
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-
+  Property=HyperLabel=cmdmenos3
+CONTROL=PUSHBUTTON
+GUID=4A81C48A-EB01-4885-8AA9-716CFB81E74A
+  Name=cmdmais3
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=+
+  Order=21
+  Left=225
+  Width=20
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,+
+  Property=HyperLabel=cmdmais3
+CONTROL=FIXEDTEXT
+GUID=DE1BDF8E-D1D6-4A25-BD6A-7D7C245222FF
+  Name=FixedText3
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Empresa
+  Order=22
+  Left=173
+  Width=44
+  Top=57
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Empresa
+  Property=HyperLabel=FixedText3
+CONTROL=PROGRESSBAR
+GUID=65EC2717-97D0-4600-B837-7F6808721802
+  Name=ProgBar
+  Class=CONTROL:COMMONCONTROL:PROGRESSBAR
+  Caption=
+  Order=23
+  Left=13
+  Width=309
+  Top=169
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=ProgBar
+  Property=Range=0
+  Property=Range=,100
+SUBCONTROLSEND
+DESIGNEREND = _LogonDialog
+
+

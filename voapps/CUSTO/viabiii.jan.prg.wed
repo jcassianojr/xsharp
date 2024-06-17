@@ -1,0 +1,635 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JVIII
+GUID=A5A267F6-DCB7-45F3-B4BF-7419C80D877B
+  Name=JVIII
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=46
+  Width=517
+  Top=46
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#JVIII,,,
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=FA89BCD2-E975-4E70-B149-14DE9B96AB7B
+  Name=SC_OV
+  Class=FIXEDTEXT
+  Caption=Ov:
+  Order=1
+  Left=9
+  Width=20
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ov:",,
+  Property=HyperLabel=#SC_OV,,,
+
+CONTROL=FIXEDTEXT
+GUID=5A1013FF-68A8-4D29-9EB6-C366E86219C7
+  Name=SC_DADO
+  Class=FIXEDTEXT
+  Caption=Dado:
+  Order=3
+  Left=9
+  Width=32
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Dado:",,
+  Property=HyperLabel=#SC_DADO,,,
+
+CONTROL=FIXEDTEXT
+GUID=3501B756-2182-43F7-B46F-3257B4F8CAA7
+  Name=SC_REV
+  Class=FIXEDTEXT
+  Caption=Rev:
+  Order=4
+  Left=377
+  Width=28
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rev:",,
+  Property=HyperLabel=#SC_REV,,,
+
+CONTROL=FIXEDTEXT
+GUID=BF45B2B8-8B91-4AA0-8DD8-CE3A6BD58934
+  Name=SC_SITUACAO
+  Class=FIXEDTEXT
+  Caption=Situação:
+  Order=5
+  Left=385
+  Width=48
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Situação:",,
+  Property=HyperLabel=#SC_SITUACAO,,,
+
+CONTROL=FIXEDTEXT
+GUID=C159F500-FEE0-41A3-83E6-15D5BC0FCB4A
+  Name=SC_PRECO
+  Class=FIXEDTEXT
+  Caption=Preço:
+  Order=6
+  Left=17
+  Width=36
+  Top=137
+  Height=12
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Preço:",,
+  Property=HyperLabel=#SC_PRECO,,,
+
+CONTROL=FIXEDTEXT
+GUID=2E997CDD-BCEE-4B69-AB5A-1FDBB8C49F19
+  Name=SC_PRECODT
+  Class=FIXEDTEXT
+  Caption=Data
+  Order=7
+  Left=121
+  Width=44
+  Top=137
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=#SC_PRECODT,,,
+
+CONTROL=FIXEDTEXT
+GUID=F6AF6365-6D4D-497D-B2FF-8F441C44BB64
+  Name=SC_PRECOUN
+  Class=FIXEDTEXT
+  Caption=Unidade
+  Order=8
+  Left=189
+  Width=48
+  Top=137
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Unidade",,
+  Property=HyperLabel=#SC_PRECOUN,,,
+
+CONTROL=FIXEDTEXT
+GUID=ABEDBCED-0A0B-4C83-8142-F759A3F972AD
+  Name=SC_CLIFOR
+  Class=FIXEDTEXT
+  Caption=Fornecedor
+  Order=9
+  Left=233
+  Width=60
+  Top=137
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fornecedor",,
+  Property=HyperLabel=#SC_CLIFOR,,,
+
+CONTROL=FIXEDTEXT
+GUID=3A741B94-758F-4301-91E6-08C3A6D3C20A
+  Name=SC_APROVACAO
+  Class=FIXEDTEXT
+  Caption=Condicional
+  Order=11
+  Left=9
+  Width=64
+  Top=245
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Condicional",,
+  Property=HyperLabel=#SC_APROVACAO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=E39E5DAC-07CB-44DD-8524-585EE2DED379
+  Name=OV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=5
+  Width=56
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#OV,,,
+  Property=HyperLabel=,"Ov:",,
+  Property=HyperLabel=,,,"VIABIII_OV"
+
+CONTROL=SINGLELINEEDIT
+GUID=00C05E82-A49E-4C2D-B008-A96360B9E54D
+  Name=REV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=417
+  Width=84
+  Top=45
+  Height=20
+  Browseindex=3
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_10
+  Property=HyperLabel=#REV,,,
+  Property=HyperLabel=,"Rev:",,
+  Property=HyperLabel=,,,"VIABIII_REV"
+  Property=FocusSelect=FSEL_HOME
+
+CONTROL=SINGLELINEEDIT
+GUID=89BB02C4-F00C-46CF-A992-EF836E4B8BB8
+  Name=SITUACAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=437
+  Width=24
+  Top=13
+  Height=20
+  Browseindex=4
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#SITUACAO,,,
+  Property=HyperLabel=,"S",,
+  Property=HyperLabel=,,,"VIABIII_SITUACAO"
+
+CONTROL=SINGLELINEEDIT
+GUID=98EB5A29-C32F-465F-BB70-1B2C089B8A56
+  Name=PRECO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=17
+  Width=96
+  Top=153
+  Height=20
+  Browseindex=5
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=HyperLabel=#PRECO,,,
+  Property=HyperLabel=,"Preco:",,
+  Property=HyperLabel=,,,"VIABIII_PRECO"
+
+CONTROL=SINGLELINEEDIT
+GUID=5A795023-79A5-4AF1-B77B-ADA6359AE10D
+  Name=PRECODT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=117
+  Width=68
+  Top=153
+  Height=20
+  Browseindex=6
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#PRECODT,,,
+  Property=HyperLabel=,"Precodt:",,
+  Property=HyperLabel=,,,"VIABIII_PRECODT"
+
+CONTROL=SINGLELINEEDIT
+GUID=E109851E-344B-4210-A076-63D4475895F2
+  Name=PRECOUN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=193
+  Width=36
+  Top=153
+  Height=20
+  Browseindex=7
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#PRECOUN,,,
+  Property=HyperLabel=,"Precoun:",,
+  Property=HyperLabel=,,,"VIABIII_PRECOUN"
+
+CONTROL=SINGLELINEEDIT
+GUID=765B55B3-F5BD-4D93-9995-3B9D9F9F7742
+  Name=CLIFOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=229
+  Width=68
+  Top=153
+  Height=20
+  Browseindex=8
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#CLIFOR,,,
+  Property=HyperLabel=,"Clifor:",,
+  Property=HyperLabel=,,,"VIABIII_CLIFOR"
+
+CONTROL=SINGLELINEEDIT
+GUID=909AF75B-2AA9-4DEA-B50F-7EC5765561FB
+  Name=CLICOG
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=301
+  Width=96
+  Top=153
+  Height=20
+  Browseindex=9
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_12
+  Property=HyperLabel=#CLICOG,,,
+  Property=HyperLabel=,"Clicog:",,
+  Property=HyperLabel=,,,"VIABIII_CLICOG"
+
+CONTROL=SINGLELINEEDIT
+GUID=E34A2921-4BE8-4D9C-A30F-F85EF980F05E
+  Name=APROVACAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=81
+  Width=24
+  Top=245
+  Height=20
+  Browseindex=5
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#APROVACAO,,,
+  Property=HyperLabel=,"A",,
+  Property=HyperLabel=,,,"VIABIII_APROVACAO"
+
+CONTROL=GROUPBOX
+GUID=C41806B1-A481-4D30-900B-247F8870702F
+  Name=GroupBox1
+  Class=GROUPBOX
+  Caption=Cotação
+  Order=23
+  Left=5
+  Width=500
+  Top=121
+  Height=60
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Cotação",,
+  Property=HyperLabel=#GroupBox1,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=B18AFD30-9920-4157-9D3C-7520F038698B
+  Name=TIPO
+  Class=RADIOBUTTONGROUP
+  Caption=Tipo
+  Order=24
+  Left=73
+  Width=268
+  Top=10
+  Height=55
+  Browseindex=1
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Tipo",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#TIPO,,,
+
+CONTROL=RADIOBUTTON
+GUID=6FAF28F3-2BA3-4C20-8827-16D7CC9AE5EF
+  Name=RadioButton1
+  Class=RADIOBUTTON
+  Caption=Desenho
+  Order=25
+  Left=89
+  Width=72
+  Top=33
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Desenho",,
+  Property=Value=D
+  Property=HyperLabel=#RadioButton1,,,
+
+CONTROL=RADIOBUTTON
+GUID=791E3EAB-5BC6-4C10-BE7D-56AA3C02CE91
+  Name=RadioButton2
+  Class=RADIOBUTTON
+  Caption=Norma
+  Order=26
+  Left=177
+  Width=67
+  Top=33
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Norma",,
+  Property=Value=N
+  Property=HyperLabel=#RadioButton2,,,
+
+CONTROL=RADIOBUTTON
+GUID=F9B2D277-786B-4EEF-9520-8909A7DDA876
+  Name=RadioButton3
+  Class=RADIOBUTTON
+  Caption=Cotação
+  Order=27
+  Left=265
+  Width=64
+  Top=33
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Cotação",,
+  Property=Value=C
+  Property=HyperLabel=#RadioButton3,,,
+
+CONTROL=FIXEDTEXT
+GUID=41DB0EC2-1415-494F-B2C5-29D430FA2A17
+  Name=SC_DADO1
+  Class=FIXEDTEXT
+  Caption=Obs:
+  Order=28
+  Left=9
+  Width=32
+  Top=185
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Obs:",,
+  Property=HyperLabel=#SC_DADO1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=237A630F-AA08-480D-B1FB-D2754DC026FE
+  Name=APROBS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=30
+  Left=113
+  Width=360
+  Top=245
+  Height=20
+  Browseindex=-1
+  Browsesize=38
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_255
+  Property=HyperLabel=#APROBS,,,
+  Property=HyperLabel=,"Obs:",,
+  Property=FocusSelect=FSEL_HOME
+
+CONTROL=SINGLELINEEDIT
+GUID=143F0C05-18D9-4582-B957-DFCBFAE594C4
+  Name=DATALC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=31
+  Left=401
+  Width=100
+  Top=153
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATALC,,,
+  Property=HyperLabel=,"Precodt:",,
+  Property=HyperLabel=,,,"VIABIII_PRECODT"
+  Property=InheritClassName=DateSle
+
+CONTROL=FIXEDTEXT
+GUID=B9466F9A-1BED-4096-BACA-099F7A5AD82D
+  Name=SC_PRECODT1
+  Class=FIXEDTEXT
+  Caption=Cotar até/Prazo
+  Order=32
+  Left=393
+  Width=84
+  Top=137
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cotar até/Prazo",,
+  Property=HyperLabel=#SC_PRECODT1,,,
+
+CONTROL=MULTILINEEDIT
+GUID=CC59C63D-C54B-43B7-A482-EC7806A29F7C
+  Name=sitobs
+  Class=MULTILINEEDIT
+  Caption=
+  Order=33
+  Left=45
+  Width=447
+  Top=185
+  Height=51
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082200260
+  Exstyles=512
+  Property=HyperLabel=#sitobs,,,
+  Property=FieldSpec=PADRAO_CHAR_255
+
+CONTROL=MULTILINEEDIT
+GUID=19B5703D-6B6F-4F4C-BB6D-9564DD657658
+  Name=dado
+  Class=MULTILINEEDIT
+  Caption=
+  Order=34
+  Left=5
+  Width=492
+  Top=69
+  Height=48
+  Browseindex=2
+  Browsesize=39
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082200260
+  Exstyles=512
+  Property=HyperLabel=#dado,,,
+  Property=FieldSpec=PADRAO_CHAR_255
+  Property=HyperLabel=,"Descricao",,
+
+SUBCONTROLSEND
+DESIGNEREND = JVIII
+

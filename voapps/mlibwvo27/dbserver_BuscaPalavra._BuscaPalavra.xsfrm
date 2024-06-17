@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="_BuscaPalavra">
+    <Window Name="_BuscaPalavra">
+      <Name>_BuscaPalavra</Name>
+      <Class>DIALOGWINDOW</Class>
+      <Caption>Localizar Palavra</Caption>
+      <Order>0</Order>
+      <Left>55</Left>
+      <Top>42</Top>
+      <Width>465</Width>
+      <Height>386</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>2160724100</Styles>
+      <ExStyles>257</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Localizar Palavra",,</HyperLabel>
+        <HyperLabel>#_BuscaPalavra,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="ListBox1">
+      <Name>ListBox1</Name>
+      <Class>LISTBOX</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>9</Left>
+      <Top>33</Top>
+      <Width>361</Width>
+      <Height>283</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1085280515</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FillUsing>ZARR</FillUsing>
+        <HyperLabel>#ListBox1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText9">
+      <Name>theFixedText9</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Retornar</Caption>
+      <Order>2</Order>
+      <Left>381</Left>
+      <Top>161</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Retornar",,</HyperLabel>
+        <HyperLabel>#theFixedText9,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Cancelar">
+      <Name>Cancelar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>381</Left>
+      <Top>113</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Cancelar,,,</HyperLabel>
+        <TooltipText>"Clique aqui Para Cancelar"</TooltipText>
+        <Image>ICO_SAIR</Image>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText11">
+      <Name>theFixedText11</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Escolher</Caption>
+      <Order>4</Order>
+      <Left>381</Left>
+      <Top>89</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Escolher",,</HyperLabel>
+        <HyperLabel>#theFixedText11,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Escolher">
+      <Name>Escolher</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>381</Left>
+      <Top>41</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Escolher,,,</HyperLabel>
+        <Image>ICO_OK</Image>
+      </ExProperties>
+    </Control>
+    <Control Name="BUSCA">
+      <Name>BUSCA</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>9</Left>
+      <Top>5</Top>
+      <Width>356</Width>
+      <Height>24</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Background>255 255 200</Background>
+        <HyperLabel>#BUSCA,,,</HyperLabel>
+        <NewFont>14:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

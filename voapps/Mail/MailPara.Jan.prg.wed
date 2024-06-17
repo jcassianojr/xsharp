@@ -1,0 +1,109 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JMailPara
+GUID=8CFD3382-5D6C-483C-AA96-08E97FBAA078
+  Name=JMailPara
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=12
+  Width=420
+  Top=12
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JMailPara,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=EE29ABDA-A457-4863-B2B9-F243B5E18BDF
+  Name=SC_ERRO
+  Class=FIXEDTEXT
+  Caption=Erro:
+  Order=1
+  Left=22
+  Width=28
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Erro:",,
+  Property=HyperLabel=#SC_ERRO,,,
+
+CONTROL=FIXEDTEXT
+GUID=4E62171B-BD88-4F49-9A24-AA37B5B0491E
+  Name=SC_DESTINO
+  Class=FIXEDTEXT
+  Caption=Destino:
+  Order=2
+  Left=22
+  Width=44
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Destino:",,
+  Property=HyperLabel=#SC_DESTINO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=8485CCA9-D61D-461C-A381-EEA8B04E3EF5
+  Name=ERRO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=82
+  Width=68
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=19
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_08
+  Property=HyperLabel=#ERRO,,,
+  Property=HyperLabel=,"Erro:",,
+  Property=HyperLabel=,,,"MAILPARA_ERRO"
+
+CONTROL=SINGLELINEEDIT
+GUID=AC57EF41-16DB-4A68-891C-BCBFBE88FA63
+  Name=DESTINO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=82
+  Width=96
+  Top=50
+  Height=20
+  Browseindex=1
+  Browsesize=19
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_12
+  Property=HyperLabel=#DESTINO,,,
+  Property=HyperLabel=,"Destino:",,
+  Property=HyperLabel=,,,"MAILPARA_DESTINO"
+
+SUBCONTROLSEND
+DESIGNEREND = JMailPara
+

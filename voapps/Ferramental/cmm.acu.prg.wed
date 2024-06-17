@@ -1,0 +1,307 @@
+DESIGNERSTART = VOWindowEditor,DIALOGWINDOW,jcmmacu
+GUID=40B0994D-B1DC-4AF6-B154-62B249E819EB
+  Name=jcmmacu
+  Class=DIALOGWINDOW
+  Caption=Acumular Consumo Médio Mensal
+  Order=0
+  Left=20
+  Width=400
+  Top=20
+  Height=240
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=2160590980
+  Exstyles=257
+  Property=HyperLabel=,"Acumular Consumo Médio Mensal",,
+  Property=HyperLabel=#jcmmacu,,,
+
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=DBC31FA6-7291-4B54-B179-F99521E1300E
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=Cancelar
+  Order=1
+  Left=289
+  Width=80
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Cancelar",,
+  Property=HyperLabel=#Cancelar,,,
+
+CONTROL=PUSHBUTTON
+GUID=9B248945-7693-4495-BA81-55623F4B9B55
+  Name=Apurar
+  Class=PUSHBUTTON
+  Caption=Apurar
+  Order=2
+  Left=290
+  Width=80
+  Top=70
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Apurar",,
+  Property=HyperLabel=#Apurar,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=3AD43B5D-5101-45CF-A3DE-3FC888B407D1
+  Name=ANO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=165
+  Width=80
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082204288
+  Exstyles=512
+  Property=HyperLabel=#ANO,,,
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=93CCC46E-C433-43C8-B788-01E2073C28F0
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Ano:
+  Order=4
+  Left=169
+  Width=40
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ano:",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=CB25564B-460A-487B-8789-23BD373D82A0
+  Name=MES
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=57
+  Width=80
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082204288
+  Exstyles=512
+  Property=HyperLabel=#MES,,,
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=FFD3542C-3C9B-4876-9835-B178BCE9390B
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Mes:
+  Order=6
+  Left=57
+  Width=32
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mes:",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=PUSHBUTTON
+GUID=5E9248DE-541A-44E0-85BE-1BD147C2D431
+  Name=cmdmenos2
+  Class=PUSHBUTTON
+  Caption=-
+  Order=7
+  Left=229
+  Width=20
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"-",,
+  Property=HyperLabel=#cmdmenos2,,,
+
+CONTROL=PUSHBUTTON
+GUID=43FB76B6-C44D-473E-8D5C-BDE1939B7F07
+  Name=cmdmais2
+  Class=PUSHBUTTON
+  Caption=+
+  Order=8
+  Left=209
+  Width=20
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"+",,
+  Property=HyperLabel=#cmdmais2,,,
+
+CONTROL=PUSHBUTTON
+GUID=51A09720-7E5B-4AA8-A2F6-3809D02BFEBC
+  Name=cmdmenos
+  Class=PUSHBUTTON
+  Caption=-
+  Order=9
+  Left=121
+  Width=20
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"-",,
+  Property=HyperLabel=#cmdmenos,,,
+
+CONTROL=PUSHBUTTON
+GUID=2208A853-14C4-42E4-BF53-FAF321D728EB
+  Name=cmdmais
+  Class=PUSHBUTTON
+  Caption=+
+  Order=10
+  Left=101
+  Width=20
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"+",,
+  Property=HyperLabel=#cmdmais,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=9D475240-0C3B-4B1B-A07B-D59B0E7001CA
+  Name=Datauso
+  Class=RADIOBUTTONGROUP
+  Caption=Usar
+  Order=11
+  Left=44
+  Width=289
+  Top=135
+  Height=50
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Usar",,
+  Property=HyperLabel=#Datauso,,,
+
+CONTROL=RADIOBUTTON
+GUID=B1BFD443-47AB-495E-9B0A-BDD619ACB743
+  Name=RadioButton1
+  Class=RADIOBUTTON
+  Caption=Data
+  Order=12
+  Left=57
+  Width=53
+  Top=153
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=Value=D
+  Property=HyperLabel=#RadioButton1,,,
+
+CONTROL=RADIOBUTTON
+GUID=094945E8-3499-481D-A3F1-3C9C4B0C349C
+  Name=DataInicial
+  Class=RADIOBUTTON
+  Caption=DataInicial
+  Order=13
+  Left=125
+  Width=84
+  Top=153
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"DataInicial",,
+  Property=Value=I
+  Property=HyperLabel=#DataInicial,,,
+
+CONTROL=RADIOBUTTON
+GUID=61436258-C69F-4AE3-8B6A-5969CA35A5CB
+  Name=DataFinal
+  Class=RADIOBUTTON
+  Caption=DataFinal
+  Order=14
+  Left=229
+  Width=76
+  Top=153
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"DataFinal",,
+  Property=Value=F
+  Property=HyperLabel=#DataFinal,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jcmmacu
+
