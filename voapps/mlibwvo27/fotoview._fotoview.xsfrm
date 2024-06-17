@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="_fotoview">
+    <Window Name="_fotoview">
+      <Name>_fotoview</Name>
+      <Class>DATADIALOG</Class>
+      <Caption>Visualizar</Caption>
+      <Order>0</Order>
+      <Left>20</Left>
+      <Top>20</Top>
+      <Width>381</Width>
+      <Height>240</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Visualizar",,</HyperLabel>
+        <HyperLabel>#_fotoview,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="FOTO">
+      <Name>FOTO</Name>
+      <Class>CUSTOMCONTROL</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>13</Left>
+      <Top>33</Top>
+      <Width>240</Width>
+      <Height>192</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#FOTO,,,</HyperLabel>
+        <InheritClassName>FabPaintLibCtrl</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText9">
+      <Name>theFixedText9</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Retornar</Caption>
+      <Order>4</Order>
+      <Left>289</Left>
+      <Top>89</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Retornar",,</HyperLabel>
+        <HyperLabel>#theFixedText9,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Cancelar">
+      <Name>Cancelar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>289</Left>
+      <Top>37</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Cancelar,,,</HyperLabel>
+        <Image>ico_sair</Image>
+      </ExProperties>
+    </Control>
+    <Control Name="TITULO">
+      <Name>TITULO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>13</Left>
+      <Top>6</Top>
+      <Width>352</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#TITULO,,,</HyperLabel>
+        <NewFont>12:Times New Roman:Bold</NewFont>
+        <Background>255 255 200</Background>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

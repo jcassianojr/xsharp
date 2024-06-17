@@ -1,0 +1,701 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jpcortei
+GUID=3DC6B228-7771-4F1B-A4D6-E1B8D8E19338
+  Name=jpcortei
+  Class=DATAWINDOW
+  Caption=
+  Order=0
+  Left=52
+  Width=555
+  Top=52
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#jpcortei,,,
+  Property=ViewAs=#BrowseView
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=3C1A2F6A-4D71-470B-B575-B9DFBC5FEF7C
+  Name=PRAZO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=145
+  Width=104
+  Top=5
+  Height=20
+  Browseindex=8
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#PRAZO,,,
+  Property=HyperLabel=,"Prazo",,
+  Property=HyperLabel=,,,"PCORTEI_PRAZO"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=DC6A3515-13DD-4627-B376-85D8F2CACFD7
+  Name=QTDE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=5
+  Width=68
+  Top=89
+  Height=20
+  Browseindex=3
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#QTDE,,,
+  Property=HyperLabel=,,,"PCORTEI_PESO"
+  Property=InheritClassName=rightSle
+  Property=HyperLabel=,"Qtde:",,
+
+CONTROL=SINGLELINEEDIT
+GUID=942FA591-7720-44E8-B420-05E85CA063A7
+  Name=ITELAR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=77
+  Width=84
+  Top=89
+  Height=20
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_10_2
+  Property=HyperLabel=#ITELAR,,,
+  Property=HyperLabel=,"Larg.",,
+  Property=HyperLabel=,,,"PCORTEI_ITELAR"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=E42D3D31-5FA6-48B9-918C-22B4DCB74928
+  Name=ITECOM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=165
+  Width=84
+  Top=89
+  Height=20
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_10_2
+  Property=HyperLabel=#ITECOM,,,
+  Property=HyperLabel=,"Comp",,
+  Property=HyperLabel=,,,"PCORTEI_ITECOM"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=194E5AAB-A7E4-45E2-820D-EEDD67BF5B2E
+  Name=ROLOS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=253
+  Width=44
+  Top=89
+  Height=20
+  Browseindex=6
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_03
+  Property=HyperLabel=#ROLOS,,,
+  Property=HyperLabel=,"Rolos",,
+  Property=HyperLabel=,,,"PCORTEI_ROLOS"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=A70FFD83-A910-4385-85D5-3E8D6C66090B
+  Name=PESO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=301
+  Width=68
+  Top=89
+  Height=20
+  Browseindex=7
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#PESO,,,
+  Property=HyperLabel=,"Peso",,
+  Property=HyperLabel=,,,"PCORTEI_PESO"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=114DA9A7-52AA-419D-84A2-B0E686F4BED7
+  Name=APLICACAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=105
+  Width=272
+  Top=113
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_40
+  Property=HyperLabel=#APLICACAO,,,
+  Property=HyperLabel=,"Larg.",,
+  Property=HyperLabel=,,,"PCORTEI_ITELAR"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=CCA82781-8B42-4F79-8A96-B667FE438EFF
+  Name=RETNF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=81
+  Width=68
+  Top=137
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RETNF,,,
+  Property=HyperLabel=,"Nfusina:",,
+  Property=HyperLabel=,,,"PCORTE_NFUSINA"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=BCF1C493-6FC4-4337-93D2-E9B15F0FE03C
+  Name=RETDATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=181
+  Width=104
+  Top=137
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#RETDATA,,,
+  Property=HyperLabel=,"Esp:",,
+  Property=HyperLabel=,,,"PCORTE_ESP"
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=358FD02D-B5D2-45B1-9607-D806403E93D0
+  Name=RETQTDE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=329
+  Width=68
+  Top=137
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RETQTDE,,,
+  Property=HyperLabel=,"Peso:",,
+  Property=HyperLabel=,,,"PCORTE_PESO"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=9A887CCE-DA2D-4F10-8AEE-F3E7DCB4CF08
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=No.
+  Order=11
+  Left=9
+  Width=24
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"No.",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=FIXEDTEXT
+GUID=E3983714-8CF9-45FF-B7FC-30B8AD803516
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=12
+  Left=5
+  Width=40
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=01F6EFD9-A7C0-49D1-887E-68F00C21D778
+  Name=SC_ITELAR
+  Class=FIXEDTEXT
+  Caption=Largura
+  Order=13
+  Left=73
+  Width=43
+  Top=73
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Largura",,
+  Property=HyperLabel=#SC_ITELAR,,,
+
+CONTROL=FIXEDTEXT
+GUID=57EC9869-E7A3-49EA-A442-D8A470C9A79E
+  Name=SC_ITECOM
+  Class=FIXEDTEXT
+  Caption=Comprimento
+  Order=14
+  Left=165
+  Width=67
+  Top=73
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Comprimento",,
+  Property=HyperLabel=#SC_ITECOM,,,
+
+CONTROL=FIXEDTEXT
+GUID=34B8D3B0-B984-4752-BFE0-2A401713E77A
+  Name=SC_ROLOS
+  Class=FIXEDTEXT
+  Caption=Rolos:
+  Order=15
+  Left=253
+  Width=36
+  Top=73
+  Height=17
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rolos:",,
+  Property=HyperLabel=#SC_ROLOS,,,
+
+CONTROL=FIXEDTEXT
+GUID=852E785B-FA66-4800-9FE4-7EE4EC41C522
+  Name=SC_PESO
+  Class=FIXEDTEXT
+  Caption=Peso:
+  Order=16
+  Left=301
+  Width=32
+  Top=73
+  Height=17
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Peso:",,
+  Property=HyperLabel=#SC_PESO,,,
+
+CONTROL=FIXEDTEXT
+GUID=B8099F85-21A4-491B-AC61-83AB84A29F26
+  Name=SC_PRAZO
+  Class=FIXEDTEXT
+  Caption=Prazo:
+  Order=17
+  Left=109
+  Width=36
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Prazo:",,
+  Property=HyperLabel=#SC_PRAZO,,,
+
+CONTROL=FIXEDTEXT
+GUID=A21F62B1-E345-4677-B74B-AB46AA1B3AC2
+  Name=SC_COMPRAS
+  Class=FIXEDTEXT
+  Caption=Compras:
+  Order=18
+  Left=253
+  Width=48
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Compras:",,
+  Property=HyperLabel=#SC_COMPRAS,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=34BD09A3-D8EB-484F-A525-8F4DBC83389A
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=37
+  Width=68
+  Top=5
+  Height=20
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Nº",,
+  Property=HyperLabel=,,,"PCORTEI_NUMERO"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=8D2D77EA-DB8C-458F-895A-660B3EC07C25
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=49
+  Width=180
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"PCORTEI_CODIGO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold:Italic
+
+CONTROL=SINGLELINEEDIT
+GUID=1CB49C0F-1E96-44B6-ADA3-B75619D1CAE0
+  Name=DESCRICAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=49
+  Width=400
+  Top=49
+  Height=20
+  Browseindex=2
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#DESCRICAO,,,
+  Property=HyperLabel=,"Descricao:",,
+  Property=HyperLabel=,,,"PCORTEI_DESCRICAO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=6610A69D-5BFF-4CD1-A762-99E8DAD7C70E
+  Name=COMPRAS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=305
+  Width=68
+  Top=5
+  Height=20
+  Browseindex=10
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#COMPRAS,,,
+  Property=HyperLabel=,"Compras",,
+  Property=HyperLabel=,,,"PCORTEI_COMPRAS"
+  Property=InheritClassName=rightSle
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=71A6C442-DB17-4BD2-88D6-57890F15D01A
+  Name=COMITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=23
+  Left=373
+  Width=44
+  Top=5
+  Height=20
+  Browseindex=11
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_03
+  Property=HyperLabel=#COMITEM,,,
+  Property=HyperLabel=,"Item",,
+  Property=HyperLabel=,,,"PCORTEI_COMITEM"
+  Property=InheritClassName=rightSle
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=0721F1A2-A4D2-4C0A-8865-B67B04C4EC08
+  Name=SC_PESO1
+  Class=FIXEDTEXT
+  Caption=Qtde
+  Order=24
+  Left=5
+  Width=32
+  Top=69
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtde",,
+  Property=HyperLabel=#SC_PESO1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=EAECB3B2-1A77-4055-BA7B-95683821BC03
+  Name=PE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=25
+  Left=465
+  Width=44
+  Top=5
+  Height=20
+  Browseindex=9
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#PE,,,
+  Property=HyperLabel=,"PE",,
+  Property=HyperLabel=,,,"PCORTEI_ROLOS"
+  Property=InheritClassName=rightSle
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=EDEE2E98-DC4C-464C-B4BC-762339C907D9
+  Name=SC_ROLOS1
+  Class=FIXEDTEXT
+  Caption=PrgEntrg
+  Order=26
+  Left=421
+  Width=44
+  Top=5
+  Height=17
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"PrgEntrg",,
+  Property=HyperLabel=#SC_ROLOS1,,,
+
+CONTROL=FIXEDTEXT
+GUID=AB5BDAEC-AD1D-45AA-BF42-1C6FC969BBD3
+  Name=SC_ITELAR1
+  Class=FIXEDTEXT
+  Caption=Aplicacao/Produto
+  Order=27
+  Left=5
+  Width=99
+  Top=113
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Aplicacao/Produto",,
+  Property=HyperLabel=#SC_ITELAR1,,,
+
+CONTROL=FIXEDTEXT
+GUID=4E77A59F-31F4-4627-8FC4-2BF450DBE580
+  Name=SC_PESO2
+  Class=FIXEDTEXT
+  Caption=Peso:
+  Order=28
+  Left=293
+  Width=27
+  Top=137
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Peso:",,
+  Property=HyperLabel=#SC_PESO2,,,
+
+CONTROL=FIXEDTEXT
+GUID=A27948C4-1BF0-4BCE-AB08-1BCD3E83E038
+  Name=SC_NFNOSSA2
+  Class=FIXEDTEXT
+  Caption=Data
+  Order=29
+  Left=153
+  Width=28
+  Top=141
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=#SC_NFNOSSA2,,,
+
+CONTROL=FIXEDTEXT
+GUID=62365CEF-9C76-405F-9AEA-C9746F3D5197
+  Name=SC_NFUSINA1
+  Class=FIXEDTEXT
+  Caption=NF
+  Order=30
+  Left=57
+  Width=24
+  Top=137
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"NF",,
+  Property=HyperLabel=#SC_NFUSINA1,,,
+
+CONTROL=FIXEDTEXT
+GUID=70F7691D-C654-43BE-BDF6-6C1B6181F815
+  Name=FixedText23
+  Class=FIXEDTEXT
+  Caption=Entrada
+  Order=31
+  Left=5
+  Width=48
+  Top=137
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Entrada",,
+  Property=HyperLabel=#FixedText23,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jpcortei
+

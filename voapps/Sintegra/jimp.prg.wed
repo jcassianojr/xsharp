@@ -1,0 +1,184 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JIMPTXT
+GUID=16684D53-8AD4-4E43-9A1E-882FBD87A5B6
+  Name=JIMPTXT
+  Class=DATADIALOG
+  Caption=Importacao Arquivo Sintegra
+  Order=0
+  Left=52
+  Width=400
+  Top=52
+  Height=292
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Importacao Arquivo Sintegra",,
+  Property=HyperLabel=#JIMPTXT,,,
+
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=4DAC1B0A-7D56-4600-9D24-38AD2B39AEDE
+  Name=cmdsair
+  Class=PUSHBUTTON
+  Caption=Sair
+  Order=8
+  Left=293
+  Width=80
+  Top=249
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sair",,
+  Property=HyperLabel=#cmdsair,,,
+
+CONTROL=PUSHBUTTON
+GUID=C3B6DEBB-8E0C-4C48-BD1C-DFE41D5B7503
+  Name=cmdimp
+  Class=PUSHBUTTON
+  Caption=Importar Arquivo de Texto
+  Order=9
+  Left=225
+  Width=148
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1342242816
+  Exstyles=0
+  Property=HyperLabel=,"Importar Arquivo de Texto",,
+  Property=HyperLabel=#cmdimp,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=5E472BF2-9DD7-4767-872C-A42BC55F3FF3
+  Name=arquivo
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=18
+  Width=363
+  Top=6
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#arquivo,,,
+  Property=InheritClassName=pbFileSLE
+
+CONTROL=PUSHBUTTON
+GUID=1AC952AF-50B0-47E0-9274-AEBDEE09C747
+  Name=PushButton3
+  Class=PUSHBUTTON
+  Caption=Sincronizar 54 Outros/Mana5
+  Order=12
+  Left=225
+  Width=148
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sincronizar 54 Outros/Mana5",,
+  Property=HyperLabel=#PushButton3,,,
+
+CONTROL=PUSHBUTTON
+GUID=6B23530D-D00F-4644-8129-CB08E3032378
+  Name=PushButton4
+  Class=PUSHBUTTON
+  Caption=Sincronizar CNPJ Mana5
+  Order=13
+  Left=225
+  Width=148
+  Top=137
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sincronizar CNPJ Mana5",,
+  Property=HyperLabel=#PushButton4,,,
+
+CONTROL=FIXEDTEXT
+GUID=6685E2F5-AA9B-45F6-9D83-D0603CC5BFBA
+  Name=chave
+  Class=FIXEDTEXT
+  Caption=
+  Order=15
+  Left=14
+  Width=307
+  Top=181
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#chave,,,
+
+CONTROL=PUSHBUTTON
+GUID=C31B616C-9494-4481-B7E3-91CA5C970364
+  Name=PushButton5
+  Class=PUSHBUTTON
+  Caption=Sincronizar 75 Classificacao
+  Order=16
+  Left=225
+  Width=148
+  Top=113
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sincronizar 75 Classificacao",,
+  Property=HyperLabel=#PushButton5,,,
+
+CONTROL=PROGRESSBAR
+GUID=57424E45-ED2E-4610-AFF0-2473834CAF8C
+  Name=ProgBar
+  Class=PROGRESSBAR
+  Caption=
+  Order=17
+  Left=17
+  Width=309
+  Top=209
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Range=0,
+  Property=Range=,100
+  Property=HyperLabel=#ProgBar,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JIMPTXT
+

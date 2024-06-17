@@ -1,0 +1,623 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JORCAI
+GUID=2B3B81EE-C9E5-49D3-872F-D26C92710FC8
+  Name=JORCAI
+  Class=DATAWINDOW
+  Caption=Descr:
+  Order=0
+  Left=46
+  Width=601
+  Top=46
+  Height=361
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Descr:",,
+  Property=HyperLabel=#JORCAI,,,
+  Property=ViewAs=#FormView
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=7B5EB82F-B476-4133-A2D8-9319A98CE606
+  Name=ORD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=109
+  Width=70
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#ORD,,,
+  Property=HyperLabel=,"Ord:",,
+  Property=HyperLabel=,,,"ORCAI_ORD"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=42E7FF80-C8B3-4C30-AD3A-29730B35709E
+  Name=QTDDE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=197
+  Width=84
+  Top=29
+  Height=20
+  Browseindex=2
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_10
+  Property=HyperLabel=#QTDDE,,,
+  Property=HyperLabel=,"Qtdde:",,
+  Property=HyperLabel=,,,"ORCAI_QTDDE"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=8A6F1A13-B294-4D45-BD70-F62CBA7E8D7E
+  Name=UNID
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=481
+  Width=60
+  Top=29
+  Height=20
+  Browseindex=3
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#UNID,,,
+  Property=HyperLabel=,"Unid:",,
+  Property=HyperLabel=,,,"ORCAI_UNID"
+
+CONTROL=SINGLELINEEDIT
+GUID=3C678B34-6B60-43B3-B50D-04567FB0E209
+  Name=DESCR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=77
+  Width=464
+  Top=53
+  Height=20
+  Browseindex=4
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_150
+  Property=HyperLabel=#DESCR,,,
+  Property=HyperLabel=,"Descr:",,
+  Property=HyperLabel=,,,"ORCAI_DESCR"
+
+CONTROL=SINGLELINEEDIT
+GUID=2DC925C1-11AF-4DEF-93BE-6970320F597A
+  Name=OBSITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=77
+  Width=464
+  Top=77
+  Height=20
+  Browseindex=8
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_80
+  Property=HyperLabel=#OBSITEM,,,
+  Property=HyperLabel=,"Obs",,
+  Property=HyperLabel=,,,"ORCAI_DESCR"
+
+CONTROL=SINGLELINEEDIT
+GUID=0252FEDD-D85F-4766-B8E4-65BC9CE33049
+  Name=OBSITE2
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=77
+  Width=464
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_80
+  Property=HyperLabel=#OBSITE2,,,
+  Property=HyperLabel=,"Obs",,
+  Property=HyperLabel=,,,"ORCAI_DESCR"
+
+CONTROL=SINGLELINEEDIT
+GUID=C23B96DA-A9A8-4E0D-8981-357ED4298C8E
+  Name=OBSITE3
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=77
+  Width=464
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_80
+  Property=HyperLabel=#OBSITE3,,,
+  Property=HyperLabel=,"Obs",,
+  Property=HyperLabel=,,,"ORCAI_DESCR"
+
+CONTROL=SINGLELINEEDIT
+GUID=774A27CE-7053-4995-8674-062BCF4C11B5
+  Name=OBSITE4
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=77
+  Width=464
+  Top=137
+  Height=20
+  Browseindex=-1
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_80
+  Property=HyperLabel=#OBSITE4,,,
+  Property=HyperLabel=,"Obs",,
+  Property=HyperLabel=,,,"ORCAI_DESCR"
+
+CONTROL=SINGLELINEEDIT
+GUID=80D7AE48-BFA2-451E-A7B5-06953061A9A2
+  Name=OBSITE5
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=77
+  Width=464
+  Top=157
+  Height=20
+  Browseindex=-1
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_80
+  Property=HyperLabel=#OBSITE5,,,
+  Property=HyperLabel=,"Obs",,
+  Property=HyperLabel=,,,"ORCAI_DESCR"
+
+CONTROL=SINGLELINEEDIT
+GUID=D06E0664-D54D-4E2F-88AB-9B4A59E8174B
+  Name=VALPEC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=77
+  Width=100
+  Top=185
+  Height=20
+  Browseindex=5
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_10_5
+  Property=HyperLabel=#VALPEC,,,
+  Property=HyperLabel=,"V.Peça",,
+  Property=HyperLabel=,,,"ORCAI_VALPEC"
+
+CONTROL=SINGLELINEEDIT
+GUID=0730AFD6-0202-44C6-82D4-94F610457DE0
+  Name=FERRA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=265
+  Width=100
+  Top=185
+  Height=20
+  Browseindex=6
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=HyperLabel=#FERRA,,,
+  Property=HyperLabel=,"V.Ferramenta",,
+  Property=HyperLabel=,,,"ORCAI_FERRA"
+
+CONTROL=SINGLELINEEDIT
+GUID=EDE91AED-6340-410E-B450-3BA63EA306A3
+  Name=LOTEMIN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=441
+  Width=100
+  Top=185
+  Height=20
+  Browseindex=7
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#LOTEMIN,,,
+  Property=HyperLabel=,"Lote Minimo:",,
+  Property=HyperLabel=,,,"ORCAI_LOTEMIN"
+
+CONTROL=SINGLELINEEDIT
+GUID=CBF7CB89-F734-47A3-ACED-B3F0EB67D0C5
+  Name=DESENHO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=61
+  Width=180
+  Top=217
+  Height=20
+  Browseindex=-1
+  Browsesize=27
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#DESENHO,,,
+  Property=HyperLabel=,"Desenho:",,
+  Property=HyperLabel=,,,"CDI_DESENHO"
+
+CONTROL=SINGLELINEEDIT
+GUID=755AAB65-ABFB-4A22-AE06-A076BAB3D046
+  Name=REV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=273
+  Width=152
+  Top=217
+  Height=20
+  Browseindex=-1
+  Browsesize=19
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#REV,,,
+  Property=HyperLabel=,"Rev:",,
+  Property=HyperLabel=,,,"CDI_REV"
+
+CONTROL=SINGLELINEEDIT
+GUID=1537AFAD-174D-4DB2-B095-4F799C7E6D0C
+  Name=DATAREV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=461
+  Width=124
+  Top=213
+  Height=20
+  Browseindex=-1
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAREV,,,
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=,,,"CDI_REV"
+  Property=InheritClassName=DateSle
+
+CONTROL=FIXEDTEXT
+GUID=245F83A3-7B4D-4329-BD4B-4265BB9DB694
+  Name=SC_QTDDE
+  Class=FIXEDTEXT
+  Caption=Qtdde:
+  Order=16
+  Left=197
+  Width=36
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtdde:",,
+  Property=HyperLabel=#SC_QTDDE,,,
+
+CONTROL=FIXEDTEXT
+GUID=9E1C0084-DDEF-42D5-B80A-2A11D5A41F96
+  Name=SC_DESCR1
+  Class=FIXEDTEXT
+  Caption=Observação
+  Order=17
+  Left=13
+  Width=64
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Observação",,
+  Property=HyperLabel=#SC_DESCR1,,,
+
+CONTROL=FIXEDTEXT
+GUID=04E8A519-D2DA-49C0-B963-6A5A520C046B
+  Name=SC_REV1
+  Class=FIXEDTEXT
+  Caption=Data
+  Order=18
+  Left=429
+  Width=28
+  Top=217
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=#SC_REV1,,,
+
+CONTROL=FIXEDTEXT
+GUID=2C05CD28-17FB-446F-BC26-330241247C5F
+  Name=SC_REV
+  Class=FIXEDTEXT
+  Caption=Rev:
+  Order=19
+  Left=245
+  Width=28
+  Top=217
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rev:",,
+  Property=HyperLabel=#SC_REV,,,
+
+CONTROL=FIXEDTEXT
+GUID=7854126C-3157-41E5-9377-4D79D1B14EF9
+  Name=SC_DESENHO
+  Class=FIXEDTEXT
+  Caption=Desenho:
+  Order=20
+  Left=9
+  Width=52
+  Top=221
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Desenho:",,
+  Property=HyperLabel=#SC_DESENHO,,,
+
+CONTROL=FIXEDTEXT
+GUID=C7AE3237-AFD5-4771-A885-F7C620197D46
+  Name=SC_ORCA
+  Class=FIXEDTEXT
+  Caption=Orca:
+  Order=21
+  Left=11
+  Width=40
+  Top=11
+  Height=14
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Orca:",,
+  Property=HyperLabel=#SC_ORCA,,,
+
+CONTROL=FIXEDTEXT
+GUID=2F8D0CA3-3E44-4394-B2C4-B004AF72A345
+  Name=SC_ORD
+  Class=FIXEDTEXT
+  Caption=Ord:
+  Order=22
+  Left=111
+  Width=30
+  Top=11
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ord:",,
+  Property=HyperLabel=#SC_ORD,,,
+
+CONTROL=FIXEDTEXT
+GUID=03C18756-7C76-4D1E-A261-E5A6EFA16E0B
+  Name=SC_UNID
+  Class=FIXEDTEXT
+  Caption=Unidade:
+  Order=23
+  Left=481
+  Width=50
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Unidade:",,
+  Property=HyperLabel=#SC_UNID,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=9F3667BF-15DE-4DF6-80F3-A5DA1058123E
+  Name=ORCA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=24
+  Left=13
+  Width=90
+  Top=25
+  Height=24
+  Browseindex=0
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#ORCA,,,
+  Property=HyperLabel=,"Orca:",,
+  Property=HyperLabel=,,,"ORCAI_ORCA"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=EDC161A7-F1C1-4242-A54C-ED485D1F1A02
+  Name=SC_DESCR
+  Class=FIXEDTEXT
+  Caption=Descrição:
+  Order=25
+  Left=13
+  Width=74
+  Top=53
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descrição:",,
+  Property=HyperLabel=#SC_DESCR,,,
+
+CONTROL=FIXEDTEXT
+GUID=5DEBA7B1-1E34-4E84-8B56-6AA62EC80CBC
+  Name=SC_VALPEC
+  Class=FIXEDTEXT
+  Caption=Valor Peça:
+  Order=26
+  Left=13
+  Width=62
+  Top=185
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valor Peça:",,
+  Property=HyperLabel=#SC_VALPEC,,,
+
+CONTROL=FIXEDTEXT
+GUID=4BAD6157-71D6-4CA9-9974-AFA2486484BA
+  Name=SC_FERRA
+  Class=FIXEDTEXT
+  Caption=Ferramental:
+  Order=27
+  Left=189
+  Width=68
+  Top=185
+  Height=14
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ferramental:",,
+  Property=HyperLabel=#SC_FERRA,,,
+
+CONTROL=FIXEDTEXT
+GUID=0211E26A-C853-4D8C-B9C4-080F27374B37
+  Name=SC_LOTEMIN
+  Class=FIXEDTEXT
+  Caption=Lotemin:
+  Order=28
+  Left=377
+  Width=50
+  Top=185
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Lotemin:",,
+  Property=HyperLabel=#SC_LOTEMIN,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JORCAI
+

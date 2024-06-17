@@ -1,0 +1,802 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JSOM
+GUID=4A346122-6417-414B-B594-6B8BA85B4275
+  Name=JSOM
+  Class=DATADIALOG
+  Caption=Incluir Periodo
+  Order=0
+  Left=68
+  Width=400
+  Top=68
+  Height=276
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Incluir Periodo",,
+  Property=HyperLabel=#JSOM,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=75F5300F-30A7-4CFD-A10D-30BD4940F69C
+  Name=mesini
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=49
+  Width=47
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,"1",,
+  Property=HyperLabel=#mesini,,,
+  Property=TooltipText="Mes Inicial"
+  Property=FieldSpec=PADRAO_num_02
+
+CONTROL=SINGLELINEEDIT
+GUID=8EF6FDAA-C78B-4E68-8E01-41772026BA9D
+  Name=anoini
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=165
+  Width=47
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#anoini,,,
+  Property=TooltipText="Ano Inicial"
+  Property=FieldSpec=PADRAO_num_04
+
+CONTROL=SINGLELINEEDIT
+GUID=6158BEAE-BED8-4A10-A242-27D34EB99CE8
+  Name=mesfim
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=49
+  Width=47
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,"12",,
+  Property=HyperLabel=#mesfim,,,
+  Property=TooltipText="Mes Final"
+  Property=FieldSpec=PADRAO_num_02
+
+CONTROL=SINGLELINEEDIT
+GUID=8DC460DF-DB18-4867-92B4-94A5F1EC9562
+  Name=anofim
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=165
+  Width=47
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#anofim,,,
+  Property=TooltipText="Ano Final"
+  Property=FieldSpec=PADRAO_num_04
+
+CONTROL=CHECKBOX
+GUID=6F415FBF-60EE-406F-89F5-B885F26A3EB5
+  Name=INCPER
+  Class=CHECKBOX
+  Caption=Incluir Periodo
+  Order=5
+  Left=37
+  Width=204
+  Top=85
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Incluir Periodo",,
+  Property=HyperLabel=#INCPER,,,
+  Property=TooltipText="Marque para incluir o movimento Atual"
+
+CONTROL=CHECKBOX
+GUID=1CDD71C5-62D4-464A-A80D-BED1161D0D51
+  Name=Atual
+  Class=CHECKBOX
+  Caption=Incluir Arquivo Atual Atual
+  Order=6
+  Left=37
+  Width=204
+  Top=105
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Incluir Arquivo Atual Atual",,
+  Property=HyperLabel=#Atual,,,
+  Property=TooltipText="Marque para incluir o movimento Atual"
+
+CONTROL=CHECKBOX
+GUID=E8518562-F7B8-42CA-8643-D373C367A783
+  Name=Baixado
+  Class=CHECKBOX
+  Caption=Incluir Arquivo Baixado
+  Order=7
+  Left=37
+  Width=204
+  Top=125
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Incluir Arquivo Baixado",,
+  Property=HyperLabel=#Baixado,,,
+  Property=TooltipText="Marque Para Incluir o Movimento Baixado"
+
+CONTROL=PUSHBUTTON
+GUID=A84B28F9-CD3F-417A-81EB-384AF10A8CD4
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=309
+  Width=64
+  Top=9
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1140916288
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ICO_OK
+  Property=TooltipText="Clique aqui Par Confirmar"
+
+CONTROL=FIXEDTEXT
+GUID=332F6FB8-6AEC-4D96-BD07-47637E67444F
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Ano
+  Order=9
+  Left=157
+  Width=36
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ano",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=FIXEDTEXT
+GUID=65AD323E-3568-4986-BF2C-76A8E5B7A944
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=Final
+  Order=10
+  Left=5
+  Width=40
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Final",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=FIXEDTEXT
+GUID=7A95FA12-72C4-4D92-9255-F68D3134D106
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=11
+  Left=309
+  Width=64
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=FIXEDTEXT
+GUID=B699F759-7011-4D2B-BFE3-709FC22CF9D5
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=12
+  Left=309
+  Width=64
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=A6C91EE6-C811-4FE2-9746-8AFF7DA82C1C
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=13
+  Left=309
+  Width=64
+  Top=77
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1140850752
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ICO_SAIR
+  Property=TooltipText="Clique aqui Para Cancelar"
+
+CONTROL=SINGLELINEEDIT
+GUID=F3D27C60-4A95-4145-9248-5478A3F30CD8
+  Name=carqacu
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=273
+  Width=68
+  Top=153
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=#carqacu,,,
+  Property=TooltipText="Arquivo Acumulador"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=75C97A2D-C167-48F8-9327-590E7294C985
+  Name=carqfec
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=205
+  Width=68
+  Top=153
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=#carqfec,,,
+  Property=TooltipText="Arquivo Fechado "
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=0DFCB84E-8A2B-4877-8C52-14351C13544A
+  Name=carqbai
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=137
+  Width=68
+  Top=153
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=#carqbai,,,
+  Property=TooltipText="Arquivo Baixado"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=31E658EA-5AC3-4FD2-9705-17122F6F824B
+  Name=carquso
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=69
+  Width=68
+  Top=153
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=#carquso,,,
+  Property=TooltipText="Arquivo Atual"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=1FBC1F40-5655-4AA6-92A4-49B7EA378F86
+  Name=FixedText6
+  Class=FIXEDTEXT
+  Caption=Referencia
+  Order=18
+  Left=9
+  Width=56
+  Top=153
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Referencia",,
+  Property=HyperLabel=#FixedText6,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=94998ABF-0DEC-43AE-9493-FBB8C5D91CD5
+  Name=CAMDA2
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=137
+  Width=68
+  Top=173
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=#CAMDA2,,,
+  Property=TooltipText="Arquivo Baixado"
+  Property=Background=255 255 200
+
+CONTROL=SINGLELINEEDIT
+GUID=70190087-2B52-4658-BB8C-1610F2CB83CF
+  Name=CAMDAT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=69
+  Width=68
+  Top=173
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=#CAMDAT,,,
+  Property=TooltipText="Arquivo Atual"
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=27CD2F04-AE91-4FD0-9AD1-5357BC07615D
+  Name=registro
+  Class=FIXEDTEXT
+  Caption=
+  Order=21
+  Left=273
+  Width=64
+  Top=197
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=512
+  Property=HyperLabel=#registro,,,
+  Property=Background=255 255 200
+
+CONTROL=FIXEDTEXT
+GUID=ABF22D7B-DF2F-47FB-A155-F1E2FAB6965D
+  Name=arquso
+  Class=FIXEDTEXT
+  Caption=
+  Order=22
+  Left=137
+  Width=68
+  Top=197
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=4608
+  Property=HyperLabel=#arquso,,,
+  Property=Background=255 255 200
+
+CONTROL=PUSHBUTTON
+GUID=71E70EC9-D976-41B6-B1EE-B0376FDFD60B
+  Name=cmdmenos
+  Class=PUSHBUTTON
+  Caption=-
+  Order=23
+  Left=117
+  Width=20
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-",,
+  Property=HyperLabel=#cmdmenos,,,
+
+CONTROL=PUSHBUTTON
+GUID=B057A8A8-A507-4E6C-AC6B-1A83A15ADD2D
+  Name=cmdmais
+  Class=PUSHBUTTON
+  Caption=+
+  Order=24
+  Left=97
+  Width=20
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"+",,
+  Property=HyperLabel=#cmdmais,,,
+
+CONTROL=FIXEDTEXT
+GUID=B3854B4F-1DDE-4FFA-857E-05A705FEF4C9
+  Name=FixedText5
+  Class=FIXEDTEXT
+  Caption=Inicio
+  Order=25
+  Left=5
+  Width=32
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Inicio",,
+  Property=HyperLabel=#FixedText5,,,
+
+CONTROL=FIXEDTEXT
+GUID=29B1225A-2CF1-4996-AAAE-9C2929B641E5
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Mes
+  Order=26
+  Left=57
+  Width=36
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mes",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=PUSHBUTTON
+GUID=E4A021E7-737F-445B-9DA4-904B25C49E3E
+  Name=cmdmenos1
+  Class=PUSHBUTTON
+  Caption=-
+  Order=27
+  Left=117
+  Width=20
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-",,
+  Property=HyperLabel=#cmdmenos1,,,
+
+CONTROL=PUSHBUTTON
+GUID=4CC6D37B-A009-4A0A-84D0-7C996020A380
+  Name=cmdmais1
+  Class=PUSHBUTTON
+  Caption=+
+  Order=28
+  Left=97
+  Width=20
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"+",,
+  Property=HyperLabel=#cmdmais1,,,
+
+CONTROL=PUSHBUTTON
+GUID=677D30F8-79E5-464C-82E6-A2A186A27202
+  Name=cmdmenos2
+  Class=PUSHBUTTON
+  Caption=-
+  Order=29
+  Left=233
+  Width=20
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-",,
+  Property=HyperLabel=#cmdmenos2,,,
+
+CONTROL=PUSHBUTTON
+GUID=56D31C1C-E98D-4211-8553-0D7A18973F87
+  Name=cmdmais2
+  Class=PUSHBUTTON
+  Caption=+
+  Order=30
+  Left=213
+  Width=20
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"+",,
+  Property=HyperLabel=#cmdmais2,,,
+
+CONTROL=PUSHBUTTON
+GUID=7929DE41-336E-4635-88EC-29F2CF3A76D1
+  Name=cmdmenos3
+  Class=PUSHBUTTON
+  Caption=-
+  Order=31
+  Left=233
+  Width=20
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-",,
+  Property=HyperLabel=#cmdmenos3,,,
+
+CONTROL=PUSHBUTTON
+GUID=CABDE4DD-4404-4A78-B872-710700C2E9EA
+  Name=cmdmais3
+  Class=PUSHBUTTON
+  Caption=+
+  Order=32
+  Left=213
+  Width=20
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"+",,
+  Property=HyperLabel=#cmdmais3,,,
+
+CONTROL=PUSHBUTTON
+GUID=BC6D9AFE-0F54-4149-A577-9D69F88229D0
+  Name=cmdmenos4
+  Class=PUSHBUTTON
+  Caption=12
+  Order=33
+  Left=137
+  Width=20
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"12",,
+  Property=HyperLabel=#cmdmenos4,,,
+
+CONTROL=PUSHBUTTON
+GUID=C7025A97-9BEF-4335-9BF0-AC8B53F05031
+  Name=mes01
+  Class=PUSHBUTTON
+  Caption=01
+  Order=34
+  Left=137
+  Width=20
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"01",,
+  Property=HyperLabel=#mes01,,,
+
+CONTROL=PROGRESSBAR
+GUID=8D1F6191-058B-44E4-847E-8E3C379A087F
+  Name=ProgBar
+  Class=PROGRESSBAR
+  Caption=
+  Order=35
+  Left=65
+  Width=309
+  Top=225
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Range=0,
+  Property=Range=,100
+  Property=HyperLabel=#ProgBar,,,
+
+CONTROL=FIXEDTEXT
+GUID=31A1FCAC-47D7-42F3-9799-FEE960DE2F2E
+  Name=FixedText9
+  Class=FIXEDTEXT
+  Caption=Arquivo
+  Order=36
+  Left=73
+  Width=40
+  Top=197
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Arquivo",,
+  Property=HyperLabel=#FixedText9,,,
+
+CONTROL=FIXEDTEXT
+GUID=8F1B36A4-5999-46D4-BBD6-8850A891967D
+  Name=FixedText10
+  Class=FIXEDTEXT
+  Caption=Registro
+  Order=37
+  Left=209
+  Width=44
+  Top=197
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Registro",,
+  Property=HyperLabel=#FixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=7EAF8C2C-4B98-4691-A59B-860559E8CA1E
+  Name=cmdmesmoano
+  Class=PUSHBUTTON
+  Caption==
+  Order=38
+  Left=254
+  Width=20
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"=",,
+  Property=HyperLabel=#cmdmesmoano,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JSOM
+

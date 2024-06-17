@@ -1,0 +1,549 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,jimppf
+GUID=BEADAD53-3205-431F-840C-03E690AD3B31
+  Name=jimppf
+  Class=DATADIALOG
+  Caption=DataDialog Caption
+  Order=0
+  Left=16
+  Width=498
+  Top=16
+  Height=195
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataDialog Caption",,
+  Property=HyperLabel=#jimppf,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=948803BD-AAB8-4852-90CE-A58D553E54AC
+  Name=nPF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=25
+  Width=52
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#nPF,,,
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=FocusSelect=FSEL_ALL
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=0A00D7DD-ACFD-4867-81D5-C329936C9F5E
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Numero do Processo Fabricação:
+  Order=2
+  Left=20
+  Width=173
+  Top=19
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero do Processo Fabricação:",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=PUSHBUTTON
+GUID=07B3FE8C-7C39-4347-B58F-FFCD981322FE
+  Name=ImpMP
+  Class=PUSHBUTTON
+  Caption=Materia Prima
+  Order=3
+  Left=209
+  Width=80
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Materia Prima",,
+  Property=HyperLabel=#ImpMP,,,
+
+CONTROL=PUSHBUTTON
+GUID=95700444-08D5-4C8B-BA05-443D2B408177
+  Name=ImpCom
+  Class=PUSHBUTTON
+  Caption=Componentes
+  Order=4
+  Left=209
+  Width=80
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Componentes",,
+  Property=HyperLabel=#ImpCom,,,
+
+CONTROL=PUSHBUTTON
+GUID=09B73563-413E-4333-A244-B9D98F06865A
+  Name=ImpMao
+  Class=PUSHBUTTON
+  Caption=Mão Obra
+  Order=5
+  Left=209
+  Width=80
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mão Obra",,
+  Property=HyperLabel=#ImpMao,,,
+
+CONTROL=PUSHBUTTON
+GUID=50D9BADA-D5C6-4B78-8AAB-873143F53049
+  Name=ImpSEQ
+  Class=PUSHBUTTON
+  Caption=Sequencia
+  Order=6
+  Left=209
+  Width=80
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Sequencia",,
+  Property=HyperLabel=#ImpSEQ,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=9C40EE51-B92C-48CB-9276-C7239CD70247
+  Name=cCODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=21
+  Width=156
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#cCODIGO,,,
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=FIXEDTEXT
+GUID=383BFCAF-D6E9-40F0-8726-15AEAD8F5F03
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Codigo Produto Manager
+  Order=8
+  Left=21
+  Width=173
+  Top=65
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo Produto Manager",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=60483C17-4DAD-4699-980C-F06B1183A5D3
+  Name=SEQ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=25
+  Width=41
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#SEQ,,,
+  Property=FocusSelect=FSEL_ALL
+  Property=FieldSpec=PADRAO_NUM_03
+
+CONTROL=SINGLELINEEDIT
+GUID=4FB019D6-C8F8-4383-B128-AA178551C114
+  Name=SSQ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=69
+  Width=40
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#SSQ,,,
+  Property=FocusSelect=FSEL_ALL
+  Property=FieldSpec=PADRAO_NUM_03
+
+CONTROL=FIXEDTEXT
+GUID=2706BF72-FBFA-4D77-8758-891F322787DE
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=Sequencia
+  Order=11
+  Left=25
+  Width=80
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Sequencia",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=PUSHBUTTON
+GUID=98CAC6C1-1F2F-4927-83A1-09C565DACFAA
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=12
+  Left=181
+  Width=20
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+
+CONTROL=FIXEDTEXT
+GUID=CA77D624-DA24-432B-BCFA-9BEE9123B495
+  Name=FixedText4
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=13
+  Left=421
+  Width=48
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#FixedText4,,,
+
+CONTROL=PUSHBUTTON
+GUID=ACC13FA2-85A5-4CE0-A995-D9FD46FC5B02
+  Name=encerrar
+  Class=PUSHBUTTON
+  Caption=
+  Order=14
+  Left=421
+  Width=48
+  Top=25
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#encerrar,,,
+  Property=Image=ICO_SAIR
+
+CONTROL=PUSHBUTTON
+GUID=CDE28EB4-12A5-421F-B52E-B8266FA52A8E
+  Name=chkseq
+  Class=PUSHBUTTON
+  Caption=Checar Seq/Comp
+  Order=15
+  Left=117
+  Width=80
+  Top=109
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073750016
+  Exstyles=0
+  Property=HyperLabel=,"Checar Seq/Comp",,
+  Property=HyperLabel=#chkseq,,,
+
+CONTROL=PUSHBUTTON
+GUID=54526C66-474F-4AA5-8D81-3749E6DB67F2
+  Name=pegcod
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=16
+  Left=101
+  Width=20
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#pegcod,,,
+
+CONTROL=CHECKBOX
+GUID=1C59BF29-7092-48A0-BB37-7007BE5065ED
+  Name=limpaMP
+  Class=CHECKBOX
+  Caption=Apagar Anteriores
+  Order=17
+  Left=293
+  Width=120
+  Top=25
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741827
+  Exstyles=0
+  Property=HyperLabel=,"Apagar Anteriores",,
+  Property=HyperLabel=#limpaMP,,,
+
+CONTROL=CHECKBOX
+GUID=D9084ED2-FF57-4E43-A6DC-3294ED4F8D95
+  Name=limpaCO
+  Class=CHECKBOX
+  Caption=Apagar Anteriores
+  Order=18
+  Left=293
+  Width=120
+  Top=53
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741827
+  Exstyles=0
+  Property=HyperLabel=,"Apagar Anteriores",,
+  Property=HyperLabel=#limpaCO,,,
+
+CONTROL=CHECKBOX
+GUID=49B13D90-3456-4208-AC95-82009FD68188
+  Name=limpaMO
+  Class=CHECKBOX
+  Caption=Apagar Anteriores
+  Order=19
+  Left=293
+  Width=120
+  Top=81
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741827
+  Exstyles=0
+  Property=HyperLabel=,"Apagar Anteriores",,
+  Property=HyperLabel=#limpaMO,,,
+
+CONTROL=CHECKBOX
+GUID=0AF141AD-0CF5-40E8-A24F-9BB12F7DEC28
+  Name=limpaSQ
+  Class=CHECKBOX
+  Caption=Apagar Anteriores
+  Order=20
+  Left=293
+  Width=120
+  Top=109
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741827
+  Exstyles=0
+  Property=HyperLabel=,"Apagar Anteriores",,
+  Property=HyperLabel=#limpaSQ,,,
+
+CONTROL=PUSHBUTTON
+GUID=43431D9A-D70E-4083-9F77-439A4D3EB778
+  Name=escpf
+  Class=PUSHBUTTON
+  Caption=...
+  Order=21
+  Left=81
+  Width=20
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#escpf,,,
+
+CONTROL=FIXEDTEXT
+GUID=5F315E4C-9112-4AF0-A556-2A4A6788C200
+  Name=texto
+  Class=FIXEDTEXT
+  Caption=Fixed Text
+  Order=22
+  Left=25
+  Width=172
+  Top=161
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fixed Text",,
+  Property=HyperLabel=#texto,,,
+
+CONTROL=FIXEDTEXT
+GUID=27673815-CF98-40FC-B226-1A91195F9FBF
+  Name=SC_DESTINO2
+  Class=FIXEDTEXT
+  Caption=Foto
+  Order=23
+  Left=421
+  Width=48
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Foto",,
+  Property=HyperLabel=#SC_DESTINO2,,,
+
+CONTROL=PUSHBUTTON
+GUID=0CFB8CE1-797A-4964-9FA7-04A054B6884F
+  Name=foto
+  Class=PUSHBUTTON
+  Caption=
+  Order=24
+  Left=421
+  Width=48
+  Top=89
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#foto,,,
+  Property=Image=ICO_CAMERA
+
+CONTROL=PUSHBUTTON
+GUID=30CA65F4-4465-412D-AB7A-962FDC6C646B
+  Name=ImpTudo
+  Class=PUSHBUTTON
+  Caption=Importar Tudo
+  Order=25
+  Left=209
+  Width=96
+  Top=133
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Importar Tudo",,
+  Property=HyperLabel=#ImpTudo,,,
+
+CONTROL=PUSHBUTTON
+GUID=E17394C7-53C3-41E0-8642-CF034ED9DE0A
+  Name=AtuMs06
+  Class=PUSHBUTTON
+  Caption=Atualizar MS06
+  Order=26
+  Left=209
+  Width=204
+  Top=161
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Atualizar MS06",,
+  Property=HyperLabel=#AtuMs06,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jimppf
+

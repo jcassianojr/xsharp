@@ -1,0 +1,1524 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JORCA
+GUID=B5E5F777-3105-424D-AE6D-0F259644F83E
+  Name=JORCA
+  Class=FORM:DATAWINDOW
+  Caption=Orçamentos
+  Order=0
+  Left=0
+  Width=691
+  Top=0
+  Height=900
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Orçamentos
+  Property=HyperLabel=JORCA
+  Property=InheritClassName=MYDataWindow
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+  Property=ClipperKeys=True
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=FA1752B5-293B-4B02-8BB4-6AE4C6C8B989
+  Name=btnpegma01
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=14
+  Left=305
+  Width=27
+  Top=1
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=btnpegma01
+  Property=TooltipText=Clique Para Preencher Nome do Cliente
+CONTROL=SINGLELINEEDIT
+GUID=3D95E471-0E93-4E5E-9B4E-E468CD6BDEF4
+  Name=CLIENTE
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Cliente:
+  Order=1
+  Left=185
+  Width=80
+  Top=25
+  Height=20
+  Browseindex=2
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Cliente:
+  Property=HyperLabel=CLIENTE
+  Property=HyperLabel=,,,ORCA_CLIENTE
+  Property=FieldSpec=padrao_num_08
+  Property=InheritClassName=rightSle
+  Property=TooltipText=Codigo do Cliente
+CONTROL=SINGLELINEEDIT
+GUID=F522020E-1015-46A3-8C8C-4BF3D882452F
+  Name=CLINOME
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Clinome:
+  Order=2
+  Left=273
+  Width=308
+  Top=25
+  Height=20
+  Browseindex=3
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Clinome:
+  Property=HyperLabel=CLINOME
+  Property=HyperLabel=,,,ORCA_CLINOME
+  Property=FieldSpec=padrao_char_50
+CONTROL=SINGLELINEEDIT
+GUID=50F1A5DA-4A09-4922-B8BE-6318BA443F53
+  Name=DATA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Data:
+  Order=3
+  Left=309
+  Width=68
+  Top=69
+  Height=20
+  Browseindex=1
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=1
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Data:
+  Property=HyperLabel=DATA
+  Property=HyperLabel=,,,ORCA_DATA
+  Property=FieldSpec=date_field
+CONTROL=SINGLELINEEDIT
+GUID=5CCC9AD1-4DE3-4318-9EFB-D4C33A90F3CB
+  Name=VIABILI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Cliente:
+  Order=4
+  Left=593
+  Width=72
+  Top=417
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=0
+  Property=HyperLabel=,Cliente:
+  Property=HyperLabel=VIABILI
+  Property=HyperLabel=,,,VIABILI_OV
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSle
+  Property=TooltipText=Preencha Numero da Viabilidade para Importar
+  Property=FocusSelect=FSEL_ALL
+CONTROL=PUSHBUTTON
+GUID=56BC567A-4CAF-4418-8964-C32430A5DD1E
+  Name=Importar
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Viab. Importar
+  Order=5
+  Left=593
+  Width=72
+  Top=437
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Viab. Importar
+  Property=HyperLabel=Importar
+  Property=TooltipText=Preenche o Item com Dados da Viabilidade
+CONTROL=TABCONTROL
+GUID=C54869E3-1770-43B6-B688-4A306EA9E7C3
+  Name=TABORCA
+  Class=CONTROL:COMMONCONTROL:TABCONTROL
+  Caption=
+  Order=6
+  Left=9
+  Width=636
+  Top=53
+  Height=240
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=TABORCA
+  TabPageName=TABCONTROL1_PAGE1
+  TabPageCaption=Basico
+  TabPageDataAware=YES
+  TabPageName=TABORCA_PAGE2
+  TabPageCaption=Prazos
+  TabPageDataAware=YES
+  TabPageName=TABORCA_PAGE3
+  TabPageCaption=Observações
+  TabPageDataAware=YES
+  TabPageName=TABORCA_PAGE4
+  TabPageCaption=Assinante
+  TabPageDataAware=YES
+CONTROL=PUSHBUTTON
+GUID=109648A7-1F47-4E6D-A1C5-4DF3A6866F40
+  Name=Proximo
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=7
+  Left=629
+  Width=36
+  Top=389
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=Proximo
+  Property=TooltipText=Avanca Item Posterior
+  Property=Image=ico_next
+CONTROL=PUSHBUTTON
+GUID=7EC46BCA-3480-4779-83B7-228B830A1D21
+  Name=Anterior
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=8
+  Left=593
+  Width=36
+  Top=389
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=Anterior
+  Property=TooltipText=Retorna Item anterior
+  Property=Image=ico_previous
+CONTROL=PUSHBUTTON
+GUID=1D4FA80C-0AFD-47D7-998F-033596C2E8EF
+  Name=escfor
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=...
+  Order=9
+  Left=277
+  Width=27
+  Top=1
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,...
+  Property=HyperLabel=escfor
+  Property=TooltipText=Clique Para Ver Lista de Cliente
+CONTROL=PUSHBUTTON
+GUID=1BDC9570-1E54-4A46-A56E-E6D41887187B
+  Name=Exportar
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Viab. Exportar
+  Order=10
+  Left=593
+  Width=72
+  Top=461
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Viab. Exportar
+  Property=HyperLabel=Exportar
+  Property=TooltipText=Preenche Viabilidade com os Dados do Item
+CONTROL=PUSHBUTTON
+GUID=F64B1E83-9FB0-4FB6-84D7-10922C9E7BE6
+  Name=Duplicar
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Duplicar
+  Order=11
+  Left=585
+  Width=72
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Duplicar
+  Property=HyperLabel=Duplicar
+  Property=TooltipText=Clique para Duplicar Um Orçamento
+CONTROL=PUSHBUTTON
+GUID=ABA825EF-0792-4407-AA52-016AF8E9BEAF
+  Name=porov
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=12
+  Left=149
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=porov
+  Property=TooltipText=Ordenar Por Numero
+  Property=Image=ico_az
+CONTROL=PUSHBUTTON
+GUID=C0C5EA55-C767-46D2-8A97-355E271BC225
+  Name=buscaov
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=13
+  Left=117
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=buscaov
+  Property=TooltipText=Localizar Um Nº Orçamento
+  Property=Image=ico_find
+CONTROL=PUSHBUTTON
+GUID=766943C7-D2FC-49D5-8871-A298D41D4274
+  Name=buscacod
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=15
+  Left=645
+  Width=32
+  Top=293
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=buscacod
+  Property=TooltipText=Localizar Um Codigo
+  Property=Image=ico_find
+CONTROL=FIXEDTEXT
+GUID=C05450FF-C002-4C00-B0EF-C722D3467A94
+  Name=SC_CLIENTE1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Revisao
+  Order=16
+  Left=69
+  Width=44
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Revisao
+  Property=HyperLabel=SC_CLIENTE1
+CONTROL=SINGLELINEEDIT
+GUID=5E416BAC-F2CB-41C9-B937-17DB6B4DB060
+  Name=REVI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Cliente:
+  Order=17
+  Left=85
+  Width=24
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Cliente:
+  Property=HyperLabel=REVI
+  Property=HyperLabel=,,,ORCA_CLIENTE
+  Property=FieldSpec=padrao_char_01
+  Property=TooltipText=Codigo do Cliente
+CONTROL=FIXEDTEXT
+GUID=92719FAE-C621-4AA0-85E6-3AEEE8C31F49
+  Name=SC_ORCA
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Orca:
+  Order=18
+  Left=9
+  Width=56
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Orca:
+  Property=HyperLabel=SC_ORCA
+CONTROL=FIXEDTEXT
+GUID=5829D769-CED0-4E84-83BE-31CF03358A00
+  Name=SC_CLIENTE
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Cliente:
+  Order=19
+  Left=185
+  Width=50
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Cliente:
+  Property=HyperLabel=SC_CLIENTE
+CONTROL=SINGLELINEEDIT
+GUID=60BAE489-B993-43E9-A137-6CD89FA24214
+  Name=ORCA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Orcamento:
+  Order=20
+  Left=9
+  Width=72
+  Top=21
+  Height=24
+  Browseindex=0
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=HyperLabel=,Orcamento:
+  Property=HyperLabel=ORCA
+  Property=HyperLabel=,,,ORCA_ORCA
+  Property=FieldSpec=padrao_num_08
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+CONTROL=PUSHBUTTON
+GUID=CDA539EC-ED13-42CF-8043-A04FE5418612
+  Name=NOVO
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Novo
+  Order=21
+  Left=593
+  Width=48
+  Top=293
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Novo
+  Property=HyperLabel=NOVO
+  Property=TooltipText=Inclui um Item no Orçamento
+CONTROL=SUBDATAWINDOW
+GUID=B120064E-ECD3-467C-A5C4-C7CBD82C1C82
+  Name=JORCAI
+  Class=CONTROL:SUBDATAWINDOW
+  Caption=JORCAI
+  Order=22
+  Left=9
+  Width=580
+  Top=297
+  Height=188
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=JORCAI
+  Property=RelationString=#ORCA
+  Property=Order=ORCAI
+  Property=HyperLabel=,JORCAI
+CONTROL=PUSHBUTTON
+GUID=AB65DE85-9F5A-471D-866F-0FF4123FB68A
+  Name=Excluir
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Excluir
+  Order=23
+  Left=593
+  Width=48
+  Top=317
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Excluir
+  Property=HyperLabel=Excluir
+  Property=TooltipText=Exclui o Item em destaque
+CONTROL=PUSHBUTTON
+GUID=F06499F3-D71C-4223-BC16-66626AAFE8C7
+  Name=ALTERAR
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Alterar
+  Order=24
+  Left=593
+  Width=48
+  Top=341
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Alterar
+  Property=HyperLabel=ALTERAR
+  Property=TooltipText=Editar O Item do Orçamento
+CONTROL=PUSHBUTTON
+GUID=53D03AE7-9380-4F8C-B620-250D0A13D7B5
+  Name=Tabular
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Ver Itens
+  Order=25
+  Left=593
+  Width=48
+  Top=365
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ver Itens
+  Property=HyperLabel=Tabular
+  Property=TooltipText=Exibir Lista Itens
+SUBCONTROLSEND
+DESIGNEREND = JORCA
+
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,TabControl1_Page1
+GUID=D6415B47-4035-4218-BF1E-041E7ADD2CC1
+  Name=TabControl1_Page1
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=42
+  Width=623
+  Top=42
+  Height=204
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073742848
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#TabControl1_Page1,,,
+  Property=ClipperKeys=True
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=C423F67D-06D8-4E43-9AB2-0B5444F5AAB9
+  Name=AC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=37
+  Width=400
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_40
+  Property=HyperLabel=#AC,,,
+  Property=HyperLabel=,"Ac:",,
+  Property=HyperLabel=,,,"ORCA_AC"
+  Property=TooltipText="Aos Cuidados de"
+
+CONTROL=SINGLELINEEDIT
+GUID=3BE04536-72E9-47A7-8CA9-707E4340EA4B
+  Name=cambio
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=517
+  Width=68
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_15
+  Property=HyperLabel=#cambio,,,
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=,,,"ORCA_DATA"
+  Property=TooltipText="Data do Nivel Economico"
+
+CONTROL=SINGLELINEEDIT
+GUID=45660611-7452-446B-AD91-BD24DCE8C8B9
+  Name=REFER
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=5
+  Width=220
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#REFER,,,
+  Property=HyperLabel=,"Refer:",,
+  Property=HyperLabel=,,,"ORCA_REFER"
+  Property=TooltipText="Nome do Departamento"
+
+CONTROL=SINGLELINEEDIT
+GUID=797F2D00-71B4-4C51-9B99-AAABD287832A
+  Name=DATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=233
+  Width=112
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATA,,,
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=,,,"ORCA_DATA"
+  Property=TooltipText="Data Orçamento"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=66AD2B1F-2FBB-4A8A-AAC1-26F60CCE2285
+  Name=NIVEL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=349
+  Width=104
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#NIVEL,,,
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=,,,"ORCA_DATA"
+  Property=TooltipText="Data do Nivel Economico"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=E31594ED-CFA3-43E3-8227-81A523CD9712
+  Name=ORC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=5
+  Width=580
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_40
+  Property=HyperLabel=#ORC,,,
+  Property=HyperLabel=,"Orc:",,
+  Property=HyperLabel=,,,"ORCA_ORC"
+  Property=TooltipText="Linha Descritiva"
+
+CONTROL=SINGLELINEEDIT
+GUID=036E9627-6B00-4BA2-850B-2726A04BD785
+  Name=ORC01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=5
+  Width=580
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_100
+  Property=HyperLabel=#ORC01,,,
+  Property=HyperLabel=,"Orc01:",,
+  Property=HyperLabel=,,,"ORCA_ORC01"
+  Property=TooltipText="Linha Descritiva"
+
+CONTROL=SINGLELINEEDIT
+GUID=1837CCE3-9746-4CD5-880E-50118D223028
+  Name=ORC02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=5
+  Width=580
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_100
+  Property=HyperLabel=#ORC02,,,
+  Property=HyperLabel=,"Orc02:",,
+  Property=HyperLabel=,,,"ORCA_ORC02"
+  Property=TooltipText="Linha Descritiva"
+
+CONTROL=FIXEDTEXT
+GUID=10645708-5E38-4A3C-B80C-47DEB97A4726
+  Name=SC_ORC
+  Class=FIXEDTEXT
+  Caption=Orcamento:
+  Order=9
+  Left=5
+  Width=60
+  Top=85
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Orcamento:",,
+  Property=HyperLabel=#SC_ORC,,,
+
+CONTROL=FIXEDTEXT
+GUID=3273AD8E-C121-40CD-A32F-775179E9A411
+  Name=SC_DATA
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=10
+  Left=237
+  Width=32
+  Top=29
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=#SC_DATA,,,
+
+CONTROL=FIXEDTEXT
+GUID=B0D1A774-A05D-4455-8F8B-9C82504F0FC2
+  Name=SC_REFER
+  Class=FIXEDTEXT
+  Caption=Depto:
+  Order=11
+  Left=5
+  Width=32
+  Top=29
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Depto:",,
+  Property=HyperLabel=#SC_REFER,,,
+
+CONTROL=FIXEDTEXT
+GUID=65D05303-E81D-49FA-BAAE-76615AA894E1
+  Name=SC_AC
+  Class=FIXEDTEXT
+  Caption=Ac:
+  Order=12
+  Left=9
+  Width=24
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ac:",,
+  Property=HyperLabel=#SC_AC,,,
+
+CONTROL=FIXEDTEXT
+GUID=8DD0F26B-0D02-4198-8C4A-A69824F5E6F2
+  Name=SC_DATA1
+  Class=FIXEDTEXT
+  Caption=Nivel Economico:
+  Order=13
+  Left=349
+  Width=88
+  Top=29
+  Height=12
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nivel Economico:",,
+  Property=HyperLabel=#SC_DATA1,,,
+
+CONTROL=FIXEDTEXT
+GUID=577099CA-4C3F-4138-84E2-26D1C7E858BB
+  Name=SC_DATA2
+  Class=FIXEDTEXT
+  Caption=Cambio/Rate
+  Order=14
+  Left=445
+  Width=68
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cambio/Rate",,
+  Property=HyperLabel=#SC_DATA2,,,
+
+SUBCONTROLSEND
+DESIGNEREND = TabControl1_Page1
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,TABORCA_Page2
+GUID=7C584BCB-DFBD-4D8A-92A3-33B83EF78B55
+  Name=TABORCA_Page2
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=28
+  Width=648
+  Top=28
+  Height=206
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073742848
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#TABORCA_Page2,,,
+  Property=Use=<Share Owner's>
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=69C86FF8-3901-4C18-98CE-F945BDA855C5
+  Name=CPAG
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=141
+  Width=380
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#CPAG,,,
+  Property=HyperLabel=,"Cpag:",,
+  Property=HyperLabel=,,,"ORCA_CPAG"
+  Property=TooltipText="Condiçao de Pagamento da Peça"
+
+CONTROL=SINGLELINEEDIT
+GUID=47234B2F-2FC1-46F1-8C3C-D8C0BA12C3DB
+  Name=CFER
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=141
+  Width=490
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_100
+  Property=HyperLabel=#CFER,,,
+  Property=HyperLabel=,"Cfer:",,
+  Property=HyperLabel=,,,"ORCA_CFER"
+  Property=TooltipText="Condiçao de Pagamento da Ferramenta"
+
+CONTROL=SINGLELINEEDIT
+GUID=F7548B56-3EF6-4583-B7A8-BF12DB3E013F
+  Name=CVAL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=141
+  Width=244
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#CVAL,,,
+  Property=HyperLabel=,"Cval:",,
+  Property=HyperLabel=,,,"ORCA_CVAL"
+  Property=TooltipText="Validade do Orçamento"
+
+CONTROL=SINGLELINEEDIT
+GUID=E6DCC088-B2D0-418D-AAED-B67BC206A053
+  Name=PRAZO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=53
+  Width=572
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_150
+  Property=HyperLabel=#PRAZO,,,
+  Property=HyperLabel=,"Prazo:",,
+  Property=HyperLabel=,,,"ORCA_PRAZO"
+  Property=TooltipText="Descritivo do Prazo"
+
+CONTROL=SINGLELINEEDIT
+GUID=032F7507-6967-4DC9-BC3D-F239B24497A4
+  Name=PRAZ2
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=53
+  Width=572
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_150
+  Property=HyperLabel=#PRAZ2,,,
+  Property=HyperLabel=,"Prazo:",,
+  Property=HyperLabel=,,,"ORCA_PRAZO"
+  Property=TooltipText="Descritivo do Prazo"
+
+CONTROL=SINGLELINEEDIT
+GUID=383D3E63-D0C6-4E1A-92EB-B1B673E229DC
+  Name=PRAZ3
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=53
+  Width=572
+  Top=113
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_150
+  Property=HyperLabel=#PRAZ3,,,
+  Property=HyperLabel=,"Prazo:",,
+  Property=HyperLabel=,,,"ORCA_PRAZO"
+  Property=TooltipText="Descritivo do Prazo"
+
+CONTROL=SINGLELINEEDIT
+GUID=7EAF3140-3EBD-438E-8AC3-80A80F3DA8ED
+  Name=PRAZ4
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=53
+  Width=572
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_150
+  Property=HyperLabel=#PRAZ4,,,
+  Property=HyperLabel=,"Prazo:",,
+  Property=HyperLabel=,,,"ORCA_PRAZO"
+  Property=TooltipText="Descritivo do Prazo"
+
+CONTROL=FIXEDTEXT
+GUID=85698372-7841-4003-B244-10BE5C9EB474
+  Name=SC_CVAL
+  Class=FIXEDTEXT
+  Caption=Validade
+  Order=8
+  Left=5
+  Width=59
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Validade",,
+  Property=HyperLabel=#SC_CVAL,,,
+
+CONTROL=FIXEDTEXT
+GUID=98CA63C6-9602-43A7-A22C-0C545552CBC3
+  Name=theFixedText15
+  Class=FIXEDTEXT
+  Caption=Cond. Pag. Ferramenta:
+  Order=9
+  Left=5
+  Width=120
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cond. Pag. Ferramenta:",,
+  Property=HyperLabel=#theFixedText15,,,
+
+CONTROL=FIXEDTEXT
+GUID=863786B3-8529-4C33-AB64-D97C9CDCBCDA
+  Name=SC_CPAG
+  Class=FIXEDTEXT
+  Caption=Cond. Pag. Peça:
+  Order=10
+  Left=5
+  Width=120
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cond. Pag. Peça:",,
+  Property=HyperLabel=#SC_CPAG,,,
+
+CONTROL=FIXEDTEXT
+GUID=F95F0C5B-2A6C-4F7A-9B16-12707238A59A
+  Name=SC_PRAZO
+  Class=FIXEDTEXT
+  Caption=Prazo:
+  Order=11
+  Left=5
+  Width=40
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Prazo:",,
+  Property=HyperLabel=#SC_PRAZO,,,
+
+SUBCONTROLSEND
+DESIGNEREND = TABORCA_Page2
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,TABORCA_Page3
+GUID=FC2EA8D2-3C7D-45A8-98FB-26E2572D9507
+  Name=TABORCA_Page3
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=18
+  Width=648
+  Top=46
+  Height=238
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073742848
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#TABORCA_Page3,,,
+  Property=ClipperKeys=True
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=CE40526B-3E66-4B79-99A5-41C82BA0E8EA
+  Name=OBS01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=41
+  Width=580
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_200
+  Property=HyperLabel=#OBS01,,,
+  Property=HyperLabel=,"Obs01:",,
+  Property=HyperLabel=,,,"ORCA_OBS01"
+  Property=TooltipText="Campo para Observações"
+
+CONTROL=SINGLELINEEDIT
+GUID=51A54088-F4AB-4245-9C47-368598AA3840
+  Name=OBS02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=41
+  Width=580
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_200
+  Property=HyperLabel=#OBS02,,,
+  Property=HyperLabel=,"Obs02:",,
+  Property=HyperLabel=,,,"ORCA_OBS02"
+  Property=TooltipText="Campo para Observações"
+
+CONTROL=SINGLELINEEDIT
+GUID=7D233274-CA7E-4CCD-B98B-7C323ADF0DA5
+  Name=OBS03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=41
+  Width=580
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_200
+  Property=HyperLabel=#OBS03,,,
+  Property=HyperLabel=,"Obs03:",,
+  Property=HyperLabel=,,,"ORCA_OBS03"
+  Property=TooltipText="Campo para Observações"
+
+CONTROL=SINGLELINEEDIT
+GUID=8126B5C5-9A33-4F27-979D-66FC365FAFB2
+  Name=OBS04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=41
+  Width=580
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_200
+  Property=HyperLabel=#OBS04,,,
+  Property=HyperLabel=,"Obs04:",,
+  Property=HyperLabel=,,,"ORCA_OBS04"
+  Property=TooltipText="Campo para Observações"
+
+CONTROL=SINGLELINEEDIT
+GUID=E992BDD7-7832-4D73-BF65-C120C76B1458
+  Name=OBS05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=41
+  Width=580
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_200
+  Property=HyperLabel=#OBS05,,,
+  Property=HyperLabel=,"Obs05:",,
+  Property=HyperLabel=,,,"ORCA_OBS05"
+  Property=TooltipText="Campo para Observações"
+
+CONTROL=SINGLELINEEDIT
+GUID=FBBC549B-8880-4926-B409-40E102E2732D
+  Name=OBS06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=41
+  Width=580
+  Top=105
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_200
+  Property=HyperLabel=#OBS06,,,
+  Property=HyperLabel=,"Obs06:",,
+  Property=HyperLabel=,,,"ORCA_OBS06"
+  Property=TooltipText="Campo para Observações"
+
+CONTROL=SINGLELINEEDIT
+GUID=73C43E8A-B3E3-4B02-9F48-DC316C707C88
+  Name=OBS07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=41
+  Width=580
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_200
+  Property=HyperLabel=#OBS07,,,
+  Property=HyperLabel=,"Obs06:",,
+  Property=HyperLabel=,,,"ORCA_OBS06"
+  Property=TooltipText="Campo para Observações"
+
+CONTROL=SINGLELINEEDIT
+GUID=60C555CB-A92D-43D4-A558-EA6A43536E25
+  Name=OBS08
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=41
+  Width=580
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_200
+  Property=HyperLabel=#OBS08,,,
+  Property=HyperLabel=,"Obs06:",,
+  Property=HyperLabel=,,,"ORCA_OBS06"
+  Property=TooltipText="Campo para Observações"
+
+CONTROL=FIXEDTEXT
+GUID=28FC2BCC-F849-4677-8BD6-54AFCCAA07ED
+  Name=SC_OBS01
+  Class=FIXEDTEXT
+  Caption=Obs:
+  Order=9
+  Left=5
+  Width=28
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Obs:",,
+  Property=HyperLabel=#SC_OBS01,,,
+
+SUBCONTROLSEND
+DESIGNEREND = TABORCA_Page3
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,TABORCA_Page4
+GUID=46CB1047-7C3E-46E7-AC51-27AE96DAF0BE
+  Name=TABORCA_Page4
+  Class=FORM:DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=0
+  Width=648
+  Top=0
+  Height=235
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073742848
+  Exstyles=0
+  Property=HyperLabel=,DataWindow Caption
+  Property=HyperLabel=TABORCA_Page4
+  Property=ClipperKeys=True
+  Property=Use=<Share Owner's>
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=COMBOBOX
+GUID=7C45CBF2-3D3A-427F-8460-08EAD9398545
+  Name=SETOR
+  Class=CONTROL:TEXTCONTROL:BASELISTBOX:COMBOBOX
+  Caption=
+  Order=6
+  Left=9
+  Width=232
+  Top=25
+  Height=100
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1075839234
+  Exstyles=0
+  Property=HyperLabel=SETOR
+  Property=FillUsing=METHOD,ComboPEGMP05
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=TooltipText=Escolha a Area de quem Assina o Orçamento
+CONTROL=SINGLELINEEDIT
+GUID=ED09297F-5429-4EAA-8A62-ADE5F7AE8ACE
+  Name=RESPO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=245
+  Width=260
+  Top=41
+  Height=16
+  Browseindex=0
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=RESPO
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=TooltipText=Nome do Responsável pelo Orçamento
+CONTROL=SINGLELINEEDIT
+GUID=1210478F-7352-478C-BBCC-1C0AFF6B060E
+  Name=CARGO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=245
+  Width=260
+  Top=85
+  Height=16
+  Browseindex=1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=CARGO
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=TooltipText=Cargo do Responsavel Pelo Orçamento
+CONTROL=FIXEDTEXT
+GUID=ADC86CF1-80DF-4C25-9180-97F2F046DD44
+  Name=FT28
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Cargo
+  Order=3
+  Left=249
+  Width=52
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Cargo
+  Property=HyperLabel=FT28
+CONTROL=FIXEDTEXT
+GUID=032F0999-036B-4B14-8612-C5EC25ED5945
+  Name=FT27
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Responsável
+  Order=4
+  Left=245
+  Width=72
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Responsável
+  Property=HyperLabel=FT27
+CONTROL=FIXEDTEXT
+GUID=AE523573-4B95-44C9-9658-419BFFB1C001
+  Name=FT29
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Área
+  Order=5
+  Left=9
+  Width=80
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Área
+  Property=HyperLabel=FT29
+SUBCONTROLSEND
+DESIGNEREND = TABORCA_Page4
+

@@ -1,0 +1,447 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,jrncinc
+GUID=F6D6BEE0-1A95-486C-BB5A-4FCB05C9E64E
+  Name=jrncinc
+  Class=DATADIALOG
+  Caption=Rnc Inclusão
+  Order=0
+  Left=28
+  Width=727
+  Top=28
+  Height=256
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rnc Inclusão",,
+  Property=HyperLabel=#jrncinc,,,
+  Property=ClipperKeys=True
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=C3D6B049-250B-41FC-B06C-0AD5FB47D35F
+  Name=SC_RNC
+  Class=FIXEDTEXT
+  Caption=Rnc:
+  Order=1
+  Left=9
+  Width=40
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rnc:",,
+  Property=HyperLabel=#SC_RNC,,,
+
+CONTROL=FIXEDTEXT
+GUID=2E49608B-DD67-4829-94F3-41882B3DD7E2
+  Name=SC_QTL
+  Class=FIXEDTEXT
+  Caption=Qtde Não Conforme
+  Order=2
+  Left=569
+  Width=120
+  Top=73
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtde Não Conforme",,
+  Property=HyperLabel=#SC_QTL,,,
+
+CONTROL=FIXEDTEXT
+GUID=FC56DBEF-0D9A-4684-AC22-C0D2DAA4AD8E
+  Name=SC_QTL1
+  Class=FIXEDTEXT
+  Caption=Qtde Lote:
+  Order=3
+  Left=473
+  Width=90
+  Top=73
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtde Lote:",,
+  Property=HyperLabel=#SC_QTL1,,,
+
+CONTROL=RADIOBUTTON
+GUID=D36250F7-AA7F-4DEA-8D6C-10C64B464B98
+  Name=RB4
+  Class=RADIOBUTTON
+  Caption=Cliente
+  Order=4
+  Left=597
+  Width=70
+  Top=25
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Cliente",,
+  Property=Value=C
+  Property=HyperLabel=#RB4,,,
+
+CONTROL=RADIOBUTTON
+GUID=634F1076-D795-4180-913C-08611DBDCEC4
+  Name=RB3
+  Class=RADIOBUTTON
+  Caption=Final
+  Order=5
+  Left=503
+  Width=59
+  Top=25
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Final",,
+  Property=Value=F
+  Property=HyperLabel=#RB3,,,
+
+CONTROL=RADIOBUTTON
+GUID=2F44B864-3F97-4D3E-8DED-8116791DDEA1
+  Name=RB2
+  Class=RADIOBUTTON
+  Caption=Processo
+  Order=6
+  Left=379
+  Width=89
+  Top=25
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Processo",,
+  Property=Value=P
+  Property=HyperLabel=#RB2,,,
+
+CONTROL=RADIOBUTTON
+GUID=E4A6AF83-74CF-4002-B3F2-FE98FAE5334C
+  Name=RB1
+  Class=RADIOBUTTON
+  Caption=Recebimento
+  Order=7
+  Left=245
+  Width=99
+  Top=25
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Recebimento",,
+  Property=Value=R
+  Property=HyperLabel=#RB1,,,
+
+CONTROL=RADIOBUTTON
+GUID=61BC0405-F99A-4526-AC29-9FFE26BE5EE7
+  Name=RadioButton23
+  Class=RADIOBUTTON
+  Caption=Fornecedor
+  Order=8
+  Left=121
+  Width=88
+  Top=25
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Fornecedor",,
+  Property=Value=O
+  Property=HyperLabel=#RadioButton23,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=077651C0-C94F-45E7-AF82-B7C8B7AC7012
+  Name=RNC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=9
+  Width=74
+  Top=21
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RNC,,,
+  Property=HyperLabel=,"Rnc:",,
+  Property=HyperLabel=,,,"RNC_RNC"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=57EBE061-C48F-4678-BF46-04F3149F544B
+  Name=QTL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=473
+  Width=90
+  Top=89
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=#QTL,,,
+  Property=HyperLabel=,"Qtl:",,
+  Property=HyperLabel=,,,"RNC_QTL"
+  Property=FieldSpec=PADRAO_NUM_08
+
+CONTROL=SINGLELINEEDIT
+GUID=853EB576-83C0-4825-8767-F4D206631EF1
+  Name=QTLN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=569
+  Width=90
+  Top=89
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#QTLN,,,
+  Property=HyperLabel=,"Qtl:",,
+  Property=HyperLabel=,,,"RNC_QTL"
+
+CONTROL=RADIOBUTTONGROUP
+GUID=A4AB0B9C-B883-43A2-85F4-80131D65E305
+  Name=CODRNC
+  Class=RADIOBUTTONGROUP
+  Caption=Tipo de Não Conformidade
+  Order=12
+  Left=105
+  Width=580
+  Top=5
+  Height=49
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Tipo de Não Conformidade",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#CODRNC,,,
+
+CONTROL=RADIOBUTTON
+GUID=D715B4CB-A709-4413-B151-9F51141A2594
+  Name=RB7
+  Class=RADIOBUTTON
+  Caption=Sucatar
+  Order=13
+  Left=381
+  Width=69
+  Top=81
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Sucatar",,
+  Property=Value=U
+  Property=HyperLabel=#RB7,,,
+
+CONTROL=RADIOBUTTON
+GUID=1313DCE2-CADC-4368-8959-EB85DCB432C9
+  Name=RB9
+  Class=RADIOBUTTON
+  Caption=Devolver ao Fornecedor
+  Order=14
+  Left=273
+  Width=159
+  Top=105
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Devolver ao Fornecedor",,
+  Property=Value=D
+  Property=HyperLabel=#RB9,,,
+
+CONTROL=RADIOBUTTON
+GUID=754A95C8-D4BF-4708-858A-C22049BDBA34
+  Name=RB6
+  Class=RADIOBUTTON
+  Caption=Aprovar Condicional
+  Order=15
+  Left=233
+  Width=139
+  Top=81
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Aprovar Condicional",,
+  Property=Value=A
+  Property=HyperLabel=#RB6,,,
+
+CONTROL=RADIOBUTTON
+GUID=7F54BA3B-BB4C-4869-8A95-BAF43E3D4910
+  Name=RB14
+  Class=RADIOBUTTON
+  Caption=Seleção
+  Order=16
+  Left=141
+  Width=80
+  Top=81
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Seleção",,
+  Property=Value=E
+  Property=HyperLabel=#RB14,,,
+
+CONTROL=RADIOBUTTON
+GUID=3F03F866-5B8A-42C8-85EE-6AE96AF3E336
+  Name=RB8
+  Class=RADIOBUTTON
+  Caption=Solicitar Aprovaçào com Desvios
+  Order=17
+  Left=33
+  Width=229
+  Top=105
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Solicitar Aprovaçào com Desvios",,
+  Property=Value=S
+  Property=HyperLabel=#RB8,,,
+
+CONTROL=RADIOBUTTON
+GUID=1B82A208-DF14-4514-9DC1-316954489413
+  Name=RB5
+  Class=RADIOBUTTON
+  Caption=Retrabalhar
+  Order=18
+  Left=33
+  Width=89
+  Top=81
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Retrabalhar",,
+  Property=Value=R
+  Property=HyperLabel=#RB5,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=6B89C464-7D5A-468C-BD7F-9FB14F328D2E
+  Name=DISPO
+  Class=RADIOBUTTONGROUP
+  Caption=Disposição
+  Order=19
+  Left=13
+  Width=448
+  Top=61
+  Height=72
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Disposição",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#DISPO,,,
+
+CONTROL=PUSHBUTTON
+GUID=21CE1E57-F854-48A9-A0F8-9ACFC58AD4FA
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=OK
+  Order=20
+  Left=485
+  Width=80
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#OK,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jrncinc
+

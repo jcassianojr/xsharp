@@ -1,0 +1,409 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jchis
+GUID=B2A684F4-0BBA-4365-9D55-1AA6FBB6D7DB
+  Name=jchis
+  Class=DATAWINDOW
+  Caption=Admissao:
+  Order=0
+  Left=54
+  Width=493
+  Top=54
+  Height=181
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Admissao:",,
+  Property=HyperLabel=#jchis,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ClipperKeys=True
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=5D0E3F2C-7DC3-4C22-8720-49BE414901F2
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero:
+  Order=1
+  Left=9
+  Width=44
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=4A70EFFA-A03E-46B5-9B9B-D7606307973D
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=61
+  Width=68
+  Top=9
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"Fo_chis_NUMERO"
+  Property=FocusSelect=FSEL_HOME
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=E89DA6F1-D855-4483-A29A-2E0EB9B64AB9
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=61
+  Width=292
+  Top=41
+  Height=20
+  Browseindex=1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"Fo_chis_NOME"
+  Property=FocusSelect=FSEL_HOME
+
+CONTROL=SINGLELINEEDIT
+GUID=DE43CD8E-6F5A-4E82-AB81-B842E36D7F54
+  Name=ADMISSAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=9
+  Width=108
+  Top=85
+  Height=20
+  Browseindex=2
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#ADMISSAO,,,
+  Property=HyperLabel=,"Admissao:",,
+  Property=HyperLabel=,,,"Fo_chis_ADMISSAO"
+  Property=FocusSelect=FSEL_HOME
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=75744251-E33B-4A80-98AF-9F682D6F59F7
+  Name=DEMISSAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=133
+  Width=112
+  Top=85
+  Height=20
+  Browseindex=3
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DEMISSAO,,,
+  Property=HyperLabel=,"Demissao:",,
+  Property=HyperLabel=,,,"Fo_chis_DEMISSAO"
+  Property=FocusSelect=FSEL_HOME
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=CA5BA9C1-7507-44C0-8A7D-2D7A60F94F61
+  Name=ARQUIVO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=53
+  Width=152
+  Top=109
+  Height=20
+  Browseindex=4
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#ARQUIVO,,,
+  Property=HyperLabel=,"Arquivo:",,
+  Property=HyperLabel=,,,"Fo_chis_ARQUIVO"
+  Property=FocusSelect=FSEL_HOME
+
+CONTROL=SINGLELINEEDIT
+GUID=334F11B6-F827-48E7-9AC0-8B8165B3E3B3
+  Name=OBS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=53
+  Width=292
+  Top=133
+  Height=20
+  Browseindex=5
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_40
+  Property=HyperLabel=#OBS,,,
+  Property=HyperLabel=,"Obs:",,
+  Property=HyperLabel=,,,"Fo_chis_OBS"
+  Property=FocusSelect=FSEL_HOME
+
+CONTROL=FIXEDTEXT
+GUID=C912B88C-B380-4C25-8719-2A5CCF26D526
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=8
+  Left=9
+  Width=36
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=BF0C552A-C871-44E2-9800-74D901B4C6C4
+  Name=SC_ADMISSAO
+  Class=FIXEDTEXT
+  Caption=Admissao:
+  Order=9
+  Left=13
+  Width=52
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Admissao:",,
+  Property=HyperLabel=#SC_ADMISSAO,,,
+
+CONTROL=FIXEDTEXT
+GUID=394EC58D-037D-4E21-B4DD-855DB9E9F98C
+  Name=SC_DEMISSAO
+  Class=FIXEDTEXT
+  Caption=Demissao:
+  Order=10
+  Left=137
+  Width=52
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Demissao:",,
+  Property=HyperLabel=#SC_DEMISSAO,,,
+
+CONTROL=FIXEDTEXT
+GUID=05CBB3D5-34A8-4099-BD39-6B6E87395A4F
+  Name=SC_ARQUIVO
+  Class=FIXEDTEXT
+  Caption=Arquivo:
+  Order=11
+  Left=9
+  Width=44
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Arquivo:",,
+  Property=HyperLabel=#SC_ARQUIVO,,,
+
+CONTROL=FIXEDTEXT
+GUID=272B7C4D-88EA-4F20-BFAF-3BAC73EEAE0E
+  Name=SC_OBS
+  Class=FIXEDTEXT
+  Caption=Obs:
+  Order=12
+  Left=13
+  Width=28
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Obs:",,
+  Property=HyperLabel=#SC_OBS,,,
+
+CONTROL=PUSHBUTTON
+GUID=8B8F2CEA-8BB8-492F-A68A-964AAA9B6E8B
+  Name=pornumero
+  Class=PUSHBUTTON
+  Caption=
+  Order=23
+  Left=137
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#pornumero,,,
+
+CONTROL=PUSHBUTTON
+GUID=38EEA23A-774B-4626-88DD-387617E58A62
+  Name=bnumero
+  Class=PUSHBUTTON
+  Caption=
+  Order=25
+  Left=169
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#bnumero,,,
+
+CONTROL=FIXEDTEXT
+GUID=BC869184-C735-4462-BDCC-A462C9FDDD96
+  Name=SC_DESTINO2
+  Class=FIXEDTEXT
+  Caption=Foto Editar
+  Order=27
+  Left=361
+  Width=44
+  Top=117
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Foto Editar",,
+  Property=HyperLabel=#SC_DESTINO2,,,
+
+CONTROL=PUSHBUTTON
+GUID=A9FEE8D2-A13C-4CC5-A3A2-4E31299C35D6
+  Name=foto
+  Class=PUSHBUTTON
+  Caption=
+  Order=28
+  Left=361
+  Width=44
+  Top=81
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#foto,,,
+  Property=Image=ico_camera
+
+CONTROL=PUSHBUTTON
+GUID=A84D26E9-B62C-4801-8404-682452A48410
+  Name=foto1
+  Class=PUSHBUTTON
+  Caption=
+  Order=29
+  Left=413
+  Width=44
+  Top=81
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#foto1,,,
+  Property=Image=ico_camera
+
+CONTROL=FIXEDTEXT
+GUID=F8B08A8E-5C21-45A2-9D25-6FFC9F87FCF8
+  Name=SC_DESTINO3
+  Class=FIXEDTEXT
+  Caption= Foto   Ver
+  Order=30
+  Left=413
+  Width=44
+  Top=117
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=," Foto   Ver",,
+  Property=HyperLabel=#SC_DESTINO3,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jchis
+

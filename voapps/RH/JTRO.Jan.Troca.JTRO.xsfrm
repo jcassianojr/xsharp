@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JTRO">
+    <Window Name="JTRO">
+      <Name>JTRO</Name>
+      <Class>DIALOGWINDOW</Class>
+      <Caption>Troca de Codigos</Caption>
+      <Order>0</Order>
+      <Left>28</Left>
+      <Top>28</Top>
+      <Width>345</Width>
+      <Height>217</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>2160590980</Styles>
+      <ExStyles>257</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Troca de Codigos",,</HyperLabel>
+        <HyperLabel>#JTRO,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="ORI">
+      <Name>ORI</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>93</Left>
+      <Top>13</Top>
+      <Width>136</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#ORI,,,</HyperLabel>
+        <TooltipText>"Digite o Codigo Antigo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="DES">
+      <Name>DES</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>93</Left>
+      <Top>41</Top>
+      <Width>136</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#DES,,,</HyperLabel>
+        <TooltipText>"Digite o Codigo Novo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText1">
+      <Name>FixedText1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Codigo Antigo</Caption>
+      <Order>5</Order>
+      <Left>17</Left>
+      <Top>13</Top>
+      <Width>72</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Codigo Antigo",,</HyperLabel>
+        <HyperLabel>#FixedText1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText2">
+      <Name>FixedText2</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Codigo Novo</Caption>
+      <Order>6</Order>
+      <Left>17</Left>
+      <Top>41</Top>
+      <Width>72</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Codigo Novo",,</HyperLabel>
+        <HyperLabel>#FixedText2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText10">
+      <Name>theFixedText10</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>OK</Caption>
+      <Order>7</Order>
+      <Left>245</Left>
+      <Top>53</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"OK",,</HyperLabel>
+        <HyperLabel>#theFixedText10,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="OK">
+      <Name>OK</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>245</Left>
+      <Top>5</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#OK,,,</HyperLabel>
+        <Image>ico_ok</Image>
+        <TooltipText>"Inicia a Conversão do Codigo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText9">
+      <Name>theFixedText9</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Retornar</Caption>
+      <Order>9</Order>
+      <Left>245</Left>
+      <Top>121</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Retornar",,</HyperLabel>
+        <HyperLabel>#theFixedText9,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Cancelar">
+      <Name>Cancelar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>245</Left>
+      <Top>73</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Cancelar,,,</HyperLabel>
+        <Image>ico_sair</Image>
+        <TooltipText>"Cancela Conversao e Retorna ao Menu"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="imptrei">
+      <Name>imptrei</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Trocar Codigos Treinamento</Caption>
+      <Order>11</Order>
+      <Left>13</Left>
+      <Top>69</Top>
+      <Width>216</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807363</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Trocar Codigos Treinamento",,</HyperLabel>
+        <TooltipText>"Marque Para trocar Codigos Treinamento"</TooltipText>
+        <HyperLabel>#imptrei,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="imppt">
+      <Name>imppt</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Trocar Codigos Progr. de Treinamentos</Caption>
+      <Order>12</Order>
+      <Left>13</Left>
+      <Top>92</Top>
+      <Width>216</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807363</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Trocar Codigos Progr. de Treinamentos",,</HyperLabel>
+        <TooltipText>"Marque Para trocar Codigos Progr. de Treinamentos"</TooltipText>
+        <HyperLabel>#imppt,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="impant">
+      <Name>impant</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Trocar Codigos Contr.Anteriores</Caption>
+      <Order>13</Order>
+      <Left>13</Left>
+      <Top>115</Top>
+      <Width>216</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807363</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Trocar Codigos Contr.Anteriores",,</HyperLabel>
+        <TooltipText>"Marque Para trocar Codigos Contr.Anteriores"</TooltipText>
+        <HyperLabel>#impant,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="imppre">
+      <Name>imppre</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Trocar Codigos Antes Contratação</Caption>
+      <Order>14</Order>
+      <Left>13</Left>
+      <Top>138</Top>
+      <Width>216</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807363</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Trocar Codigos Antes Contratação",,</HyperLabel>
+        <TooltipText>"Marque Para trocar Codigos Antes Contracao"</TooltipText>
+        <HyperLabel>#imppre,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="impcur">
+      <Name>impcur</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Trocar Codigos Cadastro de Funçoes</Caption>
+      <Order>15</Order>
+      <Left>13</Left>
+      <Top>161</Top>
+      <Width>216</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807363</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Trocar Codigos Cadastro de Funçoes",,</HyperLabel>
+        <TooltipText>"Marque Para trocar Codigos Cadastro de Funções"</TooltipText>
+        <HyperLabel>#impcur,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

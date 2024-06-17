@@ -1,0 +1,151 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JMP2
+GUID=5D1C58F0-AA0E-404C-9F56-827323C388B6
+  Name=JMP2
+  Class=DATAWINDOW
+  Caption=Cursos
+  Order=0
+  Left=22
+  Width=420
+  Top=22
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Cursos",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JMP2,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=D7006E84-950C-4F12-8762-8AFF1930EC93
+  Name=TIPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=17
+  Width=130
+  Top=89
+  Height=20
+  Browseindex=1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#TIPO,,,
+  Property=HyperLabel=,"Tipo",,
+  Property=HyperLabel=,,,"MP02C_CURSO"
+
+CONTROL=FIXEDTEXT
+GUID=4C7CD9D5-2C0E-4AE0-BFE5-237418A236C9
+  Name=SC_CODIGO1
+  Class=FIXEDTEXT
+  Caption=Tipo
+  Order=2
+  Left=17
+  Width=50
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tipo",,
+  Property=HyperLabel=#SC_CODIGO1,,,
+
+CONTROL=FIXEDTEXT
+GUID=C5CB01F4-3D18-4BB6-91B0-2D64DA7FC947
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=-1
+  Left=11
+  Width=50
+  Top=11
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=DD1DD1A5-5B06-44FE-A73D-F57E4B37C9A1
+  Name=SC_CURSO
+  Class=FIXEDTEXT
+  Caption=Curso:
+  Order=-1
+  Left=171
+  Width=40
+  Top=11
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Curso:",,
+  Property=HyperLabel=#SC_CURSO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=F090E604-4145-4ED9-ADD9-058E50C6826F
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=11
+  Width=150
+  Top=31
+  Height=30
+  Browseindex=0
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_12
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"MP02C_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=24A401EE-BF3C-49E3-9231-E9D02E9F2468
+  Name=CURSO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=171
+  Width=130
+  Top=31
+  Height=30
+  Browseindex=0
+  Browsesize=26
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#CURSO,,,
+  Property=HyperLabel=,"Curso:",,
+  Property=HyperLabel=,,,"MP02C_CURSO"
+
+SUBCONTROLSEND
+DESIGNEREND = JMP2
+

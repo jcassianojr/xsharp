@@ -1,0 +1,1150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="tabsac_pag1">
+    <Window Name="tabsac_pag1">
+      <Name>tabsac_pag1</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>50</Left>
+      <Top>50</Top>
+      <Width>669</Width>
+      <Height>224</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#tabsac_pag1,,,</HyperLabel>
+        <Use>&lt;Share Owner's&gt;</Use>
+      </ExProperties>
+    </Window>
+    <Control Name="QTL">
+      <Name>QTL</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>13</Left>
+      <Top>29</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_05</FieldSpec>
+        <HyperLabel>#QTL,,,</HyperLabel>
+        <HyperLabel>,"Qtl:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_QTL"</HyperLabel>
+        <TooltipText>"Quantidade do Lote"</TooltipText>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="QTN">
+      <Name>QTN</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>97</Left>
+      <Top>29</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_05</FieldSpec>
+        <HyperLabel>#QTN,,,</HyperLabel>
+        <HyperLabel>,"Qtn:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_QTN"</HyperLabel>
+        <TooltipText>"Quantidade Nao Conforme"</TooltipText>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="DOCUMENTO">
+      <Name>DOCUMENTO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>9</Left>
+      <Top>69</Top>
+      <Width>136</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_25</FieldSpec>
+        <HyperLabel>#DOCUMENTO,,,</HyperLabel>
+        <HyperLabel>,"Sac:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_SAC"</HyperLabel>
+        <TooltipText>"Documento 8D PPR"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="RASTRO">
+      <Name>RASTRO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>153</Left>
+      <Top>69</Top>
+      <Width>116</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_12</FieldSpec>
+        <HyperLabel>#RASTRO,,,</HyperLabel>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_CODIGO"</HyperLabel>
+        <TooltipText>"Rastreabilidade"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="CODIGO">
+      <Name>CODIGO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>53</Left>
+      <Top>97</Top>
+      <Width>116</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_24</FieldSpec>
+        <HyperLabel>#CODIGO,,,</HyperLabel>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_CODIGO"</HyperLabel>
+        <TooltipText>"Codgio do Produto"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="CLIENTE">
+      <Name>CLIENTE</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>49</Left>
+      <Top>193</Top>
+      <Width>110</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#CLIENTE,,,</HyperLabel>
+        <HyperLabel>,"Cliente:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_CLIENTE"</HyperLabel>
+        <TooltipText>"Codigo do Cliente"</TooltipText>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="CLINOME">
+      <Name>CLINOME</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>209</Left>
+      <Top>193</Top>
+      <Width>444</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_50</FieldSpec>
+        <HyperLabel>#CLINOME,,,</HyperLabel>
+        <HyperLabel>,"Clinome:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_CLINOME"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="pegma01">
+      <Name>pegma01</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>--&gt;</Caption>
+      <Order>9</Order>
+      <Left>185</Left>
+      <Top>193</Top>
+      <Width>19</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"--&gt;",,</HyperLabel>
+        <HyperLabel>#pegma01,,,</HyperLabel>
+        <TooltipText>"Retorna o nome conforme codigo do cliente"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="escfor">
+      <Name>escfor</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>...</Caption>
+      <Order>10</Order>
+      <Left>161</Left>
+      <Top>193</Top>
+      <Width>19</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"...",,</HyperLabel>
+        <HyperLabel>#escfor,,,</HyperLabel>
+        <TooltipText>"Escolhe cliente na lIsta"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CLIENTE">
+      <Name>SC_CLIENTE</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Cliente:</Caption>
+      <Order>11</Order>
+      <Left>9</Left>
+      <Top>193</Top>
+      <Width>40</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Cliente:",,</HyperLabel>
+        <HyperLabel>#SC_CLIENTE,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FEMEAREVD">
+      <Name>FEMEAREVD</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>12</Order>
+      <Left>145</Left>
+      <Top>121</Top>
+      <Width>76</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>DATE_FIELD</FieldSpec>
+        <HyperLabel>#FEMEAREVD,,,</HyperLabel>
+        <HyperLabel>,"Sac:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_SAC"</HyperLabel>
+        <TooltipText>"Data Revisão Femea"</TooltipText>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="FEMEAREV">
+      <Name>FEMEAREV</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>13</Order>
+      <Left>85</Left>
+      <Top>121</Top>
+      <Width>56</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#FEMEAREV,,,</HyperLabel>
+        <HyperLabel>,"Sac:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_SAC"</HyperLabel>
+        <TooltipText>"Revisao do Femea"</TooltipText>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="Femea">
+      <Name>Femea</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Femea Rev / Data</Caption>
+      <Order>14</Order>
+      <Left>229</Left>
+      <Top>121</Top>
+      <Width>128</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Femea Rev / Data",,</HyperLabel>
+        <HyperLabel>#Femea,,,</HyperLabel>
+        <TooltipText>"Trazer Informaçoes Femea"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="PF">
+      <Name>PF</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>15</Order>
+      <Left>25</Left>
+      <Top>121</Top>
+      <Width>56</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#PF,,,</HyperLabel>
+        <HyperLabel>,"Sac:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_SAC"</HyperLabel>
+        <TooltipText>"Nº Processo Fabricaçao"</TooltipText>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CODIGO3">
+      <Name>SC_CODIGO3</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>PF</Caption>
+      <Order>16</Order>
+      <Left>9</Left>
+      <Top>121</Top>
+      <Width>20</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"PF",,</HyperLabel>
+        <HyperLabel>#SC_CODIGO3,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CODIGO2">
+      <Name>SC_CODIGO2</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Rastro</Caption>
+      <Order>17</Order>
+      <Left>157</Left>
+      <Top>53</Top>
+      <Width>44</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Rastro",,</HyperLabel>
+        <HyperLabel>#SC_CODIGO2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_SAC1">
+      <Name>SC_SAC1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Documento/8D/PPR</Caption>
+      <Order>18</Order>
+      <Left>9</Left>
+      <Top>53</Top>
+      <Width>132</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Documento/8D/PPR",,</HyperLabel>
+        <HyperLabel>#SC_SAC1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Notificar">
+      <Name>Notificar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Notificar Email</Caption>
+      <Order>19</Order>
+      <Left>521</Left>
+      <Top>97</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Notificar Email",,</HyperLabel>
+        <HyperLabel>#Notificar,,,</HyperLabel>
+        <TooltipText>"Notificar Destinarios Email Interno"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="NOME">
+      <Name>NOME</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>20</Order>
+      <Left>213</Left>
+      <Top>97</Top>
+      <Width>296</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_50</FieldSpec>
+        <HyperLabel>#NOME,,,</HyperLabel>
+        <HyperLabel>,"Nome:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_NOME"</HyperLabel>
+        <TooltipText>"Desricao do Produto"</TooltipText>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="pegms01">
+      <Name>pegms01</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>--&gt;</Caption>
+      <Order>21</Order>
+      <Left>193</Left>
+      <Top>97</Top>
+      <Width>19</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"--&gt;",,</HyperLabel>
+        <HyperLabel>#pegms01,,,</HyperLabel>
+        <TooltipText>"Retorna o nome do codigo do Produto"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="esccod">
+      <Name>esccod</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>...</Caption>
+      <Order>22</Order>
+      <Left>173</Left>
+      <Top>97</Top>
+      <Width>19</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"...",,</HyperLabel>
+        <HyperLabel>#esccod,,,</HyperLabel>
+        <TooltipText>"Escolher Produto na Lista"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CODIGO">
+      <Name>SC_CODIGO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Codigo:</Caption>
+      <Order>23</Order>
+      <Left>9</Left>
+      <Top>97</Top>
+      <Width>44</Width>
+      <Height>24</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>#SC_CODIGO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_QTN">
+      <Name>SC_QTN</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Qtde nao Conf:</Caption>
+      <Order>24</Order>
+      <Left>97</Left>
+      <Top>13</Top>
+      <Width>80</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Qtde nao Conf:",,</HyperLabel>
+        <HyperLabel>#SC_QTN,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_QTN1">
+      <Name>SC_QTN1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Qtde Lote</Caption>
+      <Order>25</Order>
+      <Left>13</Left>
+      <Top>13</Top>
+      <Width>80</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Qtde Lote",,</HyperLabel>
+        <HyperLabel>#SC_QTN1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theRadioButton7">
+      <Name>theRadioButton7</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Atraso Entrega</Caption>
+      <Order>26</Order>
+      <Left>529</Left>
+      <Top>53</Top>
+      <Width>100</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Atraso Entrega",,</HyperLabel>
+        <Value>E</Value>
+        <HyperLabel>#theRadioButton7,,,</HyperLabel>
+        <TooltipText>"Atraso de Entrega"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theRadioButton5">
+      <Name>theRadioButton5</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Aud.Int. Processo</Caption>
+      <Order>27</Order>
+      <Left>461</Left>
+      <Top>25</Top>
+      <Width>114</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Aud.Int. Processo",,</HyperLabel>
+        <Value>A</Value>
+        <HyperLabel>#theRadioButton5,,,</HyperLabel>
+        <TooltipText>"Auditoria Interna de Processo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theRadioButton6">
+      <Name>theRadioButton6</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Produção</Caption>
+      <Order>28</Order>
+      <Left>413</Left>
+      <Top>53</Top>
+      <Width>100</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Produção",,</HyperLabel>
+        <Value>P</Value>
+        <HyperLabel>#theRadioButton6,,,</HyperLabel>
+        <TooltipText>"Produçao"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theRadioButton4">
+      <Name>theRadioButton4</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Rec.Cliente</Caption>
+      <Order>29</Order>
+      <Left>301</Left>
+      <Top>53</Top>
+      <Width>100</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Rec.Cliente",,</HyperLabel>
+        <Value>R</Value>
+        <HyperLabel>#theRadioButton4,,,</HyperLabel>
+        <TooltipText>"Reclamação de Cliente"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theRadioButton3">
+      <Name>theRadioButton3</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Aud.Int. Sistema</Caption>
+      <Order>30</Order>
+      <Left>309</Left>
+      <Top>25</Top>
+      <Width>119</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741833</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Aud.Int. Sistema",,</HyperLabel>
+        <Value>S</Value>
+        <HyperLabel>#theRadioButton3,,,</HyperLabel>
+        <TooltipText>"Sac Auditoria Interna de Sistema"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="TIPO">
+      <Name>TIPO</Name>
+      <Class>RADIOBUTTONGROUP</Class>
+      <Caption>Tipo:</Caption>
+      <Order>31</Order>
+      <Left>289</Left>
+      <Top>9</Top>
+      <Width>356</Width>
+      <Height>72</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073872903</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Tipo:",,</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_01</FieldSpec>
+        <HyperLabel>#TIPO,,,</HyperLabel>
+        <TooltipText>"Tipo de Sac"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="nova">
+      <Name>nova</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>32</Order>
+      <Left>393</Left>
+      <Top>121</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#nova,,,</HyperLabel>
+        <HyperLabel>,"Sac:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_SAC"</HyperLabel>
+        <TooltipText>"Nº Nova Sac em Caso "</TooltipText>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+        <Background>255 255 200</Background>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CODIGO4">
+      <Name>SC_CODIGO4</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Nova</Caption>
+      <Order>33</Order>
+      <Left>361</Left>
+      <Top>121</Top>
+      <Width>32</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Nova",,</HyperLabel>
+        <HyperLabel>#SC_CODIGO4,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="buscanova">
+      <Name>buscanova</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>--&gt;</Caption>
+      <Order>34</Order>
+      <Left>461</Left>
+      <Top>121</Top>
+      <Width>19</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"--&gt;",,</HyperLabel>
+        <HyperLabel>#buscanova,,,</HyperLabel>
+        <TooltipText>"Vai Para a Sac Nova"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="buscaant">
+      <Name>buscaant</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>--&gt;</Caption>
+      <Order>35</Order>
+      <Left>593</Left>
+      <Top>121</Top>
+      <Width>19</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"--&gt;",,</HyperLabel>
+        <HyperLabel>#buscaant,,,</HyperLabel>
+        <TooltipText>"Vai para Sac Anterior"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="nova1">
+      <Name>nova1</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>36</Order>
+      <Left>525</Left>
+      <Top>121</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#nova1,,,</HyperLabel>
+        <HyperLabel>,"Sac:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_SAC"</HyperLabel>
+        <TooltipText>"Nº Sac Anterior em caso de"</TooltipText>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CODIGO5">
+      <Name>SC_CODIGO5</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Anterior</Caption>
+      <Order>37</Order>
+      <Left>485</Left>
+      <Top>121</Top>
+      <Width>40</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Anterior",,</HyperLabel>
+        <HyperLabel>#SC_CODIGO5,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="POA">
+      <Name>POA</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>38</Order>
+      <Left>189</Left>
+      <Top>29</Top>
+      <Width>52</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#POA,,,</HyperLabel>
+        <HyperLabel>,"Sac:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_SAC"</HyperLabel>
+        <TooltipText>"Nº Programa Olhos Abertos"</TooltipText>
+        <Background>255 255 200</Background>
+        <NewFont>10:Trebuchet MS:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_SAC2">
+      <Name>SC_SAC2</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>POA</Caption>
+      <Order>39</Order>
+      <Left>189</Left>
+      <Top>9</Top>
+      <Width>30</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"POA",,</HyperLabel>
+        <HyperLabel>#SC_SAC2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText10">
+      <Name>FixedText10</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Necessario Revisar Processo Fabricaçao</Caption>
+      <Order>40</Order>
+      <Left>5</Left>
+      <Top>145</Top>
+      <Width>216</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Necessario Revisar Processo Fabricaçao",,</HyperLabel>
+        <HyperLabel>#FixedText10,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="REVPF">
+      <Name>REVPF</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>41</Order>
+      <Left>225</Left>
+      <Top>145</Top>
+      <Width>36</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_01</FieldSpec>
+        <HyperLabel>#REVPF,,,</HyperLabel>
+        <HyperLabel>,"Sac:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_SAC"</HyperLabel>
+        <TooltipText>"Nº Processo Fabricaçao"</TooltipText>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText11">
+      <Name>FixedText11</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Necessario Revisar Plano de Controle</Caption>
+      <Order>42</Order>
+      <Left>5</Left>
+      <Top>169</Top>
+      <Width>216</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Necessario Revisar Plano de Controle",,</HyperLabel>
+        <HyperLabel>#FixedText11,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="REVPC">
+      <Name>REVPC</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>43</Order>
+      <Left>225</Left>
+      <Top>168</Top>
+      <Width>36</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_01</FieldSpec>
+        <HyperLabel>#REVPC,,,</HyperLabel>
+        <HyperLabel>,"Sac:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_SAC"</HyperLabel>
+        <TooltipText>"Nº Processo Fabricaçao"</TooltipText>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="cmdrevpf">
+      <Name>cmdrevpf</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>(S)im(N)ão</Caption>
+      <Order>44</Order>
+      <Left>269</Left>
+      <Top>145</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"SimNão",,</HyperLabel>
+        <HyperLabel>#cmdrevpf,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="cmdrevpc">
+      <Name>cmdrevpc</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>(S)im(N)ão</Caption>
+      <Order>45</Order>
+      <Left>269</Left>
+      <Top>168</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"SimNão",,</HyperLabel>
+        <HyperLabel>#cmdrevpc,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="REVPFOBS">
+      <Name>REVPFOBS</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>46</Order>
+      <Left>357</Left>
+      <Top>145</Top>
+      <Width>276</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_30</FieldSpec>
+        <HyperLabel>#REVPFOBS,,,</HyperLabel>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_CODIGO"</HyperLabel>
+        <TooltipText>"Rastreabilidade"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="REVPCOBS">
+      <Name>REVPCOBS</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>47</Order>
+      <Left>357</Left>
+      <Top>168</Top>
+      <Width>276</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_char_30</FieldSpec>
+        <HyperLabel>#REVPCOBS,,,</HyperLabel>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>,,,"SAC_CODIGO"</HyperLabel>
+        <TooltipText>"Rastreabilidade"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DESTINO2">
+      <Name>SC_DESTINO2</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Foto</Caption>
+      <Order>48</Order>
+      <Left>620</Left>
+      <Top>125</Top>
+      <Width>48</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Foto",,</HyperLabel>
+        <HyperLabel>#SC_DESTINO2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="foto">
+      <Name>foto</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>49</Order>
+      <Left>620</Left>
+      <Top>85</Top>
+      <Width>48</Width>
+      <Height>40</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#foto,,,</HyperLabel>
+        <Image>ico_camera</Image>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

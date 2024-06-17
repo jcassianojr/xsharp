@@ -1,0 +1,169 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,implxop01
+GUID=3599761E-45F5-4408-A2A9-B0573FFDDC57
+  Name=implxop01
+  Class=DATADIALOG
+  Caption=DataDialog Caption
+  Order=0
+  Left=12
+  Width=547
+  Top=12
+  Height=240
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataDialog Caption",,
+  Property=HyperLabel=#implxop01,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=E0E8BE39-0D73-410D-8A9C-84B42A3AD929
+  Name=D03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=261
+  Width=104
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#D03,,,
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=387F6E53-9D9D-4F15-986C-E355CAD20B13
+  Name=D02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=133
+  Width=104
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#D02,,,
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=4ADA0BEF-DD54-47A7-A5B9-363EA08880B5
+  Name=D01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=5
+  Width=104
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#D01,,,
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+
+CONTROL=FIXEDTEXT
+GUID=18D83C53-68A6-4A95-BDD6-2ECA03A15611
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Cancelar
+  Order=4
+  Left=406
+  Width=64
+  Top=134
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Cancelar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=6B480122-687F-47E7-9B98-3DA7DD51C144
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=407
+  Width=64
+  Top=86
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ico_sair
+  Property=TooltipText="Clique para Cancelar"
+
+CONTROL=FIXEDTEXT
+GUID=6EC4DC1C-6A85-433B-B5CF-34DF270A227D
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=6
+  Left=406
+  Width=64
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=2420ACA8-87DC-42CD-AAF6-CAEB2E31313F
+  Name=ok
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=408
+  Width=64
+  Top=9
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#ok,,,
+  Property=Image=ico_ok
+  Property=TooltipText="Clique Para Inciar a Impotação"
+
+SUBCONTROLSEND
+DESIGNEREND = implxop01
+

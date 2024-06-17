@@ -1,0 +1,114 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JPAEI
+GUID=2C61B46D-BE9E-4B04-8402-FDA0E847C540
+  Name=JPAEI
+  Class=DATAWINDOW
+  Caption=Plano de Auditoria de Embarque - Especificacoes
+  Order=0
+  Left=42
+  Width=497
+  Top=42
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Plano de Auditoria de Embarque - Especificacoes",,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ClipperKeys=True
+  Property=HyperLabel=#JPAEI,,,
+  Property=ViewAs=#BrowseView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=94BBF504-5D2E-4A3C-B8BF-77EDAB056E84
+  Name=DESENHO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=73
+  Width=180
+  Top=17
+  Height=28
+  Browseindex=0
+  Browsesize=25
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#DESENHO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"PAEI_CODIGO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=AFD8083B-340B-425E-8B6F-C04438F5F67C
+  Name=ESPEC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=21
+  Width=400
+  Top=65
+  Height=20
+  Browseindex=1
+  Browsesize=44
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_100
+  Property=HyperLabel=#ESPEC,,,
+  Property=HyperLabel=,"Especificação:",,
+  Property=HyperLabel=,,,"PAEI_ESPEC"
+
+CONTROL=FIXEDTEXT
+GUID=9B8C658C-5875-450F-8BA4-25C0B04A75F8
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=3
+  Left=21
+  Width=40
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=3C12BF41-7D3D-4625-A331-16483142635F
+  Name=SC_ESPEC
+  Class=FIXEDTEXT
+  Caption=Especificação
+  Order=4
+  Left=22
+  Width=79
+  Top=50
+  Height=15
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Especificação",,
+  Property=HyperLabel=#SC_ESPEC,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JPAEI
+

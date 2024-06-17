@@ -1,0 +1,560 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JACDI
+GUID=AD1894E6-FB46-4946-9AF3-086DE9E57DD2
+  Name=JACDI
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=40
+  Width=690
+  Top=40
+  Height=232
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JACDI,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=BDF98207-9230-4F1D-AC1A-E86D0EAF04F5
+  Name=VAL01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=11
+  Width=90
+  Top=81
+  Height=19
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_09_4
+  Property=HyperLabel=#VAL01,,,
+  Property=HyperLabel=,"Val01",,
+  Property=HyperLabel=,,,"ACDI_VAL01"
+
+CONTROL=SINGLELINEEDIT
+GUID=E44A5059-27BD-4178-B89A-ECBD77AFD0CB
+  Name=VAL02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=111
+  Width=90
+  Top=81
+  Height=19
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_09_4
+  Property=HyperLabel=#VAL02,,,
+  Property=HyperLabel=,"Val02",,
+  Property=HyperLabel=,,,"ACDI_VAL02"
+
+CONTROL=SINGLELINEEDIT
+GUID=5E486823-ADE4-40A5-B3BD-5FD475BB60FA
+  Name=VAL03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=211
+  Width=90
+  Top=81
+  Height=19
+  Browseindex=6
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_09_4
+  Property=HyperLabel=#VAL03,,,
+  Property=HyperLabel=,"Val03",,
+  Property=HyperLabel=,,,"ACDI_VAL03"
+
+CONTROL=SINGLELINEEDIT
+GUID=9958FB62-9ED2-49D3-A84A-6E6BCE6A2B64
+  Name=VAL04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=311
+  Width=90
+  Top=81
+  Height=19
+  Browseindex=7
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_09_4
+  Property=HyperLabel=#VAL04,,,
+  Property=HyperLabel=,"Val04",,
+  Property=HyperLabel=,,,"ACDI_VAL04"
+
+CONTROL=SINGLELINEEDIT
+GUID=D84F5A94-8D07-4FBD-A446-D580BD4C99B3
+  Name=VAL05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=411
+  Width=90
+  Top=81
+  Height=20
+  Browseindex=8
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_09_4
+  Property=HyperLabel=#VAL05,,,
+  Property=HyperLabel=,"Val05",,
+  Property=HyperLabel=,,,"ACDI_VAL05"
+
+CONTROL=SINGLELINEEDIT
+GUID=F4AA4649-9D04-4437-81B4-BC2201763EA4
+  Name=MEDX
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=513
+  Width=71
+  Top=81
+  Height=20
+  Browseindex=9
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=#MEDX,,,
+  Property=FieldSpec=padrao_num_09_4
+  Property=HyperLabel=,"MediaX",,
+
+CONTROL=SINGLELINEEDIT
+GUID=08774F5C-F6B8-471C-8A48-27048B1B23E9
+  Name=VALR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=589
+  Width=71
+  Top=81
+  Height=20
+  Browseindex=10
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=#VALR,,,
+  Property=FieldSpec=padrao_num_09_4
+  Property=HyperLabel=,"ValR",,
+
+CONTROL=FIXEDTEXT
+GUID=20AF4CFF-6346-4F5D-BBBD-4CA00128391F
+  Name=SC_ACD
+  Class=FIXEDTEXT
+  Caption=Acd:
+  Order=8
+  Left=11
+  Width=30
+  Top=11
+  Height=30
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Acd:",,
+  Property=HyperLabel=#SC_ACD,,,
+
+CONTROL=FIXEDTEXT
+GUID=EEAAD7C1-0077-409D-9BEA-928893FC4A43
+  Name=SC_DATA
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=9
+  Left=81
+  Width=40
+  Top=11
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=#SC_DATA,,,
+
+CONTROL=FIXEDTEXT
+GUID=08F76A29-FD33-4921-BEF1-94B4BEBBE0E5
+  Name=SC_HORA
+  Class=FIXEDTEXT
+  Caption=Hora:
+  Order=10
+  Left=171
+  Width=40
+  Top=11
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Hora:",,
+  Property=HyperLabel=#SC_HORA,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=AB44522D-E704-45DF-A7FF-0FB419B40FC2
+  Name=ACD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=11
+  Width=60
+  Top=31
+  Height=20
+  Browseindex=0
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#ACD,,,
+  Property=HyperLabel=,"Acd:",,
+  Property=HyperLabel=,,,"ACDI_ACD"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=38499942-99F8-4066-AF76-8861D9A169C4
+  Name=DATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=81
+  Width=80
+  Top=31
+  Height=20
+  Browseindex=2
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DATA,,,
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=,,,"ACDI_DATA"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=234B21E1-514F-4CE1-B920-54B120360FD8
+  Name=HORA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=171
+  Width=70
+  Top=31
+  Height=20
+  Browseindex=3
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_num_05_2
+  Property=HyperLabel=#HORA,,,
+  Property=HyperLabel=,"Hora:",,
+  Property=HyperLabel=,,,"ACDI_HORA"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=7F9E3FE1-4840-486A-B813-205147794EA4
+  Name=SC_VAL01
+  Class=FIXEDTEXT
+  Caption=Val01:
+  Order=14
+  Left=11
+  Width=40
+  Top=61
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Val01:",,
+  Property=HyperLabel=#SC_VAL01,,,
+
+CONTROL=FIXEDTEXT
+GUID=CEF83612-27C0-4F07-A5B0-C01452C0601F
+  Name=SC_VAL02
+  Class=FIXEDTEXT
+  Caption=Val02:
+  Order=15
+  Left=111
+  Width=40
+  Top=61
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Val02:",,
+  Property=HyperLabel=#SC_VAL02,,,
+
+CONTROL=FIXEDTEXT
+GUID=80BEE20E-063C-4773-8E6C-8352DBFAFA02
+  Name=SC_VAL03
+  Class=FIXEDTEXT
+  Caption=Val03:
+  Order=16
+  Left=211
+  Width=40
+  Top=61
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Val03:",,
+  Property=HyperLabel=#SC_VAL03,,,
+
+CONTROL=FIXEDTEXT
+GUID=69035AAF-6E0C-458A-896B-3623E481349F
+  Name=SC_VAL04
+  Class=FIXEDTEXT
+  Caption=Val04:
+  Order=17
+  Left=311
+  Width=40
+  Top=61
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Val04:",,
+  Property=HyperLabel=#SC_VAL04,,,
+
+CONTROL=FIXEDTEXT
+GUID=BCD91EB8-B983-4FA8-AAFD-7772AB363849
+  Name=SC_VAL05
+  Class=FIXEDTEXT
+  Caption=Val05:
+  Order=18
+  Left=411
+  Width=40
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Val05:",,
+  Property=HyperLabel=#SC_VAL05,,,
+
+CONTROL=FIXEDTEXT
+GUID=E297CD71-FEAA-464A-B7AE-38F9F0C89CE7
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=Media R
+  Order=19
+  Left=593
+  Width=48
+  Top=65
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Media R",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=FIXEDTEXT
+GUID=24AE95FE-429B-4654-B8BA-0B266656C8E1
+  Name=text06
+  Class=FIXEDTEXT
+  Caption=Media X
+  Order=20
+  Left=513
+  Width=48
+  Top=65
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Media X",,
+  Property=HyperLabel=#text06,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=C6B6590C-0F69-4C6A-BFDC-F1D2C9DA4845
+  Name=ACP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=412
+  Width=90
+  Top=82
+  Height=20
+  Browseindex=11
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=1
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#ACP,,,
+  Property=HyperLabel=,"ACP",,
+  Property=HyperLabel=,,,"ACDI_ACP"
+
+CONTROL=SINGLELINEEDIT
+GUID=3226E976-1B56-4B54-981C-3F9E5C5496F3
+  Name=LIC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=412
+  Width=90
+  Top=82
+  Height=20
+  Browseindex=13
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=1
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_09_4
+  Property=HyperLabel=#LIC,,,
+  Property=HyperLabel=,"LIC",,
+  Property=HyperLabel=,,,"ACDI_VAL05"
+
+CONTROL=SINGLELINEEDIT
+GUID=8D8CD608-E021-44FB-8387-909645CF381A
+  Name=LSC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=413
+  Width=90
+  Top=83
+  Height=20
+  Browseindex=14
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=1
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_09_4
+  Property=HyperLabel=#LSC,,,
+  Property=HyperLabel=,"LSC",,
+  Property=HyperLabel=,,,"ACDI_VAL05"
+
+CONTROL=SINGLELINEEDIT
+GUID=6692D42B-3352-4199-9FBD-7AAA37E4A88B
+  Name=AEP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=413
+  Width=90
+  Top=83
+  Height=20
+  Browseindex=12
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=1
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#AEP,,,
+  Property=HyperLabel=,"AEP",,
+  Property=HyperLabel=,,,"ACDI_ACP"
+
+CONTROL=SINGLELINEEDIT
+GUID=728F8B10-6C58-4121-9A4A-340C7ACDFAD4
+  Name=ORDEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=414
+  Width=90
+  Top=84
+  Height=20
+  Browseindex=1
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=1
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_03
+  Property=HyperLabel=#ORDEM,,,
+  Property=HyperLabel=,"Ord",,
+  Property=HyperLabel=,,,"ACDI_ACP"
+
+SUBCONTROLSEND
+DESIGNEREND = JACDI
+

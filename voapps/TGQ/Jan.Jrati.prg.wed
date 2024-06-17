@@ -1,0 +1,890 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jrati
+GUID=815CD504-7863-4DDD-A3D8-B588477E59F5
+  Name=jrati
+  Class=DATAWINDOW
+  Caption=Itens do Relatorio de Assistencia Tecnica
+  Order=0
+  Left=44
+  Width=512
+  Top=44
+  Height=549
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Itens do Relatorio de Assistencia Tecnica",,
+  Property=HyperLabel=#jrati,,,
+  Property=ClipperKeys=True
+  Property=ViewAs=#BrowseView
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=E233A20B-A7E6-4E09-BA00-D33368A9897B
+  Name=SC_RAT
+  Class=FIXEDTEXT
+  Caption=Rat:
+  Order=1
+  Left=9
+  Width=24
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rat:",,
+  Property=HyperLabel=#SC_RAT,,,
+
+CONTROL=FIXEDTEXT
+GUID=91D096E7-2485-4DC6-A193-ECE5D3C48EF1
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=2
+  Left=85
+  Width=40
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=8B1C880A-71DE-4ADB-90BC-D1D76DB4C2C8
+  Name=SC_QTDE
+  Class=FIXEDTEXT
+  Caption=Qtde:
+  Order=3
+  Left=241
+  Width=32
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtde:",,
+  Property=HyperLabel=#SC_QTDE,,,
+
+CONTROL=FIXEDTEXT
+GUID=EA4A744F-C59D-467D-B10F-4EA425F04C87
+  Name=SC_RASTRO
+  Class=FIXEDTEXT
+  Caption=Rastro:
+  Order=4
+  Left=321
+  Width=40
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rastro:",,
+  Property=HyperLabel=#SC_RASTRO,,,
+
+CONTROL=FIXEDTEXT
+GUID=FEF83484-6D6F-4853-AF46-E27E69AFAB0D
+  Name=SC_PRAZO
+  Class=FIXEDTEXT
+  Caption=Prazo:
+  Order=5
+  Left=401
+  Width=36
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Prazo:",,
+  Property=HyperLabel=#SC_PRAZO,,,
+
+CONTROL=FIXEDTEXT
+GUID=18E67074-EE4C-4CAA-BE58-A8C02BE9309A
+  Name=SC_RESNUM
+  Class=FIXEDTEXT
+  Caption=Responsável
+  Order=6
+  Left=9
+  Width=72
+  Top=321
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Responsável",,
+  Property=HyperLabel=#SC_RESNUM,,,
+
+CONTROL=FIXEDTEXT
+GUID=B7D88215-3866-417A-A96A-B358FB28998F
+  Name=SC_SAC
+  Class=FIXEDTEXT
+  Caption=Sac:
+  Order=7
+  Left=9
+  Width=28
+  Top=345
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Sac:",,
+  Property=HyperLabel=#SC_SAC,,,
+
+CONTROL=FIXEDTEXT
+GUID=3755065C-F691-4F3C-A64A-43C16471BC09
+  Name=SC_RACF
+  Class=FIXEDTEXT
+  Caption=Racf:
+  Order=8
+  Left=125
+  Width=32
+  Top=345
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Racf:",,
+  Property=HyperLabel=#SC_RACF,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=398D3763-59A1-49ED-BFA2-F4195F12E461
+  Name=RAT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=5
+  Width=68
+  Top=21
+  Height=28
+  Browseindex=0
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RAT,,,
+  Property=HyperLabel=,"Rat:",,
+  Property=HyperLabel=,,,"RATI_RAT"
+  Property=TooltipText="No RAT"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=E2A6928F-987A-4257-8FC1-4449E01DC402
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=81
+  Width=156
+  Top=21
+  Height=28
+  Browseindex=1
+  Browsesize=24
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"RATI_CODIGO"
+  Property=TooltipText="Codigo do Produto"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=A9B2F94C-5B2F-4FE9-B093-F19DA3ECBE48
+  Name=QTDE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=241
+  Width=68
+  Top=29
+  Height=20
+  Browseindex=2
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#QTDE,,,
+  Property=HyperLabel=,"Qtde:",,
+  Property=HyperLabel=,,,"RATI_QTDE"
+  Property=TooltipText="Quantidade"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=FF6FEDFE-D9A6-4C7C-B3A7-7E85FCB9CDBB
+  Name=RASTRO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=317
+  Width=76
+  Top=29
+  Height=20
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_10
+  Property=HyperLabel=#RASTRO,,,
+  Property=HyperLabel=,"Rastro:",,
+  Property=HyperLabel=,,,"RATI_RASTRO"
+  Property=TooltipText="No da Rastreabilidade"
+
+CONTROL=SINGLELINEEDIT
+GUID=56939880-2B50-477C-94E5-415A1BE2E4F3
+  Name=PRAZO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=397
+  Width=92
+  Top=29
+  Height=20
+  Browseindex=4
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#PRAZO,,,
+  Property=HyperLabel=,"Prazo:",,
+  Property=HyperLabel=,,,"RATI_PRAZO"
+  Property=TooltipText="Data Prazo da Rat"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=1AD1A4B8-4E27-429C-A290-3E3379594E5F
+  Name=PROB01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=21
+  Width=452
+  Top=69
+  Height=20
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#PROB01,,,
+  Property=HyperLabel=,"Prob01:",,
+  Property=HyperLabel=,,,"RATI_PROB01"
+  Property=TooltipText="Descrição Não Conformidade"
+
+CONTROL=SINGLELINEEDIT
+GUID=F6421B84-D615-43C1-B185-F3EA43E5FA96
+  Name=PROB02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=21
+  Width=452
+  Top=85
+  Height=20
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#PROB02,,,
+  Property=HyperLabel=,"Prob02:",,
+  Property=HyperLabel=,,,"RATI_PROB02"
+  Property=TooltipText="Descrição Não Conformidade"
+
+CONTROL=SINGLELINEEDIT
+GUID=A99540D4-275A-4A80-92F9-E3C19CF685A8
+  Name=PROB03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=21
+  Width=452
+  Top=101
+  Height=20
+  Browseindex=6
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#PROB03,,,
+  Property=HyperLabel=,"Prob03:",,
+  Property=HyperLabel=,,,"RATI_PROB03"
+  Property=TooltipText="Descrição Não Conformidade"
+
+CONTROL=SINGLELINEEDIT
+GUID=CBB9D496-550E-40A8-B1B0-BBA72FA178E4
+  Name=ANAL01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=25
+  Width=444
+  Top=145
+  Height=20
+  Browseindex=7
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#ANAL01,,,
+  Property=HyperLabel=,"Anal01:",,
+  Property=HyperLabel=,,,"RATI_ANAL01"
+  Property=TooltipText="Descrição Analise Critica"
+
+CONTROL=SINGLELINEEDIT
+GUID=B03A048C-C15C-481D-AE0A-643A47E12A7C
+  Name=ANAL02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=25
+  Width=444
+  Top=161
+  Height=20
+  Browseindex=8
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#ANAL02,,,
+  Property=HyperLabel=,"Anal02:",,
+  Property=HyperLabel=,,,"RATI_ANAL02"
+  Property=TooltipText="Descrição Analise Critica"
+
+CONTROL=SINGLELINEEDIT
+GUID=6EC12374-593F-4F85-8E17-3D242D176273
+  Name=ANAL03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=25
+  Width=444
+  Top=177
+  Height=20
+  Browseindex=9
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#ANAL03,,,
+  Property=HyperLabel=,"Anal03:",,
+  Property=HyperLabel=,,,"RATI_ANAL03"
+  Property=TooltipText="Descrição Analise Critica"
+
+CONTROL=SINGLELINEEDIT
+GUID=CD4EB3C3-5C53-42A7-B23B-712D835160C2
+  Name=ANAL04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=25
+  Width=444
+  Top=193
+  Height=20
+  Browseindex=10
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#ANAL04,,,
+  Property=HyperLabel=,"Anal04:",,
+  Property=HyperLabel=,,,"RATI_ANAL04"
+  Property=TooltipText="Descrição Analise Critica"
+
+CONTROL=SINGLELINEEDIT
+GUID=9BC524D7-9082-4E93-8FF9-8DCE1B41D626
+  Name=ANAL05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=25
+  Width=444
+  Top=209
+  Height=20
+  Browseindex=11
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#ANAL05,,,
+  Property=HyperLabel=,"Anal05:",,
+  Property=HyperLabel=,,,"RATI_ANAL05"
+  Property=TooltipText="Descrição Analise Critica"
+  Property=FieldSpec=PADRAO_CHAR_100
+
+CONTROL=SINGLELINEEDIT
+GUID=34894E06-29A0-48D2-A8C7-6EE69F5B2C77
+  Name=ACAO01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=25
+  Width=440
+  Top=253
+  Height=20
+  Browseindex=12
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#ACAO01,,,
+  Property=HyperLabel=,"Acao01:",,
+  Property=HyperLabel=,,,"RATI_ACAO01"
+  Property=TooltipText="Descrição Ação Imediata"
+
+CONTROL=SINGLELINEEDIT
+GUID=8E2E37FB-BAA7-4333-A67A-1A88E136A73D
+  Name=ACAO02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=23
+  Left=25
+  Width=440
+  Top=269
+  Height=20
+  Browseindex=13
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#ACAO02,,,
+  Property=HyperLabel=,"Acao02:",,
+  Property=HyperLabel=,,,"RATI_ACAO02"
+  Property=TooltipText="Descrição Ação Imediata"
+
+CONTROL=SINGLELINEEDIT
+GUID=76C366F1-2931-40E9-BEE8-75BAA57A4198
+  Name=ACAO03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=24
+  Left=25
+  Width=440
+  Top=285
+  Height=20
+  Browseindex=14
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#ACAO03,,,
+  Property=HyperLabel=,"Acao03:",,
+  Property=HyperLabel=,,,"RATI_ACAO03"
+  Property=TooltipText="Descrição Ação Imediata"
+
+CONTROL=SINGLELINEEDIT
+GUID=699C283B-E865-4DD0-892A-459138C7B632
+  Name=RESNUM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=25
+  Left=77
+  Width=68
+  Top=321
+  Height=20
+  Browseindex=16
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RESNUM,,,
+  Property=HyperLabel=,"Resnum:",,
+  Property=HyperLabel=,,,"RATI_RESNUM"
+  Property=TooltipText="Numero Reg. Responsavel"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=083E6040-4DA6-4D38-8875-95999EFB386B
+  Name=RESNOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=26
+  Left=189
+  Width=292
+  Top=321
+  Height=20
+  Browseindex=17
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#RESNOME,,,
+  Property=HyperLabel=,"Resnome:",,
+  Property=HyperLabel=,,,"RATI_RESNOME"
+
+CONTROL=SINGLELINEEDIT
+GUID=EC4FAD5E-F856-4A95-8BED-4737DE7DD92F
+  Name=SAC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=27
+  Left=41
+  Width=68
+  Top=345
+  Height=20
+  Browseindex=5
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#SAC,,,
+  Property=HyperLabel=,"Sac:",,
+  Property=HyperLabel=,,,"RATI_SAC"
+  Property=TooltipText="No da Sac"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=BDDBE095-DD39-4A02-9E45-B399C02F31F9
+  Name=RACF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=28
+  Left=165
+  Width=68
+  Top=345
+  Height=20
+  Browseindex=6
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RACF,,,
+  Property=HyperLabel=,"Racf:",,
+  Property=HyperLabel=,,,"RATI_RACF"
+  Property=TooltipText="No da Racf"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=GROUPBOX
+GUID=79213855-1F56-406E-9627-FD2416AB2213
+  Name=GroupBox1
+  Class=GROUPBOX
+  Caption=Acao Imediata
+  Order=29
+  Left=9
+  Width=483
+  Top=237
+  Height=76
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Acao Imediata",,
+  Property=HyperLabel=#GroupBox1,,,
+
+CONTROL=GROUPBOX
+GUID=2318A56C-58D1-4E74-9D23-DC4699E42585
+  Name=GroupBox2
+  Class=GROUPBOX
+  Caption=Analise Critica
+  Order=30
+  Left=9
+  Width=483
+  Top=129
+  Height=104
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Analise Critica",,
+  Property=HyperLabel=#GroupBox2,,,
+
+CONTROL=GROUPBOX
+GUID=5755D065-CF62-4CD0-A53C-E4EFCA826BF5
+  Name=GroupBox3
+  Class=GROUPBOX
+  Caption=Descricao Não Conformidade
+  Order=31
+  Left=9
+  Width=483
+  Top=53
+  Height=72
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Descricao Não Conformidade",,
+  Property=HyperLabel=#GroupBox3,,,
+
+CONTROL=CHECKBOX
+GUID=30763AC1-E574-4E8D-BB4A-167E9AAEB913
+  Name=LACAO
+  Class=CHECKBOX
+  Caption=RA
+  Order=32
+  Left=237
+  Width=40
+  Top=345
+  Height=18
+  Browseindex=7
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1207959555
+  Exstyles=0
+  Property=HyperLabel=,"RA",,
+  Property=FieldSpec=LOGIC_FIELD
+  Property=HyperLabel=#LACAO,,,
+  Property=TooltipText="Requer Ação"
+
+CONTROL=PUSHBUTTON
+GUID=1A49E796-B8A3-4FCF-B7DB-E5B39C531168
+  Name=escres
+  Class=PUSHBUTTON
+  Caption=...
+  Order=33
+  Left=145
+  Width=20
+  Top=321
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#escres,,,
+  Property=TooltipText="Clique para Escolher Resp. Lista"
+
+CONTROL=PUSHBUTTON
+GUID=6F0A0BE6-A99F-4F89-A998-81D4E1DCDBBE
+  Name=pegres
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=34
+  Left=165
+  Width=24
+  Top=321
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#pegres,,,
+  Property=TooltipText="Clique para Trazer Nome Funcionario"
+
+CONTROL=CHECKBOX
+GUID=113E108D-8A75-4A0F-97B6-BB54408E736E
+  Name=PARADA
+  Class=CHECKBOX
+  Caption=Paradas No Cliente/Devolução Campo
+  Order=35
+  Left=281
+  Width=215
+  Top=349
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Paradas No Cliente/Devolução Campo",,
+  Property=FieldSpec=LOGIC_FIELD
+  Property=TooltipText="Marcar Se Foi Parada NoCliente/Dev.Campo"
+  Property=HyperLabel=#PARADA,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=DACA57F9-6057-4564-959C-F89830625F6B
+  Name=RELACAO
+  Class=RADIOBUTTONGROUP
+  Caption=Relaçao de:
+  Order=36
+  Left=6
+  Width=271
+  Top=370
+  Height=43
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Relaçao de:",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=TooltipText="Tipo de Relaçao"
+  Property=HyperLabel=#RELACAO,,,
+
+CONTROL=RADIOBUTTON
+GUID=85616E88-BEEF-4778-82EF-D08C6B41A311
+  Name=RadioButton1
+  Class=RADIOBUTTON
+  Caption=Entrega
+  Order=37
+  Left=17
+  Width=68
+  Top=385
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Entrega",,
+  Property=Value=E
+  Property=TooltipText="Marcar Como Relaçao de Entrega"
+  Property=HyperLabel=#RadioButton1,,,
+
+CONTROL=RADIOBUTTON
+GUID=9BD4DEE2-1B55-4D6A-8D71-D368AE9995F6
+  Name=RadioButton2
+  Class=RADIOBUTTON
+  Caption=Qualidade
+  Order=38
+  Left=97
+  Width=79
+  Top=385
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Qualidade",,
+  Property=Value=Q
+  Property=TooltipText="Marca Como Relaçao Qualidade"
+  Property=HyperLabel=#RadioButton2,,,
+
+CONTROL=RADIOBUTTON
+GUID=5B904CC0-02EE-429B-ADBA-4E0FB6CC484C
+  Name=RadioButton3
+  Class=RADIOBUTTON
+  Caption=Nenhuma
+  Order=39
+  Left=185
+  Width=79
+  Top=385
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Nenhuma",,
+  Property=Value=N
+  Property=TooltipText="Marca Como Relaçao Qualidade"
+  Property=HyperLabel=#RadioButton3,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jrati
+

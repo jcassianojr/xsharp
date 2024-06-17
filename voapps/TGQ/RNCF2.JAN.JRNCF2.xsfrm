@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JRNCF2">
+    <Window Name="JRNCF2">
+      <Name>JRNCF2</Name>
+      <Class>DATADIALOG</Class>
+      <Caption>Fechamento RNC</Caption>
+      <Order>0</Order>
+      <Left>30</Left>
+      <Top>30</Top>
+      <Width>400</Width>
+      <Height>99</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Fechamento RNC",,</HyperLabel>
+        <HyperLabel>#JRNCF2,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="SC_FECDATA">
+      <Name>SC_FECDATA</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Data Fechamento</Caption>
+      <Order>2</Order>
+      <Left>9</Left>
+      <Top>17</Top>
+      <Width>92</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Data Fechamento",,</HyperLabel>
+        <HyperLabel>#SC_FECDATA,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FECDATA">
+      <Name>FECDATA</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>117</Left>
+      <Top>17</Top>
+      <Width>88</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>DATE_FIELD</FieldSpec>
+        <HyperLabel>#FECDATA,,,</HyperLabel>
+        <HyperLabel>,"Fecdata:",,</HyperLabel>
+        <HyperLabel>,,,"RNC_FECDATA"</HyperLabel>
+        <InheritClassName>DateSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText11">
+      <Name>theFixedText11</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>OK</Caption>
+      <Order>6</Order>
+      <Left>293</Left>
+      <Top>61</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"OK",,</HyperLabel>
+        <HyperLabel>#theFixedText11,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="OK">
+      <Name>OK</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>293</Left>
+      <Top>13</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#OK,,,</HyperLabel>
+        <Image>ico_ok</Image>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

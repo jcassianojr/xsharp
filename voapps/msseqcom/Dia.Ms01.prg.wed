@@ -1,0 +1,421 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JPRO
+GUID=C255B21E-E589-4164-B6CF-DAEEEA089148
+  Name=JPRO
+  Class=DATADIALOG
+  Caption=Cadastro de Produtos
+  Order=0
+  Left=66
+  Width=688
+  Top=66
+  Height=387
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cadastro de Produtos",,
+  Property=ViewAs=#FormView
+  Property=HyperLabel=#JPRO,,,
+  Property=InheritClassName=MYDatadialog
+
+SUBCONTROLSSTART
+CONTROL=SUBDATAWINDOW
+GUID=7F838995-5337-4932-B1D9-550EA18E0209
+  Name=JMS06
+  Class=SUBDATAWINDOW
+  Caption=JMS06
+  Order=1
+  Left=5
+  Width=652
+  Top=77
+  Height=136
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=RelationString="#CODIGO"
+  Property=HyperLabel=#JMS06,,,
+  Property=HyperLabel=,"Cadastro de Produtos",,
+
+CONTROL=PUSHBUTTON
+GUID=AB285A20-3B8A-4D68-A223-1CEF9ED534A9
+  Name=busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=2
+  Left=141
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#busca,,,
+
+CONTROL=FIXEDTEXT
+GUID=84F6F296-2D74-4E07-B107-D36EC41DC002
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=3
+  Left=189
+  Width=40
+  Top=5
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=F47A544A-01BA-4DF1-A9D7-B84419095445
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Código:
+  Order=4
+  Left=5
+  Width=47
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Código:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=AD3BEBEF-3185-45D1-AD07-4D5ACE2EB9DB
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=5
+  Width=132
+  Top=25
+  Height=24
+  Browseindex=0
+  Browsesize=22
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"MS01_CODIGO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=0381D1F9-53EC-47D5-90E0-CA8FC656162F
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=177
+  Width=316
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=50
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_CHAR_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"MS01_NOME"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=C985A948-A3B2-42CC-AA0F-0CDDD341270D
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=11
+  Left=109
+  Width=27
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+
+CONTROL=FIXEDTEXT
+GUID=A119349A-7455-481C-B7B2-AF36D8E9670C
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=12
+  Left=613
+  Width=48
+  Top=45
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=E42F4230-8CDF-415E-A58F-85D59A35B066
+  Name=sair
+  Class=PUSHBUTTON
+  Caption=
+  Order=13
+  Left=613
+  Width=48
+  Top=5
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#sair,,,
+  Property=Image=ico_sair
+
+CONTROL=PUSHBUTTON
+GUID=7244BF8B-F014-435F-946B-9DA8E636742A
+  Name=Proximo
+  Class=PUSHBUTTON
+  Caption=
+  Order=14
+  Left=529
+  Width=32
+  Top=9
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Proximo,,,
+  Property=Image=ico_NEXT
+
+CONTROL=PUSHBUTTON
+GUID=58D538FB-6670-47ED-89D5-F4784F823375
+  Name=Anterior
+  Class=PUSHBUTTON
+  Caption=
+  Order=15
+  Left=497
+  Width=32
+  Top=9
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Anterior,,,
+  Property=Image=ico_PREVIOUS
+
+CONTROL=PUSHBUTTON
+GUID=4DA79614-93A3-4A79-8A56-E6660DD5072B
+  Name=BtnPegmp01
+  Class=PUSHBUTTON
+  Caption=..i
+  Order=17
+  Left=661
+  Width=24
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"..i",,
+  Property=HyperLabel=#BtnPegmp01,,,
+
+CONTROL=SUBDATAWINDOW
+GUID=54E63266-2222-4066-ACE0-3C04D37D3338
+  Name=jms03
+  Class=SUBDATAWINDOW
+  Caption=jms03
+  Order=18
+  Left=5
+  Width=652
+  Top=225
+  Height=140
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#jms03,,,
+
+CONTROL=PUSHBUTTON
+GUID=2769FD5C-D45B-427E-B9E8-F8F3A6FCA645
+  Name=cmdesccom
+  Class=PUSHBUTTON
+  Caption=E.
+  Order=19
+  Left=661
+  Width=23
+  Top=229
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"E.",,
+  Property=TooltipText="Escolher o Componente"
+  Property=HyperLabel=#cmdesccom,,,
+
+CONTROL=PUSHBUTTON
+GUID=D42EFC72-634C-422C-8A87-5ECFFD105917
+  Name=cmdesccom1
+  Class=PUSHBUTTON
+  Caption=E.
+  Order=20
+  Left=661
+  Width=23
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"E.",,
+  Property=TooltipText="Escolher a Sequencia"
+  Property=HyperLabel=#cmdesccom1,,,
+
+CONTROL=PUSHBUTTON
+GUID=BCACE3DE-5ECB-44D2-9E3E-A4E6FF87C1DC
+  Name=cmdesccom2
+  Class=PUSHBUTTON
+  Caption=E.
+  Order=21
+  Left=233
+  Width=23
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"E.",,
+  Property=TooltipText="Escolher Produto"
+  Property=HyperLabel=#cmdesccom2,,,
+
+CONTROL=FIXEDTEXT
+GUID=D83DE99A-F594-4EA0-A999-9AC9F035AFE3
+  Name=SC_DESTINO2
+  Class=FIXEDTEXT
+  Caption=Foto
+  Order=22
+  Left=565
+  Width=48
+  Top=45
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Foto",,
+  Property=HyperLabel=#SC_DESTINO2,,,
+
+CONTROL=PUSHBUTTON
+GUID=532AF967-B010-4C0C-B552-3C43A34BACC6
+  Name=foto
+  Class=PUSHBUTTON
+  Caption=
+  Order=23
+  Left=565
+  Width=48
+  Top=5
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#foto,,,
+  Property=Image=ico_camera
+
+CONTROL=SINGLELINEEDIT
+GUID=B203F06A-786A-42DB-A60B-2E484D3E8755
+  Name=CODIGOINT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=24
+  Left=5
+  Width=132
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=22
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=0
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODIGOINT,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"MS01_CODIGO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+SUBCONTROLSEND
+DESIGNEREND = JPRO
+

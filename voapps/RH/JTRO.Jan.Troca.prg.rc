@@ -1,0 +1,21 @@
+ JTRO DIALOGEX  18, 33, 226, 114
+STYLE	4|128|2147483648|12582912|524288
+CAPTION	"Troca de Codigos"
+FONT	8, "MS Shell Dlg"
+BEGIN
+	CONTROL	"", 100, "Edit", 128|65536|1073741824|8388608, 61, 7, 91, 12, 512
+	CONTROL	"", 101, "Edit", 128|65536|1073741824|8388608, 61, 24, 91, 12, 512
+	CONTROL	"Codigo Antigo", 102, "Static", 1073741824, 10, 7, 48, 12
+	CONTROL	"Codigo Novo", 103, "Static", 1073741824, 10, 24, 48, 12
+	CONTROL	"OK", 104, "Static", 1|1073741824, 162, 32, 43, 12
+	CONTROL	"", 105, "Button", 64|65536|1073741824, 162, 2, 43, 30
+	CONTROL	"Retornar", 106, "Static", 1|1073741824, 162, 73, 43, 13
+	CONTROL	"", 107, "Button", 64|65536|1073741824, 162, 44, 43, 29
+	CONTROL	"Trocar Codigos Treinamento", 108, "Button", 3|65536|1073741824, 8, 41, 144, 11
+	CONTROL	"Trocar Codigos Progr. de Treinamentos", 109, "Button", 3|65536|1073741824, 8, 56, 144, 11
+	CONTROL	"Trocar Codigos Contr.Anteriores", 110, "Button", 3|65536|1073741824, 8, 70, 144, 11
+	CONTROL	"Trocar Codigos Antes Contratação", 111, "Button", 3|65536|1073741824, 8, 84, 144, 11
+	CONTROL	"Trocar Codigos Cadastro de Funçoes", 112, "Button", 3|65536|1073741824, 8, 98, 144, 11
+END
+
+

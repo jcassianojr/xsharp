@@ -1,0 +1,55 @@
+PARTIAL CLASS JMP05
+METHOD buscacodigo( ) 
+LOCAL oBUSCA AS xBUSCA
+oBUSCA:=xBUSCA{SELF,"Localizar","Digite o Codigo"}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF oBUSCA:lOK
+   SELF:SERVER:SETORDER(1)
+   SELF:SERVER:GOTOP()
+   SELF:SERVER:SEEK(oBUSCA:cBUSCA)
+ENDIF	
+
+METHOD buscanome( ) 
+LOCAL oBUSCA AS xBUSCA
+oBUSCA:=xBUSCA{SELF,"Localizar","Digite o Nome"}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF oBUSCA:lOK
+   SELF:SERVER:SETORDER(2)
+   SELF:SERVER:GOTOP()
+   SELF:SERVER:SEEK(oBUSCA:cBUSCA)
+ENDIF	
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("RH","ARE")	
+
+
+METHOD PORCODIGO() 
+SELF:server:setorder(1)
+RETURN .t.
+
+METHOD PORNOME() 
+SELF:server:setorder(2)
+RETURN .t.
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+   FabCenterWindow( SELF )
+ RETURN SELF
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+
+
+
+END CLASS

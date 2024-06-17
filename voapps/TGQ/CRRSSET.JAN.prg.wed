@@ -1,0 +1,215 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JSET
+GUID=975C0172-1717-4AEF-A470-38C624842F91
+  Name=JSET
+  Class=DATAWINDOW
+  Caption=Codigos
+  Order=0
+  Left=32
+  Width=500
+  Top=32
+  Height=94
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigos",,
+  Property=HyperLabel=#JSET,,,
+  Property=ClipperKeys=True
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=F1DF6E4F-874A-4689-98C5-A2EBC28ABF63
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=1
+  Left=17
+  Width=40
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=78E79A90-E84E-4E15-8C12-1C9F7FA83D1E
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=2
+  Left=97
+  Width=36
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=56FD53B1-91C8-45D1-BA6A-B3123661871B
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=17
+  Width=64
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"CRRSSET_CODIGO"
+  Property=FieldSpec=PADRAO_CHAR_01
+
+CONTROL=SINGLELINEEDIT
+GUID=A2AC5D42-58EE-474F-80F7-0DF57641487B
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=89
+  Width=292
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"CRRSSET_NOME"
+  Property=FieldSpec=PADRAO_CHAR_10
+
+CONTROL=FIXEDTEXT
+GUID=C7AA153E-54A0-41D0-9443-4A7B16260330
+  Name=SC_COGNOME
+  Class=FIXEDTEXT
+  Caption=Cognome:
+  Order=5
+  Left=17
+  Width=52
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cognome:",,
+  Property=HyperLabel=#SC_COGNOME,,,
+
+CONTROL=CHECKBOX
+GUID=30896C89-4128-4DBB-B07C-B24557E752BE
+  Name=GRAFICO
+  Class=CHECKBOX
+  Caption=Grafico
+  Order=6
+  Left=129
+  Width=100
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Grafico",,
+  Property=HyperLabel=#GRAFICO,,,
+  Property=HyperLabel=,,,"CRRSSET_GRAFICO"
+  Property=FieldSpec=LOGIC_FIELD
+
+CONTROL=SINGLELINEEDIT
+GUID=AC8E51A4-246F-46AD-A391-07DFD4570039
+  Name=COGNOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=73
+  Width=48
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#COGNOME,,,
+  Property=HyperLabel=,"Cognome:",,
+  Property=HyperLabel=,,,"CRRSSET_COGNOME"
+  Property=FieldSpec=PADRAO_CHAR_05
+
+CONTROL=PUSHBUTTON
+GUID=F647C62C-ADDA-47C4-81F3-8E8405235AAA
+  Name=PORNUM
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=453
+  Width=32
+  Top=37
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#PORNUM,,,
+
+CONTROL=PUSHBUTTON
+GUID=2CFF2FD7-90E1-476C-9B29-53537604C776
+  Name=Buscanum
+  Class=PUSHBUTTON
+  Caption=
+  Order=9
+  Left=453
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#Buscanum,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JSET
+

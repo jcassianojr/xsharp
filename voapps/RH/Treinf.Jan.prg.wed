@@ -1,0 +1,110 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JTREINF
+GUID=B2478E65-178E-4DC2-9BB0-70E788771699
+  Name=JTREINF
+  Class=DATAWINDOW
+  Caption=Escolha Funcionarios
+  Order=0
+  Left=16
+  Width=420
+  Top=16
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Escolha Funcionarios",,
+  Property=ClipperKeys=True
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JTREINF,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=B85BD519-C1B6-4618-82E3-2492A2D508FE
+  Name=SC_TECNICO
+  Class=FIXEDTEXT
+  Caption=Numero
+  Order=1
+  Left=22
+  Width=48
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero",,
+  Property=HyperLabel=#SC_TECNICO,,,
+
+CONTROL=FIXEDTEXT
+GUID=CF12B358-AD7E-4E7F-B33F-5B87EA510607
+  Name=SC_NOMTEC
+  Class=FIXEDTEXT
+  Caption=Nome
+  Order=2
+  Left=22
+  Width=44
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome",,
+  Property=HyperLabel=#SC_NOMTEC,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=69519A1F-5F97-44EC-B649-0B9D9F2004FB
+  Name=TECNICO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=86
+  Width=48
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05
+  Property=HyperLabel=#TECNICO,,,
+  Property=HyperLabel=,"Numero",,
+  Property=HyperLabel=,,,"Mp04_TECNICO"
+
+CONTROL=SINGLELINEEDIT
+GUID=376E643A-8328-4C89-9FE8-1555422E119B
+  Name=NOMTEC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=86
+  Width=292
+  Top=50
+  Height=20
+  Browseindex=1
+  Browsesize=43
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#NOMTEC,,,
+  Property=HyperLabel=,"Nome",,
+  Property=HyperLabel=,,,"Mp04_NOMTEC"
+
+SUBCONTROLSEND
+DESIGNEREND = JTREINF
+

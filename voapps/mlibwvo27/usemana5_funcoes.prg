@@ -1,0 +1,76 @@
+FUNCTION PEGCAMDRIVER(aDAD AS ARRAY) AS ARRAY
+LOCAL oDB AS USEREDE
+LOCAL cRETU,cDriver AS STRING
+LOCAL aRET,aRETU AS ARRAY
+LOCAL oTB AS TEXTBOX
+cRETU:="_"
+cDRIVER:=""
+aRETU:={"",""}
+aRET:={aDAD[1],"MANARQ.DBF",aDAD[2]}
+oDB:=USEREDE{aRET}
+IF oDB:nERRO#0
+   Otb:=TEXTBOX{,"Erro","Abrindo Manarq"}
+   Otb:show()
+   RETU aRETU
+ENDIF	
+oDB:GOTOP()
+IF oDB:SEEK(aDAD[2])
+	DO CASE
+       CASE oDB:FIELDGET("PADRAO")=='S' ; cRETU:=aDAD[4][1]
+ 	   CASE oDB:FIELDGET("PADRAO")=='N' ; cRETU:=aDAD[4][2]
+       CASE oDB:FIELDGET("PADRAO")=='C' ; cRETU:=aDAD[4][3]
+	   CASE oDB:FIELDGET("PADRAO")=='I' ; cRETU:=aDAD[4][4]
+	   CASE oDB:FIELDGET("PADRAO")=='A' ; cRETU:=aDAD[4][5]
+	   CASE oDB:FIELDGET("PADRAO")=='B' ; cRETU:=aDAD[4][6]
+	   CASE oDB:FIELDGET("PADRAO")=="X" ; cRETU:=AllTrim(ODB:FIELDGET("CAMINHO"))
+   ENDCASE	
+   cDRIVER:=ODB:FIELDGET("DRIVER")
+ENDIF
+ODB:CLOSE()
+aRETU:={cRETU,cDRIVER}
+RETU aRETU
+
+FUNCTION PEGCONFIGU(cCURINI AS STRING,cCURDIR AS STRING) AS ARRAY
+LOCAL oDB AS USEREDE
+LOCAL aRET,aRETU AS ARRAY
+LOCAL Otb AS textbox
+aRETU:={"","","","","",""}
+aRET:={cCURINI,"CONFIGU.DBF",cCURDIR}
+oDB:=USEREDE{aRET}
+IF oDB:nERRO#0
+   Otb:=TEXTBOX{,"Erro","Erro Abrindo:  Configu"}
+   Otb:show()		
+   RETU aRETU
+ENDIF
+aRETU[1]:=AllTrim(oDB:FIELDGET("DIRE"))+StrZero(1,5)+"\"     // Nome do Diretório da Empresa
+aRETU[2]:=AllTrim(ODB:FIELDGET("DIRP"))     // Nome do Diretório Principal
+aRETU[3]:=AllTrim(ODB:FIELDGET("DIRC"))     // Nome do Diretório de Configuraçäo
+aRETU[4]:=AllTrim(ODB:FIELDGET("DIRI"))     // Nome do Diretório de Arquivos Integrados
+aRETU[5]:=AllTrim(ODB:FIELDGET("DIRA"))     // Nome do Diretório Ceps
+aRETU[6]:=AllTrim(oDB:FIELDGET("DIRB"))     // Nome do Diretório Banco
+oDB:CLOSE()
+RETU aRETU
+
+FUNCTION PEGNTX(aDAD AS ARRAY) AS ARRAY
+LOCAL oDB AS USEREDE	
+LOCAL aRET,aRETU AS ARRAY
+LOCAL oTB AS TEXTBOX
+aRETU:={}
+aRET:={aDAD[1],"MANARQ1.DBF",aDAD[2]}
+oDB:=USEREDE{aRET}
+IF oDB:nERRO#0
+   Otb:=TEXTBOX{,"Erro","Abrindo Manarq1"}
+   Otb:show()
+   RETU aRETU
+ENDIF	
+oDB:GOTOP()
+oDB:SEEK(aDAD[2])
+WHILE aDAD[2]==AllTrim(ODB:FIELDGET("ARQUIVO")) .AND. ! ODB:EOF
+	AAdd(aRETU,{AllTrim(ODB:FIELDGET("INDICE")),AllTrim(oDB:FIELDGET("INDEXP")),AllTrim(ODB:FIELDGET("DESC"))})			
+	ODB:SKIP()
+ENDDO
+oDB:CLOSE()
+RETU aRETU	
+	
+
+

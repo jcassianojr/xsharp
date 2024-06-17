@@ -1,0 +1,569 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JRNCRF
+GUID=3ECB3FEA-DEEC-4D9A-81C4-98C44013F100
+  Name=JRNCRF
+  Class=DATADIALOG
+  Caption=Fechamento RNC Recebimento
+  Order=0
+  Left=34
+  Width=723
+  Top=34
+  Height=268
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fechamento RNC Recebimento",,
+  Property=HyperLabel=#JRNCRF,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=DATETIMEPICKER
+GUID=D134301B-BB8C-462E-9C21-D2E25F382EA5
+  Name=DATAR
+  Class=DATETIMEPICKER
+  Caption=11/04/2018
+  Order=1
+  Left=581
+  Width=85
+  Top=37
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAR,,,
+
+CONTROL=FIXEDTEXT
+GUID=D0BE24E1-1BB9-4880-8DED-55E426CA7CBE
+  Name=SC_DATAR
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=2
+  Left=537
+  Width=40
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=#SC_DATAR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=5C019294-F79C-4384-8C92-355D053BE2B0
+  Name=REFDOC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=369
+  Width=159
+  Top=41
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082130560
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_15
+  Property=HyperLabel=#REFDOC,,,
+
+CONTROL=FIXEDTEXT
+GUID=C17950FC-2024-4CA2-A1B9-6E67DC173C0B
+  Name=FT20
+  Class=FIXEDTEXT
+  Caption=Referente ao Documento
+  Order=4
+  Left=241
+  Width=128
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Referente ao Documento",,
+  Property=HyperLabel=#FT20,,,
+
+CONTROL=RADIOBUTTON
+GUID=76834D76-D298-4F86-A698-48C4B77C04FE
+  Name=RB13
+  Class=RADIOBUTTON
+  Caption=Insatisfatório
+  Order=5
+  Left=137
+  Width=92
+  Top=41
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Insatisfatório",,
+  Property=Value=I
+  Property=HyperLabel=#RB13,,,
+
+CONTROL=RADIOBUTTON
+GUID=2FDB5B77-8C1A-4093-A06E-536790D77788
+  Name=RB12
+  Class=RADIOBUTTON
+  Caption=Satisfatório
+  Order=6
+  Left=33
+  Width=88
+  Top=41
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Satisfatório",,
+  Property=Value=S
+  Property=HyperLabel=#RB12,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=ACC37CAF-2CD0-4E84-9CD6-04C26CC2FD8B
+  Name=REIQT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=461
+  Width=96
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#REIQT,,,
+  Property=HyperLabel=,"Reiqt:",,
+  Property=HyperLabel=,,,"RNC_REIQT"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=FA29E4BC-E77F-449E-BE25-3C63862AAE5A
+  Name=SC_REIQT
+  Class=FIXEDTEXT
+  Caption=Quantidade
+  Order=9
+  Left=461
+  Width=72
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Quantidade",,
+  Property=HyperLabel=#SC_REIQT,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=0254D82B-FE8B-4DEB-BF58-B7D46973CE27
+  Name=REIVL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=361
+  Width=96
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUm_12_2
+  Property=HyperLabel=#REIVL,,,
+  Property=HyperLabel=,"Reivl:",,
+  Property=HyperLabel=,,,"RNC_REIVL"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=D5A4B0A0-652F-4012-BAE2-C7C0A3FBDD78
+  Name=REITH
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=357
+  Width=96
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUm_12_2
+  Property=HyperLabel=#REITH,,,
+  Property=HyperLabel=,"Reith:",,
+  Property=HyperLabel=,,,"RNC_REITH"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=A74BA36C-5BD7-4805-B30F-2367DADD5CE4
+  Name=FixedText33
+  Class=FIXEDTEXT
+  Caption=Valor
+  Order=12
+  Left=321
+  Width=28
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valor",,
+  Property=HyperLabel=#FixedText33,,,
+
+CONTROL=FIXEDTEXT
+GUID=3D7ABBFD-CE18-481A-9115-DA1B3ABD78C8
+  Name=FixedText34
+  Class=FIXEDTEXT
+  Caption=Total Horas
+  Order=13
+  Left=321
+  Width=36
+  Top=101
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Total Horas",,
+  Property=HyperLabel=#FixedText34,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=96A4DD33-7393-4A5E-AC84-F973EA8D96FD
+  Name=REIDF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=217
+  Width=88
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#REIDF,,,
+  Property=HyperLabel=,"Reidf:",,
+  Property=HyperLabel=,,,"RNC_REIDF"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=664599E1-C17F-45FB-9DBA-1D2C4D2BF5AC
+  Name=REIDI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=217
+  Width=88
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#REIDI,,,
+  Property=HyperLabel=,"Reidi:",,
+  Property=HyperLabel=,,,"RNC_REIDI"
+  Property=InheritClassName=DateSle
+
+CONTROL=FIXEDTEXT
+GUID=529659D7-9B71-486F-94D8-631B2B4DA747
+  Name=FixedText35
+  Class=FIXEDTEXT
+  Caption=Data Final
+  Order=16
+  Left=153
+  Width=60
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data Final",,
+  Property=HyperLabel=#FixedText35,,,
+
+CONTROL=FIXEDTEXT
+GUID=BF993F42-594E-4632-A59D-D0A06308F057
+  Name=FixedText36
+  Class=FIXEDTEXT
+  Caption=Data Inicial
+  Order=17
+  Left=153
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data Inicial",,
+  Property=HyperLabel=#FixedText36,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=883CD666-FC24-4433-B995-A779F3017D4C
+  Name=REIHF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=93
+  Width=48
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#REIHF,,,
+  Property=HyperLabel=,"Reihf:",,
+  Property=HyperLabel=,,,"RNC_REIHF"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=21283908-F26C-4994-914D-708B611BD0BA
+  Name=REIHI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=93
+  Width=48
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#REIHI,,,
+  Property=HyperLabel=,"Reihi:",,
+  Property=HyperLabel=,,,"RNC_REIHI"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=EE363F02-B219-4EE9-A7A8-896170D2FFAD
+  Name=FixedText37
+  Class=FIXEDTEXT
+  Caption=Hora Final
+  Order=20
+  Left=29
+  Width=60
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Hora Final",,
+  Property=HyperLabel=#FixedText37,,,
+
+CONTROL=FIXEDTEXT
+GUID=A5503487-5B5F-4506-BB83-9FA7485C9BF8
+  Name=FixedText38
+  Class=FIXEDTEXT
+  Caption=Hora Inicial
+  Order=21
+  Left=29
+  Width=64
+  Top=113
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Hora Inicial",,
+  Property=HyperLabel=#FixedText38,,,
+
+CONTROL=GROUPBOX
+GUID=F00B803C-600F-409F-BBF1-C0FE7ADA57B6
+  Name=GroupBox3
+  Class=GROUPBOX
+  Caption=Reinspeção
+  Order=22
+  Left=17
+  Width=564
+  Top=89
+  Height=68
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Reinspeção",,
+  Property=HyperLabel=#GroupBox3,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=A0A7D6FB-EF9C-4616-8BFE-CAA1843D0338
+  Name=LAUDO
+  Class=RADIOBUTTONGROUP
+  Caption=Laudo
+  Order=25
+  Left=9
+  Width=687
+  Top=21
+  Height=55
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Laudo",,
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#LAUDO,,,
+
+CONTROL=FIXEDTEXT
+GUID=671B6F44-93E0-4942-ADC4-313B666243CF
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Cancelar
+  Order=26
+  Left=617
+  Width=64
+  Top=213
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Cancelar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=67FFEE42-3E16-43DB-9955-A21CF2711AF0
+  Name=cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=27
+  Left=617
+  Width=64
+  Top=165
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#cancelar,,,
+  Property=Image=ico_sair
+
+CONTROL=FIXEDTEXT
+GUID=1F7CDC94-CBF0-43A1-808F-434DEE763D2A
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=28
+  Left=617
+  Width=64
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=PUSHBUTTON
+GUID=E63496B8-6951-4DC9-92BC-1B59FED28737
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=29
+  Left=617
+  Width=64
+  Top=93
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ico_ok
+
+SUBCONTROLSEND
+DESIGNEREND = JRNCRF
+

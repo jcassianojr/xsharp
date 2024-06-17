@@ -1,0 +1,407 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JPAEE
+GUID=2603F093-6025-43E4-835E-5CABC814D198
+  Name=JPAEE
+  Class=DATAWINDOW
+  Caption=Plano de Auditoria de Embarque - Ocorrencia Externas
+  Order=0
+  Left=36
+  Width=497
+  Top=36
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Plano de Auditoria de Embarque - Ocorrencia Externas",,
+  Property=HyperLabel=#JPAEE,,,
+  Property=ClipperKeys=True
+  Property=ViewAs=#FormView
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=908B3C69-0D67-46D5-A583-4F369B341363
+  Name=DATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=77
+  Width=84
+  Top=25
+  Height=20
+  Browseindex=1
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DATA,,,
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=,,,"PAEE_DATA"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=E9BE1C6A-8420-4730-A8AF-857C9715135A
+  Name=CLIENTE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=165
+  Width=68
+  Top=25
+  Height=20
+  Browseindex=2
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#CLIENTE,,,
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=,,,"PAEE_CLIENTE"
+
+CONTROL=SINGLELINEEDIT
+GUID=4622ADB0-B172-4859-9846-52715A23A512
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=233
+  Width=180
+  Top=25
+  Height=20
+  Browseindex=3
+  Browsesize=20
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"PAEE_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=F7DC10FF-3633-4252-856C-B3F4ED00E2E3
+  Name=OBS01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=49
+  Width=384
+  Top=53
+  Height=20
+  Browseindex=3
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_200
+  Property=HyperLabel=#OBS01,,,
+  Property=HyperLabel=,"Obs01:",,
+  Property=HyperLabel=,,,"PAEE_OBS01"
+
+CONTROL=SINGLELINEEDIT
+GUID=8082BC56-A733-48B0-B9B3-92D360340DB2
+  Name=OBS02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=49
+  Width=384
+  Top=73
+  Height=20
+  Browseindex=4
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_200
+  Property=HyperLabel=#OBS02,,,
+  Property=HyperLabel=,"Obs02:",,
+  Property=HyperLabel=,,,"PAEE_OBS02"
+
+CONTROL=SINGLELINEEDIT
+GUID=F0AEE3CE-8522-48F6-A2A0-D0853EC3AFE2
+  Name=OBS03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=49
+  Width=384
+  Top=93
+  Height=20
+  Browseindex=5
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_200
+  Property=HyperLabel=#OBS03,,,
+  Property=HyperLabel=,"Obs03:",,
+  Property=HyperLabel=,,,"PAEE_OBS03"
+
+CONTROL=FIXEDTEXT
+GUID=5B5F84F8-FC3F-4EBD-B7B7-373BE431408A
+  Name=SC_DATA
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=7
+  Left=81
+  Width=32
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=#SC_DATA,,,
+
+CONTROL=FIXEDTEXT
+GUID=46621AAC-5CF3-4CDA-B7CA-81708F7BAEE1
+  Name=SC_PAEE
+  Class=FIXEDTEXT
+  Caption=Paee:
+  Order=8
+  Left=9
+  Width=32
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Paee:",,
+  Property=HyperLabel=#SC_PAEE,,,
+
+CONTROL=FIXEDTEXT
+GUID=65BAFCA5-7400-4783-95A6-4A08F69B4D53
+  Name=SC_CLIENTE
+  Class=FIXEDTEXT
+  Caption=Cliente:
+  Order=9
+  Left=165
+  Width=40
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cliente:",,
+  Property=HyperLabel=#SC_CLIENTE,,,
+
+CONTROL=FIXEDTEXT
+GUID=21A4B78A-0F27-4970-8BE3-E972BF4C8449
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=10
+  Left=245
+  Width=40
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=91321A5A-9A32-46FA-8D5E-522A171F4808
+  Name=SC_OBS01
+  Class=FIXEDTEXT
+  Caption=Obs:
+  Order=11
+  Left=9
+  Width=40
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Obs:",,
+  Property=HyperLabel=#SC_OBS01,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=F1C7B650-EF20-4EE9-99B9-9CE2567E34FB
+  Name=PAEE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=9
+  Width=64
+  Top=25
+  Height=28
+  Browseindex=0
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#PAEE,,,
+  Property=HyperLabel=,"Paee:",,
+  Property=HyperLabel=,,,"PAEE_PAEE"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=68E52FD3-0C72-4148-8024-7163D3318365
+  Name=escfor
+  Class=PUSHBUTTON
+  Caption=...
+  Order=13
+  Left=217
+  Width=23
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#escfor,,,
+
+CONTROL=PUSHBUTTON
+GUID=DE92DDA5-24DF-4CE1-9A88-B454BAF8B1E5
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=14
+  Left=381
+  Width=28
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+
+CONTROL=FIXEDTEXT
+GUID=BFE9CC94-1349-4E78-83F2-4115EF3B4B5E
+  Name=SC_DESTINO2
+  Class=FIXEDTEXT
+  Caption=Foto
+  Order=15
+  Left=437
+  Width=48
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Foto",,
+  Property=HyperLabel=#SC_DESTINO2,,,
+
+CONTROL=PUSHBUTTON
+GUID=981946CB-1E84-4C1C-8C2F-4AAB49EBC7E8
+  Name=foto
+  Class=PUSHBUTTON
+  Caption=
+  Order=16
+  Left=437
+  Width=48
+  Top=53
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#foto,,,
+  Property=Image=ICO_CAMERA
+
+CONTROL=PUSHBUTTON
+GUID=86CC0373-C24D-424D-8505-F4CA54990D97
+  Name=porov
+  Class=PUSHBUTTON
+  Caption=
+  Order=17
+  Left=449
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_AZ
+  Property=HyperLabel=#porov,,,
+  Property=TooltipText="Organizar por Numero GC"
+
+CONTROL=PUSHBUTTON
+GUID=4F418CE0-C0EE-4F50-8523-995F5FC08AB5
+  Name=buscanum
+  Class=PUSHBUTTON
+  Caption=
+  Order=18
+  Left=417
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscanum,,,
+  Property=TooltipText="Localizar um GC"
+
+SUBCONTROLSEND
+DESIGNEREND = JPAEE
+

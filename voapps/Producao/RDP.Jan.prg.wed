@@ -1,0 +1,194 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JRDP
+GUID=64780B18-6971-4D07-949B-1FC5C9A73C07
+  Name=JRDP
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=18
+  Width=511
+  Top=18
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JRDP,,,
+  Property=Menu=STANDARDSHELLMENU
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=58F23700-5406-4DC8-8561-1B081A14AE1A
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=185
+  Width=130
+  Top=13
+  Height=24
+  Browseindex=1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_char_03
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero",,
+  Property=HyperLabel=,,,"RDP_HP"
+
+CONTROL=FIXEDTEXT
+GUID=FD8B41B0-ED06-46DD-B0FB-56AC2A278990
+  Name=SC_SEQ
+  Class=FIXEDTEXT
+  Caption=Seq:
+  Order=-1
+  Left=17
+  Width=30
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Seq:",,
+  Property=HyperLabel=#SC_SEQ,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=D1057906-68B4-410A-9895-177B07FBA8EF
+  Name=SEQ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=57
+  Width=70
+  Top=13
+  Height=23
+  Browseindex=0
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_num_03
+  Property=HyperLabel=#SEQ,,,
+  Property=HyperLabel=,"Seq:",,
+  Property=HyperLabel=,,,"RDP_SEQ"
+
+CONTROL=FIXEDTEXT
+GUID=0D29766E-2372-46E2-AC7A-80E089C57B85
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero:
+  Order=-1
+  Left=137
+  Width=43
+  Top=13
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=FIXEDTEXT
+GUID=0199D63F-FB5A-4939-BD65-C0E1A5044226
+  Name=SC_HP
+  Class=FIXEDTEXT
+  Caption=Hp:
+  Order=-1
+  Left=329
+  Width=24
+  Top=13
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Hp:",,
+  Property=HyperLabel=#SC_HP,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=6798BFC4-324B-4733-8F04-7110F12AAB35
+  Name=HP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=357
+  Width=108
+  Top=13
+  Height=24
+  Browseindex=3
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_num_10_2
+  Property=HyperLabel=#HP,,,
+  Property=HyperLabel=,"Hp:",,
+  Property=HyperLabel=,,,"RDP_HP"
+
+CONTROL=FIXEDTEXT
+GUID=EA20917D-D496-41BC-8321-53E40C562D04
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=-1
+  Left=17
+  Width=40
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=E20951C6-76C7-42B4-8827-DD235D556941
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=61
+  Width=400
+  Top=49
+  Height=24
+  Browseindex=2
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_char_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"RDP_NOME"
+
+SUBCONTROLSEND
+DESIGNEREND = JRDP
+

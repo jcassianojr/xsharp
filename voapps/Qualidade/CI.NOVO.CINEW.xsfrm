@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="CINEW">
+    <Window Name="CINEW">
+      <Name>CINEW</Name>
+      <Class>DIALOGWINDOW</Class>
+      <Caption>Digite o Codigo do Produto:</Caption>
+      <Order>0</Order>
+      <Left>20</Left>
+      <Top>20</Top>
+      <Width>400</Width>
+      <Height>240</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>2160590976</Styles>
+      <ExStyles>257</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Digite o Codigo do Produto:",,</HyperLabel>
+        <HyperLabel>#CINEW,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="esccod">
+      <Name>esccod</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>...</Caption>
+      <Order>1</Order>
+      <Left>288</Left>
+      <Top>19</Top>
+      <Width>29</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"...",,</HyperLabel>
+        <HyperLabel>#esccod,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DESTINO2">
+      <Name>SC_DESTINO2</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Foto</Caption>
+      <Order>2</Order>
+      <Left>309</Left>
+      <Top>105</Top>
+      <Width>48</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Foto",,</HyperLabel>
+        <HyperLabel>#SC_DESTINO2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="foto">
+      <Name>foto</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>309</Left>
+      <Top>65</Top>
+      <Width>48</Width>
+      <Height>40</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741888</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#foto,,,</HyperLabel>
+        <Image>ICO_CAMERA</Image>
+      </ExProperties>
+    </Control>
+    <Control Name="cCODIGO">
+      <Name>cCODIGO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>-1</Order>
+      <Left>157</Left>
+      <Top>17</Top>
+      <Width>123</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#cCODIGO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Text1">
+      <Name>Text1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Digite o Codigo do Produto</Caption>
+      <Order>-1</Order>
+      <Left>13</Left>
+      <Top>19</Top>
+      <Width>138</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Digite o Codigo do Produto",,</HyperLabel>
+        <HyperLabel>#Text1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="cmd02">
+      <Name>cmd02</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Cancelar</Caption>
+      <Order>-1</Order>
+      <Left>103</Left>
+      <Top>91</Top>
+      <Width>80</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Cancelar",,</HyperLabel>
+        <HyperLabel>#cmd02,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="cmd01">
+      <Name>cmd01</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Ok</Caption>
+      <Order>-1</Order>
+      <Left>193</Left>
+      <Top>91</Top>
+      <Width>80</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ok",,</HyperLabel>
+        <HyperLabel>#cmd01,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

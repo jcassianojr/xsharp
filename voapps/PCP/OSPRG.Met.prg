@@ -1,0 +1,59 @@
+PARTIAL CLASS JOSP
+METHOD APPEND() 
+LOCAL nNUMERO AS DWORD
+SELF:server:setorder(1)
+SELF:server:gobottom()
+nNUMERO:=SELF:Server:NUMERO
+nNUMERO++
+SUPER:append()
+SELF:SERVER:FIELDPUT("NUMERO",nNUMERO)
+RETURN   .t.
+
+METHOD BUSCAov( ) 
+SELF:KeyFind()
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("MOC","PE")	
+
+METHOD esccod() 
+LOCAL oESC AS XESCCOD	
+oESC:=XESCCOD{SELF,"MS01.DBF"}
+oESC:SHOW()	
+IF ! IsNil(oESC:CODIGO)
+    SELF:SERVER:FIELDPUT("CODIGO",oESC:CODIGO)
+ENDIF
+
+METHOD foto( ) 
+LOCAL oFOTOVIEW AS fotoview	
+LOCAL cCODIGO AS STRING
+cCODIGO:=TIRAOUT(StrTran(AllTrim(SELF:SERVER:FIELDGET("PRODUTO"))," ",""))
+IF Empty(cCODIGO)	
+   alert("Codigo Produto Nao Preenchido")	
+   RETURN .f.
+ENDIF	
+OFOTOVIEW:=fotoview{SELF,ZDIRFOTO+cCODIGO+".JPG",cCODIGO}
+OFOTOVIEW:SHOW()
+	
+
+METHOD porov( ) 
+ SELF:KEYFIND()
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+   	    FabCenterWindow( SELF )
+ RETURN SELF
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+
+
+END CLASS

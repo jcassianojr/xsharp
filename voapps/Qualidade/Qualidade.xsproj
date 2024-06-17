@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
+  <PropertyGroup>
+    <ProjectGuid>ECB1357D-F2A5-48C7-BE21-047C09BD1A14</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Qualidade</RootNamespace>
+    <AssemblyName>Qualidade</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Name>Qualidade</Name>
+    <Nologo>true</Nologo>
+    <GenerateFullPaths>true</GenerateFullPaths>
+    <Dialect>VO</Dialect>
+    <LB>true</LB>
+    <OutputName>Qualidade</OutputName>
+    <StartupObject />
+    <ApplicationIcon />
+    <Prefer32Bit>True</Prefer32Bit>
+    <VulcanCompatibleResources>False</VulcanCompatibleResources>
+    <AZ>false</AZ>
+    <CS>false</CS>
+    <OVF>true</OVF>
+    <Unsafe>true</Unsafe>
+    <INS>true</INS>
+    <NS>false</NS>
+    <VO1>true</VO1>
+    <VO2>true</VO2>
+    <VO3>true</VO3>
+    <VO4>true</VO4>
+    <VO5>true</VO5>
+    <VO6>true</VO6>
+    <VO7>true</VO7>
+    <VO8>true</VO8>
+    <VO9>true</VO9>
+    <VO10>true</VO10>
+    <VO11>false</VO11>
+    <VO12>false</VO12>
+    <VO13>true</VO13>
+    <VO14>false</VO14>
+    <VO15>true</VO15>
+    <VO16>true</VO16>
+    <MemVar>false</MemVar>
+    <Undeclared>false</Undeclared>
+    <NoStandardDefs>false</NoStandardDefs>
+    <EnforceSelf>True</EnforceSelf>
+    <IncludePaths />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
+    <PlatformTarget>x86</PlatformTarget>
+    <EmitDebugInformation>true</EmitDebugInformation>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
+    <UseSharedCompilation>true</UseSharedCompilation>
+    <DisabledWarnings>9032%3b9043%3b618%3b162%3b165%3b649%3b9025,9026</DisabledWarnings>
+    <WarningLevel>4</WarningLevel>
+    <PPO>false</PPO>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Prefer32Bit>False</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Label="Configuration">
+    <PlatformTarget>x86</PlatformTarget>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <EmitDebugInformation>false</EmitDebugInformation>
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseSharedCompilation>true</UseSharedCompilation>
+    <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
+    <PPO>false</PPO>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
+      <Name>RightSLEvo</Name>
+      <Project>{E1A8DAF4-3BDA-434A-9753-2B6F30230B1E}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Login\Login.xsproj">
+      <Name>Login</Name>
+      <Project>{08AAB0AA-E234-4810-A5E3-631EC7691F69}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mail\Mail.xsproj">
+      <Name>Mail</Name>
+      <Project>{6F4CD390-AE96-4A0E-AB52-36422CF78943}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\mlibwvo27\mlibwvo27.xsproj">
+      <Name>mlibwvo27</Name>
+      <Project>{B907C405-BE16-49E4-A05A-1C51DF577CA2}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\esccodmon\esccodmon.xsproj">
+      <Name>esccodmon</Name>
+      <Project>{AFD1D510-5E9D-40DB-A5C4-A5B87AC0CEAA}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\peg.met\peg.met.xsproj">
+      <Name>peg.met</Name>
+      <Project>{F5DFD0DD-179B-40B6-A9B0-B7600132445A}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\escnumnom\escnumnom.xsproj">
+      <Name>escnumnom</Name>
+      <Project>{F8B1EA39-7A5C-4851-B2D6-57D234C60B70}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\escolhemp04\escolhemp04.xsproj">
+      <Name>escolhemp04</Name>
+      <Project>{47215673-C8DC-4E7B-9AF4-8A316A3B26EC}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Me04.jan\Me04.jan.xsproj">
+      <Name>Me04.jan</Name>
+      <Project>{C1B93AF5-DDC6-4804-958C-002714ADA1BD}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <Reference Include="XSharp.Core">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="XSharp.RT">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="XSharp.VO">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VORDDClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOGUIClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOSystemClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOWin32APILibrary">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menus.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Menus.EMPTYSHELLMENU_Accelerator.rc">
+      <DependentUpon>Menus.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="Menus.EMPTYSHELLMENU.rc">
+      <DependentUpon>Menus.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="Menus.EMPTYSHELLMENU.xsmnu">
+      <DependentUpon>Menus.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="ACP.Jan.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="ACP.Jan.JACP.rc">
+      <DependentUpon>ACP.Jan.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="ACP.Jan.JACP.xsfrm">
+      <DependentUpon>ACP.Jan.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="ACP.Met.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PAC.Jan.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="PAC.Jan.JPAC.rc">
+      <DependentUpon>PAC.Jan.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="PAC.Jan.JPAC.xsfrm">
+      <DependentUpon>PAC.Jan.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="PAC.Met.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AC2.Met.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ACDI.Jan.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="ACDI.Jan.JACDI.rc">
+      <DependentUpon>ACDI.Jan.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="ACDI.Jan.JACDI.xsfrm">
+      <DependentUpon>ACDI.Jan.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="ACD.Met.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ACD.Jan.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="ACD.Jan.JACD.rc">
+      <DependentUpon>ACD.Jan.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="ACD.Jan.JACD.xsfrm">
+      <DependentUpon>ACD.Jan.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="X.Classes.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TEEP.Jan.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="TEEP.Jan.JTEEP.rc">
+      <DependentUpon>TEEP.Jan.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="TEEP.Jan.JTEEP.xsfrm">
+      <DependentUpon>TEEP.Jan.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="TEEP.Met.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RII.Jan.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="RII.Jan.JRII.rc">
+      <DependentUpon>RII.Jan.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="RII.Jan.JRII.xsfrm">
+      <DependentUpon>RII.Jan.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="RI.Met.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CI.JAN.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="CI.JAN.JCI.rc">
+      <DependentUpon>CI.JAN.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="CI.JAN.JCI.xsfrm">
+      <DependentUpon>CI.JAN.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="CII.JAN.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="CII.JAN.JCII.rc">
+      <DependentUpon>CII.JAN.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="CII.JAN.JCII.xsfrm">
+      <DependentUpon>CII.JAN.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="RI.Jan.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="RI.Jan.JRI.rc">
+      <DependentUpon>RI.Jan.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="RI.Jan.JRI.xsfrm">
+      <DependentUpon>RI.Jan.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="CI.MET.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CICI.JAN.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="CICI.JAN.JCICI.rc">
+      <DependentUpon>CICI.JAN.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="CICI.JAN.JCICI.xsfrm">
+      <DependentUpon>CICI.JAN.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="CIC.JAN.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="CIC.JAN.JCIC.rc">
+      <DependentUpon>CIC.JAN.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="CIC.JAN.JCIC.xsfrm">
+      <DependentUpon>CIC.JAN.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="CIC.MET.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CI.NOVO.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="CI.NOVO.CINEW.rc">
+      <DependentUpon>CI.NOVO.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="CI.NOVO.CINEW.xsfrm">
+      <DependentUpon>CI.NOVO.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="CIC.IMP.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="CIC.IMP.JCICIMP.rc">
+      <DependentUpon>CIC.IMP.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="CIC.IMP.JCICIMP.xsfrm">
+      <DependentUpon>CIC.IMP.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="Start.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc">
+      <DependentUpon>Start.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="Start.VS_VERSION_INFO.rc">
+      <DependentUpon>Start.prg</DependentUpon>
+    </NativeResource>
+    <Compile Include="GC.JAN.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="GC.JAN.JGC.rc">
+      <DependentUpon>GC.JAN.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="GC.JAN.JGC.xsfrm">
+      <DependentUpon>GC.JAN.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="GC.MET.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OPAE.JAN.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="OPAE.JAN.JOPAE.rc">
+      <DependentUpon>OPAE.JAN.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="OPAE.JAN.JOPAE.xsfrm">
+      <DependentUpon>OPAE.JAN.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="OPAE.Met.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PAEI.JAN.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="PAEI.JAN.JPAEI.rc">
+      <DependentUpon>PAEI.JAN.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="PAEI.JAN.JPAEI.xsfrm">
+      <DependentUpon>PAEI.JAN.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="PAEE.JAN.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="PAEE.JAN.JPAEE.rc">
+      <DependentUpon>PAEE.JAN.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="PAEE.JAN.JPAEE.xsfrm">
+      <DependentUpon>PAEE.JAN.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="PAEE.MET.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RRL.MET.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RSS.MET.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="etippp.jan.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="etippp.jan.jetq01.rc">
+      <DependentUpon>etippp.jan.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="etippp.jan.jetq01.xsfrm">
+      <DependentUpon>etippp.jan.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="CRTAUM.Jan.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="CRTAUM.Jan.JCRTAUM.rc">
+      <DependentUpon>CRTAUM.Jan.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="CRTAUM.Jan.JCRTAUM.xsfrm">
+      <DependentUpon>CRTAUM.Jan.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="funcoes.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RRL.Jan.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="RRL.Jan.JRRL.rc">
+      <DependentUpon>RRL.Jan.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="RRL.Jan.TabControl1_Page1.rc">
+      <DependentUpon>RRL.Jan.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="RRL.Jan.TabControl1_Page2.rc">
+      <DependentUpon>RRL.Jan.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="RRL.Jan.TabControl1_Page3.rc">
+      <DependentUpon>RRL.Jan.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="RRL.Jan.TabControl1_Page4.rc">
+      <DependentUpon>RRL.Jan.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="RRL.Jan.JRRL.xsfrm">
+      <DependentUpon>RRL.Jan.prg</DependentUpon>
+    </VOBinary>
+    <VOBinary Include="RRL.Jan.TABCONTROL1_PAGE1.xsfrm">
+      <DependentUpon>RRL.Jan.prg</DependentUpon>
+    </VOBinary>
+    <VOBinary Include="RRL.Jan.TABCONTROL1_PAGE2.xsfrm">
+      <DependentUpon>RRL.Jan.prg</DependentUpon>
+    </VOBinary>
+    <VOBinary Include="RRL.Jan.TABCONTROL1_PAGE3.xsfrm">
+      <DependentUpon>RRL.Jan.prg</DependentUpon>
+    </VOBinary>
+    <VOBinary Include="RRL.Jan.TABCONTROL1_PAGE4.xsfrm">
+      <DependentUpon>RRL.Jan.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="OPAI.JAN.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="OPAI.JAN.jOPAI.rc">
+      <DependentUpon>OPAI.JAN.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="OPAI.JAN.jOPAI.xsfrm">
+      <DependentUpon>OPAI.JAN.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="PAI.JAN.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="PAI.JAN.jpai.rc">
+      <DependentUpon>PAI.JAN.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="PAI.JAN.jpai.xsfrm">
+      <DependentUpon>PAI.JAN.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="PAI.MET.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="xclassesshell.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="etiqpp.jan.met.prg">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
+  <ProjectExtensions>
+    <ProjectCapabilities>
+      <ProjectConfigurationsDeclaredAsItems />
+    </ProjectCapabilities>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+</Project>

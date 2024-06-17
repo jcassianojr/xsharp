@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="jOPAI">
+    <Window Name="jOPAI">
+      <Name>jOPAI</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>20</Left>
+      <Top>20</Top>
+      <Width>605</Width>
+      <Height>320</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#jOPAI,,,</HyperLabel>
+        <ViewAs>#BrowseView</ViewAs>
+      </ExProperties>
+    </Window>
+    <Control Name="SC_ESPEC">
+      <Name>SC_ESPEC</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Espec:</Caption>
+      <Order>2</Order>
+      <Left>13</Left>
+      <Top>41</Top>
+      <Width>36</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Espec:",,</HyperLabel>
+        <HyperLabel>#SC_ESPEC,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_LAUDO">
+      <Name>SC_LAUDO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Laudo:</Caption>
+      <Order>3</Order>
+      <Left>9</Left>
+      <Top>69</Top>
+      <Width>36</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Laudo:",,</HyperLabel>
+        <HyperLabel>#SC_LAUDO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="ESPEC">
+      <Name>ESPEC</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>49</Left>
+      <Top>41</Top>
+      <Width>512</Width>
+      <Height>24</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>80</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082198144</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_100</FieldSpec>
+        <HyperLabel>#ESPEC,,,</HyperLabel>
+        <HyperLabel>,"Espec:",,</HyperLabel>
+        <HyperLabel>,,,"OPAI_ESPEC"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="LAUDO">
+      <Name>LAUDO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>49</Left>
+      <Top>69</Top>
+      <Width>35</Width>
+      <Height>27</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082198144</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_01</FieldSpec>
+        <HyperLabel>#LAUDO,,,</HyperLabel>
+        <HyperLabel>,"Laudo:",,</HyperLabel>
+        <HyperLabel>,,,"OPAI_LAUDO"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>12:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="OPAE">
+      <Name>OPAE</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>49</Left>
+      <Top>9</Top>
+      <Width>64</Width>
+      <Height>28</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>6</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1216350336</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#OPAE,,,</HyperLabel>
+        <HyperLabel>,"Opae:",,</HyperLabel>
+        <HyperLabel>,,,"OPAE_OPAE"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>12:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_OPAE">
+      <Name>SC_OPAE</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Opae:</Caption>
+      <Order>8</Order>
+      <Left>13</Left>
+      <Top>13</Top>
+      <Width>32</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Opae:",,</HyperLabel>
+        <HyperLabel>#SC_OPAE,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

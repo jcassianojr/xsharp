@@ -1,0 +1,709 @@
+#region DEFINES
+STATIC DEFINE JIMPTR_CAMINHO := 103 
+STATIC DEFINE JIMPTR_CANCELAR := 107 
+STATIC DEFINE JIMPTR_CHKANTES := 118 
+STATIC DEFINE JIMPTR_CHKANTES1 := 120 
+STATIC DEFINE JIMPTR_CHKTREIN := 117 
+STATIC DEFINE JIMPTR_CMDEMP01 := 114 
+STATIC DEFINE JIMPTR_CMDEMP02 := 115 
+STATIC DEFINE JIMPTR_CMDEMP10 := 125 
+STATIC DEFINE JIMPTR_CMDEMP3 := 116 
+STATIC DEFINE JIMPTR_CMDEMP4 := 122 
+STATIC DEFINE JIMPTR_CMDEMP5 := 123 
+STATIC DEFINE JIMPTR_CMDEMP97 := 126 
+STATIC DEFINE JIMPTR_CMDEMP98 := 124 
+STATIC DEFINE JIMPTR_CMDEMP99 := 121 
+STATIC DEFINE JIMPTR_CMDMAIS3 := 112 
+STATIC DEFINE JIMPTR_CMDMENOS3 := 111 
+STATIC DEFINE JIMPTR_EMPRESA := 110 
+STATIC DEFINE JIMPTR_FIXEDTEXT1 := 100 
+STATIC DEFINE JIMPTR_FIXEDTEXT2 := 102 
+STATIC DEFINE JIMPTR_FIXEDTEXT3 := 108 
+STATIC DEFINE JIMPTR_FIXEDTEXT4 := 113 
+STATIC DEFINE JIMPTR_NUMANT := 101 
+STATIC DEFINE JIMPTR_NUMERO := 109 
+STATIC DEFINE JIMPTR_OK := 105 
+STATIC DEFINE JIMPTR_THEFIXEDTEXT10 := 104 
+STATIC DEFINE JIMPTR_THEFIXEDTEXT9 := 106 
+STATIC DEFINE JIMPTR_USO := 119 
+#endregion
+
+class JimpTr inherit DATADIALOG 
+
+	protect oDCFixedText1 as FIXEDTEXT
+	protect oDCnumant as RIGHTSLE
+	protect oDCFixedText2 as FIXEDTEXT
+	protect oDCcaminho as PBFOLDERSLE
+	protect oDCtheFixedText10 as FIXEDTEXT
+	protect oCCok as PUSHBUTTON
+	protect oDCtheFixedText9 as FIXEDTEXT
+	protect oCCCancelar as PUSHBUTTON
+	protect oDCFixedText3 as FIXEDTEXT
+	protect oDCNUMERO as RIGHTSLE
+	protect oDCempresa as SINGLELINEEDIT
+	protect oCCcmdmenos3 as PUSHBUTTON
+	protect oCCcmdmais3 as PUSHBUTTON
+	protect oDCFixedText4 as FIXEDTEXT
+	protect oCCcmdemp01 as PUSHBUTTON
+	protect oCCcmdemp02 as PUSHBUTTON
+	protect oCCcmdemp3 as PUSHBUTTON
+	protect oDCchkTrein as CHECKBOX
+	protect oDCchkAntes as CHECKBOX
+	protect oDCUSO as FIXEDTEXT
+	protect oDCchkAntes1 as CHECKBOX
+	protect oCCcmdemp99 as PUSHBUTTON
+	protect oCCcmdemp4 as PUSHBUTTON
+	protect oCCcmdemp5 as PUSHBUTTON
+	protect oCCcmdemp98 as PUSHBUTTON
+	protect oCCcmdemp10 as PUSHBUTTON
+	protect oCCcmdemp97 as PUSHBUTTON
+// 	instance numant 
+// 	instance caminho 
+// 	instance NUMERO 
+// 	instance empresa 
+// 	instance chkTrein 
+// 	instance chkAntes 
+// 	instance chkAntes1 
+
+  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
+
+access caminho() 
+return self:FieldGet(#caminho)
+
+
+assign caminho(uValue) 
+self:FieldPut(#caminho, uValue)
+return caminho := uValue
+
+
+METHOD Cancelar( ) 
+	SELF:ENDWINDOW()
+
+access chkAntes() 
+return self:FieldGet(#chkAntes)
+
+
+assign chkAntes(uValue) 
+self:FieldPut(#chkAntes, uValue)
+return chkAntes := uValue
+
+
+access chkAntes1() 
+return self:FieldGet(#chkAntes1)
+
+
+assign chkAntes1(uValue) 
+self:FieldPut(#chkAntes1, uValue)
+return chkAntes1 := uValue
+
+
+access chkTrein() 
+return self:FieldGet(#chkTrein)
+
+
+assign chkTrein(uValue) 
+self:FieldPut(#chkTrein, uValue)
+return chkTrein := uValue
+
+
+METHOD cmdemp01( ) 	
+	SELF:empresa:=1
+		SELF:PEGCAMINHO()
+
+METHOD cmdemp02( ) 	
+	SELF:empresa:=2
+		SELF:PEGCAMINHO()
+
+METHOD cmdemp10( ) 
+				SELF:empresa:=10
+		SELF:PEGCAMINHO()
+
+METHOD cmdemp3( ) 
+	SELF:empresa:=3
+		SELF:PEGCAMINHO()
+
+METHOD cmdemp4( ) 
+		SELF:empresa:=4
+		SELF:PEGCAMINHO()
+
+METHOD cmdemp5( ) 
+	SELF:empresa:=5
+	SELF:PEGCAMINHO()
+
+METHOD cmdemp97( ) 
+		SELF:empresa:=97
+		SELF:PEGCAMINHO()
+
+METHOD cmdemp98( ) 
+			SELF:empresa:=98
+		SELF:PEGCAMINHO()
+
+METHOD cmdemp99( ) 
+		SELF:empresa:=99
+		SELF:PEGCAMINHO()
+
+METHOD cmdmais3( ) 
+	SELF:oDCempresa:Value:=Str(INCDEC(SELF:oDCempresa:Value,1,1,999),4)						
+	SELF:PEGCAMINHO()
+	
+
+METHOD cmdmenos3( ) 
+	SELF:oDCempresa:Value:=Str(INCDEC(SELF:oDCempresa:Value,-1,1,999),4)						
+	SELF:PEGCAMINHO()
+	
+
+access empresa() 
+return self:FieldGet(#empresa)
+
+
+assign empresa(uValue) 
+self:FieldPut(#empresa, uValue)
+return empresa := uValue
+
+
+METHOD fazer(nORI,nDES) 
+SELF:NUMERO:=nDES
+SELF:numant:=nORI
+SELF:oDCUSO:TextValue:=Str(nDES)
+IF SELF:chkTrein
+    SELF:IMPORTAR()
+ENDIF
+IF SELF:chkAntes
+   SELF:importa2("MP04C")
+ENDIF	
+IF SELF:chkAntes1
+   SELF:importa2("MP04A")
+ENDIF	
+
+
+	
+
+METHOD importa2(cARQUSO) 
+LOCAL oORI AS DBSERVER
+LOCAL oDES AS USEREDE
+LOCAL cCAMINHO,cARQUIVO,cINDICE AS STRING
+LOCAL nNUMERO,nANTIGO AS DWORD
+LOCAL aDAD,aCOM AS ARRAY
+
+AltD()
+nNUMERO:=SELF:NUMERO
+nANTIGO:=SELF:numant
+IF nNUMERO=0 .OR. nANTIGO=0
+   alert("Numero Antigo ou Novo em Branco","Erro Dados")
+   RETURN .f.
+ENDIF	
+cCAMINHO:=SELF:caminho
+
+cARQUIVO:=cCAMINHO+cARQUSO+".DBF"
+cINDICE :=cCAMINHO+cARQUSO+".CDX"
+
+
+IF ! File(cARQUIVO)
+   alert("Falta Arquivo "+Carquivo,"Erro Abertura")
+   RETURN .f.
+ENDIF	
+IF ! File(cINDICE)
+   alert("Falta Arquivo "+CINDICE,"Erro Abertura")
+   RETURN .f.
+ENDIF	
+
+oORI:=DBSERVER{cARQUIVO,.T.,.T.,"DBFCDX"}
+IF ! oORI:Used
+   alert("Erro Abrindo"+Carquivo,"Erro Abertura")
+   RETURN .f.	
+ENDIF	
+	
+
+aDAD:={zCURINI,cARQUSO+".DBF",zCURDIR}
+aCOM:={zMES,zANO,ZEMPRESA}
+//Init(aDAD, lShareMode, lReadOnlyMode, cDriver, aCOM)
+oDES:=USEREDE{aDAD,,,,aCOM}
+IF oDES:nERRO#0
+   oORI:CLOSE()
+   RETURN .f.
+ENDIF
+
+oORI:GOTOP()
+oORI:SEEK(nANTIGO)
+WHILE Nantigo=oORI:FIELDGET("TECNICO") .AND. ! oORI:EoF
+   oDES:APPEND()
+   ODES:FIELDPUT("TECNICO",nNUMERO)
+   oDES:FIELDPUT("NUMANT" ,nANTIGO)
+   oDES:FIELDPUT("TREIN"  ,oORI:FIELDGET("TREIN"))
+   oDES:FIELDPUT("CURSO"  ,oORI:FIELDGET("CURSO"))
+   oDES:FIELDPUT("DESCUR",oORI:FIELDGET("DESCUR"))
+   oDES:commit()
+   oORI:SKIP()
+ENDDO	
+oDES:CLOSE()
+oORI:CLOSE()
+alert("Importacao Concluida")	
+	
+	
+
+METHOD importar( ) 
+LOCAL oTREII,oTREIN AS DBSERVER
+LOCAL oSERVER AS USEREDE
+LOCAL cCAMINHO,cINDICE,cARQUIVO,cINDICI,cARQUIVI AS STRING
+LOCAL nNUMERO,nANTIGO AS DWORD
+LOCAL aDAD,aCOM AS ARRAY
+
+AltD()
+nNUMERO:=SELF:NUMERO
+nANTIGO:=SELF:numant
+IF nNUMERO=0 .OR. nANTIGO=0
+   alert("Numero Antigo ou Novo em Branco","Erro Dados")
+   RETURN .f.
+ENDIF	
+cCAMINHO:=SELF:caminho
+
+cARQUIVI:=cCAMINHO+"TREII.DBF"
+cINDICI :=cCAMINHO+"TREII.CDX"
+cARQUIVO:=cCAMINHO+"TREIN.DBF"
+cINDICE :=cCAMINHO+"TREIN.CDX"
+
+
+IF ! File(cARQUIVO)
+   alert("Falta Arquivo "+Carquivo,"Erro Abertura")
+   RETURN .f.
+ENDIF	
+IF ! File(cINDICE)
+   alert("Falta Arquivo "+CINDICE,"Erro Abertura")
+   RETURN .f.
+ENDIF	
+IF ! File(cARQUIVI)
+   alert("Falta Arquivo "+CarquivI,"Erro Abertura")
+   RETURN .f.
+ENDIF	
+IF ! File(cINDICI)
+   alert("Falta Arquivo "+CINDICI,"Erro Abertura")
+   RETURN .f.
+ENDIF	
+
+oTREIN:=DBSERVER{cARQUIVO,.T.,.T.,"DBFCDX"}
+IF ! oTREIN:Used
+   alert("Erro Abrindo"+Carquivo,"Erro Abertura")
+   RETURN .f.	
+ENDIF	
+oTREIN:SetIndex(cINDICE)
+	
+	
+oTREII:=DBSERVER{cARQUIVI,.T.,.T.,"DBFCDX"}
+IF ! oTREII:Used
+	oTREIN:CLOSE()
+   alert("Erro Abrindo"+Carquivo,"Erro Abertura")
+   RETURN .f.	
+ENDIF		
+oTREII:SetIndex(cINDICI)
+oTREII:SETORDER(2) //Numero Funcionario
+
+cARQUIVO:="MP04A.DBF"
+aDAD:={zCURINI,cARQUIVO,zCURDIR}
+aCOM:={zMES,zANO,ZEMPRESA}
+//Init(aDAD, lShareMode, lReadOnlyMode, cDriver, aCOM)
+oSERVER:=USEREDE{aDAD,,,,aCOM}
+IF oSERVER:nERRO#0
+   oTREIN:CLOSE()
+   oTREII:CLOSE()
+   RETURN .f.
+ENDIF
+
+oTREII:GOTOP()
+oTREII:SEEK(nANTIGO)
+WHILE Nantigo=oTREII:FIELDGET("NUMFUN") .AND. ! oTREII:EoF
+   oSERVER:APPEND()
+   OSERVER:FIELDPUT("TECNICO",nNUMERO)
+   oSERVER:FIELDPUT("NUMANT" ,oTREII:FIELDGET("NUMFUN"))
+   oSERVER:FIELDPUT("TREIN"  ,oTREII:FIELDGET("TREIN"))
+   oTREIN:GOTOP()
+   IF oTREIN:SEEK(oTREII:FIELDGET("TREIN"))
+   	  oSERVER:FIELDPUT("CURSO",oTREIN:FIELDGET("CURSO"))
+      oSERVER:FIELDPUT("DESCUR",oTREIN:FIELDGET("DESCUR"))
+      oSERVER:FIELDPUT("CARHOR",oTREIN:FIELDGET("CARGA"))
+   ENDIF	
+   oSERVER:commit()
+   oTREII:SKIP()
+ENDDO	
+oSERVER:CLOSE()
+oTREIN:CLOSE()
+oTREII:CLOSE()
+//alert("Importacao Concluida")	
+	
+	
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra) 
+local dim aFonts[1] AS OBJECT
+local dim aBrushes[1] AS OBJECT
+
+self:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+SUPER(oWindow,ResourceID{"JimpTr",_GetInst()},iCtlID)
+
+aFonts[1] := Font{,12,"Times New Roman"}
+aFonts[1]:Bold := TRUE
+aBrushes[1] := Brush{Color{255,255,200}}
+
+oDCFixedText1 := FixedText{self,ResourceID{JIMPTR_FIXEDTEXT1,_GetInst()}}
+oDCFixedText1:HyperLabel := HyperLabel{#FixedText1,"Numero Registro Anterior",NULL_STRING,NULL_STRING}
+
+oDCnumant := rightSle{self,ResourceID{JIMPTR_NUMANT,_GetInst()}}
+oDCnumant:HyperLabel := HyperLabel{#numant,NULL_STRING,NULL_STRING,NULL_STRING}
+oDCnumant:FieldSpec := padrao_num_08{}
+oDCnumant:FocusSelect := FSEL_ALL
+
+oDCFixedText2 := FixedText{self,ResourceID{JIMPTR_FIXEDTEXT2,_GetInst()}}
+oDCFixedText2:HyperLabel := HyperLabel{#FixedText2,"Caminho do Arquivo",NULL_STRING,NULL_STRING}
+
+oDCcaminho := pbFolderSLE{self,ResourceID{JIMPTR_CAMINHO,_GetInst()}}
+oDCcaminho:HyperLabel := HyperLabel{#caminho,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oDCtheFixedText10 := FixedText{self,ResourceID{JIMPTR_THEFIXEDTEXT10,_GetInst()}}
+oDCtheFixedText10:HyperLabel := HyperLabel{#theFixedText10,"OK",NULL_STRING,NULL_STRING}
+
+oCCok := PushButton{self,ResourceID{JIMPTR_OK,_GetInst()}}
+oCCok:HyperLabel := HyperLabel{#ok,NULL_STRING,NULL_STRING,NULL_STRING}
+oCCok:Image := ico_ok{}
+
+oDCtheFixedText9 := FixedText{self,ResourceID{JIMPTR_THEFIXEDTEXT9,_GetInst()}}
+oDCtheFixedText9:HyperLabel := HyperLabel{#theFixedText9,"Cancelar",NULL_STRING,NULL_STRING}
+
+oCCCancelar := PushButton{self,ResourceID{JIMPTR_CANCELAR,_GetInst()}}
+oCCCancelar:HyperLabel := HyperLabel{#Cancelar,NULL_STRING,NULL_STRING,NULL_STRING}
+oCCCancelar:Image := ico_sair{}
+
+oDCFixedText3 := FixedText{self,ResourceID{JIMPTR_FIXEDTEXT3,_GetInst()}}
+oDCFixedText3:HyperLabel := HyperLabel{#FixedText3,"Numero Registro Atual",NULL_STRING,NULL_STRING}
+
+oDCNUMERO := rightSle{self,ResourceID{JIMPTR_NUMERO,_GetInst()}}
+oDCNUMERO:HyperLabel := HyperLabel{#NUMERO,NULL_STRING,NULL_STRING,NULL_STRING}
+oDCNUMERO:FieldSpec := padrao_num_08{}
+oDCNUMERO:FocusSelect := FSEL_ALL
+
+oDCempresa := SingleLineEdit{self,ResourceID{JIMPTR_EMPRESA,_GetInst()}}
+oDCempresa:HyperLabel := HyperLabel{#empresa,NULL_STRING,NULL_STRING,NULL_STRING}
+oDCempresa:FieldSpec := padrao_num_08{}
+oDCempresa:FocusSelect := FSEL_ALL
+oDCempresa:BackGround := aBrushes[1]
+oDCempresa:Font(aFonts[1], FALSE)
+
+oCCcmdmenos3 := PushButton{self,ResourceID{JIMPTR_CMDMENOS3,_GetInst()}}
+oCCcmdmenos3:HyperLabel := HyperLabel{#cmdmenos3,"-",NULL_STRING,NULL_STRING}
+
+oCCcmdmais3 := PushButton{self,ResourceID{JIMPTR_CMDMAIS3,_GetInst()}}
+oCCcmdmais3:HyperLabel := HyperLabel{#cmdmais3,"+",NULL_STRING,NULL_STRING}
+
+oDCFixedText4 := FixedText{self,ResourceID{JIMPTR_FIXEDTEXT4,_GetInst()}}
+oDCFixedText4:HyperLabel := HyperLabel{#FixedText4,"Empresa de Origem",NULL_STRING,NULL_STRING}
+
+oCCcmdemp01 := PushButton{self,ResourceID{JIMPTR_CMDEMP01,_GetInst()}}
+oCCcmdemp01:HyperLabel := HyperLabel{#cmdemp01,"1",NULL_STRING,NULL_STRING}
+
+oCCcmdemp02 := PushButton{self,ResourceID{JIMPTR_CMDEMP02,_GetInst()}}
+oCCcmdemp02:HyperLabel := HyperLabel{#cmdemp02,"2",NULL_STRING,NULL_STRING}
+
+oCCcmdemp3 := PushButton{self,ResourceID{JIMPTR_CMDEMP3,_GetInst()}}
+oCCcmdemp3:HyperLabel := HyperLabel{#cmdemp3,"3",NULL_STRING,NULL_STRING}
+
+oDCchkTrein := CheckBox{self,ResourceID{JIMPTR_CHKTREIN,_GetInst()}}
+oDCchkTrein:HyperLabel := HyperLabel{#chkTrein,"Treinamentos",NULL_STRING,NULL_STRING}
+
+oDCchkAntes := CheckBox{self,ResourceID{JIMPTR_CHKANTES,_GetInst()}}
+oDCchkAntes:HyperLabel := HyperLabel{#chkAntes,"Antes Contratações",NULL_STRING,NULL_STRING}
+
+oDCUSO := FixedText{self,ResourceID{JIMPTR_USO,_GetInst()}}
+oDCUSO:HyperLabel := HyperLabel{#USO,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oDCchkAntes1 := CheckBox{self,ResourceID{JIMPTR_CHKANTES1,_GetInst()}}
+oDCchkAntes1:HyperLabel := HyperLabel{#chkAntes1,"Matriculas Anteriores",NULL_STRING,NULL_STRING}
+
+oCCcmdemp99 := PushButton{self,ResourceID{JIMPTR_CMDEMP99,_GetInst()}}
+oCCcmdemp99:HyperLabel := HyperLabel{#cmdemp99,"99",NULL_STRING,NULL_STRING}
+
+oCCcmdemp4 := PushButton{self,ResourceID{JIMPTR_CMDEMP4,_GetInst()}}
+oCCcmdemp4:HyperLabel := HyperLabel{#cmdemp4,"4",NULL_STRING,NULL_STRING}
+
+oCCcmdemp5 := PushButton{self,ResourceID{JIMPTR_CMDEMP5,_GetInst()}}
+oCCcmdemp5:HyperLabel := HyperLabel{#cmdemp5,"5",NULL_STRING,NULL_STRING}
+
+oCCcmdemp98 := PushButton{self,ResourceID{JIMPTR_CMDEMP98,_GetInst()}}
+oCCcmdemp98:HyperLabel := HyperLabel{#cmdemp98,"98",NULL_STRING,NULL_STRING}
+
+oCCcmdemp10 := PushButton{self,ResourceID{JIMPTR_CMDEMP10,_GetInst()}}
+oCCcmdemp10:HyperLabel := HyperLabel{#cmdemp10,"10",NULL_STRING,NULL_STRING}
+
+oCCcmdemp97 := PushButton{self,ResourceID{JIMPTR_CMDEMP97,_GetInst()}}
+oCCcmdemp97:HyperLabel := HyperLabel{#cmdemp97,"97",NULL_STRING,NULL_STRING}
+
+SELF:Caption := "Importando Treinamentos"
+SELF:HyperLabel := HyperLabel{#JimpTr,"Importando Treinamentos",NULL_STRING,NULL_STRING}
+//SELF:Value(C)
+
+IF !IsNil(oServer)
+	SELF:Use(oServer)
+ENDIF
+
+SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN SELF
+
+
+access numant() 
+return self:FieldGet(#numant)
+
+
+assign numant(uValue) 
+self:FieldPut(#numant, uValue)
+return numant := uValue
+
+
+access NUMERO() 
+return self:FieldGet(#NUMERO)
+
+
+assign NUMERO(uValue) 
+self:FieldPut(#NUMERO, uValue)
+return NUMERO := uValue
+
+
+METHOD ok( ) 
+	IF SELF:chkTrein
+       SELF:IMPORTAR()
+     ENDIF
+   IF SELF:chkAntes
+   	  SELF:importa2("MP04C")
+   ENDIF	
+   IF SELF:chkAntes1
+   	  SELF:importa2("MP04A")
+   ENDIF	
+
+METHOD PEGCAMINHO() 
+LOCAL cCAMINHO AS STRING	
+cCAMINHO:=PEGINIVAL(ZCURINI,"TREII.DBF","CAMINHO")
+ccaminho:=CAMINEX(cCAMINHO,ZMES,ZANO,SELF:empresa)	
+SELF:CAMINHO:=CCAMINHO
+	
+
+METHOD PostInit(oWindow,iCtlID,oServer,uExtra) 
+	//Put your PostInit additions here
+	FabCenterWindow( SELF )
+	RETURN NIL
+
+
+METHOD PushButton9() 
+SELF:FAZER(1394,133)
+SELF:FAZER(1418,134)
+SELF:FAZER(1429,135)
+SELF:FAZER(1447,136)
+SELF:FAZER(1513,137)
+SELF:FAZER(1518,138)
+SELF:FAZER(1521,139)
+SELF:FAZER(1599,140)
+SELF:FAZER(1601,141)
+SELF:FAZER(1621,142)
+SELF:FAZER(1643,143)
+SELF:FAZER(1648,144)
+SELF:FAZER(1625,145)
+SELF:FAZER(1163,146)
+SELF:FAZER(1454,147)
+SELF:FAZER(1476,148)
+SELF:FAZER(1512,149)
+SELF:FAZER(1539,150)
+SELF:FAZER(1541,151)
+SELF:FAZER(1577,152)
+SELF:FAZER(1337,155)
+SELF:FAZER(1380,156)
+SELF:FAZER(1410,157)
+SELF:FAZER(1531,158)
+SELF:FAZER(1547,159)
+SELF:FAZER(1554,160)
+SELF:FAZER(1582,161)
+SELF:FAZER(1636,162)
+SELF:FAZER(1660,163)
+SELF:FAZER(1661,164)
+SELF:FAZER(1665,165)
+SELF:FAZER(1468,166)
+SELF:FAZER(403,169)
+SELF:FAZER(438,170)
+SELF:FAZER(644,171)
+SELF:FAZER(767,172)
+SELF:FAZER(857,173)
+SELF:FAZER(866,174)
+SELF:FAZER(877,175)
+SELF:FAZER(911,176)
+SELF:FAZER(967,177)
+SELF:FAZER(990,178)
+SELF:FAZER(1040,179)
+SELF:FAZER(1076,180)
+SELF:FAZER(1080,181)
+SELF:FAZER(1112,182)
+SELF:FAZER(1121,183)
+SELF:FAZER(1131,184)
+SELF:FAZER(1136,185)
+SELF:FAZER(1141,186)
+SELF:FAZER(1146,187)
+SELF:FAZER(1155,188)
+SELF:FAZER(1161,189)
+SELF:FAZER(1162,190)
+SELF:FAZER(1168,191)
+SELF:FAZER(1169,192)
+SELF:FAZER(1173,193)
+SELF:FAZER(1174,194)
+SELF:FAZER(1179,195)
+SELF:FAZER(1185,196)
+SELF:FAZER(1186,197)
+SELF:FAZER(1195,198)
+SELF:FAZER(1198,199)
+SELF:FAZER(1203,200)
+SELF:FAZER(1206,201)
+SELF:FAZER(1213,202)
+SELF:FAZER(1228,203)
+SELF:FAZER(1233,204)
+SELF:FAZER(1238,205)
+SELF:FAZER(1241,206)
+SELF:FAZER(1248,207)
+SELF:FAZER(1254,208)
+SELF:FAZER(1267,209)
+SELF:FAZER(1268,210)
+SELF:FAZER(1274,211)
+SELF:FAZER(1277,212)
+SELF:FAZER(1284,213)
+SELF:FAZER(1288,214)
+SELF:FAZER(1293,215)
+SELF:FAZER(1300,216)
+SELF:FAZER(1303,217)
+SELF:FAZER(1311,218)
+SELF:FAZER(1313,219)
+SELF:FAZER(1316,220)
+SELF:FAZER(1326,221)
+SELF:FAZER(1330,222)
+SELF:FAZER(1339,223)
+SELF:FAZER(1341,224)
+SELF:FAZER(1342,225)
+SELF:FAZER(1345,226)
+SELF:FAZER(1348,227)
+SELF:FAZER(1358,228)
+SELF:FAZER(1359,229)
+SELF:FAZER(1363,230)
+SELF:FAZER(1376,231)
+SELF:FAZER(1377,232)
+SELF:FAZER(1379,233)
+SELF:FAZER(1382,234)
+SELF:FAZER(1384,235)
+SELF:FAZER(1385,236)
+SELF:FAZER(1390,237)
+SELF:FAZER(1400,238)
+SELF:FAZER(1405,239)
+SELF:FAZER(1408,240)
+SELF:FAZER(1417,241)
+SELF:FAZER(1421,242)
+SELF:FAZER(1423,243)
+SELF:FAZER(1424,244)
+SELF:FAZER(1426,245)
+SELF:FAZER(1428,246)
+SELF:FAZER(1431,247)
+SELF:FAZER(1432,248)
+SELF:FAZER(1435,249)
+SELF:FAZER(1436,250)
+SELF:FAZER(1438,251)
+SELF:FAZER(1439,252)
+SELF:FAZER(1440,253)
+SELF:FAZER(1441,254)
+SELF:FAZER(1451,255)
+SELF:FAZER(1455,256)
+SELF:FAZER(1463,257)
+SELF:FAZER(1471,258)
+SELF:FAZER(1475,259)
+SELF:FAZER(1479,260)
+SELF:FAZER(1482,261)
+SELF:FAZER(1483,262)
+SELF:FAZER(1484,263)
+SELF:FAZER(1485,264)
+SELF:FAZER(1486,265)
+SELF:FAZER(1490,266)
+SELF:FAZER(1491,267)
+SELF:FAZER(1492,268)
+SELF:FAZER(1496,269)
+SELF:FAZER(1497,270)
+SELF:FAZER(1499,271)
+SELF:FAZER(1500,272)
+SELF:FAZER(1501,273)
+SELF:FAZER(1505,274)
+SELF:FAZER(1506,275)
+SELF:FAZER(1508,276)
+SELF:FAZER(1510,277)
+SELF:FAZER(1511,278)
+SELF:FAZER(1514,279)
+SELF:FAZER(1515,280)
+SELF:FAZER(1519,281)
+SELF:FAZER(1526,282)
+SELF:FAZER(1528,283)
+SELF:FAZER(1530,284)
+SELF:FAZER(1532,285)
+SELF:FAZER(1533,286)
+SELF:FAZER(1534,287)
+SELF:FAZER(1535,288)
+SELF:FAZER(1536,289)
+SELF:FAZER(1540,290)
+SELF:FAZER(1542,291)
+SELF:FAZER(1543,292)
+SELF:FAZER(1544,293)
+SELF:FAZER(1548,294)
+SELF:FAZER(1549,295)
+SELF:FAZER(1522,296)
+SELF:FAZER(1557,297)
+SELF:FAZER(1558,298)
+SELF:FAZER(1559,299)
+SELF:FAZER(1560,300)
+SELF:FAZER(1561,301)
+SELF:FAZER(1562,302)
+SELF:FAZER(1565,303)
+SELF:FAZER(1570,304)
+SELF:FAZER(1578,305)
+SELF:FAZER(1581,306)
+SELF:FAZER(1583,307)
+SELF:FAZER(1584,308)
+SELF:FAZER(1585,309)
+SELF:FAZER(1588,310)
+SELF:FAZER(1592,311)
+SELF:FAZER(1595,312)
+SELF:FAZER(1597,313)
+SELF:FAZER(1598,314)
+SELF:FAZER(1603,315)
+SELF:FAZER(1604,316)
+SELF:FAZER(1607,317)
+SELF:FAZER(1608,318)
+SELF:FAZER(1611,319)
+SELF:FAZER(1612,320)
+SELF:FAZER(1613,321)
+SELF:FAZER(1617,322)
+SELF:FAZER(1618,323)
+SELF:FAZER(1623,324)
+SELF:FAZER(1624,325)
+SELF:FAZER(1629,326)
+SELF:FAZER(1632,327)
+SELF:FAZER(1635,328)
+SELF:FAZER(1637,329)
+SELF:FAZER(1638,330)
+SELF:FAZER(1639,331)
+SELF:FAZER(1644,332)
+SELF:FAZER(1646,333)
+SELF:FAZER(1647,334)
+SELF:FAZER(1650,335)
+SELF:FAZER(1651,336)
+SELF:FAZER(1653,337)
+SELF:FAZER(1654,338)
+SELF:FAZER(1655,339)
+SELF:FAZER(1656,340)
+SELF:FAZER(1657,341)
+SELF:FAZER(1658,342)
+SELF:FAZER(1659,343)
+SELF:FAZER(1666,344)
+SELF:FAZER(1667,345)
+SELF:FAZER(1672,346)
+SELF:FAZER(1673,347)
+SELF:FAZER(1676,348)
+SELF:FAZER(1677,349)
+SELF:FAZER(1679,350)
+SELF:FAZER(1338,132)
+
+END CLASS

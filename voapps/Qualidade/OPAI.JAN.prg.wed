@@ -1,0 +1,157 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jOPAI
+GUID=86D9FE3D-58D1-41AE-9F74-C46A11485AE0
+  Name=jOPAI
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=20
+  Width=605
+  Top=20
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#jOPAI,,,
+  Property=ViewAs=#BrowseView
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=72490560-F89F-458B-86E0-D8068C276625
+  Name=SC_ESPEC
+  Class=FIXEDTEXT
+  Caption=Espec:
+  Order=2
+  Left=13
+  Width=36
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Espec:",,
+  Property=HyperLabel=#SC_ESPEC,,,
+
+CONTROL=FIXEDTEXT
+GUID=934F8AD5-6759-47F5-A1D9-F096A9D15811
+  Name=SC_LAUDO
+  Class=FIXEDTEXT
+  Caption=Laudo:
+  Order=3
+  Left=9
+  Width=36
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Laudo:",,
+  Property=HyperLabel=#SC_LAUDO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=74A0AE90-5887-485C-8AE6-F40D97871AE8
+  Name=ESPEC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=49
+  Width=512
+  Top=41
+  Height=24
+  Browseindex=2
+  Browsesize=80
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#ESPEC,,,
+  Property=HyperLabel=,"Espec:",,
+  Property=HyperLabel=,,,"OPAI_ESPEC"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=E6EA299A-A50F-41DB-A16C-0DE2C38981F6
+  Name=LAUDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=49
+  Width=35
+  Top=69
+  Height=27
+  Browseindex=1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#LAUDO,,,
+  Property=HyperLabel=,"Laudo:",,
+  Property=HyperLabel=,,,"OPAI_LAUDO"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=77AC2308-5C77-4F89-B6CF-A2C6C492888E
+  Name=OPAE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=49
+  Width=64
+  Top=9
+  Height=28
+  Browseindex=0
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#OPAE,,,
+  Property=HyperLabel=,"Opae:",,
+  Property=HyperLabel=,,,"OPAE_OPAE"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=47CE0364-DB9A-4FB3-AFEB-B3E0D829B66B
+  Name=SC_OPAE
+  Class=FIXEDTEXT
+  Caption=Opae:
+  Order=8
+  Left=13
+  Width=32
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Opae:",,
+  Property=HyperLabel=#SC_OPAE,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jOPAI
+

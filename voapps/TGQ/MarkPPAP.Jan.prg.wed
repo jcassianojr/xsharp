@@ -1,0 +1,266 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JMAR
+GUID=785A1654-1165-4BFE-9448-AC6D0C3967D5
+  Name=JMAR
+  Class=DATADIALOG
+  Caption=Marcar PPAP
+  Order=0
+  Left=26
+  Width=400
+  Top=26
+  Height=240
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Marcar PPAP",,
+  Property=HyperLabel=#JMAR,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=EC97317B-3B02-4205-AF92-88880B7E973E
+  Name=PEDIDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=29
+  Width=80
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#PEDIDO,,,
+  Property=FieldSpec=padrao_num_08
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=F1125FF8-5F5A-4E74-9210-71FA414C8156
+  Name=ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=117
+  Width=80
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#ITEM,,,
+  Property=FieldSpec=padrao_num_03
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=7EC4E2C0-DA04-4232-BDD4-4971987AEA92
+  Name=PPAP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=29
+  Width=80
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#PPAP,,,
+  Property=FieldSpec=padrao_num_08
+  Property=InheritClassName=rightSle
+
+CONTROL=DATETIMEPICKER
+GUID=D8975EEA-C419-4C55-BDAC-09B96330D8BD
+  Name=DATA
+  Class=DATETIMEPICKER
+  Caption=11/04/2018
+  Order=4
+  Left=117
+  Width=85
+  Top=85
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATA,,,
+
+CONTROL=FIXEDTEXT
+GUID=2A61AE79-A849-4E7D-8F10-2DA1ECAA080D
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Pedido
+  Order=5
+  Left=29
+  Width=44
+  Top=21
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pedido",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=FIXEDTEXT
+GUID=CC2D7C3D-8964-4B13-88F2-5FA2C66DCCE0
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Item
+  Order=6
+  Left=117
+  Width=44
+  Top=21
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=FIXEDTEXT
+GUID=4CB499DD-408D-48A8-A59A-F31E9E8BACF9
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=PPAP
+  Order=7
+  Left=33
+  Width=44
+  Top=65
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"PPAP",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=FIXEDTEXT
+GUID=2D67C7DC-8810-48F1-BE10-B470AE68F46F
+  Name=FixedText4
+  Class=FIXEDTEXT
+  Caption=Data
+  Order=8
+  Left=121
+  Width=44
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=#FixedText4,,,
+
+CONTROL=FIXEDTEXT
+GUID=74394780-4718-4228-B3D9-21378C93160A
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=9
+  Left=301
+  Width=64
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=51655BC6-DA65-4789-A471-723277D11E1F
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=10
+  Left=301
+  Width=64
+  Top=97
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ico_sair
+
+CONTROL=FIXEDTEXT
+GUID=51FD2FE7-E375-4089-A85E-17F225EB539F
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=11
+  Left=301
+  Width=64
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=D355ABB3-40FA-44F6-97C0-A9DC2FC44080
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=12
+  Left=301
+  Width=64
+  Top=25
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ico_ok
+
+SUBCONTROLSEND
+DESIGNEREND = JMAR
+

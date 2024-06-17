@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
+  <PropertyGroup>
+    <ProjectGuid>095EF471-1324-462A-99FB-97A41C6B6D91</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sintegra</RootNamespace>
+    <AssemblyName>Sintegra</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Name>Sintegra</Name>
+    <Nologo>true</Nologo>
+    <GenerateFullPaths>true</GenerateFullPaths>
+    <Dialect>VO</Dialect>
+    <LB>true</LB>
+    <OutputName>Sintegra</OutputName>
+    <StartupObject />
+    <ApplicationIcon />
+    <Prefer32Bit>True</Prefer32Bit>
+    <VulcanCompatibleResources>False</VulcanCompatibleResources>
+    <AZ>false</AZ>
+    <CS>false</CS>
+    <OVF>true</OVF>
+    <Unsafe>true</Unsafe>
+    <INS>true</INS>
+    <NS>false</NS>
+    <VO1>true</VO1>
+    <VO2>true</VO2>
+    <VO3>true</VO3>
+    <VO4>true</VO4>
+    <VO5>true</VO5>
+    <VO6>true</VO6>
+    <VO7>true</VO7>
+    <VO8>true</VO8>
+    <VO9>true</VO9>
+    <VO10>true</VO10>
+    <VO11>false</VO11>
+    <VO12>false</VO12>
+    <VO13>true</VO13>
+    <VO14>false</VO14>
+    <VO15>true</VO15>
+    <VO16>true</VO16>
+    <MemVar>false</MemVar>
+    <Undeclared>false</Undeclared>
+    <NoStandardDefs>false</NoStandardDefs>
+    <EnforceSelf>True</EnforceSelf>
+    <IncludePaths />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
+    <PlatformTarget>x86</PlatformTarget>
+    <EmitDebugInformation>true</EmitDebugInformation>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
+    <UseSharedCompilation>true</UseSharedCompilation>
+    <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
+    <WarningLevel>4</WarningLevel>
+    <PPO>false</PPO>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Label="Configuration">
+    <PlatformTarget>x86</PlatformTarget>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <EmitDebugInformation>false</EmitDebugInformation>
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseSharedCompilation>true</UseSharedCompilation>
+    <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
+    <PPO>false</PPO>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
+      <Name>RightSLEvo</Name>
+      <Project>{e1a8daf4-3bda-434a-9753-2b6f30230b1e}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <ProjectReference Include="..\mlibwvo27\mlibwvo27.xsproj">
+      <Name>mlibwvo27</Name>
+      <Project>{ED1F68EE-4BE5-465F-B2C2-7BC4E8E6EC52}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\peg.met\peg.met.xsproj">
+      <Name>peg.met</Name>
+      <Project>{B1F0F2CE-18C1-4AC6-B6DB-A20F12E81432}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\checagem\checagem.xsproj">
+      <Name>checagem</Name>
+      <Project>{1988C1AC-F19D-4008-BDCB-6050900181C8}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\esccodmon\esccodmon.xsproj">
+      <Name>esccodmon</Name>
+      <Project>{B70C2FCF-2F9E-45B9-B780-D9A82056831C}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\MA01.JAN\MA01.JAN.xsproj">
+      <Name>MA01.JAN</Name>
+      <Project>{9FD9AEBB-5999-4610-816E-58B1E68C5913}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Logix\Logix.xsproj">
+      <Name>Logix</Name>
+      <Project>{3B620C79-B95A-4A87-ADD7-B59A97BE78C1}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\MB01.jan\MB01.jan.xsproj">
+      <Name>MB01.jan</Name>
+      <Project>{5FDCFBEC-5D5C-41ED-A55A-6F40554B5152}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Login\Login.xsproj">
+      <Name>Login</Name>
+      <Project>{C74D47F3-832A-4082-8F2D-17E303CBB3DA}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Mail\Mail.xsproj">
+      <Name>Mail</Name>
+      <Project>{82484E5D-4FD7-4F59-9077-821F3F7C750B}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <Reference Include="XSharp.Core">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="XSharp.RT">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="XSharp.VO">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOSQLClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VORDDClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOSystemClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOGUIClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOWin32APILibrary">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Menu.EMPTYSHELLMENU_Accelerator.rc">
+      <DependentUpon>Menu.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="Menu.EMPTYSHELLMENU.rc">
+      <DependentUpon>Menu.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="Menu.EMPTYSHELLMENU.xsmnu">
+      <DependentUpon>Menu.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="X.Classes.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Start.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc">
+      <DependentUpon>Start.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="Start.VS_VERSION_INFO.rc">
+      <DependentUpon>Start.prg</DependentUpon>
+    </NativeResource>
+    <Compile Include="jimp.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="jimp.JIMPTXT.rc">
+      <DependentUpon>jimp.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="jimp.JIMPTXT.xsfrm">
+      <DependentUpon>jimp.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="JREG50.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="JREG50.JReg50.rc">
+      <DependentUpon>JREG50.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="JREG50.JReg50.xsfrm">
+      <DependentUpon>JREG50.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="funcoes.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="jcnpjie.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="jcnpjie.jcnpjie.rc">
+      <DependentUpon>jcnpjie.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="jcnpjie.jcnpjie.xsfrm">
+      <DependentUpon>jcnpjie.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="jemp.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="jemp.jemp.rc">
+      <DependentUpon>jemp.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="jemp.jemp.xsfrm">
+      <DependentUpon>jemp.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="juf.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="juf.jUF.rc">
+      <DependentUpon>juf.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="juf.jUF.xsfrm">
+      <DependentUpon>juf.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="jreg54.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="jreg54.jreg54.rc">
+      <DependentUpon>jreg54.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="jreg54.jreg54.xsfrm">
+      <DependentUpon>jreg54.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="jreg75.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="jreg75.jreg75.rc">
+      <DependentUpon>jreg75.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="jreg75.jreg75.xsfrm">
+      <DependentUpon>jreg75.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="a1mix.Jan.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="a1mix.Jan.a1mix.rc">
+      <DependentUpon>a1mix.Jan.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="a1mix.Jan.a1mix.xsfrm">
+      <DependentUpon>a1mix.Jan.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="a2mix.JAN.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="a2mix.JAN.a2mix.rc">
+      <DependentUpon>a2mix.JAN.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="a2mix.JAN.a2mix.xsfrm">
+      <DependentUpon>a2mix.JAN.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="jimpdiv.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="jimpdiv.jimpdiv.rc">
+      <DependentUpon>jimpdiv.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="jimpdiv.jimpdiv.xsfrm">
+      <DependentUpon>jimpdiv.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="jimpult.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="xclassesshell.prg">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
+  <ProjectExtensions>
+    <ProjectCapabilities>
+      <ProjectConfigurationsDeclaredAsItems />
+    </ProjectCapabilities>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+</Project>

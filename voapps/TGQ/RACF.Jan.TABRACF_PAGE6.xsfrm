@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="TabRacf_Page6">
+    <Window Name="TabRacf_Page6">
+      <Name>TabRacf_Page6</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>32</Left>
+      <Top>32</Top>
+      <Width>704</Width>
+      <Height>214</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#TabRacf_Page6,,,</HyperLabel>
+        <ClipperKeys>True</ClipperKeys>
+        <Use>&lt;Share Owner's&gt;</Use>
+      </ExProperties>
+    </Window>
+    <Control Name="datai">
+      <Name>datai</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>10</Left>
+      <Top>30</Top>
+      <Width>115</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>date_field</FieldSpec>
+        <HyperLabel>#datai,,,</HyperLabel>
+        <InheritClassName>DateSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="dataf">
+      <Name>dataf</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>133</Left>
+      <Top>29</Top>
+      <Width>116</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>date_field</FieldSpec>
+        <HyperLabel>#dataf,,,</HyperLabel>
+        <InheritClassName>DateSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="AREA">
+      <Name>AREA</Name>
+      <Class>COMBOBOX</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>393</Left>
+      <Top>17</Top>
+      <Width>288</Width>
+      <Height>148</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1075839234</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_02</FieldSpec>
+        <FillUsing>Self:PEGMP05 </FillUsing>
+        <HyperLabel>#AREA,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RESPF">
+      <Name>RESPF</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>105</Left>
+      <Top>69</Top>
+      <Width>280</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_40</FieldSpec>
+        <HyperLabel>#RESPF,,,</HyperLabel>
+        <HyperLabel>,"Respf:",,</HyperLabel>
+        <HyperLabel>,,,"RACF_RESPF"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="CARGOF">
+      <Name>CARGOF</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>105</Left>
+      <Top>89</Top>
+      <Width>280</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>8</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_40</FieldSpec>
+        <HyperLabel>#CARGOF,,,</HyperLabel>
+        <HyperLabel>,"Cargof:",,</HyperLabel>
+        <HyperLabel>,,,"RACF_CARGOF"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CARGOF">
+      <Name>SC_CARGOF</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Cargo:</Caption>
+      <Order>6</Order>
+      <Left>25</Left>
+      <Top>89</Top>
+      <Width>50</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Cargo:",,</HyperLabel>
+        <HyperLabel>#SC_CARGOF,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_RESPF">
+      <Name>SC_RESPF</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Responsável:</Caption>
+      <Order>7</Order>
+      <Left>15</Left>
+      <Top>69</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Responsável:",,</HyperLabel>
+        <HyperLabel>#SC_RESPF,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FT22">
+      <Name>FT22</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Data Referencia</Caption>
+      <Order>8</Order>
+      <Left>133</Left>
+      <Top>13</Top>
+      <Width>84</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Data Referencia",,</HyperLabel>
+        <HyperLabel>#FT22,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DATAI">
+      <Name>SC_DATAI</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Data Implantação:</Caption>
+      <Order>9</Order>
+      <Left>13</Left>
+      <Top>13</Top>
+      <Width>96</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Data Implantação:",,</HyperLabel>
+        <HyperLabel>#SC_DATAI,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RESPO">
+      <Name>RESPO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>397</Left>
+      <Top>65</Top>
+      <Width>280</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_40</FieldSpec>
+        <HyperLabel>#RESPO,,,</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="CARGO">
+      <Name>CARGO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>11</Order>
+      <Left>393</Left>
+      <Top>87</Top>
+      <Width>280</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_40</FieldSpec>
+        <HyperLabel>#CARGO,,,</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Trebuchet MS:Bold</NewFont>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

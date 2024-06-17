@@ -1,0 +1,153 @@
+#region DEFINES
+STATIC DEFINE JBXSEQ_CMDIMP := 108 
+STATIC DEFINE JBXSEQ_CMDSAIDA := 105 
+STATIC DEFINE JBXSEQ_CODIGO := 100 
+STATIC DEFINE JBXSEQ_FIXEDTEXT1 := 103 
+STATIC DEFINE JBXSEQ_FIXEDTEXT2 := 104 
+STATIC DEFINE JBXSEQ_FIXEDTEXT3 := 106 
+STATIC DEFINE JBXSEQ_FIXEDTEXT4 := 107 
+STATIC DEFINE JBXSEQ_FIXEDTEXT5 := 109 
+STATIC DEFINE JBXSEQ_SEQ := 101 
+STATIC DEFINE JBXSEQ_SSQ := 102 
+#endregion
+
+CLASS JBXSEQ INHERIT DATADIALOG 
+
+	PROTECT oDCCODIGO AS SINGLELINEEDIT
+	PROTECT oDCSEQ AS SINGLELINEEDIT
+	PROTECT oDCSSQ AS SINGLELINEEDIT
+	PROTECT oDCFixedText1 AS FIXEDTEXT
+	PROTECT oDCFixedText2 AS FIXEDTEXT
+	PROTECT oCCcmdSaida AS PUSHBUTTON
+	PROTECT oDCFixedText3 AS FIXEDTEXT
+	PROTECT oDCFixedText4 AS FIXEDTEXT
+	PROTECT oCCcmdimp AS PUSHBUTTON
+	PROTECT oDCFixedText5 AS FIXEDTEXT
+// 	instance CODIGO 
+// 	instance SEQ 
+// 	instance SSQ 
+
+  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
+
+METHOD cmdSaida( ) 
+	SELF:EndWindow()
+
+ACCESS CODIGO() 
+RETURN SELF:FieldGet(#CODIGO)
+
+
+ASSIGN CODIGO(uValue) 
+SELF:FieldPut(#CODIGO, uValue)
+RETURN CODIGO := uValue
+
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
+
+SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+SUPER(oWindow,ResourceID{"JBXSEQ",_GetInst()},iCtlID)
+
+oDCCODIGO := SingleLineEdit{SELF,ResourceID{JBXSEQ_CODIGO,_GetInst()}}
+oDCCODIGO:HyperLabel := HyperLabel{#CODIGO,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oDCSEQ := SingleLineEdit{SELF,ResourceID{JBXSEQ_SEQ,_GetInst()}}
+oDCSEQ:HyperLabel := HyperLabel{#SEQ,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oDCSSQ := SingleLineEdit{SELF,ResourceID{JBXSEQ_SSQ,_GetInst()}}
+oDCSSQ:HyperLabel := HyperLabel{#SSQ,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oDCFixedText1 := FixedText{SELF,ResourceID{JBXSEQ_FIXEDTEXT1,_GetInst()}}
+oDCFixedText1:HyperLabel := HyperLabel{#FixedText1,"SEQ",NULL_STRING,NULL_STRING}
+
+oDCFixedText2 := FixedText{SELF,ResourceID{JBXSEQ_FIXEDTEXT2,_GetInst()}}
+oDCFixedText2:HyperLabel := HyperLabel{#FixedText2,"SSQ",NULL_STRING,NULL_STRING}
+
+oCCcmdSaida := PushButton{SELF,ResourceID{JBXSEQ_CMDSAIDA,_GetInst()}}
+oCCcmdSaida:HyperLabel := HyperLabel{#cmdSaida,NULL_STRING,NULL_STRING,NULL_STRING}
+oCCcmdSaida:Image := ICO_SAIR{}
+
+oDCFixedText3 := FixedText{SELF,ResourceID{JBXSEQ_FIXEDTEXT3,_GetInst()}}
+oDCFixedText3:HyperLabel := HyperLabel{#FixedText3,"Retornar",NULL_STRING,NULL_STRING}
+
+oDCFixedText4 := FixedText{SELF,ResourceID{JBXSEQ_FIXEDTEXT4,_GetInst()}}
+oDCFixedText4:HyperLabel := HyperLabel{#FixedText4,"Baixar",NULL_STRING,NULL_STRING}
+
+oCCcmdimp := PushButton{SELF,ResourceID{JBXSEQ_CMDIMP,_GetInst()}}
+oCCcmdimp:HyperLabel := HyperLabel{#cmdimp,NULL_STRING,NULL_STRING,NULL_STRING}
+oCCcmdimp:Image := ICO_OK{}
+
+oDCFixedText5 := FixedText{SELF,ResourceID{JBXSEQ_FIXEDTEXT5,_GetInst()}}
+oDCFixedText5:HyperLabel := HyperLabel{#FixedText5,"Código",NULL_STRING,NULL_STRING}
+
+SELF:Caption := ""
+SELF:HyperLabel := HyperLabel{#JBXSEQ,NULL_STRING,NULL_STRING,NULL_STRING}
+
+IF !IsNil(oServer)
+	SELF:Use(oServer)
+ENDIF
+
+SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN SELF
+
+
+METHOD PostInit(oWindow,iCtlID,oServer,uExtra) 
+	//Put your PostInit additions here
+		    FabCenterWindow( SELF )
+	RETURN NIL
+
+
+ACCESS SEQ() 
+RETURN SELF:FieldGet(#SEQ)
+
+
+ASSIGN SEQ(uValue) 
+SELF:FieldPut(#SEQ, uValue)
+RETURN SEQ := uValue
+
+
+ACCESS SSQ() 
+RETURN SELF:FieldGet(#SSQ)
+
+
+ASSIGN SSQ(uValue) 
+SELF:FieldPut(#SSQ, uValue)
+RETURN SSQ := uValue
+
+
+END CLASS
+PARTIAL CLASS XJBXSEQ
+METHOD cmdimp( ) 
+LOCAL nSEQ,nSSQ AS DWORD
+LOCAL cCODIGO AS STRING
+cCODIGO:=AllTrim(SELF:CODIGO)	
+nSEQ:=Val(SELF:SEQ)
+nSSQ:=Val(SELF:SSQ)
+IF nSEQ=0 .OR. nSSQ=0 .OR. Len(cCODIGO)=0
+   alert("Necessario Codigo SSQ/SEQ","Erro Informação")
+   RETURN .f.
+ENDIF	
+SELF:POINTER:=POINTER{POINTERHOURGLASS}
+RDTBAIXA(cCODIGO,nSEQ,nSSQ,"RDT.DBF","RDTBX.DBF")
+SELF:POINTER:=POINTER{POINTERARROW}
+SELF:EndWindow()
+
+END CLASS
+PARTIAL CLASS XJRTSEQ
+METHOD cmdimp( ) 
+LOCAL nSEQ,nSSQ AS DWORD
+LOCAL cCODIGO AS STRING
+cCODIGO:=AllTrim(SELF:CODIGO)	
+nSEQ:=Val(SELF:SEQ)
+nSSQ:=Val(SELF:SSQ)
+IF nSEQ=0 .OR. nSSQ=0 .OR. Len(cCODIGO)=0
+   alert("Necessario Codigo SSQ/SEQ","Erro Informação")
+   RETURN .f.
+ENDIF	
+SELF:POINTER:=POINTER{POINTERHOURGLASS}
+RDTBAIXA(cCODIGO,nSEQ,nSSQ,"RDTBX.DBF","RDT.DBF")
+SELF:POINTER:=POINTER{POINTERARROW}
+SELF:EndWindow()
+
+
+END CLASS

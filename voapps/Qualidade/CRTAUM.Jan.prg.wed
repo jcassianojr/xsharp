@@ -1,0 +1,280 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JCRTAUM
+GUID=CFD2AED7-DDFC-46F0-B063-E51356B8F0F9
+  Name=JCRTAUM
+  Class=DATAWINDOW
+  Caption=Carta Temperatura/Umidade
+  Order=0
+  Left=22
+  Width=420
+  Top=22
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Carta Temperatura/Umidade",,
+  Property=Menu=STANDARDSHELLMENU
+  Property=HyperLabel=#JCRTAUM,,,
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=00AA1BBB-0246-4E86-9174-9205D73C3434
+  Name=SC_TIPO
+  Class=FIXEDTEXT
+  Caption=Tipo:
+  Order=1
+  Left=22
+  Width=28
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tipo:",,
+  Property=HyperLabel=#SC_TIPO,,,
+
+CONTROL=FIXEDTEXT
+GUID=109DD38E-A86E-40A7-AE41-AB2680A83CCD
+  Name=SC_DATA
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=2
+  Left=22
+  Width=32
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=#SC_DATA,,,
+
+CONTROL=FIXEDTEXT
+GUID=6BC317C9-9AEA-4570-8AB3-EEA042B3EA4F
+  Name=SC_HORA
+  Class=FIXEDTEXT
+  Caption=Hora:
+  Order=3
+  Left=165
+  Width=32
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Hora:",,
+  Property=HyperLabel=#SC_HORA,,,
+
+CONTROL=FIXEDTEXT
+GUID=2BDFF28F-2BDB-4460-8BB6-5B86E3F24B6C
+  Name=SC_VALOR
+  Class=FIXEDTEXT
+  Caption=Valor:
+  Order=4
+  Left=21
+  Width=32
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=#SC_VALOR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=4C4F7901-3C73-4DC1-8339-70D8E23FD791
+  Name=TIPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=70
+  Width=31
+  Top=21
+  Height=25
+  Browseindex=0
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#TIPO,,,
+  Property=HyperLabel=,"Tipo:",,
+  Property=HyperLabel=,,,"CRTAUM_TIPO"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=4434FD1A-5DDE-4B43-A5A9-183F72B60C44
+  Name=HORA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=213
+  Width=48
+  Top=53
+  Height=20
+  Browseindex=2
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_05_2
+  Property=HyperLabel=#HORA,,,
+  Property=HyperLabel=,"Hora:",,
+  Property=HyperLabel=,,,"CRTAUM_HORA"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=F4785AB8-3632-461F-8D08-642AD05F5DF8
+  Name=VALOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=69
+  Width=68
+  Top=77
+  Height=20
+  Browseindex=3
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#VALOR,,,
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=,,,"CRTAUM_VALOR"
+  Property=InheritClassName=rightSle
+
+CONTROL=PUSHBUTTON
+GUID=6D04933C-A4C9-4F97-B7F5-F27EC37D058D
+  Name=Umidade
+  Class=PUSHBUTTON
+  Caption=Umidade
+  Order=9
+  Left=114
+  Width=80
+  Top=22
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Umidade",,
+  Property=HyperLabel=#Umidade,,,
+
+CONTROL=PUSHBUTTON
+GUID=FF971AB5-EC33-4682-B28C-6E64C21A76B4
+  Name=Temperatura
+  Class=PUSHBUTTON
+  Caption=Temperatura
+  Order=10
+  Left=201
+  Width=80
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Temperatura",,
+  Property=HyperLabel=#Temperatura,,,
+
+CONTROL=DATETIMEPICKER
+GUID=C5A7E6A0-DB8A-4521-9F3A-F6545DC15DAB
+  Name=DATA
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=11
+  Left=69
+  Width=85
+  Top=49
+  Height=22
+  Browseindex=1
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DATA,,,
+  Property=HyperLabel=,"Data",,
+
+CONTROL=SINGLELINEEDIT
+GUID=2EB9394D-7C38-4AA2-BCB5-C3B63AF5E4C0
+  Name=SALA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=177
+  Width=68
+  Top=77
+  Height=20
+  Browseindex=4
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_05
+  Property=HyperLabel=#SALA,,,
+  Property=HyperLabel=,"Sala",,
+  Property=HyperLabel=,,,"CRTAUM_VALOR"
+
+CONTROL=FIXEDTEXT
+GUID=13ECAC3C-B978-42C2-9B20-E6D9388DFA53
+  Name=SC_VALOR1
+  Class=FIXEDTEXT
+  Caption=Sala
+  Order=13
+  Left=145
+  Width=32
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Sala",,
+  Property=HyperLabel=#SC_VALOR1,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JCRTAUM
+

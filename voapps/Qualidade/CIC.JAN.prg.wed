@@ -1,0 +1,540 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JCIC
+GUID=3EAB83BE-4DF9-41B3-9690-A2082888F7E2
+  Name=JCIC
+  Class=DATAWINDOW
+  Caption=Pre Produtos
+  Order=0
+  Left=38
+  Width=624
+  Top=38
+  Height=281
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Pre Produtos",,
+  Property=HyperLabel=#JCIC,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ClipperKeys=True
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=87606634-7B00-40A3-AFF4-B76F46BF5021
+  Name=DESENHO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=13
+  Width=128
+  Top=25
+  Height=18
+  Browseindex=0
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#DESENHO,,,
+  Property=HyperLabel=,"Desenho:",,
+  Property=HyperLabel=,,,"CIC_DESENHO"
+
+CONTROL=SINGLELINEEDIT
+GUID=1EE22324-33AB-4D0E-AB41-E4AEB7ADB1A7
+  Name=DESCRI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=185
+  Width=345
+  Top=25
+  Height=18
+  Browseindex=1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#DESCRI,,,
+  Property=HyperLabel=,"Descri:",,
+  Property=HyperLabel=,,,"CIC_DESCRI"
+
+CONTROL=DATETIMEPICKER
+GUID=E950B365-F51E-445B-8903-1F612C052806
+  Name=DATAD
+  Class=DATETIMEPICKER
+  Caption=10/12/2022
+  Order=3
+  Left=61
+  Width=95
+  Top=49
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAD,,,
+
+CONTROL=DATETIMEPICKER
+GUID=8C11B8F3-FE1B-47DB-ACC9-5FB8069DA667
+  Name=DATAR
+  Class=DATETIMEPICKER
+  Caption=10/12/2022
+  Order=4
+  Left=201
+  Width=85
+  Top=49
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=9CCFE619-0592-42E6-A0E6-47CD386C82DC
+  Name=REVD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=345
+  Width=66
+  Top=53
+  Height=16
+  Browseindex=2
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_05
+  Property=HyperLabel=#REVD,,,
+  Property=HyperLabel=,"Revd:",,
+  Property=HyperLabel=,,,"CIC_REVD"
+
+CONTROL=SINGLELINEEDIT
+GUID=692602E0-FBB3-41BE-BA24-57B14E421EEF
+  Name=CLIENTE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=453
+  Width=66
+  Top=49
+  Height=18
+  Browseindex=3
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#CLIENTE,,,
+  Property=HyperLabel=,"Revd:",,
+  Property=HyperLabel=,,,"CIC_REVD"
+  Property=InheritClassName=rightSle
+
+CONTROL=PUSHBUTTON
+GUID=D26D77F8-F0AD-4B3E-82C5-E9226F055516
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=7
+  Left=145
+  Width=19
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+
+CONTROL=FIXEDTEXT
+GUID=B2959C17-F07A-4EA7-87B4-647F44BA9EFB
+  Name=SC_DESTINO2
+  Class=FIXEDTEXT
+  Caption=Foto
+  Order=8
+  Left=545
+  Width=48
+  Top=81
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Foto",,
+  Property=HyperLabel=#SC_DESTINO2,,,
+
+CONTROL=PUSHBUTTON
+GUID=8AF743AB-7D5A-49A7-A11B-DBA5625E8F63
+  Name=foto
+  Class=PUSHBUTTON
+  Caption=
+  Order=9
+  Left=545
+  Width=48
+  Top=41
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#foto,,,
+  Property=Image=ICO_CAMERA
+
+CONTROL=PUSHBUTTON
+GUID=7DED090F-83B9-4D74-9040-9CE37ABCF992
+  Name=btnpegms01
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=10
+  Left=165
+  Width=19
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#btnpegms01,,,
+
+CONTROL=PUSHBUTTON
+GUID=24E0DE83-C13D-426D-889E-361752C9E108
+  Name=porov
+  Class=PUSHBUTTON
+  Caption=
+  Order=11
+  Left=565
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_AZ
+  Property=HyperLabel=#porov,,,
+  Property=TooltipText="Organizar por Numero GC"
+
+CONTROL=PUSHBUTTON
+GUID=087C4B04-84EB-40C5-8EDA-9C288820BC74
+  Name=buscanum
+  Class=PUSHBUTTON
+  Caption=
+  Order=12
+  Left=533
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscanum,,,
+  Property=TooltipText="Localizar um GC"
+
+CONTROL=FIXEDTEXT
+GUID=7C51F1DF-B014-46F3-BB45-D35F0CA43780
+  Name=SC_DESENHO
+  Class=FIXEDTEXT
+  Caption=Desenho:
+  Order=13
+  Left=13
+  Width=60
+  Top=7
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Desenho:",,
+  Property=HyperLabel=#SC_DESENHO,,,
+
+CONTROL=FIXEDTEXT
+GUID=F23189AF-10DE-4388-85A3-A2B13B1D438E
+  Name=SC_DESCRI
+  Class=FIXEDTEXT
+  Caption=Descrição:
+  Order=14
+  Left=189
+  Width=68
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descrição:",,
+  Property=HyperLabel=#SC_DESCRI,,,
+
+CONTROL=FIXEDTEXT
+GUID=19AF3C9C-2395-468C-A476-265F2F466EA3
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=Desenho:
+  Order=15
+  Left=13
+  Width=48
+  Top=49
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Desenho:",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=FIXEDTEXT
+GUID=02129D45-79F4-468B-A9F6-D3A8830E7A75
+  Name=FT4
+  Class=FIXEDTEXT
+  Caption=Revisão
+  Order=16
+  Left=157
+  Width=44
+  Top=49
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Revisão",,
+  Property=HyperLabel=#FT4,,,
+
+CONTROL=FIXEDTEXT
+GUID=82EE583A-B38D-4D62-ADC9-7AAAE9632AC6
+  Name=SC_REVD
+  Class=FIXEDTEXT
+  Caption=Revisão:
+  Order=17
+  Left=293
+  Width=48
+  Top=49
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Revisão:",,
+  Property=HyperLabel=#SC_REVD,,,
+
+CONTROL=FIXEDTEXT
+GUID=178F0629-0740-43BB-A78D-A7A2DB314E10
+  Name=theFixedText5
+  Class=FIXEDTEXT
+  Caption=Cliente
+  Order=18
+  Left=413
+  Width=36
+  Top=49
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cliente",,
+  Property=HyperLabel=#theFixedText5,,,
+
+CONTROL=SUBDATAWINDOW
+GUID=9591D3E5-3221-412E-A995-5533F6AC36C4
+  Name=JCICI
+  Class=SUBDATAWINDOW
+  Caption=JCICI
+  Order=19
+  Left=13
+  Width=474
+  Top=97
+  Height=168
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=RelationString="#DESENHO"
+  Property=Order="CICI"
+  Property=HyperLabel=#JCICI,,,
+
+CONTROL=PUSHBUTTON
+GUID=0D73B435-01E1-4791-B2CF-A239995B60E6
+  Name=Incluir
+  Class=PUSHBUTTON
+  Caption=Incluir
+  Order=20
+  Left=499
+  Width=80
+  Top=103
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Incluir",,
+  Property=HyperLabel=#Incluir,,,
+
+CONTROL=PUSHBUTTON
+GUID=4F0B1658-7CEE-40FA-A994-B4A2497DFAA2
+  Name=Excluir
+  Class=PUSHBUTTON
+  Caption=Excluir
+  Order=21
+  Left=499
+  Width=80
+  Top=127
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Excluir",,
+  Property=HyperLabel=#Excluir,,,
+
+CONTROL=PUSHBUTTON
+GUID=4E48C35C-5994-4CA0-A77A-3A8152990423
+  Name=Alterar
+  Class=PUSHBUTTON
+  Caption=Alterar
+  Order=22
+  Left=499
+  Width=80
+  Top=157
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Alterar",,
+  Property=HyperLabel=#Alterar,,,
+
+CONTROL=PUSHBUTTON
+GUID=EC46011D-86EA-4B4B-8069-0E54A198C38C
+  Name=Tabular
+  Class=PUSHBUTTON
+  Caption=Tabular
+  Order=23
+  Left=499
+  Width=80
+  Top=181
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tabular",,
+  Property=HyperLabel=#Tabular,,,
+
+CONTROL=PUSHBUTTON
+GUID=5F2A8C2C-F958-454E-8F1A-67CA48484553
+  Name=PROXIMO
+  Class=PUSHBUTTON
+  Caption=Proximo
+  Order=24
+  Left=499
+  Width=80
+  Top=211
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Proximo",,
+  Property=HyperLabel=#PROXIMO,,,
+
+CONTROL=PUSHBUTTON
+GUID=5D6DB01C-BD1D-4A36-98DB-79A764F7021C
+  Name=ANTERIOR
+  Class=PUSHBUTTON
+  Caption=Anterior
+  Order=25
+  Left=499
+  Width=80
+  Top=235
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Anterior",,
+  Property=HyperLabel=#ANTERIOR,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JCIC
+

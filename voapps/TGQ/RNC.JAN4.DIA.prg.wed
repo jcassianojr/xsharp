@@ -1,0 +1,1472 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JRNC4
+GUID=75322800-2F63-46FC-825F-DE432C79377F
+  Name=JRNC4
+  Class=DATADIALOG
+  Caption=Custo RNC
+  Order=0
+  Left=40
+  Width=699
+  Top=40
+  Height=289
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Custo RNC",,
+  Property=HyperLabel=#JRNC4,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=568E6A85-87A9-47FB-AE69-5BDA0FFB3B17
+  Name=SELHI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=49
+  Width=48
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#SELHI,,,
+  Property=HyperLabel=,"Selhi:",,
+  Property=HyperLabel=,,,"RNC_SELHI"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=E9F63CAD-9812-44C9-808B-E7CAEC86F058
+  Name=SELDI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=101
+  Width=84
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#SELDI,,,
+  Property=HyperLabel=,"Seldi:",,
+  Property=HyperLabel=,,,"RNC_SELDI"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=DC89406E-7B90-488B-BC1A-DD8689597C1C
+  Name=SELHF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=49
+  Width=48
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#SELHF,,,
+  Property=HyperLabel=,"Selhf:",,
+  Property=HyperLabel=,,,"RNC_SELHF"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=E99703AC-4195-4336-B57E-2797FF7F6FE1
+  Name=SELDF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=101
+  Width=84
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#SELDF,,,
+  Property=HyperLabel=,"Seldf:",,
+  Property=HyperLabel=,,,"RNC_SELDF"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=ACE9C7F1-57BF-4591-B9ED-635C0CD28D03
+  Name=SELTH
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=237
+  Width=96
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=HyperLabel=#SELTH,,,
+  Property=HyperLabel=,"Selth:",,
+  Property=HyperLabel=,,,"RNC_SELTH"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=DC9F444C-B66F-4CFC-81D2-B814EC5154DF
+  Name=SELVL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=237
+  Width=96
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=HyperLabel=#SELVL,,,
+  Property=HyperLabel=,"Selvl:",,
+  Property=HyperLabel=,,,"RNC_SELVL"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=9AC64B4C-1048-4BE9-9EDE-879E914C8358
+  Name=RETHI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=393
+  Width=48
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#RETHI,,,
+  Property=HyperLabel=,"Rethi:",,
+  Property=HyperLabel=,,,"RNC_RETHI"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=3514752C-68BB-4325-ABD8-93DC35A042D9
+  Name=RETDI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=445
+  Width=84
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#RETDI,,,
+  Property=HyperLabel=,"Retdi:",,
+  Property=HyperLabel=,,,"RNC_RETDI"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=F5D32A9F-0730-437A-B0B9-C7EE09B62F0C
+  Name=RETHF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=393
+  Width=48
+  Top=153
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#RETHF,,,
+  Property=HyperLabel=,"Rethf:",,
+  Property=HyperLabel=,,,"RNC_RETHF"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=E26D3F35-89FA-4B9C-AE50-CFDF604CE951
+  Name=RETDF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=445
+  Width=84
+  Top=153
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#RETDF,,,
+  Property=HyperLabel=,"Retdf:",,
+  Property=HyperLabel=,,,"RNC_RETDF"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=77825261-946A-47DD-BDA9-F4D914C5C6CF
+  Name=RETTH
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=585
+  Width=96
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=HyperLabel=#RETTH,,,
+  Property=HyperLabel=,"Retth:",,
+  Property=HyperLabel=,,,"RNC_RETTH"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=21EA30E9-F6BA-47F7-BBBA-1B54673B8A32
+  Name=RETVL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=585
+  Width=96
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=HyperLabel=#RETVL,,,
+  Property=HyperLabel=,"Retvl:",,
+  Property=HyperLabel=,,,"RNC_RETVL"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=77D74CC5-A412-43FE-9365-A68F31ECE6C5
+  Name=REIHI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=49
+  Width=48
+  Top=217
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#REIHI,,,
+  Property=HyperLabel=,"Reihi:",,
+  Property=HyperLabel=,,,"RNC_REIHI"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=48D310F8-F0EB-4148-8574-2F58B6878491
+  Name=REIDI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=101
+  Width=80
+  Top=217
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#REIDI,,,
+  Property=HyperLabel=,"Reidi:",,
+  Property=HyperLabel=,,,"RNC_REIDI"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=97934A05-C342-4AF1-AB38-2D8375A2B887
+  Name=REIHF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=49
+  Width=48
+  Top=237
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#REIHF,,,
+  Property=HyperLabel=,"Reihf:",,
+  Property=HyperLabel=,,,"RNC_REIHF"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=C70E2C70-1FF6-4170-A544-039335EE1F62
+  Name=REIDF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=101
+  Width=80
+  Top=237
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#REIDF,,,
+  Property=HyperLabel=,"Reidf:",,
+  Property=HyperLabel=,,,"RNC_REIDF"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=71FCA698-FFD6-4E40-B285-121FB450CF8F
+  Name=REITH
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=241
+  Width=96
+  Top=201
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=HyperLabel=#REITH,,,
+  Property=HyperLabel=,"Reith:",,
+  Property=HyperLabel=,,,"RNC_REITH"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=4DD930E0-653D-47A6-AA2B-D44E79537D06
+  Name=REIVL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=241
+  Width=96
+  Top=221
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=HyperLabel=#REIVL,,,
+  Property=HyperLabel=,"Reivl:",,
+  Property=HyperLabel=,,,"RNC_REIVL"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=71127908-62AF-4B67-8A20-506C55D70D0C
+  Name=REIQT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=241
+  Width=96
+  Top=241
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#REIQT,,,
+  Property=HyperLabel=,"Reiqt:",,
+  Property=HyperLabel=,,,"RNC_REIQT"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=782C7855-427C-4731-8603-847D15E5FBED
+  Name=MATCOD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=357
+  Width=152
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_20
+  Property=HyperLabel=#MATCOD,,,
+  Property=HyperLabel=,"Matcod:",,
+  Property=HyperLabel=,,,"RNC_MATCOD"
+
+CONTROL=SINGLELINEEDIT
+GUID=B2E58183-9D2C-4C27-B7F5-0BFD6A25AB29
+  Name=MATNOM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=357
+  Width=244
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#MATNOM,,,
+  Property=HyperLabel=,"Matnom:",,
+  Property=HyperLabel=,,,"RNC_MATNOM"
+
+CONTROL=FIXEDTEXT
+GUID=E5EE03AF-3F57-49E3-9236-287AF02C189B
+  Name=SC_REIQT
+  Class=FIXEDTEXT
+  Caption=QTdde
+  Order=29
+  Left=201
+  Width=40
+  Top=241
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"QTdde",,
+  Property=HyperLabel=#SC_REIQT,,,
+
+CONTROL=GROUPBOX
+GUID=A60D205B-A744-4A66-AA9F-9145243FEEB0
+  Name=GroupBox1
+  Class=GROUPBOX
+  Caption=Seleção
+  Order=32
+  Left=5
+  Width=340
+  Top=9
+  Height=80
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Seleção",,
+  Property=HyperLabel=#GroupBox1,,,
+
+CONTROL=FIXEDTEXT
+GUID=97AAD5EE-3A80-4528-ACFD-E4798FC2BCEA
+  Name=FixedText25
+  Class=FIXEDTEXT
+  Caption=Valor
+  Order=37
+  Left=205
+  Width=28
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valor",,
+  Property=HyperLabel=#FixedText25,,,
+
+CONTROL=FIXEDTEXT
+GUID=2E40D359-6BCC-418A-AE98-34E5F5CC3C44
+  Name=FixedText26
+  Class=FIXEDTEXT
+  Caption=Total Horas
+  Order=38
+  Left=205
+  Width=32
+  Top=21
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Total Horas",,
+  Property=HyperLabel=#FixedText26,,,
+
+CONTROL=FIXEDTEXT
+GUID=AE367614-0C23-42B3-A079-76DEC1B5B05C
+  Name=FixedText27
+  Class=FIXEDTEXT
+  Caption=Valor
+  Order=39
+  Left=549
+  Width=36
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valor",,
+  Property=HyperLabel=#FixedText27,,,
+
+CONTROL=FIXEDTEXT
+GUID=758652F0-C74F-4FFA-BD49-82C850017AC1
+  Name=FixedText28
+  Class=FIXEDTEXT
+  Caption=Total Horas
+  Order=40
+  Left=549
+  Width=32
+  Top=117
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Total Horas",,
+  Property=HyperLabel=#FixedText28,,,
+
+CONTROL=GROUPBOX
+GUID=D024581A-C72B-4444-8AFE-4B5D80BC283E
+  Name=GroupBox2
+  Class=GROUPBOX
+  Caption=Retrabalho Maquina
+  Order=45
+  Left=349
+  Width=340
+  Top=97
+  Height=84
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Retrabalho Maquina",,
+  Property=HyperLabel=#GroupBox2,,,
+
+CONTROL=FIXEDTEXT
+GUID=FDB30E20-42E1-44D5-9851-70624012AB34
+  Name=FixedText33
+  Class=FIXEDTEXT
+  Caption=Valor
+  Order=46
+  Left=205
+  Width=36
+  Top=221
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valor",,
+  Property=HyperLabel=#FixedText33,,,
+
+CONTROL=FIXEDTEXT
+GUID=347784EE-F0B5-47CB-8AB2-8C736E7E3631
+  Name=FixedText34
+  Class=FIXEDTEXT
+  Caption=Total Horas
+  Order=47
+  Left=205
+  Width=36
+  Top=193
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Total Horas",,
+  Property=HyperLabel=#FixedText34,,,
+
+CONTROL=FIXEDTEXT
+GUID=21CAAFA0-AF99-42EE-899F-8684F54C44B2
+  Name=FixedText37
+  Class=FIXEDTEXT
+  Caption=Final
+  Order=50
+  Left=13
+  Width=36
+  Top=237
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Final",,
+  Property=HyperLabel=#FixedText37,,,
+
+CONTROL=FIXEDTEXT
+GUID=16322448-A05A-4D7A-97CE-F23B3BCD0E6C
+  Name=FixedText38
+  Class=FIXEDTEXT
+  Caption=Hora
+  Order=51
+  Left=57
+  Width=36
+  Top=201
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Hora",,
+  Property=HyperLabel=#FixedText38,,,
+
+CONTROL=GROUPBOX
+GUID=7CBE4D2A-F1F7-44D5-A896-A3A9D0BD09C2
+  Name=GroupBox3
+  Class=GROUPBOX
+  Caption=Reinspeção
+  Order=52
+  Left=5
+  Width=340
+  Top=185
+  Height=80
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Reinspeção",,
+  Property=HyperLabel=#GroupBox3,,,
+
+CONTROL=FIXEDTEXT
+GUID=9CDE55B5-5817-4BF8-995D-1BDF49C0EE56
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=57
+  Left=621
+  Width=64
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=PUSHBUTTON
+GUID=082ACB9F-EA0F-43F5-A988-914A51CF0E10
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=58
+  Left=621
+  Width=64
+  Top=21
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ico_ok
+
+CONTROL=FIXEDTEXT
+GUID=2935EB69-05CE-4F05-9C2A-ADE0466FE8AA
+  Name=FixedText39
+  Class=FIXEDTEXT
+  Caption=Inicial
+  Order=59
+  Left=13
+  Width=36
+  Top=217
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Inicial",,
+  Property=HyperLabel=#FixedText39,,,
+
+CONTROL=FIXEDTEXT
+GUID=F66D5BE7-A4AC-4083-B9CF-D4B85DFA6CB4
+  Name=FixedText40
+  Class=FIXEDTEXT
+  Caption=Data
+  Order=60
+  Left=113
+  Width=36
+  Top=201
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=#FixedText40,,,
+
+CONTROL=FIXEDTEXT
+GUID=7100C710-7E01-4EF1-AF87-D0668CF1D78C
+  Name=FixedText41
+  Class=FIXEDTEXT
+  Caption=Hora
+  Order=61
+  Left=401
+  Width=36
+  Top=113
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Hora",,
+  Property=HyperLabel=#FixedText41,,,
+
+CONTROL=FIXEDTEXT
+GUID=CC4BA8F3-181B-4598-9BDB-9DB935D5E219
+  Name=FixedText42
+  Class=FIXEDTEXT
+  Caption=Data
+  Order=62
+  Left=457
+  Width=36
+  Top=113
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=#FixedText42,,,
+
+CONTROL=FIXEDTEXT
+GUID=1F42A2D9-0390-4FAC-8A94-EB1A29D2ACB2
+  Name=FixedText43
+  Class=FIXEDTEXT
+  Caption=Final
+  Order=63
+  Left=357
+  Width=36
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Final",,
+  Property=HyperLabel=#FixedText43,,,
+
+CONTROL=FIXEDTEXT
+GUID=626DE79B-5E15-4C77-BC3F-B1735266E395
+  Name=FixedText44
+  Class=FIXEDTEXT
+  Caption=Inicial
+  Order=64
+  Left=357
+  Width=36
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Inicial",,
+  Property=HyperLabel=#FixedText44,,,
+
+CONTROL=FIXEDTEXT
+GUID=AF16C7C4-F058-4128-8EC4-6B9BF27FC18B
+  Name=FixedText45
+  Class=FIXEDTEXT
+  Caption=Final
+  Order=65
+  Left=9
+  Width=36
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Final",,
+  Property=HyperLabel=#FixedText45,,,
+
+CONTROL=FIXEDTEXT
+GUID=17F6A108-41C7-4885-B58B-9EF5F351FCDA
+  Name=FixedText46
+  Class=FIXEDTEXT
+  Caption=Inicial
+  Order=66
+  Left=9
+  Width=36
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Inicial",,
+  Property=HyperLabel=#FixedText46,,,
+
+CONTROL=FIXEDTEXT
+GUID=D4193B65-29FC-404E-8205-FBA5F9A1519A
+  Name=FixedText47
+  Class=FIXEDTEXT
+  Caption=Data
+  Order=67
+  Left=109
+  Width=36
+  Top=21
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=#FixedText47,,,
+
+CONTROL=FIXEDTEXT
+GUID=6F3F3E1B-C54F-4815-94A6-125717349602
+  Name=FixedText48
+  Class=FIXEDTEXT
+  Caption=Hora
+  Order=68
+  Left=53
+  Width=36
+  Top=21
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Hora",,
+  Property=HyperLabel=#FixedText48,,,
+
+CONTROL=GROUPBOX
+GUID=14BEF58B-D997-4895-BEA4-248A6F4C75C9
+  Name=GroupBox4
+  Class=GROUPBOX
+  Caption=Material
+  Order=69
+  Left=349
+  Width=256
+  Top=9
+  Height=80
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Material",,
+  Property=HyperLabel=#GroupBox4,,,
+
+CONTROL=GROUPBOX
+GUID=2341EE31-52D5-4F37-8249-5BF444B7D1D9
+  Name=GroupBox5
+  Class=GROUPBOX
+  Caption=Retrabalho Operador
+  Order=70
+  Left=5
+  Width=340
+  Top=97
+  Height=84
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Retrabalho Operador",,
+  Property=HyperLabel=#GroupBox5,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=B2AF40F5-ABAD-4964-B0C7-902987759364
+  Name=REHVL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=71
+  Left=241
+  Width=96
+  Top=137
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=HyperLabel=#REHVL,,,
+  Property=HyperLabel=,"Retvl:",,
+  Property=HyperLabel=,,,"RNC_RETVL"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=FDC94E0D-5E28-47BE-B030-DF8AC39AF71B
+  Name=REHTH
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=72
+  Left=241
+  Width=96
+  Top=113
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=HyperLabel=#REHTH,,,
+  Property=HyperLabel=,"Retth:",,
+  Property=HyperLabel=,,,"RNC_RETTH"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=CF6FA91E-F1F2-4B39-99B7-7866F499727D
+  Name=FixedText29
+  Class=FIXEDTEXT
+  Caption=Valor
+  Order=73
+  Left=201
+  Width=28
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valor",,
+  Property=HyperLabel=#FixedText29,,,
+
+CONTROL=FIXEDTEXT
+GUID=98785E94-ED34-409A-9F1A-281622828339
+  Name=FixedText30
+  Class=FIXEDTEXT
+  Caption=Total Horas
+  Order=74
+  Left=205
+  Width=36
+  Top=109
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Total Horas",,
+  Property=HyperLabel=#FixedText30,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=D542AE1F-7C32-41E4-A2BE-44963C27A1F4
+  Name=REHDF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=75
+  Left=101
+  Width=84
+  Top=153
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#REHDF,,,
+  Property=HyperLabel=,"Retdf:",,
+  Property=HyperLabel=,,,"RNC_RETDF"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=EB380B54-48E6-4372-BBC1-5458405C0F7F
+  Name=REHDI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=76
+  Left=101
+  Width=84
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#REHDI,,,
+  Property=HyperLabel=,"Retdi:",,
+  Property=HyperLabel=,,,"RNC_RETDI"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=BCB20F90-DA4A-4400-8EDC-9D78389500AB
+  Name=REHHF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=77
+  Left=49
+  Width=48
+  Top=153
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#REHHF,,,
+  Property=HyperLabel=,"Rethf:",,
+  Property=HyperLabel=,,,"RNC_RETHF"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=759F107A-F63E-4F38-8B85-D5A3540D4E40
+  Name=FixedText49
+  Class=FIXEDTEXT
+  Caption=Data
+  Order=78
+  Left=113
+  Width=36
+  Top=113
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=#FixedText49,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=BE466D01-832F-427F-BC69-811034D42FE5
+  Name=REHHI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=79
+  Left=49
+  Width=48
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=HyperLabel=#REHHI,,,
+  Property=HyperLabel=,"Rethi:",,
+  Property=HyperLabel=,,,"RNC_RETHI"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=D90BF402-F05E-4514-840C-9E5ECA904A0B
+  Name=FixedText50
+  Class=FIXEDTEXT
+  Caption=Hora
+  Order=80
+  Left=57
+  Width=36
+  Top=113
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Hora",,
+  Property=HyperLabel=#FixedText50,,,
+
+CONTROL=FIXEDTEXT
+GUID=13795C43-7F2E-4CFF-B2A5-073542B65BC0
+  Name=FixedText51
+  Class=FIXEDTEXT
+  Caption=Inicial
+  Order=81
+  Left=13
+  Width=36
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Inicial",,
+  Property=HyperLabel=#FixedText51,,,
+
+CONTROL=FIXEDTEXT
+GUID=73A95B49-20D5-404A-839A-847332FEB682
+  Name=FixedText52
+  Class=FIXEDTEXT
+  Caption=Final
+  Order=82
+  Left=13
+  Width=36
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Final",,
+  Property=HyperLabel=#FixedText52,,,
+
+CONTROL=GROUPBOX
+GUID=537184C8-6317-4BC4-8176-6D64F3A61D4C
+  Name=GroupBox6
+  Class=GROUPBOX
+  Caption=Sucata
+  Order=83
+  Left=349
+  Width=340
+  Top=189
+  Height=76
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Sucata",,
+  Property=HyperLabel=#GroupBox6,,,
+
+CONTROL=FIXEDTEXT
+GUID=30B9C646-601E-44F5-B2E8-4229B30708E1
+  Name=FixedText31
+  Class=FIXEDTEXT
+  Caption=Preço
+  Order=84
+  Left=357
+  Width=32
+  Top=225
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Preço",,
+  Property=HyperLabel=#FixedText31,,,
+
+CONTROL=FIXEDTEXT
+GUID=9DC7C33D-A938-491B-9C55-B48B8C1A69CC
+  Name=FixedText32
+  Class=FIXEDTEXT
+  Caption=Total
+  Order=85
+  Left=525
+  Width=32
+  Top=229
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Total",,
+  Property=HyperLabel=#FixedText32,,,
+
+CONTROL=FIXEDTEXT
+GUID=5BDB48ED-2CBF-4513-B188-DDB5BF6AA3D3
+  Name=FixedText35
+  Class=FIXEDTEXT
+  Caption=Qtde
+  Order=86
+  Left=357
+  Width=28
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtde",,
+  Property=HyperLabel=#FixedText35,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=85BFB996-CF5D-4C69-953F-DA8950746035
+  Name=QTDSUC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=87
+  Left=397
+  Width=96
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#QTDSUC,,,
+  Property=HyperLabel=,"Retvl:",,
+  Property=HyperLabel=,,,"RNC_RETVL"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=76D42EC3-9802-46E4-9F4E-00B7DF8F940A
+  Name=PECSUC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=88
+  Left=397
+  Width=96
+  Top=225
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_10_4
+  Property=HyperLabel=#PECSUC,,,
+  Property=HyperLabel=,"Retvl:",,
+  Property=HyperLabel=,,,"RNC_RETVL"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=0EE97863-815D-49CE-AAE4-CF06D2F5927A
+  Name=VALSUC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=89
+  Left=569
+  Width=96
+  Top=229
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=HyperLabel=#VALSUC,,,
+  Property=HyperLabel=,"Retvl:",,
+  Property=HyperLabel=,,,"RNC_RETVL"
+  Property=InheritClassName=rightSle
+
+CONTROL=PUSHBUTTON
+GUID=015E0C74-A1F4-42BB-96BC-6678A07D1E00
+  Name=Calc
+  Class=PUSHBUTTON
+  Caption=Calcular
+  Order=90
+  Left=593
+  Width=56
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Calcular",,
+  Property=HyperLabel=#Calc,,,
+
+CONTROL=PUSHBUTTON
+GUID=5641DEAC-F51F-4771-9984-FBBBBBDD2B09
+  Name=PegPreco
+  Class=PUSHBUTTON
+  Caption=Preço
+  Order=91
+  Left=521
+  Width=55
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Preço",,
+  Property=HyperLabel=#PegPreco,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JRNC4
+

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="TabRacf_Page5">
+    <Window Name="TabRacf_Page5">
+      <Name>TabRacf_Page5</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>14</Left>
+      <Top>14</Top>
+      <Width>704</Width>
+      <Height>214</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#TabRacf_Page5,,,</HyperLabel>
+        <ClipperKeys>True</ClipperKeys>
+        <Use>&lt;Share Owner's&gt;</Use>
+      </ExProperties>
+    </Window>
+    <Control Name="CORRE01">
+      <Name>CORRE01</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>21</Left>
+      <Top>17</Top>
+      <Width>580</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_80</FieldSpec>
+        <HyperLabel>#CORRE01,,,</HyperLabel>
+        <HyperLabel>,"Corre01:",,</HyperLabel>
+        <HyperLabel>,,,"RACF_CORRE01"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="CORRE02">
+      <Name>CORRE02</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>21</Left>
+      <Top>37</Top>
+      <Width>580</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_80</FieldSpec>
+        <HyperLabel>#CORRE02,,,</HyperLabel>
+        <HyperLabel>,"Corre02:",,</HyperLabel>
+        <HyperLabel>,,,"RACF_CORRE02"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="CORRE03">
+      <Name>CORRE03</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>21</Left>
+      <Top>57</Top>
+      <Width>580</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_80</FieldSpec>
+        <HyperLabel>#CORRE03,,,</HyperLabel>
+        <HyperLabel>,"Corre03:",,</HyperLabel>
+        <HyperLabel>,,,"RACF_CORRE03"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="CORRE04">
+      <Name>CORRE04</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>21</Left>
+      <Top>77</Top>
+      <Width>580</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_80</FieldSpec>
+        <HyperLabel>#CORRE04,,,</HyperLabel>
+        <HyperLabel>,"Corre03:",,</HyperLabel>
+        <HyperLabel>,,,"RACF_CORRE03"</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

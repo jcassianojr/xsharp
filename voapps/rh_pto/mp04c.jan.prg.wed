@@ -1,0 +1,278 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jmp04c
+GUID=04CDC584-4994-4C52-A566-3DA553068597
+  Name=jmp04c
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=20
+  Width=505
+  Top=20
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#jmp04c,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=5776180F-F7EC-4179-8447-ACF1920A5541
+  Name=SC_TECNICO
+  Class=FIXEDTEXT
+  Caption=Tecnico:
+  Order=1
+  Left=22
+  Width=48
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tecnico:",,
+  Property=HyperLabel=#SC_TECNICO,,,
+
+CONTROL=FIXEDTEXT
+GUID=AA79920C-4FB2-4F0B-9F56-DFF8D3CDB9AE
+  Name=SC_CURSO
+  Class=FIXEDTEXT
+  Caption=Curso:
+  Order=2
+  Left=22
+  Width=36
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Curso:",,
+  Property=HyperLabel=#SC_CURSO,,,
+
+CONTROL=FIXEDTEXT
+GUID=173F5515-329E-4F25-832D-DD18460B21E1
+  Name=SC_DESCUR
+  Class=FIXEDTEXT
+  Caption=Descur:
+  Order=3
+  Left=22
+  Width=40
+  Top=74
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descur:",,
+  Property=HyperLabel=#SC_DESCUR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=56DCE74C-55BD-46F4-83AD-9B4A71919C55
+  Name=TECNICO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=86
+  Width=68
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#TECNICO,,,
+  Property=HyperLabel=,"Nº Func",,
+  Property=HyperLabel=,,,"MP04C_TECNICO"
+
+CONTROL=SINGLELINEEDIT
+GUID=4374919C-D8EC-4253-BBED-53CAACB9EBC1
+  Name=CURSO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=86
+  Width=152
+  Top=50
+  Height=20
+  Browseindex=4
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#CURSO,,,
+  Property=HyperLabel=,"Curso:",,
+  Property=HyperLabel=,,,"MP04C_CURSO"
+
+CONTROL=SINGLELINEEDIT
+GUID=7E192669-0AAB-4938-A947-EF1374DD74BB
+  Name=DESCUR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=86
+  Width=400
+  Top=74
+  Height=20
+  Browseindex=5
+  Browsesize=34
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_120
+  Property=HyperLabel=#DESCUR,,,
+  Property=HyperLabel=,"Descrição",,
+  Property=HyperLabel=,,,"MP04C_DESCUR"
+
+CONTROL=SINGLELINEEDIT
+GUID=6D1E2AF3-E030-480A-AF3F-A9F1F3897DCB
+  Name=trein
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=361
+  Width=68
+  Top=25
+  Height=20
+  Browseindex=2
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#trein,,,
+  Property=HyperLabel=,,,"MP04C_TECNICO"
+  Property=HyperLabel=,"NºTrein",,
+
+CONTROL=FIXEDTEXT
+GUID=B7863018-1E35-4F95-8E91-1C9702E3CE41
+  Name=SC_TECNICO2
+  Class=FIXEDTEXT
+  Caption=treinamento
+  Order=8
+  Left=293
+  Width=68
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"treinamento",,
+  Property=HyperLabel=#SC_TECNICO2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=0B864B66-BD17-4F1D-A2EE-1B8DF96DC7CB
+  Name=numant
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=213
+  Width=68
+  Top=25
+  Height=20
+  Browseindex=1
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#numant,,,
+  Property=HyperLabel=,,,"MP04C_TECNICO"
+  Property=HyperLabel=,"NºAnt",,
+
+CONTROL=FIXEDTEXT
+GUID=3996A6E5-1F5E-487A-9A91-5A112A3B1BFE
+  Name=SC_TECNICO1
+  Class=FIXEDTEXT
+  Caption=Anterior
+  Order=10
+  Left=165
+  Width=48
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Anterior",,
+  Property=HyperLabel=#SC_TECNICO1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=F51F6320-70CF-4B86-A6BF-7E0A13B182DF
+  Name=CARHOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=359
+  Width=68
+  Top=51
+  Height=20
+  Browseindex=3
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#CARHOR,,,
+  Property=HyperLabel=,,,"MP04C_TECNICO"
+  Property=HyperLabel=,"Carga",,
+
+CONTROL=FIXEDTEXT
+GUID=EC58DCDD-72CF-4729-AA17-036AB1329838
+  Name=cargaxc
+  Class=FIXEDTEXT
+  Caption=carga
+  Order=12
+  Left=291
+  Width=68
+  Top=51
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#cargaxc,,,
+  Property=HyperLabel=,"carga",,
+
+SUBCONTROLSEND
+DESIGNEREND = jmp04c
+

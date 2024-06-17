@@ -1,0 +1,380 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jfo_tab
+GUID=21C4B716-76BB-4C2E-B6FA-AA2B3017CAC6
+  Name=jfo_tab
+  Class=DATAWINDOW
+  Caption=Tabelas Diversas
+  Order=0
+  Left=20
+  Width=597
+  Top=20
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tabelas Diversas",,
+  Property=HyperLabel=#jfo_tab,,,
+  Property=ViewAs=#FormView
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=3A1560E7-74B1-42C8-A878-C207C23FE088
+  Name=SC_TABELA
+  Class=FIXEDTEXT
+  Caption=Tabela:
+  Order=1
+  Left=11
+  Width=39
+  Top=15
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tabela:",,
+  Property=HyperLabel=#SC_TABELA,,,
+
+CONTROL=FIXEDTEXT
+GUID=ED0F8A2B-8793-4784-A50F-86C2478F1662
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=2
+  Left=102
+  Width=39
+  Top=15
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=F00AA6ED-C79F-4854-A33A-FD996D78050D
+  Name=SC_CODIG2
+  Class=FIXEDTEXT
+  Caption=SubCod
+  Order=3
+  Left=199
+  Width=39
+  Top=14
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"SubCod",,
+  Property=HyperLabel=#SC_CODIG2,,,
+
+CONTROL=FIXEDTEXT
+GUID=39DEF34C-2B00-4572-85C4-0A13457EA2F6
+  Name=SC_DESCRI
+  Class=FIXEDTEXT
+  Caption=Descrição
+  Order=4
+  Left=13
+  Width=83
+  Top=38
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descrição",,
+  Property=HyperLabel=#SC_DESCRI,,,
+
+CONTROL=FIXEDTEXT
+GUID=9A32771A-2FEB-4042-8961-1E21BA5A7668
+  Name=SC_VALOR
+  Class=FIXEDTEXT
+  Caption=Valor:
+  Order=5
+  Left=297
+  Width=30
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=#SC_VALOR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=D69F0D84-7601-400A-86F8-5E8C3973A904
+  Name=TABELA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=56
+  Width=40
+  Top=15
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_04
+  Property=HyperLabel=#TABELA,,,
+  Property=HyperLabel=,"Tabela:",,
+  Property=HyperLabel=,,,"fo_tab_TABELA"
+
+CONTROL=SINGLELINEEDIT
+GUID=73D77F4A-7000-4598-807B-1BAAA1071286
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=145
+  Width=47
+  Top=15
+  Height=20
+  Browseindex=1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_05
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"fo_tab_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=708D4CC5-C175-4427-8E6F-0931B446267D
+  Name=CODIG2
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=244
+  Width=47
+  Top=17
+  Height=20
+  Browseindex=2
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_05
+  Property=HyperLabel=#CODIG2,,,
+  Property=HyperLabel=,"Codig2:",,
+  Property=HyperLabel=,,,"fo_tab_CODIG2"
+
+CONTROL=SINGLELINEEDIT
+GUID=4CF11CFC-B522-40E7-A3A8-2F4F7F55A056
+  Name=DESCRI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=9
+  Width=502
+  Top=56
+  Height=20
+  Browseindex=3
+  Browsesize=48
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#DESCRI,,,
+  Property=HyperLabel=,"Descri:",,
+  Property=HyperLabel=,,,"fo_tab_DESCRI"
+
+CONTROL=SINGLELINEEDIT
+GUID=ACECD1FD-014C-4431-BF23-388073B9BFC3
+  Name=VALOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=330
+  Width=96
+  Top=16
+  Height=20
+  Browseindex=4
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_num_12_6
+  Property=HyperLabel=#VALOR,,,
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=,,,"fo_tab_VALOR"
+
+SUBCONTROLSEND
+DESIGNEREND = jfo_tab
+
+DESIGNERSTART = VOWindowEditor,DATADIALOG,escfo_tab
+GUID=9210FDAB-3305-42A9-AAA7-D594AB792D98
+  Name=escfo_tab
+  Class=DATADIALOG
+  Caption=DataDialog Caption
+  Order=0
+  Left=10
+  Width=677
+  Top=10
+  Height=485
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataDialog Caption",,
+  Property=HyperLabel=#escfo_tab,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=77E170D2-1D1B-45E0-9548-15DFD6CD3CCE
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=1
+  Left=605
+  Width=64
+  Top=184
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=FIXEDTEXT
+GUID=21AB9339-B975-4A84-B8FE-FF7C3EF5D2C0
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=Escolher
+  Order=2
+  Left=603
+  Width=64
+  Top=115
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Escolher",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=SUBDATAWINDOW
+GUID=3EB0C6A9-39B0-4C00-A4D1-42C8E20AEB91
+  Name=jfo_tab
+  Class=SUBDATAWINDOW
+  Caption=
+  Order=3
+  Left=14
+  Width=580
+  Top=17
+  Height=312
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#jfo_tab,,,
+
+CONTROL=PUSHBUTTON
+GUID=B7E1F3A7-9CE0-43DA-94DE-DC8EBD7FEC0F
+  Name=BuscaCOD
+  Class=PUSHBUTTON
+  Caption=
+  Order=4
+  Left=605
+  Width=29
+  Top=25
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#BuscaCOD,,,
+
+CONTROL=PUSHBUTTON
+GUID=DC031BE4-BA2B-4019-AF18-2D951E48380D
+  Name=Escolher
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=603
+  Width=64
+  Top=70
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Escolher,,,
+  Property=Image=ICO_OK
+
+CONTROL=PUSHBUTTON
+GUID=6300940D-62F5-4358-AA4A-1AEA6026CD6A
+  Name=sair
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=604
+  Width=64
+  Top=139
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#sair,,,
+  Property=Image=ICO_SAIR
+
+SUBCONTROLSEND
+DESIGNEREND = escfo_tab
+

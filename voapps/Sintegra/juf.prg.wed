@@ -1,0 +1,221 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jUF
+GUID=A95ADE80-619C-4202-9952-65D06EFBDF9F
+  Name=jUF
+  Class=DATAWINDOW
+  Caption=Estados Aliquotas
+  Order=0
+  Left=26
+  Width=440
+  Top=26
+  Height=121
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Estados Aliquotas",,
+  Property=HyperLabel=#jUF,,,
+  Property=ViewAs=#FormView
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=160AA474-5BC6-4051-92C4-EE6426A73BA4
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=UF
+  Order=1
+  Left=26
+  Width=31
+  Top=22
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"UF",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=FIXEDTEXT
+GUID=FBF92125-279B-4A05-AF9D-8821EB58F0C2
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Aliquota
+  Order=2
+  Left=26
+  Width=55
+  Top=54
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Aliquota",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=0CBA88A1-CE10-4235-AF4E-2EC606581FA6
+  Name=UFICMS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=65
+  Width=36
+  Top=21
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#UFICMS,,,
+  Property=HyperLabel=,"UF",,
+  Property=Background=255 255 200 10
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=BDAE76F9-D33F-4D45-BDC4-F506CA126950
+  Name=NOMEEXT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=105
+  Width=252
+  Top=21
+  Height=20
+  Browseindex=1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_20
+  Property=HyperLabel=#NOMEEXT,,,
+  Property=HyperLabel=,"Nome",,
+  Property=Background=255 255 200 10
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=24512464-7DA7-4E15-ABC8-2C85E5458A01
+  Name=ALIQUOTA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=81
+  Width=72
+  Top=57
+  Height=20
+  Browseindex=2
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=InheritClassName=rightSle
+  Property=HyperLabel=#ALIQUOTA,,,
+  Property=HyperLabel=,"Aliquota",,
+
+CONTROL=PUSHBUTTON
+GUID=6D25538D-CD1F-4778-B7E9-780E9EA9A624
+  Name=pornum
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=393
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#pornum,,,
+  Property=TooltipText="Clique para ordenar por Numero"
+  Property=HyperLabel=,,"Ordenar por Numero",
+
+CONTROL=PUSHBUTTON
+GUID=AEBDABA3-DC86-469B-9432-BF72E1114B55
+  Name=buscanum
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=361
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscanum,,,
+  Property=TooltipText="Clique Para Localizar Por Numero"
+  Property=HyperLabel=,,"Localizar Numero",
+
+CONTROL=SINGLELINEEDIT
+GUID=50A6B53E-B7A7-4F8B-90FB-972A56874A92
+  Name=site
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=80
+  Width=301
+  Top=84
+  Height=20
+  Browseindex=-1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_30
+  Property=InheritClassName=rightSle
+  Property=HyperLabel=#site,,,
+  Property=HyperLabel=,"Aliquota",,
+
+CONTROL=FIXEDTEXT
+GUID=C94FA08A-B565-423A-A409-43EECBC104AB
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=site
+  Order=9
+  Left=25
+  Width=55
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"site",,
+  Property=HyperLabel=#FixedText3,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jUF
+

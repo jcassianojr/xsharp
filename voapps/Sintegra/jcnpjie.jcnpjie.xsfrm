@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="jcnpjie">
+    <Window Name="jcnpjie">
+      <Name>jcnpjie</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>CNPJ CPF / IE RG</Caption>
+      <Order>0</Order>
+      <Left>20</Left>
+      <Top>20</Top>
+      <Width>420</Width>
+      <Height>201</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"CNPJ CPF / IE RG",,</HyperLabel>
+        <HyperLabel>#jcnpjie,,,</HyperLabel>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <ViewAs>#BrowseView</ViewAs>
+        <InheritClassName>MYDataWindow</InheritClassName>
+      </ExProperties>
+    </Window>
+    <Control Name="CNPJ">
+      <Name>CNPJ</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>97</Left>
+      <Top>5</Top>
+      <Width>175</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>28</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#CNPJ,,,</HyperLabel>
+        <HyperLabel>,"CNPJ",,</HyperLabel>
+        <Background>255 255 200 10</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="IE">
+      <Name>IE</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>97</Left>
+      <Top>29</Top>
+      <Width>175</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>33</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#IE,,,</HyperLabel>
+        <HyperLabel>,"IE",,</HyperLabel>
+        <Background>255 255 200 10</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText1">
+      <Name>FixedText1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>CGC/CPF</Caption>
+      <Order>3</Order>
+      <Left>13</Left>
+      <Top>5</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"CGC/CPF",,</HyperLabel>
+        <HyperLabel>#FixedText1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText2">
+      <Name>FixedText2</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>IE/RG</Caption>
+      <Order>4</Order>
+      <Left>13</Left>
+      <Top>29</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"IE/RG",,</HyperLabel>
+        <HyperLabel>#FixedText2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="buscanum">
+      <Name>buscanum</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>317</Left>
+      <Top>5</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ICO_FIND</Image>
+        <HyperLabel>#buscanum,,,</HyperLabel>
+        <TooltipText>"Clique Para Localizar Por Numero"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="pornum">
+      <Name>pornum</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>285</Left>
+      <Top>5</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ICO_AZ</Image>
+        <HyperLabel>#pornum,,,</HyperLabel>
+        <TooltipText>"Clique para ordenar por Numero"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="SITUACAO">
+      <Name>SITUACAO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>61</Left>
+      <Top>53</Top>
+      <Width>52</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>33</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#SITUACAO,,,</HyperLabel>
+        <HyperLabel>,"IE",,</HyperLabel>
+        <Background>255 255 200 10</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText3">
+      <Name>FixedText3</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>situacao</Caption>
+      <Order>8</Order>
+      <Left>13</Left>
+      <Top>53</Top>
+      <Width>48</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"situacao",,</HyperLabel>
+        <HyperLabel>#FixedText3,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="DATA">
+      <Name>DATA</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>9</Order>
+      <Left>149</Left>
+      <Top>53</Top>
+      <Width>76</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>33</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#DATA,,,</HyperLabel>
+        <HyperLabel>,"IE",,</HyperLabel>
+        <Background>255 255 200 10</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText4">
+      <Name>FixedText4</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Data</Caption>
+      <Order>10</Order>
+      <Left>117</Left>
+      <Top>53</Top>
+      <Width>28</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Data",,</HyperLabel>
+        <HyperLabel>#FixedText4,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="UF">
+      <Name>UF</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>11</Order>
+      <Left>249</Left>
+      <Top>53</Top>
+      <Width>28</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>33</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#UF,,,</HyperLabel>
+        <HyperLabel>,"IE",,</HyperLabel>
+        <Background>255 255 200 10</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText5">
+      <Name>FixedText5</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>UF</Caption>
+      <Order>12</Order>
+      <Left>229</Left>
+      <Top>53</Top>
+      <Width>20</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"UF",,</HyperLabel>
+        <HyperLabel>#FixedText5,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="CNAE">
+      <Name>CNAE</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>13</Order>
+      <Left>61</Left>
+      <Top>77</Top>
+      <Width>56</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>33</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#CNAE,,,</HyperLabel>
+        <HyperLabel>,"IE",,</HyperLabel>
+        <Background>255 255 200 10</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText6">
+      <Name>FixedText6</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>CNAE</Caption>
+      <Order>14</Order>
+      <Left>13</Left>
+      <Top>81</Top>
+      <Width>36</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"CNAE",,</HyperLabel>
+        <HyperLabel>#FixedText6,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="MUNICIPIO">
+      <Name>MUNICIPIO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>15</Order>
+      <Left>65</Left>
+      <Top>101</Top>
+      <Width>232</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>33</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#MUNICIPIO,,,</HyperLabel>
+        <HyperLabel>,"IE",,</HyperLabel>
+        <Background>255 255 200 10</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText7">
+      <Name>FixedText7</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Municipio</Caption>
+      <Order>16</Order>
+      <Left>9</Left>
+      <Top>105</Top>
+      <Width>52</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Municipio",,</HyperLabel>
+        <HyperLabel>#FixedText7,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="NOME">
+      <Name>NOME</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>17</Order>
+      <Left>65</Left>
+      <Top>125</Top>
+      <Width>232</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>33</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#NOME,,,</HyperLabel>
+        <Background>255 255 200 10</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText8">
+      <Name>FixedText8</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Nome</Caption>
+      <Order>18</Order>
+      <Left>9</Left>
+      <Top>129</Top>
+      <Width>48</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Nome",,</HyperLabel>
+        <HyperLabel>#FixedText8,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="CATEGORIA">
+      <Name>CATEGORIA</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>19</Order>
+      <Left>65</Left>
+      <Top>149</Top>
+      <Width>232</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>33</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#CATEGORIA,,,</HyperLabel>
+        <HyperLabel>,"IE",,</HyperLabel>
+        <Background>255 255 200 10</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText9">
+      <Name>FixedText9</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Categoria</Caption>
+      <Order>20</Order>
+      <Left>9</Left>
+      <Top>153</Top>
+      <Width>52</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Categoria",,</HyperLabel>
+        <HyperLabel>#FixedText9,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

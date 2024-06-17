@@ -1,0 +1,1289 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jnec
+GUID=A6041C71-5ED1-42F5-B78E-03CD80ED8568
+  Name=jnec
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=24
+  Width=526
+  Top=24
+  Height=272
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#jnec,,,
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=DATETIMEPICKER
+GUID=D35B697A-21F3-45CE-A155-1B4EBCCAD2BF
+  Name=DATR20
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=1
+  Left=289
+  Width=85
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR20,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=67459102-AD51-4FFD-A071-0C8B3DD9090E
+  Name=QTDI20
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=213
+  Width=72
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI20,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=CA052C73-1E55-436B-8ABA-6E1677F59AE3
+  Name=DATR19
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=3
+  Left=289
+  Width=85
+  Top=185
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR19,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=B9571272-73CB-482F-86C1-730C1DF615E5
+  Name=QTDI19
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=213
+  Width=72
+  Top=185
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI19,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=A9ACC507-2691-404A-A71E-18849852C2DC
+  Name=DATR18
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=5
+  Left=289
+  Width=85
+  Top=165
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR18,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=1C3856BB-A3F6-4F9D-A1FF-641BF66D97C3
+  Name=QTDI18
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=213
+  Width=72
+  Top=165
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198016
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI18,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=489574B3-A634-4889-81E6-9788884B6E3B
+  Name=DATR17
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=7
+  Left=289
+  Width=85
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR17,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=EC9D5B68-F14F-4CDB-B415-D42F33C9BCB6
+  Name=QTDI17
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=213
+  Width=72
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI17,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=B8A72C37-5F0E-45B5-8F01-A2EFEB5BEC9F
+  Name=DATR16
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=9
+  Left=289
+  Width=85
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR16,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=A3DB2E50-4A00-438A-BAC7-E796ED4B1B85
+  Name=QTDI16
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=213
+  Width=72
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI16,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=0818173E-5061-4BC3-A6B2-4DA9743933EB
+  Name=DATR15
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=11
+  Left=105
+  Width=85
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR15,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=8CAE0174-D04A-45FC-981A-40187D0B74DA
+  Name=QTDI15
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=29
+  Width=72
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI15,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=1D077123-AB98-472F-AC25-1BEB334522DF
+  Name=DATR14
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=13
+  Left=105
+  Width=85
+  Top=185
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR14,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=8F2EAB92-215E-44EF-BE3A-2AAA0507D690
+  Name=QTDI14
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=29
+  Width=72
+  Top=185
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI14,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=EA9A5489-A1B7-4544-AB90-56C798C513A7
+  Name=DATR13
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=15
+  Left=105
+  Width=85
+  Top=165
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR13,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=8DC23B8C-47C1-4498-B55E-85A32200BC28
+  Name=QTDI13
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=29
+  Width=72
+  Top=165
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI13,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=16DB136A-3930-4309-B39C-A96C2924B599
+  Name=DATR12
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=17
+  Left=105
+  Width=85
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR12,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=0F557950-EE3B-4CAE-8F8C-3F815B057698
+  Name=QTDI12
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=29
+  Width=72
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI12,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=9FC3772E-38E1-43EA-9FDE-504F94004F3D
+  Name=DATR11
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=19
+  Left=105
+  Width=85
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR11,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=AE36A289-FA91-45F5-8E81-D4276CB3AB3B
+  Name=QTDI11
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=29
+  Width=72
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI11,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=11B22E75-6043-4F36-8797-329E62EEB5FD
+  Name=DATR10
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=21
+  Left=289
+  Width=85
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR10,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=D8E22C8C-46CC-442B-83D7-83BCEE935D7E
+  Name=QTDI10
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=213
+  Width=72
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI10,,,
+  Property=HyperLabel=,"Data01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=FA1C5EFC-4ECA-4347-BF88-BB6E2CCCF586
+  Name=DATR09
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=23
+  Left=289
+  Width=85
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR09,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=2D272C99-A015-4950-8FF8-DDF758FC2C60
+  Name=QTDI09
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=24
+  Left=213
+  Width=72
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI09,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=DCEC63FE-9CE0-4BE0-AF54-2801FF2098C4
+  Name=DATR08
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=25
+  Left=289
+  Width=85
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR08,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=4CF46E6E-AB55-4A5C-A002-FFECF7319A23
+  Name=QTDI08
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=26
+  Left=213
+  Width=72
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI08,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=2D601AA8-45A1-48D7-8354-4B432FEB4D2C
+  Name=DATR07
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=27
+  Left=289
+  Width=85
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR07,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=C61B52E6-6392-4EC8-AA55-D4ED781088CF
+  Name=QTDI07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=28
+  Left=213
+  Width=72
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI07,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=2F6B0BD7-89DA-4EA9-BAF1-AB35CD530217
+  Name=DATR06
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=29
+  Left=289
+  Width=85
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR06,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=9A438735-A111-4099-BEB0-96CEB6050052
+  Name=QTDI06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=30
+  Left=213
+  Width=72
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI06,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=3E9FFB70-7E00-43DB-9428-74A6C5D923E9
+  Name=DATR05
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=31
+  Left=105
+  Width=85
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR05,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=5DB90E4C-1204-485E-8BC4-9F3C49741CD3
+  Name=QTDI05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=32
+  Left=29
+  Width=72
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI05,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=B0FAE79C-6A31-471A-9843-464A2D8ACC66
+  Name=DATR04
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=33
+  Left=105
+  Width=85
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR04,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=CE4585E4-9859-43B7-9B84-DD1F3B9E8B6E
+  Name=QTDI04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=34
+  Left=29
+  Width=72
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI04,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=460A7261-F6BA-4A9F-8DF0-9F08542BD788
+  Name=DATR03
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=35
+  Left=105
+  Width=85
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR03,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=60E745B2-B038-4079-9113-44884A3BD412
+  Name=QTDI03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=36
+  Left=29
+  Width=72
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI03,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=6102ECD7-CB1A-4092-8F7A-868AFAD44691
+  Name=DATR02
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=37
+  Left=105
+  Width=85
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR02,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=BEB7E2FB-A627-468B-9E46-2D1F84F93D49
+  Name=QTDI02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=38
+  Left=29
+  Width=72
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI02,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=DATETIMEPICKER
+GUID=CFA7A1BB-9506-4B3F-9035-4D90B664F30B
+  Name=DATR01
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=39
+  Left=105
+  Width=85
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#DATR01,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=8EAA9CD3-D59B-44EA-A61E-465558D9F48D
+  Name=QTDI01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=40
+  Left=29
+  Width=72
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI01,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDI01"
+
+CONTROL=FIXEDTEXT
+GUID=1D1ADACF-0B65-4E9D-9CD6-FA45873A99BB
+  Name=FixedText13
+  Class=FIXEDTEXT
+  Caption=20
+  Order=41
+  Left=197
+  Width=12
+  Top=209
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"20",,
+  Property=HyperLabel=#FixedText13,,,
+
+CONTROL=FIXEDTEXT
+GUID=3616C281-AA02-4F93-80F2-0BEBE4FBF0B8
+  Name=FixedText14
+  Class=FIXEDTEXT
+  Caption=19
+  Order=42
+  Left=197
+  Width=15
+  Top=189
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"19",,
+  Property=HyperLabel=#FixedText14,,,
+
+CONTROL=FIXEDTEXT
+GUID=ACCB7618-B32F-4286-9676-B8B5A40BC283
+  Name=FixedText15
+  Class=FIXEDTEXT
+  Caption=18
+  Order=43
+  Left=197
+  Width=15
+  Top=169
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"18",,
+  Property=HyperLabel=#FixedText15,,,
+
+CONTROL=FIXEDTEXT
+GUID=4E2D7833-5A09-41C3-920B-97602A9293A2
+  Name=FixedText16
+  Class=FIXEDTEXT
+  Caption=17
+  Order=44
+  Left=197
+  Width=15
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"17",,
+  Property=HyperLabel=#FixedText16,,,
+
+CONTROL=FIXEDTEXT
+GUID=471CA0C1-9790-4916-916D-D836A9E7EAB6
+  Name=FixedText17
+  Class=FIXEDTEXT
+  Caption=16
+  Order=45
+  Left=197
+  Width=15
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"16",,
+  Property=HyperLabel=#FixedText17,,,
+
+CONTROL=FIXEDTEXT
+GUID=E0C4C3E1-CDF0-41F6-BCD3-35CE617881B5
+  Name=FixedText18
+  Class=FIXEDTEXT
+  Caption=15
+  Order=46
+  Left=13
+  Width=15
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"15",,
+  Property=HyperLabel=#FixedText18,,,
+
+CONTROL=FIXEDTEXT
+GUID=15FE996A-4993-46F2-B00F-0B35E74645E7
+  Name=FixedText19
+  Class=FIXEDTEXT
+  Caption=14
+  Order=47
+  Left=13
+  Width=16
+  Top=185
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"14",,
+  Property=HyperLabel=#FixedText19,,,
+
+CONTROL=FIXEDTEXT
+GUID=515DB14C-3469-4B41-B823-DF3C97ED23AB
+  Name=FixedText20
+  Class=FIXEDTEXT
+  Caption=13
+  Order=48
+  Left=13
+  Width=15
+  Top=165
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"13",,
+  Property=HyperLabel=#FixedText20,,,
+
+CONTROL=FIXEDTEXT
+GUID=3A2097EB-1B53-4CF0-B331-DA8D6C048DD9
+  Name=FixedText21
+  Class=FIXEDTEXT
+  Caption=12
+  Order=49
+  Left=13
+  Width=15
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"12",,
+  Property=HyperLabel=#FixedText21,,,
+
+CONTROL=FIXEDTEXT
+GUID=8BA62553-FD10-40F9-8E18-9B7C08EE9C24
+  Name=FixedText22
+  Class=FIXEDTEXT
+  Caption=11
+  Order=50
+  Left=13
+  Width=15
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"11",,
+  Property=HyperLabel=#FixedText22,,,
+
+CONTROL=FIXEDTEXT
+GUID=0A3152CF-C52E-47C6-8CAA-57F12745B217
+  Name=FixedText12
+  Class=FIXEDTEXT
+  Caption=10
+  Order=51
+  Left=197
+  Width=15
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"10",,
+  Property=HyperLabel=#FixedText12,,,
+
+CONTROL=FIXEDTEXT
+GUID=0C576D95-068C-4DB5-85CD-F841F7D7F5C1
+  Name=FixedText11
+  Class=FIXEDTEXT
+  Caption=09
+  Order=52
+  Left=197
+  Width=15
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"09",,
+  Property=HyperLabel=#FixedText11,,,
+
+CONTROL=FIXEDTEXT
+GUID=3D25DC16-832E-4708-80ED-C47BF236B251
+  Name=FixedText10
+  Class=FIXEDTEXT
+  Caption=08
+  Order=53
+  Left=197
+  Width=15
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"08",,
+  Property=HyperLabel=#FixedText10,,,
+
+CONTROL=FIXEDTEXT
+GUID=18AD6D9F-276D-4891-9D81-45FB0FA8C68C
+  Name=FixedText9
+  Class=FIXEDTEXT
+  Caption=07
+  Order=54
+  Left=197
+  Width=15
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"07",,
+  Property=HyperLabel=#FixedText9,,,
+
+CONTROL=FIXEDTEXT
+GUID=D90A94BD-06F3-420B-8C20-F7CD770E2B7F
+  Name=FixedText8
+  Class=FIXEDTEXT
+  Caption=06
+  Order=55
+  Left=197
+  Width=15
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"06",,
+  Property=HyperLabel=#FixedText8,,,
+
+CONTROL=FIXEDTEXT
+GUID=C38A413F-F012-4FFD-A545-07FE27BB46E9
+  Name=FixedText7
+  Class=FIXEDTEXT
+  Caption=05
+  Order=56
+  Left=13
+  Width=15
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"05",,
+  Property=HyperLabel=#FixedText7,,,
+
+CONTROL=FIXEDTEXT
+GUID=9D37DA47-306B-4C6C-A3C9-D79ABAAC20DB
+  Name=FixedText6
+  Class=FIXEDTEXT
+  Caption=04
+  Order=57
+  Left=13
+  Width=15
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"04",,
+  Property=HyperLabel=#FixedText6,,,
+
+CONTROL=FIXEDTEXT
+GUID=5B8103AE-0631-47D3-A504-B20D9829FB78
+  Name=FixedText5
+  Class=FIXEDTEXT
+  Caption=03
+  Order=58
+  Left=13
+  Width=15
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"03",,
+  Property=HyperLabel=#FixedText5,,,
+
+CONTROL=FIXEDTEXT
+GUID=CB9DF768-31DB-41D6-AE49-6826A2042CAB
+  Name=FixedText4
+  Class=FIXEDTEXT
+  Caption=02
+  Order=59
+  Left=13
+  Width=15
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"02",,
+  Property=HyperLabel=#FixedText4,,,
+
+CONTROL=FIXEDTEXT
+GUID=47E23A64-29A1-44E6-A11E-7F5E65C6DD78
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=01
+  Order=60
+  Left=13
+  Width=15
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"01",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=9A8C1440-48C5-4D6D-AB93-6BC561B3B8A0
+  Name=TIPOENT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=61
+  Left=381
+  Width=24
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#TIPOENT,,,
+  Property=HyperLabel=,"Tipoent:",,
+  Property=HyperLabel=,,,"PRNECT_TIPOENT"
+
+CONTROL=SINGLELINEEDIT
+GUID=292D705C-5765-42CE-8E41-F8A73F37AE08
+  Name=CODCOMP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=62
+  Left=381
+  Width=136
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#CODCOMP,,,
+  Property=HyperLabel=,"Codcomp:",,
+  Property=HyperLabel=,,,"PRNECT_CODCOMP"
+
+SUBCONTROLSEND
+DESIGNEREND = jnec
+

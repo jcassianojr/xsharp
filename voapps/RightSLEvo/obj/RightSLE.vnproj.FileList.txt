@@ -1,0 +1,12 @@
+obj\Release\ResolveAssemblyReference.cache
+obj\Debug\ResolveAssemblyReference.cache
+Debug\RightSLE.dll
+Debug\RightSLE.pdb
+Debug\VulcanVOGUIClasses.dll
+Debug\VulcanVOSystemClasses.dll
+Debug\VulcanVOWin32APILibrary.dll
+Debug\VulcanMacroCompiler.dll
+Debug\VulcanDBFCDX.dll
+Debug\VulcanRTFuncs.dll
+obj\Debug\RightSLE.dll
+obj\Debug\RightSLE.pdb

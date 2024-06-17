@@ -1,0 +1,102 @@
+PARTIAL CLASS jrhab
+METHOD append() 
+LOCAL oBUSCA AS xBUSCA
+LOCAL oBUSCadata AS buscadata
+LOCAL oERRO AS ERRORBOX
+LOCAL nNUMERO AS DWORD
+LOCAL dDATA AS DATE
+
+oBUSCA:=xBUSCA{,"Incluir","Digite o Numero"}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF ! Obusca:lOK
+   RETURN .f.
+ENDIF	
+nNUMERO:=Val(oBUSCA:cBUSCA)
+//alert(Str(nNUMERO))
+
+
+oBUSCADATA:=buscadata{SELF}
+OBUSCADATA:SHOW()
+IF ! oBUSCADATA:lOK
+   RETURN .f.
+ENDIF	
+dDATA:=CToD(oBUSCADATA:cBUSCA)
+
+
+SELF:server:setorder(1)
+SELF:server:gotop()
+IF ! SELF:server:seek(Str(nNUMERO,8)+DToS(ddata))
+	SELF:SERVER:SUSPENDNOTIFICATION()
+    SUPER:append()
+    SELF:SERVER:FIELDPUT("numero",nNUMERO)
+    SELF:SERVER:FIELDPUT("data",ddata)
+  	SELF:SERVER:FIELDPUT("MES",Month(dDATA))
+	SELF:SERVER:FIELDPUT("ANO",Year(DDATA))
+	SELF:SERVER:resetnotification()
+	SELF:SERVER:notify(notifyappend)
+ELSE
+	oERRO:=ERRORBOX{,"Já Cadastrado"}
+    oERRO:Show()	
+ENDIF	
+RETURN	.t.
+
+
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("RH","ABS")	
+
+
+METHOD Duplicar( ) 
+LOCAL nFIELD,J AS WORD
+LOCAL aDADOS AS ARRAY
+LOCAL dDATA AS DATE
+dDATA:=SELF:SERVER:FIELDGET("DATA")+1
+nFIELD:=SELF:SERVER:FCOUNT
+aDADOS:={}
+FOR J:=1 TO nFIELD
+    AAdd(aDADOS,SELF:SERVER:FIELDGET(J))
+NEXT J
+SUPER:SERVER:APPEND()
+FOR J:=1 TO nFIELD
+    SELF:SERVER:FIELDPUT(J,aDADOS[J])
+NEXT J
+SELF:SERVER:FIELDPUT("DATA",dDATA)
+SELF:SERVER:FIELDPUT("MES",Month(dDATA))
+SELF:SERVER:FIELDPUT("ANO",Year(dDATA))
+RETURN .t.
+	
+
+METHOD esctabfalta( ) 
+LOCAL oESC AS XESCCOD	
+oESC:=XESCCOD{SELF,"tabfalta.DBF"}
+oESC:SHOW()	
+IF Oesc:lok
+//   alert(Oesc:codigo)
+   SELF:SERVER:FIELDPUT("codigO",oESC:CODIGO)
+ENDIF							
+
+METHOD esctabfalta1( ) 
+LOCAL oESC AS XESCCOD	
+oESC:=XESCCOD{SELF,"rhabcod.dbf"}
+oESC:SHOW()	
+IF Oesc:lok
+//	   alert(Oesc:codigo)
+   SELF:SERVER:FIELDPUT("CODIGO2",oESC:CODIGO)
+ENDIF								
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+   FabCenterWindow( SELF )
+ RETURN SELF
+
+
+END CLASS

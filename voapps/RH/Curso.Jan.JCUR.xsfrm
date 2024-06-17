@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JCUR">
+    <Window Name="JCUR">
+      <Name>JCUR</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Cadastro de Cursos</Caption>
+      <Order>0</Order>
+      <Left>60</Left>
+      <Top>60</Top>
+      <Width>581</Width>
+      <Height>402</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Cadastro de Cursos",,</HyperLabel>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <HyperLabel>#JCUR,,,</HyperLabel>
+        <ViewAs>#FormView</ViewAs>
+        <ClipperKeys>True</ClipperKeys>
+        <InheritClassName>MYDataWindow</InheritClassName>
+      </ExProperties>
+    </Window>
+    <Control Name="Atualiza">
+      <Name>Atualiza</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Atualizar Descrição PT/TREIN</Caption>
+      <Order>1</Order>
+      <Left>313</Left>
+      <Top>89</Top>
+      <Width>231</Width>
+      <Height>28</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073815552</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Atualizar Descrição PT/TREIN",,</HyperLabel>
+        <HyperLabel>#Atualiza,,,</HyperLabel>
+        <TooltipText>"Permite Atualizar Trein/PT Qdo Mudança nome do curso"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="porcurso">
+      <Name>porcurso</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>93</Left>
+      <Top>5</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_az</Image>
+        <HyperLabel>#porcurso,,,</HyperLabel>
+        <TooltipText>"Ordenar Por Codigo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="buscacurso">
+      <Name>buscacurso</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>57</Left>
+      <Top>5</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ICO_FIND</Image>
+        <HyperLabel>#buscacurso,,,</HyperLabel>
+        <TooltipText>"Localizar um Codigo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="pornome">
+      <Name>pornome</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>101</Left>
+      <Top>61</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_az</Image>
+        <HyperLabel>#pornome,,,</HyperLabel>
+        <TooltipText>"Ordenar por Descriçao"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="buscanome">
+      <Name>buscanome</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>65</Left>
+      <Top>61</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_find</Image>
+        <HyperLabel>#buscanome,,,</HyperLabel>
+        <TooltipText>"Localizar uma Descrição"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="GRUPO">
+      <Name>GRUPO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>325</Left>
+      <Top>125</Top>
+      <Width>110</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_05</FieldSpec>
+        <HyperLabel>#GRUPO,,,</HyperLabel>
+        <HyperLabel>,"Carga:",,</HyperLabel>
+        <HyperLabel>,,,"TREIN_CARGA"</HyperLabel>
+        <FocusSelect>FSEL_HOME</FocusSelect>
+        <TooltipText>"Grupo que o curso pertence"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CARGA1">
+      <Name>SC_CARGA1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Grupo</Caption>
+      <Order>7</Order>
+      <Left>281</Left>
+      <Top>125</Top>
+      <Width>44</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Grupo",,</HyperLabel>
+        <HyperLabel>#SC_CARGA1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="jcurgrp">
+      <Name>jcurgrp</Name>
+      <Class>SUBDATAWINDOW</Class>
+      <Caption>jcurgrp</Caption>
+      <Order>8</Order>
+      <Left>13</Left>
+      <Top>157</Top>
+      <Width>464</Width>
+      <Height>212</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>Yes</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Cadastro de Cursos",,</HyperLabel>
+        <HyperLabel>#jcurgrp,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Proximo">
+      <Name>Proximo</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>9</Order>
+      <Left>521</Left>
+      <Top>253</Top>
+      <Width>36</Width>
+      <Height>28</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Proximo,,,</HyperLabel>
+        <Image>ico_next</Image>
+        <TooltipText>"Avança um Grupo na Lista"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Anterior">
+      <Name>Anterior</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>485</Left>
+      <Top>253</Top>
+      <Width>36</Width>
+      <Height>28</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Anterior,,,</HyperLabel>
+        <Image>ico_previous</Image>
+        <TooltipText>"Retorna um Grupo na Lista"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Tabular">
+      <Name>Tabular</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Ver Itens</Caption>
+      <Order>11</Order>
+      <Left>485</Left>
+      <Top>229</Top>
+      <Width>72</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ver Itens",,</HyperLabel>
+        <HyperLabel>#Tabular,,,</HyperLabel>
+        <TooltipText>"Retorna a lista dos grupos"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="ALTERAR">
+      <Name>ALTERAR</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Alterar Item</Caption>
+      <Order>12</Order>
+      <Left>485</Left>
+      <Top>205</Top>
+      <Width>72</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Alterar Item",,</HyperLabel>
+        <HyperLabel>#ALTERAR,,,</HyperLabel>
+        <TooltipText>"Altera dados do grupo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Excluir">
+      <Name>Excluir</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Excluir Item</Caption>
+      <Order>13</Order>
+      <Left>485</Left>
+      <Top>181</Top>
+      <Width>72</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Excluir Item",,</HyperLabel>
+        <HyperLabel>#Excluir,,,</HyperLabel>
+        <TooltipText>"Exclui grupo em destaque da lista"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="NOVO">
+      <Name>NOVO</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Novo Item</Caption>
+      <Order>14</Order>
+      <Left>485</Left>
+      <Top>157</Top>
+      <Width>72</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Novo Item",,</HyperLabel>
+        <HyperLabel>#NOVO,,,</HyperLabel>
+        <TooltipText>"Inclui um novo grupo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Escolher">
+      <Name>Escolher</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Escolher</Caption>
+      <Order>15</Order>
+      <Left>485</Left>
+      <Top>125</Top>
+      <Width>72</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Escolher",,</HyperLabel>
+        <HyperLabel>#Escolher,,,</HyperLabel>
+        <TooltipText>"Escolhe o Grupo para o curso"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="mcur">
+      <Name>mcur</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>M</Caption>
+      <Order>16</Order>
+      <Left>133</Left>
+      <Top>9</Top>
+      <Width>23</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"M",,</HyperLabel>
+        <HyperLabel>#mcur,,,</HyperLabel>
+        <TooltipText>"Clique para deixar o Codigo do Curso em Maisculas"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="mnom">
+      <Name>mnom</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>M</Caption>
+      <Order>17</Order>
+      <Left>549</Left>
+      <Top>65</Top>
+      <Width>23</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"M",,</HyperLabel>
+        <HyperLabel>#mnom,,,</HyperLabel>
+        <TooltipText>"Clique para deixar o Descrição do Curso em Maisculas"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="trocaCurso">
+      <Name>trocaCurso</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Trocar Codigos Curso</Caption>
+      <Order>18</Order>
+      <Left>425</Left>
+      <Top>13</Top>
+      <Width>136</Width>
+      <Height>28</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Trocar Codigos Curso",,</HyperLabel>
+        <HyperLabel>#trocaCurso,,,</HyperLabel>
+        <TooltipText>"Permite Atualizar Trein/PT Qdo Mudança codigo do curso"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Editar">
+      <Name>Editar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>E</Caption>
+      <Order>19</Order>
+      <Left>133</Left>
+      <Top>32</Top>
+      <Width>23</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"E",,</HyperLabel>
+        <HyperLabel>#Editar,,,</HyperLabel>
+        <TooltipText>"Clique para Alterar o Codigo do Curso em Maisculas"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CARGA">
+      <Name>SC_CARGA</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Carga Horária:</Caption>
+      <Order>-1</Order>
+      <Left>177</Left>
+      <Top>9</Top>
+      <Width>84</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Carga Horária:",,</HyperLabel>
+        <HyperLabel>#SC_CARGA,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="CERT">
+      <Name>CERT</Name>
+      <Class>RADIOBUTTONGROUP</Class>
+      <Caption>Requer Certificado</Caption>
+      <Order>-1</Order>
+      <Left>269</Left>
+      <Top>9</Top>
+      <Width>132</Width>
+      <Height>44</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073872903</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Requer Certificado",,</HyperLabel>
+        <FieldSpec>padrao_char_01</FieldSpec>
+        <HyperLabel>#CERT,,,</HyperLabel>
+        <TooltipText>"Se O Curso Requer Certificado"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText3">
+      <Name>theFixedText3</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Curso:</Caption>
+      <Order>-1</Order>
+      <Left>9</Left>
+      <Top>13</Top>
+      <Width>40</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Curso:",,</HyperLabel>
+        <HyperLabel>#theFixedText3,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RB3">
+      <Name>RB3</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Sim</Caption>
+      <Order>-1</Order>
+      <Left>281</Left>
+      <Top>25</Top>
+      <Width>52</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073807369</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Sim",,</HyperLabel>
+        <Value>S</Value>
+        <HyperLabel>#RB3,,,</HyperLabel>
+        <TooltipText>"O Curso Requer Certificado"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="RB4">
+      <Name>RB4</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Não</Caption>
+      <Order>-1</Order>
+      <Left>341</Left>
+      <Top>25</Top>
+      <Width>48</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073807369</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Não",,</HyperLabel>
+        <Value>N</Value>
+        <HyperLabel>#RB4,,,</HyperLabel>
+        <TooltipText>"O Curso não Requer Certificado"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="CARGA">
+      <Name>CARGA</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>-1</Order>
+      <Left>173</Left>
+      <Top>29</Top>
+      <Width>88</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_num_08_2</FieldSpec>
+        <HyperLabel>#CARGA,,,</HyperLabel>
+        <HyperLabel>,"Carga:",,</HyperLabel>
+        <HyperLabel>,,,"TREIN_CARGA"</HyperLabel>
+        <FocusSelect>FSEL_HOME</FocusSelect>
+        <TooltipText>"Carga Horaria do Curso"</TooltipText>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="CURSO">
+      <Name>CURSO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>-1</Order>
+      <Left>9</Left>
+      <Top>37</Top>
+      <Width>120</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>13</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_20</FieldSpec>
+        <HyperLabel>#CURSO,,,</HyperLabel>
+        <HyperLabel>,"Curso:",,</HyperLabel>
+        <HyperLabel>,,,"CURSO_CURSO"</HyperLabel>
+        <FocusSelect>FSEL_HOME</FocusSelect>
+        <Background>253 254 220</Background>
+      </ExProperties>
+    </Control>
+    <Control Name="DESCUR">
+      <Name>DESCUR</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>-1</Order>
+      <Left>145</Left>
+      <Top>65</Top>
+      <Width>400</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>49</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_120</FieldSpec>
+        <HyperLabel>#DESCUR,,,</HyperLabel>
+        <HyperLabel>,"Descrição",,</HyperLabel>
+        <HyperLabel>,,,"CURSO_DESCUR"</HyperLabel>
+        <FocusSelect>FSEL_HOME</FocusSelect>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DESCUR">
+      <Name>SC_DESCUR</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Descrição:</Caption>
+      <Order>-1</Order>
+      <Left>9</Left>
+      <Top>69</Top>
+      <Width>56</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Descrição:",,</HyperLabel>
+        <HyperLabel>#SC_DESCUR,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="TIPCUR">
+      <Name>TIPCUR</Name>
+      <Class>RADIOBUTTONGROUP</Class>
+      <Caption>Tipo</Caption>
+      <Order>-1</Order>
+      <Left>9</Left>
+      <Top>97</Top>
+      <Width>259</Width>
+      <Height>49</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073872903</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Tipo",,</HyperLabel>
+        <FieldSpec>padrao_char_01</FieldSpec>
+        <HyperLabel>#TIPCUR,,,</HyperLabel>
+        <TooltipText>"Tipo de Curso Interno/Externo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="RB1">
+      <Name>RB1</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Interno</Caption>
+      <Order>-1</Order>
+      <Left>21</Left>
+      <Top>117</Top>
+      <Width>64</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073807369</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Interno",,</HyperLabel>
+        <Value>I</Value>
+        <HyperLabel>#RB1,,,</HyperLabel>
+        <TooltipText>"Curso Interno"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="RB2">
+      <Name>RB2</Name>
+      <Class>RADIOBUTTON</Class>
+      <Caption>Externo</Caption>
+      <Order>-1</Order>
+      <Left>129</Left>
+      <Top>117</Top>
+      <Width>68</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073807369</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Externo",,</HyperLabel>
+        <Value>E</Value>
+        <HyperLabel>#RB2,,,</HyperLabel>
+        <TooltipText>"Curso Externo"</TooltipText>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

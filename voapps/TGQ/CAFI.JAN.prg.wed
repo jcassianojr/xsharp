@@ -1,0 +1,305 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JCAFI
+GUID=DC30F607-4892-4FD4-B5D5-CF07A6AF1B02
+  Name=JCAFI
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=28
+  Width=510
+  Top=28
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JCAFI,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=2F55159F-E378-48AF-A48D-07EEB83FE4DB
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero:
+  Order=1
+  Left=13
+  Width=44
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=FIXEDTEXT
+GUID=9F3E40FE-6921-4625-8B46-7CDA9114B76B
+  Name=SC_PREVISTO
+  Class=FIXEDTEXT
+  Caption=Previsto:
+  Order=2
+  Left=137
+  Width=44
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Previsto:",,
+  Property=HyperLabel=#SC_PREVISTO,,,
+
+CONTROL=FIXEDTEXT
+GUID=8B18D509-EFDE-41D1-BD4C-06E83ABA2571
+  Name=SC_EFETUADO
+  Class=FIXEDTEXT
+  Caption=Efetuado:
+  Order=3
+  Left=277
+  Width=52
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Efetuado:",,
+  Property=HyperLabel=#SC_EFETUADO,,,
+
+CONTROL=FIXEDTEXT
+GUID=C1F2827A-CEED-474D-B4AE-F3AE0DC9F305
+  Name=SC_OBS
+  Class=FIXEDTEXT
+  Caption=Obs:
+  Order=4
+  Left=13
+  Width=28
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Obs:",,
+  Property=HyperLabel=#SC_OBS,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=3029F8A9-B4FA-4F1E-AAC7-636C74864F05
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=61
+  Width=68
+  Top=13
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"CAF_NUMERO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=31EDC07E-50AF-4515-82DF-7A4D729A8352
+  Name=PREVISTO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=181
+  Width=88
+  Top=13
+  Height=20
+  Browseindex=1
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#PREVISTO,,,
+  Property=HyperLabel=,"Previsto:",,
+  Property=HyperLabel=,,,"CAF_PREVISTO"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=DD794A35-2EA8-4E94-89B0-FF3AF39B2DFD
+  Name=EFETUADO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=337
+  Width=88
+  Top=13
+  Height=20
+  Browseindex=2
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#EFETUADO,,,
+  Property=HyperLabel=,"Efetuado:",,
+  Property=HyperLabel=,,,"CAF_EFETUADO"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=4A61F316-8030-45ED-8D84-D442E6D31C02
+  Name=OBS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=61
+  Width=400
+  Top=73
+  Height=20
+  Browseindex=5
+  Browsesize=26
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_80
+  Property=HyperLabel=#OBS,,,
+  Property=HyperLabel=,"Obs:",,
+  Property=HyperLabel=,,,"CAF_OBS"
+
+CONTROL=FIXEDTEXT
+GUID=C397E9F0-CD1D-4E71-B814-61629B7233B5
+  Name=XDPLANO
+  Class=FIXEDTEXT
+  Caption=Plano de Acao
+  Order=9
+  Left=105
+  Width=76
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Plano de Acao",,
+  Property=HyperLabel=#XDPLANO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=7A0F012B-3AF1-409F-BFFA-C1368CB92CD9
+  Name=DPLANO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=181
+  Width=88
+  Top=41
+  Height=20
+  Browseindex=3
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DPLANO,,,
+  Property=HyperLabel=,"Plano",,
+  Property=HyperLabel=,,,"CAF_PREVISTO"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=D19AD79F-C332-4043-AD40-3ECBC2AB7828
+  Name=EFICAZ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=337
+  Width=20
+  Top=41
+  Height=20
+  Browseindex=4
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#EFICAZ,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"CAF_NUMERO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=A2448F7C-C579-454F-A76D-EA572AED8BB4
+  Name=SC_EFETUADO1
+  Class=FIXEDTEXT
+  Caption=Eficaz
+  Order=12
+  Left=277
+  Width=52
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Eficaz",,
+  Property=HyperLabel=#SC_EFETUADO1,,,
+
+CONTROL=PUSHBUTTON
+GUID=EA22EF01-2391-4481-BF90-55A270876360
+  Name=cmdEFICAZ
+  Class=PUSHBUTTON
+  Caption=Sim/Nao
+  Order=13
+  Left=369
+  Width=80
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Sim/Nao",,
+  Property=HyperLabel=#cmdEFICAZ,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JCAFI
+

@@ -1,0 +1,9 @@
+#include "..\GlobalDefines.vh"
+CalcSLEContextMenu MENU
+Begin
+	POPUP "&File"
+	BEGIN
+		MENUITEM "&Calculator", IDM_CalcSLEContextMenu_File_Calculator_ID
+	END
+End
+ 

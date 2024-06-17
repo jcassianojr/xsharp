@@ -1,0 +1,1013 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jprneca
+GUID=051909F8-3E9C-436E-8109-17B7438E7B19
+  Name=jprneca
+  Class=DATAWINDOW
+  Caption=Programacao Avulsa
+  Order=0
+  Left=26
+  Width=457
+  Top=26
+  Height=174
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Programacao Avulsa",,
+  Property=HyperLabel=#jprneca,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=141F16A8-8B60-4903-B0E3-8413BEC3EDA8
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=53
+  Width=180
+  Top=9
+  Height=20
+  Browseindex=0
+  Browsesize=22
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"PRNEC_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=7B353E4F-5A0E-4EEA-A0C4-DFE7582B17D6
+  Name=QTDE01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=45
+  Width=72
+  Top=41
+  Height=20
+  Browseindex=1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE01,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=AB6A7350-1EEF-41EA-A9D7-53AE70602292
+  Name=QTDE02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=45
+  Width=72
+  Top=61
+  Height=20
+  Browseindex=2
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE02,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=7D4F9C49-2259-4F78-82C8-5BE1A0762721
+  Name=QTDE03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=45
+  Width=72
+  Top=81
+  Height=20
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE03,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=501381CA-5C4F-417F-A8CB-1182A6BD1686
+  Name=QTDE04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=45
+  Width=72
+  Top=101
+  Height=20
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE04,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=5DA8F88C-120A-4532-8447-2D6A8A5655C6
+  Name=QTDE05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=45
+  Width=72
+  Top=121
+  Height=20
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE05,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=5C7BCF99-9EB5-4297-9003-F5742137B9F4
+  Name=QTDE06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=149
+  Width=72
+  Top=41
+  Height=20
+  Browseindex=6
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE06,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=170816C3-53F0-480C-AA42-7087B6C72DEC
+  Name=QTDE07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=149
+  Width=72
+  Top=61
+  Height=20
+  Browseindex=7
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE07,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=CFCA9FD1-EA69-4716-B7DF-32282BC1BE70
+  Name=QTDE08
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=149
+  Width=72
+  Top=81
+  Height=20
+  Browseindex=8
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE08,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=8C0943BB-AC14-4701-8BBA-C6E3E23BFAE4
+  Name=QTDE09
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=149
+  Width=72
+  Top=101
+  Height=20
+  Browseindex=9
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE09,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=B7C4B143-5847-43A5-AA1D-DCA308AF576F
+  Name=QTDE10
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=149
+  Width=72
+  Top=121
+  Height=20
+  Browseindex=10
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE10,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=F893141C-2328-473A-AF04-F375ADC959E2
+  Name=QTDE11
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=253
+  Width=72
+  Top=41
+  Height=20
+  Browseindex=11
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE11,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=DA77740B-8760-43C1-8651-5EE1B8B7EB95
+  Name=QTDE12
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=253
+  Width=72
+  Top=61
+  Height=20
+  Browseindex=12
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE12,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=A9D813ED-57D3-4011-8524-1B25F2695823
+  Name=QTDE13
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=253
+  Width=72
+  Top=81
+  Height=20
+  Browseindex=13
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE13,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=969C03D6-5A81-48D5-9772-C8F15160848E
+  Name=QTDE14
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=253
+  Width=72
+  Top=101
+  Height=20
+  Browseindex=14
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE14,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=CE95210A-CE97-4763-BF68-E54FF163D672
+  Name=QTDE15
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=253
+  Width=72
+  Top=121
+  Height=20
+  Browseindex=15
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE15,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=F14F70C8-33CF-434F-85A6-E3A296B59C4A
+  Name=QTDE16
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=357
+  Width=72
+  Top=41
+  Height=20
+  Browseindex=16
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE16,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=A0069934-69D2-47C8-9D0E-3A8A956E3003
+  Name=QTDE17
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=357
+  Width=72
+  Top=61
+  Height=20
+  Browseindex=17
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE17,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=FF59188E-77B5-487A-84E4-41998C505DDA
+  Name=QTDE18
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=357
+  Width=72
+  Top=81
+  Height=20
+  Browseindex=18
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE18,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=6271106C-FE41-42EA-9C37-1B4EA57E4581
+  Name=QTDE19
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=357
+  Width=72
+  Top=101
+  Height=20
+  Browseindex=19
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE19,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=844C0FFF-9644-4BC6-994C-6D586D02D21A
+  Name=QTDE20
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=357
+  Width=72
+  Top=121
+  Height=20
+  Browseindex=20
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE20,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=PUSHBUTTON
+GUID=84ED4081-3A1F-4E40-9E96-51DA16179A1D
+  Name=buscacod
+  Class=PUSHBUTTON
+  Caption=
+  Order=22
+  Left=237
+  Width=32
+  Top=1
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=icO_find
+  Property=HyperLabel=#buscacod,,,
+
+CONTROL=FIXEDTEXT
+GUID=7EF8B8B1-4F22-465E-919B-5F3EEAEC26F7
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=23
+  Left=13
+  Width=40
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=7DEE9403-E17A-4ADB-883F-BE4E4EA45AF6
+  Name=QTDE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=44
+  Left=321
+  Width=72
+  Top=9
+  Height=20
+  Browseindex=21
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_06
+  Property=HyperLabel=#QTDE,,,
+  Property=HyperLabel=,"Qtde01:",,
+  Property=HyperLabel=,,,"PRNEC_QTDE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=PUSHBUTTON
+GUID=56AA3B5F-3F6C-4827-92FD-47184B253E06
+  Name=CALC20
+  Class=PUSHBUTTON
+  Caption=20
+  Order=45
+  Left=329
+  Width=23
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"20",,
+  Property=HyperLabel=#CALC20,,,
+  Property=TooltipText="Programa para  20 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=A0F9CFCD-FB96-45AF-892B-7819FEEB2CC3
+  Name=CALC19
+  Class=PUSHBUTTON
+  Caption=19
+  Order=46
+  Left=329
+  Width=23
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"19",,
+  Property=HyperLabel=#CALC19,,,
+  Property=TooltipText="Programa para  19 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=20500978-DE0B-4315-A717-E62839E6EBE1
+  Name=CALC18
+  Class=PUSHBUTTON
+  Caption=18
+  Order=47
+  Left=329
+  Width=23
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"18",,
+  Property=HyperLabel=#CALC18,,,
+  Property=TooltipText="Programa para  18 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=67C774EB-C522-446A-B7A9-4F447B40EAB3
+  Name=CALC17
+  Class=PUSHBUTTON
+  Caption=17
+  Order=48
+  Left=329
+  Width=23
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"17",,
+  Property=HyperLabel=#CALC17,,,
+  Property=TooltipText="Programa para  17 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=F41D4D00-13BA-4AB5-A06E-6E3CD1B37E0D
+  Name=CALC16
+  Class=PUSHBUTTON
+  Caption=16
+  Order=49
+  Left=329
+  Width=23
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"16",,
+  Property=HyperLabel=#CALC16,,,
+  Property=TooltipText="Programa para  16 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=F959BE04-350F-478A-B60F-889EC0094D8A
+  Name=CALC15
+  Class=PUSHBUTTON
+  Caption=15
+  Order=50
+  Left=225
+  Width=23
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"15",,
+  Property=HyperLabel=#CALC15,,,
+  Property=TooltipText="Programa para  15 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=20059A0C-0A1E-400E-ADD1-5D4619409CBA
+  Name=CALC14
+  Class=PUSHBUTTON
+  Caption=14
+  Order=51
+  Left=225
+  Width=23
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"14",,
+  Property=HyperLabel=#CALC14,,,
+  Property=TooltipText="Programa para  14 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=2F411BB4-40B5-401C-A751-91E4D585455E
+  Name=CALC13
+  Class=PUSHBUTTON
+  Caption=13
+  Order=52
+  Left=225
+  Width=23
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"13",,
+  Property=HyperLabel=#CALC13,,,
+  Property=TooltipText="Programa para  13 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=64BE8F01-7EAC-4959-8A3F-691ED7427352
+  Name=CALC12
+  Class=PUSHBUTTON
+  Caption=12
+  Order=53
+  Left=225
+  Width=23
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"12",,
+  Property=HyperLabel=#CALC12,,,
+  Property=TooltipText="Programa para  12 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=58B68988-BA60-433C-99C3-48F54CEEC605
+  Name=CALC11
+  Class=PUSHBUTTON
+  Caption=11
+  Order=54
+  Left=225
+  Width=23
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"11",,
+  Property=HyperLabel=#CALC11,,,
+  Property=TooltipText="Programa para  11 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=B67FB9B7-0D1C-4AD9-8B39-4D5B05984CCF
+  Name=CALC10
+  Class=PUSHBUTTON
+  Caption=10
+  Order=55
+  Left=121
+  Width=23
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"10",,
+  Property=HyperLabel=#CALC10,,,
+  Property=TooltipText="Programa para  10 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=78DA43DA-0F9E-4A14-9834-DD3A7F1094BE
+  Name=CALC09
+  Class=PUSHBUTTON
+  Caption=09
+  Order=56
+  Left=121
+  Width=23
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"09",,
+  Property=HyperLabel=#CALC09,,,
+  Property=TooltipText="Programa para  9 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=B2E51799-9CAF-4F3E-9D66-4AB11AE36C97
+  Name=CALC08
+  Class=PUSHBUTTON
+  Caption=08
+  Order=57
+  Left=121
+  Width=23
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"08",,
+  Property=HyperLabel=#CALC08,,,
+  Property=TooltipText="Programa para  8 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=80E23490-7F15-48B9-8BE7-FD803F5A9C9F
+  Name=CALC07
+  Class=PUSHBUTTON
+  Caption=07
+  Order=58
+  Left=121
+  Width=23
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"07",,
+  Property=HyperLabel=#CALC07,,,
+  Property=TooltipText="Programa para  7 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=33546D55-C86F-4586-92E0-283113B4B896
+  Name=CALC06
+  Class=PUSHBUTTON
+  Caption=06
+  Order=59
+  Left=121
+  Width=23
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"06",,
+  Property=HyperLabel=#CALC06,,,
+  Property=TooltipText="Programa para  6 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=426ED69C-BAF0-42B2-9BA2-E74A6637F07E
+  Name=CALC05
+  Class=PUSHBUTTON
+  Caption=05
+  Order=60
+  Left=17
+  Width=23
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"05",,
+  Property=HyperLabel=#CALC05,,,
+  Property=TooltipText="Programa para  5 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=919FD892-08A2-4CF6-9652-D4E78B6FA48A
+  Name=CALC04
+  Class=PUSHBUTTON
+  Caption=04
+  Order=61
+  Left=17
+  Width=23
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"04",,
+  Property=HyperLabel=#CALC04,,,
+  Property=TooltipText="Programa para 4 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=EAEE0ADB-75F8-4239-94D5-7D9F74D3787E
+  Name=CALC03
+  Class=PUSHBUTTON
+  Caption=03
+  Order=62
+  Left=17
+  Width=23
+  Top=81
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"03",,
+  Property=HyperLabel=#CALC03,,,
+  Property=TooltipText="Programa para  3 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=1EA48582-6F01-456F-968B-F9E48ECCED6A
+  Name=CALC02
+  Class=PUSHBUTTON
+  Caption=02
+  Order=63
+  Left=17
+  Width=23
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"02",,
+  Property=HyperLabel=#CALC02,,,
+  Property=TooltipText="Programa para  2 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=4B9C0F12-AF02-4E0D-8D5D-ED9EBBAD775E
+  Name=CALC01
+  Class=PUSHBUTTON
+  Caption=01
+  Order=64
+  Left=17
+  Width=23
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"01",,
+  Property=HyperLabel=#CALC01,,,
+  Property=TooltipText="Programa para 1 Entrega"
+
+CONTROL=PUSHBUTTON
+GUID=3F40C169-7E20-495D-A016-A84E0BC08187
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=65
+  Left=281
+  Width=27
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+  Property=TooltipText="Exibe Lista de ProdutosPCP"
+
+SUBCONTROLSEND
+DESIGNEREND = jprneca
+

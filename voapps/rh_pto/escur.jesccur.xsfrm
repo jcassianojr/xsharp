@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="jesccur">
+    <Window Name="jesccur">
+      <Name>jesccur</Name>
+      <Class>DATADIALOG</Class>
+      <Caption>DataDialog Caption</Caption>
+      <Order>0</Order>
+      <Left>34</Left>
+      <Top>34</Top>
+      <Width>619</Width>
+      <Height>395</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataDialog Caption",,</HyperLabel>
+        <HyperLabel>#jesccur,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="jcurb">
+      <Name>jcurb</Name>
+      <Class>SUBDATAWINDOW</Class>
+      <Caption>jcurb</Caption>
+      <Order>3</Order>
+      <Left>9</Left>
+      <Top>65</Top>
+      <Width>512</Width>
+      <Height>308</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>Yes</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#jcurb,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="busca">
+      <Name>busca</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>13</Left>
+      <Top>37</Top>
+      <Width>404</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#busca,,,</HyperLabel>
+        <HyperLabel>,,"Digite a Descriçao",</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="buscod">
+      <Name>buscod</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>13</Left>
+      <Top>9</Top>
+      <Width>128</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#buscod,,,</HyperLabel>
+        <HyperLabel>,,"Digite o Codigo",</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Incluir">
+      <Name>Incluir</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Incluir Novo Codigo</Caption>
+      <Order>8</Order>
+      <Left>281</Left>
+      <Top>9</Top>
+      <Width>116</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Incluir Novo Codigo",,</HyperLabel>
+        <HyperLabel>#Incluir,,,</HyperLabel>
+        <HyperLabel>,,"Clique para Incluir um Novo Codigo",</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText9">
+      <Name>theFixedText9</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Retornar</Caption>
+      <Order>9</Order>
+      <Left>537</Left>
+      <Top>333</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Retornar",,</HyperLabel>
+        <HyperLabel>#theFixedText9,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Cancelar">
+      <Name>Cancelar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>537</Left>
+      <Top>285</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Cancelar,,,</HyperLabel>
+        <Image>ico_sair</Image>
+        <TooltipText>"Retornar sem Escolher"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="porcodigo">
+      <Name>porcodigo</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>11</Order>
+      <Left>529</Left>
+      <Top>125</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_az</Image>
+        <HyperLabel>#porcodigo,,,</HyperLabel>
+        <TooltipText>"Ordena a Lista por Código"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="pornome">
+      <Name>pornome</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>12</Order>
+      <Left>529</Left>
+      <Top>169</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_az</Image>
+        <HyperLabel>#pornome,,,</HyperLabel>
+        <TooltipText>"Ordena a Lista Por Descriçao"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="porgrupocod">
+      <Name>porgrupocod</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>13</Order>
+      <Left>529</Left>
+      <Top>213</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_az</Image>
+        <HyperLabel>#porgrupocod,,,</HyperLabel>
+        <TooltipText>"Ordena a Lista Por Grupo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText10">
+      <Name>theFixedText10</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Ordenar Codigo</Caption>
+      <Order>14</Order>
+      <Left>561</Left>
+      <Top>125</Top>
+      <Width>48</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ordenar Codigo",,</HyperLabel>
+        <HyperLabel>#theFixedText10,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText11">
+      <Name>theFixedText11</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Ordem Nome</Caption>
+      <Order>15</Order>
+      <Left>561</Left>
+      <Top>169</Top>
+      <Width>48</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ordem Nome",,</HyperLabel>
+        <HyperLabel>#theFixedText11,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText12">
+      <Name>theFixedText12</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Ordem Grp/Cod</Caption>
+      <Order>16</Order>
+      <Left>561</Left>
+      <Top>213</Top>
+      <Width>48</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ordem Grp/Cod",,</HyperLabel>
+        <HyperLabel>#theFixedText12,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="buscar">
+      <Name>buscar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>17</Order>
+      <Left>157</Left>
+      <Top>5</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_find</Image>
+        <HyperLabel>#buscar,,,</HyperLabel>
+        <HyperLabel>,,"Clique Para Buscar Codigo",</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="BuscarNome">
+      <Name>BuscarNome</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>18</Order>
+      <Left>425</Left>
+      <Top>21</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_find</Image>
+        <HyperLabel>#BuscarNome,,,</HyperLabel>
+        <HyperLabel>,,"Clique Para Buscar Descriçao",</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText13">
+      <Name>theFixedText13</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Escolher</Caption>
+      <Order>19</Order>
+      <Left>537</Left>
+      <Top>89</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Escolher",,</HyperLabel>
+        <HyperLabel>#theFixedText13,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="escolher">
+      <Name>escolher</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>20</Order>
+      <Left>537</Left>
+      <Top>41</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#escolher,,,</HyperLabel>
+        <Image>ico_ok</Image>
+        <TooltipText>"Clique para escolher o item em destaque da lista"</TooltipText>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

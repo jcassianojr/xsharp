@@ -1,0 +1,11 @@
+ _fotoview DIALOGEX  12, 11, 252, 146
+STYLE	1073741824
+FONT	8, "MS Shell Dlg"
+BEGIN
+	CONTROL	"", 100, "_VOCustomControl", 0x40800000L, 8, 19, 160, 118
+	CONTROL	"Retornar", 101, "Static", 1|1073741824, 192, 54, 42, 12
+	CONTROL	"", 102, "Button", 64|65536|1073741824, 192, 22, 42, 29
+	CONTROL	"", 103, "Static", 1073741824, 8, 3, 234, 12
+END
+
+

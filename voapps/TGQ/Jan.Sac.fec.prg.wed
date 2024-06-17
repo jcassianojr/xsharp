@@ -1,0 +1,189 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,jsacfec
+GUID=162656C1-6EFD-46A7-98DE-B90980CCED99
+  Name=jsacfec
+  Class=DATADIALOG
+  Caption=Fechamento da Sac
+  Order=0
+  Left=28
+  Width=408
+  Top=28
+  Height=197
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fechamento da Sac",,
+  Property=ClipperKeys=True
+  Property=Use=<Share Owner's>
+  Property=HyperLabel=#jsacfec,,,
+
+SUBCONTROLSSTART
+CONTROL=RADIOBUTTONGROUP
+GUID=994775A1-5445-4D86-8CE7-16FAF00AA774
+  Name=RESUL
+  Class=RADIOBUTTONGROUP
+  Caption=Resultado
+  Order=4
+  Left=17
+  Width=260
+  Top=61
+  Height=51
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Resultado",,
+  Property=HyperLabel=#RESUL,,,
+  Property=FieldSpec=PADRAO_CHAR_01
+
+CONTROL=RADIOBUTTON
+GUID=6DA87563-E3D6-44AE-A7CB-24665ECF80DA
+  Name=RadioButton2
+  Class=RADIOBUTTON
+  Caption=Aprovado
+  Order=5
+  Left=37
+  Width=92
+  Top=81
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Aprovado",,
+  Property=Value=A
+  Property=HyperLabel=#RadioButton2,,,
+
+CONTROL=RADIOBUTTON
+GUID=039BE873-2AB7-4E0F-9322-D818955F3637
+  Name=RadioButton3
+  Class=RADIOBUTTON
+  Caption=Reprovado
+  Order=6
+  Left=165
+  Width=92
+  Top=81
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Reprovado",,
+  Property=Value=R
+  Property=HyperLabel=#RadioButton3,,,
+
+CONTROL=DATETIMEPICKER
+GUID=5B500C31-C090-42D0-9564-6A9470B79E50
+  Name=DATAF
+  Class=DATETIMEPICKER
+  Caption=11/04/2018
+  Order=8
+  Left=21
+  Width=85
+  Top=21
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAF,,,
+
+CONTROL=FIXEDTEXT
+GUID=C4774D2E-7C3A-4B42-A062-678A6EFB5D41
+  Name=okl
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=10
+  Left=317
+  Width=64
+  Top=69
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#okl,,,
+
+CONTROL=PUSHBUTTON
+GUID=8E017631-255A-4B3E-97E2-85C2A72B83D4
+  Name=ok
+  Class=PUSHBUTTON
+  Caption=
+  Order=11
+  Left=317
+  Width=64
+  Top=21
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#ok,,,
+  Property=Image=ico_ok
+
+CONTROL=FIXEDTEXT
+GUID=4EF32864-DB58-4115-BE01-1EDCC447389C
+  Name=Cancelarx
+  Class=FIXEDTEXT
+  Caption=Cancelar
+  Order=12
+  Left=317
+  Width=64
+  Top=137
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Cancelar",,
+  Property=HyperLabel=#Cancelarx,,,
+
+CONTROL=PUSHBUTTON
+GUID=57C8E2C8-1CE5-4777-BEA6-4D2A924AB792
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=13
+  Left=317
+  Width=64
+  Top=89
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ico_sair
+
+SUBCONTROLSEND
+DESIGNEREND = jsacfec
+

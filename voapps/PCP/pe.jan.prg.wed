@@ -1,0 +1,1079 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jpe
+GUID=95C36D5A-FD85-45A2-BE2B-548F254DFF50
+  Name=jpe
+  Class=DATAWINDOW
+  Caption=Programa de Entrega
+  Order=0
+  Left=42
+  Width=660
+  Top=42
+  Height=525
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Programa de Entrega",,
+  Property=HyperLabel=#jpe,,,
+  Property=ViewAs=#FormView
+  Property=ClipperKeys=True
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=A6F72C29-C5BF-4823-80EA-1CFF47D9C12A
+  Name=SC_PEDIDO
+  Class=FIXEDTEXT
+  Caption=Pedido:
+  Order=1
+  Left=13
+  Width=40
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pedido:",,
+  Property=HyperLabel=#SC_PEDIDO,,,
+
+CONTROL=FIXEDTEXT
+GUID=A3A700DF-CDE2-49BC-B178-EF71D53BBF66
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=3
+  Left=9
+  Width=40
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=57E2D401-9A3E-404C-9B92-97A894ACFE71
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=4
+  Left=22
+  Width=36
+  Top=98
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=FF6454AF-97A9-4FB6-8DED-694D35A5E372
+  Name=SC_FORNECEDO
+  Class=FIXEDTEXT
+  Caption=Fornecedo:
+  Order=5
+  Left=201
+  Width=60
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fornecedo:",,
+  Property=HyperLabel=#SC_FORNECEDO,,,
+
+CONTROL=FIXEDTEXT
+GUID=5593D2E3-B9C6-41A8-9BB4-6BC36571669D
+  Name=SC_UNID
+  Class=FIXEDTEXT
+  Caption=Unid:
+  Order=7
+  Left=289
+  Width=28
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Unid:",,
+  Property=HyperLabel=#SC_UNID,,,
+
+CONTROL=FIXEDTEXT
+GUID=D79ABD7E-07D3-4EB9-A664-BF7B75D47473
+  Name=SC_COMPRAS
+  Class=FIXEDTEXT
+  Caption=Compras:
+  Order=9
+  Left=85
+  Width=48
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Compras:",,
+  Property=HyperLabel=#SC_COMPRAS,,,
+
+CONTROL=FIXEDTEXT
+GUID=4E28A210-09BC-4342-B0FA-F02FB7E44139
+  Name=SC_APLICACAO
+  Class=FIXEDTEXT
+  Caption=Aplicacao:
+  Order=11
+  Left=325
+  Width=56
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Aplicacao:",,
+  Property=HyperLabel=#SC_APLICACAO,,,
+
+CONTROL=FIXEDTEXT
+GUID=F3A907CF-4264-4829-BB44-DE1D01488923
+  Name=SC_LOCENT
+  Class=FIXEDTEXT
+  Caption=Local Entrega
+  Order=12
+  Left=433
+  Width=68
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Local Entrega",,
+  Property=HyperLabel=#SC_LOCENT,,,
+
+CONTROL=FIXEDTEXT
+GUID=CD5A1B9C-ECA1-4865-97CC-8EAA351C4287
+  Name=SC_OBSOBS
+  Class=FIXEDTEXT
+  Caption=Obs:
+  Order=13
+  Left=397
+  Width=31
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Obs:",,
+  Property=HyperLabel=#SC_OBSOBS,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=48F34780-10D7-4E8A-994A-6EDA0C73E316
+  Name=PEDIDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=5
+  Width=48
+  Top=21
+  Height=24
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#PEDIDO,,,
+  Property=HyperLabel=,"Pedido:",,
+  Property=HyperLabel=,,,"PE_PEDIDO"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=A26732E2-72FF-431A-87C3-C4EF2ACFDC4E
+  Name=TIPPED
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=9
+  Width=24
+  Top=69
+  Height=20
+  Browseindex=5
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#TIPPED,,,
+  Property=HyperLabel=,"T",,
+  Property=HyperLabel=,,,"PE_TIPPED"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=164B518E-F63B-43D9-A696-CDF2ED65517A
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=37
+  Width=180
+  Top=69
+  Height=20
+  Browseindex=6
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"PE_CODIGO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=1F969CF3-0AF4-45B7-B980-E997DDCD7EBF
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=65
+  Width=364
+  Top=97
+  Height=20
+  Browseindex=8
+  Browsesize=49
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_50
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"PE_NOME"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=9F91B050-34C7-4913-A142-4D6BFF084B3C
+  Name=FORNECEDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=201
+  Width=68
+  Top=25
+  Height=20
+  Browseindex=3
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#FORNECEDO,,,
+  Property=HyperLabel=,"Fornecedo:",,
+  Property=HyperLabel=,,,"PE_FORNECEDO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=14C4B16F-5F07-4843-B63B-30FF842C1D10
+  Name=COGNOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=273
+  Width=120
+  Top=25
+  Height=20
+  Browseindex=4
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=padrao_char_12
+  Property=HyperLabel=#COGNOME,,,
+  Property=HyperLabel=,"Cognome:",,
+  Property=HyperLabel=,,,"PE_COGNOME"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=CF04BBB7-EB3A-4ED0-A047-7CB0E230CFD1
+  Name=UNID
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=285
+  Width=36
+  Top=69
+  Height=20
+  Browseindex=7
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#UNID,,,
+  Property=HyperLabel=,"Unid:",,
+  Property=HyperLabel=,,,"PE_UNID"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=C32D78AC-BFC7-427E-B85A-B3B1C04FB7D5
+  Name=NOM2
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=65
+  Width=364
+  Top=117
+  Height=20
+  Browseindex=7
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_50
+  Property=HyperLabel=#NOM2,,,
+  Property=HyperLabel=,"Nom2:",,
+  Property=HyperLabel=,,,"PE_NOM2"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold:Italic
+
+CONTROL=SINGLELINEEDIT
+GUID=7621B28F-D469-4E09-83B3-D79939DA53DA
+  Name=COMPRAS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=85
+  Width=68
+  Top=25
+  Height=20
+  Browseindex=1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#COMPRAS,,,
+  Property=HyperLabel=,"Compras:",,
+  Property=HyperLabel=,,,"PE_COMPRAS"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=21309652-A947-4F97-A583-811252EF81A5
+  Name=COMITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=23
+  Left=153
+  Width=44
+  Top=25
+  Height=20
+  Browseindex=2
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=padrao_num_03
+  Property=HyperLabel=#COMITEM,,,
+  Property=HyperLabel=,"Ite",,
+  Property=HyperLabel=,,,"PE_COMITEM"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=3C4F8A95-47C7-4F98-B411-CAE587046EEF
+  Name=APLICACAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=24
+  Left=321
+  Width=328
+  Top=69
+  Height=20
+  Browseindex=10
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_50
+  Property=HyperLabel=#APLICACAO,,,
+  Property=HyperLabel=,"Aplicacao:",,
+  Property=HyperLabel=,,,"PE_APLICACAO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=79E94FDD-D7DD-4C05-9ADC-97B1B1F0F750
+  Name=LOCENT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=25
+  Left=505
+  Width=24
+  Top=93
+  Height=20
+  Browseindex=11
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_01
+  Property=HyperLabel=#LOCENT,,,
+  Property=HyperLabel=,"Locent:",,
+  Property=HyperLabel=,,,"PE_LOCENT"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=F83FBE0C-A094-45FA-B151-15F97BD60A93
+  Name=OBSOBS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=26
+  Left=397
+  Width=228
+  Top=25
+  Height=20
+  Browseindex=12
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082198144
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#OBSOBS,,,
+  Property=HyperLabel=,"Obsobs:",,
+  Property=HyperLabel=,,,"PE_OBSOBS"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SUBDATAWINDOW
+GUID=1880B1E7-351C-42D7-9DE6-D9DB597454F1
+  Name=JPE01
+  Class=SUBDATAWINDOW
+  Caption=JPE01
+  Order=27
+  Left=18
+  Width=511
+  Top=146
+  Height=115
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JPE01,,,
+
+CONTROL=PUSHBUTTON
+GUID=7B555458-AA97-4564-84A0-3B45A5C3C140
+  Name=buscaPED
+  Class=PUSHBUTTON
+  Caption=
+  Order=29
+  Left=53
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=icO_find
+  Property=HyperLabel=#buscaPED,,,
+
+CONTROL=PUSHBUTTON
+GUID=15433BDA-CF57-4377-99E2-0E230A5A58B6
+  Name=Excluir
+  Class=PUSHBUTTON
+  Caption=Excluir
+  Order=30
+  Left=537
+  Width=80
+  Top=169
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Excluir",,
+  Property=HyperLabel=#Excluir,,,
+
+CONTROL=PUSHBUTTON
+GUID=3BC1B159-D732-449D-869B-762050409D8C
+  Name=Incluir
+  Class=PUSHBUTTON
+  Caption=Incluir
+  Order=31
+  Left=537
+  Width=80
+  Top=145
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Incluir",,
+  Property=HyperLabel=#Incluir,,,
+
+CONTROL=SUBDATAWINDOW
+GUID=8DC00C15-330B-4615-8C26-4DFDA716EB62
+  Name=JNEC
+  Class=SUBDATAWINDOW
+  Caption=Programa de Entrega
+  Order=32
+  Left=17
+  Width=511
+  Top=265
+  Height=240
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#JNEC,,,
+  Property=HyperLabel=,"Programa de Entrega",,
+
+CONTROL=PUSHBUTTON
+GUID=BC26B8CD-E372-4D83-BCB2-493E076BD557
+  Name=CALC20
+  Class=PUSHBUTTON
+  Caption=20
+  Order=33
+  Left=581
+  Width=23
+  Top=465
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"20",,
+  Property=HyperLabel=#CALC20,,,
+  Property=TooltipText="Programa para  20 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=D76B0014-AE68-4ADD-AF62-D0E0B824140E
+  Name=CALC19
+  Class=PUSHBUTTON
+  Caption=19
+  Order=34
+  Left=581
+  Width=23
+  Top=445
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"19",,
+  Property=HyperLabel=#CALC19,,,
+  Property=TooltipText="Programa para  19 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=017F7D86-DBEE-4222-9546-97FFA1CEE048
+  Name=CALC18
+  Class=PUSHBUTTON
+  Caption=18
+  Order=35
+  Left=581
+  Width=23
+  Top=425
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"18",,
+  Property=HyperLabel=#CALC18,,,
+  Property=TooltipText="Programa para  18 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=79D6AD0F-8D52-472E-BED7-3CC56F065962
+  Name=CALC17
+  Class=PUSHBUTTON
+  Caption=17
+  Order=36
+  Left=581
+  Width=23
+  Top=405
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"17",,
+  Property=HyperLabel=#CALC17,,,
+  Property=TooltipText="Programa para  17 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=0E9DCF58-428A-424A-81FE-A7A304735485
+  Name=CALC16
+  Class=PUSHBUTTON
+  Caption=16
+  Order=37
+  Left=581
+  Width=23
+  Top=385
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"16",,
+  Property=HyperLabel=#CALC16,,,
+  Property=TooltipText="Programa para  16 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=39ACD619-B2EC-4B28-AD4B-1C27F82B3CE5
+  Name=CALC15
+  Class=PUSHBUTTON
+  Caption=15
+  Order=38
+  Left=545
+  Width=23
+  Top=465
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"15",,
+  Property=HyperLabel=#CALC15,,,
+  Property=TooltipText="Programa para  15 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=CEAF3D1D-FECB-4292-8C59-65678FCA6803
+  Name=CALC14
+  Class=PUSHBUTTON
+  Caption=14
+  Order=39
+  Left=545
+  Width=23
+  Top=445
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"14",,
+  Property=HyperLabel=#CALC14,,,
+  Property=TooltipText="Programa para  14 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=50599A35-31E6-49C2-AF5B-F0408A178814
+  Name=CALC13
+  Class=PUSHBUTTON
+  Caption=13
+  Order=40
+  Left=545
+  Width=23
+  Top=425
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"13",,
+  Property=HyperLabel=#CALC13,,,
+  Property=TooltipText="Programa para  13 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=9CB1C080-0D2C-431B-B233-8860F3C7F046
+  Name=CALC12
+  Class=PUSHBUTTON
+  Caption=12
+  Order=41
+  Left=545
+  Width=23
+  Top=405
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"12",,
+  Property=HyperLabel=#CALC12,,,
+  Property=TooltipText="Programa para  12 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=9FEDFD1B-FE2B-4578-B1A5-8C18488755F2
+  Name=CALC11
+  Class=PUSHBUTTON
+  Caption=11
+  Order=42
+  Left=545
+  Width=23
+  Top=385
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"11",,
+  Property=HyperLabel=#CALC11,,,
+  Property=TooltipText="Programa para  11 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=D3BA0C90-F6F7-4B87-B8AF-3C09D928310D
+  Name=CALC10
+  Class=PUSHBUTTON
+  Caption=10
+  Order=43
+  Left=581
+  Width=23
+  Top=353
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"10",,
+  Property=HyperLabel=#CALC10,,,
+  Property=TooltipText="Programa para  10 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=AC82A843-7F7B-42B0-9240-09C3C91E0EA3
+  Name=CALC09
+  Class=PUSHBUTTON
+  Caption=09
+  Order=44
+  Left=581
+  Width=23
+  Top=333
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"09",,
+  Property=HyperLabel=#CALC09,,,
+  Property=TooltipText="Programa para  9 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=4C9BFEBA-33E6-4999-9559-216DD550B116
+  Name=CALC08
+  Class=PUSHBUTTON
+  Caption=08
+  Order=45
+  Left=581
+  Width=23
+  Top=313
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"08",,
+  Property=HyperLabel=#CALC08,,,
+  Property=TooltipText="Programa para  8 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=CF867399-4CA1-4727-A19D-78777ECA05FC
+  Name=CALC07
+  Class=PUSHBUTTON
+  Caption=07
+  Order=46
+  Left=581
+  Width=23
+  Top=293
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"07",,
+  Property=HyperLabel=#CALC07,,,
+  Property=TooltipText="Programa para  7 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=6A4261FF-D7D3-4A5B-A602-28A92E37DD8B
+  Name=CALC06
+  Class=PUSHBUTTON
+  Caption=06
+  Order=47
+  Left=581
+  Width=23
+  Top=273
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"06",,
+  Property=HyperLabel=#CALC06,,,
+  Property=TooltipText="Programa para  6 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=A56C27D5-014A-490C-B39C-593C6EC4D156
+  Name=CALC05
+  Class=PUSHBUTTON
+  Caption=05
+  Order=48
+  Left=545
+  Width=23
+  Top=353
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"05",,
+  Property=HyperLabel=#CALC05,,,
+  Property=TooltipText="Programa para  5 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=915A05F9-D4FF-4D6F-9233-52B51F788116
+  Name=CALC04
+  Class=PUSHBUTTON
+  Caption=04
+  Order=49
+  Left=545
+  Width=23
+  Top=333
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"04",,
+  Property=HyperLabel=#CALC04,,,
+  Property=TooltipText="Programa para 4 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=B37D8E31-FA46-4373-A1B4-2658ED5C9F04
+  Name=CALC03
+  Class=PUSHBUTTON
+  Caption=03
+  Order=50
+  Left=545
+  Width=23
+  Top=313
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"03",,
+  Property=HyperLabel=#CALC03,,,
+  Property=TooltipText="Programa para  3 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=4D27C2AA-E201-4940-B0CF-843303A555B2
+  Name=CALC02
+  Class=PUSHBUTTON
+  Caption=02
+  Order=51
+  Left=545
+  Width=23
+  Top=293
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"02",,
+  Property=HyperLabel=#CALC02,,,
+  Property=TooltipText="Programa para  2 Entregas"
+
+CONTROL=PUSHBUTTON
+GUID=D74B15E8-E581-452B-917D-FC148914EFDA
+  Name=CALC01
+  Class=PUSHBUTTON
+  Caption=01
+  Order=52
+  Left=545
+  Width=23
+  Top=273
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"01",,
+  Property=HyperLabel=#CALC01,,,
+  Property=TooltipText="Programa para 1 Entrega"
+
+CONTROL=PUSHBUTTON
+GUID=8C38BE7F-606B-4C3F-AA7D-7B225B133B58
+  Name=cmdqtde
+  Class=PUSHBUTTON
+  Caption=Quantidade
+  Order=53
+  Left=537
+  Width=80
+  Top=193
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Quantidade",,
+  Property=HyperLabel=#cmdqtde,,,
+
+CONTROL=PUSHBUTTON
+GUID=F8DE7B10-A9DD-4A6A-8E07-BD642F61C3FB
+  Name=cmddata
+  Class=PUSHBUTTON
+  Caption=Data
+  Order=54
+  Left=537
+  Width=80
+  Top=217
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=#cmddata,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jpe
+

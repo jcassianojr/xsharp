@@ -1,0 +1,151 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JPTI
+GUID=795EAD04-6D67-4787-8828-5691EA1D5743
+  Name=JPTI
+  Class=DATAWINDOW
+  Caption=Itens da Programacao de Treinamento
+  Order=0
+  Left=12
+  Width=543
+  Top=12
+  Height=382
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Itens da Programacao de Treinamento",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JPTI,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=C8E3587C-79BA-4144-BF78-0B42B082C6F5
+  Name=NOMFUN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=11
+  Width=400
+  Top=81
+  Height=20
+  Browseindex=2
+  Browsesize=47
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#NOMFUN,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"TREII_NOMFUN"
+
+CONTROL=FIXEDTEXT
+GUID=2A885DBC-FA9B-4A36-B84F-1FF6262DA9E9
+  Name=SC_NOMFUN
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=2
+  Left=11
+  Width=60
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOMFUN,,,
+
+CONTROL=FIXEDTEXT
+GUID=1646A364-DA71-4D76-B67D-E0326049DF42
+  Name=SC_NUMFUN
+  Class=FIXEDTEXT
+  Caption=Número
+  Order=3
+  Left=131
+  Width=60
+  Top=11
+  Height=30
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Número",,
+  Property=HyperLabel=#SC_NUMFUN,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=5070CAD0-E13F-4EBC-8E0E-702DA1116E47
+  Name=TREIN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=11
+  Width=110
+  Top=31
+  Height=20
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#TREIN,,,
+  Property=HyperLabel=,"PT",,
+  Property=HyperLabel=,,,"TREII_TREIN"
+
+CONTROL=FIXEDTEXT
+GUID=B537556D-20B8-47CD-9F0B-B5F3FFF6EB5A
+  Name=SC_TREIN
+  Class=FIXEDTEXT
+  Caption=PT
+  Order=5
+  Left=11
+  Width=90
+  Top=11
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"PT",,
+  Property=HyperLabel=#SC_TREIN,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=EFFC4EA7-0FA3-4E56-B3E8-9E1AA1DB08D7
+  Name=NUMFUN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=132
+  Width=110
+  Top=31
+  Height=20
+  Browseindex=1
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#NUMFUN,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"TREII_TREIN"
+
+SUBCONTROLSEND
+DESIGNEREND = JPTI
+

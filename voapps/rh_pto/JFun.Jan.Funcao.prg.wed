@@ -1,0 +1,1279 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JFUN
+GUID=C40F062C-3ECA-4014-AFE9-419D3BC3F613
+  Name=JFUN
+  Class=DATAWINDOW
+  Caption=Cadastro de Funcao Folha
+  Order=0
+  Left=34
+  Width=613
+  Top=34
+  Height=442
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cadastro de Funcao Folha",,
+  Property=ViewAs=#FormView
+  Property=HyperLabel=#JFUN,,,
+  Property=ClipperKeys=True
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=C0836E88-4A39-49C1-ABFB-171B528A3297
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=1
+  Left=13
+  Width=40
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=E9F60357-790E-46E2-B40E-5CDA0FB5F676
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=2
+  Left=154
+  Width=36
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=EE68AEDA-B388-4BA1-B0B1-275ABCDAE910
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=13
+  Width=55
+  Top=25
+  Height=28
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_04
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"FUNCAO_CODIGO"
+  Property=Background=253 254 220
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=1F707F8E-82E7-4900-B158-D122C5132E4B
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=150
+  Width=292
+  Top=27
+  Height=20
+  Browseindex=1
+  Browsesize=52
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"FUNCAO_NOME"
+
+CONTROL=TABCONTROL
+GUID=75925589-02F1-4FC1-8756-F24ABEDF92D2
+  Name=JFUNTAB
+  Class=TABCONTROL
+  Caption=
+  Order=5
+  Left=15
+  Width=567
+  Top=58
+  Height=347
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#JFUNTAB,,,
+  TabPageName=JFUN_TAB1
+  TabPageCaption=Cadastro
+  TabPageDataAware=YES
+  TabPageName=JFUNTAB_Page2
+  TabPageCaption=Detalhamento
+  TabPageDataAware=YES
+  TabPageName=JFUNTAB_Page3
+  TabPageCaption=Requisitos Necesarios
+  TabPageDataAware=YES
+  TabPageName=JFUNTAB_Page4
+  TabPageCaption=Requisitos Desejaveis
+  TabPageDataAware=YES
+
+CONTROL=PUSHBUTTON
+GUID=5A8794BB-5A9F-4C0C-B657-ABB8A1F8373B
+  Name=porcodigo
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=110
+  Width=32
+  Top=15
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#porcodigo,,,
+
+CONTROL=PUSHBUTTON
+GUID=97EBE330-EE2A-41C6-96D9-4AA197AFD4C3
+  Name=buscacodigo
+  Class=PUSHBUTTON
+  Caption=
+  Order=9
+  Left=78
+  Width=32
+  Top=15
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscacodigo,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JFUN
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JFUN_TAB1
+GUID=DBA3BC49-21B6-4760-AF9C-29951AD4303A
+  Name=JFUN_TAB1
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=34
+  Width=559
+  Top=34
+  Height=321
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#JFUN_TAB1,,,
+  Property=ClipperKeys=True
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=37F1F160-5774-4032-A8BF-5D602076C231
+  Name=CBOnew
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=9
+  Width=48
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_06
+  Property=HyperLabel=#CBOnew,,,
+  Property=HyperLabel=,"Cbo:",,
+  Property=HyperLabel=,,,"FUNCAO_CBO"
+
+CONTROL=SINGLELINEEDIT
+GUID=A5B13A7A-5602-4E7F-8150-E2B1B5B4EA63
+  Name=CBO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=89
+  Width=48
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_05
+  Property=HyperLabel=#CBO,,,
+  Property=HyperLabel=,"Cbo :",,
+  Property=HyperLabel=,,,"FUNCAO_CBO"
+
+CONTROL=SINGLELINEEDIT
+GUID=C4C259E0-2D54-4726-88DE-8B499028BE5F
+  Name=FNOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=169
+  Width=132
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_17
+  Property=HyperLabel=#FNOME,,,
+  Property=HyperLabel=,"Fnome:",,
+  Property=HyperLabel=,,,"FUNCAO_FNOME"
+
+CONTROL=SINGLELINEEDIT
+GUID=A33E8D0C-EF13-4FA5-9DB9-5BE8BE6F3311
+  Name=FAIXA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=305
+  Width=36
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#FAIXA,,,
+  Property=HyperLabel=,"Faixa:",,
+  Property=HyperLabel=,,,"FUNCAO_FAIXA"
+
+CONTROL=SINGLELINEEDIT
+GUID=2A45EEDF-8B79-4655-85EC-5860BE02A9D8
+  Name=VALOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=345
+  Width=92
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_11_2
+  Property=HyperLabel=#VALOR,,,
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=,,,"FUNCAO_VALOR"
+  Property=InheritClassName=rightSle
+
+CONTROL=COMBOBOX
+GUID=345462B9-D900-4984-A445-DCEFE8D299DC
+  Name=TABTEC
+  Class=COMBOBOX
+  Caption=
+  Order=6
+  Left=8
+  Width=240
+  Top=76
+  Height=106
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1075839234
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_10
+  Property=HyperLabel=#TABTEC,,,
+
+CONTROL=COMBOBOX
+GUID=9ED3C045-A35D-47A2-B986-D39FEFE2FA38
+  Name=AREA
+  Class=COMBOBOX
+  Caption=
+  Order=7
+  Left=257
+  Width=159
+  Top=76
+  Height=106
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1075839234
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#AREA,,,
+
+CONTROL=FIXEDTEXT
+GUID=7825A7A6-25C1-4AEB-ADC0-027F20701768
+  Name=SC_VALOR
+  Class=FIXEDTEXT
+  Caption=Valor:
+  Order=8
+  Left=345
+  Width=32
+  Top=9
+  Height=14
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=#SC_VALOR,,,
+
+CONTROL=FIXEDTEXT
+GUID=3D207539-81F1-48AB-A411-5D3EB33925B2
+  Name=SC_CBO
+  Class=FIXEDTEXT
+  Caption=Cbo Antigo:
+  Order=9
+  Left=93
+  Width=48
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cbo Antigo:",,
+  Property=HyperLabel=#SC_CBO,,,
+
+CONTROL=FIXEDTEXT
+GUID=1A2D6EAE-82A5-4DC6-A583-6BAA196DEF64
+  Name=SC_FNOME
+  Class=FIXEDTEXT
+  Caption=CogNome
+  Order=10
+  Left=173
+  Width=85
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"CogNome",,
+  Property=HyperLabel=#SC_FNOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=98FA0C93-1FD8-4C8C-A2E0-5901313A219C
+  Name=SC_FAIXA
+  Class=FIXEDTEXT
+  Caption=Faixa:
+  Order=11
+  Left=301
+  Width=32
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Faixa:",,
+  Property=HyperLabel=#SC_FAIXA,,,
+
+CONTROL=FIXEDTEXT
+GUID=344C3ABB-FE24-4F65-8F83-93D95EB23B60
+  Name=SC_AREA
+  Class=FIXEDTEXT
+  Caption=Area:
+  Order=12
+  Left=261
+  Width=28
+  Top=57
+  Height=17
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Area:",,
+  Property=HyperLabel=#SC_AREA,,,
+
+CONTROL=FIXEDTEXT
+GUID=117D2B7E-7264-4DAA-9648-3EB562DF6673
+  Name=SC_CODMP02
+  Class=FIXEDTEXT
+  Caption=Codigo Manager
+  Order=13
+  Left=9
+  Width=135
+  Top=57
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo Manager",,
+  Property=HyperLabel=#SC_CODMP02,,,
+
+CONTROL=FIXEDTEXT
+GUID=0017DB41-FE5D-4F71-A62F-2FA5A2E763ED
+  Name=SC_CBO1
+  Class=FIXEDTEXT
+  Caption=CboNovo
+  Order=14
+  Left=10
+  Width=50
+  Top=11
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"CboNovo",,
+  Property=HyperLabel=#SC_CBO1,,,
+
+CONTROL=PUSHBUTTON
+GUID=0843EB1F-0B2F-4FA5-8565-D7C00EAEE3E2
+  Name=PushButton1
+  Class=PUSHBUTTON
+  Caption=...
+  Order=15
+  Left=141
+  Width=23
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#PushButton1,,,
+
+CONTROL=PUSHBUTTON
+GUID=C5DECEFB-3CD1-4E07-BA59-96A54F144578
+  Name=PushButton2
+  Class=PUSHBUTTON
+  Caption=...
+  Order=16
+  Left=61
+  Width=23
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#PushButton2,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JFUN_TAB1
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JFUNTAB_Page2
+GUID=26016441-5343-4DB9-8626-2CDB1D338DA6
+  Name=JFUNTAB_Page2
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=12
+  Width=559
+  Top=12
+  Height=321
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#JFUNTAB_Page2,,,
+  Property=Use=<Share Owner's>
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=DB87332E-3CBB-46C2-9CD6-A453CD6B9D7E
+  Name=DES01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=78
+  Width=400
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#DES01,,,
+  Property=HyperLabel=,,,"FUNCAO_DES01"
+
+CONTROL=SINGLELINEEDIT
+GUID=85D53A5B-4825-4687-87C7-92A332A81C06
+  Name=DES02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=78
+  Width=400
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#DES02,,,
+  Property=HyperLabel=,"Des02:",,
+  Property=HyperLabel=,,,"FUNCAO_DES02"
+
+CONTROL=SINGLELINEEDIT
+GUID=17F5A1E1-5494-4D0B-8664-BA72697E4B86
+  Name=DES03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=78
+  Width=400
+  Top=74
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#DES03,,,
+  Property=HyperLabel=,"Des03:",,
+  Property=HyperLabel=,,,"FUNCAO_DES03"
+
+CONTROL=SINGLELINEEDIT
+GUID=2AEE5D12-B4DD-4FBD-971A-2B4E7E22013E
+  Name=DES04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=78
+  Width=400
+  Top=98
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#DES04,,,
+  Property=HyperLabel=,"Des04:",,
+  Property=HyperLabel=,,,"FUNCAO_DES04"
+
+CONTROL=SINGLELINEEDIT
+GUID=0778DC67-A21B-4AF8-8006-417CFFC67EB1
+  Name=DES05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=78
+  Width=400
+  Top=122
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#DES05,,,
+  Property=HyperLabel=,"Des05:",,
+  Property=HyperLabel=,,,"FUNCAO_DES05"
+
+CONTROL=SINGLELINEEDIT
+GUID=7DBA87DB-2791-4E61-A525-A433053105C8
+  Name=DES06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=78
+  Width=400
+  Top=146
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#DES06,,,
+  Property=HyperLabel=,"Des06:",,
+  Property=HyperLabel=,,,"FUNCAO_DES06"
+
+CONTROL=SINGLELINEEDIT
+GUID=9CC8B406-CC59-4BB3-A80F-9F42D5EADD2B
+  Name=DES07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=78
+  Width=400
+  Top=170
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#DES07,,,
+  Property=HyperLabel=,"Des07:",,
+  Property=HyperLabel=,,,"FUNCAO_DES07"
+
+CONTROL=SINGLELINEEDIT
+GUID=ECD60505-9585-4390-997E-D5418F8E4992
+  Name=DES08
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=78
+  Width=400
+  Top=194
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#DES08,,,
+  Property=HyperLabel=,"Des08:",,
+  Property=HyperLabel=,,,"FUNCAO_DES08"
+
+CONTROL=SINGLELINEEDIT
+GUID=489B057E-AC4C-4D6C-A224-2F9B9EDE586E
+  Name=DES09
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=78
+  Width=400
+  Top=218
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#DES09,,,
+  Property=HyperLabel=,"Des09:",,
+  Property=HyperLabel=,,,"FUNCAO_DES09"
+
+CONTROL=SINGLELINEEDIT
+GUID=85D0C39F-E90F-4B93-9D5D-F25B1D7494FF
+  Name=DES10
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=78
+  Width=400
+  Top=242
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#DES10,,,
+  Property=HyperLabel=,"Des10:",,
+  Property=HyperLabel=,,,"FUNCAO_DES10"
+
+SUBCONTROLSEND
+DESIGNEREND = JFUNTAB_Page2
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JFUNTAB_Page3
+GUID=DD32AC2C-064F-4859-A35C-2691559F03D5
+  Name=JFUNTAB_Page3
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=12
+  Width=559
+  Top=12
+  Height=321
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#JFUNTAB_Page3,,,
+  Property=Use=<Share Owner's>
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=04BEA71A-2968-4B48-9D37-52DF9F5B8692
+  Name=REQ01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=78
+  Width=400
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#REQ01,,,
+  Property=HyperLabel=,"Req01:",,
+  Property=HyperLabel=,,,"FUNCAO_REQ01"
+
+CONTROL=SINGLELINEEDIT
+GUID=27F172CE-1B26-4389-B0AE-EFDB14BE20B8
+  Name=REQ02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=78
+  Width=400
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#REQ02,,,
+  Property=HyperLabel=,"Req02:",,
+  Property=HyperLabel=,,,"FUNCAO_REQ02"
+
+CONTROL=SINGLELINEEDIT
+GUID=30292133-FDC3-4E44-B927-931EB3879992
+  Name=REQ03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=78
+  Width=400
+  Top=74
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#REQ03,,,
+  Property=HyperLabel=,"Req03:",,
+  Property=HyperLabel=,,,"FUNCAO_REQ03"
+
+CONTROL=SINGLELINEEDIT
+GUID=4BC8B00E-C486-4EFE-9055-AB1927AC3DB0
+  Name=REQ04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=78
+  Width=400
+  Top=98
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#REQ04,,,
+  Property=HyperLabel=,"Req04:",,
+  Property=HyperLabel=,,,"FUNCAO_REQ04"
+
+CONTROL=SINGLELINEEDIT
+GUID=F53002DA-C728-4DF4-9532-36759F471AC5
+  Name=REQ05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=78
+  Width=400
+  Top=122
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#REQ05,,,
+  Property=HyperLabel=,"Req05:",,
+  Property=HyperLabel=,,,"FUNCAO_REQ05"
+
+CONTROL=SINGLELINEEDIT
+GUID=4B0B1463-0FE7-4A32-BBC3-0E96D3A2FC13
+  Name=REQ06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=78
+  Width=400
+  Top=146
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#REQ06,,,
+  Property=HyperLabel=,"Req06:",,
+  Property=HyperLabel=,,,"FUNCAO_REQ06"
+
+CONTROL=SINGLELINEEDIT
+GUID=7A0D9630-88B1-4E96-A2C4-5CA51C81FC47
+  Name=REQ07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=78
+  Width=400
+  Top=170
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#REQ07,,,
+  Property=HyperLabel=,"Req07:",,
+  Property=HyperLabel=,,,"FUNCAO_REQ07"
+
+CONTROL=SINGLELINEEDIT
+GUID=0380EB4A-4315-489D-B414-CB97B91EDE43
+  Name=REQ08
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=78
+  Width=400
+  Top=194
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#REQ08,,,
+  Property=HyperLabel=,"Req08:",,
+  Property=HyperLabel=,,,"FUNCAO_REQ08"
+
+CONTROL=SINGLELINEEDIT
+GUID=7DB5EB48-1F0C-4ED1-B5E9-8FD2C732FA6A
+  Name=REQ09
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=78
+  Width=400
+  Top=218
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#REQ09,,,
+  Property=HyperLabel=,"Req09:",,
+  Property=HyperLabel=,,,"FUNCAO_REQ09"
+
+CONTROL=SINGLELINEEDIT
+GUID=458BC52D-A5DF-4393-AE53-F35DB3E3223C
+  Name=REQ10
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=78
+  Width=400
+  Top=242
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#REQ10,,,
+  Property=HyperLabel=,"Req10:",,
+  Property=HyperLabel=,,,"FUNCAO_REQ10"
+
+SUBCONTROLSEND
+DESIGNEREND = JFUNTAB_Page3
+
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JFUNTAB_Page4
+GUID=7E60D64D-8A65-44D5-8FA3-5D2F6FDE44D7
+  Name=JFUNTAB_Page4
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=12
+  Width=559
+  Top=12
+  Height=321
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#JFUNTAB_Page4,,,
+  Property=Use=<Share Owner's>
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=1D3A628C-3E86-4179-B126-2126BD30EAA1
+  Name=RED01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=78
+  Width=400
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#RED01,,,
+  Property=HyperLabel=,"Red01:",,
+  Property=HyperLabel=,,,"FUNCAO_RED01"
+
+CONTROL=SINGLELINEEDIT
+GUID=27FFE72A-B639-4E7B-A364-1EE0331B9555
+  Name=RED02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=78
+  Width=400
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#RED02,,,
+  Property=HyperLabel=,"Red02:",,
+  Property=HyperLabel=,,,"FUNCAO_RED02"
+
+CONTROL=SINGLELINEEDIT
+GUID=A3D82031-E2FB-4B20-B21C-B527F92376D9
+  Name=RED03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=78
+  Width=400
+  Top=74
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#RED03,,,
+  Property=HyperLabel=,"Red03:",,
+  Property=HyperLabel=,,,"FUNCAO_RED03"
+
+CONTROL=SINGLELINEEDIT
+GUID=06DF4586-A411-4948-98DB-540DE82ED93F
+  Name=RED04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=78
+  Width=400
+  Top=98
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#RED04,,,
+  Property=HyperLabel=,"Red04:",,
+  Property=HyperLabel=,,,"FUNCAO_RED04"
+
+CONTROL=SINGLELINEEDIT
+GUID=C566475D-C271-4757-9A88-7FA1A034A535
+  Name=RED05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=78
+  Width=400
+  Top=122
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#RED05,,,
+  Property=HyperLabel=,"Red05:",,
+  Property=HyperLabel=,,,"FUNCAO_RED05"
+
+CONTROL=SINGLELINEEDIT
+GUID=9272C92A-C143-4B16-9FE3-EF845C83BAA9
+  Name=RED06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=78
+  Width=400
+  Top=146
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#RED06,,,
+  Property=HyperLabel=,"Red06:",,
+  Property=HyperLabel=,,,"FUNCAO_RED06"
+
+CONTROL=SINGLELINEEDIT
+GUID=25754C1F-DBE3-48EE-9FD3-74ED3F810F4B
+  Name=RED07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=78
+  Width=400
+  Top=170
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#RED07,,,
+  Property=HyperLabel=,"Red07:",,
+  Property=HyperLabel=,,,"FUNCAO_RED07"
+
+CONTROL=SINGLELINEEDIT
+GUID=CC6111C2-D29F-47E6-A074-2BBAD9062948
+  Name=RED08
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=78
+  Width=400
+  Top=194
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#RED08,,,
+  Property=HyperLabel=,"Red08:",,
+  Property=HyperLabel=,,,"FUNCAO_RED08"
+
+CONTROL=SINGLELINEEDIT
+GUID=25BDF86A-3762-40FC-8883-EED2BB67FE1F
+  Name=RED09
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=78
+  Width=400
+  Top=218
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#RED09,,,
+  Property=HyperLabel=,"Red09:",,
+  Property=HyperLabel=,,,"FUNCAO_RED09"
+
+CONTROL=SINGLELINEEDIT
+GUID=A9035BEC-AC9A-4BD7-9F79-10CDD922D916
+  Name=RED10
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=78
+  Width=400
+  Top=242
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#RED10,,,
+  Property=HyperLabel=,"Red10:",,
+  Property=HyperLabel=,,,"FUNCAO_RED10"
+
+SUBCONTROLSEND
+DESIGNEREND = JFUNTAB_Page4
+

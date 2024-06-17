@@ -1,0 +1,152 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jcurb
+GUID=E69070A4-1422-4FB6-8677-318A9B9C399B
+  Name=jcurb
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=14
+  Width=497
+  Top=14
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+  Property=HyperLabel=#jcurb,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=6F38E7C5-3C36-4902-8316-0763754EF9AA
+  Name=SC_CURSO
+  Class=FIXEDTEXT
+  Caption=Curso:
+  Order=1
+  Left=17
+  Width=36
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Curso:",,
+  Property=HyperLabel=#SC_CURSO,,,
+
+CONTROL=FIXEDTEXT
+GUID=46923D10-0C1A-4299-AE5F-FE9153F1D196
+  Name=SC_DESCUR
+  Class=FIXEDTEXT
+  Caption=Descur:
+  Order=2
+  Left=22
+  Width=40
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descur:",,
+  Property=HyperLabel=#SC_DESCUR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=C66778B9-5F9F-42F1-AE04-0D2BCCDCBF67
+  Name=CURSO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=77
+  Width=152
+  Top=21
+  Height=20
+  Browseindex=0
+  Browsesize=22
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#CURSO,,,
+  Property=HyperLabel=,"Curso:",,
+  Property=HyperLabel=,,,"CURSO_CURSO"
+
+CONTROL=SINGLELINEEDIT
+GUID=F5717D1F-378D-4877-AE1A-8AB5DF95401E
+  Name=DESCUR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=78
+  Width=400
+  Top=50
+  Height=20
+  Browseindex=2
+  Browsesize=52
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_120
+  Property=HyperLabel=#DESCUR,,,
+  Property=HyperLabel=,"Descrição",,
+  Property=HyperLabel=,,,"CURSO_DESCUR"
+
+CONTROL=FIXEDTEXT
+GUID=D99DC7CD-CB34-43A4-B639-7C635C7A564A
+  Name=SC_GRUPO
+  Class=FIXEDTEXT
+  Caption=Grupo:
+  Order=5
+  Left=237
+  Width=36
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Grupo:",,
+  Property=HyperLabel=#SC_GRUPO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=CF409CD5-0099-41F6-9CBB-AD0C09F64A59
+  Name=GRUPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=285
+  Width=48
+  Top=21
+  Height=20
+  Browseindex=1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_05
+  Property=HyperLabel=#GRUPO,,,
+  Property=HyperLabel=,"Grupo:",,
+  Property=HyperLabel=,,,"CURSO_GRUPO"
+
+SUBCONTROLSEND
+DESIGNEREND = jcurb
+

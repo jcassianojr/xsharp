@@ -1,0 +1,1153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JMO">
+    <Window Name="JMO">
+      <Name>JMO</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Mão de Obra Operador (Funções)</Caption>
+      <Order>0</Order>
+      <Left>114</Left>
+      <Top>114</Top>
+      <Width>637</Width>
+      <Height>576</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Mão de Obra Operador Funções",,</HyperLabel>
+        <ViewAs>#FormView</ViewAs>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <HyperLabel>#JMO,,,</HyperLabel>
+        <ClipperKeys>True</ClipperKeys>
+        <InheritClassName>MYDataWindow</InheritClassName>
+      </ExProperties>
+    </Window>
+    <Control Name="CODIGO">
+      <Name>CODIGO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>9</Left>
+      <Top>21</Top>
+      <Width>110</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>19</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082130560</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_12</FieldSpec>
+        <HyperLabel>#CODIGO,,,</HyperLabel>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>,,,"MP02_CODIGO"</HyperLabel>
+        <TooltipText>"Codigo da Função"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="NOME">
+      <Name>NOME</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>193</Left>
+      <Top>21</Top>
+      <Width>240</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>29</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_30</FieldSpec>
+        <HyperLabel>#NOME,,,</HyperLabel>
+        <HyperLabel>,"Nome:",,</HyperLabel>
+        <HyperLabel>,,,"MP02_NOME"</HyperLabel>
+        <TooltipText>"Descriçao da Função"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="VALOR">
+      <Name>VALOR</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>513</Left>
+      <Top>21</Top>
+      <Width>96</Width>
+      <Height>20</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>24</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_12_2</FieldSpec>
+        <HyperLabel>#VALOR,,,</HyperLabel>
+        <HyperLabel>,"Valor:",,</HyperLabel>
+        <HyperLabel>,,,"MP02_VALOR"</HyperLabel>
+        <TooltipText>"Valor Hora Função"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="AREA">
+      <Name>AREA</Name>
+      <Class>COMBOBOX</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>9</Left>
+      <Top>61</Top>
+      <Width>220</Width>
+      <Height>104</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1075904770</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_02</FieldSpec>
+        <FillUsing>Self:PEGMP05 </FillUsing>
+        <HyperLabel>#AREA,,,</HyperLabel>
+        <TooltipText>"Area "</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="SETOR">
+      <Name>SETOR</Name>
+      <Class>COMBOBOX</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>233</Left>
+      <Top>61</Top>
+      <Width>192</Width>
+      <Height>104</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1075904770</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_12</FieldSpec>
+        <FillUsing>Self:PEGMP06 </FillUsing>
+        <HyperLabel>#SETOR,,,</HyperLabel>
+        <TooltipText>"Setor"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="CODFOLHA">
+      <Name>CODFOLHA</Name>
+      <Class>COMBOBOX</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>429</Left>
+      <Top>61</Top>
+      <Width>202</Width>
+      <Height>148</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1075904770</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_05</FieldSpec>
+        <FillUsing>Self:PEGFUNCAO </FillUsing>
+        <HyperLabel>#CODFOLHA,,,</HyperLabel>
+        <TooltipText>"Codigo Sistema Folha"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="ESCOLA">
+      <Name>ESCOLA</Name>
+      <Class>COMBOBOX</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>85</Left>
+      <Top>89</Top>
+      <Width>204</Width>
+      <Height>106</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1075839234</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_02</FieldSpec>
+        <FillUsing>Self:PEGRHESC </FillUsing>
+        <HyperLabel>#ESCOLA,,,</HyperLabel>
+        <TooltipText>"Escolaridade"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="ESCOLD">
+      <Name>ESCOLD</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>293</Left>
+      <Top>89</Top>
+      <Width>340</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>29</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_100</FieldSpec>
+        <HyperLabel>#ESCOLD,,,</HyperLabel>
+        <HyperLabel>,"Nome:",,</HyperLabel>
+        <HyperLabel>,,,"MP02_NOME"</HyperLabel>
+        <TooltipText>"Descrição Escolaridade"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="SUPIME">
+      <Name>SUPIME</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>9</Order>
+      <Left>85</Left>
+      <Top>161</Top>
+      <Width>124</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>24</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_30</FieldSpec>
+        <HyperLabel>#SUPIME,,,</HyperLabel>
+        <HyperLabel>,"Valor:",,</HyperLabel>
+        <HyperLabel>,,,"MP02_VALOR"</HyperLabel>
+        <HyperLabel>,,"Superior Imediato",</HyperLabel>
+        <TooltipText>"Superior Imediato"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="DATAREV">
+      <Name>DATAREV</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>281</Left>
+      <Top>157</Top>
+      <Width>88</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>24</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>DATE_FIELD</FieldSpec>
+        <HyperLabel>#DATAREV,,,</HyperLabel>
+        <HyperLabel>,"Valor:",,</HyperLabel>
+        <HyperLabel>,,,"MP02_VALOR"</HyperLabel>
+        <HyperLabel>,,"Data Revisao",</HyperLabel>
+        <TooltipText>"Data Revisao Cadastro"</TooltipText>
+        <InheritClassName>DateSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="FT5">
+      <Name>FT5</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Codigo Folha</Caption>
+      <Order>11</Order>
+      <Left>429</Left>
+      <Top>45</Top>
+      <Width>124</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Codigo Folha",,</HyperLabel>
+        <HyperLabel>#FT5,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="JMPp">
+      <Name>JMPp</Name>
+      <Class>SUBDATAWINDOW</Class>
+      <Caption>JMPp</Caption>
+      <Order>12</Order>
+      <Left>305</Left>
+      <Top>185</Top>
+      <Width>188</Width>
+      <Height>132</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>Yes</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#JMPp,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="ExcluirP">
+      <Name>ExcluirP</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Excluir</Caption>
+      <Order>13</Order>
+      <Left>501</Left>
+      <Top>257</Top>
+      <Width>44</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Excluir",,</HyperLabel>
+        <HyperLabel>#ExcluirP,,,</HyperLabel>
+        <TooltipText>"Excluir Procedimento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="INCLUIRP">
+      <Name>INCLUIRP</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Incluir</Caption>
+      <Order>14</Order>
+      <Left>501</Left>
+      <Top>225</Top>
+      <Width>44</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Incluir",,</HyperLabel>
+        <HyperLabel>#INCLUIRP,,,</HyperLabel>
+        <TooltipText>"Incluir Procedimento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="PROCTO">
+      <Name>PROCTO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>15</Order>
+      <Left>497</Left>
+      <Top>201</Top>
+      <Width>70</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_20</FieldSpec>
+        <HyperLabel>#PROCTO,,,</HyperLabel>
+        <TooltipText>"Codigo do Procedimento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="FT6">
+      <Name>FT6</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Procmto</Caption>
+      <Order>16</Order>
+      <Left>501</Left>
+      <Top>185</Top>
+      <Width>44</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Procmto",,</HyperLabel>
+        <HyperLabel>#FT6,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="TIPO">
+      <Name>TIPO</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>TIPO</Caption>
+      <Order>17</Order>
+      <Left>501</Left>
+      <Top>289</Top>
+      <Width>44</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"TIPO",,</HyperLabel>
+        <HyperLabel>#TIPO,,,</HyperLabel>
+        <TooltipText>"Tipo de Procedimento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="TIPOC">
+      <Name>TIPOC</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>TIPO</Caption>
+      <Order>18</Order>
+      <Left>209</Left>
+      <Top>289</Top>
+      <Width>44</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"TIPO",,</HyperLabel>
+        <HyperLabel>#TIPOC,,,</HyperLabel>
+        <TooltipText>"Tipo De Curso"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="ft7">
+      <Name>ft7</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Setor</Caption>
+      <Order>19</Order>
+      <Left>237</Left>
+      <Top>45</Top>
+      <Width>49</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#ft7,,,</HyperLabel>
+        <HyperLabel>,"Setor",,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="TabControl1">
+      <Name>TabControl1</Name>
+      <Class>TABCONTROL</Class>
+      <Caption>
+      </Caption>
+      <Order>20</Order>
+      <Left>13</Left>
+      <Top>321</Top>
+      <Width>608</Width>
+      <Height>244</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#TabControl1,,,</HyperLabel>
+      </ExProperties>
+      <TabPages>
+        <TabPage Name="TABCONTROL1_PAGE1">
+          <Name>TABCONTROL1_PAGE1</Name>
+          <Caption>Descrição</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TABCONTROL1_PAGE2">
+          <Name>TABCONTROL1_PAGE2</Name>
+          <Caption>Requisitos Necessarios</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TABCONTROL1_PAGE3">
+          <Name>TABCONTROL1_PAGE3</Name>
+          <Caption>Requisitos Desejaveis</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TabControl1_Page4">
+          <Name>TabControl1_Page4</Name>
+          <Caption>Habilidade</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TabControl1_Page5">
+          <Name>TabControl1_Page5</Name>
+          <Caption>Experiencia</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TabControl1_Page6">
+          <Name>TabControl1_Page6</Name>
+          <Caption>Page</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+      </TabPages>
+    </Control>
+    <Control Name="porcodigo">
+      <Name>porcodigo</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>21</Order>
+      <Left>125</Left>
+      <Top>5</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_az</Image>
+        <HyperLabel>#porcodigo,,,</HyperLabel>
+        <TooltipText>"Ordenar por Codigo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="pornome">
+      <Name>pornome</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>22</Order>
+      <Left>437</Left>
+      <Top>5</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_az</Image>
+        <HyperLabel>#pornome,,,</HyperLabel>
+        <TooltipText>"Ordenar Nome"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="buscod">
+      <Name>buscod</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>23</Order>
+      <Left>157</Left>
+      <Top>5</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_find</Image>
+        <HyperLabel>#buscod,,,</HyperLabel>
+        <TooltipText>"Bsucar Codigo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="busnom">
+      <Name>busnom</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>24</Order>
+      <Left>469</Left>
+      <Top>5</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_find</Image>
+        <HyperLabel>#busnom,,,</HyperLabel>
+        <TooltipText>"Buscar Nome"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="esccur">
+      <Name>esccur</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>...</Caption>
+      <Order>25</Order>
+      <Left>245</Left>
+      <Top>181</Top>
+      <Width>23</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"...",,</HyperLabel>
+        <HyperLabel>#esccur,,,</HyperLabel>
+        <TooltipText>"Escolher Curso"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="escPRO">
+      <Name>escPRO</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>...</Caption>
+      <Order>26</Order>
+      <Left>545</Left>
+      <Top>181</Top>
+      <Width>23</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"...",,</HyperLabel>
+        <HyperLabel>#escPRO,,,</HyperLabel>
+        <TooltipText>"Escolher Procedimento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Calcular">
+      <Name>Calcular</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Calcular Candidatos</Caption>
+      <Order>27</Order>
+      <Left>409</Left>
+      <Top>157</Top>
+      <Width>104</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Calcular Candidatos",,</HyperLabel>
+        <HyperLabel>#Calcular,,,</HyperLabel>
+        <HyperLabel>,,"Calcular Candidatos",</HyperLabel>
+        <TooltipText>"Calcular Candidatos"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="DATATAL">
+      <Name>DATATAL</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>28</Order>
+      <Left>517</Left>
+      <Top>157</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>19</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082198144</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>DATE_FIELD</FieldSpec>
+        <HyperLabel>#DATATAL,,,</HyperLabel>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>,,,"MP02_CODIGO"</HyperLabel>
+        <HyperLabel>,,"Data Ultimo Calculo Candidato",</HyperLabel>
+        <TooltipText>"Data Ultimo Calculo Candidatos"</TooltipText>
+        <Background>253 254 220</Background>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_SETOR1">
+      <Name>SC_SETOR1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Escolaridade</Caption>
+      <Order>29</Order>
+      <Left>5</Left>
+      <Top>89</Top>
+      <Width>76</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Escolaridade",,</HyperLabel>
+        <HyperLabel>#SC_SETOR1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_SETOR2">
+      <Name>SC_SETOR2</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Sup Imediato</Caption>
+      <Order>30</Order>
+      <Left>5</Left>
+      <Top>161</Top>
+      <Width>76</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Sup Imediato",,</HyperLabel>
+        <HyperLabel>#SC_SETOR2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_SETOR3">
+      <Name>SC_SETOR3</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Data Rev.:</Caption>
+      <Order>31</Order>
+      <Left>213</Left>
+      <Top>161</Top>
+      <Width>68</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Data Rev.:",,</HyperLabel>
+        <HyperLabel>#SC_SETOR3,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CODIGO">
+      <Name>SC_CODIGO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Codigo:</Caption>
+      <Order>32</Order>
+      <Left>9</Left>
+      <Top>5</Top>
+      <Width>47</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>#SC_CODIGO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_VALOR">
+      <Name>SC_VALOR</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Valor:</Caption>
+      <Order>33</Order>
+      <Left>517</Left>
+      <Top>5</Top>
+      <Width>37</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Valor:",,</HyperLabel>
+        <HyperLabel>#SC_VALOR,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_NOME">
+      <Name>SC_NOME</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Mão de Obra Operador (Funções)</Caption>
+      <Order>34</Order>
+      <Left>197</Left>
+      <Top>9</Top>
+      <Width>200</Width>
+      <Height>12</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Mão de Obra Operador Funções",,</HyperLabel>
+        <HyperLabel>#SC_NOME,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FT3">
+      <Name>FT3</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Area</Caption>
+      <Order>35</Order>
+      <Left>9</Left>
+      <Top>45</Top>
+      <Width>49</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Area",,</HyperLabel>
+        <HyperLabel>#FT3,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="CURSO">
+      <Name>CURSO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>36</Order>
+      <Left>209</Left>
+      <Top>201</Top>
+      <Width>70</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_20</FieldSpec>
+        <HyperLabel>#CURSO,,,</HyperLabel>
+        <HyperLabel>,,"Codigo do Curso",</HyperLabel>
+        <TooltipText>"Codigo do Curso"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="INCLUIR">
+      <Name>INCLUIR</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Incluir</Caption>
+      <Order>37</Order>
+      <Left>209</Left>
+      <Top>225</Top>
+      <Width>44</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Incluir",,</HyperLabel>
+        <HyperLabel>#INCLUIR,,,</HyperLabel>
+        <TooltipText>"Incluir Curso"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="Excluir">
+      <Name>Excluir</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Excluir</Caption>
+      <Order>38</Order>
+      <Left>209</Left>
+      <Top>253</Top>
+      <Width>44</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Excluir",,</HyperLabel>
+        <HyperLabel>#Excluir,,,</HyperLabel>
+        <TooltipText>"Excluir Curso"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="FT4">
+      <Name>FT4</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Curso</Caption>
+      <Order>39</Order>
+      <Left>209</Left>
+      <Top>185</Top>
+      <Width>36</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Curso",,</HyperLabel>
+        <HyperLabel>#FT4,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="JMP2">
+      <Name>JMP2</Name>
+      <Class>SUBDATAWINDOW</Class>
+      <Caption>JMP2</Caption>
+      <Order>40</Order>
+      <Left>13</Left>
+      <Top>185</Top>
+      <Width>188</Width>
+      <Height>132</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>Yes</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#JMP2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_SETOR4">
+      <Name>SC_SETOR4</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Escol.Futura</Caption>
+      <Order>41</Order>
+      <Left>5</Left>
+      <Top>113</Top>
+      <Width>76</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Escol.Futura",,</HyperLabel>
+        <HyperLabel>#SC_SETOR4,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="ESCOLa2">
+      <Name>ESCOLa2</Name>
+      <Class>COMBOBOX</Class>
+      <Caption>
+      </Caption>
+      <Order>42</Order>
+      <Left>85</Left>
+      <Top>109</Top>
+      <Width>204</Width>
+      <Height>106</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1075839234</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_02</FieldSpec>
+        <FillUsing>Self:PEGRHES2 </FillUsing>
+        <HyperLabel>#ESCOLa2,,,</HyperLabel>
+        <TooltipText>"Escolaridade Futura"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="ESCOLD2">
+      <Name>ESCOLD2</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>43</Order>
+      <Left>293</Left>
+      <Top>109</Top>
+      <Width>340</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>29</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_100</FieldSpec>
+        <HyperLabel>#ESCOLD2,,,</HyperLabel>
+        <HyperLabel>,"Nome:",,</HyperLabel>
+        <HyperLabel>,,,"MP02_NOME"</HyperLabel>
+        <TooltipText>"Descrição Escolaridade"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="cmdHoje">
+      <Name>cmdHoje</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>H</Caption>
+      <Order>44</Order>
+      <Left>377</Left>
+      <Top>157</Top>
+      <Width>23</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"H",,</HyperLabel>
+        <HyperLabel>#cmdHoje,,,</HyperLabel>
+        <TooltipText>"Marcar a Data Revisao Com Data Atual"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="pegcurdes">
+      <Name>pegcurdes</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>..i</Caption>
+      <Order>45</Order>
+      <Left>257</Left>
+      <Top>225</Top>
+      <Width>24</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"..i",,</HyperLabel>
+        <HyperLabel>#pegcurdes,,,</HyperLabel>
+        <TooltipText>"Clique para Ver o Descriçao do Curso"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="pegprodes">
+      <Name>pegprodes</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>..i</Caption>
+      <Order>46</Order>
+      <Left>549</Left>
+      <Top>225</Top>
+      <Width>24</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"..i",,</HyperLabel>
+        <HyperLabel>#pegprodes,,,</HyperLabel>
+        <TooltipText>"Clique para Ver o Descriçao do Procedimento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="ESCOLa3">
+      <Name>ESCOLa3</Name>
+      <Class>COMBOBOX</Class>
+      <Caption>
+      </Caption>
+      <Order>47</Order>
+      <Left>85</Left>
+      <Top>129</Top>
+      <Width>204</Width>
+      <Height>106</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1075839234</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_02</FieldSpec>
+        <FillUsing>Self:PEGRHES2 </FillUsing>
+        <HyperLabel>#ESCOLa3,,,</HyperLabel>
+        <TooltipText>"Escolaridade Futura"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="ESCOLD3">
+      <Name>ESCOLD3</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>48</Order>
+      <Left>293</Left>
+      <Top>129</Top>
+      <Width>340</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>29</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_100</FieldSpec>
+        <HyperLabel>#ESCOLD3,,,</HyperLabel>
+        <HyperLabel>,"Nome:",,</HyperLabel>
+        <HyperLabel>,,,"MP02_NOME"</HyperLabel>
+        <TooltipText>"Descrição Escolaridade"</TooltipText>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

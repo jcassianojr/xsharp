@@ -1,0 +1,109 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jcodesc
+GUID=E24950D2-196A-47A0-A8B3-10CCEF606394
+  Name=jcodesc
+  Class=DATAWINDOW
+  Caption=Codigos Escolaridade
+  Order=0
+  Left=18
+  Width=520
+  Top=18
+  Height=121
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigos Escolaridade",,
+  Property=HyperLabel=#jcodesc,,,
+  Property=ViewAs=#FormView
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=AC62F123-24B1-4E00-8EE9-67C9E2C1CCCE
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=78
+  Width=39
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo",,
+
+CONTROL=SINGLELINEEDIT
+GUID=FD455DDB-89F2-4A48-85ED-488682798A0E
+  Name=DESCRI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=78
+  Width=327
+  Top=54
+  Height=20
+  Browseindex=1
+  Browsesize=58
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_70
+  Property=HyperLabel=#DESCRI,,,
+  Property=HyperLabel=,"Descritivo",,
+
+CONTROL=PUSHBUTTON
+GUID=491AAF69-7B8D-40E9-BDC7-7ED8340D74D4
+  Name=porcodigo
+  Class=PUSHBUTTON
+  Caption=
+  Order=3
+  Left=161
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#porcodigo,,,
+
+CONTROL=PUSHBUTTON
+GUID=5CF518E2-88F7-454D-84ED-5ADEF72E83FA
+  Name=buscacodigo
+  Class=PUSHBUTTON
+  Caption=
+  Order=4
+  Left=129
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscacodigo,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jcodesc
+

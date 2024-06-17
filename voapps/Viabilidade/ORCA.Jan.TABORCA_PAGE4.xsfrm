@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="TABORCA_Page4">
+    <Window Name="TABORCA_Page4">
+      <Name>TABORCA_Page4</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>20</Left>
+      <Top>32</Top>
+      <Width>648</Width>
+      <Height>235</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073742848</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#TABORCA_Page4,,,</HyperLabel>
+        <ClipperKeys>True</ClipperKeys>
+        <Use>&lt;Share Owner's&gt;</Use>
+      </ExProperties>
+    </Window>
+    <Control Name="RESPO">
+      <Name>RESPO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>245</Left>
+      <Top>41</Top>
+      <Width>260</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#RESPO,,,</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_40</FieldSpec>
+        <TooltipText>"Nome do Responsável pelo Orçamento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="CARGO">
+      <Name>CARGO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>245</Left>
+      <Top>85</Top>
+      <Width>260</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#CARGO,,,</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_40</FieldSpec>
+        <TooltipText>"Cargo do Responsavel Pelo Orçamento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="FT28">
+      <Name>FT28</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Cargo</Caption>
+      <Order>3</Order>
+      <Left>249</Left>
+      <Top>61</Top>
+      <Width>52</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Cargo",,</HyperLabel>
+        <HyperLabel>#FT28,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FT27">
+      <Name>FT27</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Responsável</Caption>
+      <Order>4</Order>
+      <Left>245</Left>
+      <Top>17</Top>
+      <Width>72</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Responsável",,</HyperLabel>
+        <HyperLabel>#FT27,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FT29">
+      <Name>FT29</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Área</Caption>
+      <Order>5</Order>
+      <Left>9</Left>
+      <Top>9</Top>
+      <Width>80</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Área",,</HyperLabel>
+        <HyperLabel>#FT29,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SETOR">
+      <Name>SETOR</Name>
+      <Class>COMBOBOX</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>9</Left>
+      <Top>25</Top>
+      <Width>232</Width>
+      <Height>100</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1075839234</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_02</FieldSpec>
+        <FillUsing>Self:PEGMP05 </FillUsing>
+        <HyperLabel>#SETOR,,,</HyperLabel>
+        <TooltipText>"Escolha a Area de quem Assina o Orçamento"</TooltipText>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

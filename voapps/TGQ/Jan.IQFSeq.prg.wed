@@ -1,0 +1,632 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JTLP
+GUID=D7DC0A27-7634-4665-807F-210FCF0DE7B1
+  Name=JTLP
+  Class=DATAWINDOW
+  Caption=Sequencia de Apurações
+  Order=0
+  Left=76
+  Width=424
+  Top=76
+  Height=254
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Sequencia de Apurações",,
+  Property=HyperLabel=#JTLP,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ClipperKeys=True
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=DATETIMEPICKER
+GUID=EB8C2EC6-6E58-45D9-86C0-6B63684A5AE4
+  Name=DIAINI
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=1
+  Left=74
+  Width=85
+  Top=26
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DIAINI,,,
+
+CONTROL=DATETIMEPICKER
+GUID=929D47C8-5702-4A3C-8F9C-67A0C4B6AC61
+  Name=DIAFIM
+  Class=DATETIMEPICKER
+  Caption=13/02/2021
+  Order=2
+  Left=169
+  Width=85
+  Top=25
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DIAFIM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=2A255EB6-33DA-474B-982D-DF1DE7006C2C
+  Name=MES
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=41
+  Width=32
+  Top=53
+  Height=20
+  Browseindex=1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_02
+  Property=HyperLabel=#MES,,,
+  Property=HyperLabel=,"Mes:",,
+  Property=HyperLabel=,,,"CRTLP_MES"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=E7D471BA-2FE5-4873-ABA5-ECBF1F7AFED4
+  Name=ANO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=109
+  Width=44
+  Top=53
+  Height=20
+  Browseindex=2
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_04
+  Property=HyperLabel=#ANO,,,
+  Property=HyperLabel=,"Ano:",,
+  Property=HyperLabel=,,,"CRTLP_ANO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=6AF6FBB8-B810-4227-9841-6FCC4067BC6D
+  Name=DESCRI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=209
+  Width=196
+  Top=53
+  Height=20
+  Browseindex=3
+  Browsesize=16
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_30
+  Property=HyperLabel=#DESCRI,,,
+  Property=HyperLabel=,"Competencia",,
+  Property=HyperLabel=,,,"CRTLP_DESCRI"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=6CB1BEC7-E18C-4560-AF89-413DEDB45861
+  Name=SC_SEQ
+  Class=FIXEDTEXT
+  Caption=Seq:
+  Order=6
+  Left=11
+  Width=30
+  Top=11
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Seq:",,
+  Property=HyperLabel=#SC_SEQ,,,
+
+CONTROL=FIXEDTEXT
+GUID=B892C2A4-E914-46F8-87C2-1A9906F4BBBF
+  Name=SC_DIAINI
+  Class=FIXEDTEXT
+  Caption=Início
+  Order=7
+  Left=73
+  Width=40
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Início",,
+  Property=HyperLabel=#SC_DIAINI,,,
+
+CONTROL=FIXEDTEXT
+GUID=1181132D-161A-468B-A420-9B74D25D94A7
+  Name=SC_MES
+  Class=FIXEDTEXT
+  Caption=Mês:
+  Order=8
+  Left=13
+  Width=26
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mês:",,
+  Property=HyperLabel=#SC_MES,,,
+
+CONTROL=FIXEDTEXT
+GUID=613BA793-F531-41E8-9A89-CADE43234460
+  Name=SC_DESCRI
+  Class=FIXEDTEXT
+  Caption=Descrição:
+  Order=9
+  Left=157
+  Width=52
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descrição:",,
+  Property=HyperLabel=#SC_DESCRI,,,
+
+CONTROL=FIXEDTEXT
+GUID=03BA9663-CE01-4A11-AEF7-2E80C3126E23
+  Name=SC_ANO
+  Class=FIXEDTEXT
+  Caption=Ano:
+  Order=10
+  Left=81
+  Width=24
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ano:",,
+  Property=HyperLabel=#SC_ANO,,,
+
+CONTROL=FIXEDTEXT
+GUID=D12B37A6-28F7-459A-A869-0527AD980772
+  Name=SC_DIAFIM
+  Class=FIXEDTEXT
+  Caption=Fim
+  Order=11
+  Left=169
+  Width=50
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fim",,
+  Property=HyperLabel=#SC_DIAFIM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=91984DDF-93E0-49AA-BF40-333D91C8A0D3
+  Name=SEQ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=13
+  Width=50
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#SEQ,,,
+  Property=HyperLabel=,"Seq:",,
+  Property=HyperLabel=,,,"CRTLP_SEQ"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=60271219-A3D7-4266-9F5A-BA68FA6C7738
+  Name=APURAR
+  Class=PUSHBUTTON
+  Caption=CRM 
+  Order=19
+  Left=233
+  Width=68
+  Top=97
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"CRM ",,
+  Property=HyperLabel=#APURAR,,,
+
+CONTROL=PUSHBUTTON
+GUID=696E8DAD-883E-48B2-8EEC-E05618087816
+  Name=ACUANO
+  Class=PUSHBUTTON
+  Caption=Semestra/Anual
+  Order=22
+  Left=125
+  Width=80
+  Top=117
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Semestra/Anual",,
+  Property=HyperLabel=#ACUANO,,,
+
+CONTROL=PUSHBUTTON
+GUID=A34BBD25-D3D9-4B9B-A233-6458C9311C81
+  Name=Limpar
+  Class=PUSHBUTTON
+  Caption=Limpar
+  Order=23
+  Left=49
+  Width=56
+  Top=117
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Limpar",,
+  Property=HyperLabel=#Limpar,,,
+
+CONTROL=PUSHBUTTON
+GUID=C58119F5-1344-4305-B836-2702657D6D76
+  Name=pegcomp
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=24
+  Left=257
+  Width=32
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#pegcomp,,,
+
+CONTROL=FIXEDTEXT
+GUID=A1CB8B3E-9504-4F42-B4AB-7016C9468C58
+  Name=SC_SEQ1
+  Class=FIXEDTEXT
+  Caption=Semestral
+  Order=25
+  Left=113
+  Width=56
+  Top=89
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Semestral",,
+  Property=HyperLabel=#SC_SEQ1,,,
+
+CONTROL=FIXEDTEXT
+GUID=A38EEFCE-3AB5-4219-9643-F05E3604B54B
+  Name=SC_SEQ2
+  Class=FIXEDTEXT
+  Caption=Anual
+  Order=26
+  Left=13
+  Width=40
+  Top=89
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Anual",,
+  Property=HyperLabel=#SC_SEQ2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=3AA718EA-884D-4A10-89C4-F474F205B9E3
+  Name=SEMES
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=27
+  Left=169
+  Width=50
+  Top=89
+  Height=20
+  Browseindex=5
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#SEMES,,,
+  Property=HyperLabel=,"Semes",,
+  Property=HyperLabel=,,,"CRTLP_SEQ"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=733121F9-3849-4A6A-ACED-3E2504E44A68
+  Name=ANUAL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=28
+  Left=53
+  Width=50
+  Top=89
+  Height=20
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#ANUAL,,,
+  Property=HyperLabel=,"Anual",,
+  Property=HyperLabel=,,,"CRTLP_SEQ"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=A70293F0-E592-4AD5-9912-17450AB8347E
+  Name=Buscanum
+  Class=PUSHBUTTON
+  Caption=
+  Order=29
+  Left=325
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#Buscanum,,,
+
+CONTROL=PUSHBUTTON
+GUID=B2B53310-C5B9-4F3F-9292-5DA243650B0C
+  Name=PORNUM
+  Class=PUSHBUTTON
+  Caption=
+  Order=30
+  Left=361
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#PORNUM,,,
+
+CONTROL=PUSHBUTTON
+GUID=6211453F-AAA2-412E-BF90-892356D353B8
+  Name=APURAR1
+  Class=PUSHBUTTON
+  Caption=RIRM/RIST
+  Order=31
+  Left=317
+  Width=68
+  Top=97
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"RIRM/RIST",,
+  Property=HyperLabel=#APURAR1,,,
+
+CONTROL=FIXEDTEXT
+GUID=6563494C-59F5-42B0-B517-22F072746EAA
+  Name=Apurando
+  Class=FIXEDTEXT
+  Caption=
+  Order=33
+  Left=13
+  Width=392
+  Top=185
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#Apurando,,,
+
+CONTROL=PROGRESSBAR
+GUID=D3424792-7D7B-4908-9CC2-BBF9526BA775
+  Name=ProgBar
+  Class=PROGRESSBAR
+  Caption=
+  Order=34
+  Left=9
+  Width=396
+  Top=209
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Range=0,
+  Property=Range=,100
+  Property=HyperLabel=#ProgBar,,,
+
+CONTROL=PUSHBUTTON
+GUID=2E35D583-8CBE-4E0F-BB4E-1B3B15B13A8A
+  Name=APURAR2
+  Class=PUSHBUTTON
+  Caption=CRM
+  Order=35
+  Left=233
+  Width=68
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"CRM",,
+  Property=HyperLabel=#APURAR2,,,
+
+CONTROL=PUSHBUTTON
+GUID=7D323415-032F-4D38-A5AD-6113424279ED
+  Name=APURAR3
+  Class=PUSHBUTTON
+  Caption=RIRM/RIST
+  Order=36
+  Left=317
+  Width=68
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"RIRM/RIST",,
+  Property=HyperLabel=#APURAR3,,,
+
+CONTROL=GROUPBOX
+GUID=EF9D0DDC-1F3E-47D5-A56F-EBB58148221F
+  Name=GroupBox1
+  Class=GROUPBOX
+  Caption=Apurar Mensal -  IAC Prog Entrega
+  Order=37
+  Left=225
+  Width=180
+  Top=81
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Apurar Mensal -  IAC Prog Entrega",,
+  Property=HyperLabel=#GroupBox1,,,
+
+CONTROL=GROUPBOX
+GUID=F01969A4-2C6B-4574-BEEC-BDAB45F99DD0
+  Name=GroupBox2
+  Class=GROUPBOX
+  Caption=Apurar Mensal -  IAC AR
+  Order=38
+  Left=225
+  Width=180
+  Top=133
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Apurar Mensal -  IAC AR",,
+  Property=HyperLabel=#GroupBox2,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JTLP
+

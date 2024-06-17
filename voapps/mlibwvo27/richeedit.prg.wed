@@ -1,0 +1,288 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,_JRTF
+GUID=9BD86FAE-FC59-46B6-87BF-B4031721D11A
+  Name=_JRTF
+  Class=DATADIALOG
+  Caption=Texto
+  Order=0
+  Left=34
+  Width=628
+  Top=34
+  Height=447
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Texto",,
+  Property=HyperLabel=#_JRTF,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=298A94AA-3553-4554-B1E1-973AD049D9CA
+  Name=theFixedText13
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=1
+  Left=557
+  Width=64
+  Top=197
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText13,,,
+
+CONTROL=PUSHBUTTON
+GUID=4CF65832-D775-4583-806D-5E64E326E353
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=2
+  Left=557
+  Width=60
+  Top=149
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ICO_SAIR
+  Property=TooltipText="Clique Para Retornar"
+
+CONTROL=FIXEDTEXT
+GUID=0203CBD6-08B0-44D2-BBF3-A447A0302085
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Conf Imp
+  Order=3
+  Left=557
+  Width=56
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Conf Imp",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=PUSHBUTTON
+GUID=C7E6FD66-C511-491D-ACC5-2C7646EEADB6
+  Name=CONFIMP
+  Class=PUSHBUTTON
+  Caption=
+  Order=4
+  Left=557
+  Width=60
+  Top=81
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#CONFIMP,,,
+  Property=Image=ICO_PRINTCFG
+  Property=TooltipText="Clique Para Configurar a Impressora"
+
+CONTROL=FIXEDTEXT
+GUID=ECCDCCD5-73DA-4D3F-9D94-D8C05717F563
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Imprimir
+  Order=5
+  Left=557
+  Width=60
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Imprimir",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=PUSHBUTTON
+GUID=6947445F-DD46-4E7A-A1B5-C0E60301BA90
+  Name=imprimir
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=557
+  Width=60
+  Top=13
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#imprimir,,,
+  Property=Image=ICO_PRINT
+  Property=TooltipText="Clique Para Imprimir"
+
+CONTROL=RICHEDIT
+GUID=675A8A24-D35A-4BF3-B0E5-70228B1E1178
+  Name=Texto
+  Class=RICHEDIT
+  Caption=
+  Order=7
+  Left=14
+  Width=539
+  Top=13
+  Height=412
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1085280324
+  Exstyles=512
+  Property=HyperLabel=#Texto,,,
+
+CONTROL=PUSHBUTTON
+GUID=4F6BB6B2-F2EE-45B9-B1FD-62CA4A01932C
+  Name=SalvarTXT
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=557
+  Width=62
+  Top=217
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#SalvarTXT,,,
+  Property=Image=ICO_GRAVA
+
+CONTROL=PUSHBUTTON
+GUID=1401C334-AA08-40E5-8C66-6878ED6CB5E3
+  Name=SalvarRTF
+  Class=PUSHBUTTON
+  Caption=
+  Order=9
+  Left=557
+  Width=62
+  Top=285
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#SalvarRTF,,,
+  Property=Image=ICO_GRAVA
+
+CONTROL=FIXEDTEXT
+GUID=ABAFDAFD-38FB-4123-A4A8-FB1C2EDEF1CD
+  Name=theFixedText14
+  Class=FIXEDTEXT
+  Caption=GravarTxt
+  Order=10
+  Left=557
+  Width=64
+  Top=265
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"GravarTxt",,
+  Property=HyperLabel=#theFixedText14,,,
+
+CONTROL=FIXEDTEXT
+GUID=F217BA02-25D8-43E1-87C4-EC778747B29C
+  Name=theFixedText15
+  Class=FIXEDTEXT
+  Caption=GravarRTF
+  Order=11
+  Left=557
+  Width=64
+  Top=333
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"GravarRTF",,
+  Property=HyperLabel=#theFixedText15,,,
+
+CONTROL=PUSHBUTTON
+GUID=C95BF52C-CBA0-4BB7-A8F6-2429F4C089F6
+  Name=cnvoem
+  Class=PUSHBUTTON
+  Caption=Ansi->Oem
+  Order=12
+  Left=557
+  Width=64
+  Top=353
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Ansi->Oem",,
+  Property=TooltipText="Convert AnsiWindow->Oem Dos"
+  Property=HyperLabel=#cnvoem,,,
+
+CONTROL=PUSHBUTTON
+GUID=50F3F7C7-83C7-4080-B95B-4A2340BEF767
+  Name=cnvansi
+  Class=PUSHBUTTON
+  Caption=Oem->Ansi
+  Order=13
+  Left=557
+  Width=64
+  Top=377
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Oem->Ansi",,
+  Property=TooltipText="Convert Oem-Dos->AnsiWindow"
+  Property=HyperLabel=#cnvansi,,,
+
+SUBCONTROLSEND
+DESIGNEREND = _JRTF
+

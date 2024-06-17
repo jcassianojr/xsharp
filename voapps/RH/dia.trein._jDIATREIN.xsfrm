@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="_jDIATREIN">
+    <Window Name="_jDIATREIN">
+      <Name>_jDIATREIN</Name>
+      <Class>DATADIALOG</Class>
+      <Caption>Visualizando Treinamento</Caption>
+      <Order>0</Order>
+      <Left>24</Left>
+      <Top>24</Top>
+      <Width>701</Width>
+      <Height>522</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Visualizando Treinamento",,</HyperLabel>
+        <HyperLabel>#_jDIATREIN,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="ZJTRE">
+      <Name>ZJTRE</Name>
+      <Class>SUBDATAWINDOW</Class>
+      <Caption>ZJTRE</Caption>
+      <Order>1</Order>
+      <Left>14</Left>
+      <Top>6</Top>
+      <Width>631</Width>
+      <Height>507</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>Yes</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#ZJTRE,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Encerrar">
+      <Name>Encerrar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>648</Left>
+      <Top>9</Top>
+      <Width>52</Width>
+      <Height>36</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#Encerrar,,,</HyperLabel>
+        <Image>ico_sair</Image>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText9">
+      <Name>theFixedText9</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Retornar</Caption>
+      <Order>3</Order>
+      <Left>649</Left>
+      <Top>45</Top>
+      <Width>51</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Retornar",,</HyperLabel>
+        <HyperLabel>#theFixedText9,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

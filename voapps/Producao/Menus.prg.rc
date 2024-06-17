@@ -1,0 +1,79 @@
+ EMPTYSHELLMENU ACCELERATORS
+Begin
+	115, 25071, ALT, VIRTKEY
+	112, 25090, VIRTKEY
+End
+ 
+ EMPTYSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		POPUP "Desempenho"
+		BEGIN
+			MENUITEM "Desempenho", 25048
+			MENUITEM "Apurar Anual", 25049
+		END
+		POPUP "Tempo Produtos Apurados"
+		BEGIN
+			MENUITEM "Atual", 25051
+			MENUITEM "Baixados", 25052
+			POPUP "Baixar"
+			BEGIN
+				MENUITEM "Um Produto", 25054
+				MENUITEM "Uma Operação", 25055
+				MENUITEM "Uma Competencia", 25056
+				MENUITEM "Produtos Não Ativos", 25057
+				MENUITEM "Seq Obsoletas", 25058
+			END
+			POPUP "Retornar"
+			BEGIN
+				MENUITEM "Um Produto", 25060
+				MENUITEM "Uma Operação", 25061
+				MENUITEM "Uma Competência", 25062
+			END
+		END
+		MENUITEM "Importar Processo", 25063
+		POPUP "IAC - Indice de Atendimentos Cliente"
+		BEGIN
+			MENUITEM "Apuracao Importacao", 25065
+			MENUITEM "Consulta Competencia", 25066
+			MENUITEM "Cliente Grupo/Lx", 25067
+		END
+		MENUITEM SEPARATOR
+		MENUITEM "Indexar", 25069
+		MENUITEM "C&onfigurar Impressora ..", 25070
+		MENUITEM "&Sair\tALT+F4", 25071
+	END
+	POPUP "&Relatorios"
+	BEGIN
+		MENUITEM "Funcionários", 25073
+		MENUITEM "Equipamentos", 25074
+		MENUITEM "Paradas", 25075
+		MENUITEM "Produtos", 25076
+		MENUITEM "Comparativos/Outros", 25077
+		MENUITEM "WRPT Producao", 25078
+		MENUITEM "WRPT IAC", 25079
+		MENUITEM "WRPT", 25080
+		MENUITEM "WRPT Integrados", 25081
+		MENUITEM "lstview logix", 25082
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		POPUP "Email"
+		BEGIN
+			MENUITEM "Consulta", 25085
+			MENUITEM "Geral", 25086
+			MENUITEM "Configuracao", 25087
+		END
+		MENUITEM "Checar CGC/CPF/IE...", 25088
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Indice\tF1", 25090
+		MENUITEM "&Usando a Ajuda", 25091
+		MENUITEM SEPARATOR
+		MENUITEM "Atualizações", 25093
+		MENUITEM "&Sobre...", 32031
+	END
+End
+ 

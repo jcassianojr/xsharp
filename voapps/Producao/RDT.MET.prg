@@ -1,0 +1,39 @@
+PARTIAL CLASS JRDT
+METHOD APPEND 
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("PR","PR")	
+
+METHOD DELETE 	
+
+METHOD foto( ) 
+LOCAL oFOTOVIEW AS fotoview	
+LOCAL cCODIGO AS STRING
+cCODIGO:=TIRAOUT(StrTran(AllTrim(SELF:SERVER:FIELDGET("CODIGO"))," ",""))
+IF Empty(cCODIGO)	
+   alert("Codigo Produto Nao Preenchido")	
+   RETURN .f.
+ENDIF	
+OFOTOVIEW:=fotoview{SELF,ZDIRFOTO+cCODIGO+".JPG",cCODIGO}
+OFOTOVIEW:SHOW()
+	
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+ RETURN SELF
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+
+
+END CLASS

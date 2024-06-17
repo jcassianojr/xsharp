@@ -1,0 +1,1034 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JPRNECI
+GUID=D12D1254-98E4-4082-B781-1000C9FB5AB9
+  Name=JPRNECI
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=32
+  Width=404
+  Top=17
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#FormView
+  Property=HyperLabel=#JPRNECI,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=945FDCF2-DF5F-4AE4-9084-9CD8A0B1D38D
+  Name=SC_TIPOENT
+  Class=FIXEDTEXT
+  Caption=Tipo
+  Order=1
+  Left=13
+  Width=32
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tipo",,
+  Property=HyperLabel=#SC_TIPOENT,,,
+
+CONTROL=FIXEDTEXT
+GUID=46971BFF-D230-42AD-A0C7-6DF9201A0C77
+  Name=SC_CODCOMP
+  Class=FIXEDTEXT
+  Caption=Componente
+  Order=2
+  Left=45
+  Width=80
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Componente",,
+  Property=HyperLabel=#SC_CODCOMP,,,
+
+CONTROL=FIXEDTEXT
+GUID=9535FE6E-1AE9-413E-846A-54FACCD38C66
+  Name=SC_QTDECOMP
+  Class=FIXEDTEXT
+  Caption=Peso Qtde
+  Order=3
+  Left=189
+  Width=56
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Peso Qtde",,
+  Property=HyperLabel=#SC_QTDECOMP,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=6E3473C9-9A4F-4CA8-A3E4-446F3BEBC6B7
+  Name=TIPOENT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=13
+  Width=24
+  Top=21
+  Height=20
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#TIPOENT,,,
+  Property=HyperLabel=,"Tipo",,
+  Property=HyperLabel=,,,"PRNECI_TIPOENT"
+
+CONTROL=SINGLELINEEDIT
+GUID=BFCA71EB-F5DA-4881-8BCD-233987CB7762
+  Name=CODCOMP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=45
+  Width=140
+  Top=21
+  Height=20
+  Browseindex=1
+  Browsesize=31
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#CODCOMP,,,
+  Property=HyperLabel=,"Codigo",,
+  Property=HyperLabel=,,,"PRNECI_CODCOMP"
+
+CONTROL=SINGLELINEEDIT
+GUID=042FA02F-9F0F-42AD-A50E-979A6576EC97
+  Name=QTDECOMP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=189
+  Width=84
+  Top=21
+  Height=20
+  Browseindex=2
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_10_5
+  Property=HyperLabel=#QTDECOMP,,,
+  Property=HyperLabel=,"Qtde",,
+  Property=HyperLabel=,,,"PRNECI_QTDECOMP"
+
+CONTROL=SINGLELINEEDIT
+GUID=C55ED13D-564C-4399-8F8C-AF3DA14AE123
+  Name=QTDI01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=45
+  Width=96
+  Top=45
+  Height=20
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI01,,,
+  Property=HyperLabel=,"Qtdi01:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI01"
+
+CONTROL=SINGLELINEEDIT
+GUID=66809F55-5741-4E90-87B1-FCE80121B0BA
+  Name=QTDI02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=45
+  Width=96
+  Top=61
+  Height=20
+  Browseindex=4
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI02,,,
+  Property=HyperLabel=,"Qtdi02:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI02"
+
+CONTROL=SINGLELINEEDIT
+GUID=2C34A900-10A5-4219-A58A-532D51E71B26
+  Name=QTDI03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=45
+  Width=96
+  Top=77
+  Height=20
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI03,,,
+  Property=HyperLabel=,"Qtdi03:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI03"
+
+CONTROL=SINGLELINEEDIT
+GUID=B5F4C399-71C1-4377-9E9B-1AC0545425C2
+  Name=QTDI04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=45
+  Width=96
+  Top=93
+  Height=20
+  Browseindex=6
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI04,,,
+  Property=HyperLabel=,"Qtdi04:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI04"
+
+CONTROL=SINGLELINEEDIT
+GUID=768FF6C4-2314-4369-B21E-0B9C02088E45
+  Name=QTDI05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=45
+  Width=96
+  Top=109
+  Height=20
+  Browseindex=7
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI05,,,
+  Property=HyperLabel=,"Qtdi05:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI05"
+
+CONTROL=SINGLELINEEDIT
+GUID=02100E8C-F626-455C-A565-E6FA7F5EACAB
+  Name=QTDI06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=45
+  Width=96
+  Top=125
+  Height=20
+  Browseindex=8
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI06,,,
+  Property=HyperLabel=,"Qtdi06:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI06"
+
+CONTROL=SINGLELINEEDIT
+GUID=BF7077D1-D86C-4B08-8BB1-04409F977DE2
+  Name=QTDI07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=23
+  Left=45
+  Width=96
+  Top=141
+  Height=20
+  Browseindex=9
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI07,,,
+  Property=HyperLabel=,"Qtdi07:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI07"
+
+CONTROL=SINGLELINEEDIT
+GUID=990396D8-9C11-4588-B1D6-A09E841A8A71
+  Name=QTDI08
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=24
+  Left=45
+  Width=96
+  Top=157
+  Height=20
+  Browseindex=10
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI08,,,
+  Property=HyperLabel=,"Qtdi08:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI08"
+
+CONTROL=SINGLELINEEDIT
+GUID=763AA75C-60B9-42E7-931F-7DABF3CFC68A
+  Name=QTDI09
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=25
+  Left=45
+  Width=96
+  Top=173
+  Height=20
+  Browseindex=11
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI09,,,
+  Property=HyperLabel=,"Qtdi09:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI09"
+
+CONTROL=SINGLELINEEDIT
+GUID=969569AF-0884-49C3-9871-0579D0EA40F4
+  Name=QTDI10
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=26
+  Left=45
+  Width=96
+  Top=189
+  Height=20
+  Browseindex=12
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI10,,,
+  Property=HyperLabel=,"Qtdi10:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI10"
+
+CONTROL=SINGLELINEEDIT
+GUID=3E1E3D7F-E02B-4BE3-AE47-F5A5C226C768
+  Name=QTDI11
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=32
+  Left=169
+  Width=96
+  Top=45
+  Height=20
+  Browseindex=13
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI11,,,
+  Property=HyperLabel=,"Qtdi11:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI11"
+
+CONTROL=SINGLELINEEDIT
+GUID=13569F88-6301-4977-899A-E41B1F124525
+  Name=QTDI12
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=33
+  Left=169
+  Width=96
+  Top=61
+  Height=20
+  Browseindex=14
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI12,,,
+  Property=HyperLabel=,"Qtdi12:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI12"
+
+CONTROL=SINGLELINEEDIT
+GUID=F4FBAE15-E258-4DD4-A504-856CE6F06E0E
+  Name=QTDI13
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=34
+  Left=169
+  Width=96
+  Top=77
+  Height=20
+  Browseindex=15
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI13,,,
+  Property=HyperLabel=,"Qtdi13:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI13"
+
+CONTROL=SINGLELINEEDIT
+GUID=F2EB743E-C94A-432B-BA0B-BB77130DD5B6
+  Name=QTDI14
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=35
+  Left=169
+  Width=96
+  Top=93
+  Height=20
+  Browseindex=16
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI14,,,
+  Property=HyperLabel=,"Qtdi14:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI14"
+
+CONTROL=SINGLELINEEDIT
+GUID=4546B7C8-03ED-4096-8470-241308668805
+  Name=QTDI15
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=36
+  Left=169
+  Width=96
+  Top=109
+  Height=20
+  Browseindex=17
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI15,,,
+  Property=HyperLabel=,"Qtdi15:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI15"
+
+CONTROL=SINGLELINEEDIT
+GUID=7C001231-FE9E-4A89-A48D-8080F9D4C5F4
+  Name=QTDI16
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=42
+  Left=169
+  Width=96
+  Top=125
+  Height=20
+  Browseindex=18
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI16,,,
+  Property=HyperLabel=,"Qtdi16:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI16"
+
+CONTROL=SINGLELINEEDIT
+GUID=FF408C3F-F445-4313-99A5-A0326661D5B9
+  Name=QTDI17
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=43
+  Left=169
+  Width=96
+  Top=141
+  Height=20
+  Browseindex=19
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI17,,,
+  Property=HyperLabel=,"Qtdi17:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI17"
+
+CONTROL=SINGLELINEEDIT
+GUID=EE5F8138-DA33-4402-B85D-228A7BE895CC
+  Name=QTDI18
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=44
+  Left=169
+  Width=96
+  Top=157
+  Height=20
+  Browseindex=20
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI18,,,
+  Property=HyperLabel=,"Qtdi18:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI18"
+
+CONTROL=SINGLELINEEDIT
+GUID=BAC5A3DB-EF26-4602-AADF-704BFE69CF57
+  Name=QTDI19
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=45
+  Left=169
+  Width=96
+  Top=173
+  Height=20
+  Browseindex=21
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI19,,,
+  Property=HyperLabel=,"Qtdi19:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI19"
+
+CONTROL=SINGLELINEEDIT
+GUID=0B1F5CA1-439D-48E0-A48F-75B1C200416B
+  Name=QTDI20
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=46
+  Left=169
+  Width=96
+  Top=189
+  Height=20
+  Browseindex=22
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#QTDI20,,,
+  Property=HyperLabel=,"Qtdi20:",,
+  Property=HyperLabel=,,,"PRNECI_QTDI20"
+
+CONTROL=FIXEDTEXT
+GUID=CC171881-1D07-4BB7-9A42-C9FEAD5EB8BD
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=01
+  Order=47
+  Left=25
+  Width=15
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"01",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=FIXEDTEXT
+GUID=7E031538-AD6D-4EFD-A57B-BA7434DA852F
+  Name=FixedText4
+  Class=FIXEDTEXT
+  Caption=02
+  Order=48
+  Left=25
+  Width=15
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"02",,
+  Property=HyperLabel=#FixedText4,,,
+
+CONTROL=FIXEDTEXT
+GUID=09B0096F-DDCF-4B46-A6A7-FA7F9854D2CD
+  Name=FixedText5
+  Class=FIXEDTEXT
+  Caption=03
+  Order=49
+  Left=25
+  Width=15
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"03",,
+  Property=HyperLabel=#FixedText5,,,
+
+CONTROL=FIXEDTEXT
+GUID=0D050957-A761-48F5-97E5-427F63DCADCA
+  Name=FixedText6
+  Class=FIXEDTEXT
+  Caption=04
+  Order=50
+  Left=25
+  Width=15
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"04",,
+  Property=HyperLabel=#FixedText6,,,
+
+CONTROL=FIXEDTEXT
+GUID=82C5ABF9-D8C6-4A28-9E0E-70FBA6EA450E
+  Name=FixedText7
+  Class=FIXEDTEXT
+  Caption=05
+  Order=51
+  Left=25
+  Width=15
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"05",,
+  Property=HyperLabel=#FixedText7,,,
+
+CONTROL=FIXEDTEXT
+GUID=5D0A7385-2829-4A0D-B8A3-E2694920C0C9
+  Name=FixedText8
+  Class=FIXEDTEXT
+  Caption=06
+  Order=52
+  Left=25
+  Width=15
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"06",,
+  Property=HyperLabel=#FixedText8,,,
+
+CONTROL=FIXEDTEXT
+GUID=167B5E97-5396-4D18-B7AF-D0DF752F7548
+  Name=FixedText9
+  Class=FIXEDTEXT
+  Caption=07
+  Order=53
+  Left=25
+  Width=15
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"07",,
+  Property=HyperLabel=#FixedText9,,,
+
+CONTROL=FIXEDTEXT
+GUID=39D274F0-A163-48A3-9DB3-987494A20628
+  Name=FixedText10
+  Class=FIXEDTEXT
+  Caption=08
+  Order=54
+  Left=25
+  Width=15
+  Top=157
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"08",,
+  Property=HyperLabel=#FixedText10,,,
+
+CONTROL=FIXEDTEXT
+GUID=B94929B3-6D92-40FB-BCCF-878FEB5B06CB
+  Name=FixedText11
+  Class=FIXEDTEXT
+  Caption=09
+  Order=55
+  Left=25
+  Width=15
+  Top=173
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"09",,
+  Property=HyperLabel=#FixedText11,,,
+
+CONTROL=FIXEDTEXT
+GUID=66CE4D65-ED18-4EE8-A7CB-4AD0820A09D7
+  Name=FixedText12
+  Class=FIXEDTEXT
+  Caption=10
+  Order=56
+  Left=25
+  Width=15
+  Top=193
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"10",,
+  Property=HyperLabel=#FixedText12,,,
+
+CONTROL=FIXEDTEXT
+GUID=B5486D6E-F557-4C0B-9E64-E68BCBE8C528
+  Name=FixedText13
+  Class=FIXEDTEXT
+  Caption=20
+  Order=57
+  Left=149
+  Width=15
+  Top=189
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"20",,
+  Property=HyperLabel=#FixedText13,,,
+
+CONTROL=FIXEDTEXT
+GUID=1465B08E-C376-4DE0-BCF6-F376C206D9B0
+  Name=FixedText14
+  Class=FIXEDTEXT
+  Caption=19
+  Order=58
+  Left=149
+  Width=15
+  Top=173
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"19",,
+  Property=HyperLabel=#FixedText14,,,
+
+CONTROL=FIXEDTEXT
+GUID=4FA2EB80-D18B-405D-94E4-3F011BBDB478
+  Name=FixedText15
+  Class=FIXEDTEXT
+  Caption=18
+  Order=59
+  Left=149
+  Width=15
+  Top=157
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"18",,
+  Property=HyperLabel=#FixedText15,,,
+
+CONTROL=FIXEDTEXT
+GUID=ED081E0D-DAD3-4A8A-B3F2-FDCC83E62662
+  Name=FixedText16
+  Class=FIXEDTEXT
+  Caption=17
+  Order=60
+  Left=149
+  Width=15
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"17",,
+  Property=HyperLabel=#FixedText16,,,
+
+CONTROL=FIXEDTEXT
+GUID=85E6F0D5-2849-488C-9362-122021F79CD8
+  Name=FixedText17
+  Class=FIXEDTEXT
+  Caption=16
+  Order=61
+  Left=149
+  Width=15
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"16",,
+  Property=HyperLabel=#FixedText17,,,
+
+CONTROL=FIXEDTEXT
+GUID=5DB59729-766B-470B-89F8-32025D28FD97
+  Name=FixedText18
+  Class=FIXEDTEXT
+  Caption=15
+  Order=62
+  Left=149
+  Width=15
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"15",,
+  Property=HyperLabel=#FixedText18,,,
+
+CONTROL=FIXEDTEXT
+GUID=4D51E305-3A15-4ABE-905D-9EFCD5B8BC43
+  Name=FixedText19
+  Class=FIXEDTEXT
+  Caption=14
+  Order=63
+  Left=149
+  Width=16
+  Top=93
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"14",,
+  Property=HyperLabel=#FixedText19,,,
+
+CONTROL=FIXEDTEXT
+GUID=77738D2D-086F-4828-8B21-0E42DFCFBA38
+  Name=FixedText20
+  Class=FIXEDTEXT
+  Caption=13
+  Order=64
+  Left=149
+  Width=15
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"13",,
+  Property=HyperLabel=#FixedText20,,,
+
+CONTROL=FIXEDTEXT
+GUID=1263A6A2-C336-40D2-A130-2511656946B7
+  Name=FixedText21
+  Class=FIXEDTEXT
+  Caption=12
+  Order=65
+  Left=149
+  Width=15
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"12",,
+  Property=HyperLabel=#FixedText21,,,
+
+CONTROL=FIXEDTEXT
+GUID=16D63319-937B-409D-82A6-636B446E8487
+  Name=FixedText22
+  Class=FIXEDTEXT
+  Caption=11
+  Order=66
+  Left=149
+  Width=15
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"11",,
+  Property=HyperLabel=#FixedText22,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=81D7A5AC-695D-4C04-95A8-956E7390A2FE
+  Name=ESTQPRO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=67
+  Left=277
+  Width=84
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_12
+  Property=HyperLabel=#ESTQPRO,,,
+  Property=HyperLabel=,"Qtde",,
+  Property=HyperLabel=,,,"PRNECI_QTDECOMP"
+  Property=HyperLabel=,,"e",
+
+CONTROL=FIXEDTEXT
+GUID=2D72BFAF-002A-431E-9D7B-1F2BBF3538FE
+  Name=SC_QTDECOMP1
+  Class=FIXEDTEXT
+  Caption=Estq Proc
+  Order=68
+  Left=277
+  Width=56
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Estq Proc",,
+  Property=HyperLabel=#SC_QTDECOMP1,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JPRNECI
+

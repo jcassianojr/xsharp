@@ -1,0 +1,196 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,jsacfem
+GUID=A14CC888-E0D2-43F6-9D5C-2178070BB219
+  Name=jsacfem
+  Class=DATADIALOG
+  Caption=Revisao Femea
+  Order=0
+  Left=20
+  Width=369
+  Top=20
+  Height=240
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Revisao Femea",,
+  Property=HyperLabel=#jsacfem,,,
+  Property=Use=<Share Owner's>
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=DAD2A38B-9EF1-4CE8-AA6B-0E69427912A2
+  Name=Checar
+  Class=PUSHBUTTON
+  Caption=Checar
+  Order=1
+  Left=253
+  Width=80
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Checar",,
+  Property=HyperLabel=#Checar,,,
+
+CONTROL=PUSHBUTTON
+GUID=133F9123-F893-4D31-AD2C-5FAA70768840
+  Name=Encerrar
+  Class=PUSHBUTTON
+  Caption=Encerrar
+  Order=2
+  Left=253
+  Width=80
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Encerrar",,
+  Property=HyperLabel=#Encerrar,,,
+
+CONTROL=FIXEDTEXT
+GUID=CE01D1B0-0DA4-4D70-93D6-48CAF8ACCBBC
+  Name=SC_PF
+  Class=FIXEDTEXT
+  Caption=Pf:
+  Order=3
+  Left=21
+  Width=16
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pf:",,
+  Property=HyperLabel=#SC_PF,,,
+
+CONTROL=FIXEDTEXT
+GUID=778CF47C-EE92-4343-AEA8-AE931CCBDF33
+  Name=SC_FEMEAREV
+  Class=FIXEDTEXT
+  Caption=Femea Rev:
+  Order=4
+  Left=89
+  Width=76
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Femea Rev:",,
+  Property=HyperLabel=#SC_FEMEAREV,,,
+
+CONTROL=FIXEDTEXT
+GUID=5CBB6FCD-738D-41FD-B884-20499A973201
+  Name=SC_FEMEAREVD
+  Class=FIXEDTEXT
+  Caption=Rev Data
+  Order=5
+  Left=161
+  Width=72
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rev Data",,
+  Property=HyperLabel=#SC_FEMEAREVD,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=9B2362C7-7D8A-4AD0-8E0C-41E1929F04E2
+  Name=PF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=13
+  Width=68
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#PF,,,
+  Property=HyperLabel=,"Pf:",,
+  Property=HyperLabel=,,,"SAC_PF"
+
+CONTROL=SINGLELINEEDIT
+GUID=2B96F4F2-EDAF-483D-8944-C043EB3F30FE
+  Name=FEMEAREV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=89
+  Width=68
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#FEMEAREV,,,
+  Property=HyperLabel=,"Femearev:",,
+  Property=HyperLabel=,,,"SAC_FEMEAREV"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=503E48EC-A462-4D43-8E1F-385F92C8F981
+  Name=FEMEAREVD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=161
+  Width=68
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#FEMEAREVD,,,
+  Property=HyperLabel=,"Femearevd:",,
+  Property=HyperLabel=,,,"SAC_FEMEAREVD"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+SUBCONTROLSEND
+DESIGNEREND = jsacfem
+

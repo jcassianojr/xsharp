@@ -1,0 +1,1165 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jemp
+GUID=CC38FBF4-6A2C-4216-B809-F49C3337FC5E
+  Name=jemp
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=24
+  Width=761
+  Top=24
+  Height=373
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#jemp,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=FBEC7D57-7D22-46A4-8A63-D52AB23892E5
+  Name=COGNOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=177
+  Width=160
+  Top=25
+  Height=20
+  Browseindex=1
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_12
+  Property=HyperLabel=#COGNOME,,,
+  Property=HyperLabel=,"Cognome:",,
+  Property=HyperLabel=,,,"MB01_COGNOME"
+  Property=HyperLabel=,,"Cognome",
+
+CONTROL=SINGLELINEEDIT
+GUID=57F7A4E2-7E96-4716-B241-5254F2EB94BF
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=65
+  Width=400
+  Top=53
+  Height=20
+  Browseindex=2
+  Browsesize=51
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"MB01_NOME"
+  Property=HyperLabel=,,"Razao Social",
+  Property=TooltipText="Razao Social"
+
+CONTROL=SINGLELINEEDIT
+GUID=24A69EC6-CA62-4B7D-AB14-FDD0925E3C8A
+  Name=ENDERECO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=65
+  Width=282
+  Top=77
+  Height=20
+  Browseindex=7
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_40
+  Property=HyperLabel=#ENDERECO,,,
+  Property=HyperLabel=,"Endereco:",,
+  Property=HyperLabel=,,,"MB01_ENDERECO"
+  Property=HyperLabel=,,"Endereço",
+  Property=TooltipText="Endereco"
+
+CONTROL=SINGLELINEEDIT
+GUID=B0A8E7E7-666D-45D5-BD26-324F3BB738EE
+  Name=BAIRRO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=397
+  Width=282
+  Top=77
+  Height=20
+  Browseindex=8
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_30
+  Property=HyperLabel=#BAIRRO,,,
+  Property=HyperLabel=,"Bairro:",,
+  Property=HyperLabel=,,,"MB01_BAIRRO"
+  Property=HyperLabel=,,"Bairro",
+  Property=TooltipText="Bairro"
+
+CONTROL=SINGLELINEEDIT
+GUID=F5C86BCC-6692-4DDB-A9CA-DD57E9484CE3
+  Name=ESTADO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=49
+  Width=44
+  Top=101
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=UF_FIELD
+  Property=HyperLabel=#ESTADO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"MB01_NUMERO"
+  Property=HyperLabel=,,"Estado",
+  Property=TooltipText="Estado"
+
+CONTROL=SINGLELINEEDIT
+GUID=25415C48-0D79-4DF1-83E7-620C604EF724
+  Name=CIDADE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=193
+  Width=310
+  Top=101
+  Height=20
+  Browseindex=9
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_30
+  Property=HyperLabel=#CIDADE,,,
+  Property=HyperLabel=,"Cidade:",,
+  Property=HyperLabel=,,,"MB01_CIDADE"
+  Property=HyperLabel=,,"Cidade",
+  Property=TooltipText="Cidade"
+
+CONTROL=SINGLELINEEDIT
+GUID=65515AD4-3732-413B-96E6-3C3F76D0F8CB
+  Name=CEP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=549
+  Width=72
+  Top=101
+  Height=20
+  Browseindex=10
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=cep_field
+  Property=HyperLabel=#CEP,,,
+  Property=HyperLabel=,"Cep:",,
+  Property=HyperLabel=,,,"MB01_CEP"
+  Property=HyperLabel=,,"CEP",
+  Property=TooltipText="Cep"
+
+CONTROL=SINGLELINEEDIT
+GUID=DDD3E45F-0C44-4D59-BC67-A21ACB99A9A0
+  Name=DDD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=89
+  Width=42
+  Top=149
+  Height=20
+  Browseindex=11
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=ddd_field
+  Property=HyperLabel=#DDD,,,
+  Property=HyperLabel=,"Ddd:",,
+  Property=HyperLabel=,,,"MB01_DDD"
+  Property=TooltipText="DDD"
+
+CONTROL=SINGLELINEEDIT
+GUID=3CF106B1-40DB-478F-8F4F-DBE3DC8C308B
+  Name=TELEFONE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=141
+  Width=120
+  Top=149
+  Height=20
+  Browseindex=12
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_12
+  Property=HyperLabel=#TELEFONE,,,
+  Property=HyperLabel=,"Telefone:",,
+  Property=HyperLabel=,,,"MB01_TELEFONE"
+  Property=TooltipText="Numero do Telefone"
+
+CONTROL=SINGLELINEEDIT
+GUID=0FF01BB0-7D54-4EAD-A11B-F9FEE8521754
+  Name=RAMAL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=273
+  Width=82
+  Top=149
+  Height=20
+  Browseindex=13
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_04
+  Property=HyperLabel=#RAMAL,,,
+  Property=HyperLabel=,"Ramal:",,
+  Property=HyperLabel=,,,"MB01_RAMAL"
+  Property=TooltipText="Ramal"
+
+CONTROL=SINGLELINEEDIT
+GUID=80F1EA2B-5C1E-4354-B09C-EF9287BAB625
+  Name=CONTATO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=361
+  Width=240
+  Top=149
+  Height=20
+  Browseindex=14
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_22
+  Property=HyperLabel=#CONTATO,,,
+  Property=HyperLabel=,"Contato:",,
+  Property=HyperLabel=,,,"MB01_CONTATO"
+  Property=TooltipText="Contato"
+
+CONTROL=SINGLELINEEDIT
+GUID=661861BD-0860-41F7-B253-34BB13C83926
+  Name=DDD1
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=89
+  Width=44
+  Top=173
+  Height=20
+  Browseindex=15
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=ddd_field
+  Property=HyperLabel=#DDD1,,,
+  Property=HyperLabel=,"Ddd1:",,
+  Property=HyperLabel=,,,"MB01_DDD1"
+  Property=TooltipText="DDD"
+
+CONTROL=SINGLELINEEDIT
+GUID=002C68A7-478C-4655-8891-876F366E82C4
+  Name=TELEFONE1
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=141
+  Width=120
+  Top=173
+  Height=20
+  Browseindex=16
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_12
+  Property=HyperLabel=#TELEFONE1,,,
+  Property=HyperLabel=,"Telefone1:",,
+  Property=HyperLabel=,,,"MB01_TELEFONE1"
+  Property=TooltipText="Telefone"
+
+CONTROL=SINGLELINEEDIT
+GUID=33A1DAA7-C565-4094-A95D-2D58BC73F874
+  Name=RAMAL1
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=273
+  Width=80
+  Top=173
+  Height=20
+  Browseindex=17
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_04
+  Property=HyperLabel=#RAMAL1,,,
+  Property=HyperLabel=,"Ramal1:",,
+  Property=HyperLabel=,,,"MB01_RAMAL1"
+  Property=TooltipText="Ramal"
+
+CONTROL=SINGLELINEEDIT
+GUID=235BEFFE-C02F-4F0B-8EFA-797D9C8EF03D
+  Name=CONTATO1
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=361
+  Width=240
+  Top=173
+  Height=20
+  Browseindex=18
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_22
+  Property=HyperLabel=#CONTATO1,,,
+  Property=HyperLabel=,"Contato1:",,
+  Property=HyperLabel=,,,"MB01_CONTATO1"
+  Property=TooltipText="Contato"
+
+CONTROL=SINGLELINEEDIT
+GUID=E076EB93-1C0D-4D61-AA5B-360445245829
+  Name=DDDFAX
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=89
+  Width=44
+  Top=197
+  Height=20
+  Browseindex=19
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=ddd_field
+  Property=HyperLabel=#DDDFAX,,,
+  Property=HyperLabel=,"Dddfax:",,
+  Property=HyperLabel=,,,"MB01_DDDFAX"
+  Property=TooltipText="Fax"
+
+CONTROL=SINGLELINEEDIT
+GUID=02859B6C-AC54-401A-81ED-28BF1549719D
+  Name=TELEFAX
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=141
+  Width=120
+  Top=197
+  Height=20
+  Browseindex=20
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_12
+  Property=HyperLabel=#TELEFAX,,,
+  Property=HyperLabel=,"Telefax:",,
+  Property=HyperLabel=,,,"MB01_TELEFAX"
+  Property=TooltipText="Numero do Fax"
+
+CONTROL=SINGLELINEEDIT
+GUID=C12727F8-2789-4E60-920C-6AED590A3EF6
+  Name=EMAIL
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=77
+  Width=240
+  Top=225
+  Height=20
+  Browseindex=21
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=EMAIL_FIELD
+  Property=HyperLabel=#EMAIL,,,
+  Property=TooltipText="Email"
+
+CONTROL=SINGLELINEEDIT
+GUID=A4EA9486-AB07-42E8-B5B7-05874F82BF89
+  Name=SITE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=373
+  Width=240
+  Top=225
+  Height=20
+  Browseindex=22
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_30
+  Property=HyperLabel=#SITE,,,
+  Property=TooltipText="Site"
+
+CONTROL=SINGLELINEEDIT
+GUID=2D1C4A80-B19F-4379-B8B0-EBAEFE57298E
+  Name=RESPF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=77
+  Width=240
+  Top=249
+  Height=20
+  Browseindex=23
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_30
+  Property=HyperLabel=#RESPF,,,
+  Property=TooltipText="Nome do Responsavel"
+
+CONTROL=SINGLELINEEDIT
+GUID=53E4C3A1-2853-4C55-AE0C-C681AF54B412
+  Name=CARGOR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=453
+  Width=220
+  Top=249
+  Height=20
+  Browseindex=24
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_30
+  Property=HyperLabel=#CARGOR,,,
+  Property=TooltipText="Funçao do Responsavel"
+
+CONTROL=SINGLELINEEDIT
+GUID=63405FD1-9E4A-4D1C-8C6C-4D922ED172D5
+  Name=CGC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=217
+  Width=112
+  Top=281
+  Height=18
+  Browseindex=2
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_18
+  Property=HyperLabel=#CGC,,,
+  Property=HyperLabel=,,,"MA01_CODIGO"
+  Property=TooltipText="Codigo Junto ao Cliente"
+
+CONTROL=SINGLELINEEDIT
+GUID=AEF0D9DC-C9B3-4EC0-B178-444D4E05240A
+  Name=INSCR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=23
+  Left=445
+  Width=112
+  Top=281
+  Height=18
+  Browseindex=1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_16
+  Property=HyperLabel=#INSCR,,,
+  Property=HyperLabel=,,,"MA01_CODIGO"
+  Property=TooltipText="Codigo Junto ao Cliente"
+
+CONTROL=PUSHBUTTON
+GUID=73834FE4-5242-48C6-9B32-A948C6F0BFD0
+  Name=pornum
+  Class=PUSHBUTTON
+  Caption=
+  Order=24
+  Left=133
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#pornum,,,
+  Property=TooltipText="Clique para ordenar por Numero"
+  Property=HyperLabel=,,"Ordenar por Numero",
+
+CONTROL=PUSHBUTTON
+GUID=4FD1DB5E-EC60-4606-A5D6-1CF2F75BF808
+  Name=buscanum
+  Class=PUSHBUTTON
+  Caption=
+  Order=25
+  Left=101
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscanum,,,
+  Property=TooltipText="Clique Para Localizar Por Numero"
+  Property=HyperLabel=,,"Localizar Numero",
+
+CONTROL=FIXEDTEXT
+GUID=1702EC85-F834-457D-A89E-B9F5DF600682
+  Name=SC_TELEFAX3
+  Class=FIXEDTEXT
+  Caption=IE/RG
+  Order=26
+  Left=397
+  Width=44
+  Top=281
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"IE/RG",,
+  Property=HyperLabel=#SC_TELEFAX3,,,
+
+CONTROL=FIXEDTEXT
+GUID=D05DBA48-69A8-4F2E-B582-0AF31ECD9886
+  Name=SC_TELEFAX2
+  Class=FIXEDTEXT
+  Caption=CGC/CPF
+  Order=27
+  Left=157
+  Width=56
+  Top=281
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"CGC/CPF",,
+  Property=HyperLabel=#SC_TELEFAX2,,,
+
+CONTROL=PUSHBUTTON
+GUID=A895E8EF-AF27-42CC-A2D3-8EBC291B6E62
+  Name=cmdpessoa
+  Class=PUSHBUTTON
+  Caption=FJO
+  Order=28
+  Left=113
+  Width=31
+  Top=277
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"FJO",,
+  Property=HyperLabel=#cmdpessoa,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=E3AA5883-99A5-4ACF-ADF1-375EBFC4D542
+  Name=pessoa
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=29
+  Left=69
+  Width=36
+  Top=277
+  Height=24
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=0
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#pessoa,,,
+  Property=HyperLabel=,,,"MA01_NUMERO"
+  Property=TooltipText="Estado"
+  Property=Background=255 255 200 10
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=BAB4B7EF-070E-4AE2-9AAD-D7EF48D29352
+  Name=SC_TELEFAX4
+  Class=FIXEDTEXT
+  Caption=Pessoa
+  Order=30
+  Left=13
+  Width=50
+  Top=277
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pessoa",,
+  Property=HyperLabel=#SC_TELEFAX4,,,
+
+CONTROL=PUSHBUTTON
+GUID=958D5836-B710-4031-B6D0-8D7FD55358AC
+  Name=cmdcheckcgc
+  Class=PUSHBUTTON
+  Caption=Checar
+  Order=31
+  Left=333
+  Width=44
+  Top=281
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Checar",,
+  Property=HyperLabel=#cmdcheckcgc,,,
+
+CONTROL=PUSHBUTTON
+GUID=4F7415FB-631B-492B-BD24-7D2A02730FF9
+  Name=cmdcheckie
+  Class=PUSHBUTTON
+  Caption=Checar
+  Order=32
+  Left=561
+  Width=44
+  Top=281
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Checar",,
+  Property=HyperLabel=#cmdcheckie,,,
+
+CONTROL=PUSHBUTTON
+GUID=5B530A18-C2B5-4DEF-851F-449706C3B253
+  Name=cmdcheckuf
+  Class=PUSHBUTTON
+  Caption=Checar
+  Order=33
+  Left=97
+  Width=44
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Checar",,
+  Property=HyperLabel=#cmdcheckuf,,,
+
+CONTROL=FIXEDTEXT
+GUID=54C22D2C-9351-4AC9-9E4A-4E0DA174D676
+  Name=SC_COGNOME
+  Class=FIXEDTEXT
+  Caption=Cognome:
+  Order=34
+  Left=173
+  Width=60
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cognome:",,
+  Property=HyperLabel=#SC_COGNOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=EE419A43-92DE-4389-820A-3E7E29FC7BA9
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero:
+  Order=35
+  Left=11
+  Width=60
+  Top=11
+  Height=14
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=1ECF2558-37D0-47CA-9865-71929B12BC01
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=36
+  Left=9
+  Width=90
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"MB01_NUMERO"
+  Property=HyperLabel=,,"Numero de Cadastramento",
+  Property=Background=255 255 200 10
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=72C42125-C145-430B-A1D7-8420F7D535ED
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=37
+  Left=9
+  Width=40
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=0D09C25D-649F-49CF-B1FA-22036BBF6F95
+  Name=SC_ENDERECO
+  Class=FIXEDTEXT
+  Caption=Endereço:
+  Order=38
+  Left=9
+  Width=52
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Endereço:",,
+  Property=HyperLabel=#SC_ENDERECO,,,
+
+CONTROL=FIXEDTEXT
+GUID=9B39E127-02A7-4D51-8F08-AB0C12E1868C
+  Name=SC_BAIRRO
+  Class=FIXEDTEXT
+  Caption=Bairro:
+  Order=39
+  Left=353
+  Width=36
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Bairro:",,
+  Property=HyperLabel=#SC_BAIRRO,,,
+
+CONTROL=FIXEDTEXT
+GUID=EBEC92DB-912E-4869-8724-8B1A03E2C4AA
+  Name=SC_CIDADE
+  Class=FIXEDTEXT
+  Caption=Cidade:
+  Order=40
+  Left=149
+  Width=40
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cidade:",,
+  Property=HyperLabel=#SC_CIDADE,,,
+
+CONTROL=FIXEDTEXT
+GUID=D0A4D83A-7922-4E0E-B520-825F5824FA12
+  Name=SC_CEP
+  Class=FIXEDTEXT
+  Caption=Cep:
+  Order=41
+  Left=513
+  Width=28
+  Top=101
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cep:",,
+  Property=HyperLabel=#SC_CEP,,,
+
+CONTROL=FIXEDTEXT
+GUID=C8CCCAFC-3BA5-452C-9485-7F74242EBBC6
+  Name=SC_ESTADO
+  Class=FIXEDTEXT
+  Caption=Estado:
+  Order=42
+  Left=9
+  Width=40
+  Top=105
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Estado:",,
+  Property=HyperLabel=#SC_ESTADO,,,
+
+CONTROL=FIXEDTEXT
+GUID=6A9EEF8F-1175-465D-8EB7-ABA584795858
+  Name=SC_DDD
+  Class=FIXEDTEXT
+  Caption=DDD:
+  Order=43
+  Left=91
+  Width=40
+  Top=129
+  Height=12
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DDD:",,
+  Property=HyperLabel=#SC_DDD,,,
+
+CONTROL=FIXEDTEXT
+GUID=47E133FE-11D9-44D2-AC60-B90CAB648A89
+  Name=SC_TELEFONE
+  Class=FIXEDTEXT
+  Caption=Telefone:
+  Order=44
+  Left=181
+  Width=60
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Telefone:",,
+  Property=HyperLabel=#SC_TELEFONE,,,
+
+CONTROL=FIXEDTEXT
+GUID=21EFA047-7E53-45EB-B5D2-FFD54AA675E3
+  Name=SC_RAMAL
+  Class=FIXEDTEXT
+  Caption=Ramal:
+  Order=45
+  Left=277
+  Width=50
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ramal:",,
+  Property=HyperLabel=#SC_RAMAL,,,
+
+CONTROL=FIXEDTEXT
+GUID=6389266F-5022-4868-8DD8-5F4848842B7C
+  Name=SC_CONTATO
+  Class=FIXEDTEXT
+  Caption=Contato
+  Order=46
+  Left=365
+  Width=60
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Contato",,
+  Property=HyperLabel=#SC_CONTATO,,,
+
+CONTROL=FIXEDTEXT
+GUID=C8380031-FC79-4F73-BA62-F8969DF68534
+  Name=theFixedText16
+  Class=FIXEDTEXT
+  Caption=Telefone
+  Order=47
+  Left=11
+  Width=60
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Telefone",,
+  Property=HyperLabel=#theFixedText16,,,
+
+CONTROL=FIXEDTEXT
+GUID=EFE06EDB-3064-4E4A-B76E-7704A9CCE702
+  Name=theFixedText17
+  Class=FIXEDTEXT
+  Caption=Telefone
+  Order=48
+  Left=13
+  Width=60
+  Top=173
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Telefone",,
+  Property=HyperLabel=#theFixedText17,,,
+
+CONTROL=FIXEDTEXT
+GUID=F1376241-241F-4EF3-B159-874DE71F8EEA
+  Name=theFixedText18
+  Class=FIXEDTEXT
+  Caption=Fax:
+  Order=49
+  Left=13
+  Width=60
+  Top=197
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fax:",,
+  Property=HyperLabel=#theFixedText18,,,
+
+CONTROL=FIXEDTEXT
+GUID=12BC7119-AADB-41F1-B45E-1CBBFAD9F5B5
+  Name=ft20
+  Class=FIXEDTEXT
+  Caption=Email
+  Order=50
+  Left=9
+  Width=38
+  Top=225
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Email",,
+  Property=HyperLabel=#ft20,,,
+
+CONTROL=FIXEDTEXT
+GUID=070C0E0E-9B66-42FC-844F-C59FB6B97613
+  Name=FT21
+  Class=FIXEDTEXT
+  Caption=Site
+  Order=51
+  Left=329
+  Width=40
+  Top=225
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Site",,
+  Property=HyperLabel=#FT21,,,
+
+CONTROL=FIXEDTEXT
+GUID=C69D9ACE-38FF-4336-BD76-99DC7C0E36FB
+  Name=FT22
+  Class=FIXEDTEXT
+  Caption=Responsável
+  Order=52
+  Left=9
+  Width=68
+  Top=249
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Responsável",,
+  Property=HyperLabel=#FT22,,,
+
+CONTROL=FIXEDTEXT
+GUID=2C9B05C9-6752-4DF4-9B2B-373BA52DDB49
+  Name=FT23
+  Class=FIXEDTEXT
+  Caption=Cargo do Responsável
+  Order=53
+  Left=329
+  Width=122
+  Top=249
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cargo do Responsável",,
+  Property=HyperLabel=#FT23,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jemp
+

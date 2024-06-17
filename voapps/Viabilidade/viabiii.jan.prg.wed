@@ -1,0 +1,348 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JVIII
+GUID=1D2BF844-8F6C-460F-8C52-BD4A602280A9
+  Name=JVIII
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=26
+  Width=517
+  Top=26
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#JVIII,,,
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=5274A8EB-AA08-4730-A4C1-C8D0F494DFB1
+  Name=SC_OV
+  Class=FIXEDTEXT
+  Caption=Ov:
+  Order=1
+  Left=9
+  Width=20
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ov:",,
+  Property=HyperLabel=#SC_OV,,,
+
+CONTROL=FIXEDTEXT
+GUID=46B6B28D-CE2C-4C91-A074-0B1B18F9293B
+  Name=SC_TIPO
+  Class=FIXEDTEXT
+  Caption=Tipo:
+  Order=2
+  Left=61
+  Width=28
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tipo:",,
+  Property=HyperLabel=#SC_TIPO,,,
+
+CONTROL=FIXEDTEXT
+GUID=366C617F-EDC4-4917-8F8A-795D0840055C
+  Name=SC_DADO
+  Class=FIXEDTEXT
+  Caption=Dado:
+  Order=3
+  Left=9
+  Width=32
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Dado:",,
+  Property=HyperLabel=#SC_DADO,,,
+
+CONTROL=FIXEDTEXT
+GUID=2E8B2126-6CF2-4F96-9EC3-F353613E6B10
+  Name=SC_REV
+  Class=FIXEDTEXT
+  Caption=Rev:
+  Order=4
+  Left=225
+  Width=28
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rev:",,
+  Property=HyperLabel=#SC_REV,,,
+
+CONTROL=FIXEDTEXT
+GUID=1A0AF5ED-5328-4904-834F-658E38DA8C39
+  Name=SC_SITUACAO
+  Class=FIXEDTEXT
+  Caption=Situacao:
+  Order=5
+  Left=97
+  Width=48
+  Top=9
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Situacao:",,
+  Property=HyperLabel=#SC_SITUACAO,,,
+
+CONTROL=FIXEDTEXT
+GUID=3AF715F9-AC91-48B8-A003-901FA481762E
+  Name=SC_APROVACAO
+  Class=FIXEDTEXT
+  Caption=Aprovacao:
+  Order=6
+  Left=153
+  Width=60
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Aprovacao:",,
+  Property=HyperLabel=#SC_APROVACAO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=59C2995E-C6CB-4982-8C7D-7DB24ABCF0AC
+  Name=OV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=9
+  Width=44
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#OV,,,
+  Property=HyperLabel=,"Ov:",,
+  Property=HyperLabel=,,,"VIABIII_OV"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=EC7A9199-F266-41D1-B39E-B2E07E55C96B
+  Name=TIPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=61
+  Width=24
+  Top=25
+  Height=20
+  Browseindex=1
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#TIPO,,,
+  Property=HyperLabel=,"T",,
+  Property=HyperLabel=,,,"VIABIII_TIPO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=C4414694-B0AD-40B3-B144-F8C6D6CA9EBB
+  Name=REV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=221
+  Width=84
+  Top=25
+  Height=20
+  Browseindex=2
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_10
+  Property=HyperLabel=#REV,,,
+  Property=HyperLabel=,"Rev:",,
+  Property=HyperLabel=,,,"VIABIII_REV"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=FC5C8364-680A-48AC-9715-A3E4AB535DE6
+  Name=SITUACAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=105
+  Width=24
+  Top=25
+  Height=20
+  Browseindex=3
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#SITUACAO,,,
+  Property=HyperLabel=,"S",,
+  Property=HyperLabel=,,,"VIABIII_SITUACAO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=02289260-9599-44EB-86F7-928E0F38CA4D
+  Name=APROVACAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=165
+  Width=24
+  Top=25
+  Height=20
+  Browseindex=4
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#APROVACAO,,,
+  Property=HyperLabel=,"C",,
+  Property=HyperLabel=,,,"VIABIII_APROVACAO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=1F981F04-855E-43C3-9E8C-9AE3476A1E8B
+  Name=SC_APROBS
+  Class=FIXEDTEXT
+  Caption=Obs:
+  Order=13
+  Left=9
+  Width=40
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Obs:",,
+  Property=HyperLabel=#SC_APROBS,,,
+
+CONTROL=MULTILINEEDIT
+GUID=0BBAFDFC-24FF-4761-889C-FEEFC5D86D77
+  Name=aprobs
+  Class=MULTILINEEDIT
+  Caption=
+  Order=14
+  Left=49
+  Width=456
+  Top=125
+  Height=72
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082200260
+  Exstyles=512
+  Property=FieldSpec=memo_field
+  Property=HyperLabel=#aprobs,,,
+
+CONTROL=MULTILINEEDIT
+GUID=06B6B70A-8AEA-4827-BD1A-F6CA1991670D
+  Name=sitobs
+  Class=MULTILINEEDIT
+  Caption=
+  Order=15
+  Left=49
+  Width=456
+  Top=201
+  Height=72
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082136772
+  Exstyles=512
+  Property=FieldSpec=memo_field
+  Property=HyperLabel=#sitobs,,,
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=MULTILINEEDIT
+GUID=2CB8F9B9-6692-4916-92E9-5E9473A7A372
+  Name=DADO
+  Class=MULTILINEEDIT
+  Caption=
+  Order=16
+  Left=53
+  Width=452
+  Top=49
+  Height=72
+  Browseindex=5
+  Browsesize=48
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082200260
+  Exstyles=512
+  Property=FieldSpec=MEMO_FIELD
+  Property=HyperLabel=#DADO,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JVIII
+

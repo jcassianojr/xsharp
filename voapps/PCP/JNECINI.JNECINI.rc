@@ -1,0 +1,21 @@
+ JNECINI DIALOGEX  30, 28, 264, 151
+STYLE	1073741824
+FONT	8, "MS Shell Dlg"
+BEGIN
+	CONTROL	"11/07/2006", 100, "SysDateTimePick32", 65536|1073741824, 8, 14, 60, 14, 512
+	CONTROL	"20", 101, "Edit", 128|65536|1073741824|8388608, 69, 14, 53, 13, 512
+	CONTROL	"OK", 102, "Static", 1|1073741824, 181, 39, 43, 12
+	CONTROL	"Retornar", 103, "Static", 1|1073741824, 133, 39, 43, 12
+	CONTROL	"", 104, "Button", 64|1073741824, 133, 9, 43, 30
+	CONTROL	"", 105, "Button", 64|1073741824, 181, 9, 43, 30
+	CONTROL	"", 106, "Static", 1073741824, 128, 54, 114, 19
+	CONTROL	"", 107, "Static", 1073741824, 5, 110, 237, 13
+	CONTROL	"Importar Prg Semanal", 108, "Button", 3|1073741824, 8, 49, 114, 11
+	CONTROL	"Importar OS (Pedidos)", 109, "Button", 3|1073741824, 8, 34, 114, 11
+	CONTROL	"Data Inicial", 110, "Static", 1073741824, 10, 2, 54, 12
+	CONTROL	"Importar Saldo Op", 111, "Button", 3|1073741824, 8, 63, 114, 11
+	CONTROL	"Importar Saldo Avulsos", 112, "Button", 3|1073741824, 8, 78, 114, 11
+	CONTROL	"Importar Integrados", 113, "Button", 3|1073741824, 8, 93, 114, 11
+END
+
+

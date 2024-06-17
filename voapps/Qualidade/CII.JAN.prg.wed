@@ -1,0 +1,537 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JCII
+GUID=1E95054E-519F-479F-8A8F-02CC64D1F183
+  Name=JCII
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=16
+  Width=509
+  Top=16
+  Height=175
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JCII,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=4A2C1234-6230-4445-8287-2828BB51F06B
+  Name=CI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=19
+  Width=48
+  Top=31
+  Height=18
+  Browseindex=0
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#CI,,,
+  Property=HyperLabel=,"Ci",,
+  Property=HyperLabel=,,,"CII_CI"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=C0949471-A656-469B-AC9B-7E5734909055
+  Name=ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=73
+  Width=36
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#ITEM,,,
+  Property=HyperLabel=,"Item",,
+  Property=HyperLabel=,,,"CII_ITEM"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=36859D71-F977-4625-B1F7-14860472E89D
+  Name=ESPE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=115
+  Width=60
+  Top=31
+  Height=18
+  Browseindex=4
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_4
+  Property=HyperLabel=#ESPE,,,
+  Property=HyperLabel=,"Espec.",,
+  Property=HyperLabel=,,,"CII_ESPE"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=B49BF02B-0BCA-4B30-8A4F-A288E97ECDD9
+  Name=MAX
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=181
+  Width=54
+  Top=31
+  Height=18
+  Browseindex=6
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_4
+  Property=HyperLabel=#MAX,,,
+  Property=HyperLabel=,"Max.",,
+  Property=HyperLabel=,,,"CII_MAX"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=0117A665-B804-479A-9C6A-3AFAC5BBB0CB
+  Name=MIN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=241
+  Width=66
+  Top=31
+  Height=18
+  Browseindex=7
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_4
+  Property=HyperLabel=#MIN,,,
+  Property=HyperLabel=,"Min.",,
+  Property=HyperLabel=,,,"CII_MIN"
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=3EF76A78-9FEE-4345-97FC-242275D11E00
+  Name=SC_UND
+  Class=FIXEDTEXT
+  Caption=Und:
+  Order=6
+  Left=313
+  Width=36
+  Top=13
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Und:",,
+  Property=HyperLabel=#SC_UND,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=7DAA449E-89DD-473B-A8F1-88196AB203E5
+  Name=ENC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=19
+  Width=60
+  Top=73
+  Height=18
+  Browseindex=8
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_4
+  Property=HyperLabel=#ENC,,,
+  Property=HyperLabel=,"Enc.",,
+  Property=HyperLabel=,,,"CII_ENC"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=F47BE6C4-493B-4375-875E-05123C185A29
+  Name=DESVIO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=85
+  Width=96
+  Top=73
+  Height=18
+  Browseindex=10
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_4
+  Property=HyperLabel=#DESVIO,,,
+  Property=HyperLabel=,"Desvio",,
+  Property=HyperLabel=,,,"CII_DESVIO"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=6AB9ECFA-B1AA-4477-AA24-1933B68547CA
+  Name=LAUDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=187
+  Width=36
+  Top=73
+  Height=18
+  Browseindex=11
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#LAUDO,,,
+  Property=HyperLabel=,"Laudo",,
+  Property=HyperLabel=,,,"CII_LAUDO"
+
+CONTROL=SINGLELINEEDIT
+GUID=562911CD-A45B-43C6-9BA1-785A2544299B
+  Name=LOCALI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=229
+  Width=162
+  Top=73
+  Height=18
+  Browseindex=2
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_30
+  Property=HyperLabel=#LOCALI,,,
+  Property=HyperLabel=,"Local",,
+  Property=HyperLabel=,,,"CII_LOCALI"
+
+CONTROL=SINGLELINEEDIT
+GUID=56211659-9A28-445B-A4AB-0102645C5C16
+  Name=CESPE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=19
+  Width=162
+  Top=115
+  Height=18
+  Browseindex=5
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#CESPE,,,
+  Property=HyperLabel=,"Enc.",,
+  Property=HyperLabel=,,,"CII_ENC"
+
+CONTROL=SINGLELINEEDIT
+GUID=FBDC8C8D-27C7-44BD-9804-F6906BC87E59
+  Name=CENC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=187
+  Width=162
+  Top=115
+  Height=18
+  Browseindex=9
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_30
+  Property=HyperLabel=#CENC,,,
+  Property=HyperLabel=,"Enc.",,
+  Property=HyperLabel=,,,"CII_ENC"
+
+CONTROL=FIXEDTEXT
+GUID=A24A3780-4220-4753-A46F-F571B9201E7E
+  Name=SC_CI
+  Class=FIXEDTEXT
+  Caption=Ci:
+  Order=13
+  Left=19
+  Width=24
+  Top=13
+  Height=12
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ci:",,
+  Property=HyperLabel=#SC_CI,,,
+
+CONTROL=FIXEDTEXT
+GUID=D7938C64-2820-49A1-9AF2-02B3CEF4BFA7
+  Name=SC_ITEM
+  Class=FIXEDTEXT
+  Caption=Item:
+  Order=14
+  Left=73
+  Width=36
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=#SC_ITEM,,,
+
+CONTROL=FIXEDTEXT
+GUID=328B2342-E1AC-4F8C-B3BD-4FFC63BF95EB
+  Name=SC_ESPE
+  Class=FIXEDTEXT
+  Caption=Espe:
+  Order=15
+  Left=115
+  Width=36
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Espe:",,
+  Property=HyperLabel=#SC_ESPE,,,
+
+CONTROL=FIXEDTEXT
+GUID=C9338579-70F2-427B-A3C2-BBA73FD08261
+  Name=SC_MAX
+  Class=FIXEDTEXT
+  Caption=Max:
+  Order=16
+  Left=181
+  Width=36
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Max:",,
+  Property=HyperLabel=#SC_MAX,,,
+
+CONTROL=FIXEDTEXT
+GUID=7C2805AA-5E61-4E8C-A33E-EDF3DCC7A28A
+  Name=SC_MIN
+  Class=FIXEDTEXT
+  Caption=Min:
+  Order=17
+  Left=241
+  Width=30
+  Top=13
+  Height=12
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Min:",,
+  Property=HyperLabel=#SC_MIN,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=0D7054EA-08B8-47EE-A96D-D5784098AD0D
+  Name=UND
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=313
+  Width=132
+  Top=31
+  Height=18
+  Browseindex=3
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_20
+  Property=HyperLabel=#UND,,,
+  Property=HyperLabel=,"Und",,
+  Property=HyperLabel=,,,"CII_UND"
+
+CONTROL=FIXEDTEXT
+GUID=1027666F-12B7-4CB1-8157-60ECFE44B24F
+  Name=SC_ENC
+  Class=FIXEDTEXT
+  Caption=Enc:
+  Order=19
+  Left=19
+  Width=30
+  Top=55
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Enc:",,
+  Property=HyperLabel=#SC_ENC,,,
+
+CONTROL=FIXEDTEXT
+GUID=875ED898-2E9C-462B-8721-6245C0781A49
+  Name=SC_DESVIO
+  Class=FIXEDTEXT
+  Caption=Desvio:
+  Order=20
+  Left=85
+  Width=48
+  Top=55
+  Height=14
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Desvio:",,
+  Property=HyperLabel=#SC_DESVIO,,,
+
+CONTROL=FIXEDTEXT
+GUID=C096121E-6E1C-4B6E-A9BC-B652840F21F6
+  Name=SC_LAUDO
+  Class=FIXEDTEXT
+  Caption=Laudo:
+  Order=21
+  Left=185
+  Width=48
+  Top=53
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Laudo:",,
+  Property=HyperLabel=#SC_LAUDO,,,
+
+CONTROL=FIXEDTEXT
+GUID=13C170F9-8449-4C4B-B0FD-EAB7AB46AE2D
+  Name=SC_LOCALI
+  Class=FIXEDTEXT
+  Caption=Locali:
+  Order=22
+  Left=229
+  Width=42
+  Top=55
+  Height=14
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Locali:",,
+  Property=HyperLabel=#SC_LOCALI,,,
+
+CONTROL=FIXEDTEXT
+GUID=750AFF68-C452-4AFA-A837-F983D27BA1E4
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=Espec.Desc.
+  Order=23
+  Left=19
+  Width=102
+  Top=97
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Espec.Desc.",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=FIXEDTEXT
+GUID=E66E72A3-9167-4AB2-9E1D-B7B6602784A0
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=Enc.Desc.
+  Order=24
+  Left=193
+  Width=102
+  Top=97
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Enc.Desc.",,
+  Property=HyperLabel=#theFixedText11,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JCII
+

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
+  <PropertyGroup>
+    <ProjectGuid>4BF79407-1C84-4CB1-88E6-D3F435490AFB</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mlibwvo27</RootNamespace>
+    <AssemblyName>mlibwvo27</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Name>mlibwvo27</Name>
+    <Nologo>true</Nologo>
+    <GenerateFullPaths>true</GenerateFullPaths>
+    <Dialect>VO</Dialect>
+    <LB>true</LB>
+    <OutputName>mlibwvo27</OutputName>
+    <StartupObject />
+    <ApplicationIcon />
+    <Prefer32Bit>True</Prefer32Bit>
+    <VulcanCompatibleResources>False</VulcanCompatibleResources>
+    <AZ>false</AZ>
+    <CS>false</CS>
+    <OVF>true</OVF>
+    <Unsafe>true</Unsafe>
+    <INS>true</INS>
+    <NS>false</NS>
+    <VO1>true</VO1>
+    <VO2>true</VO2>
+    <VO3>true</VO3>
+    <VO4>true</VO4>
+    <VO5>true</VO5>
+    <VO6>true</VO6>
+    <VO7>true</VO7>
+    <VO8>true</VO8>
+    <VO9>true</VO9>
+    <VO10>true</VO10>
+    <VO11>false</VO11>
+    <VO12>false</VO12>
+    <VO13>true</VO13>
+    <VO14>false</VO14>
+    <VO15>true</VO15>
+    <VO16>true</VO16>
+    <NoStandardDefs>false</NoStandardDefs>
+    <IncludePaths />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
+    <PlatformTarget>x86</PlatformTarget>
+    <EmitDebugInformation>true</EmitDebugInformation>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>C:\develop\modelos\xsharpexe\debugnet\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
+    <UseSharedCompilation>true</UseSharedCompilation>
+    <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
+    <PPO>false</PPO>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile />
+    <CommandLineOption />
+    <Prefer32Bit>True</Prefer32Bit>
+    <RegisterForComInterop>False</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Label="Configuration">
+    <PlatformTarget>x86</PlatformTarget>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <EmitDebugInformation>false</EmitDebugInformation>
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseSharedCompilation>true</UseSharedCompilation>
+    <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
+    <PPO>false</PPO>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
+  <ItemGroup>
+    <Reference Include="FreeImageNET, Version=3.13.1.1, Culture=neutral, PublicKeyToken=null">
+      <Name>FreeImageNET</Name>
+      <AssemblyName>FreeImageNET.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>..\..\..\..\devprg\XIDE\dlls\FreeImageNET.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Drawing</Name>
+      <AssemblyName>System.Drawing.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System.Windows.Forms</Name>
+      <AssemblyName>System.Windows.Forms.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="XSharp.Core">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="XSharp.RT">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="XSharp.VO">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOGUIClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VORDDClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOSystemClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOWin32APILibrary">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dbserver_smartfind_metodos.prg" />
+    <Compile Include="fabInputDlg.prg">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fabmessagens.prg" />
+    <Compile Include="fabmsginfoalert.prg" />
+    <Compile Include="fileiniclass.prg" />
+    <Compile Include="icones.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="voHash.prg" />
+    <NativeResource Include="icones.ICO_AJUDA.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_autook.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_AVANCA.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_AZ.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_CAMERA.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_CHAVE2.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_delete.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_editor.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ico_filtro.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_FIND.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_GRAVA.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_HAND.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_mail.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_mailarq.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_NEW.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_NEXT.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_OK.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_PREVIOUS.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_PRINT.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_PRINTCFG.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_RETORNA.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="icones.ICO_SAIR.rc">
+      <DependentUpon>icones.prg</DependentUpon>
+    </NativeResource>
+    <Compile Include="busca.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="busca.busca.rc">
+      <DependentUpon>busca.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="busca.busca.xsfrm">
+      <DependentUpon>busca.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="Help About.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Help About.HelpAbout.rc">
+      <DependentUpon>Help About.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="Help About.HELPABOUT.xsfrm">
+      <DependentUpon>Help About.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="funcoes.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="usemana5.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="globalvars.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Jcom.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Jcom._Jcom.rc">
+      <DependentUpon>Jcom.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="Jcom._Jcom.xsfrm">
+      <DependentUpon>Jcom.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="buscadata.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="buscadata.buscaDATA.rc">
+      <DependentUpon>buscadata.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="buscadata.buscaDATA.xsfrm">
+      <DependentUpon>buscadata.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="buscaarq.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="buscaarq.buscaArq.rc">
+      <DependentUpon>buscaarq.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="buscaarq.buscaArq.xsfrm">
+      <DependentUpon>buscaarq.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="funcoesdata.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbserver_BuscaPalavra.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="dbserver_BuscaPalavra._BuscaPalavra.rc">
+      <DependentUpon>dbserver_BuscaPalavra.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="dbserver_BuscaPalavra._BuscaPalavra.xsfrm">
+      <DependentUpon>dbserver_BuscaPalavra.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="dbserver_CamposPadroes.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <VOBinary Include="dbserver_CamposPadroes.FieldSpecs.xsfs">
+      <DependentUpon>dbserver_CamposPadroes.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="dbserver_filtro.jan.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="dbserver_filtro.jan.jfiltro.rc">
+      <DependentUpon>dbserver_filtro.jan.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="dbserver_filtro.jan.jfiltro.xsfrm">
+      <DependentUpon>dbserver_filtro.jan.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="dbserver_Indexar.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="dbserver_Indexar._Indexar.rc">
+      <DependentUpon>dbserver_Indexar.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="dbserver_Indexar._Indexar.xsfrm">
+      <DependentUpon>dbserver_Indexar.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="dbserver_Smartfind.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="dbserver_Smartfind.smartfind.rc">
+      <DependentUpon>dbserver_Smartfind.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="dbserver_Smartfind.smartfind.xsfrm">
+      <DependentUpon>dbserver_Smartfind.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="userede.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Standard Shell.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RunningInstances.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="richeedit.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="richeedit._JRTF.rc">
+      <DependentUpon>richeedit.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="richeedit._JRTF.xsfrm">
+      <DependentUpon>richeedit.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="dbserver_sdv.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbserver_textdbserver.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbserver_MenuEdicao.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="dbserver_MenuEdicao.STANDARDSHELLMENU_Accelerator.rc">
+      <DependentUpon>dbserver_MenuEdicao.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="dbserver_MenuEdicao.STANDARDSHELLMENU.rc">
+      <DependentUpon>dbserver_MenuEdicao.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="dbserver_MenuEdicao.STANDARDSHELLMENU.xsmnu">
+      <DependentUpon>dbserver_MenuEdicao.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="dbserver_indexinfo class.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbserver_funcoes.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ghosting.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbserver_util.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="funcoesarquivos.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbserver_progwin.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="dbserver_progwin.ProgWin.rc">
+      <DependentUpon>dbserver_progwin.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="dbserver_progwin.ProgWin.xsfrm">
+      <DependentUpon>dbserver_progwin.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="mydatawindow.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="fotoview.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="fotoview._fotoview.rc">
+      <DependentUpon>fotoview.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="fotoview._fotoview.xsfrm">
+      <DependentUpon>fotoview.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="mydbserver.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="usemana5_funcoes.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mydatadialog.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbserver_smartfind_funcoes.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="Resources\AJUDA.ICO" />
+    <None Include="Resources\AUTOOK.ICO" />
+    <None Include="Resources\NEXT.ICO" />
+    <None Include="Resources\AZ.ICO" />
+    <None Include="Resources\CAMERA.ICO" />
+    <None Include="Resources\CHAVE2.ICO" />
+    <None Include="Resources\DELETE.ICO" />
+    <None Include="Resources\EDITOR.ICO" />
+    <None Include="Resources\FILTRO.ICO" />
+    <None Include="Resources\FIND.ICO" />
+    <None Include="Resources\SAVE.ICO" />
+    <None Include="Resources\curhand.cur" />
+    <None Include="Resources\MAIL.ICO" />
+    <None Include="Resources\MAILARQ.ICO" />
+    <None Include="Resources\NEW.ICO" />
+    <None Include="Resources\OK.ICO" />
+    <None Include="Resources\PREVIOUS.ICO" />
+    <None Include="Resources\PRINT.ICO" />
+    <None Include="Resources\PRINTCFG.ICO" />
+    <None Include="Resources\SAIR.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FabPaintLibControlvo\FabPaintLibControlvo.xsproj">
+      <Name>FabPaintLibControlvo</Name>
+      <Project>{9bc53417-899e-4b1b-bdb4-b01b063ef143}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\FabPaintLibvo\FabPaintLibvo.xsproj">
+      <Name>FabPaintLibvo</Name>
+      <Project>{83698c26-4e7c-4a53-aba8-994b8c4c7592}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
+      <Name>RightSLEvo</Name>
+      <Project>{e1a8daf4-3bda-434a-9753-2b6f30230b1e}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
+  <ProjectExtensions>
+    <ProjectCapabilities>
+      <ProjectConfigurationsDeclaredAsItems />
+    </ProjectCapabilities>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+</Project>

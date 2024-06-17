@@ -1,0 +1,182 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JBXNAO
+GUID=6B1E1F6A-EA74-447F-A276-9C5F024D0579
+  Name=JBXNAO
+  Class=DATAWINDOW
+  Caption=Baixar Não Ativos
+  Order=0
+  Left=22
+  Width=420
+  Top=22
+  Height=137
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Baixar Não Ativos",,
+  Property=HyperLabel=#JBXNAO,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=FF93BC71-9800-4A84-A650-899E2E3D32C8
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=1
+  Left=341
+  Width=64
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=PUSHBUTTON
+GUID=CB9381FF-18C0-40FF-BE1B-FAEA35DF20B2
+  Name=cmdSaida
+  Class=PUSHBUTTON
+  Caption=
+  Order=2
+  Left=341
+  Width=64
+  Top=25
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#cmdSaida,,,
+  Property=Image=ICO_SAIR
+
+CONTROL=FIXEDTEXT
+GUID=53A578AB-17DB-480A-BB06-FC376A1816AC
+  Name=FixedText4
+  Class=FIXEDTEXT
+  Caption=Baixar
+  Order=3
+  Left=269
+  Width=64
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Baixar",,
+  Property=HyperLabel=#FixedText4,,,
+
+CONTROL=PUSHBUTTON
+GUID=F1B953BE-F2F4-4224-B30F-8E9AB5A39DBF
+  Name=cmdimp
+  Class=PUSHBUTTON
+  Caption=
+  Order=4
+  Left=269
+  Width=64
+  Top=25
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#cmdimp,,,
+  Property=Image=ICO_OK
+
+CONTROL=SINGLELINEEDIT
+GUID=3D623D5F-D999-41A7-892D-61CBDD12AA8F
+  Name=DoCodigo
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=9
+  Width=240
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#DoCodigo,,,
+
+CONTROL=FIXEDTEXT
+GUID=1CA06AB3-F7F0-45F9-9B03-0B5BBC817CE1
+  Name=FixedText5
+  Class=FIXEDTEXT
+  Caption=Do Código
+  Order=6
+  Left=9
+  Width=124
+  Top=17
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Do Código",,
+  Property=HyperLabel=#FixedText5,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=38C612CB-9436-4A59-A3CC-E8B5F58EDF0F
+  Name=AoCodigo
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=9
+  Width=240
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#AoCodigo,,,
+
+CONTROL=FIXEDTEXT
+GUID=63B9A874-1149-4C97-8DAE-88A48D7AB1CE
+  Name=FixedText6
+  Class=FIXEDTEXT
+  Caption=Ao Código
+  Order=8
+  Left=9
+  Width=124
+  Top=61
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ao Código",,
+  Property=HyperLabel=#FixedText6,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JBXNAO
+

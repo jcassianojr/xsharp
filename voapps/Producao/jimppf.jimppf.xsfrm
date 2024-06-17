@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="jimppf">
+    <Window Name="jimppf">
+      <Name>jimppf</Name>
+      <Class>DATADIALOG</Class>
+      <Caption>DataDialog Caption</Caption>
+      <Order>0</Order>
+      <Left>16</Left>
+      <Top>16</Top>
+      <Width>498</Width>
+      <Height>195</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataDialog Caption",,</HyperLabel>
+        <HyperLabel>#jimppf,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="nPF">
+      <Name>nPF</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>25</Left>
+      <Top>37</Top>
+      <Width>52</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#nPF,,,</HyperLabel>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <FocusSelect>FSEL_ALL</FocusSelect>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText1">
+      <Name>FixedText1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Numero do Processo Fabricação:</Caption>
+      <Order>2</Order>
+      <Left>20</Left>
+      <Top>19</Top>
+      <Width>173</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Numero do Processo Fabricação:",,</HyperLabel>
+        <HyperLabel>#FixedText1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="ImpMP">
+      <Name>ImpMP</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Materia Prima</Caption>
+      <Order>3</Order>
+      <Left>209</Left>
+      <Top>25</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Materia Prima",,</HyperLabel>
+        <HyperLabel>#ImpMP,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="ImpCom">
+      <Name>ImpCom</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Componentes</Caption>
+      <Order>4</Order>
+      <Left>209</Left>
+      <Top>53</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Componentes",,</HyperLabel>
+        <HyperLabel>#ImpCom,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="ImpMao">
+      <Name>ImpMao</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Mão Obra</Caption>
+      <Order>5</Order>
+      <Left>209</Left>
+      <Top>81</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Mão Obra",,</HyperLabel>
+        <HyperLabel>#ImpMao,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="ImpSEQ">
+      <Name>ImpSEQ</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Sequencia</Caption>
+      <Order>6</Order>
+      <Left>209</Left>
+      <Top>109</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Sequencia",,</HyperLabel>
+        <HyperLabel>#ImpSEQ,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="cCODIGO">
+      <Name>cCODIGO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>21</Left>
+      <Top>85</Top>
+      <Width>156</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#cCODIGO,,,</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_24</FieldSpec>
+        <FocusSelect>FSEL_ALL</FocusSelect>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText2">
+      <Name>FixedText2</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Codigo Produto Manager</Caption>
+      <Order>8</Order>
+      <Left>21</Left>
+      <Top>65</Top>
+      <Width>173</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Codigo Produto Manager",,</HyperLabel>
+        <HyperLabel>#FixedText2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SEQ">
+      <Name>SEQ</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>9</Order>
+      <Left>25</Left>
+      <Top>129</Top>
+      <Width>41</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#SEQ,,,</HyperLabel>
+        <FocusSelect>FSEL_ALL</FocusSelect>
+        <FieldSpec>PADRAO_NUM_03</FieldSpec>
+      </ExProperties>
+    </Control>
+    <Control Name="SSQ">
+      <Name>SSQ</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>69</Left>
+      <Top>129</Top>
+      <Width>40</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#SSQ,,,</HyperLabel>
+        <FocusSelect>FSEL_ALL</FocusSelect>
+        <FieldSpec>PADRAO_NUM_03</FieldSpec>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText3">
+      <Name>FixedText3</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Sequencia</Caption>
+      <Order>11</Order>
+      <Left>25</Left>
+      <Top>109</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Sequencia",,</HyperLabel>
+        <HyperLabel>#FixedText3,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="esccod">
+      <Name>esccod</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>...</Caption>
+      <Order>12</Order>
+      <Left>181</Left>
+      <Top>85</Top>
+      <Width>20</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"...",,</HyperLabel>
+        <HyperLabel>#esccod,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText4">
+      <Name>FixedText4</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Retornar</Caption>
+      <Order>13</Order>
+      <Left>421</Left>
+      <Top>65</Top>
+      <Width>48</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Retornar",,</HyperLabel>
+        <HyperLabel>#FixedText4,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="encerrar">
+      <Name>encerrar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>14</Order>
+      <Left>421</Left>
+      <Top>25</Top>
+      <Width>48</Width>
+      <Height>40</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741888</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#encerrar,,,</HyperLabel>
+        <Image>ICO_SAIR</Image>
+      </ExProperties>
+    </Control>
+    <Control Name="chkseq">
+      <Name>chkseq</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Checar Seq/Comp</Caption>
+      <Order>15</Order>
+      <Left>117</Left>
+      <Top>109</Top>
+      <Width>80</Width>
+      <Height>40</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073750016</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar Seq/Comp",,</HyperLabel>
+        <HyperLabel>#chkseq,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="pegcod">
+      <Name>pegcod</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>--&gt;</Caption>
+      <Order>16</Order>
+      <Left>101</Left>
+      <Top>37</Top>
+      <Width>20</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"--&gt;",,</HyperLabel>
+        <HyperLabel>#pegcod,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="limpaMP">
+      <Name>limpaMP</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Apagar Anteriores</Caption>
+      <Order>17</Order>
+      <Left>293</Left>
+      <Top>25</Top>
+      <Width>120</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741827</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Apagar Anteriores",,</HyperLabel>
+        <HyperLabel>#limpaMP,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="limpaCO">
+      <Name>limpaCO</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Apagar Anteriores</Caption>
+      <Order>18</Order>
+      <Left>293</Left>
+      <Top>53</Top>
+      <Width>120</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741827</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Apagar Anteriores",,</HyperLabel>
+        <HyperLabel>#limpaCO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="limpaMO">
+      <Name>limpaMO</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Apagar Anteriores</Caption>
+      <Order>19</Order>
+      <Left>293</Left>
+      <Top>81</Top>
+      <Width>120</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741827</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Apagar Anteriores",,</HyperLabel>
+        <HyperLabel>#limpaMO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="limpaSQ">
+      <Name>limpaSQ</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Apagar Anteriores</Caption>
+      <Order>20</Order>
+      <Left>293</Left>
+      <Top>109</Top>
+      <Width>120</Width>
+      <Height>18</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741827</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Apagar Anteriores",,</HyperLabel>
+        <HyperLabel>#limpaSQ,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="escpf">
+      <Name>escpf</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>...</Caption>
+      <Order>21</Order>
+      <Left>81</Left>
+      <Top>37</Top>
+      <Width>20</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"...",,</HyperLabel>
+        <HyperLabel>#escpf,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="texto">
+      <Name>texto</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Fixed Text</Caption>
+      <Order>22</Order>
+      <Left>25</Left>
+      <Top>161</Top>
+      <Width>172</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Fixed Text",,</HyperLabel>
+        <HyperLabel>#texto,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DESTINO2">
+      <Name>SC_DESTINO2</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Foto</Caption>
+      <Order>23</Order>
+      <Left>421</Left>
+      <Top>129</Top>
+      <Width>48</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Foto",,</HyperLabel>
+        <HyperLabel>#SC_DESTINO2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="foto">
+      <Name>foto</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>24</Order>
+      <Left>421</Left>
+      <Top>89</Top>
+      <Width>48</Width>
+      <Height>40</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741888</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#foto,,,</HyperLabel>
+        <Image>ICO_CAMERA</Image>
+      </ExProperties>
+    </Control>
+    <Control Name="ImpTudo">
+      <Name>ImpTudo</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Importar Tudo</Caption>
+      <Order>25</Order>
+      <Left>209</Left>
+      <Top>133</Top>
+      <Width>96</Width>
+      <Height>21</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Importar Tudo",,</HyperLabel>
+        <HyperLabel>#ImpTudo,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="AtuMs06">
+      <Name>AtuMs06</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Atualizar MS06</Caption>
+      <Order>26</Order>
+      <Left>209</Left>
+      <Top>161</Top>
+      <Width>204</Width>
+      <Height>21</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Atualizar MS06",,</HyperLabel>
+        <HyperLabel>#AtuMs06,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

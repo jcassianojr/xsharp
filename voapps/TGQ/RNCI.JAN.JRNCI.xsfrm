@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JRNCI">
+    <Window Name="JRNCI">
+      <Name>JRNCI</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>36</Left>
+      <Top>32</Top>
+      <Width>534</Width>
+      <Height>155</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#JRNCI,,,</HyperLabel>
+        <ViewAs>#BrowseView</ViewAs>
+        <ClipperKeys>True</ClipperKeys>
+      </ExProperties>
+    </Window>
+    <Control Name="QTNC">
+      <Name>QTNC</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>237</Left>
+      <Top>13</Top>
+      <Width>90</Width>
+      <Height>18</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>23</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#QTNC,,,</HyperLabel>
+        <HyperLabel>,"Qtdde Não Conforme",,</HyperLabel>
+        <HyperLabel>,,,"RNC_QTNC"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_QTNC">
+      <Name>SC_QTNC</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Qtd. não Conf:</Caption>
+      <Order>4</Order>
+      <Left>157</Left>
+      <Top>13</Top>
+      <Width>84</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Qtd. não Conf:",,</HyperLabel>
+        <HyperLabel>#SC_QTNC,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="STCO">
+      <Name>STCO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Erro</Caption>
+      <Order>6</Order>
+      <Left>81</Left>
+      <Top>13</Top>
+      <Width>28</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Erro",,</HyperLabel>
+        <HyperLabel>#STCO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FT22">
+      <Name>FT22</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Setor</Caption>
+      <Order>7</Order>
+      <Left>9</Left>
+      <Top>13</Top>
+      <Width>40</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Setor",,</HyperLabel>
+        <HyperLabel>#FT22,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SETCOD">
+      <Name>SETCOD</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>9</Order>
+      <Left>53</Left>
+      <Top>13</Top>
+      <Width>20</Width>
+      <Height>18</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>12</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_chaR_01</FieldSpec>
+        <HyperLabel>#SETCOD,,,</HyperLabel>
+        <HyperLabel>,"Setor",,</HyperLabel>
+        <HyperLabel>,,,"RNC_QTNC"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="CODERR">
+      <Name>CODERR</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>109</Left>
+      <Top>13</Top>
+      <Width>40</Width>
+      <Height>18</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_chaR_03</FieldSpec>
+        <HyperLabel>#CODERR,,,</HyperLabel>
+        <HyperLabel>,"Erro",,</HyperLabel>
+        <HyperLabel>,,,"RNC_QTNC"</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

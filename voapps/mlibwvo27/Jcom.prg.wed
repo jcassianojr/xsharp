@@ -1,0 +1,296 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,_Jcom
+GUID=B31C3602-8B2C-4F97-BD1A-D12225C3096A
+  Name=_Jcom
+  Class=FORM:DATADIALOG
+  Caption=Trocar Competencia
+  Order=0
+  Left=0
+  Width=339
+  Top=0
+  Height=80
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Trocar Competencia
+  Property=HyperLabel=_Jcom
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=5A3E09A7-AC82-4B72-979D-6828C08E17A4
+  Name=mes
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=1
+  Order=10
+  Left=8
+  Width=47
+  Top=32
+  Height=20
+  Browseindex=2
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,1
+  Property=HyperLabel=mes
+  Property=FieldSpec=PADRAO_num_02
+  Property=TooltipText=Mes Inicial
+CONTROL=SINGLELINEEDIT
+GUID=F8304650-122D-49B2-9268-06F737AABD8C
+  Name=ano
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=93
+  Width=47
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=ano
+  Property=FieldSpec=PADRAO_num_04
+  Property=TooltipText=Ano Inicial
+CONTROL=SINGLELINEEDIT
+GUID=E97BB389-2195-4D11-AC4F-FFE5C154A902
+  Name=empresa
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=173
+  Width=47
+  Top=29
+  Height=20
+  Browseindex=0
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=empresa
+  Property=FieldSpec=PADRAO_num_04
+  Property=TooltipText=Ano Inicial
+CONTROL=PUSHBUTTON
+GUID=46705597-987A-40D0-B2BD-05CDFC790116
+  Name=cmdmenos3
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-
+  Order=1
+  Left=225
+  Width=20
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-
+  Property=HyperLabel=cmdmenos3
+CONTROL=PUSHBUTTON
+GUID=09697122-1B20-40AA-A854-13D56F410091
+  Name=cmdmais3
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=+
+  Order=2
+  Left=225
+  Width=20
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,+
+  Property=HyperLabel=cmdmais3
+CONTROL=PUSHBUTTON
+GUID=2A5626A8-F0E9-497F-B40A-B8AA6D723E29
+  Name=cmdmenos2
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-
+  Order=4
+  Left=141
+  Width=20
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-
+  Property=HyperLabel=cmdmenos2
+CONTROL=PUSHBUTTON
+GUID=9CF8C25F-2BDF-4F5F-868B-9C254A8F4028
+  Name=cmdmais2
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=+
+  Order=5
+  Left=141
+  Width=20
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,+
+  Property=HyperLabel=cmdmais2
+CONTROL=FIXEDTEXT
+GUID=6546A33F-0841-43F1-A59C-F2FAD2EFF176
+  Name=FixedText2
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Ano
+  Order=7
+  Left=97
+  Width=36
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ano
+  Property=HyperLabel=FixedText2
+CONTROL=PUSHBUTTON
+GUID=0266E201-B2B4-4287-858F-05EF6AC8F739
+  Name=cmdmenos
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-
+  Order=8
+  Left=61
+  Width=20
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-
+  Property=HyperLabel=cmdmenos
+CONTROL=PUSHBUTTON
+GUID=6E609CCF-D94F-4F2F-AEDE-215EC70C541A
+  Name=cmdmais
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=+
+  Order=9
+  Left=61
+  Width=20
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,+
+  Property=HyperLabel=cmdmais
+CONTROL=FIXEDTEXT
+GUID=8106A41E-C4FB-4539-AEAD-FDE7490F84CA
+  Name=FixedText1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Mes
+  Order=11
+  Left=13
+  Width=36
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Mes
+  Property=HyperLabel=FixedText1
+CONTROL=FIXEDTEXT
+GUID=F591DFB4-1DD1-4478-A7F8-B588669ACF69
+  Name=FixedText3
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Empresa
+  Order=12
+  Left=173
+  Width=44
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Empresa
+  Property=HyperLabel=FixedText3
+CONTROL=FIXEDTEXT
+GUID=896D3B1F-E411-4D75-93EC-AE1C25626972
+  Name=theFixedText10
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=OK
+  Order=13
+  Left=257
+  Width=64
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,OK
+  Property=HyperLabel=theFixedText10
+CONTROL=PUSHBUTTON
+GUID=44C35382-8D4F-4F5C-9FAF-1D20FBFB79D6
+  Name=OK
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=14
+  Left=257
+  Width=64
+  Top=5
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=OK
+  Property=TooltipText=Clique Para Concluir
+  Property=Image=ico_ok
+SUBCONTROLSEND
+DESIGNEREND = _Jcom
+
+

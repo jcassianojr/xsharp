@@ -1,0 +1,209 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,jimpdiv
+GUID=B7A813AE-3CE7-490C-8450-21E26834AE7E
+  Name=jimpdiv
+  Class=DATADIALOG
+  Caption=DataDialog Caption
+  Order=0
+  Left=14
+  Width=502
+  Top=14
+  Height=240
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataDialog Caption",,
+  Property=HyperLabel=#jimpdiv,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=283C90C2-D9D4-4EEB-AAC2-4A972972E7EB
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=1
+  Left=413
+  Width=64
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=472EE7CA-613A-405A-AA53-894B8A3B6757
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=2
+  Left=413
+  Width=64
+  Top=77
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ico_sair
+  Property=TooltipText="Clique aqui Para Cancelar"
+
+CONTROL=FIXEDTEXT
+GUID=0916095B-25B7-419F-B5B4-FBEE497512CC
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=3
+  Left=413
+  Width=64
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=D0682ABB-91B5-46C5-98E6-5593FA1E71BA
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=4
+  Left=413
+  Width=64
+  Top=5
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ico_ok
+  Property=TooltipText="Clique aqui Par Confirmar"
+
+CONTROL=SINGLELINEEDIT
+GUID=7570A05D-9EC9-437A-BBFB-58B08904EEA3
+  Name=DFIM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=197
+  Width=104
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+  Property=HyperLabel=#DFIM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=652AEBF2-48F1-4268-A618-39DF3EA2E7B2
+  Name=DINI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=89
+  Width=104
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=InheritClassName=DateSle
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DINI,,,
+
+CONTROL=FIXEDTEXT
+GUID=112E466B-C6B2-4866-ACCE-FDDAC3D77718
+  Name=per
+  Class=FIXEDTEXT
+  Caption=Periodo
+  Order=7
+  Left=9
+  Width=80
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Periodo",,
+  Property=HyperLabel=#per,,,
+
+CONTROL=PROGRESSBAR
+GUID=227452EB-6141-4C78-99A3-A6686D94FEE1
+  Name=ProgBar
+  Class=PROGRESSBAR
+  Caption=
+  Order=8
+  Left=13
+  Width=324
+  Top=213
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=131072
+  Property=Range=0,
+  Property=Range=,100
+  Property=HyperLabel=#ProgBar,,,
+
+CONTROL=FIXEDTEXT
+GUID=C0150C05-381B-47E3-8810-E49198A1428D
+  Name=chave
+  Class=FIXEDTEXT
+  Caption=Fixed Text
+  Order=9
+  Left=13
+  Width=328
+  Top=185
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fixed Text",,
+  Property=HyperLabel=#chave,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jimpdiv
+

@@ -1,0 +1,299 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jtrjobi
+GUID=7F085062-7F13-4D14-8807-5D5EDAAEC766
+  Name=jtrjobi
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=20
+  Width=420
+  Top=20
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#jtrjobi,,,
+  Property=ViewAs=#FormView
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=8C70061F-7A3E-4624-A604-B97556CD0F92
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero
+  Order=1
+  Left=22
+  Width=44
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=FIXEDTEXT
+GUID=B9DB0718-85C4-4FED-800A-9CDA64D158B7
+  Name=SC_PECA
+  Class=FIXEDTEXT
+  Caption=Peca:
+  Order=2
+  Left=22
+  Width=32
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Peca:",,
+  Property=HyperLabel=#SC_PECA,,,
+
+CONTROL=FIXEDTEXT
+GUID=65A5919A-79ED-4E9D-88DC-C6A9F9B395D2
+  Name=SC_NUMTEC
+  Class=FIXEDTEXT
+  Caption=Funcionario
+  Order=3
+  Left=22
+  Width=55
+  Top=74
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Funcionario",,
+  Property=HyperLabel=#SC_NUMTEC,,,
+
+CONTROL=FIXEDTEXT
+GUID=77E95470-61DE-4065-9E12-8874B2B462EB
+  Name=SC_NOMTEC
+  Class=FIXEDTEXT
+  Caption=Nome
+  Order=4
+  Left=22
+  Width=44
+  Top=98
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome",,
+  Property=HyperLabel=#SC_NOMTEC,,,
+
+CONTROL=FIXEDTEXT
+GUID=5503BF20-174A-4B63-B0E9-1A3D9ACCE04D
+  Name=SC_CARGA
+  Class=FIXEDTEXT
+  Caption=Carga:
+  Order=5
+  Left=22
+  Width=36
+  Top=122
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Carga:",,
+  Property=HyperLabel=#SC_CARGA,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=1BCD6435-0CDF-4205-9EB6-55ED1D92AD9B
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=82
+  Width=68
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero",,
+  Property=HyperLabel=,,,"TRJOB_NUMINS"
+  Property=Background=253 254 220
+
+CONTROL=SINGLELINEEDIT
+GUID=36FF8A45-F54C-40EB-95DB-B9C3A8E573B2
+  Name=PECA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=82
+  Width=180
+  Top=50
+  Height=20
+  Browseindex=1
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#PECA,,,
+  Property=HyperLabel=,"Peça:",,
+  Property=HyperLabel=,,,"TRJOBI_PECA"
+
+CONTROL=SINGLELINEEDIT
+GUID=89AD3F1D-9E18-433D-9CA3-A50B95B8581F
+  Name=NUMTEC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=82
+  Width=68
+  Top=74
+  Height=20
+  Browseindex=2
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NUMTEC,,,
+  Property=HyperLabel=,"Nº",,
+  Property=HyperLabel=,,,"TRJOB_NUMINS"
+
+CONTROL=SINGLELINEEDIT
+GUID=29A58F42-171D-4716-BFC4-832F1212FB0A
+  Name=NOMTEC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=82
+  Width=292
+  Top=98
+  Height=20
+  Browseindex=3
+  Browsesize=19
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_CHAR_40
+  Property=HyperLabel=#NOMTEC,,,
+  Property=HyperLabel=,"Nome",,
+  Property=HyperLabel=,,,"TRJOBI_NOMTEC"
+
+CONTROL=SINGLELINEEDIT
+GUID=C7DD0861-E895-431D-949B-E7F39AA65C4D
+  Name=CARGA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=82
+  Width=48
+  Top=122
+  Height=20
+  Browseindex=4
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_05_2
+  Property=HyperLabel=#CARGA,,,
+  Property=HyperLabel=,"Carga:",,
+  Property=HyperLabel=,,,"TRJOBI_CARGA"
+
+CONTROL=PUSHBUTTON
+GUID=DA4BD1F4-8E27-4B98-9797-335064B7216F
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=11
+  Left=269
+  Width=24
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+  Property=TooltipText="Escolher um Produto"
+
+CONTROL=PUSHBUTTON
+GUID=D9D01AA0-BE89-4CEF-8496-C38B0EF6F27F
+  Name=PEGfun
+  Class=PUSHBUTTON
+  Caption=-->
+  Order=12
+  Left=189
+  Width=31
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-->",,
+  Property=HyperLabel=#PEGfun,,,
+  Property=TooltipText="Retorna o Nome do Nº Funcionario"
+
+CONTROL=PUSHBUTTON
+GUID=67EC780B-350B-47BA-8775-8BFD88494CDD
+  Name=ESCfun
+  Class=PUSHBUTTON
+  Caption=...
+  Order=13
+  Left=157
+  Width=31
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#ESCfun,,,
+  Property=TooltipText="Exibe lista funcionario  para escolha"
+
+SUBCONTROLSEND
+DESIGNEREND = jtrjobi
+

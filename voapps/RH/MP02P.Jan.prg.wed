@@ -1,0 +1,172 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JMPP
+GUID=F608D59D-C30D-4657-BD95-9C720D5C42F1
+  Name=JMPP
+  Class=DATAWINDOW
+  Caption=Procedimentos
+  Order=0
+  Left=34
+  Width=330
+  Top=34
+  Height=189
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Procedimentos",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JMPP,,,
+
+SUBCONTROLSSTART
+CONTROL=RADIOBUTTONGROUP
+GUID=37F94249-4408-4013-89A7-9DE89969BB84
+  Name=TIPO
+  Class=RADIOBUTTONGROUP
+  Caption=TIPO
+  Order=3
+  Left=13
+  Width=160
+  Top=85
+  Height=72
+  Browseindex=1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"TIPO",,
+  Property=HyperLabel=#TIPO,,,
+  Property=FieldSpec=padrao_char_01
+
+CONTROL=RADIOBUTTON
+GUID=F948E8DD-11BF-423F-B3D2-ABE16E4DD90A
+  Name=Obrigatorio
+  Class=RADIOBUTTON
+  Caption=Obrigatorio
+  Order=4
+  Left=29
+  Width=80
+  Top=105
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Obrigatorio",,
+  Property=Value=O
+  Property=HyperLabel=#Obrigatorio,,,
+
+CONTROL=RADIOBUTTON
+GUID=D86C14B4-9EB7-4C48-AA68-72802A10D1A0
+  Name=Recomendado
+  Class=RADIOBUTTON
+  Caption=Recomendado
+  Order=5
+  Left=29
+  Width=120
+  Top=129
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Recomendado",,
+  Property=Value=R
+  Property=HyperLabel=#Recomendado,,,
+
+CONTROL=FIXEDTEXT
+GUID=D85C1945-06B3-4D47-9FA8-C7557FEA471C
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=-1
+  Left=9
+  Width=50
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=9042EE8E-86E0-47D1-BB5C-A67F2C3BA56D
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=9
+  Width=150
+  Top=21
+  Height=18
+  Browseindex=0
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_12
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"MP02P_CODIGO"
+
+CONTROL=FIXEDTEXT
+GUID=12907229-680E-4B2C-96AD-89C39443143E
+  Name=SC_CURSO
+  Class=FIXEDTEXT
+  Caption=Procedimento
+  Order=-1
+  Left=9
+  Width=86
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Procedimento",,
+  Property=HyperLabel=#SC_CURSO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=EA93445C-A9AA-429D-8EF3-B4AE14AA0E85
+  Name=CURSO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=9
+  Width=178
+  Top=61
+  Height=18
+  Browseindex=0
+  Browsesize=20
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#CURSO,,,
+  Property=HyperLabel=,"Procedimento",,
+  Property=HyperLabel=,,,"MP02P_CURSO"
+
+SUBCONTROLSEND
+DESIGNEREND = JMPP
+

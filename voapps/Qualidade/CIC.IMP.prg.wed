@@ -1,0 +1,85 @@
+DESIGNERSTART = VOWindowEditor,DIALOGWINDOW,JCICIMP
+GUID=90C98DEF-1036-430B-8A12-34F4CBA17D04
+  Name=JCICIMP
+  Class=DIALOGWINDOW
+  Caption=Importaçao de Produto Final
+  Order=0
+  Left=8
+  Width=400
+  Top=8
+  Height=240
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=2160590976
+  Exstyles=257
+  Property=HyperLabel=,"Importaçao de Produto Final",,
+  Property=HyperLabel=#JCICIMP,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=A100B12B-7B8A-41DA-BED5-0A319E0C911D
+  Name=theFixedText1
+  Class=FIXEDTEXT
+  Caption=Importar Produtos Final
+  Order=-1
+  Left=55
+  Width=267
+  Top=19
+  Height=38
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Importar Produtos Final",,
+  Property=NewFont=14:MS Sans Serif:Bold
+  Property=HyperLabel=#theFixedText1,,,
+
+CONTROL=PUSHBUTTON
+GUID=93FDE7B1-9F87-484B-9CBC-FB0D700C9225
+  Name=cancelar
+  Class=PUSHBUTTON
+  Caption=&Cancelar
+  Order=-1
+  Left=57
+  Width=80
+  Top=81
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"&Cancelar",,
+  Property=HyperLabel=#cancelar,,,
+
+CONTROL=PUSHBUTTON
+GUID=17029419-6DC2-44A0-A783-C19B3F562513
+  Name=Importar
+  Class=PUSHBUTTON
+  Caption=&Importar
+  Order=-1
+  Left=165
+  Width=80
+  Top=81
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"&Importar",,
+  Property=HyperLabel=#Importar,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JCICIMP
+

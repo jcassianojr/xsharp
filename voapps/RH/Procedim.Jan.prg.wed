@@ -1,0 +1,396 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JPRO
+GUID=6BEFF2B6-104C-4D79-AC49-2B88FDFBEDA4
+  Name=JPRO
+  Class=DATAWINDOW
+  Caption=Procedimentos
+  Order=0
+  Left=38
+  Width=567
+  Top=38
+  Height=349
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Procedimentos",,
+  Property=HyperLabel=#JPRO,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=1F3515BF-91CD-4370-AFE7-53A35C91BBC1
+  Name=DESCUR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=81
+  Width=392
+  Top=41
+  Height=20
+  Browseindex=0
+  Browsesize=49
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_120
+  Property=HyperLabel=#DESCUR,,,
+  Property=HyperLabel=,"Descrição",,
+  Property=HyperLabel=,,,"PROCEDIM_DESCUR"
+  Property=FocusSelect=FSEL_HOME
+
+CONTROL=FIXEDTEXT
+GUID=05616686-5BE6-4FA6-A2D2-C807F7852EEA
+  Name=SC_DESCUR
+  Class=FIXEDTEXT
+  Caption=Descrição:
+  Order=10
+  Left=13
+  Width=56
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descrição:",,
+  Property=HyperLabel=#SC_DESCUR,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=BCE966F5-7DCC-4FCA-8BAD-9691E61C9FAD
+  Name=CURSO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=81
+  Width=122
+  Top=13
+  Height=20
+  Browseindex=1
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#CURSO,,,
+  Property=HyperLabel=,"Curso:",,
+  Property=HyperLabel=,,,"PROCEDIM_CURSO"
+  Property=FocusSelect=FSEL_HOME
+
+CONTROL=FIXEDTEXT
+GUID=26DD84FE-1851-48E9-9BA9-DCD7268B8C60
+  Name=theFixedText3
+  Class=FIXEDTEXT
+  Caption=Procedimento
+  Order=12
+  Left=9
+  Width=68
+  Top=13
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Procedimento",,
+  Property=HyperLabel=#theFixedText3,,,
+
+CONTROL=PUSHBUTTON
+GUID=4FB987C3-2CAE-4B5F-AD20-A292A0B97F09
+  Name=pornome
+  Class=PUSHBUTTON
+  Caption=
+  Order=13
+  Left=513
+  Width=32
+  Top=29
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#pornome,,,
+
+CONTROL=PUSHBUTTON
+GUID=58DEAC71-7B68-4B3D-9984-74FBA8DA8331
+  Name=buscanome
+  Class=PUSHBUTTON
+  Caption=
+  Order=14
+  Left=477
+  Width=32
+  Top=29
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscanome,,,
+
+CONTROL=PUSHBUTTON
+GUID=619557AA-5EAC-4555-A1BD-64EE80505FCF
+  Name=porcurso
+  Class=PUSHBUTTON
+  Caption=
+  Order=15
+  Left=253
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#porcurso,,,
+
+CONTROL=PUSHBUTTON
+GUID=80A371EF-46EC-4E87-91A5-1AC516B60C2B
+  Name=buscacurso
+  Class=PUSHBUTTON
+  Caption=
+  Order=16
+  Left=213
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscacurso,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=F12E10FC-1BB1-45C7-AD7D-88E719122F45
+  Name=GRUPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=57
+  Width=110
+  Top=69
+  Height=20
+  Browseindex=2
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_05
+  Property=HyperLabel=#GRUPO,,,
+  Property=HyperLabel=,"Carga:",,
+  Property=HyperLabel=,,,"TREIN_CARGA"
+  Property=FocusSelect=FSEL_HOME
+
+CONTROL=FIXEDTEXT
+GUID=159186CB-4F8E-486E-8FA8-0DBA9561D991
+  Name=SC_CARGA1
+  Class=FIXEDTEXT
+  Caption=Grupo
+  Order=18
+  Left=9
+  Width=44
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Grupo",,
+  Property=HyperLabel=#SC_CARGA1,,,
+
+CONTROL=PUSHBUTTON
+GUID=A220C722-DCCC-4636-BF1D-EFD914793998
+  Name=Proximo
+  Class=PUSHBUTTON
+  Caption=
+  Order=19
+  Left=521
+  Width=36
+  Top=253
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Proximo,,,
+  Property=Image=ico_next
+
+CONTROL=PUSHBUTTON
+GUID=A0958BF8-E18F-4795-B1EB-F9BDCD9C8746
+  Name=Anterior
+  Class=PUSHBUTTON
+  Caption=
+  Order=20
+  Left=485
+  Width=36
+  Top=253
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Anterior,,,
+  Property=Image=ico_previous
+
+CONTROL=PUSHBUTTON
+GUID=2DC6E11A-5A04-45FD-BFF5-A164C7521ECB
+  Name=Tabular
+  Class=PUSHBUTTON
+  Caption=Ver Itens
+  Order=21
+  Left=485
+  Width=72
+  Top=229
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Ver Itens",,
+  Property=HyperLabel=#Tabular,,,
+
+CONTROL=PUSHBUTTON
+GUID=73A3522B-ABDF-4532-9F52-AD0C13A1B0AB
+  Name=ALTERAR
+  Class=PUSHBUTTON
+  Caption=Alterar Item
+  Order=22
+  Left=485
+  Width=72
+  Top=205
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Alterar Item",,
+  Property=HyperLabel=#ALTERAR,,,
+
+CONTROL=PUSHBUTTON
+GUID=1DDB7F8A-2E42-4E2A-9148-F9C375F2F7A9
+  Name=Excluir
+  Class=PUSHBUTTON
+  Caption=Excluir Item
+  Order=23
+  Left=485
+  Width=72
+  Top=181
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Excluir Item",,
+  Property=HyperLabel=#Excluir,,,
+
+CONTROL=PUSHBUTTON
+GUID=976D6A6C-649E-4293-9A5F-91F0AC3DE35F
+  Name=NOVO
+  Class=PUSHBUTTON
+  Caption=Novo Item
+  Order=24
+  Left=485
+  Width=72
+  Top=157
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Novo Item",,
+  Property=HyperLabel=#NOVO,,,
+
+CONTROL=PUSHBUTTON
+GUID=1444073A-7669-4A84-8D2C-920883126EE2
+  Name=Escolher
+  Class=PUSHBUTTON
+  Caption=Escolher
+  Order=25
+  Left=485
+  Width=72
+  Top=125
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Escolher",,
+  Property=HyperLabel=#Escolher,,,
+
+CONTROL=SUBDATAWINDOW
+GUID=A6BF542B-1BF3-4B8D-983A-90DFAD951451
+  Name=jcurgrp
+  Class=SUBDATAWINDOW
+  Caption=Cadastro de Cursos
+  Order=26
+  Left=9
+  Width=464
+  Top=105
+  Height=212
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Cadastro de Cursos",,
+  Property=HyperLabel=#jcurgrp,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JPRO
+

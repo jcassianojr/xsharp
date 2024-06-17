@@ -1,0 +1,130 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JCEI
+GUID=986A515F-50D0-44EE-ACE7-24AB4B2A2AC0
+  Name=JCEI
+  Class=DATAWINDOW
+  Caption=Cursos Escolas
+  Order=0
+  Left=14
+  Width=420
+  Top=14
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Cursos Escolas",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JCEI,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=F271B28C-B73A-4F55-AD2B-612EE0C86D5D
+  Name=DESCUR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=2
+  Width=40
+  Top=2
+  Height=20
+  Browseindex=2
+  Browsesize=38
+  Subform=No
+  Nosave=No
+  Deleted=1
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_120
+  Property=HyperLabel=,"Descrição",,
+  Property=HyperLabel=#DESCUR,,,
+
+CONTROL=FIXEDTEXT
+GUID=3B53CC66-9873-49FD-9448-CA5455714C58
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Numero:
+  Order=-1
+  Left=22
+  Width=60
+  Top=22
+  Height=30
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=79A5A554-BB7A-4D28-87CE-AB0F3E3E95D1
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=92
+  Width=90
+  Top=22
+  Height=30
+  Browseindex=0
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"CUREMI_NUMERO"
+
+CONTROL=FIXEDTEXT
+GUID=6E707502-A01D-4930-8021-2370AD3A7333
+  Name=SC_CURSO
+  Class=FIXEDTEXT
+  Caption=Curso:
+  Order=-1
+  Left=22
+  Width=40
+  Top=62
+  Height=30
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Curso:",,
+  Property=HyperLabel=#SC_CURSO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=6F93F114-CC33-4A6B-9EF5-524302AD2218
+  Name=CURSO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=92
+  Width=130
+  Top=62
+  Height=30
+  Browseindex=1
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#CURSO,,,
+  Property=HyperLabel=,"Curso:",,
+  Property=HyperLabel=,,,"CUREMI_CURSO"
+
+SUBCONTROLSEND
+DESIGNEREND = JCEI
+

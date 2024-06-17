@@ -1,0 +1,325 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JCICI
+GUID=FD3FD7A3-3173-47AD-BA77-5984812D7EE4
+  Name=JCICI
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=14
+  Width=427
+  Top=14
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#FormView
+  Property=HyperLabel=#JCICI,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=8F2E7245-F706-4C19-A57D-14DB9E1B63E8
+  Name=LOCALI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=139
+  Width=270
+  Top=31
+  Height=18
+  Browseindex=1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_30
+  Property=HyperLabel=#LOCALI,,,
+  Property=HyperLabel=,"Locali:",,
+  Property=HyperLabel=,,,"CICI_LOCALI"
+
+CONTROL=SINGLELINEEDIT
+GUID=0469A262-AD43-4AEA-8873-5DB75ADA19C0
+  Name=ESPE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=13
+  Width=120
+  Top=73
+  Height=18
+  Browseindex=3
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_4
+  Property=HyperLabel=#ESPE,,,
+  Property=HyperLabel=,"Espe:",,
+  Property=HyperLabel=,,,"CICI_ESPE"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=740E6A8C-FD8E-43BD-8A0B-AB91BA80E2F7
+  Name=MAX
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=139
+  Width=90
+  Top=73
+  Height=18
+  Browseindex=6
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_4
+  Property=HyperLabel=#MAX,,,
+  Property=HyperLabel=,"Max:",,
+  Property=HyperLabel=,,,"CICI_MAX"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=165550C8-4533-4520-97CA-A77635EA9E6E
+  Name=MIN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=233
+  Width=96
+  Top=73
+  Height=18
+  Browseindex=5
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_09_4
+  Property=HyperLabel=#MIN,,,
+  Property=HyperLabel=,"Min:",,
+  Property=HyperLabel=,,,"CICI_MIN"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=11D7ADB1-0433-4FF1-A073-9558BBB14F65
+  Name=UND
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=13
+  Width=116
+  Top=113
+  Height=18
+  Browseindex=2
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_02
+  Property=HyperLabel=#UND,,,
+  Property=HyperLabel=,"Und:",,
+  Property=HyperLabel=,,,"CICI_UND"
+
+CONTROL=SINGLELINEEDIT
+GUID=D3A97C9A-29E6-4A10-8E9A-76F85A1C28C6
+  Name=CESPE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=137
+  Width=120
+  Top=113
+  Height=18
+  Browseindex=4
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_30
+  Property=HyperLabel=#CESPE,,,
+  Property=HyperLabel=,"Esp.Desc",,
+  Property=HyperLabel=,,,"CICI_ESPE"
+
+CONTROL=FIXEDTEXT
+GUID=F3A5658C-E307-4FA6-94BF-DA48EAE615A8
+  Name=SC_DESENHO
+  Class=FIXEDTEXT
+  Caption=Desenho:
+  Order=7
+  Left=13
+  Width=60
+  Top=13
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Desenho:",,
+  Property=HyperLabel=#SC_DESENHO,,,
+
+CONTROL=FIXEDTEXT
+GUID=07C589A2-EEA2-4EA6-9BD9-AD12310AB979
+  Name=SC_LOCALI
+  Class=FIXEDTEXT
+  Caption=Local:
+  Order=8
+  Left=139
+  Width=42
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Local:",,
+  Property=HyperLabel=#SC_LOCALI,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=B8115E06-6737-44B1-8BDC-8324A713891C
+  Name=DESENHO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=13
+  Width=120
+  Top=31
+  Height=18
+  Browseindex=0
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_24
+  Property=HyperLabel=#DESENHO,,,
+  Property=HyperLabel=,"Desenho:",,
+  Property=HyperLabel=,,,"CICI_DESENHO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=22F5A181-32C4-433F-9FBA-D6741D59BB86
+  Name=SC_ESPE
+  Class=FIXEDTEXT
+  Caption=Especificado:
+  Order=10
+  Left=13
+  Width=80
+  Top=55
+  Height=14
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Especificado:",,
+  Property=HyperLabel=#SC_ESPE,,,
+
+CONTROL=FIXEDTEXT
+GUID=87A2AB12-4FA6-49EC-94A3-AC41A89C080E
+  Name=SC_MAX
+  Class=FIXEDTEXT
+  Caption=Max:
+  Order=11
+  Left=139
+  Width=36
+  Top=55
+  Height=14
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Max:",,
+  Property=HyperLabel=#SC_MAX,,,
+
+CONTROL=FIXEDTEXT
+GUID=705FA176-FB1A-437F-A536-073D2E2E61EF
+  Name=SC_MIN
+  Class=FIXEDTEXT
+  Caption=Min:
+  Order=12
+  Left=235
+  Width=30
+  Top=55
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Min:",,
+  Property=HyperLabel=#SC_MIN,,,
+
+CONTROL=FIXEDTEXT
+GUID=05855BA7-74DB-4C01-81F4-631C0ED187C8
+  Name=SC_UND
+  Class=FIXEDTEXT
+  Caption=Und:
+  Order=13
+  Left=13
+  Width=36
+  Top=93
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Und:",,
+  Property=HyperLabel=#SC_UND,,,
+
+CONTROL=FIXEDTEXT
+GUID=AD5FFA4F-1954-4DE7-BBA1-03135B52D3EB
+  Name=theFixedText6
+  Class=FIXEDTEXT
+  Caption=Especificado Descritivo:
+  Order=14
+  Left=137
+  Width=124
+  Top=97
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Especificado Descritivo:",,
+  Property=HyperLabel=#theFixedText6,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JCICI
+

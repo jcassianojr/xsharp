@@ -1,0 +1,161 @@
+DESIGNERSTART = VOWindowEditor,DIALOGWINDOW,HelpAbout
+GUID=1CC9F71E-0752-4B83-8BE1-44A2D7E9FBE2
+  Name=HelpAbout
+  Class=FORM:DIALOGWINDOW
+  Caption=Sobre a Aplicação
+  Order=0
+  Left=0
+  Width=410
+  Top=0
+  Height=356
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=3334996096
+  Exstyles=0
+  Property=HyperLabel=,Sobre a Aplicação
+  Property=HyperLabel=HelpAbout
+  Property=ClipperKeys=True
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=6403D642-DAEB-4568-8A8B-88269B370EA4
+  Name=PushButton1
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=4
+  Left=328
+  Width=64
+  Top=8
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=PushButton1
+  Property=TooltipText=Clique Para Retornar
+  Property=Image=ICO_SAIR
+CONTROL=FIXEDTEXT
+GUID=FB143C06-2DE4-4305-B4DA-91ECC63A86DF
+  Name=theFixedText9
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Retornar
+  Order=5
+  Left=329
+  Width=64
+  Top=53
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,Retornar
+  Property=HyperLabel=theFixedText9
+CONTROL=RICHEDIT
+GUID=A2A55FDD-3BF7-44B8-ACD4-C67F69F0390C
+  Name=INFOSISTEMA
+  Class=CONTROL:TEXTCONTROL:EDIT:MULTILINEEDIT:RICHEDIT
+  Caption=
+  Order=6
+  Left=17
+  Width=376
+  Top=69
+  Height=264
+  Browseindex=0
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082136644
+  Exstyles=512
+  Property=HyperLabel=INFOSISTEMA
+CONTROL=FIXEDTEXT
+GUID=3E874392-7BD1-446B-BECC-C4B0768DF141
+  Name=FixedText3
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=www.google.com.br
+  Order=7
+  Left=193
+  Width=124
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,www.google.com.br
+  Property=HyperLabel=FixedText3
+  Property=InheritClassName=Hyperlink
+CONTROL=FIXEDTEXT
+GUID=B8BDAA7D-7852-4BAC-8AC7-1FF3B551FD8F
+  Name=TITULO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Nome da Aplicação
+  Order=1
+  Left=61
+  Width=259
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741953
+  Exstyles=0
+  Property=HyperLabel=,Nome da Aplicação
+  Property=HyperLabel=TITULO
+  Property=NewFont=12:Microsoft Sans Serif:Bold
+CONTROL=FIXEDICON
+GUID=1B90999E-8427-40F4-B1E3-EB8BCC2633DF
+  Name=Info
+  Class=CONTROL:FIXEDICON
+  Caption=info_ico
+  Order=2
+  Left=17
+  Width=40
+  Top=13
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130435
+  Exstyles=0
+  Property=HyperLabel=,info_ico
+  Property=HyperLabel=Info
+CONTROL=FIXEDTEXT
+GUID=14CECE78-7546-4277-9DF6-9A9AE859B02B
+  Name=theFixedText3
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Copyright 2016
+  Order=3
+  Left=61
+  Width=124
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741953
+  Exstyles=0
+  Property=HyperLabel=,Copyright 2016
+  Property=HyperLabel=theFixedText3
+SUBCONTROLSEND
+DESIGNEREND = HelpAbout
+
+

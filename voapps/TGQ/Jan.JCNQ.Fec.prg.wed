@@ -1,0 +1,208 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JCNQFEC
+GUID=F1910261-FC83-4316-98DC-7B1A37BC91C6
+  Name=JCNQFEC
+  Class=DATADIALOG
+  Caption=DataDialog Caption
+  Order=0
+  Left=24
+  Width=294
+  Top=24
+  Height=169
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataDialog Caption",,
+  Property=Use=<Share Owner's>
+  Property=HyperLabel=#JCNQFEC,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=D9EC150A-FED3-4732-9391-DD674741536D
+  Name=SC_DATAFEC
+  Class=FIXEDTEXT
+  Caption=Fechamento
+  Order=1
+  Left=9
+  Width=75
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fechamento",,
+  Property=HyperLabel=#SC_DATAFEC,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=6D7EBDF8-0308-4064-934B-1C6879DEE379
+  Name=DATAFEC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=5
+  Width=100
+  Top=33
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DATAFEC,,,
+  Property=HyperLabel=,"Datafec:",,
+  Property=HyperLabel=,,,"ACPNC_DATAFEC"
+  Property=InheritClassName=DateSle
+
+CONTROL=FIXEDTEXT
+GUID=776D16DE-3C22-493A-8199-1F4D3438FF8E
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=3
+  Left=201
+  Width=64
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=1E2ECA3F-F6AD-4DF4-82B9-8EB54CD3E93F
+  Name=Ok
+  Class=PUSHBUTTON
+  Caption=
+  Order=4
+  Left=201
+  Width=64
+  Top=5
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Ok,,,
+  Property=Image=ICO_OK
+
+CONTROL=FIXEDTEXT
+GUID=F25ED44E-A7D6-497D-9C3F-769F21129922
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=5
+  Left=201
+  Width=64
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=0AC8809F-52E1-44DD-8405-6F1759EEF701
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=201
+  Width=64
+  Top=77
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ICO_SAIR
+
+CONTROL=PUSHBUTTON
+GUID=1300E6DC-DB14-476E-9DEF-ABBBFED3901B
+  Name=Hoje
+  Class=PUSHBUTTON
+  Caption=Hoje
+  Order=7
+  Left=105
+  Width=80
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Hoje",,
+  Property=HyperLabel=#Hoje,,,
+
+CONTROL=PUSHBUTTON
+GUID=07BCB72D-6864-4B5D-A841-E1D1F8B54916
+  Name=Abertura
+  Class=PUSHBUTTON
+  Caption=Abertura
+  Order=8
+  Left=105
+  Width=80
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Abertura",,
+  Property=HyperLabel=#Abertura,,,
+
+CONTROL=PUSHBUTTON
+GUID=B3F5E96E-DCD4-4D32-A5E2-36AD6904CF5D
+  Name=Branco
+  Class=PUSHBUTTON
+  Caption=Branco
+  Order=9
+  Left=105
+  Width=80
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Branco",,
+  Property=HyperLabel=#Branco,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JCNQFEC
+

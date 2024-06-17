@@ -1,0 +1,1533 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JPT
+GUID=036195B8-C2B7-4921-9BB7-AB0077806C2B
+  Name=JPT
+  Class=FORM:DATAWINDOW
+  Caption=Programacao de Treinamentos
+  Order=0
+  Left=0
+  Width=630
+  Top=0
+  Height=700
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Programacao de Treinamentos
+  Property=HyperLabel=JPT
+  Property=InheritClassName=MYDataWindow
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+  Property=ClipperKeys=True
+  Property=AllowServerClose=True
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=353ABA1A-739B-460E-8D1C-2DFBBA27569B
+  Name=btnPEGESC
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=66
+  Left=301
+  Width=20
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=btnPEGESC
+CONTROL=COMBOBOX
+GUID=3C3D5F86-C271-4CFF-84BB-9B3741A627D3
+  Name=AREA
+  Class=CONTROL:TEXTCONTROL:BASELISTBOX:COMBOBOX
+  Caption=
+  Order=23
+  Left=9
+  Width=220
+  Top=97
+  Height=68
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1075839234
+  Exstyles=0
+  Property=HyperLabel=AREA
+  Property=FillUsing=METHOD,comboPEGMP05
+  Property=FieldSpec=PADRAO_CHAR_02
+CONTROL=FIXEDTEXT
+GUID=E98311B3-F75D-4436-9C21-6F02272D45FC
+  Name=SC_TREIN
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Programaçäo
+  Order=1
+  Left=9
+  Width=68
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Programaçäo
+  Property=HyperLabel=SC_TREIN
+CONTROL=FIXEDTEXT
+GUID=57874933-14A7-47D4-BB06-AEEC96299CE7
+  Name=SC_DATACUR
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Prg Inicial
+  Order=2
+  Left=189
+  Width=60
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Prg Inicial
+  Property=HyperLabel=SC_DATACUR
+CONTROL=FIXEDTEXT
+GUID=229038AF-EA9B-480F-A4B4-7E2FBE004811
+  Name=SC_HORINI
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Inicio
+  Order=3
+  Left=397
+  Width=36
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Inicio
+  Property=HyperLabel=SC_HORINI
+CONTROL=FIXEDTEXT
+GUID=C36F37C4-A8FF-48B8-BF3A-423F52E2F8F2
+  Name=SC_HORFIM
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Fim
+  Order=4
+  Left=501
+  Width=32
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Fim
+  Property=HyperLabel=SC_HORFIM
+CONTROL=FIXEDTEXT
+GUID=58B5E4F8-7A02-4CFC-924D-2EF6953DC5EF
+  Name=SC_CURSO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Curso:
+  Order=5
+  Left=9
+  Width=40
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Curso:
+  Property=HyperLabel=SC_CURSO
+CONTROL=FIXEDTEXT
+GUID=CB41529E-4EA7-4E19-A213-C695F2A6F121
+  Name=SC_DESCUR
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Descrição:
+  Order=6
+  Left=241
+  Width=60
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Descrição:
+  Property=HyperLabel=SC_DESCUR
+CONTROL=FIXEDTEXT
+GUID=43A1B507-B5EA-4070-B8A1-0A9B192E3755
+  Name=SC_CARGA
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Carga Horária:
+  Order=7
+  Left=193
+  Width=80
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Carga Horária:
+  Property=HyperLabel=SC_CARGA
+CONTROL=FIXEDTEXT
+GUID=822E4331-DA73-4548-BA32-7EFEF5DC7658
+  Name=SC_RESPO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Responsável:
+  Order=8
+  Left=229
+  Width=72
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Responsável:
+  Property=HyperLabel=SC_RESPO
+CONTROL=FIXEDTEXT
+GUID=A50A7A7C-1512-450D-96BC-11E3F2E065D0
+  Name=SC_NINSTU
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=No. Instrutor
+  Order=9
+  Left=13
+  Width=60
+  Top=129
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,No. Instrutor
+  Property=HyperLabel=SC_NINSTU
+CONTROL=SINGLELINEEDIT
+GUID=FEA4DBA3-5F6C-41B6-8D5B-10347BD994C3
+  Name=TREIN
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Trein:
+  Order=10
+  Left=9
+  Width=64
+  Top=21
+  Height=22
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=HyperLabel=,Trein:
+  Property=HyperLabel=TREIN
+  Property=HyperLabel=,,,TREIN_TREIN
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=Background=253 254 220
+  Property=NewFont=12:Times New Roman:Bold
+CONTROL=SINGLELINEEDIT
+GUID=DDA1ABFD-6081-4AB9-B940-3F21AC250387
+  Name=DATA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Data
+  Order=11
+  Left=81
+  Width=104
+  Top=21
+  Height=20
+  Browseindex=1
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Data
+  Property=HyperLabel=DATA
+  Property=HyperLabel=,,,TREIN_HORINI
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=16C2EF4F-E0F5-45BB-A9F6-6BDFA8878E34
+  Name=PRINI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Horini:
+  Order=12
+  Left=189
+  Width=100
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Horini:
+  Property=HyperLabel=PRINI
+  Property=HyperLabel=,,,TREIN_HORINI
+  Property=FieldSpec=date_FIELD
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=26869C07-C7A7-4801-B927-5FC6AB9D2377
+  Name=MES
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=MES
+  Order=13
+  Left=537
+  Width=32
+  Top=45
+  Height=20
+  Browseindex=2
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,MES
+  Property=HyperLabel=MES
+  Property=HyperLabel=,,,TREIN_HORINI
+  Property=FieldSpec=PADRAO_NUM_02
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=ECE45B17-24D7-4567-BA0B-4A9E0AB46A98
+  Name=ANO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=ANO
+  Order=14
+  Left=573
+  Width=52
+  Top=45
+  Height=20
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,ANO
+  Property=HyperLabel=ANO
+  Property=HyperLabel=,,,TREIN_HORINI
+  Property=FieldSpec=PADRAO_NUM_04
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=AA4FF5D9-BE19-45C1-A5ED-A5632E792514
+  Name=PRFIM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Horini:
+  Order=15
+  Left=293
+  Width=100
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Horini:
+  Property=HyperLabel=PRFIM
+  Property=HyperLabel=,,,TREIN_HORINI
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=DF752586-436F-4E03-9866-4613E3D0AE3B
+  Name=DATACUR
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=DataCur
+  Order=16
+  Left=397
+  Width=100
+  Top=21
+  Height=20
+  Browseindex=4
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,DataCur
+  Property=HyperLabel=DATACUR
+  Property=HyperLabel=,,,TREIN_HORINI
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=3A4612CC-9C9B-4652-BC32-07B08462D4D1
+  Name=DATAFIM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Horfim:
+  Order=17
+  Left=501
+  Width=100
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Horfim:
+  Property=HyperLabel=DATAFIM
+  Property=HyperLabel=,,,TREIN_HORFIM
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=8764CA5A-DA59-4C9E-AEEA-8883CCC78956
+  Name=TIPCUR
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Horini:
+  Order=18
+  Left=169
+  Width=20
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Horini:
+  Property=HyperLabel=TIPCUR
+  Property=HyperLabel=,,,TREIN_HORINI
+  Property=FieldSpec=PADRAO_CHAR_01
+CONTROL=SINGLELINEEDIT
+GUID=870E8C97-A43F-4A7A-A548-C5FC044949AE
+  Name=CARGA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Carga:
+  Order=19
+  Left=263
+  Width=68
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Carga:
+  Property=HyperLabel=CARGA
+  Property=HyperLabel=,,,TREIN_CARGA
+  Property=FieldSpec=PADRAO_NUM_08_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=141FD90B-3BCF-4A79-8CAB-1EA8FDC0F89E
+  Name=CURSO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Curso:
+  Order=20
+  Left=53
+  Width=116
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Curso:
+  Property=HyperLabel=CURSO
+  Property=HyperLabel=,,,TREIN_CURSO
+  Property=FieldSpec=PADRAO_CHAR_20
+CONTROL=SINGLELINEEDIT
+GUID=36CC76C2-096C-4576-B00F-D5511925B646
+  Name=DESCUR
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Descur:
+  Order=21
+  Left=301
+  Width=280
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082198144
+  Exstyles=0
+  Property=HyperLabel=,Descur:
+  Property=HyperLabel=DESCUR
+  Property=HyperLabel=,,,TREIN_DESCUR
+  Property=FieldSpec=PADRAO_CHAR_120
+  Property=Background=253 254 220
+CONTROL=SINGLELINEEDIT
+GUID=8C74E3AE-41DD-457A-9837-5EDE1FA0943A
+  Name=REFER
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Refer:
+  Order=22
+  Left=386
+  Width=72
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Refer:
+  Property=HyperLabel=REFER
+  Property=HyperLabel=,,,TREIN_REFER
+  Property=FieldSpec=PADRAO_CHAR_10
+CONTROL=SINGLELINEEDIT
+GUID=62844867-49C3-4846-AB90-0CAD464CF133
+  Name=RESPO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Parti:
+  Order=24
+  Left=301
+  Width=240
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=HyperLabel=,Parti:
+  Property=HyperLabel=RESPO
+  Property=HyperLabel=,,,TREIN_RESPO
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=Background=253 254 220
+CONTROL=SINGLELINEEDIT
+GUID=BC6F84D2-7D8D-4880-8E6F-59C9605ABB47
+  Name=NINSTU
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Ninstu:
+  Order=25
+  Left=77
+  Width=60
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Ninstu:
+  Property=HyperLabel=NINSTU
+  Property=HyperLabel=,,,TREIN_NINSTU
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=B32AC0BB-4849-45F4-82A3-5A091E445A63
+  Name=NESCOLA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Ninstu:
+  Order=26
+  Left=221
+  Width=60
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Ninstu:
+  Property=HyperLabel=NESCOLA
+  Property=HyperLabel=,,,TREIN_NINSTU
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=4973F559-C90F-4ECB-9C00-3776A49CA13A
+  Name=INSTRU
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Instru:
+  Order=27
+  Left=321
+  Width=300
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Instru:
+  Property=HyperLabel=INSTRU
+  Property=HyperLabel=,,,TREIN_INSTRU
+  Property=FieldSpec=PADRAO_CHAR_30
+CONTROL=FIXEDTEXT
+GUID=469951AE-F07B-4BA0-9E15-8EF894583EB6
+  Name=FT11
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Func.
+  Order=28
+  Left=245
+  Width=32
+  Top=201
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Func.
+  Property=HyperLabel=FT11
+CONTROL=FIXEDTEXT
+GUID=C6FE96F9-AAC2-49BF-9CEB-9FE89AF1B430
+  Name=SC_PARTI
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Part.
+  Order=29
+  Left=493
+  Width=32
+  Top=201
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Part.
+  Property=HyperLabel=SC_PARTI
+CONTROL=PUSHBUTTON
+GUID=8AEEBE85-709D-4830-8EF0-7EA3EAD69986
+  Name=Novo
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Novo
+  Order=30
+  Left=361
+  Width=64
+  Top=201
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Novo
+  Property=HyperLabel=Novo
+CONTROL=PUSHBUTTON
+GUID=F7CA72D0-487A-40E2-B1F9-A6C7C888E596
+  Name=EXCLUIR
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Excluir
+  Order=31
+  Left=425
+  Width=64
+  Top=201
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Excluir
+  Property=HyperLabel=EXCLUIR
+CONTROL=SINGLELINEEDIT
+GUID=BAF4F296-4F96-40B4-94C4-B5BA013FD400
+  Name=NFUNC
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=32
+  Left=285
+  Width=69
+  Top=201
+  Height=19
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=0
+  Property=HyperLabel=NFUNC
+  Property=FieldSpec=padrao_NUm_08
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=8241FB91-0C43-478C-9860-9C74A3DD0A62
+  Name=PARTI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Programacao de Treinamentos
+  Order=33
+  Left=529
+  Width=70
+  Top=201
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=0
+  Property=HyperLabel=,Programacao de Treinamentos
+  Property=HyperLabel=PARTI
+  Property=HyperLabel=,,,TREIN_PARTI
+  Property=FieldSpec=padrao_num_08
+  Property=InheritClassName=rightSle
+CONTROL=SUBDATAWINDOW
+GUID=8F5CA451-5129-47DE-B3BA-5AEDAB82E6B7
+  Name=JPTI
+  Class=CONTROL:SUBDATAWINDOW
+  Caption=JPTI
+  Order=34
+  Left=9
+  Width=516
+  Top=225
+  Height=90
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=JPTI
+  Property=HyperLabel=,JPTI
+CONTROL=FIXEDTEXT
+GUID=DF530C8C-9B38-4F11-8B89-6472D38C906A
+  Name=SC_REFER
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Referente:
+  Order=35
+  Left=333
+  Width=52
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Referente:
+  Property=HyperLabel=SC_REFER
+CONTROL=FIXEDTEXT
+GUID=8829D059-E208-404E-891C-0FBB09FB4967
+  Name=FT12
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Prg Final
+  Order=36
+  Left=293
+  Width=80
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Prg Final
+  Property=HyperLabel=FT12
+CONTROL=FIXEDTEXT
+GUID=97394269-63EC-4D7E-8545-170CB3D4D640
+  Name=FT13
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Escola
+  Order=37
+  Left=185
+  Width=36
+  Top=129
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Escola
+  Property=HyperLabel=FT13
+CONTROL=SUBDATAWINDOW
+GUID=706FEF6B-0A09-43E2-818B-6C1541A7BDBD
+  Name=JTREINF
+  Class=CONTROL:SUBDATAWINDOW
+  Caption=JTREINF
+  Order=38
+  Left=9
+  Width=516
+  Top=341
+  Height=140
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=JTREINF
+  Property=HyperLabel=,JTREINF
+CONTROL=SINGLELINEEDIT
+GUID=71440721-4380-4B4B-9929-F61C65D37D44
+  Name=CNOME
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Instru:
+  Order=39
+  Left=9
+  Width=516
+  Top=317
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130560
+  Exstyles=0
+  Property=HyperLabel=,Instru:
+  Property=HyperLabel=CNOME
+  Property=HyperLabel=,,,TREIN_INSTRU
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=FocusSelect=FSEL_HOME
+CONTROL=PUSHBUTTON
+GUID=95042B4F-5B7C-430E-BDA9-C0E17DDF87C5
+  Name=Escolher
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Escolher
+  Order=40
+  Left=529
+  Width=88
+  Top=365
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Escolher
+  Property=HyperLabel=Escolher
+CONTROL=RADIOBUTTON
+GUID=779D9614-A8A4-428E-A3DB-79EBF5915B31
+  Name=RadioButton4
+  Class=CONTROL:TEXTCONTROL:BUTTON:RADIOBUTTON
+  Caption=Anual
+  Order=42
+  Left=37
+  Width=76
+  Top=193
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,Anual
+  Property=HyperLabel=RadioButton4
+  Property=Value=A
+CONTROL=RADIOBUTTON
+GUID=9788DE2F-140D-4F6B-ACB0-47A1263B6055
+  Name=RadioButton5
+  Class=CONTROL:TEXTCONTROL:BUTTON:RADIOBUTTON
+  Caption=Incorporado
+  Order=43
+  Left=133
+  Width=80
+  Top=193
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,Incorporado
+  Property=HyperLabel=RadioButton5
+  Property=Value=I
+CONTROL=FIXEDTEXT
+GUID=E30FA7D8-0F76-4D9C-AB30-0F20A9C09185
+  Name=SC_DATACUR1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Competencia
+  Order=44
+  Left=461
+  Width=72
+  Top=45
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Competencia
+  Property=HyperLabel=SC_DATACUR1
+CONTROL=FIXEDTEXT
+GUID=01A7304D-57D1-457B-B61E-F107429D7C20
+  Name=SC_DATACUR2
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Data
+  Order=45
+  Left=85
+  Width=60
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data
+  Property=HyperLabel=SC_DATACUR2
+CONTROL=SINGLELINEEDIT
+GUID=1B220286-A876-4C59-B3B4-5B3D23E86D90
+  Name=CERT
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Horini:
+  Order=46
+  Left=65
+  Width=20
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=HyperLabel=,Horini:
+  Property=HyperLabel=CERT
+  Property=HyperLabel=,,,TREIN_HORINI
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=Background=253 254 220
+CONTROL=FIXEDTEXT
+GUID=3B5C2AC4-1F11-43AE-86C7-0CD334A010B0
+  Name=FT14
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Certificado
+  Order=47
+  Left=9
+  Width=56
+  Top=49
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Certificado
+  Property=HyperLabel=FT14
+CONTROL=FIXEDTEXT
+GUID=D84A997B-32A6-4EA3-85E2-426BC2DA6B42
+  Name=FT15
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Interno/Externo
+  Order=48
+  Left=89
+  Width=80
+  Top=49
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Interno/Externo
+  Property=HyperLabel=FT15
+CONTROL=PUSHBUTTON
+GUID=0E4E584D-91A1-41B7-AEE1-C9A2B9580D92
+  Name=ESCRES
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=...
+  Order=49
+  Left=137
+  Width=20
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,...
+  Property=HyperLabel=ESCRES
+CONTROL=PUSHBUTTON
+GUID=F0D29430-8D01-4EB8-AE0E-AD6FBE886BC0
+  Name=Escins
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Escolher Instrutor
+  Order=50
+  Left=529
+  Width=88
+  Top=393
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Escolher Instrutor
+  Property=HyperLabel=Escins
+CONTROL=PUSHBUTTON
+GUID=8B887DFB-C9F5-4B73-8F5F-9C6B09786851
+  Name=ESCESC
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=...
+  Order=51
+  Left=281
+  Width=20
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,...
+  Property=HyperLabel=ESCESC
+CONTROL=PUSHBUTTON
+GUID=AA8D60C0-D6D2-4529-8880-AFD834E2E393
+  Name=esccur
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=...
+  Order=52
+  Left=173
+  Width=31
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,...
+  Property=HyperLabel=esccur
+CONTROL=PUSHBUTTON
+GUID=7D43975C-2ACE-4963-BB81-D85D6946534D
+  Name=pornumero
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=53
+  Left=585
+  Width=32
+  Top=93
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=pornumero
+  Property=Image=ico_az
+CONTROL=PUSHBUTTON
+GUID=DE27CE80-022A-45AA-A153-188B93A02965
+  Name=buscanumero
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=54
+  Left=553
+  Width=32
+  Top=93
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=buscanumero
+  Property=Image=ico_find
+CONTROL=PUSHBUTTON
+GUID=D42C74B4-E59A-45BC-AFEC-911D237D204E
+  Name=pegcurdes
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=55
+  Left=205
+  Width=31
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=pegcurdes
+CONTROL=PUSHBUTTON
+GUID=7B0F4754-A575-4DE7-AF68-2540627D1CD0
+  Name=Proximo
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=56
+  Left=533
+  Width=60
+  Top=265
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=Proximo
+  Property=Image=ico_next
+CONTROL=PUSHBUTTON
+GUID=6BB0791F-6B92-4FDA-973B-47B467F2493C
+  Name=Anterior
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=57
+  Left=533
+  Width=60
+  Top=241
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=Anterior
+  Property=Image=ico_previous
+CONTROL=PUSHBUTTON
+GUID=19BBB00D-82C1-40D0-99FA-64150CC36806
+  Name=buscafun
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=58
+  Left=537
+  Width=32
+  Top=317
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=buscafun
+  Property=Image=ico_find
+CONTROL=PUSHBUTTON
+GUID=03DC42D8-D9BA-46BD-AE01-E746CFD39694
+  Name=Duplicar
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Duplicar
+  Order=59
+  Left=186
+  Width=60
+  Top=171
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,Duplicar
+  Property=HyperLabel=Duplicar
+CONTROL=PUSHBUTTON
+GUID=C53563C9-3151-4306-A594-EF92E53F97E7
+  Name=Esco
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Escolher Ativos
+  Order=60
+  Left=529
+  Width=88
+  Top=445
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Escolher Ativos
+  Property=HyperLabel=Esco
+CONTROL=SINGLELINEEDIT
+GUID=D8B29903-C937-4487-A077-9E3D430C2076
+  Name=NTREIN
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Refer:
+  Order=61
+  Left=545
+  Width=72
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Refer:
+  Property=HyperLabel=NTREIN
+  Property=HyperLabel=,,,TREIN_REFER
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=377197AD-AEF2-4518-9968-4FC8C6013821
+  Name=aprovada
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=62
+  Left=314
+  Width=32
+  Top=173
+  Height=20
+  Browseindex=-1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=HyperLabel=aprovada
+  Property=HyperLabel=,,,TREIN_HORINI
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=Background=253 254 220
+CONTROL=FIXEDTEXT
+GUID=1EA140F9-A9BF-4D51-9C57-0F51F0A2E929
+  Name=FT16
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Aprovaçao
+  Order=63
+  Left=253
+  Width=56
+  Top=175
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Aprovaçao
+  Property=HyperLabel=FT16
+CONTROL=PUSHBUTTON
+GUID=A856E280-A122-4712-BC49-24C0E7EF6AF1
+  Name=cmdapr
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=SimNaoAguardoCancelado 
+  Order=64
+  Left=354
+  Width=170
+  Top=173
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,SimNaoAguardoCancelado 
+  Property=HyperLabel=cmdapr
+CONTROL=PUSHBUTTON
+GUID=843F6605-DB13-48FA-AF40-2688D857C5B5
+  Name=PEGINS
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=65
+  Left=157
+  Width=24
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=PEGINS
+CONTROL=SINGLELINEEDIT
+GUID=E9C639D2-62E6-46B0-AE28-EB7F861AC609
+  Name=NOMSOL
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Instru:
+  Order=67
+  Left=185
+  Width=300
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Instru:
+  Property=HyperLabel=NOMSOL
+  Property=HyperLabel=,,,TREIN_INSTRU
+  Property=FieldSpec=PADRAO_CHAR_30
+  Property=TooltipText=Nome do Solicitabnte
+CONTROL=FIXEDTEXT
+GUID=EB7453AA-72D9-46C2-BBF1-A8663922C898
+  Name=SC_NINSTU1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Solicitante
+  Order=68
+  Left=13
+  Width=60
+  Top=153
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Solicitante
+  Property=HyperLabel=SC_NINSTU1
+CONTROL=SINGLELINEEDIT
+GUID=91932653-44B9-4F90-9C34-64B2206C8EE6
+  Name=NUMSOL
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Ninstu:
+  Order=69
+  Left=77
+  Width=60
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Ninstu:
+  Property=HyperLabel=NUMSOL
+  Property=HyperLabel=,,,TREIN_NINSTU
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSle
+  Property=TooltipText=Numero do Solicitante do Curso
+CONTROL=PUSHBUTTON
+GUID=A612649B-44F0-4A7B-B12A-16F758D15894
+  Name=ESCSOL
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=...
+  Order=70
+  Left=137
+  Width=20
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,...
+  Property=HyperLabel=ESCSOL
+CONTROL=PUSHBUTTON
+GUID=579D49AF-DA4A-48C4-AE0B-43BC6B993901
+  Name=PEGSOL
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=71
+  Left=157
+  Width=24
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=PEGSOL
+CONTROL=PUSHBUTTON
+GUID=AE9E2C3D-B4B8-4EFF-8FA4-D580AF9AC9F4
+  Name=Escins1
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Escolher Solicitante
+  Order=72
+  Left=529
+  Width=88
+  Top=417
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Escolher Solicitante
+  Property=HyperLabel=Escins1
+CONTROL=PUSHBUTTON
+GUID=01E2DCBB-4D02-412A-9A8D-7F3E6C5CDB66
+  Name=cmdvertrein
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Ver Trei
+  Order=73
+  Left=489
+  Width=56
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,Ver Trei
+  Property=HyperLabel=cmdvertrein
+  Property=TooltipText=Visualizar Treinamento
+CONTROL=PUSHBUTTON
+GUID=0953D00C-9694-47CD-B32B-955BE2B61091
+  Name=cmdvertrein1
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Ver Treinamento
+  Order=74
+  Left=529
+  Width=96
+  Top=473
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,Ver Treinamento
+  Property=HyperLabel=cmdvertrein1
+CONTROL=SINGLELINEEDIT
+GUID=9C558EAE-179B-4745-8A48-1CB8B28D13E7
+  Name=APRODATA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Data
+  Order=75
+  Left=529
+  Width=80
+  Top=173
+  Height=20
+  Browseindex=-1
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=,Data
+  Property=HyperLabel=APRODATA
+  Property=HyperLabel=,,,TREIN_HORINI
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=RADIOBUTTONGROUP
+GUID=3384ADB4-A441-4468-A080-863D7037A4FA
+  Name=TIPDIS
+  Class=CONTROL:TEXTCONTROL:RADIOBUTTONGROUP
+  Caption=Tipo
+  Order=41
+  Left=9
+  Width=231
+  Top=177
+  Height=39
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,Tipo
+  Property=HyperLabel=TIPDIS
+  Property=FieldSpec=PADRAO_CHAR_01
+SUBCONTROLSEND
+DESIGNEREND = JPT
+
+

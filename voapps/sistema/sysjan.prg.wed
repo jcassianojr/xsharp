@@ -1,0 +1,67 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jsys
+GUID=02D2F947-C71D-4154-B639-12FD79583055
+  Name=jsys
+  Class=DATAWINDOW
+  Caption=Sistema
+  Order=0
+  Left=18
+  Width=497
+  Top=18
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Sistema",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#jsys,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=8A5DB1E0-E6C8-4ADC-9862-E04A2D8C3699
+  Name=SC_DESCM
+  Class=FIXEDTEXT
+  Caption=Descm:
+  Order=1
+  Left=22
+  Width=40
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descm:",,
+  Property=HyperLabel=#SC_DESCM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=EF4D1866-7A6C-4134-A428-022132437E1A
+  Name=DESCM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=78
+  Width=400
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=76
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_75
+  Property=HyperLabel=#DESCM,,,
+  Property=HyperLabel=,"Sistema",,
+  Property=HyperLabel=,,,"sysopt_DESCM"
+
+SUBCONTROLSEND
+DESIGNEREND = jsys
+

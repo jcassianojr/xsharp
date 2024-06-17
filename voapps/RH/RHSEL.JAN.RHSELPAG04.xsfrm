@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="RHSELPAG04">
+    <Window Name="RHSELPAG04">
+      <Name>RHSELPAG04</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>16</Left>
+      <Top>16</Top>
+      <Width>580</Width>
+      <Height>298</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#RHSELPAG04,,,</HyperLabel>
+        <Use>&lt;Share Owner's&gt;</Use>
+      </ExProperties>
+    </Window>
+    <Control Name="FUNC01">
+      <Name>FUNC01</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>89</Left>
+      <Top>13</Top>
+      <Width>224</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_50</FieldSpec>
+        <HyperLabel>#FUNC01,,,</HyperLabel>
+        <HyperLabel>,"Func01:",,</HyperLabel>
+        <HyperLabel>,,,"RHSEL_FUNC01"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SALARIO">
+      <Name>SALARIO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>396</Left>
+      <Top>13</Top>
+      <Width>96</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_12_2</FieldSpec>
+        <HyperLabel>#SALARIO,,,</HyperLabel>
+        <HyperLabel>,"Salario:",,</HyperLabel>
+        <HyperLabel>,,,"RHSEL_SALARIO"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FUNC02">
+      <Name>FUNC02</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>89</Left>
+      <Top>33</Top>
+      <Width>224</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_50</FieldSpec>
+        <HyperLabel>#FUNC02,,,</HyperLabel>
+        <HyperLabel>,"Func02:",,</HyperLabel>
+        <HyperLabel>,,,"RHSEL_FUNC02"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="OBSEN01">
+      <Name>OBSEN01</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>89</Left>
+      <Top>57</Top>
+      <Width>400</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_100</FieldSpec>
+        <HyperLabel>#OBSEN01,,,</HyperLabel>
+        <HyperLabel>,"Obsen01:",,</HyperLabel>
+        <HyperLabel>,,,"RHSEL_OBSEN01"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="OBSEN02">
+      <Name>OBSEN02</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>89</Left>
+      <Top>77</Top>
+      <Width>400</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_100</FieldSpec>
+        <HyperLabel>#OBSEN02,,,</HyperLabel>
+        <HyperLabel>,"Obsen02:",,</HyperLabel>
+        <HyperLabel>,,,"RHSEL_OBSEN02"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="OBSEN03">
+      <Name>OBSEN03</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>89</Left>
+      <Top>97</Top>
+      <Width>400</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_100</FieldSpec>
+        <HyperLabel>#OBSEN03,,,</HyperLabel>
+        <HyperLabel>,"Obsen03:",,</HyperLabel>
+        <HyperLabel>,,,"RHSEL_OBSEN03"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_FUNC01">
+      <Name>SC_FUNC01</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Funcao Pretendida</Caption>
+      <Order>7</Order>
+      <Left>21</Left>
+      <Top>13</Top>
+      <Width>59</Width>
+      <Height>31</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Funcao Pretendida",,</HyperLabel>
+        <HyperLabel>#SC_FUNC01,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_SALARIO">
+      <Name>SC_SALARIO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Salario Pretendido</Caption>
+      <Order>8</Order>
+      <Left>321</Left>
+      <Top>13</Top>
+      <Width>69</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Salario Pretendido",,</HyperLabel>
+        <HyperLabel>#SC_SALARIO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_OBSEN01">
+      <Name>SC_OBSEN01</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Observações Entrevista</Caption>
+      <Order>9</Order>
+      <Left>21</Left>
+      <Top>57</Top>
+      <Width>64</Width>
+      <Height>36</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Observações Entrevista",,</HyperLabel>
+        <HyperLabel>#SC_OBSEN01,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

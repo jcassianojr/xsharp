@@ -1,0 +1,246 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jpe01
+GUID=EFE258DE-DC8F-4ADB-B914-8772424C005D
+  Name=jpe01
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=22
+  Width=420
+  Top=22
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#jpe01,,,
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=85351DB7-42F7-4910-9FD9-817C5BC0DC85
+  Name=SC_DATAFAT
+  Class=FIXEDTEXT
+  Caption=Programa
+  Order=1
+  Left=61
+  Width=52
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Programa",,
+  Property=HyperLabel=#SC_DATAFAT,,,
+
+CONTROL=FIXEDTEXT
+GUID=619C9F06-B894-46B2-8F45-44542999347B
+  Name=SC_TOTKGINI
+  Class=FIXEDTEXT
+  Caption=Inicial
+  Order=2
+  Left=133
+  Width=44
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Inicial",,
+  Property=HyperLabel=#SC_TOTKGINI,,,
+
+CONTROL=FIXEDTEXT
+GUID=1927B714-5FE7-40BB-B3A4-B10F30F92333
+  Name=SC_TOTKGANT
+  Class=FIXEDTEXT
+  Caption=Anterior
+  Order=3
+  Left=213
+  Width=52
+  Top=1
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Anterior",,
+  Property=HyperLabel=#SC_TOTKGANT,,,
+
+CONTROL=FIXEDTEXT
+GUID=577F6875-9501-4E6B-866A-81118956D11A
+  Name=SC_TOTKGEST
+  Class=FIXEDTEXT
+  Caption=Saldo
+  Order=4
+  Left=293
+  Width=48
+  Top=1
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Saldo",,
+  Property=HyperLabel=#SC_TOTKGEST,,,
+
+CONTROL=FIXEDTEXT
+GUID=0184D571-5F5F-4C54-AA5D-DA09C5FF2742
+  Name=SC_ITEM
+  Class=FIXEDTEXT
+  Caption=Item:
+  Order=5
+  Left=13
+  Width=28
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=#SC_ITEM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=58DB0323-7A0B-40E7-B74D-4E45B411536C
+  Name=DATAFAT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=53
+  Width=68
+  Top=21
+  Height=20
+  Browseindex=1
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DATAFAT,,,
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=,,,"PE01_DATAFAT"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=776DC7A7-D7D1-4962-8EB3-B304BB7330AF
+  Name=TOTKGINI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=129
+  Width=76
+  Top=21
+  Height=20
+  Browseindex=2
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_num_06
+  Property=HyperLabel=#TOTKGINI,,,
+  Property=HyperLabel=,"Inicial",,
+  Property=HyperLabel=,,,"PE01_TOTKGINI"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=E5043DCA-CC3B-4192-8D6F-ED1C1AFB0C6E
+  Name=TOTKGANT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=209
+  Width=76
+  Top=21
+  Height=20
+  Browseindex=3
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_num_06
+  Property=HyperLabel=#TOTKGANT,,,
+  Property=HyperLabel=,"Anterior",,
+  Property=HyperLabel=,,,"PE01_TOTKGANT"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=7D7AF77E-40CD-47B1-8340-0CDACEEFD393
+  Name=TOTKGEST
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=289
+  Width=76
+  Top=21
+  Height=20
+  Browseindex=4
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_num_06
+  Property=HyperLabel=#TOTKGEST,,,
+  Property=HyperLabel=,"Saldo",,
+  Property=HyperLabel=,,,"PE01_TOTKGEST"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=EEE9967A-A88A-425C-89DD-DEFEC32A6A6F
+  Name=ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=9
+  Width=36
+  Top=21
+  Height=20
+  Browseindex=0
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_num_02
+  Property=HyperLabel=#ITEM,,,
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=,,,"PE01_ITEM"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+SUBCONTROLSEND
+DESIGNEREND = jpe01
+

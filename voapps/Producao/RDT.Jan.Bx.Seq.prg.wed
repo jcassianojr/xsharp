@@ -1,0 +1,220 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JBXSEQ
+GUID=A81E8326-4F88-42EC-BEB3-B8CDCE2E0526
+  Name=JBXSEQ
+  Class=DATADIALOG
+  Caption=
+  Order=0
+  Left=28
+  Width=339
+  Top=28
+  Height=137
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#JBXSEQ,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=CD1DA613-8B81-4A9A-A668-5C4278B3D640
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=9
+  Width=192
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#CODIGO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=A62198A7-1215-4F35-9EA3-C5147ACC44FD
+  Name=SEQ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=209
+  Width=44
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#SEQ,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=EF91488E-7E23-4378-A5F8-E14FA649A436
+  Name=SSQ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=257
+  Width=48
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#SSQ,,,
+
+CONTROL=FIXEDTEXT
+GUID=28C84CD3-3F01-48CB-B950-614FA5214802
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=SEQ
+  Order=4
+  Left=209
+  Width=36
+  Top=13
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"SEQ",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=FIXEDTEXT
+GUID=4FBE430E-33EB-4E8A-91B3-AD3B178CFA8C
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=SSQ
+  Order=5
+  Left=257
+  Width=36
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"SSQ",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=PUSHBUTTON
+GUID=C8DC12E6-F3C1-4F1C-8295-0E1CCF95A87B
+  Name=cmdSaida
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=241
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#cmdSaida,,,
+  Property=Image=ICO_SAIR
+
+CONTROL=FIXEDTEXT
+GUID=A1C1EF8E-E2D4-4D4C-982F-EEE8EF23D67B
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=7
+  Left=241
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=FIXEDTEXT
+GUID=74E3D06C-F433-42F3-ADF9-671D5FE332D5
+  Name=FixedText4
+  Class=FIXEDTEXT
+  Caption=Baixar
+  Order=8
+  Left=169
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Baixar",,
+  Property=HyperLabel=#FixedText4,,,
+
+CONTROL=PUSHBUTTON
+GUID=E94A6A3C-7A98-4ACC-B017-49C7B26491D0
+  Name=cmdimp
+  Class=PUSHBUTTON
+  Caption=
+  Order=9
+  Left=169
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#cmdimp,,,
+  Property=Image=ICO_OK
+
+CONTROL=FIXEDTEXT
+GUID=6260AAA3-820B-4ECA-B0C0-F38FB4C8CE5F
+  Name=FixedText5
+  Class=FIXEDTEXT
+  Caption=Código
+  Order=10
+  Left=9
+  Width=124
+  Top=17
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Código",,
+  Property=HyperLabel=#FixedText5,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JBXSEQ
+

@@ -1,0 +1,299 @@
+DESIGNERSTART = VOWindowEditor,DIALOGWINDOW,jqualfunc
+GUID=57D88A28-142E-4BD1-AAF6-85470F19A019
+  Name=jqualfunc
+  Class=DIALOGWINDOW
+  Caption=Localizar
+  Order=0
+  Left=44
+  Width=454
+  Top=44
+  Height=312
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=2160590980
+  Exstyles=257
+  Property=HyperLabel=,"Localizar",,
+  Property=HyperLabel=#jqualfunc,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=EB58DB69-AAB3-4FEE-8977-80DC302DAC21
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=5
+  Left=257
+  Width=64
+  Top=249
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=23ABA8E3-D91C-4451-A6D6-1F42EBBA4801
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=257
+  Width=64
+  Top=201
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ICO_SAIR
+  Property=TooltipText="Clique aqui Para Cancelar"
+
+CONTROL=FIXEDTEXT
+GUID=8CE9ABD3-A54F-4F6B-8019-513742B39F86
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=7
+  Left=329
+  Width=64
+  Top=249
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=42B3C4AD-B961-4601-85BD-52A279187E80
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=329
+  Width=64
+  Top=201
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ICO_OK
+  Property=TooltipText="Clique aqui Par Confirmar"
+
+CONTROL=FIXEDTEXT
+GUID=163115EB-FA88-4CF1-8E26-0F716E5BBE73
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=Qualificacao Cadastral (duplo click mouse)
+  Order=9
+  Left=93
+  Width=276
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Qualificacao Cadastral duplo click mouse",,
+  Property=InheritClassName=Hyperlink
+  Property=HyperLabel=#FixedText3,,,
+  Property=HyperLabel=,,"http://esocial.dataprev.gov.br/Esocial/pages/index.xhtml",
+
+CONTROL=SINGLELINEEDIT
+GUID=81924209-4BC3-4F2D-9E8F-AA67FC8FCDAB
+  Name=NASC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=133
+  Width=84
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#NASC,,,
+  Property=HyperLabel=,"Fone:",,
+  Property=HyperLabel=,,,"RHSEL_FONE"
+
+CONTROL=FIXEDTEXT
+GUID=F6A17924-D45F-411D-A90A-73A18A9AAC8A
+  Name=SC_FONE1
+  Class=FIXEDTEXT
+  Caption=Nascimento
+  Order=11
+  Left=65
+  Width=60
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nascimento",,
+  Property=HyperLabel=#SC_FONE1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=0AEA4583-D1AC-4BD3-82F2-8854A4DEE38B
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=113
+  Width=292
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=25
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"RHSEL_NOME"
+
+CONTROL=FIXEDTEXT
+GUID=39A3B70B-A400-4083-8C8A-65EC2297B05A
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=13
+  Left=69
+  Width=34
+  Top=97
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=PUSHBUTTON
+GUID=F5F4D7C2-F074-403B-8E41-B21DBAD9B85D
+  Name=checkPIS
+  Class=PUSHBUTTON
+  Caption=Checar PIS
+  Order=14
+  Left=286
+  Width=123
+  Top=60
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Checar PIS",,
+  Property=HyperLabel=#checkPIS,,,
+  Property=TooltipText="Checar PIS"
+
+CONTROL=SINGLELINEEDIT
+GUID=8AA65D48-5E50-4BB8-AAAE-ADA00517E7FC
+  Name=PIS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=102
+  Width=171
+  Top=60
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#PIS,,,
+  Property=TooltipText="Digite o Pis"
+  Property=InheritClassName=rightSle
+  Property=FieldSpec=padrao_char_11
+
+CONTROL=PUSHBUTTON
+GUID=405EEC76-C63C-434A-BB12-D20EAF237F94
+  Name=checkcPF
+  Class=PUSHBUTTON
+  Caption=Checar CPF
+  Order=16
+  Left=286
+  Width=123
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Checar CPF",,
+  Property=HyperLabel=#checkcPF,,,
+  Property=TooltipText="Checar CPF"
+
+CONTROL=SINGLELINEEDIT
+GUID=3F75661F-1858-4E91-B823-41E3C2D24887
+  Name=cpf
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=102
+  Width=171
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#cpf,,,
+  Property=Picture="999.999.999-99"
+  Property=TooltipText="Digite o CPF"
+  Property=InheritClassName=rightSle
+  Property=FieldSpec=padrao_char_14
+
+SUBCONTROLSEND
+DESIGNEREND = jqualfunc
+

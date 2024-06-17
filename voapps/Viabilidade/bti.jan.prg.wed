@@ -1,0 +1,600 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jbti
+GUID=B6A06CBB-34EA-4260-BD4B-7BE0E6179A04
+  Name=jbti
+  Class=FORM:DATAWINDOW
+  Caption=Breakdown Tooling Investiment
+  Order=0
+  Left=0
+  Width=658
+  Top=0
+  Height=424
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Breakdown Tooling Investiment
+  Property=HyperLabel=jbti
+  Property=InheritClassName=MYDataWindow
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=4E5AA8A3-F87E-409B-B5FC-49E9BCC13728
+  Name=btnpegms01
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=21
+  Left=285
+  Width=32
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=btnpegms01
+CONTROL=PUSHBUTTON
+GUID=9BA38DFD-A7F2-4D0B-9A2D-49EADE9A9474
+  Name=btnpegma01
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=23
+  Left=113
+  Width=27
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=btnpegma01
+CONTROL=SINGLELINEEDIT
+GUID=B84637B0-32CD-40F5-86F7-7B854EDA8700
+  Name=DUNS
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Duns:
+  Order=1
+  Left=89
+  Width=152
+  Top=25
+  Height=20
+  Browseindex=5
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Duns:
+  Property=HyperLabel=DUNS
+  Property=HyperLabel=,,,BTI_DUNS
+  Property=FieldSpec=PADRAO_CHAR_20
+CONTROL=SINGLELINEEDIT
+GUID=D9CE5061-B23A-4A32-9937-F5ECDA0F4967
+  Name=RFQ
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Rfq:
+  Order=2
+  Left=245
+  Width=152
+  Top=25
+  Height=20
+  Browseindex=6
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Rfq:
+  Property=HyperLabel=RFQ
+  Property=HyperLabel=,,,BTI_RFQ
+  Property=FieldSpec=PADRAO_CHAR_20
+CONTROL=SINGLELINEEDIT
+GUID=AE8FDDA8-06D5-45D9-AD56-C44114BA2EC8
+  Name=DATA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Cliente:
+  Order=3
+  Left=405
+  Width=88
+  Top=25
+  Height=20
+  Browseindex=7
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Cliente:
+  Property=HyperLabel=DATA
+  Property=HyperLabel=,,,BTI_CLIENTE
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=8AEE70FC-9067-452A-A737-5BF400D217AC
+  Name=CLIENTE
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Cliente:
+  Order=4
+  Left=13
+  Width=68
+  Top=65
+  Height=20
+  Browseindex=1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Cliente:
+  Property=HyperLabel=CLIENTE
+  Property=HyperLabel=,,,BTI_CLIENTE
+  Property=FieldSpec=PADRAO_NUM_08
+CONTROL=SINGLELINEEDIT
+GUID=0384D7DB-3798-4390-9530-BF73D50E5763
+  Name=CLINOME
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Clinome:
+  Order=5
+  Left=145
+  Width=364
+  Top=65
+  Height=20
+  Browseindex=2
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Clinome:
+  Property=HyperLabel=CLINOME
+  Property=HyperLabel=,,,BTI_CLINOME
+  Property=FieldSpec=PADRAO_CHAR_50
+CONTROL=SINGLELINEEDIT
+GUID=03F7DB9B-99F2-476B-B3C2-0955A4D5048E
+  Name=CODIGO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Codigo:
+  Order=6
+  Left=69
+  Width=180
+  Top=89
+  Height=20
+  Browseindex=3
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Codigo:
+  Property=HyperLabel=CODIGO
+  Property=HyperLabel=,,,BTI_CODIGO
+  Property=FieldSpec=PADRAO_CHAR_24
+CONTROL=SINGLELINEEDIT
+GUID=6047F596-1769-4990-9942-86F42ADC0C81
+  Name=NOME
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Nome:
+  Order=7
+  Left=17
+  Width=364
+  Top=109
+  Height=20
+  Browseindex=4
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Nome:
+  Property=HyperLabel=NOME
+  Property=HyperLabel=,,,BTI_NOME
+  Property=FieldSpec=PADRAO_CHAR_50
+CONTROL=FIXEDTEXT
+GUID=D43B2B41-C8D2-4737-B060-D62D41DB9BCB
+  Name=SC_BTI
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Bti:
+  Order=8
+  Left=17
+  Width=19
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Bti:
+  Property=HyperLabel=SC_BTI
+CONTROL=FIXEDTEXT
+GUID=78B8F1E5-F13F-4DD9-9F3A-859404C542D7
+  Name=SC_CLIENTE
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Cliente:
+  Order=9
+  Left=13
+  Width=40
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Cliente:
+  Property=HyperLabel=SC_CLIENTE
+CONTROL=FIXEDTEXT
+GUID=CFE50E1B-C4D6-46B3-8F92-FFF093AAE8AB
+  Name=SC_CODIGO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Codigo:
+  Order=10
+  Left=17
+  Width=40
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Codigo:
+  Property=HyperLabel=SC_CODIGO
+CONTROL=FIXEDTEXT
+GUID=7091585B-6569-4590-8D14-F65CF7D77594
+  Name=SC_DUNS
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Duns:
+  Order=11
+  Left=93
+  Width=32
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Duns:
+  Property=HyperLabel=SC_DUNS
+CONTROL=FIXEDTEXT
+GUID=54E92E6C-785A-4922-B798-AF82D4545145
+  Name=SC_RFQ
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Rfq:
+  Order=12
+  Left=245
+  Width=24
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Rfq:
+  Property=HyperLabel=SC_RFQ
+CONTROL=SINGLELINEEDIT
+GUID=893EA74E-6188-4BB0-80E6-50F19311C585
+  Name=BTI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Bti:
+  Order=13
+  Left=17
+  Width=68
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=,Bti:
+  Property=HyperLabel=BTI
+  Property=HyperLabel=,,,BTI_BTI
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=PUSHBUTTON
+GUID=4554B43C-0762-4636-ACF0-4D96E0491AAF
+  Name=Proximo
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=14
+  Left=593
+  Width=36
+  Top=245
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=Proximo
+  Property=Image=ICO_NEXT
+CONTROL=PUSHBUTTON
+GUID=B3FF6B25-F34F-4302-B1F3-44B43E416841
+  Name=Anterior
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=15
+  Left=553
+  Width=36
+  Top=245
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=Anterior
+  Property=Image=ICO_PREVIOUS
+CONTROL=PUSHBUTTON
+GUID=59328CB4-E3EB-4CD6-BC1D-0E20ACADF076
+  Name=Tabular
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Tabular
+  Order=16
+  Left=553
+  Width=72
+  Top=217
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Tabular
+  Property=HyperLabel=Tabular
+CONTROL=PUSHBUTTON
+GUID=5874FDE1-A736-4825-BB9D-5B5503846E7D
+  Name=ALTERAR
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Alterar
+  Order=17
+  Left=553
+  Width=72
+  Top=193
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Alterar
+  Property=HyperLabel=ALTERAR
+CONTROL=PUSHBUTTON
+GUID=64210050-95BD-44E9-9A4C-919509D0B198
+  Name=Excluir
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Excluir
+  Order=18
+  Left=553
+  Width=72
+  Top=169
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Excluir
+  Property=HyperLabel=Excluir
+CONTROL=PUSHBUTTON
+GUID=753F2217-118C-4858-A0A8-7C57A8CEA2F9
+  Name=NOVO
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Novo
+  Order=19
+  Left=553
+  Width=72
+  Top=145
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Novo
+  Property=HyperLabel=NOVO
+CONTROL=SUBDATAWINDOW
+GUID=989907FC-920F-4397-A20D-D077A736121C
+  Name=jbtii
+  Class=CONTROL:SUBDATAWINDOW
+  Caption=jbtii
+  Order=20
+  Left=13
+  Width=532
+  Top=145
+  Height=140
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=jbtii
+  Property=HyperLabel=,jbtii
+CONTROL=PUSHBUTTON
+GUID=906B4252-F28E-466F-99AC-497910CFF800
+  Name=esccod
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=...
+  Order=22
+  Left=253
+  Width=28
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,...
+  Property=HyperLabel=esccod
+CONTROL=PUSHBUTTON
+GUID=D6DD4996-7F7F-4F0E-9C1E-C78160B51F08
+  Name=escfor
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=...
+  Order=24
+  Left=85
+  Width=27
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,...
+  Property=HyperLabel=escfor
+CONTROL=FIXEDTEXT
+GUID=55D7E716-1FEA-409A-8518-21780CBBC95C
+  Name=SC_CLIENTE1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Data
+  Order=25
+  Left=409
+  Width=40
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data
+  Property=HyperLabel=SC_CLIENTE1
+CONTROL=FIXEDTEXT
+GUID=95B31D2F-EE94-4540-B4A5-439F20AE945E
+  Name=SC_DESTINO2
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Foto
+  Order=26
+  Left=569
+  Width=48
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,Foto
+  Property=HyperLabel=SC_DESTINO2
+CONTROL=PUSHBUTTON
+GUID=50145091-99A6-4AE5-8C67-671E7B1C10B0
+  Name=foto
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=27
+  Left=569
+  Width=48
+  Top=13
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=foto
+  Property=Image=ICO_CAMERA
+CONTROL=PUSHBUTTON
+GUID=B2308E9A-F42A-42BF-8693-D2CB699D8BD1
+  Name=porov
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=28
+  Left=533
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=porov
+  Property=TooltipText=Clique para ordenar por Numero
+  Property=Image=ICO_AZ
+CONTROL=PUSHBUTTON
+GUID=E3A8DACD-B38E-4527-AC27-FE290A7379DF
+  Name=buscaov
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=29
+  Left=501
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=buscaov
+  Property=TooltipText=Clique Para Localizar Por Numero
+  Property=Image=ICO_FIND
+SUBCONTROLSEND
+DESIGNEREND = jbti
+
+

@@ -1,0 +1,529 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JMSRD
+GUID=FDFDF4CC-10A7-4951-9C8C-2FEE87E709A0
+  Name=JMSRD
+  Class=DATAWINDOW
+  Caption=Registro Defeitos Produtos
+  Order=0
+  Left=58
+  Width=590
+  Top=58
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Registro Defeitos Produtos",,
+  Property=ViewAs=#FormView
+  Property=HyperLabel=#JMSRD,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=76A1EDC0-85A9-4F8B-A02C-7ED644FCA863
+  Name=DATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=157
+  Width=124
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=15
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATA,,,
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=,,,"MSRD_DATA"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=FC398CDD-5603-497F-95DD-03FE2B711BEF
+  Name=OCORREU
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=81
+  Width=200
+  Top=57
+  Height=20
+  Browseindex=4
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_CHAR_20
+  Property=HyperLabel=#OCORREU,,,
+  Property=HyperLabel=,"Ocorreu:",,
+  Property=HyperLabel=,,,"MSRD_OCORREU"
+
+CONTROL=SINGLELINEEDIT
+GUID=1CBA1BB0-C664-4CB1-B7D9-FDCD9C12F74A
+  Name=CLIENTE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=337
+  Width=80
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#CLIENTE,,,
+  Property=FieldSpec=padrao_num_08
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=8D706B3E-BD2C-4F51-852E-433FCC51551F
+  Name=DESC01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=81
+  Width=400
+  Top=85
+  Height=20
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_CHAR_80
+  Property=HyperLabel=#DESC01,,,
+  Property=HyperLabel=,"Desc01:",,
+  Property=HyperLabel=,,,"MSRD_DESC01"
+
+CONTROL=SINGLELINEEDIT
+GUID=32E9DEC4-49BC-4E63-AF6D-6A60086785B9
+  Name=DESC02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=81
+  Width=400
+  Top=109
+  Height=20
+  Browseindex=6
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_CHAR_80
+  Property=HyperLabel=#DESC02,,,
+  Property=HyperLabel=,"Desc02:",,
+  Property=HyperLabel=,,,"MSRD_DESC02"
+
+CONTROL=SINGLELINEEDIT
+GUID=62C9DDDE-9F59-42E0-ADF2-924337180376
+  Name=ACAO01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=81
+  Width=400
+  Top=134
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_CHAR_80
+  Property=HyperLabel=#ACAO01,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=BDBC928F-F32D-4CC0-89D0-B2AA4A259E72
+  Name=INV01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=81
+  Width=400
+  Top=161
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_CHAR_80
+  Property=HyperLabel=#INV01,,,
+
+CONTROL=FIXEDTEXT
+GUID=B74AB661-7D67-471E-8FE9-44CDE89D2C28
+  Name=SC_MSRD
+  Class=FIXEDTEXT
+  Caption=Msrd:
+  Order=8
+  Left=13
+  Width=32
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Msrd:",,
+  Property=HyperLabel=#SC_MSRD,,,
+
+CONTROL=FIXEDTEXT
+GUID=948E5BFD-6687-4112-A398-FDA9B9EBDACC
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=9
+  Left=373
+  Width=40
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=39D709A5-4051-461D-8C32-35801CCBE8CC
+  Name=SC_PF
+  Class=FIXEDTEXT
+  Caption=Pf:
+  Order=10
+  Left=293
+  Width=16
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pf:",,
+  Property=HyperLabel=#SC_PF,,,
+
+CONTROL=FIXEDTEXT
+GUID=74E47A94-DBB7-4ADE-886C-40529AD98035
+  Name=SC_DATA
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=11
+  Left=157
+  Width=32
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=#SC_DATA,,,
+
+CONTROL=FIXEDTEXT
+GUID=F521D983-86CC-4846-B6EF-2FA380C1DB90
+  Name=SC_OCORREU
+  Class=FIXEDTEXT
+  Caption=Ocorrencia
+  Order=12
+  Left=13
+  Width=56
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ocorrencia",,
+  Property=HyperLabel=#SC_OCORREU,,,
+
+CONTROL=FIXEDTEXT
+GUID=7C512D3F-9B0A-4F69-9550-2457B081A89D
+  Name=SC_DESC01
+  Class=FIXEDTEXT
+  Caption=Descrição
+  Order=13
+  Left=13
+  Width=64
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descrição",,
+  Property=HyperLabel=#SC_DESC01,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=710DB93C-FD7C-4110-952F-56209159E3C0
+  Name=MSRD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=13
+  Width=68
+  Top=25
+  Height=28
+  Browseindex=0
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_NUM_08
+  Property=HyperLabel=#MSRD,,,
+  Property=HyperLabel=,"Msrd:",,
+  Property=HyperLabel=,,,"MSRD_MSRD"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=BD28EEF7-0AD6-4C22-937F-AC7B75967384
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=373
+  Width=180
+  Top=29
+  Height=20
+  Browseindex=3
+  Browsesize=28
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_CHAR_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"MSRD_CODIGO"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=96D8B6BC-0A67-416D-9279-86023E6206AB
+  Name=PF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=293
+  Width=68
+  Top=29
+  Height=20
+  Browseindex=2
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=padrao_NUM_08
+  Property=HyperLabel=#PF,,,
+  Property=HyperLabel=,"Pf:",,
+  Property=HyperLabel=,,,"MSRD_PF"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=22DF0DDB-E224-4B5B-A1AA-CD3783A51E66
+  Name=PORNUM
+  Class=PUSHBUTTON
+  Caption=
+  Order=17
+  Left=117
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#PORNUM,,,
+
+CONTROL=PUSHBUTTON
+GUID=4B0E9B0C-39FD-4048-B503-A60F82004E7F
+  Name=Buscanum
+  Class=PUSHBUTTON
+  Caption=
+  Order=18
+  Left=85
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#Buscanum,,,
+
+CONTROL=FIXEDTEXT
+GUID=6959A280-CA6B-4E38-87AF-083922AFDC5D
+  Name=SC_DESC2
+  Class=FIXEDTEXT
+  Caption=Investigacao \Causa
+  Order=21
+  Left=13
+  Width=64
+  Top=129
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Investigacao \Causa",,
+  Property=HyperLabel=#SC_DESC2,,,
+
+CONTROL=FIXEDTEXT
+GUID=F85B47A4-1AAF-43C6-8E43-5013F205E8F6
+  Name=SC_DESC3
+  Class=FIXEDTEXT
+  Caption=Açao Coretiva
+  Order=22
+  Left=13
+  Width=64
+  Top=165
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Açao Coretiva",,
+  Property=HyperLabel=#SC_DESC3,,,
+
+CONTROL=FIXEDTEXT
+GUID=87375DB2-3790-405B-92A0-3DB70ABDE383
+  Name=FixedText8
+  Class=FIXEDTEXT
+  Caption=Cliente
+  Order=23
+  Left=289
+  Width=47
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cliente",,
+  Property=HyperLabel=#FixedText8,,,
+
+CONTROL=PUSHBUTTON
+GUID=B87BEF51-F9E9-45B1-8EFB-4BE57873980D
+  Name=esccli
+  Class=PUSHBUTTON
+  Caption=..
+  Order=24
+  Left=426
+  Width=31
+  Top=58
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"..",,
+  Property=HyperLabel=#esccli,,,
+
+CONTROL=FIXEDTEXT
+GUID=1035336A-DBE3-46C3-BB72-53EFD0D0248D
+  Name=SC_DESTINO2
+  Class=FIXEDTEXT
+  Caption=Foto
+  Order=25
+  Left=517
+  Width=48
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Foto",,
+  Property=HyperLabel=#SC_DESTINO2,,,
+
+CONTROL=PUSHBUTTON
+GUID=5A42ED97-C848-46D5-8D86-87859FA395A0
+  Name=foto
+  Class=PUSHBUTTON
+  Caption=
+  Order=26
+  Left=517
+  Width=48
+  Top=61
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#foto,,,
+  Property=Image=ico_camera
+
+SUBCONTROLSEND
+DESIGNEREND = JMSRD
+

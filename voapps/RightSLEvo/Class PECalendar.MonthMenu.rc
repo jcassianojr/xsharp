@@ -1,0 +1,21 @@
+STRINGTABLE
+
+	// Menu ItemID and corresponding Strings for the Month menu of the PECalendar
+
+	// RHP put into PECalendar ID_MONTHxx is defined in PECalendar
+
+Begin
+	3001,		"January"
+	3002,		"February"	
+	3003,		"March"
+	3004,		"April"
+	3005,		"May"
+	3006,		"June"
+	3007,		"July"
+	3008,		"August"
+	3009,		"September"
+	3010,	"October"
+	3011,	"November"
+	3012,	"December"
+End	
+

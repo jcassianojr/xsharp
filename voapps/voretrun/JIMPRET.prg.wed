@@ -1,0 +1,386 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,_JIMPRET
+GUID=A54E341F-BC0C-4273-978B-65D471D7B056
+  Name=_JIMPRET
+  Class=DATADIALOG
+  Caption=Imprimir Relatorio
+  Order=0
+  Left=56
+  Width=542
+  Top=56
+  Height=382
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Imprimir Relatorio",,
+  Property=HyperLabel=#_JIMPRET,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=7815CFBB-4145-4C26-ADD5-9828439A6E27
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Conf Imp
+  Order=1
+  Left=281
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Conf Imp",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=PUSHBUTTON
+GUID=B4F1EFEB-9DD6-48A0-8257-5132C8337DC3
+  Name=CONFIMP
+  Class=PUSHBUTTON
+  Caption=
+  Order=2
+  Left=281
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#CONFIMP,,,
+  Property=Image=ico_PRINTCFG
+
+CONTROL=FIXEDTEXT
+GUID=1CF7154A-5A55-4092-A75A-EA3A0EAD431C
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Imprimir e Visualizar
+  Order=3
+  Left=357
+  Width=64
+  Top=109
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Imprimir e Visualizar",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=PUSHBUTTON
+GUID=C9A31394-7EBE-4B5B-BBB6-8F6C17A0709C
+  Name=imprimir
+  Class=PUSHBUTTON
+  Caption=
+  Order=4
+  Left=357
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#imprimir,,,
+  Property=Image=ICO_PRINT
+
+CONTROL=SINGLELINEEDIT
+GUID=06E6CBBD-E785-4EB5-ABB5-023BCDD289E3
+  Name=ARQUIVO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=61
+  Width=448
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=#ARQUIVO,,,
+  Property=HyperLabel=,"Arquivo:",,
+  Property=HyperLabel=,,,"VORET_ARQUIVO"
+
+CONTROL=FIXEDTEXT
+GUID=A1369003-BFB4-409B-85B7-651B2286F2DB
+  Name=SC_ARQUIVO
+  Class=FIXEDTEXT
+  Caption=Relatorio:
+  Order=6
+  Left=9
+  Width=48
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Relatorio:",,
+  Property=HyperLabel=#SC_ARQUIVO,,,
+
+CONTROL=PUSHBUTTON
+GUID=38C57EDA-ED69-4AE1-B982-8786FDFB4C43
+  Name=imprimir1
+  Class=PUSHBUTTON
+  Caption=
+  Order=12
+  Left=213
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#imprimir1,,,
+  Property=Image=ico_print
+
+CONTROL=FIXEDTEXT
+GUID=486F1618-E509-4040-819D-8781ED39B4FC
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=Imprimir
+  Order=13
+  Left=213
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Imprimir",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=FIXEDTEXT
+GUID=33BEF9B2-3795-4AFF-85DC-5EF0D8068BFC
+  Name=theFixedText15
+  Class=FIXEDTEXT
+  Caption=GravarRTF
+  Order=14
+  Left=145
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"GravarRTF",,
+  Property=HyperLabel=#theFixedText15,,,
+
+CONTROL=PUSHBUTTON
+GUID=DA0F1DE6-DF59-4135-96E3-987A069CAF74
+  Name=SalvarRTF
+  Class=PUSHBUTTON
+  Caption=
+  Order=15
+  Left=145
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#SalvarRTF,,,
+  Property=Image=ico_grava
+
+CONTROL=FIXEDTEXT
+GUID=C840ECAA-A215-4D23-8C00-FF33AE8125C5
+  Name=theFixedText14
+  Class=FIXEDTEXT
+  Caption=GravarTxt
+  Order=16
+  Left=77
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"GravarTxt",,
+  Property=HyperLabel=#theFixedText14,,,
+
+CONTROL=PUSHBUTTON
+GUID=464FD1E9-EDAB-429B-A772-67A81D342308
+  Name=SalvarTXT
+  Class=PUSHBUTTON
+  Caption=
+  Order=17
+  Left=77
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#SalvarTXT,,,
+  Property=Image=ico_grava
+
+CONTROL=FIXEDTEXT
+GUID=F80F82C4-7640-4077-BAEC-D625401112A6
+  Name=theFixedText13
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=18
+  Left=437
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText13,,,
+
+CONTROL=PUSHBUTTON
+GUID=0189D1C7-09F4-4E9F-BB67-B76FD3C7CC65
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=19
+  Left=437
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ICO_SAIR
+
+CONTROL=FIXEDTEXT
+GUID=05CF4456-AF71-4636-8968-5C26716200D8
+  Name=theFixedText16
+  Class=FIXEDTEXT
+  Caption=Editar
+  Order=20
+  Left=5
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Editar",,
+  Property=HyperLabel=#theFixedText16,,,
+
+CONTROL=PUSHBUTTON
+GUID=8FA43AF7-B77B-4201-ADFB-74BA79B87E33
+  Name=editar
+  Class=PUSHBUTTON
+  Caption=
+  Order=21
+  Left=5
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#editar,,,
+  Property=Image=ico_editor
+
+CONTROL=SINGLELINEEDIT
+GUID=01D27ACA-C488-4E90-81BB-4E4BFF5BCA32
+  Name=coneccao
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=13
+  Width=496
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=#coneccao,,,
+  Property=HyperLabel=,"Arquivo:",,
+  Property=HyperLabel=,,,"VORET_ARQUIVO"
+
+CONTROL=MULTILINEEDIT
+GUID=C7D5BE2A-6CEC-4B14-97F5-6A162DEA1B81
+  Name=consulta
+  Class=MULTILINEEDIT
+  Caption=
+  Order=23
+  Left=14
+  Width=491
+  Top=178
+  Height=60
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082202308
+  Exstyles=512
+  Property=HyperLabel=,"sql",,
+  Property=HyperLabel=#consulta,,,
+
+SUBCONTROLSEND
+DESIGNEREND = _JIMPRET
+

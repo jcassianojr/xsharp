@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JFUN">
+    <Window Name="JFUN">
+      <Name>JFUN</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Cadastro de Funcao Folha</Caption>
+      <Order>0</Order>
+      <Left>34</Left>
+      <Top>34</Top>
+      <Width>613</Width>
+      <Height>442</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Cadastro de Funcao Folha",,</HyperLabel>
+        <ViewAs>#FormView</ViewAs>
+        <HyperLabel>#JFUN,,,</HyperLabel>
+        <ClipperKeys>True</ClipperKeys>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <InheritClassName>MYDataWindow</InheritClassName>
+      </ExProperties>
+    </Window>
+    <Control Name="SC_CODIGO">
+      <Name>SC_CODIGO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Codigo:</Caption>
+      <Order>1</Order>
+      <Left>13</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>#SC_CODIGO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_NOME">
+      <Name>SC_NOME</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Nome:</Caption>
+      <Order>2</Order>
+      <Left>154</Left>
+      <Top>9</Top>
+      <Width>36</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Nome:",,</HyperLabel>
+        <HyperLabel>#SC_NOME,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="CODIGO">
+      <Name>CODIGO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>13</Left>
+      <Top>25</Top>
+      <Width>55</Width>
+      <Height>28</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>8</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_04</FieldSpec>
+        <HyperLabel>#CODIGO,,,</HyperLabel>
+        <HyperLabel>,"Codigo:",,</HyperLabel>
+        <HyperLabel>,,,"FUNCAO_CODIGO"</HyperLabel>
+        <Background>253 254 220</Background>
+        <NewFont>12:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="NOME">
+      <Name>NOME</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>150</Left>
+      <Top>27</Top>
+      <Width>292</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>52</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_40</FieldSpec>
+        <HyperLabel>#NOME,,,</HyperLabel>
+        <HyperLabel>,"Nome:",,</HyperLabel>
+        <HyperLabel>,,,"FUNCAO_NOME"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="JFUNTAB">
+      <Name>JFUNTAB</Name>
+      <Class>TABCONTROL</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>15</Left>
+      <Top>58</Top>
+      <Width>567</Width>
+      <Height>347</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#JFUNTAB,,,</HyperLabel>
+      </ExProperties>
+      <TabPages>
+        <TabPage Name="JFUN_TAB1">
+          <Name>JFUN_TAB1</Name>
+          <Caption>Cadastro</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="JFUNTAB_Page2">
+          <Name>JFUNTAB_Page2</Name>
+          <Caption>Detalhamento</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="JFUNTAB_Page3">
+          <Name>JFUNTAB_Page3</Name>
+          <Caption>Requisitos Necesarios</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="JFUNTAB_Page4">
+          <Name>JFUNTAB_Page4</Name>
+          <Caption>Requisitos Desejaveis</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+      </TabPages>
+    </Control>
+    <Control Name="porcodigo">
+      <Name>porcodigo</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>110</Left>
+      <Top>15</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_az</Image>
+        <HyperLabel>#porcodigo,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="buscacodigo">
+      <Name>buscacodigo</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>9</Order>
+      <Left>78</Left>
+      <Top>15</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_find</Image>
+        <HyperLabel>#buscacodigo,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

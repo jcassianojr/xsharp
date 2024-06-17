@@ -1,0 +1,107 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JRNCF2
+GUID=9C65C9DB-E5D4-4A68-A065-D10E04087BD6
+  Name=JRNCF2
+  Class=DATADIALOG
+  Caption=Fechamento RNC
+  Order=0
+  Left=30
+  Width=400
+  Top=30
+  Height=99
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Fechamento RNC",,
+  Property=HyperLabel=#JRNCF2,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=1067BCB2-7E98-4FE3-9320-CDE79CD0E28C
+  Name=SC_FECDATA
+  Class=FIXEDTEXT
+  Caption=Data Fechamento
+  Order=2
+  Left=9
+  Width=92
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data Fechamento",,
+  Property=HyperLabel=#SC_FECDATA,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=58A535A0-AD6C-4906-9375-DB4A5865DEAF
+  Name=FECDATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=117
+  Width=88
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#FECDATA,,,
+  Property=HyperLabel=,"Fecdata:",,
+  Property=HyperLabel=,,,"RNC_FECDATA"
+  Property=InheritClassName=DateSle
+
+CONTROL=FIXEDTEXT
+GUID=057B897B-2301-4B5C-9CC7-80CCB68A4528
+  Name=theFixedText11
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=6
+  Left=293
+  Width=64
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText11,,,
+
+CONTROL=PUSHBUTTON
+GUID=99E68E38-B718-40C0-AF86-D46C779F8C05
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=293
+  Width=64
+  Top=13
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ico_ok
+
+SUBCONTROLSEND
+DESIGNEREND = JRNCF2
+

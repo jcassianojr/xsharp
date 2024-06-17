@@ -1,0 +1,571 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JimpTr
+GUID=5FE2CE95-8CCC-40EB-B249-5F89D17BC177
+  Name=JimpTr
+  Class=DATADIALOG
+  Caption=Importando Treinamentos
+  Order=0
+  Left=56
+  Width=559
+  Top=56
+  Height=207
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Importando Treinamentos",,
+  Property=Value=C
+  Property=HyperLabel=#JimpTr,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=7C214370-CFA1-4201-8EF2-EAFE752E4A62
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Numero Registro Anterior
+  Order=1
+  Left=21
+  Width=128
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero Registro Anterior",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=B70C7791-9CAD-4409-A5CA-A3299027FD9F
+  Name=numant
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=149
+  Width=56
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#numant,,,
+  Property=FieldSpec=padrao_num_08
+  Property=InheritClassName=rightSle
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=FIXEDTEXT
+GUID=5493D1BE-8A47-4ED5-815C-695EDA141825
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Caminho do Arquivo
+  Order=3
+  Left=21
+  Width=104
+  Top=72
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Caminho do Arquivo",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=323754C0-6D9C-4ACE-8977-169954BD0F0B
+  Name=caminho
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=19
+  Width=428
+  Top=91
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#caminho,,,
+  Property=InheritClassName=pbFolderSLE
+
+CONTROL=FIXEDTEXT
+GUID=964305BE-EEA8-4167-81D0-32F630ADFC32
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=8
+  Left=473
+  Width=64
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=13ECF053-A741-48FC-A398-E42D3C2F66E0
+  Name=ok
+  Class=PUSHBUTTON
+  Caption=
+  Order=9
+  Left=473
+  Width=64
+  Top=17
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#ok,,,
+  Property=Image=ico_ok
+
+CONTROL=FIXEDTEXT
+GUID=FBCFEB8D-4361-4C96-94E1-A5CB2816D4C2
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Cancelar
+  Order=10
+  Left=473
+  Width=64
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Cancelar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=2C1BAF2C-0DF0-4935-98E6-9FADCA3A9775
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=11
+  Left=473
+  Width=64
+  Top=93
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ico_sair
+
+CONTROL=FIXEDTEXT
+GUID=DCA119C4-97DA-491F-8DFB-C61CB876CA0F
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=Numero Registro Atual
+  Order=12
+  Left=209
+  Width=120
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero Registro Atual",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=1A261968-E146-4C2C-AC61-BCC288974111
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=333
+  Width=80
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#NUMERO,,,
+  Property=FieldSpec=padrao_num_08
+  Property=InheritClassName=rightSle
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=SINGLELINEEDIT
+GUID=20CD026F-4959-43F7-A1F3-37F53BD216BE
+  Name=empresa
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=123
+  Width=56
+  Top=42
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=#empresa,,,
+  Property=FieldSpec=padrao_num_08
+  Property=FocusSelect=FSEL_ALL
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=PUSHBUTTON
+GUID=893A529E-7C13-4804-8BA1-CC64DD964F76
+  Name=cmdmenos3
+  Class=PUSHBUTTON
+  Caption=-
+  Order=15
+  Left=207
+  Width=20
+  Top=42
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-",,
+  Property=HyperLabel=#cmdmenos3,,,
+
+CONTROL=PUSHBUTTON
+GUID=53BEE89B-B3A3-49DE-85C9-F826A47F8327
+  Name=cmdmais3
+  Class=PUSHBUTTON
+  Caption=+
+  Order=16
+  Left=184
+  Width=20
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"+",,
+  Property=HyperLabel=#cmdmais3,,,
+
+CONTROL=FIXEDTEXT
+GUID=3A8ABD7C-329B-41D7-A0E8-F6B21E944EE3
+  Name=FixedText4
+  Class=FIXEDTEXT
+  Caption=Empresa de Origem
+  Order=17
+  Left=21
+  Width=104
+  Top=44
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#FixedText4,,,
+  Property=HyperLabel=,"Empresa de Origem",,
+
+CONTROL=PUSHBUTTON
+GUID=552DC3D0-80AC-4B3E-B2FF-D8CB36953D01
+  Name=cmdemp01
+  Class=PUSHBUTTON
+  Caption=1
+  Order=18
+  Left=231
+  Width=20
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"1",,
+  Property=HyperLabel=#cmdemp01,,,
+
+CONTROL=PUSHBUTTON
+GUID=2B668C8F-52B5-4011-B7AB-8172A4A9C393
+  Name=cmdemp02
+  Class=PUSHBUTTON
+  Caption=2
+  Order=19
+  Left=252
+  Width=20
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"2",,
+  Property=HyperLabel=#cmdemp02,,,
+
+CONTROL=PUSHBUTTON
+GUID=414DA08A-F882-486A-9186-C647630D10C9
+  Name=cmdemp3
+  Class=PUSHBUTTON
+  Caption=3
+  Order=20
+  Left=273
+  Width=22
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"3",,
+  Property=HyperLabel=#cmdemp3,,,
+
+CONTROL=CHECKBOX
+GUID=7EE850DD-8B23-45C8-84DC-087C115CF4FB
+  Name=chkTrein
+  Class=CHECKBOX
+  Caption=Treinamentos
+  Order=24
+  Left=20
+  Width=92
+  Top=118
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Treinamentos",,
+  Property=HyperLabel=#chkTrein,,,
+
+CONTROL=CHECKBOX
+GUID=CC2874B7-22C0-446B-A196-35427CFFCB7C
+  Name=chkAntes
+  Class=CHECKBOX
+  Caption=Antes Contratações
+  Order=25
+  Left=124
+  Width=121
+  Top=115
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Antes Contratações",,
+  Property=HyperLabel=#chkAntes,,,
+
+CONTROL=FIXEDTEXT
+GUID=8836C5E1-0158-49FD-9A36-C285958061A7
+  Name=USO
+  Class=FIXEDTEXT
+  Caption=
+  Order=26
+  Left=49
+  Width=81
+  Top=133
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#USO,,,
+
+CONTROL=CHECKBOX
+GUID=C137858E-5B81-4E71-B0F7-59441F312F77
+  Name=chkAntes1
+  Class=CHECKBOX
+  Caption=Matriculas Anteriores
+  Order=27
+  Left=261
+  Width=140
+  Top=118
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Matriculas Anteriores",,
+  Property=HyperLabel=#chkAntes1,,,
+
+CONTROL=PUSHBUTTON
+GUID=FA153EDA-03B8-4DE5-B165-9356632CC7A1
+  Name=cmdemp99
+  Class=PUSHBUTTON
+  Caption=99
+  Order=28
+  Left=417
+  Width=24
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"99",,
+  Property=HyperLabel=#cmdemp99,,,
+
+CONTROL=PUSHBUTTON
+GUID=0C4486AD-5981-4A4A-B3BF-67205CD49929
+  Name=cmdemp4
+  Class=PUSHBUTTON
+  Caption=4
+  Order=29
+  Left=296
+  Width=22
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"4",,
+  Property=HyperLabel=#cmdemp4,,,
+
+CONTROL=PUSHBUTTON
+GUID=7AB40845-3C6A-451D-B2F4-2D856D53B2B6
+  Name=cmdemp5
+  Class=PUSHBUTTON
+  Caption=5
+  Order=30
+  Left=318
+  Width=22
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"5",,
+  Property=HyperLabel=#cmdemp5,,,
+
+CONTROL=PUSHBUTTON
+GUID=06EEAC99-A441-4304-8FF4-15533B4A84BA
+  Name=cmdemp98
+  Class=PUSHBUTTON
+  Caption=98
+  Order=31
+  Left=393
+  Width=25
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"98",,
+  Property=HyperLabel=#cmdemp98,,,
+
+CONTROL=PUSHBUTTON
+GUID=B0C50F2F-E356-4BC6-94C4-33A538BB7D68
+  Name=cmdemp10
+  Class=PUSHBUTTON
+  Caption=10
+  Order=32
+  Left=341
+  Width=22
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"10",,
+  Property=HyperLabel=#cmdemp10,,,
+
+CONTROL=PUSHBUTTON
+GUID=543C0BBE-1649-4DF6-9EFF-86A4E32467A3
+  Name=cmdemp97
+  Class=PUSHBUTTON
+  Caption=97
+  Order=33
+  Left=373
+  Width=25
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"97",,
+  Property=HyperLabel=#cmdemp97,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JimpTr
+

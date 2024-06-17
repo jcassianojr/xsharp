@@ -1,0 +1,692 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JCUR
+GUID=76ECA520-885C-44B1-95C3-FF48BFAC35AC
+  Name=JCUR
+  Class=DATAWINDOW
+  Caption=Cadastro de Cursos
+  Order=0
+  Left=60
+  Width=581
+  Top=60
+  Height=402
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Cadastro de Cursos",,
+  Property=Menu=STANDARDSHELLMENU
+  Property=HyperLabel=#JCUR,,,
+  Property=ViewAs=#FormView
+  Property=ClipperKeys=True
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=D3944D42-69B4-4811-B1C7-6B7B54E5E07F
+  Name=Atualiza
+  Class=PUSHBUTTON
+  Caption=Atualizar Descrição PT/TREIN
+  Order=1
+  Left=313
+  Width=231
+  Top=89
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073815552
+  Exstyles=0
+  Property=HyperLabel=,"Atualizar Descrição PT/TREIN",,
+  Property=HyperLabel=#Atualiza,,,
+  Property=TooltipText="Permite Atualizar Trein/PT Qdo Mudança nome do curso"
+
+CONTROL=PUSHBUTTON
+GUID=55832822-0925-4F65-8E81-0189DF5A2AA1
+  Name=porcurso
+  Class=PUSHBUTTON
+  Caption=
+  Order=2
+  Left=93
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#porcurso,,,
+  Property=TooltipText="Ordenar Por Codigo"
+
+CONTROL=PUSHBUTTON
+GUID=7E574451-3764-4F83-B2D0-753793C60829
+  Name=buscacurso
+  Class=PUSHBUTTON
+  Caption=
+  Order=3
+  Left=57
+  Width=32
+  Top=5
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscacurso,,,
+  Property=TooltipText="Localizar um Codigo"
+
+CONTROL=PUSHBUTTON
+GUID=7543FE10-E7DE-49D5-80D8-88AF18769EEB
+  Name=pornome
+  Class=PUSHBUTTON
+  Caption=
+  Order=4
+  Left=101
+  Width=32
+  Top=61
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#pornome,,,
+  Property=TooltipText="Ordenar por Descriçao"
+
+CONTROL=PUSHBUTTON
+GUID=1B340FF2-F337-4C9F-9E2B-63ED3BD5CB4D
+  Name=buscanome
+  Class=PUSHBUTTON
+  Caption=
+  Order=5
+  Left=65
+  Width=32
+  Top=61
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscanome,,,
+  Property=TooltipText="Localizar uma Descrição"
+
+CONTROL=SINGLELINEEDIT
+GUID=A65E3F00-4E00-4B98-934C-B8B169CF59E1
+  Name=GRUPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=325
+  Width=110
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_05
+  Property=HyperLabel=#GRUPO,,,
+  Property=HyperLabel=,"Carga:",,
+  Property=HyperLabel=,,,"TREIN_CARGA"
+  Property=FocusSelect=FSEL_HOME
+  Property=TooltipText="Grupo que o curso pertence"
+
+CONTROL=FIXEDTEXT
+GUID=B2D966C6-1118-4C49-88C4-82CAAF0CC76A
+  Name=SC_CARGA1
+  Class=FIXEDTEXT
+  Caption=Grupo
+  Order=7
+  Left=281
+  Width=44
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Grupo",,
+  Property=HyperLabel=#SC_CARGA1,,,
+
+CONTROL=SUBDATAWINDOW
+GUID=85743395-11BD-4C0E-9CCE-411ECDAA04B6
+  Name=jcurgrp
+  Class=SUBDATAWINDOW
+  Caption=jcurgrp
+  Order=8
+  Left=13
+  Width=464
+  Top=157
+  Height=212
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Cadastro de Cursos",,
+  Property=HyperLabel=#jcurgrp,,,
+
+CONTROL=PUSHBUTTON
+GUID=341D4A49-368B-4503-A258-6A7B095ECA83
+  Name=Proximo
+  Class=PUSHBUTTON
+  Caption=
+  Order=9
+  Left=521
+  Width=36
+  Top=253
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Proximo,,,
+  Property=Image=ico_next
+  Property=TooltipText="Avança um Grupo na Lista"
+
+CONTROL=PUSHBUTTON
+GUID=2EF58AD8-7593-44C8-A8A7-8E6A706F79DC
+  Name=Anterior
+  Class=PUSHBUTTON
+  Caption=
+  Order=10
+  Left=485
+  Width=36
+  Top=253
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Anterior,,,
+  Property=Image=ico_previous
+  Property=TooltipText="Retorna um Grupo na Lista"
+
+CONTROL=PUSHBUTTON
+GUID=B7BF03C2-62F8-476D-A57B-1799624777F9
+  Name=Tabular
+  Class=PUSHBUTTON
+  Caption=Ver Itens
+  Order=11
+  Left=485
+  Width=72
+  Top=229
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Ver Itens",,
+  Property=HyperLabel=#Tabular,,,
+  Property=TooltipText="Retorna a lista dos grupos"
+
+CONTROL=PUSHBUTTON
+GUID=B3629D51-F225-4134-ADAB-21BFE51F3BAF
+  Name=ALTERAR
+  Class=PUSHBUTTON
+  Caption=Alterar Item
+  Order=12
+  Left=485
+  Width=72
+  Top=205
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Alterar Item",,
+  Property=HyperLabel=#ALTERAR,,,
+  Property=TooltipText="Altera dados do grupo"
+
+CONTROL=PUSHBUTTON
+GUID=552D5AE7-B199-4D79-85DB-35885028DEDA
+  Name=Excluir
+  Class=PUSHBUTTON
+  Caption=Excluir Item
+  Order=13
+  Left=485
+  Width=72
+  Top=181
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Excluir Item",,
+  Property=HyperLabel=#Excluir,,,
+  Property=TooltipText="Exclui grupo em destaque da lista"
+
+CONTROL=PUSHBUTTON
+GUID=3F401A44-1ADE-4C3B-BBAA-0DEA3F64A274
+  Name=NOVO
+  Class=PUSHBUTTON
+  Caption=Novo Item
+  Order=14
+  Left=485
+  Width=72
+  Top=157
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Novo Item",,
+  Property=HyperLabel=#NOVO,,,
+  Property=TooltipText="Inclui um novo grupo"
+
+CONTROL=PUSHBUTTON
+GUID=B54D7E94-42E4-42FF-B61C-214A9747A8F0
+  Name=Escolher
+  Class=PUSHBUTTON
+  Caption=Escolher
+  Order=15
+  Left=485
+  Width=72
+  Top=125
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Escolher",,
+  Property=HyperLabel=#Escolher,,,
+  Property=TooltipText="Escolhe o Grupo para o curso"
+
+CONTROL=PUSHBUTTON
+GUID=5E0CDE32-6D42-417C-AEEE-ED2F284544FF
+  Name=mcur
+  Class=PUSHBUTTON
+  Caption=M
+  Order=16
+  Left=133
+  Width=23
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"M",,
+  Property=HyperLabel=#mcur,,,
+  Property=TooltipText="Clique para deixar o Codigo do Curso em Maisculas"
+
+CONTROL=PUSHBUTTON
+GUID=9B4946F4-2D69-43DA-B125-412815F01C9E
+  Name=mnom
+  Class=PUSHBUTTON
+  Caption=M
+  Order=17
+  Left=549
+  Width=23
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"M",,
+  Property=HyperLabel=#mnom,,,
+  Property=TooltipText="Clique para deixar o Descrição do Curso em Maisculas"
+
+CONTROL=PUSHBUTTON
+GUID=22BBBC4E-8B5E-4BB4-92D4-E0DE8D4D8373
+  Name=trocaCurso
+  Class=PUSHBUTTON
+  Caption=Trocar Codigos Curso
+  Order=18
+  Left=425
+  Width=136
+  Top=13
+  Height=28
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Trocar Codigos Curso",,
+  Property=HyperLabel=#trocaCurso,,,
+  Property=TooltipText="Permite Atualizar Trein/PT Qdo Mudança codigo do curso"
+
+CONTROL=PUSHBUTTON
+GUID=6D48C9E0-A7DA-4BCB-8A4E-444C7F4FEF8A
+  Name=Editar
+  Class=PUSHBUTTON
+  Caption=E
+  Order=19
+  Left=133
+  Width=23
+  Top=32
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"E",,
+  Property=HyperLabel=#Editar,,,
+  Property=TooltipText="Clique para Alterar o Codigo do Curso em Maisculas"
+
+CONTROL=FIXEDTEXT
+GUID=B19FAD80-45D5-4E3C-906D-68FDCCA562EB
+  Name=SC_CARGA
+  Class=FIXEDTEXT
+  Caption=Carga Horária:
+  Order=-1
+  Left=177
+  Width=84
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Carga Horária:",,
+  Property=HyperLabel=#SC_CARGA,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=5792F164-7FB9-439F-B1A4-3598C9D57529
+  Name=CERT
+  Class=RADIOBUTTONGROUP
+  Caption=Requer Certificado
+  Order=-1
+  Left=269
+  Width=132
+  Top=9
+  Height=44
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Requer Certificado",,
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#CERT,,,
+  Property=TooltipText="Se O Curso Requer Certificado"
+
+CONTROL=FIXEDTEXT
+GUID=077C973E-DAF3-44EF-B40D-854762C73136
+  Name=theFixedText3
+  Class=FIXEDTEXT
+  Caption=Curso:
+  Order=-1
+  Left=9
+  Width=40
+  Top=13
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Curso:",,
+  Property=HyperLabel=#theFixedText3,,,
+
+CONTROL=RADIOBUTTON
+GUID=3B46A58F-9ABE-471C-AAE0-56931F6F1772
+  Name=RB3
+  Class=RADIOBUTTON
+  Caption=Sim
+  Order=-1
+  Left=281
+  Width=52
+  Top=25
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Sim",,
+  Property=Value=S
+  Property=HyperLabel=#RB3,,,
+  Property=TooltipText="O Curso Requer Certificado"
+
+CONTROL=RADIOBUTTON
+GUID=2A2E429D-DE59-4696-AE0C-16EC130EF38F
+  Name=RB4
+  Class=RADIOBUTTON
+  Caption=Não
+  Order=-1
+  Left=341
+  Width=48
+  Top=25
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Não",,
+  Property=Value=N
+  Property=HyperLabel=#RB4,,,
+  Property=TooltipText="O Curso não Requer Certificado"
+
+CONTROL=SINGLELINEEDIT
+GUID=1580B296-28A2-424B-8DBC-3C8D8153C358
+  Name=CARGA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=173
+  Width=88
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08_2
+  Property=HyperLabel=#CARGA,,,
+  Property=HyperLabel=,"Carga:",,
+  Property=HyperLabel=,,,"TREIN_CARGA"
+  Property=FocusSelect=FSEL_HOME
+  Property=TooltipText="Carga Horaria do Curso"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=21D9AE8D-1A89-4AA0-9ECC-C3328E0D641B
+  Name=CURSO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=9
+  Width=120
+  Top=37
+  Height=20
+  Browseindex=0
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#CURSO,,,
+  Property=HyperLabel=,"Curso:",,
+  Property=HyperLabel=,,,"CURSO_CURSO"
+  Property=FocusSelect=FSEL_HOME
+  Property=Background=253 254 220
+
+CONTROL=SINGLELINEEDIT
+GUID=EB2FA12B-8336-42C0-8B7F-A35CA4EE0EEE
+  Name=DESCUR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=145
+  Width=400
+  Top=65
+  Height=20
+  Browseindex=1
+  Browsesize=49
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_char_120
+  Property=HyperLabel=#DESCUR,,,
+  Property=HyperLabel=,"Descrição",,
+  Property=HyperLabel=,,,"CURSO_DESCUR"
+  Property=FocusSelect=FSEL_HOME
+
+CONTROL=FIXEDTEXT
+GUID=FC245C1F-BE60-48B4-95D9-7140521FF909
+  Name=SC_DESCUR
+  Class=FIXEDTEXT
+  Caption=Descrição:
+  Order=-1
+  Left=9
+  Width=56
+  Top=69
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descrição:",,
+  Property=HyperLabel=#SC_DESCUR,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=449DF3F8-7E08-4EB9-BBA5-992632C55C6E
+  Name=TIPCUR
+  Class=RADIOBUTTONGROUP
+  Caption=Tipo
+  Order=-1
+  Left=9
+  Width=259
+  Top=97
+  Height=49
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Tipo",,
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#TIPCUR,,,
+  Property=TooltipText="Tipo de Curso Interno/Externo"
+
+CONTROL=RADIOBUTTON
+GUID=045CE89C-59B5-405C-B6E5-C1630AB0FC6C
+  Name=RB1
+  Class=RADIOBUTTON
+  Caption=Interno
+  Order=-1
+  Left=21
+  Width=64
+  Top=117
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Interno",,
+  Property=Value=I
+  Property=HyperLabel=#RB1,,,
+  Property=TooltipText="Curso Interno"
+
+CONTROL=RADIOBUTTON
+GUID=A947B416-1206-44A3-B76F-2DEAB758F15E
+  Name=RB2
+  Class=RADIOBUTTON
+  Caption=Externo
+  Order=-1
+  Left=129
+  Width=68
+  Top=117
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Externo",,
+  Property=Value=E
+  Property=HyperLabel=#RB2,,,
+  Property=TooltipText="Curso Externo"
+
+SUBCONTROLSEND
+DESIGNEREND = JCUR
+

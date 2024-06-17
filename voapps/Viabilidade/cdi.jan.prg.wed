@@ -1,0 +1,152 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JCDI
+GUID=E855EBFE-0189-4F06-8DB4-0D69EF8BAAEB
+  Name=JCDI
+  Class=DATAWINDOW
+  Caption=Itens CD
+  Order=0
+  Left=22
+  Width=420
+  Top=22
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Itens CD",,
+  Property=ViewAs=#FormView
+  Property=HyperLabel=#JCDI,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=880ED779-3D70-472C-AF7C-39964A4A54F3
+  Name=DESENHO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=73
+  Width=180
+  Top=9
+  Height=20
+  Browseindex=0
+  Browsesize=27
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#DESENHO,,,
+  Property=HyperLabel=,"Desenho:",,
+  Property=HyperLabel=,,,"CDI_DESENHO"
+
+CONTROL=SINGLELINEEDIT
+GUID=A64CF362-C14C-45FE-BA3C-6353DA0B37FB
+  Name=REV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=73
+  Width=152
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=19
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#REV,,,
+  Property=HyperLabel=,"Rev:",,
+  Property=HyperLabel=,,,"CDI_REV"
+
+CONTROL=SINGLELINEEDIT
+GUID=23C898CA-9A73-497F-88AA-EA61AB7D029E
+  Name=DATAREV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=73
+  Width=152
+  Top=49
+  Height=20
+  Browseindex=2
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DATAREV,,,
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=,,,"CDI_REV"
+  Property=InheritClassName=DateSle
+
+CONTROL=FIXEDTEXT
+GUID=51C87D85-3456-48EB-B0EA-BE4327425309
+  Name=SC_DESENHO
+  Class=FIXEDTEXT
+  Caption=Desenho:
+  Order=4
+  Left=17
+  Width=52
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Desenho:",,
+  Property=HyperLabel=#SC_DESENHO,,,
+
+CONTROL=FIXEDTEXT
+GUID=2BB5E735-A368-404D-A78B-7C921CF03E74
+  Name=SC_REV
+  Class=FIXEDTEXT
+  Caption=Rev:
+  Order=5
+  Left=17
+  Width=28
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Rev:",,
+  Property=HyperLabel=#SC_REV,,,
+
+CONTROL=FIXEDTEXT
+GUID=378688FB-BBD9-4D3B-B00A-43BC18DC7582
+  Name=SC_REV1
+  Class=FIXEDTEXT
+  Caption=Data Rev:
+  Order=6
+  Left=17
+  Width=52
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data Rev:",,
+  Property=HyperLabel=#SC_REV1,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JCDI
+

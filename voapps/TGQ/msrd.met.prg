@@ -1,0 +1,99 @@
+PARTIAL CLASS JMSRD
+METHOD APPEND() 
+LOCAL nMSRD AS DWORD
+LOCAL oJAN AS XJPFDIA
+SELF:server:clearfilter()
+oJAN:=XJPFDIA{SELF}
+oJAN:SHOW()
+IF ! oJAN:lOK
+   RETURN  .F.
+ENDIF	
+SELF:server:setorder(1)
+SELF:server:gobottom()
+nMSRD:=SELF:Server:FIELDGET("MSRD")
+nMSRD++
+SUPER:append()
+SELF:SERVER:FIELDPUT("MSRD",nMSRD)
+SELF:SERVER:FIELDPUT("DATA",Today())
+SELF:SERVER:FIELDPUT("CODIGO",oJAN:cCODIGO)
+SELF:SERVER:FIELDPUT("PF",oJAN:NPF)
+RETURN   .T.
+
+
+METHOD Buscacod() 
+LOCAL oBUSCA AS xBUSCA
+oBUSCA:=xBUSCA{SELF,"Localizar Registro Defeito","Digite Código do Produto"}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF oBUSCA:lOK
+   SELF:SERVER:SETORDER(2)
+   SELF:SERVER:GOTOP()
+   SELF:SERVER:SEEK(oBUSCA:cBUSCA)
+ENDIF
+
+METHOD Buscanum() 
+	SELF:KeyFind()
+//LOCAL oBUSCA AS xBUSCA
+//oBUSCA:=xBUSCA{SELF,"Localizar Registro Defeito","Digite Nº Defeito"}
+//oBUSCA:lMES:=.T.
+//oBUSCA:SHOW()
+//IF oBUSCA:lOK
+//   SELF:SERVER:SETORDER(1)
+//   SELF:SERVER:GOTOP()
+//   SELF:SERVER:SEEK(Val(oBUSCA:cBUSCA))
+//ENDIF
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro(.T.)	
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR(.T.)
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("SAC","RDP")		
+
+METHOD DELETE() 
+IF  MDG("Apagar Registro") .AND. SELF:SERVER:LOCKcurrentrecord()
+	SELF:server:delete()
+	SELF:server:unlock()
+	SELF:server:skipEX(-1)
+ENDIF	
+
+METHOD esccli( ) 
+LOCAL oESC AS XESCNUM	
+oESC:=XESCNUM{SELF,"MA01.DBF"}
+oESC:SHOW()	
+IF Oesc:lok
+    SELF:SERVER:FIELDPUT("CLIENTE",oESC:NUMERO)
+ENDIF	
+
+
+METHOD foto( ) 
+LOCAL oFOTOVIEW AS fotoview	
+LOCAL cCODIGO AS STRING
+cCODIGO:=TIRAOUT(StrTran(AllTrim(SELF:SERVER:FIELDGET("CODIGO"))," ",""))
+IF Empty(cCODIGO)	
+   alert("Codigo Produto Nao Preenchido")	
+   RETURN .F.
+ENDIF	
+OFOTOVIEW:=fotoview{SELF,ZDIRFOTO+cCODIGO+".JPG",cCODIGO}
+OFOTOVIEW:SHOW()	
+
+METHOD porcod 
+    SELF:server:setorder(2)	
+
+METHOD pornum 
+	SELF:KeyFind()
+//	SELF:server:setorder(1)
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+      FabCenterWindow( SELF )
+ RETURN SELF
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+
+
+END CLASS

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="HelpAbout">
+    <Window Name="HelpAbout">
+      <Name>HelpAbout</Name>
+      <Class>DIALOGWINDOW</Class>
+      <Caption>Sobre a Aplicação</Caption>
+      <Order>0</Order>
+      <Left>137</Left>
+      <Top>49</Top>
+      <Width>410</Width>
+      <Height>380</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>2261254272</Styles>
+      <ExStyles>257</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Sobre a Aplicação",,</HyperLabel>
+        <HyperLabel>#HelpAbout,,,</HyperLabel>
+        <ClipperKeys>True</ClipperKeys>
+      </ExProperties>
+    </Window>
+    <Control Name="PushButton1">
+      <Name>PushButton1</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>329</Left>
+      <Top>5</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807424</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#PushButton1,,,</HyperLabel>
+        <Image>ICO_SAIR</Image>
+        <TooltipText>"Clique Para Retornar"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText9">
+      <Name>theFixedText9</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Retornar</Caption>
+      <Order>6</Order>
+      <Left>329</Left>
+      <Top>53</Top>
+      <Width>64</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Retornar",,</HyperLabel>
+        <HyperLabel>#theFixedText9,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="INFOSISTEMA">
+      <Name>INFOSISTEMA</Name>
+      <Class>RICHEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>17</Left>
+      <Top>69</Top>
+      <Width>376</Width>
+      <Height>264</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082136644</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#INFOSISTEMA,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText3">
+      <Name>FixedText3</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>www..com.br</Caption>
+      <Order>8</Order>
+      <Left>193</Left>
+      <Top>37</Top>
+      <Width>124</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"www..com.br",,</HyperLabel>
+        <InheritClassName>Hyperlink</InheritClassName>
+        <HyperLabel>#FixedText3,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="TITULO">
+      <Name>TITULO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Nome da Aplicação</Caption>
+      <Order>-1</Order>
+      <Left>61</Left>
+      <Top>9</Top>
+      <Width>259</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741953</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Nome da Aplicação",,</HyperLabel>
+        <HyperLabel>#TITULO,,,</HyperLabel>
+        <NewFont>12:MS Sans Serif:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="Info">
+      <Name>Info</Name>
+      <Class>FIXEDICON</Class>
+      <Caption>
+      </Caption>
+      <Order>-1</Order>
+      <Left>17</Left>
+      <Top>13</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082130435</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"info_ico",,</HyperLabel>
+        <HyperLabel>#Info,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText3">
+      <Name>theFixedText3</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Copyright 2016</Caption>
+      <Order>-1</Order>
+      <Left>61</Left>
+      <Top>37</Top>
+      <Width>124</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741953</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Copyright 2016",,</HyperLabel>
+        <HyperLabel>#theFixedText3,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

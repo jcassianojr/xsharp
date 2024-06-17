@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="Jestqint">
+    <Window Name="Jestqint">
+      <Name>Jestqint</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Estoque Importado</Caption>
+      <Order>0</Order>
+      <Left>20</Left>
+      <Top>20</Top>
+      <Width>536</Width>
+      <Height>210</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Estoque Importado",,</HyperLabel>
+        <ViewAs>#FormView</ViewAs>
+        <HyperLabel>#Jestqint,,,</HyperLabel>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <InheritClassName>MYDataWindow</InheritClassName>
+      </ExProperties>
+    </Window>
+    <Control Name="SC_COD_EMPRES">
+      <Name>SC_COD_EMPRES</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Cod Empres:</Caption>
+      <Order>1</Order>
+      <Left>13</Left>
+      <Top>13</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Cod Empres:",,</HyperLabel>
+        <HyperLabel>#SC_COD_EMPRES,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_COD_ITEM">
+      <Name>SC_COD_ITEM</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Cod Item:</Caption>
+      <Order>2</Order>
+      <Left>109</Left>
+      <Top>9</Top>
+      <Width>48</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Cod Item:",,</HyperLabel>
+        <HyperLabel>#SC_COD_ITEM,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_QTD_LIBERA">
+      <Name>SC_QTD_LIBERA</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Qtd Libera:</Caption>
+      <Order>3</Order>
+      <Left>17</Left>
+      <Top>37</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Qtd Libera:",,</HyperLabel>
+        <HyperLabel>#SC_QTD_LIBERA,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_QTD_IMPEDI">
+      <Name>SC_QTD_IMPEDI</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Qtd Impedi:</Caption>
+      <Order>4</Order>
+      <Left>17</Left>
+      <Top>61</Top>
+      <Width>60</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Qtd Impedi:",,</HyperLabel>
+        <HyperLabel>#SC_QTD_IMPEDI,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_QTD_REJEIT">
+      <Name>SC_QTD_REJEIT</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Qtd Rejeit:</Caption>
+      <Order>5</Order>
+      <Left>17</Left>
+      <Top>85</Top>
+      <Width>56</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Qtd Rejeit:",,</HyperLabel>
+        <HyperLabel>#SC_QTD_REJEIT,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_QTD_LIB_EX">
+      <Name>SC_QTD_LIB_EX</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Qtd Lib Ex:</Caption>
+      <Order>6</Order>
+      <Left>17</Left>
+      <Top>109</Top>
+      <Width>56</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Qtd Lib Ex:",,</HyperLabel>
+        <HyperLabel>#SC_QTD_LIB_EX,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_QTD_DISP_V">
+      <Name>SC_QTD_DISP_V</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Qtd Disp V:</Caption>
+      <Order>7</Order>
+      <Left>17</Left>
+      <Top>133</Top>
+      <Width>60</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Qtd Disp V:",,</HyperLabel>
+        <HyperLabel>#SC_QTD_DISP_V,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_QTD_RESERV">
+      <Name>SC_QTD_RESERV</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Qtd Reserv:</Caption>
+      <Order>8</Order>
+      <Left>17</Left>
+      <Top>157</Top>
+      <Width>60</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Qtd Reserv:",,</HyperLabel>
+        <HyperLabel>#SC_QTD_RESERV,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DAT_ULT_IN">
+      <Name>SC_DAT_ULT_IN</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Dat Ult In:</Caption>
+      <Order>9</Order>
+      <Left>225</Left>
+      <Top>37</Top>
+      <Width>52</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Dat Ult In:",,</HyperLabel>
+        <HyperLabel>#SC_DAT_ULT_IN,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DAT_ULT_EN">
+      <Name>SC_DAT_ULT_EN</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Dat Ult En:</Caption>
+      <Order>10</Order>
+      <Left>221</Left>
+      <Top>61</Top>
+      <Width>56</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Dat Ult En:",,</HyperLabel>
+        <HyperLabel>#SC_DAT_ULT_EN,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DAT_ULT_SA">
+      <Name>SC_DAT_ULT_SA</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Dat Ult Sa:</Caption>
+      <Order>11</Order>
+      <Left>221</Left>
+      <Top>85</Top>
+      <Width>56</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Dat Ult Sa:",,</HyperLabel>
+        <HyperLabel>#SC_DAT_ULT_SA,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="COD_EMPRES">
+      <Name>COD_EMPRES</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>12</Order>
+      <Left>81</Left>
+      <Top>9</Top>
+      <Width>24</Width>
+      <Height>20</Height>
+      <BrowseIndex>10</BrowseIndex>
+      <BrowseSize>12</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_01</FieldSpec>
+        <HyperLabel>#COD_EMPRES,,,</HyperLabel>
+        <HyperLabel>,"Cod Empres:",,</HyperLabel>
+        <HyperLabel>,,,"estqint_COD_EMPRES"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="COD_ITEM">
+      <Name>COD_ITEM</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>13</Order>
+      <Left>165</Left>
+      <Top>9</Top>
+      <Width>112</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>27</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_14</FieldSpec>
+        <HyperLabel>#COD_ITEM,,,</HyperLabel>
+        <HyperLabel>,"Cod Item:",,</HyperLabel>
+        <HyperLabel>,,,"estqint_COD_ITEM"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="QTD_LIBERA">
+      <Name>QTD_LIBERA</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>14</Order>
+      <Left>93</Left>
+      <Top>37</Top>
+      <Width>120</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>21</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_num_12_4</FieldSpec>
+        <HyperLabel>#QTD_LIBERA,,,</HyperLabel>
+        <HyperLabel>,"Qtd Libera:",,</HyperLabel>
+        <HyperLabel>,,,"estqint_QTD_LIBERA"</HyperLabel>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="QTD_IMPEDI">
+      <Name>QTD_IMPEDI</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>15</Order>
+      <Left>93</Left>
+      <Top>61</Top>
+      <Width>120</Width>
+      <Height>20</Height>
+      <BrowseIndex>7</BrowseIndex>
+      <BrowseSize>12</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_num_12_4</FieldSpec>
+        <HyperLabel>#QTD_IMPEDI,,,</HyperLabel>
+        <HyperLabel>,"Qtd Impedi:",,</HyperLabel>
+        <HyperLabel>,,,"estqint_QTD_IMPEDI"</HyperLabel>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="QTD_REJEIT">
+      <Name>QTD_REJEIT</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>16</Order>
+      <Left>93</Left>
+      <Top>85</Top>
+      <Width>120</Width>
+      <Height>20</Height>
+      <BrowseIndex>6</BrowseIndex>
+      <BrowseSize>12</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_num_12_4</FieldSpec>
+        <HyperLabel>#QTD_REJEIT,,,</HyperLabel>
+        <HyperLabel>,"Qtd Rejeit:",,</HyperLabel>
+        <HyperLabel>,,,"estqint_QTD_REJEIT"</HyperLabel>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="QTD_LIB_EX">
+      <Name>QTD_LIB_EX</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>17</Order>
+      <Left>93</Left>
+      <Top>109</Top>
+      <Width>120</Width>
+      <Height>20</Height>
+      <BrowseIndex>5</BrowseIndex>
+      <BrowseSize>12</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_num_12_4</FieldSpec>
+        <HyperLabel>#QTD_LIB_EX,,,</HyperLabel>
+        <HyperLabel>,"Qtd Lib Ex:",,</HyperLabel>
+        <HyperLabel>,,,"estqint_QTD_LIB_EX"</HyperLabel>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="QTD_DISP_V">
+      <Name>QTD_DISP_V</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>18</Order>
+      <Left>93</Left>
+      <Top>133</Top>
+      <Width>120</Width>
+      <Height>20</Height>
+      <BrowseIndex>4</BrowseIndex>
+      <BrowseSize>12</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_num_12_4</FieldSpec>
+        <HyperLabel>#QTD_DISP_V,,,</HyperLabel>
+        <HyperLabel>,"Qtd Disp V:",,</HyperLabel>
+        <HyperLabel>,,,"estqint_QTD_DISP_V"</HyperLabel>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="QTD_RESERV">
+      <Name>QTD_RESERV</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>19</Order>
+      <Left>93</Left>
+      <Top>157</Top>
+      <Width>120</Width>
+      <Height>20</Height>
+      <BrowseIndex>3</BrowseIndex>
+      <BrowseSize>12</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_num_12_4</FieldSpec>
+        <HyperLabel>#QTD_RESERV,,,</HyperLabel>
+        <HyperLabel>,"Qtd Reserv:",,</HyperLabel>
+        <HyperLabel>,,,"estqint_QTD_RESERV"</HyperLabel>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="DAT_ULT_IN">
+      <Name>DAT_ULT_IN</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>20</Order>
+      <Left>289</Left>
+      <Top>37</Top>
+      <Width>108</Width>
+      <Height>20</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>12</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>date_FIELD</FieldSpec>
+        <HyperLabel>#DAT_ULT_IN,,,</HyperLabel>
+        <HyperLabel>,"Dat Ult In:",,</HyperLabel>
+        <HyperLabel>,,,"estqint_DAT_ULT_IN"</HyperLabel>
+        <InheritClassName>DateSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="DAT_ULT_EN">
+      <Name>DAT_ULT_EN</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>21</Order>
+      <Left>289</Left>
+      <Top>61</Top>
+      <Width>108</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>12</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>DATE_FIELD</FieldSpec>
+        <HyperLabel>#DAT_ULT_EN,,,</HyperLabel>
+        <HyperLabel>,"Dat Ult En:",,</HyperLabel>
+        <HyperLabel>,,,"estqint_DAT_ULT_EN"</HyperLabel>
+        <InheritClassName>DateSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="DAT_ULT_SA">
+      <Name>DAT_ULT_SA</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>22</Order>
+      <Left>289</Left>
+      <Top>85</Top>
+      <Width>108</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>12</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>date_field</FieldSpec>
+        <HyperLabel>#DAT_ULT_SA,,,</HyperLabel>
+        <HyperLabel>,"Dat Ult Sa:",,</HyperLabel>
+        <HyperLabel>,,,"estqint_DAT_ULT_SA"</HyperLabel>
+        <InheritClassName>DateSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="pornum">
+      <Name>pornum</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>23</Order>
+      <Left>465</Left>
+      <Top>9</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ICO_AZ</Image>
+        <HyperLabel>#pornum,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="buscanum">
+      <Name>buscanum</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>24</Order>
+      <Left>433</Left>
+      <Top>9</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ICO_FIND</Image>
+        <HyperLabel>#buscanum,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

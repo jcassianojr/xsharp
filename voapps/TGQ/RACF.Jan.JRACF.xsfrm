@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JRACF">
+    <Window Name="JRACF">
+      <Name>JRACF</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Requerimento de Ação Corretiva ao Fornecedor</Caption>
+      <Order>0</Order>
+      <Left>79</Left>
+      <Top>76</Top>
+      <Width>746</Width>
+      <Height>419</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082130432</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Requerimento de Ação Corretiva ao Fornecedor",,</HyperLabel>
+        <HyperLabel>#JRACF,,,</HyperLabel>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <ViewAs>#FormView</ViewAs>
+        <InheritClassName>MYDataWindow</InheritClassName>
+      </ExProperties>
+    </Window>
+    <Control Name="CRM">
+      <Name>CRM</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>261</Left>
+      <Top>25</Top>
+      <Width>70</Width>
+      <Height>20</Height>
+      <BrowseIndex>34</BrowseIndex>
+      <BrowseSize>5</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082130560</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#CRM,,,</HyperLabel>
+        <InheritClassName>rightSle</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="RASTRO">
+      <Name>RASTRO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>389</Left>
+      <Top>25</Top>
+      <Width>92</Width>
+      <Height>20</Height>
+      <BrowseIndex>4</BrowseIndex>
+      <BrowseSize>8</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_20</FieldSpec>
+        <HyperLabel>#RASTRO,,,</HyperLabel>
+        <HyperLabel>,"Rastro:",,</HyperLabel>
+        <HyperLabel>,,,"RACF_RASTRO"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_RACF">
+      <Name>SC_RACF</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>RACF</Caption>
+      <Order>3</Order>
+      <Left>21</Left>
+      <Top>11</Top>
+      <Width>40</Width>
+      <Height>14</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"RACF",,</HyperLabel>
+        <HyperLabel>#SC_RACF,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DATA">
+      <Name>SC_DATA</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Data:</Caption>
+      <Order>4</Order>
+      <Left>181</Left>
+      <Top>9</Top>
+      <Width>40</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Data:",,</HyperLabel>
+        <HyperLabel>#SC_DATA,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="RACF">
+      <Name>RACF</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>21</Left>
+      <Top>25</Top>
+      <Width>76</Width>
+      <Height>26</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>6</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#RACF,,,</HyperLabel>
+        <HyperLabel>,"Racf:",,</HyperLabel>
+        <HyperLabel>,,,"RACF_RACF"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>12:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_RASTRO">
+      <Name>SC_RASTRO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Rastreabilidade:</Caption>
+      <Order>6</Order>
+      <Left>389</Left>
+      <Top>9</Top>
+      <Width>100</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Rastreabilidade:",,</HyperLabel>
+        <HyperLabel>#SC_RASTRO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="TabRacf">
+      <Name>TabRacf</Name>
+      <Class>TABCONTROL</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>9</Left>
+      <Top>57</Top>
+      <Width>712</Width>
+      <Height>328</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#TabRacf,,,</HyperLabel>
+      </ExProperties>
+      <TabPages>
+        <TabPage Name="RacfPag1">
+          <Name>RacfPag1</Name>
+          <Caption>Dados</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TabRacf_Page2">
+          <Name>TabRacf_Page2</Name>
+          <Caption>Descrição Não Conformidade</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TabRacf_Page3">
+          <Name>TabRacf_Page3</Name>
+          <Caption>1º Ação de Contenção</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TabRacf_Page4">
+          <Name>TabRacf_Page4</Name>
+          <Caption>2º Causa do Problema</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TabRacf_Page5">
+          <Name>TabRacf_Page5</Name>
+          <Caption>3º Ação Corretiva</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TabRacf_Page6">
+          <Name>TabRacf_Page6</Name>
+          <Caption>4º Implantação</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+        <TabPage Name="TabRacf_Page7">
+          <Name>TabRacf_Page7</Name>
+          <Caption>5º 6ª 7ª Efetivação/Apr/Desc</Caption>
+          <DataAware>Yes</DataAware>
+        </TabPage>
+      </TabPages>
+    </Control>
+    <Control Name="RNC">
+      <Name>RNC</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>537</Left>
+      <Top>25</Top>
+      <Width>70</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>5</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#RNC,,,</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="RAT">
+      <Name>RAT</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>613</Left>
+      <Top>25</Top>
+      <Width>70</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>5</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_08</FieldSpec>
+        <HyperLabel>#RAT,,,</HyperLabel>
+        <NewFont>10:Trebuchet MS:Bold</NewFont>
+        <Background>255 255 200</Background>
+      </ExProperties>
+    </Control>
+    <Control Name="FT42">
+      <Name>FT42</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>RAT</Caption>
+      <Order>11</Order>
+      <Left>613</Left>
+      <Top>9</Top>
+      <Width>32</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"RAT",,</HyperLabel>
+        <HyperLabel>#FT42,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FT40">
+      <Name>FT40</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>CRM</Caption>
+      <Order>12</Order>
+      <Left>261</Left>
+      <Top>5</Top>
+      <Width>49</Width>
+      <Height>13</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"CRM",,</HyperLabel>
+        <HyperLabel>#FT40,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="IMPORTAR">
+      <Name>IMPORTAR</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Imp</Caption>
+      <Order>13</Order>
+      <Left>341</Left>
+      <Top>25</Top>
+      <Width>40</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Imp",,</HyperLabel>
+        <HyperLabel>#IMPORTAR,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="IMPrastro">
+      <Name>IMPrastro</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Imp</Caption>
+      <Order>14</Order>
+      <Left>485</Left>
+      <Top>25</Top>
+      <Width>40</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Imp",,</HyperLabel>
+        <HyperLabel>#IMPrastro,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="DATA">
+      <Name>DATA</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>15</Order>
+      <Left>173</Left>
+      <Top>25</Top>
+      <Width>76</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>6</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>DATE_FIELD</FieldSpec>
+        <HyperLabel>#DATA,,,</HyperLabel>
+        <HyperLabel>,"Racf:",,</HyperLabel>
+        <HyperLabel>,,,"RACF_RACF"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="buscaRACF">
+      <Name>buscaRACF</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>16</Order>
+      <Left>105</Left>
+      <Top>17</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_find</Image>
+        <HyperLabel>#buscaRACF,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="PORNUM">
+      <Name>PORNUM</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>17</Order>
+      <Left>137</Left>
+      <Top>17</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_az</Image>
+        <HyperLabel>#PORNUM,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="VERRNC">
+      <Name>VERRNC</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>RNC</Caption>
+      <Order>18</Order>
+      <Left>541</Left>
+      <Top>5</Top>
+      <Width>48</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"RNC",,</HyperLabel>
+        <HyperLabel>#VERRNC,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

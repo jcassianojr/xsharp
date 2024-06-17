@@ -1,0 +1,83 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,_jDIATREIN
+GUID=E55A19A1-5A67-495C-94CF-04A9F509E97F
+  Name=_jDIATREIN
+  Class=DATADIALOG
+  Caption=Visualizando Treinamento
+  Order=0
+  Left=24
+  Width=701
+  Top=24
+  Height=522
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Visualizando Treinamento",,
+  Property=HyperLabel=#_jDIATREIN,,,
+
+SUBCONTROLSSTART
+CONTROL=SUBDATAWINDOW
+GUID=5A186F27-E2DE-4D96-A658-F1124B306CF5
+  Name=ZJTRE
+  Class=SUBDATAWINDOW
+  Caption=ZJTRE
+  Order=1
+  Left=14
+  Width=631
+  Top=6
+  Height=507
+  Browseindex=-1
+  Browsesize=0
+  Subform=Yes
+  Nosave=No
+  Deleted=2
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=#ZJTRE,,,
+
+CONTROL=PUSHBUTTON
+GUID=1B24B5B3-4EB2-44DA-AFDB-8759AF44D339
+  Name=Encerrar
+  Class=PUSHBUTTON
+  Caption=
+  Order=2
+  Left=648
+  Width=52
+  Top=9
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Encerrar,,,
+  Property=Image=ico_sair
+
+CONTROL=FIXEDTEXT
+GUID=9C332689-64C8-4C5F-8500-05A1FF52DC0B
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=3
+  Left=649
+  Width=51
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+SUBCONTROLSEND
+DESIGNEREND = _jDIATREIN
+

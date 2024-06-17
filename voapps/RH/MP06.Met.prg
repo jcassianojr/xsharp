@@ -1,0 +1,124 @@
+PARTIAL CLASS JMP06
+METHOD APPEND() 
+SELF:server:setorder(1)
+SELF:server:gobottom()
+SELF:SERVER:SUSPENDNOTIFICATION()
+SUPER:append()
+SELF:SERVER:commit()
+SELF:SERVER:resetnotification()
+SELF:SERVER:notify(notifyappend)
+RETURN .t.
+
+METHOD buscacodigo( ) 
+LOCAL oBUSCA AS xBUSCA
+oBUSCA:=xBUSCA{SELF,"Localizar","Digite o Codigo"}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF oBUSCA:lOK
+   SELF:SERVER:SETORDER(1)
+   SELF:SERVER:GOTOP()
+   SELF:SERVER:SEEK(oBUSCA:cBUSCA)
+ENDIF	
+
+METHOD buscanome( ) 
+LOCAL oBUSCA AS xBUSCA
+oBUSCA:=xBUSCA{SELF,"Localizar","Digite o Nome"}
+oBUSCA:lMES:=.T.
+oBUSCA:SHOW()
+IF oBUSCA:lOK
+   SELF:SERVER:SETORDER(2)
+   SELF:SERVER:GOTOP()
+   SELF:SERVER:SEEK(oBUSCA:cBUSCA)
+ENDIF	
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("RH","PRO")	
+
+
+METHOD DELETE() 
+IF MDG("Apagar Registro") .AND. SELF:SERVER:LOCKcurrentrecord()
+   SELF:oSFJMP2:SERVER:SUSPENDNOTIFICATION()
+	SELF:oSFJMP2:SERVER:gotop()
+   WHILE ! SELF:oSFJMP2:SERVER:eof
+	 	SELF:oSFJMP2:SERVER:delete()
+	 	SELF:oSFJMP2:SERVER:skip()	
+      ENDDO
+	SELF:oSFJMP2:SERVER:resetnotification()
+	SELF:oSFJMP2:SERVER:notify(notifyfilechange)
+	SELF:server:delete()
+	SELF:server:unlock()
+	SELF:server:skip(-1)
+ENDIF	
+
+METHOD ESCCUR 
+LOCAL oJAN AS XESCCUR
+oJAN:=XESCCUR{SELF,ZCURINI,ZCURDIR,"CURSO.DBF"}
+oJAN:SHOW()
+IF oJAN:lOK
+   SELF:oDCCURSO:TextValue:=oJAN:CODIGO
+ENDIF
+
+
+METHOD EXCLUIR 
+IF  MDG("Apagar Registro") .AND. SELF:oSFJMP2:server:LockCurrentRecord()
+    SELF:oSFJMP2:server:delete()
+    SELF:oSFJMP2:server:unlock()
+    SELF:oSFJMP2:server:skip(-1)
+    IF SELF:oSFJMP2:server:BOF
+       SELF:oSFJMP2:server:GOTOP()
+    ENDIF
+ENDIF	
+
+METHOD INCLUIR(oOWNER) 
+LOCAL cCODIGO AS STRING
+LOCAL cCURSO AS STRING
+LOCAL aCUR AS ARRAY
+LOCAL oERRO AS ERRORBOX
+cCODIGO:=SELF:SERVER:CODIGO
+cCURSO:=SELF:CURSO
+IF Empty(SELF:CURSO)
+     oERRO:=ERRORBOX{oOWNER,"Codigo Curso em Branco"}
+     oERRO:SHOW()
+     RETU NIL
+ENDIF
+ aCUR:=PEGCUR(SELF:CURSO)
+ IF aCUR[1]=.F.
+     oERRO:=ERRORBOX{oOWNER,"Codigo nao Cadastrado Branco"}
+     oERRO:SHOW()
+     RETU NIL
+ ENDIF
+SELF:oSFJMP2:SERVER:SUSPENDNOTIFICATION()
+SELF:oSFJMP2:SERVER:APPEND()
+SELF:oSFJMP2:SERVER:CODIGO:=cCODIGO
+SELF:oSFJMP2:SERVER:CURSO:=cCURSO
+SELF:oSFJMP2:SERVER:commit()
+SELF:oSFJMP2:SERVER:resetnotification()
+SELF:oSFJMP2:SERVER:notify(notifyappend) //Contas do Livro
+
+METHOD PORCODIGO() 
+SELF:server:setorder(1)
+RETURN .t.
+
+METHOD PORNOME() 
+SELF:server:setorder(2)
+RETURN .t.
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+   FabCenterWindow( SELF )
+ RETURN SELF
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+
+
+END CLASS

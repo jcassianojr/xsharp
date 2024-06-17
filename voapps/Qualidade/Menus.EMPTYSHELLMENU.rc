@@ -1,0 +1,82 @@
+EMPTYSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		MENUITEM "RRS - Repetibilidade Simples", 32001
+		MENUITEM "RRL - Repetibilidade Longo", 21781
+		MENUITEM "RRM - Repetibilidade Instrumentos", 21782
+		MENUITEM "ACP - Analise Cap. Potencial", 21783
+		MENUITEM "AEP - Analise Estabilidade de Processo", 21784
+		MENUITEM "PAC - Plano de ação para o CEP", 21785
+		MENUITEM "ACD - Lançamentos de Dados", 21786
+		MENUITEM "TEEP - Tabela de Est.Esta.Proceso", 21787
+		POPUP "Plano de Auditoria de Embarque"
+		BEGIN
+			MENUITEM "OPAE - Ocorrencia Embarque", 21789
+			MENUITEM "PAEI - Especificações", 21790
+			MENUITEM "PAEE - Ocorrencias Externas", 21791
+		END
+		POPUP "RI - Relatório de Inspeçao/Medição"
+		BEGIN
+			MENUITEM "RI - Relatório de Inspeçao/Medição", 21793
+			MENUITEM "RI - Mes Ano Fechados", 21794
+		END
+		POPUP "CI - Certificado de Inspeção"
+		BEGIN
+			MENUITEM "Certificado de Inspeção", 21796
+			MENUITEM "Pré Lançamento Certificado", 21797
+			MENUITEM "Importar Cadastro de Produtos", 21798
+		END
+		POPUP "GC - Grafico de Controle"
+		BEGIN
+			MENUITEM "GC - Grafico de Controle", 21800
+			MENUITEM "Carta Temperatura Umidade", 21801
+		END
+		MENUITEM SEPARATOR
+		MENUITEM "Escolher Ano de Trabalho", 21803
+		MENUITEM SEPARATOR
+		MENUITEM "Indexar Arquivos", 21805
+		MENUITEM SEPARATOR
+		MENUITEM "C&onfigurar Impressora ..", 21807
+		MENUITEM SEPARATOR
+		MENUITEM "&Sair\tAlt+F4", 21809
+	END
+	POPUP "&Relatorios"
+	BEGIN
+		MENUITEM "RR - Rebetibilidade e Reprodutibilidade", 21811
+		MENUITEM "ACP -  Analise de Capacidade Processo", 21812
+		MENUITEM "AEP -Analise Estabilidade de Processo", 21813
+		MENUITEM "Plano Ação Para o CEP", 21814
+		MENUITEM "TEEP", 21815
+		MENUITEM "Plano de Auditoria de Embarque", 21816
+		MENUITEM "Produtos/Produtcao", 21817
+		MENUITEM "Relatório de Inspeção/Medição", 21818
+		MENUITEM "Certificado de Inspeçao", 21819
+		MENUITEM "Grafico de Controle", 21820
+		MENUITEM "WRPT Integrado", 21821
+		MENUITEM "lstview logix", 21822
+		POPUP "Etiquetas"
+		BEGIN
+			MENUITEM "Pre-Prototype", 21824
+		END
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		POPUP "Email"
+		BEGIN
+			MENUITEM "Consulta", 21827
+			MENUITEM "Geral", 21828
+			MENUITEM "Configuração", 21829
+		END
+		MENUITEM "Checar CGC/CPF/IE...", 21830
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Indice\tF1", 21832
+		MENUITEM "&Conteudo", 21833
+		MENUITEM SEPARATOR
+		MENUITEM "Atualizações", 21835
+		MENUITEM "&Sobre...", 32031
+	END
+End
+ 

@@ -1,0 +1,307 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JCNQDEP
+GUID=4997EB47-20AD-4ED5-9D37-164E5F6088BD
+  Name=JCNQDEP
+  Class=DATADIALOG
+  Caption=Despesas Fixas Custo Não Qualidade
+  Order=0
+  Left=28
+  Width=305
+  Top=28
+  Height=150
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Despesas Fixas Custo Não Qualidade",,
+  Property=HyperLabel=#JCNQDEP,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=E6D7DBE2-2F63-4AE1-A0D0-975ABCE6D72E
+  Name=mes
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=5
+  Width=39
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#mes,,,
+  Property=FieldSpec=padrao_num_02
+  Property=InheritClassName=rightsle
+
+CONTROL=SINGLELINEEDIT
+GUID=26AF1D4A-1B06-4343-8650-5861B59A05E9
+  Name=ano
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=69
+  Width=56
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#ano,,,
+  Property=FieldSpec=padrao_num_04
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=92AC4DED-9D60-4CAF-B3FC-F48DDF304742
+  Name=valor
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=185
+  Width=100
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#valor,,,
+  Property=InheritClassName=rightSle
+
+CONTROL=FIXEDTEXT
+GUID=9A8BCE6F-ABE7-4505-855C-72C7D37BAA68
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Mes 
+  Order=4
+  Left=5
+  Width=36
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mes ",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=FIXEDTEXT
+GUID=6130CFF2-C2A6-442A-998F-32D408EA6321
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Ano
+  Order=5
+  Left=73
+  Width=52
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ano",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=PUSHBUTTON
+GUID=A7939ACC-87EA-4F5C-B96D-57CA47E07B15
+  Name=buscaCOM
+  Class=PUSHBUTTON
+  Caption=
+  Order=6
+  Left=153
+  Width=32
+  Top=17
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ico_find
+  Property=HyperLabel=#buscaCOM,,,
+
+CONTROL=FIXEDTEXT
+GUID=0E393E35-5ACA-46FF-88D4-13A3A43E2791
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK-Gravar
+  Order=7
+  Left=209
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK-Gravar",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=2B69257A-F7E0-4C20-856E-BF5397C7BF6D
+  Name=Gravar
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=209
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Gravar,,,
+  Property=Image=ico_ok
+
+CONTROL=FIXEDTEXT
+GUID=DC2D561E-A108-4E58-BD62-FCB461629B09
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=9
+  Left=137
+  Width=64
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=A104A3CE-0B46-450D-8559-1FCBCE9BC817
+  Name=PushButton2
+  Class=PUSHBUTTON
+  Caption=
+  Order=10
+  Left=137
+  Width=64
+  Top=61
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#PushButton2,,,
+  Property=Image=ico_sair
+
+CONTROL=PUSHBUTTON
+GUID=829B9CFF-F2B0-42B3-9C3E-C0D36AB25CD0
+  Name=cmdmenos2
+  Class=PUSHBUTTON
+  Caption=-
+  Order=11
+  Left=129
+  Width=20
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-",,
+  Property=HyperLabel=#cmdmenos2,,,
+
+CONTROL=PUSHBUTTON
+GUID=E7075937-49A9-4474-8AA8-02E1B3750B74
+  Name=cmdmais2
+  Class=PUSHBUTTON
+  Caption=+
+  Order=12
+  Left=129
+  Width=20
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"+",,
+  Property=HyperLabel=#cmdmais2,,,
+
+CONTROL=PUSHBUTTON
+GUID=745CAF77-C871-4539-9EAC-68C85A211DAA
+  Name=cmdmenos
+  Class=PUSHBUTTON
+  Caption=-
+  Order=13
+  Left=45
+  Width=20
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"-",,
+  Property=HyperLabel=#cmdmenos,,,
+
+CONTROL=PUSHBUTTON
+GUID=2B0DF89E-5819-4588-8250-B6E7E4757882
+  Name=cmdmais
+  Class=PUSHBUTTON
+  Caption=+
+  Order=14
+  Left=45
+  Width=20
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"+",,
+  Property=HyperLabel=#cmdmais,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JCNQDEP
+

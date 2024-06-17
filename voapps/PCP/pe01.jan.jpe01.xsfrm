@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="jpe01">
+    <Window Name="jpe01">
+      <Name>jpe01</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>22</Left>
+      <Top>22</Top>
+      <Width>420</Width>
+      <Height>320</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#jpe01,,,</HyperLabel>
+        <ViewAs>#BrowseView</ViewAs>
+        <ClipperKeys>True</ClipperKeys>
+      </ExProperties>
+    </Window>
+    <Control Name="SC_DATAFAT">
+      <Name>SC_DATAFAT</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Programa</Caption>
+      <Order>1</Order>
+      <Left>61</Left>
+      <Top>5</Top>
+      <Width>52</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Programa",,</HyperLabel>
+        <HyperLabel>#SC_DATAFAT,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_TOTKGINI">
+      <Name>SC_TOTKGINI</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Inicial</Caption>
+      <Order>2</Order>
+      <Left>133</Left>
+      <Top>5</Top>
+      <Width>44</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Inicial",,</HyperLabel>
+        <HyperLabel>#SC_TOTKGINI,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_TOTKGANT">
+      <Name>SC_TOTKGANT</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Anterior</Caption>
+      <Order>3</Order>
+      <Left>213</Left>
+      <Top>1</Top>
+      <Width>52</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Anterior",,</HyperLabel>
+        <HyperLabel>#SC_TOTKGANT,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_TOTKGEST">
+      <Name>SC_TOTKGEST</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Saldo</Caption>
+      <Order>4</Order>
+      <Left>293</Left>
+      <Top>1</Top>
+      <Width>48</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Saldo",,</HyperLabel>
+        <HyperLabel>#SC_TOTKGEST,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_ITEM">
+      <Name>SC_ITEM</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Item:</Caption>
+      <Order>5</Order>
+      <Left>13</Left>
+      <Top>5</Top>
+      <Width>28</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Item:",,</HyperLabel>
+        <HyperLabel>#SC_ITEM,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="DATAFAT">
+      <Name>DATAFAT</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>53</Left>
+      <Top>21</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>13</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>date_field</FieldSpec>
+        <HyperLabel>#DATAFAT,,,</HyperLabel>
+        <HyperLabel>,"Data",,</HyperLabel>
+        <HyperLabel>,,,"PE01_DATAFAT"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="TOTKGINI">
+      <Name>TOTKGINI</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>129</Left>
+      <Top>21</Top>
+      <Width>76</Width>
+      <Height>20</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>10</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_num_06</FieldSpec>
+        <HyperLabel>#TOTKGINI,,,</HyperLabel>
+        <HyperLabel>,"Inicial",,</HyperLabel>
+        <HyperLabel>,,,"PE01_TOTKGINI"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="TOTKGANT">
+      <Name>TOTKGANT</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>209</Left>
+      <Top>21</Top>
+      <Width>76</Width>
+      <Height>20</Height>
+      <BrowseIndex>3</BrowseIndex>
+      <BrowseSize>10</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_num_06</FieldSpec>
+        <HyperLabel>#TOTKGANT,,,</HyperLabel>
+        <HyperLabel>,"Anterior",,</HyperLabel>
+        <HyperLabel>,,,"PE01_TOTKGANT"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="TOTKGEST">
+      <Name>TOTKGEST</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>9</Order>
+      <Left>289</Left>
+      <Top>21</Top>
+      <Width>76</Width>
+      <Height>20</Height>
+      <BrowseIndex>4</BrowseIndex>
+      <BrowseSize>10</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_num_06</FieldSpec>
+        <HyperLabel>#TOTKGEST,,,</HyperLabel>
+        <HyperLabel>,"Saldo",,</HyperLabel>
+        <HyperLabel>,,,"PE01_TOTKGEST"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="ITEM">
+      <Name>ITEM</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>9</Left>
+      <Top>21</Top>
+      <Width>36</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>6</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_num_02</FieldSpec>
+        <HyperLabel>#ITEM,,,</HyperLabel>
+        <HyperLabel>,"Item:",,</HyperLabel>
+        <HyperLabel>,,,"PE01_ITEM"</HyperLabel>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

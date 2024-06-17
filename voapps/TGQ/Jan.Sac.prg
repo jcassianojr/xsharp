@@ -1,0 +1,1724 @@
+#region DEFINES
+STATIC DEFINE JSAC_ALTERAR := 104 
+STATIC DEFINE JSAC_ANTERIOR := 112 
+STATIC DEFINE JSAC_BUSCASAC := 114 
+STATIC DEFINE JSAC_DATA := 113 
+STATIC DEFINE JSAC_DATAF := 118 
+STATIC DEFINE JSAC_EXCLUIR := 105 
+STATIC DEFINE JSAC_FECHAR := 116 
+STATIC DEFINE JSAC_INCLUIR := 106 
+STATIC DEFINE JSAC_JSACI := 107 
+STATIC DEFINE JSAC_PORNUM := 120 
+STATIC DEFINE JSAC_PROXIMO := 111 
+STATIC DEFINE JSAC_PUSHBUTTON8 := 119 
+STATIC DEFINE JSAC_RAT := 110 
+STATIC DEFINE JSAC_RESUL := 117 
+STATIC DEFINE JSAC_RNC := 109 
+STATIC DEFINE JSAC_SAC := 108 
+STATIC DEFINE JSAC_SC_DATA := 101 
+STATIC DEFINE JSAC_SC_SAC := 102 
+STATIC DEFINE JSAC_SC_SAC3 := 100 
+STATIC DEFINE JSAC_TABSAC := 115 
+STATIC DEFINE JSAC_TABULAR := 103 
+STATIC DEFINE JSAC_VERRNC := 121 
+STATIC DEFINE TABSAC_PAG1_BUSCAANT := 133
+STATIC DEFINE TABSAC_PAG1_BUSCANOVA := 132
+STATIC DEFINE TABSAC_PAG1_CLIENTE := 105
+STATIC DEFINE TABSAC_PAG1_CLINOME := 106
+STATIC DEFINE TABSAC_PAG1_CMDREVPC := 143
+STATIC DEFINE TABSAC_PAG1_CMDREVPF := 142
+STATIC DEFINE TABSAC_PAG1_CODIGO := 104
+STATIC DEFINE TABSAC_PAG1_DOCUMENTO := 102
+STATIC DEFINE TABSAC_PAG1_ESCCOD := 120
+STATIC DEFINE TABSAC_PAG1_ESCFOR := 108
+STATIC DEFINE TABSAC_PAG1_FEMEA := 112
+STATIC DEFINE TABSAC_PAG1_FEMEAREV := 111
+STATIC DEFINE TABSAC_PAG1_FEMEAREVD := 110
+STATIC DEFINE TABSAC_PAG1_FIXEDTEXT10 := 138
+STATIC DEFINE TABSAC_PAG1_FIXEDTEXT11 := 140
+STATIC DEFINE TABSAC_PAG1_FOTO := 147
+STATIC DEFINE TABSAC_PAG1_NOME := 118
+STATIC DEFINE TABSAC_PAG1_NOTIFICAR := 117
+STATIC DEFINE TABSAC_PAG1_NOVA := 130
+STATIC DEFINE TABSAC_PAG1_NOVA1 := 134
+STATIC DEFINE TABSAC_PAG1_PEGMA01 := 107 
+STATIC DEFINE TABSAC_PAG1_PEGMS01 := 119 
+STATIC DEFINE TABSAC_PAG1_PF := 113
+STATIC DEFINE TABSAC_PAG1_POA := 136
+STATIC DEFINE TABSAC_PAG1_QTL := 100
+STATIC DEFINE TABSAC_PAG1_QTN := 101
+STATIC DEFINE TABSAC_PAG1_RASTRO := 103
+STATIC DEFINE TABSAC_PAG1_REVPC := 141
+STATIC DEFINE TABSAC_PAG1_REVPCOBS := 145
+STATIC DEFINE TABSAC_PAG1_REVPF := 139
+STATIC DEFINE TABSAC_PAG1_REVPFOBS := 144
+STATIC DEFINE TABSAC_PAG1_SC_CLIENTE := 109
+STATIC DEFINE TABSAC_PAG1_SC_CODIGO := 121
+STATIC DEFINE TABSAC_PAG1_SC_CODIGO2 := 115
+STATIC DEFINE TABSAC_PAG1_SC_CODIGO3 := 114
+STATIC DEFINE TABSAC_PAG1_SC_CODIGO4 := 131
+STATIC DEFINE TABSAC_PAG1_SC_CODIGO5 := 135
+STATIC DEFINE TABSAC_PAG1_SC_DESTINO2 := 146
+STATIC DEFINE TABSAC_PAG1_SC_QTN := 122
+STATIC DEFINE TABSAC_PAG1_SC_QTN1 := 123
+STATIC DEFINE TABSAC_PAG1_SC_SAC1 := 116
+STATIC DEFINE TABSAC_PAG1_SC_SAC2 := 137
+STATIC DEFINE TABSAC_PAG1_THERADIOBUTTON3 := 128
+STATIC DEFINE TABSAC_PAG1_THERADIOBUTTON4 := 127
+STATIC DEFINE TABSAC_PAG1_THERADIOBUTTON5 := 125
+STATIC DEFINE TABSAC_PAG1_THERADIOBUTTON6 := 126
+STATIC DEFINE TABSAC_PAG1_THERADIOBUTTON7 := 124
+STATIC DEFINE TABSAC_PAG1_TIPO := 129
+STATIC DEFINE TABSAC_PAGE2_DESC01 := 103 
+STATIC DEFINE TABSAC_PAGE2_DESC02 := 102 
+STATIC DEFINE TABSAC_PAGE2_DESC03 := 101 
+STATIC DEFINE TABSAC_PAGE2_DESC04 := 100 
+STATIC DEFINE TABSAC_PAGE2_FIXEDTEXT1 := 105 
+STATIC DEFINE TABSAC_PAGE2_NOTSETOR := 106 
+STATIC DEFINE TABSAC_PAGE2_THEGROUPBOX1 := 104 
+STATIC DEFINE TABSAC_PAGE3_CONG := 100 
+STATIC DEFINE TABSAC_PAGE3_EQP01 := 105 
+STATIC DEFINE TABSAC_PAGE3_EQP02 := 104 
+STATIC DEFINE TABSAC_PAGE3_EQP03 := 102 
+STATIC DEFINE TABSAC_PAGE3_EQP04 := 101 
+STATIC DEFINE TABSAC_PAGE3_FIXEDTEXT20 := 106 
+STATIC DEFINE TABSAC_PAGE3_SC_OS1 := 103 
+STATIC DEFINE TABSAC_PAGE4_DATEN := 100 
+STATIC DEFINE TABSAC_PAGE4_DATOS := 102 
+STATIC DEFINE TABSAC_PAGE4_ITEM := 105 
+STATIC DEFINE TABSAC_PAGE4_NF := 107 
+STATIC DEFINE TABSAC_PAGE4_OS := 109 
+STATIC DEFINE TABSAC_PAGE4_SC_DATEN := 101 
+STATIC DEFINE TABSAC_PAGE4_SC_DATOS := 103 
+STATIC DEFINE TABSAC_PAGE4_SC_ITEM := 106 
+STATIC DEFINE TABSAC_PAGE4_SC_NF := 108 
+STATIC DEFINE TABSAC_PAGE4_SC_OS := 110 
+STATIC DEFINE TABSAC_PAGE4_SC_TIPSAC := 104 
+STATIC DEFINE TABSAC_PAGE4_TIPSAC := 111 
+STATIC DEFINE TABSAC_PAGE5_PAMB01 := 111 
+STATIC DEFINE TABSAC_PAGE5_PAMB02 := 112 
+STATIC DEFINE TABSAC_PAGE5_PAMB03 := 113 
+STATIC DEFINE TABSAC_PAGE5_PAMB04 := 114 
+STATIC DEFINE TABSAC_PAGE5_PAMB05 := 115 
+STATIC DEFINE TABSAC_PAGE5_PMAO01 := 116 
+STATIC DEFINE TABSAC_PAGE5_PMAO02 := 117 
+STATIC DEFINE TABSAC_PAGE5_PMAO03 := 118 
+STATIC DEFINE TABSAC_PAGE5_PMAO04 := 119 
+STATIC DEFINE TABSAC_PAGE5_PMAO05 := 120 
+STATIC DEFINE TABSAC_PAGE5_PMAQ01 := 121 
+STATIC DEFINE TABSAC_PAGE5_PMAQ02 := 122 
+STATIC DEFINE TABSAC_PAGE5_PMAQ03 := 123 
+STATIC DEFINE TABSAC_PAGE5_PMAQ04 := 124 
+STATIC DEFINE TABSAC_PAGE5_PMAQ05 := 125 
+STATIC DEFINE TABSAC_PAGE5_PMAT01 := 131 
+STATIC DEFINE TABSAC_PAGE5_PMAT02 := 132 
+STATIC DEFINE TABSAC_PAGE5_PMAT03 := 133 
+STATIC DEFINE TABSAC_PAGE5_PMAT04 := 134 
+STATIC DEFINE TABSAC_PAGE5_PMAT05 := 135 
+STATIC DEFINE TABSAC_PAGE5_PMED01 := 106 
+STATIC DEFINE TABSAC_PAGE5_PMED02 := 107 
+STATIC DEFINE TABSAC_PAGE5_PMED03 := 108 
+STATIC DEFINE TABSAC_PAGE5_PMED04 := 109 
+STATIC DEFINE TABSAC_PAGE5_PMED05 := 110 
+STATIC DEFINE TABSAC_PAGE5_PMET01 := 126 
+STATIC DEFINE TABSAC_PAGE5_PMET02 := 127 
+STATIC DEFINE TABSAC_PAGE5_PMET03 := 128 
+STATIC DEFINE TABSAC_PAGE5_PMET04 := 129 
+STATIC DEFINE TABSAC_PAGE5_PMET05 := 130 
+STATIC DEFINE TABSAC_PAGE5_SC_PAMB01 := 101 
+STATIC DEFINE TABSAC_PAGE5_SC_PMAO01 := 102 
+STATIC DEFINE TABSAC_PAGE5_SC_PMAQ01 := 103 
+STATIC DEFINE TABSAC_PAGE5_SC_PMAT01 := 105 
+STATIC DEFINE TABSAC_PAGE5_SC_PMED01 := 100 
+STATIC DEFINE TABSAC_PAGE5_SC_PMET01 := 104 
+#endregion
+
+PARTIAL CLASS JSAC INHERIT MYDataWindow 
+
+	PROTECT oDBSAC AS DataColumn
+	PROTECT oDBRNC AS DataColumn
+	PROTECT oDBRAT AS DataColumn
+	PROTECT oDBDATA AS DataColumn
+	PROTECT oDBDATAF AS DataColumn
+	PROTECT oDCSC_SAC3 AS FIXEDTEXT
+	PROTECT oDCSC_DATA AS FIXEDTEXT
+	PROTECT oDCSC_SAC AS FIXEDTEXT
+	PROTECT oCCTabular AS PUSHBUTTON
+	PROTECT oCCAlterar AS PUSHBUTTON
+	PROTECT oCCExcluir AS PUSHBUTTON
+	PROTECT oCCIncluir AS PUSHBUTTON
+	PROTECT oDCSAC AS SINGLELINEEDIT
+	PROTECT oDCRNC AS SINGLELINEEDIT
+	PROTECT oDCRAT AS SINGLELINEEDIT
+	PROTECT oCCProximo AS PUSHBUTTON
+	PROTECT oCCAnterior AS PUSHBUTTON
+	PROTECT oDCDATA AS SINGLELINEEDIT
+	PROTECT oCCbuscasac AS PUSHBUTTON
+	PROTECT oDCtabsac AS TABCONTROL
+	PROTECT oTPTABSAC_PAG1 AS TABSAC_PAG1
+	PROTECT oTPTABSAC_PAGE2 AS TABSAC_PAGE2
+	PROTECT oTPTABSAC_PAGE3 AS TABSAC_PAGE3
+	PROTECT oTPTABSAC_PAGE4 AS TABSAC_PAGE4
+	PROTECT oTPTABSAC_PAGE5 AS TABSAC_PAGE5
+	PROTECT oCCFechar AS PUSHBUTTON
+	PROTECT oDCRESUL AS SINGLELINEEDIT
+	PROTECT oDCDATAF AS SINGLELINEEDIT
+	PROTECT oCCPushButton8 AS PUSHBUTTON
+	PROTECT oCCPORNUM AS PUSHBUTTON
+	PROTECT oCCVERRNC AS PUSHBUTTON
+// 	instance SAC 
+// 	instance RNC 
+// 	instance RAT 
+// 	instance DATA 
+// 	instance RESUL 
+// 	instance DATAF 
+	PROTECT oSFJSACI AS JSACI
+
+  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
+
+ACCESS DATA() 
+RETURN SELF:FieldGet(#DATA)
+
+
+ASSIGN DATA(uValue) 
+SELF:FieldPut(#DATA, uValue)
+RETURN DATA := uValue
+
+
+ACCESS DATAF() 
+RETURN SELF:FieldGet(#DATAF)
+
+
+ASSIGN DATAF(uValue) 
+SELF:FieldPut(#DATAF, uValue)
+RETURN DATAF := uValue
+
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
+LOCAL DIM aFonts[2] AS OBJECT
+LOCAL DIM aBrushes[1] AS OBJECT
+
+SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+SUPER(oWindow,ResourceID{"JSAC",_GetInst()},iCtlID)
+
+aFonts[1] := Font{,12,"Times New Roman"}
+aFonts[1]:Bold := TRUE
+aFonts[2] := Font{,10,"Times New Roman"}
+aFonts[2]:Bold := TRUE
+aBrushes[1] := Brush{Color{255,255,200}}
+
+oDCSC_SAC3 := FixedText{SELF,ResourceID{JSAC_SC_SAC3,_GetInst()}}
+oDCSC_SAC3:HyperLabel := HyperLabel{#SC_SAC3,"RAT:",NULL_STRING,NULL_STRING}
+
+oDCSC_DATA := FixedText{SELF,ResourceID{JSAC_SC_DATA,_GetInst()}}
+oDCSC_DATA:HyperLabel := HyperLabel{#SC_DATA,"Data:",NULL_STRING,NULL_STRING}
+
+oDCSC_SAC := FixedText{SELF,ResourceID{JSAC_SC_SAC,_GetInst()}}
+oDCSC_SAC:HyperLabel := HyperLabel{#SC_SAC,"Sac:",NULL_STRING,NULL_STRING}
+
+oCCTabular := PushButton{SELF,ResourceID{JSAC_TABULAR,_GetInst()}}
+oCCTabular:HyperLabel := HyperLabel{#Tabular,"Ver Itens",NULL_STRING,NULL_STRING}
+
+oCCAlterar := PushButton{SELF,ResourceID{JSAC_ALTERAR,_GetInst()}}
+oCCAlterar:HyperLabel := HyperLabel{#Alterar,"Alterar Item",NULL_STRING,NULL_STRING}
+
+oCCExcluir := PushButton{SELF,ResourceID{JSAC_EXCLUIR,_GetInst()}}
+oCCExcluir:HyperLabel := HyperLabel{#Excluir,"Excluir",NULL_STRING,NULL_STRING}
+
+oCCIncluir := PushButton{SELF,ResourceID{JSAC_INCLUIR,_GetInst()}}
+oCCIncluir:HyperLabel := HyperLabel{#Incluir,"Incluir",NULL_STRING,NULL_STRING}
+
+oDCSAC := SingleLineEdit{SELF,ResourceID{JSAC_SAC,_GetInst()}}
+oDCSAC:FieldSpec := PADRAO_NUM_08{}
+oDCSAC:HyperLabel := HyperLabel{#SAC,"Sac:",NULL_STRING,"SAC_SAC"}
+oDCSAC:BackGround := aBrushes[1]
+oDCSAC:Font(aFonts[1], FALSE)
+
+oDCRNC := SingleLineEdit{SELF,ResourceID{JSAC_RNC,_GetInst()}}
+oDCRNC:FieldSpec := PADRAO_NUM_08{}
+oDCRNC:HyperLabel := HyperLabel{#RNC,"RNC",NULL_STRING,"SAC_SAC"}
+oDCRNC:BackGround := aBrushes[1]
+oDCRNC:Font(aFonts[2], FALSE)
+
+oDCRAT := SingleLineEdit{SELF,ResourceID{JSAC_RAT,_GetInst()}}
+oDCRAT:FieldSpec := PADRAO_NUM_08{}
+oDCRAT:HyperLabel := HyperLabel{#RAT,"RAT",NULL_STRING,"SAC_SAC"}
+oDCRAT:BackGround := aBrushes[1]
+oDCRAT:Font(aFonts[2], FALSE)
+
+oCCProximo := PushButton{SELF,ResourceID{JSAC_PROXIMO,_GetInst()}}
+oCCProximo:HyperLabel := HyperLabel{#Proximo,NULL_STRING,NULL_STRING,NULL_STRING}
+oCCProximo:Image := ico_next{}
+
+oCCAnterior := PushButton{SELF,ResourceID{JSAC_ANTERIOR,_GetInst()}}
+oCCAnterior:HyperLabel := HyperLabel{#Anterior,NULL_STRING,NULL_STRING,NULL_STRING}
+oCCAnterior:Image := ico_previous{}
+
+oDCDATA := SingleLineEdit{SELF,ResourceID{JSAC_DATA,_GetInst()}}
+oDCDATA:FieldSpec := DATE_FIELD{}
+oDCDATA:HyperLabel := HyperLabel{#DATA,"DATA",NULL_STRING,"SAC_SAC"}
+oDCDATA:BackGround := aBrushes[1]
+oDCDATA:Font(aFonts[2], FALSE)
+
+oCCbuscasac := PushButton{SELF,ResourceID{JSAC_BUSCASAC,_GetInst()}}
+oCCbuscasac:Image := ico_find{}
+oCCbuscasac:HyperLabel := HyperLabel{#buscasac,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oDCtabsac := TabControl{SELF,ResourceID{JSAC_TABSAC,_GetInst()}}
+oDCtabsac:HyperLabel := HyperLabel{#tabsac,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oCCFechar := PushButton{SELF,ResourceID{JSAC_FECHAR,_GetInst()}}
+oCCFechar:HyperLabel := HyperLabel{#Fechar,"Fechamento",NULL_STRING,NULL_STRING}
+
+oDCRESUL := SingleLineEdit{SELF,ResourceID{JSAC_RESUL,_GetInst()}}
+oDCRESUL:FieldSpec := PADRAO_CHAR_01{}
+oDCRESUL:HyperLabel := HyperLabel{#RESUL,"S",NULL_STRING,"SAC_SAC"}
+oDCRESUL:BackGround := aBrushes[1]
+oDCRESUL:Font(aFonts[2], FALSE)
+
+oDCDATAF := SingleLineEdit{SELF,ResourceID{JSAC_DATAF,_GetInst()}}
+oDCDATAF:FieldSpec := DATE_FIELD{}
+oDCDATAF:HyperLabel := HyperLabel{#DATAF,"fecto",NULL_STRING,"SAC_SAC"}
+oDCDATAF:BackGround := aBrushes[1]
+oDCDATAF:Font(aFonts[2], FALSE)
+
+oCCPushButton8 := PushButton{SELF,ResourceID{JSAC_PUSHBUTTON8,_GetInst()}}
+oCCPushButton8:HyperLabel := HyperLabel{#PushButton8,"Acentuacao",NULL_STRING,NULL_STRING}
+
+oCCPORNUM := PushButton{SELF,ResourceID{JSAC_PORNUM,_GetInst()}}
+oCCPORNUM:Image := ico_az{}
+oCCPORNUM:HyperLabel := HyperLabel{#PORNUM,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oCCVERRNC := PushButton{SELF,ResourceID{JSAC_VERRNC,_GetInst()}}
+oCCVERRNC:HyperLabel := HyperLabel{#VERRNC,"RNC",NULL_STRING,NULL_STRING}
+
+SELF:Caption := "Solitacao de Ação Corretirva"
+SELF:HyperLabel := HyperLabel{#JSAC,"Solitacao de Ação Corretirva",NULL_STRING,NULL_STRING}
+SELF:Menu := STANDARDSHELLMENU{}
+SELF:ClipperKeys := TRUE
+
+IF !IsNil(oServer)
+	SELF:Use(oServer)
+ENDIF
+SELF:Browser := DataBrowser{SELF}
+
+oDBSAC := DataColumn{PADRAO_NUM_08{}}
+oDBSAC:Width := 7
+oDBSAC:HyperLabel := oDCSAC:HyperLabel 
+oDBSAC:Caption := "Sac:"
+oDBSAC:BackGround := aBrushes[1]
+SELF:Browser:AddColumn(oDBSAC)
+
+oDBRNC := DataColumn{PADRAO_NUM_08{}}
+oDBRNC:Width := 9
+oDBRNC:HyperLabel := oDCRNC:HyperLabel 
+oDBRNC:Caption := "RNC"
+oDBRNC:BackGround := aBrushes[1]
+SELF:Browser:AddColumn(oDBRNC)
+
+oDBRAT := DataColumn{PADRAO_NUM_08{}}
+oDBRAT:Width := 8
+oDBRAT:HyperLabel := oDCRAT:HyperLabel 
+oDBRAT:Caption := "RAT"
+oDBRAT:BackGround := aBrushes[1]
+SELF:Browser:AddColumn(oDBRAT)
+
+oDBDATA := DataColumn{DATE_FIELD{}}
+oDBDATA:Width := 9
+oDBDATA:HyperLabel := oDCDATA:HyperLabel 
+oDBDATA:Caption := "DATA"
+oDBDATA:BackGround := aBrushes[1]
+SELF:Browser:AddColumn(oDBDATA)
+
+oDBDATAF := DataColumn{DATE_FIELD{}}
+oDBDATAF:Width := 7
+oDBDATAF:HyperLabel := oDCDATAF:HyperLabel 
+oDBDATAF:Caption := "fecto"
+oDBDATAF:BackGround := aBrushes[1]
+SELF:Browser:AddColumn(oDBDATAF)
+
+
+SELF:ViewAs(#FormView)
+
+oSFJSACI := JSACI{SELF,JSAC_JSACI}
+oSFJSACI:show()
+oTPTABSAC_PAG1 := TABSAC_PAG1{SELF, 0}
+oDCtabsac:AppendTab(#TABSAC_PAG1,"Dados",oTPTABSAC_PAG1,0)
+oTPTABSAC_PAGE2 := TABSAC_PAGE2{SELF, 0}
+oDCtabsac:AppendTab(#TABSAC_PAGE2,"Problema",oTPTABSAC_PAGE2,0)
+oTPTABSAC_PAGE3 := TABSAC_PAGE3{SELF, 0}
+oDCtabsac:AppendTab(#TABSAC_PAGE3,"Equipe",oTPTABSAC_PAGE3,0)
+oTPTABSAC_PAGE4 := TABSAC_PAGE4{SELF, 0}
+oDCtabsac:AppendTab(#TABSAC_PAGE4,"Atraso de Entrega",oTPTABSAC_PAGE4,0)
+oTPTABSAC_PAGE5 := TABSAC_PAGE5{SELF, 0}
+oDCtabsac:AppendTab(#TABSAC_PAGE5,"Inv.Causa/Prob",oTPTABSAC_PAGE5,0)
+oDCtabsac:SelectTab(#TABSAC_PAG1)
+
+SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN SELF
+
+
+METHOD PORNUM( ) 
+	SELF:KeyFind()
+
+ACCESS RAT() 
+RETURN SELF:FieldGet(#RAT)
+
+
+ASSIGN RAT(uValue) 
+SELF:FieldPut(#RAT, uValue)
+RETURN RAT := uValue
+
+
+ACCESS RESUL() 
+RETURN SELF:FieldGet(#RESUL)
+
+
+ASSIGN RESUL(uValue) 
+SELF:FieldPut(#RESUL, uValue)
+RETURN RESUL := uValue
+
+
+ACCESS RNC() 
+RETURN SELF:FieldGet(#RNC)
+
+
+ASSIGN RNC(uValue) 
+SELF:FieldPut(#RNC, uValue)
+RETURN RNC := uValue
+
+
+ACCESS SAC() 
+RETURN SELF:FieldGet(#SAC)
+
+
+ASSIGN SAC(uValue) 
+SELF:FieldPut(#SAC, uValue)
+RETURN SAC := uValue
+
+
+METHOD VERRNC( ) 
+LOCAL oRNC AS USEREDE	
+LOCAL aDAD AS ARRAY
+LOCAL nRNC AS DWORD
+LOCAL oJAN AS JRNC4
+IF ! entramenu("TGQ",10)
+	RETU SELF
+ENDIF	
+nRNC:=SELF:server:FIELDGET("RNC")
+IF ! Empty(SELF:server:FIELDGET("DATAF"))
+   alert("Já Fechada")
+   RETURN .F.
+ENDIF			
+IF Empty(nRNC)
+   alert("RNC=0")
+   RETURN .F.
+ENDIF	
+aDAD:={zCURINI,"RNC.DBF",ZCURDIR}
+oRNC:=USEREDE{aDAD}
+IF oRNC:nERRO#0
+   RETU SELF
+ENDIF
+oRNC:GOTOP()
+IF oRNC:Seek(nRNC)
+   oJAN:=JRNC4{SELF,,oRNC}
+   oJAN:SHOW()
+ELSE
+   alert("Rnc Não Encontrada")
+ENDIF	
+oRNC:CLOSE()	
+
+END CLASS
+PARTIAL CLASS tabsac_pag1 INHERIT DATAWINDOW
+PROTECT oDCQTL AS rightSle
+PROTECT oDCQTN AS rightSle
+PROTECT oDCDOCUMENTO AS SINGLELINEEDIT
+PROTECT oDCRASTRO AS SINGLELINEEDIT
+PROTECT oDCCODIGO AS SINGLELINEEDIT
+PROTECT oDCCLIENTE AS rightSle
+PROTECT oDCCLINOME AS SINGLELINEEDIT
+PROTECT oCCbtnpegma01 AS PUSHBUTTON
+PROTECT oCCescfor AS PUSHBUTTON
+PROTECT oDCSC_CLIENTE AS FIXEDTEXT
+PROTECT oDCFEMEAREVD AS SINGLELINEEDIT
+PROTECT oDCFEMEAREV AS SINGLELINEEDIT
+PROTECT oCCFemea AS PUSHBUTTON
+PROTECT oDCPF AS SINGLELINEEDIT
+PROTECT oDCSC_CODIGO3 AS FIXEDTEXT
+PROTECT oDCSC_CODIGO2 AS FIXEDTEXT
+PROTECT oDCSC_SAC1 AS FIXEDTEXT
+PROTECT oCCNotificar AS PUSHBUTTON
+PROTECT oDCNOME AS SINGLELINEEDIT
+PROTECT oCCbnpegms01 AS PUSHBUTTON
+PROTECT oCCesccod AS PUSHBUTTON
+PROTECT oDCSC_CODIGO AS FIXEDTEXT
+PROTECT oDCSC_QTN AS FIXEDTEXT
+PROTECT oDCSC_QTN1 AS FIXEDTEXT
+PROTECT oCCtheRadioButton7 AS RADIOBUTTON
+PROTECT oCCtheRadioButton5 AS RADIOBUTTON
+PROTECT oCCtheRadioButton6 AS RADIOBUTTON
+PROTECT oCCtheRadioButton4 AS RADIOBUTTON
+PROTECT oCCtheRadioButton3 AS RADIOBUTTON
+PROTECT oDCTIPO AS RADIOBUTTONGROUP
+PROTECT oDCnova AS SINGLELINEEDIT
+PROTECT oDCSC_CODIGO4 AS FIXEDTEXT
+PROTECT oCCbuscanova AS PUSHBUTTON
+PROTECT oCCbuscaant AS PUSHBUTTON
+PROTECT oDCnova1 AS SINGLELINEEDIT
+PROTECT oDCSC_CODIGO5 AS FIXEDTEXT
+PROTECT oDCPOA AS SINGLELINEEDIT
+PROTECT oDCSC_SAC2 AS FIXEDTEXT
+PROTECT oDCFixedText10 AS FIXEDTEXT
+PROTECT oDCREVPF AS SINGLELINEEDIT
+PROTECT oDCFixedText11 AS FIXEDTEXT
+PROTECT oDCREVPC AS SINGLELINEEDIT
+PROTECT oCCcmdrevpf AS PUSHBUTTON
+PROTECT oCCcmdrevpc AS PUSHBUTTON
+PROTECT oDCREVPFOBS AS SINGLELINEEDIT
+PROTECT oDCREVPCOBS AS SINGLELINEEDIT
+PROTECT oDCSC_DESTINO2 AS FIXEDTEXT
+PROTECT oCCfoto AS PUSHBUTTON
+
+// User code starts here (DO NOT remove this line)  ##USER##
+
+ACCESS CLIENTE
+RETURN SELF:FieldGet( #CLIENTE )
+
+ASSIGN CLIENTE( uValue )
+SELF:FieldPut( #CLIENTE , uValue )
+
+ACCESS CLINOME
+RETURN SELF:FieldGet( #CLINOME )
+
+ASSIGN CLINOME( uValue )
+SELF:FieldPut( #CLINOME , uValue )
+
+ACCESS CODIGO
+RETURN SELF:FieldGet( #CODIGO )
+
+ASSIGN CODIGO( uValue )
+SELF:FieldPut( #CODIGO , uValue )
+
+ACCESS DOCUMENTO
+RETURN SELF:FieldGet( #DOCUMENTO )
+
+ASSIGN DOCUMENTO( uValue )
+SELF:FieldPut( #DOCUMENTO , uValue )
+
+ACCESS FEMEAREV
+RETURN SELF:FieldGet( #FEMEAREV )
+
+ASSIGN FEMEAREV( uValue )
+SELF:FieldPut( #FEMEAREV , uValue )
+
+ACCESS FEMEAREVD
+RETURN SELF:FieldGet( #FEMEAREVD )
+
+ASSIGN FEMEAREVD( uValue )
+SELF:FieldPut( #FEMEAREVD , uValue )
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)
+	LOCAL oFont AS Font
+
+	SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+	SUPER(oWindow , ResourceID{"tabsac_pag1" , _GetInst()},iCtlID)
+
+	SELF:oDCQTL := rightSle{SELF , ResourceID{ TABSAC_PAG1_QTL  , _GetInst() } }
+	SELF:oDCQTL:FieldSpec := PADRAO_NUM_05{}
+	SELF:oDCQTL:TooltipText := "Quantidade do Lote"
+	SELF:oDCQTL:HyperLabel := HyperLabel{#QTL , "Qtl:" , NULL_STRING , "SAC_QTL"}
+
+	SELF:oDCQTN := rightSle{SELF , ResourceID{ TABSAC_PAG1_QTN  , _GetInst() } }
+	SELF:oDCQTN:FieldSpec := PADRAO_NUM_05{}
+	SELF:oDCQTN:TooltipText := "Quantidade Nao Conforme"
+	SELF:oDCQTN:HyperLabel := HyperLabel{#QTN , "Qtn:" , NULL_STRING , "SAC_QTN"}
+
+	SELF:oDCDOCUMENTO := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_DOCUMENTO  , _GetInst() } }
+	SELF:oDCDOCUMENTO:FieldSpec := PADRAO_CHAR_25{}
+	SELF:oDCDOCUMENTO:TooltipText := "Documento 8D PPR"
+	SELF:oDCDOCUMENTO:HyperLabel := HyperLabel{#DOCUMENTO , "Sac:" , NULL_STRING , "SAC_SAC"}
+
+	SELF:oDCRASTRO := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_RASTRO  , _GetInst() } }
+	SELF:oDCRASTRO:FieldSpec := PADRAO_CHAR_12{}
+	SELF:oDCRASTRO:TooltipText := "Rastreabilidade"
+	SELF:oDCRASTRO:HyperLabel := HyperLabel{#RASTRO , "Codigo:" , NULL_STRING , "SAC_CODIGO"}
+
+	SELF:oDCCODIGO := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_CODIGO  , _GetInst() } }
+	SELF:oDCCODIGO:FieldSpec := PADRAO_CHAR_24{}
+	SELF:oDCCODIGO:TooltipText := "Codgio do Produto"
+	SELF:oDCCODIGO:HyperLabel := HyperLabel{#CODIGO , "Codigo:" , NULL_STRING , "SAC_CODIGO"}
+
+	SELF:oDCCLIENTE := rightSle{SELF , ResourceID{ TABSAC_PAG1_CLIENTE  , _GetInst() } }
+	SELF:oDCCLIENTE:FieldSpec := PADRAO_NUM_08{}
+	SELF:oDCCLIENTE:TooltipText := "Codigo do Cliente"
+	SELF:oDCCLIENTE:HyperLabel := HyperLabel{#CLIENTE , "Cliente:" , NULL_STRING , "SAC_CLIENTE"}
+
+	SELF:oDCCLINOME := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_CLINOME  , _GetInst() } }
+	SELF:oDCCLINOME:FieldSpec := padrao_char_50{}
+	SELF:oDCCLINOME:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCCLINOME:Font( oFont )
+	SELF:oDCCLINOME:HyperLabel := HyperLabel{#CLINOME , "Clinome:" , NULL_STRING , "SAC_CLINOME"}
+
+	SELF:oCCbtnpegma01 := PUSHBUTTON{SELF , ResourceID{ TABSAC_PAG1_BTNPEGMA01  , _GetInst() } }
+	SELF:oCCbtnpegma01:TooltipText := "Retorna o nome conforme codigo do cliente"
+	SELF:oCCbtnpegma01:HyperLabel := HyperLabel{#btnpegma01 , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCescfor := PUSHBUTTON{SELF , ResourceID{ TABSAC_PAG1_ESCFOR  , _GetInst() } }
+	SELF:oCCescfor:TooltipText := "Escolhe cliente na lIsta"
+	SELF:oCCescfor:HyperLabel := HyperLabel{#escfor , "..." , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_CLIENTE := FIXEDTEXT{SELF , ResourceID{ TABSAC_PAG1_SC_CLIENTE  , _GetInst() } }
+	SELF:oDCSC_CLIENTE:HyperLabel := HyperLabel{#SC_CLIENTE , "Cliente:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFEMEAREVD := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_FEMEAREVD  , _GetInst() } }
+	SELF:oDCFEMEAREVD:FieldSpec := DATE_FIELD{}
+	SELF:oDCFEMEAREVD:Background := Brush{ Color{ 255 , 255 , 200 } }
+	SELF:oDCFEMEAREVD:TooltipText := "Data Revisão Femea"
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCFEMEAREVD:Font( oFont )
+	SELF:oDCFEMEAREVD:HyperLabel := HyperLabel{#FEMEAREVD , "Sac:" , NULL_STRING , "SAC_SAC"}
+
+	SELF:oDCFEMEAREV := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_FEMEAREV  , _GetInst() } }
+	SELF:oDCFEMEAREV:FieldSpec := PADRAO_NUM_08{}
+	SELF:oDCFEMEAREV:Background := Brush{ Color{ 255 , 255 , 200 } }
+	SELF:oDCFEMEAREV:TooltipText := "Revisao do Femea"
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCFEMEAREV:Font( oFont )
+	SELF:oDCFEMEAREV:HyperLabel := HyperLabel{#FEMEAREV , "Sac:" , NULL_STRING , "SAC_SAC"}
+
+	SELF:oCCFemea := PUSHBUTTON{SELF , ResourceID{ TABSAC_PAG1_FEMEA  , _GetInst() } }
+	SELF:oCCFemea:TooltipText := "Trazer Informaçoes Femea"
+	SELF:oCCFemea:HyperLabel := HyperLabel{#Femea , "Femea Rev / Data" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCPF := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_PF  , _GetInst() } }
+	SELF:oDCPF:FieldSpec := PADRAO_NUM_08{}
+	SELF:oDCPF:Background := Brush{ Color{ 255 , 255 , 200 } }
+	SELF:oDCPF:TooltipText := "Nº Processo Fabricaçao"
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCPF:Font( oFont )
+	SELF:oDCPF:HyperLabel := HyperLabel{#PF , "Sac:" , NULL_STRING , "SAC_SAC"}
+
+	SELF:oDCSC_CODIGO3 := FIXEDTEXT{SELF , ResourceID{ TABSAC_PAG1_SC_CODIGO3  , _GetInst() } }
+	SELF:oDCSC_CODIGO3:HyperLabel := HyperLabel{#SC_CODIGO3 , "PF" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_CODIGO2 := FIXEDTEXT{SELF , ResourceID{ TABSAC_PAG1_SC_CODIGO2  , _GetInst() } }
+	SELF:oDCSC_CODIGO2:HyperLabel := HyperLabel{#SC_CODIGO2 , "Rastro" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_SAC1 := FIXEDTEXT{SELF , ResourceID{ TABSAC_PAG1_SC_SAC1  , _GetInst() } }
+	SELF:oDCSC_SAC1:HyperLabel := HyperLabel{#SC_SAC1 , "Documento/8D/PPR" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCNotificar := PUSHBUTTON{SELF , ResourceID{ TABSAC_PAG1_NOTIFICAR  , _GetInst() } }
+	SELF:oCCNotificar:TooltipText := "Notificar Destinarios Email Interno"
+	SELF:oCCNotificar:HyperLabel := HyperLabel{#Notificar , "Notificar Email" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCNOME := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_NOME  , _GetInst() } }
+	SELF:oDCNOME:FieldSpec := PADRAO_CHAR_50{}
+	SELF:oDCNOME:Background := Brush{ Color{ 255 , 255 , 200 } }
+	SELF:oDCNOME:TooltipText := "Desricao do Produto"
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCNOME:Font( oFont )
+	SELF:oDCNOME:HyperLabel := HyperLabel{#NOME , "Nome:" , NULL_STRING , "SAC_NOME"}
+
+	SELF:oCCbnpegms01 := PUSHBUTTON{SELF , ResourceID{ TABSAC_PAG1_BNPEGMS01  , _GetInst() } }
+	SELF:oCCbnpegms01:TooltipText := "Retorna o nome do codigo do Produto"
+	SELF:oCCbnpegms01:HyperLabel := HyperLabel{#bnpegms01 , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCesccod := PUSHBUTTON{SELF , ResourceID{ TABSAC_PAG1_ESCCOD  , _GetInst() } }
+	SELF:oCCesccod:TooltipText := "Escolher Produto na Lista"
+	SELF:oCCesccod:HyperLabel := HyperLabel{#esccod , "..." , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_CODIGO := FIXEDTEXT{SELF , ResourceID{ TABSAC_PAG1_SC_CODIGO  , _GetInst() } }
+	SELF:oDCSC_CODIGO:HyperLabel := HyperLabel{#SC_CODIGO , "Codigo:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_QTN := FIXEDTEXT{SELF , ResourceID{ TABSAC_PAG1_SC_QTN  , _GetInst() } }
+	SELF:oDCSC_QTN:HyperLabel := HyperLabel{#SC_QTN , "Qtde nao Conf:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_QTN1 := FIXEDTEXT{SELF , ResourceID{ TABSAC_PAG1_SC_QTN1  , _GetInst() } }
+	SELF:oDCSC_QTN1:HyperLabel := HyperLabel{#SC_QTN1 , "Qtde Lote" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCtheRadioButton7 := RADIOBUTTON{SELF , ResourceID{ TABSAC_PAG1_THERADIOBUTTON7  , _GetInst() } }
+	SELF:oCCtheRadioButton7:TooltipText := "Atraso de Entrega"
+	SELF:oCCtheRadioButton7:HyperLabel := HyperLabel{#theRadioButton7 , "Atraso Entrega" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCtheRadioButton5 := RADIOBUTTON{SELF , ResourceID{ TABSAC_PAG1_THERADIOBUTTON5  , _GetInst() } }
+	SELF:oCCtheRadioButton5:TooltipText := "Auditoria Interna de Processo"
+	SELF:oCCtheRadioButton5:HyperLabel := HyperLabel{#theRadioButton5 , "Aud.Int. Processo" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCtheRadioButton6 := RADIOBUTTON{SELF , ResourceID{ TABSAC_PAG1_THERADIOBUTTON6  , _GetInst() } }
+	SELF:oCCtheRadioButton6:TooltipText := "Produçao"
+	SELF:oCCtheRadioButton6:HyperLabel := HyperLabel{#theRadioButton6 , "Produção" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCtheRadioButton4 := RADIOBUTTON{SELF , ResourceID{ TABSAC_PAG1_THERADIOBUTTON4  , _GetInst() } }
+	SELF:oCCtheRadioButton4:TooltipText := "Reclamação de Cliente"
+	SELF:oCCtheRadioButton4:HyperLabel := HyperLabel{#theRadioButton4 , "Rec.Cliente" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCtheRadioButton3 := RADIOBUTTON{SELF , ResourceID{ TABSAC_PAG1_THERADIOBUTTON3  , _GetInst() } }
+	SELF:oCCtheRadioButton3:TooltipText := "Sac Auditoria Interna de Sistema"
+	SELF:oCCtheRadioButton3:HyperLabel := HyperLabel{#theRadioButton3 , "Aud.Int. Sistema" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCTIPO := RADIOBUTTONGROUP{SELF , ResourceID{ TABSAC_PAG1_TIPO  , _GetInst() } }
+	SELF:oDCTIPO:FieldSpec := PADRAO_CHAR_01{}
+	SELF:oDCTIPO:TooltipText := "Tipo de Sac"
+	SELF:oDCTIPO:HyperLabel := HyperLabel{#TIPO , "Tipo:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCnova := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_NOVA  , _GetInst() } }
+	SELF:oDCnova:FieldSpec := PADRAO_NUM_08{}
+	SELF:oDCnova:Background := Brush{ Color{ 255 , 255 , 200 } }
+	SELF:oDCnova:TooltipText := "Nº Nova Sac em Caso "
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCnova:Font( oFont )
+	SELF:oDCnova:HyperLabel := HyperLabel{#nova , "Sac:" , NULL_STRING , "SAC_SAC"}
+
+	SELF:oDCSC_CODIGO4 := FIXEDTEXT{SELF , ResourceID{ TABSAC_PAG1_SC_CODIGO4  , _GetInst() } }
+	SELF:oDCSC_CODIGO4:HyperLabel := HyperLabel{#SC_CODIGO4 , "Nova" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCbuscanova := PUSHBUTTON{SELF , ResourceID{ TABSAC_PAG1_BUSCANOVA  , _GetInst() } }
+	SELF:oCCbuscanova:TooltipText := "Vai Para a Sac Nova"
+	SELF:oCCbuscanova:HyperLabel := HyperLabel{#buscanova , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCbuscaant := PUSHBUTTON{SELF , ResourceID{ TABSAC_PAG1_BUSCAANT  , _GetInst() } }
+	SELF:oCCbuscaant:TooltipText := "Vai para Sac Anterior"
+	SELF:oCCbuscaant:HyperLabel := HyperLabel{#buscaant , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCnova1 := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_NOVA1  , _GetInst() } }
+	SELF:oDCnova1:FieldSpec := PADRAO_NUM_08{}
+	SELF:oDCnova1:Background := Brush{ Color{ 255 , 255 , 200 } }
+	SELF:oDCnova1:TooltipText := "Nº Sac Anterior em caso de"
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCnova1:Font( oFont )
+	SELF:oDCnova1:HyperLabel := HyperLabel{#nova1 , "Sac:" , NULL_STRING , "SAC_SAC"}
+
+	SELF:oDCSC_CODIGO5 := FIXEDTEXT{SELF , ResourceID{ TABSAC_PAG1_SC_CODIGO5  , _GetInst() } }
+	SELF:oDCSC_CODIGO5:HyperLabel := HyperLabel{#SC_CODIGO5 , "Anterior" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCPOA := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_POA  , _GetInst() } }
+	SELF:oDCPOA:FieldSpec := PADRAO_NUM_08{}
+	SELF:oDCPOA:Background := Brush{ Color{ 255 , 255 , 200 } }
+	SELF:oDCPOA:TooltipText := "Nº Programa Olhos Abertos"
+	oFont := Font{  , 10 , "Trebuchet MS" }
+	oFont:Bold := TRUE
+	SELF:oDCPOA:Font( oFont )
+	SELF:oDCPOA:HyperLabel := HyperLabel{#POA , "Sac:" , NULL_STRING , "SAC_SAC"}
+
+	SELF:oDCSC_SAC2 := FIXEDTEXT{SELF , ResourceID{ TABSAC_PAG1_SC_SAC2  , _GetInst() } }
+	SELF:oDCSC_SAC2:HyperLabel := HyperLabel{#SC_SAC2 , "POA" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFixedText10 := FIXEDTEXT{SELF , ResourceID{ TABSAC_PAG1_FIXEDTEXT10  , _GetInst() } }
+	SELF:oDCFixedText10:HyperLabel := HyperLabel{#FixedText10 , "Necessario Revisar Processo Fabricaçao" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCREVPF := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_REVPF  , _GetInst() } }
+	SELF:oDCREVPF:FieldSpec := PADRAO_CHAR_01{}
+	SELF:oDCREVPF:Background := Brush{ Color{ 255 , 255 , 200 } }
+	SELF:oDCREVPF:TooltipText := "Nº Processo Fabricaçao"
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCREVPF:Font( oFont )
+	SELF:oDCREVPF:HyperLabel := HyperLabel{#REVPF , "Sac:" , NULL_STRING , "SAC_SAC"}
+
+	SELF:oDCFixedText11 := FIXEDTEXT{SELF , ResourceID{ TABSAC_PAG1_FIXEDTEXT11  , _GetInst() } }
+	SELF:oDCFixedText11:HyperLabel := HyperLabel{#FixedText11 , "Necessario Revisar Plano de Controle" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCREVPC := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_REVPC  , _GetInst() } }
+	SELF:oDCREVPC:FieldSpec := PADRAO_CHAR_01{}
+	SELF:oDCREVPC:Background := Brush{ Color{ 255 , 255 , 200 } }
+	SELF:oDCREVPC:TooltipText := "Nº Processo Fabricaçao"
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCREVPC:Font( oFont )
+	SELF:oDCREVPC:HyperLabel := HyperLabel{#REVPC , "Sac:" , NULL_STRING , "SAC_SAC"}
+
+	SELF:oCCcmdrevpf := PUSHBUTTON{SELF , ResourceID{ TABSAC_PAG1_CMDREVPF  , _GetInst() } }
+	SELF:oCCcmdrevpf:HyperLabel := HyperLabel{#cmdrevpf , "SimNão" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCcmdrevpc := PUSHBUTTON{SELF , ResourceID{ TABSAC_PAG1_CMDREVPC  , _GetInst() } }
+	SELF:oCCcmdrevpc:HyperLabel := HyperLabel{#cmdrevpc , "SimNão" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCREVPFOBS := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_REVPFOBS  , _GetInst() } }
+	SELF:oDCREVPFOBS:FieldSpec := PADRAO_CHAR_30{}
+	SELF:oDCREVPFOBS:TooltipText := "Rastreabilidade"
+	SELF:oDCREVPFOBS:HyperLabel := HyperLabel{#REVPFOBS , "Codigo:" , NULL_STRING , "SAC_CODIGO"}
+
+	SELF:oDCREVPCOBS := SINGLELINEEDIT{SELF , ResourceID{ TABSAC_PAG1_REVPCOBS  , _GetInst() } }
+	SELF:oDCREVPCOBS:FieldSpec := PADRAO_char_30{}
+	SELF:oDCREVPCOBS:TooltipText := "Rastreabilidade"
+	SELF:oDCREVPCOBS:HyperLabel := HyperLabel{#REVPCOBS , "Codigo:" , NULL_STRING , "SAC_CODIGO"}
+
+	SELF:oDCSC_DESTINO2 := FIXEDTEXT{SELF , ResourceID{ TABSAC_PAG1_SC_DESTINO2  , _GetInst() } }
+	SELF:oDCSC_DESTINO2:HyperLabel := HyperLabel{#SC_DESTINO2 , "Foto" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCfoto := PUSHBUTTON{SELF , ResourceID{ TABSAC_PAG1_FOTO  , _GetInst() } }
+	SELF:oCCfoto:Image := ico_camera{}
+	SELF:oCCfoto:HyperLabel := HyperLabel{#foto , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCTIPO:FillUsing({ ;
+	                       {SELF:oCCtheRadioButton7, "E"}, ;
+	                       {SELF:oCCtheRadioButton5, "A"}, ;
+	                       {SELF:oCCtheRadioButton6, "P"}, ;
+	                       {SELF:oCCtheRadioButton4, "R"}, ;
+	                       {SELF:oCCtheRadioButton3, "S"} ;
+	                       })
+
+	SELF:Caption := "DataWindow Caption"
+	SELF:HyperLabel := HyperLabel{#tabsac_pag1 , "DataWindow Caption" , NULL_STRING , NULL_STRING}
+	IF !IsNil(oServer)
+		SELF:Use(oServer)
+	ELSE
+		SELF:Use(SELF:Owner:Server)
+	ENDIF
+
+
+	SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN
+
+
+ACCESS NOME
+RETURN SELF:FieldGet( #NOME )
+
+ASSIGN NOME( uValue )
+SELF:FieldPut( #NOME , uValue )
+
+ACCESS nova
+RETURN SELF:FieldGet( #nova )
+
+ASSIGN nova( uValue )
+SELF:FieldPut( #nova , uValue )
+
+ACCESS nova1
+RETURN SELF:FieldGet( #nova1 )
+
+ASSIGN nova1( uValue )
+SELF:FieldPut( #nova1 , uValue )
+
+ACCESS PF
+RETURN SELF:FieldGet( #PF )
+
+ASSIGN PF( uValue )
+SELF:FieldPut( #PF , uValue )
+
+ACCESS POA
+RETURN SELF:FieldGet( #POA )
+
+ASSIGN POA( uValue )
+SELF:FieldPut( #POA , uValue )
+
+ACCESS QTL
+RETURN SELF:FieldGet( #QTL )
+
+ASSIGN QTL( uValue )
+SELF:FieldPut( #QTL , uValue )
+
+ACCESS QTN
+RETURN SELF:FieldGet( #QTN )
+
+ASSIGN QTN( uValue )
+SELF:FieldPut( #QTN , uValue )
+
+ACCESS RASTRO
+RETURN SELF:FieldGet( #RASTRO )
+
+ASSIGN RASTRO( uValue )
+SELF:FieldPut( #RASTRO , uValue )
+
+ACCESS REVPC
+RETURN SELF:FieldGet( #REVPC )
+
+ASSIGN REVPC( uValue )
+SELF:FieldPut( #REVPC , uValue )
+
+ACCESS REVPCOBS
+RETURN SELF:FieldGet( #REVPCOBS )
+
+ASSIGN REVPCOBS( uValue )
+SELF:FieldPut( #REVPCOBS , uValue )
+
+ACCESS REVPF
+RETURN SELF:FieldGet( #REVPF )
+
+ASSIGN REVPF( uValue )
+SELF:FieldPut( #REVPF , uValue )
+
+ACCESS REVPFOBS
+RETURN SELF:FieldGet( #REVPFOBS )
+
+ASSIGN REVPFOBS( uValue )
+SELF:FieldPut( #REVPFOBS , uValue )
+
+ACCESS TIPO
+RETURN SELF:FieldGet( #TIPO )
+
+ASSIGN TIPO( uValue )
+SELF:FieldPut( #TIPO , uValue )
+
+END CLASS
+CLASS tabsac_Page2 INHERIT DATAWINDOW 
+
+	PROTECT oDCDESC04 AS SINGLELINEEDIT
+	PROTECT oDCDESC03 AS SINGLELINEEDIT
+	PROTECT oDCDESC02 AS SINGLELINEEDIT
+	PROTECT oDCDESC01 AS SINGLELINEEDIT
+	PROTECT oDCtheGroupBox1 AS GROUPBOX
+	PROTECT oDCFixedText1 AS FIXEDTEXT
+	PROTECT oDCNOTSETOR AS SINGLELINEEDIT
+// 	instance DESC04 
+// 	instance DESC03 
+// 	instance DESC02 
+// 	instance DESC01 
+// 	instance NOTSETOR 
+
+  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
+
+ACCESS DESC01() 
+RETURN SELF:FieldGet(#DESC01)
+
+
+ASSIGN DESC01(uValue) 
+SELF:FieldPut(#DESC01, uValue)
+RETURN DESC01 := uValue
+
+
+ACCESS DESC02() 
+RETURN SELF:FieldGet(#DESC02)
+
+
+ASSIGN DESC02(uValue) 
+SELF:FieldPut(#DESC02, uValue)
+RETURN DESC02 := uValue
+
+
+ACCESS DESC03() 
+RETURN SELF:FieldGet(#DESC03)
+
+
+ASSIGN DESC03(uValue) 
+SELF:FieldPut(#DESC03, uValue)
+RETURN DESC03 := uValue
+
+
+ACCESS DESC04() 
+RETURN SELF:FieldGet(#DESC04)
+
+
+ASSIGN DESC04(uValue) 
+SELF:FieldPut(#DESC04, uValue)
+RETURN DESC04 := uValue
+
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
+
+SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+SUPER(oWindow,ResourceID{"tabsac_Page2",_GetInst()},iCtlID)
+
+oDCDESC04 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE2_DESC04,_GetInst()}}
+oDCDESC04:FieldSpec := padrao_char_100{}
+oDCDESC04:HyperLabel := HyperLabel{#DESC04,"Desc04:",NULL_STRING,"SAC_DESC04"}
+
+oDCDESC03 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE2_DESC03,_GetInst()}}
+oDCDESC03:FieldSpec := padrao_char_100{}
+oDCDESC03:HyperLabel := HyperLabel{#DESC03,"Desc03:",NULL_STRING,"SAC_DESC03"}
+
+oDCDESC02 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE2_DESC02,_GetInst()}}
+oDCDESC02:FieldSpec := padrao_char_100{}
+oDCDESC02:HyperLabel := HyperLabel{#DESC02,"Desc02:",NULL_STRING,"SAC_DESC02"}
+
+oDCDESC01 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE2_DESC01,_GetInst()}}
+oDCDESC01:FieldSpec := padrao_char_100{}
+oDCDESC01:HyperLabel := HyperLabel{#DESC01,"Desc01:",NULL_STRING,"SAC_DESC01"}
+
+oDCtheGroupBox1 := GroupBox{SELF,ResourceID{TABSAC_PAGE2_THEGROUPBOX1,_GetInst()}}
+oDCtheGroupBox1:HyperLabel := HyperLabel{#theGroupBox1,"Descrição do Problema",NULL_STRING,NULL_STRING}
+
+oDCFixedText1 := FixedText{SELF,ResourceID{TABSAC_PAGE2_FIXEDTEXT1,_GetInst()}}
+oDCFixedText1:HyperLabel := HyperLabel{#FixedText1,"Solicitaçao Feita ao Setor",NULL_STRING,NULL_STRING}
+
+oDCNOTSETOR := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE2_NOTSETOR,_GetInst()}}
+oDCNOTSETOR:FieldSpec := padrao_char_25{}
+oDCNOTSETOR:HyperLabel := HyperLabel{#NOTSETOR,"Desc04:",NULL_STRING,"SAC_DESC04"}
+
+SELF:Caption := "DataWindow Caption"
+SELF:HyperLabel := HyperLabel{#tabsac_Page2,"DataWindow Caption",NULL_STRING,NULL_STRING}
+
+IF !IsNil(oServer)
+	SELF:Use(oServer)
+ELSE
+	SELF:Use(SELF:Owner:Server)
+ENDIF
+
+SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN SELF
+
+
+ACCESS NOTSETOR() 
+RETURN SELF:FieldGet(#NOTSETOR)
+
+
+ASSIGN NOTSETOR(uValue) 
+SELF:FieldPut(#NOTSETOR, uValue)
+RETURN NOTSETOR := uValue
+
+
+END CLASS
+CLASS tabsac_Page3 INHERIT DATAWINDOW 
+
+	PROTECT oDCCONG AS SINGLELINEEDIT
+	PROTECT oDCEQP04 AS SINGLELINEEDIT
+	PROTECT oDCEQP03 AS SINGLELINEEDIT
+	PROTECT oDCSC_OS1 AS FIXEDTEXT
+	PROTECT oDCEQP02 AS SINGLELINEEDIT
+	PROTECT oDCEQP01 AS SINGLELINEEDIT
+	PROTECT oDCFixedText20 AS FIXEDTEXT
+// 	instance CONG 
+// 	instance EQP04 
+// 	instance EQP03 
+// 	instance EQP02 
+// 	instance EQP01 
+
+  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
+
+ACCESS CONG() 
+RETURN SELF:FieldGet(#CONG)
+
+
+ASSIGN CONG(uValue) 
+SELF:FieldPut(#CONG, uValue)
+RETURN CONG := uValue
+
+
+ACCESS EQP01() 
+RETURN SELF:FieldGet(#EQP01)
+
+
+ASSIGN EQP01(uValue) 
+SELF:FieldPut(#EQP01, uValue)
+RETURN EQP01 := uValue
+
+
+ACCESS EQP02() 
+RETURN SELF:FieldGet(#EQP02)
+
+
+ASSIGN EQP02(uValue) 
+SELF:FieldPut(#EQP02, uValue)
+RETURN EQP02 := uValue
+
+
+ACCESS EQP03() 
+RETURN SELF:FieldGet(#EQP03)
+
+
+ASSIGN EQP03(uValue) 
+SELF:FieldPut(#EQP03, uValue)
+RETURN EQP03 := uValue
+
+
+ACCESS EQP04() 
+RETURN SELF:FieldGet(#EQP04)
+
+
+ASSIGN EQP04(uValue) 
+SELF:FieldPut(#EQP04, uValue)
+RETURN EQP04 := uValue
+
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
+
+SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+SUPER(oWindow,ResourceID{"tabsac_Page3",_GetInst()},iCtlID)
+
+oDCCONG := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE3_CONG,_GetInst()}}
+oDCCONG:FieldSpec := padrao_char_40{}
+oDCCONG:HyperLabel := HyperLabel{#CONG,"Desc04:",NULL_STRING,"SAC_DESC04"}
+
+oDCEQP04 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE3_EQP04,_GetInst()}}
+oDCEQP04:FieldSpec := padrao_char_25{}
+oDCEQP04:HyperLabel := HyperLabel{#EQP04,"Desc04:",NULL_STRING,"SAC_DESC04"}
+
+oDCEQP03 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE3_EQP03,_GetInst()}}
+oDCEQP03:FieldSpec := padrao_char_25{}
+oDCEQP03:HyperLabel := HyperLabel{#EQP03,"EQP03",NULL_STRING,"SAC_DESC04"}
+
+oDCSC_OS1 := FixedText{SELF,ResourceID{TABSAC_PAGE3_SC_OS1,_GetInst()}}
+oDCSC_OS1:HyperLabel := HyperLabel{#SC_OS1,"Congratula Equipe",NULL_STRING,NULL_STRING}
+
+oDCEQP02 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE3_EQP02,_GetInst()}}
+oDCEQP02:FieldSpec := padrao_char_25{}
+oDCEQP02:HyperLabel := HyperLabel{#EQP02,"Desc04:",NULL_STRING,"SAC_DESC04"}
+
+oDCEQP01 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE3_EQP01,_GetInst()}}
+oDCEQP01:FieldSpec := padrao_char_25{}
+oDCEQP01:HyperLabel := HyperLabel{#EQP01,"Desc04:",NULL_STRING,"SAC_DESC04"}
+
+oDCFixedText20 := FixedText{SELF,ResourceID{TABSAC_PAGE3_FIXEDTEXT20,_GetInst()}}
+oDCFixedText20:HyperLabel := HyperLabel{#FixedText20,"Equipe",NULL_STRING,NULL_STRING}
+
+SELF:Caption := "DataWindow Caption"
+SELF:HyperLabel := HyperLabel{#tabsac_Page3,"DataWindow Caption",NULL_STRING,NULL_STRING}
+
+IF !IsNil(oServer)
+	SELF:Use(oServer)
+ELSE
+	SELF:Use(SELF:Owner:Server)
+ENDIF
+
+SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN SELF
+
+
+END CLASS
+CLASS tabsac_Page4 INHERIT DATAWINDOW 
+
+	PROTECT oDCDATEN AS DATESLE
+	PROTECT oDCSC_DATEN AS FIXEDTEXT
+	PROTECT oDCDATOS AS DATESLE
+	PROTECT oDCSC_DATOS AS FIXEDTEXT
+	PROTECT oDCSC_TIPSAC AS FIXEDTEXT
+	PROTECT oDCITEM AS RIGHTSLE
+	PROTECT oDCSC_ITEM AS FIXEDTEXT
+	PROTECT oDCNF AS RIGHTSLE
+	PROTECT oDCSC_NF AS FIXEDTEXT
+	PROTECT oDCOS AS RIGHTSLE
+	PROTECT oDCSC_OS AS FIXEDTEXT
+	PROTECT oDCTIPSAC AS SINGLELINEEDIT
+// 	instance DATEN 
+// 	instance DATOS 
+// 	instance ITEM 
+// 	instance NF 
+// 	instance OS 
+// 	instance TIPSAC 
+
+  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
+
+ACCESS DATEN() 
+RETURN SELF:FieldGet(#DATEN)
+
+
+ASSIGN DATEN(uValue) 
+SELF:FieldPut(#DATEN, uValue)
+RETURN DATEN := uValue
+
+
+ACCESS DATOS() 
+RETURN SELF:FieldGet(#DATOS)
+
+
+ASSIGN DATOS(uValue) 
+SELF:FieldPut(#DATOS, uValue)
+RETURN DATOS := uValue
+
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
+
+SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+SUPER(oWindow,ResourceID{"tabsac_Page4",_GetInst()},iCtlID)
+
+oDCDATEN := DateSle{SELF,ResourceID{TABSAC_PAGE4_DATEN,_GetInst()}}
+oDCDATEN:FieldSpec := date_field{}
+oDCDATEN:HyperLabel := HyperLabel{#DATEN,"Solitacao de Ação Corretirva",NULL_STRING,"SAC_DATEN"}
+
+oDCSC_DATEN := FixedText{SELF,ResourceID{TABSAC_PAGE4_SC_DATEN,_GetInst()}}
+oDCSC_DATEN:HyperLabel := HyperLabel{#SC_DATEN,"Data Nota Fiscal:",NULL_STRING,NULL_STRING}
+
+oDCDATOS := DateSle{SELF,ResourceID{TABSAC_PAGE4_DATOS,_GetInst()}}
+oDCDATOS:FieldSpec := date_field{}
+oDCDATOS:HyperLabel := HyperLabel{#DATOS,"Datos:",NULL_STRING,"SAC_DATOS"}
+
+oDCSC_DATOS := FixedText{SELF,ResourceID{TABSAC_PAGE4_SC_DATOS,_GetInst()}}
+oDCSC_DATOS:HyperLabel := HyperLabel{#SC_DATOS,"Data OS:",NULL_STRING,NULL_STRING}
+
+oDCSC_TIPSAC := FixedText{SELF,ResourceID{TABSAC_PAGE4_SC_TIPSAC,_GetInst()}}
+oDCSC_TIPSAC:HyperLabel := HyperLabel{#SC_TIPSAC,"Tipo:",NULL_STRING,NULL_STRING}
+
+oDCITEM := rightSle{SELF,ResourceID{TABSAC_PAGE4_ITEM,_GetInst()}}
+oDCITEM:FieldSpec := padrao_num_03{}
+oDCITEM:HyperLabel := HyperLabel{#ITEM,"Item:",NULL_STRING,"SAC_ITEM"}
+
+oDCSC_ITEM := FixedText{SELF,ResourceID{TABSAC_PAGE4_SC_ITEM,_GetInst()}}
+oDCSC_ITEM:HyperLabel := HyperLabel{#SC_ITEM,"Item:",NULL_STRING,NULL_STRING}
+
+oDCNF := rightSle{SELF,ResourceID{TABSAC_PAGE4_NF,_GetInst()}}
+oDCNF:FieldSpec := padrao_num_08{}
+oDCNF:HyperLabel := HyperLabel{#NF,"Nf:",NULL_STRING,"SAC_NF"}
+
+oDCSC_NF := FixedText{SELF,ResourceID{TABSAC_PAGE4_SC_NF,_GetInst()}}
+oDCSC_NF:HyperLabel := HyperLabel{#SC_NF,"NF:",NULL_STRING,NULL_STRING}
+
+oDCOS := rightSle{SELF,ResourceID{TABSAC_PAGE4_OS,_GetInst()}}
+oDCOS:FieldSpec := padrao_num_08_2{}
+oDCOS:HyperLabel := HyperLabel{#OS,"Os:",NULL_STRING,"SAC_OS"}
+
+oDCSC_OS := FixedText{SELF,ResourceID{TABSAC_PAGE4_SC_OS,_GetInst()}}
+oDCSC_OS:HyperLabel := HyperLabel{#SC_OS,"Os:",NULL_STRING,NULL_STRING}
+
+oDCTIPSAC := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE4_TIPSAC,_GetInst()}}
+oDCTIPSAC:FieldSpec := padrao_char_02{}
+oDCTIPSAC:HyperLabel := HyperLabel{#TIPSAC,"Tipsac:",NULL_STRING,"SAC_TIPSAC"}
+
+SELF:Caption := "DataWindow Caption"
+SELF:HyperLabel := HyperLabel{#tabsac_Page4,"DataWindow Caption",NULL_STRING,NULL_STRING}
+
+IF !IsNil(oServer)
+	SELF:Use(oServer)
+ELSE
+	SELF:Use(SELF:Owner:Server)
+ENDIF
+
+SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN SELF
+
+
+ACCESS ITEM() 
+RETURN SELF:FieldGet(#ITEM)
+
+
+ASSIGN ITEM(uValue) 
+SELF:FieldPut(#ITEM, uValue)
+RETURN ITEM := uValue
+
+
+ACCESS NF() 
+RETURN SELF:FieldGet(#NF)
+
+
+ASSIGN NF(uValue) 
+SELF:FieldPut(#NF, uValue)
+RETURN NF := uValue
+
+
+ACCESS OS() 
+RETURN SELF:FieldGet(#OS)
+
+
+ASSIGN OS(uValue) 
+SELF:FieldPut(#OS, uValue)
+RETURN OS := uValue
+
+
+ACCESS TIPSAC() 
+RETURN SELF:FieldGet(#TIPSAC)
+
+
+ASSIGN TIPSAC(uValue) 
+SELF:FieldPut(#TIPSAC, uValue)
+RETURN TIPSAC := uValue
+
+
+END CLASS
+CLASS tabsac_Page5 INHERIT DATAWINDOW 
+
+	PROTECT oDCSC_PMED01 AS FIXEDTEXT
+	PROTECT oDCSC_PAMB01 AS FIXEDTEXT
+	PROTECT oDCSC_PMAO01 AS FIXEDTEXT
+	PROTECT oDCSC_PMAQ01 AS FIXEDTEXT
+	PROTECT oDCSC_PMET01 AS FIXEDTEXT
+	PROTECT oDCSC_PMAT01 AS FIXEDTEXT
+	PROTECT oDCPMED01 AS SINGLELINEEDIT
+	PROTECT oDCPMED02 AS SINGLELINEEDIT
+	PROTECT oDCPMED03 AS SINGLELINEEDIT
+	PROTECT oDCPMED04 AS SINGLELINEEDIT
+	PROTECT oDCPMED05 AS SINGLELINEEDIT
+	PROTECT oDCPAMB01 AS SINGLELINEEDIT
+	PROTECT oDCPAMB02 AS SINGLELINEEDIT
+	PROTECT oDCPAMB03 AS SINGLELINEEDIT
+	PROTECT oDCPAMB04 AS SINGLELINEEDIT
+	PROTECT oDCPAMB05 AS SINGLELINEEDIT
+	PROTECT oDCPMAO01 AS SINGLELINEEDIT
+	PROTECT oDCPMAO02 AS SINGLELINEEDIT
+	PROTECT oDCPMAO03 AS SINGLELINEEDIT
+	PROTECT oDCPMAO04 AS SINGLELINEEDIT
+	PROTECT oDCPMAO05 AS SINGLELINEEDIT
+	PROTECT oDCPMAQ01 AS SINGLELINEEDIT
+	PROTECT oDCPMAQ02 AS SINGLELINEEDIT
+	PROTECT oDCPMAQ03 AS SINGLELINEEDIT
+	PROTECT oDCPMAQ04 AS SINGLELINEEDIT
+	PROTECT oDCPMAQ05 AS SINGLELINEEDIT
+	PROTECT oDCPMET01 AS SINGLELINEEDIT
+	PROTECT oDCPMET02 AS SINGLELINEEDIT
+	PROTECT oDCPMET03 AS SINGLELINEEDIT
+	PROTECT oDCPMET04 AS SINGLELINEEDIT
+	PROTECT oDCPMET05 AS SINGLELINEEDIT
+	PROTECT oDCPMAT01 AS SINGLELINEEDIT
+	PROTECT oDCPMAT02 AS SINGLELINEEDIT
+	PROTECT oDCPMAT03 AS SINGLELINEEDIT
+	PROTECT oDCPMAT04 AS SINGLELINEEDIT
+	PROTECT oDCPMAT05 AS SINGLELINEEDIT
+// 	instance PMED01 
+// 	instance PMED02 
+// 	instance PMED03 
+// 	instance PMED04 
+// 	instance PMED05 
+// 	instance PAMB01 
+// 	instance PAMB02 
+// 	instance PAMB03 
+// 	instance PAMB04 
+// 	instance PAMB05 
+// 	instance PMAO01 
+// 	instance PMAO02 
+// 	instance PMAO03 
+// 	instance PMAO04 
+// 	instance PMAO05 
+// 	instance PMAQ01 
+// 	instance PMAQ02 
+// 	instance PMAQ03 
+// 	instance PMAQ04 
+// 	instance PMAQ05 
+// 	instance PMET01 
+// 	instance PMET02 
+// 	instance PMET03 
+// 	instance PMET04 
+// 	instance PMET05 
+// 	instance PMAT01 
+// 	instance PMAT02 
+// 	instance PMAT03 
+// 	instance PMAT04 
+// 	instance PMAT05 
+
+  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
+
+SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+SUPER(oWindow,ResourceID{"tabsac_Page5",_GetInst()},iCtlID)
+
+oDCSC_PMED01 := FixedText{SELF,ResourceID{TABSAC_PAGE5_SC_PMED01,_GetInst()}}
+oDCSC_PMED01:HyperLabel := HyperLabel{#SC_PMED01,"Meio de Mediçao",NULL_STRING,NULL_STRING}
+
+oDCSC_PAMB01 := FixedText{SELF,ResourceID{TABSAC_PAGE5_SC_PAMB01,_GetInst()}}
+oDCSC_PAMB01:HyperLabel := HyperLabel{#SC_PAMB01,"Meio Ambiente",NULL_STRING,NULL_STRING}
+
+oDCSC_PMAO01 := FixedText{SELF,ResourceID{TABSAC_PAGE5_SC_PMAO01,_GetInst()}}
+oDCSC_PMAO01:HyperLabel := HyperLabel{#SC_PMAO01,"Mao de Obra",NULL_STRING,NULL_STRING}
+
+oDCSC_PMAQ01 := FixedText{SELF,ResourceID{TABSAC_PAGE5_SC_PMAQ01,_GetInst()}}
+oDCSC_PMAQ01:HyperLabel := HyperLabel{#SC_PMAQ01,"Maquina",NULL_STRING,NULL_STRING}
+
+oDCSC_PMET01 := FixedText{SELF,ResourceID{TABSAC_PAGE5_SC_PMET01,_GetInst()}}
+oDCSC_PMET01:HyperLabel := HyperLabel{#SC_PMET01,"Metodo",NULL_STRING,NULL_STRING}
+
+oDCSC_PMAT01 := FixedText{SELF,ResourceID{TABSAC_PAGE5_SC_PMAT01,_GetInst()}}
+oDCSC_PMAT01:HyperLabel := HyperLabel{#SC_PMAT01,"Material",NULL_STRING,NULL_STRING}
+
+oDCPMED01 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMED01,_GetInst()}}
+oDCPMED01:FieldSpec := padrao_chaR_30{}
+oDCPMED01:HyperLabel := HyperLabel{#PMED01,"Pmed01:",NULL_STRING,"SAC_PMED01"}
+
+oDCPMED02 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMED02,_GetInst()}}
+oDCPMED02:FieldSpec := padrao_chaR_30{}
+oDCPMED02:HyperLabel := HyperLabel{#PMED02,"Pmed02:",NULL_STRING,"SAC_PMED02"}
+
+oDCPMED03 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMED03,_GetInst()}}
+oDCPMED03:FieldSpec := padrao_chaR_30{}
+oDCPMED03:HyperLabel := HyperLabel{#PMED03,"Pmed03:",NULL_STRING,"SAC_PMED03"}
+
+oDCPMED04 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMED04,_GetInst()}}
+oDCPMED04:FieldSpec := padrao_chaR_30{}
+oDCPMED04:HyperLabel := HyperLabel{#PMED04,"Pmed04:",NULL_STRING,"SAC_PMED04"}
+
+oDCPMED05 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMED05,_GetInst()}}
+oDCPMED05:FieldSpec := padrao_chaR_30{}
+oDCPMED05:HyperLabel := HyperLabel{#PMED05,"Pmed05:",NULL_STRING,"SAC_PMED05"}
+
+oDCPAMB01 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PAMB01,_GetInst()}}
+oDCPAMB01:FieldSpec := padrao_chaR_30{}
+oDCPAMB01:HyperLabel := HyperLabel{#PAMB01,"Pamb01:",NULL_STRING,"SAC_PAMB01"}
+
+oDCPAMB02 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PAMB02,_GetInst()}}
+oDCPAMB02:FieldSpec := padrao_chaR_30{}
+oDCPAMB02:HyperLabel := HyperLabel{#PAMB02,"Pamb02:",NULL_STRING,"SAC_PAMB02"}
+
+oDCPAMB03 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PAMB03,_GetInst()}}
+oDCPAMB03:FieldSpec := padrao_chaR_30{}
+oDCPAMB03:HyperLabel := HyperLabel{#PAMB03,"Pamb03:",NULL_STRING,"SAC_PAMB03"}
+
+oDCPAMB04 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PAMB04,_GetInst()}}
+oDCPAMB04:FieldSpec := padrao_chaR_30{}
+oDCPAMB04:HyperLabel := HyperLabel{#PAMB04,"Pamb04:",NULL_STRING,"SAC_PAMB04"}
+
+oDCPAMB05 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PAMB05,_GetInst()}}
+oDCPAMB05:FieldSpec := padrao_chaR_30{}
+oDCPAMB05:HyperLabel := HyperLabel{#PAMB05,"Pamb05:",NULL_STRING,"SAC_PAMB05"}
+
+oDCPMAO01 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAO01,_GetInst()}}
+oDCPMAO01:FieldSpec := padrao_chaR_30{}
+oDCPMAO01:HyperLabel := HyperLabel{#PMAO01,"Pmao01:",NULL_STRING,"SAC_PMAO01"}
+
+oDCPMAO02 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAO02,_GetInst()}}
+oDCPMAO02:FieldSpec := padrao_chaR_30{}
+oDCPMAO02:HyperLabel := HyperLabel{#PMAO02,"Pmao02:",NULL_STRING,"SAC_PMAO02"}
+
+oDCPMAO03 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAO03,_GetInst()}}
+oDCPMAO03:FieldSpec := padrao_chaR_30{}
+oDCPMAO03:HyperLabel := HyperLabel{#PMAO03,"Pmao03:",NULL_STRING,"SAC_PMAO03"}
+
+oDCPMAO04 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAO04,_GetInst()}}
+oDCPMAO04:FieldSpec := padrao_chaR_30{}
+oDCPMAO04:HyperLabel := HyperLabel{#PMAO04,"Pmao04:",NULL_STRING,"SAC_PMAO04"}
+
+oDCPMAO05 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAO05,_GetInst()}}
+oDCPMAO05:FieldSpec := padrao_chaR_30{}
+oDCPMAO05:HyperLabel := HyperLabel{#PMAO05,"Pmao05:",NULL_STRING,"SAC_PMAO05"}
+
+oDCPMAQ01 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAQ01,_GetInst()}}
+oDCPMAQ01:FieldSpec := padrao_chaR_30{}
+oDCPMAQ01:HyperLabel := HyperLabel{#PMAQ01,"Pmaq01:",NULL_STRING,"SAC_PMAQ01"}
+
+oDCPMAQ02 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAQ02,_GetInst()}}
+oDCPMAQ02:FieldSpec := padrao_chaR_30{}
+oDCPMAQ02:HyperLabel := HyperLabel{#PMAQ02,"Pmaq02:",NULL_STRING,"SAC_PMAQ02"}
+
+oDCPMAQ03 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAQ03,_GetInst()}}
+oDCPMAQ03:FieldSpec := padrao_chaR_30{}
+oDCPMAQ03:HyperLabel := HyperLabel{#PMAQ03,"Pmaq03:",NULL_STRING,"SAC_PMAQ03"}
+
+oDCPMAQ04 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAQ04,_GetInst()}}
+oDCPMAQ04:FieldSpec := padrao_chaR_30{}
+oDCPMAQ04:HyperLabel := HyperLabel{#PMAQ04,"Pmaq04:",NULL_STRING,"SAC_PMAQ04"}
+
+oDCPMAQ05 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAQ05,_GetInst()}}
+oDCPMAQ05:FieldSpec := padrao_chaR_30{}
+oDCPMAQ05:HyperLabel := HyperLabel{#PMAQ05,"Pmaq05:",NULL_STRING,"SAC_PMAQ05"}
+
+oDCPMET01 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMET01,_GetInst()}}
+oDCPMET01:FieldSpec := padrao_chaR_30{}
+oDCPMET01:HyperLabel := HyperLabel{#PMET01,"Pmet01:",NULL_STRING,"SAC_PMET01"}
+
+oDCPMET02 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMET02,_GetInst()}}
+oDCPMET02:FieldSpec := padrao_chaR_30{}
+oDCPMET02:HyperLabel := HyperLabel{#PMET02,"Pmet02:",NULL_STRING,"SAC_PMET02"}
+
+oDCPMET03 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMET03,_GetInst()}}
+oDCPMET03:FieldSpec := padrao_chaR_30{}
+oDCPMET03:HyperLabel := HyperLabel{#PMET03,"Pmet03:",NULL_STRING,"SAC_PMET03"}
+
+oDCPMET04 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMET04,_GetInst()}}
+oDCPMET04:FieldSpec := padrao_chaR_30{}
+oDCPMET04:HyperLabel := HyperLabel{#PMET04,"Pmet04:",NULL_STRING,"SAC_PMET04"}
+
+oDCPMET05 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMET05,_GetInst()}}
+oDCPMET05:FieldSpec := padrao_chaR_30{}
+oDCPMET05:HyperLabel := HyperLabel{#PMET05,"Pmet05:",NULL_STRING,"SAC_PMET05"}
+
+oDCPMAT01 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAT01,_GetInst()}}
+oDCPMAT01:FieldSpec := padrao_chaR_30{}
+oDCPMAT01:HyperLabel := HyperLabel{#PMAT01,"Pmat01:",NULL_STRING,"SAC_PMAT01"}
+
+oDCPMAT02 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAT02,_GetInst()}}
+oDCPMAT02:FieldSpec := padrao_chaR_30{}
+oDCPMAT02:HyperLabel := HyperLabel{#PMAT02,"Pmat02:",NULL_STRING,"SAC_PMAT02"}
+
+oDCPMAT03 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAT03,_GetInst()}}
+oDCPMAT03:FieldSpec := padrao_chaR_30{}
+oDCPMAT03:HyperLabel := HyperLabel{#PMAT03,"Pmat03:",NULL_STRING,"SAC_PMAT03"}
+
+oDCPMAT04 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAT04,_GetInst()}}
+oDCPMAT04:FieldSpec := padrao_chaR_30{}
+oDCPMAT04:HyperLabel := HyperLabel{#PMAT04,"Pmat04:",NULL_STRING,"SAC_PMAT04"}
+
+oDCPMAT05 := SingleLineEdit{SELF,ResourceID{TABSAC_PAGE5_PMAT05,_GetInst()}}
+oDCPMAT05:FieldSpec := padrao_chaR_30{}
+oDCPMAT05:HyperLabel := HyperLabel{#PMAT05,"Pmat05:",NULL_STRING,"SAC_PMAT05"}
+
+SELF:Caption := "DataWindow Caption"
+SELF:HyperLabel := HyperLabel{#tabsac_Page5,"DataWindow Caption",NULL_STRING,NULL_STRING}
+
+IF !IsNil(oServer)
+	SELF:Use(oServer)
+ELSE
+	SELF:Use(SELF:Owner:Server)
+ENDIF
+
+SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN SELF
+
+
+ACCESS PAMB01() 
+RETURN SELF:FieldGet(#PAMB01)
+
+
+ASSIGN PAMB01(uValue) 
+SELF:FieldPut(#PAMB01, uValue)
+RETURN PAMB01 := uValue
+
+
+ACCESS PAMB02() 
+RETURN SELF:FieldGet(#PAMB02)
+
+
+ASSIGN PAMB02(uValue) 
+SELF:FieldPut(#PAMB02, uValue)
+RETURN PAMB02 := uValue
+
+
+ACCESS PAMB03() 
+RETURN SELF:FieldGet(#PAMB03)
+
+
+ASSIGN PAMB03(uValue) 
+SELF:FieldPut(#PAMB03, uValue)
+RETURN PAMB03 := uValue
+
+
+ACCESS PAMB04() 
+RETURN SELF:FieldGet(#PAMB04)
+
+
+ASSIGN PAMB04(uValue) 
+SELF:FieldPut(#PAMB04, uValue)
+RETURN PAMB04 := uValue
+
+
+ACCESS PAMB05() 
+RETURN SELF:FieldGet(#PAMB05)
+
+
+ASSIGN PAMB05(uValue) 
+SELF:FieldPut(#PAMB05, uValue)
+RETURN PAMB05 := uValue
+
+
+ACCESS PMAO01() 
+RETURN SELF:FieldGet(#PMAO01)
+
+
+ASSIGN PMAO01(uValue) 
+SELF:FieldPut(#PMAO01, uValue)
+RETURN PMAO01 := uValue
+
+
+ACCESS PMAO02() 
+RETURN SELF:FieldGet(#PMAO02)
+
+
+ASSIGN PMAO02(uValue) 
+SELF:FieldPut(#PMAO02, uValue)
+RETURN PMAO02 := uValue
+
+
+ACCESS PMAO03() 
+RETURN SELF:FieldGet(#PMAO03)
+
+
+ASSIGN PMAO03(uValue) 
+SELF:FieldPut(#PMAO03, uValue)
+RETURN PMAO03 := uValue
+
+
+ACCESS PMAO04() 
+RETURN SELF:FieldGet(#PMAO04)
+
+
+ASSIGN PMAO04(uValue) 
+SELF:FieldPut(#PMAO04, uValue)
+RETURN PMAO04 := uValue
+
+
+ACCESS PMAO05() 
+RETURN SELF:FieldGet(#PMAO05)
+
+
+ASSIGN PMAO05(uValue) 
+SELF:FieldPut(#PMAO05, uValue)
+RETURN PMAO05 := uValue
+
+
+ACCESS PMAQ01() 
+RETURN SELF:FieldGet(#PMAQ01)
+
+
+ASSIGN PMAQ01(uValue) 
+SELF:FieldPut(#PMAQ01, uValue)
+RETURN PMAQ01 := uValue
+
+
+ACCESS PMAQ02() 
+RETURN SELF:FieldGet(#PMAQ02)
+
+
+ASSIGN PMAQ02(uValue) 
+SELF:FieldPut(#PMAQ02, uValue)
+RETURN PMAQ02 := uValue
+
+
+ACCESS PMAQ03() 
+RETURN SELF:FieldGet(#PMAQ03)
+
+
+ASSIGN PMAQ03(uValue) 
+SELF:FieldPut(#PMAQ03, uValue)
+RETURN PMAQ03 := uValue
+
+
+ACCESS PMAQ04() 
+RETURN SELF:FieldGet(#PMAQ04)
+
+
+ASSIGN PMAQ04(uValue) 
+SELF:FieldPut(#PMAQ04, uValue)
+RETURN PMAQ04 := uValue
+
+
+ACCESS PMAQ05() 
+RETURN SELF:FieldGet(#PMAQ05)
+
+
+ASSIGN PMAQ05(uValue) 
+SELF:FieldPut(#PMAQ05, uValue)
+RETURN PMAQ05 := uValue
+
+
+ACCESS PMAT01() 
+RETURN SELF:FieldGet(#PMAT01)
+
+
+ASSIGN PMAT01(uValue) 
+SELF:FieldPut(#PMAT01, uValue)
+RETURN PMAT01 := uValue
+
+
+ACCESS PMAT02() 
+RETURN SELF:FieldGet(#PMAT02)
+
+
+ASSIGN PMAT02(uValue) 
+SELF:FieldPut(#PMAT02, uValue)
+RETURN PMAT02 := uValue
+
+
+ACCESS PMAT03() 
+RETURN SELF:FieldGet(#PMAT03)
+
+
+ASSIGN PMAT03(uValue) 
+SELF:FieldPut(#PMAT03, uValue)
+RETURN PMAT03 := uValue
+
+
+ACCESS PMAT04() 
+RETURN SELF:FieldGet(#PMAT04)
+
+
+ASSIGN PMAT04(uValue) 
+SELF:FieldPut(#PMAT04, uValue)
+RETURN PMAT04 := uValue
+
+
+ACCESS PMAT05() 
+RETURN SELF:FieldGet(#PMAT05)
+
+
+ASSIGN PMAT05(uValue) 
+SELF:FieldPut(#PMAT05, uValue)
+RETURN PMAT05 := uValue
+
+
+ACCESS PMED01() 
+RETURN SELF:FieldGet(#PMED01)
+
+
+ASSIGN PMED01(uValue) 
+SELF:FieldPut(#PMED01, uValue)
+RETURN PMED01 := uValue
+
+
+ACCESS PMED02() 
+RETURN SELF:FieldGet(#PMED02)
+
+
+ASSIGN PMED02(uValue) 
+SELF:FieldPut(#PMED02, uValue)
+RETURN PMED02 := uValue
+
+
+ACCESS PMED03() 
+RETURN SELF:FieldGet(#PMED03)
+
+
+ASSIGN PMED03(uValue) 
+SELF:FieldPut(#PMED03, uValue)
+RETURN PMED03 := uValue
+
+
+ACCESS PMED04() 
+RETURN SELF:FieldGet(#PMED04)
+
+
+ASSIGN PMED04(uValue) 
+SELF:FieldPut(#PMED04, uValue)
+RETURN PMED04 := uValue
+
+
+ACCESS PMED05() 
+RETURN SELF:FieldGet(#PMED05)
+
+
+ASSIGN PMED05(uValue) 
+SELF:FieldPut(#PMED05, uValue)
+RETURN PMED05 := uValue
+
+
+ACCESS PMET01() 
+RETURN SELF:FieldGet(#PMET01)
+
+
+ASSIGN PMET01(uValue) 
+SELF:FieldPut(#PMET01, uValue)
+RETURN PMET01 := uValue
+
+
+ACCESS PMET02() 
+RETURN SELF:FieldGet(#PMET02)
+
+
+ASSIGN PMET02(uValue) 
+SELF:FieldPut(#PMET02, uValue)
+RETURN PMET02 := uValue
+
+
+ACCESS PMET03() 
+RETURN SELF:FieldGet(#PMET03)
+
+
+ASSIGN PMET03(uValue) 
+SELF:FieldPut(#PMET03, uValue)
+RETURN PMET03 := uValue
+
+
+ACCESS PMET04() 
+RETURN SELF:FieldGet(#PMET04)
+
+
+ASSIGN PMET04(uValue) 
+SELF:FieldPut(#PMET04, uValue)
+RETURN PMET04 := uValue
+
+
+ACCESS PMET05() 
+RETURN SELF:FieldGet(#PMET05)
+
+
+ASSIGN PMET05(uValue) 
+SELF:FieldPut(#PMET05, uValue)
+RETURN PMET05 := uValue
+
+
+END CLASS
+STATIC DEFINE TABSAC_PAG1_BTNPEGMA01 := 107
+STATIC DEFINE TABSAC_PAG1_BNPEGMS01 := 119

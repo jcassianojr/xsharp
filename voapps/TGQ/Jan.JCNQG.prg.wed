@@ -1,0 +1,142 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,JCNG
+GUID=DF3C8FBE-1148-49BB-BD2E-C466636118D4
+  Name=JCNG
+  Class=DATADIALOG
+  Caption=Checar RNC-RAT
+  Order=0
+  Left=28
+  Width=400
+  Top=28
+  Height=181
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Checar RNC-RAT",,
+  Property=HyperLabel=#JCNG,,,
+
+SUBCONTROLSSTART
+CONTROL=DATETIMEPICKER
+GUID=859617E0-78DF-4911-9FB0-EE21E66CBD33
+  Name=Dini
+  Class=DATETIMEPICKER
+  Caption=11/04/2018
+  Order=1
+  Left=48
+  Width=85
+  Top=31
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#Dini,,,
+
+CONTROL=DATETIMEPICKER
+GUID=F7147093-7344-446D-8C65-C07CF810EA2F
+  Name=dfim
+  Class=DATETIMEPICKER
+  Caption=11/04/2018
+  Order=2
+  Left=173
+  Width=85
+  Top=29
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=#dfim,,,
+
+CONTROL=FIXEDTEXT
+GUID=BB418A4F-2891-4874-B67C-6E05DF7FDCB3
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=6
+  Left=301
+  Width=64
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=B9F7AD90-8102-43A1-9237-4598641D1876
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=301
+  Width=64
+  Top=25
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ICO_OK
+
+CONTROL=FIXEDTEXT
+GUID=773F0964-034C-47C1-AE80-09C75D84CA4C
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=8
+  Left=301
+  Width=64
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=D17A64D2-30C8-4667-A35E-69EE3467552A
+  Name=Cancela
+  Class=PUSHBUTTON
+  Caption=
+  Order=9
+  Left=301
+  Width=64
+  Top=97
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancela,,,
+  Property=Image=ICO_SAIR
+
+SUBCONTROLSEND
+DESIGNEREND = JCNG
+

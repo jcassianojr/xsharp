@@ -1,0 +1,736 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,jimpedi
+GUID=050A7C57-0F1C-4C42-8EEA-810E52283AF8
+  Name=jimpedi
+  Class=DATADIALOG
+  Caption=Importar Programacao
+  Order=0
+  Left=124
+  Width=568
+  Top=124
+  Height=302
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Importar Programacao",,
+  Property=HyperLabel=#jimpedi,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=02F019C3-E626-499C-94D3-C7FE061F5F86
+  Name=DINI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=5
+  Width=104
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#DINI,,,
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=2D7C77DA-418A-47F4-850C-13FC196C76A6
+  Name=DFIM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=133
+  Width=104
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#DFIM,,,
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=20C380BB-41EA-4262-9BF9-28AD2B863F19
+  Name=DIMPI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=261
+  Width=104
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#DIMPI,,,
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=700546E4-6AB7-4913-A5FA-41EAB264CF1A
+  Name=DIMPF
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=365
+  Width=104
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#DIMPF,,,
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=AE5B747E-DFA2-4257-B385-C80B6444868C
+  Name=daplanta
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=101
+  Width=140
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#daplanta,,,
+  Property=TooltipText="Localização do Arquivo"
+  Property=FieldSpec=padrao_CHAR_10
+
+CONTROL=SINGLELINEEDIT
+GUID=2984883D-AEB7-495E-84AC-9A76A2F20765
+  Name=ateplanta
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=249
+  Width=140
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#ateplanta,,,
+  Property=TooltipText="Localização do Arquivo"
+  Property=FieldSpec=padrao_CHAR_10
+
+CONTROL=SINGLELINEEDIT
+GUID=7325318B-374E-4EB1-8D0D-DBBFC8EC6DF2
+  Name=caminho
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=5
+  Width=432
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#caminho,,,
+  Property=TooltipText="Localização do Arquivo"
+
+CONTROL=FIXEDTEXT
+GUID=37ED7E1E-10E3-4F37-AC80-B1F4E2DB43A5
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Cancelar
+  Order=8
+  Left=482
+  Width=64
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Cancelar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=36F03068-5AE3-4476-BA77-B7385947FD61
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=9
+  Left=483
+  Width=64
+  Top=93
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ico_sair
+  Property=TooltipText="Clique para Cancelar"
+
+CONTROL=FIXEDTEXT
+GUID=7D6A8B0A-969F-4400-A988-4C216679D559
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=10
+  Left=482
+  Width=64
+  Top=64
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=7F9776DD-35BC-4647-A91A-F16ED4B05B16
+  Name=ok
+  Class=PUSHBUTTON
+  Caption=
+  Order=11
+  Left=484
+  Width=64
+  Top=16
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#ok,,,
+  Property=Image=ico_ok
+  Property=TooltipText="Clique Para Inciar a Impotação"
+
+CONTROL=FIXEDTEXT
+GUID=0C1C727B-2186-40F1-A115-4D8AB978510F
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Caminho do Arquivo
+  Order=12
+  Left=5
+  Width=116
+  Top=101
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Caminho do Arquivo",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=CHECKBOX
+GUID=41956107-0F45-45D2-A35F-18046D2ACFF6
+  Name=ApagarANT
+  Class=CHECKBOX
+  Caption=Apagar Anterior
+  Order=13
+  Left=5
+  Width=104
+  Top=145
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741827
+  Exstyles=0
+  Property=HyperLabel=,"Apagar Anterior",,
+  Property=HyperLabel=#ApagarANT,,,
+  Property=TooltipText="Marque Para Apagar Toda Progamação Importada "
+
+CONTROL=CHECKBOX
+GUID=AB3603EC-DBED-4D34-8B32-51BBA6323A9B
+  Name=Ponto
+  Class=CHECKBOX
+  Caption=Incluir Pontuação
+  Order=14
+  Left=113
+  Width=112
+  Top=145
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741827
+  Exstyles=0
+  Property=HyperLabel=,"Incluir Pontuação",,
+  Property=HyperLabel=#Ponto,,,
+  Property=TooltipText="Ajusta Codigo GM  para  mascaara 99.999.999"
+
+CONTROL=FIXEDTEXT
+GUID=550DA4D1-AE25-4AF3-AE8F-454CC58525D1
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=Periodo Programação(Data Entrega)
+  Order=15
+  Left=17
+  Width=192
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Periodo ProgramaçãoData Entrega",,
+  Property=HyperLabel=#FixedText3,,,
+
+CONTROL=FIXEDTEXT
+GUID=A9015E20-E906-42ED-83DD-7E281DB82098
+  Name=FixedText4
+  Class=FIXEDTEXT
+  Caption=Periodo Arquivo (Data Geracao Prg)
+  Order=16
+  Left=261
+  Width=188
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Periodo Arquivo Data Geracao Prg",,
+  Property=HyperLabel=#FixedText4,,,
+
+CONTROL=FIXEDTEXT
+GUID=0A53570C-7225-410A-93CF-3008E62E514D
+  Name=produto
+  Class=FIXEDTEXT
+  Caption=
+  Order=17
+  Left=9
+  Width=356
+  Top=209
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#produto,,,
+
+CONTROL=FIXEDTEXT
+GUID=22214FB9-77A9-4CB2-ABCC-48A7E6AC8B44
+  Name=FixedText5
+  Class=FIXEDTEXT
+  Caption=Grupo Planta
+  Order=18
+  Left=5
+  Width=72
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Grupo Planta",,
+  Property=HyperLabel=#FixedText5,,,
+
+CONTROL=FIXEDTEXT
+GUID=B929FDCF-C92B-4428-9005-7BDEFDD94AF1
+  Name=registro
+  Class=FIXEDTEXT
+  Caption=
+  Order=19
+  Left=11
+  Width=356
+  Top=223
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=#registro,,,
+
+CONTROL=PUSHBUTTON
+GUID=00A08913-B92C-4D40-B3CE-4C821FDDB8CA
+  Name=cmdescarq
+  Class=PUSHBUTTON
+  Caption=...
+  Order=20
+  Left=441
+  Width=24
+  Top=117
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#cmdescarq,,,
+
+CONTROL=CHECKBOX
+GUID=CECC4BC2-0368-4720-8DF5-4800F634E455
+  Name=recria
+  Class=CHECKBOX
+  Caption=Recriar Arquivos 
+  Order=21
+  Left=230
+  Width=104
+  Top=146
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741827
+  Exstyles=0
+  Property=HyperLabel=,"Recriar Arquivos ",,
+  Property=HyperLabel=#recria,,,
+  Property=TooltipText="Ajusta Codigo GM  para  mascaara 99.999.999"
+
+CONTROL=CHECKBOX
+GUID=C642DAA6-00AF-4A21-AE36-C96DCB88023D
+  Name=semordem
+  Class=CHECKBOX
+  Caption=Ignorar Ordem Arquivo
+  Order=22
+  Left=339
+  Width=145
+  Top=145
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Ignorar Ordem Arquivo",,
+  Property=HyperLabel=#semordem,,,
+
+CONTROL=PUSHBUTTON
+GUID=BE75A81A-6766-4ED6-82D9-4EDD878BED38
+  Name=cmdapagar
+  Class=PUSHBUTTON
+  Caption=Apagar
+  Order=23
+  Left=397
+  Width=47
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Apagar",,
+  Property=HyperLabel=#cmdapagar,,,
+
+CONTROL=CHECKBOX
+GUID=9BEE9F23-363D-4715-8A12-28C237DD9329
+  Name=sqlserver
+  Class=CHECKBOX
+  Caption=Conecao  SQL Server EDI
+  Order=24
+  Left=5
+  Width=148
+  Top=169
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Conecao  SQL Server EDI",,
+  Property=HyperLabel=#sqlserver,,,
+
+CONTROL=CHECKBOX
+GUID=C8C36E7A-FFB2-487B-A7A1-6EE49AB999AC
+  Name=sqllogix
+  Class=CHECKBOX
+  Caption=Importar LX
+  Order=25
+  Left=173
+  Width=76
+  Top=169
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Importar LX",,
+  Property=HyperLabel=#sqllogix,,,
+
+CONTROL=PUSHBUTTON
+GUID=960544A2-20E5-48D9-AB09-7F97899865CD
+  Name=AcuSemana
+  Class=PUSHBUTTON
+  Caption=Acumular Semanal
+  Order=26
+  Left=453
+  Width=100
+  Top=173
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Acumular Semanal",,
+  Property=HyperLabel=#AcuSemana,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=FED4906D-6C9B-40DC-BB7E-220D859D0EDF
+  Name=semana
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=27
+  Left=413
+  Width=35
+  Top=181
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_02
+  Property=InheritClassName=rightSle
+  Property=HyperLabel=#semana,,,
+  Property=HyperLabel=,"8",,
+
+CONTROL=PROGRESSBAR
+GUID=90C7DBAD-BB86-4B3E-A40D-9D9EA569E426
+  Name=ProgBar
+  Class=PROGRESSBAR
+  Caption=
+  Order=28
+  Left=9
+  Width=360
+  Top=245
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Range=0,
+  Property=Range=,100
+  Property=HyperLabel=#ProgBar,,,
+
+CONTROL=CHECKBOX
+GUID=3CEF0CE2-8246-4E56-8DBC-4DF289D4A42C
+  Name=chklog
+  Class=CHECKBOX
+  Caption=Gerar Log
+  Order=29
+  Left=265
+  Width=120
+  Top=169
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1208025091
+  Exstyles=0
+  Property=HyperLabel=#chklog,,,
+  Property=HyperLabel=,"Gerar Log",,
+
+CONTROL=PUSHBUTTON
+GUID=6ECB8A53-6944-449D-9B26-8B8E9D6DCC99
+  Name=PushButton5
+  Class=PUSHBUTTON
+  Caption=+1
+  Order=30
+  Left=109
+  Width=24
+  Top=29
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"+1",,
+  Property=HyperLabel=#PushButton5,,,
+
+CONTROL=PUSHBUTTON
+GUID=0A93A6E8-2DF1-4025-8498-285D88C3E556
+  Name=PushButton8
+  Class=PUSHBUTTON
+  Caption=+1
+  Order=33
+  Left=237
+  Width=24
+  Top=29
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"+1",,
+  Property=HyperLabel=#PushButton8,,,
+
+CONTROL=PUSHBUTTON
+GUID=10C9670F-AB27-4458-A84C-0A82FB396C6C
+  Name=Exportar
+  Class=PUSHBUTTON
+  Caption=Exportar
+  Order=34
+  Left=453
+  Width=100
+  Top=213
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Exportar",,
+  Property=HyperLabel=#Exportar,,,
+
+CONTROL=PUSHBUTTON
+GUID=18B71ACE-1F7D-4605-870D-0A7BAFC1B41E
+  Name=Acumulada
+  Class=PUSHBUTTON
+  Caption=Acumular Evolução
+  Order=35
+  Left=453
+  Width=100
+  Top=193
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Acumular Evolução",,
+  Property=HyperLabel=#Acumulada,,,
+
+CONTROL=CHECKBOX
+GUID=8D40B4C4-3F81-4987-B29D-4035F4A188F2
+  Name=chkstk
+  Class=CHECKBOX
+  Caption=Importar Estoquista
+  Order=36
+  Left=5
+  Width=120
+  Top=189
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Importar Estoquista",,
+  Property=HyperLabel=#chkstk,,,
+
+CONTROL=CHECKBOX
+GUID=3170C3BA-4523-491A-86A2-F7D94616B975
+  Name=chkGerarRnd
+  Class=CHECKBOX
+  Caption=Gerar RND
+  Order=37
+  Left=143
+  Width=120
+  Top=191
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Gerar RND",,
+  Property=HyperLabel=#chkGerarRnd,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jimpedi
+

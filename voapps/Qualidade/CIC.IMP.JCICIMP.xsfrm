@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JCICIMP">
+    <Window Name="JCICIMP">
+      <Name>JCICIMP</Name>
+      <Class>DIALOGWINDOW</Class>
+      <Caption>Importaçao de Produto Final</Caption>
+      <Order>0</Order>
+      <Left>8</Left>
+      <Top>8</Top>
+      <Width>400</Width>
+      <Height>240</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>2160590976</Styles>
+      <ExStyles>257</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Importaçao de Produto Final",,</HyperLabel>
+        <HyperLabel>#JCICIMP,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="theFixedText1">
+      <Name>theFixedText1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Importar Produtos Final</Caption>
+      <Order>-1</Order>
+      <Left>55</Left>
+      <Top>19</Top>
+      <Width>267</Width>
+      <Height>38</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Importar Produtos Final",,</HyperLabel>
+        <NewFont>14:MS Sans Serif:Bold</NewFont>
+        <HyperLabel>#theFixedText1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="cancelar">
+      <Name>cancelar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>&amp;Cancelar</Caption>
+      <Order>-1</Order>
+      <Left>57</Left>
+      <Top>81</Top>
+      <Width>80</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"&amp;Cancelar",,</HyperLabel>
+        <HyperLabel>#cancelar,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Importar">
+      <Name>Importar</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>&amp;Importar</Caption>
+      <Order>-1</Order>
+      <Left>165</Left>
+      <Top>81</Top>
+      <Width>80</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"&amp;Importar",,</HyperLabel>
+        <HyperLabel>#Importar,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

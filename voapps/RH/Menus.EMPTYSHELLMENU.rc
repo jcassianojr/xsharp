@@ -1,0 +1,124 @@
+ EMPTYSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		POPUP "Tabela Funções"
+		BEGIN
+			MENUITEM "Manager", 21781
+			MENUITEM "Folha", 21782
+			MENUITEM "Troca de Códigos de Cursos", 21783
+		END
+		MENUITEM "Area &Industriais", 21784
+		MENUITEM "Tabela escolaridade", 21785
+		POPUP "Funcionarios"
+		BEGIN
+			MENUITEM "Funcionários", 21787
+			MENUITEM "Importar Treinamentos Entre Empresas", 21788
+			MENUITEM "Troca de Números Funcionários", 21789
+			MENUITEM "Ponto -> Manager", 21790
+			MENUITEM "(LX)  ->Funcionarios ", 21791
+		END
+		POPUP "Fotos"
+		BEGIN
+			MENUITEM "Ver Fotos", 21793
+			MENUITEM "Sincronizar Ajustar Funcionario Manager/Cadastro de Fotos", 21794
+			MENUITEM "Ver Fotos LX", 21795
+			MENUITEM "Ver Fotos DTM", 21796
+		END
+		POPUP "Treinamentos"
+		BEGIN
+			MENUITEM "Treinamentos", 21798
+			MENUITEM "Troca de Códigos Cursos", 21799
+			MENUITEM "Troca de Números Funcionários", 21800
+			MENUITEM "On The Job", 21801
+			MENUITEM "On The Job So Inclusao", 21802
+			MENUITEM "Importar Treinamentos Entre Empresas", 21803
+		END
+		POPUP "Programação de Treinamentos"
+		BEGIN
+			MENUITEM "Programação", 21805
+			MENUITEM "Troca de Códigos Cursos", 21806
+			MENUITEM "Troca de Números Funcionários", 21807
+		END
+		POPUP "Cursos"
+		BEGIN
+			MENUITEM "Cursos", 21809
+			MENUITEM "Troca de Códigos Cursos", 21810
+		END
+		MENUITEM "Procedimento/Manual/Instrução", 21811
+		MENUITEM "Escolas", 21812
+		POPUP "Historico Funcionarios"
+		BEGIN
+			MENUITEM "Histórico Funcionários", 21814
+			MENUITEM "Sincronizar Folha para Histórico", 21815
+		END
+		MENUITEM "Setores", 21816
+		POPUP "Seleção/Curriculum"
+		BEGIN
+			MENUITEM "Seleção", 21818
+			MENUITEM "Ponto->Selecao", 21819
+			MENUITEM "Logix(EmpregosAnteriores)->Selecao", 21820
+			MENUITEM "selecao historico", 21821
+		END
+		POPUP "Sincronizar Dados"
+		BEGIN
+			MENUITEM "Folha para Manager", 21823
+			MENUITEM "Folha para Histórico", 21824
+			MENUITEM "Sincronizar Ajustar Funcionario Manager/Cadastro de Fotos", 21825
+			MENUITEM "(LX)-->Funcionarios ", 21826
+		END
+		POPUP "Absenteismo"
+		BEGIN
+			MENUITEM "Lançamentos", 21828
+			MENUITEM "Apuracao", 21829
+			MENUITEM "Codigos de Faltas Atrasos", 21830
+			MENUITEM "Importar Lancamentos ponto", 21831
+		END
+		MENUITEM SEPARATOR
+		MENUITEM "Trocar Competencia", 21833
+		MENUITEM "C&onfigurar Impressora ..", 21834
+		MENUITEM "&Indexar", 21835
+		MENUITEM SEPARATOR
+		MENUITEM "&Sair\tAlt+F4", 21837
+	END
+	POPUP "&Relatorio"
+	BEGIN
+		MENUITEM "WRPT Folha/Ponto", 21839
+		MENUITEM "WRPT Modulo RH", 21840
+		MENUITEM "WRPT Geral", 21841
+		MENUITEM "WRPT Modulo Integrado", 21842
+		MENUITEM "LSTVIEW logix", 21843
+		MENUITEM "Tabela Funções", 21844
+		MENUITEM "Treinamento", 21845
+		MENUITEM "Fotos", 21846
+		MENUITEM "Programaçäo", 21847
+		MENUITEM "Cursos", 21848
+		MENUITEM "Procedimento", 21849
+		MENUITEM "Escolas", 21850
+		MENUITEM "Funcionarios", 21851
+		MENUITEM "Histórico Funcionarios", 21852
+		MENUITEM "Setores", 21853
+		MENUITEM "Areas Industriais", 21854
+		MENUITEM "Horarios", 21855
+		MENUITEM "Absenteismo", 21856
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		POPUP "Email"
+		BEGIN
+			MENUITEM "Consulta", 21859
+			MENUITEM "Geral", 21860
+			MENUITEM "Configuracao", 21861
+		END
+		MENUITEM "Checar CGC/CPF/IE...", 21862
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Conteudo", 21864
+		MENUITEM "&Indice\tF1", 21865
+		MENUITEM SEPARATOR
+		MENUITEM "Atualizações", 21867
+		MENUITEM "&Sobre...", 21868
+	END
+End
+ 

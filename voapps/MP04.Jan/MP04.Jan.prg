@@ -1,0 +1,212 @@
+#region DEFINES
+STATIC DEFINE JTEC_AREA := 112
+STATIC DEFINE JTEC_BUSCANUM := 103
+STATIC DEFINE JTEC_COGTEC := 105
+STATIC DEFINE JTEC_NOMTEC := 107
+STATIC DEFINE JTEC_PORNUM := 102
+STATIC DEFINE JTEC_SC_AREA := 109
+STATIC DEFINE JTEC_SC_COGTEC := 101
+STATIC DEFINE JTEC_SC_NOMTEC := 106
+STATIC DEFINE JTEC_SC_SETOR := 110
+STATIC DEFINE JTEC_SC_TABTEC := 108
+STATIC DEFINE JTEC_SC_TECNICO := 100
+STATIC DEFINE JTEC_SETOR := 113
+STATIC DEFINE JTEC_TABTEC := 111
+STATIC DEFINE JTEC_TECNICO := 104
+#endregion
+
+PARTIAL CLASS JTEC INHERIT MYDataWindow
+PROTECT oDBTECNICO AS DataColumn
+PROTECT oDBCOGTEC AS DataColumn
+PROTECT oDBNOMTEC AS DataColumn
+PROTECT oDBTABTEC AS DataColumn
+PROTECT oDBAREA AS DataColumn
+PROTECT oDBSETOR AS DataColumn
+PROTECT oDCSC_TECNICO AS FIXEDTEXT
+PROTECT oDCSC_COGTEC AS FIXEDTEXT
+PROTECT oCCpornum AS PUSHBUTTON
+PROTECT oCCbuscanum AS PUSHBUTTON
+PROTECT oDCTECNICO AS SINGLELINEEDIT
+PROTECT oDCCOGTEC AS SINGLELINEEDIT
+PROTECT oDCSC_NOMTEC AS FIXEDTEXT
+PROTECT oDCNOMTEC AS SINGLELINEEDIT
+PROTECT oDCSC_TABTEC AS FIXEDTEXT
+PROTECT oDCSC_AREA AS FIXEDTEXT
+PROTECT oDCSC_SETOR AS FIXEDTEXT
+PROTECT oDCTABTEC AS SINGLELINEEDIT
+PROTECT oDCAREA AS SINGLELINEEDIT
+PROTECT oDCSETOR AS SINGLELINEEDIT
+
+// User code starts here (DO NOT remove this line)  ##USER##
+
+ACCESS AREA
+RETURN SELF:FieldGet( #AREA )
+
+ASSIGN AREA( uValue )
+SELF:FieldPut( #AREA , uValue )
+
+METHOD buscanum( ) 
+	SELF:KeyFind()
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+ACCESS COGTEC
+RETURN SELF:FieldGet( #COGTEC )
+
+ASSIGN COGTEC( uValue )
+SELF:FieldPut( #COGTEC , uValue )
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)
+
+	SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+	SUPER(oWindow , ResourceID{"JTEC" , _GetInst()},iCtlID)
+
+	SELF:oDCSC_TECNICO := FIXEDTEXT{SELF , ResourceID{ JTEC_SC_TECNICO  , _GetInst() } }
+	SELF:oDCSC_TECNICO:HyperLabel := HyperLabel{#SC_TECNICO , "Técnico:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_COGTEC := FIXEDTEXT{SELF , ResourceID{ JTEC_SC_COGTEC  , _GetInst() } }
+	SELF:oDCSC_COGTEC:HyperLabel := HyperLabel{#SC_COGTEC , "Cognome:" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCpornum := PUSHBUTTON{SELF , ResourceID{ JTEC_PORNUM  , _GetInst() } }
+	SELF:oCCpornum:TooltipText := "Clique para ordenar por Numero"
+	SELF:oCCpornum:Image := ICO_AZ{}
+	SELF:oCCpornum:HyperLabel := HyperLabel{#pornum , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oCCbuscanum := PUSHBUTTON{SELF , ResourceID{ JTEC_BUSCANUM  , _GetInst() } }
+	SELF:oCCbuscanum:TooltipText := "Clique Para Localizar Por Numero"
+	SELF:oCCbuscanum:Image := ICO_FIND{}
+	SELF:oCCbuscanum:HyperLabel := HyperLabel{#buscanum , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCTECNICO := SINGLELINEEDIT{SELF , ResourceID{ JTEC_TECNICO  , _GetInst() } }
+	SELF:oDCTECNICO:FieldSpec := PADRAO_NUM_05{}
+	SELF:oDCTECNICO:HyperLabel := HyperLabel{#TECNICO , "Tecnico:" , NULL_STRING , "MP04_TECNICO"}
+
+	SELF:oDCCOGTEC := SINGLELINEEDIT{SELF , ResourceID{ JTEC_COGTEC  , _GetInst() } }
+	SELF:oDCCOGTEC:FieldSpec := PADRAO_CHAR_12{}
+	SELF:oDCCOGTEC:HyperLabel := HyperLabel{#COGTEC , "Cognome" , NULL_STRING , "MP04_COGTEC"}
+
+	SELF:oDCSC_NOMTEC := FIXEDTEXT{SELF , ResourceID{ JTEC_SC_NOMTEC  , _GetInst() } }
+	SELF:oDCSC_NOMTEC:HyperLabel := HyperLabel{#SC_NOMTEC , "Nome:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCNOMTEC := SINGLELINEEDIT{SELF , ResourceID{ JTEC_NOMTEC  , _GetInst() } }
+	SELF:oDCNOMTEC:FieldSpec := PADRAO_CHAR_40{}
+	SELF:oDCNOMTEC:HyperLabel := HyperLabel{#NOMTEC , "Nome:" , NULL_STRING , "MP04_NOMTEC"}
+
+	SELF:oDCSC_TABTEC := FIXEDTEXT{SELF , ResourceID{ JTEC_SC_TABTEC  , _GetInst() } }
+	SELF:oDCSC_TABTEC:HyperLabel := HyperLabel{#SC_TABTEC , "Tabela Mão de Obra:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_AREA := FIXEDTEXT{SELF , ResourceID{ JTEC_SC_AREA  , _GetInst() } }
+	SELF:oDCSC_AREA:HyperLabel := HyperLabel{#SC_AREA , "Área:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_SETOR := FIXEDTEXT{SELF , ResourceID{ JTEC_SC_SETOR  , _GetInst() } }
+	SELF:oDCSC_SETOR:HyperLabel := HyperLabel{#SC_SETOR , "Setor:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCTABTEC := SINGLELINEEDIT{SELF , ResourceID{ JTEC_TABTEC  , _GetInst() } }
+	SELF:oDCTABTEC:FieldSpec := PADRAO_CHAR_12{}
+	SELF:oDCTABTEC:HyperLabel := HyperLabel{#TABTEC , "Mão de Obra" , NULL_STRING , "MP04_COGTEC"}
+
+	SELF:oDCAREA := SINGLELINEEDIT{SELF , ResourceID{ JTEC_AREA  , _GetInst() } }
+	SELF:oDCAREA:FieldSpec := PADRAO_CHAR_02{}
+	SELF:oDCAREA:HyperLabel := HyperLabel{#AREA , "Area" , NULL_STRING , "MP04_COGTEC"}
+
+	SELF:oDCSETOR := SINGLELINEEDIT{SELF , ResourceID{ JTEC_SETOR  , _GetInst() } }
+	SELF:oDCSETOR:FieldSpec := PADRAO_CHAR_12{}
+	SELF:oDCSETOR:HyperLabel := HyperLabel{#SETOR , "Setor" , NULL_STRING , "MP04_COGTEC"}
+
+	SELF:Caption := "Cadastro de Técnicos"
+	SELF:Menu := STANDARDSHELLMENU{}
+	SELF:ClipperKeys := TRUE
+	SELF:HyperLabel := HyperLabel{#JTEC , "Cadastro de Técnicos" , NULL_STRING , NULL_STRING}
+	IF !IsNil(oServer)
+		SELF:Use(oServer)
+	ENDIF
+
+	SELF:Browser := DataBrowser{SELF}
+
+	SELF:oDBTECNICO := DataColumn{PADRAO_NUM_05{}}
+	SELF:oDBTECNICO:Width := 9
+	SELF:oDBTECNICO:HyperLabel := SELF:oDCTECNICO:HyperLabel
+	SELF:oDBTECNICO:Caption := "Tecnico:"
+	SELF:Browser:AddColumn(SELF:oDBTECNICO)
+
+	SELF:oDBCOGTEC := DataColumn{PADRAO_CHAR_12{}}
+	SELF:oDBCOGTEC:Width := 11
+	SELF:oDBCOGTEC:HyperLabel := SELF:oDCCOGTEC:HyperLabel
+	SELF:oDBCOGTEC:Caption := "Cognome"
+	SELF:Browser:AddColumn(SELF:oDBCOGTEC)
+
+	SELF:oDBNOMTEC := DataColumn{PADRAO_CHAR_40{}}
+	SELF:oDBNOMTEC:Width := 27
+	SELF:oDBNOMTEC:HyperLabel := SELF:oDCNOMTEC:HyperLabel
+	SELF:oDBNOMTEC:Caption := "Nome:"
+	SELF:Browser:AddColumn(SELF:oDBNOMTEC)
+
+	SELF:oDBTABTEC := DataColumn{PADRAO_CHAR_12{}}
+	SELF:oDBTABTEC:Width := 18
+	SELF:oDBTABTEC:HyperLabel := SELF:oDCTABTEC:HyperLabel
+	SELF:oDBTABTEC:Caption := "Mão de Obra"
+	SELF:Browser:AddColumn(SELF:oDBTABTEC)
+
+	SELF:oDBAREA := DataColumn{PADRAO_CHAR_02{}}
+	SELF:oDBAREA:Width := 8
+	SELF:oDBAREA:HyperLabel := SELF:oDCAREA:HyperLabel
+	SELF:oDBAREA:Caption := "Area"
+	SELF:Browser:AddColumn(SELF:oDBAREA)
+
+	SELF:oDBSETOR := DataColumn{PADRAO_CHAR_12{}}
+	SELF:oDBSETOR:Width := 7
+	SELF:oDBSETOR:HyperLabel := SELF:oDCSETOR:HyperLabel
+	SELF:oDBSETOR:Caption := "Setor"
+	SELF:Browser:AddColumn(SELF:oDBSETOR)
+
+	SELF:ViewAs(#FormView)
+
+
+	SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN
+
+
+ACCESS NOMTEC
+RETURN SELF:FieldGet( #NOMTEC )
+
+ASSIGN NOMTEC( uValue )
+SELF:FieldPut( #NOMTEC , uValue )
+
+METHOD pornum( ) 
+	SELF:KeyFind()
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+   	    FabCenterWindow( SELF )
+ RETURN SELF
+
+ACCESS SETOR
+RETURN SELF:FieldGet( #SETOR )
+
+ASSIGN SETOR( uValue )
+SELF:FieldPut( #SETOR , uValue )
+
+ACCESS TABTEC
+RETURN SELF:FieldGet( #TABTEC )
+
+ASSIGN TABTEC( uValue )
+SELF:FieldPut( #TABTEC , uValue )
+
+ACCESS TECNICO
+RETURN SELF:FieldGet( #TECNICO )
+
+ASSIGN TECNICO( uValue )
+SELF:FieldPut( #TECNICO , uValue )
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+
+END CLASS

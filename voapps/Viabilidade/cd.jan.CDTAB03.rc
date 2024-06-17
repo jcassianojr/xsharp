@@ -1,0 +1,19 @@
+ CDTAB03 DIALOGEX  10, 9, 455, 175
+STYLE	1073741824
+FONT	8, "MS Shell Dlg"
+BEGIN
+	CONTROL	"Outanxobs:", 100, "Edit", 128|65536|1073741824|8388608, 101, 49, 272, 12, 512
+	CONTROL	"Datadim:", 101, "Edit", 128|65536|1073741824|8388608, 101, 64, 272, 12, 512
+	CONTROL	"Datapro:", 102, "Edit", 128|65536|1073741824|8388608, 101, 76, 272, 12, 512
+	CONTROL	"Data Objetivos PPAP", 103, "Static", 1073741824, 5, 64, 96, 12
+	CONTROL	"Data Objetivo Prototipo", 104, "Static", 1073741824, 5, 78, 91, 13
+	CONTROL	"Estimativa de Produto", 105, "Button", 3|1073741824, 8, 19, 90, 13
+	CONTROL	"Modelo(s) Matemático(s)", 106, "Button", 3|1073741824, 104, 19, 104, 13
+	CONTROL	"Norma(s) Técnicas(s)", 107, "Button", 3|1073741824, 213, 19, 93, 13
+	CONTROL	"Formulario Embalagem", 108, "Button", 3|1073741824, 8, 34, 90, 12
+	CONTROL	"Desenho(s) 2D", 109, "Button", 3|1073741824, 104, 34, 104, 12
+	CONTROL	"Amostras", 110, "Button", 3|1073741824, 213, 34, 88, 12
+	CONTROL	"Outros Anexos", 111, "Button", 3|1073741824, 8, 49, 82, 12
+END
+
+

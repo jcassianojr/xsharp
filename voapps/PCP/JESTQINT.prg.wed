@@ -1,0 +1,538 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,Jestqint
+GUID=DF7B2503-7155-4779-B385-3FCD5814D37C
+  Name=Jestqint
+  Class=DATAWINDOW
+  Caption=Estoque Importado
+  Order=0
+  Left=20
+  Width=536
+  Top=20
+  Height=210
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Estoque Importado",,
+  Property=ViewAs=#FormView
+  Property=HyperLabel=#Jestqint,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=1A7DBC66-1530-4645-A461-C6E2710B7431
+  Name=SC_COD_EMPRES
+  Class=FIXEDTEXT
+  Caption=Cod Empres:
+  Order=1
+  Left=13
+  Width=68
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cod Empres:",,
+  Property=HyperLabel=#SC_COD_EMPRES,,,
+
+CONTROL=FIXEDTEXT
+GUID=B53C73B0-CCE3-4911-AC82-FFFFD1FCBFAE
+  Name=SC_COD_ITEM
+  Class=FIXEDTEXT
+  Caption=Cod Item:
+  Order=2
+  Left=109
+  Width=48
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cod Item:",,
+  Property=HyperLabel=#SC_COD_ITEM,,,
+
+CONTROL=FIXEDTEXT
+GUID=ED22FC85-90F9-4E8F-989B-FACE63DF39FD
+  Name=SC_QTD_LIBERA
+  Class=FIXEDTEXT
+  Caption=Qtd Libera:
+  Order=3
+  Left=17
+  Width=68
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtd Libera:",,
+  Property=HyperLabel=#SC_QTD_LIBERA,,,
+
+CONTROL=FIXEDTEXT
+GUID=2B6D6C94-4359-49FE-9AE3-F9DCAD51C36F
+  Name=SC_QTD_IMPEDI
+  Class=FIXEDTEXT
+  Caption=Qtd Impedi:
+  Order=4
+  Left=17
+  Width=60
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtd Impedi:",,
+  Property=HyperLabel=#SC_QTD_IMPEDI,,,
+
+CONTROL=FIXEDTEXT
+GUID=AEFB6711-D485-4AEC-88B2-7B72F3613A31
+  Name=SC_QTD_REJEIT
+  Class=FIXEDTEXT
+  Caption=Qtd Rejeit:
+  Order=5
+  Left=17
+  Width=56
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtd Rejeit:",,
+  Property=HyperLabel=#SC_QTD_REJEIT,,,
+
+CONTROL=FIXEDTEXT
+GUID=F97E7B92-0DE3-4EAC-AF59-2632EF316DDB
+  Name=SC_QTD_LIB_EX
+  Class=FIXEDTEXT
+  Caption=Qtd Lib Ex:
+  Order=6
+  Left=17
+  Width=56
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtd Lib Ex:",,
+  Property=HyperLabel=#SC_QTD_LIB_EX,,,
+
+CONTROL=FIXEDTEXT
+GUID=CA53993F-2DE9-48C4-805B-BB82E6CDA2B4
+  Name=SC_QTD_DISP_V
+  Class=FIXEDTEXT
+  Caption=Qtd Disp V:
+  Order=7
+  Left=17
+  Width=60
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtd Disp V:",,
+  Property=HyperLabel=#SC_QTD_DISP_V,,,
+
+CONTROL=FIXEDTEXT
+GUID=3141B955-E1BF-4474-BA83-6319081BEB7B
+  Name=SC_QTD_RESERV
+  Class=FIXEDTEXT
+  Caption=Qtd Reserv:
+  Order=8
+  Left=17
+  Width=60
+  Top=157
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtd Reserv:",,
+  Property=HyperLabel=#SC_QTD_RESERV,,,
+
+CONTROL=FIXEDTEXT
+GUID=6F00962B-C5ED-4E99-8D37-B146E7865A6D
+  Name=SC_DAT_ULT_IN
+  Class=FIXEDTEXT
+  Caption=Dat Ult In:
+  Order=9
+  Left=225
+  Width=52
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Dat Ult In:",,
+  Property=HyperLabel=#SC_DAT_ULT_IN,,,
+
+CONTROL=FIXEDTEXT
+GUID=FEA50D3D-C1BB-46DC-B9AC-511DF41B31FC
+  Name=SC_DAT_ULT_EN
+  Class=FIXEDTEXT
+  Caption=Dat Ult En:
+  Order=10
+  Left=221
+  Width=56
+  Top=61
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Dat Ult En:",,
+  Property=HyperLabel=#SC_DAT_ULT_EN,,,
+
+CONTROL=FIXEDTEXT
+GUID=F2BB9AF3-9CB0-492C-B39D-6215C8027377
+  Name=SC_DAT_ULT_SA
+  Class=FIXEDTEXT
+  Caption=Dat Ult Sa:
+  Order=11
+  Left=221
+  Width=56
+  Top=85
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Dat Ult Sa:",,
+  Property=HyperLabel=#SC_DAT_ULT_SA,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=4E175D72-546F-4EA3-B182-5AA28866883B
+  Name=COD_EMPRES
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=81
+  Width=24
+  Top=9
+  Height=20
+  Browseindex=10
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#COD_EMPRES,,,
+  Property=HyperLabel=,"Cod Empres:",,
+  Property=HyperLabel=,,,"estqint_COD_EMPRES"
+
+CONTROL=SINGLELINEEDIT
+GUID=EB890631-BB71-44A7-A4D8-29DB46BD483F
+  Name=COD_ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=165
+  Width=112
+  Top=9
+  Height=20
+  Browseindex=0
+  Browsesize=27
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_14
+  Property=HyperLabel=#COD_ITEM,,,
+  Property=HyperLabel=,"Cod Item:",,
+  Property=HyperLabel=,,,"estqint_COD_ITEM"
+
+CONTROL=SINGLELINEEDIT
+GUID=19F0270A-A26A-42B2-BB93-5BDA2F53F524
+  Name=QTD_LIBERA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=93
+  Width=120
+  Top=37
+  Height=20
+  Browseindex=1
+  Browsesize=21
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_4
+  Property=HyperLabel=#QTD_LIBERA,,,
+  Property=HyperLabel=,"Qtd Libera:",,
+  Property=HyperLabel=,,,"estqint_QTD_LIBERA"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=AEB8BFBA-7F0B-4B5C-A0FD-25550D1B13C7
+  Name=QTD_IMPEDI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=93
+  Width=120
+  Top=61
+  Height=20
+  Browseindex=7
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_4
+  Property=HyperLabel=#QTD_IMPEDI,,,
+  Property=HyperLabel=,"Qtd Impedi:",,
+  Property=HyperLabel=,,,"estqint_QTD_IMPEDI"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=4423A91A-739E-4354-BD69-C9C1CA282EA2
+  Name=QTD_REJEIT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=93
+  Width=120
+  Top=85
+  Height=20
+  Browseindex=6
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_4
+  Property=HyperLabel=#QTD_REJEIT,,,
+  Property=HyperLabel=,"Qtd Rejeit:",,
+  Property=HyperLabel=,,,"estqint_QTD_REJEIT"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=824FEF3E-75B0-4024-8012-A86B8F041095
+  Name=QTD_LIB_EX
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=93
+  Width=120
+  Top=109
+  Height=20
+  Browseindex=5
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_4
+  Property=HyperLabel=#QTD_LIB_EX,,,
+  Property=HyperLabel=,"Qtd Lib Ex:",,
+  Property=HyperLabel=,,,"estqint_QTD_LIB_EX"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=9C820404-B6A1-49BC-ACAD-BDB81BD05ADD
+  Name=QTD_DISP_V
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=93
+  Width=120
+  Top=133
+  Height=20
+  Browseindex=4
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_4
+  Property=HyperLabel=#QTD_DISP_V,,,
+  Property=HyperLabel=,"Qtd Disp V:",,
+  Property=HyperLabel=,,,"estqint_QTD_DISP_V"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=1D437439-3A6A-4111-874B-0AF33EE1F137
+  Name=QTD_RESERV
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=93
+  Width=120
+  Top=157
+  Height=20
+  Browseindex=3
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_4
+  Property=HyperLabel=#QTD_RESERV,,,
+  Property=HyperLabel=,"Qtd Reserv:",,
+  Property=HyperLabel=,,,"estqint_QTD_RESERV"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=CB8717E1-C8E9-4F71-92C0-2E18BB89179B
+  Name=DAT_ULT_IN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=289
+  Width=108
+  Top=37
+  Height=20
+  Browseindex=2
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=date_FIELD
+  Property=HyperLabel=#DAT_ULT_IN,,,
+  Property=HyperLabel=,"Dat Ult In:",,
+  Property=HyperLabel=,,,"estqint_DAT_ULT_IN"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=161E26FD-5697-4686-8524-A17AC6355431
+  Name=DAT_ULT_EN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=289
+  Width=108
+  Top=61
+  Height=20
+  Browseindex=1
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=DATE_FIELD
+  Property=HyperLabel=#DAT_ULT_EN,,,
+  Property=HyperLabel=,"Dat Ult En:",,
+  Property=HyperLabel=,,,"estqint_DAT_ULT_EN"
+  Property=InheritClassName=DateSle
+
+CONTROL=SINGLELINEEDIT
+GUID=C1B20423-682C-49A6-B4C3-CC3C45BF49C5
+  Name=DAT_ULT_SA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=289
+  Width=108
+  Top=85
+  Height=20
+  Browseindex=0
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DAT_ULT_SA,,,
+  Property=HyperLabel=,"Dat Ult Sa:",,
+  Property=HyperLabel=,,,"estqint_DAT_ULT_SA"
+  Property=InheritClassName=DateSle
+
+CONTROL=PUSHBUTTON
+GUID=D19EBB5B-1269-4876-B5FD-C252FA09FF81
+  Name=pornum
+  Class=PUSHBUTTON
+  Caption=
+  Order=23
+  Left=465
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_AZ
+  Property=HyperLabel=#pornum,,,
+
+CONTROL=PUSHBUTTON
+GUID=4B8C1B29-E3D8-404B-BAE7-A9C7B660D65F
+  Name=buscanum
+  Class=PUSHBUTTON
+  Caption=
+  Order=24
+  Left=433
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscanum,,,
+
+SUBCONTROLSEND
+DESIGNEREND = Jestqint
+

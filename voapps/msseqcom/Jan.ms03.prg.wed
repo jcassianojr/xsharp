@@ -1,0 +1,236 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jms03
+GUID=B0C05A91-FA73-498A-94BB-61C84085271B
+  Name=jms03
+  Class=DATAWINDOW
+  Caption=Composiçao
+  Order=0
+  Left=16
+  Width=642
+  Top=16
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Composiçao",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#jms03,,,
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=E9CE5EDC-D544-48A2-9E3A-8212F3C0AB4A
+  Name=SC_TIPOENT
+  Class=FIXEDTEXT
+  Caption=Tipo
+  Order=1
+  Left=22
+  Width=40
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tipo",,
+  Property=HyperLabel=#SC_TIPOENT,,,
+
+CONTROL=FIXEDTEXT
+GUID=0F050FE9-91C0-4950-891D-BC510955CA56
+  Name=SC_CODCOMP
+  Class=FIXEDTEXT
+  Caption=Codcomp:
+  Order=2
+  Left=22
+  Width=52
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codcomp:",,
+  Property=HyperLabel=#SC_CODCOMP,,,
+
+CONTROL=FIXEDTEXT
+GUID=94B603A5-6752-445C-8B69-FA5D2FF53407
+  Name=SC_NOMECOMP
+  Class=FIXEDTEXT
+  Caption=Nomecom2:
+  Order=3
+  Left=22
+  Width=60
+  Top=74
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nomecom2:",,
+  Property=HyperLabel=#SC_NOMECOMP,,,
+
+CONTROL=FIXEDTEXT
+GUID=60DD4198-5D8A-44A2-A38F-D87A21EEDBF2
+  Name=SC_NOMECOM2
+  Class=FIXEDTEXT
+  Caption=Nomecom2:
+  Order=4
+  Left=22
+  Width=60
+  Top=98
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nomecom2:",,
+  Property=HyperLabel=#SC_NOMECOM2,,,
+
+CONTROL=FIXEDTEXT
+GUID=3D8C43A7-4BD0-4EBE-8E10-2540589CC72D
+  Name=SC_QTDDE
+  Class=FIXEDTEXT
+  Caption=Qtdde:
+  Order=5
+  Left=22
+  Width=36
+  Top=122
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtdde:",,
+  Property=HyperLabel=#SC_QTDDE,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=9F2A6A08-38E2-4249-BC37-33A26148A83B
+  Name=TIPOENT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=98
+  Width=24
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216413824
+  Exstyles=512
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#TIPOENT,,,
+  Property=HyperLabel=,"T",,
+  Property=HyperLabel=,,,"MS03_GERARN"
+
+CONTROL=SINGLELINEEDIT
+GUID=BB8DCE6C-7EDD-4220-8FB4-7D450B953C4D
+  Name=CODCOMP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=98
+  Width=180
+  Top=50
+  Height=20
+  Browseindex=1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216413824
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODCOMP,,,
+  Property=HyperLabel=,"Codigo",,
+  Property=HyperLabel=,,,"MS03_CODCOMP"
+
+CONTROL=SINGLELINEEDIT
+GUID=5BDB734D-AA8B-4A10-96E8-CFDEB2012AF1
+  Name=NOMECOMP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=98
+  Width=364
+  Top=74
+  Height=20
+  Browseindex=3
+  Browsesize=42
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216413824
+  Exstyles=512
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#NOMECOMP,,,
+  Property=HyperLabel=,"Nome",,
+  Property=HyperLabel=,,,"MS03_NOMECOM2"
+
+CONTROL=SINGLELINEEDIT
+GUID=D4CF6612-17B2-47A4-8F68-333A37E7FAD3
+  Name=NOMECOM2
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=98
+  Width=364
+  Top=98
+  Height=20
+  Browseindex=4
+  Browsesize=27
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216413824
+  Exstyles=512
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#NOMECOM2,,,
+  Property=HyperLabel=,"Nome",,
+  Property=HyperLabel=,,,"MS03_NOMECOM2"
+
+CONTROL=SINGLELINEEDIT
+GUID=6C3372DA-D422-4EA7-90A0-738031FB9C82
+  Name=QTDDE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=98
+  Width=84
+  Top=122
+  Height=20
+  Browseindex=2
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216413824
+  Exstyles=512
+  Property=FieldSpec=padrao_num_10_5
+  Property=HyperLabel=#QTDDE,,,
+  Property=HyperLabel=,"Qtdde:",,
+  Property=HyperLabel=,,,"MS03_QTDDE"
+
+SUBCONTROLSEND
+DESIGNEREND = jms03
+

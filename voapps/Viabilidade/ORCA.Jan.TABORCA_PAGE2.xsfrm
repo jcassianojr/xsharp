@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="TABORCA_Page2">
+    <Window Name="TABORCA_Page2">
+      <Name>TABORCA_Page2</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>28</Left>
+      <Top>28</Top>
+      <Width>648</Width>
+      <Height>206</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073742848</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#TABORCA_Page2,,,</HyperLabel>
+        <Use>&lt;Share Owner's&gt;</Use>
+        <ClipperKeys>True</ClipperKeys>
+      </ExProperties>
+    </Window>
+    <Control Name="CPAG">
+      <Name>CPAG</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>141</Left>
+      <Top>9</Top>
+      <Width>380</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>6</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_50</FieldSpec>
+        <HyperLabel>#CPAG,,,</HyperLabel>
+        <HyperLabel>,"Cpag:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_CPAG"</HyperLabel>
+        <TooltipText>"Condiçao de Pagamento da Peça"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="CFER">
+      <Name>CFER</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>141</Left>
+      <Top>29</Top>
+      <Width>490</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>6</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_100</FieldSpec>
+        <HyperLabel>#CFER,,,</HyperLabel>
+        <HyperLabel>,"Cfer:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_CFER"</HyperLabel>
+        <TooltipText>"Condiçao de Pagamento da Ferramenta"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="CVAL">
+      <Name>CVAL</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>141</Left>
+      <Top>49</Top>
+      <Width>244</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>6</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_20</FieldSpec>
+        <HyperLabel>#CVAL,,,</HyperLabel>
+        <HyperLabel>,"Cval:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_CVAL"</HyperLabel>
+        <TooltipText>"Validade do Orçamento"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="PRAZO">
+      <Name>PRAZO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>53</Left>
+      <Top>73</Top>
+      <Width>572</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_150</FieldSpec>
+        <HyperLabel>#PRAZO,,,</HyperLabel>
+        <HyperLabel>,"Prazo:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_PRAZO"</HyperLabel>
+        <TooltipText>"Descritivo do Prazo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="PRAZ2">
+      <Name>PRAZ2</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>53</Left>
+      <Top>93</Top>
+      <Width>572</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_150</FieldSpec>
+        <HyperLabel>#PRAZ2,,,</HyperLabel>
+        <HyperLabel>,"Prazo:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_PRAZO"</HyperLabel>
+        <TooltipText>"Descritivo do Prazo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="PRAZ3">
+      <Name>PRAZ3</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>53</Left>
+      <Top>113</Top>
+      <Width>572</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_150</FieldSpec>
+        <HyperLabel>#PRAZ3,,,</HyperLabel>
+        <HyperLabel>,"Prazo:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_PRAZO"</HyperLabel>
+        <TooltipText>"Descritivo do Prazo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="PRAZ4">
+      <Name>PRAZ4</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>53</Left>
+      <Top>133</Top>
+      <Width>572</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_150</FieldSpec>
+        <HyperLabel>#PRAZ4,,,</HyperLabel>
+        <HyperLabel>,"Prazo:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_PRAZO"</HyperLabel>
+        <TooltipText>"Descritivo do Prazo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CVAL">
+      <Name>SC_CVAL</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Validade</Caption>
+      <Order>8</Order>
+      <Left>5</Left>
+      <Top>49</Top>
+      <Width>59</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Validade",,</HyperLabel>
+        <HyperLabel>#SC_CVAL,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText15">
+      <Name>theFixedText15</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Cond. Pag. Ferramenta:</Caption>
+      <Order>9</Order>
+      <Left>5</Left>
+      <Top>29</Top>
+      <Width>120</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Cond. Pag. Ferramenta:",,</HyperLabel>
+        <HyperLabel>#theFixedText15,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_CPAG">
+      <Name>SC_CPAG</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Cond. Pag. Peça:</Caption>
+      <Order>10</Order>
+      <Left>5</Left>
+      <Top>9</Top>
+      <Width>120</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Cond. Pag. Peça:",,</HyperLabel>
+        <HyperLabel>#SC_CPAG,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_PRAZO">
+      <Name>SC_PRAZO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Prazo:</Caption>
+      <Order>11</Order>
+      <Left>5</Left>
+      <Top>69</Top>
+      <Width>40</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Prazo:",,</HyperLabel>
+        <HyperLabel>#SC_PRAZO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

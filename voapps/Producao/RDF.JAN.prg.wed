@@ -1,0 +1,404 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JRDF
+GUID=C1567E0C-7BB6-44E2-AA25-6EFF7C80E903
+  Name=JRDF
+  Class=DATAWINDOW
+  Caption=Itens Funcionarios
+  Order=0
+  Left=22
+  Width=522
+  Top=22
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Itens Funcionarios",,
+  Property=HyperLabel=#JRDF,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#BrowseView
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=2558E476-B738-4A6F-830F-59146EC6EC14
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=-1
+  Left=117
+  Width=40
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=113FC121-5F25-481C-8972-21BC835ABF45
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Número:
+  Order=-1
+  Left=18
+  Width=60
+  Top=18
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Número:",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=739D384D-7C48-44BA-B42A-056F7DA12DF5
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=18
+  Width=63
+  Top=38
+  Height=20
+  Browseindex=0
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"RDE_NUMERO"
+
+CONTROL=SINGLELINEEDIT
+GUID=1E194649-1220-402F-87E1-3998B8BAB6BE
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=117
+  Width=381
+  Top=38
+  Height=20
+  Browseindex=1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_char_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"RDE_NOME"
+
+CONTROL=FIXEDTEXT
+GUID=856D7DE7-06BE-4B95-B37B-6E6E0B078F53
+  Name=SC_HT
+  Class=FIXEDTEXT
+  Caption=Horas Trabalhadas:
+  Order=-1
+  Left=18
+  Width=120
+  Top=68
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Horas Trabalhadas:",,
+  Property=HyperLabel=#SC_HT,,,
+
+CONTROL=FIXEDTEXT
+GUID=86664D38-525D-40E6-92C2-403538D220FD
+  Name=SC_HD
+  Class=FIXEDTEXT
+  Caption=Horas Disponiveis:
+  Order=-1
+  Left=158
+  Width=110
+  Top=68
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Horas Disponiveis:",,
+  Property=HyperLabel=#SC_HD,,,
+
+CONTROL=FIXEDTEXT
+GUID=F313F88C-18CB-49EF-B44E-725C9673EC25
+  Name=SC_QP
+  Class=FIXEDTEXT
+  Caption=Quantidade Produzida:
+  Order=-1
+  Left=298
+  Width=130
+  Top=68
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Quantidade Produzida:",,
+  Property=HyperLabel=#SC_QP,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=7BBEA931-16ED-4C77-B5F5-04BD2770D8D9
+  Name=HT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=18
+  Width=130
+  Top=88
+  Height=20
+  Browseindex=2
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_num_10_2
+  Property=HyperLabel=#HT,,,
+  Property=HyperLabel=,"Ht:",,
+  Property=HyperLabel=,,,"RDE_HT"
+
+CONTROL=SINGLELINEEDIT
+GUID=0215BE4C-BC8B-4460-96C5-5BC22DD7B948
+  Name=HD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=158
+  Width=130
+  Top=88
+  Height=20
+  Browseindex=3
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_num_10_2
+  Property=HyperLabel=#HD,,,
+  Property=HyperLabel=,"Hd:",,
+  Property=HyperLabel=,,,"RDE_HD"
+
+CONTROL=SINGLELINEEDIT
+GUID=4641AED8-C78F-4D05-B6B9-073FD17D9DEA
+  Name=QP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=298
+  Width=130
+  Top=88
+  Height=20
+  Browseindex=4
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_num_10
+  Property=HyperLabel=#QP,,,
+  Property=HyperLabel=,"Qp:",,
+  Property=HyperLabel=,,,"RDE_QP"
+
+CONTROL=FIXEDTEXT
+GUID=A326832E-62E3-4ECD-86E9-3C3C22DAC96D
+  Name=SC_PU
+  Class=FIXEDTEXT
+  Caption=% Utilização:
+  Order=-1
+  Left=18
+  Width=110
+  Top=118
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"% Utilização:",,
+  Property=HyperLabel=#SC_PU,,,
+
+CONTROL=FIXEDTEXT
+GUID=1AA2AA51-22AE-474D-8E8F-911A7C1F9AA8
+  Name=SC_PE
+  Class=FIXEDTEXT
+  Caption=% Eficiencia
+  Order=-1
+  Left=158
+  Width=120
+  Top=118
+  Height=30
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"% Eficiencia",,
+  Property=HyperLabel=#SC_PE,,,
+
+CONTROL=FIXEDTEXT
+GUID=85B9B8CA-3060-40E3-8CFB-143A0F6C5DD3
+  Name=SC_PP
+  Class=FIXEDTEXT
+  Caption=% Produtividade
+  Order=-1
+  Left=298
+  Width=130
+  Top=118
+  Height=19
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"% Produtividade",,
+  Property=HyperLabel=#SC_PP,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=E62BB589-8F65-418A-905C-4A1E00D5DAF7
+  Name=PU
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=18
+  Width=130
+  Top=138
+  Height=20
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_num_10_2
+  Property=HyperLabel=#PU,,,
+  Property=HyperLabel=,"Pu:",,
+  Property=HyperLabel=,,,"RDE_PU"
+
+CONTROL=SINGLELINEEDIT
+GUID=25BC8A8B-0801-4102-B313-5C352FD73736
+  Name=PE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=158
+  Width=130
+  Top=138
+  Height=20
+  Browseindex=6
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_num_10_2
+  Property=HyperLabel=#PE,,,
+  Property=HyperLabel=,"Pe:",,
+  Property=HyperLabel=,,,"RDE_PE"
+
+CONTROL=SINGLELINEEDIT
+GUID=038173AB-BFCD-4AE7-A19F-ADDB487D9186
+  Name=PP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=298
+  Width=130
+  Top=138
+  Height=20
+  Browseindex=7
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_num_10_2
+  Property=HyperLabel=#PP,,,
+  Property=HyperLabel=,"Pp:",,
+  Property=HyperLabel=,,,"RDE_PP"
+
+CONTROL=FIXEDTEXT
+GUID=C0DE66A3-5534-4DA2-9D0B-54E74DDDF527
+  Name=SC_MEDIA
+  Class=FIXEDTEXT
+  Caption=Media:
+  Order=-1
+  Left=18
+  Width=50
+  Top=168
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Media:",,
+  Property=HyperLabel=#SC_MEDIA,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=074184A3-04E9-4D25-8774-2AC62872BCE6
+  Name=MEDIA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=18
+  Width=130
+  Top=188
+  Height=20
+  Browseindex=8
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_num_10
+  Property=HyperLabel=#MEDIA,,,
+  Property=HyperLabel=,"Media:",,
+  Property=HyperLabel=,,,"RDE_MEDIA"
+
+SUBCONTROLSEND
+DESIGNEREND = JRDF
+

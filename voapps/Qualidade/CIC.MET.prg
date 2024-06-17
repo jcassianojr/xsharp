@@ -1,0 +1,108 @@
+﻿PARTIAL CLASS JCIC
+METHOD ALTERAR  
+self:oSFJCICI:VIEWFORM()
+
+METHOD ANTERIOR 
+self:oSFJCICI:Browser:SuspendUpdate()
+self:oSFJCICI:SkipPREVIOUS()
+IF self:oSFJCICI:Server:BOF
+	self:oSFJCICI:SkipNEXT()
+ENDIF
+self:oSFJCICI:Browser:RestoreUpdate()
+
+ METHOD APPEND() 
+self:SERVER:SUSPENDNOTIFICATION()
+super:append()
+self:SERVER:resetnotification()
+self:SERVER:notify(notifyappend)
+return
+
+METHOD btnPEGMS01 
+LOCAL aPRO AS ARRAY
+aPRO:=PEGMS01(SELF:SERVER:DESENHO)
+IF aPRO[1]=.T. .AND. ! Empty(aPRO[2])
+   SELF:SERVER:FIELDPUT("DESCRI",aPRO[2])
+ENDIF
+
+METHOD buscanum( ) 
+	SELF:KEYFIND()
+
+METHOD cmddelfiltro() 
+   SELF:xcmddelfiltro()	
+  SELF:Browser:REFRESH()
+
+METHOD CMDFILTRAR() 
+	SELF:xCMDFILTRAR()
+	SELF:Browser:REFRESH()
+
+METHOD CMDimprimir( ) 
+SELF:XWRPTGRP("CP","CI")	
+
+
+METHOD esccod( ) 
+LOCAL oESC AS XESCCOD	
+oESC:=XESCCOD{SELF,"MS01.DBF"}
+oESC:SHOW()	
+IF oESC:LOK
+    SELF:SERVER:FIELDPUT("DESENHO",oESC:CODIGO)
+    SELF:SERVER:FIELDPUT("DESCRI",oESC:NOME)
+ENDIF		
+
+METHOD EXCLUIR 
+SELF:oSFJCICI:SERVER:SUSPENDNOTIFICATION()
+IF  MDG("Apagar Registro") .AND. SELF:oSFJCICI:server:LockCurrentRecord()
+    SELF:oSFJCICI:server:delete()
+    SELF:oSFJCICI:server:unlock()
+    SELF:oSFJCICI:server:skip(-1)
+ ENDIF	
+SELF:oSFJCICI:SERVER:resetnotification()
+SELF:oSFJCICI:SERVER:notify(notifyfilechange)
+
+METHOD foto( ) 
+LOCAL oFOTOVIEW AS fotoview	
+LOCAL cCODIGO AS STRING
+cCODIGO:=TIRAOUT(StrTran(AllTrim(SELF:SERVER:FIELDGET("DESENHO"))," ",""))
+IF Empty(cCODIGO)	
+   alert("Codigo Produto Nao Preenchido")	
+   RETU
+ENDIF	
+OFOTOVIEW:=fotoview{SELF,ZDIRFOTO+cCODIGO+".JPG"}
+OFOTOVIEW:SHOW()
+
+METHOD INCLUIR 
+LOCAL cDESENHO AS STRING
+cDESENHO:=SELF:SERVER:DESENHO
+self:oSFJCICI:SERVER:SUSPENDNOTIFICATION()
+self:oSFJCICI:SERVER:APPEND()
+self:oSFJCICI:SERVER:DESENHO:=cDESENHO
+self:oSFJCICI:SERVER:commit()
+self:oSFJCICI:SERVER:resetnotification()
+self:oSFJCICI:SERVER:notify(notifyappend)
+
+METHOD porov( ) 
+	SELF:KeyFind()
+
+METHOD PostInit() 
+   SELF:RegisterTimer(300,FALSE)
+   FabCenterWindow( SELF )
+ RETURN SELF
+
+METHOD PROXIMO 
+self:oSFJCICI:Browser:SuspendUpdate()
+self:oSFJCICI:SkipNext()
+IF self:oSFJCICI:Server:Eof
+	self:oSFJCICI:SkipPrevious()
+ENDIF
+self:oSFJCICI:Browser:RestoreUpdate()
+
+METHOD TABULAR  
+Self:oSFJCICI:VIEWTABLE()
+
+
+METHOD Timer() 
+   SELF:SERVER:COMMIT()
+   SELF:oSFJCICI:Server:COMMIT()
+
+
+
+END CLASS

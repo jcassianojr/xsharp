@@ -1,0 +1,485 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,jetq01
+GUID=38C68E30-4753-41AB-9B00-BA10905BD185
+  Name=jetq01
+  Class=DATADIALOG
+  Caption=Etiqueta Pre Prototype
+  Order=0
+  Left=38
+  Width=401
+  Top=38
+  Height=240
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Etiqueta Pre Prototype",,
+  Property=HyperLabel=#jetq01,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=770E09F1-DAEE-473D-A929-94BB0071E3E9
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=81
+  Width=40
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_04
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"ETIPPP_NUMERO"
+  Property=FocusSelect=FSEL_ALL
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=5AA88809-BB3C-4904-B475-33FF3CE00338
+  Name=POSINI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=189
+  Width=40
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#POSINI,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"ETIPPP_NUMERO"
+  Property=FocusSelect=FSEL_ALL
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=0BBD539A-19EB-4EE8-A1C5-EE96D3AFE77D
+  Name=SUFIX
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=281
+  Width=48
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_05
+  Property=HyperLabel=#SUFIX,,,
+  Property=HyperLabel=,"Sufix:",,
+  Property=HyperLabel=,,,"ETIPPP_SUFIX"
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=SINGLELINEEDIT
+GUID=39445A74-0766-4A5A-9FA9-DC79E2254711
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=81
+  Width=180
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"ETIPPP_CODIGO"
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=SINGLELINEEDIT
+GUID=EE4C89AE-39F8-495D-AF07-1B0037F81491
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=81
+  Width=224
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"ETIPPP_NOME"
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=SINGLELINEEDIT
+GUID=6784298B-56C6-44F6-8E45-43C9F20D0A65
+  Name=ENGENHA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=81
+  Width=292
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_50
+  Property=HyperLabel=#ENGENHA,,,
+  Property=HyperLabel=,"Engenha:",,
+  Property=HyperLabel=,,,"ETIPPP_ENGENHA"
+  Property=FocusSelect=FSEL_ALL
+
+CONTROL=PUSHBUTTON
+GUID=6BF543DD-B55A-40B8-A208-6C1EB9B86EBC
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=7
+  Left=263
+  Width=60
+  Top=141
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ICO_PRINT
+
+CONTROL=FIXEDTEXT
+GUID=19F130E4-08CE-4FB0-863A-8B54157BBB66
+  Name=SC_NUMERO
+  Class=FIXEDTEXT
+  Caption=Quantidade
+  Order=8
+  Left=17
+  Width=63
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Quantidade",,
+  Property=HyperLabel=#SC_NUMERO,,,
+
+CONTROL=FIXEDTEXT
+GUID=227E6F02-ACB8-4845-A0F1-0B1262F3EA97
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=9
+  Left=17
+  Width=40
+  Top=29
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=12505809-EC5F-4ED7-B225-DE2FCA840FF9
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=10
+  Left=21
+  Width=36
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=FIXEDTEXT
+GUID=8429FAF5-CEFE-447A-A15D-A327C10FDE25
+  Name=SC_SUFIX
+  Class=FIXEDTEXT
+  Caption=Sufix:
+  Order=11
+  Left=245
+  Width=32
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Sufix:",,
+  Property=HyperLabel=#SC_SUFIX,,,
+
+CONTROL=FIXEDTEXT
+GUID=F8E78500-3445-43F5-B104-FCA90AAA0390
+  Name=SC_ENGENHA
+  Class=FIXEDTEXT
+  Caption=Engenheiro
+  Order=12
+  Left=13
+  Width=63
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Engenheiro",,
+  Property=HyperLabel=#SC_ENGENHA,,,
+
+CONTROL=PUSHBUTTON
+GUID=EE1170DA-73FA-4E85-99D0-BF3111110C5B
+  Name=pegcod
+  Class=PUSHBUTTON
+  Caption=--->
+  Order=13
+  Left=261
+  Width=27
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"--->",,
+  Property=HyperLabel=#pegcod,,,
+
+CONTROL=FIXEDTEXT
+GUID=32A5C5D6-6E22-40DF-BCC9-ED9772549DA4
+  Name=SC_NUMERO1
+  Class=FIXEDTEXT
+  Caption=INICIAL
+  Order=14
+  Left=133
+  Width=52
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"INICIAL",,
+  Property=HyperLabel=#SC_NUMERO1,,,
+
+CONTROL=PUSHBUTTON
+GUID=FE833494-03C6-48F2-9FA4-748F7A02A35C
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=15
+  Left=293
+  Width=20
+  Top=33
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+
+CONTROL=FIXEDTEXT
+GUID=DBC98523-086B-4FE4-A1F9-B61D99EF4067
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Imprimir
+  Order=16
+  Left=263
+  Width=60
+  Top=189
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Imprimir",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=FIXEDTEXT
+GUID=C349998C-B7F3-4853-86DE-6E3382D3ECC8
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Conf Imp
+  Order=17
+  Left=125
+  Width=56
+  Top=189
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Conf Imp",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=PUSHBUTTON
+GUID=A298EB48-2235-4DD1-9D8D-BA5C194357A8
+  Name=CONFIMP
+  Class=PUSHBUTTON
+  Caption=
+  Order=18
+  Left=125
+  Width=60
+  Top=141
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#CONFIMP,,,
+  Property=Image=ICO_PRINTCFG
+
+CONTROL=FIXEDTEXT
+GUID=88D48F3A-BB82-4E10-8EFF-46C0380F84C3
+  Name=theFixedText13
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=19
+  Left=193
+  Width=56
+  Top=189
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText13,,,
+
+CONTROL=PUSHBUTTON
+GUID=7A8CA525-6C94-486E-B41B-B7DC67E9C4DB
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=20
+  Left=193
+  Width=56
+  Top=141
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ICO_SAIR
+
+CONTROL=FIXEDTEXT
+GUID=5E304E0B-CC0F-4B1F-9999-AB7CA2912BD6
+  Name=SC_DESTINO2
+  Class=FIXEDTEXT
+  Caption=Foto
+  Order=21
+  Left=29
+  Width=48
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Foto",,
+  Property=HyperLabel=#SC_DESTINO2,,,
+
+CONTROL=PUSHBUTTON
+GUID=E298125C-C647-411D-8743-490C80768BCA
+  Name=foto
+  Class=PUSHBUTTON
+  Caption=
+  Order=22
+  Left=29
+  Width=48
+  Top=105
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#foto,,,
+  Property=Image=ICO_CAMERA
+
+SUBCONTROLSEND
+DESIGNEREND = jetq01
+

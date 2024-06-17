@@ -1,0 +1,430 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JRII
+GUID=807940AE-BD2B-4BC6-92D7-6D63ACD744A5
+  Name=JRII
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=60
+  Width=544
+  Top=60
+  Height=230
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#JRII,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=3C687725-77E2-4995-999E-E258DB6E067B
+  Name=SC_ITEM
+  Class=FIXEDTEXT
+  Caption=Item:
+  Order=1
+  Left=73
+  Width=40
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=#SC_ITEM,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=D2D649AC-5479-4B56-91A2-045D840177E7
+  Name=ITEM
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=73
+  Width=54
+  Top=29
+  Height=18
+  Browseindex=1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_03
+  Property=HyperLabel=#ITEM,,,
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=,,,"RII_ITEM"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=3634C411-5936-4F2D-B6D2-7D172B96335F
+  Name=LOCALI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=133
+  Width=330
+  Top=29
+  Height=18
+  Browseindex=2
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_30
+  Property=HyperLabel=#LOCALI,,,
+  Property=HyperLabel=,"Local:",,
+  Property=HyperLabel=,,,"RII_LOCALI"
+
+CONTROL=SINGLELINEEDIT
+GUID=ACE2B3B2-7ED2-44DD-B9BC-B0C1CAED45A4
+  Name=ESPE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=91
+  Width=366
+  Top=61
+  Height=18
+  Browseindex=4
+  Browsesize=16
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_100
+  Property=HyperLabel=#ESPE,,,
+  Property=HyperLabel=,"Especificado:",,
+  Property=HyperLabel=,,,"RII_ESPE"
+
+CONTROL=SINGLELINEEDIT
+GUID=194D2E87-5450-45F1-B5F9-82AFB17EEC0A
+  Name=ENC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=91
+  Width=366
+  Top=85
+  Height=18
+  Browseindex=5
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#ENC,,,
+  Property=HyperLabel=,"Encontrado:",,
+  Property=HyperLabel=,,,"RII_ENC"
+
+CONTROL=SINGLELINEEDIT
+GUID=BE10C335-1965-4F9E-AF78-A59D0E2CC91E
+  Name=DESVIO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=91
+  Width=156
+  Top=109
+  Height=18
+  Browseindex=7
+  Browsesize=16
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_20
+  Property=HyperLabel=#DESVIO,,,
+  Property=HyperLabel=,"Desvio:",,
+  Property=HyperLabel=,,,"RII_DESVIO"
+
+CONTROL=FIXEDTEXT
+GUID=A965BFAE-AC2D-4D65-A3A5-FC93C69E2A9D
+  Name=SC_RI
+  Class=FIXEDTEXT
+  Caption=Ri:
+  Order=11
+  Left=9
+  Width=20
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ri:",,
+  Property=HyperLabel=#SC_RI,,,
+
+CONTROL=FIXEDTEXT
+GUID=81F76F77-8521-4DBB-AA08-1D660B8A3EB4
+  Name=SC_LOCALI
+  Class=FIXEDTEXT
+  Caption=Local:
+  Order=12
+  Left=141
+  Width=50
+  Top=13
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Local:",,
+  Property=HyperLabel=#SC_LOCALI,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=6BBD7458-3977-4B33-B0DD-AEAD728EE0BD
+  Name=RI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=5
+  Width=64
+  Top=25
+  Height=24
+  Browseindex=0
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#RI,,,
+  Property=HyperLabel=,"Ri:",,
+  Property=HyperLabel=,,,"RII_RI"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=89CEFED7-65DE-4DD4-A28D-49598D2D2EB1
+  Name=SC_ESPE
+  Class=FIXEDTEXT
+  Caption=Especificado:
+  Order=14
+  Left=7
+  Width=80
+  Top=61
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Especificado:",,
+  Property=HyperLabel=#SC_ESPE,,,
+
+CONTROL=FIXEDTEXT
+GUID=78295AAA-D287-4987-9545-0C12CBC3F9A7
+  Name=SC_ENC
+  Class=FIXEDTEXT
+  Caption=Encontrado:
+  Order=15
+  Left=7
+  Width=80
+  Top=85
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Encontrado:",,
+  Property=HyperLabel=#SC_ENC,,,
+
+CONTROL=FIXEDTEXT
+GUID=77F40DA7-61DF-46D4-A3F7-26A957209EF4
+  Name=SC_DESVIO
+  Class=FIXEDTEXT
+  Caption=Desvio:
+  Order=16
+  Left=7
+  Width=50
+  Top=109
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Desvio:",,
+  Property=HyperLabel=#SC_DESVIO,,,
+
+CONTROL=FIXEDTEXT
+GUID=1359EB32-9B22-492F-9771-E987C802FC32
+  Name=FixedText17
+  Class=FIXEDTEXT
+  Caption=(A)provado (R)eprovado (G)uarda Resposta
+  Order=17
+  Left=101
+  Width=311
+  Top=141
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Aprovado Reprovado Guarda Resposta",,
+  Property=HyperLabel=#FixedText17,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=40C39F49-F829-4186-8FA1-6C455D03C18E
+  Name=LAUDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=57
+  Width=36
+  Top=137
+  Height=32
+  Browseindex=6
+  Browsesize=3
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#LAUDO,,,
+  Property=HyperLabel=,"L",,
+  Property=HyperLabel=,,,"RI_RI"
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+
+CONTROL=FIXEDTEXT
+GUID=6C54B0DE-0B82-4A04-BFD4-B1F58BC6632E
+  Name=SC_RI1
+  Class=FIXEDTEXT
+  Caption=Laudo
+  Order=19
+  Left=13
+  Width=40
+  Top=149
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Laudo",,
+  Property=HyperLabel=#SC_RI1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=D8FE2148-BEF4-40EA-83CD-0E4AE1845BBA
+  Name=TIPINSP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=57
+  Width=36
+  Top=173
+  Height=32
+  Browseindex=3
+  Browsesize=4
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#TIPINSP,,,
+  Property=HyperLabel=,"T",,
+  Property=HyperLabel=,,,"RI_RI"
+  Property=Background=255 255 200
+  Property=NewFont=14:isoqsymbol:Bold
+
+CONTROL=FIXEDTEXT
+GUID=2B24DD57-9FB5-4776-94BA-C8752B62B147
+  Name=SC_RI2
+  Class=FIXEDTEXT
+  Caption=TipIns
+  Order=21
+  Left=9
+  Width=40
+  Top=173
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"TipIns",,
+  Property=HyperLabel=#SC_RI2,,,
+
+CONTROL=FIXEDTEXT
+GUID=439860CF-F289-4598-A90C-C7C905DD0EBD
+  Name=FixedText18
+  Class=FIXEDTEXT
+  Caption=Alto(I)mpacto Critica(P)roduto Seguranca(O)perador AltoImpacto(C
+  Order=22
+  Left=105
+  Width=256
+  Top=173
+  Height=36
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"AltoImpacto CriticaProduto SegurancaOperador AltoImpactoCliente Seguranca",,
+  Property=HyperLabel=#FixedText18,,,
+
+CONTROL=PUSHBUTTON
+GUID=A10F9D33-2E65-47CB-9A5D-14617243C5C2
+  Name=cmdescmp2
+  Class=PUSHBUTTON
+  Caption=FX
+  Order=23
+  Left=378
+  Width=24
+  Top=177
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"FX",,
+  Property=HyperLabel=#cmdescmp2,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JRII
+

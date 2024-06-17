@@ -1,0 +1,1729 @@
+#region DEFINES
+STATIC DEFINE CDE2JAN_ALTERAR := 115 
+STATIC DEFINE CDE2JAN_ANTERIOR := 113 
+STATIC DEFINE CDE2JAN_BUSCAOV := 120 
+STATIC DEFINE CDE2JAN_BUSCAOV1 := 125 
+STATIC DEFINE CDE2JAN_CD := 107 
+STATIC DEFINE CDE2JAN_CDTAB := 109 
+STATIC DEFINE CDE2JAN_CHKCLIPRO := 124 
+STATIC DEFINE CDE2JAN_CODIGOINT := 101 
+STATIC DEFINE CDE2JAN_DATA := 100 
+STATIC DEFINE CDE2JAN_DIGCTR := 108 
+STATIC DEFINE CDE2JAN_ESCCOD := 123 
+STATIC DEFINE CDE2JAN_ESCCOD1 := 130 
+STATIC DEFINE CDE2JAN_EXCLUIR := 116 
+STATIC DEFINE CDE2JAN_FOTO := 122 
+STATIC DEFINE CDE2JAN_JCDI := 110 
+STATIC DEFINE CDE2JAN_NOME := 103 
+STATIC DEFINE CDE2JAN_NOVAREV := 118 
+STATIC DEFINE CDE2JAN_NOVAREV1 := 126 
+STATIC DEFINE CDE2JAN_NOVO := 117 
+STATIC DEFINE CDE2JAN_PECA := 102 
+STATIC DEFINE CDE2JAN_PEGMS01 := 111 
+STATIC DEFINE CDE2JAN_POROV := 119 
+STATIC DEFINE CDE2JAN_PROXIMO := 112 
+STATIC DEFINE CDE2JAN_SC_CD := 104 
+STATIC DEFINE CDE2JAN_SC_DATA := 105 
+STATIC DEFINE CDE2JAN_SC_DATA1 := 127 
+STATIC DEFINE CDE2JAN_SC_DESTINO2 := 121 
+STATIC DEFINE CDE2JAN_SC_PECA := 106 
+STATIC DEFINE CDE2JAN_TABULAR := 114 
+STATIC DEFINE CDE2JAN_THEFIXEDTEXT31 := 129 
+STATIC DEFINE CDE2JAN_VIABILI := 128 
+STATIC DEFINE CDTAB_PAGE5_CARGO := 101
+STATIC DEFINE CDTAB_PAGE5_FT27 := 103
+STATIC DEFINE CDTAB_PAGE5_FT28 := 102
+STATIC DEFINE CDTAB_PAGE5_FT29 := 104
+STATIC DEFINE CDTAB_PAGE5_RESPO := 100
+STATIC DEFINE CDTAB_PAGE5_SETOR := 105
+STATIC DEFINE CDTAB_PAGE6_CEMB := 102 
+STATIC DEFINE CDTAB_PAGE6_CMDIMPPECA := 114 
+STATIC DEFINE CDTAB_PAGE6_CMDIMPPECA1 := 117 
+STATIC DEFINE CDTAB_PAGE6_CMDIMPPECA2 := 121 
+STATIC DEFINE CDTAB_PAGE6_CPAGF := 104 
+STATIC DEFINE CDTAB_PAGE6_CPAGP := 101 
+STATIC DEFINE CDTAB_PAGE6_DATAPRE := 110 
+STATIC DEFINE CDTAB_PAGE6_ESCRES := 128 
+STATIC DEFINE CDTAB_PAGE6_FERRA := 103 
+STATIC DEFINE CDTAB_PAGE6_FIXEDTEXT1 := 111 
+STATIC DEFINE CDTAB_PAGE6_FIXEDTEXT2 := 112 
+STATIC DEFINE CDTAB_PAGE6_FIXEDTEXT3 := 115 
+STATIC DEFINE CDTAB_PAGE6_FIXEDTEXT4 := 116 
+STATIC DEFINE CDTAB_PAGE6_FIXEDTEXT5 := 119 
+STATIC DEFINE CDTAB_PAGE6_FIXEDTEXT6 := 120 
+STATIC DEFINE CDTAB_PAGE6_FIXEDTEXT7 := 123 
+STATIC DEFINE CDTAB_PAGE6_FIXEDTEXT8 := 124 
+STATIC DEFINE CDTAB_PAGE6_FIXEDTEXT9 := 125 
+STATIC DEFINE CDTAB_PAGE6_FRETE := 118 
+STATIC DEFINE CDTAB_PAGE6_IMPFER := 122 
+STATIC DEFINE CDTAB_PAGE6_IMPOSTO := 113 
+STATIC DEFINE CDTAB_PAGE6_NOMPRE := 109 
+STATIC DEFINE CDTAB_PAGE6_NUMPRE := 108 
+STATIC DEFINE CDTAB_PAGE6_OBSC01 := 105 
+STATIC DEFINE CDTAB_PAGE6_OBSC02 := 106 
+STATIC DEFINE CDTAB_PAGE6_OBSC03 := 107 
+STATIC DEFINE CDTAB_PAGE6_PEGRES := 127 
+STATIC DEFINE CDTAB_PAGE6_SC_DATAOBS := 126 
+STATIC DEFINE CDTAB_PAGE6_VALPEC := 100 
+STATIC DEFINE CDTAB01_CLICOGN := 102
+STATIC DEFINE CDTAB01_CLIENTE := 100
+STATIC DEFINE CDTAB01_CLINOME := 101
+STATIC DEFINE CDTAB01_CODCLI := 127
+STATIC DEFINE CDTAB01_COMPNOME := 104
+STATIC DEFINE CDTAB01_COMPRADOR := 103
+STATIC DEFINE CDTAB01_DATAEMI := 118
+STATIC DEFINE CDTAB01_EMAILFIM := 124
+STATIC DEFINE CDTAB01_ENGENHA := 107
+STATIC DEFINE CDTAB01_ESCFOR := 121
+STATIC DEFINE CDTAB01_ESCMC02 := 123
+STATIC DEFINE CDTAB01_FUNNOM := 117
+STATIC DEFINE CDTAB01_FUNNUM := 116
+STATIC DEFINE CDTAB01_LOTEANUAL := 106
+STATIC DEFINE CDTAB01_LOTEENTR := 108
+STATIC DEFINE CDTAB01_PEGMA01 := 120 
+STATIC DEFINE CDTAB01_PEGMC02 := 122
+STATIC DEFINE CDTAB01_PLANTA := 109
+STATIC DEFINE CDTAB01_PROJETO := 105
+STATIC DEFINE CDTAB01_SC_CLIENTE := 119
+STATIC DEFINE CDTAB01_SC_CLIENTE1 := 125
+STATIC DEFINE CDTAB01_SC_CLIENTE2 := 126
+STATIC DEFINE CDTAB01_SC_COMPRADOR := 110
+STATIC DEFINE CDTAB01_SC_DATAEMI := 115
+STATIC DEFINE CDTAB01_SC_ENGENHA := 112
+STATIC DEFINE CDTAB01_SC_FUNNUM := 114
+STATIC DEFINE CDTAB01_SC_PLANTA := 113
+STATIC DEFINE CDTAB01_SC_PROJETO := 111
+STATIC DEFINE CDTAB02_DATAAUT := 100 
+STATIC DEFINE CDTAB02_DC := 112 
+STATIC DEFINE CDTAB02_FD := 111 
+STATIC DEFINE CDTAB02_MP := 115 
+STATIC DEFINE CDTAB02_OBS01 := 103 
+STATIC DEFINE CDTAB02_OBS02 := 104 
+STATIC DEFINE CDTAB02_OBS03 := 105 
+STATIC DEFINE CDTAB02_OBS04 := 106 
+STATIC DEFINE CDTAB02_OBS05 := 107 
+STATIC DEFINE CDTAB02_OUT := 116 
+STATIC DEFINE CDTAB02_OUTOBS := 102 
+STATIC DEFINE CDTAB02_PCMO := 114 
+STATIC DEFINE CDTAB02_PCMP := 113 
+STATIC DEFINE CDTAB02_PT := 110 
+STATIC DEFINE CDTAB02_PTQT := 101 
+STATIC DEFINE CDTAB02_RET := 117 
+STATIC DEFINE CDTAB02_SC_DATAAUT := 108 
+STATIC DEFINE CDTAB02_SC_OBS01 := 109 
+STATIC DEFINE CDTAB03_AMO := 110 
+STATIC DEFINE CDTAB03_DATADIM := 101 
+STATIC DEFINE CDTAB03_DATAPRO := 102 
+STATIC DEFINE CDTAB03_DE := 109 
+STATIC DEFINE CDTAB03_EP := 105 
+STATIC DEFINE CDTAB03_FE := 108 
+STATIC DEFINE CDTAB03_MM := 106 
+STATIC DEFINE CDTAB03_NT := 107 
+STATIC DEFINE CDTAB03_OUTANX := 111 
+STATIC DEFINE CDTAB03_OUTANXOBS := 100 
+STATIC DEFINE CDTAB03_SC_DATADIM := 103 
+STATIC DEFINE CDTAB03_SC_DATAPRO := 104 
+STATIC DEFINE CDTAB04_DATAOBS := 100 
+STATIC DEFINE CDTAB04_OBSG01 := 101 
+STATIC DEFINE CDTAB04_OBSG02 := 102 
+STATIC DEFINE CDTAB04_OBSG03 := 103 
+STATIC DEFINE CDTAB04_SC_DATAOBS := 104 
+STATIC DEFINE CDTAB04_SC_OBSG01 := 105 
+#endregion
+
+CLASS cde2jan INHERIT MYDataWindow 
+
+	PROTECT oDBCD AS DataColumn
+	PROTECT oDBDIGCTR AS DataColumn
+	PROTECT oDBDATA AS DataColumn
+	PROTECT oDBPECA AS DataColumn
+	PROTECT oDBNOME AS DataColumn
+	PROTECT oDCDATA AS DATESLE
+	PROTECT oDCCODIGOINT AS SINGLELINEEDIT
+	PROTECT oDCPECA AS SINGLELINEEDIT
+	PROTECT oDCNOME AS SINGLELINEEDIT
+	PROTECT oDCSC_CD AS FIXEDTEXT
+	PROTECT oDCSC_DATA AS FIXEDTEXT
+	PROTECT oDCSC_PECA AS FIXEDTEXT
+	PROTECT oDCCD AS SINGLELINEEDIT
+	PROTECT oDCDIGCTR AS SINGLELINEEDIT
+	PROTECT oDCCDTAB AS TABCONTROL
+	PROTECT oTPCDTAB01 AS CDTAB01
+	PROTECT oTPCDTAB02 AS CDTAB02
+	PROTECT oTPCDTAB03 AS CDTAB03
+	PROTECT oTPCDTAB04 AS CDTAB04
+	PROTECT oTPCDTAB_PAGE6 AS CDTAB_PAGE6
+	PROTECT oTPCDTAB_PAGE5 AS CDTAB_PAGE5
+	PROTECT oCCpegms01 AS PUSHBUTTON
+	PROTECT oCCProximo AS PUSHBUTTON
+	PROTECT oCCAnterior AS PUSHBUTTON
+	PROTECT oCCTabular AS PUSHBUTTON
+	PROTECT oCCALTERAR AS PUSHBUTTON
+	PROTECT oCCExcluir AS PUSHBUTTON
+	PROTECT oCCNOVO AS PUSHBUTTON
+	PROTECT oCCNovaRev AS PUSHBUTTON
+	PROTECT oCCporov AS PUSHBUTTON
+	PROTECT oCCbuscaov AS PUSHBUTTON
+	PROTECT oDCSC_DESTINO2 AS FIXEDTEXT
+	PROTECT oCCfoto AS PUSHBUTTON
+	PROTECT oCCesccod AS PUSHBUTTON
+	PROTECT oCCchkclipro AS PUSHBUTTON
+	PROTECT oCCbuscaov1 AS PUSHBUTTON
+	PROTECT oCCNovaRev1 AS PUSHBUTTON
+	PROTECT oDCSC_DATA1 AS FIXEDTEXT
+	PROTECT oDCVIABILI AS SINGLELINEEDIT
+	PROTECT oDCtheFixedText31 AS FIXEDTEXT
+	PROTECT oCCesccod1 AS PUSHBUTTON
+// 	instance DATA 
+// 	instance CODIGOINT 
+// 	instance PECA 
+// 	instance NOME 
+// 	instance CD 
+// 	instance DIGCTR 
+// 	instance VIABILI 
+	PROTECT oSFjcdi AS jcdi
+
+  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
+
+ACCESS CD() 
+RETURN SELF:FieldGet(#CD)
+
+
+ASSIGN CD(uValue) 
+SELF:FieldPut(#CD, uValue)
+RETURN CD := uValue
+
+
+ACCESS CODIGOINT() 
+RETURN SELF:FieldGet(#CODIGOINT)
+
+
+ASSIGN CODIGOINT(uValue) 
+SELF:FieldPut(#CODIGOINT, uValue)
+RETURN CODIGOINT := uValue
+
+
+ACCESS DATA() 
+RETURN SELF:FieldGet(#DATA)
+
+
+ASSIGN DATA(uValue) 
+SELF:FieldPut(#DATA, uValue)
+RETURN DATA := uValue
+
+
+ACCESS DIGCTR() 
+RETURN SELF:FieldGet(#DIGCTR)
+
+
+ASSIGN DIGCTR(uValue) 
+SELF:FieldPut(#DIGCTR, uValue)
+RETURN DIGCTR := uValue
+
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
+LOCAL DIM aFonts[1] AS OBJECT
+LOCAL DIM aBrushes[1] AS OBJECT
+
+SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+SUPER(oWindow,ResourceID{"cde2jan",_GetInst()},iCtlID)
+
+aFonts[1] := Font{,12,"Times New Roman"}
+aFonts[1]:Bold := TRUE
+aBrushes[1] := Brush{Color{255,255,200}}
+
+oDCDATA := DateSle{SELF,ResourceID{CDE2JAN_DATA,_GetInst()}}
+oDCDATA:FieldSpec := date_field{}
+oDCDATA:HyperLabel := HyperLabel{#DATA,"Data:",NULL_STRING,"CD_DATA"}
+oDCDATA:TooltipText := "Data da Condição de Desenvolvimento"
+
+oDCCODIGOINT := SingleLineEdit{SELF,ResourceID{CDE2JAN_CODIGOINT,_GetInst()}}
+oDCCODIGOINT:FieldSpec := padrao_char_24{}
+oDCCODIGOINT:HyperLabel := HyperLabel{#CODIGOINT,"Peca:",NULL_STRING,"CD_PECA"}
+oDCCODIGOINT:TooltipText := "Codigo do Produto"
+
+oDCPECA := SingleLineEdit{SELF,ResourceID{CDE2JAN_PECA,_GetInst()}}
+oDCPECA:FieldSpec := padrao_char_24{}
+oDCPECA:HyperLabel := HyperLabel{#PECA,"Peca:",NULL_STRING,"CD_PECA"}
+oDCPECA:TooltipText := "Codigo do Produto"
+
+oDCNOME := SingleLineEdit{SELF,ResourceID{CDE2JAN_NOME,_GetInst()}}
+oDCNOME:FieldSpec := padrao_char_50{}
+oDCNOME:HyperLabel := HyperLabel{#NOME,"Nome:",NULL_STRING,"CD_NOME"}
+
+oDCSC_CD := FixedText{SELF,ResourceID{CDE2JAN_SC_CD,_GetInst()}}
+oDCSC_CD:HyperLabel := HyperLabel{#SC_CD,"Cd:",NULL_STRING,NULL_STRING}
+
+oDCSC_DATA := FixedText{SELF,ResourceID{CDE2JAN_SC_DATA,_GetInst()}}
+oDCSC_DATA:HyperLabel := HyperLabel{#SC_DATA,"Data:",NULL_STRING,NULL_STRING}
+
+oDCSC_PECA := FixedText{SELF,ResourceID{CDE2JAN_SC_PECA,_GetInst()}}
+oDCSC_PECA:HyperLabel := HyperLabel{#SC_PECA,"Peca:",NULL_STRING,NULL_STRING}
+
+oDCCD := SingleLineEdit{SELF,ResourceID{CDE2JAN_CD,_GetInst()}}
+oDCCD:FieldSpec := padrao_num_08{}
+oDCCD:HyperLabel := HyperLabel{#CD,"Cd:",NULL_STRING,"CD_CD"}
+oDCCD:TooltipText := "Numero da Condição de Desenvolvimento"
+oDCCD:BackGround := aBrushes[1]
+oDCCD:Font(aFonts[1], FALSE)
+
+oDCDIGCTR := SingleLineEdit{SELF,ResourceID{CDE2JAN_DIGCTR,_GetInst()}}
+oDCDIGCTR:FieldSpec := padrao_char_01{}
+oDCDIGCTR:HyperLabel := HyperLabel{#DIGCTR,"Digctr:",NULL_STRING,"CD_DIGCTR"}
+oDCDIGCTR:TooltipText := "Codigo da Revisão "
+oDCDIGCTR:BackGround := aBrushes[1]
+oDCDIGCTR:Font(aFonts[1], FALSE)
+
+oDCCDTAB := TabControl{SELF,ResourceID{CDE2JAN_CDTAB,_GetInst()}}
+oDCCDTAB:HyperLabel := HyperLabel{#CDTAB,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oCCpegms01 := PushButton{SELF,ResourceID{CDE2JAN_PEGMS01,_GetInst()}}
+oCCpegms01:HyperLabel := HyperLabel{#pegms01,"-->",NULL_STRING,NULL_STRING}
+oCCpegms01:TooltipText := "Clique para preencher nome Produto"
+
+oCCProximo := PushButton{SELF,ResourceID{CDE2JAN_PROXIMO,_GetInst()}}
+oCCProximo:HyperLabel := HyperLabel{#Proximo,NULL_STRING,NULL_STRING,NULL_STRING}
+oCCProximo:Image := ICO_NEXT{}
+oCCProximo:TooltipText := "VaI Para o Proximo Desenho"
+
+oCCAnterior := PushButton{SELF,ResourceID{CDE2JAN_ANTERIOR,_GetInst()}}
+oCCAnterior:HyperLabel := HyperLabel{#Anterior,NULL_STRING,NULL_STRING,NULL_STRING}
+oCCAnterior:Image := ICO_PREVIOUS{}
+oCCAnterior:TooltipText := "Vai para o desenho Anterior"
+
+oCCTabular := PushButton{SELF,ResourceID{CDE2JAN_TABULAR,_GetInst()}}
+oCCTabular:HyperLabel := HyperLabel{#Tabular,"Ver Itens",NULL_STRING,NULL_STRING}
+oCCTabular:TooltipText := "Clique para exibir Lista dos Desenho"
+
+oCCALTERAR := PushButton{SELF,ResourceID{CDE2JAN_ALTERAR,_GetInst()}}
+oCCALTERAR:HyperLabel := HyperLabel{#ALTERAR,"Alterar Item",NULL_STRING,NULL_STRING}
+oCCALTERAR:TooltipText := "Clique Para Editar um Desenho"
+
+oCCExcluir := PushButton{SELF,ResourceID{CDE2JAN_EXCLUIR,_GetInst()}}
+oCCExcluir:HyperLabel := HyperLabel{#Excluir,"Excluir",NULL_STRING,NULL_STRING}
+oCCExcluir:TooltipText := "Clique Para Excluir Um Desenho"
+
+oCCNOVO := PushButton{SELF,ResourceID{CDE2JAN_NOVO,_GetInst()}}
+oCCNOVO:HyperLabel := HyperLabel{#NOVO,"Novo",NULL_STRING,NULL_STRING}
+oCCNOVO:TooltipText := "Clique Para Incluir um Desenho"
+
+oCCNovaRev := PushButton{SELF,ResourceID{CDE2JAN_NOVAREV,_GetInst()}}
+oCCNovaRev:HyperLabel := HyperLabel{#NovaRev,"Nova Revisão",NULL_STRING,NULL_STRING}
+oCCNovaRev:TooltipText := "Clique para Criar Uma Nova Revisao"
+
+oCCporov := PushButton{SELF,ResourceID{CDE2JAN_POROV,_GetInst()}}
+oCCporov:Image := ICO_AZ{}
+oCCporov:HyperLabel := HyperLabel{#porov,NULL_STRING,NULL_STRING,NULL_STRING}
+oCCporov:TooltipText := "Clique para ordenar por Numero"
+
+oCCbuscaov := PushButton{SELF,ResourceID{CDE2JAN_BUSCAOV,_GetInst()}}
+oCCbuscaov:Image := ICO_FIND{}
+oCCbuscaov:HyperLabel := HyperLabel{#buscaov,NULL_STRING,NULL_STRING,NULL_STRING}
+oCCbuscaov:TooltipText := "Clique Para Localizar Por Numero"
+
+oDCSC_DESTINO2 := FixedText{SELF,ResourceID{CDE2JAN_SC_DESTINO2,_GetInst()}}
+oDCSC_DESTINO2:HyperLabel := HyperLabel{#SC_DESTINO2,"Foto",NULL_STRING,NULL_STRING}
+
+oCCfoto := PushButton{SELF,ResourceID{CDE2JAN_FOTO,_GetInst()}}
+oCCfoto:HyperLabel := HyperLabel{#foto,NULL_STRING,NULL_STRING,NULL_STRING}
+oCCfoto:Image := ICO_CAMERA{}
+
+oCCesccod := PushButton{SELF,ResourceID{CDE2JAN_ESCCOD,_GetInst()}}
+oCCesccod:HyperLabel := HyperLabel{#esccod,"...",NULL_STRING,NULL_STRING}
+
+oCCchkclipro := PushButton{SELF,ResourceID{CDE2JAN_CHKCLIPRO,_GetInst()}}
+oCCchkclipro:HyperLabel := HyperLabel{#chkclipro,"Checar Cliente Produto",NULL_STRING,NULL_STRING}
+oCCchkclipro:TooltipText := "Verificar os Nomes Clientes Produtos"
+
+oCCbuscaov1 := PushButton{SELF,ResourceID{CDE2JAN_BUSCAOV1,_GetInst()}}
+oCCbuscaov1:Image := ICO_FIND{}
+oCCbuscaov1:HyperLabel := HyperLabel{#buscaov1,NULL_STRING,NULL_STRING,NULL_STRING}
+oCCbuscaov1:TooltipText := "Clique Para Localizar Por Numero"
+
+oCCNovaRev1 := PushButton{SELF,ResourceID{CDE2JAN_NOVAREV1,_GetInst()}}
+oCCNovaRev1:HyperLabel := HyperLabel{#NovaRev1,"duplicar",NULL_STRING,NULL_STRING}
+oCCNovaRev1:TooltipText := "Clique para Criar Uma Nova Revisao"
+
+oDCSC_DATA1 := FixedText{SELF,ResourceID{CDE2JAN_SC_DATA1,_GetInst()}}
+oDCSC_DATA1:HyperLabel := HyperLabel{#SC_DATA1,"Cod.Interno",NULL_STRING,NULL_STRING}
+
+oDCVIABILI := SingleLineEdit{SELF,ResourceID{CDE2JAN_VIABILI,_GetInst()}}
+oDCVIABILI:FieldSpec := padrao_num_08{}
+oDCVIABILI:HyperLabel := HyperLabel{#VIABILI,"Lmes:",NULL_STRING,"VPORC_PRAZO"}
+oDCVIABILI:BackGround := aBrushes[1]
+oDCVIABILI:Font(aFonts[1], FALSE)
+
+oDCtheFixedText31 := FixedText{SELF,ResourceID{CDE2JAN_THEFIXEDTEXT31,_GetInst()}}
+oDCtheFixedText31:HyperLabel := HyperLabel{#theFixedText31,"Viabilidade",NULL_STRING,NULL_STRING}
+
+oCCesccod1 := PushButton{SELF,ResourceID{CDE2JAN_ESCCOD1,_GetInst()}}
+oCCesccod1:HyperLabel := HyperLabel{#esccod1,"...",NULL_STRING,NULL_STRING}
+
+SELF:Caption := "Condicao de Desenvolvimento"
+SELF:HyperLabel := HyperLabel{#cde2jan,"Condicao de Desenvolvimento",NULL_STRING,NULL_STRING}
+SELF:Menu := STANDARDSHELLMENU{}
+
+IF !IsNil(oServer)
+	SELF:Use(oServer)
+ENDIF
+SELF:Browser := DataBrowser{SELF}
+
+oDBCD := DataColumn{padrao_num_08{}}
+oDBCD:Width := 10
+oDBCD:HyperLabel := oDCCD:HyperLabel 
+oDBCD:Caption := "Cd:"
+oDBCD:BackGround := aBrushes[1]
+SELF:Browser:AddColumn(oDBCD)
+
+oDBDIGCTR := DataColumn{padrao_char_01{}}
+oDBDIGCTR:Width := 8
+oDBDIGCTR:HyperLabel := oDCDIGCTR:HyperLabel 
+oDBDIGCTR:Caption := "Digctr:"
+oDBDIGCTR:BackGround := aBrushes[1]
+SELF:Browser:AddColumn(oDBDIGCTR)
+
+oDBDATA := DataColumn{date_field{}}
+oDBDATA:Width := 6
+oDBDATA:HyperLabel := oDCDATA:HyperLabel 
+oDBDATA:Caption := "Data:"
+SELF:Browser:AddColumn(oDBDATA)
+
+oDBPECA := DataColumn{padrao_char_24{}}
+oDBPECA:Width := 6
+oDBPECA:HyperLabel := oDCPECA:HyperLabel 
+oDBPECA:Caption := "Peca:"
+SELF:Browser:AddColumn(oDBPECA)
+
+oDBNOME := DataColumn{padrao_char_50{}}
+oDBNOME:Width := 6
+oDBNOME:HyperLabel := oDCNOME:HyperLabel 
+oDBNOME:Caption := "Nome:"
+SELF:Browser:AddColumn(oDBNOME)
+
+
+SELF:ViewAs(#FormView)
+oTPCDTAB01 := CDTAB01{SELF, 0}
+oDCCDTAB:AppendTab(#CDTAB01,"01",oTPCDTAB01,0)
+oTPCDTAB02 := CDTAB02{SELF, 0}
+oDCCDTAB:AppendTab(#CDTAB02,"02",oTPCDTAB02,0)
+oTPCDTAB03 := CDTAB03{SELF, 0}
+oDCCDTAB:AppendTab(#CDTAB03,"03",oTPCDTAB03,0)
+oTPCDTAB04 := CDTAB04{SELF, 0}
+oDCCDTAB:AppendTab(#CDTAB04,"04",oTPCDTAB04,0)
+oTPCDTAB_PAGE6 := CDTAB_PAGE6{SELF, 0}
+oDCCDTAB:AppendTab(#CDTAB_PAGE6,"Comercial",oTPCDTAB_PAGE6,0)
+oTPCDTAB_PAGE5 := CDTAB_PAGE5{SELF, 0}
+oDCCDTAB:AppendTab(#CDTAB_PAGE5,"Assinante",oTPCDTAB_PAGE5,0)
+oDCCDTAB:SelectTab(#CDTAB01)
+
+oSFjcdi := jcdi{SELF,CDE2JAN_JCDI}
+oSFjcdi:show()
+
+SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN SELF
+
+
+ACCESS NOME() 
+RETURN SELF:FieldGet(#NOME)
+
+
+ASSIGN NOME(uValue) 
+SELF:FieldPut(#NOME, uValue)
+RETURN NOME := uValue
+
+
+ACCESS PECA() 
+RETURN SELF:FieldGet(#PECA)
+
+
+ASSIGN PECA(uValue) 
+SELF:FieldPut(#PECA, uValue)
+RETURN PECA := uValue
+
+
+ACCESS VIABILI() 
+RETURN SELF:FieldGet(#VIABILI)
+
+
+ASSIGN VIABILI(uValue) 
+SELF:FieldPut(#VIABILI, uValue)
+RETURN VIABILI := uValue
+
+
+END CLASS
+PARTIAL CLASS CDTAB_Page5 INHERIT DATAWINDOW
+PROTECT oDCRESPO AS SINGLELINEEDIT
+PROTECT oDCCARGO AS SINGLELINEEDIT
+PROTECT oDCFT28 AS FIXEDTEXT
+PROTECT oDCFT27 AS FIXEDTEXT
+PROTECT oDCFT29 AS FIXEDTEXT
+PROTECT oDCSETOR AS COMBOBOX
+
+// User code starts here (DO NOT remove this line)  ##USER##
+
+ACCESS CARGO
+RETURN SELF:FieldGet( #CARGO )
+
+ASSIGN CARGO( uValue )
+SELF:FieldPut( #CARGO , uValue )
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)
+
+	SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+	SUPER(oWindow , ResourceID{"CDTAB_Page5" , _GetInst()},iCtlID)
+
+	SELF:oDCRESPO := SINGLELINEEDIT{SELF , ResourceID{ CDTAB_PAGE5_RESPO  , _GetInst() } }
+	SELF:oDCRESPO:FieldSpec := PADRAO_CHAR_40{}
+	SELF:oDCRESPO:TooltipText := "Nome do Responsável pelo Orçamento"
+	SELF:oDCRESPO:HyperLabel := HyperLabel{#RESPO , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCCARGO := SINGLELINEEDIT{SELF , ResourceID{ CDTAB_PAGE5_CARGO  , _GetInst() } }
+	SELF:oDCCARGO:FieldSpec := PADRAO_CHAR_40{}
+	SELF:oDCCARGO:TooltipText := "Cargo do Responsavel Pelo Orçamento"
+	SELF:oDCCARGO:HyperLabel := HyperLabel{#CARGO , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT28 := FIXEDTEXT{SELF , ResourceID{ CDTAB_PAGE5_FT28  , _GetInst() } }
+	SELF:oDCFT28:HyperLabel := HyperLabel{#FT28 , "Cargo" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT27 := FIXEDTEXT{SELF , ResourceID{ CDTAB_PAGE5_FT27  , _GetInst() } }
+	SELF:oDCFT27:HyperLabel := HyperLabel{#FT27 , "Responsável" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFT29 := FIXEDTEXT{SELF , ResourceID{ CDTAB_PAGE5_FT29  , _GetInst() } }
+	SELF:oDCFT29:HyperLabel := HyperLabel{#FT29 , "Área" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSETOR := COMBOBOX{SELF , ResourceID{ CDTAB_PAGE5_SETOR  , _GetInst() } }
+	SELF:oDCSETOR:FillUsing( SELF:comboPEGMP05() )
+	SELF:oDCSETOR:FieldSpec := PADRAO_CHAR_02{}
+	SELF:oDCSETOR:TooltipText := "Escolha a Area de quem Assina o Orçamento"
+	SELF:oDCSETOR:HyperLabel := HyperLabel{#SETOR , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:Caption := "DataWindow Caption"
+	SELF:HyperLabel := HyperLabel{#CDTAB_Page5 , "DataWindow Caption" , NULL_STRING , NULL_STRING}
+	IF !IsNil(oServer)
+		SELF:Use(oServer)
+	ELSE
+		SELF:Use(SELF:Owner:Server)
+	ENDIF
+
+
+	SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN
+
+
+ACCESS RESPO
+RETURN SELF:FieldGet( #RESPO )
+
+ASSIGN RESPO( uValue )
+SELF:FieldPut( #RESPO , uValue )
+
+ACCESS SETOR
+RETURN SELF:FieldGet( #SETOR )
+
+ASSIGN SETOR( uValue )
+SELF:FieldPut( #SETOR , uValue )
+
+END CLASS
+PARTIAL CLASS CDTAB_Page6 INHERIT DATAWINDOW 
+
+	PROTECT oDCVALPEC AS RIGHTSLE
+	PROTECT oDCcpagp AS SINGLELINEEDIT
+	PROTECT oDCcemb AS SINGLELINEEDIT
+	PROTECT oDCFERRA AS RIGHTSLE
+	PROTECT oDCcpagf AS SINGLELINEEDIT
+	PROTECT oDCOBSC01 AS SINGLELINEEDIT
+	PROTECT oDCOBSC02 AS SINGLELINEEDIT
+	PROTECT oDCOBSC03 AS SINGLELINEEDIT
+	PROTECT oDCNUMPRE AS RIGHTSLE
+	PROTECT oDCNOMPRE AS SINGLELINEEDIT
+	PROTECT oDCDATAPRE AS DATESLE
+	PROTECT oDCFixedText1 AS FIXEDTEXT
+	PROTECT oDCFixedText2 AS FIXEDTEXT
+	PROTECT oDCIMPOSTO AS SINGLELINEEDIT
+	PROTECT oCCcmdimppeca AS PUSHBUTTON
+	PROTECT oDCFixedText3 AS FIXEDTEXT
+	PROTECT oDCFixedText4 AS FIXEDTEXT
+	PROTECT oCCcmdimppeca1 AS PUSHBUTTON
+	PROTECT oDCfrete AS SINGLELINEEDIT
+	PROTECT oDCFixedText5 AS FIXEDTEXT
+	PROTECT oDCFixedText6 AS FIXEDTEXT
+	PROTECT oCCcmdimppeca2 AS PUSHBUTTON
+	PROTECT oDCIMPFER AS SINGLELINEEDIT
+	PROTECT oDCFixedText7 AS FIXEDTEXT
+	PROTECT oDCFixedText8 AS FIXEDTEXT
+	PROTECT oDCFixedText9 AS FIXEDTEXT
+	PROTECT oDCSC_DATAOBS AS FIXEDTEXT
+	PROTECT oCCpegres AS PUSHBUTTON
+	PROTECT oCCescres AS PUSHBUTTON
+// 	instance VALPEC 
+// 	instance cpagp 
+// 	instance cemb 
+// 	instance FERRA 
+// 	instance cpagf 
+// 	instance OBSC01 
+// 	instance OBSC02 
+// 	instance OBSC03 
+// 	instance NUMPRE 
+// 	instance NOMPRE 
+// 	instance DATAPRE 
+// 	instance IMPOSTO 
+// 	instance frete 
+// 	instance IMPFER 
+
+  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
+
+ACCESS cemb() 
+RETURN SELF:FieldGet(#cemb)
+
+
+ASSIGN cemb(uValue) 
+SELF:FieldPut(#cemb, uValue)
+RETURN cemb := uValue
+
+
+ACCESS cpagf() 
+RETURN SELF:FieldGet(#cpagf)
+
+
+ASSIGN cpagf(uValue) 
+SELF:FieldPut(#cpagf, uValue)
+RETURN cpagf := uValue
+
+
+ACCESS cpagp() 
+RETURN SELF:FieldGet(#cpagp)
+
+
+ASSIGN cpagp(uValue) 
+SELF:FieldPut(#cpagp, uValue)
+RETURN cpagp := uValue
+
+
+ACCESS DATAPRE() 
+RETURN SELF:FieldGet(#DATAPRE)
+
+
+ASSIGN DATAPRE(uValue) 
+SELF:FieldPut(#DATAPRE, uValue)
+RETURN DATAPRE := uValue
+
+
+ACCESS FERRA() 
+RETURN SELF:FieldGet(#FERRA)
+
+
+ASSIGN FERRA(uValue) 
+SELF:FieldPut(#FERRA, uValue)
+RETURN FERRA := uValue
+
+
+ACCESS frete() 
+RETURN SELF:FieldGet(#frete)
+
+
+ASSIGN frete(uValue) 
+SELF:FieldPut(#frete, uValue)
+RETURN frete := uValue
+
+
+ACCESS IMPFER() 
+RETURN SELF:FieldGet(#IMPFER)
+
+
+ASSIGN IMPFER(uValue) 
+SELF:FieldPut(#IMPFER, uValue)
+RETURN IMPFER := uValue
+
+
+ACCESS IMPOSTO() 
+RETURN SELF:FieldGet(#IMPOSTO)
+
+
+ASSIGN IMPOSTO(uValue) 
+SELF:FieldPut(#IMPOSTO, uValue)
+RETURN IMPOSTO := uValue
+
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
+LOCAL DIM aFonts[1] AS OBJECT
+LOCAL DIM aBrushes[1] AS OBJECT
+
+SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+SUPER(oWindow,ResourceID{"CDTAB_Page6",_GetInst()},iCtlID)
+
+aFonts[1] := Font{,12,"Times New Roman"}
+aFonts[1]:Bold := TRUE
+aBrushes[1] := Brush{Color{255,255,200}}
+
+oDCVALPEC := rightSle{SELF,ResourceID{CDTAB_PAGE6_VALPEC,_GetInst()}}
+oDCVALPEC:FieldSpec := PADRAO_NUM_10_5{}
+oDCVALPEC:HyperLabel := HyperLabel{#VALPEC,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oDCcpagp := SingleLineEdit{SELF,ResourceID{CDTAB_PAGE6_CPAGP,_GetInst()}}
+oDCcpagp:FieldSpec := padrao_char_50{}
+oDCcpagp:HyperLabel := HyperLabel{#cpagp,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oDCcemb := SingleLineEdit{SELF,ResourceID{CDTAB_PAGE6_CEMB,_GetInst()}}
+oDCcemb:FieldSpec := padrao_char_50{}
+oDCcemb:HyperLabel := HyperLabel{#cemb,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oDCFERRA := rightSle{SELF,ResourceID{CDTAB_PAGE6_FERRA,_GetInst()}}
+oDCFERRA:FieldSpec := PADRAO_NUM_10_2{}
+oDCFERRA:HyperLabel := HyperLabel{#FERRA,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oDCcpagf := SingleLineEdit{SELF,ResourceID{CDTAB_PAGE6_CPAGF,_GetInst()}}
+oDCcpagf:FieldSpec := padrao_char_50{}
+oDCcpagf:HyperLabel := HyperLabel{#cpagf,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oDCOBSC01 := SingleLineEdit{SELF,ResourceID{CDTAB_PAGE6_OBSC01,_GetInst()}}
+oDCOBSC01:FieldSpec := padrao_char_80{}
+oDCOBSC01:HyperLabel := HyperLabel{#OBSC01,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oDCOBSC02 := SingleLineEdit{SELF,ResourceID{CDTAB_PAGE6_OBSC02,_GetInst()}}
+oDCOBSC02:FieldSpec := padrao_char_80{}
+oDCOBSC02:HyperLabel := HyperLabel{#OBSC02,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oDCOBSC03 := SingleLineEdit{SELF,ResourceID{CDTAB_PAGE6_OBSC03,_GetInst()}}
+oDCOBSC03:FieldSpec := padrao_char_80{}
+oDCOBSC03:HyperLabel := HyperLabel{#OBSC03,NULL_STRING,NULL_STRING,NULL_STRING}
+
+oDCNUMPRE := rightSle{SELF,ResourceID{CDTAB_PAGE6_NUMPRE,_GetInst()}}
+oDCNUMPRE:FieldSpec := padrao_num_08{}
+oDCNUMPRE:HyperLabel := HyperLabel{#NUMPRE,"Numtec:",NULL_STRING,"ME4CC_NUMTEC"}
+
+oDCNOMPRE := SingleLineEdit{SELF,ResourceID{CDTAB_PAGE6_NOMPRE,_GetInst()}}
+oDCNOMPRE:FieldSpec := padrao_char_40{}
+oDCNOMPRE:HyperLabel := HyperLabel{#NOMPRE,"DataWindow Caption",NULL_STRING,"ME4CC_NOMTEC"}
+
+oDCDATAPRE := DateSle{SELF,ResourceID{CDTAB_PAGE6_DATAPRE,_GetInst()}}
+oDCDATAPRE:FieldSpec := date_field{}
+oDCDATAPRE:HyperLabel := HyperLabel{#DATAPRE,"Dataobs:",NULL_STRING,"CD_DATAOBS"}
+
+oDCFixedText1 := FixedText{SELF,ResourceID{CDTAB_PAGE6_FIXEDTEXT1,_GetInst()}}
+oDCFixedText1:HyperLabel := HyperLabel{#FixedText1,"Preço Peça",NULL_STRING,NULL_STRING}
+
+oDCFixedText2 := FixedText{SELF,ResourceID{CDTAB_PAGE6_FIXEDTEXT2,_GetInst()}}
+oDCFixedText2:HyperLabel := HyperLabel{#FixedText2,"Imposto",NULL_STRING,NULL_STRING}
+
+oDCIMPOSTO := SingleLineEdit{SELF,ResourceID{CDTAB_PAGE6_IMPOSTO,_GetInst()}}
+oDCIMPOSTO:BackGround := aBrushes[1]
+oDCIMPOSTO:Font(aFonts[1], FALSE)
+oDCIMPOSTO:HyperLabel := HyperLabel{#IMPOSTO,NULL_STRING,NULL_STRING,NULL_STRING}
+oDCIMPOSTO:FieldSpec := padrao_char_01{}
+
+oCCcmdimppeca := PushButton{SELF,ResourceID{CDTAB_PAGE6_CMDIMPPECA,_GetInst()}}
+oCCcmdimppeca:HyperLabel := HyperLabel{#cmdimppeca,"S/N",NULL_STRING,NULL_STRING}
+
+oDCFixedText3 := FixedText{SELF,ResourceID{CDTAB_PAGE6_FIXEDTEXT3,_GetInst()}}
+oDCFixedText3:HyperLabel := HyperLabel{#FixedText3,"Cond.Pgto Peça",NULL_STRING,NULL_STRING}
+
+oDCFixedText4 := FixedText{SELF,ResourceID{CDTAB_PAGE6_FIXEDTEXT4,_GetInst()}}
+oDCFixedText4:HyperLabel := HyperLabel{#FixedText4,"Embalagem",NULL_STRING,NULL_STRING}
+
+oCCcmdimppeca1 := PushButton{SELF,ResourceID{CDTAB_PAGE6_CMDIMPPECA1,_GetInst()}}
+oCCcmdimppeca1:HyperLabel := HyperLabel{#cmdimppeca1,"(R)etira (E)ntrega (T)ransportadora",NULL_STRING,NULL_STRING}
+
+oDCfrete := SingleLineEdit{SELF,ResourceID{CDTAB_PAGE6_FRETE,_GetInst()}}
+oDCfrete:BackGround := aBrushes[1]
+oDCfrete:Font(aFonts[1], FALSE)
+oDCfrete:HyperLabel := HyperLabel{#frete,NULL_STRING,NULL_STRING,NULL_STRING}
+oDCfrete:FieldSpec := padrao_char_01{}
+
+oDCFixedText5 := FixedText{SELF,ResourceID{CDTAB_PAGE6_FIXEDTEXT5,_GetInst()}}
+oDCFixedText5:HyperLabel := HyperLabel{#FixedText5,"frete",NULL_STRING,NULL_STRING}
+
+oDCFixedText6 := FixedText{SELF,ResourceID{CDTAB_PAGE6_FIXEDTEXT6,_GetInst()}}
+oDCFixedText6:HyperLabel := HyperLabel{#FixedText6,"Preço Ferramenta",NULL_STRING,NULL_STRING}
+
+oCCcmdimppeca2 := PushButton{SELF,ResourceID{CDTAB_PAGE6_CMDIMPPECA2,_GetInst()}}
+oCCcmdimppeca2:HyperLabel := HyperLabel{#cmdimppeca2,"S/N",NULL_STRING,NULL_STRING}
+
+oDCIMPFER := SingleLineEdit{SELF,ResourceID{CDTAB_PAGE6_IMPFER,_GetInst()}}
+oDCIMPFER:BackGround := aBrushes[1]
+oDCIMPFER:Font(aFonts[1], FALSE)
+oDCIMPFER:HyperLabel := HyperLabel{#IMPFER,NULL_STRING,NULL_STRING,NULL_STRING}
+oDCIMPFER:FieldSpec := padrao_char_01{}
+
+oDCFixedText7 := FixedText{SELF,ResourceID{CDTAB_PAGE6_FIXEDTEXT7,_GetInst()}}
+oDCFixedText7:HyperLabel := HyperLabel{#FixedText7,"Imposto",NULL_STRING,NULL_STRING}
+
+oDCFixedText8 := FixedText{SELF,ResourceID{CDTAB_PAGE6_FIXEDTEXT8,_GetInst()}}
+oDCFixedText8:HyperLabel := HyperLabel{#FixedText8,"Cond.Pgto Ferr.",NULL_STRING,NULL_STRING}
+
+oDCFixedText9 := FixedText{SELF,ResourceID{CDTAB_PAGE6_FIXEDTEXT9,_GetInst()}}
+oDCFixedText9:HyperLabel := HyperLabel{#FixedText9,"Obs:",NULL_STRING,NULL_STRING}
+
+oDCSC_DATAOBS := FixedText{SELF,ResourceID{CDTAB_PAGE6_SC_DATAOBS,_GetInst()}}
+oDCSC_DATAOBS:HyperLabel := HyperLabel{#SC_DATAOBS,"Data",NULL_STRING,NULL_STRING}
+
+oCCpegres := PushButton{SELF,ResourceID{CDTAB_PAGE6_PEGRES,_GetInst()}}
+oCCpegres:HyperLabel := HyperLabel{#pegres,"-->",NULL_STRING,NULL_STRING}
+
+oCCescres := PushButton{SELF,ResourceID{CDTAB_PAGE6_ESCRES,_GetInst()}}
+oCCescres:HyperLabel := HyperLabel{#escres,"...",NULL_STRING,NULL_STRING}
+
+SELF:Caption := ""
+SELF:HyperLabel := HyperLabel{#CDTAB_Page6,NULL_STRING,NULL_STRING,NULL_STRING}
+
+IF !IsNil(oServer)
+	SELF:Use(oServer)
+ELSE
+	SELF:Use(SELF:Owner:Server)
+ENDIF
+
+SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN SELF
+
+
+ACCESS NOMPRE() 
+RETURN SELF:FieldGet(#NOMPRE)
+
+
+ASSIGN NOMPRE(uValue) 
+SELF:FieldPut(#NOMPRE, uValue)
+RETURN NOMPRE := uValue
+
+
+ACCESS NUMPRE() 
+RETURN SELF:FieldGet(#NUMPRE)
+
+
+ASSIGN NUMPRE(uValue) 
+SELF:FieldPut(#NUMPRE, uValue)
+RETURN NUMPRE := uValue
+
+
+ACCESS OBSC01() 
+RETURN SELF:FieldGet(#OBSC01)
+
+
+ASSIGN OBSC01(uValue) 
+SELF:FieldPut(#OBSC01, uValue)
+RETURN OBSC01 := uValue
+
+
+ACCESS OBSC02() 
+RETURN SELF:FieldGet(#OBSC02)
+
+
+ASSIGN OBSC02(uValue) 
+SELF:FieldPut(#OBSC02, uValue)
+RETURN OBSC02 := uValue
+
+
+ACCESS OBSC03() 
+RETURN SELF:FieldGet(#OBSC03)
+
+
+ASSIGN OBSC03(uValue) 
+SELF:FieldPut(#OBSC03, uValue)
+RETURN OBSC03 := uValue
+
+
+ACCESS VALPEC() 
+RETURN SELF:FieldGet(#VALPEC)
+
+
+ASSIGN VALPEC(uValue) 
+SELF:FieldPut(#VALPEC, uValue)
+RETURN VALPEC := uValue
+
+
+END CLASS
+PARTIAL CLASS CDTAB01 INHERIT DATAWINDOW
+PROTECT oDCCLIENTE AS rightSle
+PROTECT oDCCLINOME AS SINGLELINEEDIT
+PROTECT oDCCLICOGN AS SINGLELINEEDIT
+PROTECT oDCCOMPRADOR AS SINGLELINEEDIT
+PROTECT oDCCOMPNOME AS SINGLELINEEDIT
+PROTECT oDCPROJETO AS SINGLELINEEDIT
+PROTECT oDCLOTEANUAL AS rightSle
+PROTECT oDCENGENHA AS SINGLELINEEDIT
+PROTECT oDCLOTEENTR AS rightSle
+PROTECT oDCPLANTA AS SINGLELINEEDIT
+PROTECT oDCSC_COMPRADOR AS FIXEDTEXT
+PROTECT oDCSC_PROJETO AS FIXEDTEXT
+PROTECT oDCSC_ENGENHA AS FIXEDTEXT
+PROTECT oDCSC_PLANTA AS FIXEDTEXT
+PROTECT oDCSC_FUNNUM AS FIXEDTEXT
+PROTECT oDCSC_DATAEMI AS FIXEDTEXT
+PROTECT oDCFUNNUM AS SINGLELINEEDIT
+PROTECT oDCFUNNOM AS SINGLELINEEDIT
+PROTECT oDCDATAEMI AS SINGLELINEEDIT
+PROTECT oDCSC_CLIENTE AS FIXEDTEXT
+PROTECT oCCbtnpegma01 AS PUSHBUTTON
+PROTECT oCCescfor AS PUSHBUTTON
+PROTECT oCCpegmc02 AS PUSHBUTTON
+PROTECT oCCescmc02 AS PUSHBUTTON
+PROTECT oCCEmailfim AS PUSHBUTTON
+PROTECT oDCSC_CLIENTE1 AS FIXEDTEXT
+PROTECT oDCSC_CLIENTE2 AS FIXEDTEXT
+PROTECT oDCCODCLI AS rightSle
+
+// User code starts here (DO NOT remove this line)  ##USER##
+
+ACCESS CLICOGN
+RETURN SELF:FieldGet( #CLICOGN )
+
+ASSIGN CLICOGN( uValue )
+SELF:FieldPut( #CLICOGN , uValue )
+
+ACCESS CLIENTE
+RETURN SELF:FieldGet( #CLIENTE )
+
+ASSIGN CLIENTE( uValue )
+SELF:FieldPut( #CLIENTE , uValue )
+
+ACCESS CLINOME
+RETURN SELF:FieldGet( #CLINOME )
+
+ASSIGN CLINOME( uValue )
+SELF:FieldPut( #CLINOME , uValue )
+
+ACCESS CODCLI
+RETURN SELF:FieldGet( #CODCLI )
+
+ASSIGN CODCLI( uValue )
+SELF:FieldPut( #CODCLI , uValue )
+
+ACCESS COMPNOME
+RETURN SELF:FieldGet( #COMPNOME )
+
+ASSIGN COMPNOME( uValue )
+SELF:FieldPut( #COMPNOME , uValue )
+
+ACCESS COMPRADOR
+RETURN SELF:FieldGet( #COMPRADOR )
+
+ASSIGN COMPRADOR( uValue )
+SELF:FieldPut( #COMPRADOR , uValue )
+
+ACCESS DATAEMI
+RETURN SELF:FieldGet( #DATAEMI )
+
+ASSIGN DATAEMI( uValue )
+SELF:FieldPut( #DATAEMI , uValue )
+
+ACCESS ENGENHA
+RETURN SELF:FieldGet( #ENGENHA )
+
+ASSIGN ENGENHA( uValue )
+SELF:FieldPut( #ENGENHA , uValue )
+
+ACCESS FUNNOM
+RETURN SELF:FieldGet( #FUNNOM )
+
+ASSIGN FUNNOM( uValue )
+SELF:FieldPut( #FUNNOM , uValue )
+
+ACCESS FUNNUM
+RETURN SELF:FieldGet( #FUNNUM )
+
+ASSIGN FUNNUM( uValue )
+SELF:FieldPut( #FUNNUM , uValue )
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)
+	LOCAL oFont AS Font
+
+	SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+	SUPER(oWindow , ResourceID{"CDTAB01" , _GetInst()},iCtlID)
+
+	SELF:oDCCLIENTE := rightSle{SELF , ResourceID{ CDTAB01_CLIENTE  , _GetInst() } }
+	SELF:oDCCLIENTE:FieldSpec := padrao_num_08{}
+	SELF:oDCCLIENTE:TooltipText := "Codigo do Cliente"
+	SELF:oDCCLIENTE:HyperLabel := HyperLabel{#CLIENTE , "Cliente:" , NULL_STRING , "CD_CLIENTE"}
+
+	SELF:oDCCLINOME := SINGLELINEEDIT{SELF , ResourceID{ CDTAB01_CLINOME  , _GetInst() } }
+	SELF:oDCCLINOME:FieldSpec := padrao_char_50{}
+	SELF:oDCCLINOME:HyperLabel := HyperLabel{#CLINOME , "Clinome:" , NULL_STRING , "CD_CLINOME"}
+
+	SELF:oDCCLICOGN := SINGLELINEEDIT{SELF , ResourceID{ CDTAB01_CLICOGN  , _GetInst() } }
+	SELF:oDCCLICOGN:FieldSpec := padrao_char_15{}
+	SELF:oDCCLICOGN:TooltipText := "Cognome do Cliente"
+	SELF:oDCCLICOGN:HyperLabel := HyperLabel{#CLICOGN , "Cliente:" , NULL_STRING , "CD_CLIENTE"}
+
+	SELF:oDCCOMPRADOR := SINGLELINEEDIT{SELF , ResourceID{ CDTAB01_COMPRADOR  , _GetInst() } }
+	SELF:oDCCOMPRADOR:FieldSpec := padrao_char_15{}
+	SELF:oDCCOMPRADOR:TooltipText := "Codigo do Comprador"
+	SELF:oDCCOMPRADOR:HyperLabel := HyperLabel{#COMPRADOR , "Comprador:" , NULL_STRING , "CD_COMPRADOR"}
+
+	SELF:oDCCOMPNOME := SINGLELINEEDIT{SELF , ResourceID{ CDTAB01_COMPNOME  , _GetInst() } }
+	SELF:oDCCOMPNOME:FieldSpec := padrao_char_40{}
+	SELF:oDCCOMPNOME:HyperLabel := HyperLabel{#COMPNOME , "Compnome:" , NULL_STRING , "CD_COMPNOME"}
+
+	SELF:oDCPROJETO := SINGLELINEEDIT{SELF , ResourceID{ CDTAB01_PROJETO  , _GetInst() } }
+	SELF:oDCPROJETO:FieldSpec := padrao_char_50{}
+	SELF:oDCPROJETO:TooltipText := "Projeto"
+	SELF:oDCPROJETO:HyperLabel := HyperLabel{#PROJETO , "Projeto:" , NULL_STRING , "CD_PROJETO"}
+
+	SELF:oDCLOTEANUAL := rightSle{SELF , ResourceID{ CDTAB01_LOTEANUAL  , _GetInst() } }
+	SELF:oDCLOTEANUAL:FieldSpec := padrao_num_08{}
+	SELF:oDCLOTEANUAL:TooltipText := "Codigo do Cliente"
+	SELF:oDCLOTEANUAL:HyperLabel := HyperLabel{#LOTEANUAL , "Cliente:" , NULL_STRING , "CD_CLIENTE"}
+
+	SELF:oDCENGENHA := SINGLELINEEDIT{SELF , ResourceID{ CDTAB01_ENGENHA  , _GetInst() } }
+	SELF:oDCENGENHA:FieldSpec := padrao_char_50{}
+	SELF:oDCENGENHA:TooltipText := "Engenheiro"
+	SELF:oDCENGENHA:HyperLabel := HyperLabel{#ENGENHA , "Engenha:" , NULL_STRING , "CD_ENGENHA"}
+
+	SELF:oDCLOTEENTR := rightSle{SELF , ResourceID{ CDTAB01_LOTEENTR  , _GetInst() } }
+	SELF:oDCLOTEENTR:FieldSpec := padrao_num_08{}
+	SELF:oDCLOTEENTR:TooltipText := "Codigo do Cliente"
+	SELF:oDCLOTEENTR:HyperLabel := HyperLabel{#LOTEENTR , "Cliente:" , NULL_STRING , "CD_CLIENTE"}
+
+	SELF:oDCPLANTA := SINGLELINEEDIT{SELF , ResourceID{ CDTAB01_PLANTA  , _GetInst() } }
+	SELF:oDCPLANTA:FieldSpec := padrao_char_50{}
+	SELF:oDCPLANTA:TooltipText := "Planta"
+	SELF:oDCPLANTA:HyperLabel := HyperLabel{#PLANTA , "Planta:" , NULL_STRING , "CD_PLANTA"}
+
+	SELF:oDCSC_COMPRADOR := FIXEDTEXT{SELF , ResourceID{ CDTAB01_SC_COMPRADOR  , _GetInst() } }
+	SELF:oDCSC_COMPRADOR:HyperLabel := HyperLabel{#SC_COMPRADOR , "Comprador:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_PROJETO := FIXEDTEXT{SELF , ResourceID{ CDTAB01_SC_PROJETO  , _GetInst() } }
+	SELF:oDCSC_PROJETO:HyperLabel := HyperLabel{#SC_PROJETO , "Projeto:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_ENGENHA := FIXEDTEXT{SELF , ResourceID{ CDTAB01_SC_ENGENHA  , _GetInst() } }
+	SELF:oDCSC_ENGENHA:HyperLabel := HyperLabel{#SC_ENGENHA , "Engenheiro" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_PLANTA := FIXEDTEXT{SELF , ResourceID{ CDTAB01_SC_PLANTA  , _GetInst() } }
+	SELF:oDCSC_PLANTA:HyperLabel := HyperLabel{#SC_PLANTA , "Planta:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_FUNNUM := FIXEDTEXT{SELF , ResourceID{ CDTAB01_SC_FUNNUM  , _GetInst() } }
+	SELF:oDCSC_FUNNUM:HyperLabel := HyperLabel{#SC_FUNNUM , "Emitido" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_DATAEMI := FIXEDTEXT{SELF , ResourceID{ CDTAB01_SC_DATAEMI  , _GetInst() } }
+	SELF:oDCSC_DATAEMI:HyperLabel := HyperLabel{#SC_DATAEMI , "em" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCFUNNUM := SINGLELINEEDIT{SELF , ResourceID{ CDTAB01_FUNNUM  , _GetInst() } }
+	SELF:oDCFUNNUM:FieldSpec := padrao_num_08{}
+	SELF:oDCFUNNUM:Background := Brush{ Color{ 255 , 255 , 200 } }
+	SELF:oDCFUNNUM:TooltipText := "Numero Funcionario que Fechou a Cond.Desenvolvimento"
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCFUNNUM:Font( oFont )
+	SELF:oDCFUNNUM:HyperLabel := HyperLabel{#FUNNUM , "Funnum:" , NULL_STRING , "CD_FUNNUM"}
+
+	SELF:oDCFUNNOM := SINGLELINEEDIT{SELF , ResourceID{ CDTAB01_FUNNOM  , _GetInst() } }
+	SELF:oDCFUNNOM:FieldSpec := padrao_char_40{}
+	SELF:oDCFUNNOM:Background := Brush{ Color{ 255 , 255 , 200 } }
+	SELF:oDCFUNNOM:TooltipText := "Nome Funcionario que Fechou a Cond.Desenvolvimento"
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCFUNNOM:Font( oFont )
+	SELF:oDCFUNNOM:HyperLabel := HyperLabel{#FUNNOM , "Funnom:" , NULL_STRING , "CD_FUNNOM"}
+
+	SELF:oDCDATAEMI := SINGLELINEEDIT{SELF , ResourceID{ CDTAB01_DATAEMI  , _GetInst() } }
+	SELF:oDCDATAEMI:FieldSpec := date_field{}
+	SELF:oDCDATAEMI:Background := Brush{ Color{ 255 , 255 , 200 } }
+	SELF:oDCDATAEMI:TooltipText := "Data Fechamento Condiçao de Desenvolvimento"
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCDATAEMI:Font( oFont )
+	SELF:oDCDATAEMI:HyperLabel := HyperLabel{#DATAEMI , "Dataemi:" , NULL_STRING , "CD_DATAEMI"}
+
+	SELF:oDCSC_CLIENTE := FIXEDTEXT{SELF , ResourceID{ CDTAB01_SC_CLIENTE  , _GetInst() } }
+	SELF:oDCSC_CLIENTE:HyperLabel := HyperLabel{#SC_CLIENTE , "Cliente:" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCbtnpegma01 := PUSHBUTTON{SELF , ResourceID{ CDTAB01_BTNPEGMA01  , _GetInst() } }
+	SELF:oCCbtnpegma01:TooltipText := "Clique para puxar o nome do cliente"
+	SELF:oCCbtnpegma01:HyperLabel := HyperLabel{#btnpegma01 , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCescfor := PUSHBUTTON{SELF , ResourceID{ CDTAB01_ESCFOR  , _GetInst() } }
+	SELF:oCCescfor:TooltipText := "Clique Para Incluir um Cliente"
+	SELF:oCCescfor:HyperLabel := HyperLabel{#escfor , "..." , NULL_STRING , NULL_STRING}
+
+	SELF:oCCpegmc02 := PUSHBUTTON{SELF , ResourceID{ CDTAB01_PEGMC02  , _GetInst() } }
+	SELF:oCCpegmc02:TooltipText := "clique para puxar o nome do comprador"
+	SELF:oCCpegmc02:HyperLabel := HyperLabel{#pegmc02 , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCescmc02 := PUSHBUTTON{SELF , ResourceID{ CDTAB01_ESCMC02  , _GetInst() } }
+	SELF:oCCescmc02:TooltipText := "clique |Para escolher um comprador"
+	SELF:oCCescmc02:HyperLabel := HyperLabel{#escmc02 , "..." , NULL_STRING , NULL_STRING}
+
+	SELF:oCCEmailfim := PUSHBUTTON{SELF , ResourceID{ CDTAB01_EMAILFIM  , _GetInst() } }
+	SELF:oCCEmailfim:TooltipText := "Clique para concluir uma condiçao de Desenvolvimento"
+	SELF:oCCEmailfim:HyperLabel := HyperLabel{#Emailfim , "Email Conclusão" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_CLIENTE1 := FIXEDTEXT{SELF , ResourceID{ CDTAB01_SC_CLIENTE1  , _GetInst() } }
+	SELF:oDCSC_CLIENTE1:HyperLabel := HyperLabel{#SC_CLIENTE1 , "Lote Anual" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_CLIENTE2 := FIXEDTEXT{SELF , ResourceID{ CDTAB01_SC_CLIENTE2  , _GetInst() } }
+	SELF:oDCSC_CLIENTE2:HyperLabel := HyperLabel{#SC_CLIENTE2 , "Min.Entrega" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCCODCLI := rightSle{SELF , ResourceID{ CDTAB01_CODCLI  , _GetInst() } }
+	SELF:oDCCODCLI:FieldSpec := padrao_CHAR_15{}
+	SELF:oDCCODCLI:TooltipText := "Codigo do Cliente"
+	SELF:oDCCODCLI:HyperLabel := HyperLabel{#CODCLI , "Cliente:" , NULL_STRING , "CD_CLIENTE"}
+
+	SELF:Caption := "DataWindow Caption"
+	SELF:HyperLabel := HyperLabel{#CDTAB01 , "DataWindow Caption" , NULL_STRING , NULL_STRING}
+	IF !IsNil(oServer)
+		SELF:Use(oServer)
+	ELSE
+		SELF:Use(SELF:Owner:Server)
+	ENDIF
+
+
+	SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN
+
+
+ACCESS LOTEANUAL
+RETURN SELF:FieldGet( #LOTEANUAL )
+
+ASSIGN LOTEANUAL( uValue )
+SELF:FieldPut( #LOTEANUAL , uValue )
+
+ACCESS LOTEENTR
+RETURN SELF:FieldGet( #LOTEENTR )
+
+ASSIGN LOTEENTR( uValue )
+SELF:FieldPut( #LOTEENTR , uValue )
+
+ACCESS PLANTA
+RETURN SELF:FieldGet( #PLANTA )
+
+ASSIGN PLANTA( uValue )
+SELF:FieldPut( #PLANTA , uValue )
+
+ACCESS PROJETO
+RETURN SELF:FieldGet( #PROJETO )
+
+ASSIGN PROJETO( uValue )
+SELF:FieldPut( #PROJETO , uValue )
+
+END CLASS
+CLASS CDTAB02 INHERIT DATAWINDOW 
+
+	PROTECT oDCDATAAUT AS DATESLE
+	PROTECT oDCPTQT AS SINGLELINEEDIT
+	PROTECT oDCOUTOBS AS SINGLELINEEDIT
+	PROTECT oDCOBS01 AS SINGLELINEEDIT
+	PROTECT oDCOBS02 AS SINGLELINEEDIT
+	PROTECT oDCOBS03 AS SINGLELINEEDIT
+	PROTECT oDCOBS04 AS SINGLELINEEDIT
+	PROTECT oDCOBS05 AS SINGLELINEEDIT
+	PROTECT oDCSC_DATAAUT AS FIXEDTEXT
+	PROTECT oDCSC_OBS01 AS FIXEDTEXT
+	PROTECT oDCPT AS CHECKBOX
+	PROTECT oDCFD AS CHECKBOX
+	PROTECT oDCDC AS CHECKBOX
+	PROTECT oDCPCMP AS CHECKBOX
+	PROTECT oDCPCMO AS CHECKBOX
+	PROTECT oDCMP AS CHECKBOX
+	PROTECT oDCOUT AS CHECKBOX
+	PROTECT oDCRET AS CHECKBOX
+// 	instance DATAAUT 
+// 	instance PTQT 
+// 	instance OUTOBS 
+// 	instance OBS01 
+// 	instance OBS02 
+// 	instance OBS03 
+// 	instance OBS04 
+// 	instance OBS05 
+// 	instance PT 
+// 	instance FD 
+// 	instance DC 
+// 	instance PCMP 
+// 	instance PCMO 
+// 	instance MP 
+// 	instance OUT 
+// 	instance RET 
+
+  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
+
+ACCESS DATAAUT() 
+RETURN SELF:FieldGet(#DATAAUT)
+
+
+ASSIGN DATAAUT(uValue) 
+SELF:FieldPut(#DATAAUT, uValue)
+RETURN DATAAUT := uValue
+
+
+ACCESS DC() 
+RETURN SELF:FieldGet(#DC)
+
+
+ASSIGN DC(uValue) 
+SELF:FieldPut(#DC, uValue)
+RETURN DC := uValue
+
+
+ACCESS FD() 
+RETURN SELF:FieldGet(#FD)
+
+
+ASSIGN FD(uValue) 
+SELF:FieldPut(#FD, uValue)
+RETURN FD := uValue
+
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
+
+SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+SUPER(oWindow,ResourceID{"CDTAB02",_GetInst()},iCtlID)
+
+oDCDATAAUT := DateSle{SELF,ResourceID{CDTAB02_DATAAUT,_GetInst()}}
+oDCDATAAUT:FieldSpec := date_field{}
+oDCDATAAUT:HyperLabel := HyperLabel{#DATAAUT,"Dataaut:",NULL_STRING,"CD_DATAAUT"}
+
+oDCPTQT := SingleLineEdit{SELF,ResourceID{CDTAB02_PTQT,_GetInst()}}
+oDCPTQT:FieldSpec := padrao_num_10{}
+oDCPTQT:HyperLabel := HyperLabel{#PTQT,"Dataaut:",NULL_STRING,"CD_DATAAUT"}
+
+oDCOUTOBS := SingleLineEdit{SELF,ResourceID{CDTAB02_OUTOBS,_GetInst()}}
+oDCOUTOBS:FieldSpec := padrao_char_80{}
+oDCOUTOBS:HyperLabel := HyperLabel{#OUTOBS,"Outobs:",NULL_STRING,"CD_OUTOBS"}
+
+oDCOBS01 := SingleLineEdit{SELF,ResourceID{CDTAB02_OBS01,_GetInst()}}
+oDCOBS01:FieldSpec := padrao_char_80{}
+oDCOBS01:HyperLabel := HyperLabel{#OBS01,"Obs01:",NULL_STRING,"CD_OBS01"}
+
+oDCOBS02 := SingleLineEdit{SELF,ResourceID{CDTAB02_OBS02,_GetInst()}}
+oDCOBS02:FieldSpec := padrao_char_80{}
+oDCOBS02:HyperLabel := HyperLabel{#OBS02,"Obs02:",NULL_STRING,"CD_OBS02"}
+
+oDCOBS03 := SingleLineEdit{SELF,ResourceID{CDTAB02_OBS03,_GetInst()}}
+oDCOBS03:FieldSpec := padrao_char_80{}
+oDCOBS03:HyperLabel := HyperLabel{#OBS03,"Obs03:",NULL_STRING,"CD_OBS03"}
+
+oDCOBS04 := SingleLineEdit{SELF,ResourceID{CDTAB02_OBS04,_GetInst()}}
+oDCOBS04:FieldSpec := padrao_char_80{}
+oDCOBS04:HyperLabel := HyperLabel{#OBS04,"Obs03:",NULL_STRING,"CD_OBS03"}
+
+oDCOBS05 := SingleLineEdit{SELF,ResourceID{CDTAB02_OBS05,_GetInst()}}
+oDCOBS05:FieldSpec := padrao_char_80{}
+oDCOBS05:HyperLabel := HyperLabel{#OBS05,"Obs03:",NULL_STRING,"CD_OBS03"}
+
+oDCSC_DATAAUT := FixedText{SELF,ResourceID{CDTAB02_SC_DATAAUT,_GetInst()}}
+oDCSC_DATAAUT:HyperLabel := HyperLabel{#SC_DATAAUT,"Autorizacao Fabricacao",NULL_STRING,NULL_STRING}
+
+oDCSC_OBS01 := FixedText{SELF,ResourceID{CDTAB02_SC_OBS01,_GetInst()}}
+oDCSC_OBS01:HyperLabel := HyperLabel{#SC_OBS01,"Observação Gerais",NULL_STRING,NULL_STRING}
+
+oDCPT := CheckBox{SELF,ResourceID{CDTAB02_PT,_GetInst()}}
+oDCPT:HyperLabel := HyperLabel{#PT,"Prototipos Qtde",NULL_STRING,"CD_PT"}
+oDCPT:FieldSpec := logic_field{}
+
+oDCFD := CheckBox{SELF,ResourceID{CDTAB02_FD,_GetInst()}}
+oDCFD:HyperLabel := HyperLabel{#FD,"Ferramental/Disp.Produção",NULL_STRING,"CD_FD"}
+oDCFD:FieldSpec := logic_field{}
+
+oDCDC := CheckBox{SELF,ResourceID{CDTAB02_DC,_GetInst()}}
+oDCDC:HyperLabel := HyperLabel{#DC,"Dispositivos de Controle",NULL_STRING,"CD_DC"}
+oDCDC:FieldSpec := logic_field{}
+
+oDCPCMP := CheckBox{SELF,ResourceID{CDTAB02_PCMP,_GetInst()}}
+oDCPCMP:HyperLabel := HyperLabel{#PCMP,"Peça/Cjto Mat e Mao Obra",NULL_STRING,"CD_PCMP"}
+oDCPCMP:FieldSpec := logic_field{}
+
+oDCPCMO := CheckBox{SELF,ResourceID{CDTAB02_PCMO,_GetInst()}}
+oDCPCMO:HyperLabel := HyperLabel{#PCMO,"Peça/Cjto Mao de Obra",NULL_STRING,"CD_PCMO"}
+oDCPCMO:FieldSpec := logic_field{}
+
+oDCMP := CheckBox{SELF,ResourceID{CDTAB02_MP,_GetInst()}}
+oDCMP:HyperLabel := HyperLabel{#MP,"Modificacao de Peça/Cjto",NULL_STRING,"CD_MP"}
+oDCMP:FieldSpec := logic_field{}
+
+oDCOUT := CheckBox{SELF,ResourceID{CDTAB02_OUT,_GetInst()}}
+oDCOUT:HyperLabel := HyperLabel{#OUT,"Outros",NULL_STRING,"CD_OUT"}
+oDCOUT:FieldSpec := logic_field{}
+
+oDCRET := CheckBox{SELF,ResourceID{CDTAB02_RET,_GetInst()}}
+oDCRET:HyperLabel := HyperLabel{#RET,"Retrabalho",NULL_STRING,"CD_OUT"}
+oDCRET:FieldSpec := logic_field{}
+
+SELF:Caption := "DataWindow Caption"
+SELF:HyperLabel := HyperLabel{#CDTAB02,"DataWindow Caption",NULL_STRING,NULL_STRING}
+
+IF !IsNil(oServer)
+	SELF:Use(oServer)
+ELSE
+	SELF:Use(SELF:Owner:Server)
+ENDIF
+
+SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN SELF
+
+
+ACCESS MP() 
+RETURN SELF:FieldGet(#MP)
+
+
+ASSIGN MP(uValue) 
+SELF:FieldPut(#MP, uValue)
+RETURN MP := uValue
+
+
+ACCESS OBS01() 
+RETURN SELF:FieldGet(#OBS01)
+
+
+ASSIGN OBS01(uValue) 
+SELF:FieldPut(#OBS01, uValue)
+RETURN OBS01 := uValue
+
+
+ACCESS OBS02() 
+RETURN SELF:FieldGet(#OBS02)
+
+
+ASSIGN OBS02(uValue) 
+SELF:FieldPut(#OBS02, uValue)
+RETURN OBS02 := uValue
+
+
+ACCESS OBS03() 
+RETURN SELF:FieldGet(#OBS03)
+
+
+ASSIGN OBS03(uValue) 
+SELF:FieldPut(#OBS03, uValue)
+RETURN OBS03 := uValue
+
+
+ACCESS OBS04() 
+RETURN SELF:FieldGet(#OBS04)
+
+
+ASSIGN OBS04(uValue) 
+SELF:FieldPut(#OBS04, uValue)
+RETURN OBS04 := uValue
+
+
+ACCESS OBS05() 
+RETURN SELF:FieldGet(#OBS05)
+
+
+ASSIGN OBS05(uValue) 
+SELF:FieldPut(#OBS05, uValue)
+RETURN OBS05 := uValue
+
+
+ACCESS OUT() 
+RETURN SELF:FieldGet(#OUT)
+
+
+ASSIGN OUT(uValue) 
+SELF:FieldPut(#OUT, uValue)
+RETURN OUT := uValue
+
+
+ACCESS OUTOBS() 
+RETURN SELF:FieldGet(#OUTOBS)
+
+
+ASSIGN OUTOBS(uValue) 
+SELF:FieldPut(#OUTOBS, uValue)
+RETURN OUTOBS := uValue
+
+
+ACCESS PCMO() 
+RETURN SELF:FieldGet(#PCMO)
+
+
+ASSIGN PCMO(uValue) 
+SELF:FieldPut(#PCMO, uValue)
+RETURN PCMO := uValue
+
+
+ACCESS PCMP() 
+RETURN SELF:FieldGet(#PCMP)
+
+
+ASSIGN PCMP(uValue) 
+SELF:FieldPut(#PCMP, uValue)
+RETURN PCMP := uValue
+
+
+ACCESS PT() 
+RETURN SELF:FieldGet(#PT)
+
+
+ASSIGN PT(uValue) 
+SELF:FieldPut(#PT, uValue)
+RETURN PT := uValue
+
+
+ACCESS PTQT() 
+RETURN SELF:FieldGet(#PTQT)
+
+
+ASSIGN PTQT(uValue) 
+SELF:FieldPut(#PTQT, uValue)
+RETURN PTQT := uValue
+
+
+ACCESS RET() 
+RETURN SELF:FieldGet(#RET)
+
+
+ASSIGN RET(uValue) 
+SELF:FieldPut(#RET, uValue)
+RETURN RET := uValue
+
+
+END CLASS
+CLASS CDTAB03 INHERIT DATAWINDOW 
+
+	PROTECT oDBDATADIM AS DataColumn
+	PROTECT oDBDATAPRO AS DataColumn
+	PROTECT oDBEP AS DataColumn
+	PROTECT oDBMM AS DataColumn
+	PROTECT oDBNT AS DataColumn
+	PROTECT oDBFE AS DataColumn
+	PROTECT oDBDE AS DataColumn
+	PROTECT oDBAMO AS DataColumn
+	PROTECT oDBOUTANX AS DataColumn
+	PROTECT oDBOUTANXOBS AS DataColumn
+	PROTECT oDCOUTANXOBS AS SINGLELINEEDIT
+	PROTECT oDCDATADIM AS SINGLELINEEDIT
+	PROTECT oDCDATAPRO AS SINGLELINEEDIT
+	PROTECT oDCSC_DATADIM AS FIXEDTEXT
+	PROTECT oDCSC_DATAPRO AS FIXEDTEXT
+	PROTECT oDCEP AS CHECKBOX
+	PROTECT oDCMM AS CHECKBOX
+	PROTECT oDCNT AS CHECKBOX
+	PROTECT oDCFE AS CHECKBOX
+	PROTECT oDCDE AS CHECKBOX
+	PROTECT oDCAMO AS CHECKBOX
+	PROTECT oDCOUTANX AS CHECKBOX
+// 	instance OUTANXOBS 
+// 	instance DATADIM 
+// 	instance DATAPRO 
+// 	instance EP 
+// 	instance MM 
+// 	instance NT 
+// 	instance FE 
+// 	instance DE 
+// 	instance AMO 
+// 	instance OUTANX 
+
+  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
+
+ACCESS AMO() 
+RETURN SELF:FieldGet(#AMO)
+
+
+ASSIGN AMO(uValue) 
+SELF:FieldPut(#AMO, uValue)
+RETURN AMO := uValue
+
+
+ACCESS DATADIM() 
+RETURN SELF:FieldGet(#DATADIM)
+
+
+ASSIGN DATADIM(uValue) 
+SELF:FieldPut(#DATADIM, uValue)
+RETURN DATADIM := uValue
+
+
+ACCESS DATAPRO() 
+RETURN SELF:FieldGet(#DATAPRO)
+
+
+ASSIGN DATAPRO(uValue) 
+SELF:FieldPut(#DATAPRO, uValue)
+RETURN DATAPRO := uValue
+
+
+ACCESS DE() 
+RETURN SELF:FieldGet(#DE)
+
+
+ASSIGN DE(uValue) 
+SELF:FieldPut(#DE, uValue)
+RETURN DE := uValue
+
+
+ACCESS EP() 
+RETURN SELF:FieldGet(#EP)
+
+
+ASSIGN EP(uValue) 
+SELF:FieldPut(#EP, uValue)
+RETURN EP := uValue
+
+
+ACCESS FE() 
+RETURN SELF:FieldGet(#FE)
+
+
+ASSIGN FE(uValue) 
+SELF:FieldPut(#FE, uValue)
+RETURN FE := uValue
+
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
+
+SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+SUPER(oWindow,ResourceID{"CDTAB03",_GetInst()},iCtlID)
+
+oDCOUTANXOBS := SingleLineEdit{SELF,ResourceID{CDTAB03_OUTANXOBS,_GetInst()}}
+oDCOUTANXOBS:FieldSpec := padrao_char_80{}
+oDCOUTANXOBS:HyperLabel := HyperLabel{#OUTANXOBS,"Outanxobs:",NULL_STRING,"CD_OUTANXOBS"}
+
+oDCDATADIM := SingleLineEdit{SELF,ResourceID{CDTAB03_DATADIM,_GetInst()}}
+oDCDATADIM:FieldSpec := padrao_char_80{}
+oDCDATADIM:HyperLabel := HyperLabel{#DATADIM,"Datadim:",NULL_STRING,"CD_DATADIM"}
+
+oDCDATAPRO := SingleLineEdit{SELF,ResourceID{CDTAB03_DATAPRO,_GetInst()}}
+oDCDATAPRO:FieldSpec := padrao_char_80{}
+oDCDATAPRO:HyperLabel := HyperLabel{#DATAPRO,"Datapro:",NULL_STRING,"CD_DATAPRO"}
+
+oDCSC_DATADIM := FixedText{SELF,ResourceID{CDTAB03_SC_DATADIM,_GetInst()}}
+oDCSC_DATADIM:HyperLabel := HyperLabel{#SC_DATADIM,"Data Objetivos PPAP",NULL_STRING,NULL_STRING}
+
+oDCSC_DATAPRO := FixedText{SELF,ResourceID{CDTAB03_SC_DATAPRO,_GetInst()}}
+oDCSC_DATAPRO:HyperLabel := HyperLabel{#SC_DATAPRO,"Data Objetivo Prototipo",NULL_STRING,NULL_STRING}
+
+oDCEP := CheckBox{SELF,ResourceID{CDTAB03_EP,_GetInst()}}
+oDCEP:HyperLabel := HyperLabel{#EP,"Estimativa de Produto",NULL_STRING,"CD_EP"}
+oDCEP:FieldSpec := logic_field{}
+
+oDCMM := CheckBox{SELF,ResourceID{CDTAB03_MM,_GetInst()}}
+oDCMM:HyperLabel := HyperLabel{#MM,"Modelo(s) Matemático(s)",NULL_STRING,"CD_MM"}
+oDCMM:FieldSpec := logic_field{}
+
+oDCNT := CheckBox{SELF,ResourceID{CDTAB03_NT,_GetInst()}}
+oDCNT:HyperLabel := HyperLabel{#NT,"Norma(s) Técnicas(s)",NULL_STRING,"CD_NT"}
+oDCNT:FieldSpec := logic_field{}
+
+oDCFE := CheckBox{SELF,ResourceID{CDTAB03_FE,_GetInst()}}
+oDCFE:HyperLabel := HyperLabel{#FE,"Formulario Embalagem",NULL_STRING,"CD_FE"}
+oDCFE:FieldSpec := logic_field{}
+
+oDCDE := CheckBox{SELF,ResourceID{CDTAB03_DE,_GetInst()}}
+oDCDE:HyperLabel := HyperLabel{#DE,"Desenho(s) 2D",NULL_STRING,"CD_DE"}
+oDCDE:FieldSpec := logic_field{}
+
+oDCAMO := CheckBox{SELF,ResourceID{CDTAB03_AMO,_GetInst()}}
+oDCAMO:HyperLabel := HyperLabel{#AMO,"Amostras",NULL_STRING,"CD_AMO"}
+oDCAMO:FieldSpec := logic_field{}
+
+oDCOUTANX := CheckBox{SELF,ResourceID{CDTAB03_OUTANX,_GetInst()}}
+oDCOUTANX:HyperLabel := HyperLabel{#OUTANX,"Outros Anexos",NULL_STRING,"CD_OUTANX"}
+oDCOUTANX:FieldSpec := logic_field{}
+
+SELF:Caption := "DataWindow Caption"
+SELF:HyperLabel := HyperLabel{#CDTAB03,"DataWindow Caption",NULL_STRING,NULL_STRING}
+
+IF !IsNil(oServer)
+	SELF:Use(oServer)
+ELSE
+	SELF:Use(SELF:Owner:Server)
+ENDIF
+SELF:Browser := DataBrowser{SELF}
+
+oDBDATADIM := DataColumn{padrao_char_80{}}
+oDBDATADIM:Width := 9
+oDBDATADIM:HyperLabel := oDCDATADIM:HyperLabel 
+oDBDATADIM:Caption := "Datadim:"
+SELF:Browser:AddColumn(oDBDATADIM)
+
+oDBDATAPRO := DataColumn{padrao_char_80{}}
+oDBDATAPRO:Width := 9
+oDBDATAPRO:HyperLabel := oDCDATAPRO:HyperLabel 
+oDBDATAPRO:Caption := "Datapro:"
+SELF:Browser:AddColumn(oDBDATAPRO)
+
+oDBEP := DataColumn{logic_field{}}
+oDBEP:Width := 4
+oDBEP:HyperLabel := oDCEP:HyperLabel 
+oDBEP:Caption := "Estimativa de Produto"
+SELF:Browser:AddColumn(oDBEP)
+
+oDBMM := DataColumn{logic_field{}}
+oDBMM:Width := 4
+oDBMM:HyperLabel := oDCMM:HyperLabel 
+oDBMM:Caption := "Modelo(s) Matemático(s)"
+SELF:Browser:AddColumn(oDBMM)
+
+oDBNT := DataColumn{logic_field{}}
+oDBNT:Width := 4
+oDBNT:HyperLabel := oDCNT:HyperLabel 
+oDBNT:Caption := "Norma(s) Técnicas(s)"
+SELF:Browser:AddColumn(oDBNT)
+
+oDBFE := DataColumn{logic_field{}}
+oDBFE:Width := 4
+oDBFE:HyperLabel := oDCFE:HyperLabel 
+oDBFE:Caption := "Formulario Embalagem"
+SELF:Browser:AddColumn(oDBFE)
+
+oDBDE := DataColumn{logic_field{}}
+oDBDE:Width := 4
+oDBDE:HyperLabel := oDCDE:HyperLabel 
+oDBDE:Caption := "Desenho(s) 2D"
+SELF:Browser:AddColumn(oDBDE)
+
+oDBAMO := DataColumn{logic_field{}}
+oDBAMO:Width := 5
+oDBAMO:HyperLabel := oDCAMO:HyperLabel 
+oDBAMO:Caption := "Amostras"
+SELF:Browser:AddColumn(oDBAMO)
+
+oDBOUTANX := DataColumn{logic_field{}}
+oDBOUTANX:Width := 8
+oDBOUTANX:HyperLabel := oDCOUTANX:HyperLabel 
+oDBOUTANX:Caption := "Outros Anexos"
+SELF:Browser:AddColumn(oDBOUTANX)
+
+oDBOUTANXOBS := DataColumn{padrao_char_80{}}
+oDBOUTANXOBS:Width := 11
+oDBOUTANXOBS:HyperLabel := oDCOUTANXOBS:HyperLabel 
+oDBOUTANXOBS:Caption := "Outanxobs:"
+SELF:Browser:AddColumn(oDBOUTANXOBS)
+
+
+SELF:ViewAs(#FormView)
+
+SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN SELF
+
+
+ACCESS MM() 
+RETURN SELF:FieldGet(#MM)
+
+
+ASSIGN MM(uValue) 
+SELF:FieldPut(#MM, uValue)
+RETURN MM := uValue
+
+
+ACCESS NT() 
+RETURN SELF:FieldGet(#NT)
+
+
+ASSIGN NT(uValue) 
+SELF:FieldPut(#NT, uValue)
+RETURN NT := uValue
+
+
+ACCESS OUTANX() 
+RETURN SELF:FieldGet(#OUTANX)
+
+
+ASSIGN OUTANX(uValue) 
+SELF:FieldPut(#OUTANX, uValue)
+RETURN OUTANX := uValue
+
+
+ACCESS OUTANXOBS() 
+RETURN SELF:FieldGet(#OUTANXOBS)
+
+
+ASSIGN OUTANXOBS(uValue) 
+SELF:FieldPut(#OUTANXOBS, uValue)
+RETURN OUTANXOBS := uValue
+
+
+END CLASS
+CLASS CDTAB04 INHERIT DATAWINDOW 
+
+	PROTECT oDCDATAOBS AS DATESLE
+	PROTECT oDCOBSG01 AS SINGLELINEEDIT
+	PROTECT oDCOBSG02 AS SINGLELINEEDIT
+	PROTECT oDCOBSG03 AS SINGLELINEEDIT
+	PROTECT oDCSC_DATAOBS AS FIXEDTEXT
+	PROTECT oDCSC_OBSG01 AS FIXEDTEXT
+// 	instance DATAOBS 
+// 	instance OBSG01 
+// 	instance OBSG02 
+// 	instance OBSG03 
+
+  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
+
+ACCESS DATAOBS() 
+RETURN SELF:FieldGet(#DATAOBS)
+
+
+ASSIGN DATAOBS(uValue) 
+SELF:FieldPut(#DATAOBS, uValue)
+RETURN DATAOBS := uValue
+
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
+
+SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+SUPER(oWindow,ResourceID{"CDTAB04",_GetInst()},iCtlID)
+
+oDCDATAOBS := DateSle{SELF,ResourceID{CDTAB04_DATAOBS,_GetInst()}}
+oDCDATAOBS:FieldSpec := date_field{}
+oDCDATAOBS:HyperLabel := HyperLabel{#DATAOBS,"Dataobs:",NULL_STRING,"CD_DATAOBS"}
+
+oDCOBSG01 := SingleLineEdit{SELF,ResourceID{CDTAB04_OBSG01,_GetInst()}}
+oDCOBSG01:FieldSpec := padrao_char_80{}
+oDCOBSG01:HyperLabel := HyperLabel{#OBSG01,"Obsg01:",NULL_STRING,"CD_OBSG01"}
+
+oDCOBSG02 := SingleLineEdit{SELF,ResourceID{CDTAB04_OBSG02,_GetInst()}}
+oDCOBSG02:FieldSpec := padrao_char_80{}
+oDCOBSG02:HyperLabel := HyperLabel{#OBSG02,"Obsg02:",NULL_STRING,"CD_OBSG02"}
+
+oDCOBSG03 := SingleLineEdit{SELF,ResourceID{CDTAB04_OBSG03,_GetInst()}}
+oDCOBSG03:FieldSpec := padrao_char_80{}
+oDCOBSG03:HyperLabel := HyperLabel{#OBSG03,"Obsg03:",NULL_STRING,"CD_OBSG03"}
+
+oDCSC_DATAOBS := FixedText{SELF,ResourceID{CDTAB04_SC_DATAOBS,_GetInst()}}
+oDCSC_DATAOBS:HyperLabel := HyperLabel{#SC_DATAOBS,"Data",NULL_STRING,NULL_STRING}
+
+oDCSC_OBSG01 := FixedText{SELF,ResourceID{CDTAB04_SC_OBSG01,_GetInst()}}
+oDCSC_OBSG01:HyperLabel := HyperLabel{#SC_OBSG01,"Obs:",NULL_STRING,NULL_STRING}
+
+SELF:Caption := "DataWindow Caption"
+SELF:HyperLabel := HyperLabel{#CDTAB04,"DataWindow Caption",NULL_STRING,NULL_STRING}
+
+IF !IsNil(oServer)
+	SELF:Use(oServer)
+ELSE
+	SELF:Use(SELF:Owner:Server)
+ENDIF
+
+SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN SELF
+
+
+ACCESS OBSG01() 
+RETURN SELF:FieldGet(#OBSG01)
+
+
+ASSIGN OBSG01(uValue) 
+SELF:FieldPut(#OBSG01, uValue)
+RETURN OBSG01 := uValue
+
+
+ACCESS OBSG02() 
+RETURN SELF:FieldGet(#OBSG02)
+
+
+ASSIGN OBSG02(uValue) 
+SELF:FieldPut(#OBSG02, uValue)
+RETURN OBSG02 := uValue
+
+
+ACCESS OBSG03() 
+RETURN SELF:FieldGet(#OBSG03)
+
+
+ASSIGN OBSG03(uValue) 
+SELF:FieldPut(#OBSG03, uValue)
+RETURN OBSG03 := uValue
+
+
+END CLASS
+STATIC DEFINE CDTAB01_BTNPEGMA01 := 120

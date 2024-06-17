@@ -1,0 +1,93 @@
+ EMPTYSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		MENUITEM "RACF - Req.Ação.Corr.Fornecedor", 28543
+		MENUITEM "SAC -  Solicitação Açao Corretiva", 28544
+		MENUITEM "RAT -  Relatorio de Assistencia Tecnica", 28545
+		MENUITEM "ADP - Analise de Devolução de Peças", 28546
+		MENUITEM "RDP - Registro Defeito Produtos", 28547
+		POPUP "CRRS - Controde de  Refugo e Retrabalho Setorial"
+		BEGIN
+			MENUITEM "Sequência/Apuração", 28549
+			MENUITEM "Produtos Setores", 28550
+			MENUITEM "Produtos Setores Importado Integrado", 28551
+			MENUITEM "Códigos Erros", 28552
+			MENUITEM "Setores", 28553
+		END
+		MENUITEM "IQF/PPM - Fornecedores", 28554
+		POPUP "RNC - Registro de Não Conformidade"
+		BEGIN
+			MENUITEM "RNC - Consulta Geral", 28556
+			MENUITEM "RNC - Recebimento Inclusão", 28557
+			MENUITEM "RNC - Recebimento Fechamento", 28558
+			MENUITEM "RNC - Cliente Inclusão", 28559
+			MENUITEM "RNC - Cliente Fechamento", 28560
+			MENUITEM "RNC - Final Inclusao", 28561
+			MENUITEM "RNC - Final Fechamento", 28562
+			MENUITEM "RNC - Processo Inclusão", 28563
+			MENUITEM "RNC - Processo Fechamento", 28564
+		END
+		POPUP "Cadastro de Apoio"
+		BEGIN
+			MENUITEM "Areas da Empresa", 28566
+			MENUITEM "Clientes", 28567
+			MENUITEM "Fornecedores", 28568
+			MENUITEM "Cadastro de Produtos", 28569
+		END
+		POPUP "PPAP/Avaliacao"
+		BEGIN
+			MENUITEM "Marcar Pedido", 28571
+			MENUITEM "Avaliacao Fornecedor", 28572
+		END
+		POPUP "Custo da  Nao Qualidade"
+		BEGIN
+			MENUITEM "Lançamentos", 28574
+			MENUITEM "Despesas Fixa", 28575
+			MENUITEM "Checar RAT/RNC Período", 28576
+		END
+		MENUITEM "CFE - Controle de Fretes Excessivos", 28577
+		MENUITEM SEPARATOR
+		MENUITEM "C&onfigurar Impressora ..", 28579
+		MENUITEM SEPARATOR
+		MENUITEM "Indexar os Arquivos", 28581
+		MENUITEM SEPARATOR
+		MENUITEM "&Sair\tAlt+F4", 28583
+	END
+	POPUP "&Relatorios"
+	BEGIN
+		MENUITEM "RACF - Req. Açao Corretiva Fornecedor", 28585
+		MENUITEM "RNC - Registro de Não Conformidade", 28586
+		MENUITEM "CRRS - Ctrl. Refugo e Retrabalho Setorial", 28587
+		MENUITEM "IQF/PPM - Controle de Fornecedor", 28588
+		MENUITEM "SAC - Solicitaçao de Açao Corretiva", 28589
+		MENUITEM "CNQ - Custo Não Qualidade", 28590
+		MENUITEM "ADP - Analise Devolução de Peças", 28591
+		MENUITEM "RAT- Relatorio de Assistencia Tecnica", 28592
+		MENUITEM "CFE - Controle de Fretes Excessivos", 28593
+		MENUITEM "RDP - Registro de Defeito de Produtos", 28594
+		MENUITEM "PPAP", 28595
+		MENUITEM "WRPT", 28596
+		MENUITEM "WRPT Integrado", 28597
+		MENUITEM "lstview logix", 28598
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		POPUP "Email"
+		BEGIN
+			MENUITEM "Consulta", 28601
+			MENUITEM "Geral", 28602
+			MENUITEM "Configuracao", 28603
+		END
+		MENUITEM "Checar CGC/CPF/IE...", 28604
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Indice\tF1", 28606
+		MENUITEM "&Topicos", 28607
+		MENUITEM SEPARATOR
+		MENUITEM "Atualizaçoes", 28609
+		MENUITEM "&Sobre...", 28610
+	END
+End
+ 

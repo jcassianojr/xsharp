@@ -1,0 +1,163 @@
+DESIGNERSTART = VOWindowEditor,DIALOGWINDOW,CINEW
+GUID=ACB65A32-08A7-40CD-A342-E362A7E27825
+  Name=CINEW
+  Class=DIALOGWINDOW
+  Caption=Digite o Codigo do Produto:
+  Order=0
+  Left=20
+  Width=400
+  Top=20
+  Height=240
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=2160590976
+  Exstyles=257
+  Property=HyperLabel=,"Digite o Codigo do Produto:",,
+  Property=HyperLabel=#CINEW,,,
+
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=98B89836-0298-4462-B33B-A4BCCD0A7707
+  Name=esccod
+  Class=PUSHBUTTON
+  Caption=...
+  Order=1
+  Left=288
+  Width=29
+  Top=19
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"...",,
+  Property=HyperLabel=#esccod,,,
+
+CONTROL=FIXEDTEXT
+GUID=83367A00-BF9E-48BA-AC04-8C11FF6FC2E6
+  Name=SC_DESTINO2
+  Class=FIXEDTEXT
+  Caption=Foto
+  Order=2
+  Left=309
+  Width=48
+  Top=105
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Foto",,
+  Property=HyperLabel=#SC_DESTINO2,,,
+
+CONTROL=PUSHBUTTON
+GUID=59A77721-FF6E-49BD-9D97-15FC5754B760
+  Name=foto
+  Class=PUSHBUTTON
+  Caption=
+  Order=3
+  Left=309
+  Width=48
+  Top=65
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741888
+  Exstyles=0
+  Property=HyperLabel=#foto,,,
+  Property=Image=ICO_CAMERA
+
+CONTROL=SINGLELINEEDIT
+GUID=95644840-46DA-4E54-94CF-39EBB987063A
+  Name=cCODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=157
+  Width=123
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=HyperLabel=#cCODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=65F49501-7F4A-4BDB-BE26-0A43FCBE9FAD
+  Name=Text1
+  Class=FIXEDTEXT
+  Caption=Digite o Codigo do Produto
+  Order=-1
+  Left=13
+  Width=138
+  Top=19
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Digite o Codigo do Produto",,
+  Property=HyperLabel=#Text1,,,
+
+CONTROL=PUSHBUTTON
+GUID=76FB0E46-3A1D-4582-9991-6951701B1DCB
+  Name=cmd02
+  Class=PUSHBUTTON
+  Caption=Cancelar
+  Order=-1
+  Left=103
+  Width=80
+  Top=91
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cancelar",,
+  Property=HyperLabel=#cmd02,,,
+
+CONTROL=PUSHBUTTON
+GUID=D49CBC0B-CF13-47A8-82F3-1C162FA6197B
+  Name=cmd01
+  Class=PUSHBUTTON
+  Caption=Ok
+  Order=-1
+  Left=193
+  Width=80
+  Top=91
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ok",,
+  Property=HyperLabel=#cmd01,,,
+
+SUBCONTROLSEND
+DESIGNEREND = CINEW
+

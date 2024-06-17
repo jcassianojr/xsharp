@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="TABORCA_Page3">
+    <Window Name="TABORCA_Page3">
+      <Name>TABORCA_Page3</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>18</Left>
+      <Top>46</Top>
+      <Width>648</Width>
+      <Height>238</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073742848</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#TABORCA_Page3,,,</HyperLabel>
+        <ClipperKeys>True</ClipperKeys>
+        <Use>&lt;Share Owner's&gt;</Use>
+      </ExProperties>
+    </Window>
+    <Control Name="OBS01">
+      <Name>OBS01</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>41</Left>
+      <Top>5</Top>
+      <Width>580</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_200</FieldSpec>
+        <HyperLabel>#OBS01,,,</HyperLabel>
+        <HyperLabel>,"Obs01:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_OBS01"</HyperLabel>
+        <TooltipText>"Campo para Observações"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="OBS02">
+      <Name>OBS02</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>41</Left>
+      <Top>25</Top>
+      <Width>580</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_200</FieldSpec>
+        <HyperLabel>#OBS02,,,</HyperLabel>
+        <HyperLabel>,"Obs02:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_OBS02"</HyperLabel>
+        <TooltipText>"Campo para Observações"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="OBS03">
+      <Name>OBS03</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>41</Left>
+      <Top>45</Top>
+      <Width>580</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_200</FieldSpec>
+        <HyperLabel>#OBS03,,,</HyperLabel>
+        <HyperLabel>,"Obs03:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_OBS03"</HyperLabel>
+        <TooltipText>"Campo para Observações"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="OBS04">
+      <Name>OBS04</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>41</Left>
+      <Top>65</Top>
+      <Width>580</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_200</FieldSpec>
+        <HyperLabel>#OBS04,,,</HyperLabel>
+        <HyperLabel>,"Obs04:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_OBS04"</HyperLabel>
+        <TooltipText>"Campo para Observações"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="OBS05">
+      <Name>OBS05</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>41</Left>
+      <Top>85</Top>
+      <Width>580</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_200</FieldSpec>
+        <HyperLabel>#OBS05,,,</HyperLabel>
+        <HyperLabel>,"Obs05:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_OBS05"</HyperLabel>
+        <TooltipText>"Campo para Observações"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="OBS06">
+      <Name>OBS06</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>41</Left>
+      <Top>105</Top>
+      <Width>580</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_200</FieldSpec>
+        <HyperLabel>#OBS06,,,</HyperLabel>
+        <HyperLabel>,"Obs06:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_OBS06"</HyperLabel>
+        <TooltipText>"Campo para Observações"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="OBS07">
+      <Name>OBS07</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>41</Left>
+      <Top>125</Top>
+      <Width>580</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_200</FieldSpec>
+        <HyperLabel>#OBS07,,,</HyperLabel>
+        <HyperLabel>,"Obs06:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_OBS06"</HyperLabel>
+        <TooltipText>"Campo para Observações"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="OBS08">
+      <Name>OBS08</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>41</Left>
+      <Top>145</Top>
+      <Width>580</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>7</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_200</FieldSpec>
+        <HyperLabel>#OBS08,,,</HyperLabel>
+        <HyperLabel>,"Obs06:",,</HyperLabel>
+        <HyperLabel>,,,"ORCA_OBS06"</HyperLabel>
+        <TooltipText>"Campo para Observações"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_OBS01">
+      <Name>SC_OBS01</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Obs:</Caption>
+      <Order>9</Order>
+      <Left>5</Left>
+      <Top>9</Top>
+      <Width>28</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Obs:",,</HyperLabel>
+        <HyperLabel>#SC_OBS01,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

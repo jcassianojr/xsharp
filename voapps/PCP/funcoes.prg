@@ -1,0 +1,123 @@
+FUNC APGPRO(cARQ)
+LOCAL aDAD AS ARRAY
+LOCAL oARQ AS USEMANA5	
+aDAD:={zCURINI,cARQ,zCURDIR,aDIR}
+oARQ:=USEMANA5{aDAD}
+IF oARQ:nERRO#0	
+   alert("Erro Zerando Estoque Processo")
+   RETU .F.
+ENDIF	
+oARQ:GOTOP()
+WHILE ! oARQ:EOF
+   oARQ:FIELDPUT("ESTQPRO",0)
+   oARQ:SKIP()
+ENDDO
+oARQ:CLOSE()
+RETU .T.
+
+
+FUNC CALCNEC(nQTDE)
+LOCAL nVAL1,nVAL2,nVAL3 AS	FLOAT  
+nVAL2:=0
+IF nQTDE>50
+   nVAL1:=nQTDE/100
+   nVAL2:=INT(nVAL1)
+   nVAL3:=nVAL1-nVAL2
+   IF nVAL3>.01 .AND. nVAL3<.5
+      nVAL2+=.5	
+   ENDIF	
+   IF nVAL3>.5 .AND. nVAL3<.99
+      nVAL2+=1
+   ENDIF	
+   nVAL2:=nVAL2*100
+ELSE
+   IF nQTDE>0
+   	  nVAL2:=50
+   ENDIF	
+ENDIF
+RETU nVAL2
+
+FUNCTION GRVESTINT(cARQ)
+LOCAL oORI,oPRO AS USEREDE
+LOCAL aDAD AS ARRAY
+LOCAL cCODIGO,cCODINT,cBUSCA AS STRING
+LOCAL lBUSCA AS LOGIC
+LOCAL oPROGWIN AS PROGWIN
+LOCAL nPERC AS INT
+LOCAL nLASTREC,nPOS AS DWORD
+
+
+aDAD:={zCURINI,"ESTQINT.DBF",ZCURDIR}
+oORI:=USEREDE{aDAD}
+IF oORI:nERRO#0
+    RETURN .f.
+ENDIF
+aDAD:={zCURINI,CARQ+".DBF",ZCURDIR}
+oPRO:=USEREDE{aDAD}
+IF oPRO:nERRO#0
+   oORI:CLOSE()
+   RETURN .f.
+ENDIF
+
+oProgWin := ProgWin{}
+oProgWin:Caption:="Codigos"
+oProgWin:SHOW()
+
+nPOS:=0
+nLASTREC:=oPRO:RecCount
+
+IF CARQ="OP01"   //codigo interno
+   oPRO:SetOrder(4)	
+ENDIF	
+
+oPRO:GOTOP()
+WHILE ! oPRO:EOF
+	
+	cCODIGO:=oPRO:FIELDGET("CODIGO")
+	CBUSCA:=CCODIGO
+	cCODINT:=""
+	lBUSCA:=.F.
+	
+    nPerc := INT(100* nPOS/ nLASTREC)
+    nPOS++
+    oPROGWIN:oDcProgBar:Position := nPerc	
+    oProgWin:oDCMessage:textValue:= cCODIGO
+	
+	DO  CASE
+  	    CASE CARQ="MS01" .OR. CARQ="MP03" .OR. CARQ="OP01"
+  		     IF ! Empty(oPRO:FIELDGET("CODIGOINT"))
+     	        cCODINT:=oPRO:FIELDGET("CODIGOINT")
+     	        cBUSCA:=CCODINT
+    	        lBUSCA:=.T.
+    	     ENDIF
+   	    CASE CARQ="MS06"
+  		     IF ! Empty(oPRO:FIELDGET("CODINT"))
+     	        cCODINT:=oPRO:FIELDGET("CODINT")
+     	        cBUSCA:=CCODINT
+    	        lBUSCA:=.T.
+    	     ENDIF
+   	    OTHERWISE
+   	       lBUSCA:=.T.
+	ENDCASE
+    IF lBUSCA
+       CBUSCA:=AllTrim(CBUSCA)
+       oORI:GOTOP()
+       IF oORI:SEEK(cBUSCA)
+       	  IF CARQ="OP01"
+             oPRO:FIELDPUT("QSAI",OORI:FIELDGET("QTD_LIBERA"))	
+       	  ELSE	
+             oPRO:FIELDPUT("ESTQINI",OORI:FIELDGET("QTD_LIBERA"))	
+             oPRO:FIELDPUT("ESTQENT",0)	
+             oPRO:FIELDPUT("ESTQSAI",0)	
+             oPRO:FIELDPUT("ESTQSAL",OORI:FIELDGET("QTD_LIBERA"))	
+             oPRO:FIELDPUT("DATABALAN",Today())	
+          ENDIF
+   	  ENDIF	
+    ENDIF
+	oPRO:Skip()
+ENDDO	
+oORI:CLOSE()
+oPROGWIN:EndDialog()
+alert("Transferencia Concluida:" + cARQ)
+
+

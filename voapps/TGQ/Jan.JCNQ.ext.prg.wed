@@ -1,0 +1,957 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,jcnqext
+GUID=7F761402-010D-4441-B158-2AD9DFA4DDB3
+  Name=jcnqext
+  Class=DATADIALOG
+  Caption=Custo Näo Qualidade Externo
+  Order=0
+  Left=42
+  Width=529
+  Top=42
+  Height=374
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Custo Näo Qualidade Externo",,
+  Property=HyperLabel=#jcnqext,,,
+  Property=Use=<Share Owner's>
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=65FDE185-1C5E-47ED-8DF3-165328B45E4B
+  Name=QTE01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=161
+  Width=76
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#QTE01,,,
+  Property=HyperLabel=,"Qte01:",,
+  Property=HyperLabel=,,,"ACPNC_QTE01"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=EC42FFB7-16D8-42B9-AA01-B513395D8E40
+  Name=QTE02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=161
+  Width=76
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#QTE02,,,
+  Property=HyperLabel=,"Qte02:",,
+  Property=HyperLabel=,,,"ACPNC_QTE02"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=3CDDF5C0-FD02-40A1-87CE-B3E5AF254310
+  Name=QTE03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=161
+  Width=76
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#QTE03,,,
+  Property=HyperLabel=,"Qte03:",,
+  Property=HyperLabel=,,,"ACPNC_QTE03"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=C61E01AF-A106-48AE-B558-8AD6743EF5EC
+  Name=QTE04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=161
+  Width=76
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#QTE04,,,
+  Property=HyperLabel=,"Qte04:",,
+  Property=HyperLabel=,,,"ACPNC_QTE04"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=ADDF61C6-3D5D-4538-8105-7AE881ED35F0
+  Name=QTE05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=161
+  Width=76
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#QTE05,,,
+  Property=HyperLabel=,"Qte05:",,
+  Property=HyperLabel=,,,"ACPNC_QTE05"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=208ED2E4-E9C0-46F3-B797-8DB39E5C0E1D
+  Name=QTE06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=161
+  Width=76
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#QTE06,,,
+  Property=HyperLabel=,"Sucatas",,
+  Property=HyperLabel=,,,"ACPNC_QTE06"
+  Property=InheritClassName=rightSle
+
+CONTROL=SINGLELINEEDIT
+GUID=24197FBE-B621-4DF3-94AC-DF3550CB2557
+  Name=QTE07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=161
+  Width=76
+  Top=241
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#QTE07,,,
+  Property=HyperLabel=,"Qte07:",,
+  Property=HyperLabel=,,,"ACPNC_QTE07"
+
+CONTROL=SINGLELINEEDIT
+GUID=517D4597-9425-4746-AB1C-63FF0B28812B
+  Name=QTE08
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=161
+  Width=76
+  Top=265
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#QTE08,,,
+  Property=HyperLabel=,"Qte08:",,
+  Property=HyperLabel=,,,"ACPNC_QTE08"
+
+CONTROL=SINGLELINEEDIT
+GUID=08743FA2-36BB-404B-A711-623634F51325
+  Name=VLE01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=241
+  Width=96
+  Top=25
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#VLE01,,,
+  Property=HyperLabel=,"Vle01:",,
+  Property=HyperLabel=,,,"ACPNC_VLE01"
+
+CONTROL=SINGLELINEEDIT
+GUID=41ACD854-A548-4CA9-AFC5-2694611FA02F
+  Name=VLE02
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=241
+  Width=96
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#VLE02,,,
+  Property=HyperLabel=,"Vle02:",,
+  Property=HyperLabel=,,,"ACPNC_VLE02"
+
+CONTROL=SINGLELINEEDIT
+GUID=F61FAD4B-F025-49E1-8A93-C5AF9F9A5AC4
+  Name=VLE03
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=241
+  Width=96
+  Top=73
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#VLE03,,,
+  Property=HyperLabel=,"Vle03:",,
+  Property=HyperLabel=,,,"ACPNC_VLE03"
+
+CONTROL=SINGLELINEEDIT
+GUID=3E5960AC-E527-4564-8248-B82AA12A992E
+  Name=VLE04
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=241
+  Width=96
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#VLE04,,,
+  Property=HyperLabel=,"Vle04:",,
+  Property=HyperLabel=,,,"ACPNC_VLE04"
+
+CONTROL=SINGLELINEEDIT
+GUID=CDF43FBE-3E24-46AE-B169-3BF1C14423C9
+  Name=VLE05
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=241
+  Width=96
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#VLE05,,,
+  Property=HyperLabel=,"Vle05:",,
+  Property=HyperLabel=,,,"ACPNC_VLE05"
+
+CONTROL=SINGLELINEEDIT
+GUID=72432AB7-499B-4875-915F-89AA24D2267F
+  Name=VLE06
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=241
+  Width=96
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#VLE06,,,
+  Property=HyperLabel=,"Vle06:",,
+  Property=HyperLabel=,,,"ACPNC_VLE06"
+
+CONTROL=SINGLELINEEDIT
+GUID=AE250CDC-1C01-4EBB-8F57-D45D16818691
+  Name=VLE07
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=241
+  Width=96
+  Top=241
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#VLE07,,,
+  Property=HyperLabel=,"Vle07:",,
+  Property=HyperLabel=,,,"ACPNC_VLE07"
+
+CONTROL=SINGLELINEEDIT
+GUID=3290F6A6-A276-4C97-8F56-ED8601F6837D
+  Name=VLE08
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=241
+  Width=96
+  Top=265
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#VLE08,,,
+  Property=HyperLabel=,"Vle08:",,
+  Property=HyperLabel=,,,"ACPNC_VLE08"
+
+CONTROL=FIXEDTEXT
+GUID=29D93BD4-2FD8-463F-98DF-8528AA469287
+  Name=theFixedText23
+  Class=FIXEDTEXT
+  Caption=Valores
+  Order=17
+  Left=253
+  Width=80
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Valores",,
+  Property=HyperLabel=#theFixedText23,,,
+
+CONTROL=FIXEDTEXT
+GUID=F490AA54-FEDB-444A-8060-43098A169D61
+  Name=theFixedText24
+  Class=FIXEDTEXT
+  Caption=Quantidade/Horas
+  Order=18
+  Left=149
+  Width=92
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Quantidade/Horas",,
+  Property=HyperLabel=#theFixedText24,,,
+
+CONTROL=FIXEDTEXT
+GUID=DE4B1422-1824-45F6-A952-87E7CD62B741
+  Name=SC_QTE01
+  Class=FIXEDTEXT
+  Caption=Despesas de Percurso
+  Order=19
+  Left=17
+  Width=130
+  Top=30
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Despesas de Percurso",,
+  Property=HyperLabel=#SC_QTE01,,,
+
+CONTROL=FIXEDTEXT
+GUID=9C67A590-45C4-4419-B235-8B466EC6625C
+  Name=SC_QTE03
+  Class=FIXEDTEXT
+  Caption=Material Usado Retrabalho
+  Order=20
+  Left=17
+  Width=140
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Material Usado Retrabalho",,
+  Property=HyperLabel=#SC_QTE03,,,
+
+CONTROL=FIXEDTEXT
+GUID=04676EEA-4DB0-4389-8244-CD22C108A142
+  Name=SC_QTE02
+  Class=FIXEDTEXT
+  Caption=Seleçao Retrabalho Cliente 
+  Order=21
+  Left=17
+  Width=140
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Seleçao Retrabalho Cliente ",,
+  Property=HyperLabel=#SC_QTE02,,,
+
+CONTROL=FIXEDTEXT
+GUID=1708AE18-90D3-4225-9CDA-90538AD4A7C4
+  Name=SC_QTE04
+  Class=FIXEDTEXT
+  Caption=Transp.Alim.Hospe.
+  Order=22
+  Left=17
+  Width=130
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Transp.Alim.Hospe.",,
+  Property=HyperLabel=#SC_QTE04,,,
+
+CONTROL=FIXEDTEXT
+GUID=527663FF-2836-45D8-AC07-7CE5DDE2D361
+  Name=SC_QTE05
+  Class=FIXEDTEXT
+  Caption=Analise de Devoluçao
+  Order=23
+  Left=17
+  Width=130
+  Top=125
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Analise de Devoluçao",,
+  Property=HyperLabel=#SC_QTE05,,,
+
+CONTROL=FIXEDTEXT
+GUID=2347B45E-6A63-45BA-BE77-1C69F6CD9693
+  Name=SC_QTE06
+  Class=FIXEDTEXT
+  Caption=Seleçao
+  Order=24
+  Left=17
+  Width=140
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Seleçao",,
+  Property=HyperLabel=#SC_QTE06,,,
+
+CONTROL=FIXEDTEXT
+GUID=8A539A32-2191-4622-94C5-8C0DAB335157
+  Name=SC_QTE07
+  Class=FIXEDTEXT
+  Caption=Sucatas
+  Order=25
+  Left=17
+  Width=92
+  Top=237
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Sucatas",,
+  Property=HyperLabel=#SC_QTE07,,,
+
+CONTROL=FIXEDTEXT
+GUID=0CB2B79D-8BA5-4E59-88F2-0FBE158CF730
+  Name=theFixedText18
+  Class=FIXEDTEXT
+  Caption=Outros
+  Order=26
+  Left=17
+  Width=80
+  Top=261
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Outros",,
+  Property=HyperLabel=#theFixedText18,,,
+
+CONTROL=PUSHBUTTON
+GUID=14D6EC27-B69A-4F6C-8D9B-5182348E2B6B
+  Name=Calc
+  Class=PUSHBUTTON
+  Caption=Calcular
+  Order=27
+  Left=405
+  Width=56
+  Top=245
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Calcular",,
+  Property=HyperLabel=#Calc,,,
+
+CONTROL=PUSHBUTTON
+GUID=5B7BE992-A245-490F-BC06-A6112C2CC796
+  Name=PegPreco
+  Class=PUSHBUTTON
+  Caption=Preço
+  Order=28
+  Left=345
+  Width=55
+  Top=245
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Preço",,
+  Property=HyperLabel=#PegPreco,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=D50F3F94-2B2E-4991-B95A-AE638FA26E30
+  Name=PCVALEXT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=29
+  Left=345
+  Width=140
+  Top=269
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_10_4
+  Property=HyperLabel=#PCVALEXT,,,
+  Property=HyperLabel=,"Pcvalint:",,
+  Property=HyperLabel=,,,"ACPNC_PCVALINT"
+
+CONTROL=FIXEDTEXT
+GUID=FCE8FDAE-E675-4378-BF9C-78A43A551D4A
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=30
+  Left=449
+  Width=64
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=F44E0EFE-3141-42B9-91C4-D4DB51DB987B
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=31
+  Left=449
+  Width=64
+  Top=53
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ico_ok
+
+CONTROL=SINGLELINEEDIT
+GUID=462DB63C-C9EE-4C97-9CC5-6AE46AB2EA4A
+  Name=VLE09
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=32
+  Left=241
+  Width=96
+  Top=169
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#VLE09,,,
+  Property=HyperLabel=,"Vle07:",,
+  Property=HyperLabel=,,,"ACPNC_VLE07"
+
+CONTROL=SINGLELINEEDIT
+GUID=440F5638-EAA0-47DF-B6E1-AD656CD279CC
+  Name=QTE09
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=33
+  Left=161
+  Width=76
+  Top=169
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#QTE09,,,
+  Property=HyperLabel=,"Qte07:",,
+  Property=HyperLabel=,,,"ACPNC_QTE07"
+
+CONTROL=FIXEDTEXT
+GUID=6C571A0B-E011-44D4-A0F9-2B01C5DDDBAA
+  Name=SC_QTE8
+  Class=FIXEDTEXT
+  Caption=Retrabalho Hora Homem
+  Order=34
+  Left=17
+  Width=140
+  Top=169
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Retrabalho Hora Homem",,
+  Property=HyperLabel=#SC_QTE8,,,
+
+CONTROL=PUSHBUTTON
+GUID=FF7A04A3-12D4-476C-8F78-3E528B311D1C
+  Name=Fechar
+  Class=PUSHBUTTON
+  Caption=Fechar
+  Order=35
+  Left=441
+  Width=80
+  Top=17
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Fechar",,
+  Property=HyperLabel=#Fechar,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=C301EFEF-17AC-4975-A117-1B42DF8AC584
+  Name=DATAFEC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=36
+  Left=345
+  Width=88
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DATAFEC,,,
+
+CONTROL=FIXEDTEXT
+GUID=34874A77-0B24-4600-98DF-F91A965A7A04
+  Name=SC_DATA1
+  Class=FIXEDTEXT
+  Caption=Data Fechamento
+  Order=37
+  Left=345
+  Width=88
+  Top=5
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data Fechamento",,
+  Property=HyperLabel=#SC_DATA1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=400660A1-26F6-4DA7-9F28-361B90A5AC2B
+  Name=VLE11
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=38
+  Left=241
+  Width=96
+  Top=217
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#VLE11,,,
+  Property=HyperLabel=,"Vli03:",,
+  Property=HyperLabel=,,,"ACPNC_VLI04"
+
+CONTROL=SINGLELINEEDIT
+GUID=C83522EF-36EB-482D-8719-A7FFA6C7A77E
+  Name=QTE11
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=39
+  Left=161
+  Width=76
+  Top=217
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#QTE11,,,
+  Property=HyperLabel=,"Qti04:",,
+  Property=HyperLabel=,,,"ACPNC_QTI04"
+
+CONTROL=FIXEDTEXT
+GUID=70A64A30-644B-4CF7-A188-79D2D8786050
+  Name=SC_QTI04
+  Class=FIXEDTEXT
+  Caption=Reinspeção
+  Order=40
+  Left=17
+  Width=96
+  Top=213
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Reinspeção",,
+  Property=HyperLabel=#SC_QTI04,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=9D6C3884-629A-478F-B160-AAAEC8282038
+  Name=VLE10
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=41
+  Left=241
+  Width=96
+  Top=193
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#VLE10,,,
+  Property=HyperLabel=,"Vli03:",,
+  Property=HyperLabel=,,,"ACPNC_VLI03"
+
+CONTROL=SINGLELINEEDIT
+GUID=8E03A75E-AC4A-439B-9A2D-62CC1B709F51
+  Name=QTE10
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=42
+  Left=161
+  Width=76
+  Top=193
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#QTE10,,,
+  Property=HyperLabel=,"Qti03:",,
+  Property=HyperLabel=,,,"ACPNC_QTI03"
+
+CONTROL=FIXEDTEXT
+GUID=C3CB07BC-5060-4FAD-92F2-09217E4833C8
+  Name=SC_QTI03
+  Class=FIXEDTEXT
+  Caption=Retrabalho Máquina
+  Order=43
+  Left=17
+  Width=100
+  Top=189
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Retrabalho Máquina",,
+  Property=HyperLabel=#SC_QTI03,,,
+
+CONTROL=PUSHBUTTON
+GUID=8A524054-1AEB-4AA7-BD15-1EFFBFFD8EBA
+  Name=IMPRNC
+  Class=PUSHBUTTON
+  Caption=Checar RNC
+  Order=44
+  Left=353
+  Width=80
+  Top=77
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Checar RNC",,
+  Property=HyperLabel=#IMPRNC,,,
+
+SUBCONTROLSEND
+DESIGNEREND = jcnqext
+

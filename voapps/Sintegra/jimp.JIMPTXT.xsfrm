@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JIMPTXT">
+    <Window Name="JIMPTXT">
+      <Name>JIMPTXT</Name>
+      <Class>DATADIALOG</Class>
+      <Caption>Importacao Arquivo Sintegra</Caption>
+      <Order>0</Order>
+      <Left>52</Left>
+      <Top>52</Top>
+      <Width>400</Width>
+      <Height>292</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Importacao Arquivo Sintegra",,</HyperLabel>
+        <HyperLabel>#JIMPTXT,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="cmdsair">
+      <Name>cmdsair</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Sair</Caption>
+      <Order>8</Order>
+      <Left>293</Left>
+      <Top>249</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Sair",,</HyperLabel>
+        <HyperLabel>#cmdsair,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="cmdimp">
+      <Name>cmdimp</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Importar Arquivo de Texto</Caption>
+      <Order>9</Order>
+      <Left>225</Left>
+      <Top>41</Top>
+      <Width>148</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1342242816</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Importar Arquivo de Texto",,</HyperLabel>
+        <HyperLabel>#cmdimp,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="arquivo">
+      <Name>arquivo</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>18</Left>
+      <Top>6</Top>
+      <Width>363</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>#arquivo,,,</HyperLabel>
+        <InheritClassName>pbFileSLE</InheritClassName>
+      </ExProperties>
+    </Control>
+    <Control Name="PushButton3">
+      <Name>PushButton3</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Sincronizar 54 Outros/Mana5</Caption>
+      <Order>12</Order>
+      <Left>225</Left>
+      <Top>89</Top>
+      <Width>148</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Sincronizar 54 Outros/Mana5",,</HyperLabel>
+        <HyperLabel>#PushButton3,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="PushButton4">
+      <Name>PushButton4</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Sincronizar CNPJ Mana5</Caption>
+      <Order>13</Order>
+      <Left>225</Left>
+      <Top>137</Top>
+      <Width>148</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Sincronizar CNPJ Mana5",,</HyperLabel>
+        <HyperLabel>#PushButton4,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="chave">
+      <Name>chave</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>
+      </Caption>
+      <Order>15</Order>
+      <Left>14</Left>
+      <Top>181</Top>
+      <Width>307</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#chave,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="PushButton5">
+      <Name>PushButton5</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Sincronizar 75 Classificacao</Caption>
+      <Order>16</Order>
+      <Left>225</Left>
+      <Top>113</Top>
+      <Width>148</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Sincronizar 75 Classificacao",,</HyperLabel>
+        <HyperLabel>#PushButton5,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="ProgBar">
+      <Name>ProgBar</Name>
+      <Class>PROGRESSBAR</Class>
+      <Caption>
+      </Caption>
+      <Order>17</Order>
+      <Left>17</Left>
+      <Top>209</Top>
+      <Width>309</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Range>0,</Range>
+        <Range>,100</Range>
+        <HyperLabel>#ProgBar,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

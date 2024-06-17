@@ -1,0 +1,291 @@
+DESIGNERSTART = VOWindowEditor,DIALOGWINDOW,JTRO
+GUID=603927FF-A885-42BB-83A0-9A9CD87CD789
+  Name=JTRO
+  Class=DIALOGWINDOW
+  Caption=Troca de Codigos
+  Order=0
+  Left=28
+  Width=345
+  Top=28
+  Height=217
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=2160590980
+  Exstyles=257
+  Property=HyperLabel=,"Troca de Codigos",,
+  Property=HyperLabel=#JTRO,,,
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=A71BC6E0-CDE1-4B13-96DC-2FB4CE9F6C75
+  Name=ORI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=1
+  Left=93
+  Width=136
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#ORI,,,
+  Property=TooltipText="Digite o Codigo Antigo"
+
+CONTROL=SINGLELINEEDIT
+GUID=B439803A-DE08-4F8F-8C26-38AA133622F3
+  Name=DES
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=2
+  Left=93
+  Width=136
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#DES,,,
+  Property=TooltipText="Digite o Codigo Novo"
+
+CONTROL=FIXEDTEXT
+GUID=C5F43910-AA8D-4584-8B31-B281AAB5A073
+  Name=FixedText1
+  Class=FIXEDTEXT
+  Caption=Codigo Antigo
+  Order=5
+  Left=17
+  Width=72
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo Antigo",,
+  Property=HyperLabel=#FixedText1,,,
+
+CONTROL=FIXEDTEXT
+GUID=9016A690-B1A6-4030-A49D-D5DB4A2F9581
+  Name=FixedText2
+  Class=FIXEDTEXT
+  Caption=Codigo Novo
+  Order=6
+  Left=17
+  Width=72
+  Top=41
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo Novo",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=FIXEDTEXT
+GUID=FECC257D-8975-44A1-9B59-A1C72BE8E7CF
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=OK
+  Order=7
+  Left=245
+  Width=64
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=PUSHBUTTON
+GUID=68EA929E-515F-4E22-AD34-2E98BBCA5BCF
+  Name=OK
+  Class=PUSHBUTTON
+  Caption=
+  Order=8
+  Left=245
+  Width=64
+  Top=5
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#OK,,,
+  Property=Image=ico_ok
+  Property=TooltipText="Inicia a Conversão do Codigo"
+
+CONTROL=FIXEDTEXT
+GUID=73284050-70C3-4086-838B-16AD129965B3
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Retornar
+  Order=9
+  Left=245
+  Width=64
+  Top=121
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=PUSHBUTTON
+GUID=DD25DD52-0898-4F0D-9746-6EBCCB14187F
+  Name=Cancelar
+  Class=PUSHBUTTON
+  Caption=
+  Order=10
+  Left=245
+  Width=64
+  Top=73
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#Cancelar,,,
+  Property=Image=ico_sair
+  Property=TooltipText="Cancela Conversao e Retorna ao Menu"
+
+CONTROL=CHECKBOX
+GUID=07F1ADCD-A02A-4145-B68C-740961EB7CE5
+  Name=imptrei
+  Class=CHECKBOX
+  Caption=Trocar Codigos Treinamento
+  Order=11
+  Left=13
+  Width=216
+  Top=69
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Trocar Codigos Treinamento",,
+  Property=TooltipText="Marque Para trocar Codigos Treinamento"
+  Property=HyperLabel=#imptrei,,,
+
+CONTROL=CHECKBOX
+GUID=8ED86DBF-C1C9-4907-99A3-7906C68FA9B5
+  Name=imppt
+  Class=CHECKBOX
+  Caption=Trocar Codigos Progr. de Treinamentos
+  Order=12
+  Left=13
+  Width=216
+  Top=92
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Trocar Codigos Progr. de Treinamentos",,
+  Property=TooltipText="Marque Para trocar Codigos Progr. de Treinamentos"
+  Property=HyperLabel=#imppt,,,
+
+CONTROL=CHECKBOX
+GUID=72F502B2-1BD5-42BB-B59C-7E4E98D3F1AE
+  Name=impant
+  Class=CHECKBOX
+  Caption=Trocar Codigos Contr.Anteriores
+  Order=13
+  Left=13
+  Width=216
+  Top=115
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Trocar Codigos Contr.Anteriores",,
+  Property=TooltipText="Marque Para trocar Codigos Contr.Anteriores"
+  Property=HyperLabel=#impant,,,
+
+CONTROL=CHECKBOX
+GUID=C2F52CC3-C13D-47BD-8EE1-434DB137F03C
+  Name=imppre
+  Class=CHECKBOX
+  Caption=Trocar Codigos Antes Contratação
+  Order=14
+  Left=13
+  Width=216
+  Top=138
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Trocar Codigos Antes Contratação",,
+  Property=TooltipText="Marque Para trocar Codigos Antes Contracao"
+  Property=HyperLabel=#imppre,,,
+
+CONTROL=CHECKBOX
+GUID=204F1FC5-3544-44AA-B917-E27782726F35
+  Name=impcur
+  Class=CHECKBOX
+  Caption=Trocar Codigos Cadastro de Funçoes
+  Order=15
+  Left=13
+  Width=216
+  Top=161
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807363
+  Exstyles=0
+  Property=HyperLabel=,"Trocar Codigos Cadastro de Funçoes",,
+  Property=TooltipText="Marque Para trocar Codigos Cadastro de Funções"
+  Property=HyperLabel=#impcur,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JTRO
+

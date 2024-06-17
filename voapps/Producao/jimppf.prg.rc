@@ -1,0 +1,33 @@
+ jimppf DIALOGEX  9, 8, 331, 119
+STYLE	1073741824
+FONT	8, "MS Shell Dlg"
+BEGIN
+	CONTROL	"", 100, "Edit", 128|65536|1073741824|8388608, 16, 22, 34, 12, 512
+	CONTROL	"Numero do Processo Fabricação:", 101, "Static", 1073741824, 12, 11, 116, 11
+	CONTROL	"Materia Prima", 102, "Button", 1073741824, 138, 14, 54, 13
+	CONTROL	"Componentes", 103, "Button", 1073741824, 138, 32, 54, 12
+	CONTROL	"Mão Obra", 104, "Button", 1073741824, 138, 49, 54, 12
+	CONTROL	"Sequencia", 105, "Button", 1073741824, 138, 66, 54, 12
+	CONTROL	"", 106, "Edit", 128|65536|1073741824|8388608, 13, 51, 104, 13, 512
+	CONTROL	"Codigo Produto Manager", 107, "Static", 1073741824, 13, 39, 115, 13
+	CONTROL	"", 108, "Edit", 128|65536|1073741824|8388608, 16, 78, 27, 13, 512
+	CONTROL	"", 109, "Edit", 128|65536|1073741824|8388608, 45, 78, 27, 13, 512
+	CONTROL	"Sequencia", 110, "Static", 1073741824, 16, 66, 53, 12
+	CONTROL	"...", 111, "Button", 1073741824, 120, 51, 13, 13
+	CONTROL	"Retornar", 112, "Static", 1|1073741824, 280, 39, 32, 12
+	CONTROL	"", 113, "Button", 64|1073741824, 280, 14, 32, 25
+	CONTROL	"Checar Seq/Comp", 114, "Button", 8192|1073741824, 77, 66, 53, 25
+	CONTROL	"-->", 115, "Button", 1073741824, 66, 22, 14, 12
+	CONTROL	"Apagar Anteriores", 116, "Button", 3|1073741824, 194, 14, 80, 11
+	CONTROL	"Apagar Anteriores", 117, "Button", 3|1073741824, 194, 32, 80, 11
+	CONTROL	"Apagar Anteriores", 118, "Button", 3|1073741824, 194, 49, 80, 11
+	CONTROL	"Apagar Anteriores", 119, "Button", 3|1073741824, 194, 66, 80, 11
+	CONTROL	"...", 120, "Button", 1073741824, 53, 22, 13, 12
+	CONTROL	"Fixed Text", 121, "Static", 1073741824, 16, 98, 114, 12
+	CONTROL	"Foto", 122, "Static", 1|1073741824, 280, 78, 32, 13
+	CONTROL	"", 123, "Button", 64|1073741824, 280, 54, 32, 24
+	CONTROL	"Importar Tudo", 124, "Button", 65536|1073741824, 138, 81, 64, 13
+	CONTROL	"Atualizar MS06", 125, "Button", 65536|1073741824, 138, 98, 136, 13
+END
+
+

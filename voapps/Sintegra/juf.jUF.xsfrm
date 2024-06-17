@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="jUF">
+    <Window Name="jUF">
+      <Name>jUF</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>Estados Aliquotas</Caption>
+      <Order>0</Order>
+      <Left>26</Left>
+      <Top>26</Top>
+      <Width>440</Width>
+      <Height>121</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Estados Aliquotas",,</HyperLabel>
+        <HyperLabel>#jUF,,,</HyperLabel>
+        <ViewAs>#FormView</ViewAs>
+        <Menu>STANDARDSHELLMENU</Menu>
+        <InheritClassName>MYDataWindow</InheritClassName>
+      </ExProperties>
+    </Window>
+    <Control Name="FixedText1">
+      <Name>FixedText1</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>UF</Caption>
+      <Order>1</Order>
+      <Left>26</Left>
+      <Top>22</Top>
+      <Width>31</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"UF",,</HyperLabel>
+        <HyperLabel>#FixedText1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText2">
+      <Name>FixedText2</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Aliquota</Caption>
+      <Order>2</Order>
+      <Left>26</Left>
+      <Top>54</Top>
+      <Width>55</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Aliquota",,</HyperLabel>
+        <HyperLabel>#FixedText2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="UFICMS">
+      <Name>UFICMS</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>65</Left>
+      <Top>21</Top>
+      <Width>36</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>8</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1216350336</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_02</FieldSpec>
+        <HyperLabel>#UFICMS,,,</HyperLabel>
+        <HyperLabel>,"UF",,</HyperLabel>
+        <Background>255 255 200 10</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="NOMEEXT">
+      <Name>NOMEEXT</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>105</Left>
+      <Top>21</Top>
+      <Width>252</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1216350336</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_CHAR_20</FieldSpec>
+        <HyperLabel>#NOMEEXT,,,</HyperLabel>
+        <HyperLabel>,"Nome",,</HyperLabel>
+        <Background>255 255 200 10</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="ALIQUOTA">
+      <Name>ALIQUOTA</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>81</Left>
+      <Top>57</Top>
+      <Width>72</Width>
+      <Height>20</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>PADRAO_NUM_05_2</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <HyperLabel>#ALIQUOTA,,,</HyperLabel>
+        <HyperLabel>,"Aliquota",,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="pornum">
+      <Name>pornum</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>393</Left>
+      <Top>9</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_az</Image>
+        <HyperLabel>#pornum,,,</HyperLabel>
+        <TooltipText>"Clique para ordenar por Numero"</TooltipText>
+        <HyperLabel>,,"Ordenar por Numero",</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="buscanum">
+      <Name>buscanum</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>361</Left>
+      <Top>9</Top>
+      <Width>32</Width>
+      <Height>32</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073807360</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <Image>ico_find</Image>
+        <HyperLabel>#buscanum,,,</HyperLabel>
+        <TooltipText>"Clique Para Localizar Por Numero"</TooltipText>
+        <HyperLabel>,,"Localizar Numero",</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="site">
+      <Name>site</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>80</Left>
+      <Top>84</Top>
+      <Width>301</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_30</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <HyperLabel>#site,,,</HyperLabel>
+        <HyperLabel>,"Aliquota",,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText3">
+      <Name>FixedText3</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>site</Caption>
+      <Order>9</Order>
+      <Left>25</Left>
+      <Top>81</Top>
+      <Width>55</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"site",,</HyperLabel>
+        <HyperLabel>#FixedText3,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

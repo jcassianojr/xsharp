@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="CDTAB03">
+    <Window Name="CDTAB03">
+      <Name>CDTAB03</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>18</Left>
+      <Top>18</Top>
+      <Width>684</Width>
+      <Height>285</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#CDTAB03,,,</HyperLabel>
+        <ViewAs>#FormView</ViewAs>
+        <Use>&lt;Share Owner's&gt;</Use>
+      </ExProperties>
+    </Window>
+    <Control Name="OUTANXOBS">
+      <Name>OUTANXOBS</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>153</Left>
+      <Top>81</Top>
+      <Width>408</Width>
+      <Height>20</Height>
+      <BrowseIndex>9</BrowseIndex>
+      <BrowseSize>11</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_80</FieldSpec>
+        <HyperLabel>#OUTANXOBS,,,</HyperLabel>
+        <HyperLabel>,"Outanxobs:",,</HyperLabel>
+        <HyperLabel>,,,"CD_OUTANXOBS"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="DATADIM">
+      <Name>DATADIM</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>153</Left>
+      <Top>105</Top>
+      <Width>408</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_80</FieldSpec>
+        <HyperLabel>#DATADIM,,,</HyperLabel>
+        <HyperLabel>,"Datadim:",,</HyperLabel>
+        <HyperLabel>,,,"CD_DATADIM"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="DATAPRO">
+      <Name>DATAPRO</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>153</Left>
+      <Top>125</Top>
+      <Width>408</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_80</FieldSpec>
+        <HyperLabel>#DATAPRO,,,</HyperLabel>
+        <HyperLabel>,"Datapro:",,</HyperLabel>
+        <HyperLabel>,,,"CD_DATAPRO"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DATADIM">
+      <Name>SC_DATADIM</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Data Objetivos PPAP</Caption>
+      <Order>4</Order>
+      <Left>9</Left>
+      <Top>105</Top>
+      <Width>144</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Data Objetivos PPAP",,</HyperLabel>
+        <HyperLabel>#SC_DATADIM,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_DATAPRO">
+      <Name>SC_DATAPRO</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Data Objetivo Prototipo</Caption>
+      <Order>5</Order>
+      <Left>9</Left>
+      <Top>129</Top>
+      <Width>136</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Data Objetivo Prototipo",,</HyperLabel>
+        <HyperLabel>#SC_DATAPRO,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="EP">
+      <Name>EP</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Estimativa de Produto</Caption>
+      <Order>6</Order>
+      <Left>13</Left>
+      <Top>33</Top>
+      <Width>136</Width>
+      <Height>20</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>4</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741827</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Estimativa de Produto",,</HyperLabel>
+        <FieldSpec>logic_field</FieldSpec>
+        <HyperLabel>#EP,,,</HyperLabel>
+        <HyperLabel>,,,"CD_EP"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="MM">
+      <Name>MM</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Modelo(s) Matemático(s)</Caption>
+      <Order>7</Order>
+      <Left>157</Left>
+      <Top>33</Top>
+      <Width>156</Width>
+      <Height>20</Height>
+      <BrowseIndex>3</BrowseIndex>
+      <BrowseSize>4</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741827</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Modelos Matemáticos",,</HyperLabel>
+        <FieldSpec>logic_field</FieldSpec>
+        <HyperLabel>#MM,,,</HyperLabel>
+        <HyperLabel>,,,"CD_MM"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="NT">
+      <Name>NT</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Norma(s) Técnicas(s)</Caption>
+      <Order>8</Order>
+      <Left>321</Left>
+      <Top>33</Top>
+      <Width>140</Width>
+      <Height>20</Height>
+      <BrowseIndex>4</BrowseIndex>
+      <BrowseSize>4</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741827</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Normas Técnicass",,</HyperLabel>
+        <FieldSpec>logic_field</FieldSpec>
+        <HyperLabel>#NT,,,</HyperLabel>
+        <HyperLabel>,,,"CD_NT"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FE">
+      <Name>FE</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Formulario Embalagem</Caption>
+      <Order>9</Order>
+      <Left>13</Left>
+      <Top>57</Top>
+      <Width>136</Width>
+      <Height>20</Height>
+      <BrowseIndex>5</BrowseIndex>
+      <BrowseSize>4</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741827</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Formulario Embalagem",,</HyperLabel>
+        <FieldSpec>logic_field</FieldSpec>
+        <HyperLabel>#FE,,,</HyperLabel>
+        <HyperLabel>,,,"CD_FE"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="DE">
+      <Name>DE</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Desenho(s) 2D</Caption>
+      <Order>10</Order>
+      <Left>157</Left>
+      <Top>57</Top>
+      <Width>156</Width>
+      <Height>20</Height>
+      <BrowseIndex>6</BrowseIndex>
+      <BrowseSize>4</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741827</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Desenhos 2D",,</HyperLabel>
+        <FieldSpec>logic_field</FieldSpec>
+        <HyperLabel>#DE,,,</HyperLabel>
+        <HyperLabel>,,,"CD_DE"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="AMO">
+      <Name>AMO</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Amostras</Caption>
+      <Order>11</Order>
+      <Left>321</Left>
+      <Top>57</Top>
+      <Width>132</Width>
+      <Height>20</Height>
+      <BrowseIndex>7</BrowseIndex>
+      <BrowseSize>5</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741827</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Amostras",,</HyperLabel>
+        <FieldSpec>logic_field</FieldSpec>
+        <HyperLabel>#AMO,,,</HyperLabel>
+        <HyperLabel>,,,"CD_AMO"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="OUTANX">
+      <Name>OUTANX</Name>
+      <Class>CHECKBOX</Class>
+      <Caption>Outros Anexos</Caption>
+      <Order>12</Order>
+      <Left>13</Left>
+      <Top>81</Top>
+      <Width>124</Width>
+      <Height>20</Height>
+      <BrowseIndex>8</BrowseIndex>
+      <BrowseSize>8</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741827</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Outros Anexos",,</HyperLabel>
+        <FieldSpec>logic_field</FieldSpec>
+        <HyperLabel>#OUTANX,,,</HyperLabel>
+        <HyperLabel>,,,"CD_OUTANX"</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

@@ -1,0 +1,301 @@
+#region DEFINES
+STATIC DEFINE JBTI_ALTERAR := 116
+STATIC DEFINE JBTI_ANTERIOR := 114
+STATIC DEFINE JBTI_BTI := 112
+STATIC DEFINE JBTI_BUSCAOV := 128
+STATIC DEFINE JBTI_CLIENTE := 103
+STATIC DEFINE JBTI_CLINOME := 104
+STATIC DEFINE JBTI_CODIGO := 105
+STATIC DEFINE JBTI_DATA := 102
+STATIC DEFINE JBTI_DUNS := 100
+STATIC DEFINE JBTI_ESCCOD := 121
+STATIC DEFINE JBTI_ESCFOR := 123
+STATIC DEFINE JBTI_EXCLUIR := 117
+STATIC DEFINE JBTI_FOTO := 126
+STATIC DEFINE JBTI_JBTII := 119
+STATIC DEFINE JBTI_NOME := 106
+STATIC DEFINE JBTI_NOVO := 118
+STATIC DEFINE JBTI_PEGMA01 := 122 
+STATIC DEFINE JBTI_PEGMS01 := 120
+STATIC DEFINE JBTI_POROV := 127
+STATIC DEFINE JBTI_PROXIMO := 113
+STATIC DEFINE JBTI_RFQ := 101
+STATIC DEFINE JBTI_SC_BTI := 107
+STATIC DEFINE JBTI_SC_CLIENTE := 108
+STATIC DEFINE JBTI_SC_CLIENTE1 := 124
+STATIC DEFINE JBTI_SC_CODIGO := 109
+STATIC DEFINE JBTI_SC_DESTINO2 := 125
+STATIC DEFINE JBTI_SC_DUNS := 110
+STATIC DEFINE JBTI_SC_RFQ := 111
+STATIC DEFINE JBTI_TABULAR := 115
+#endregion
+
+PARTIAL CLASS jbti INHERIT MYDataWindow
+PROTECT oDBBTI AS DataColumn
+PROTECT oDBCLIENTE AS DataColumn
+PROTECT oDBCLINOME AS DataColumn
+PROTECT oDBCODIGO AS DataColumn
+PROTECT oDBNOME AS DataColumn
+PROTECT oDBDUNS AS DataColumn
+PROTECT oDBRFQ AS DataColumn
+PROTECT oDBDATA AS DataColumn
+PROTECT oDCDUNS AS SINGLELINEEDIT
+PROTECT oDCRFQ AS SINGLELINEEDIT
+PROTECT oDCDATA AS DateSle
+PROTECT oDCCLIENTE AS SINGLELINEEDIT
+PROTECT oDCCLINOME AS SINGLELINEEDIT
+PROTECT oDCCODIGO AS SINGLELINEEDIT
+PROTECT oDCNOME AS SINGLELINEEDIT
+PROTECT oDCSC_BTI AS FIXEDTEXT
+PROTECT oDCSC_CLIENTE AS FIXEDTEXT
+PROTECT oDCSC_CODIGO AS FIXEDTEXT
+PROTECT oDCSC_DUNS AS FIXEDTEXT
+PROTECT oDCSC_RFQ AS FIXEDTEXT
+PROTECT oDCBTI AS SINGLELINEEDIT
+PROTECT oCCProximo AS PUSHBUTTON
+PROTECT oCCAnterior AS PUSHBUTTON
+PROTECT oCCTabular AS PUSHBUTTON
+PROTECT oCCALTERAR AS PUSHBUTTON
+PROTECT oCCExcluir AS PUSHBUTTON
+PROTECT oCCNOVO AS PUSHBUTTON
+PROTECT oSFjbtii AS jbtii
+PROTECT oCCbtnpegms01 AS PUSHBUTTON
+PROTECT oCCesccod AS PUSHBUTTON
+PROTECT oCCbtnpegma01 AS PUSHBUTTON
+PROTECT oCCescfor AS PUSHBUTTON
+PROTECT oDCSC_CLIENTE1 AS FIXEDTEXT
+PROTECT oDCSC_DESTINO2 AS FIXEDTEXT
+PROTECT oCCfoto AS PUSHBUTTON
+PROTECT oCCporov AS PUSHBUTTON
+PROTECT oCCbuscaov AS PUSHBUTTON
+
+// User code starts here (DO NOT remove this line)  ##USER##
+
+ACCESS BTI
+RETURN SELF:FieldGet( #BTI )
+
+ASSIGN BTI( uValue )
+SELF:FieldPut( #BTI , uValue )
+
+ACCESS CLIENTE
+RETURN SELF:FieldGet( #CLIENTE )
+
+ASSIGN CLIENTE( uValue )
+SELF:FieldPut( #CLIENTE , uValue )
+
+ACCESS CLINOME
+RETURN SELF:FieldGet( #CLINOME )
+
+ASSIGN CLINOME( uValue )
+SELF:FieldPut( #CLINOME , uValue )
+
+ACCESS CODIGO
+RETURN SELF:FieldGet( #CODIGO )
+
+ASSIGN CODIGO( uValue )
+SELF:FieldPut( #CODIGO , uValue )
+
+ACCESS DATA
+RETURN SELF:FieldGet( #DATA )
+
+ASSIGN DATA( uValue )
+SELF:FieldPut( #DATA , uValue )
+
+ACCESS DUNS
+RETURN SELF:FieldGet( #DUNS )
+
+ASSIGN DUNS( uValue )
+SELF:FieldPut( #DUNS , uValue )
+
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)
+	LOCAL oFont AS Font
+
+	SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+
+	SUPER(oWindow , ResourceID{"jbti" , _GetInst()},iCtlID)
+
+	SELF:oDCDUNS := SINGLELINEEDIT{SELF , ResourceID{ JBTI_DUNS  , _GetInst() } }
+	SELF:oDCDUNS:FieldSpec := PADRAO_CHAR_20{}
+	SELF:oDCDUNS:HyperLabel := HyperLabel{#DUNS , "Duns:" , NULL_STRING , "BTI_DUNS"}
+
+	SELF:oDCRFQ := SINGLELINEEDIT{SELF , ResourceID{ JBTI_RFQ  , _GetInst() } }
+	SELF:oDCRFQ:FieldSpec := PADRAO_CHAR_20{}
+	SELF:oDCRFQ:HyperLabel := HyperLabel{#RFQ , "Rfq:" , NULL_STRING , "BTI_RFQ"}
+
+	SELF:oDCDATA := DateSle{SELF , ResourceID{ JBTI_DATA  , _GetInst() } }
+	SELF:oDCDATA:FieldSpec := DATE_FIELD{}
+	SELF:oDCDATA:HyperLabel := HyperLabel{#DATA , "Cliente:" , NULL_STRING , "BTI_CLIENTE"}
+
+	SELF:oDCCLIENTE := SINGLELINEEDIT{SELF , ResourceID{ JBTI_CLIENTE  , _GetInst() } }
+	SELF:oDCCLIENTE:FieldSpec := PADRAO_NUM_08{}
+	SELF:oDCCLIENTE:HyperLabel := HyperLabel{#CLIENTE , "Cliente:" , NULL_STRING , "BTI_CLIENTE"}
+
+	SELF:oDCCLINOME := SINGLELINEEDIT{SELF , ResourceID{ JBTI_CLINOME  , _GetInst() } }
+	SELF:oDCCLINOME:FieldSpec := PADRAO_CHAR_50{}
+	SELF:oDCCLINOME:HyperLabel := HyperLabel{#CLINOME , "Clinome:" , NULL_STRING , "BTI_CLINOME"}
+
+	SELF:oDCCODIGO := SINGLELINEEDIT{SELF , ResourceID{ JBTI_CODIGO  , _GetInst() } }
+	SELF:oDCCODIGO:FieldSpec := PADRAO_CHAR_24{}
+	SELF:oDCCODIGO:HyperLabel := HyperLabel{#CODIGO , "Codigo:" , NULL_STRING , "BTI_CODIGO"}
+
+	SELF:oDCNOME := SINGLELINEEDIT{SELF , ResourceID{ JBTI_NOME  , _GetInst() } }
+	SELF:oDCNOME:FieldSpec := PADRAO_CHAR_50{}
+	SELF:oDCNOME:HyperLabel := HyperLabel{#NOME , "Nome:" , NULL_STRING , "BTI_NOME"}
+
+	SELF:oDCSC_BTI := FIXEDTEXT{SELF , ResourceID{ JBTI_SC_BTI  , _GetInst() } }
+	SELF:oDCSC_BTI:HyperLabel := HyperLabel{#SC_BTI , "Bti:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_CLIENTE := FIXEDTEXT{SELF , ResourceID{ JBTI_SC_CLIENTE  , _GetInst() } }
+	SELF:oDCSC_CLIENTE:HyperLabel := HyperLabel{#SC_CLIENTE , "Cliente:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_CODIGO := FIXEDTEXT{SELF , ResourceID{ JBTI_SC_CODIGO  , _GetInst() } }
+	SELF:oDCSC_CODIGO:HyperLabel := HyperLabel{#SC_CODIGO , "Codigo:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_DUNS := FIXEDTEXT{SELF , ResourceID{ JBTI_SC_DUNS  , _GetInst() } }
+	SELF:oDCSC_DUNS:HyperLabel := HyperLabel{#SC_DUNS , "Duns:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_RFQ := FIXEDTEXT{SELF , ResourceID{ JBTI_SC_RFQ  , _GetInst() } }
+	SELF:oDCSC_RFQ:HyperLabel := HyperLabel{#SC_RFQ , "Rfq:" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCBTI := SINGLELINEEDIT{SELF , ResourceID{ JBTI_BTI  , _GetInst() } }
+	SELF:oDCBTI:FieldSpec := PADRAO_NUM_08{}
+	SELF:oDCBTI:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 10 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCBTI:Font( oFont )
+	SELF:oDCBTI:HyperLabel := HyperLabel{#BTI , "Bti:" , NULL_STRING , "BTI_BTI"}
+
+	SELF:oCCProximo := PUSHBUTTON{SELF , ResourceID{ JBTI_PROXIMO  , _GetInst() } }
+	SELF:oCCProximo:Image := ICO_NEXT{}
+	SELF:oCCProximo:HyperLabel := HyperLabel{#Proximo , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oCCAnterior := PUSHBUTTON{SELF , ResourceID{ JBTI_ANTERIOR  , _GetInst() } }
+	SELF:oCCAnterior:Image := ICO_PREVIOUS{}
+	SELF:oCCAnterior:HyperLabel := HyperLabel{#Anterior , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oCCTabular := PUSHBUTTON{SELF , ResourceID{ JBTI_TABULAR  , _GetInst() } }
+	SELF:oCCTabular:HyperLabel := HyperLabel{#Tabular , "Tabular" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCALTERAR := PUSHBUTTON{SELF , ResourceID{ JBTI_ALTERAR  , _GetInst() } }
+	SELF:oCCALTERAR:HyperLabel := HyperLabel{#ALTERAR , "Alterar" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCExcluir := PUSHBUTTON{SELF , ResourceID{ JBTI_EXCLUIR  , _GetInst() } }
+	SELF:oCCExcluir:HyperLabel := HyperLabel{#Excluir , "Excluir" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCNOVO := PUSHBUTTON{SELF , ResourceID{ JBTI_NOVO  , _GetInst() } }
+	SELF:oCCNOVO:HyperLabel := HyperLabel{#NOVO , "Novo" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCbtnpegms01 := PUSHBUTTON{SELF , ResourceID{ JBTI_BTNPEGMS01  , _GetInst() } }
+	SELF:oCCbtnpegms01:HyperLabel := HyperLabel{#btnpegms01 , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCesccod := PUSHBUTTON{SELF , ResourceID{ JBTI_ESCCOD  , _GetInst() } }
+	SELF:oCCesccod:HyperLabel := HyperLabel{#esccod , "..." , NULL_STRING , NULL_STRING}
+
+	SELF:oCCbtnpegma01 := PUSHBUTTON{SELF , ResourceID{ JBTI_BTNPEGMA01  , _GetInst() } }
+	SELF:oCCbtnpegma01:HyperLabel := HyperLabel{#btnpegma01 , "-->" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCescfor := PUSHBUTTON{SELF , ResourceID{ JBTI_ESCFOR  , _GetInst() } }
+	SELF:oCCescfor:HyperLabel := HyperLabel{#escfor , "..." , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_CLIENTE1 := FIXEDTEXT{SELF , ResourceID{ JBTI_SC_CLIENTE1  , _GetInst() } }
+	SELF:oDCSC_CLIENTE1:HyperLabel := HyperLabel{#SC_CLIENTE1 , "Data" , NULL_STRING , NULL_STRING}
+
+	SELF:oDCSC_DESTINO2 := FIXEDTEXT{SELF , ResourceID{ JBTI_SC_DESTINO2  , _GetInst() } }
+	SELF:oDCSC_DESTINO2:HyperLabel := HyperLabel{#SC_DESTINO2 , "Foto" , NULL_STRING , NULL_STRING}
+
+	SELF:oCCfoto := PUSHBUTTON{SELF , ResourceID{ JBTI_FOTO  , _GetInst() } }
+	SELF:oCCfoto:Image := ICO_CAMERA{}
+	SELF:oCCfoto:HyperLabel := HyperLabel{#foto , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oCCporov := PUSHBUTTON{SELF , ResourceID{ JBTI_POROV  , _GetInst() } }
+	SELF:oCCporov:TooltipText := "Clique para ordenar por Numero"
+	SELF:oCCporov:Image := ICO_AZ{}
+	SELF:oCCporov:HyperLabel := HyperLabel{#porov , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:oCCbuscaov := PUSHBUTTON{SELF , ResourceID{ JBTI_BUSCAOV  , _GetInst() } }
+	SELF:oCCbuscaov:TooltipText := "Clique Para Localizar Por Numero"
+	SELF:oCCbuscaov:Image := ICO_FIND{}
+	SELF:oCCbuscaov:HyperLabel := HyperLabel{#buscaov , NULL_STRING , NULL_STRING , NULL_STRING}
+
+	SELF:Caption := "Breakdown Tooling Investiment"
+	SELF:Menu := STANDARDSHELLMENU{}
+	SELF:HyperLabel := HyperLabel{#jbti , "Breakdown Tooling Investiment" , NULL_STRING , NULL_STRING}
+	IF !IsNil(oServer)
+		SELF:Use(oServer)
+	ENDIF
+
+	SELF:Browser := DataBrowser{SELF}
+
+	SELF:oDBBTI := DataColumn{PADRAO_NUM_08{}}
+	SELF:oDBBTI:Width := 5
+	SELF:oDBBTI:HyperLabel := SELF:oDCBTI:HyperLabel
+	SELF:oDBBTI:Caption := "Bti:"
+	SELF:Browser:AddColumn(SELF:oDBBTI)
+
+	SELF:oDBCLIENTE := DataColumn{PADRAO_NUM_08{}}
+	SELF:oDBCLIENTE:Width := 9
+	SELF:oDBCLIENTE:HyperLabel := SELF:oDCCLIENTE:HyperLabel
+	SELF:oDBCLIENTE:Caption := "Cliente:"
+	SELF:Browser:AddColumn(SELF:oDBCLIENTE)
+
+	SELF:oDBCLINOME := DataColumn{PADRAO_CHAR_50{}}
+	SELF:oDBCLINOME:Width := 9
+	SELF:oDBCLINOME:HyperLabel := SELF:oDCCLINOME:HyperLabel
+	SELF:oDBCLINOME:Caption := "Clinome:"
+	SELF:Browser:AddColumn(SELF:oDBCLINOME)
+
+	SELF:oDBCODIGO := DataColumn{PADRAO_CHAR_24{}}
+	SELF:oDBCODIGO:Width := 8
+	SELF:oDBCODIGO:HyperLabel := SELF:oDCCODIGO:HyperLabel
+	SELF:oDBCODIGO:Caption := "Codigo:"
+	SELF:Browser:AddColumn(SELF:oDBCODIGO)
+
+	SELF:oDBNOME := DataColumn{PADRAO_CHAR_50{}}
+	SELF:oDBNOME:Width := 6
+	SELF:oDBNOME:HyperLabel := SELF:oDCNOME:HyperLabel
+	SELF:oDBNOME:Caption := "Nome:"
+	SELF:Browser:AddColumn(SELF:oDBNOME)
+
+	SELF:oDBDUNS := DataColumn{PADRAO_CHAR_20{}}
+	SELF:oDBDUNS:Width := 6
+	SELF:oDBDUNS:HyperLabel := SELF:oDCDUNS:HyperLabel
+	SELF:oDBDUNS:Caption := "Duns:"
+	SELF:Browser:AddColumn(SELF:oDBDUNS)
+
+	SELF:oDBRFQ := DataColumn{PADRAO_CHAR_20{}}
+	SELF:oDBRFQ:Width := 5
+	SELF:oDBRFQ:HyperLabel := SELF:oDCRFQ:HyperLabel
+	SELF:oDBRFQ:Caption := "Rfq:"
+	SELF:Browser:AddColumn(SELF:oDBRFQ)
+
+	SELF:oDBDATA := DataColumn{DATE_FIELD{}}
+	SELF:oDBDATA:Width := 6
+	SELF:oDBDATA:HyperLabel := SELF:oDCDATA:HyperLabel
+	SELF:oDBDATA:Caption := "Cliente:"
+	SELF:Browser:AddColumn(SELF:oDBDATA)
+
+	SELF:ViewAs(#FormView)
+
+	SELF:oSFjbtii := jbtii{SELF , JBTI_JBTII }
+	SELF:oSFjbtii:Show()
+
+	SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN
+
+
+ACCESS NOME
+RETURN SELF:FieldGet( #NOME )
+
+ASSIGN NOME( uValue )
+SELF:FieldPut( #NOME , uValue )
+
+ACCESS RFQ
+RETURN SELF:FieldGet( #RFQ )
+
+ASSIGN RFQ( uValue )
+SELF:FieldPut( #RFQ , uValue )
+
+END CLASS
+STATIC DEFINE JBTI_BTNPEGMA01 := 122
+STATIC DEFINE JBTI_BTNPEGMS01 := 120

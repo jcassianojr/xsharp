@@ -1,0 +1,135 @@
+﻿PARTIAL CLASS xJPRO
+METHOD Anterior( ) 
+IF ! SELF:serveR:Bof
+   SELF:server:skip(-1)
+ENDIF	
+
+METHOD BtnPegmp01( ) 
+LOCAL aPRO AS ARRAY
+LOCAL cCOD
+cCOD:=SELF:oSFJMS06:SERVER:CODMP01
+IF ! Empty(cCOD)
+   aPRO:=PEGMP01(cCOD,cCURINI,cCURDIR)
+   IF aPRO[1]=.T.
+      alert(Apro[2])	
+   ENDIF	
+ENDIF
+
+METHOD Busca() 
+SELF:KeyFind() //janela da janela
+//LOCAL oBUSCA AS xBUSCA
+//oBUSCA:=xBUSCA{SELF,"Localizar Produto","Digite Codigo Produto"}
+//oBUSCA:lMES:=.T.
+//oBUSCA:SHOW()
+//IF oBUSCA:lOK
+//   SELF:SERVER:SETORDER(2)
+//   SELF:SERVER:GOTOP()
+//   SELF:SERVER:SEEK(oBUSCA:cBUSCA)
+//ENDIF
+
+
+METHOD cmdesccom( ) 
+	aRETCOM[1]:=.T.
+	aRETCOM[2]:=SELF:oSFjms03:FIELDGET("TIPOENT")
+	aRETCOM[3]:=SELF:oSFjms03:FIELDGET("CODCOMP")	
+	SELF:EndWindow()
+
+METHOD cmdesccom1( ) 
+	aRETSEQ[1]:=.T.
+	aRETSEQ[2]:=SELF:oSFjms06:FIELDGET("SEQ")
+	aRETSEQ[3]:=SELF:oSFjms06:FIELDGET("SSQ")		
+	aRETSEQ[4]:=SELF:oSFjms06:FIELDGET("DESCRI")			
+	SELF:EndWindow()
+
+METHOD cmdesccom2( ) 
+    aRETPRO[1]:=.T.
+	aRETPRO[2]:=SELF:SERVER:FIELDGET("CODIGO")
+	aRETPRO[3]:=SELF:SERVER:FIELDGET("NOME")	
+	SELF:EndWindow()
+
+METHOD esccod() 
+LOCAL oESC AS XESCCOD	
+oESC:=XESCCOD{SELF,"MS01.DBF"}
+oESC:SHOW()	
+IF oESC:LOK
+	SELF:SERVER:GOTOP()
+    SELF:SERVER:SEEK(oESC:CODIGO)
+ENDIF
+
+METHOD foto() 
+LOCAL oFOTOVIEW AS fotoview	
+LOCAL cCODIGO AS STRING
+
+
+cCODIGO:=TIRAOUT(StrTran(AllTrim(SELF:SERVER:FIELDGET("CODIGO"))," ",""))
+IF Empty(cCODIGO)	
+   alert("Codigo Produto Nao Preenchido")	
+   RETURN .f.
+ENDIF	
+OFOTOVIEW:=fotoview{SELF,cDIRFOTO+cCODIGO+".JPG",cCODIGO}
+OFOTOVIEW:SHOW()
+	
+
+CONSTRUCTOR(oOWNER,cCODIGO,cINI,cDIR,aCFG) 
+LOCAL oSERVER,oSERVE2,Oserve3 AS USEMANA5
+LOCAL aDAD AS ARRAY
+cCURINI:=cINI
+cCURDIR:=cDIR
+aCURCFG:=aCFG
+cDIRFOTO:=PEGINIVAL(cCURINI,"FOTOS","CAMINHO")
+aDAD:={cCURINI,"MS01",cCURDIR,aCURCFG}
+oSERVER:=USEMANA5{aDAD}
+IF oSERVER:nERRO#0
+    RETU SELF
+ENDIF
+aDAD:={cCURINI,"MS06",cCURDIR,aCURCFG}
+oSERVE2:=USEMANA5{aDAD}
+oSERVE2:SetOrder(2)
+IF oSERVE2:nERRO#0
+	oSERVER:CLOSE()
+    RETU SELF
+ENDIF
+aDAD:={cCURINI,"MS03",cCURDIR,aCURCFG}
+oSERVE3:=USEMANA5{aDAD}
+oSERVE3:SetOrder(2)
+IF oSERVE3:nERRO#0
+	oSERVER:CLOSE()
+	oSERVE2:CLOSE()
+    RETU SELF
+ENDIF
+
+SUPER(oOWNER,,oSERVER)
+SELF:Browser:SetStandardStyle(gBsreadonly)
+SELF:OSFJMS06:USE(oSERVE2)
+SELF:oSFJMS06:Browser:SetStandardStyle(gBsreadonly)
+SELF:SetSelectiveRelation(oSFJMS06,"CODIGO")
+SELF:oSFjms06:viewtable()
+SELF:OSFJMS03:USE(oSERVE3)
+SELF:oSFJMS03:Browser:SetStandardStyle(gBsreadonly)
+SELF:SetSelectiveRelation(oSFJMS03,"CODIGO")
+SELF:oSFjms03:viewtable()
+IF ! Empty(cCODIGO)
+   SELF:SERVER:GOTOP()
+   SELF:SERVER:SEEK(cCODIGO)	
+ENDIF	
+aRETCOM:={.F.,"",""}
+aRETPRO:={.F.,"",""}
+aRETSEQ:={.F.,0,0,""}
+SELF:SHOW()			
+
+METHOD PostInit(oWindow,iCtlID,oServer,uExtra) 
+	//Put your PostInit additions here
+		    FabCenterWindow( SELF )
+	RETURN NIL
+
+
+METHOD Proximo( ) 
+IF ! SELF:serveR:eof
+   SELF:server:skip()
+ENDIF		
+
+METHOD sair( ) 
+	SELF:EndWindow()
+
+
+END CLASS

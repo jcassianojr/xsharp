@@ -1,0 +1,196 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JADPI
+GUID=827C0739-C99E-4B38-B964-504EEF6ED734
+  Name=JADPI
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=16
+  Width=493
+  Top=16
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JADPI,,,
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=60F15921-AAB7-44B1-95E7-6FE927C1FC0E
+  Name=SC_ADP
+  Class=FIXEDTEXT
+  Caption=Adp:
+  Order=1
+  Left=13
+  Width=28
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Adp:",,
+  Property=HyperLabel=#SC_ADP,,,
+
+CONTROL=FIXEDTEXT
+GUID=D3FF23BE-72FB-4AB7-9148-1010257A16BF
+  Name=SC_ESPC
+  Class=FIXEDTEXT
+  Caption=Especificado:
+  Order=2
+  Left=9
+  Width=79
+  Top=37
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Especificado:",,
+  Property=HyperLabel=#SC_ESPC,,,
+
+CONTROL=FIXEDTEXT
+GUID=D7CC28F2-1972-4BBF-9C4E-F9F3B0E083A8
+  Name=SC_ENCO
+  Class=FIXEDTEXT
+  Caption=Encontrado:
+  Order=3
+  Left=9
+  Width=72
+  Top=57
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Encontrado:",,
+  Property=HyperLabel=#SC_ENCO,,,
+
+CONTROL=FIXEDTEXT
+GUID=268EAC28-9122-4923-9CDE-8C37DE2FE936
+  Name=SC_LAUDO
+  Class=FIXEDTEXT
+  Caption=Laudo:
+  Order=4
+  Left=121
+  Width=36
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Laudo:",,
+  Property=HyperLabel=#SC_LAUDO,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=CC28FE26-34B3-476C-87E3-0BC0C40384F5
+  Name=ADP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=5
+  Left=49
+  Width=68
+  Top=9
+  Height=20
+  Browseindex=0
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#ADP,,,
+  Property=HyperLabel=,"Adp:",,
+  Property=HyperLabel=,,,"ADPI_ADP"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=FAB8EBA9-AF7A-45C9-9B96-510253B2AB06
+  Name=ESPC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=6
+  Left=85
+  Width=389
+  Top=37
+  Height=20
+  Browseindex=1
+  Browsesize=32
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_80
+  Property=HyperLabel=#ESPC,,,
+  Property=HyperLabel=,"Especificado:",,
+  Property=HyperLabel=,,,"ADPI_ESPC"
+
+CONTROL=SINGLELINEEDIT
+GUID=05328A9D-E222-416A-8791-FEB275F18705
+  Name=ENCO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=85
+  Width=388
+  Top=57
+  Height=20
+  Browseindex=2
+  Browsesize=31
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_80
+  Property=HyperLabel=#ENCO,,,
+  Property=HyperLabel=,"Encontrado:",,
+  Property=HyperLabel=,,,"ADPI_ENCO"
+
+CONTROL=SINGLELINEEDIT
+GUID=59746995-4509-4EA1-B1A4-110789089306
+  Name=LAUDO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=161
+  Width=24
+  Top=9
+  Height=20
+  Browseindex=3
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=HyperLabel=#LAUDO,,,
+  Property=HyperLabel=,"L",,
+  Property=HyperLabel=,,,"ADPI_LAUDO"
+
+SUBCONTROLSEND
+DESIGNEREND = JADPI
+

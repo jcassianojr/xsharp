@@ -1,0 +1,114 @@
+ EMPTYSHELLMENU ACCELERATORS
+Begin
+	115, 25096, ALT, VIRTKEY
+	112, 25112, VIRTKEY
+End
+ 
+ EMPTYSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		MENUITEM "Controle Ordem Servico", 25047
+		MENUITEM "Produto Opr/Com", 25048
+		POPUP "Programaçâo Importada"
+		BEGIN
+			POPUP "Electrolux"
+			BEGIN
+				MENUITEM "Diaria", 25051
+				MENUITEM "Semanal", 25052
+			END
+			POPUP "GM"
+			BEGIN
+				MENUITEM "Diaria", 25054
+				MENUITEM "Semanal", 25055
+			END
+			POPUP "LX - Integrado"
+			BEGIN
+				MENUITEM "Diaria", 25057
+				MENUITEM "Semanal", 25058
+			END
+		END
+		POPUP "Exportar"
+		BEGIN
+			MENUITEM "Gera MGR PC", 25060
+			MENUITEM "Gera MGR Emb", 25061
+		END
+		POPUP "Necessidades"
+		BEGIN
+			MENUITEM "LX->OP01", 25063
+		END
+		POPUP "Importar Programa"
+		BEGIN
+			POPUP "Edwise"
+			BEGIN
+				MENUITEM "Semanal Ediwise DBF/SQL", 25066
+				MENUITEM "Diaria Ediwise DBF/SQL", 25067
+				MENUITEM "Semanal Ediwise  TXT/PMGMB", 25068
+				MENUITEM "Diaria Ediwise TXT/PDGMB", 25069
+			END
+			POPUP "Electrolux"
+			BEGIN
+				MENUITEM "Eletrolux Arquivo Orders", 25071
+				MENUITEM "Eletrolux Arquivo Delfor", 25072
+				MENUITEM "Diaria DBF", 25073
+				MENUITEM "Diaria TXT", 25074
+				MENUITEM "Diaria XLS", 25075
+			END
+			MENUITEM "LX", 25076
+		END
+		POPUP "Estoque Integracao"
+		BEGIN
+			MENUITEM "Estoque Importado", 25078
+			MENUITEM "Importar Integrado", 25079
+			MENUITEM "Exportar Mana5", 25080
+		END
+		POPUP "Necessidade MP/Comp"
+		BEGIN
+			MENUITEM "Iniciar", 25082
+			MENUITEM "Checagem Produtos", 25083
+			MENUITEM "Checagem Itens", 25084
+			MENUITEM "Programa de Entrega", 25085
+			MENUITEM "Pre Programacao Avulsa", 25086
+		END
+		POPUP "plano de corte"
+		BEGIN
+			MENUITEM "Plano de Corte", 25088
+			MENUITEM "gera planilha plano de corte", 25089
+		END
+		MENUITEM "Checagem Codigos LX->MANA5", 25090
+		MENUITEM SEPARATOR
+		MENUITEM "Indexar", 25092
+		MENUITEM "Trocar Competencia/Empresa", 25093
+		MENUITEM "C&onfigurar Impressora ..", 25094
+		MENUITEM SEPARATOR
+		MENUITEM "&Sair\tAlt+F4", 25096
+	END
+	POPUP "&Relatorios"
+	BEGIN
+		MENUITEM "Pedidos Programa Clientes", 25098
+		MENUITEM "Programa de Entrega", 25099
+		MENUITEM "WRPT Integrado PCP", 25100
+		MENUITEM "WRPT", 25101
+		MENUITEM "WRPT Modulo Integrado", 25102
+		MENUITEM "lstview logix", 25103
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		POPUP "Email"
+		BEGIN
+			MENUITEM "Consulta", 25106
+			MENUITEM "Consulta Geral", 25107
+			MENUITEM "Configuraçao", 25108
+		END
+		MENUITEM "Checar CGC/CPF/IE...", 25109
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Conteudo", 25111
+		MENUITEM "&Indice\tF1", 25112
+		MENUITEM SEPARATOR
+		MENUITEM "Atualizações", 25114
+		MENUITEM "&Sobre...", 25115
+	END
+End
+ 

@@ -1,0 +1,150 @@
+ EMPTYSHELLMENU MENU
+Begin
+	POPUP "Arquivos"
+	BEGIN
+		POPUP "Cadastros"
+		BEGIN
+			MENUITEM "Clentes", 30149
+			MENUITEM "Fornecedores", 30150
+			MENUITEM "Produtos", 30151
+			MENUITEM "Empresas", 30152
+			MENUITEM "UF aliquotas", 30153
+			MENUITEM "Cadastro de Certificaçôes", 30154
+		END
+		POPUP "Editar Registros Sintegra"
+		BEGIN
+			MENUITEM "10 empresa", 30156
+			MENUITEM "11 empresa detalhes", 30157
+			MENUITEM "50 ICMS", 30158
+			MENUITEM "51 IPI", 30159
+			MENUITEM "53 Substituicao Tributaria", 30160
+			MENUITEM "54 Itens Nota Fiscal", 30161
+			MENUITEM "70 Conhecimento de Transporte", 30162
+			MENUITEM "75 Produtos", 30163
+		END
+		POPUP "Cadastros - Sistemas Integrados"
+		BEGIN
+			MENUITEM "LX", 30165
+			POPUP "MC"
+			BEGIN
+				MENUITEM "Cliente", 30167
+				MENUITEM "Fornecedor", 30168
+			END
+		END
+		POPUP " Importacoes - Sistemas Integrados"
+		BEGIN
+			POPUP "LX"
+			BEGIN
+				MENUITEM "DES ", 30171
+				MENUITEM "Codigos", 30172
+				MENUITEM "Fornecedor", 30173
+				MENUITEM "Clientes", 30174
+				MENUITEM "Requisicoes", 30175
+				MENUITEM "Requisicoes Processo", 30176
+				MENUITEM "PFS->Req Proc Codigo Interno", 30177
+				MENUITEM "Ultimo Preco", 30178
+				MENUITEM "Saldo Estoque Competencia", 30179
+			END
+			MENUITEM "MC", 30180
+		END
+		POPUP "Importacao TXT"
+		BEGIN
+			MENUITEM "Sintegra TXT", 30182
+		END
+		POPUP "Consulta Cadastros CNPJ/ie"
+		BEGIN
+			MENUITEM "AC - Acre", 30184
+			MENUITEM "AL - Alagoas", 30185
+			MENUITEM "AM - Amazonas", 30186
+			MENUITEM "AP - Amapa", 30187
+			MENUITEM "BA - bahia", 30188
+			MENUITEM "CE - Ceara", 30189
+			MENUITEM "DF - Distrito Federal", 30190
+			MENUITEM "ES - Espiritio Santo", 30191
+			MENUITEM "GO - Goias (Ativos)", 30192
+			MENUITEM "GO - Goias - Baixados", 30193
+			MENUITEM "MA - Maranhao(Ativos)", 30194
+			MENUITEM "MA- Maranhao( Baixados)", 30195
+			MENUITEM "MG - Minas Gerais", 30196
+			MENUITEM "MS - Mato Grosso do Sul", 30197
+			MENUITEM "MT - Mato Grosso", 30198
+			MENUITEM "PA - Para", 30199
+			MENUITEM "PB - Paraiba", 30200
+			MENUITEM "PI - Piau", 30201
+			MENUITEM "PR - Parana(Ativos)", 30202
+			MENUITEM "PR - Parana(Baixados)", 30203
+			MENUITEM "RJ - Rio de Janeiro", 30204
+			MENUITEM "RN - Rio Grande do Norte", 30205
+			MENUITEM "RO - Rondonia", 30206
+			MENUITEM "RR - Roraima", 30207
+			MENUITEM "RS - Rio Grande do Sul(Ativos)", 30208
+			MENUITEM "RS - Rio Grande do Sul(Baixados)", 30209
+			MENUITEM "SC - Santa Catarina", 30210
+			MENUITEM "SE - Sergipe", 30211
+			MENUITEM "SP - Sao Paulo", 30212
+			MENUITEM "TO - Tocantis", 30213
+			MENUITEM "YY - Exceções", 30214
+		END
+		POPUP "Importar Cadastro CNPJ/IE TXT/DBF"
+		BEGIN
+			MENUITEM "Sincronizar DBF - Cadastro CNPJ/IE", 30216
+			MENUITEM "Sincronizar Pendencias Validadas - Cadastro CNPJ/IE", 30217
+			MENUITEM "Sincronizar Certificacoes Validadas - Cadastro CNPJ/IE", 30218
+			MENUITEM "Limpar Pendencias e Certicacoes nao Validadas", 30219
+			MENUITEM "AL - Alagoas", 30220
+			MENUITEM "BA - Bahia (CNPJ)", 30221
+			MENUITEM "BA - Bahia (CPF)", 30222
+			MENUITEM "CE - Ceara", 30223
+			MENUITEM "ES - Espirito Santo", 30224
+			MENUITEM "GO - Goias (Ativos)", 30225
+			MENUITEM "GO - Goias (Baixados)", 30226
+			MENUITEM "MA - Maranhao(Ativos)", 30227
+			MENUITEM "MA - Maranhao(Baixados)", 30228
+			MENUITEM "MS - Mato Grosso do Sul", 30229
+			MENUITEM "RJ - Rio de Janeiro", 30230
+			MENUITEM "PB - Paraiba", 30231
+			MENUITEM "PE - Pernambuco", 30232
+			MENUITEM "PR - Parana(Ativos)", 30233
+			MENUITEM "PR- Parana(Baixados)", 30234
+			MENUITEM "RO - Rondania", 30235
+			MENUITEM "RS - Rio Grande do Sul", 30236
+			MENUITEM "RS - Rio Grande do Sul(Baixados)", 30237
+			MENUITEM "SE - Sergipe", 30238
+			MENUITEM "SC - Santa Catarina", 30239
+		END
+		POPUP "Tabelas"
+		BEGIN
+			MENUITEM "codigos ICMS", 30241
+			MENUITEM "Modelos de Documentos", 30242
+			MENUITEM "Situacao NF", 30243
+		END
+		MENUITEM "Indexar", 30244
+		MENUITEM "&Sair\tAlt+F4", 30245
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		POPUP "&Email"
+		BEGIN
+			MENUITEM "Consulta", 30248
+			MENUITEM "Consulta Geral", 30249
+			MENUITEM "Configuraçao", 30250
+		END
+		MENUITEM "Checar CGC/CPF/IE...", 30251
+	END
+	POPUP "Relatorios"
+	BEGIN
+		MENUITEM "Relatorios ", 30253
+		MENUITEM "WRPT", 30254
+		MENUITEM "WRPT Integrado", 30255
+		MENUITEM "LstView logix", 30256
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Indice\tF1", 30258
+		MENUITEM "&Usando a Ajuda", 30259
+		MENUITEM SEPARATOR
+		MENUITEM "Atualizações", 30261
+		MENUITEM "&Sobre...", 32031
+	END
+End
+ 

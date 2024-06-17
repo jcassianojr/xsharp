@@ -1,0 +1,109 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jcurgrp
+GUID=D45F8404-96CD-4BAC-90FC-68458833CA97
+  Name=jcurgrp
+  Class=DATAWINDOW
+  Caption=Grupo de Curso
+  Order=0
+  Left=10
+  Width=420
+  Top=10
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Grupo de Curso",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#jcurgrp,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=FD333067-27E6-4A06-9E91-2B79F503F623
+  Name=SC_GRUPO
+  Class=FIXEDTEXT
+  Caption=Grupo:
+  Order=1
+  Left=22
+  Width=36
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Grupo:",,
+  Property=HyperLabel=#SC_GRUPO,,,
+
+CONTROL=FIXEDTEXT
+GUID=D85275A3-F6A1-4036-A19A-4998D4D1C46D
+  Name=SC_NOME
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=2
+  Left=22
+  Width=36
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOME,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=AA8E4F2E-83BE-4A46-9A34-9FA72A4B0E48
+  Name=GRUPO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=74
+  Width=48
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=16
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_05
+  Property=HyperLabel=#GRUPO,,,
+  Property=HyperLabel=,"Grupo:",,
+  Property=HyperLabel=,,,"CURGRP_GRUPO"
+
+CONTROL=SINGLELINEEDIT
+GUID=7CDE594A-7B75-4798-A68B-E17E836E23DC
+  Name=NOME
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=4
+  Left=74
+  Width=292
+  Top=50
+  Height=20
+  Browseindex=1
+  Browsesize=53
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_40
+  Property=HyperLabel=#NOME,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"CURGRP_NOME"
+
+SUBCONTROLSEND
+DESIGNEREND = jcurgrp
+

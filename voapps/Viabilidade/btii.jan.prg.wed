@@ -1,0 +1,321 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jbtii
+GUID=FF5FF804-1AD4-43D1-921A-E455B378CCE2
+  Name=jbtii
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=16
+  Width=513
+  Top=16
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#FormView
+  Property=HyperLabel=#jbtii,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=036E6127-E1D5-494A-A6AE-99FC1A39C58E
+  Name=SC_BTI
+  Class=FIXEDTEXT
+  Caption=Bti:
+  Order=1
+  Left=22
+  Width=20
+  Top=26
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Bti:",,
+  Property=HyperLabel=#SC_BTI,,,
+
+CONTROL=FIXEDTEXT
+GUID=35ABC008-A0B4-48F8-9B5F-E6CABE22FB50
+  Name=SC_QTDE
+  Class=FIXEDTEXT
+  Caption=Qtde:
+  Order=2
+  Left=22
+  Width=32
+  Top=50
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtde:",,
+  Property=HyperLabel=#SC_QTDE,,,
+
+CONTROL=FIXEDTEXT
+GUID=79FC072B-464F-4D1A-B17B-9F703FFD275E
+  Name=SC_DESCRICAO
+  Class=FIXEDTEXT
+  Caption=Descricao:
+  Order=3
+  Left=22
+  Width=56
+  Top=74
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descricao:",,
+  Property=HyperLabel=#SC_DESCRICAO,,,
+
+CONTROL=FIXEDTEXT
+GUID=83878129-366C-4BA5-B770-6BE81232EF56
+  Name=SC_CAVIDADE
+  Class=FIXEDTEXT
+  Caption=Cavidade:
+  Order=4
+  Left=22
+  Width=52
+  Top=98
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Cavidade:",,
+  Property=HyperLabel=#SC_CAVIDADE,,,
+
+CONTROL=FIXEDTEXT
+GUID=21EC5558-D891-4D0D-8725-1D192A1F3EA5
+  Name=SC_PRECO
+  Class=FIXEDTEXT
+  Caption=Preco:
+  Order=5
+  Left=22
+  Width=36
+  Top=122
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Preco:",,
+  Property=HyperLabel=#SC_PRECO,,,
+
+CONTROL=FIXEDTEXT
+GUID=B90F1186-306E-4B63-9AE7-56EFAC1457F2
+  Name=SC_CICLO
+  Class=FIXEDTEXT
+  Caption=Ciclo:
+  Order=6
+  Left=22
+  Width=32
+  Top=146
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ciclo:",,
+  Property=HyperLabel=#SC_CICLO,,,
+
+CONTROL=FIXEDTEXT
+GUID=9B5F02B8-00E8-4055-8E56-0F63CCE96195
+  Name=SC_CAPACIDA
+  Class=FIXEDTEXT
+  Caption=Capacidade
+  Order=7
+  Left=22
+  Width=71
+  Top=170
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Capacidade",,
+  Property=HyperLabel=#SC_CAPACIDA,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=B227116C-6E78-4A60-BD40-E90E7895ED7C
+  Name=BTI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=94
+  Width=68
+  Top=26
+  Height=20
+  Browseindex=0
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#BTI,,,
+  Property=HyperLabel=,"Bti:",,
+  Property=HyperLabel=,,,"BTII_BTI"
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+
+CONTROL=SINGLELINEEDIT
+GUID=482022DD-0FC5-4169-AE4B-D1A4344F60B8
+  Name=QTDE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=94
+  Width=68
+  Top=50
+  Height=20
+  Browseindex=1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#QTDE,,,
+  Property=HyperLabel=,"Nº Tools",,
+  Property=HyperLabel=,,,"BTII_QTDE"
+
+CONTROL=SINGLELINEEDIT
+GUID=C0C13417-E7FC-41B6-ABE0-089D039C7200
+  Name=DESCRICAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=94
+  Width=400
+  Top=74
+  Height=20
+  Browseindex=2
+  Browsesize=26
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_CHAR_80
+  Property=HyperLabel=#DESCRICAO,,,
+  Property=HyperLabel=,"Descricao:",,
+  Property=HyperLabel=,,,"BTII_DESCRICAO"
+
+CONTROL=SINGLELINEEDIT
+GUID=D9CEE2A1-EE03-443B-9EE9-87C4CCF0B7AC
+  Name=CAVIDADE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=94
+  Width=68
+  Top=98
+  Height=20
+  Browseindex=3
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#CAVIDADE,,,
+  Property=HyperLabel=,"Cavidade:",,
+  Property=HyperLabel=,,,"BTII_CAVIDADE"
+
+CONTROL=SINGLELINEEDIT
+GUID=91F3BDFB-7550-404D-AEB9-076DAD8ADDD6
+  Name=PRECO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=12
+  Left=94
+  Width=140
+  Top=122
+  Height=20
+  Browseindex=4
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#PRECO,,,
+  Property=HyperLabel=,"Preco:",,
+  Property=HyperLabel=,,,"BTII_PRECO"
+
+CONTROL=SINGLELINEEDIT
+GUID=34123759-4103-4D6B-805D-54787064A264
+  Name=CICLO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=94
+  Width=152
+  Top=146
+  Height=20
+  Browseindex=5
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#CICLO,,,
+  Property=HyperLabel=,"Ciclo:",,
+  Property=HyperLabel=,,,"BTII_CICLO"
+
+CONTROL=SINGLELINEEDIT
+GUID=FED832DB-7AF3-459C-924E-D9C152FA829D
+  Name=CAPACIDA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=94
+  Width=152
+  Top=170
+  Height=20
+  Browseindex=6
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=FieldSpec=padrao_char_20
+  Property=HyperLabel=#CAPACIDA,,,
+  Property=HyperLabel=,"Capacida:",,
+  Property=HyperLabel=,,,"BTII_CAPACIDA"
+
+SUBCONTROLSEND
+DESIGNEREND = jbtii
+

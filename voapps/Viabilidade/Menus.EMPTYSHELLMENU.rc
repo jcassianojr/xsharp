@@ -1,0 +1,68 @@
+ EMPTYSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		MENUITEM "&Viabilidade...", 25047
+		MENUITEM "C&lientes", 25048
+		MENUITEM "Compra&dores", 25049
+		MENUITEM "&Vendedores", 25050
+		MENUITEM "Orçamentos", 25051
+		MENUITEM "Areas da Empresa", 25052
+		MENUITEM "Controle de Pedidos", 25053
+		MENUITEM "BreakDown Tooling Investiment", 25054
+		MENUITEM "Motivos Declinio", 25055
+		POPUP "Condição de Desenvolvimento"
+		BEGIN
+			MENUITEM "Condição de Desenvolvimento", 25057
+			MENUITEM "Controle de OS", 25058
+			MENUITEM "Checar OS-->CD", 25059
+			MENUITEM "Acumular Medias Mensais", 25060
+			MENUITEM "Alterar Medias", 25061
+		END
+		MENUITEM "Controle OS Ferramentas", 25062
+		MENUITEM SEPARATOR
+		MENUITEM "C&onfigurar Impressora ..", 25064
+		MENUITEM SEPARATOR
+		MENUITEM "&Indexar", 25066
+		MENUITEM SEPARATOR
+		MENUITEM "&Sair\tALT+F4", 25068
+	END
+	POPUP "&Relatorio"
+	BEGIN
+		MENUITEM "Viabilidade", 25070
+		MENUITEM "Viablidade(Orcamento Logix)", 25071
+		MENUITEM "C&lientes", 25072
+		MENUITEM "Compra&dores", 25073
+		MENUITEM "Orçamento", 25074
+		MENUITEM "Controle de Pedidos", 25075
+		MENUITEM "Breakdown Tooling Investiment", 25076
+		MENUITEM "Condição de Desenvolvimento", 25077
+		MENUITEM "Produtos", 25078
+		MENUITEM "Custos", 25079
+		MENUITEM "OS Ferramenta", 25080
+		MENUITEM "Controle de os", 25081
+		MENUITEM "Areas da empresa", 25082
+		MENUITEM "WRPT", 25083
+		MENUITEM "WRPT Integrado", 25084
+		MENUITEM "lstview logix", 25085
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		POPUP "Email"
+		BEGIN
+			MENUITEM "Consulta", 25088
+			MENUITEM "Geral", 25089
+			MENUITEM "Configuração", 25090
+		END
+		MENUITEM "Checar CGC/CPF/IE...", 25091
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Indice\tF1", 25093
+		MENUITEM "&Conteúdo", 25094
+		MENUITEM SEPARATOR
+		MENUITEM "Atualizações", 25096
+		MENUITEM "&Sobre...", 25097
+	END
+End
+ 

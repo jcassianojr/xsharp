@@ -1,0 +1,342 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JTRI
+GUID=46127DD6-6D0D-4051-AE2C-6437466A36AE
+  Name=JTRI
+  Class=DATAWINDOW
+  Caption=Itens Treinamento
+  Order=0
+  Left=20
+  Width=511
+  Top=20
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Itens Treinamento",,
+  Property=HyperLabel=#JTRI,,,
+  Property=ViewAs=#BrowseView
+  Property=Menu=STANDARDSHELLMENU
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=RADIOBUTTONGROUP
+GUID=A03DD49B-84DC-4FC9-92FA-87FA8180BABE
+  Name=TRXCER
+  Class=RADIOBUTTONGROUP
+  Caption=Cert
+  Order=2
+  Left=9
+  Width=223
+  Top=93
+  Height=47
+  Browseindex=4
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Cert",,
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#TRXCER,,,
+
+CONTROL=RADIOBUTTON
+GUID=9A67BFE6-92FC-4D04-B83E-76C00476663C
+  Name=RadioButton4
+  Class=RADIOBUTTON
+  Caption=Sim
+  Order=3
+  Left=28
+  Width=60
+  Top=112
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Sim",,
+  Property=Value=S
+  Property=HyperLabel=#RadioButton4,,,
+
+CONTROL=RADIOBUTTON
+GUID=0E04DD0D-7496-4C96-9A87-97E47ADC9C44
+  Name=RadioButton5
+  Class=RADIOBUTTON
+  Caption=Não
+  Order=4
+  Left=137
+  Width=59
+  Top=112
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741833
+  Exstyles=0
+  Property=HyperLabel=,"Não",,
+  Property=Value=N
+  Property=HyperLabel=#RadioButton5,,,
+
+CONTROL=RADIOBUTTONGROUP
+GUID=72FC755B-9135-40B9-8B8B-97C9908A08BA
+  Name=COMPAR
+  Class=RADIOBUTTONGROUP
+  Caption=Presenca
+  Order=-1
+  Left=201
+  Width=182
+  Top=9
+  Height=48
+  Browseindex=5
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Presenca",,
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#COMPAR,,,
+
+CONTROL=FIXEDTEXT
+GUID=A1FC3641-8F95-4096-9E19-06E9B5EF5A39
+  Name=SC_TREIN
+  Class=FIXEDTEXT
+  Caption=Treinamento:
+  Order=-1
+  Left=11
+  Width=90
+  Top=11
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Treinamento:",,
+  Property=HyperLabel=#SC_TREIN,,,
+
+CONTROL=FIXEDTEXT
+GUID=08C547D9-F064-47A0-BE65-8BE6F263CBDB
+  Name=SC_NUMFUN
+  Class=FIXEDTEXT
+  Caption=Número
+  Order=-1
+  Left=101
+  Width=60
+  Top=13
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Número",,
+  Property=HyperLabel=#SC_NUMFUN,,,
+
+CONTROL=RADIOBUTTON
+GUID=0D48D919-05B4-4232-A593-6663233DAD91
+  Name=RB1
+  Class=RADIOBUTTON
+  Caption=Sim
+  Order=-1
+  Left=217
+  Width=64
+  Top=29
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Sim",,
+  Property=Value=S
+  Property=HyperLabel=#RB1,,,
+
+CONTROL=RADIOBUTTON
+GUID=DAA9E1A1-5093-498E-A0FE-EA951463EDBE
+  Name=RB2
+  Class=RADIOBUTTON
+  Caption=Não
+  Order=-1
+  Left=301
+  Width=48
+  Top=29
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Não",,
+  Property=Value=N
+  Property=HyperLabel=#RB2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=33FEBFA7-EA6A-4244-95B0-E2015A06E571
+  Name=TREIN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=9
+  Width=82
+  Top=33
+  Height=20
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#TREIN,,,
+  Property=HyperLabel=,"Trein:",,
+  Property=HyperLabel=,,,"TREII_TREIN"
+
+CONTROL=SINGLELINEEDIT
+GUID=68B3ADAA-CD1F-422E-AC58-A1CB9428C515
+  Name=NUMFUN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=101
+  Width=92
+  Top=33
+  Height=20
+  Browseindex=1
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_num_08
+  Property=HyperLabel=#NUMFUN,,,
+  Property=HyperLabel=,"Número:",,
+  Property=HyperLabel=,,,"TREII_NUMFUN"
+
+CONTROL=FIXEDTEXT
+GUID=711622F7-84A2-4877-8D31-A8DD66BBB6ED
+  Name=SC_NOMFUN
+  Class=FIXEDTEXT
+  Caption=Nome:
+  Order=-1
+  Left=13
+  Width=42
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=#SC_NOMFUN,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=EE4BD248-3263-4C69-8982-17A76D86F997
+  Name=NOMFUN
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=57
+  Width=400
+  Top=65
+  Height=20
+  Browseindex=2
+  Browsesize=33
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=0
+  Property=FieldSpec=padrao_char_40
+  Property=HyperLabel=#NOMFUN,,,
+  Property=HyperLabel=,"Nome:",,
+  Property=HyperLabel=,,,"TREII_NOMFUN"
+
+CONTROL=RADIOBUTTONGROUP
+GUID=761C0034-607B-4442-8501-A6BC54F13D81
+  Name=AVALIA
+  Class=RADIOBUTTONGROUP
+  Caption=Avalia
+  Order=-1
+  Left=9
+  Width=282
+  Top=153
+  Height=49
+  Browseindex=3
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Avalia",,
+  Property=FieldSpec=padrao_char_01
+  Property=HyperLabel=#AVALIA,,,
+
+CONTROL=RADIOBUTTON
+GUID=3B423F67-AEC3-402A-A1F5-0B747EE3FFDD
+  Name=RB3
+  Class=RADIOBUTTON
+  Caption=Satisfatória
+  Order=-1
+  Left=29
+  Width=80
+  Top=173
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Satisfatória",,
+  Property=Value=S
+  Property=HyperLabel=#RB3,,,
+
+CONTROL=RADIOBUTTON
+GUID=C98C4DEF-A00F-4A3B-A5BB-7F79BED8654B
+  Name=RB4
+  Class=RADIOBUTTON
+  Caption=Insatisfatória
+  Order=-1
+  Left=169
+  Width=92
+  Top=173
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807369
+  Exstyles=0
+  Property=HyperLabel=,"Insatisfatória",,
+  Property=Value=I
+  Property=HyperLabel=#RB4,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JTRI
+

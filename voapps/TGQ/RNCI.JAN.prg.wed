@@ -1,0 +1,152 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JRNCI
+GUID=ACF54FDC-A2AB-4772-9C35-7E5FEE5264BD
+  Name=JRNCI
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=36
+  Width=534
+  Top=32
+  Height=155
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#JRNCI,,,
+  Property=ViewAs=#BrowseView
+  Property=ClipperKeys=True
+
+SUBCONTROLSSTART
+CONTROL=SINGLELINEEDIT
+GUID=A792CDD9-3132-4C62-9D13-C23A13D5443B
+  Name=QTNC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
+  Left=237
+  Width=90
+  Top=13
+  Height=18
+  Browseindex=2
+  Browsesize=23
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=HyperLabel=#QTNC,,,
+  Property=HyperLabel=,"Qtdde Não Conforme",,
+  Property=HyperLabel=,,,"RNC_QTNC"
+
+CONTROL=FIXEDTEXT
+GUID=97AF1284-450D-411D-89C9-49A800FB19AC
+  Name=SC_QTNC
+  Class=FIXEDTEXT
+  Caption=Qtd. não Conf:
+  Order=4
+  Left=157
+  Width=84
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtd. não Conf:",,
+  Property=HyperLabel=#SC_QTNC,,,
+
+CONTROL=FIXEDTEXT
+GUID=11429E23-DF29-48D6-BACE-8FEA87888248
+  Name=STCO
+  Class=FIXEDTEXT
+  Caption=Erro
+  Order=6
+  Left=81
+  Width=28
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Erro",,
+  Property=HyperLabel=#STCO,,,
+
+CONTROL=FIXEDTEXT
+GUID=21B15B2D-11F8-41F9-A3C3-234EBB4DC070
+  Name=FT22
+  Class=FIXEDTEXT
+  Caption=Setor
+  Order=7
+  Left=9
+  Width=40
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Setor",,
+  Property=HyperLabel=#FT22,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=22734923-B4B9-4A8B-896B-27DCCB53B251
+  Name=SETCOD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=53
+  Width=20
+  Top=13
+  Height=18
+  Browseindex=0
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_chaR_01
+  Property=HyperLabel=#SETCOD,,,
+  Property=HyperLabel=,"Setor",,
+  Property=HyperLabel=,,,"RNC_QTNC"
+
+CONTROL=SINGLELINEEDIT
+GUID=5002728E-BF05-4B75-BA96-3294F885B01B
+  Name=CODERR
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=109
+  Width=40
+  Top=13
+  Height=18
+  Browseindex=1
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=padrao_chaR_03
+  Property=HyperLabel=#CODERR,,,
+  Property=HyperLabel=,"Erro",,
+  Property=HyperLabel=,,,"RNC_QTNC"
+
+SUBCONTROLSEND
+DESIGNEREND = JRNCI
+

@@ -1,0 +1,1713 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,jferos
+GUID=A529C58B-BF78-4C05-94BB-19C4B2DA1F34
+  Name=jferos
+  Class=FORM:DATAWINDOW
+  Caption=Controle OS Ferramenta
+  Order=0
+  Left=0
+  Width=669
+  Top=0
+  Height=479
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Controle OS Ferramenta
+  Property=HyperLabel=jferos
+  Property=InheritClassName=MYDataWindow
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=17A0DCBB-7960-4215-935E-835F31009B81
+  Name=btnpegma01
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=-->
+  Order=64
+  Left=301
+  Width=19
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,-->
+  Property=HyperLabel=btnpegma01
+CONTROL=SINGLELINEEDIT
+GUID=9BEACFF3-C9BD-420E-B691-7D5A118B67F4
+  Name=CLIENTE
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Cliente:
+  Order=1
+  Left=205
+  Width=68
+  Top=25
+  Height=20
+  Browseindex=1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Cliente:
+  Property=HyperLabel=CLIENTE
+  Property=HyperLabel=,,,FEROS_CLIENTE
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=DBC5EDF9-0115-46C8-8259-D9E1913100E7
+  Name=COGCLI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Cogcli:
+  Order=2
+  Left=277
+  Width=96
+  Top=25
+  Height=20
+  Browseindex=2
+  Browsesize=16
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Cogcli:
+  Property=HyperLabel=COGCLI
+  Property=HyperLabel=,,,FEROS_COGCLI
+  Property=FieldSpec=PADRAO_CHAR_12
+CONTROL=SINGLELINEEDIT
+GUID=81F07484-1D84-4D4C-85EF-6146A0B93550
+  Name=DATAOS
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Dataos:
+  Order=3
+  Left=381
+  Width=104
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Dataos:
+  Property=HyperLabel=DATAOS
+  Property=HyperLabel=,,,FEROS_DATAOS
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=2338EE1B-9FEE-481D-A1A4-38F479D8964A
+  Name=DATAPE
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Datape:
+  Order=4
+  Left=8
+  Width=104
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Datape:
+  Property=HyperLabel=DATAPE
+  Property=HyperLabel=,,,FEROS_DATAPE
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=EC4102BA-AB1C-48CC-B3A6-3A569DEAE7C8
+  Name=DATAPRZ
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Dataprz:
+  Order=5
+  Left=115
+  Width=108
+  Top=65
+  Height=20
+  Browseindex=4
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Dataprz:
+  Property=HyperLabel=DATAPRZ
+  Property=HyperLabel=,,,FEROS_DATAPRZ
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=20133E68-0DA5-453D-928C-388A21721CC6
+  Name=PEDIDOCLI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Pedidocli:
+  Order=6
+  Left=228
+  Width=152
+  Top=66
+  Height=20
+  Browseindex=6
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Pedidocli:
+  Property=HyperLabel=PEDIDOCLI
+  Property=HyperLabel=,,,FEROS_PEDIDOCLI
+  Property=FieldSpec=PADRAO_CHAR_20
+CONTROL=SINGLELINEEDIT
+GUID=529CC8EF-5DFB-4835-A871-02FBAF7F098D
+  Name=NRNOTA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Nrnota:
+  Order=7
+  Left=383
+  Width=68
+  Top=66
+  Height=20
+  Browseindex=5
+  Browsesize=16
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Nrnota:
+  Property=HyperLabel=NRNOTA
+  Property=HyperLabel=,,,FEROS_NRNOTA
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=061E5638-0E03-4B10-97CD-BB15E1F151F5
+  Name=DATANF
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Datanf:
+  Order=8
+  Left=453
+  Width=104
+  Top=66
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Datanf:
+  Property=HyperLabel=DATANF
+  Property=HyperLabel=,,,FEROS_DATANF
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=F381C6D6-ABD9-448F-BF73-661E1733AD5C
+  Name=FERRAM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Ferram:
+  Order=9
+  Left=17
+  Width=180
+  Top=109
+  Height=20
+  Browseindex=3
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Ferram:
+  Property=HyperLabel=FERRAM
+  Property=HyperLabel=,,,FEROS_FERRAM
+  Property=FieldSpec=PADRAO_CHAR_24
+CONTROL=SINGLELINEEDIT
+GUID=1F51D830-66F9-4F0E-9B35-485C7C3BB218
+  Name=NOME
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Nome:
+  Order=10
+  Left=201
+  Width=292
+  Top=109
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Nome:
+  Property=HyperLabel=NOME
+  Property=HyperLabel=,,,FEROS_NOME
+  Property=FieldSpec=PADRAO_CHAR_40
+CONTROL=SINGLELINEEDIT
+GUID=51F3D299-97BF-4BAB-9E8D-BECBD4C88057
+  Name=QTDE
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Qtde:
+  Order=11
+  Left=69
+  Width=96
+  Top=157
+  Height=20
+  Browseindex=-1
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Qtde:
+  Property=HyperLabel=QTDE
+  Property=HyperLabel=,,,FEROS_QTDE
+  Property=FieldSpec=PADRAO_NUM_02
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=68F47CB2-A2CE-4887-98D5-408CA793852E
+  Name=PRECO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Preco:
+  Order=12
+  Left=213
+  Width=120
+  Top=157
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Preco:
+  Property=HyperLabel=PRECO
+  Property=HyperLabel=,,,FEROS_PRECO
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=32FF9717-F63E-417B-B44D-8E24B049C7EC
+  Name=VALORMER
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Valormer:
+  Order=13
+  Left=413
+  Width=140
+  Top=157
+  Height=20
+  Browseindex=-1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Valormer:
+  Property=HyperLabel=VALORMER
+  Property=HyperLabel=,,,FEROS_VALORMER
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=CBFB6073-9B4B-462A-B692-80FB19E9AFFD
+  Name=BASEIPI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Baseipi:
+  Order=14
+  Left=85
+  Width=124
+  Top=181
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Baseipi:
+  Property=HyperLabel=BASEIPI
+  Property=HyperLabel=,,,FEROS_BASEIPI
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=0BAAF9B5-5B2A-43FD-BA1A-ED9404981981
+  Name=CODIPI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Codipi:
+  Order=15
+  Left=257
+  Width=36
+  Top=181
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Codipi:
+  Property=HyperLabel=CODIPI
+  Property=HyperLabel=,,,FEROS_CODIPI
+  Property=FieldSpec=PADRAO_CHAR_02
+CONTROL=SINGLELINEEDIT
+GUID=DF0C1AC3-5B56-4738-8689-388DE694117D
+  Name=IPI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Ipi:
+  Order=16
+  Left=317
+  Width=40
+  Top=181
+  Height=20
+  Browseindex=-1
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Ipi:
+  Property=HyperLabel=IPI
+  Property=HyperLabel=,,,FEROS_IPI
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=3DCCDCC6-3BF6-449A-BF86-78F595C227AE
+  Name=VALORIPI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Valoripi:
+  Order=17
+  Left=413
+  Width=140
+  Top=181
+  Height=20
+  Browseindex=-1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Valoripi:
+  Property=HyperLabel=VALORIPI
+  Property=HyperLabel=,,,FEROS_VALORIPI
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=0093103D-24F5-4D17-A10B-9A19EC0741B0
+  Name=CLASSIPI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Classipi:
+  Order=18
+  Left=217
+  Width=112
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Classipi:
+  Property=HyperLabel=CLASSIPI
+  Property=HyperLabel=,,,FEROS_CLASSIPI
+  Property=FieldSpec=PADRAO_CHAR_10
+CONTROL=SINGLELINEEDIT
+GUID=B06A9058-1BD3-43D3-9B29-17CD561687D4
+  Name=VALORTOT
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Valortot:
+  Order=19
+  Left=413
+  Width=140
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Valortot:
+  Property=HyperLabel=VALORTOT
+  Property=HyperLabel=,,,FEROS_VALORTOT
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=960258D3-A8CD-45FE-9B68-75D6A4441BAE
+  Name=BASEICM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Baseicm:
+  Order=20
+  Left=89
+  Width=124
+  Top=225
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Baseicm:
+  Property=HyperLabel=BASEICM
+  Property=HyperLabel=,,,FEROS_BASEICM
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=6748A14B-A631-439D-B392-9F0922343500
+  Name=ICM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Icm:
+  Order=21
+  Left=309
+  Width=48
+  Top=225
+  Height=20
+  Browseindex=-1
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Icm:
+  Property=HyperLabel=ICM
+  Property=HyperLabel=,,,FEROS_ICM
+  Property=FieldSpec=PADRAO_NUM_05_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=CB707B8B-1FC1-4543-AA44-29CA9945B35C
+  Name=VALORICM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Valoricm:
+  Order=22
+  Left=413
+  Width=140
+  Top=229
+  Height=20
+  Browseindex=-1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Valoricm:
+  Property=HyperLabel=VALORICM
+  Property=HyperLabel=,,,FEROS_VALORICM
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=442D9F6F-EFDF-47F6-BF53-965B416420F4
+  Name=PPAPPREV
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Dataos:
+  Order=23
+  Left=73
+  Width=104
+  Top=249
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Dataos:
+  Property=HyperLabel=PPAPPREV
+  Property=HyperLabel=,,,FEROS_DATAOS
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=70F224F0-37F9-46C0-9876-5EFECAAA208A
+  Name=PPAPDATA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Dataos:
+  Order=24
+  Left=247
+  Width=104
+  Top=249
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Dataos:
+  Property=HyperLabel=PPAPDATA
+  Property=HyperLabel=,,,FEROS_DATAOS
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=3BBC27AC-A6AE-4100-B51D-36ECD205FD94
+  Name=GP11PREV
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Dataos:
+  Order=25
+  Left=389
+  Width=104
+  Top=268
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Dataos:
+  Property=HyperLabel=GP11PREV
+  Property=HyperLabel=,,,FEROS_DATAOS
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=5113F17C-03FE-4E5B-ACA7-3A3D7DCA1EAE
+  Name=GP11PDATA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Dataos:
+  Order=26
+  Left=537
+  Width=104
+  Top=266
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Dataos:
+  Property=HyperLabel=GP11PDATA
+  Property=HyperLabel=,,,FEROS_DATAOS
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=2994F93C-8154-42E3-82A8-89CFBA0DCEB0
+  Name=ADTOVALOR
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Preco:
+  Order=27
+  Left=73
+  Width=120
+  Top=273
+  Height=20
+  Browseindex=-1
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Preco:
+  Property=HyperLabel=ADTOVALOR
+  Property=HyperLabel=,,,FEROS_PRECO
+  Property=FieldSpec=PADRAO_NUM_12_2
+  Property=InheritClassName=rightSle
+CONTROL=SINGLELINEEDIT
+GUID=6BBD5C7B-418A-4608-BB14-57519774C6EF
+  Name=ADTODATA
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Dataos:
+  Order=28
+  Left=197
+  Width=104
+  Top=273
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Dataos:
+  Property=HyperLabel=ADTODATA
+  Property=HyperLabel=,,,FEROS_DATAOS
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=MULTILINEEDIT
+GUID=D75C5686-8B11-4EAE-B3BF-62213C61346E
+  Name=OBS
+  Class=CONTROL:TEXTCONTROL:EDIT:MULTILINEEDIT
+  Caption=
+  Order=29
+  Left=61
+  Width=548
+  Top=297
+  Height=50
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082200260
+  Exstyles=512
+  Property=HyperLabel=OBS
+  Property=FieldSpec=PADRAO_CHAR_255
+CONTROL=MULTILINEEDIT
+GUID=150DCF86-0A0E-4E15-9867-8034A0627408
+  Name=OBS2
+  Class=CONTROL:TEXTCONTROL:EDIT:MULTILINEEDIT
+  Caption=
+  Order=30
+  Left=61
+  Width=548
+  Top=353
+  Height=50
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082200260
+  Exstyles=512
+  Property=HyperLabel=OBS2
+  Property=FieldSpec=PADRAO_CHAR_255
+CONTROL=SINGLELINEEDIT
+GUID=777C2C16-E88E-4B2F-8D77-44DF31EE9122
+  Name=revisao
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Nrnota:
+  Order=31
+  Left=161
+  Width=36
+  Top=18
+  Height=27
+  Browseindex=-1
+  Browsesize=16
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=,Nrnota:
+  Property=HyperLabel=revisao
+  Property=HyperLabel=,,,FEROS_NRNOTA
+  Property=FieldSpec=padrao_char_01
+  Property=Background=255 255 200
+  Property=InheritClassName=rightSle
+  Property=NewFont=12:Times New Roman:Bold
+CONTROL=FIXEDTEXT
+GUID=C51CC429-A105-4EC6-A1C4-E534684A1DA0
+  Name=SC_FEROS
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Nº
+  Order=32
+  Left=21
+  Width=32
+  Top=5
+  Height=12
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Nº
+  Property=HyperLabel=SC_FEROS
+CONTROL=FIXEDTEXT
+GUID=E70D4CDC-5FEA-447C-882B-70733B2A3887
+  Name=SC_CLIENTE
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Cliente:
+  Order=33
+  Left=209
+  Width=40
+  Top=9
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Cliente:
+  Property=HyperLabel=SC_CLIENTE
+CONTROL=FIXEDTEXT
+GUID=70D28D31-2CDA-4F6D-AE19-2BE718B5E80E
+  Name=SC_FERRAM
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Ferramenta:
+  Order=34
+  Left=17
+  Width=80
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ferramenta:
+  Property=HyperLabel=SC_FERRAM
+CONTROL=FIXEDTEXT
+GUID=46FDC078-43B2-4036-A1EE-E6651E954C86
+  Name=SC_NOME
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Nome:
+  Order=35
+  Left=205
+  Width=36
+  Top=89
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Nome:
+  Property=HyperLabel=SC_NOME
+CONTROL=FIXEDTEXT
+GUID=D073970D-EE24-4218-8CF2-89E58A7EE128
+  Name=SC_DATAOS
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Data:
+  Order=36
+  Left=381
+  Width=40
+  Top=9
+  Height=12
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data:
+  Property=HyperLabel=SC_DATAOS
+CONTROL=FIXEDTEXT
+GUID=E9A36E57-B5F7-420B-93F4-359392EAC678
+  Name=SC_DATAPE
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Pedido
+  Order=37
+  Left=11
+  Width=44
+  Top=45
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Pedido
+  Property=HyperLabel=SC_DATAPE
+CONTROL=FIXEDTEXT
+GUID=0B8F7813-1713-49C4-8A45-8155E267D157
+  Name=SC_DATANF
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Data:
+  Order=38
+  Left=451
+  Width=40
+  Top=47
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data:
+  Property=HyperLabel=SC_DATANF
+CONTROL=FIXEDTEXT
+GUID=EC3E6643-1E0E-4EF3-9F0D-345BE51FF304
+  Name=SC_DATAPRZ
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Prazo
+  Order=39
+  Left=120
+  Width=44
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Prazo
+  Property=HyperLabel=SC_DATAPRZ
+CONTROL=FIXEDTEXT
+GUID=F1DE3A4E-3EC6-4571-B846-24CD60B3608E
+  Name=SC_NRNOTA
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Nrnota:
+  Order=40
+  Left=384
+  Width=40
+  Top=49
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Nrnota:
+  Property=HyperLabel=SC_NRNOTA
+CONTROL=FIXEDTEXT
+GUID=2A9BA730-3771-42D4-9E36-B966CC02E393
+  Name=SC_VALORMER
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Mercadoria:
+  Order=41
+  Left=357
+  Width=52
+  Top=157
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Mercadoria:
+  Property=HyperLabel=SC_VALORMER
+CONTROL=FIXEDTEXT
+GUID=84533294-004A-467E-871B-2238450DB7FB
+  Name=SC_VALORICM
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=ICM
+  Order=42
+  Left=361
+  Width=48
+  Top=229
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,ICM
+  Property=HyperLabel=SC_VALORICM
+CONTROL=FIXEDTEXT
+GUID=195CA0E8-24FF-48D3-9BA7-B5FA197B69D7
+  Name=SC_VALORIPI
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=IPI
+  Order=43
+  Left=361
+  Width=40
+  Top=181
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,IPI
+  Property=HyperLabel=SC_VALORIPI
+CONTROL=FIXEDTEXT
+GUID=B61C9E55-DACC-4EF5-9FBD-45D8A035C878
+  Name=SC_VALORTOT
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Total
+  Order=44
+  Left=361
+  Width=44
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Total
+  Property=HyperLabel=SC_VALORTOT
+CONTROL=FIXEDTEXT
+GUID=627886FC-9E6C-4CBF-8575-E4152FE0A057
+  Name=SC_BASEICM
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Base ICMS:
+  Order=45
+  Left=5
+  Width=60
+  Top=229
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Base ICMS:
+  Property=HyperLabel=SC_BASEICM
+CONTROL=FIXEDTEXT
+GUID=BB4FADC4-1A6D-482B-9B27-F6FFB1DD9A79
+  Name=SC_BASEIPI
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Base IPI
+  Order=46
+  Left=9
+  Width=52
+  Top=181
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Base IPI
+  Property=HyperLabel=SC_BASEIPI
+CONTROL=FIXEDTEXT
+GUID=F4F602D1-1E97-42D8-B3BB-A97691CCED0F
+  Name=SC_ICM
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=ICM %
+  Order=47
+  Left=261
+  Width=48
+  Top=229
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,ICM %
+  Property=HyperLabel=SC_ICM
+CONTROL=FIXEDTEXT
+GUID=A9C7F304-CFF4-40E4-9445-8494EE94C8EE
+  Name=SC_IPI
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Ipi:
+  Order=48
+  Left=297
+  Width=20
+  Top=181
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ipi:
+  Property=HyperLabel=SC_IPI
+CONTROL=FIXEDTEXT
+GUID=30137024-6497-4057-8127-880427448E23
+  Name=SC_CONSUMO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Consumo:
+  Order=49
+  Left=17
+  Width=52
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Consumo:
+  Property=HyperLabel=SC_CONSUMO
+CONTROL=FIXEDTEXT
+GUID=BD5FB99A-2B80-4BD7-9DB9-08A18643FBBA
+  Name=SC_SOMANF
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Soma IPI NF
+  Order=50
+  Left=165
+  Width=72
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Soma IPI NF
+  Property=HyperLabel=SC_SOMANF
+CONTROL=FIXEDTEXT
+GUID=D6793425-4DC7-4C17-8280-2C3B7A303812
+  Name=SC_QTDE
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Qtde:
+  Order=51
+  Left=33
+  Width=32
+  Top=157
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Qtde:
+  Property=HyperLabel=SC_QTDE
+CONTROL=FIXEDTEXT
+GUID=0953758B-F0CC-48C3-8CC3-0B756F0601B8
+  Name=SC_PRECO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Preco:
+  Order=52
+  Left=173
+  Width=36
+  Top=161
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Preco:
+  Property=HyperLabel=SC_PRECO
+CONTROL=FIXEDTEXT
+GUID=2FE0BF02-A8C8-40F6-8F5E-B6227402B1CE
+  Name=SC_OBS
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Obs:
+  Order=53
+  Left=21
+  Width=28
+  Top=301
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Obs:
+  Property=HyperLabel=SC_OBS
+CONTROL=FIXEDTEXT
+GUID=1F746E8B-C9BD-437F-B212-BC79D1BBB14F
+  Name=SC_CODIPI
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Codipi:
+  Order=54
+  Left=217
+  Width=36
+  Top=181
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Codipi:
+  Property=HyperLabel=SC_CODIPI
+CONTROL=FIXEDTEXT
+GUID=58C7BAAC-CFA8-415D-A162-1723AD6255CF
+  Name=SC_CLASSIPI
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Classificacao NCM/IPI
+  Order=55
+  Left=97
+  Width=120
+  Top=205
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Classificacao NCM/IPI
+  Property=HyperLabel=SC_CLASSIPI
+CONTROL=FIXEDTEXT
+GUID=A88107AA-307B-49A8-887D-856FA6872BC1
+  Name=SC_PEDIDOCLI
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Pedidocli:
+  Order=56
+  Left=232
+  Width=52
+  Top=52
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Pedidocli:
+  Property=HyperLabel=SC_PEDIDOCLI
+CONTROL=FIXEDTEXT
+GUID=4AE7B9CF-02FA-4F0B-B429-AC4B36199DFC
+  Name=SC_ANTIGO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Antigo:
+  Order=57
+  Left=93
+  Width=36
+  Top=1
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Antigo:
+  Property=HyperLabel=SC_ANTIGO
+CONTROL=SINGLELINEEDIT
+GUID=7D33F8F9-47CE-4B40-97DE-F36249BB0C35
+  Name=FEROS
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Feros:
+  Order=58
+  Left=9
+  Width=76
+  Top=17
+  Height=28
+  Browseindex=0
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082132608
+  Exstyles=512
+  Property=HyperLabel=,Feros:
+  Property=HyperLabel=FEROS
+  Property=HyperLabel=,,,FEROS_FEROS
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+CONTROL=SINGLELINEEDIT
+GUID=C8E53637-78F8-4C6A-B14A-691A48E0C004
+  Name=CONSUMO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Consumo:
+  Order=59
+  Left=73
+  Width=24
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=,Consumo:
+  Property=HyperLabel=CONSUMO
+  Property=HyperLabel=,,,FEROS_CONSUMO
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=SINGLELINEEDIT
+GUID=8EA68754-350E-4D05-ABFC-1E146CC06B8D
+  Name=SOMANF
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Somanf:
+  Order=60
+  Left=237
+  Width=24
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=,Somanf:
+  Property=HyperLabel=SOMANF
+  Property=HyperLabel=,,,FEROS_SOMANF
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=SINGLELINEEDIT
+GUID=769BC13D-4F7E-40E1-BC92-03DCDB94A9EA
+  Name=ANTIGO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Antigo:
+  Order=61
+  Left=89
+  Width=68
+  Top=17
+  Height=28
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216348288
+  Exstyles=512
+  Property=HyperLabel=,Antigo:
+  Property=HyperLabel=ANTIGO
+  Property=HyperLabel=,,,FEROS_ANTIGO
+  Property=FieldSpec=PADRAO_NUM_08
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+CONTROL=PUSHBUTTON
+GUID=46F48B4D-3F88-4CBD-9FE8-A8FD5896C817
+  Name=porov
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=62
+  Left=525
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=porov
+  Property=TooltipText=Clique para ordenar por Numero
+  Property=Image=ICO_AZ
+CONTROL=PUSHBUTTON
+GUID=C2E9A536-45D0-4E06-A6A2-0FB0D3B69712
+  Name=buscaov
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=63
+  Left=492
+  Width=32
+  Top=9
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=buscaov
+  Property=TooltipText=Clique Para Localizar Por Numero
+  Property=Image=ICO_FIND
+CONTROL=PUSHBUTTON
+GUID=8C07DB1C-FE32-4101-9079-13517E26769D
+  Name=escfor
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=...
+  Order=65
+  Left=277
+  Width=19
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,...
+  Property=HyperLabel=escfor
+CONTROL=PUSHBUTTON
+GUID=0BE786EC-F6F0-44AF-80CF-42B517B1FB1C
+  Name=cmdtipo
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Sim/Nao
+  Order=66
+  Left=265
+  Width=60
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Sim/Nao
+  Property=HyperLabel=cmdtipo
+CONTROL=PUSHBUTTON
+GUID=230043F9-0267-4C88-9F45-4A3BC52A3C2A
+  Name=cmdtipo1
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Sim/Nao
+  Order=67
+  Left=101
+  Width=60
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Sim/Nao
+  Property=HyperLabel=cmdtipo1
+CONTROL=PUSHBUTTON
+GUID=BC52CCEA-0E10-48B4-AEE6-1D2275A13FBC
+  Name=PushButton6
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Calcular os Valores
+  Order=68
+  Left=528
+  Width=102
+  Top=133
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Calcular os Valores
+  Property=HyperLabel=PushButton6
+CONTROL=PUSHBUTTON
+GUID=6BAD7493-B573-47B6-B3FB-F6FF877628CE
+  Name=PushButton7
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption==
+  Order=69
+  Left=65
+  Width=19
+  Top=225
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,=
+  Property=HyperLabel=PushButton7
+CONTROL=PUSHBUTTON
+GUID=8601C43D-31DA-4DD2-9884-EC4FF8B6496D
+  Name=PushButton8
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption==
+  Order=70
+  Left=65
+  Width=20
+  Top=181
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,=
+  Property=HyperLabel=PushButton8
+CONTROL=FIXEDTEXT
+GUID=CE58BC98-6D63-4451-901E-3E7978EEF1F3
+  Name=SC_NRNOTA1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Revisao
+  Order=71
+  Left=161
+  Width=40
+  Top=2
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Revisao
+  Property=HyperLabel=SC_NRNOTA1
+CONTROL=PUSHBUTTON
+GUID=D5DF84BD-0750-4137-AABA-6ABB703C9070
+  Name=PushButton9
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Duplicar
+  Order=72
+  Left=565
+  Width=56
+  Top=9
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Duplicar
+  Property=HyperLabel=PushButton9
+CONTROL=FIXEDTEXT
+GUID=6842662B-7481-4A0E-9524-D4AC80745EB9
+  Name=SC_DATAOS1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=PPAP Desenv
+  Order=73
+  Left=5
+  Width=68
+  Top=253
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,PPAP Desenv
+  Property=HyperLabel=SC_DATAOS1
+CONTROL=FIXEDTEXT
+GUID=E5BBF21C-2C2F-4BCB-8A08-F870877ED5E8
+  Name=SC_DATAOS2
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=PPAP Real
+  Order=74
+  Left=182
+  Width=63
+  Top=252
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,PPAP Real
+  Property=HyperLabel=SC_DATAOS2
+CONTROL=FIXEDTEXT
+GUID=655CB276-AA50-457A-A08F-0C3520AB33DE
+  Name=SC_DATAOS3
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=GP11
+  Order=75
+  Left=498
+  Width=36
+  Top=268
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,GP11
+  Property=HyperLabel=SC_DATAOS3
+CONTROL=FIXEDTEXT
+GUID=08E60060-DD9C-496E-B0EE-F8E9937FE248
+  Name=SC_DATAOS4
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=GP11 Prev
+  Order=76
+  Left=323
+  Width=68
+  Top=272
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,GP11 Prev
+  Property=HyperLabel=SC_DATAOS4
+CONTROL=FIXEDTEXT
+GUID=77BE8CDD-AA9C-48FE-AB12-88E915A246F9
+  Name=SC_PRECO1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Adiantamento
+  Order=77
+  Left=5
+  Width=68
+  Top=273
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Adiantamento
+  Property=HyperLabel=SC_PRECO1
+CONTROL=PUSHBUTTON
+GUID=388F3E22-014A-43E9-ACDA-D313595951E9
+  Name=PushButton10
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Revisao
+  Order=78
+  Left=566
+  Width=56
+  Top=32
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Revisao
+  Property=HyperLabel=PushButton10
+CONTROL=PUSHBUTTON
+GUID=CEE5E8D0-AB2B-4A6B-B2EA-7DAC1C68FE97
+  Name=cmdtipo2
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=Ferramenta/Modificado
+  Order=79
+  Left=402
+  Width=118
+  Top=131
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Ferramenta/Modificado
+  Property=HyperLabel=cmdtipo2
+CONTROL=SINGLELINEEDIT
+GUID=4BCD45C4-DF46-4D6E-90F7-650908504995
+  Name=TIPO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Consumo:
+  Order=80
+  Left=369
+  Width=25
+  Top=132
+  Height=20
+  Browseindex=-1
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=HyperLabel=,Consumo:
+  Property=HyperLabel=TIPO
+  Property=HyperLabel=,,,FEROS_CONSUMO
+  Property=FieldSpec=PADRAO_CHAR_01
+  Property=Background=255 255 200
+  Property=NewFont=10:Times New Roman:Bold
+CONTROL=FIXEDTEXT
+GUID=76DD53DA-D12D-4A99-81E4-2606F04E2E8D
+  Name=SC_CONSUMO1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Tipo:
+  Order=81
+  Left=337
+  Width=30
+  Top=132
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Tipo:
+  Property=HyperLabel=SC_CONSUMO1
+CONTROL=SINGLELINEEDIT
+GUID=40098740-ED9E-4555-9EE8-F24235F3421F
+  Name=NFPGVCTO
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=Datanf:
+  Order=82
+  Left=560
+  Width=104
+  Top=65
+  Height=20
+  Browseindex=-1
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,Datanf:
+  Property=HyperLabel=NFPGVCTO
+  Property=HyperLabel=,,,FEROS_DATANF
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+CONTROL=FIXEDTEXT
+GUID=80371244-C3EA-4610-852A-FEC9C90C1B39
+  Name=SC_DATANF1
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Vcto
+  Order=83
+  Left=519
+  Width=40
+  Top=47
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Vcto
+  Property=HyperLabel=SC_DATANF1
+SUBCONTROLSEND
+DESIGNEREND = jferos
+
+

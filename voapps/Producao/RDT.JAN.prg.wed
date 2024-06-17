@@ -1,0 +1,719 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JRDT
+GUID=05BA8F43-2946-41E2-A5DB-CD5870FB800C
+  Name=JRDT
+  Class=DATAWINDOW
+  Caption=Tempo Produto Apurado
+  Order=0
+  Left=32
+  Width=565
+  Top=32
+  Height=425
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tempo Produto Apurado",,
+  Property=HyperLabel=#JRDT,,,
+  Property=ViewAs=#BrowseView
+  Property=Menu=STANDARDSHELLMENU
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=B5ADBEC5-BFDD-48FD-9AE8-4882155E2E2C
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=1
+  Left=101
+  Width=40
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=54AEFF19-D889-46ED-A155-F522844FCB8E
+  Name=SC_SEQ
+  Class=FIXEDTEXT
+  Caption=Seq:
+  Order=2
+  Left=289
+  Width=28
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Seq:",,
+  Property=HyperLabel=#SC_SEQ,,,
+
+CONTROL=FIXEDTEXT
+GUID=EC2C7B1A-B4EE-415E-BACB-E612C0C383A5
+  Name=SC_SSQ
+  Class=FIXEDTEXT
+  Caption=Ssq:
+  Order=3
+  Left=341
+  Width=24
+  Top=9
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ssq:",,
+  Property=HyperLabel=#SC_SSQ,,,
+
+CONTROL=FIXEDTEXT
+GUID=B280359E-36FC-4963-BA61-543589CE2F6A
+  Name=SC_MES
+  Class=FIXEDTEXT
+  Caption=Mes:
+  Order=4
+  Left=57
+  Width=28
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Mes:",,
+  Property=HyperLabel=#SC_MES,,,
+
+CONTROL=FIXEDTEXT
+GUID=58975D60-4F1A-4AB0-9CD3-D465144D0A01
+  Name=SC_ANO
+  Class=FIXEDTEXT
+  Caption=Ano:
+  Order=5
+  Left=13
+  Width=28
+  Top=5
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ano:",,
+  Property=HyperLabel=#SC_ANO,,,
+
+CONTROL=FIXEDTEXT
+GUID=6AB6AB3C-4C36-44B2-807B-DD9D0A611964
+  Name=SC_PQTDDE
+  Class=FIXEDTEXT
+  Caption=P Qtde
+  Order=6
+  Left=173
+  Width=40
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"P Qtde",,
+  Property=HyperLabel=#SC_PQTDDE,,,
+
+CONTROL=FIXEDTEXT
+GUID=5C9D5A34-06B5-46E5-8C1F-FA2F2E36D4C8
+  Name=SC_PHORAS
+  Class=FIXEDTEXT
+  Caption=PC Horas:
+  Order=7
+  Left=317
+  Width=64
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"PC Horas:",,
+  Property=HyperLabel=#SC_PHORAS,,,
+
+CONTROL=FIXEDTEXT
+GUID=4CA46483-765F-4A51-8EB6-E520510B3D22
+  Name=SC_QTDDE
+  Class=FIXEDTEXT
+  Caption=Qtdde:
+  Order=8
+  Left=465
+  Width=36
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Qtdde:",,
+  Property=HyperLabel=#SC_QTDDE,,,
+
+CONTROL=FIXEDTEXT
+GUID=B0D8DCF8-250D-403A-8748-EBF06699BDD7
+  Name=SC_PADRAO
+  Class=FIXEDTEXT
+  Caption=Padrao:
+  Order=9
+  Left=17
+  Width=40
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Padrao:",,
+  Property=HyperLabel=#SC_PADRAO,,,
+
+CONTROL=FIXEDTEXT
+GUID=DB1898F3-DCF8-4315-94C9-8C89A9408A18
+  Name=SC_PADRA4
+  Class=FIXEDTEXT
+  Caption=Padrao II
+  Order=10
+  Left=165
+  Width=48
+  Top=97
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Padrao II",,
+  Property=HyperLabel=#SC_PADRA4,,,
+
+CONTROL=FIXEDTEXT
+GUID=4683C071-71C5-4618-9EA5-0F20066ADA96
+  Name=SC_MEDIA
+  Class=FIXEDTEXT
+  Caption=Media:
+  Order=11
+  Left=93
+  Width=36
+  Top=97
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Media:",,
+  Property=HyperLabel=#SC_MEDIA,,,
+
+CONTROL=FIXEDTEXT
+GUID=B5867FC0-5AC9-4222-B47E-02D454869980
+  Name=SC_DATAAPU
+  Class=FIXEDTEXT
+  Caption=Data Apuracao
+  Order=13
+  Left=17
+  Width=80
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data Apuracao",,
+  Property=HyperLabel=#SC_DATAAPU,,,
+
+CONTROL=FIXEDTEXT
+GUID=A0ABD099-1537-411D-8364-02D2937D4E07
+  Name=SC_DATABAI
+  Class=FIXEDTEXT
+  Caption=Data Baixa
+  Order=14
+  Left=97
+  Width=68
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data Baixa",,
+  Property=HyperLabel=#SC_DATABAI,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=FD6309E4-A6A2-4DF7-9E38-DD19F2738575
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=15
+  Left=101
+  Width=180
+  Top=25
+  Height=20
+  Browseindex=2
+  Browsesize=32
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"RDT_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=0047F7B6-6A79-4596-B75C-A815C3FAA876
+  Name=SEQ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=285
+  Width=44
+  Top=25
+  Height=20
+  Browseindex=3
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=512
+  Property=FieldSpec=padrao_num_03
+  Property=HyperLabel=#SEQ,,,
+  Property=HyperLabel=,"Seq:",,
+  Property=HyperLabel=,,,"RDT_SEQ"
+
+CONTROL=SINGLELINEEDIT
+GUID=38B1DF06-774F-4B33-8F12-5124FA838893
+  Name=SSQ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=17
+  Left=333
+  Width=44
+  Top=25
+  Height=20
+  Browseindex=4
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=512
+  Property=FieldSpec=padrao_num_03
+  Property=HyperLabel=#SSQ,,,
+  Property=HyperLabel=,"Ssq:",,
+  Property=HyperLabel=,,,"RDT_SSQ"
+
+CONTROL=SINGLELINEEDIT
+GUID=48AC04AF-E648-48BA-BE78-374712221967
+  Name=MES
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=18
+  Left=57
+  Width=36
+  Top=25
+  Height=20
+  Browseindex=0
+  Browsesize=6
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216415872
+  Exstyles=512
+  Property=FieldSpec=padrao_num_02
+  Property=HyperLabel=#MES,,,
+  Property=HyperLabel=,"Mes:",,
+  Property=HyperLabel=,,,"RDT_MES"
+
+CONTROL=SINGLELINEEDIT
+GUID=1363BA97-0752-4B64-84AE-BA44B29239D8
+  Name=ANO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=13
+  Width=40
+  Top=25
+  Height=20
+  Browseindex=1
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216413824
+  Exstyles=512
+  Property=FieldSpec=padrao_num_04
+  Property=HyperLabel=#ANO,,,
+  Property=HyperLabel=,"Ano:",,
+  Property=HyperLabel=,,,"RDT_ANO"
+
+CONTROL=SINGLELINEEDIT
+GUID=5C3274A7-6868-4E88-941C-3C1D528EFBAA
+  Name=PQTDDE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=173
+  Width=140
+  Top=69
+  Height=20
+  Browseindex=5
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216415872
+  Exstyles=512
+  Property=FieldSpec=padrao_num_06
+  Property=HyperLabel=#PQTDDE,,,
+  Property=HyperLabel=,"Pqtdde:",,
+  Property=HyperLabel=,,,"RDT_PQTDDE"
+
+CONTROL=SINGLELINEEDIT
+GUID=74814FA1-F634-47AE-9C97-98391904B660
+  Name=PHORAS
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=317
+  Width=140
+  Top=69
+  Height=20
+  Browseindex=6
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216415872
+  Exstyles=512
+  Property=FieldSpec=padrao_num_06_2
+  Property=HyperLabel=#PHORAS,,,
+  Property=HyperLabel=,"Phoras:",,
+  Property=HyperLabel=,,,"RDT_PHORAS"
+
+CONTROL=SINGLELINEEDIT
+GUID=AD81A2B2-EE88-493F-BBF5-AD0517ABFE6D
+  Name=QTDDE
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=22
+  Left=465
+  Width=76
+  Top=69
+  Height=20
+  Browseindex=7
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216415872
+  Exstyles=512
+  Property=FieldSpec=padrao_num_09_2
+  Property=HyperLabel=#QTDDE,,,
+  Property=HyperLabel=,"Qtdde:",,
+  Property=HyperLabel=,,,"RDT_QTDDE"
+
+CONTROL=SINGLELINEEDIT
+GUID=4395F369-4034-4CC2-9186-EA1C2AC347D1
+  Name=PADRAO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=23
+  Left=17
+  Width=68
+  Top=113
+  Height=20
+  Browseindex=8
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216415872
+  Exstyles=512
+  Property=FieldSpec=padrao_num_05
+  Property=HyperLabel=#PADRAO,,,
+  Property=HyperLabel=,"Padrao:",,
+  Property=HyperLabel=,,,"RDT_PADRAO"
+
+CONTROL=SINGLELINEEDIT
+GUID=AF7207D1-0B8F-460F-9686-B12E48392948
+  Name=PADRA4
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=24
+  Left=161
+  Width=68
+  Top=113
+  Height=20
+  Browseindex=9
+  Browsesize=8
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216415872
+  Exstyles=512
+  Property=FieldSpec=padrao_num_05
+  Property=HyperLabel=#PADRA4,,,
+  Property=HyperLabel=,"Padra4:",,
+  Property=HyperLabel=,,,"RDT_PADRA4"
+
+CONTROL=SINGLELINEEDIT
+GUID=01F6EEA0-26C3-4D71-B5F4-04613CB1CA20
+  Name=MEDIA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=25
+  Left=89
+  Width=68
+  Top=113
+  Height=20
+  Browseindex=10
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216415872
+  Exstyles=512
+  Property=FieldSpec=padrao_num_06_2
+  Property=HyperLabel=#MEDIA,,,
+  Property=HyperLabel=,"Media:",,
+  Property=HyperLabel=,,,"RDT_MEDIA"
+
+CONTROL=SINGLELINEEDIT
+GUID=730CDA9A-8F4D-4554-9A1D-133C41B2BADF
+  Name=MEDI4
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=26
+  Left=233
+  Width=68
+  Top=113
+  Height=20
+  Browseindex=11
+  Browsesize=7
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216415872
+  Exstyles=512
+  Property=FieldSpec=padrao_num_06_2
+  Property=HyperLabel=#MEDI4,,,
+  Property=HyperLabel=,"Medi4:",,
+  Property=HyperLabel=,,,"RDT_MEDI4"
+
+CONTROL=CHECKBOX
+GUID=E9E07F43-C22D-4533-B7A0-AB1B822D9E96
+  Name=SIMETRICA
+  Class=CHECKBOX
+  Caption=Simetrica
+  Order=27
+  Left=385
+  Width=64
+  Top=25
+  Height=20
+  Browseindex=12
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1208025091
+  Exstyles=0
+  Property=HyperLabel=,"Simetrica",,
+  Property=FieldSpec=logic_field
+  Property=HyperLabel=#SIMETRICA,,,
+  Property=HyperLabel=,,,"RDT_SIMETRICA"
+
+CONTROL=SINGLELINEEDIT
+GUID=3062290F-06D2-4AF5-ABF3-BF53EAB64F15
+  Name=DATAAPU
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=28
+  Left=17
+  Width=68
+  Top=69
+  Height=20
+  Browseindex=13
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216415872
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DATAAPU,,,
+  Property=HyperLabel=,"Dataapu:",,
+  Property=HyperLabel=,,,"RDT_DATAAPU"
+
+CONTROL=SINGLELINEEDIT
+GUID=598E18CB-324B-47C7-AD1A-55C07DF254C9
+  Name=DATABAI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=29
+  Left=97
+  Width=68
+  Top=69
+  Height=20
+  Browseindex=14
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1216415872
+  Exstyles=512
+  Property=FieldSpec=date_field
+  Property=HyperLabel=#DATABAI,,,
+  Property=HyperLabel=,"Databai:",,
+  Property=HyperLabel=,,,"RDT_DATABAI"
+
+CONTROL=FIXEDTEXT
+GUID=D2B63BE3-2904-4CCF-B09E-D1BBDA72E2A4
+  Name=SC_MEDIA1
+  Class=FIXEDTEXT
+  Caption=Media II
+  Order=30
+  Left=237
+  Width=52
+  Top=97
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Media II",,
+  Property=HyperLabel=#SC_MEDIA1,,,
+
+CONTROL=FIXEDTEXT
+GUID=8A773107-853D-4156-A8B8-AB92FD64EC65
+  Name=SC_DESTINO2
+  Class=FIXEDTEXT
+  Caption=Foto
+  Order=31
+  Left=317
+  Width=48
+  Top=137
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Foto",,
+  Property=HyperLabel=#SC_DESTINO2,,,
+
+CONTROL=PUSHBUTTON
+GUID=B8FD2FC1-EE6D-45AA-A20B-261AA2F773BE
+  Name=foto
+  Class=PUSHBUTTON
+  Caption=
+  Order=32
+  Left=317
+  Width=48
+  Top=97
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=#foto,,,
+  Property=Image=ICO_CAMERA
+
+CONTROL=PUSHBUTTON
+GUID=72639062-20B8-47B2-9F6A-4A4B8956ADA9
+  Name=porov
+  Class=PUSHBUTTON
+  Caption=
+  Order=33
+  Left=505
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ICO_AZ
+  Property=HyperLabel=#porov,,,
+  Property=TooltipText="Clique para ordenar por Numero"
+
+CONTROL=PUSHBUTTON
+GUID=37FA452C-86ED-4908-886F-2144D8DC6B11
+  Name=buscaov
+  Class=PUSHBUTTON
+  Caption=
+  Order=34
+  Left=473
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#buscaov,,,
+  Property=TooltipText="Clique Para Localizar Por Numero"
+
+SUBCONTROLSEND
+DESIGNEREND = JRDT
+

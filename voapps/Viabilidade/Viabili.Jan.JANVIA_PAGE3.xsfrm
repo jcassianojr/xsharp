@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="JANVIA_Page3">
+    <Window Name="JANVIA_Page3">
+      <Name>JANVIA_Page3</Name>
+      <Class>DATAWINDOW</Class>
+      <Caption>DataWindow Caption</Caption>
+      <Order>0</Order>
+      <Left>42</Left>
+      <Top>193</Top>
+      <Width>651</Width>
+      <Height>205</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"DataWindow Caption",,</HyperLabel>
+        <HyperLabel>#JANVIA_Page3,,,</HyperLabel>
+        <Use>&lt;Share Owner's&gt;</Use>
+        <ClipperKeys>True</ClipperKeys>
+        <ViewAs>#FormView</ViewAs>
+      </ExProperties>
+    </Window>
+    <Control Name="OBSCUS01">
+      <Name>OBSCUS01</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>93</Left>
+      <Top>21</Top>
+      <Width>400</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>10</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_100</FieldSpec>
+        <HyperLabel>#OBSCUS01,,,</HyperLabel>
+        <HyperLabel>,"Obscus01:",,</HyperLabel>
+        <HyperLabel>,,,"VIABILI_OBSCUS01"</HyperLabel>
+        <TooltipText>"Observação para Custo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="OBSCUS02">
+      <Name>OBSCUS02</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>93</Left>
+      <Top>42</Top>
+      <Width>400</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>10</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_100</FieldSpec>
+        <HyperLabel>#OBSCUS02,,,</HyperLabel>
+        <HyperLabel>,"Obscus02:",,</HyperLabel>
+        <HyperLabel>,,,"VIABILI_OBSCUS02"</HyperLabel>
+        <TooltipText>"Observação para Custo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="OBSCUS03">
+      <Name>OBSCUS03</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>93</Left>
+      <Top>62</Top>
+      <Width>400</Width>
+      <Height>20</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>10</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_100</FieldSpec>
+        <HyperLabel>#OBSCUS03,,,</HyperLabel>
+        <HyperLabel>,"Obscus03:",,</HyperLabel>
+        <HyperLabel>,,,"VIABILI_OBSCUS03"</HyperLabel>
+        <TooltipText>"Observação para Custo"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="OBSVEN">
+      <Name>OBSVEN</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>73</Left>
+      <Top>97</Top>
+      <Width>508</Width>
+      <Height>18</Height>
+      <BrowseIndex>3</BrowseIndex>
+      <BrowseSize>8</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_100</FieldSpec>
+        <HyperLabel>#OBSVEN,,,</HyperLabel>
+        <HyperLabel>,"Obsg01:",,</HyperLabel>
+        <HyperLabel>,,,"VIABILI_OBSG01"</HyperLabel>
+        <TooltipText>"Observação para Vendas"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="GroupBox1">
+      <Name>GroupBox1</Name>
+      <Class>GROUPBOX</Class>
+      <Caption>Custo</Caption>
+      <Order>5</Order>
+      <Left>9</Left>
+      <Top>9</Top>
+      <Width>536</Width>
+      <Height>80</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073872903</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Custo",,</HyperLabel>
+        <HyperLabel>#GroupBox1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText14">
+      <Name>theFixedText14</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Vendas</Caption>
+      <Order>6</Order>
+      <Left>29</Left>
+      <Top>97</Top>
+      <Width>44</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Vendas",,</HyperLabel>
+        <HyperLabel>#theFixedText14,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_INCHORA">
+      <Name>SC_INCHORA</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Aberta Por:</Caption>
+      <Order>7</Order>
+      <Left>21</Left>
+      <Top>121</Top>
+      <Width>58</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Aberta Por:",,</HyperLabel>
+        <HyperLabel>#SC_INCHORA,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="INCUSER">
+      <Name>INCUSER</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>78</Left>
+      <Top>122</Top>
+      <Width>84</Width>
+      <Height>20</Height>
+      <BrowseIndex>4</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_10</FieldSpec>
+        <HyperLabel>#INCUSER,,,</HyperLabel>
+        <HyperLabel>,"Incuser:",,</HyperLabel>
+        <HyperLabel>,,,"VIABILI_INCUSER"</HyperLabel>
+        <TooltipText>"Usuario que Abriu a viabilidade"</TooltipText>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="INCDATA">
+      <Name>INCDATA</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>9</Order>
+      <Left>166</Left>
+      <Top>122</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>5</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>date_field</FieldSpec>
+        <HyperLabel>#INCDATA,,,</HyperLabel>
+        <HyperLabel>,"Incdata:",,</HyperLabel>
+        <HyperLabel>,,,"VIABILI_INCDATA"</HyperLabel>
+        <TooltipText>"Data Abertura Viabilidade"</TooltipText>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="INCHORA">
+      <Name>INCHORA</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>238</Left>
+      <Top>122</Top>
+      <Width>84</Width>
+      <Height>20</Height>
+      <BrowseIndex>6</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082132608</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_10</FieldSpec>
+        <HyperLabel>#INCHORA,,,</HyperLabel>
+        <HyperLabel>,"Inchora:",,</HyperLabel>
+        <HyperLabel>,,,"VIABILI_INCHORA"</HyperLabel>
+        <TooltipText>"Hora Abertura Viabilidade"</TooltipText>
+        <Background>255 255 200</Background>
+        <NewFont>10:Times New Roman:Bold</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="COMVEND">
+      <Name>COMVEND</Name>
+      <Class>SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>11</Order>
+      <Left>210</Left>
+      <Top>152</Top>
+      <Width>256</Width>
+      <Height>19</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>9</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <FieldSpec>padrao_char_40</FieldSpec>
+        <HyperLabel>#COMVEND,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="VENDEDOR">
+      <Name>VENDEDOR</Name>
+      <Class>COMBOBOX</Class>
+      <Caption>
+      </Caption>
+      <Order>12</Order>
+      <Left>94</Left>
+      <Top>152</Top>
+      <Width>109</Width>
+      <Height>40</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1075839234</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>#VENDEDOR,,,</HyperLabel>
+        <FillUsing>Self:PEGMC01 </FillUsing>
+        <FieldSpec>padrao_char_05</FieldSpec>
+      </ExProperties>
+    </Control>
+    <Control Name="SC_COMPRADOR">
+      <Name>SC_COMPRADOR</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Vendedor:</Caption>
+      <Order>13</Order>
+      <Left>22</Left>
+      <Top>151</Top>
+      <Width>68</Width>
+      <Height>16</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Vendedor:",,</HyperLabel>
+        <HyperLabel>#SC_COMPRADOR,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

@@ -1,0 +1,120 @@
+DESIGNERSTART = VOWindowEditor,DATADIALOG,_fotoview
+GUID=72F2CFB9-7212-4D85-9D99-B72B28373939
+  Name=_fotoview
+  Class=FORM:DATADIALOG
+  Caption=Visualizar
+  Order=0
+  Left=0
+  Width=381
+  Top=0
+  Height=240
+  Browseindex=0
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Visualizar
+  Property=HyperLabel=_fotoview
+SavedOnce=1
+SUBCONTROLSSTART
+CONTROL=CUSTOMCONTROL
+GUID=3EEFC74A-F89F-4B2D-B09D-B9EA1D290C14
+  Name=foto
+  Class=CONTROL:CUSTOMCONTROL
+  Caption=
+  Order=5
+  Left=15
+  Width=249
+  Top=39
+  Height=185
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=foto
+  Property=InheritClassName=FabPaintLibCtrl
+CONTROL=FIXEDBITMAP
+GUID=43BEF2C3-D513-4445-B561-E2B416F9531C
+  Name=fotojpg
+  Class=CONTROL:FIXEDBITMAP
+  Caption=
+  Order=4
+  Left=280
+  Width=80
+  Top=192
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073743374
+  Exstyles=0
+  Property=HyperLabel=fotojpg
+CONTROL=FIXEDTEXT
+GUID=E19D0861-EF63-413A-A9BE-857D1C7F93DA
+  Name=theFixedText9
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Retornar
+  Order=1
+  Left=289
+  Width=64
+  Top=89
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,Retornar
+  Property=HyperLabel=theFixedText9
+CONTROL=PUSHBUTTON
+GUID=05160A8A-625F-4731-B7EA-2558BFC9105E
+  Name=Cancelar
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=2
+  Left=289
+  Width=64
+  Top=37
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=Cancelar
+  Property=Image=ico_sair
+CONTROL=FIXEDTEXT
+GUID=A99E7571-3C0E-48E8-B789-493BA71D67CF
+  Name=TITULO
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=
+  Order=3
+  Left=13
+  Width=352
+  Top=6
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=TITULO
+  Property=Background=255 255 200
+  Property=NewFont=12:Times New Roman:Bold
+SUBCONTROLSEND
+DESIGNEREND = _fotoview
+
+

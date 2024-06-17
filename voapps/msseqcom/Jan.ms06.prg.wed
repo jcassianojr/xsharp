@@ -1,0 +1,405 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JMS06
+GUID=EE80BEEC-B1A1-4DF3-B6CD-9391DF971817
+  Name=JMS06
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=36
+  Width=667
+  Top=36
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=ViewAs=#BrowseView
+  Property=HyperLabel=#JMS06,,,
+  Property=ClipperKeys=True
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=498BFF07-823C-469C-815B-2870C91A315E
+  Name=SC_CODIGO
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=1
+  Left=13
+  Width=40
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
+CONTROL=FIXEDTEXT
+GUID=40BE2593-3948-4664-B762-523522389FEB
+  Name=SC_SEQ
+  Class=FIXEDTEXT
+  Caption=Seq:
+  Order=2
+  Left=201
+  Width=28
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Seq:",,
+  Property=HyperLabel=#SC_SEQ,,,
+
+CONTROL=FIXEDTEXT
+GUID=85BBC573-3794-417C-8EA6-08FD41750E56
+  Name=SC_SSQ
+  Class=FIXEDTEXT
+  Caption=Ssq:
+  Order=3
+  Left=257
+  Width=24
+  Top=13
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Ssq:",,
+  Property=HyperLabel=#SC_SSQ,,,
+
+CONTROL=FIXEDTEXT
+GUID=FD582028-AD1D-421B-B15A-4A4673D25160
+  Name=SC_DESCRI
+  Class=FIXEDTEXT
+  Caption=Descrição:
+  Order=4
+  Left=13
+  Width=128
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Descrição:",,
+  Property=HyperLabel=#SC_DESCRI,,,
+
+CONTROL=FIXEDTEXT
+GUID=537E75A0-5C59-4B13-8319-25EC6B1CDA29
+  Name=SC_PCHORA
+  Class=FIXEDTEXT
+  Caption=Pchora PCP:
+  Order=5
+  Left=17
+  Width=64
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pchora PCP:",,
+  Property=HyperLabel=#SC_PCHORA,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=A733E524-E976-4E1B-A8F3-CE2DB17BE721
+  Name=CODIGO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=7
+  Left=13
+  Width=180
+  Top=29
+  Height=20
+  Browseindex=0
+  Browsesize=19
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_char_24
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"Ms06_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=6A5B791E-542F-4E12-B87E-F9A1C7323FEC
+  Name=SEQ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=201
+  Width=44
+  Top=29
+  Height=20
+  Browseindex=2
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_num_03
+  Property=HyperLabel=#SEQ,,,
+  Property=HyperLabel=,"Seq:",,
+  Property=HyperLabel=,,,"Ms06_SEQ"
+
+CONTROL=SINGLELINEEDIT
+GUID=277735F5-16F8-4A19-A851-DC1C85C8DD6C
+  Name=SSQ
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=9
+  Left=253
+  Width=44
+  Top=29
+  Height=20
+  Browseindex=1
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_num_03
+  Property=HyperLabel=#SSQ,,,
+  Property=HyperLabel=,"Ssq:",,
+  Property=HyperLabel=,,,"Ms06_SSQ"
+
+CONTROL=SINGLELINEEDIT
+GUID=509DE137-8D68-4CA5-AED9-F6857330AD1F
+  Name=DESCRI
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=10
+  Left=13
+  Width=400
+  Top=69
+  Height=20
+  Browseindex=3
+  Browsesize=21
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_char_70
+  Property=HyperLabel=#DESCRI,,,
+  Property=HyperLabel=,"Descrição:",,
+  Property=HyperLabel=,,,"Ms06_DESCRI"
+
+CONTROL=SINGLELINEEDIT
+GUID=AF4EDDBA-475D-475A-B18A-CC5E666ED2F6
+  Name=PCHORA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=11
+  Left=17
+  Width=68
+  Top=117
+  Height=20
+  Browseindex=4
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_num_06
+  Property=HyperLabel=#PCHORA,,,
+  Property=HyperLabel=,"phPCP",,
+  Property=HyperLabel=,,,"Ms06_PCHORA"
+
+CONTROL=SINGLELINEEDIT
+GUID=054F75BB-C13E-445A-976D-940D87639DE6
+  Name=PCHORMED
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=14
+  Left=93
+  Width=68
+  Top=117
+  Height=20
+  Browseindex=5
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_num_06
+  Property=HyperLabel=#PCHORMED,,,
+  Property=HyperLabel=,"phMed",,
+  Property=HyperLabel=,,,"Ms06_PCHORA"
+
+CONTROL=FIXEDTEXT
+GUID=4FF2CC5A-E596-456D-8A1C-56B309408269
+  Name=SC_PCHORA2
+  Class=FIXEDTEXT
+  Caption=Pchora Med
+  Order=15
+  Left=93
+  Width=64
+  Top=101
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pchora Med",,
+  Property=HyperLabel=#SC_PCHORA2,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=668ECED4-1ED1-4CA7-A268-E50B652DD510
+  Name=PCHORAMD
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=16
+  Left=169
+  Width=68
+  Top=117
+  Height=20
+  Browseindex=6
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_num_06
+  Property=HyperLabel=#PCHORAMD,,,
+  Property=HyperLabel=,"PHInt",,
+  Property=HyperLabel=,,,"Ms06_PCHORA"
+
+CONTROL=FIXEDTEXT
+GUID=03B3DF5E-6537-431F-9BA2-7015BA128B7C
+  Name=SC_PCHORA3
+  Class=FIXEDTEXT
+  Caption=Pchr MedInt
+  Order=17
+  Left=169
+  Width=64
+  Top=101
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pchr MedInt",,
+  Property=HyperLabel=#SC_PCHORA3,,,
+
+CONTROL=FIXEDTEXT
+GUID=2B99796F-1D66-4BE7-8E44-00878EF9702A
+  Name=SC_CODIGO1
+  Class=FIXEDTEXT
+  Caption=Codigo:
+  Order=18
+  Left=241
+  Width=40
+  Top=101
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=#SC_CODIGO1,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=96D186DB-0279-44EE-AA1B-E131FD3F58BA
+  Name=CODMP01
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=19
+  Left=241
+  Width=180
+  Top=117
+  Height=20
+  Browseindex=7
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_char_12
+  Property=HyperLabel=#CODMP01,,,
+  Property=HyperLabel=,"Equipamento",,
+  Property=HyperLabel=,,,"Ms06_CODIGO"
+
+CONTROL=SINGLELINEEDIT
+GUID=203563ED-DE04-4B49-92D3-717E040117B4
+  Name=CODINT
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=17
+  Width=180
+  Top=169
+  Height=20
+  Browseindex=8
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1216350336
+  Exstyles=512
+  Property=FieldSpec=padrao_char_12
+  Property=HyperLabel=#CODINT,,,
+  Property=HyperLabel=,"CodigoInt",,
+  Property=HyperLabel=,,,"Ms06_CODIGO"
+
+CONTROL=FIXEDTEXT
+GUID=A6CC096C-7B9F-469B-BF20-2A7188ADB75A
+  Name=SC_CODIGO2
+  Class=FIXEDTEXT
+  Caption=Codigo Integrado
+  Order=21
+  Left=17
+  Width=136
+  Top=145
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Codigo Integrado",,
+  Property=HyperLabel=#SC_CODIGO2,,,
+
+SUBCONTROLSEND
+DESIGNEREND = JMS06
+
