@@ -19,7 +19,7 @@ CLASS FileSLE INHERIT rightSLE
 //d there.
 //e Initialize this SLE in the owning window's PostInit() as follows:
 //e PostInit(oWindow,iCtlID,oServer,uExtra) CLASS MyDialog
-//e 	SELF:oDCSingleLineEdit1:TEXTvalue := "C:\DOWNLOAD\*.AEF"
+//e 	SELF:oDCSingleLineEdit1:TEXTvalue := "d:\DOWNLOAD\*.AEF"
 //e 	SELF:oDCSingleLineEdit1:xFilter := { "*.AEF", "*.*" }
 //e 	SELF:oDCSingleLineEdit1:xFilterDesc := { "Application Export Files", "All Files" }
 //g Edit Controls
@@ -182,7 +182,7 @@ CLASS pbFileSLE INHERIT FileSLE
 //d full path of the user's selection.
 //e Initialize this SLE in the owning window's PostInit() as follows:
 //e PostInit(oWindow,iCtlID,oServer,uExtra) CLASS MyDialog
-//e 	SELF:oDCSingleLineEdit1:TEXTvalue := "C:\DOWNLOAD\*.AEF"
+//e 	SELF:oDCSingleLineEdit1:TEXTvalue := "d:\DOWNLOAD\*.AEF"
 //e 	SELF:oDCSingleLineEdit1:xFilter := { "*.AEF", "*.*" }
 //e 	SELF:oDCSingleLineEdit1:xFilterDesc := { "Application Export Files", "All Files" }
 //g Edit Controls

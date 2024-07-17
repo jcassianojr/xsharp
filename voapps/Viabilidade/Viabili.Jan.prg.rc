@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// WINDOW JANVIA from C:\develop\xsharp\voapps\Viabilidade\Viabili.Jan.prg.rc
+;// WINDOW JANVIA from d:\develop\xsharp\voapps\Viabilidade\Viabili.Jan.prg.rc
 #define JANVIA_DATAEC 100
 #define JANVIA_PRZCLI 101
 #define JANVIA_CLIENTE 102
@@ -133,7 +133,7 @@ BEGIN
 	CONTROL "Fechar Esta Viabilidade", JANVIA_NOVAREV1, "BUTTON", WS_CHILD, 407, 321, 85, 14
 	CONTROL "Fechar V. deste Desenho", JANVIA_FECCODIGO, "BUTTON", WS_CHILD|WS_TABSTOP, 407, 335, 85, 12
 END
-;// WINDOW JANVIA_Page1 from C:\develop\xsharp\voapps\Viabilidade\Viabili.Jan.prg.rc
+;// WINDOW JANVIA_Page1 from d:\develop\xsharp\voapps\Viabilidade\Viabili.Jan.prg.rc
 #define JANVIA_PAGE1_CMDHOJE1 100
 #define JANVIA_PAGE1_FDATA 101
 #define JANVIA_PAGE1_SC_CLIENTE2 102
@@ -195,7 +195,7 @@ BEGIN
 	CONTROL "", JANVIA_PAGE1_VALORFER, "EDIT", WS_CHILD|WS_TABSTOP|WS_BORDER|ES_AUTOHSCROLL, 67, 6, 52, 12
 	CONTROL "Vl.Ferramenta", JANVIA_PAGE1_THEFIXEDTEXT15, "STATIC", WS_CHILD, 11, 6, 52, 11
 END
-;// WINDOW JANVIA_Page2 from C:\develop\xsharp\voapps\Viabilidade\Viabili.Jan.prg.rc
+;// WINDOW JANVIA_Page2 from d:\develop\xsharp\voapps\Viabilidade\Viabili.Jan.prg.rc
 #define JANVIA_PAGE2_OBSG01 100
 #define JANVIA_PAGE2_OBSG02 101
 #define JANVIA_PAGE2_OBSG03 102
@@ -222,7 +222,7 @@ BEGIN
 	CONTROL "Obsg07:", JANVIA_PAGE2_OBSG07, "EDIT", WS_CHILD|WS_TABSTOP|WS_BORDER|ES_AUTOHSCROLL, 54, 65, 267, 12, WS_EX_CLIENTEDGE
 	CONTROL "Obsg08:", JANVIA_PAGE2_OBSG08, "EDIT", WS_CHILD|WS_TABSTOP|WS_BORDER|ES_AUTOHSCROLL, 54, 74, 267, 12, WS_EX_CLIENTEDGE
 END
-;// WINDOW JANVIA_Page3 from C:\develop\xsharp\voapps\Viabilidade\Viabili.Jan.prg.rc
+;// WINDOW JANVIA_Page3 from d:\develop\xsharp\voapps\Viabilidade\Viabili.Jan.prg.rc
 #define JANVIA_PAGE3_OBSCUS01 100
 #define JANVIA_PAGE3_OBSCUS02 101
 #define JANVIA_PAGE3_OBSCUS03 102
@@ -265,7 +265,7 @@ BEGIN
 	CONTROL "", JANVIA_PAGE3_VENDEDOR, "COMBOBOX", WS_CHILD|CBS_DROPDOWN|CBS_SORT|WS_VSCROLL, 63, 94, 73, 25
 	CONTROL "Vendedor:", JANVIA_PAGE3_SC_COMPRADOR, "STATIC", WS_CHILD, 15, 93, 45, 10
 END
-;// WINDOW JANVIA_Page4 from C:\develop\xsharp\voapps\Viabilidade\Viabili.Jan.prg.rc
+;// WINDOW JANVIA_Page4 from d:\develop\xsharp\voapps\Viabilidade\Viabili.Jan.prg.rc
 #define JANVIA_PAGE4_VALORFER 100
 #define JANVIA_PAGE4_VALORUNI 101
 #define JANVIA_PAGE4_FVALORFER 102
@@ -355,7 +355,7 @@ BEGIN
 	CONTROL "Recotação", JANVIA_PAGE4_DECLMOT, "EDIT", WS_CHILD|WS_TABSTOP|WS_BORDER|ES_AUTOHSCROLL, 302, 7, 35, 12
 	CONTROL "...", JANVIA_PAGE4_ESCFOR, "BUTTON", WS_CHILD|WS_TABSTOP, 337, 6, 13, 12
 END
-;// WINDOW JANVIA_Pagea from C:\develop\xsharp\voapps\Viabilidade\Viabili.Jan.prg.rc
+;// WINDOW JANVIA_Pagea from d:\develop\xsharp\voapps\Viabilidade\Viabili.Jan.prg.rc
 #define JANVIA_PAGEA_EAC 100
 #define JANVIA_PAGEA_ENVELOPE 101
 #define JANVIA_PAGEA_DUNS 102

@@ -1,9 +1,8 @@
-CLASS pcpshell INHERIT StandardShellWindow
+ï»¿CLASS pcpshell INHERIT StandardShellWindow
 
 METHOD geracortexml() 
-LOCAL cDIR, cEXE, cCODNEW AS STRING
-LOCAL nFout AS PTR
-
+ LOCAL cDIR, cEXE, cCODNEW AS STRING
+      LOCAL nfout AS PTR
 //   IF ! entramenu("PCP",nPOS)
 //	   RETURN SELF
  //   ENDIF	
@@ -15,12 +14,12 @@ LOCAL nFout AS PTR
    END IF
 cDIR:=GetFileNameFromPath(cCODNEW)
 cEXE:=GetPathFromFileName(cCODNEW)
-ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz(cEXE),String2Psz(""),String2Psz(cDIR),SW_SHOWNORMAL)
-ShellExecuteErro(nFout) 
+nfout:=ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz(cEXE),String2Psz(""),String2Psz(cDIR),SW_SHOWNORMAL)
+ShellExecuteErro(nFout)
 	
-	
+
 CONSTRUCTOR( oOwnerApp ) 
-	//LOCAL oSB AS StatusBar
+//	LOCAL oSB AS StatusBar
 	LOCAL oSBIUSER AS StatusBarItem
     LOCAL oSBIDATE AS StatusBarItem	
     LOCAL oSBIMSG AS StatusBarItem	
@@ -29,6 +28,10 @@ CONSTRUCTOR( oOwnerApp )
 	SUPER: INIT( oOwnerApp )
 	
 	aChildWindows := {}
+
+	SetDeleted( .T. )
+	
+	//AltD()
 
         oSBIDate := StatusBarItem{}
 	oSBIDate:Style := SBITEMSUNKEN
@@ -47,7 +50,7 @@ CONSTRUCTOR( oOwnerApp )
 	oSBIMSG:NameSym := #SBMSG
 
 
-//	oSB := SELF:EnableStatusBar()
+	//oSB := SELF:EnableStatusBar()
 	SELF:StatusBar:DisplayKeyboard() //
 	SELF:StatusBar:DisplayTime()         //
     SELF:StatusBar:Additem (oSBIDATE)
@@ -73,26 +76,21 @@ METHOD sayCOM()
   LOCAL oJCOM AS JCOM
   oJCOM:=jCOM{SELF}
   OjCOM:show()		
-  SELF:Caption:="Módulo PCP - Empresa:"+StrZero(ZEMPRESA,3)+" Competencia:"+StrZero(ZMES,2)+"/"+StrZero(ZANO,4)		
+  SELF:Caption:="MÃ³dulo PCP - Empresa:"+StrZero(ZEMPRESA,3)+" Competencia:"+StrZero(ZMES,2)+"/"+StrZero(ZANO,4)		
 
 METHOD XGERAMGREMB() 
 LOCAL oConn AS SQLConnection
 LOCAL oREG AS SQLSelect
 LOCAL cSQL,cMIG,cCLIENTE,cCODIGO,cCODCLI,cTMPCLI,cTIPVENDA,cDOCA,cCNPJEMP AS STRING
-//LOCAL aCAM AS ARRAY
-//LOCAL oMANA5 AS USEMANA5
-//LOCAL aDAD AS ARRAY
 LOCAL oPROGWIN AS PROGWIN
 LOCAL nPERC AS INT
-LOCAL nLASTREC,nPOS,nCONTA AS DWORD    //x
+LOCAL nLASTREC,nPOS,nCONTA AS DWORD
 LOCAL nCODITA
 LOCAL cCODITA
 LOCAL nHANDLE
 LOCAL nHANDL2
-//LOCAL oBUSCA AS XBUSCA
 LOCAL oStmt AS SQLStatement
 LOCAL lGRAVA AS LOGIC
-//LOCAL oOSCRT AS USEREDE
 LOCAL cVIR,cDATA,cHORA AS STRING
 
 cVIR:=""
@@ -105,8 +103,7 @@ ENDIF
 cMIG:=PEGEMPMIG(ZEMPRESA)
 
 cCNPJEMP:="61381323000248"
-IF cMIG="01"    
-   NOP
+IF cMIG="01"
 ELSE
    cCNPJEMP:="61381323000167"
 ENDIF
@@ -124,13 +121,13 @@ oProgWin:SHOW()
 //ENDIF
 //OoSCRT:SETORDER(6) //CODCLI C 15 e CODIGOINT C24
 
-    cDATA:=DToS(DATE())
+    cDATA:=DToS(Today())
     cHORA:=Left(StrTran(Time(),":",""),6)
 
 oConn := SQLConnection{}
 IF ! oConn:connect("ol_logix","","")
-   alert("Erro na Conecção")
-   RETURN .f.
+   alert("Erro na ConecÃ§Ã£o")
+   RETU
 ENDIF	
 
 cSQL:= "set isolation to dirty read"
@@ -142,7 +139,7 @@ oSTMT:Execute()
    nHANDL2:=FCreate("C:\TEMP\I09_"+cMIG+".TXT")
 
     FWrite(nHANDL2,"SII00"+PadR(cCNPJEMP,30)+PadR(cCNPJEMP,30)+"00000")
-    FWrite(nHANDL2,Chr(13)+Chr(10))
+    FWrite(nHANDL2,CHR(13)+CHR(10))
 
 
     nCONTA:=1 //comeca com um para somar o footer
@@ -168,7 +165,7 @@ oSTMT:Execute()
     FWrite(nHANDLE,Space(5))
     FWrite(nHANDLE,Space(8))
     FWrite(nHANDLE,Space(8))
-    FWrite(nHANDLE,Chr(13)+Chr(10))
+    FWrite(nHANDLE,CHR(13)+CHR(10))
     nCONTA++
 
 
@@ -215,15 +212,15 @@ cSQL+=" AND LENGTH(embal_itaesbra.cod_item)=12 "
 
 
 
-//         01-  4 N  4 0 Código da Empresa LOGIX
-//         05-  8 C  4 0 Código do cliente logix
-//         09- 32 C 24 0 Código Peca Itaesbra
-//         33- 56 C 24 0 Código da Peça ( DO cliente ) que utiliza esta embalagem
-//         57- 64 C  8 0 Código da Embalagem da Itaesbra)
+//         01-  4 N  4 0 CÃ³digo da Empresa LOGIX
+//         05-  8 C  4 0 CÃ³digo do cliente logix
+//         09- 32 C 24 0 CÃ³digo Peca Itaesbra
+//         33- 56 C 24 0 CÃ³digo da PeÃ§a ( DO cliente ) que utiliza esta embalagem
+//         57- 64 C  8 0 CÃ³digo da Embalagem da Itaesbra)
 //         65- 94 C 30 0 Descricao da embalagem
-//         95-102 N  8 0 Capacidade ( qtde de peças por embalagem )
+//         95-102 N  8 0 Capacidade ( qtde de peÃ§as por embalagem )
 //        103-108 N  6 2 Peso da Embalagem  6 Casas + 2 casas decimais
-//        109-132 C 24 0 Código de Embalagem ( DO cliente )
+//        109-132 C 24 0 CÃ³digo de Embalagem ( DO cliente )
 
 
 
@@ -341,13 +338,13 @@ cSQL+=" AND LENGTH(embal_itaesbra.cod_item)=12 "
        	    FWrite(nHANDLE,StrZero(FIXNUM(oREG:FIELDGET("qtd_padr_embal")),8,0))
       	    FWrite(nHANDLE,StrTran(StrZero(FIXNUM(oREG:FIELDGET("Pes_unit")),7,2),".",""))
     	    FWrite(nHANDLE,cCODITA)
-        	FWrite(nHANDLE,Chr(13)+Chr(10))
+        	FWrite(nHANDLE,CHR(13)+CHR(10))
 
 
           FWrite(nHANDL2,"ETQTA"+cVIR)             //1
           FWrite(nHANDL2,PadR(cTMPCLI,5)+cVIR)   //3
           FWrite(nHANDL2,"ITAES"+cVIR) //Space(5))            //3
-          FWrite(nHANDL2,DToS(DATE())+cVIR)        //4
+          FWrite(nHANDL2,DToS(Today())+cVIR)        //4
           FWrite(nHANDL2,Repl("0",10)+cVIR)         //5
           FWrite(nHANDL2,Space(4)+cVIR)            //6
           FWrite(nHANDL2,Space(35)+cVIR)           //7
@@ -407,7 +404,7 @@ cSQL+=" AND LENGTH(embal_itaesbra.cod_item)=12 "
           FWrite(nHANDL2,Space(3)+cVIR)   //60
           FWrite(nHANDL2,Space(10)+cVIR)   //61
           FWrite(nHANDL2,Space(12)+cVIR)   //62
-          FWrite(nHANDL2,Chr(13)+Chr(10))
+          FWrite(nHANDL2,CHR(13)+CHR(10))
           nCONTA++
          ENDIF
 
@@ -421,9 +418,9 @@ cSQL+=" AND LENGTH(embal_itaesbra.cod_item)=12 "
 
 FWrite(nHANDL2,"FPLAN")
 FWrite(nHANDL2,StrZero(Nconta,5,0))
-FWrite(nHANDL2,Chr(13)+Chr(10))
+FWrite(nHANDL2,CHR(13)+CHR(10))
 FWrite(nHANDL2,"SFI     00001")
-FWrite(nHANDL2,Chr(13)+Chr(10))
+FWrite(nHANDL2,CHR(13)+CHR(10))
 
 
 FClose(nHANDLE)
@@ -432,7 +429,7 @@ FClose(NHANDL2)
 //oOSCRT:CLOSE()
 oConn:Disconnect()
 oPROGWIN:EndDialog()
-alert("Termino Importaçäo","Encerrado")
+alert("Termino ImportaÃ§Ã¤o","Encerrado")
 
 
 
@@ -455,8 +452,7 @@ oProgWin:SHOW()
 cMIG:=PEGEMPMIG(ZEMPRESA)
 
 cCNPJEMP:="61381323000248"
-IF cMIG="01"  
-	NOP
+IF cMIG="01"
 ELSE
    cCNPJEMP:="61381323000167"
 ENDIF
@@ -466,8 +462,8 @@ lGRV:=MDG("Gravar CNPJ")
 
 oConn := SQLConnection{}
 IF ! oConn:connect("ol_logix","","")
-   alert("Erro na Conecção")
-   RETURN .f.
+   alert("Erro na ConecÃ§Ã£o")
+   RETU
 ENDIF	
 
 cSQL:= "set isolation to dirty read"
@@ -475,18 +471,18 @@ oStmt := SQLStatement{cSQL,oConn}
 oSTMT:Execute()
     nHANDLE:=FCreate("C:\TEMP\I01_"+cMIG+".TXT")
     nCONTA:=1 //comeca com um para somar o footer
-    cDATA:=DToS(DATE())
+    cDATA:=DToS(Today())
     cHORA:=Left(StrTran(Time(),":",""),6)
 
-//1	ID	Identificação DO Registro (SII)	M	A	3	1	3
-//2	VersInter	Versão DO Intercâmbio 	M	A	2	4	5
-//3	Transmissor	Identificação DO Transmissor (CNPJ)	M	A	30	6	35
-//4	Receptor	Identificação DO Receptor (CNPJ)	M	A	30	36	65
+//1	ID	IdentificaÃ§Ã£o DO Registro (SII)	M	A	3	1	3
+//2	VersInter	VersÃ£o DO IntercÃ¢mbio 	M	A	2	4	5
+//3	Transmissor	IdentificaÃ§Ã£o DO Transmissor (CNPJ)	M	A	30	6	35
+//4	Receptor	IdentificaÃ§Ã£o DO Receptor (CNPJ)	M	A	30	36	65
 //5	CtrlMovto	Controle de Movimento	M	N	5	66	70
 
 
     FWrite(nHANDLE,"SII00"+PadR(cCNPJEMP,30)+PadR(cCNPJEMP,30)+"00000")
-    FWrite(nHANDLE,Chr(13)+Chr(10))
+    FWrite(nHANDLE,CHR(13)+CHR(10))
 
     FWrite(nHANDLE,"IPLAN")
     FWrite(nHANDLE,"I01")
@@ -500,20 +496,20 @@ oSTMT:Execute()
     FWrite(nHANDLE,Space(5))
     FWrite(nHANDLE,Space(8))
     FWrite(nHANDLE,Space(8))
-    FWrite(nHANDLE,Chr(13)+Chr(10))
+    FWrite(nHANDLE,CHR(13)+CHR(10))
     nCONTA++
-//	1	IdentReg	Identificação DO Registro (IPLAN)	M	A	5	1	5
-//	2	Docto	Identificação DO Docto (I01)	M	A 	3	6	8
-//	3	VersDocto	Versão DO Docto (04)	M	A 	2	9	10
-//	4	NumCtrlMovto	Número de controle movto.	M	N	5	11	15
-//	5	DataMovto	Data de Geração dos Dados (Formato: AAAAMMDD)	M	D	8	16	23
-//	6	HoraMovto	Hora de Geração dos Dados (Formato: HHMMSS)	M	N	6	24	29
-//	7	CodCliente	Informar pelo menos um CNPJ das unidades de negócio DO grupo.	M	N	14	30	43
-//	8	CodFornec	Informar pelo menos um CNPJ das unidades de negócio DO grupo.	M	N	14	44	57
-//	9	CodCliente	Não informar	O	A	5	58	62
-//	10	CodFornec	Não informar	O	A	5	63	67
-//	11	CodTrans	Não informar	O	A	8	68	75
-//	12	CodRecep	Não informar	O	A	8	76	83
+//	1	IdentReg	IdentificaÃ§Ã£o DO Registro (IPLAN)	M	A	5	1	5
+//	2	Docto	IdentificaÃ§Ã£o DO Docto (I01)	M	A 	3	6	8
+//	3	VersDocto	VersÃ£o DO Docto (04)	M	A 	2	9	10
+//	4	NumCtrlMovto	NÃºmero de controle movto.	M	N	5	11	15
+//	5	DataMovto	Data de GeraÃ§Ã£o dos Dados (Formato: AAAAMMDD)	M	D	8	16	23
+//	6	HoraMovto	Hora de GeraÃ§Ã£o dos Dados (Formato: HHMMSS)	M	N	6	24	29
+//	7	CodCliente	Informar pelo menos um CNPJ das unidades de negÃ³cio DO grupo.	M	N	14	30	43
+//	8	CodFornec	Informar pelo menos um CNPJ das unidades de negÃ³cio DO grupo.	M	N	14	44	57
+//	9	CodCliente	NÃ£o informar	O	A	5	58	62
+//	10	CodFornec	NÃ£o informar	O	A	5	63	67
+//	11	CodTrans	NÃ£o informar	O	A	8	68	75
+//	12	CodRecep	NÃ£o informar	O	A	8	76	83
 
 cSQL:=" SELECT ITEM.cod_item "
 cSQL+=" 	,ITEM.den_item_reduz "
@@ -573,19 +569,19 @@ cSQL+=" ORDER BY ITEM.cod_item "
        	  FWrite(nHANDLE,Space(5))   //celula
        	  FWrite(nHANDLE,Space(5)) //sub unidade
        	  FWrite(nHANDLE,Space(5))   //sub classificacao
-       	  FWrite(nHANDLE,Chr(13)+Chr(10))
+       	  FWrite(nHANDLE,CHR(13)+CHR(10))
 
 /*
-       	  	1	IdentReg	Identificação DO Registro (EST01)	M	A	5	1	5
-	2	CodItem	Código DO Item	M	A	30	6	35
-	3	DescItem	Descrição DO Item	O 	A	30	36	65
-	4	QtdeEstoq	Quantidade de Itens em Estoque (prevendo sinal negativo, caso seja positivo colocar um espaço em branco)	O	N	21,4	66	86
+       	  	1	IdentReg	IdentificaÃ§Ã£o DO Registro (EST01)	M	A	5	1	5
+	2	CodItem	CÃ³digo DO Item	M	A	30	6	35
+	3	DescItem	DescriÃ§Ã£o DO Item	O 	A	30	36	65
+	4	QtdeEstoq	Quantidade de Itens em Estoque (prevendo sinal negativo, caso seja positivo colocar um espaÃ§o em branco)	O	N	21,4	66	86
 	5	UnidMed	Unidade de Medida DO Item	O	A	3	87	89
-	6	CNPJEmp	CNPJ da Unidade de Negócio (número puro). Caso seja preenchido, o CNPJ será validado contra o Cadastro de Empresas. Caso não seja utilizado, preencher com espaços	O	N	14	90	103
-	7	CodClass	Código de Classificação DO Item (família). Caso seja preenchido o código será validado contra o Cadastro de Classificações.	O	A	5	104	108
-	8	CodCelula	Código da Célula de Produção DO Item. Caso seja preenchido o código será validado contra o Cadastro de Células. 	O	A	5	109	113
-	9	SubUnidade	Código da Sub-Unidade	O	A	5	114	118
-	10	Sub-Classificação	Código da Sub-Classificação	O	A	5	119	123
+	6	CNPJEmp	CNPJ da Unidade de NegÃ³cio (nÃºmero puro). Caso seja preenchido, o CNPJ serÃ¡ validado contra o Cadastro de Empresas. Caso nÃ£o seja utilizado, preencher com espaÃ§os	O	N	14	90	103
+	7	CodClass	CÃ³digo de ClassificaÃ§Ã£o DO Item (famÃ­lia). Caso seja preenchido o cÃ³digo serÃ¡ validado contra o Cadastro de ClassificaÃ§Ãµes.	O	A	5	104	108
+	8	CodCelula	CÃ³digo da CÃ©lula de ProduÃ§Ã£o DO Item. Caso seja preenchido o cÃ³digo serÃ¡ validado contra o Cadastro de CÃ©lulas. 	O	A	5	109	113
+	9	SubUnidade	CÃ³digo da Sub-Unidade	O	A	5	114	118
+	10	Sub-ClassificaÃ§Ã£o	CÃ³digo da Sub-ClassificaÃ§Ã£o	O	A	5	119	123
 */
 
   	      nCONTA++
@@ -598,9 +594,9 @@ cSQL+=" ORDER BY ITEM.cod_item "
 
    FWrite(nHANDLE,"FPLAN")
    FWrite(nHANDLE,StrZero(Nconta,5,0))
-   FWrite(nHANDLE,Chr(13)+Chr(10))
+   FWrite(nHANDLE,CHR(13)+CHR(10))
    FWrite(nHANDLE,"SFI     00001")
-   FWrite(nHANDLE,Chr(13)+Chr(10))
+   FWrite(nHANDLE,CHR(13)+CHR(10))
    FClose(nHANDLE)
 
 
@@ -609,7 +605,7 @@ cSQL+=" ORDER BY ITEM.cod_item "
     nCONTA:=1 //comeca com um para somar o footer
 
     FWrite(nHANDLE,"SII00"+PadR(cCNPJEMP,30)+PadR(cCNPJEMP,30)+"00000")
-    FWrite(nHANDLE,Chr(13)+Chr(10))
+    FWrite(nHANDLE,CHR(13)+CHR(10))
 
 
     FWrite(nHANDLE,"IPLAN")
@@ -624,22 +620,22 @@ cSQL+=" ORDER BY ITEM.cod_item "
     FWrite(nHANDLE,Space(5))
     FWrite(nHANDLE,Space(8))
     FWrite(nHANDLE,Space(8))
-    FWrite(nHANDLE,Chr(13)+Chr(10))
+    FWrite(nHANDLE,CHR(13)+CHR(10))
     nCONTA++
 
 /*
-1	IdentReg	Identificação DO Registro (IPLAN)	M	A	5	1	5
-2	Docto	Identificação DO Docto (I03)	M	A 	3	6	8
-3	VersDocto	Versão DO Docto (08)	M	A 	2	9	10
-4	NumCtrlMovto	Número de controle movto.	M	N	5	11	15
-5	DataMovto	Data de Geração dos Dados (Formato: AAAAMMDD)	M	D	8	16	23
-6	HoraMovto	Hora de Geração dos Dados (Formato: HHMMSS)	M	N	6	24	29
-7	CodCliente	Informar pelo menos um CNPJ das unidades de negócio DO grupo.	M	N	14	30	43
-8	CodFornec	Informar pelo menos um CNPJ das unidades de negócio DO grupo.	M	N	14	44	57
-9	CodCliente	Não informar	O	A	5	58	62
-10	CodFornec	Não informar	O	A	5	63	67
-11	CodTrans	Não informar	O	A	8	68	75
-12	CodRecep	Não informar	O	A	8	76	83
+1	IdentReg	IdentificaÃ§Ã£o DO Registro (IPLAN)	M	A	5	1	5
+2	Docto	IdentificaÃ§Ã£o DO Docto (I03)	M	A 	3	6	8
+3	VersDocto	VersÃ£o DO Docto (08)	M	A 	2	9	10
+4	NumCtrlMovto	NÃºmero de controle movto.	M	N	5	11	15
+5	DataMovto	Data de GeraÃ§Ã£o dos Dados (Formato: AAAAMMDD)	M	D	8	16	23
+6	HoraMovto	Hora de GeraÃ§Ã£o dos Dados (Formato: HHMMSS)	M	N	6	24	29
+7	CodCliente	Informar pelo menos um CNPJ das unidades de negÃ³cio DO grupo.	M	N	14	30	43
+8	CodFornec	Informar pelo menos um CNPJ das unidades de negÃ³cio DO grupo.	M	N	14	44	57
+9	CodCliente	NÃ£o informar	O	A	5	58	62
+10	CodFornec	NÃ£o informar	O	A	5	63	67
+11	CodTrans	NÃ£o informar	O	A	8	68	75
+12	CodRecep	NÃ£o informar	O	A	8	76	83
 */
 
 
@@ -711,22 +707,22 @@ cSQL+=" ORDER BY ITEM.cod_item "
           ENDIF	
           */
           FWrite(nHANDLE,"1")
-       	  FWrite(nHANDLE,Chr(13)+Chr(10))
+       	  FWrite(nHANDLE,CHR(13)+CHR(10))
 /*
- 1	IdentReg	Identificação DO Registro (REIT1)	M	A	5	1	5
-2	CodItemEmp	Código DO Item Empresa	M	A	30	6	35
-3	CodItemParc	Código DO Item Parceiro	M	A	30	36	65
-4	CNPJParc	CNPJ DO Parceiro (Somente Números)	M	N	14	66	79
-5	CNPJEmp	CNPJ da Unidade de Negócio (Somente Números). Caso seja preenchido, o CNPJ será validado contra o Cadastro de Empresas. Caso não seja utilizado, preencher com espaços.	O	N	14	80	93
-6	TipoFornParc	Tipo de Fornecimento (Válidos P, R, E, X, D, A, TODOS)	M	A	5	94	98
-7	FabricaParc	Fábrica de Entrega (Válidos: Específico, TODOS)	M	A	20	99	118
-8	AltTecParc	Alteração Técnica	O	A	10	119	128
+ 1	IdentReg	IdentificaÃ§Ã£o DO Registro (REIT1)	M	A	5	1	5
+2	CodItemEmp	CÃ³digo DO Item Empresa	M	A	30	6	35
+3	CodItemParc	CÃ³digo DO Item Parceiro	M	A	30	36	65
+4	CNPJParc	CNPJ DO Parceiro (Somente NÃºmeros)	M	N	14	66	79
+5	CNPJEmp	CNPJ da Unidade de NegÃ³cio (Somente NÃºmeros). Caso seja preenchido, o CNPJ serÃ¡ validado contra o Cadastro de Empresas. Caso nÃ£o seja utilizado, preencher com espaÃ§os.	O	N	14	80	93
+6	TipoFornParc	Tipo de Fornecimento (VÃ¡lidos P, R, E, X, D, A, TODOS)	M	A	5	94	98
+7	FabricaParc	FÃ¡brica de Entrega (VÃ¡lidos: EspecÃ­fico, TODOS)	M	A	20	99	118
+8	AltTecParc	AlteraÃ§Ã£o TÃ©cnica	O	A	10	119	128
 9	UnidMedParc	Unidade de Medida	O	A	3	129	131
-10	ValorUnit	Valor Unitário DO Item	O	N	17	132	148
-11	QtdMultEmb	Quantidade de Peças por Embalagem	O	N	7	149	155
-12	QtdLoteMinimo	Quantidade Mínima de Peças por Mês (utilizado PARA validação por Lote Mínimo Mensal)	O	N	12	156	167
-13	LocalEntrega	LOCAL de Entrega (Válidos: Específico, TODOS)	M	A	20	168	187
-14	TodosClientesGrupo	0 - Indica se o relacionamento é com um cliente específico.1 - Indica se o relacionamento é com todas AS empresas DO grupo DO cliente.  	M	N	1	188	188
+10	ValorUnit	Valor UnitÃ¡rio DO Item	O	N	17	132	148
+11	QtdMultEmb	Quantidade de PeÃ§as por Embalagem	O	N	7	149	155
+12	QtdLoteMinimo	Quantidade MÃ­nima de PeÃ§as por MÃªs (utilizado PARA validaÃ§Ã£o por Lote MÃ­nimo Mensal)	O	N	12	156	167
+13	LocalEntrega	LOCAL de Entrega (VÃ¡lidos: EspecÃ­fico, TODOS)	M	A	20	168	187
+14	TodosClientesGrupo	0 - Indica se o relacionamento Ã© com um cliente especÃ­fico.1 - Indica se o relacionamento Ã© com todas AS empresas DO grupo DO cliente.  	M	N	1	188	188
 */
 
    	      nCONTA++
@@ -737,9 +733,9 @@ cSQL+=" ORDER BY ITEM.cod_item "
 
    FWrite(nHANDLE,"FPLAN")
    FWrite(nHANDLE,StrZero(Nconta,5,0))
-   FWrite(nHANDLE,Chr(13)+Chr(10))
+   FWrite(nHANDLE,CHR(13)+CHR(10))
    FWrite(nHANDLE,"SFI     00001")
-   FWrite(nHANDLE,Chr(13)+Chr(10))
+   FWrite(nHANDLE,CHR(13)+CHR(10))
    FClose(nHANDLE)
 
 
@@ -763,7 +759,6 @@ METHOD XIMPESTINT()
     LOCAL cSQL,cMIG AS STRING
     LOCAL aCAM AS ARRAY
     LOCAL oARQ AS USEREDE
-  //  LOCAL oMANA5 AS USEMANA5
     LOCAL aDAD AS ARRAY
     LOCAL oPROGWIN AS PROGWIN
     LOCAL nPERC AS INT
@@ -776,7 +771,7 @@ METHOD XIMPESTINT()
    aDAD:={zCURINI,"ESTQINT.DBF",ZCURDIR}
    oARQ:=USEREDE{aDAD,.F.}
    IF oARQ:nERRO#0
-       RETURN .f.
+       RETU
    ENDIF
    oARQ:ZAP()
 
@@ -787,8 +782,8 @@ METHOD XIMPESTINT()
 
    oConn := SQLConnection{}
    IF ! oConn:connect("ol_logix","","")
-  	  alert("Erro na Conecção")
-   	  RETURN .f.
+  	  alert("Erro na ConecÃ§Ã£o")
+   	  RETU
    ENDIF	
 
 cSQL:= "set isolation to dirty read"
@@ -803,7 +798,7 @@ oSTMT:Execute()
    oreg:= SQLSelect{cSQL,oconn}
 
 
-   acam:=ARRAY(11)
+   acam:=ArrayNew(11)
 
 
 
@@ -854,7 +849,7 @@ oSTMT:Execute()
   oPROGWIN:EndDialog()
 
 
-  alert("Termino Importaçäo","Encerrado")
+  alert("Termino ImportaÃ§Ã¤o","Encerrado")
 
  SELF:XINTEXP()
 
@@ -897,7 +892,7 @@ SELF:XWRPTGRP("PE","")
 
 METHOD XXLSELE 
 LOCAL cDIR, cEXE, cCODNEW AS STRING
-LOCAL nFout AS PTR
+LOCAL nFOUT AS PTR
 
 //   IF ! entramenu("PCP",nPOS)
 //	   RETURN SELF
@@ -910,8 +905,9 @@ LOCAL nFout AS PTR
    END IF
 cDIR:=GetFileNameFromPath(cCODNEW)
 cEXE:=GetPathFromFileName(cCODNEW)
-nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz(cEXE),String2Psz(""),String2Psz(cDIR),SW_SHOWNORMAL)
-ShellExecuteErro(nFout) 
+nfout:=ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz(cEXE),String2Psz(""),String2Psz(cDIR),SW_SHOWNORMAL)
+   ShellExecuteErro(nFout)
+
 
 
 END CLASS

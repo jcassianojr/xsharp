@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// WINDOW _LogonDialog from C:\develop\xsharp\voapps\Login\Janela_ Login.prg.rc
+;// WINDOW _LogonDialog from d:\develop\xsharp\voapps\Login\Janela_ Login.prg.rc
 #define _LOGONDIALOG_NAME 100
 #define _LOGONDIALOG_PASSWORD 101
 #define _LOGONDIALOG_OKBUTTON 102

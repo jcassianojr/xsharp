@@ -1,6 +1,6 @@
-PARTIAL CLASS JPE
+ï»¿PARTIAL CLASS JPE
 METHOD APPEND() 
-alert("Operaçao Bloqueada")
+alert("OperaÃ§ao Bloqueada")
 
 METHOD BUSCAPED( ) 
 SELF:KeyFind()
@@ -75,7 +75,7 @@ IF Empty(SELF:oSFJPE01:SERVER:FIELDGET("DATAFAT"))
 ELSE	
   cVAL:=DToC(SELF:oSFJPE01:SERVER:FIELDGET("DATAFAT"))
 ENDIF
-oBUSCA:=xBUSCA{SELF,"Forneça a DATA dd/mm/yyyy","Digite Data",cVAL}
+oBUSCA:=xBUSCA{SELF,"ForneÃ§a a DATA dd/mm/yyyy","Digite Data",cVAL}
 oBUSCA:lMES:=.T.
 oBUSCA:SHOW()
 IF oBUSCA:lOK
@@ -100,7 +100,7 @@ METHOD cmdqtde
 LOCAL cVAL AS STRING	
 LOCAL oBUSCA AS xBUSCA
 cVAL:=Str(SELF:oSFJPE01:SERVER:FIELDGET("TOTKGINI"))
-oBUSCA:=xBUSCA{SELF,"Forneça a Quantidade","Digite Qtde",cVAL}
+oBUSCA:=xBUSCA{SELF,"ForneÃ§a a Quantidade","Digite Qtde",cVAL}
 oBUSCA:lMES:=.T.
 oBUSCA:SHOW()
 IF oBUSCA:lOK
@@ -111,12 +111,12 @@ ENDIF
 
 
 METHOD DELETE() 
-alert("Operaçao Bloqueada")
+alert("OperaÃ§ao Bloqueada")
 	
 
 METHOD EXCLUIR 
 IF ! MDG("Apagar Registro") .AND. SELF:oSFJPE01:server:LockCurrentRecord()
-   RETURN .f.
+   RETU
 ENDIF
 SELF:oSFJPE01:SERVER:SUSPENDNOTIFICATION()
 SELF:oSFJPE01:server:delete()
@@ -156,7 +156,7 @@ ENDIF
 oBUSCA:=XBUSCA{SELF,"Forneca o Item","Digite o Item",Str(Nitem)}
 oBUSCA:SHOW()
 IF ! oBUSCA:lOK
-   RETURN .f.	
+   RETU	
 ENDIF
 nITEM:=Val(oBUSCA:cBUSCA)
 

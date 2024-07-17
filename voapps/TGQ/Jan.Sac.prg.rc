@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// WINDOW JSAC from C:\develop\xsharp\voapps\TGQ\Jan.Sac.prg.rc
+;// WINDOW JSAC from d:\develop\xsharp\voapps\TGQ\Jan.Sac.prg.rc
 #define JSAC_SC_SAC3 100
 #define JSAC_SC_DATA 101
 #define JSAC_SC_SAC 102
@@ -57,7 +57,7 @@ BEGIN
 	CONTROL "", JSAC_PORNUM, "BUTTON", WS_CHILD, 91, 3, 21, 20
 	CONTROL "RNC", JSAC_VERRNC, "BUTTON", WS_CHILD|WS_TABSTOP, 118, 3, 32, 12
 END
-;// WINDOW tabsac_pag1 from C:\develop\xsharp\voapps\TGQ\Jan.Sac.prg.rc
+;// WINDOW tabsac_pag1 from d:\develop\xsharp\voapps\TGQ\Jan.Sac.prg.rc
 #define TABSAC_PAG1_QTL 100
 #define TABSAC_PAG1_QTN 101
 #define TABSAC_PAG1_DOCUMENTO 102
@@ -169,7 +169,7 @@ BEGIN
 	CONTROL "Foto", TABSAC_PAG1_SC_DESTINO2, "STATIC", WS_CHILD|SS_CENTER, 413, 77, 32, 12
 	CONTROL "", TABSAC_PAG1_FOTO, "BUTTON", WS_CHILD|WS_TABSTOP|BS_ICON, 413, 52, 32, 25
 END
-;// WINDOW tabsac_Page2 from C:\develop\xsharp\voapps\TGQ\Jan.Sac.prg.rc
+;// WINDOW tabsac_Page2 from d:\develop\xsharp\voapps\TGQ\Jan.Sac.prg.rc
 #define TABSAC_PAGE2_DESC04 100
 #define TABSAC_PAGE2_DESC03 101
 #define TABSAC_PAGE2_DESC02 102
@@ -195,7 +195,7 @@ BEGIN
 	CONTROL "Solicitaçao Feita ao Setor", TABSAC_PAGE2_FIXEDTEXT1, "STATIC", WS_CHILD, 11, 97, 90, 12
 	CONTROL "Desc04:", TABSAC_PAGE2_NOTSETOR, "EDIT", WS_CHILD|WS_TABSTOP|WS_BORDER|ES_AUTOHSCROLL, 97, 97, 315, 12
 END
-;// WINDOW tabsac_Page3 from C:\develop\xsharp\voapps\TGQ\Jan.Sac.prg.rc
+;// WINDOW tabsac_Page3 from d:\develop\xsharp\voapps\TGQ\Jan.Sac.prg.rc
 #define TABSAC_PAGE3_CONG 100
 #define TABSAC_PAGE3_EQP04 101
 #define TABSAC_PAGE3_EQP03 102
@@ -219,7 +219,7 @@ BEGIN
 	CONTROL "Desc04:", TABSAC_PAGE3_EQP01, "EDIT", WS_CHILD|WS_TABSTOP|WS_BORDER|ES_AUTOHSCROLL, 49, 28, 387, 12
 	CONTROL "Equipe", TABSAC_PAGE3_FIXEDTEXT20, "STATIC", WS_CHILD, 14, 33, 32, 12
 END
-;// WINDOW tabsac_Page4 from C:\develop\xsharp\voapps\TGQ\Jan.Sac.prg.rc
+;// WINDOW tabsac_Page4 from d:\develop\xsharp\voapps\TGQ\Jan.Sac.prg.rc
 #define TABSAC_PAGE4_DATEN 100
 #define TABSAC_PAGE4_SC_DATEN 101
 #define TABSAC_PAGE4_DATOS 102
@@ -253,7 +253,7 @@ BEGIN
 	CONTROL "Os:", TABSAC_PAGE4_SC_OS, "STATIC", WS_CHILD, 14, 35, 20, 10
 	CONTROL "Tipsac:", TABSAC_PAGE4_TIPSAC, "EDIT", WS_CHILD|WS_TABSTOP|WS_BORDER|ES_AUTOHSCROLL, 217, 45, 40, 12
 END
-;// WINDOW tabsac_Page5 from C:\develop\xsharp\voapps\TGQ\Jan.Sac.prg.rc
+;// WINDOW tabsac_Page5 from d:\develop\xsharp\voapps\TGQ\Jan.Sac.prg.rc
 #define TABSAC_PAGE5_SC_PMED01 100
 #define TABSAC_PAGE5_SC_PAMB01 101
 #define TABSAC_PAGE5_SC_PMAO01 102

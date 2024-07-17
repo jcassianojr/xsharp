@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// WINDOW JMAIL from C:\develop\xsharp\voapps\Mail\mail.JAN.prg.rc
+;// WINDOW JMAIL from d:\develop\xsharp\voapps\Mail\mail.JAN.prg.rc
 #define JMAIL_SC_NUMERO 100
 #define JMAIL_SC_ERRO 101
 #define JMAIL_SC_DATA 102

@@ -49,7 +49,7 @@
     <EmitDebugInformation>true</EmitDebugInformation>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>C:\develop\modelos\xsharpexe\debugnet\</OutputPath>
+    <OutputPath>d:\develop\modelos\xsharpexe\debugnet\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>

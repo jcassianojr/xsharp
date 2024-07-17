@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 TEXTBLOCK LAYOUT
 
 FWrite(nHANDLE,PadR("00",2))                01-02 "00" empresa
@@ -68,7 +68,6 @@ LOCAL oOSPRG AS USEREDE
 LOCAL ADAD AS ARRAY
 LOCAL nPOS,nLASTREC AS DWORD
 LOCAL nPERC AS INT
-
 cPLANTA:=""
 cATEPLANTA:=Repl("Z",12)
 IF ! IsNil(SELF:daplanta)
@@ -122,7 +121,7 @@ LOCAL aDAD AS ARRAY
 
  	  FErase(cARQ+".DBF")
    	  FErase(cARQ+".CDX")
-   	  DbCreate(cARQ,aDAD)
+   	  DBCREATE(cARQ,aDAD)
    	  CRIANTX({ZCURINI,cARQ,ZCURDIR})
 	
 	
@@ -152,7 +151,7 @@ IF oOSCRT:nERRO#0
    RETU SELF
 ENDIF
 
-nHANERR:=FCreate("C:\TEMP\X"+DToS(DATE())+".TXT")
+nHANERR:=FCreate("C:\TEMP\X"+DToS(Today())+".TXT")
 oOSPRG:SETORDER(2) //Codigo
 aCOD:={}
 aCTR:={}
@@ -166,7 +165,7 @@ WHILE ! oOSCRT:EoF
     ELSE
         FWrite(nHANERR,"DUP" + PadR(cCODIGO,24))
         FWrite(nHANERR,oOSCRT:FIELDGET("CODIGO"))
-        FWrite(nHANERR,Chr(13)+Chr(10))
+        FWrite(nHANERR,CHR(13)+CHR(10))
     ENDIF
     oOSCRT:SKIP()
 ENDDO
@@ -177,7 +176,7 @@ oOSCRT:SETORDER(1)
 
 SELF:POINTER:=POINTER{POINTERHOURGLASS}
 SetCentury(FALSE)
-nHANDLE:=FCreate("C:\TEMP\"+cINI+DToS(DATE())+".TXT")
+nHANDLE:=FCreate("C:\TEMP\"+cINI+DToS(Today())+".TXT")
 oOSPRG:GOTOP()
 WHILE ! oOSPRG:EoF
    cCODIGO:=AllTrim(TIRAOUT(oOSPRG:FIELDGET("PRODUTO")))
@@ -199,7 +198,7 @@ WHILE ! oOSPRG:EoF
       cCODX:="0001"
       FWrite(nHANERR,"X "+ PadR(cCODIGO,24))
       FWrite(nHANERR,oOSPRG:FIELDGET("PRODUTO"))
-      FWrite(nHANERR,Chr(13)+Chr(10))
+      FWrite(nHANERR,CHR(13)+CHR(10))
       IF cORI="OSPRH"  .OR. cORI= "OSPRI"
       	 IF AScan(aINS,cCODIGO)=0
       	    AAdd(aINS,cCODIGO)
@@ -211,7 +210,7 @@ WHILE ! oOSPRG:EoF
       	    oOSCRT:FIELDPUT("OS",nNUMERO)
       	    FWrite(nHANERR,"INC "+ PadR(cCODIGO,24))
             FWrite(nHANERR,oOSPRG:FIELDGET("PRODUTO"))
-            FWrite(nHANERR,Chr(13)+Chr(10))
+            FWrite(nHANERR,CHR(13)+CHR(10))
          ENDIF
       ENDIF	
    ENDIF
@@ -235,7 +234,7 @@ WHILE ! oOSPRG:EoF
       FWrite(nHANDLE,PadR(cCODY,25))
       FWrite(nHANDLE,PadR(cSTK,35))
       FWrite(nHANDLE,"0")
-      FWrite(nHANDLE,Chr(13)+Chr(10))
+      FWrite(nHANDLE,CHR(13)+CHR(10))
    ENDIF
 
    oOSPRG:Skip()
@@ -250,20 +249,20 @@ SELF:POINTER:=POINTER{POINTERARROW}
 alert("Concluida")	
 
 METHOD IMPDBFELE() 
-LOCAL CARQUIVO,cCODIGO,cDAPLANTA,cPLANTA,cATEPLANTA AS STRING    //ccaminho
+LOCAL CARQUIVO,cCODIGO,cDAPLANTA,cPLANTA,cATEPLANTA AS STRING
 LOCAL cTOTREC AS STRING
 LOCAL oCDIMP AS DBSERVER	
 LOCAL oOSPRH AS USEREDE
 LOCAL aDAD AS ARRAY
-LOCAL dprg,dINI,dFIM AS DATE     //dimp
+LOCAL dprg,dINI,dFIM AS DATE
 LOCAL nVAL AS FLOAT
-LOCAL J,nFIELD AS DWORD       //  nrecnoini        x       nsemanas
+LOCAL J,nFIELD AS DWORD
 LOCAL cNOME,cCODCAM AS STRING
 LOCAL nLASTREC AS DWORD
 LOCAL nPOS AS DWORD
 LOCAL nPERC AS INT
 
-IF ! MDG("Iniciar Importação","Confirmação de Processo")
+IF ! MDG("Iniciar ImportaÃ§Ã£o","ConfirmaÃ§Ã£o de Processo")
    RETU .F.
 ENDIF	
 
@@ -292,7 +291,7 @@ CARQUIVO:=FIXSTR(SELF:CAMINHO)
 
 IF ! File(CARQUIVO)
    alert("Falta Arquivo "+CARQuivo,"Erro Abertura")
-   RETURN .f.
+   RETU
 ENDIF	
 
 IF SELF:ApagarANT
@@ -311,9 +310,9 @@ ENDIF
 
 oCDIMP:=DBSERVER{CARQUIVO,.T.,.T.,"DBFCDX"}
 IF ! oCDIMP:Used
-   alert("Erro abrindo arquivo Importação Tente Mais Tarde")	
+   alert("Erro abrindo arquivo ImportaÃ§Ã£o Tente Mais Tarde")	
    oOSPRH:CLOSE()
-   RETURN .f.
+   RETU
 ENDIF	
 oCDIMP:SuspendNotification()
 
@@ -413,7 +412,7 @@ LOCAL nRECNOINI,nCLIENTE AS DWORD
 
 
 
-IF ! MDG("Iniciar Importação","Confirmação de Processo")
+IF ! MDG("Iniciar ImportaÃ§Ã£o","ConfirmaÃ§Ã£o de Processo")
    RETU .F.
 ENDIF	
 
@@ -448,7 +447,7 @@ cARQUIVO:=SELF:CAMINHO
 
 IF ! File(cARQUIVO)
    alert("Falta Arquivo "+Carquivo,"Erro Abertura")
-   RETURN .f.
+   RETU
 ENDIF	
 
 IF SELF:ApagarANT
@@ -470,9 +469,9 @@ ENDIF
 
 oCDIMP:=DBSERVER{cARQUIVO,.T.,.T.,"DBFCDX"}
 IF ! oCDIMP:Used
-   alert("Erro abrindo arquivo Importação Tente Mais Tarde")	
+   alert("Erro abrindo arquivo ImportaÃ§Ã£o Tente Mais Tarde")	
    oOSPRG:CLOSE()
-   RETURN .f.
+   RETU
 ENDIF	
 oCDIMP:SuspendNotification()
 
@@ -599,11 +598,13 @@ LOCAL oREG AS SQLSelect
 LOCAL nLASTREC,nPOS AS DWORD
 LOCAL nPERC AS INT
 LOCAL nHANDLE,nHANCON
-          
-          nHANDLE:= NIL
-nHANCON:= NIL                           
 
-IF ! MDG("Iniciar Importação","Confirmação de Processo")
+
+nHANDLE:= NIL
+nHANCON:= NIL
+
+
+IF ! MDG("Iniciar ImportaÃ§Ã£o","ConfirmaÃ§Ã£o de Processo")
    RETU .F.
 ENDIF	
 
@@ -657,8 +658,8 @@ ENDIF
 oConn := SQLConnection{}
 
 IF ! oConn:connect("ediw32","sa","")
-   alert("Erro na Conecção")
-   RETURN .f.
+   alert("Erro na ConecÃ§Ã£o")
+   RETU
 ENDIF	
 
 dINI:=CToD(SELF:ODCDINI:TEXTValue)
@@ -749,10 +750,10 @@ nLASTREC:=100
 IF SELF:CHKLOG
    SetCentury(FALSE)
    IF cREF="111"
-      nHANDLE:=FCreate("C:\TEMP\M"+DToS(DATE())+".TXT")
-      nHANCON:=FCreate("C:\TEMP\C"+DToS(DATE())+".TXT")	
+      nHANDLE:=FCreate("C:\TEMP\M"+DToS(Today())+".TXT")
+      nHANCON:=FCreate("C:\TEMP\C"+DToS(Today())+".TXT")	
    ELSE
-      nHANDLE:=FCreate("C:\TEMP\D"+DToS(DATE())+".TXT")	
+      nHANDLE:=FCreate("C:\TEMP\D"+DToS(Today())+".TXT")	
    ENDIF
 ENDIF
 nRECNOINI:=0
@@ -955,7 +956,7 @@ WHILE ! oREG:EOF
              FWrite(nHANDLE,PadR(cCODY,25))
              FWrite(nHANDLE,PadR(cSTK,35))
              FWrite(nHANDLE,"0")
-             FWrite(nHANDLE,Chr(13)+Chr(10))
+             FWrite(nHANDLE,CHR(13)+CHR(10))
           ENDIF
        ELSE
           SELF:oDCproduto:Caption:="Aguarde.."
@@ -990,7 +991,7 @@ LOCAL X AS WORD
 LOCAL oSTMT AS SQLStatement
 
 
-IF ! MDG("Iniciar Importação","Confirmação de Processo")
+IF ! MDG("Iniciar ImportaÃ§Ã£o","ConfirmaÃ§Ã£o de Processo")
    RETU .F.
 ENDIF	
 
@@ -1028,8 +1029,8 @@ ENDIF
 oConn := SQLConnection{}
 
 IF ! oConn:connect("ol_logix")
-   alert("Erro na Conecção")
-   RETURN .f.
+   alert("Erro na ConecÃ§Ã£o")
+   RETU
 ENDIF	
 
 cSQL:= "set isolation to dirty read"
@@ -1099,8 +1100,7 @@ WHILE ! oREG:EOF
                  nCLIENTE:=oMA01:FIELDGET("NUMERO")
               ENDIF
            ENDIF
-           IF Empty(nCLIENTE) //Busca CNPJ     
-           	 NOP
+           IF Empty(nCLIENTE) //Busca CNPJ
        //    	  cPLANTA:=oREG:FIELDGET("cod_cliente")
        //    	  oMA01:SetOrder(8) //codigo interno cliente(logix)
        //    	  oMA01:GOTOP()
@@ -1212,12 +1212,11 @@ METHOD IMPTXTGM(NTIPO)
 LOCAL aDAD AS ARRAY
 LOCAL cARQUIVO,cVAR,cPRODUTO,cPLANTA,cTMP,cCLIOLD,cCLIINT AS STRING
 LOCAL cDAPLANTA,cATEPLANTA,cCLIPRG,cCODNOVO,cCLINOME,cHORA,cDOCA AS STRING
-LOCAL nLIN,nCLIENTE AS DWORD    //y      nposx
+LOCAL nLIN,nCLIENTE AS DWORD
 LOCAL dPROGRAMA,dINI,dFIM AS DATE
 LOCAL oOSPRG,oOSCRT,oMA01,oMS01 AS USEREDE
 LOCAL nQTDE,nHORA
 LOCAL lGRAVA AS LOGIC
-//LOCAL oBUSCA AS xBUSCA
 LOCAL aGMFI AS ARRAY
 LOCAL nOS AS DWORD
 LOCAL cBUSCA,cVARGRV AS STRING
@@ -1226,16 +1225,14 @@ LOCAL nLASTREC AS DWORD
 LOCAL nPOS AS DWORD
 LOCAL nPERC AS INT
 LOCAL nCORRIGE
-//LOCAL nORIGEM
 LOCAL nHANDLE
 LOCAL nHANCON
 LOCAL nFileSize
 LOCAL oVIEW AS JRTF
- 
+
 nHANCON:= NIL
 nCORRIGE:= NIL
 lGRAVA:=.F.
-
 
 cARQIMP:="OSPR2"
 IF NTIPO=2
@@ -1245,7 +1242,7 @@ IF NTIPO=3
    cARQIMP:="OSPRH"	
 ENDIF	
 
-IF ! MDG("Iniciar Importação","Confirmação de Processo")
+IF ! MDG("Iniciar ImportaÃ§Ã£o","ConfirmaÃ§Ã£o de Processo")
    RETU .F.
 ENDIF	
 
@@ -1326,25 +1323,25 @@ SELF:POINTER:=POINTER{POINTERHOURGLASS}
 
 IF NTIPO=1
    cARQEXP:="C:\TEMP\DIARIA_GM_"+DToS(Today())+".TXT"
-   cARQCON:="C:\TEMP\CD_"+DToS(DATE())+".TXT"
+   cARQCON:="C:\TEMP\CD_"+DToS(Today())+".TXT"
    nHANCON:=FCreate(cARQCON)	
    nCORRIGE:=FCreate(cARQEXP)
 ENDIF
 IF NTIPO=2
    cARQEXP:="C:\TEMP\MENSAL_GM_"+DToS(Today())+".TXT"
-   cARQCON:="C:\TEMP\CM_"+DToS(DATE())+".TXT"
+   cARQCON:="C:\TEMP\CM_"+DToS(Today())+".TXT"
    nHANCON:=FCreate(cARQCON)	
    nCORRIGE:=FCreate(cARQEXP)	
 ENDIF
 IF NTIPO=3
    cARQEXP:="C:\TEMP\DIARIA_ELE_"+DToS(Today())+".TXT"
-   cARQCON:="C:\TEMP\CD_ELE_"+DToS(DATE())+".TXT"
+   cARQCON:="C:\TEMP\CD_ELE_"+DToS(Today())+".TXT"
    nHANCON:=FCreate(cARQCON)	
    nCORRIGE:=FCreate(cARQEXP)	
 ENDIF
 
-FWrite(nHANCON,"Arquivo Programacao:"+cARQEXP+Chr(13)+Chr(10))
-FWrite(nHANCON,"Checagem Contrato  :"+cARQcon+Chr(13)+Chr(10))
+FWrite(nHANCON,"Arquivo Programacao:"+cARQEXP+CHR(13)+CHR(10))
+FWrite(nHANCON,"Checagem Contrato  :"+cARQcon+CHR(13)+CHR(10))
 
 nPOS:=0
 nLASTREC:=nLIN
@@ -1457,7 +1454,7 @@ nLASTREC:=nLIN
                     IF cCLIOLD<>cCLIPRG
                        oOSCRT:FIELDPUT("PEDIDOCLI",cCLIPRG)	
        		           FWrite(nHANCON,cPRODUTO+" "+cCODNOVO+" "+cPLANTA+" "+cCLIOLD+"->"+cCLIprg)
-                       FWrite(nHANCON,Chr(13)+Chr(10))
+                       FWrite(nHANCON,CHR(13)+CHR(10))
                     ENDIF
                  ENDIF
                  oOSCRT:FIELDPUTE("codigoint",cCODNOVO)
@@ -1510,7 +1507,7 @@ nLASTREC:=nLIN
                cVARGRV+=SubStr(CVAR,118,36) //posicao 118 a 153 36 caracter
                cvarGRV+=PadR(cCODY,25)
                cvarGRV+=PadR(cSTK,35)
-               cvarGRV+="0"+Chr(13)+Chr(10)
+               cvarGRV+="0"+CHR(13)+CHR(10)
 
 
               FWrite(nCORRIGE,cVARGRV)
@@ -1547,7 +1544,7 @@ LOCAL oOSPRG AS USEREDE
 LOCAL oOSPRA AS USEREDE
 LOCAL dDATAINI,dDATAPRG,dDATAFIM,dPROGRAMA AS DATE
 LOCAL aDAD AS ARRAY
-LOCAL X,nSEMANAS,nPOS,nLASTREC AS DWORD 
+LOCAL X,nSEMANAS,nPOS,nLASTREC AS DWORD
 LOCAL nPERC AS INT
 LOCAL cPRODUTO AS STRING
 LOCAL nQTDE AS FLOAT
@@ -1739,7 +1736,7 @@ LOCAL oBUSCA AS xBUSCA
 
 lGRAVA:=.F.
 
-IF ! MDG("Iniciar Importação","Confirmação de Processo")
+IF ! MDG("Iniciar ImportaÃ§Ã£o","ConfirmaÃ§Ã£o de Processo")
    RETU .F.
 ENDIF	
 
@@ -1748,7 +1745,7 @@ IF SELF:recria
 ENDIF	
 
 
-//nNUMERO:=0   
+//nNUMERO:=0
 nCLIENTE:=0
 //nHORAPRG:=0
 cPRODUTO:=""
@@ -1781,10 +1778,10 @@ ENDIF
 IF SELF:ApagarANT
    ZERADBFREDE("OSPRH")	
 ENDIF
-       	   	
+
 aDAD:={zCURINI,"MA01.DBF",zCURDIR}
 oMA01:=USEREDE{aDAD}
-IF oMA01:nERRO#0   
+IF oMA01:nERRO#0
    RETU SELF
 ENDIF
 
@@ -1794,7 +1791,7 @@ IF oOSCRT:nERRO#0
    oMA01:CLOSE()
    RETU SELF
 ENDIF
-       
+
 aDAD:={zCURINI,"OSPRH.DBF",zCURDIR}
 oOSPRH:=USEREDE{aDAD}
 IF oOSPRH:nERRO#0
@@ -1802,7 +1799,7 @@ IF oOSPRH:nERRO#0
    oOSCRT:CLOSE()
    RETU SELF
 ENDIF
-            	   	
+
 
 cARQ:=MemoRead(cARQUIVO)
 nLIN:=MLCount(cARQ)
@@ -1831,7 +1828,7 @@ FOR Y:=1 TO nLIN
                    ENDIF	
                    cCLIPRG:= oBUSCA:cBUSCA
                 ENDIF
-       	   	   
+
                 oMA01:SetOrder(6) //Sisco
                 IF lGRAVA
    				   oOSCRT:setorder(2) //Produto Cliente
@@ -1878,8 +1875,8 @@ FOR Y:=1 TO nLIN
       	   	   nPEDCLIITE:=Val(cTMP)
 
 
-                IF dPROGRAMA>=dINI .AND. dPROGRAMA<=dFIM
-                   IF cPLANTA>=CDAPLANTA .AND. cPLANTA<=cATEPLANTA	
+                IF dPROGRAMA>=dINI  .AND. dPROGRAMA<=dFIM
+                   IF cPLANTA>=CDAPLANTA  .AND. cPLANTA<=cATEPLANTA	
 				      oOSPRH:APPEND()
 				      oOSPRH:FIELDPUT("NUMERO",oOSPRH:RECNO)
 				      oOSPRH:FIELDPUT("PRODUTO",cPRODUTO)
@@ -2054,7 +2051,7 @@ METHOD ok( )
 LOCAL aDAD AS ARRAY
 LOCAL cARQUIVO,cARQ,cVAR,cPRODUTO,cPLANTA,cTIPO,cTMP,cUNID,cCLIOLD,cCGC AS STRING
 LOCAL cDAPLANTA,cATEPLANTA,cCLIPRG AS STRING
-LOCAL nLIN,Y,nCLIENTE,nPEDCLIITE,nPOS AS DWORD
+LOCAL nLIN,Y,nNUMERO,nCLIENTE,nPEDCLIITE,nPOS AS DWORD
 LOCAL dPROGRAMA,dDATAIMP,dINI,dFIM AS DATE
 LOCAL oOSPRG,oOSCRT,oMA01 AS USEREDE
 LOCAL nQTDE
@@ -2062,7 +2059,7 @@ LOCAL lGRAVA AS LOGIC
 LOCAL oBUSCA AS xBUSCA
 
 
-IF ! MDG("Iniciar Importação","Confirmação de Processo")
+IF ! MDG("Iniciar ImportaÃ§Ã£o","ConfirmaÃ§Ã£o de Processo")
    RETU .F.
 ENDIF	
 
@@ -2071,7 +2068,7 @@ IF SELF:recria
 ENDIF	
 
 
-//nNUMERO:=0
+nNUMERO:=0
 cPRODUTO:=""
 cPLANTA:=""
 dPROGRAMA:=Today()
@@ -2146,7 +2143,7 @@ IF lGRAVA
 ENDIF
 SELF:POINTER:=POINTER{POINTERHOURGLASS}
 cCGC:=SubStr(cVAR,156,14)
-cCGC:=formatcnpj(cCGC)
+cCGC:= formatacnpj(cCGC)
 cPLANTA:="?????"
 nCLIENTE:=0
 oMA01:GOTOP()

@@ -1,4 +1,4 @@
-#region DEFINES
+ï»¿#region DEFINES
 STATIC DEFINE JNECINI_CANCELAR := 104 
 STATIC DEFINE JNECINI_DATA_INICIAL := 110 
 STATIC DEFINE JNECINI_DINI := 100 
@@ -15,22 +15,22 @@ STATIC DEFINE JNECINI_THEFIXEDTEXT10 := 102
 STATIC DEFINE JNECINI_THEFIXEDTEXT9 := 103 
 #endregion
 
-CLASS JNECINI INHERIT DATADIALOG 
+class JNECINI inherit DATADIALOG 
 
-	PROTECT oDCdINI AS DATETIMEPICKER
-	PROTECT oDCSemanas AS RIGHTSLE
-	PROTECT oDCtheFixedText10 AS FIXEDTEXT
-	PROTECT oDCtheFixedText9 AS FIXEDTEXT
-	PROTECT oCCCancelar AS PUSHBUTTON
-	PROTECT oCCOK AS PUSHBUTTON
-	PROTECT oDCtexto AS FIXEDTEXT
-	PROTECT oDCproduto AS FIXEDTEXT
-	PROTECT oDCimpsem AS CHECKBOX
-	PROTECT oDCimpOS AS CHECKBOX
-	PROTECT oDCData_Inicial AS FIXEDTEXT
-	PROTECT oDCimpopsal AS CHECKBOX
-	PROTECT oDCimpavulso AS CHECKBOX
-	PROTECT oDCimpintegrado AS CHECKBOX
+	protect oDCdINI as DATETIMEPICKER
+	protect oDCSemanas as RIGHTSLE
+	protect oDCtheFixedText10 as FIXEDTEXT
+	protect oDCtheFixedText9 as FIXEDTEXT
+	protect oCCCancelar as PUSHBUTTON
+	protect oCCOK as PUSHBUTTON
+	protect oDCtexto as FIXEDTEXT
+	protect oDCproduto as FIXEDTEXT
+	protect oDCimpsem as CHECKBOX
+	protect oDCimpOS as CHECKBOX
+	protect oDCData_Inicial as FIXEDTEXT
+	protect oDCimpopsal as CHECKBOX
+	protect oDCimpavulso as CHECKBOX
+	protect oDCimpintegrado as CHECKBOX
 // 	instance Semanas 
 // 	instance impsem 
 // 	instance impOS 
@@ -43,121 +43,121 @@ CLASS JNECINI INHERIT DATADIALOG
 METHOD Cancelar( ) 
 	SELF:endwindow()
 
-ACCESS impavulso() 
-RETURN SELF:FieldGet(#impavulso)
+access impavulso() 
+return self:FieldGet(#impavulso)
 
 
-ASSIGN impavulso(uValue) 
-SELF:FieldPut(#impavulso, uValue)
-RETURN impavulso := uValue
+assign impavulso(uValue) 
+self:FieldPut(#impavulso, uValue)
+return impavulso := uValue
 
 
-ACCESS impintegrado() 
-RETURN SELF:FieldGet(#impintegrado)
+access impintegrado() 
+return self:FieldGet(#impintegrado)
 
 
-ASSIGN impintegrado(uValue) 
-SELF:FieldPut(#impintegrado, uValue)
-RETURN impintegrado := uValue
+assign impintegrado(uValue) 
+self:FieldPut(#impintegrado, uValue)
+return impintegrado := uValue
 
 
-ACCESS impopsal() 
-RETURN SELF:FieldGet(#impopsal)
+access impopsal() 
+return self:FieldGet(#impopsal)
 
 
-ASSIGN impopsal(uValue) 
-SELF:FieldPut(#impopsal, uValue)
-RETURN impopsal := uValue
+assign impopsal(uValue) 
+self:FieldPut(#impopsal, uValue)
+return impopsal := uValue
 
 
-ACCESS impOS() 
-RETURN SELF:FieldGet(#impOS)
+access impOS() 
+return self:FieldGet(#impOS)
 
 
-ASSIGN impOS(uValue) 
-SELF:FieldPut(#impOS, uValue)
-RETURN impOS := uValue
+assign impOS(uValue) 
+self:FieldPut(#impOS, uValue)
+return impOS := uValue
 
 
-ACCESS impsem() 
-RETURN SELF:FieldGet(#impsem)
+access impsem() 
+return self:FieldGet(#impsem)
 
 
-ASSIGN impsem(uValue) 
-SELF:FieldPut(#impsem, uValue)
-RETURN impsem := uValue
+assign impsem(uValue) 
+self:FieldPut(#impsem, uValue)
+return impsem := uValue
 
 
 CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
 
-SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+self:PreInit(oWindow,iCtlID,oServer,uExtra)
 
 SUPER(oWindow,ResourceID{"JNECINI",_GetInst()},iCtlID)
 
-oDCdINI := DateTimePicker{SELF,ResourceID{JNECINI_DINI,_GetInst()}}
+oDCdINI := DateTimePicker{self,ResourceID{JNECINI_DINI,_GetInst()}}
 oDCdINI:TooltipText := "Digite a Data da Primeira Semana"
 oDCdINI:HyperLabel := HyperLabel{#dINI,NULL_STRING,NULL_STRING,NULL_STRING}
 
-oDCSemanas := rightSle{SELF,ResourceID{JNECINI_SEMANAS,_GetInst()}}
+oDCSemanas := rightSle{self,ResourceID{JNECINI_SEMANAS,_GetInst()}}
 oDCSemanas:TooltipText := "Qtde Semanas"
 oDCSemanas:HyperLabel := HyperLabel{#Semanas,"20",NULL_STRING,NULL_STRING}
 oDCSemanas:FieldSpec := PADRAO_NUM_02{}
 
-oDCtheFixedText10 := FixedText{SELF,ResourceID{JNECINI_THEFIXEDTEXT10,_GetInst()}}
+oDCtheFixedText10 := FixedText{self,ResourceID{JNECINI_THEFIXEDTEXT10,_GetInst()}}
 oDCtheFixedText10:HyperLabel := HyperLabel{#theFixedText10,"OK",NULL_STRING,NULL_STRING}
 
-oDCtheFixedText9 := FixedText{SELF,ResourceID{JNECINI_THEFIXEDTEXT9,_GetInst()}}
+oDCtheFixedText9 := FixedText{self,ResourceID{JNECINI_THEFIXEDTEXT9,_GetInst()}}
 oDCtheFixedText9:HyperLabel := HyperLabel{#theFixedText9,"Retornar",NULL_STRING,NULL_STRING}
 
-oCCCancelar := PushButton{SELF,ResourceID{JNECINI_CANCELAR,_GetInst()}}
+oCCCancelar := PushButton{self,ResourceID{JNECINI_CANCELAR,_GetInst()}}
 oCCCancelar:HyperLabel := HyperLabel{#Cancelar,NULL_STRING,NULL_STRING,NULL_STRING}
 oCCCancelar:Image := ico_sair{}
-oCCCancelar:TooltipText := "Clique aqui Para Cancelar Importação"
+oCCCancelar:TooltipText := "Clique aqui Para Cancelar ImportaÃ§Ã£o"
 
-oCCOK := PushButton{SELF,ResourceID{JNECINI_OK,_GetInst()}}
+oCCOK := PushButton{self,ResourceID{JNECINI_OK,_GetInst()}}
 oCCOK:HyperLabel := HyperLabel{#OK,NULL_STRING,NULL_STRING,NULL_STRING}
 oCCOK:Image := ico_ok{}
-oCCOK:TooltipText := "Clique aqui Para Iniciar Programação"
+oCCOK:TooltipText := "Clique aqui Para Iniciar ProgramaÃ§Ã£o"
 
-oDCtexto := FixedText{SELF,ResourceID{JNECINI_TEXTO,_GetInst()}}
+oDCtexto := FixedText{self,ResourceID{JNECINI_TEXTO,_GetInst()}}
 oDCtexto:HyperLabel := HyperLabel{#texto,NULL_STRING,NULL_STRING,NULL_STRING}
 
-oDCproduto := FixedText{SELF,ResourceID{JNECINI_PRODUTO,_GetInst()}}
+oDCproduto := FixedText{self,ResourceID{JNECINI_PRODUTO,_GetInst()}}
 oDCproduto:HyperLabel := HyperLabel{#produto,NULL_STRING,NULL_STRING,NULL_STRING}
 
-oDCimpsem := CheckBox{SELF,ResourceID{JNECINI_IMPSEM,_GetInst()}}
+oDCimpsem := CheckBox{self,ResourceID{JNECINI_IMPSEM,_GetInst()}}
 oDCimpsem:HyperLabel := HyperLabel{#impsem,"Importar Prg Semanal",NULL_STRING,NULL_STRING}
 oDCimpsem:TooltipText := "Marque Para Importar Prg Semanal"
 
-oDCimpOS := CheckBox{SELF,ResourceID{JNECINI_IMPOS,_GetInst()}}
+oDCimpOS := CheckBox{self,ResourceID{JNECINI_IMPOS,_GetInst()}}
 oDCimpOS:HyperLabel := HyperLabel{#impOS,"Importar OS (Pedidos)",NULL_STRING,NULL_STRING}
 oDCimpOS:TooltipText := "Marque Para Importar OS (Pedidos)"
 
-oDCData_Inicial := FixedText{SELF,ResourceID{JNECINI_DATA_INICIAL,_GetInst()}}
+oDCData_Inicial := FixedText{self,ResourceID{JNECINI_DATA_INICIAL,_GetInst()}}
 oDCData_Inicial:HyperLabel := HyperLabel{#Data_Inicial,"Data Inicial",NULL_STRING,NULL_STRING}
 
-oDCimpopsal := CheckBox{SELF,ResourceID{JNECINI_IMPOPSAL,_GetInst()}}
+oDCimpopsal := CheckBox{self,ResourceID{JNECINI_IMPOPSAL,_GetInst()}}
 oDCimpopsal:HyperLabel := HyperLabel{#impopsal,"Importar Saldo Op",NULL_STRING,NULL_STRING}
 oDCimpopsal:TooltipText := "Marque Para Importar Saldo OP"
 
-oDCimpavulso := CheckBox{SELF,ResourceID{JNECINI_IMPAVULSO,_GetInst()}}
+oDCimpavulso := CheckBox{self,ResourceID{JNECINI_IMPAVULSO,_GetInst()}}
 oDCimpavulso:HyperLabel := HyperLabel{#impavulso,"Importar Saldo Avulsos",NULL_STRING,NULL_STRING}
 oDCimpavulso:TooltipText := "Marque Para Importar Saldo OP"
 
-oDCimpintegrado := CheckBox{SELF,ResourceID{JNECINI_IMPINTEGRADO,_GetInst()}}
+oDCimpintegrado := CheckBox{self,ResourceID{JNECINI_IMPINTEGRADO,_GetInst()}}
 oDCimpintegrado:HyperLabel := HyperLabel{#impintegrado,"Importar Integrados",NULL_STRING,NULL_STRING}
 oDCimpintegrado:TooltipText := "Marque Para Importar Saldo OP"
 
-SELF:Caption := "Iniciar Programação Reserva Necessidade"
-SELF:HyperLabel := HyperLabel{#JNECINI,"Iniciar Programação Reserva Necessidade",NULL_STRING,NULL_STRING}
+self:Caption := "Iniciar ProgramaÃ§Ã£o Reserva Necessidade"
+self:HyperLabel := HyperLabel{#JNECINI,"Iniciar ProgramaÃ§Ã£o Reserva Necessidade",NULL_STRING,NULL_STRING}
 
-IF !IsNil(oServer)
-	SELF:Use(oServer)
-ENDIF
+if !IsNil(oServer)
+	self:Use(oServer)
+endif
 
-SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+self:PostInit(oWindow,iCtlID,oServer,uExtra)
 
-RETURN SELF
+return self
 
 
 METHOD OK( ) 
@@ -165,9 +165,9 @@ LOCAL oPRNEC,oOSPRG,oPRNECI,Oprnect,oPRNECA AS USEREDE
 LOCAL oMS01,oMO02,oOP01,oOP02,oMS03,oMS06,oMT01,oMU01 AS USEMANA5	
 LOCAL aDAD,aQTDE,aDATA,aDATL AS ARRAY
 LOCAL cCODIGO,cVAR,cTIPOENT,cCODCOMP,cUNID AS STRING
-LOCAL X,NOP,nSEMANA,nTOTAL,mBSEQ,mBSSQ AS DWORD 
-LOCAL nQTDESAL,nQTDR AS INT
+LOCAL X,nOP,nSEMANA,nTOTAL,mBSEQ,mBSSQ AS DWORD
 LOCAL nQTDCOMP,nQTDEPRO,nQTDE AS FLOAT
+LOCAL nQTDESAL,nQTDR AS INT
 LOCAL dDATA AS DATE
 LOCAL lSOMA AS LOGIC
 LOCAL KZ AS WORD
@@ -175,7 +175,7 @@ LOCAL lFAZ AS LOGIC
 LOCAL cARQFAZ AS STRING
 
 	
-IF ! MDG("Isto Irá Apagar Prg. Anterior Continuar","Confirme o Processo")
+IF ! MDG("Isto IrÃ¡ Apagar Prg. Anterior Continuar","Confirme o Processo")
    RETU .F.	
 ENDIF
 
@@ -185,8 +185,8 @@ IF nSEMANA=0 .OR. nSEMANA>20
 ENDIF	
 SELF:POINTER:=POINTER{POINTERHOURGLASS}
 
-aDATA:=ARRAY(20)
-aDATL:=ARRAY(20)
+aDATA:=ArrayNew(20)
+aDATL:=ArrayNew(20)
 dDATA:=CToD(SELF:oDCdINI:TextValue)
 FOR X:=1 TO 20
 	aDATA[X]:=dDATA	
@@ -291,7 +291,7 @@ IF SELF:odcimpos:value
    WHILE ! oMO02:EOF
 	  cCODIGO:=oMO02:FIELDGET("CODIGO")
 	  SELF:oDCproduto:Caption:=cCODIGO	
-	  aQTDE:=ARRAY(20)
+	  aQTDE:=ArrayNew(20)
 	  AFill(aQTDE,0)
    	  WHILE AllTrim(cCodigo)=AllTrim(oMO02:FIELDGET("CODIGO")) .AND. ! oMO02:EOF
 		 cUNID:=oMO02:FIELDGET("UNID")
@@ -320,7 +320,7 @@ IF SELF:odcimpos:value
 ENDIF
 
 
-//Importando Programaçao Semanal
+//Importando ProgramaÃ§ao Semanal
 FOR KZ:=1 TO 2
 	lFAZ:=.F.
 	IF KZ=1
@@ -352,7 +352,7 @@ FOR KZ:=1 TO 2
       WHILE ! oOSPRG:EOF
 	    cCODIGO:=oOSPRG:FIELDGET("PRODUTO")
    	    SELF:oDCproduto:Caption:=cCODIGO	
-	    aQTDE:=ARRAY(20)
+	    aQTDE:=ArrayNew(20)
 	    AFill(aQTDE,0)
 	    WHILE AllTrim(cCodigo)=AllTrim(oOSPRG:FIELDGET("PRODUTO")) .AND. ! oOSPRG:EOF
 		   nQTDE:=oOSPRG:FIELDGET("QTDE")
@@ -402,7 +402,7 @@ IF SELF:oDCimpsem:Value
       oPRNEC:CLOSE()	
       oPRNECi:CLOSE()	
       oPRNEct:CLOSE()	
-      RETURN .f.
+      RETU
    ENDIF
    SELF:oDCtexto:Caption:="Checando Programacao Avulsa"
    oPRNECA:GOTOP()
@@ -426,7 +426,7 @@ ENDIF
 
 
 
-//Ordem De Produçao e Saldos
+//Ordem De ProduÃ§ao e Saldos
 IF ODCIMPOPSAL:Value
    aDAD:={zCURINI,"OP01",zCURDIR,aDIR}
    oOP01:=USEMANA5{aDAD}
@@ -435,18 +435,18 @@ IF ODCIMPOPSAL:Value
       oPRNEC:CLOSE()	
       oPRNECi:CLOSE()	
       oPRNEct:CLOSE()	
-      RETURN .f.
+      RETU
    ENDIF
    oOP01:SuspendNotification()
-   SELF:oDCtexto:Caption:="Checando Ordem Produçao"
+   SELF:oDCtexto:Caption:="Checando Ordem ProduÃ§ao"
    oOP01:GOTOP()
    WHILE ! oOP01:EOF
 	 cCODIGO:=AllTrim(oOP01:FIELDGET("CODIGO"))
-	 NOP:=oOP01:FIELDGET("OP")
+	 nOP:=oOP01:FIELDGET("OP")
 	 SELF:oDCproduto:Caption:=cCODIGO	
      oPRNEC:GOTOP()
      IF oPRNEC:SEEK(cCODIGO)
-        oPRNEC:FIELDPUT("OP",NOP)
+        oPRNEC:FIELDPUT("OP",nOP)
         IF ODCIMPOPSAL:Value
        	   IF oOP01:FIELDGET("QSAI")>0
      	  	  nQTDESAL:=INT(oOP01:FIELDGET("QSAI"))	
@@ -619,7 +619,7 @@ oPRNEC:GOTOP()
 WHILE !oPRNEC:EoF	
    cCODIGO:=AllTrim(oPRNEC:FIELDGET("CODIGO"))
    SELF:oDCproduto:Caption:=cCODIGO	
-   aQTDE:=ARRAY(20)
+   aQTDE:=ArrayNew(20)
    AFill(aQTDE,0)
    nQTDESAL:=oPRNEC:FIELDGET("QTDSAL") //Pega Saldo Produto e Processo
    FOR X:=1 TO 20
@@ -781,13 +781,13 @@ METHOD PostInit(oWindow,iCtlID,oServer,uExtra)
 	RETURN NIL
 
 
-ACCESS Semanas() 
-RETURN SELF:FieldGet(#Semanas)
+access Semanas() 
+return self:FieldGet(#Semanas)
 
 
-ASSIGN Semanas(uValue) 
-SELF:FieldPut(#Semanas, uValue)
-RETURN Semanas := uValue
+assign Semanas(uValue) 
+self:FieldPut(#Semanas, uValue)
+return Semanas := uValue
 
 
 END CLASS

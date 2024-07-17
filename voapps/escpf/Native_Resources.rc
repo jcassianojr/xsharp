@@ -1,2 +1,3 @@
-#include "C:\develop\xsharp\voapps\escpf\pf.jan.prg.rc"
-#include "C:\develop\xsharp\voapps\escpf\pf.dia.prg.rc"
+#include "C:\Program Files (x86)\XSharp\\Include\NativeResourceDefines.xh"
+#include "d:\develop\xsharp\voapps\escpf\pf.jan.prg.rc"
+#include "d:\develop\xsharp\voapps\escpf\pf.dia.prg.rc"

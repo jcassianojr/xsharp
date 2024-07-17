@@ -1,2 +1,3 @@
-#include "C:\develop\xsharp\voapps\sistema\sysdialog.prg.rc"
-#include "C:\develop\xsharp\voapps\sistema\sysjan.prg.rc"
+#include "C:\Program Files (x86)\XSharp\\Include\NativeResourceDefines.xh"
+#include "d:\develop\xsharp\voapps\sistema\sysdialog.prg.rc"
+#include "d:\develop\xsharp\voapps\sistema\sysjan.prg.rc"

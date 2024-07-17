@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// WINDOW JTRE from C:\develop\xsharp\voapps\RH\TREIN.Jan.prg.rc
+;// WINDOW JTRE from d:\develop\xsharp\voapps\RH\TREIN.Jan.prg.rc
 #define JTRE_SC_TREIN 100
 #define JTRE_SC_DATACUR 101
 #define JTRE_SC_HORINI 102

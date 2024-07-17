@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// WINDOW JBA01 from C:\develop\xsharp\voapps\Banco\BA01.Jan.prg.rc
+;// WINDOW JBA01 from d:\develop\xsharp\voapps\Banco\BA01.Jan.prg.rc
 #define JBA01_SC_NUMERO 100
 #define JBA01_THEFIXEDTEXT8 101
 #define JBA01_SC_DATA 102

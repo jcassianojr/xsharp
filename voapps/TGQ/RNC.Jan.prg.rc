@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// WINDOW JRNC from C:\develop\xsharp\voapps\TGQ\RNC.Jan.prg.rc
+;// WINDOW JRNC from d:\develop\xsharp\voapps\TGQ\RNC.Jan.prg.rc
 #define JRNC_CODRNC 100
 #define JRNC_RNC 101
 #define JRNC_RB3 102
@@ -72,7 +72,7 @@ BEGIN
 	CONTROL "", JRNC_BUSCANUM, "BUTTON", WS_CHILD|WS_TABSTOP, 51, 8, 21, 20
 	CONTROL "", JRNC_PORNUM, "BUTTON", WS_CHILD, 70, 8, 21, 20
 END
-;// WINDOW TabControl1_Page1 from C:\develop\xsharp\voapps\TGQ\RNC.Jan.prg.rc
+;// WINDOW TabControl1_Page1 from d:\develop\xsharp\voapps\TGQ\RNC.Jan.prg.rc
 #define TABCONTROL1_PAGE1_SC_QTL2 100
 #define TABCONTROL1_PAGE1_SC_QTL 101
 #define TABCONTROL1_PAGE1_FT26 102
@@ -182,7 +182,7 @@ BEGIN
 	CONTROL "Foto", TABCONTROL1_PAGE1_SC_DESTINO2, "STATIC", WS_CHILD|SS_CENTER, 406, 52, 32, 12
 	CONTROL "", TABCONTROL1_PAGE1_FOTO, "BUTTON", WS_CHILD|WS_TABSTOP|BS_ICON, 406, 28, 32, 25
 END
-;// WINDOW TabControl1_Page2 from C:\develop\xsharp\voapps\TGQ\RNC.Jan.prg.rc
+;// WINDOW TabControl1_Page2 from d:\develop\xsharp\voapps\TGQ\RNC.Jan.prg.rc
 #define TABCONTROL1_PAGE2_RB23 100
 #define TABCONTROL1_PAGE2_RB22 101
 #define TABCONTROL1_PAGE2_RB21 102
@@ -266,7 +266,7 @@ BEGIN
 	CONTROL "Devolucao do Cliente", TABCONTROL1_PAGE2_RB10, "BUTTON", WS_CHILD|WS_DISABLED|BS_AUTORADIOBUTTON, 262, 178, 93, 11
 	CONTROL "Outros", TABCONTROL1_PAGE2_OUTROS, "BUTTON", WS_CHILD|WS_DISABLED|BS_AUTORADIOBUTTON, 174, 126, 80, 11
 END
-;// WINDOW TabControl1_Page3 from C:\develop\xsharp\voapps\TGQ\RNC.Jan.prg.rc
+;// WINDOW TabControl1_Page3 from d:\develop\xsharp\voapps\TGQ\RNC.Jan.prg.rc
 #define TABCONTROL1_PAGE3_SC_OBS01 100
 #define TABCONTROL1_PAGE3_SC_RESP 101
 #define TABCONTROL1_PAGE3_SC_DATAR 102
@@ -319,7 +319,7 @@ BEGIN
 	CONTROL "Dist02:", TABCONTROL1_PAGE3_DIST02, "EDIT", WS_CHILD|WS_BORDER|ES_AUTOHSCROLL, 31, 193, 387, 12
 	CONTROL "Laudo", TABCONTROL1_PAGE3_LAUDO, "BUTTON", WS_CHILD|BS_GROUPBOX|WS_GROUP, 7, 127, 458, 34
 END
-;// WINDOW TabControl1_Page4 from C:\develop\xsharp\voapps\TGQ\RNC.Jan.prg.rc
+;// WINDOW TabControl1_Page4 from d:\develop\xsharp\voapps\TGQ\RNC.Jan.prg.rc
 #define TABCONTROL1_PAGE4_CNQ 100
 #define TABCONTROL1_PAGE4_SELHI 101
 #define TABCONTROL1_PAGE4_SELDI 102

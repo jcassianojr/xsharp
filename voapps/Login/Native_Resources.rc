@@ -1,1 +1,2 @@
-#include "C:\develop\xsharp\voapps\Login\Janela_ Login.prg.rc"
+#include "C:\Program Files (x86)\XSharp\\Include\NativeResourceDefines.xh"
+#include "D:\develop\xsharp\voapps\Login\Janela_ Login.prg.rc"

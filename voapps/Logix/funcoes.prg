@@ -221,7 +221,7 @@ oProgWin:SHOW()
 
 lMS01:=.F.
 
-nHANDLE:=FCreate("C:\TEMP\IPI.TXT")
+nHANDLE:=FCreate("d:\TEMP\IPI.TXT")
 
 FOR X:=nINI TO nFIM
 	DO CASE

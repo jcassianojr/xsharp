@@ -1063,7 +1063,7 @@ ENDIF
 
 oServer := SQLSelect{cSQL, oConn }
 IF ! oServer:Execute()
-   MemoWrit("C:\TEMP\cSQL.TXT",cSQL)
+   MemoWrit("d:\TEMP\cSQL.TXT",cSQL)
    alert("Erro na Consulta")
    RETU SELF
 ENDIF	

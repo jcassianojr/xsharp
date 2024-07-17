@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// MENU EMPTYSHELLMENU from C:\develop\xsharp\voapps\Banco\Menus.prg.rc
+;// MENU EMPTYSHELLMENU from d:\develop\xsharp\voapps\Banco\Menus.prg.rc
 #define IDM_EMPTYSHELLMENU "EMPTYSHELLMENU"
 #define IDA_EMPTYSHELLMENU "EMPTYSHELLMENU"
 #define IDM_EMPTYSHELLMENU_Arquivo_ID 15001

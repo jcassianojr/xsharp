@@ -1,4 +1,4 @@
-#region DEFINES
+ï»¿#region DEFINES
 STATIC DEFINE JIMPEDI_ACUMULADA := 132 
 STATIC DEFINE JIMPEDI_ACUSEMANA := 125 
 STATIC DEFINE JIMPEDI_APAGARANT := 112 
@@ -216,17 +216,17 @@ oDCDIMPF:FieldSpec := DATE_FIELD{}
 
 oDCdaplanta := SingleLineEdit{self,ResourceID{JIMPEDI_DAPLANTA,_GetInst()}}
 oDCdaplanta:HyperLabel := HyperLabel{#daplanta,NULL_STRING,NULL_STRING,NULL_STRING}
-oDCdaplanta:TooltipText := "Localização do Arquivo"
+oDCdaplanta:TooltipText := "LocalizaÃ§Ã£o do Arquivo"
 oDCdaplanta:FieldSpec := padrao_CHAR_10{}
 
 oDCateplanta := SingleLineEdit{self,ResourceID{JIMPEDI_ATEPLANTA,_GetInst()}}
 oDCateplanta:HyperLabel := HyperLabel{#ateplanta,NULL_STRING,NULL_STRING,NULL_STRING}
-oDCateplanta:TooltipText := "Localização do Arquivo"
+oDCateplanta:TooltipText := "LocalizaÃ§Ã£o do Arquivo"
 oDCateplanta:FieldSpec := padrao_CHAR_10{}
 
 oDCcaminho := SingleLineEdit{self,ResourceID{JIMPEDI_CAMINHO,_GetInst()}}
 oDCcaminho:HyperLabel := HyperLabel{#caminho,NULL_STRING,NULL_STRING,NULL_STRING}
-oDCcaminho:TooltipText := "Localização do Arquivo"
+oDCcaminho:TooltipText := "LocalizaÃ§Ã£o do Arquivo"
 
 oDCtheFixedText9 := FixedText{self,ResourceID{JIMPEDI_THEFIXEDTEXT9,_GetInst()}}
 oDCtheFixedText9:HyperLabel := HyperLabel{#theFixedText9,"Cancelar",NULL_STRING,NULL_STRING}
@@ -242,21 +242,21 @@ oDCtheFixedText10:HyperLabel := HyperLabel{#theFixedText10,"OK",NULL_STRING,NULL
 oCCok := PushButton{self,ResourceID{JIMPEDI_OK,_GetInst()}}
 oCCok:HyperLabel := HyperLabel{#ok,NULL_STRING,NULL_STRING,NULL_STRING}
 oCCok:Image := ico_ok{}
-oCCok:TooltipText := "Clique Para Inciar a Impotação"
+oCCok:TooltipText := "Clique Para Inciar a ImpotaÃ§Ã£o"
 
 oDCFixedText2 := FixedText{self,ResourceID{JIMPEDI_FIXEDTEXT2,_GetInst()}}
 oDCFixedText2:HyperLabel := HyperLabel{#FixedText2,"Caminho do Arquivo",NULL_STRING,NULL_STRING}
 
 oDCApagarANT := CheckBox{self,ResourceID{JIMPEDI_APAGARANT,_GetInst()}}
 oDCApagarANT:HyperLabel := HyperLabel{#ApagarANT,"Apagar Anterior",NULL_STRING,NULL_STRING}
-oDCApagarANT:TooltipText := "Marque Para Apagar Toda Progamação Importada "
+oDCApagarANT:TooltipText := "Marque Para Apagar Toda ProgamaÃ§Ã£o Importada "
 
 oDCPonto := CheckBox{self,ResourceID{JIMPEDI_PONTO,_GetInst()}}
-oDCPonto:HyperLabel := HyperLabel{#Ponto,"Incluir Pontuação",NULL_STRING,NULL_STRING}
+oDCPonto:HyperLabel := HyperLabel{#Ponto,"Incluir PontuaÃ§Ã£o",NULL_STRING,NULL_STRING}
 oDCPonto:TooltipText := "Ajusta Codigo GM  para  mascaara 99.999.999"
 
 oDCFixedText3 := FixedText{self,ResourceID{JIMPEDI_FIXEDTEXT3,_GetInst()}}
-oDCFixedText3:HyperLabel := HyperLabel{#FixedText3,"Periodo Programação(Data Entrega)",NULL_STRING,NULL_STRING}
+oDCFixedText3:HyperLabel := HyperLabel{#FixedText3,"Periodo ProgramaÃ§Ã£o(Data Entrega)",NULL_STRING,NULL_STRING}
 
 oDCFixedText4 := FixedText{self,ResourceID{JIMPEDI_FIXEDTEXT4,_GetInst()}}
 oDCFixedText4:HyperLabel := HyperLabel{#FixedText4,"Periodo Arquivo (Data Geracao Prg)",NULL_STRING,NULL_STRING}
@@ -313,7 +313,7 @@ oCCExportar := PushButton{self,ResourceID{JIMPEDI_EXPORTAR,_GetInst()}}
 oCCExportar:HyperLabel := HyperLabel{#Exportar,"Exportar",NULL_STRING,NULL_STRING}
 
 oCCAcumulada := PushButton{self,ResourceID{JIMPEDI_ACUMULADA,_GetInst()}}
-oCCAcumulada:HyperLabel := HyperLabel{#Acumulada,"Acumular Evolução",NULL_STRING,NULL_STRING}
+oCCAcumulada:HyperLabel := HyperLabel{#Acumulada,"Acumular EvoluÃ§Ã£o",NULL_STRING,NULL_STRING}
 
 oDCchkstk := CheckBox{self,ResourceID{JIMPEDI_CHKSTK,_GetInst()}}
 oDCchkstk:HyperLabel := HyperLabel{#chkstk,"Importar Estoquista",NULL_STRING,NULL_STRING}

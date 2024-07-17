@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\develop\\xsharp\\voapps\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A86B4612-1E6F-47B7-8225-D35826E59122}|PCP\\PCP.xsproj|D:\\develop\\xsharp\\voapps\\PCP\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|",
+      "RelativeMoniker": "D:0:0:{A86B4612-1E6F-47B7-8225-D35826E59122}|PCP\\PCP.xsproj|solutionrelative:PCP\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58659F61-DC71-4302-8AF2-A70DAABE2944}|Producao\\Producao.xsproj|D:\\develop\\xsharp\\voapps\\Producao\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|",
+      "RelativeMoniker": "D:0:0:{58659F61-DC71-4302-8AF2-A70DAABE2944}|Producao\\Producao.xsproj|solutionrelative:Producao\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|PCP||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Producao||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58659F61-DC71-4302-8AF2-A70DAABE2944}|Producao\\Producao.xsproj|D:\\develop\\xsharp\\voapps\\Producao\\Producao.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
+      "RelativeMoniker": "D:0:0:{58659F61-DC71-4302-8AF2-A70DAABE2944}|Producao\\Producao.xsproj|solutionrelative:Producao\\Producao.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A86B4612-1E6F-47B7-8225-D35826E59122}|PCP\\PCP.xsproj|D:\\develop\\xsharp\\voapps\\PCP\\PCP.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
+      "RelativeMoniker": "D:0:0:{A86B4612-1E6F-47B7-8225-D35826E59122}|PCP\\PCP.xsproj|solutionrelative:PCP\\PCP.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Producao\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
+              "RelativeDocumentMoniker": "Producao\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\Producao\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
+              "RelativeToolTip": "Producao\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-17T18:50:19.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\PCP\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
+              "RelativeDocumentMoniker": "PCP\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\PCP\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
+              "RelativeToolTip": "PCP\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-17T18:49:29.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PCP",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\PCP\\PCP.xsproj",
+              "RelativeDocumentMoniker": "PCP\\PCP.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\PCP\\PCP.xsproj",
+              "RelativeToolTip": "PCP\\PCP.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-17T18:49:07.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Producao",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Producao\\Producao.xsproj",
+              "RelativeDocumentMoniker": "Producao\\Producao.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\Producao\\Producao.xsproj",
+              "RelativeToolTip": "Producao\\Producao.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-17T18:48:57.031Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

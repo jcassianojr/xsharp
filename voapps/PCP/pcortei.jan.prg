@@ -1,4 +1,4 @@
-#region DEFINES
+ï»¿#region DEFINES
 STATIC DEFINE JPCORTEI_APLICACAO := 106 
 STATIC DEFINE JPCORTEI_CODIGO := 119 
 STATIC DEFINE JPCORTEI_COMITEM := 122 
@@ -224,7 +224,7 @@ oDCSC_COMPRAS:HyperLabel := HyperLabel{#SC_COMPRAS,"Compras:",NULL_STRING,NULL_S
 
 oDCNUMERO := SingleLineEdit{self,ResourceID{JPCORTEI_NUMERO,_GetInst()}}
 oDCNUMERO:FieldSpec := padrao_num_08{}
-oDCNUMERO:HyperLabel := HyperLabel{#NUMERO,"Nº",NULL_STRING,"PCORTEI_NUMERO"}
+oDCNUMERO:HyperLabel := HyperLabel{#NUMERO,"NÂº",NULL_STRING,"PCORTEI_NUMERO"}
 oDCNUMERO:BackGround := aBrushes[1]
 oDCNUMERO:Font(aFonts[1], FALSE)
 
@@ -290,7 +290,7 @@ self:Browser := DataBrowser{self}
 oDBNUMERO := DataColumn{padrao_num_08{}}
 oDBNUMERO:Width := 7
 oDBNUMERO:HyperLabel := oDCNUMERO:HyperLabel 
-oDBNUMERO:Caption := "Nº"
+oDBNUMERO:Caption := "NÂº"
 oDBNUMERO:BackGround := aBrushes[1]
 self:Browser:AddColumn(oDBNUMERO)
 

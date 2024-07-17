@@ -1,5 +1,5 @@
 Application = mlibwvo27
-IDEVersion = 1.33
+IDEVersion = 2.20
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -213,9 +213,9 @@ ReferenceProject = 6E02D6F9-C529-4D58-88E8-BF790C7764BA,1,0,FabPaintLibvo
 ReferenceProject = A73BC68D-4D56-44F8-BF58-2B29168F604F,1,0,FabPaintLibControlvo
 [mlibwvo27 Resources]
 [mlibwvo27 Native Resources]
-NativeResourceFile = External , %AppPath%\icones.rc
+NativeResourceFile = %AppPath%\icones.rc
 ResourceFileGuid = 0F9CC557-333E-4983-9B3C-BB8C56B5EA7B
-NativeResourceFile = External , %AppPath%\Input Dlg.rc
+NativeResourceFile = %AppPath%\Input Dlg.rc
 ResourceFileGuid = 69783E0D-A4C7-41C3-87CA-532B61EEA0DC
 [mlibwvo27 License files]
 [mlibwvo27 General Options]
@@ -252,6 +252,10 @@ MemVar=0
 IgnoreStdDefs=0
 Ovf=1
 FOvf=1
+ModernSyntax=0
+NamedArgs=0
+InitLocals=0
+AllowOldStyleAssignments=0
 ResponseOnly=0
 [mlibwvo27 Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111

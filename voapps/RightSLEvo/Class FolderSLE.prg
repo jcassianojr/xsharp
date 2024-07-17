@@ -18,7 +18,7 @@ CLASS FolderSLE INHERIT rightSLE
 //d there.
 //e Initialize this SLE in the owning window's PostInit() as follows:
 //e PostInit(oWindow,iCtlID,oServer,uExtra) CLASS MyDialog
-//e 	SELF:oDCSingleLineEdit1:xStartFolder := "C:\DOWNLOAD\"
+//e 	SELF:oDCSingleLineEdit1:xStartFolder := "d:\DOWNLOAD\"
 //e 	SELF:oDCSingleLineEdit1:xTitle := "My Folder dialog"
 //g Edit Controls
 	
@@ -103,7 +103,7 @@ CLASS pbFolderSLE INHERIT FolderSLE
 //d there.
 //e Initialize this SLE in the owning window's PostInit() as follows:
 //e PostInit(oWindow,iCtlID,oServer,uExtra) CLASS MyDialog
-//e 	SELF:oDCSingleLineEdit1:xStartFolder := "C:\DOWNLOAD\"
+//e 	SELF:oDCSingleLineEdit1:xStartFolder := "d:\DOWNLOAD\"
 //e 	SELF:oDCSingleLineEdit1:xTitle := "My Folder dialog"
 //g Edit Controls
 constructor(oForm,oResID,oPoint,oDim,kStyle,lDataAware) 

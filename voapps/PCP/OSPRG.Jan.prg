@@ -1,4 +1,4 @@
-#region DEFINES
+ï»¿#region DEFINES
 STATIC DEFINE JOSP_BUSCAOV := 109 
 STATIC DEFINE JOSP_DATAIMP := 105 
 STATIC DEFINE JOSP_ESCCOD := 106 
@@ -104,14 +104,14 @@ oDCQTDE:TooltipText := "Qtde para Entrega"
 oDCDATAIMP := DateTimePicker{self,ResourceID{JOSP_DATAIMP,_GetInst()}}
 oDCDATAIMP:FieldSpec := DATE_FIELD{}
 oDCDATAIMP:HyperLabel := HyperLabel{#DATAIMP,"Data Imp",NULL_STRING,NULL_STRING}
-oDCDATAIMP:TooltipText := "Data de Importação da Programação"
+oDCDATAIMP:TooltipText := "Data de ImportaÃ§Ã£o da ProgramaÃ§Ã£o"
 
 oCCesccod := PushButton{self,ResourceID{JOSP_ESCCOD,_GetInst()}}
 oCCesccod:HyperLabel := HyperLabel{#esccod,"...",NULL_STRING,NULL_STRING}
 oCCesccod:TooltipText := "Exibe Lista Produto PCP"
 
 oDCSC_PROGRAMA1 := FixedText{self,ResourceID{JOSP_SC_PROGRAMA1,_GetInst()}}
-oDCSC_PROGRAMA1:HyperLabel := HyperLabel{#SC_PROGRAMA1,"Data Importação",NULL_STRING,NULL_STRING}
+oDCSC_PROGRAMA1:HyperLabel := HyperLabel{#SC_PROGRAMA1,"Data ImportaÃ§Ã£o",NULL_STRING,NULL_STRING}
 
 oCCporov := PushButton{self,ResourceID{JOSP_POROV,_GetInst()}}
 oCCporov:Image := ico_aZ{}
@@ -134,15 +134,15 @@ oCCfoto:HyperLabel := HyperLabel{#foto,NULL_STRING,NULL_STRING,NULL_STRING}
 oCCfoto:Image := ico_camera{}
 
 oDCSC_NUMERO := FixedText{self,ResourceID{JOSP_SC_NUMERO,_GetInst()}}
-oDCSC_NUMERO:HyperLabel := HyperLabel{#SC_NUMERO,"Número:",NULL_STRING,NULL_STRING}
+oDCSC_NUMERO:HyperLabel := HyperLabel{#SC_NUMERO,"NÃºmero:",NULL_STRING,NULL_STRING}
 
 oDCSC_PRODUTO := FixedText{self,ResourceID{JOSP_SC_PRODUTO,_GetInst()}}
 oDCSC_PRODUTO:HyperLabel := HyperLabel{#SC_PRODUTO,"Produto:",NULL_STRING,NULL_STRING}
 
 oDCNUMERO := SingleLineEdit{self,ResourceID{JOSP_NUMERO,_GetInst()}}
 oDCNUMERO:FieldSpec := padrao_NUM_08{}
-oDCNUMERO:HyperLabel := HyperLabel{#NUMERO,"Número:",NULL_STRING,"OSPRG_NUMERO"}
-oDCNUMERO:TooltipText := "Numero Interno Programaçao(Apenas Ref.)"
+oDCNUMERO:HyperLabel := HyperLabel{#NUMERO,"NÃºmero:",NULL_STRING,"OSPRG_NUMERO"}
+oDCNUMERO:TooltipText := "Numero Interno ProgramaÃ§ao(Apenas Ref.)"
 oDCNUMERO:BackGround := aBrushes[1]
 oDCNUMERO:Font(aFonts[1], FALSE)
 
@@ -167,7 +167,7 @@ self:Browser := DataBrowser{self}
 oDBNUMERO := DataColumn{padrao_NUM_08{}}
 oDBNUMERO:Width := 8
 oDBNUMERO:HyperLabel := oDCNUMERO:HyperLabel 
-oDBNUMERO:Caption := "Número:"
+oDBNUMERO:Caption := "NÃºmero:"
 oDBNUMERO:BackGround := aBrushes[1]
 self:Browser:AddColumn(oDBNUMERO)
 

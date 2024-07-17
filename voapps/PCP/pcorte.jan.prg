@@ -1,4 +1,4 @@
-#region DEFINES
+ï»¿#region DEFINES
 STATIC DEFINE JPCORTE_AC := 120 
 STATIC DEFINE JPCORTE_ALTERAR := 158 
 STATIC DEFINE JPCORTE_ANTERIOR := 156 
@@ -563,7 +563,7 @@ oCCTabular:TooltipText := "Exibir Lista Itens"
 
 oCCALTERAR := PushButton{self,ResourceID{JPCORTE_ALTERAR,_GetInst()}}
 oCCALTERAR:HyperLabel := HyperLabel{#ALTERAR,"Alterar",NULL_STRING,NULL_STRING}
-oCCALTERAR:TooltipText := "Editar O Item do Orçamento"
+oCCALTERAR:TooltipText := "Editar O Item do OrÃ§amento"
 
 oCCExcluir := PushButton{self,ResourceID{JPCORTE_EXCLUIR,_GetInst()}}
 oCCExcluir:HyperLabel := HyperLabel{#Excluir,"Excluir",NULL_STRING,NULL_STRING}
@@ -571,7 +571,7 @@ oCCExcluir:TooltipText := "Exclui o Item em destaque"
 
 oCCNOVO := PushButton{self,ResourceID{JPCORTE_NOVO,_GetInst()}}
 oCCNOVO:HyperLabel := HyperLabel{#NOVO,"Novo",NULL_STRING,NULL_STRING}
-oCCNOVO:TooltipText := "Inclui um Item no Orçamento"
+oCCNOVO:TooltipText := "Inclui um Item no OrÃ§amento"
 
 oCCpegMP := PushButton{self,ResourceID{JPCORTE_PEGMP,_GetInst()}}
 oCCpegMP:HyperLabel := HyperLabel{#pegMP,"-->",NULL_STRING,NULL_STRING}

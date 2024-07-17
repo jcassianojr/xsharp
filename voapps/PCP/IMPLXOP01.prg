@@ -1,4 +1,4 @@
-#region DEFINES
+ï»¿#region DEFINES
 STATIC DEFINE IMPLXOP01_CANCELAR := 104 
 STATIC DEFINE IMPLXOP01_D01 := 102 
 STATIC DEFINE IMPLXOP01_D02 := 101 
@@ -8,15 +8,15 @@ STATIC DEFINE IMPLXOP01_THEFIXEDTEXT10 := 105
 STATIC DEFINE IMPLXOP01_THEFIXEDTEXT9 := 103 
 #endregion
 
-CLASS implxop01 INHERIT DATADIALOG 
+class implxop01 inherit DATADIALOG 
 
-	PROTECT oDCD03 AS DATESLE
-	PROTECT oDCD02 AS DATESLE
-	PROTECT oDCD01 AS DATESLE
-	PROTECT oDCtheFixedText9 AS FIXEDTEXT
-	PROTECT oCCCancelar AS PUSHBUTTON
-	PROTECT oDCtheFixedText10 AS FIXEDTEXT
-	PROTECT oCCok AS PUSHBUTTON
+	protect oDCD03 as DATESLE
+	protect oDCD02 as DATESLE
+	protect oDCD01 as DATESLE
+	protect oDCtheFixedText9 as FIXEDTEXT
+	protect oCCCancelar as PUSHBUTTON
+	protect oDCtheFixedText10 as FIXEDTEXT
+	protect oCCok as PUSHBUTTON
 // 	instance D03 
 // 	instance D02 
 // 	instance D01 
@@ -26,77 +26,77 @@ CLASS implxop01 INHERIT DATADIALOG
 METHOD Cancelar( ) 
 	SELF:EndWindow()
 
-ACCESS D01() 
-RETURN SELF:FieldGet(#D01)
+access D01() 
+return self:FieldGet(#D01)
 
 
-ASSIGN D01(uValue) 
-SELF:FieldPut(#D01, uValue)
-RETURN D01 := uValue
+assign D01(uValue) 
+self:FieldPut(#D01, uValue)
+return D01 := uValue
 
 
-ACCESS D02() 
-RETURN SELF:FieldGet(#D02)
+access D02() 
+return self:FieldGet(#D02)
 
 
-ASSIGN D02(uValue) 
-SELF:FieldPut(#D02, uValue)
-RETURN D02 := uValue
+assign D02(uValue) 
+self:FieldPut(#D02, uValue)
+return D02 := uValue
 
 
-ACCESS D03() 
-RETURN SELF:FieldGet(#D03)
+access D03() 
+return self:FieldGet(#D03)
 
 
-ASSIGN D03(uValue) 
-SELF:FieldPut(#D03, uValue)
-RETURN D03 := uValue
+assign D03(uValue) 
+self:FieldPut(#D03, uValue)
+return D03 := uValue
 
 
 CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
 
-SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
+self:PreInit(oWindow,iCtlID,oServer,uExtra)
 
 SUPER(oWindow,ResourceID{"implxop01",_GetInst()},iCtlID)
 
-oDCD03 := DateSle{SELF,ResourceID{IMPLXOP01_D03,_GetInst()}}
+oDCD03 := DateSle{self,ResourceID{IMPLXOP01_D03,_GetInst()}}
 oDCD03:HyperLabel := HyperLabel{#D03,NULL_STRING,NULL_STRING,NULL_STRING}
 oDCD03:FieldSpec := DATE_FIELD{}
 
-oDCD02 := DateSle{SELF,ResourceID{IMPLXOP01_D02,_GetInst()}}
+oDCD02 := DateSle{self,ResourceID{IMPLXOP01_D02,_GetInst()}}
 oDCD02:HyperLabel := HyperLabel{#D02,NULL_STRING,NULL_STRING,NULL_STRING}
 oDCD02:FieldSpec := DATE_FIELD{}
 
-oDCD01 := DateSle{SELF,ResourceID{IMPLXOP01_D01,_GetInst()}}
+oDCD01 := DateSle{self,ResourceID{IMPLXOP01_D01,_GetInst()}}
 oDCD01:HyperLabel := HyperLabel{#D01,NULL_STRING,NULL_STRING,NULL_STRING}
 oDCD01:FieldSpec := DATE_FIELD{}
 
-oDCtheFixedText9 := FixedText{SELF,ResourceID{IMPLXOP01_THEFIXEDTEXT9,_GetInst()}}
+oDCtheFixedText9 := FixedText{self,ResourceID{IMPLXOP01_THEFIXEDTEXT9,_GetInst()}}
 oDCtheFixedText9:HyperLabel := HyperLabel{#theFixedText9,"Cancelar",NULL_STRING,NULL_STRING}
 
-oCCCancelar := PushButton{SELF,ResourceID{IMPLXOP01_CANCELAR,_GetInst()}}
+oCCCancelar := PushButton{self,ResourceID{IMPLXOP01_CANCELAR,_GetInst()}}
 oCCCancelar:HyperLabel := HyperLabel{#Cancelar,NULL_STRING,NULL_STRING,NULL_STRING}
 oCCCancelar:Image := ico_sair{}
 oCCCancelar:TooltipText := "Clique para Cancelar"
 
-oDCtheFixedText10 := FixedText{SELF,ResourceID{IMPLXOP01_THEFIXEDTEXT10,_GetInst()}}
+oDCtheFixedText10 := FixedText{self,ResourceID{IMPLXOP01_THEFIXEDTEXT10,_GetInst()}}
 oDCtheFixedText10:HyperLabel := HyperLabel{#theFixedText10,"OK",NULL_STRING,NULL_STRING}
 
-oCCok := PushButton{SELF,ResourceID{IMPLXOP01_OK,_GetInst()}}
+oCCok := PushButton{self,ResourceID{IMPLXOP01_OK,_GetInst()}}
 oCCok:HyperLabel := HyperLabel{#ok,NULL_STRING,NULL_STRING,NULL_STRING}
 oCCok:Image := ico_ok{}
-oCCok:TooltipText := "Clique Para Inciar a Impotação"
+oCCok:TooltipText := "Clique Para Inciar a ImpotaÃ§Ã£o"
 
-SELF:Caption := "DataDialog Caption"
-SELF:HyperLabel := HyperLabel{#implxop01,"DataDialog Caption",NULL_STRING,NULL_STRING}
+self:Caption := "DataDialog Caption"
+self:HyperLabel := HyperLabel{#implxop01,"DataDialog Caption",NULL_STRING,NULL_STRING}
 
-IF !IsNil(oServer)
-	SELF:Use(oServer)
-ENDIF
+if !IsNil(oServer)
+	self:Use(oServer)
+endif
 
-SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+self:PostInit(oWindow,iCtlID,oServer,uExtra)
 
-RETURN SELF
+return self
 
 
 METHOD ok( ) 
@@ -111,8 +111,8 @@ ZERADBFREDE("OP01")
 oConn := SQLConnection{}
 
 IF ! oConn:connect("ol_logix","","")
-   alert("Erro na Conecção")
-   RETURN .f.
+   alert("Erro na ConecÃ§Ã£o")
+   RETU
 ENDIF	
 
 cSQL:= "set isolation to dirty read"

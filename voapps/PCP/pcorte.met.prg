@@ -1,4 +1,4 @@
-PARTIAL CLASS jpcorte
+ï»¿PARTIAL CLASS jpcorte
 METHOD ALTERAR( ) 
     SELF:oSFjpcortei:SERVER:Commit()	
 	SELF:oSFJPCORTEI:ViewForm()
@@ -75,7 +75,6 @@ ENDIF
 
 METHOD escfor( ) 
 LOCAL oESC AS XESCNUM	
-//LOCAL aFORN AS ARRAY
 oESC:=XESCNUM{SELF,"MB01.DBF"}
 oESC:SHOW()	
 IF Oesc:LOK
@@ -85,7 +84,6 @@ ENDIF
 
 METHOD escforU( ) 
 LOCAL oESC AS XESCNUM	
-//LOCAL aFORN AS ARRAY
 oESC:=XESCNUM{SELF,"MB01.DBF"}
 oESC:SHOW()	
 IF Oesc:LOK
@@ -141,13 +139,13 @@ nCOMITE:=SELF:PEITE
 
 IF nCOMPED=0 .OR. nCOMITE=0
    alert("AR ou Item nao Podem ser zero")
-   RETURN .f.	
+   RETU	
 ENDIF
-
+AltD()
 oConn := SQLConnection{}
 IF ! oConn:connect("ol_logix","","")
-   alert("Erro na Conecção")
-   RETURN .f.
+   alert("Erro na ConecÃ§Ã£o")
+   RETU
 ENDIF	
 
 cSQL:= "set isolation to dirty read"
@@ -183,7 +181,7 @@ METHOD PEGARPRI(nORDEM)
 LOCAL oConn AS SQLConnection
 LOCAL oREG AS SQLSelect
 LOCAL cSQL AS STRING
-//LOCAL nFORN AS DWORD
+LOCAL nFORN AS DWORD
 LOCAL cCGC AS STRING
 LOCAL aDAD AS ARRAY
 LOCAL oMB01 AS USEMANA5
@@ -191,8 +189,8 @@ LOCAL oStmt AS SQLStatement
 
 oConn := SQLConnection{}
 IF ! oConn:connect("ol_logix","","")
-   alert("Erro na Conecção")
-  RETURN .f.
+   alert("Erro na ConecÃ§Ã£o")
+  RETU
 ENDIF	
 
 cSQL:= "set isolation to dirty read"
@@ -392,8 +390,8 @@ LOCAL oStmt AS SQLStatement
 
 oConn := SQLConnection{}
 IF ! oConn:connect("ol_logix","","")
-   alert("Erro na Conecção")
-   RETURN .f.
+   alert("Erro na ConecÃ§Ã£o")
+   RETU
 ENDIF	
 
 cSQL:= "set isolation to dirty read"
@@ -431,18 +429,17 @@ LOCAL nERRO  AS WORD
 LOCAL aDAD,aFORN AS ARRAY
 LOCAL nCOMPED AS DWORD
 LOCAL nCOMITE AS WORD
-//LOCAL nFORNECEDO
 nCOMPED:=SELF:PEPED
 nCOMITE:=SELF:PEITE
 IF nCOMPED=0 .OR. nCOMITE=0
    alert("Pedido ou Item nao Podem ser zero")
-   RETURN .f.	
+   RETU	
 ENDIF
 nERRO:=0
 aDAD:={zCURINI,"MW01.DBF",zCURDIR}
 oMW01:=USEREDE{aDAD}
 IF oMW01:nERRO#0
-   RETURN .f.
+   RETU	
 ENDIF	
 oMW01:GOTOP()
 IF ! oMW01:SEEK(nCOMPED)
@@ -455,16 +452,16 @@ ENDIF
 oMW01:CLOSE()
 IF nERRO=1
    alert("Pedido Nao Encontrado")
-   RETURN .f.
+   RETU
 ENDIF	
 IF nERRO=2
    alert("Fornecedor Diferente do Pedido")	
-   RETURN .f.
+   RETU
 ENDIF	
 aDAD:={zCURINI,"MW02.DBF",zCURDIR}
 oMW02:=USEREDE{aDAD}
 IF oMW02:nERRO#0
-   RETURN .f.	
+   RETU	
 ENDIF	
 oMW02:GOTOP()
 IF ! oMW02:SEEK(Str(nCOMPED,8)+Str(nCOMITE,3))
@@ -479,7 +476,7 @@ ENDIF
 oMW02:CLOSE()
 IF nERRO=3
    alert("Item Pedido Nao Encontrado")
-   RETURN .f.
+   RETU
 ENDIF	
 aFORN:=PEGMU01(SELF:oSFJPCORTEI:SERVER:FIELDGET("CODIGO"),ZCURINI,ZCURDIR)
 IF aFORN[1]=.T.

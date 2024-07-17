@@ -777,7 +777,7 @@ AAdd(aCNV,{"LADEIRA","LD"})
     oSERVER:CLOSE()
 
 
-cARQERR:="C:\TEMP\"+cMIG+"_IMLXERRO.TXT"
+cARQERR:="d:\TEMP\"+cMIG+"_IMLXERRO.TXT"
 nHANDLE:=FCreate(cARQERR)
 
     oSERVER:=USEFOLHA{"FO_PES",.F.}
@@ -2655,7 +2655,7 @@ oStmt := SQLStatement{cSQL,oConn}
 oSTMT:Execute()
 
 
-nHANDLE:=FCreate("C:\TEMP\"+"LXPRGHOR.TXT")
+nHANDLE:=FCreate("d:\TEMP\"+"LXPRGHOR.TXT")
 
 
 cSQL:="SELECT * from funcionario"
@@ -2792,7 +2792,7 @@ oStmt := SQLStatement{cSQL,oConn}
 oSTMT:Execute()
 
 
-nHANDLE:=FCreate("C:\TEMP\"+"LXPRGFER.TXT")
+nHANDLE:=FCreate("d:\TEMP\"+"LXPRGFER.TXT")
 cSQL:="SELECT funcionario.cod_uni_funcio,funcionario.num_matricula,funcionario.nom_completo,funcionario.dat_admis,"
 CSQL+=" aquisitivos.dat_ini_aquis,aquisitivos.dat_fim_aquis,30-(aquisitivos.qtd_dias_gozo+aquisitivos.qtd_dias_abono) AS saldo"
 CSQL+=" FROM funcionario INNER JOIN aquisitivos ON aquisitivos.cod_empresa = funcionario.cod_empresa AND aquisitivos.num_matricula = funcionario.num_matricula"
@@ -3847,19 +3847,19 @@ IF ZREL=4
    RETU SELF
 ENDIF	
 
-cARQEXP:="C:\TEMP\relogio"
-cARQERRO:="C:\TEMP\relogio_erro.txt"
+cARQEXP:="d:\TEMP\relogio"
+cARQERRO:="d:\TEMP\relogio_erro.txt"
 oJANX:=JWREL{SELF}
 IF ZREL=1 .OR. ZREL=5
    oJANX:relogios({99,99,99,99})
 ENDIF	
 IF ZREL=2
   oJANX:relogios({16,18,19,0})
-  cARQEXP:="C:\TEMP\refeicao"
+  cARQEXP:="d:\TEMP\refeicao"
 ENDIF
 IF ZREL=3
   oJANX:relogios({14,15,0,0})
-  cARQEXP:="C:\TEMP\portaria"
+  cARQEXP:="d:\TEMP\portaria"
 ENDIF
 OjanX:show()
 IF ! oJANX:lOK
@@ -3955,7 +3955,7 @@ ENDIF
 
 oServer := SQLSelect{cSQL, oConn }
 IF ! oServer:Execute()
-	MemoWrit("C:\TEMP\cSQL.TXT",cSQL)
+	MemoWrit("d:\TEMP\cSQL.TXT",cSQL)
    alert("Erro na Consulta")
    oCONN:Disconnect()
    RETU SELF

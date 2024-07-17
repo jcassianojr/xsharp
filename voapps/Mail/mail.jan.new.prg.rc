@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// WINDOW JMAILNEW from C:\develop\xsharp\voapps\Mail\mail.jan.new.prg.rc
+;// WINDOW JMAILNEW from d:\develop\xsharp\voapps\Mail\mail.jan.new.prg.rc
 #define JMAILNEW_SC_NUMERO 100
 #define JMAILNEW_SC_ERRO 101
 #define JMAILNEW_SC_DATA 102

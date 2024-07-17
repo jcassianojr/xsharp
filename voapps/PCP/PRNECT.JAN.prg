@@ -1,4 +1,4 @@
-#region DEFINES
+ï»¿#region DEFINES
 STATIC DEFINE JPRNECT_ANTERIOR := 156 
 STATIC DEFINE JPRNECT_BUSCACO := 158 
 STATIC DEFINE JPRNECT_BUSCAMP := 157 
@@ -760,7 +760,7 @@ oCCsair:TooltipText := "Retorna"
 oCCProximo := PushButton{self,ResourceID{JPRNECT_PROXIMO,_GetInst()}}
 oCCProximo:HyperLabel := HyperLabel{#Proximo,NULL_STRING,NULL_STRING,NULL_STRING}
 oCCProximo:Image := ico_next{}
-oCCProximo:TooltipText := "Avança um Codigo"
+oCCProximo:TooltipText := "AvanÃ§a um Codigo"
 
 oCCAnterior := PushButton{self,ResourceID{JPRNECT_ANTERIOR,_GetInst()}}
 oCCAnterior:HyperLabel := HyperLabel{#Anterior,NULL_STRING,NULL_STRING,NULL_STRING}
@@ -1044,8 +1044,8 @@ oDCNOME := SingleLineEdit{self,ResourceID{JPRNECT_NOME,_GetInst()}}
 oDCNOME:FieldSpec := PADRAO_CHAR_100{}
 oDCNOME:HyperLabel := HyperLabel{#NOME,"Codcomp:",NULL_STRING,"PRNECT_CODCOMP"}
 
-self:Caption := "Necessidade Produção"
-self:HyperLabel := HyperLabel{#JPRNECT,"Necessidade Produção",NULL_STRING,NULL_STRING}
+self:Caption := "Necessidade ProduÃ§Ã£o"
+self:HyperLabel := HyperLabel{#JPRNECT,"Necessidade ProduÃ§Ã£o",NULL_STRING,NULL_STRING}
 
 if !IsNil(oServer)
 	self:Use(oServer)

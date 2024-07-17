@@ -1,4 +1,4 @@
-PARTIAL CLASS jpcorte
+ï»¿PARTIAL CLASS jpcorte
 METHOD Peglxdiz1( ) 
 LOCAL oConn AS SQLConnection
 LOCAL oREG AS SQLSelect
@@ -7,13 +7,13 @@ LOCAL oStmt AS SQLStatement
 
 oConn := SQLConnection{}
 IF ! oConn:connect("ol_logix","","")
-   alert("Erro na Conecção")
-   RETURN .f.
+   alert("Erro na ConecÃ§Ã£o")
+   RETU
 ENDIF	
 
 IF Empty(SELF:CODIGOTMP)
    alert("Codigo Nao preenchido"	)
-   RETURN .f.
+   RETU
 ENDIF	
 	
 
@@ -62,7 +62,7 @@ LOCAL cCODIGO AS STRING
 cCODIGO:=TIRAOUT(StrTran(AllTrim(SELF:SERVER:FIELDGET("CODIGO"))," ",""))
 IF Empty(cCODIGO)	
    alert("Codigo Produto Nao Preenchido")	
-   RETURN .f.
+   RETU
 ENDIF	
 OFOTOVIEW:=fotoview{SELF,ZDIRFOTO+cCODIGO+".JPG"}
 OFOTOVIEW:SHOW()

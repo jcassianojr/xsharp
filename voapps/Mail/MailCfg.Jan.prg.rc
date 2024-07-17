@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// WINDOW _JMAILCFG from C:\develop\xsharp\voapps\Mail\MailCfg.Jan.prg.rc
+;// WINDOW _JMAILCFG from d:\develop\xsharp\voapps\Mail\MailCfg.Jan.prg.rc
 #define _JMAILCFG_SC_ERRO 100
 #define _JMAILCFG_SC_ASSUNTO 101
 #define _JMAILCFG_ERRO 102

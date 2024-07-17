@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// WINDOW CDTAB01 from C:\develop\xsharp\voapps\Viabilidade\cd.jan.prg.rc
+;// WINDOW CDTAB01 from d:\develop\xsharp\voapps\Viabilidade\cd.jan.prg.rc
 #define CDTAB01_CLIENTE 100
 #define CDTAB01_CLINOME 101
 #define CDTAB01_CLICOGN 102
@@ -68,7 +68,7 @@ BEGIN
 	CONTROL "Min.Entrega", CDTAB01_SC_CLIENTE2, "STATIC", WS_CHILD, 299, 62, 43, 12
 	CONTROL "Cliente:", CDTAB01_CODCLI, "EDIT", WS_CHILD|WS_TABSTOP|WS_BORDER|ES_AUTOHSCROLL, 53, 18, 45, 12, WS_EX_CLIENTEDGE
 END
-;// WINDOW CDTAB02 from C:\develop\xsharp\voapps\Viabilidade\cd.jan.prg.rc
+;// WINDOW CDTAB02 from d:\develop\xsharp\voapps\Viabilidade\cd.jan.prg.rc
 #define CDTAB02_DATAAUT 100
 #define CDTAB02_PTQT 101
 #define CDTAB02_OUTOBS 102
@@ -116,7 +116,7 @@ BEGIN
 	CONTROL "Outros", CDTAB02_OUT, "BUTTON", WS_CHILD|BS_AUTOCHECKBOX, 9, 67, 37, 12
 	CONTROL "Retrabalho", CDTAB02_RET, "BUTTON", WS_CHILD|BS_AUTOCHECKBOX, 9, 52, 99, 12
 END
-;// WINDOW cde2jan from C:\develop\xsharp\voapps\Viabilidade\cd.jan.prg.rc
+;// WINDOW cde2jan from d:\develop\xsharp\voapps\Viabilidade\cd.jan.prg.rc
 #define CDE2JAN_DATA 100
 #define CDE2JAN_CODIGOINT 101
 #define CDE2JAN_PECA 102
@@ -192,7 +192,7 @@ BEGIN
 	CONTROL "Viabilidade", CDE2JAN_THEFIXEDTEXT31, "STATIC", WS_CHILD, 414, 6, 37, 7
 	CONTROL "...", CDE2JAN_ESCCOD1, "BUTTON", WS_CHILD, 454, 3, 13, 12
 END
-;// WINDOW CDTAB03 from C:\develop\xsharp\voapps\Viabilidade\cd.jan.prg.rc
+;// WINDOW CDTAB03 from d:\develop\xsharp\voapps\Viabilidade\cd.jan.prg.rc
 #define CDTAB03_OUTANXOBS 100
 #define CDTAB03_DATADIM 101
 #define CDTAB03_DATAPRO 102
@@ -228,7 +228,7 @@ BEGIN
 	CONTROL "Amostras", CDTAB03_AMO, "BUTTON", WS_CHILD|BS_AUTOCHECKBOX, 214, 35, 88, 12
 	CONTROL "Outros Anexos", CDTAB03_OUTANX, "BUTTON", WS_CHILD|BS_AUTOCHECKBOX, 9, 50, 83, 12
 END
-;// WINDOW CDTAB04 from C:\develop\xsharp\voapps\Viabilidade\cd.jan.prg.rc
+;// WINDOW CDTAB04 from d:\develop\xsharp\voapps\Viabilidade\cd.jan.prg.rc
 #define CDTAB04_DATAOBS 100
 #define CDTAB04_OBSG01 101
 #define CDTAB04_OBSG02 102
@@ -251,7 +251,7 @@ BEGIN
 	CONTROL "Data", CDTAB04_SC_DATAOBS, "STATIC", WS_CHILD, 15, 16, 32, 12
 	CONTROL "Obs:", CDTAB04_SC_OBSG01, "STATIC", WS_CHILD, 15, 31, 29, 12
 END
-;// WINDOW CDTAB_Page5 from C:\develop\xsharp\voapps\Viabilidade\cd.jan.prg.rc
+;// WINDOW CDTAB_Page5 from d:\develop\xsharp\voapps\Viabilidade\cd.jan.prg.rc
 #define CDTAB_PAGE5_RESPO 100
 #define CDTAB_PAGE5_CARGO 101
 #define CDTAB_PAGE5_FT28 102
@@ -276,7 +276,7 @@ BEGIN
 	CONTROL "Área", CDTAB_PAGE5_FT29, "STATIC", WS_CHILD, 6, 6, 53, 10
 	CONTROL "", CDTAB_PAGE5_SETOR, "COMBOBOX", WS_CHILD|CBS_DROPDOWN|CBS_SORT|WS_VSCROLL, 6, 15, 155, 62
 END
-;// WINDOW CDTAB_Page6 from C:\develop\xsharp\voapps\Viabilidade\cd.jan.prg.rc
+;// WINDOW CDTAB_Page6 from d:\develop\xsharp\voapps\Viabilidade\cd.jan.prg.rc
 #define CDTAB_PAGE6_VALPEC 100
 #define CDTAB_PAGE6_CPAGP 101
 #define CDTAB_PAGE6_CEMB 102

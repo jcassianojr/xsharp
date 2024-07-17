@@ -39,7 +39,7 @@ METHOD Start()
  //  SetDeleted( .T. ) 
     SetCollation("Clipper")     
     
-    //    	 OFOTOVIEW:=fotoview{SELF,"c:\temp\teste.jpg","titulo"}
+    //    	 OFOTOVIEW:=fotoview{SELF,"d:\temp\teste.jpg","titulo"}
       // OFOTOVIEW:SHOW()
 
 lEDITA :=.f.
@@ -64,9 +64,9 @@ lSALVARTF   :=.f.
 
     nPOS:=At(" ",cPARAM)
    IF nPOS=0
-      //cPARAM :="TESTE C:\TEMP\REF00001$SSSSSSSSS$#REFEICAO#SELECT * FROM REFB order by nome"
-      cPARAM :="c:\develop\modelos\wrpt\ita00040.ret$SSSSSSSSS$#MANA5EMP#"
-      //cPARAM :="TESTE c:\temp\viabili\ita00112$SSSSSSSSS$#MANA5VIA#"
+      //cPARAM :="TESTE d:\TEMP\REF00001$SSSSSSSSS$#REFEICAO#SELECT * FROM REFB order by nome"
+      cPARAM :="d:\develop\modelos\wrpt\ita00040.ret$SSSSSSSSS$#MANA5EMP#"
+      //cPARAM :="TESTE d:\temp\viabili\ita00112$SSSSSSSSS$#MANA5VIA#"
    ELSE    
    	  NOP
   	  //alert(cPARAM)

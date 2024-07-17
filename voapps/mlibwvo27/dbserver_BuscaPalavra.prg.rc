@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// WINDOW _BuscaPalavra from C:\develop\xsharp\voapps\mlibwvo27\dbserver_BuscaPalavra.prg.rc
+;// WINDOW _BuscaPalavra from d:\develop\xsharp\voapps\mlibwvo27\dbserver_BuscaPalavra.prg.rc
 #define _BUSCAPALAVRA_LISTBOX1 100
 #define _BUSCAPALAVRA_THEFIXEDTEXT9 101
 #define _BUSCAPALAVRA_CANCELAR 102

@@ -113,12 +113,12 @@ RETURN Transform(xCNPJ,"@R! NN.NNN.NNN/NNNN-99")   // ! Para converter maisculas
 
 FUNCTION CNPJ_Novo(pCNPJ) //, plMsg )
 
-    Local lResult := .t.
-    local soma := 0
-    local dv := ""
-    local digito := 0
-    local num := 0
-    Local wCGC := iif(ValType(pCNPJ)="U", "", pCNPJ)
+    LOCAL lResult := .t.
+    LOCAL soma := 0
+    LOCAL dv := ""
+    LOCAL digito := 0
+    LOCAL num := 0
+    LOCAL wCGC := iif(ValType(pCNPJ)="U", "", pCNPJ)
     LOCAL i := 0
     LOCAL j := 0
     LOCAL Validos := "0123456789" //Incia so numeros mas se for a versao nova muda para alfa+numeros
@@ -134,7 +134,7 @@ FUNCTION CNPJ_Novo(pCNPJ) //, plMsg )
         IF Len(wCGC) < 14
             lResult := .f.
         ELSE
-          FOR i = 1 TO 12
+          FOR i := 1 TO 12
              IF SubStr(wCGC, i, 1) $ "ABCDEFGHIJKLMNOPQRSTUWYXZ"
                 Validos := "0123456789ABCDEFGHIJKLMNOPQRSTUWYXZ"
                 EXIT
@@ -142,9 +142,9 @@ FUNCTION CNPJ_Novo(pCNPJ) //, plMsg )
           NEXT
             dv := ""
             num := 5
-            FOR j = 1 TO 2
+            FOR j := 1 TO 2
                 soma := 0
-                FOR i = 1 TO 12
+                FOR i := 1 TO 12
                     soma += (Asc(SubStr(wCGC, i, 1)) - 48) * num
                     num--
                     IF num == 1
@@ -230,7 +230,8 @@ NEXT X
 //                         12 345 678 9012 34
 FOR X := 1 TO 12
    nCHAR := SubStr(P1,X,1)
-   IF IsAlpha(nCHAR) .OR. IsDigit(nCHAR)
+   IF IsAlpha(nCHAR) .OR. IsDigit(nCHAR) 
+   	  NOP
    ELSE
       ZNERRO:=11
       ZERRO:="CNPJ Invalido - digito Posicao " + Str( X, 1 )
@@ -239,7 +240,8 @@ NEXT X
 
 FOR X := 13 TO 14
   nCHAR := SubStr(P1,X,1)
-   IF IsDigit(nCHAR)
+   IF IsDigit(nCHAR)     
+   	  NOP
    ELSE
       ZNERRO:=12
       ZERRO:="CNPJ Invalido - digito nao numerico Posicao " + Str( X, 1 )

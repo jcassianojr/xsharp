@@ -1,7 +1,7 @@
-//#region DEFINES
-//DEFINE CREATEPROCESS_MANIFEST_RESOURCE_ID := 1
-//DEFINE RC_RT_MANIFEST                     := 24
-//#endregion
+﻿#region DEFINES
+DEFINE CREATEPROCESS_MANIFEST_RESOURCE_ID := 1
+DEFINE RC_RT_MANIFEST                     := 24
+#endregion
 
 [STAThread];
 FUNCTION Start() AS INT
@@ -30,28 +30,28 @@ METHOD Start()
     SetInternational(#CLIPPER)
     SetEpoch(Year(Today())-60)
     SetDateFormat("DD/MM/YYYY")
-  //  SetDeleted( .T. ) 
-    SetCollation("Clipper")     
 
 
- //   EnableAppVisualTheme(TRUE)
-  //  DisableProcessWindowsGhosting()
-   //   SetMaxDynSize( 0x4000000)               // 64MB dynamic RAM instead of 16MB
-  //   DynSize(250)                            // increase the initial GC allocation to 12MB
+
+ //    SetMaxDynSize( 0x4000000)               // 64MB dynamic RAM instead of 16MB
+ //    DynSize(250)                            // increase the initial GC allocation to 12MB
   //   SetMaxRegisteredAxitMethods(64000) //Standard is 16000
- 
 
+
+
+//    EnableXPStyles(TRUE)
+     EnableAppVisualTheme(TRUE)
 
     DisableProcessWindowsGhosting()
 
 	ZCURDIR:= DiskName()+":\"+CurDir()+"\"
 	ZCURINI:=ZCURDIR+"PCP.INI"
-    ZDATA:=Today()      
+    ZDATA:=Today()
        ZEMPRESA:=1
     ZMES:=Month(Today())
     ZANO:=Year(Today())
 
-    
+
 	oWindow := pcpshell{SELF}
 
   cHELP:=PEGINIVAL(ZCURINI,"HELP","CAMINHO")
@@ -59,8 +59,8 @@ METHOD Start()
     IF File(cHELP)
       oWINDOW:HelpDisplay := HelpDisplay{cHELP}	// Hook in help subsystem
       oWINDOW:HelpDisplay:EnableHTMLHelp(TRUE) //true chm //hlp comentar linha
-    ELSE 
-      ALERT("Arquivo de ajuda nao encontrado: "+cHELP)	
+    ELSE
+      alert(cHELP)	
     ENDIF		
 
 	oWINDOW:Caption := "Modulo PCP"

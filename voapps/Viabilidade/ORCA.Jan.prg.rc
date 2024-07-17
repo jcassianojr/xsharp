@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// WINDOW JORCA from C:\develop\xsharp\voapps\Viabilidade\ORCA.Jan.prg.rc
+;// WINDOW JORCA from d:\develop\xsharp\voapps\Viabilidade\ORCA.Jan.prg.rc
 #define JORCA_CLIENTE 100
 #define JORCA_CLINOME 101
 #define JORCA_DATA 102
@@ -61,7 +61,7 @@ BEGIN
 	CONTROL "Alterar", JORCA_ALTERAR, "BUTTON", WS_CHILD, 395, 210, 32, 14
 	CONTROL "Ver Itens", JORCA_TABULAR, "BUTTON", WS_CHILD, 395, 225, 32, 14
 END
-;// WINDOW TabControl1_Page1 from C:\develop\xsharp\voapps\Viabilidade\ORCA.Jan.prg.rc
+;// WINDOW TabControl1_Page1 from d:\develop\xsharp\voapps\Viabilidade\ORCA.Jan.prg.rc
 #define TABCONTROL1_PAGE1_AC 100
 #define TABCONTROL1_PAGE1_CAMBIO 101
 #define TABCONTROL1_PAGE1_REFER 102
@@ -101,7 +101,7 @@ BEGIN
 	CONTROL "Nivel Economico:", TABCONTROL1_PAGE1_SC_DATA1, "STATIC", WS_CHILD, 233, 18, 59, 7
 	CONTROL "Cambio/Rate", TABCONTROL1_PAGE1_SC_DATA2, "STATIC", WS_CHILD, 297, 3, 45, 12
 END
-;// WINDOW TABORCA_Page2 from C:\develop\xsharp\voapps\Viabilidade\ORCA.Jan.prg.rc
+;// WINDOW TABORCA_Page2 from d:\develop\xsharp\voapps\Viabilidade\ORCA.Jan.prg.rc
 #define TABORCA_PAGE2_CPAG 100
 #define TABORCA_PAGE2_CFER 101
 #define TABORCA_PAGE2_CVAL 102
@@ -134,7 +134,7 @@ BEGIN
 	CONTROL "Cond. Pag. Peça:", TABORCA_PAGE2_SC_CPAG, "STATIC", WS_CHILD, 3, 6, 80, 10
 	CONTROL "Prazo:", TABORCA_PAGE2_SC_PRAZO, "STATIC", WS_CHILD, 3, 42, 27, 12
 END
-;// WINDOW TABORCA_Page3 from C:\develop\xsharp\voapps\Viabilidade\ORCA.Jan.prg.rc
+;// WINDOW TABORCA_Page3 from d:\develop\xsharp\voapps\Viabilidade\ORCA.Jan.prg.rc
 #define TABORCA_PAGE3_OBS01 100
 #define TABORCA_PAGE3_OBS02 101
 #define TABORCA_PAGE3_OBS03 102
@@ -163,7 +163,7 @@ BEGIN
 	CONTROL "Obs06:", TABORCA_PAGE3_OBS08, "EDIT", WS_CHILD|WS_TABSTOP|WS_BORDER|ES_AUTOHSCROLL, 27, 89, 387, 12
 	CONTROL "Obs:", TABORCA_PAGE3_SC_OBS01, "STATIC", WS_CHILD, 3, 6, 19, 10
 END
-;// WINDOW TABORCA_Page4 from C:\develop\xsharp\voapps\Viabilidade\ORCA.Jan.prg.rc
+;// WINDOW TABORCA_Page4 from d:\develop\xsharp\voapps\Viabilidade\ORCA.Jan.prg.rc
 #define TABORCA_PAGE4_RESPO 100
 #define TABORCA_PAGE4_CARGO 101
 #define TABORCA_PAGE4_FT28 102

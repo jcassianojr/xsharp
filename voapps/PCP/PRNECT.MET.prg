@@ -1,4 +1,4 @@
-PARTIAL CLASS JPRNECT
+ï»¿PARTIAL CLASS JPRNECT
 METHOD Anterior( ) 
 IF ! SELF:serveR:Bof
    SELF:server:skip(-1)
@@ -117,17 +117,13 @@ METHOD CMDimprimir( )
 SELF:XWRPTGRP("PE","PE")	
 
 METHOD dias( ) 
-//LOCAL X AS DWORD
 LOCAL nDIAS AS FLOAT
-//LOCAL nDINT AS DWORD
-//LOCAL cVAR AS STRING	
-//LOCAL dDATA AS DATE
 LOCAL oBUSCA AS XBUSCA
-oBUSCA:=XBUSCA{SELF,"Digite qtde Dias ","Digite Informação"}
+oBUSCA:=XBUSCA{SELF,"Digite qtde Dias ","Digite InformaÃ§Ã£o"}
 oBUSCA:lMES:=.T.
 oBUSCA:SHOW()
 IF ! oBUSCA:lOK
-   RETURN .f.
+   RETU
 ENDIF	
 ndias:=INT(Val(oBUSCA:cBUSCA))
 IF nDIAS>0

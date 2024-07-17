@@ -1,1 +1,2 @@
-#include "C:\develop\xsharp\voapps\SomaAno\JSOM.prg.rc"
+#include "C:\Program Files (x86)\XSharp\\Include\NativeResourceDefines.xh"
+#include "d:\develop\xsharp\voapps\SomaAno\JSOM.prg.rc"

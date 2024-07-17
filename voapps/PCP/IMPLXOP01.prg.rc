@@ -1,4 +1,4 @@
- implxop01 DIALOGEX  6, 6, 364, 146
+implxop01 DIALOGEX  6, 6, 364, 146
 STYLE	1073741824
 FONT	8, "MS Shell Dlg"
 BEGIN

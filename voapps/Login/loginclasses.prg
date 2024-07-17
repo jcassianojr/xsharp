@@ -181,7 +181,7 @@ IF  ! Empty(cUSUARIO) .AND. ! Empty(cSENHA)
 
 //         cDIRFOTO:=cDIRFOTO+StrZero(LOGONFOLHA,8)+".JPG"
 //         cTITULO:="Usuario:"+logonid+"-"+Str(logonfolha)+"-"+logonnome
-//    	   OFOTOVIEW:=fotoview{SELF,"c:\temp\pic3.BMP","Teste forto"}
+//    	   OFOTOVIEW:=fotoview{SELF,"d:\temp\pic3.BMP","Teste forto"}
 //         OFOTOVIEW:SHOW()
       ELSE
 		IF ! lUSER

@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// WINDOW JPT from C:\develop\xsharp\voapps\RH\PT.JAN.prg.rc
+;// WINDOW JPT from d:\develop\xsharp\voapps\RH\PT.JAN.prg.rc
 #define JPT_SC_TREIN 100
 #define JPT_SC_DATACUR 101
 #define JPT_SC_HORINI 102
