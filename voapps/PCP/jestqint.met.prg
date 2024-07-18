@@ -1,4 +1,4 @@
-ï»¿/*
+/*
 TEXTBLOCK LAYOUT
 
 FWrite(nHANDLE,PadR("00",2))                01-02 "00" empresa
@@ -121,7 +121,7 @@ LOCAL aDAD AS ARRAY
 
  	  FErase(cARQ+".DBF")
    	  FErase(cARQ+".CDX")
-   	  DBCREATE(cARQ,aDAD)
+   	  DbCreate(cARQ,aDAD)
    	  CRIANTX({ZCURINI,cARQ,ZCURDIR})
 	
 	
@@ -165,7 +165,7 @@ WHILE ! oOSCRT:EoF
     ELSE
         FWrite(nHANERR,"DUP" + PadR(cCODIGO,24))
         FWrite(nHANERR,oOSCRT:FIELDGET("CODIGO"))
-        FWrite(nHANERR,CHR(13)+CHR(10))
+        FWrite(nHANERR,Chr(13)+Chr(10))
     ENDIF
     oOSCRT:SKIP()
 ENDDO
@@ -198,7 +198,7 @@ WHILE ! oOSPRG:EoF
       cCODX:="0001"
       FWrite(nHANERR,"X "+ PadR(cCODIGO,24))
       FWrite(nHANERR,oOSPRG:FIELDGET("PRODUTO"))
-      FWrite(nHANERR,CHR(13)+CHR(10))
+      FWrite(nHANERR,Chr(13)+Chr(10))
       IF cORI="OSPRH"  .OR. cORI= "OSPRI"
       	 IF AScan(aINS,cCODIGO)=0
       	    AAdd(aINS,cCODIGO)
@@ -210,7 +210,7 @@ WHILE ! oOSPRG:EoF
       	    oOSCRT:FIELDPUT("OS",nNUMERO)
       	    FWrite(nHANERR,"INC "+ PadR(cCODIGO,24))
             FWrite(nHANERR,oOSPRG:FIELDGET("PRODUTO"))
-            FWrite(nHANERR,CHR(13)+CHR(10))
+            FWrite(nHANERR,Chr(13)+Chr(10))
          ENDIF
       ENDIF	
    ENDIF
@@ -234,7 +234,7 @@ WHILE ! oOSPRG:EoF
       FWrite(nHANDLE,PadR(cCODY,25))
       FWrite(nHANDLE,PadR(cSTK,35))
       FWrite(nHANDLE,"0")
-      FWrite(nHANDLE,CHR(13)+CHR(10))
+      FWrite(nHANDLE,Chr(13)+Chr(10))
    ENDIF
 
    oOSPRG:Skip()
@@ -262,7 +262,7 @@ LOCAL nLASTREC AS DWORD
 LOCAL nPOS AS DWORD
 LOCAL nPERC AS INT
 
-IF ! MDG("Iniciar ImportaÃ§Ã£o","ConfirmaÃ§Ã£o de Processo")
+IF ! MDG("Iniciar Importação","Confirmação de Processo")
    RETU .F.
 ENDIF	
 
@@ -310,7 +310,7 @@ ENDIF
 
 oCDIMP:=DBSERVER{CARQUIVO,.T.,.T.,"DBFCDX"}
 IF ! oCDIMP:Used
-   alert("Erro abrindo arquivo ImportaÃ§Ã£o Tente Mais Tarde")	
+   alert("Erro abrindo arquivo Importação Tente Mais Tarde")	
    oOSPRH:CLOSE()
    RETU
 ENDIF	
@@ -412,7 +412,7 @@ LOCAL nRECNOINI,nCLIENTE AS DWORD
 
 
 
-IF ! MDG("Iniciar ImportaÃ§Ã£o","ConfirmaÃ§Ã£o de Processo")
+IF ! MDG("Iniciar Importação","Confirmação de Processo")
    RETU .F.
 ENDIF	
 
@@ -469,7 +469,7 @@ ENDIF
 
 oCDIMP:=DBSERVER{cARQUIVO,.T.,.T.,"DBFCDX"}
 IF ! oCDIMP:Used
-   alert("Erro abrindo arquivo ImportaÃ§Ã£o Tente Mais Tarde")	
+   alert("Erro abrindo arquivo Importação Tente Mais Tarde")	
    oOSPRG:CLOSE()
    RETU
 ENDIF	
@@ -604,7 +604,7 @@ nHANDLE:= NIL
 nHANCON:= NIL
 
 
-IF ! MDG("Iniciar ImportaÃ§Ã£o","ConfirmaÃ§Ã£o de Processo")
+IF ! MDG("Iniciar Importação","Confirmação de Processo")
    RETU .F.
 ENDIF	
 
@@ -658,7 +658,7 @@ ENDIF
 oConn := SQLConnection{}
 
 IF ! oConn:connect("ediw32","sa","")
-   alert("Erro na ConecÃ§Ã£o")
+   alert("Erro na Conecção")
    RETU
 ENDIF	
 
@@ -956,7 +956,7 @@ WHILE ! oREG:EOF
              FWrite(nHANDLE,PadR(cCODY,25))
              FWrite(nHANDLE,PadR(cSTK,35))
              FWrite(nHANDLE,"0")
-             FWrite(nHANDLE,CHR(13)+CHR(10))
+             FWrite(nHANDLE,Chr(13)+Chr(10))
           ENDIF
        ELSE
           SELF:oDCproduto:Caption:="Aguarde.."
@@ -991,7 +991,7 @@ LOCAL X AS WORD
 LOCAL oSTMT AS SQLStatement
 
 
-IF ! MDG("Iniciar ImportaÃ§Ã£o","ConfirmaÃ§Ã£o de Processo")
+IF ! MDG("Iniciar Importação","Confirmação de Processo")
    RETU .F.
 ENDIF	
 
@@ -1029,7 +1029,7 @@ ENDIF
 oConn := SQLConnection{}
 
 IF ! oConn:connect("ol_logix")
-   alert("Erro na ConecÃ§Ã£o")
+   alert("Erro na Conecção")
    RETU
 ENDIF	
 
@@ -1100,14 +1100,14 @@ WHILE ! oREG:EOF
                  nCLIENTE:=oMA01:FIELDGET("NUMERO")
               ENDIF
            ENDIF
-           IF Empty(nCLIENTE) //Busca CNPJ
+       //    IF Empty(nCLIENTE) //Busca CNPJ
        //    	  cPLANTA:=oREG:FIELDGET("cod_cliente")
        //    	  oMA01:SetOrder(8) //codigo interno cliente(logix)
        //    	  oMA01:GOTOP()
        //       IF oMA01:SEEK(cPLANTA)
        //          nCLIENTE:=oMA01:FIELDGET("NUMERO")
        //       ENDIF
-           ENDIF
+        //   ENDIF
 
 
            OOSPRG:FIELDPUT("PlANTA",cPLANTA)
@@ -1242,7 +1242,7 @@ IF NTIPO=3
    cARQIMP:="OSPRH"	
 ENDIF	
 
-IF ! MDG("Iniciar ImportaÃ§Ã£o","ConfirmaÃ§Ã£o de Processo")
+IF ! MDG("Iniciar Importação","Confirmação de Processo")
    RETU .F.
 ENDIF	
 
@@ -1340,8 +1340,8 @@ IF NTIPO=3
    nCORRIGE:=FCreate(cARQEXP)	
 ENDIF
 
-FWrite(nHANCON,"Arquivo Programacao:"+cARQEXP+CHR(13)+CHR(10))
-FWrite(nHANCON,"Checagem Contrato  :"+cARQcon+CHR(13)+CHR(10))
+FWrite(nHANCON,"Arquivo Programacao:"+cARQEXP+Chr(13)+Chr(10))
+FWrite(nHANCON,"Checagem Contrato  :"+cARQcon+Chr(13)+Chr(10))
 
 nPOS:=0
 nLASTREC:=nLIN
@@ -1454,7 +1454,7 @@ nLASTREC:=nLIN
                     IF cCLIOLD<>cCLIPRG
                        oOSCRT:FIELDPUT("PEDIDOCLI",cCLIPRG)	
        		           FWrite(nHANCON,cPRODUTO+" "+cCODNOVO+" "+cPLANTA+" "+cCLIOLD+"->"+cCLIprg)
-                       FWrite(nHANCON,CHR(13)+CHR(10))
+                       FWrite(nHANCON,Chr(13)+Chr(10))
                     ENDIF
                  ENDIF
                  oOSCRT:FIELDPUTE("codigoint",cCODNOVO)
@@ -1507,7 +1507,7 @@ nLASTREC:=nLIN
                cVARGRV+=SubStr(CVAR,118,36) //posicao 118 a 153 36 caracter
                cvarGRV+=PadR(cCODY,25)
                cvarGRV+=PadR(cSTK,35)
-               cvarGRV+="0"+CHR(13)+CHR(10)
+               cvarGRV+="0"+Chr(13)+Chr(10)
 
 
               FWrite(nCORRIGE,cVARGRV)
@@ -1736,7 +1736,7 @@ LOCAL oBUSCA AS xBUSCA
 
 lGRAVA:=.F.
 
-IF ! MDG("Iniciar ImportaÃ§Ã£o","ConfirmaÃ§Ã£o de Processo")
+IF ! MDG("Iniciar Importação","Confirmação de Processo")
    RETU .F.
 ENDIF	
 
@@ -2051,7 +2051,7 @@ METHOD ok( )
 LOCAL aDAD AS ARRAY
 LOCAL cARQUIVO,cARQ,cVAR,cPRODUTO,cPLANTA,cTIPO,cTMP,cUNID,cCLIOLD,cCGC AS STRING
 LOCAL cDAPLANTA,cATEPLANTA,cCLIPRG AS STRING
-LOCAL nLIN,Y,nNUMERO,nCLIENTE,nPEDCLIITE,nPOS AS DWORD
+LOCAL nLIN,Y,nCLIENTE,nPEDCLIITE,nPOS AS DWORD
 LOCAL dPROGRAMA,dDATAIMP,dINI,dFIM AS DATE
 LOCAL oOSPRG,oOSCRT,oMA01 AS USEREDE
 LOCAL nQTDE
@@ -2059,7 +2059,7 @@ LOCAL lGRAVA AS LOGIC
 LOCAL oBUSCA AS xBUSCA
 
 
-IF ! MDG("Iniciar ImportaÃ§Ã£o","ConfirmaÃ§Ã£o de Processo")
+IF ! MDG("Iniciar Importação","Confirmação de Processo")
    RETU .F.
 ENDIF	
 
@@ -2068,7 +2068,7 @@ IF SELF:recria
 ENDIF	
 
 
-nNUMERO:=0
+
 cPRODUTO:=""
 cPLANTA:=""
 dPROGRAMA:=Today()

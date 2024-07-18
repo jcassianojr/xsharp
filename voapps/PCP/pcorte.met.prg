@@ -1,4 +1,4 @@
-ï»¿PARTIAL CLASS jpcorte
+PARTIAL CLASS jpcorte
 METHOD ALTERAR( ) 
     SELF:oSFjpcortei:SERVER:Commit()	
 	SELF:oSFJPCORTEI:ViewForm()
@@ -144,7 +144,7 @@ ENDIF
 AltD()
 oConn := SQLConnection{}
 IF ! oConn:connect("ol_logix","","")
-   alert("Erro na ConecÃ§Ã£o")
+   alert("Erro na Conecção")
    RETU
 ENDIF	
 
@@ -181,7 +181,6 @@ METHOD PEGARPRI(nORDEM)
 LOCAL oConn AS SQLConnection
 LOCAL oREG AS SQLSelect
 LOCAL cSQL AS STRING
-LOCAL nFORN AS DWORD
 LOCAL cCGC AS STRING
 LOCAL aDAD AS ARRAY
 LOCAL oMB01 AS USEMANA5
@@ -189,7 +188,7 @@ LOCAL oStmt AS SQLStatement
 
 oConn := SQLConnection{}
 IF ! oConn:connect("ol_logix","","")
-   alert("Erro na ConecÃ§Ã£o")
+   alert("Erro na Conecção")
   RETU
 ENDIF	
 
@@ -390,7 +389,7 @@ LOCAL oStmt AS SQLStatement
 
 oConn := SQLConnection{}
 IF ! oConn:connect("ol_logix","","")
-   alert("Erro na ConecÃ§Ã£o")
+   alert("Erro na Conecção")
    RETU
 ENDIF	
 

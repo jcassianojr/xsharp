@@ -121,7 +121,7 @@ FUNCTION CNPJ_Novo(pCNPJ) //, plMsg )
     LOCAL wCGC := iif(ValType(pCNPJ)="U", "", pCNPJ)
     LOCAL i := 0
     LOCAL j := 0
-    LOCAL Validos := "0123456789" //Incia so numeros mas se for a versao nova muda para alfa+numeros
+ //   LOCAL Validos := "0123456789" //Incia so numeros mas se for a versao nova muda para alfa+numeros
 
  //   DEFAULT plMsg := .t.
 
@@ -133,13 +133,15 @@ FUNCTION CNPJ_Novo(pCNPJ) //, plMsg )
     ELSE
         IF Len(wCGC) < 14
             lResult := .f.
-        ELSE
+        ELSE   
+        	/*
           FOR i := 1 TO 12
              IF SubStr(wCGC, i, 1) $ "ABCDEFGHIJKLMNOPQRSTUWYXZ"
                 Validos := "0123456789ABCDEFGHIJKLMNOPQRSTUWYXZ"
                 EXIT
              ENDIF
-          NEXT
+          NEXT 
+          */
             dv := ""
             num := 5
             FOR j := 1 TO 2

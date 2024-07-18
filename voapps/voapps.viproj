@@ -3216,7 +3216,7 @@ ReferenceProject = A0D63BC7-CEC0-4174-BF00-F5E89967A8F3,1,0,RightSLEVO
 [PCP Native Resources]
 [PCP License files]
 [PCP General Options]
-Switches=/nowarn:9025,9032,0165
+Switches=/nowarn:9025,9032,0165,9026
 ZeroArrays=0
 CaseSensitive=0
 ImplicitNamespace=1
