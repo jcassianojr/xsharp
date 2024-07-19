@@ -1,4 +1,4 @@
-#region DEFINES
+﻿#region DEFINES
 STATIC DEFINE JBD01_BAIRRO := 103 
 STATIC DEFINE JBD01_BUSCANUM := 138 
 STATIC DEFINE JBD01_CEP := 106 
@@ -316,7 +316,7 @@ oDCSC_NOME := FixedText{self,ResourceID{JBD01_SC_NOME,_GetInst()}}
 oDCSC_NOME:HyperLabel := HyperLabel{#SC_NOME,"Nome:",NULL_STRING,NULL_STRING}
 
 oDCSC_ENDERECO := FixedText{self,ResourceID{JBD01_SC_ENDERECO,_GetInst()}}
-oDCSC_ENDERECO:HyperLabel := HyperLabel{#SC_ENDERECO,"Endere�o:",NULL_STRING,NULL_STRING}
+oDCSC_ENDERECO:HyperLabel := HyperLabel{#SC_ENDERECO,"Endereço:",NULL_STRING,NULL_STRING}
 
 oDCSC_BAIRRO := FixedText{self,ResourceID{JBD01_SC_BAIRRO,_GetInst()}}
 oDCSC_BAIRRO:HyperLabel := HyperLabel{#SC_BAIRRO,"Bairro:",NULL_STRING,NULL_STRING}

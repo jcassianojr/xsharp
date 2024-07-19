@@ -1,72 +1,34 @@
 DESIGNERSTART = VOWindowEditor,DATAWINDOW,JBC01
-GUID=B610464B-4326-4DED-A45B-1E87E633864F
+GUID=BB421871-CB83-4D40-A566-88DFB66583CC
   Name=JBC01
-  Class=FORM:DATAWINDOW
+  Class=DATAWINDOW
   Caption=Histórico Padrão
   Order=0
-  Left=0
+  Left=61
   Width=583
-  Top=0
+  Top=32
   Height=320
-  Browseindex=0
+  Browseindex=-1
   Browsesize=0
   Subform=No
   Nosave=No
   Deleted=0
-  Styles=1073741824
+  Styles=1082130432
   Exstyles=0
-  Property=HyperLabel=,Histórico Padrão
-  Property=HyperLabel=JBC01
-  Property=InheritClassName=MYDataWindow
+  Property=HyperLabel=,"Histórico Padrão",,
   Property=Menu=STANDARDSHELLMENU
-  Property=ViewAs=#FormView
+  Property=HyperLabel=#JBC01,,,
   Property=ClipperKeys=True
-SavedOnce=1
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
 SUBCONTROLSSTART
-CONTROL=COMBOBOX
-GUID=EB4BB430-E266-483A-8C21-CEC1F680B619
-  Name=ITEM
-  Class=CONTROL:TEXTCONTROL:BASELISTBOX:COMBOBOX
-  Caption=
-  Order=13
-  Left=161
-  Width=250
-  Top=81
-  Height=77
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=0
-  Styles=1075839234
-  Exstyles=0
-  Property=HyperLabel=ITEM
-  Property=FieldSpec=padrao_char_03
 CONTROL=FIXEDTEXT
-GUID=940730B7-8B45-46F2-92C5-27106E3E440C
-  Name=SC_ITEM
-  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
-  Caption=Item:
-  Order=11
-  Left=160
-  Width=40
-  Top=56
-  Height=24
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=0
-  Styles=1073741824
-  Exstyles=0
-  Property=HyperLabel=,Item:
-  Property=HyperLabel=SC_ITEM
-CONTROL=FIXEDTEXT
-GUID=013D054C-F0AF-45DA-B381-4A5C65C346E6
+GUID=818DA125-9BD6-45C9-9B23-E5AFBFEA788C
   Name=SC_ITEM1
-  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Class=FIXEDTEXT
   Caption=Tipo
-  Order=3
+  Order=1
   Left=17
   Width=32
   Top=121
@@ -78,14 +40,15 @@ GUID=013D054C-F0AF-45DA-B381-4A5C65C346E6
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Tipo
-  Property=HyperLabel=SC_ITEM1
+  Property=HyperLabel=,"Tipo",,
+  Property=HyperLabel=#SC_ITEM1,,,
+
 CONTROL=PUSHBUTTON
-GUID=122CABE9-6FD9-43D5-BC9B-68B25AC65426
+GUID=B02FA5DC-344E-4224-B8C3-55E430977B37
   Name=cmdtipo
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
-  Caption=Credito Debito
-  Order=4
+  Class=PUSHBUTTON
+  Caption=(C)redito (D)ebito
+  Order=2
   Left=89
   Width=92
   Top=121
@@ -94,17 +57,18 @@ GUID=122CABE9-6FD9-43D5-BC9B-68B25AC65426
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=0
+  Deleted=2
   Styles=1073807360
   Exstyles=0
-  Property=HyperLabel=,Credito Debito
-  Property=HyperLabel=cmdtipo
+  Property=HyperLabel=,"Credito Debito",,
+  Property=HyperLabel=#cmdtipo,,,
+
 CONTROL=SINGLELINEEDIT
-GUID=FCFAFCD1-92FD-4339-B186-58EAA207CDB7
+GUID=0B9A64D1-3984-498A-999E-C650E80ED520
   Name=TIPO
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
-  Caption=Tipo
-  Order=5
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=3
   Left=53
   Width=30
   Top=121
@@ -116,17 +80,18 @@ GUID=FCFAFCD1-92FD-4339-B186-58EAA207CDB7
   Deleted=0
   Styles=1082196104
   Exstyles=0
-  Property=HyperLabel=,Tipo
-  Property=HyperLabel=TIPO
-  Property=HyperLabel=,,,BA01_NUMERO
   Property=FieldSpec=PADRAO_char_01
-  Property=TooltipText=Tipo Credito Debito
+  Property=HyperLabel=#TIPO,,,
+  Property=HyperLabel=,"Tipo",,
+  Property=HyperLabel=,,,"BA01_NUMERO"
+  Property=TooltipText="Tipo Credito Debito"
+
 CONTROL=PUSHBUTTON
-GUID=6BBF2F2E-CF2D-4ED6-9456-47710AA132DF
+GUID=FA5BCFD3-7DE6-4DC8-881E-1457084423EA
   Name=porov
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=
-  Order=6
+  Order=4
   Left=501
   Width=32
   Top=13
@@ -135,18 +100,19 @@ GUID=6BBF2F2E-CF2D-4ED6-9456-47710AA132DF
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=0
+  Deleted=2
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=porov
-  Property=TooltipText=Clique para ordenar por Numero
   Property=Image=ICO_AZ
+  Property=HyperLabel=#porov,,,
+  Property=TooltipText="Clique para ordenar por Numero"
+
 CONTROL=PUSHBUTTON
-GUID=16493953-F4EA-404B-958F-A0EC4CB5C910
+GUID=2F52C0A1-4F79-401C-AE2F-C95EB4703D71
   Name=buscaov
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=
-  Order=7
+  Order=5
   Left=469
   Width=32
   Top=13
@@ -155,18 +121,19 @@ GUID=16493953-F4EA-404B-958F-A0EC4CB5C910
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=0
+  Deleted=2
   Styles=1073807360
   Exstyles=0
-  Property=HyperLabel=buscaov
-  Property=TooltipText=Clique Para Localizar Por Numero
   Property=Image=ICO_FIND
+  Property=HyperLabel=#buscaov,,,
+  Property=TooltipText="Clique Para Localizar Por Numero"
+
 CONTROL=FIXEDTEXT
-GUID=FDEA0F58-C218-49F3-91CD-313C6A855E25
+GUID=D6ED3E19-7386-4770-96C0-033735B3A6EE
   Name=SC_CODIGO
-  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Class=FIXEDTEXT
   Caption=Código:
-  Order=1
+  Order=-1
   Left=11
   Width=50
   Top=11
@@ -178,14 +145,15 @@ GUID=FDEA0F58-C218-49F3-91CD-313C6A855E25
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Código:
-  Property=HyperLabel=SC_CODIGO
+  Property=HyperLabel=,"Código:",,
+  Property=HyperLabel=#SC_CODIGO,,,
+
 CONTROL=FIXEDTEXT
-GUID=E1A61ECD-3F9A-4BC6-9B81-28B87AFFCBAA
+GUID=A73045FB-DF02-4105-9603-BEE32DF75A09
   Name=SC_DESCRICAO
-  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Class=FIXEDTEXT
   Caption=Descrição:
-  Order=2
+  Order=-1
   Left=91
   Width=70
   Top=11
@@ -197,14 +165,15 @@ GUID=E1A61ECD-3F9A-4BC6-9B81-28B87AFFCBAA
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Descrição:
-  Property=HyperLabel=SC_DESCRICAO
+  Property=HyperLabel=,"Descrição:",,
+  Property=HyperLabel=#SC_DESCRICAO,,,
+
 CONTROL=SINGLELINEEDIT
-GUID=99AE5B2E-0663-4F7A-86A0-A508CB7DDB23
+GUID=B6D828BF-5B04-4154-930B-C313720E28DD
   Name=CODIGO
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
-  Caption=Codigo:
-  Order=8
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
   Left=11
   Width=70
   Top=31
@@ -216,16 +185,17 @@ GUID=99AE5B2E-0663-4F7A-86A0-A508CB7DDB23
   Deleted=0
   Styles=1082196096
   Exstyles=0
-  Property=HyperLabel=,Codigo:
-  Property=HyperLabel=CODIGO
-  Property=HyperLabel=,,,BC01_CODIGO
   Property=FieldSpec=padrao_char_04
+  Property=HyperLabel=#CODIGO,,,
+  Property=HyperLabel=,"Codigo:",,
+  Property=HyperLabel=,,,"BC01_CODIGO"
+
 CONTROL=SINGLELINEEDIT
-GUID=74853DBF-FE91-4298-83C3-A20C15980AA3
+GUID=7E25B9D7-4FCE-44C0-86DD-EF3D50549D08
   Name=DESCRICAO
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
-  Caption=Descricao:
-  Order=9
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
   Left=91
   Width=360
   Top=31
@@ -237,16 +207,17 @@ GUID=74853DBF-FE91-4298-83C3-A20C15980AA3
   Deleted=0
   Styles=1082196096
   Exstyles=0
-  Property=HyperLabel=,Descricao:
-  Property=HyperLabel=DESCRICAO
-  Property=HyperLabel=,,,BC01_DESCRICAO
   Property=FieldSpec=padrao_char_35
+  Property=HyperLabel=#DESCRICAO,,,
+  Property=HyperLabel=,"Descricao:",,
+  Property=HyperLabel=,,,"BC01_DESCRICAO"
+
 CONTROL=FIXEDTEXT
-GUID=B1EA03EE-82AF-4A22-A335-8CAA448D2169
+GUID=DF4D212C-1B62-4730-8E71-8BF5E672C99A
   Name=SC_VALOR
-  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Class=FIXEDTEXT
   Caption=Valor:
-  Order=10
+  Order=-1
   Left=11
   Width=40
   Top=61
@@ -258,14 +229,35 @@ GUID=B1EA03EE-82AF-4A22-A335-8CAA448D2169
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Valor:
-  Property=HyperLabel=SC_VALOR
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=#SC_VALOR,,,
+
+CONTROL=FIXEDTEXT
+GUID=91233D9A-942F-4376-9B06-94394EDA2575
+  Name=SC_ITEM
+  Class=FIXEDTEXT
+  Caption=Item:
+  Order=-1
+  Left=161
+  Width=40
+  Top=61
+  Height=30
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Item:",,
+  Property=HyperLabel=#SC_ITEM,,,
+
 CONTROL=SINGLELINEEDIT
-GUID=046761E2-89A4-45F4-9223-73E10862530B
+GUID=F6FDF743-AA3C-4687-A544-0E2987E7D8BF
   Name=VALOR
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
-  Caption=Valor:
-  Order=12
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
   Left=9
   Width=140
   Top=77
@@ -277,12 +269,32 @@ GUID=046761E2-89A4-45F4-9223-73E10862530B
   Deleted=0
   Styles=1082196096
   Exstyles=0
-  Property=HyperLabel=,Valor:
-  Property=HyperLabel=VALOR
-  Property=HyperLabel=,,,BC01_VALOR
   Property=FieldSpec=padrao_num_12_2
+  Property=HyperLabel=#VALOR,,,
+  Property=HyperLabel=,"Valor:",,
+  Property=HyperLabel=,,,"BC01_VALOR"
   Property=InheritClassName=rightSle
+
+CONTROL=COMBOBOX
+GUID=36FF02AE-71AC-45D2-A6ED-66512A337B31
+  Name=ITEM
+  Class=COMBOBOX
+  Caption=
+  Order=-1
+  Left=161
+  Width=250
+  Top=81
+  Height=77
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1075839234
+  Exstyles=0
+  Property=FieldSpec=padrao_char_03
+  Property=HyperLabel=#ITEM,,,
+
 SUBCONTROLSEND
 DESIGNEREND = JBC01
-
 

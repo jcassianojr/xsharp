@@ -1,21 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
   <PropertyGroup>
-    <ProjectGuid>80E89D2A-21F2-45C3-AC2C-B6B97E76903C</ProjectGuid>
+    <ProjectGuid>0599A978-2A64-449C-B367-757F6A1F9EB8</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Banco</RootNamespace>
     <AssemblyName>Banco</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <Name>Banco</Name>
-    <Nologo>true</Nologo>
-    <GenerateFullPaths>true</GenerateFullPaths>
     <Dialect>VO</Dialect>
     <LB>true</LB>
     <OutputName>Banco</OutputName>
-    <StartupObject />
-    <ApplicationIcon />
     <Prefer32Bit>True</Prefer32Bit>
     <VulcanCompatibleResources>False</VulcanCompatibleResources>
     <AZ>false</AZ>
@@ -44,83 +39,71 @@
     <Undeclared>false</Undeclared>
     <NoStandardDefs>false</NoStandardDefs>
     <EnforceSelf>True</EnforceSelf>
-    <IncludePaths />
     <TargetFrameworkProfile />
+    <StartupObject />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
     <PlatformTarget>x86</PlatformTarget>
-    <EmitDebugInformation>true</EmitDebugInformation>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
-    <UseSharedCompilation>true</UseSharedCompilation>
-    <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
-    <WarningLevel>4</WarningLevel>
-    <PPO>false</PPO>
+    <DisabledWarnings>9032;9043;165;649;9025;9026;9076;9020;9021</DisabledWarnings>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Prefer32Bit>False</Prefer32Bit>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <OutputPath>d:\develop\modelos\xsharpexe\debugnet\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Label="Configuration">
     <PlatformTarget>x86</PlatformTarget>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <EmitDebugInformation>false</EmitDebugInformation>
-    <DebugType>pdbonly</DebugType>
-    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <UseSharedCompilation>true</UseSharedCompilation>
     <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
-    <PPO>false</PPO>
-    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
   </PropertyGroup>
   <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\mlibwvo27\mlibwvo27.xsproj">
-      <Name>mlibwvo27</Name>
-      <Project>{4bf79407-1c84-4cb1-88e6-d3f435490afb}</Project>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <ProjectReference Include="..\FabPaintLibvo\FabPaintLibvo.xsproj">
+      <Name>FabPaintLibvo</Name>
+      <Project>{9FC4CB86-7117-45B3-8676-6FB31A5F0E2F}</Project>
       <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
       <Name>RightSLEvo</Name>
-      <Project>{e1a8daf4-3bda-434a-9753-2b6f30230b1e}</Project>
+      <Project>{BF7FDCFA-3356-48A5-B81C-5E6C9F6DD690}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <Reference Include="mscorlib" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
     <ProjectReference Include="..\esccodmon\esccodmon.xsproj">
       <Name>esccodmon</Name>
-      <Project>{B70C2FCF-2F9E-45B9-B780-D9A82056831C}</Project>
+      <Project>{96B42B47-AE2C-4AB4-AB80-17156ECBFD35}</Project>
       <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\escnumnom\escnumnom.xsproj">
       <Name>escnumnom</Name>
-      <Project>{CBA4B424-C0DE-4F86-9D50-F426DD7EA099}</Project>
+      <Project>{9AAB65DF-B9AF-4FF1-96EF-434CC3193401}</Project>
       <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\Logix\Logix.xsproj">
       <Name>Logix</Name>
-      <Project>{3B620C79-B95A-4A87-ADD7-B59A97BE78C1}</Project>
+      <Project>{40AAC92E-7F64-4DAF-BD36-E27B09D8973F}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\mlibwvo27\mlibwvo27.xsproj">
+      <Name>mlibwvo27</Name>
+      <Project>{4B2C54F9-9603-4BED-9E24-3241C8F36F32}</Project>
       <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\Login\Login.xsproj">
       <Name>Login</Name>
-      <Project>{C74D47F3-832A-4082-8F2D-17E303CBB3DA}</Project>
+      <Project>{E6F7F5F0-862D-4061-B41D-1981092EADC0}</Project>
       <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\checagem\checagem.xsproj">
       <Name>checagem</Name>
-      <Project>{1988C1AC-F19D-4008-BDCB-6050900181C8}</Project>
+      <Project>{067BD226-ECDE-4D98-AB39-1CE617D65CE5}</Project>
       <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\Mail\Mail.xsproj">
       <Name>Mail</Name>
-      <Project>{82484E5D-4FD7-4F59-9077-821F3F7C750B}</Project>
+      <Project>{D07C95BF-E327-4264-8135-1ED6CB466A3F}</Project>
       <Private>True</Private>
     </ProjectReference>
     <Reference Include="XSharp.Core">
@@ -170,9 +153,6 @@
     <Compile Include="Start.prg">
       <SubType>Code</SubType>
     </Compile>
-    <NativeResource Include="Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc">
-      <DependentUpon>Start.prg</DependentUpon>
-    </NativeResource>
     <NativeResource Include="Start.VS_VERSION_INFO.rc">
       <DependentUpon>Start.prg</DependentUpon>
     </NativeResource>

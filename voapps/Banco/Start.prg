@@ -1,14 +1,13 @@
-//#region DEFINES
-//DEFINE CREATEPROCESS_MANIFEST_RESOURCE_ID := 1
-//DEFINE RC_RT_MANIFEST                     := 24
-//#endregion
-//USING System.Net
+﻿#region DEFINES
+DEFINE CREATEPROCESS_MANIFEST_RESOURCE_ID := 1
+DEFINE RC_RT_MANIFEST                     := 24
+#endregion
+
 [STAThread];
 FUNCTION Start() AS INT
 	LOCAL oXApp AS XApp
 	TRY
-		oXApp := XApp{}    
-		
+		oXApp := XApp{}
 		oXApp:Start()
 	CATCH oException AS Exception
 		ErrorDialog(oException)
@@ -20,12 +19,7 @@ METHOD Start()
 	LOCAL oWindow AS BCOSHELL //StandardShellWindow
 	LOCAL oLogonDialog AS LogonDialog
 	LOCAL oMAIL AS XJMAIL	
-	LOCAL aDAD,aLOGIN AS ARRAY  
-//	LOCAL cHTML,cTEXTO AS STRING  
-//	LOCAL cRETU AS STRING    
-	
-//	LOCAL oCHAVE AS SHA256
-//    LOCAL cCHAVE AS STRING
+	LOCAL aDAD,aLOGIN AS ARRAY
 	
 	SetExclusive(FALSE)
 	SetDeleted(TRUE)
@@ -35,29 +29,22 @@ METHOD Start()
     SetAnsi(FALSE)	//       Setar  Ansi  falso Compatibilidade programa em dos(Acentuacao)
     SetInternational(#CLIPPER)
     SetEpoch(Year(Today())-60)
-    SetDateFormat("DD/MM/YYYY")      
-    
-    
- //    oCHAVE:=  SHA256{}
- //   cCHAVE :=Ochave:GetSHA256('arroz e feijao')
-    
- //   alert(cCHAVE)
-    
+    SetDateFormat("DD/MM/YYYY")
+    SetDeleted( .T. )
+
+    EnableAppVisualTheme(TRUE)
+    DisableProcessWindowsGhosting()
 
 	ZCURDIR:= DiskName()+":\"+CurDir()+"\"
 	ZCURINI:=ZCURDIR+"BANCO.INI"
     ZDATA:=Today()
-     ZEMPRESA:=1
-    ZMES:=Month(Today())
-    ZANO:=Year(Today())  
-    
-    
-              
 
+    ZEMPRESA:=1
+    ZMES:=Month(Today())
+    ZANO:=Year(Today())
 	oWindow := BCOSHELL{SELF}
 	
     cHELP:=PEGINIVAL(ZCURINI,"HELP","CAMINHO")
-//    cHELP+="BANCO.chm"       //hlp nao funciona em versao novos sistema operacional migrados para chm
     IF File(cHELP)
       oWINDOW:HelpDisplay := HelpDisplay{cHELP}	// Hook in help subsystem
       oWINDOW:HelpDisplay:EnableHTMLHelp(TRUE) //true chm //hlp comentar linha
@@ -105,7 +92,7 @@ ELSE
         oMAIL:SHOW()		
 	    oWindow:Show(SHOWZOOMED)//	oWindow:Show()		
   	    oWindow:statusBar:SetText (Str(ZFOLHA,8)+"-"+ZUSER, #SBUser)
-	    oWINDOW:Caption := "M�dulo BANCO  Empresa: "+StrZero(Zempresa,3)+" Competencia: "+StrZero(Zmes,2)+"/"+StrZero(Zano,4)
+	    oWINDOW:Caption := "Módulo BANCO  Empresa: "+StrZero(Zempresa,3)+" Competencia: "+StrZero(Zmes,2)+"/"+StrZero(Zano,4)
 	    SELF:Exec()
     ELSE
 	   // Exit program

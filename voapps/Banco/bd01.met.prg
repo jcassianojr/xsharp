@@ -1,4 +1,4 @@
-CLASS XJBD01 INHERIT JBD01	
+﻿CLASS XJBD01 INHERIT JBD01	
 
 METHOD APPEND() 
 LOCAL nNUMERO AS DWORD
@@ -13,7 +13,7 @@ RETURN   .T.
 METHOD buscanum( ) 
 	SELF:KEYFIND()
 //LOCAL oBUSCA AS XBUSCA
-//oBUSCA:=XBUSCA{SELF,"Localizar Contato","Digite N�mero Contato"}
+//oBUSCA:=XBUSCA{SELF,"Localizar Contato","Digite Número Contato"}
 //oBUSCA:lMES:=.T.
 //oBUSCA:SHOW()
 //IF oBUSCA:lOK

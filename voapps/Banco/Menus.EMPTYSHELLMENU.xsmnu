@@ -12,6 +12,7 @@
     <MenuItems>
       <MenuItem>
         <Caption>&amp;Arquivo</Caption>
+        <OriginalDefineValue>28542</OriginalDefineValue>
         <EventName>File</EventName>
         <ID>
         </ID>
@@ -30,6 +31,7 @@
         <MenuItems>
           <MenuItem>
             <Caption>Lançamentos</Caption>
+            <OriginalDefineValue>28543</OriginalDefineValue>
             <EventName>XJBA01</EventName>
             <ID>
             </ID>
@@ -49,6 +51,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Lançamentos so Compentencia</Caption>
+            <OriginalDefineValue>28544</OriginalDefineValue>
             <EventName>XJBA01ATU</EventName>
             <ID>
             </ID>
@@ -69,6 +72,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Lançamentos Mes Fechado</Caption>
+            <OriginalDefineValue>28545</OriginalDefineValue>
             <EventName>XJBA01FEC</EventName>
             <ID>
             </ID>
@@ -88,6 +92,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Contas Correntes</Caption>
+            <OriginalDefineValue>28546</OriginalDefineValue>
             <EventName>XJMF02</EventName>
             <ID>
             </ID>
@@ -107,6 +112,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Historico</Caption>
+            <OriginalDefineValue>28547</OriginalDefineValue>
             <EventName>XJBC01</EventName>
             <ID>
             </ID>
@@ -126,6 +132,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Codigo de Despesas</Caption>
+            <OriginalDefineValue>28548</OriginalDefineValue>
             <EventName>XJMI04</EventName>
             <ID>
             </ID>
@@ -145,6 +152,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Importar Contas Pagas Manager</Caption>
+            <OriginalDefineValue>28549</OriginalDefineValue>
             <EventName>XJIMP</EventName>
             <ID>
             </ID>
@@ -164,6 +172,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Cadastro Contatos</Caption>
+            <OriginalDefineValue>28550</OriginalDefineValue>
             <EventName>XJBD01</EventName>
             <ID>
             </ID>
@@ -183,6 +192,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Cadastro Itens</Caption>
+            <OriginalDefineValue>28551</OriginalDefineValue>
             <EventName>XJBE01</EventName>
             <ID>
             </ID>
@@ -203,6 +213,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Compra Itens</Caption>
+            <OriginalDefineValue>28552</OriginalDefineValue>
             <EventName>XJBF01</EventName>
             <ID>
             </ID>
@@ -223,6 +234,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>---------------------------------</Caption>
+            <OriginalDefineValue>28553</OriginalDefineValue>
             <EventName>
             </EventName>
             <ID>
@@ -244,6 +256,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Trocar Competencia</Caption>
+            <OriginalDefineValue>28554</OriginalDefineValue>
             <EventName>SAYCOM</EventName>
             <ID>
             </ID>
@@ -264,6 +277,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Indexar</Caption>
+            <OriginalDefineValue>28555</OriginalDefineValue>
             <EventName>XINDEXAR</EventName>
             <ID>
             </ID>
@@ -283,6 +297,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>C&amp;onfigurar Impressora ..</Caption>
+            <OriginalDefineValue>28556</OriginalDefineValue>
             <EventName>FilePrinterSetup</EventName>
             <ID>
             </ID>
@@ -301,6 +316,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>&amp;Sair</Caption>
+            <OriginalDefineValue>28557</OriginalDefineValue>
             <EventName>FileExit</EventName>
             <ID>
             </ID>
@@ -321,6 +337,7 @@
       </MenuItem>
       <MenuItem>
         <Caption>&amp;Relatorios</Caption>
+        <OriginalDefineValue>28558</OriginalDefineValue>
         <EventName>XWRPTBCO</EventName>
         <ID>
         </ID>
@@ -337,6 +354,7 @@
         <MenuItems>
           <MenuItem>
             <Caption>Controle Bancario Banco</Caption>
+            <OriginalDefineValue>28559</OriginalDefineValue>
             <EventName>XWRPTBCO</EventName>
             <ID>
             </ID>
@@ -356,6 +374,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Bancos/Contas</Caption>
+            <OriginalDefineValue>28560</OriginalDefineValue>
             <EventName>XWRPTMF</EventName>
             <ID>
             </ID>
@@ -376,6 +395,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Cod.Despesas/Historico</Caption>
+            <OriginalDefineValue>28561</OriginalDefineValue>
             <EventName>XWRPTMI</EventName>
             <ID>
             </ID>
@@ -396,6 +416,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>WRPT</Caption>
+            <OriginalDefineValue>28562</OriginalDefineValue>
             <EventName>XWRPT</EventName>
             <ID>
             </ID>
@@ -415,6 +436,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Controle Bancario Integrado</Caption>
+            <OriginalDefineValue>28563</OriginalDefineValue>
             <EventName>XWRPTBCOI</EventName>
             <ID>
             </ID>
@@ -435,6 +457,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>WRPT Integrado</Caption>
+            <OriginalDefineValue>28564</OriginalDefineValue>
             <EventName>XWRPTI</EventName>
             <ID>
             </ID>
@@ -455,6 +478,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>LST Logix</Caption>
+            <OriginalDefineValue>28565</OriginalDefineValue>
             <EventName>LSTVIEW</EventName>
             <ID>
             </ID>
@@ -477,6 +501,7 @@
       </MenuItem>
       <MenuItem>
         <Caption>Utilitarios</Caption>
+        <OriginalDefineValue>28566</OriginalDefineValue>
         <EventName>
         </EventName>
         <ID>
@@ -497,6 +522,7 @@
         <MenuItems>
           <MenuItem>
             <Caption>Email</Caption>
+            <OriginalDefineValue>28567</OriginalDefineValue>
             <EventName>
             </EventName>
             <ID>
@@ -517,6 +543,7 @@
             <MenuItems>
               <MenuItem>
                 <Caption>Consulta</Caption>
+                <OriginalDefineValue>28568</OriginalDefineValue>
                 <EventName>XJMAIL</EventName>
                 <ID>
                 </ID>
@@ -536,6 +563,7 @@
               </MenuItem>
               <MenuItem>
                 <Caption>Geral</Caption>
+                <OriginalDefineValue>28569</OriginalDefineValue>
                 <EventName>XJMAILGER</EventName>
                 <ID>
                 </ID>
@@ -555,6 +583,7 @@
               </MenuItem>
               <MenuItem>
                 <Caption>Configurar</Caption>
+                <OriginalDefineValue>28570</OriginalDefineValue>
                 <EventName>XJMAILCFG</EventName>
                 <ID>
                 </ID>
@@ -576,6 +605,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Checar CGC/CPF/IE...</Caption>
+            <OriginalDefineValue>28571</OriginalDefineValue>
             <EventName>JCHECK</EventName>
             <ID>
             </ID>
@@ -597,6 +627,7 @@
       </MenuItem>
       <MenuItem>
         <Caption>&amp;?</Caption>
+        <OriginalDefineValue>28572</OriginalDefineValue>
         <EventName>Help</EventName>
         <ID>
         </ID>
@@ -616,6 +647,7 @@
         <MenuItems>
           <MenuItem>
             <Caption>&amp;Conteúdo</Caption>
+            <OriginalDefineValue>28573</OriginalDefineValue>
             <EventName>HelpCont</EventName>
             <ID>
             </ID>
@@ -635,6 +667,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>&amp;Indice</Caption>
+            <OriginalDefineValue>28574</OriginalDefineValue>
             <EventName>HelpIndex</EventName>
             <ID>
             </ID>
@@ -653,6 +686,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>-------------------------</Caption>
+            <OriginalDefineValue>28575</OriginalDefineValue>
             <EventName>
             </EventName>
             <ID>
@@ -674,6 +708,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Atualizacoes</Caption>
+            <OriginalDefineValue>28576</OriginalDefineValue>
             <EventName>XVERSAO</EventName>
             <ID>
             </ID>
@@ -693,6 +728,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>&amp;Sobre...</Caption>
+            <OriginalDefineValue>32031</OriginalDefineValue>
             <EventName>HelpAboutDialog</EventName>
             <ID>IDM_HELP_ABOUT</ID>
             <Description>Sobre a Aplicação</Description>

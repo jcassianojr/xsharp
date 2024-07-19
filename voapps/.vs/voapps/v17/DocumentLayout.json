@@ -3,66 +3,393 @@
   "WorkspaceRootPath": "D:\\develop\\xsharp\\voapps\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A86B4612-1E6F-47B7-8225-D35826E59122}|PCP\\PCP.xsproj|D:\\develop\\xsharp\\voapps\\PCP\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|",
-      "RelativeMoniker": "D:0:0:{A86B4612-1E6F-47B7-8225-D35826E59122}|PCP\\PCP.xsproj|solutionrelative:PCP\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Banco||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58659F61-DC71-4302-8AF2-A70DAABE2944}|Producao\\Producao.xsproj|D:\\develop\\xsharp\\voapps\\Producao\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|",
-      "RelativeMoniker": "D:0:0:{58659F61-DC71-4302-8AF2-A70DAABE2944}|Producao\\Producao.xsproj|solutionrelative:Producao\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|voretrun||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|PCP||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SomaAno||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Emailprg||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Viabilidade||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|TGQ||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|sistema||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Sintegra||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|RH||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Qualidade||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Instrumentos||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Ferramental||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Engenharia||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Custo||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Producao||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58659F61-DC71-4302-8AF2-A70DAABE2944}|Producao\\Producao.xsproj|D:\\develop\\xsharp\\voapps\\Producao\\Producao.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{58659F61-DC71-4302-8AF2-A70DAABE2944}|Producao\\Producao.xsproj|solutionrelative:Producao\\Producao.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|folhapto||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|final||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|mlibwvo27||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|PCP||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|CRM||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|FabPaintLibControlvo||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BC53417-899E-4B1B-BDB4-B01B063EF143}|FabPaintLibControlvo\\FabPaintLibControlvo.xsproj|D:\\develop\\xsharp\\voapps\\FabPaintLibControlvo\\FabPaintLibControlvo.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
+      "RelativeMoniker": "D:0:0:{9BC53417-899E-4B1B-BDB4-B01B063EF143}|FabPaintLibControlvo\\FabPaintLibControlvo.xsproj|solutionrelative:FabPaintLibControlvo\\FabPaintLibControlvo.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FEB4D97-7DF3-457A-BF27-ADCD603ED700}|CRM\\CRM.xsproj|D:\\develop\\xsharp\\voapps\\CRM\\CRM.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{8FEB4D97-7DF3-457A-BF27-ADCD603ED700}|CRM\\CRM.xsproj|solutionrelative:CRM\\CRM.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0599A978-2A64-449C-B367-757F6A1F9EB8}|Banco\\Banco.xsproj|D:\\develop\\xsharp\\voapps\\Banco\\Banco.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
+      "RelativeMoniker": "D:0:0:{0599A978-2A64-449C-B367-757F6A1F9EB8}|Banco\\Banco.xsproj|solutionrelative:Banco\\Banco.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A86B4612-1E6F-47B7-8225-D35826E59122}|PCP\\PCP.xsproj|D:\\develop\\xsharp\\voapps\\PCP\\PCP.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
       "RelativeMoniker": "D:0:0:{A86B4612-1E6F-47B7-8225-D35826E59122}|PCP\\PCP.xsproj|solutionrelative:PCP\\PCP.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4BF79407-1C84-4CB1-88E6-D3F435490AFB}|mlibwvo27\\mlibwvo27.xsproj|D:\\develop\\xsharp\\voapps\\mlibwvo27\\mlibwvo27.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{4BF79407-1C84-4CB1-88E6-D3F435490AFB}|mlibwvo27\\mlibwvo27.xsproj|solutionrelative:mlibwvo27\\mlibwvo27.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAA80735-93E9-4EC2-BE93-2458C6948994}|final\\final.xsproj|D:\\develop\\xsharp\\voapps\\final\\final.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{DAA80735-93E9-4EC2-BE93-2458C6948994}|final\\final.xsproj|solutionrelative:final\\final.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76D14B47-5B0A-4801-B2DE-AA08F2F55EF2}|folhapto\\folhapto.xsproj|D:\\develop\\xsharp\\voapps\\folhapto\\folhapto.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{76D14B47-5B0A-4801-B2DE-AA08F2F55EF2}|folhapto\\folhapto.xsproj|solutionrelative:folhapto\\folhapto.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58659F61-DC71-4302-8AF2-A70DAABE2944}|Producao\\Producao.xsproj|D:\\develop\\xsharp\\voapps\\Producao\\Producao.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{58659F61-DC71-4302-8AF2-A70DAABE2944}|Producao\\Producao.xsproj|solutionrelative:Producao\\Producao.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0823537B-52EF-441F-A2F1-F8D4A38E93AB}|Custo\\Custo.xsproj|D:\\develop\\xsharp\\voapps\\Custo\\Custo.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{0823537B-52EF-441F-A2F1-F8D4A38E93AB}|Custo\\Custo.xsproj|solutionrelative:Custo\\Custo.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7F7CEDE-3FAE-42AF-B6E3-3E8B7917DE3C}|Engenharia\\Engenharia.xsproj|D:\\develop\\xsharp\\voapps\\Engenharia\\Engenharia.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{D7F7CEDE-3FAE-42AF-B6E3-3E8B7917DE3C}|Engenharia\\Engenharia.xsproj|solutionrelative:Engenharia\\Engenharia.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A6E3FA9-539C-4545-8B71-8244C82F83E4}|Ferramental\\Ferramental.xsproj|D:\\develop\\xsharp\\voapps\\Ferramental\\Ferramental.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{2A6E3FA9-539C-4545-8B71-8244C82F83E4}|Ferramental\\Ferramental.xsproj|solutionrelative:Ferramental\\Ferramental.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DFB3E267-A28E-4423-80D0-A8755FB96E8D}|Instrumentos\\Instrumentos.xsproj|D:\\develop\\xsharp\\voapps\\Instrumentos\\Instrumentos.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{DFB3E267-A28E-4423-80D0-A8755FB96E8D}|Instrumentos\\Instrumentos.xsproj|solutionrelative:Instrumentos\\Instrumentos.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB1357D-F2A5-48C7-BE21-047C09BD1A14}|Qualidade\\Qualidade.xsproj|D:\\develop\\xsharp\\voapps\\Qualidade\\Qualidade.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{ECB1357D-F2A5-48C7-BE21-047C09BD1A14}|Qualidade\\Qualidade.xsproj|solutionrelative:Qualidade\\Qualidade.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FF24B9C-BA3D-40BD-8105-B6DA17FC84DD}|RH\\RH.xsproj|D:\\develop\\xsharp\\voapps\\RH\\RH.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{2FF24B9C-BA3D-40BD-8105-B6DA17FC84DD}|RH\\RH.xsproj|solutionrelative:RH\\RH.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{095EF471-1324-462A-99FB-97A41C6B6D91}|Sintegra\\Sintegra.xsproj|D:\\develop\\xsharp\\voapps\\Sintegra\\Sintegra.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{095EF471-1324-462A-99FB-97A41C6B6D91}|Sintegra\\Sintegra.xsproj|solutionrelative:Sintegra\\Sintegra.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D260B57B-C8DD-4A07-9CB0-8BB444FB098C}|sistema\\sistema.xsproj|D:\\develop\\xsharp\\voapps\\sistema\\sistema.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{D260B57B-C8DD-4A07-9CB0-8BB444FB098C}|sistema\\sistema.xsproj|solutionrelative:sistema\\sistema.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{563009E8-FA82-4748-BD3B-56B764BDF05C}|TGQ\\TGQ.xsproj|D:\\develop\\xsharp\\voapps\\TGQ\\TGQ.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{563009E8-FA82-4748-BD3B-56B764BDF05C}|TGQ\\TGQ.xsproj|solutionrelative:TGQ\\TGQ.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3ED83A8B-521C-4D5B-8C57-B54FF8A4A0D6}|Viabilidade\\Viabilidade.xsproj|D:\\develop\\xsharp\\voapps\\Viabilidade\\Viabilidade.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{3ED83A8B-521C-4D5B-8C57-B54FF8A4A0D6}|Viabilidade\\Viabilidade.xsproj|solutionrelative:Viabilidade\\Viabilidade.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31B2453-CA15-40ED-87E4-38B1CED641C2}|Emailprg\\Emailprg.xsproj|D:\\develop\\xsharp\\voapps\\Emailprg\\Emailprg.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{C31B2453-CA15-40ED-87E4-38B1CED641C2}|Emailprg\\Emailprg.xsproj|solutionrelative:Emailprg\\Emailprg.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DA7463B-8F8E-4EE7-A783-827C4C1783DC}|SomaAno\\SomaAno.xsproj|D:\\develop\\xsharp\\voapps\\SomaAno\\SomaAno.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
+      "RelativeMoniker": "D:0:0:{1DA7463B-8F8E-4EE7-A783-827C4C1783DC}|SomaAno\\SomaAno.xsproj|solutionrelative:SomaAno\\SomaAno.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D5BF02E-4DDA-4AF6-9D70-764C295E8674}|voretrun\\voretrun.xsproj|D:\\develop\\xsharp\\voapps\\voretrun\\voretrun.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
+      "RelativeMoniker": "D:0:0:{2D5BF02E-4DDA-4AF6-9D70-764C295E8674}|voretrun\\voretrun.xsproj|solutionrelative:voretrun\\voretrun.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 195,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Producao\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
-              "RelativeDocumentMoniker": "Producao\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\Producao\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
-              "RelativeToolTip": "Producao\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 20,
+              "Title": "FabPaintLibControlvo",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\FabPaintLibControlvo\\FabPaintLibControlvo.xsproj",
+              "RelativeDocumentMoniker": "FabPaintLibControlvo\\FabPaintLibControlvo.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\FabPaintLibControlvo\\FabPaintLibControlvo.xsproj",
+              "RelativeToolTip": "FabPaintLibControlvo\\FabPaintLibControlvo.xsproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-17T18:50:19.278Z",
+              "WhenOpened": "2024-07-19T14:25:11.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\PCP\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
-              "RelativeDocumentMoniker": "PCP\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\PCP\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
-              "RelativeToolTip": "PCP\\Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "voretrun",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\voretrun\\voretrun.xsproj",
+              "RelativeDocumentMoniker": "voretrun\\voretrun.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\voretrun\\voretrun.xsproj",
+              "RelativeToolTip": "voretrun\\voretrun.xsproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-17T18:49:29.812Z",
+              "WhenOpened": "2024-07-19T13:59:06.82Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "SomaAno",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\SomaAno\\SomaAno.xsproj",
+              "RelativeDocumentMoniker": "SomaAno\\SomaAno.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\SomaAno\\SomaAno.xsproj",
+              "RelativeToolTip": "SomaAno\\SomaAno.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:58:28.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Emailprg",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Emailprg\\Emailprg.xsproj",
+              "RelativeDocumentMoniker": "Emailprg\\Emailprg.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\Emailprg\\Emailprg.xsproj",
+              "RelativeToolTip": "Emailprg\\Emailprg.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:57:08.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Viabilidade",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Viabilidade\\Viabilidade.xsproj",
+              "RelativeDocumentMoniker": "Viabilidade\\Viabilidade.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\Viabilidade\\Viabilidade.xsproj",
+              "RelativeToolTip": "Viabilidade\\Viabilidade.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:43:00.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TGQ",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\TGQ\\TGQ.xsproj",
+              "RelativeDocumentMoniker": "TGQ\\TGQ.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\TGQ\\TGQ.xsproj",
+              "RelativeToolTip": "TGQ\\TGQ.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:42:44.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "sistema",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\sistema\\sistema.xsproj",
+              "RelativeDocumentMoniker": "sistema\\sistema.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\sistema\\sistema.xsproj",
+              "RelativeToolTip": "sistema\\sistema.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:42:23.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Sintegra",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Sintegra\\Sintegra.xsproj",
+              "RelativeDocumentMoniker": "Sintegra\\Sintegra.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\Sintegra\\Sintegra.xsproj",
+              "RelativeToolTip": "Sintegra\\Sintegra.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:42:08.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RH",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\RH\\RH.xsproj",
+              "RelativeDocumentMoniker": "RH\\RH.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\RH\\RH.xsproj",
+              "RelativeToolTip": "RH\\RH.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:41:45.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Qualidade",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Qualidade\\Qualidade.xsproj",
+              "RelativeDocumentMoniker": "Qualidade\\Qualidade.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\Qualidade\\Qualidade.xsproj",
+              "RelativeToolTip": "Qualidade\\Qualidade.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:41:25.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Instrumentos",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Instrumentos\\Instrumentos.xsproj",
+              "RelativeDocumentMoniker": "Instrumentos\\Instrumentos.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\Instrumentos\\Instrumentos.xsproj",
+              "RelativeToolTip": "Instrumentos\\Instrumentos.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:40:44.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "folhapto",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\folhapto\\folhapto.xsproj",
+              "RelativeDocumentMoniker": "folhapto\\folhapto.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\folhapto\\folhapto.xsproj",
+              "RelativeToolTip": "folhapto\\folhapto.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:40:17.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "final",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\final\\final.xsproj",
+              "RelativeDocumentMoniker": "final\\final.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\final\\final.xsproj",
+              "RelativeToolTip": "final\\final.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:39:52.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Ferramental",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Ferramental\\Ferramental.xsproj",
+              "RelativeDocumentMoniker": "Ferramental\\Ferramental.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\Ferramental\\Ferramental.xsproj",
+              "RelativeToolTip": "Ferramental\\Ferramental.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:39:37.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Engenharia",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Engenharia\\Engenharia.xsproj",
+              "RelativeDocumentMoniker": "Engenharia\\Engenharia.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\Engenharia\\Engenharia.xsproj",
+              "RelativeToolTip": "Engenharia\\Engenharia.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:39:13.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Custo",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Custo\\Custo.xsproj",
+              "RelativeDocumentMoniker": "Custo\\Custo.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\Custo\\Custo.xsproj",
+              "RelativeToolTip": "Custo\\Custo.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:38:56.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CRM",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\CRM\\CRM.xsproj",
+              "RelativeDocumentMoniker": "CRM\\CRM.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\CRM\\CRM.xsproj",
+              "RelativeToolTip": "CRM\\CRM.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T13:38:25.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Banco",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Banco\\Banco.xsproj",
+              "RelativeDocumentMoniker": "Banco\\Banco.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\Banco\\Banco.xsproj",
+              "RelativeToolTip": "Banco\\Banco.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T01:06:28.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "mlibwvo27",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\mlibwvo27\\mlibwvo27.xsproj",
+              "RelativeDocumentMoniker": "mlibwvo27\\mlibwvo27.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\mlibwvo27\\mlibwvo27.xsproj",
+              "RelativeToolTip": "mlibwvo27\\mlibwvo27.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-19T01:05:39.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "PCP",
               "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\PCP\\PCP.xsproj",
               "RelativeDocumentMoniker": "PCP\\PCP.xsproj",
@@ -74,7 +401,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "Producao",
               "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Producao\\Producao.xsproj",
               "RelativeDocumentMoniker": "Producao\\Producao.xsproj",

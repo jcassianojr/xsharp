@@ -1,4 +1,4 @@
-CLASS XJMI04 INHERIT JMI04
+﻿CLASS XJMI04 INHERIT JMI04
 
 METHOD APPEND() 	
 alert("Operacao Bloqueada","Operacao Bloqueada")	

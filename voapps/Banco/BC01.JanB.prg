@@ -1,4 +1,4 @@
-#region DEFINES
+ï»¿#region DEFINES
 STATIC DEFINE JBBC01_CODIGO := 101 
 STATIC DEFINE JBBC01_DESCRICAO := 103 
 STATIC DEFINE JBBC01_ITEM := 106 
@@ -59,14 +59,14 @@ oDCSC_CODIGO:HyperLabel := HyperLabel{#SC_CODIGO,"Codigo:",NULL_STRING,NULL_STRI
 
 oDCCODIGO := SingleLineEdit{self,ResourceID{JBBC01_CODIGO,_GetInst()}}
 oDCCODIGO:FieldSpec := PADRAO_CHAR_04{}
-oDCCODIGO:HyperLabel := HyperLabel{#CODIGO,"Código:",NULL_STRING,"BC01_CODIGO"}
+oDCCODIGO:HyperLabel := HyperLabel{#CODIGO,"CÃ³digo:",NULL_STRING,"BC01_CODIGO"}
 
 oDCSC_DESCRICAO := FixedText{self,ResourceID{JBBC01_SC_DESCRICAO,_GetInst()}}
 oDCSC_DESCRICAO:HyperLabel := HyperLabel{#SC_DESCRICAO,"Descricao:",NULL_STRING,NULL_STRING}
 
 oDCDESCRICAO := SingleLineEdit{self,ResourceID{JBBC01_DESCRICAO,_GetInst()}}
 oDCDESCRICAO:FieldSpec := PADRAO_CHAR_35{}
-oDCDESCRICAO:HyperLabel := HyperLabel{#DESCRICAO,"Descrição:",NULL_STRING,"BC01_DESCRICAO"}
+oDCDESCRICAO:HyperLabel := HyperLabel{#DESCRICAO,"DescriÃ§Ã£o:",NULL_STRING,"BC01_DESCRICAO"}
 
 oDCTIPO := SingleLineEdit{self,ResourceID{JBBC01_TIPO,_GetInst()}}
 oDCTIPO:FieldSpec := PADRAO_CHAR_01{}
@@ -94,13 +94,13 @@ self:Browser := DataBrowser{self}
 oDBCODIGO := DataColumn{PADRAO_CHAR_04{}}
 oDBCODIGO:Width := 8
 oDBCODIGO:HyperLabel := oDCCODIGO:HyperLabel 
-oDBCODIGO:Caption := "Código:"
+oDBCODIGO:Caption := "CÃ³digo:"
 self:Browser:AddColumn(oDBCODIGO)
 
 oDBDESCRICAO := DataColumn{PADRAO_CHAR_35{}}
 oDBDESCRICAO:Width := 41
 oDBDESCRICAO:HyperLabel := oDCDESCRICAO:HyperLabel 
-oDBDESCRICAO:Caption := "Descrição:"
+oDBDESCRICAO:Caption := "DescriÃ§Ã£o:"
 self:Browser:AddColumn(oDBDESCRICAO)
 
 oDBTIPO := DataColumn{PADRAO_CHAR_01{}}

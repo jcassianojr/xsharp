@@ -52,7 +52,7 @@
     <EmitDebugInformation>true</EmitDebugInformation>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
+    <OutputPath>d:\develop\modelos\xsharpexe\debugnet\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -165,9 +165,6 @@
     <Compile Include="Start.prg">
       <SubType>Code</SubType>
     </Compile>
-    <NativeResource Include="Start.CREATEPROCESS_MANIFEST_RESOURCE_ID.rc">
-      <DependentUpon>Start.prg</DependentUpon>
-    </NativeResource>
     <NativeResource Include="Start.VS_VERSION_INFO.rc">
       <DependentUpon>Start.prg</DependentUpon>
     </NativeResource>

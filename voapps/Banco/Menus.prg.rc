@@ -1,92 +1,56 @@
-;// designer generated file, do not modify
-;// MENU EMPTYSHELLMENU from d:\develop\xsharp\voapps\Banco\Menus.prg.rc
-#define IDM_EMPTYSHELLMENU "EMPTYSHELLMENU"
-#define IDA_EMPTYSHELLMENU "EMPTYSHELLMENU"
-#define IDM_EMPTYSHELLMENU_Arquivo_ID 15001
-#define IDM_EMPTYSHELLMENU_Arquivo_Lancamentos_ID 15002
-#define IDM_EMPTYSHELLMENU_Arquivo_Lancamentos_so_Compentencia_ID 15003
-#define IDM_EMPTYSHELLMENU_Arquivo_Lancamentos_Mes_Fechado_ID 15004
-#define IDM_EMPTYSHELLMENU_Arquivo_Contas_Correntes_ID 15005
-#define IDM_EMPTYSHELLMENU_Arquivo_Historico_ID 15006
-#define IDM_EMPTYSHELLMENU_Arquivo_Codigo_de_Despesas_ID 15007
-#define IDM_EMPTYSHELLMENU_Arquivo_Importar_Contas_Pagas_Manager_ID 15008
-#define IDM_EMPTYSHELLMENU_Arquivo_Cadastro_Contatos_ID 15009
-#define IDM_EMPTYSHELLMENU_Arquivo_Cadastro_Itens_ID 15010
-#define IDM_EMPTYSHELLMENU_Arquivo_Compra_Itens_ID 15011
-#define IDM_EMPTYSHELLMENU_Arquivo_Trocar_Competencia_ID 15013
-#define IDM_EMPTYSHELLMENU_Arquivo_Indexar_ID 15014
-#define IDM_EMPTYSHELLMENU_Arquivo_Configurar_Impressora__ID 15015
-#define IDM_EMPTYSHELLMENU_Arquivo_Sair_ID 15016
-#define IDM_EMPTYSHELLMENU_Relatorios_ID 15017
-#define IDM_EMPTYSHELLMENU_Relatorios_Controle_Bancario_Banco_ID 15018
-#define IDM_EMPTYSHELLMENU_Relatorios_Bancos_Contas_ID 15019
-#define IDM_EMPTYSHELLMENU_Relatorios_CodDespesas_Historico_ID 15020
-#define IDM_EMPTYSHELLMENU_Relatorios_WRPT_ID 15021
-#define IDM_EMPTYSHELLMENU_Relatorios_Controle_Bancario_Integrado_ID 15022
-#define IDM_EMPTYSHELLMENU_Relatorios_WRPT_Integrado_ID 15023
-#define IDM_EMPTYSHELLMENU_Relatorios_LST_Logix_ID 15024
-#define IDM_EMPTYSHELLMENU_Utilitarios_ID 15025
-#define IDM_EMPTYSHELLMENU_Utilitarios_Email_ID 15026
-#define IDM_EMPTYSHELLMENU_Utilitarios_Email_Consulta_ID 15027
-#define IDM_EMPTYSHELLMENU_Utilitarios_Email_Geral_ID 15028
-#define IDM_EMPTYSHELLMENU_Utilitarios_Email_Configurar_ID 15029
-#define IDM_EMPTYSHELLMENU_Utilitarios_Checar_CGC_CPF_IE_ID 15030
-#define IDM_EMPTYSHELLMENU___ID 15031
-#define IDM_EMPTYSHELLMENU___Conteudo_ID 15032
-#define IDM_EMPTYSHELLMENU___Indice_ID 15033
-#define IDM_EMPTYSHELLMENU___Atualizacoes_ID 15035
-#define IDM_EMPTYSHELLMENU___Sobre_ID 15036
+EMPTYSHELLMENU ACCELERATORS
+Begin
+	115, 28557, ALT, VIRTKEY
+	112, 28574, VIRTKEY
+End
+ 
 EMPTYSHELLMENU MENU
-BEGIN
+Begin
 	POPUP "&Arquivo"
 	BEGIN
-		MENUITEM "Lançamentos" , IDM_EMPTYSHELLMENU_Arquivo_Lancamentos_ID
-		MENUITEM "Lançamentos so Compentencia" , IDM_EMPTYSHELLMENU_Arquivo_Lancamentos_so_Compentencia_ID
-		MENUITEM "Lançamentos Mes Fechado" , IDM_EMPTYSHELLMENU_Arquivo_Lancamentos_Mes_Fechado_ID
-		MENUITEM "Contas Correntes" , IDM_EMPTYSHELLMENU_Arquivo_Contas_Correntes_ID
-		MENUITEM "Historico" , IDM_EMPTYSHELLMENU_Arquivo_Historico_ID
-		MENUITEM "Codigo de Despesas" , IDM_EMPTYSHELLMENU_Arquivo_Codigo_de_Despesas_ID
-		MENUITEM "Importar Contas Pagas Manager" , IDM_EMPTYSHELLMENU_Arquivo_Importar_Contas_Pagas_Manager_ID
-		MENUITEM "Cadastro Contatos" , IDM_EMPTYSHELLMENU_Arquivo_Cadastro_Contatos_ID
-		MENUITEM "Cadastro Itens" , IDM_EMPTYSHELLMENU_Arquivo_Cadastro_Itens_ID
-		MENUITEM "Compra Itens" , IDM_EMPTYSHELLMENU_Arquivo_Compra_Itens_ID
+		MENUITEM "Lançamentos", 28543
+		MENUITEM "Lançamentos so Compentencia", 28544
+		MENUITEM "Lançamentos Mes Fechado", 28545
+		MENUITEM "Contas Correntes", 28546
+		MENUITEM "Historico", 28547
+		MENUITEM "Codigo de Despesas", 28548
+		MENUITEM "Importar Contas Pagas Manager", 28549
+		MENUITEM "Cadastro Contatos", 28550
+		MENUITEM "Cadastro Itens", 28551
+		MENUITEM "Compra Itens", 28552
 		MENUITEM SEPARATOR
-		MENUITEM "Trocar Competencia" , IDM_EMPTYSHELLMENU_Arquivo_Trocar_Competencia_ID
-		MENUITEM "Indexar" , IDM_EMPTYSHELLMENU_Arquivo_Indexar_ID
-		MENUITEM "C&onfigurar Impressora .." , IDM_EMPTYSHELLMENU_Arquivo_Configurar_Impressora__ID
-		MENUITEM "&Sair\tAlt+F4" , IDM_EMPTYSHELLMENU_Arquivo_Sair_ID
+		MENUITEM "Trocar Competencia", 28554
+		MENUITEM "Indexar", 28555
+		MENUITEM "C&onfigurar Impressora ..", 28556
+		MENUITEM "&Sair\tAlt+F4", 28557
 	END
 	POPUP "&Relatorios"
 	BEGIN
-		MENUITEM "Controle Bancario Banco" , IDM_EMPTYSHELLMENU_Relatorios_Controle_Bancario_Banco_ID
-		MENUITEM "Bancos/Contas" , IDM_EMPTYSHELLMENU_Relatorios_Bancos_Contas_ID
-		MENUITEM "Cod.Despesas/Historico" , IDM_EMPTYSHELLMENU_Relatorios_CodDespesas_Historico_ID
-		MENUITEM "WRPT" , IDM_EMPTYSHELLMENU_Relatorios_WRPT_ID
-		MENUITEM "Controle Bancario Integrado" , IDM_EMPTYSHELLMENU_Relatorios_Controle_Bancario_Integrado_ID
-		MENUITEM "WRPT Integrado" , IDM_EMPTYSHELLMENU_Relatorios_WRPT_Integrado_ID
-		MENUITEM "LST Logix" , IDM_EMPTYSHELLMENU_Relatorios_LST_Logix_ID
+		MENUITEM "Controle Bancario Banco", 28559
+		MENUITEM "Bancos/Contas", 28560
+		MENUITEM "Cod.Despesas/Historico", 28561
+		MENUITEM "WRPT", 28562
+		MENUITEM "Controle Bancario Integrado", 28563
+		MENUITEM "WRPT Integrado", 28564
+		MENUITEM "LST Logix", 28565
 	END
 	POPUP "Utilitarios"
 	BEGIN
 		POPUP "Email"
 		BEGIN
-			MENUITEM "Consulta" , IDM_EMPTYSHELLMENU_Utilitarios_Email_Consulta_ID
-			MENUITEM "Geral" , IDM_EMPTYSHELLMENU_Utilitarios_Email_Geral_ID
-			MENUITEM "Configurar" , IDM_EMPTYSHELLMENU_Utilitarios_Email_Configurar_ID
+			MENUITEM "Consulta", 28568
+			MENUITEM "Geral", 28569
+			MENUITEM "Configurar", 28570
 		END
-		MENUITEM "Checar CGC/CPF/IE.." , IDM_EMPTYSHELLMENU_Utilitarios_Checar_CGC_CPF_IE_ID
+		MENUITEM "Checar CGC/CPF/IE...", 28571
 	END
 	POPUP "&?"
 	BEGIN
-		MENUITEM "&Conteúdo" , IDM_EMPTYSHELLMENU___Conteudo_ID
-		MENUITEM "&Indice\tF1" , IDM_EMPTYSHELLMENU___Indice_ID
+		MENUITEM "&Conteúdo", 28573
+		MENUITEM "&Indice\tF1", 28574
 		MENUITEM SEPARATOR
-		MENUITEM "Atualizacoes" , IDM_EMPTYSHELLMENU___Atualizacoes_ID
-		MENUITEM "&Sobre..." , IDM_EMPTYSHELLMENU___Sobre_ID
+		MENUITEM "Atualizacoes", 28576
+		MENUITEM "&Sobre...", 32031
 	END
-END
-EMPTYSHELLMENU_Accelerator ACCELERATORS
-BEGIN
-	115, IDM_EMPTYSHELLMENU_Arquivo_Sair_ID, ALT ,VIRTKEY
-	112, IDM_EMPTYSHELLMENU___Indice_ID, VIRTKEY
-END
+End
+ 

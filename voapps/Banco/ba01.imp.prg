@@ -1,4 +1,4 @@
-#region DEFINES
+ï»¿#region DEFINES
 STATIC DEFINE JIMP_ANO := 112 
 STATIC DEFINE JIMP_ATUAL := 100 
 STATIC DEFINE JIMP_CHAVE := 117 
@@ -113,7 +113,7 @@ oDCAtual := CheckBox{self,ResourceID{JIMP_ATUAL,_GetInst()}}
 oDCAtual:HyperLabel := HyperLabel{#Atual,"Competencia Atual",NULL_STRING,NULL_STRING}
 
 oCCcmdimp := PushButton{self,ResourceID{JIMP_CMDIMP,_GetInst()}}
-oCCcmdimp:HyperLabel := HyperLabel{#cmdimp,"Iniciar Importação",NULL_STRING,NULL_STRING}
+oCCcmdimp:HyperLabel := HyperLabel{#cmdimp,"Iniciar ImportaÃ§Ã£o",NULL_STRING,NULL_STRING}
 
 oCCcmdSaida := PushButton{self,ResourceID{JIMP_CMDSAIDA,_GetInst()}}
 oCCcmdSaida:HyperLabel := HyperLabel{#cmdSaida,NULL_STRING,NULL_STRING,NULL_STRING}

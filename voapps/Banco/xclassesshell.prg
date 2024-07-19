@@ -1,4 +1,4 @@
-CLASS bcoshell INHERIT StandardShellWindow
+﻿CLASS bcoshell INHERIT StandardShellWindow
 
 CONSTRUCTOR( oOwnerApp ) 
 //	LOCAL oSB AS StatusBar
@@ -48,7 +48,7 @@ METHOD sayCOM()
   LOCAL oJCOM AS JCOM
   oJCOM:=jCOM{SELF}
   OjCOM:show()		
-  SELF:Caption:="M�dulo Banco - Empresa:"+StrZero(ZEMPRESA,3)+" Competencia:"+StrZero(ZMES,2)+"/"+StrZero(ZANO,4)		
+  SELF:Caption:="Módulo Banco - Empresa:"+StrZero(ZEMPRESA,3)+" Competencia:"+StrZero(ZMES,2)+"/"+StrZero(ZANO,4)		
 
 METHOD XWRPTBCO() 
 SELF:XWRPTGRP("ZB","")	

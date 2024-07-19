@@ -1,4 +1,4 @@
-CLASS XJIMP INHERIT JIMP	
+ï»¿CLASS XJIMP INHERIT JIMP	
 
 METHOD cmdimp( ) 
 SELF:cmdimpx(0)		
@@ -136,7 +136,7 @@ LOCAL oSTMT AS SQLStatement
 LOCAL lFILTRAEMP AS LOGIC
 
 lFILTRAEMP:=MDG("Filtrar empresa")
-    IMPFOR(.F.)
+IMPFOR(.F.)
 
    nEMP:=ZEMPRESA
    IF SELF:EMPRESA>0
@@ -168,7 +168,7 @@ lFILTRAEMP:=MDG("Filtrar empresa")
 
    oConn := SQLConnection{}
    IF ! oConn:connect("ol_logix","","")
-  	  alert("Erro na Conecção")
+  	  alert("Erro na ConecÃ§Ã£o")
    	  RETURN .F.
    ENDIF	
 

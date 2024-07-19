@@ -6,8 +6,8 @@
       <Class>DATAWINDOW</Class>
       <Caption>Histórico Padrão</Caption>
       <Order>0</Order>
-      <Left>59</Left>
-      <Top>30</Top>
+      <Left>61</Left>
+      <Top>32</Top>
       <Width>583</Width>
       <Height>320</Height>
       <BrowseIndex>-1</BrowseIndex>
@@ -316,7 +316,6 @@
       <ExProperties>
         <FieldSpec>padrao_char_03</FieldSpec>
         <HyperLabel>#ITEM,,,</HyperLabel>
-        <FillUsing>Self:PEGMI04 </FillUsing>
       </ExProperties>
     </Control>
   </VOWindow>
