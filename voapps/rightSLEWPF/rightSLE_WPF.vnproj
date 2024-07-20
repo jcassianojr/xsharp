@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f380c225-d1a0-4f6d-91dd-9b2816364438}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>wmGui.wpf</RootNamespace>
+    <AssemblyName>rightSLE_WPF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{66A51484-1EB2-44da-A3DE-260F25F7B77B};{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{5891B814-A2E0-4e64-9A2F-2C2ECAB940FE}</ProjectTypeGuids>
+    <AllMethodsVirtual>false</AllMethodsVirtual>
+    <Comments>
+    </Comments>
+    <Name>rightSLE_WPF</Name>
+    <AllowUnsafeCode>false</AllowUnsafeCode>
+    <CaseSensitiveIdentifiers>false</CaseSensitiveIdentifiers>
+    <ZeroBasedArrays>true</ZeroBasedArrays>
+    <VOCompatibleCallingConventions>false</VOCompatibleCallingConventions>
+    <VOCompatibleImplicitRetvals>false</VOCompatibleImplicitRetvals>
+    <AllowLateBinding>false</AllowLateBinding>
+    <ImplicitSignConversions>false</ImplicitSignConversions>
+    <VOCompatibleStringInit>false</VOCompatibleStringInit>
+    <VOResolveFunctionPointers>false</VOResolveFunctionPointers>
+    <VOCompatibleImplicitConversions>false</VOCompatibleImplicitConversions>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <CheckFloatOverflows>false</CheckFloatOverflows>
+    <IntegerDivisionsReturnFloat>false</IntegerDivisionsReturnFloat>
+    <VOCompatiblePreprocessor>false</VOCompatiblePreprocessor>
+    <VOCompatibleIIF>false</VOCompatibleIIF>
+    <VOCompatibleArithmeticConversions>false</VOCompatibleArithmeticConversions>
+    <ImplicitNamespaceLookup>true</ImplicitNamespaceLookup>
+    <UseDefaultNamespace>false</UseDefaultNamespace>
+    <ProjectName>$(MSBuildProjectName)</ProjectName>
+    <ProjectExt>$(MSBuildProjectExtension)</ProjectExt>
+    <ProjectDir>$(MSBuildProjectDirectory)</ProjectDir>
+    <ProjectFileName>$(MSBuildProjectFile)</ProjectFileName>
+    <ProjectPath>$(ProjectDir)$(ProjectFileName)</ProjectPath>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <EmitDebugInformation>true</EmitDebugInformation>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DisabledWarnings>3009</DisabledWarnings>
+    <OutputPath>$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <EmitDebugInformation>false</EmitDebugInformation>
+    <DefineConstants>NDEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DisabledWarnings>3009</DisabledWarnings>
+    <OutputPath>$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>mscorlib</Name>
+      <AssemblyName>mscorlib.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System</Name>
+      <AssemblyName>System.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Name>System.Core</Name>
+      <AssemblyName>System.Core.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <AssemblyName>System.Data.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Drawing</Name>
+      <AssemblyName>System.Drawing.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.Xml</Name>
+      <AssemblyName>System.Xml.dll</AssemblyName>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <Name>UIAutomationProvider</Name>
+      <AssemblyName>UIAutomationProvider.dll</AssemblyName>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <Name>WindowsBase</Name>
+      <AssemblyName>WindowsBase.dll</AssemblyName>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <Name>PresentationCore</Name>
+      <AssemblyName>PresentationCore.dll</AssemblyName>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <Name>PresentationFramework</Name>
+      <AssemblyName>PresentationFramework.dll</AssemblyName>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class PictureSpec.prg" />
+    <Compile Include="Class rightSLE.prg" />
+    <Compile Include="Class rightSLEStrings.prg" />
+    <Compile Include="Class SLE.prg" />
+    <Compile Include="Class EditMask.prg" />
+    <Compile Include="Class SLEButton.prg" />
+    <Compile Include="enums.prg" />
+    <Compile Include="Functions Dynamic Methods.prg" />
+    <Compile Include="internal.prg" />
+    <Compile Include="Properties\AssemblyInfo.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transform.prg" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+    </None>
+    <None Include="rightSLE.vh" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Vulcan.NET\v3.0\Vulcan.v4.5.targets" />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <OutputPath>$(SolutionDir)\Output\$(Configuration)\v4.0\</OutputPath>
+    <IntermediateOutputPath>$(SolutionDir)Intermediate\$(Configuration)\$(MSBuildProjectName)\</IntermediateOutputPath>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DisabledWarnings>3009</DisabledWarnings>
+    <AdditionalOptions />
+    <AdditionalLibPaths />
+    <IncludePaths />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <GeneratePreprocessorOutput>false</GeneratePreprocessorOutput>
+    <NoStandardDefs>false</NoStandardDefs>
+    <AssemblyOriginatorKeyFile>$(SolutionDir)Source\SharedBinaries\VulcanStrongNameKey.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <Nologo>false</Nologo>
+    <DocumentationFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+</Project>

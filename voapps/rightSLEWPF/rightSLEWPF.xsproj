@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
+  <PropertyGroup>
+    <Dialect>Vulcan</Dialect>
+    <PlatformTarget>x86</PlatformTarget>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{492034C5-BA31-40AF-A859-8EE2AD8B8E3D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>wmGUI.wpf</RootNamespace>
+    <AssemblyName>rightSLEWPF</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ProjectTypeGuids>{5ADB76EC-7017-476A-A8E0-25D4202FFCF0};{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{AA6C8D78-22FF-423A-9C7C-5F2393824E04}</ProjectTypeGuids>
+    <VO3>false</VO3>
+    <Comments>
+    </Comments>
+    <Name>rightSLEWPF</Name>
+    <UnSafe>false</UnSafe>
+    <CS>false</CS>
+    <AZ>true</AZ>
+    <VO5>false</VO5>
+    <VO9>false</VO9>
+    <LB>false</LB>
+    <VO4>false</VO4>
+    <VO2>false</VO2>
+    <VO6>false</VO6>
+    <VO7>false</VO7>
+    <OVF>false</OVF>
+    <FOVF>false</FOVF>
+    <VO12>false</VO12>
+    <VO8>false</VO8>
+    <VO10>false</VO10>
+    <VO11>false</VO11>
+    <INS>true</INS>
+    <NS>false</NS>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <Nostandarddefs>false</Nostandarddefs>
+    <StartupObject />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <EmitDebugInformation>true</EmitDebugInformation>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <OutputPath>$(SolutionDir)\Output\$(Configuration)\v4.0\</OutputPath>
+    <IntermediateOutputPath>$(SolutionDir)Intermediate\$(Configuration)\$(MSBuildProjectName)\</IntermediateOutputPath>
+    <CommandLineOption />
+    <AdditionalLibPaths />
+    <PPO>false</PPO>
+    <AssemblyOriginatorKeyFile>$(SolutionDir)Source\SharedBinaries\VulcanStrongNameKey.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <Nologo>false</Nologo>
+    <DocumentationFile />
+    <WarningsAsErrors />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <EmitDebugInformation>false</EmitDebugInformation>
+    <DefineConstants>NDEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <OutputPath>$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>mscorlib</Name>
+      <AssemblyName>mscorlib.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System</Name>
+      <AssemblyName>System.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Name>System.Core</Name>
+      <AssemblyName>System.Core.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <AssemblyName>System.Data.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Drawing</Name>
+      <AssemblyName>System.Drawing.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.Xml</Name>
+      <AssemblyName>System.Xml.dll</AssemblyName>
+    </Reference>
+    <Reference Include="UIAutomationProvider">
+      <Name>UIAutomationProvider</Name>
+      <AssemblyName>UIAutomationProvider.dll</AssemblyName>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <Name>WindowsBase</Name>
+      <AssemblyName>WindowsBase.dll</AssemblyName>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <Name>PresentationCore</Name>
+      <AssemblyName>PresentationCore.dll</AssemblyName>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <Name>PresentationFramework</Name>
+      <AssemblyName>PresentationFramework.dll</AssemblyName>
+    </Reference>
+    <Reference Include="XSharp.Core">
+      <Name>XSharp.Core</Name>
+      <AssemblyName>XSharp.Core.DLL</AssemblyName>
+    </Reference>
+    <Reference Include="XSharp.RT">
+      <Name>XSharp.RT</Name>
+      <AssemblyName>XSharp.RT.DLL</AssemblyName>
+    </Reference>
+    <Reference Include="XSharp.VO">
+      <Name>XSharp.VO</Name>
+      <AssemblyName>XSharp.VO.DLL</AssemblyName>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class PictureSpec.prg" />
+    <Compile Include="Class rightSLE.prg" />
+    <Compile Include="Class rightSLEStrings.prg" />
+    <Compile Include="Class SLE.prg" />
+    <Compile Include="Class EditMask.prg" />
+    <Compile Include="Class SLEButton.prg" />
+    <Compile Include="enums.prg" />
+    <Compile Include="Functions Dynamic Methods.prg" />
+    <Compile Include="internal.prg" />
+    <Compile Include="Properties\AssemblyInfo.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transform.prg" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+    </None>
+    <None Include="rightSLE.vh" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <ProjectCapabilities>
+      <ProjectConfigurationsDeclaredAsItems />
+    </ProjectCapabilities>
+  </ProjectExtensions>
+</Project>

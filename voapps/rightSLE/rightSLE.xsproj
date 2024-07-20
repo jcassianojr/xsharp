@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
+  <PropertyGroup>
+    <Dialect>Vulcan</Dialect>
+    <PlatformTarget>x86</PlatformTarget>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>rightSLE</Name>
+    <ProjectGuid>{1201394C-C020-49BA-9F12-D2C56640159D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <Nologo>true</Nologo>
+    <GenerateFullPaths>false</GenerateFullPaths>
+    <RootNamespace>wmGUI</RootNamespace>
+    <AssemblyName>rightSLElib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Comments>
+    </Comments>
+    <UnSafe>false</UnSafe>
+    <CS>false</CS>
+    <AZ>true</AZ>
+    <VO3>false</VO3>
+    <VO5>false</VO5>
+    <VO9>false</VO9>
+    <LB>false</LB>
+    <VO4>false</VO4>
+    <VO2>false</VO2>
+    <VO6>false</VO6>
+    <VO7>false</VO7>
+    <OVF>false</OVF>
+    <FOVF>false</FOVF>
+    <VO12>false</VO12>
+    <VO8>false</VO8>
+    <VO10>false</VO10>
+    <VO11>false</VO11>
+    <INS>true</INS>
+    <NS>true</NS>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <Nostandarddefs>false</Nostandarddefs>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <EmitDebugInformation>true</EmitDebugInformation>
+    <StepThroughInitProcs>false</StepThroughInitProcs>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <OutputPath>$(SolutionDir)\Output\$(Configuration)\v4.0\</OutputPath>
+    <IntermediateOutputPath>$(SolutionDir)Intermediate\$(Configuration)\$(MSBuildProjectName)\</IntermediateOutputPath>
+    <CommandLineOption />
+    <AdditionalLibPaths />
+    <PPO>false</PPO>
+    <AssemblyOriginatorKeyFile>$(SolutionDir)Source\SharedBinaries\VulcanStrongNameKey.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <Nologo>true</Nologo>
+    <DocumentationFile />
+    <WarningsAsErrors />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <EmitDebugInformation>false</EmitDebugInformation>
+    <StepThroughInitProcs>false</StepThroughInitProcs>
+    <DefineConstants>NDEBUG;TRACE</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <OutputPath>$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System</Name>
+      <AssemblyName>System.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System.Core</Name>
+      <AssemblyName>System.Core.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System.Data</Name>
+      <AssemblyName>System.Data.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Name>System.Design</Name>
+      <AssemblyName>System.Design.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System.Windows.Forms</Name>
+      <AssemblyName>System.Windows.Forms.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="XSharp.Core">
+      <Name>XSharp.Core</Name>
+      <AssemblyName>XSharp.Core.DLL</AssemblyName>
+    </Reference>
+    <Reference Include="XSharp.RT">
+      <Name>XSharp.RT</Name>
+      <AssemblyName>XSharp.RT.DLL</AssemblyName>
+    </Reference>
+    <Reference Include="XSharp.VO">
+      <Name>XSharp.VO</Name>
+      <AssemblyName>XSharp.VO.DLL</AssemblyName>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class calcSLE.prg" />
+    <Compile Include="Class Calculator.prg" />
+    <Compile Include="Class Calendar.prg" />
+    <Compile Include="Class dateSLE.prg" />
+    <Compile Include="Class dlgPECalendar.prg" />
+    <Compile Include="Class dlgPopupCalc.prg" />
+    <Compile Include="Class EditMask.prg" />
+    <Compile Include="Class fileSLE.prg" />
+    <Compile Include="Class folderSLE.prg" />
+    <Compile Include="Class InlineCalcSLE.prg" />
+    <Compile Include="Class PictureSpec.prg" />
+    <Compile Include="Class rightSLE.prg" />
+    <Compile Include="Class searchSLE.prg" />
+    <Compile Include="Class SLE.prg" />
+    <Compile Include="Class SLEButton.prg" />
+    <Compile Include="Class timerSLE.prg" />
+    <Compile Include="Class wmDateRange.prg" />
+    <Compile Include="enums.prg" />
+    <Compile Include="Functions Calendar.prg" />
+    <Compile Include="Functions Dynamic Methods.prg" />
+    <Compile Include="internal.prg" />
+    <Compile Include="Properties\AssemblyInfo.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.prg">
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="rightSLEStrings.prg" />
+    <Compile Include="Transform.prg" />
+    <Compile Include="Version Notes.prg" />
+    <Compile Include="_dlgPECalendar.prg">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_dlgPopupCalc.prg">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rsle_CALCUP.BMP" />
+    <None Include="Resources\rsle_CALDOWN.BMP" />
+    <None Include="Resources\rsle_CALUP.BMP" />
+    <None Include="Resources\rsle_FOLDDOWN.BMP" />
+    <None Include="Resources\rsle_FOLDUP.BMP" />
+    <None Include="Resources\rsle_MAGNIFDN.BMP" />
+    <None Include="Resources\rsle_MAGNIFUP.BMP" />
+    <None Include="rightSLE.vh" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_dlgPECalendar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>_dlgPECalendar.prg</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_dlgPopupCalc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>_dlgPopupCalc.prg</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_BuildVersioningStyle="None.None.None.Increment" />
+    </VisualStudio>
+    <ProjectCapabilities>
+      <ProjectConfigurationsDeclaredAsItems />
+    </ProjectCapabilities>
+  </ProjectExtensions>
+</Project>

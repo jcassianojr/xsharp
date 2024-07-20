@@ -58,17 +58,17 @@
   </PropertyGroup>
   <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\RightSLEvogui\RightSLEvoGUI.xsproj">
+      <Name>RightSLEvoGUI</Name>
+      <Project>{aeff5f90-789f-40c7-93ef-00a737258b89}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <ProjectReference Include="..\FabPaintLibvo\FabPaintLibvo.xsproj">
       <Name>FabPaintLibvo</Name>
       <Project>{9FC4CB86-7117-45B3-8676-6FB31A5F0E2F}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
-      <Name>RightSLEvo</Name>
-      <Project>{BF7FDCFA-3356-48A5-B81C-5E6C9F6DD690}</Project>
       <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\esccodmon\esccodmon.xsproj">
