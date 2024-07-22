@@ -1,4 +1,4 @@
-FUNCTION formataTel(cNUMERO)
+﻿FUNCTION formataTel(cNUMERO)
 cNUMERO:=AllTrim(cNUMERO)
 cNUMERO:=StrTran(cNUMERO," ","")
 IF SubStr(cNUMERO, 1, 4) = "0300"  .Or. SubStr(cNUMERO, 1, 4) = "0800"  .OR. SubStr(cNUMERO,1,2)="55" .OR. SubStr(cNUMERO,1,1)="+"

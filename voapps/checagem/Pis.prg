@@ -1,4 +1,4 @@
-FUNC valpis(wk_pis,lMES)
+﻿FUNC valpis(wk_pis,lMES)
 LOCAL VER_DV AS LOGIC
 LOCAL ACUM1,ACUM2,X,NUM,RES,DV
 LOCAL NUMERA AS STRING
@@ -7,7 +7,7 @@ IF ValType(lMES)#"L"
 ENDIF	
 ZNERRO:=0
 IF Empty( wk_pis )
-   ZERRO:= "Numero N�o Informado"
+   ZERRO:= "Numero Não Informado"
    ZNERRO:=1
    IF lMES
       alert(ZERRO)

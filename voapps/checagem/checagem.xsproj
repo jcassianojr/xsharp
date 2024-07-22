@@ -1,21 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
   <PropertyGroup>
-    <ProjectGuid>1988C1AC-F19D-4008-BDCB-6050900181C8</ProjectGuid>
+    <ProjectGuid>91F5A977-216A-4591-9E7A-BC3526FEE24F</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>checagem</RootNamespace>
     <AssemblyName>checagem</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <Name>checagem</Name>
-    <Nologo>true</Nologo>
-    <GenerateFullPaths>true</GenerateFullPaths>
     <Dialect>VO</Dialect>
     <LB>true</LB>
     <OutputName>checagem</OutputName>
-    <StartupObject />
-    <ApplicationIcon />
     <Prefer32Bit>True</Prefer32Bit>
     <VulcanCompatibleResources>False</VulcanCompatibleResources>
     <AZ>false</AZ>
@@ -44,39 +39,19 @@
     <Undeclared>false</Undeclared>
     <NoStandardDefs>false</NoStandardDefs>
     <EnforceSelf>True</EnforceSelf>
-    <IncludePaths />
     <TargetFrameworkProfile />
+    <StartupObject />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
     <PlatformTarget>x86</PlatformTarget>
-    <EmitDebugInformation>true</EmitDebugInformation>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
-    <UseSharedCompilation>true</UseSharedCompilation>
-    <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
-    <WarningLevel>4</WarningLevel>
-    <PPO>false</PPO>
+    <DisabledWarnings>9032;9043;165;649;9025;9026;9076;9020;9021</DisabledWarnings>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Label="Configuration">
     <PlatformTarget>x86</PlatformTarget>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <EmitDebugInformation>false</EmitDebugInformation>
-    <DebugType>pdbonly</DebugType>
-    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <UseSharedCompilation>true</UseSharedCompilation>
     <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
-    <PPO>false</PPO>
-    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
   </PropertyGroup>
   <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
   <ItemGroup>
@@ -174,11 +149,6 @@
     <ProjectReference Include="..\mlibwvo27\mlibwvo27.xsproj">
       <Name>mlibwvo27</Name>
       <Project>{4bf79407-1c84-4cb1-88e6-d3f435490afb}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
-      <Name>RightSLEvo</Name>
-      <Project>{e1a8daf4-3bda-434a-9753-2b6f30230b1e}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>

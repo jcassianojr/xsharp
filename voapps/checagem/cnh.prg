@@ -1,4 +1,4 @@
-FUNCTION CheckCNHCat(cCNHCAT)
+﻿FUNCTION CheckCNHCat(cCNHCAT)
 LOCAL aCAT:={'A','B','C','D','E','AB','AC','AD','AE'}
 znerro:=0
 zerro :=''

@@ -1,0 +1,966 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>VOSystemClasses</name>
+  </assembly>
+  <members>
+    <member name="T:VO.DataField">
+      <summary>
+            Create a field, which is an object that holds information that defines a particular field in a data server (for example, the field's data type and length).
+        </summary>
+    </member>
+    <member name="M:VO.DataField.#ctor(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a data field.
+        </summary>
+      <param name="oHLName">The name or symbol representing the field.</param>
+      <param name="oFS">The FieldSpec object that defines the field's properties.  At a minimum, it must contain the data type and length of the field.</param>
+      <param name="oHLName">The hyperlabel containing the name of the field and any optional annotation.</param>
+      <param name="oFS">The FieldSpec object that defines the field's properties.  At a minimum, it must contain the data type and length of the field.</param>
+    </member>
+    <member name="M:VO.DataField.AsString">
+      <summary>
+            Return the descriptive label defined for this field.
+        </summary>
+      <returns>
+            The caption from this field's hyperlabel, if it contains one; otherwise, the field's name is returned.
+        </returns>
+    </member>
+    <member name="P:VO.DataField.FieldSpec">
+      <summary>
+            The FieldSpec object connected to this field.
+        </summary>
+      <value>The FieldSpec object connected to this field.</value>
+    </member>
+    <member name="P:VO.DataField.HyperLabel">
+      <summary>
+            The hyperlabel connected to this field.
+        </summary>
+      <value>The hyperlabel connected to this field.</value>
+    </member>
+    <member name="P:VO.DataField.Name">
+      <summary>
+            A string representing the name of the field.
+        </summary>
+      <value>A string representing the name of the field.</value>
+    </member>
+    <member name="P:VO.DataField.NameSym">
+      <summary>
+            A symbol representing the name of the field.
+        </summary>
+      <value>A symbol representing the name of the field.</value>
+    </member>
+    <member name="T:VO.DataServer">
+      <summary>
+            Provide the base class from which all X# data servers are subclassed.
+        </summary>
+    </member>
+    <member name="M:VO.DataServer.#ctor">
+      <summary>
+            Construct a data server.
+        </summary>
+    </member>
+    <member name="M:VO.DataServer.Append">
+      <summary>
+            Append a blank record to the end of this data server (the new record becomes the current position and is ready for assignment of data values).
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.AsString">
+      <summary>
+            Return the descriptive label defined for this data server.
+        </summary>
+      <returns>
+            The caption from this data server's hyperlabel, if it contains one; otherwise, the data server's name is returned.
+        </returns>
+    </member>
+    <member name="P:VO.DataServer.BoF">
+      <summary>
+            A logical value indicating whether this data server is positioned at the beginning of the file, on the first record (TRUE if yes, FALSE if no).
+        </summary>
+      <value>A logical value indicating whether this data server is positioned at the beginning of the file, on the first record (TRUE if yes, FALSE if no).</value>
+    </member>
+    <member name="P:VO.DataServer.Clients">
+      <summary>**Missing documentation **</summary>
+      <value>**Missing documentation **</value>
+    </member>
+    <member name="M:VO.DataServer.Close">
+      <summary>
+            Close down the server in a manner specific to the database used.
+        </summary>
+      <returns>
+            TRUE if the operation was successful; FALSE if not. (How can closing down a server be unsuccessful?  If you are accessing a database over a network, and the network goes down before the server is closed, the DataServer:Close() operation may be the first one to fail, but it is still important to respond to this failure since it may indicate that database changes are not committed.)
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.Commit">
+      <summary>
+            Force all pending updates to this data server to be permanently written to disk.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.DataServer.ConcurrencyControl">
+      <summary>
+            A constant, identifying the mode of automatic concurrency control for this data server, determining when and how records are locked and released:
+        </summary>
+      <value>A constant, identifying the mode of automatic concurrency control for this data server, determining when and how records are locked and released:</value>
+    </member>
+    <member name="M:VO.DataServer.DataField(XSharp.__Usual)">
+      <summary>
+            Retrieve the DataField object at a specified field position.
+        </summary>
+      <param name="nFieldPosition">The name, number, or symbol representing the desired field.</param>
+    </member>
+    <member name="P:VO.DataServer.DBStruct">
+      <summary>
+            An array containing the structure of this data server.
+        </summary>
+      <value>An array containing the structure of this data server.</value>
+    </member>
+    <member name="M:VO.DataServer.Delete">
+      <summary>
+            Delete the current record in this data server.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.DataServer.EoF">
+      <summary>
+            A logical value indicating whether this data server is positioned at the end of the file, on the last record after an attempt to move beyond the last record (TRUE if yes, FALSE if no).
+        </summary>
+      <value>A logical value indicating whether this data server is positioned at the end of the file, on the last record after an attempt to move beyond the last record (TRUE if yes, FALSE if no).</value>
+    </member>
+    <member name="P:VO.DataServer.FCount">
+      <summary>
+            The number of fields in this data server.
+        </summary>
+      <value>The number of fields in this data server.</value>
+    </member>
+    <member name="M:VO.DataServer.FIELDGET(XSharp.__Usual)">
+      <summary>
+            Return the contents of a specified field in this data server.
+        </summary>
+      <param name="nFieldPosition">The name, number, or symbol representing the desired field.</param>
+      <returns>
+            The field's contents.  The data type of the return value depends on the data type of the field.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.FieldGetFormatted(XSharp.__Usual)">
+      <summary>
+            Return the contents of a specified field in this data server, according to the formatting specifications of its FieldSpec.
+        </summary>
+      <param name="nFieldPosition">The name, number, or symbol representing the desired field.</param>
+      <returns>
+            The field's contents.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.FieldHyperLabel(XSharp.__Usual)">
+      <summary>
+            Return the hyperlabel defined for a field in this data server.
+        </summary>
+      <param name="nFieldPosition">The name, number, or symbol representing the desired field.</param>
+    </member>
+    <member name="M:VO.DataServer.FieldName(XSharp.__Usual)">
+      <summary>
+            Return the name of a field in this data server.
+        </summary>
+      <param name="nFieldPosition">The number of the desired field.</param>
+    </member>
+    <member name="M:VO.DataServer.FieldPos(XSharp.__Usual)">
+      <summary>
+            Return the position of a field in this data server.
+        </summary>
+      <param name="nFieldPosition">The name of the desired field.</param>
+    </member>
+    <member name="M:VO.DataServer.FIELDPUT(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Assign a value to a field in this data server.
+        </summary>
+      <param name="nFieldPosition">The name, number, or symbol representing the desired field.</param>
+      <param name="uValue">The value to be assigned to the field.  The data type of this value must match the data type of the field.</param>
+      <returns>
+            The newly assigned value if the operation was successful; otherwise, NIL.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.FieldSpec(XSharp.__Usual)">
+      <summary>
+            Return the FieldSpec object for a field in this data server.
+        </summary>
+      <param name="nFieldPosition">The number representing the desired field.</param>
+    </member>
+    <member name="M:VO.DataServer.FieldStatus(XSharp.__Usual)">
+      <summary>
+            Determine the status of a field in this data server after the last operation.
+        </summary>
+      <param name="nFieldPosition">The name, number, or symbol representing the desired field.</param>
+      <returns>
+            A HyperLabel object if any error condition had occurred or if a validation has failed, NIL if everything is OK, if the validation passed, or if there has been no validation attempt.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.FieldSym(XSharp.__Usual)">
+      <summary>
+            Return the symbolic name of a field in this data server.
+        </summary>
+      <param name="nFieldPosition">The name, number, or symbol representing the desired field.</param>
+    </member>
+    <member name="M:VO.DataServer.FieldValidate(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Perform all the validations defined to the FieldSpec of a field in this data server (for example, required, maximum and minimum digits, maximum and minimum value, validation rule) and return the result of the test.
+        </summary>
+      <param name="nFieldPosition">The name, number, or symbol representing the desired field.</param>
+      <param name="uValue">The value that is to be validated.  Its data type should be compatible with the data type of the specified field.  If the type cannot be converted to the appropriate data type, it is considered to have failed validation.</param>
+      <returns>
+            FALSE if any of the validations fail; otherwise, TRUE.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.FLOCK">
+      <summary>
+            Lock this entire data server for exclusive access.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.GoBottom">
+      <summary>
+            Position this data server at the last record.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.GoTo(XSharp.__Usual)">
+      <summary>
+            Position this data server on a specified record number.
+        </summary>
+      <param name="nPosition">The record number to which the server should be positioned.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.GoTop">
+      <summary>
+            Position this data server at the first record.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.DataServer.HLStatus">
+      <summary>**Missing documentation **</summary>
+      <value>**Missing documentation **</value>
+    </member>
+    <member name="P:VO.DataServer.HyperLabel">
+      <summary>
+            The hyperlabel connected to this data server.  From the hyperlabel, you can retrieve additional information about the data server
+        </summary>
+      <value>The hyperlabel connected to this data server.  From the hyperlabel, you can retrieve additional information about the data server</value>
+    </member>
+    <member name="P:VO.DataServer.Name">
+      <summary>
+            A string representing the name of this data server.
+        </summary>
+      <value>A string representing the name of this data server.</value>
+    </member>
+    <member name="P:VO.DataServer.NameSym">
+      <summary>
+            A symbol representing the name of this data server.
+        </summary>
+      <value>A symbol representing the name of this data server.</value>
+    </member>
+    <member name="M:VO.DataServer.NoIVarGet(XSharp.__Usual)">
+      <summary>
+            Provide a general error interception that is automatically called (in any class) whenever an access reference is made to a non-existent exported instance variable.  In the DataServer class, it is used to implement the virtual field variable.
+            <br />Important!  NoIVarGet() should not be called directly; it is called by the system for handling invalid references.
+        </summary>
+      <param name="symFieldName">The symbolic name of the variable that was referenced.  In the standard usage of the method with the DataServer class, this is a field name.</param>
+    </member>
+    <member name="M:VO.DataServer.NoIVarPut(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Provide a general error interception that is automatically called (in any class) whenever an assignment reference is made to a non-existent exported instance variable.  In the DataServer class, it is used to implement the virtual field variable.
+            <br />Important!  NoIVarPut() should not be called directly; it is called by the system for handling invalid references.
+        </summary>
+      <param name="symFieldName">The symbolic name of the variable that was referenced.  In the standard usage of the method with the DBServer class, this is a field name.</param>
+      <param name="uValue">The value to be assigned to the field.  The data type of this value must match the data type of the field.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.Notify(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            An event handler that responds to events that have occurred in methods of this server, or in other servers that are linked to this server in some way.  The standard implementation notifies all the server's clients of the event.
+            Description
+            <br />Important!  This method is automatically called by the various action methods of the data server, and should normally not be called by application code.
+        </summary>
+      <param name="kNotification">Identifies the event, specified as one of the following constants:</param>
+      <param name="uDescription">Used only with some notification types.</param>
+      <returns>
+            SELF, except if NOTIFYINTENTTOMOVE is specified for <paramref name="kNotifyName" />.  In this case, the return value is TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.PostInit">
+      <summary>
+            Implement customized initialization code for the window.
+        </summary>
+    </member>
+    <member name="M:VO.DataServer.PreInit">
+      <summary>
+            Implement customized initialization code for the server.
+        </summary>
+    </member>
+    <member name="P:VO.DataServer.RecCount">
+      <summary>
+            A numeric value representing the number of records in this data server.
+        </summary>
+      <value>A numeric value representing the number of records in this data server.</value>
+    </member>
+    <member name="P:VO.DataServer.RecNo">
+      <summary>
+            A numeric value representing the current record number, identifying the position of the record pointer in this data server.
+        </summary>
+      <value>A numeric value representing the current record number, identifying the position of the record pointer in this data server.</value>
+    </member>
+    <member name="M:VO.DataServer.RegisterClient(XSharp.__Usual)">
+      <summary>
+            Register an object as a client of this data server, so that it receives notification messages from the server about certain actions.
+        </summary>
+      <param name="oForm">The object to be registered as a client of this data server (for example, a data window or a data browser).  Any object that provides a Notify() method can register itself as a client.</param>
+    </member>
+    <member name="M:VO.DataServer.ResetNotification">
+      <summary>
+            Resume the broadcasting of Notify messages to the server's attached clients (after DataServer:SuspendNotification() has been called).
+        </summary>
+    </member>
+    <member name="M:VO.DataServer.RLOCK(XSharp.__Usual)">
+      <summary>
+            Lock a specific record in this data server for exclusive write access; other users can still make read-only reference to the record.
+        </summary>
+      <param name="nRecord">The ID (usually a record number) of the record to be locked.  If specified, record locks held by the current process are retained.  If not specified, all locks held by the current process are released and the current record is assumed.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.  Note that FALSE is returned even if the record was successfully locked but other record locks cannot be maintained.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.RLockVerify">
+      <summary>
+            Determine if the current record in this data server has any pending updates and lock it for exclusive write access if there are none.
+        </summary>
+      <returns>
+            TRUE if the record is unchanged and the lock was successfully taken; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.Rollback">
+      <summary>
+            Undo the changes made to this data server within the current transaction.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.Seek(XSharp.__Usual)">
+      <summary>
+            Move to the next record having a specified key value in the controlling order.
+        </summary>
+      <param name="uValue">The value to be searched for.  The data type of the search expression should match the type of the controlling order.  If there is no controlling order, Seek() searches on the record number and is therefore equivalent to GoTo().</param>
+      <returns>
+            TRUE if the specified key value was found; otherwise, FALSE.  Note that a FALSE value can indicate either that the value was not found or that the server does not support this search operation.  Use the DataServer:Status property to determine the reason for a failure.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.SetDataField(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Assign a DataField object to a specified field in this data server.
+        </summary>
+      <param name="nFieldPosition">The number of the data field.</param>
+      <param name="oDataField">The data field to be assigned.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.Skip(XSharp.__Usual)">
+      <summary>
+            Move the record pointer forward or backward in this data server a specified number of records.
+        </summary>
+      <param name="nRelativePosition">The number of records to move, relative to the current record.  A positive value means to move forward, and a negative value means to move backward.  The default is +1.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.  Note that a FALSE value can also indicate that beginning- or end-of-file was encountered.  Use the DataServer:Status property to determine the reason for a failure.
+        </returns>
+    </member>
+    <member name="P:VO.DataServer.Status">
+      <summary>
+            A hyperlabel identifying the status of this data server after the last operation.
+        </summary>
+      <value>A hyperlabel identifying the status of this data server after the last operation.</value>
+    </member>
+    <member name="M:VO.DataServer.SuspendNotification">
+      <summary>
+            Suspend the broadcasting of Notify messages to the server's attached clients.
+        </summary>
+    </member>
+    <member name="M:VO.DataServer.UnLock">
+      <summary>
+            Remove all locks held on this data server.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.UnRegisterClient(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Remove the registration of an object as a client of this data server, so that it no longer receives notification messages from the server about certain actions.
+        </summary>
+      <param name="oClient">The object to unregister (for example, DataWindow or DataBrowser).</param>
+      <param name="lAllowClose">
+            TRUE closes the server if this is the last client registered with the server;
+            FALSE does not close the server.  The default is TRUE.
+        </param>
+      <returns>
+            TRUE if successful; otherwise, FALSE (including if the client was not previously registered).
+        </returns>
+    </member>
+    <member name="M:VO.DataServer.Update">
+      <summary>
+            Update this server with data from another server or table.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE, although even with FALSE, some records may have been updated.
+            This can happen if the operation failed halfway through because of technical problems.
+        </returns>
+    </member>
+    <member name="T:VO.DateFS">
+      <summary>
+            Create a date field specification which holds date data type information.
+        </summary>
+    </member>
+    <member name="M:VO.DateFS.#ctor(XSharp.__Usual)">
+      <summary>
+            Construct a date specification.
+        </summary>
+      <param name="oHLName">The hyperlabel that contains the field name and other attributes (i.e., caption, description, and help context) to be used to create the new date field specification.</param>
+    </member>
+    <member name="T:VO.FieldSpec">
+      <summary>
+            Create a field specification, which holds general data type information about data elements, such as database fields and window controls.
+        </summary>
+    </member>
+    <member name="M:VO.FieldSpec.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a field specification.
+        </summary>
+      <param name="oHLName">The hyperlabel that contains the field name and other attributes (i.e., caption, description, and help context) to be used to create the new field specification.</param>
+      <param name="uType">The data type of the new field specification.  It can be specified either as a one-character string or as a constant (See FieldSpec:ValType and FieldSpec:UsualType for valid strings and constants, respectively).</param>
+      <param name="uLength">The length of the field.  This argument is required for numeric and string data types, but is optional for all others.</param>
+      <param name="uDecimals">The number of decimals in the field.  This argument is used for numeric data types only.  The default is 0.</param>
+    </member>
+    <member name="M:VO.FieldSpec._SetType(XSharp.__Usual,XSharp.__Symbol)"></member>
+    <member name="M:VO.FieldSpec.AsString">
+      <summary>
+            Return the caption defined to this field specification's hyperlabel; if no caption is defined, return the name defined to the hyperlabel.
+        </summary>
+    </member>
+    <member name="P:VO.FieldSpec.Decimals">
+      <summary>
+            A numeric value representing the number of decimals defined to this field specification.
+        </summary>
+      <value>A numeric value representing the number of decimals defined to this field specification.</value>
+    </member>
+    <member name="P:VO.FieldSpec.HyperLabel">
+      <summary>
+            The hyperlabel connected to this field specification.
+        </summary>
+      <value>The hyperlabel connected to this field specification.</value>
+    </member>
+    <member name="P:VO.FieldSpec.Length">
+      <summary>
+            A numeric value representing the length defined to this field specification.
+        </summary>
+      <value>A numeric value representing the length defined to this field specification.</value>
+    </member>
+    <member name="P:VO.FieldSpec.Maximum">
+      <summary>
+            A numeric value representing the maximum value in the range validation for this field specification.
+        </summary>
+      <value>A numeric value representing the maximum value in the range validation for this field specification.</value>
+    </member>
+    <member name="P:VO.FieldSpec.Minimum">
+      <summary>
+            A numeric value representing the minimum value in the range validation for this field specification.
+        </summary>
+      <value>A numeric value representing the minimum value in the range validation for this field specification.</value>
+    </member>
+    <member name="P:VO.FieldSpec.MinLength">
+      <summary>
+            A numeric value representing the new minimum length validation for this field specification.
+        </summary>
+      <value>A numeric value representing the new minimum length validation for this field specification.</value>
+    </member>
+    <member name="P:VO.FieldSpec.MinLengthHL">
+      <summary>Error message when MinLength validation fails.</summary>
+      <value>Error message when MinLength validation fails.</value>
+    </member>
+    <member name="P:VO.FieldSpec.Nullable">
+      <summary>Is the field Nullable ?</summary>
+      <value>Is the field Nullable ?</value>
+    </member>
+    <member name="M:VO.FieldSpec.PerformValidations(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Test a specified value to see if it passes all of this field specification's validation rules.
+        </summary>
+      <param name="uValue">The value to test.</param>
+      <param name="arg">A second argument that is passed to the FieldSpec:Validate() method.</param>
+      <returns>
+            TRUE if the validation succeeded; otherwise, FALSE.
+            <note type="tip">If FALSE, the system sets FieldSpec:Status to the appropriate hyperlabel for the validation rule that failed; if TRUE, FieldSpec:Status is set to NULL_OBJECT.</note></returns>
+    </member>
+    <member name="P:VO.FieldSpec.Picture">
+      <summary>
+            A string representing the picture clause defined to this field specification.  It is used by the FieldSpec:Transform() method.
+        </summary>
+      <value>A string representing the picture clause defined to this field specification.  It is used by the FieldSpec:Transform() method.</value>
+    </member>
+    <member name="P:VO.FieldSpec.RangeHL">
+      <summary>Error message when Range validation fails.</summary>
+      <value>Error message when Range validation fails.</value>
+    </member>
+    <member name="P:VO.FieldSpec.Required">
+      <summary>
+            Logical value indicating whether the field is required (TRUE) or not (FALSE).
+        </summary>
+      <value>Logical value indicating whether the field is required (TRUE) or not (FALSE).</value>
+    </member>
+    <member name="P:VO.FieldSpec.RequiredHL">
+      <summary>Error message when Required validation fails.</summary>
+      <value>Error message when Required validation fails.</value>
+    </member>
+    <member name="M:VO.FieldSpec.SetLength(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Set a new length for this field specification and new hyperlabel diagnostics for the length check.
+        </summary>
+      <param name="w">The new length.  If omitted, the current value is not changed.</param>
+      <param name="oHL">The hyperlabel that contains the new diagnostics for the length check (caption, description, and help context).  If omitted, the current value is not changed.</param>
+    </member>
+    <member name="M:VO.FieldSpec.SetMinLength(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Set a new minimum length validation for this field specification and new hyperlabel diagnostics for the minimum length check.
+        </summary>
+      <param name="w">The new minimum length (if 0, the minimum length check is removed).  If omitted, the current value is not changed.</param>
+      <param name="oHL">The hyperlabel that contains the new diagnostics for the minimum length check (caption, description, and help context).  If omitted, the current value is not changed.</param>
+    </member>
+    <member name="M:VO.FieldSpec.SetRange(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Set a new range validation for this field specification and new hyperlabel diagnostics for the range check.
+        </summary>
+      <param name="uMinimum">The new minimum value.  If omitted, the current value is not changed.</param>
+      <param name="uMaximum">The new maximum value.  If omitted, the current value is not changed.</param>
+      <param name="oHL">The hyperlabel that contains the new diagnostics for the range check (caption, description, and help context).  If omitted, the current value is not changed.</param>
+    </member>
+    <member name="M:VO.FieldSpec.SetRequired(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Set a new required validation for this field specification and new hyperlabel diagnostics for the required check.
+        </summary>
+      <param name="lReq">TRUE if the field should be required; otherwise, FALSE.  If omitted, TRUE is assumed.</param>
+      <param name="oHL">The hyperlabel that contains the new diagnostics for the required check (caption, description, and help context).  If omitted, the current value is not changed.</param>
+    </member>
+    <member name="M:VO.FieldSpec.SetType(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Set a new data type for this field specification and new hyperlabel diagnostics for the data type check.
+        </summary>
+      <param name="uType">The new data type.  It can be specified either as a one-character string or as a constant (See FieldSpec:ValType and FieldSpec:UsualType for valid strings and constants, respectively).  If omitted, the current value is not changed.</param>
+      <param name="oHL">The hyperlabel that contains the new diagnostics for the data type check (caption, description, and help context).  If omitted, the current value is not changed.</param>
+    </member>
+    <member name="M:VO.FieldSpec.SetValidation(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Set a new validation rule for this field specification and new hyperlabel diagnostics for the validation rule check.
+        </summary>
+      <param name="cb">The new validation rule.  If omitted, the current value is not changed.</param>
+      <param name="oHL">The hyperlabel that contains the new diagnostics for the validation rule check (caption, description, and help context).  If omitted, the current value is not changed.</param>
+    </member>
+    <member name="P:VO.FieldSpec.Status">
+      <summary>
+            After a validation request (see FieldSpec:PerformValidations() for details), this contains a HyperLabel object that describes the results of the validation or NULL_OBJECT if the validation passed.
+        </summary>
+      <value>After a validation request (see FieldSpec:PerformValidations() for details), this contains a HyperLabel object that describes the results of the validation or NULL_OBJECT if the validation passed.</value>
+    </member>
+    <member name="M:VO.FieldSpec.Transform(XSharp.__Usual)">
+      <summary>
+            Convert a specified value into a string, formatted according to this field specification's picture clause.
+        </summary>
+      <param name="uValue">The value to format.  It should be of a type compliant with the underlying data type of this field specification.  If not, the method returns NIL and sets FieldSpec:Status accordingly (note that FieldSpec:Transform() performs no other validations).</param>
+    </member>
+    <member name="P:VO.FieldSpec.UsualType">
+      <summary>
+            A constant, representing the data type defined to this field specification:
+        </summary>
+      <value>A constant, representing the data type defined to this field specification:</value>
+    </member>
+    <member name="M:VO.FieldSpec.Val(XSharp.__Usual)">
+      <summary>
+            Convert a string to a value, according to this field specification's defined data type.
+        </summary>
+      <param name="cString">The string to convert.  If the string cannot be converted to the appropriate value, this method returns NIL and sets FieldSpec:Status to indicate the reason for the failure (note that FieldSpec:Val() performs no other validations).</param>
+    </member>
+    <member name="M:VO.FieldSpec.Validate(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            A replaceable method for performing validations.  The standard implementation evaluates the code block specified through FieldSpec:SetValidation().
+        </summary>
+      <param name="uValue">The value to be validated.</param>
+      <param name="arg">A second argument that is passed to the code block specified from FieldSpec:SetValidation().  During FieldSpec:PerformValidations(), executed from a data window or data browser, this argument is the Control object or Column object.</param>
+      <returns>
+            TRUE if the value is valid; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.FieldSpec.Validation">
+      <summary>
+            A code block that sets the validation rule for this field specification.
+        </summary>
+      <value>A code block that sets the validation rule for this field specification.</value>
+    </member>
+    <member name="P:VO.FieldSpec.ValidationHL">
+      <summary>Error message when Validation fails.</summary>
+      <value>Error message when Validation fails.</value>
+    </member>
+    <member name="P:VO.FieldSpec.ValType">
+      <summary>
+            A one-character string representing the data type defined to this field specification:
+        </summary>
+      <value>
+            A one-character string representing the data type defined to this field specification:
+        </value>
+    </member>
+    <member name="T:VO.FileSpec">
+      <summary>
+            Create a file specification, which provides a useful framework for managing file names and paths.
+        </summary>
+    </member>
+    <member name="M:VO.FileSpec.#ctor(XSharp.__Usual)">
+      <summary>
+            Construct a file specification.
+        </summary>
+      <param name="cFullPath">The file name containing either a full or partial path name.  If omitted, you should specify this file's path using the assign methods of the FileSpec class before the object is used.</param>
+    </member>
+    <member name="M:VO.FileSpec.AppendToPath(XSharp.__Usual)">
+      <summary>
+            Append a subdirectory to the end of this file specification's path.
+        </summary>
+      <param name="cDirectory">
+            The subdirectory to be appended, with or without leading and trailing slashes.  A list of subdirectories separated by slashes can also be appended.
+        </param>
+      <returns>
+            The resulting path.
+        </returns>
+    </member>
+    <member name="P:VO.FileSpec.Attributes">
+      <summary>
+            One or more of the following characters concatenated into a string, indicating the attributes of the file represented by this file specification:
+        </summary>
+      <value>One or more of the following characters concatenated into a string, indicating the attributes of the file represented by this file specification:</value>
+    </member>
+    <member name="M:VO.FileSpec.Copy(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Make a copy of the file represented by this file specification.
+        </summary>
+      <param name="oFSTarget">The name of the target file, including an optional drive, directory, and extension.  The file is created following operating system rules.</param>
+      <param name="lName">Logical parameter.  TRUE causes an auto-rename of the target file if a file conflict occurs during the copy.  The default is FALSE.</param>
+      <returns>
+            TRUE, if the file was successfully copied; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.FileSpec.DateChanged">
+      <summary>
+            A date value denoting when the file was created or last changed.  If the file is not found, NULL_DATE is returned.
+        </summary>
+      <value>A date value denoting when the file was created or last changed.  If the file is not found, NULL_DATE is returned.</value>
+    </member>
+    <member name="M:VO.FileSpec.Delete">
+      <summary>
+            Delete the file represented by this file specification.
+        </summary>
+      <returns>
+            TRUE if the file was successfully deleted; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.FileSpec.Drive">
+      <summary>
+            A string representing the drive defined to this file specification.
+        </summary>
+      <value>A string representing the drive defined to this file specification.</value>
+    </member>
+    <member name="P:VO.FileSpec.ErrInfo">
+      <summary>Return the error object from the last Copy() or Move() operation.</summary>
+      <value>The error object from the last Copy() or Move() operation.</value>
+    </member>
+    <member name="M:VO.FileSpec.Error(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Provide a method for handling error conditions raised during FileSpec processing.  This is an event handler: it is automatically called by other methods; the developer does not normally need to call the error method, but might want to replace or amend it.
+        </summary>
+      <param name="oError">An Error object describing the error condition.</param>
+      <param name="symMethod">The symbolic name of the method that originated the error.</param>
+    </member>
+    <member name="P:VO.FileSpec.Extension">
+      <summary>
+            A string representing the extension defined to this file specification.
+        </summary>
+      <value>A string representing the extension defined to this file specification.</value>
+    </member>
+    <member name="P:VO.FileSpec.FileName">
+      <summary>
+            A string representing the file name defined to this file specification.
+        </summary>
+      <value>A string representing the file name defined to this file specification.</value>
+    </member>
+    <member name="M:VO.FileSpec.Find">
+      <summary>
+            Search the disk for the file represented by this file specification, indicate if it exists, and if so, store its full path information in this file specification for future reference.
+        </summary>
+      <returns>
+            TRUE if the file was found; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.FileSpec.FullPath">
+      <summary>
+            A string representing the full path name defined to this file specification.
+        </summary>
+      <value>A string representing the full path name defined to this file specification.</value>
+    </member>
+    <member name="M:VO.FileSpec.Move(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Move the file represented by this file specification to a new location.
+        </summary>
+      <param name="oFSTarget">The name of the target file, including an optional drive, directory, and extension.  The file is created following operating system rules.  Note that a file can be moved across volumes.</param>
+      <param name="lName">Logical parameter.  TRUE causes an auto-rename of the target file if a file conflict occurs during the move.  The default is FALSE.</param>
+      <returns>
+            TRUE, if the file was successfully moved; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.FileSpec.Path">
+      <summary>
+            A string representing the path defined to this file specification.
+        </summary>
+      <value>A string representing the path defined to this file specification.</value>
+    </member>
+    <member name="M:VO.FileSpec.PathUp">
+      <summary>
+            Remove the last subdirectory from the end of this file specification's path.
+        </summary>
+      <returns>
+            The resulting path.
+        </returns>
+    </member>
+    <member name="M:VO.FileSpec.Rename(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Rename the file represented by this file specification.
+        </summary>
+      <param name="oFSTarget">The new file name.</param>
+      <param name="lName">
+            Make a different file name if conflict exist.
+            The new name will start with the base file name of the original file.
+            8 character file name with 5 or 6 chars of original name plus a suffix
+            ranging from "_1" to "_99" if a name conflict occurs. Otherwise returns NULL_STRING
+        </param>
+      <returns>
+            TRUE if the file was successfully renamed; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.FileSpec.Size">
+      <summary>
+            A numeric value representing the size, in bytes, of the file represented by this file specification.
+        </summary>
+      <value>A numeric value representing the size, in bytes, of the file represented by this file specification.</value>
+    </member>
+    <member name="P:VO.FileSpec.TimeChanged">
+      <summary>
+            A string indicating the time when the file was created or last changed.
+        </summary>
+      <value>A string indicating the time when the file was created or last changed.</value>
+    </member>
+    <member name="T:VO.HyperLabel">
+      <summary>
+            Create a hyperlabel, which stores information about another object.
+        </summary>
+    </member>
+    <member name="M:VO.HyperLabel.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a hyperlabel.
+        </summary>
+      <param name="uName">The symbolic name that the program uses to refer to the object to which the hyperlabel attaches.  For example, if the hyperlabel attaches to a menu command, the symbolic name is the method (of the window that owns the menu) that the system invokes when the user executes that menu command.  If the hyperlabel attaches to a field, the symbol is the field's name.  In other words, the symbolic name is only useful to the program.  The other items, by contrast, are meaningful to the user.</param>
+      <param name="uCaption">
+            The name of the object to which the hyperlabel attaches, as recognized by the user.  If the object is a control, the caption is the name shown beside, or on, the control.  If you supply the resource ID of a string, HyperLabel:Init() extracts the string.  if not specified, the default is the same as <paramref name="symName" />, if provided; otherwise, NULL_STRING.
+        </param>
+      <param name="uDescription">The purpose of the host object.  For a control, the purpose tells the user what the control is for.  By default, when a control gets focus, the system displays the control's hyperlabel's description upon the status bar.  Similarly, when the user drags the mouse across the menu, each time a new command is highlighted, its hyperlabel's description appears in the status bar.  If you supply the resource ID of a string, HyperLabel:Init() extracts the string.  If not specified, the default is NULL_STRING.</param>
+      <param name="uHelpContext">The string that uniquely identifies the place to jump in the hypertext help system.  In the case of Windows, this is just the context name.  The system uses the object's hyperlabel's help context to decide where to jump when the user asks for in-context help about the host object.  If you supply the resource ID of a string, HyperLabel:Init() extracts the string.  If not specified, the default is NULL_STRING.</param>
+    </member>
+    <member name="M:VO.HyperLabel.AsString">
+      <summary>
+            Return the caption of the hyperlabel.
+        </summary>
+    </member>
+    <member name="P:VO.HyperLabel.Caption">
+      <summary>
+            A string representing the short name or caption by which the user refers to the host object (to which the hyperlabel is attached).  For a menu command, this would be the text appearing in the menu itself.
+        </summary>
+      <value>A string representing the short name or caption by which the user refers to the host object (to which the hyperlabel is attached).  For a menu command, this would be the text appearing in the menu itself.</value>
+    </member>
+    <member name="P:VO.HyperLabel.Description">
+      <summary>
+            A string representing the purpose of the host object (to which the hyperlabel is attached).  Typically, the system uses this as a prompt to the user or as a faster substitute for hypertext help.
+        </summary>
+      <value>A string representing the purpose of the host object (to which the hyperlabel is attached).  Typically, the system uses this as a prompt to the user or as a faster substitute for hypertext help.</value>
+    </member>
+    <member name="M:VO.HyperLabel.Error(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Provide a method for handling error conditions raised during hyperlabel processing.
+        </summary>
+      <param name="oError">An Error object describing the error condition.</param>
+      <param name="symMethod">The symbolic name of the method that originated the error.</param>
+    </member>
+    <member name="P:VO.HyperLabel.HelpContext">
+      <summary>
+            A string representing the key or ID for the place in the hypertext system where the system looks for help concerning the host object (to which the hyperlabel is attached).
+        </summary>
+      <value>A string representing the key or ID for the place in the hypertext system where the system looks for help concerning the host object (to which the hyperlabel is attached).</value>
+    </member>
+    <member name="P:VO.HyperLabel.Name">
+      <summary>
+            A string representing the name of the host object to which the hyperlabel is attached.
+        </summary>
+      <value>A string representing the name of the host object to which the hyperlabel is attached.</value>
+    </member>
+    <member name="P:VO.HyperLabel.NameSym">
+      <summary>
+            A symbol representing the name of the host object to which the hyperlabel is attached.
+        </summary>
+      <value>A symbol representing the name of the host object to which the hyperlabel is attached.</value>
+    </member>
+    <member name="T:VO.IntegerFS">
+      <summary>
+            Create an integer field specification, which holds integer data type information.
+        </summary>
+    </member>
+    <member name="M:VO.IntegerFS.#ctor(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct an integer field specification.
+        </summary>
+      <param name="oHLName">The hyperlabel that contains the field name and other attributes (i.e., caption, description, and help context) to be used to create the new integer field specification.</param>
+      <param name="uLength">The length of the field.  If not specified, the default is 10.</param>
+    </member>
+    <member name="T:VO.LogicFS">
+      <summary>
+            Create a logic field specification, which holds logic data type information.
+        </summary>
+    </member>
+    <member name="M:VO.LogicFS.#ctor(XSharp.__Usual)">
+      <summary>
+            Construct a logic field specification.
+        </summary>
+      <param name="oHLName">The hyperlabel that contains the field name and other attributes (i.e., caption, description, and help context) to be used to create the new logic field specification.</param>
+    </member>
+    <member name="T:VO.MoneyFS">
+      <summary>
+            Create a money field specification, which holds money data type information.
+        </summary>
+    </member>
+    <member name="M:VO.MoneyFS.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a money field specification.
+        </summary>
+      <param name="oHLName">The hyperlabel that contains the field name and other attributes (i.e., caption, description, and help context) to be used to create the new money field specification.</param>
+      <param name="uLength">The length of the field.  If not specified, the default is 12.</param>
+      <param name="uDecimals">The number of decimals in the field.  If not specified, the default is 2.</param>
+    </member>
+    <member name="T:VO.NumberFS">
+      <summary>
+            Create a number field specification, which holds numeric data type information.
+        </summary>
+    </member>
+    <member name="M:VO.NumberFS.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a numeric field specification.
+        </summary>
+      <param name="oHLName">The hyperlabel that contains the field name and other attributes (i.e., caption, description, and help context) to be used to create the new number field specification.</param>
+      <param name="uLength">The length of the field.  If not specified, the default is 12.</param>
+      <param name="uDecimals">The number of decimals in the field.  If not specified, the default is 2.</param>
+    </member>
+    <member name="T:VO.StringFS">
+      <summary>
+            Create a string field specification, which holds string data type information.
+        </summary>
+    </member>
+    <member name="M:VO.StringFS.#ctor(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a string field specification.
+        </summary>
+      <param name="oHLName">The hyperlabel that contains the field name and other attributes (i.e., caption, description, and help context) to be used to create the new string field specification.</param>
+      <param name="uLength">The length of the field.  If not specified, the default is 10.</param>
+    </member>
+    <member name="T:VOSystemClasses.Functions">
+      <summary>This compiler generated class contains all the functions, globals and defines that are defined in the VOSystemClasses.dll assembly. </summary>
+    </member>
+    <member name="F:VOSystemClasses.Functions.NOTIFYAPPEND">
+      <summary>
+            A new record has been appended
+        </summary>
+    </member>
+    <member name="F:VOSystemClasses.Functions.NOTIFYCLEARRELATION">
+      <summary>
+            The relation between the parent and child was changed
+        </summary>
+    </member>
+    <member name="F:VOSystemClasses.Functions.NOTIFYCLOSE">
+      <summary>
+            The server is closed
+        </summary>
+    </member>
+    <member name="F:VOSystemClasses.Functions.NOTIFYCOMPLETION">
+      <summary>
+            An operation has completed
+        </summary>
+    </member>
+    <member name="F:VOSystemClasses.Functions.NOTIFYCONCURRENCYCONTROLMODE">
+      <summary>
+            Not used
+        </summary>
+    </member>
+    <member name="F:VOSystemClasses.Functions.NOTIFYDELETE">
+      <summary>
+            The current record has been deleted
+        </summary>
+    </member>
+    <member name="F:VOSystemClasses.Functions.NOTIFYFIELDCHANGE">
+      <summary>
+            A field in the current record has changed
+        </summary>
+    </member>
+    <member name="F:VOSystemClasses.Functions.NOTIFYFILECHANGE">
+      <summary>
+            An operation has finished that processed one or more records
+        </summary>
+    </member>
+    <member name="F:VOSystemClasses.Functions.NOTIFYGOBOTTOM">
+      <summary>
+            The server has moved to the last (logical)  record
+        </summary>
+    </member>
+    <member name="F:VOSystemClasses.Functions.NOTIFYGOTOP">
+      <summary>
+            The server has moved to the first (logical)  record
+        </summary>
+    </member>
+    <member name="F:VOSystemClasses.Functions.NOTIFYINTENTTOMOVE">
+      <summary>
+            The server intents to move
+        </summary>
+    </member>
+    <member name="F:VOSystemClasses.Functions.NOTIFYRECORDCHANGE">
+      <summary>
+            The current record has changed
+        </summary>
+    </member>
+    <member name="F:VOSystemClasses.Functions.NOTIFYRELATIONCHANGE">
+      <summary>
+            The parent record has changed, the child must change too
+        </summary>
+    </member>
+  </members>
+</doc>

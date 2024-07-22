@@ -1,4 +1,4 @@
-FUNCTION VALCEI(wk_cei)
+﻿FUNCTION VALCEI(wk_cei)
 //IF LastKey()=K_UP.OR.LastKey()=K_DOWN  && retorna caso seta para cima ou baixo
 //   RETURN .t.
 //ENDIF
@@ -7,7 +7,7 @@ LOCAL CEI AS ARRAY
 LOCAL WK_STR AS STRING
 LOCAL X,wk_val_cal,wk_cal,wk_val_du,wk_dv
 IF Empty( WK_CEI )
-   alert( "Numero N�o Informado" )
+   alert( "Numero Não Informado" )
    RETU .F.
 ENDIF
 ver_dv := .F.

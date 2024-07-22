@@ -1,174 +1,53 @@
 DESIGNERSTART = VOWindowEditor,DATADIALOG,_JCheck
-GUID=C51DC58D-2AFF-4A78-95D0-C124B493A967
+GUID=131E8CCD-DD86-4611-BB18-387F130BCAD3
   Name=_JCheck
-  Class=FORM:DATADIALOG
+  Class=DATADIALOG
   Caption=Checagem de Codigos
   Order=0
-  Left=5
-  Width=507
-  Top=-5
-  Height=429
-  Browseindex=0
+  Left=86
+  Width=505
+  Top=86
+  Height=451
+  Browseindex=-1
   Browsesize=0
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Checagem de Codigos
-  Property=HyperLabel=_JCheck
+  Property=HyperLabel=,"Checagem de Codigos",,
+  Property=HyperLabel=#_JCheck,,,
   Property=ClipperKeys=True
-SavedOnce=1
+  Property=ViewAs=#FormView
+
 SUBCONTROLSSTART
-CONTROL=PUSHBUTTON
-GUID=184FC342-4562-4BAD-8FF4-22D1D3BD4959
-  Name=BtnCheckEmail
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
-  Caption=Checar Email
-  Order=41
-  Left=280
-  Width=135
-  Top=336
-  Height=20
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=0
-  Styles=1073741824
-  Exstyles=0
-  Property=HyperLabel=,Checar Email
-  Property=HyperLabel=BtnCheckEmail
-  Property=TooltipText=Checar PIS
-CONTROL=PUSHBUTTON
-GUID=2B76C46C-AADD-4005-BD8F-6AB8D9CF614D
-  Name=checkcns
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
-  Caption=Checar cns
-  Order=38
-  Left=282
-  Width=135
-  Top=307
-  Height=20
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=0
-  Styles=1073741824
-  Exstyles=0
-  Property=HyperLabel=,Checar cns
-  Property=HyperLabel=checkcns
-  Property=TooltipText=Checar PIS
 CONTROL=SINGLELINEEDIT
-GUID=F9200BEB-CCF2-46DC-8F4B-05905BFBEB04
-  Name=txtEmail
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
-  Caption=
-  Order=40
-  Left=96
-  Width=171
-  Top=336
-  Height=20
-  Browseindex=14
-  Browsesize=17
-  Subform=No
-  Nosave=No
-  Deleted=0
-  Styles=1082196096
-  Exstyles=512
-  Property=HyperLabel=txtEmail
-  Property=FieldSpec=padrao_char_15
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite o Pis
-CONTROL=SINGLELINEEDIT
-GUID=27CEAB36-0C9E-44ED-91F7-68EB44D6D55D
-  Name=cns
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
-  Caption=
-  Order=39
-  Left=98
-  Width=171
-  Top=307
-  Height=20
-  Browseindex=14
-  Browsesize=17
-  Subform=No
-  Nosave=No
-  Deleted=0
-  Styles=1082196096
-  Exstyles=512
-  Property=HyperLabel=cns
-  Property=FieldSpec=padrao_char_15
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite o Pis
-CONTROL=FIXEDTEXT
-GUID=F31CE7A7-474B-455A-8BB1-DCF4D7EC97AE
-  Name=FixedText3
-  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
-  Caption=Obs: Checagem de Referência Apenas
-  Order=21
-  Left=40
-  Width=399
-  Top=368
-  Height=39
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=0
-  Styles=1073741825
-  Exstyles=0
-  Property=HyperLabel=,Obs: Checagem de Referência Apenas
-  Property=HyperLabel=FixedText3
-  Property=NewFont=14:Microsoft Sans Serif
-CONTROL=PUSHBUTTON
-GUID=30DA874D-FAF3-4035-AD1B-2BFAB1E8975A
-  Name=checkrgClick
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
-  Caption=Checar Numero RG
-  Order=35
-  Left=280
-  Width=132
-  Top=256
-  Height=20
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=0
-  Styles=1073741824
-  Exstyles=0
-  Property=HyperLabel=,Checar Numero RG
-  Property=HyperLabel=checkrgClick
-  Property=TooltipText=Checar Numero Renavam
-CONTROL=SINGLELINEEDIT
-GUID=42E62379-A3B6-4417-B755-4D50EB54C22B
+GUID=047739F5-38FE-41CB-8C30-98119020B978
   Name=cgc
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
-  Caption=cgc
+  Class=SINGLELINEEDIT
+  Caption=
   Order=1
   Left=105
   Width=171
   Top=13
   Height=20
   Browseindex=0
-  Browsesize=17
+  Browsesize=5
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1082196096
   Exstyles=512
-  Property=HyperLabel=,cgc
-  Property=HyperLabel=cgc
+  Property=HyperLabel=#cgc,,,
+  Property=HyperLabel=,"cgc",,
+  Property=Picture="NN.NNN.NNN/NNNN-99"
+  Property=TooltipText="Digite o CGC"
   Property=FieldSpec=padrao_char_18
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite o CGC
-  Property=Picture=99.999.999/9999-99
+
 CONTROL=SINGLELINEEDIT
-GUID=2D0167A9-0E70-4B0D-A121-52843DAE9019
+GUID=D1A64BD8-57FF-4986-8FB0-C6D5E9FABAEB
   Name=cpf
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Class=SINGLELINEEDIT
   Caption=
   Order=2
   Left=102
@@ -176,21 +55,21 @@ GUID=2D0167A9-0E70-4B0D-A121-52843DAE9019
   Top=37
   Height=20
   Browseindex=1
-  Browsesize=17
+  Browsesize=5
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1082196096
   Exstyles=512
-  Property=HyperLabel=cpf
+  Property=HyperLabel=#cpf,,,
+  Property=Picture="999.999.999-99"
+  Property=TooltipText="Digite o CPF"
   Property=FieldSpec=padrao_char_14
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite o CPF
-  Property=Picture=999.999.999-99
+
 CONTROL=SINGLELINEEDIT
-GUID=9DBCB0A3-8172-47A0-BE74-C3734D156D6A
+GUID=93861968-7D2F-4D22-B6B4-C408C28D488D
   Name=PIS
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Class=SINGLELINEEDIT
   Caption=
   Order=3
   Left=102
@@ -198,20 +77,20 @@ GUID=9DBCB0A3-8172-47A0-BE74-C3734D156D6A
   Top=60
   Height=20
   Browseindex=2
-  Browsesize=17
+  Browsesize=5
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1082196096
   Exstyles=512
-  Property=HyperLabel=PIS
+  Property=HyperLabel=#PIS,,,
+  Property=TooltipText="Digite o Pis"
   Property=FieldSpec=padrao_char_11
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite o Pis
+
 CONTROL=SINGLELINEEDIT
-GUID=799C3006-92CC-4910-967E-40FC2F09FCA6
+GUID=7BD0A91E-047A-4B8E-8FFE-089B28ADD759
   Name=IE
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Class=SINGLELINEEDIT
   Caption=
   Order=4
   Left=25
@@ -219,20 +98,20 @@ GUID=799C3006-92CC-4910-967E-40FC2F09FCA6
   Top=85
   Height=20
   Browseindex=3
-  Browsesize=17
+  Browsesize=4
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1082196096
   Exstyles=512
-  Property=HyperLabel=IE
+  Property=HyperLabel=#IE,,,
+  Property=TooltipText="Digite a Inscricao Estadual"
   Property=FieldSpec=PADRAO_CHAR_16
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite a Inscricao Estadual
+
 CONTROL=SINGLELINEEDIT
-GUID=047F891C-F9FF-4B06-9ECF-25D24049DBAF
+GUID=4A775117-94AE-4ADD-B29A-C955BAE8F487
   Name=UF
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Class=SINGLELINEEDIT
   Caption=
   Order=5
   Left=237
@@ -240,20 +119,20 @@ GUID=047F891C-F9FF-4B06-9ECF-25D24049DBAF
   Top=85
   Height=20
   Browseindex=4
-  Browsesize=17
+  Browsesize=4
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1082196104
   Exstyles=512
-  Property=HyperLabel=UF
+  Property=HyperLabel=#UF,,,
+  Property=TooltipText="Digite o Estado"
   Property=FieldSpec=UF_FIELD
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite o Estado
+
 CONTROL=SINGLELINEEDIT
-GUID=14852B7E-2A21-4533-9011-C177068690C1
+GUID=27781A5B-A23B-4F3F-8208-E9F32089A953
   Name=CEI
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Class=SINGLELINEEDIT
   Caption=
   Order=6
   Left=101
@@ -261,20 +140,20 @@ GUID=14852B7E-2A21-4533-9011-C177068690C1
   Top=109
   Height=20
   Browseindex=5
-  Browsesize=17
+  Browsesize=5
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1082196096
   Exstyles=512
-  Property=HyperLabel=CEI
+  Property=HyperLabel=#CEI,,,
+  Property=TooltipText="Digite o CEI"
   Property=FieldSpec=padrao_char_12
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite o CEI
+
 CONTROL=SINGLELINEEDIT
-GUID=A674AB34-F350-484A-94B9-EE5C64300015
+GUID=EAE32A0F-BB8B-44FC-B040-1C9F410F248B
   Name=FGTS
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Class=SINGLELINEEDIT
   Caption=
   Order=7
   Left=101
@@ -282,20 +161,20 @@ GUID=A674AB34-F350-484A-94B9-EE5C64300015
   Top=132
   Height=20
   Browseindex=6
-  Browsesize=17
+  Browsesize=6
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1082196096
   Exstyles=512
-  Property=HyperLabel=FGTS
+  Property=HyperLabel=#FGTS,,,
+  Property=TooltipText="Digite o Numero conta FGTS"
   Property=FieldSpec=padrao_char_11
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite o Numero conta FGTS
+
 CONTROL=SINGLELINEEDIT
-GUID=88638E57-0EA9-4A70-BC2B-28A66A0080AF
+GUID=F927719F-2E30-417C-A3B1-8B4C5766FAFB
   Name=agencia
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Class=SINGLELINEEDIT
   Caption=
   Order=8
   Left=117
@@ -303,20 +182,20 @@ GUID=88638E57-0EA9-4A70-BC2B-28A66A0080AF
   Top=165
   Height=20
   Browseindex=7
-  Browsesize=17
+  Browsesize=9
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1082196104
   Exstyles=512
-  Property=HyperLabel=agencia
+  Property=HyperLabel=#agencia,,,
+  Property=TooltipText="Digite o Nome da Agencia"
   Property=FieldSpec=paDRAO_CHAR_07
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite o Nome da Agencia
+
 CONTROL=SINGLELINEEDIT
-GUID=FC28DB36-D894-4448-BF6C-EF903E34D6A5
+GUID=1FAABA27-40B6-49B4-87BB-807BD934E9BC
   Name=conta
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Class=SINGLELINEEDIT
   Caption=
   Order=9
   Left=205
@@ -324,20 +203,20 @@ GUID=FC28DB36-D894-4448-BF6C-EF903E34D6A5
   Top=165
   Height=20
   Browseindex=8
-  Browsesize=17
+  Browsesize=7
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1082196104
   Exstyles=512
-  Property=HyperLabel=conta
+  Property=HyperLabel=#conta,,,
+  Property=TooltipText="Digite o Numero da Conta"
   Property=FieldSpec=padrao_char_12
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite o Numero da Conta
+
 CONTROL=SINGLELINEEDIT
-GUID=476E18DF-AED6-471B-AA2A-527FA2DBE8FE
+GUID=EA101658-33D2-4525-B15C-541ADD949A35
   Name=cartao
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Class=SINGLELINEEDIT
   Caption=
   Order=10
   Left=101
@@ -345,20 +224,20 @@ GUID=476E18DF-AED6-471B-AA2A-527FA2DBE8FE
   Top=209
   Height=20
   Browseindex=9
-  Browsesize=17
+  Browsesize=8
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1082196096
   Exstyles=512
-  Property=HyperLabel=cartao
+  Property=HyperLabel=#cartao,,,
+  Property=TooltipText="Digite o Numero Cartao Credito"
   Property=FieldSpec=PADRAO_CHAR_20
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite o Numero Cartao Credito
+
 CONTROL=SINGLELINEEDIT
-GUID=BD62101A-08AF-4391-A540-0FF71C90BD35
+GUID=3D055E43-ADC5-4B1A-B987-AFA0108094C7
   Name=renavam
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Class=SINGLELINEEDIT
   Caption=
   Order=11
   Left=101
@@ -366,42 +245,42 @@ GUID=BD62101A-08AF-4391-A540-0FF71C90BD35
   Top=233
   Height=20
   Browseindex=10
-  Browsesize=17
+  Browsesize=9
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1082196096
   Exstyles=512
-  Property=HyperLabel=renavam
+  Property=HyperLabel=#renavam,,,
+  Property=TooltipText="Digite o Numero Renavam"
   Property=FieldSpec=PADRAO_CHAR_20
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite o Numero Renavam
+
 CONTROL=SINGLELINEEDIT
-GUID=79342047-56FF-43AC-837D-CBB45F39B248
+GUID=068EBC16-2497-4107-BD90-5F89F70389F1
   Name=RG
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
-  Caption=RG
+  Class=SINGLELINEEDIT
+  Caption=
   Order=12
   Left=101
   Width=171
   Top=257
   Height=20
   Browseindex=11
-  Browsesize=17
+  Browsesize=4
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1082196096
   Exstyles=512
-  Property=HyperLabel=,RG
-  Property=HyperLabel=RG
+  Property=HyperLabel=#RG,,,
+  Property=TooltipText="Digite o Numero RGCarteira de Identidade"
   Property=FieldSpec=PADRAO_CHAR_12
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite o Numero RGCarteira de Identidade
+  Property=HyperLabel=,"RG",,
+
 CONTROL=PUSHBUTTON
-GUID=D43C73B8-1E6E-4729-BA67-96957F69ED20
+GUID=15D47F52-A694-440A-9E64-A20E1B3D1F1E
   Name=checkcgc
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=Checar CNPJ
   Order=13
   Left=286
@@ -415,13 +294,14 @@ GUID=D43C73B8-1E6E-4729-BA67-96957F69ED20
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Checar CNPJ
-  Property=HyperLabel=checkcgc
-  Property=TooltipText=Checar CNPJ/CGC
+  Property=HyperLabel=,"Checar CNPJ",,
+  Property=HyperLabel=#checkcgc,,,
+  Property=TooltipText="Checar CNPJ/CGC"
+
 CONTROL=PUSHBUTTON
-GUID=AC5D09BB-DCCD-4DCB-A440-F82E6C9A1C36
+GUID=18179F44-99AF-4396-8054-99EE0D51D0AD
   Name=checkcPF
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=Checar CPF
   Order=14
   Left=286
@@ -435,13 +315,14 @@ GUID=AC5D09BB-DCCD-4DCB-A440-F82E6C9A1C36
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Checar CPF
-  Property=HyperLabel=checkcPF
-  Property=TooltipText=Checar CPF
+  Property=HyperLabel=,"Checar CPF",,
+  Property=HyperLabel=#checkcPF,,,
+  Property=TooltipText="Checar CPF"
+
 CONTROL=PUSHBUTTON
-GUID=4AFE4E87-C23B-4FDC-A6A5-0ED42598F551
+GUID=66F104C0-7059-4269-8BE6-F22CD0ED1364
   Name=checkPIS
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=Checar PIS
   Order=15
   Left=286
@@ -455,13 +336,14 @@ GUID=4AFE4E87-C23B-4FDC-A6A5-0ED42598F551
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Checar PIS
-  Property=HyperLabel=checkPIS
-  Property=TooltipText=Checar PIS
+  Property=HyperLabel=,"Checar PIS",,
+  Property=HyperLabel=#checkPIS,,,
+  Property=TooltipText="Checar PIS"
+
 CONTROL=PUSHBUTTON
-GUID=C7F39612-4D12-4601-905E-E5F5A8DED6F7
+GUID=5131B590-58EC-4364-9CDE-0D3F73CF8AA1
   Name=checkIE
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=Checar Insc Est.
   Order=16
   Left=285
@@ -475,13 +357,14 @@ GUID=C7F39612-4D12-4601-905E-E5F5A8DED6F7
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Checar Insc Est.
-  Property=HyperLabel=checkIE
-  Property=TooltipText=Checar Insc.Estadual
+  Property=HyperLabel=,"Checar Insc Est.",,
+  Property=HyperLabel=#checkIE,,,
+  Property=TooltipText="Checar Insc.Estadual"
+
 CONTROL=FIXEDTEXT
-GUID=8DA198C4-4472-438F-9292-D863A2DB4F46
+GUID=A926805C-4574-4490-86D1-98A32CC5F5F2
   Name=FixedText1
-  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Class=FIXEDTEXT
   Caption=UF
   Order=17
   Left=209
@@ -495,12 +378,13 @@ GUID=8DA198C4-4472-438F-9292-D863A2DB4F46
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,UF
-  Property=HyperLabel=FixedText1
+  Property=HyperLabel=,"UF",,
+  Property=HyperLabel=#FixedText1,,,
+
 CONTROL=PUSHBUTTON
-GUID=E94B80DC-5E49-4BE0-B163-8AABAA54EBA1
+GUID=6936B051-FEE8-4EE9-B846-F28AC2C21E7D
   Name=checkCEI
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=Checar CEI
   Order=18
   Left=285
@@ -514,13 +398,14 @@ GUID=E94B80DC-5E49-4BE0-B163-8AABAA54EBA1
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Checar CEI
-  Property=HyperLabel=checkCEI
-  Property=TooltipText=Checar Cei
+  Property=HyperLabel=,"Checar CEI",,
+  Property=HyperLabel=#checkCEI,,,
+  Property=TooltipText="Checar Cei"
+
 CONTROL=PUSHBUTTON
-GUID=21E52CD5-7CD8-4283-AD6E-829D0513D4A7
+GUID=9AB35663-6A45-467B-9497-17BB56A431AD
   Name=checkFGTS
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=Checar Conta FGTS
   Order=19
   Left=285
@@ -534,13 +419,14 @@ GUID=21E52CD5-7CD8-4283-AD6E-829D0513D4A7
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Checar Conta FGTS
-  Property=HyperLabel=checkFGTS
-  Property=TooltipText=Checar Conta FGTS
+  Property=HyperLabel=,"Checar Conta FGTS",,
+  Property=HyperLabel=#checkFGTS,,,
+  Property=TooltipText="Checar Conta FGTS"
+
 CONTROL=FIXEDTEXT
-GUID=07EAAFED-22C7-45F7-95A6-806BE2737D9A
+GUID=DC2D2205-9A1F-45EC-B147-836C62D3FB5E
   Name=FixedText2
-  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Class=FIXEDTEXT
   Caption=Preencha O CGC Acima
   Order=20
   Left=14
@@ -554,12 +440,34 @@ GUID=07EAAFED-22C7-45F7-95A6-806BE2737D9A
   Deleted=0
   Styles=1073741825
   Exstyles=0
-  Property=HyperLabel=,Preencha O CGC Acima
-  Property=HyperLabel=FixedText2
+  Property=HyperLabel=,"Preencha O CGC Acima",,
+  Property=HyperLabel=#FixedText2,,,
+
+CONTROL=FIXEDTEXT
+GUID=88A29E89-0CCB-4830-B314-0F5C056ED30E
+  Name=FixedText3
+  Class=FIXEDTEXT
+  Caption=Obs: Checagem de Referência Apenas
+  Order=21
+  Left=38
+  Width=399
+  Top=380
+  Height=39
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Obs: Checagem de Referência Apenas",,
+  Property=NewFont=14:MS Sans Serif
+  Property=HyperLabel=#FixedText3,,,
+
 CONTROL=SINGLELINEEDIT
-GUID=C52CCDA2-49D9-4D57-A4EB-0AC00807C768
+GUID=141990DA-9D49-4EB3-B936-596CAED5CDC3
   Name=banco
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Class=SINGLELINEEDIT
   Caption=
   Order=22
   Left=37
@@ -567,17 +475,18 @@ GUID=C52CCDA2-49D9-4D57-A4EB-0AC00807C768
   Top=165
   Height=20
   Browseindex=12
-  Browsesize=17
+  Browsesize=7
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1216350344
   Exstyles=512
-  Property=HyperLabel=banco
+  Property=HyperLabel=#banco,,,
+
 CONTROL=FIXEDTEXT
-GUID=8D4E6299-A27C-41AF-ACE9-AF6A86E6ADE5
+GUID=C8A8567F-0E6B-42DF-B5B4-93647E4E098F
   Name=FixedText4
-  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Class=FIXEDTEXT
   Caption=Bco:
   Order=23
   Left=9
@@ -591,12 +500,13 @@ GUID=8D4E6299-A27C-41AF-ACE9-AF6A86E6ADE5
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Bco:
-  Property=HyperLabel=FixedText4
+  Property=HyperLabel=,"Bco:",,
+  Property=HyperLabel=#FixedText4,,,
+
 CONTROL=FIXEDTEXT
-GUID=20EDD6AE-2EB2-4D67-8351-A600F829D7BE
+GUID=965CE8DD-7582-4084-A119-A545DDB20145
   Name=FixedText5
-  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Class=FIXEDTEXT
   Caption=Ag.
   Order=24
   Left=97
@@ -610,12 +520,13 @@ GUID=20EDD6AE-2EB2-4D67-8351-A600F829D7BE
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Ag.
-  Property=HyperLabel=FixedText5
+  Property=HyperLabel=,"Ag.",,
+  Property=HyperLabel=#FixedText5,,,
+
 CONTROL=FIXEDTEXT
-GUID=4C29F729-B710-4EA9-9197-CEC2D3872CFB
+GUID=D87AD2FD-3DE6-4098-A8BC-029711397692
   Name=FixedText6
-  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Class=FIXEDTEXT
   Caption=CC
   Order=25
   Left=185
@@ -629,12 +540,13 @@ GUID=4C29F729-B710-4EA9-9197-CEC2D3872CFB
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,CC
-  Property=HyperLabel=FixedText6
+  Property=HyperLabel=,"CC",,
+  Property=HyperLabel=#FixedText6,,,
+
 CONTROL=PUSHBUTTON
-GUID=CB932361-5EA2-4574-A65A-AD02B18CEE2B
+GUID=9CBF9BDA-87A0-4622-B265-837E349B8DA2
   Name=checkcc
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=Checar Conta Corrente
   Order=26
   Left=285
@@ -648,13 +560,14 @@ GUID=CB932361-5EA2-4574-A65A-AD02B18CEE2B
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Checar Conta Corrente
-  Property=HyperLabel=checkcc
-  Property=TooltipText=Checar Conta Corrente
+  Property=HyperLabel=,"Checar Conta Corrente",,
+  Property=HyperLabel=#checkcc,,,
+  Property=TooltipText="Checar Conta Corrente"
+
 CONTROL=FIXEDTEXT
-GUID=8D866E46-064D-4CA3-9E9B-7282E17C6375
+GUID=5BC4F6F7-74A0-4FDC-AD1D-857B4B6F91E5
   Name=theFixedText9
-  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Class=FIXEDTEXT
   Caption=Retornar
   Order=27
   Left=425
@@ -668,12 +581,13 @@ GUID=8D866E46-064D-4CA3-9E9B-7282E17C6375
   Deleted=0
   Styles=1073741825
   Exstyles=0
-  Property=HyperLabel=,Retornar
-  Property=HyperLabel=theFixedText9
+  Property=HyperLabel=,"Retornar",,
+  Property=HyperLabel=#theFixedText9,,,
+
 CONTROL=PUSHBUTTON
-GUID=AEFBFD98-F3A8-4EE6-9934-2F6CD7AFAEC8
+GUID=E8EC628C-DD62-4DAC-8240-4C2FDCBAC0DC
   Name=SAIR
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=
   Order=28
   Left=425
@@ -687,13 +601,14 @@ GUID=AEFBFD98-F3A8-4EE6-9934-2F6CD7AFAEC8
   Deleted=0
   Styles=1073741888
   Exstyles=0
-  Property=HyperLabel=SAIR
-  Property=TooltipText=Encerrar
+  Property=HyperLabel=#SAIR,,,
   Property=Image=ICO_SAIR
+  Property=TooltipText="Encerrar"
+
 CONTROL=PUSHBUTTON
-GUID=1B770DA1-5831-4354-865D-3ACD503CA09D
+GUID=DC96706C-01B3-4944-B248-69715D8D413C
   Name=checkcartao
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=Checar Cartão Credito
   Order=29
   Left=281
@@ -707,13 +622,14 @@ GUID=1B770DA1-5831-4354-865D-3ACD503CA09D
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Checar Cartão Credito
-  Property=HyperLabel=checkcartao
-  Property=TooltipText=Checar Cartao Credito
+  Property=HyperLabel=,"Checar Cartão Credito",,
+  Property=HyperLabel=#checkcartao,,,
+  Property=TooltipText="Checar Cartao Credito"
+
 CONTROL=PUSHBUTTON
-GUID=BD445F96-2ECD-4D87-A5E9-A9BB5D843CBD
+GUID=A769D06B-A63B-41BE-AC52-55620DB36E37
   Name=checkIE1
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=Checagem II
   Order=30
   Left=409
@@ -727,13 +643,14 @@ GUID=BD445F96-2ECD-4D87-A5E9-A9BB5D843CBD
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Checagem II
-  Property=HyperLabel=checkIE1
-  Property=TooltipText=Checar Insc Estadual Metodo II
+  Property=HyperLabel=,"Checagem II",,
+  Property=HyperLabel=#checkIE1,,,
+  Property=TooltipText="Checar Insc Estadual Metodo II"
+
 CONTROL=PUSHBUTTON
-GUID=7FB6824A-F833-43C4-93DF-CFAB63A121C5
+GUID=30E5C493-E7DA-496C-8778-E16FE3C8CB94
   Name=cmd033
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=033-Banespa
   Order=31
   Left=9
@@ -747,13 +664,14 @@ GUID=7FB6824A-F833-43C4-93DF-CFAB63A121C5
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,033-Banespa
-  Property=HyperLabel=cmd033
-  Property=TooltipText=Escolhe Banespa
+  Property=HyperLabel=,"033-Banespa",,
+  Property=HyperLabel=#cmd033,,,
+  Property=TooltipText="Escolhe Banespa"
+
 CONTROL=PUSHBUTTON
-GUID=C43E1486-A2F6-4F86-868F-D962B9252A76
+GUID=AD8F7F4D-C339-4B71-9F90-DDEF211210CB
   Name=cmd237
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=237-Bradesco
   Order=32
   Left=89
@@ -767,13 +685,14 @@ GUID=C43E1486-A2F6-4F86-868F-D962B9252A76
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,237-Bradesco
-  Property=HyperLabel=cmd237
-  Property=TooltipText=Escolhe Bradesco
+  Property=HyperLabel=,"237-Bradesco",,
+  Property=HyperLabel=#cmd237,,,
+  Property=TooltipText="Escolhe Bradesco"
+
 CONTROL=PUSHBUTTON
-GUID=ACA920BF-3939-4DB2-9BFD-AAE1EF5DA5C9
+GUID=36734FB7-4E54-4C2E-BD6D-D3C70B7E6CE7
   Name=CMD341
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=341-Itau
   Order=33
   Left=169
@@ -787,13 +706,14 @@ GUID=ACA920BF-3939-4DB2-9BFD-AAE1EF5DA5C9
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,341-Itau
-  Property=HyperLabel=CMD341
-  Property=TooltipText=Escolhe Itau
+  Property=HyperLabel=,"341-Itau",,
+  Property=HyperLabel=#CMD341,,,
+  Property=TooltipText="Escolhe Itau"
+
 CONTROL=PUSHBUTTON
-GUID=93065514-A671-4A32-8ACB-A3F31D0E61E8
+GUID=FAD63E83-4036-4905-9E19-914F7B9591FA
   Name=checkcartao1
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=Checar Numero Renavam
   Order=34
   Left=281
@@ -807,13 +727,35 @@ GUID=93065514-A671-4A32-8ACB-A3F31D0E61E8
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Checar Numero Renavam
-  Property=HyperLabel=checkcartao1
-  Property=TooltipText=Checar Numero Renavam
+  Property=HyperLabel=,"Checar Numero Renavam",,
+  Property=HyperLabel=#checkcartao1,,,
+  Property=TooltipText="Checar Numero Renavam"
+
 CONTROL=PUSHBUTTON
-GUID=D6C561E0-90E6-4B3C-B2B9-85BB25F311D1
+GUID=F1F20536-5164-4719-8139-8F35AF6A215E
+  Name=checkrgClick
+  Class=PUSHBUTTON
+  Caption=Checar Numero RG
+  Order=35
+  Left=281
+  Width=132
+  Top=257
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Checar Numero RG",,
+  Property=HyperLabel=#checkrgClick,,,
+  Property=TooltipText="Checar Numero Renavam"
+
+CONTROL=PUSHBUTTON
+GUID=4483508B-BF6F-492E-81BC-527302CD32DB
   Name=checkTIT
-  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Class=PUSHBUTTON
   Caption=Checar Titulo Eleitor
   Order=36
   Left=281
@@ -827,32 +769,116 @@ GUID=D6C561E0-90E6-4B3C-B2B9-85BB25F311D1
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,Checar Titulo Eleitor
-  Property=HyperLabel=checkTIT
-  Property=TooltipText=Checar Numero Renavam
+  Property=HyperLabel=,"Checar Titulo Eleitor",,
+  Property=HyperLabel=#checkTIT,,,
+  Property=TooltipText="Checar Numero Renavam"
+
 CONTROL=SINGLELINEEDIT
-GUID=18DC09F5-D392-473C-ABA6-47F96682DCD7
+GUID=1A3AC809-9333-4B2D-94B5-D9209BEF360B
   Name=TITULO
-  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
-  Caption=TITULO
+  Class=SINGLELINEEDIT
+  Caption=
   Order=37
   Left=101
   Width=171
   Top=282
   Height=20
   Browseindex=13
-  Browsesize=17
+  Browsesize=8
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1082196096
   Exstyles=512
-  Property=HyperLabel=,TITULO
-  Property=HyperLabel=TITULO
+  Property=HyperLabel=#TITULO,,,
+  Property=TooltipText="Digite o Numero RGCarteira de Identidade"
   Property=FieldSpec=PADRAO_CHAR_14
-  Property=InheritClassName=rightSle
-  Property=TooltipText=Digite o Numero RGCarteira de Identidade
+  Property=HyperLabel=,"TITULO",,
+
+CONTROL=PUSHBUTTON
+GUID=3B800858-7EE6-4900-9716-7B174A41471F
+  Name=checkcns
+  Class=PUSHBUTTON
+  Caption=Checar cns
+  Order=38
+  Left=282
+  Width=135
+  Top=307
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Checar cns",,
+  Property=HyperLabel=#checkcns,,,
+  Property=TooltipText="Checar PIS"
+
+CONTROL=SINGLELINEEDIT
+GUID=96F0890D-D074-4C42-9FAC-0133031C39E0
+  Name=cns
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=39
+  Left=98
+  Width=171
+  Top=307
+  Height=20
+  Browseindex=14
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#cns,,,
+  Property=TooltipText="Digite o Pis"
+  Property=FieldSpec=padrao_char_15
+
+CONTROL=SINGLELINEEDIT
+GUID=FCAD5204-9327-434E-9DFF-1E97337CC95F
+  Name=txtEmail
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=40
+  Left=99
+  Width=171
+  Top=332
+  Height=20
+  Browseindex=-1
+  Browsesize=5
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=#txtEmail,,,
+  Property=TooltipText="Digite o Pis"
+  Property=FieldSpec=padrao_char_15
+
+CONTROL=PUSHBUTTON
+GUID=453DA58A-78C7-4CD8-B91E-C5A5178C4D14
+  Name=btnCheckEmail
+  Class=PUSHBUTTON
+  Caption=Checar Email
+  Order=41
+  Left=282
+  Width=135
+  Top=334
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Checar Email",,
+  Property=HyperLabel=#btnCheckEmail,,,
+  Property=TooltipText="Checar PIS"
+
 SUBCONTROLSEND
 DESIGNEREND = _JCheck
-
 

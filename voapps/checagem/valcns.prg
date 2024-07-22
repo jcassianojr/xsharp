@@ -1,4 +1,4 @@
-FUNCTION valcns(cCNS,lMES)
+﻿FUNCTION valcns(cCNS,lMES)
 LOCAL X,soma,resto,dv
 IF ValType(lMES)#"L"
    lMES:=.T.

@@ -1,4 +1,4 @@
-FUNCTION CARDCHEK( Arg1 )
+ï»¿FUNCTION CARDCHEK( Arg1 )
 
 LOCAL Local1
 LOCAL Local2
@@ -14,7 +14,7 @@ LOCAL aCards := { "AmEx", "Visa", "MasterCard", "Discover", ;
 //ENDIF
 
 IF Empty( ARG1 )
-   alert( "Numero Não Informado" )
+   alert( "Numero NÃ£o Informado" )
    RETU .F.
 ENDIF
 
@@ -29,7 +29,7 @@ Arg1 := AllTrim( Arg1 )
 
 
 IF ( Left( Arg1, 1 ) == "0" )
-   alert( "Numero Começando com Zero" )
+   alert( "Numero ComeÃ§ando com Zero" )
    RETU .F.
 ENDIF
 
@@ -103,7 +103,7 @@ IF local5 > 0
    lRETU := .T.
    alert( aCards[ local5 ] )
 ELSE
-   alert( "Número Inválido" )
+   alert( "NÃºmero InvÃ¡lido" )
 ENDIF
 RETURN lRETU
 

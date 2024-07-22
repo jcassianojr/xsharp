@@ -1,4 +1,4 @@
-#region DEFINES
+ï»¿#region DEFINES
 STATIC DEFINE JCHECK_AGENCIA := 117 
 STATIC DEFINE JCHECK_BANCO := 116 
 STATIC DEFINE JCHECK_CARTAO := 126 
@@ -31,6 +31,9 @@ STATIC DEFINE JCHECK_UF := 107
 #endregion
 
 CLASS JCheck INHERIT _JCHECK
+
+METHOD btnCheckEmail 
+CheckEmail(SELF:txtemail,.t.)
 
 METHOD checkcartao( ) 
 	CARDCHEK(SELF:cartao)
@@ -83,7 +86,7 @@ ValIE(cuf,cie)
 //AltD()
 
 //IF Empty(cUF).OR.Empty(cIE)
-//   alert("Preencha o Estado e o Nº INscriçào")
+//   alert("Preencha o Estado e o NÂº INscriÃ§Ã o")
 //   RETU	
 //ENDIF	
 
@@ -99,7 +102,7 @@ ValIE(cuf,cie)
 //IF	ConsisteInscricaoEstadual(String2Psz(cIE),String2Psz(cUF))=0
 //	alert("OK")
 //ELSE
-//    alert("Inscriçäo Invalida")	
+//    alert("InscriÃ§Ã¤o Invalida")	
 //ENDIF			
 
 METHOD checkPIS( ) 
@@ -108,14 +111,14 @@ IF	valpis(SELF:PIS)
 ENDIF		
 
 METHOD CheckRGClick( ) 
+	AltD()
 	SELF:RG:=FormataRG(SELF:RG)	
 	IF CheckRG(SELF:rg,TRUE)
 	   alert("OK")
 	ENDIF	
 
-METHOD btnCheckEmail 
-CheckEmail(SELF:txtemail,.t.)
 METHOD checkTIT( ) 
+	AltD()
 	IF CheckTitulo(SELF:titulo,TRUE)
 	   alert("OK")
 	ENDIF	

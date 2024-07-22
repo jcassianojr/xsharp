@@ -1,0 +1,910 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="_JCheck">
+    <Window Name="_JCheck">
+      <SavedOnce>Yes</SavedOnce>
+      <Name>_JCheck</Name>
+      <Class>FORM:DATADIALOG</Class>
+      <Caption>Checagem de Codigos</Caption>
+      <Order>0</Order>
+      <Left>5</Left>
+      <Top>5</Top>
+      <Width>505</Width>
+      <Height>402</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checagem de Codigos"</HyperLabel>
+        <HyperLabel>"_JCheck"</HyperLabel>
+        <ClipperKeys>True</ClipperKeys>
+      </ExProperties>
+    </Window>
+    <Control Name="checkrgclick">
+      <Name>checkrgclick</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checar Numero RG</Caption>
+      <Order>35</Order>
+      <Left>281</Left>
+      <Top>257</Top>
+      <Width>132</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar Numero RG"</HyperLabel>
+        <HyperLabel>"checkrgclick"</HyperLabel>
+        <TooltipText>"Checar Numero Renavam"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="cgc">
+      <Name>cgc</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>cgc</Caption>
+      <Order>1</Order>
+      <Left>105</Left>
+      <Top>13</Top>
+      <Width>171</Width>
+      <Height>20</Height>
+      <BrowseIndex>0</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"cgc"</HyperLabel>
+        <HyperLabel>"cgc"</HyperLabel>
+        <FieldSpec>padrao_char_18</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <TooltipText>"Digite o CGC"</TooltipText>
+        <Picture>"99.999.999/9999-99"</Picture>
+      </ExProperties>
+    </Control>
+    <Control Name="cpf">
+      <Name>cpf</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>2</Order>
+      <Left>102</Left>
+      <Top>37</Top>
+      <Width>171</Width>
+      <Height>20</Height>
+      <BrowseIndex>1</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>"cpf"</HyperLabel>
+        <FieldSpec>padrao_char_14</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <TooltipText>"Digite o CPF"</TooltipText>
+        <Picture>"999.999.999-99"</Picture>
+      </ExProperties>
+    </Control>
+    <Control Name="PIS">
+      <Name>PIS</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>102</Left>
+      <Top>60</Top>
+      <Width>171</Width>
+      <Height>20</Height>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>"PIS"</HyperLabel>
+        <FieldSpec>padrao_char_11</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <TooltipText>"Digite o Pis"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="IE">
+      <Name>IE</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>4</Order>
+      <Left>25</Left>
+      <Top>85</Top>
+      <Width>171</Width>
+      <Height>20</Height>
+      <BrowseIndex>3</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>"IE"</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_16</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <TooltipText>"Digite a Inscricao Estadual"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="UF">
+      <Name>UF</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>5</Order>
+      <Left>237</Left>
+      <Top>85</Top>
+      <Width>32</Width>
+      <Height>20</Height>
+      <BrowseIndex>4</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196104</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>"UF"</HyperLabel>
+        <FieldSpec>UF_FIELD</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <TooltipText>"Digite o Estado"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="CEI">
+      <Name>CEI</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>6</Order>
+      <Left>101</Left>
+      <Top>109</Top>
+      <Width>171</Width>
+      <Height>20</Height>
+      <BrowseIndex>5</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>"CEI"</HyperLabel>
+        <FieldSpec>padrao_char_12</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <TooltipText>"Digite o CEI"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="FGTS">
+      <Name>FGTS</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>7</Order>
+      <Left>101</Left>
+      <Top>132</Top>
+      <Width>171</Width>
+      <Height>20</Height>
+      <BrowseIndex>6</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>"FGTS"</HyperLabel>
+        <FieldSpec>padrao_char_11</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <TooltipText>"Digite o Numero conta FGTS"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="agencia">
+      <Name>agencia</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>8</Order>
+      <Left>117</Left>
+      <Top>165</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>7</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196104</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>"agencia"</HyperLabel>
+        <FieldSpec>paDRAO_CHAR_07</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <TooltipText>"Digite o Nome da Agencia"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="conta">
+      <Name>conta</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>9</Order>
+      <Left>205</Left>
+      <Top>165</Top>
+      <Width>68</Width>
+      <Height>20</Height>
+      <BrowseIndex>8</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196104</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>"conta"</HyperLabel>
+        <FieldSpec>padrao_char_12</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <TooltipText>"Digite o Numero da Conta"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="cartao">
+      <Name>cartao</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>10</Order>
+      <Left>101</Left>
+      <Top>209</Top>
+      <Width>171</Width>
+      <Height>20</Height>
+      <BrowseIndex>9</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>"cartao"</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_20</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <TooltipText>"Digite o Numero Cartao Credito"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="renavam">
+      <Name>renavam</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>11</Order>
+      <Left>101</Left>
+      <Top>233</Top>
+      <Width>171</Width>
+      <Height>20</Height>
+      <BrowseIndex>10</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>"renavam"</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_20</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <TooltipText>"Digite o Numero Renavam"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="RG">
+      <Name>RG</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>RG</Caption>
+      <Order>12</Order>
+      <Left>101</Left>
+      <Top>257</Top>
+      <Width>171</Width>
+      <Height>20</Height>
+      <BrowseIndex>11</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"RG"</HyperLabel>
+        <HyperLabel>"RG"</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_12</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <TooltipText>"Digite o Numero RGCarteira de Identidade"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="checkcgc">
+      <Name>checkcgc</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checar CNPJ</Caption>
+      <Order>13</Order>
+      <Left>286</Left>
+      <Top>14</Top>
+      <Width>123</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar CNPJ"</HyperLabel>
+        <HyperLabel>"checkcgc"</HyperLabel>
+        <TooltipText>"Checar CNPJ/CGC"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="checkcPF">
+      <Name>checkcPF</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checar CPF</Caption>
+      <Order>14</Order>
+      <Left>286</Left>
+      <Top>37</Top>
+      <Width>123</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar CPF"</HyperLabel>
+        <HyperLabel>"checkcPF"</HyperLabel>
+        <TooltipText>"Checar CPF"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="checkPIS">
+      <Name>checkPIS</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checar PIS</Caption>
+      <Order>15</Order>
+      <Left>286</Left>
+      <Top>60</Top>
+      <Width>123</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar PIS"</HyperLabel>
+        <HyperLabel>"checkPIS"</HyperLabel>
+        <TooltipText>"Checar PIS"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="checkIE">
+      <Name>checkIE</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checar Insc Est.</Caption>
+      <Order>16</Order>
+      <Left>285</Left>
+      <Top>85</Top>
+      <Width>123</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar Insc Est."</HyperLabel>
+        <HyperLabel>"checkIE"</HyperLabel>
+        <TooltipText>"Checar Insc.Estadual"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText1">
+      <Name>FixedText1</Name>
+      <Class>CONTROL:TEXTCONTROL:FIXEDTEXT</Class>
+      <Caption>UF</Caption>
+      <Order>17</Order>
+      <Left>209</Left>
+      <Top>85</Top>
+      <Width>24</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"UF"</HyperLabel>
+        <HyperLabel>"FixedText1"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="checkCEI">
+      <Name>checkCEI</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checar CEI</Caption>
+      <Order>18</Order>
+      <Left>285</Left>
+      <Top>109</Top>
+      <Width>123</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar CEI"</HyperLabel>
+        <HyperLabel>"checkCEI"</HyperLabel>
+        <TooltipText>"Checar Cei"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="checkFGTS">
+      <Name>checkFGTS</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checar Conta FGTS</Caption>
+      <Order>19</Order>
+      <Left>285</Left>
+      <Top>132</Top>
+      <Width>123</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar Conta FGTS"</HyperLabel>
+        <HyperLabel>"checkFGTS"</HyperLabel>
+        <TooltipText>"Checar Conta FGTS"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText2">
+      <Name>FixedText2</Name>
+      <Class>CONTROL:TEXTCONTROL:FIXEDTEXT</Class>
+      <Caption>Preencha O CGC Acima</Caption>
+      <Order>20</Order>
+      <Left>14</Left>
+      <Top>130</Top>
+      <Width>80</Width>
+      <Height>31</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Preencha O CGC Acima"</HyperLabel>
+        <HyperLabel>"FixedText2"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText3">
+      <Name>FixedText3</Name>
+      <Class>CONTROL:TEXTCONTROL:FIXEDTEXT</Class>
+      <Caption>Obs: Checagem de Referência Apenas</Caption>
+      <Order>21</Order>
+      <Left>38</Left>
+      <Top>350</Top>
+      <Width>399</Width>
+      <Height>39</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Obs: Checagem de Referência Apenas"</HyperLabel>
+        <HyperLabel>"FixedText3"</HyperLabel>
+        <NewFont>14:Microsoft Sans Serif</NewFont>
+      </ExProperties>
+    </Control>
+    <Control Name="banco">
+      <Name>banco</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>22</Order>
+      <Left>37</Left>
+      <Top>165</Top>
+      <Width>56</Width>
+      <Height>20</Height>
+      <BrowseIndex>12</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1216350344</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>"banco"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText4">
+      <Name>FixedText4</Name>
+      <Class>CONTROL:TEXTCONTROL:FIXEDTEXT</Class>
+      <Caption>Bco:</Caption>
+      <Order>23</Order>
+      <Left>9</Left>
+      <Top>165</Top>
+      <Width>27</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Bco:"</HyperLabel>
+        <HyperLabel>"FixedText4"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText5">
+      <Name>FixedText5</Name>
+      <Class>CONTROL:TEXTCONTROL:FIXEDTEXT</Class>
+      <Caption>Ag.</Caption>
+      <Order>24</Order>
+      <Left>97</Left>
+      <Top>165</Top>
+      <Width>20</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Ag."</HyperLabel>
+        <HyperLabel>"FixedText5"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="FixedText6">
+      <Name>FixedText6</Name>
+      <Class>CONTROL:TEXTCONTROL:FIXEDTEXT</Class>
+      <Caption>CC</Caption>
+      <Order>25</Order>
+      <Left>185</Left>
+      <Top>165</Top>
+      <Width>20</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"CC"</HyperLabel>
+        <HyperLabel>"FixedText6"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="checkcc">
+      <Name>checkcc</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checar Conta Corrente</Caption>
+      <Order>26</Order>
+      <Left>285</Left>
+      <Top>165</Top>
+      <Width>123</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar Conta Corrente"</HyperLabel>
+        <HyperLabel>"checkcc"</HyperLabel>
+        <TooltipText>"Checar Conta Corrente"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="theFixedText9">
+      <Name>theFixedText9</Name>
+      <Class>CONTROL:TEXTCONTROL:FIXEDTEXT</Class>
+      <Caption>Retornar</Caption>
+      <Order>27</Order>
+      <Left>425</Left>
+      <Top>65</Top>
+      <Width>64</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Retornar"</HyperLabel>
+        <HyperLabel>"theFixedText9"</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="SAIR">
+      <Name>SAIR</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>
+      </Caption>
+      <Order>28</Order>
+      <Left>425</Left>
+      <Top>17</Top>
+      <Width>64</Width>
+      <Height>48</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741888</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>"SAIR"</HyperLabel>
+        <TooltipText>"Encerrar"</TooltipText>
+        <Image>ICO_SAIR</Image>
+      </ExProperties>
+    </Control>
+    <Control Name="checkcartao">
+      <Name>checkcartao</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checar Cartão Credito</Caption>
+      <Order>29</Order>
+      <Left>281</Left>
+      <Top>209</Top>
+      <Width>132</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar Cartão Credito"</HyperLabel>
+        <HyperLabel>"checkcartao"</HyperLabel>
+        <TooltipText>"Checar Cartao Credito"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="checkIE1">
+      <Name>checkIE1</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checagem II</Caption>
+      <Order>30</Order>
+      <Left>409</Left>
+      <Top>85</Top>
+      <Width>88</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checagem II"</HyperLabel>
+        <HyperLabel>"checkIE1"</HyperLabel>
+        <TooltipText>"Checar Insc Estadual Metodo II"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="cmd033">
+      <Name>cmd033</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>033-Banespa</Caption>
+      <Order>31</Order>
+      <Left>9</Left>
+      <Top>185</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"033-Banespa"</HyperLabel>
+        <HyperLabel>"cmd033"</HyperLabel>
+        <TooltipText>"Escolhe Banespa"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="cmd237">
+      <Name>cmd237</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>237-Bradesco</Caption>
+      <Order>32</Order>
+      <Left>89</Left>
+      <Top>185</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"237-Bradesco"</HyperLabel>
+        <HyperLabel>"cmd237"</HyperLabel>
+        <TooltipText>"Escolhe Bradesco"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="CMD341">
+      <Name>CMD341</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>341-Itau</Caption>
+      <Order>33</Order>
+      <Left>169</Left>
+      <Top>185</Top>
+      <Width>80</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"341-Itau"</HyperLabel>
+        <HyperLabel>"CMD341"</HyperLabel>
+        <TooltipText>"Escolhe Itau"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="checkcartao1">
+      <Name>checkcartao1</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checar Numero Renavam</Caption>
+      <Order>34</Order>
+      <Left>281</Left>
+      <Top>233</Top>
+      <Width>132</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar Numero Renavam"</HyperLabel>
+        <HyperLabel>"checkcartao1"</HyperLabel>
+        <TooltipText>"Checar Numero Renavam"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="checkTIT">
+      <Name>checkTIT</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checar Titulo Eleitor</Caption>
+      <Order>36</Order>
+      <Left>281</Left>
+      <Top>282</Top>
+      <Width>132</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar Titulo Eleitor"</HyperLabel>
+        <HyperLabel>"checkTIT"</HyperLabel>
+        <TooltipText>"Checar Numero Renavam"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="TITULO">
+      <Name>TITULO</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>TITULO</Caption>
+      <Order>37</Order>
+      <Left>101</Left>
+      <Top>282</Top>
+      <Width>171</Width>
+      <Height>20</Height>
+      <BrowseIndex>13</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"TITULO"</HyperLabel>
+        <HyperLabel>"TITULO"</HyperLabel>
+        <FieldSpec>PADRAO_CHAR_14</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <TooltipText>"Digite o Numero RGCarteira de Identidade"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="checkcns">
+      <Name>checkcns</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checar cns</Caption>
+      <Order>38</Order>
+      <Left>282</Left>
+      <Top>307</Top>
+      <Width>135</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar cns"</HyperLabel>
+        <HyperLabel>"checkcns"</HyperLabel>
+        <TooltipText>"Checar PIS"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="cns">
+      <Name>cns</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>39</Order>
+      <Left>98</Left>
+      <Top>307</Top>
+      <Width>171</Width>
+      <Height>20</Height>
+      <BrowseIndex>14</BrowseIndex>
+      <BrowseSize>17</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>"cns"</HyperLabel>
+        <FieldSpec>padrao_char_15</FieldSpec>
+        <InheritClassName>rightSle</InheritClassName>
+        <TooltipText>"Digite o Pis"</TooltipText>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

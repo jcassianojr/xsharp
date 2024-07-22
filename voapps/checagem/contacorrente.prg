@@ -1,4 +1,4 @@
-FUNC CALCDIG(n1,n2)
+﻿FUNC CALCDIG(n1,n2)
 LOCAL eRETU
 IF ValType(N2)="C"
    N2:=Val(N2)
@@ -17,7 +17,7 @@ FUNC CHECKCTA(cBANCO,cAGENCIA,cCONTA)
 LOCAL eTOT:=0
 LOCAL nFIM,nINI,X,nRES
 IF Empty( cBANCO ) .OR. Empty(cAGENCIA) .OR. Empty(CCONTa)
-   alert( "Algum Campo  N�o Informado" )
+   alert( "Algum Campo  Não Informado" )
    RETU .F.
 ENDIF
 //IF LastKey()=K_UP.OR.LastKey()=K_DOWN

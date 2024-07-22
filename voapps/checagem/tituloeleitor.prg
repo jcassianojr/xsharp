@@ -1,4 +1,4 @@
-FUNCTION CheckTitulo(NUMERO,lMES)
+﻿FUNCTION CheckTitulo(NUMERO,lMES)
 LOCAL DV1
 LOCAL DV2
 LOCAL resto
@@ -81,8 +81,7 @@ ENDIF
     END IF
 
     //checa dv digitos 12 e 13
-    IF SubStr(Numero, 12, 2) = Str(DV1,1) + Str(DV2,1)   
-       NOP
+    IF SubStr(Numero, 12, 2) = Str(DV1,1) + Str(DV2,1)
     ELSE	
        ZNERRO:=2
        zerro:="Digitos de Controle titulo Nao Confere sugerido: " +SubStr(numero,1,11)+"/"+ Str(DV1,1) + Str(DV2,1)

@@ -1,4 +1,4 @@
-STATIC FUNCTION SomaModulo11( cNumero )
+﻿STATIC FUNCTION SomaModulo11( cNumero )
 
    LOCAL nSoma := 0, nMultip := 2, nCont
 

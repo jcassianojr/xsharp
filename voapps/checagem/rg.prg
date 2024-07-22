@@ -1,5 +1,4 @@
-
-FUNCTION CheckRG(Valor, lMES,cTIPO,dDATANASC,cUF )
+﻿FUNCTION CheckRG(Valor, lMES,cTIPO,dDATANASC,cUF )
 LOCAL d
 LOCAL soma
 LOCAL nPOS
@@ -15,32 +14,23 @@ ZDAC:=" "
 ZNERRO:=0
 ZERRO:=""
 Valor:= StrTran(Valor,".","")  //tiraout tambem tira - nao pode ser usada
-IF ValType(cTIPO)="C"  .AND. At("ISENT",valor) >0 
-   RETURN .t.
-ENDIF 
+IF Valor = "ISENTO"
+   RETURN .T.
+ENDIF
 IF Len(Valor) = 0
    znerro:=7
-   zerro:="RG/RNE/RIC/CPF tipo em branco"
+   zerro:="RG/RNE/RIC em branco"
 ENDIF
 IF (ValType(cTIPO)="C"  .AND. cTIPO="RNE" ) .OR. At("RNE",valor) >0
    RETURN .t.
 ENDIF
-IF At("CPF",valor) >0
-   cTIPO:="CPF"
-   valor:=StrTran(valor,'CPF','')
-ENDIF
-IF Valcpf( VALOR ,.F.)
-   IF ValType(cTIPO)<>"C" .OR. (ValType(cTIPO)="C" .AND. cTIPO<>"CPF" )
-      IF LMES
-         ALERTX("Preencha o tipo como CPF")
-      ENDIF  
-   ENDIF
-ENDIF  
 IF At("RIC",valor) >0
    cTIPO:="RIC"
    valor:=StrTran(valor,'RIC','')
 ENDIF
-Valor:= StrTran(Valor,".","")  //tiraout tambem tira - nao pode ser usada
+IF Len(valor)=11
+   cTIPO:="RIC"
+ENDIF
 IF ValType(cTIPO)<>'C'
    cTIPO:="RG"
 ENDIF
@@ -110,8 +100,7 @@ IF ZNERRO=0   .AND. cTIPO='RG'  .AND. Len(VALOR)=8
          zerro:="Digito de Controle RG "+cDAC+" Nao Confere sugerido: " +zDAC
       ENDIF
   ELSE
-    IF d = Val(cDAC)  .Or. d = 0 
-       NOP
+    IF d = Val(cDAC)  .Or. d = 0
     ELSE
        IF d=10
        	  zDAC:="X"
@@ -139,16 +128,13 @@ LOCAL nPOS
 LOCAL cDAC
 cDAC := ""
 IF ValType(cTIPO)="C"
-   IF cTIPO="RNE"  .OR.  cTIPO="RIC" .OR.  cTIPO="CPF"
+   IF cTIPO="RNE"  .OR.  cTIPO="RIC"
       RETURN VALOR
    ENDIF
 ENDIF
-IF Valor = "ISENTO"  .OR. At("RNE",valor) >0  .OR. At("RIC",valor) >0.OR. At("CPF",valor)>0  //registro nacional estrangeiro
+IF Valor = "ISENTO"  .OR. At("RNE",valor) >0  .OR. At("RIC",valor) >0 //registro nacional estrangeiro
    RETURN VALOR
 END IF
-IF VALCPF(VALOR,.F.)
-   RETURN valor        
-ENDIF
 valor := AllTrim(valor)
 valor := Upper(valor)
 nPOS := At( "-",Valor)

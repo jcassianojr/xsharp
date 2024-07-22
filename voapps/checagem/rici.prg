@@ -1,4 +1,4 @@
-FUNCTION CHECKRICI(VALOR,lMES)
+ï»¿FUNCTION CHECKRICI(VALOR,lMES)
 LOCAL aPESOS AS ARRAY
 LOCAL SOMA,X,D AS INT
 /*
@@ -7,28 +7,28 @@ certidao nascimento
 115204 01 55 2010 1 12345 123 1234567 12
 XXXXXX.XX.XX.XXXX.X.XXXXX.XXX.XXXXXXX-XX
   A     B C    D  E  F     G        H  I
-A  Código Nacional da Serventia (6 primeiros números da matrícula - Ex.: 115204), o qual deve ser obtido no site do CNJ pelos cartórios,
-B  Código do acervo (7º e 8º números da matrícula) sendo:
-   “01” para acervo próprio e
-   “02” para os acervos incorporados até 31/12/2009, último dia antes da implementação do Código Nacional por todos os registradores civis das pessoas naturais (nesse caso os seis primeiros números serão aqueles da serventia incorporadora). As certidões extraídas de acervos incorporados a partir de 1º de
-   janeiro de 2010 (acervo de serventias que já possuíam código nacional próprio por ocasião da incorporação) utilizarão o código da serventia incorporada e o código de acervo 01;
-C  Código 55 (9º e 10º números da matrícula), que é o número relativo ao serviço de registro civil das pessoas naturais;
-D   Ano do registro do qual se extrai a certidão, com 04 dígitos (11º, 12º, 13º e 14º números da matrícula - Ex.: 2010);
-E  Tipo do livro de registro, com um digito numérico (15º número da matrícula - Ex.: 1= Nascimento) sendo:
+A  CÃ³digo Nacional da Serventia (6 primeiros nÃºmeros da matrÃ­cula - Ex.: 115204), o qual deve ser obtido no site do CNJ pelos cartÃ³rios,
+B  CÃ³digo do acervo (7Âº e 8Âº nÃºmeros da matrÃ­cula) sendo:
+   â€œ01â€ para acervo prÃ³prio e
+   â€œ02â€ para os acervos incorporados atÃ© 31/12/2009, Ãºltimo dia antes da implementaÃ§Ã£o do CÃ³digo Nacional por todos os registradores civis das pessoas naturais (nesse caso os seis primeiros nÃºmeros serÃ£o aqueles da serventia incorporadora). As certidÃµes extraÃ­das de acervos incorporados a partir de 1Âº de
+   janeiro de 2010 (acervo de serventias que jÃ¡ possuÃ­am cÃ³digo nacional prÃ³prio por ocasiÃ£o da incorporaÃ§Ã£o) utilizarÃ£o o cÃ³digo da serventia incorporada e o cÃ³digo de acervo 01;
+C  CÃ³digo 55 (9Âº e 10Âº nÃºmeros da matrÃ­cula), que Ã© o nÃºmero relativo ao serviÃ§o de registro civil das pessoas naturais;
+D   Ano do registro do qual se extrai a certidÃ£o, com 04 dÃ­gitos (11Âº, 12Âº, 13Âº e 14Âº nÃºmeros da matrÃ­cula - Ex.: 2010);
+E  Tipo do livro de registro, com um digito numÃ©rico (15Âº nÃºmero da matrÃ­cula - Ex.: 1= Nascimento) sendo:
    1: Livro A (Nascimento)
    2: Livro B (Casamento)
    3: Livro B Auxiliar (Casamento Religioso com efeito civil)
-   4: Livro C (Óbito)
+   4: Livro C (Ã“bito)
    5: Livro C Auxiliar (Natimorto)
    6: Livro D (Registro de Proclamas)
-   7: Livro E (Demais atos relativos ao registro civil ou livro E único);
-   8: Livro E (Desdobrado para registro especifico das Emancipações);
-   9: Livro E (Desdobrado para registro especifico das Interdições);
+   7: Livro E (Demais atos relativos ao registro civil ou livro E Ãºnico);
+   8: Livro E (Desdobrado para registro especifico das EmancipaÃ§Ãµes);
+   9: Livro E (Desdobrado para registro especifico das InterdiÃ§Ãµes);
    Obs.: No GIL deve-se registrar 91- Nascimento, 92-Casamento, ...
-F   Número do livro, com cinco dígitos (Ex.: 12345), os quais corresponderão ao 16º, 17º, 18º, 19º e 20º números da matrícula;
-G    Número da folha do registro, com três dígitos (21º, 22º e 23º números da matrícula - Ex.: 123);
-H     Número do termo na respectiva folha em que foi iniciado, com sete dígitos (Ex.: 1234567), os quais corresponderão aos 24º, 25º, 26º, 27º, 28º, 29º, 30º números da matrícula;
-I   Número do dígito verificador (31º e 32º números da matrícula - Ex.: 12),formado automaticamente por meio do programa que pode ser baixado gratuitamente por meio do seguinte endereço eletrônico: www.cnj.jus.br/corregedoria/.
+F   NÃºmero do livro, com cinco dÃ­gitos (Ex.: 12345), os quais corresponderÃ£o ao 16Âº, 17Âº, 18Âº, 19Âº e 20Âº nÃºmeros da matrÃ­cula;
+G    NÃºmero da folha do registro, com trÃªs dÃ­gitos (21Âº, 22Âº e 23Âº nÃºmeros da matrÃ­cula - Ex.: 123);
+H     NÃºmero do termo na respectiva folha em que foi iniciado, com sete dÃ­gitos (Ex.: 1234567), os quais corresponderÃ£o aos 24Âº, 25Âº, 26Âº, 27Âº, 28Âº, 29Âº, 30Âº nÃºmeros da matrÃ­cula;
+I   NÃºmero do dÃ­gito verificador (31Âº e 32Âº nÃºmeros da matrÃ­cula - Ex.: 12),formado automaticamente por meio do programa que pode ser baixado gratuitamente por meio do seguinte endereÃ§o eletrÃ´nico: www.cnj.jus.br/corregedoria/.
 */
 
 IF ValType(lMES)#"L"
@@ -49,7 +49,7 @@ ENDIF
 
 IF ZNERRO=0
     //aPESOS:={2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8,9}
-    // digitos ** esses dígitos, do 3º e do 5º grupo, são desprezados na formação do DV  digitos 9/10/15
+    // digitos ** esses dÃ­gitos, do 3Âº e do 5Âº grupo, sÃ£o desprezados na formaÃ§Ã£o do DV  digitos 9/10/15
     //       1 0 4 5 3 9 0 1 5 5 2 0 1 3 1 0 0 0 1 2  0 2 1 0 0 0 0 1 2 3
     //1  0  4  5  3  9  0  1  5  5  2  0  1  3  1  0  0  0  1  2  0  2  1  0  0  0  0  1  2  3 = 2
     //x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x
@@ -75,7 +75,7 @@ IF ZNERRO=0
      ENDIF
 
   //aPESOS:={1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8,9,10,0,1,2,3,4,5,6,7,8,9}
-  // digitos ** esses dígitos, do 3º e do 5º grupo, são desprezados na formação do DV digitos 9/10/15
+  // digitos ** esses dÃ­gitos, do 3Âº e do 5Âº grupo, sÃ£o desprezados na formaÃ§Ã£o do DV digitos 9/10/15
   //       1 0 4 5 3 9 0 1 5 5 2 0 1 3 1 0 0 0 1 2  0 2 1 0 0 0 0 1 2 3 2
   //1  0  4  5  3  9  0  1  5  5  2  0  1  3  1  0  0  0  1  2  0  2  1  0  0  0  0  1  2  3  2 = 1
   //x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x  x

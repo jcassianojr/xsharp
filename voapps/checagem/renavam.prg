@@ -1,4 +1,4 @@
-FUNCTION ValidaRenavam( cRenavam,lmes )
+﻿FUNCTION ValidaRenavam( cRenavam,lmes )
 
    LOCAL nSoma, nCont, nDigito, lOk
 

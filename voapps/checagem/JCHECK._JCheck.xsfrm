@@ -10,7 +10,7 @@
       <Left>5</Left>
       <Top>5</Top>
       <Width>505</Width>
-      <Height>402</Height>
+      <Height>451</Height>
       <BrowseIndex>0</BrowseIndex>
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
@@ -21,29 +21,31 @@
       <ExProperties>
         <HyperLabel>,"Checagem de Codigos"</HyperLabel>
         <HyperLabel>"_JCheck"</HyperLabel>
+        <ViewAs>#FormView</ViewAs>
         <ClipperKeys>True</ClipperKeys>
       </ExProperties>
     </Window>
-    <Control Name="checkrgclick">
-      <Name>checkrgclick</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
-      <Caption>Checar Numero RG</Caption>
-      <Order>35</Order>
-      <Left>281</Left>
-      <Top>257</Top>
-      <Width>132</Width>
+    <Control Name="PIS">
+      <Name>PIS</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>3</Order>
+      <Left>102</Left>
+      <Top>60</Top>
+      <Width>171</Width>
       <Height>20</Height>
-      <BrowseIndex>-1</BrowseIndex>
-      <BrowseSize>0</BrowseSize>
+      <BrowseIndex>2</BrowseIndex>
+      <BrowseSize>5</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
-      <Styles>1073741824</Styles>
-      <ExStyles>0</ExStyles>
+      <Styles>1082196096</Styles>
+      <ExStyles>12800</ExStyles>
       <ExProperties>
-        <HyperLabel>,"Checar Numero RG"</HyperLabel>
-        <HyperLabel>"checkrgclick"</HyperLabel>
-        <TooltipText>"Checar Numero Renavam"</TooltipText>
+        <HyperLabel>"PIS"</HyperLabel>
+        <FieldSpec>padrao_char_11</FieldSpec>
+        <TooltipText>"Digite o Pis"</TooltipText>
       </ExProperties>
     </Control>
     <Control Name="cgc">
@@ -56,7 +58,7 @@
       <Width>171</Width>
       <Height>20</Height>
       <BrowseIndex>0</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseSize>5</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
@@ -66,9 +68,8 @@
         <HyperLabel>,"cgc"</HyperLabel>
         <HyperLabel>"cgc"</HyperLabel>
         <FieldSpec>padrao_char_18</FieldSpec>
-        <InheritClassName>rightSle</InheritClassName>
         <TooltipText>"Digite o CGC"</TooltipText>
-        <Picture>"99.999.999/9999-99"</Picture>
+        <Picture>"NN.NNN.NNN/NNNN-99"</Picture>
       </ExProperties>
     </Control>
     <Control Name="cpf">
@@ -82,7 +83,7 @@
       <Width>171</Width>
       <Height>20</Height>
       <BrowseIndex>1</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseSize>5</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
@@ -91,33 +92,8 @@
       <ExProperties>
         <HyperLabel>"cpf"</HyperLabel>
         <FieldSpec>padrao_char_14</FieldSpec>
-        <InheritClassName>rightSle</InheritClassName>
         <TooltipText>"Digite o CPF"</TooltipText>
         <Picture>"999.999.999-99"</Picture>
-      </ExProperties>
-    </Control>
-    <Control Name="PIS">
-      <Name>PIS</Name>
-      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
-      <Caption>
-      </Caption>
-      <Order>3</Order>
-      <Left>102</Left>
-      <Top>60</Top>
-      <Width>171</Width>
-      <Height>20</Height>
-      <BrowseIndex>2</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
-      <SubForm>No</SubForm>
-      <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
-      <Styles>1082196096</Styles>
-      <ExStyles>512</ExStyles>
-      <ExProperties>
-        <HyperLabel>"PIS"</HyperLabel>
-        <FieldSpec>padrao_char_11</FieldSpec>
-        <InheritClassName>rightSle</InheritClassName>
-        <TooltipText>"Digite o Pis"</TooltipText>
       </ExProperties>
     </Control>
     <Control Name="IE">
@@ -131,7 +107,7 @@
       <Width>171</Width>
       <Height>20</Height>
       <BrowseIndex>3</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseSize>4</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
@@ -140,7 +116,6 @@
       <ExProperties>
         <HyperLabel>"IE"</HyperLabel>
         <FieldSpec>PADRAO_CHAR_16</FieldSpec>
-        <InheritClassName>rightSle</InheritClassName>
         <TooltipText>"Digite a Inscricao Estadual"</TooltipText>
       </ExProperties>
     </Control>
@@ -155,7 +130,7 @@
       <Width>32</Width>
       <Height>20</Height>
       <BrowseIndex>4</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseSize>4</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
@@ -164,7 +139,6 @@
       <ExProperties>
         <HyperLabel>"UF"</HyperLabel>
         <FieldSpec>UF_FIELD</FieldSpec>
-        <InheritClassName>rightSle</InheritClassName>
         <TooltipText>"Digite o Estado"</TooltipText>
       </ExProperties>
     </Control>
@@ -179,7 +153,7 @@
       <Width>171</Width>
       <Height>20</Height>
       <BrowseIndex>5</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseSize>5</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
@@ -188,7 +162,6 @@
       <ExProperties>
         <HyperLabel>"CEI"</HyperLabel>
         <FieldSpec>padrao_char_12</FieldSpec>
-        <InheritClassName>rightSle</InheritClassName>
         <TooltipText>"Digite o CEI"</TooltipText>
       </ExProperties>
     </Control>
@@ -203,7 +176,7 @@
       <Width>171</Width>
       <Height>20</Height>
       <BrowseIndex>6</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseSize>6</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
@@ -212,7 +185,6 @@
       <ExProperties>
         <HyperLabel>"FGTS"</HyperLabel>
         <FieldSpec>padrao_char_11</FieldSpec>
-        <InheritClassName>rightSle</InheritClassName>
         <TooltipText>"Digite o Numero conta FGTS"</TooltipText>
       </ExProperties>
     </Control>
@@ -227,7 +199,7 @@
       <Width>64</Width>
       <Height>20</Height>
       <BrowseIndex>7</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseSize>9</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
@@ -236,7 +208,6 @@
       <ExProperties>
         <HyperLabel>"agencia"</HyperLabel>
         <FieldSpec>paDRAO_CHAR_07</FieldSpec>
-        <InheritClassName>rightSle</InheritClassName>
         <TooltipText>"Digite o Nome da Agencia"</TooltipText>
       </ExProperties>
     </Control>
@@ -251,7 +222,7 @@
       <Width>68</Width>
       <Height>20</Height>
       <BrowseIndex>8</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseSize>7</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
@@ -260,7 +231,6 @@
       <ExProperties>
         <HyperLabel>"conta"</HyperLabel>
         <FieldSpec>padrao_char_12</FieldSpec>
-        <InheritClassName>rightSle</InheritClassName>
         <TooltipText>"Digite o Numero da Conta"</TooltipText>
       </ExProperties>
     </Control>
@@ -275,7 +245,7 @@
       <Width>171</Width>
       <Height>20</Height>
       <BrowseIndex>9</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseSize>8</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
@@ -284,7 +254,6 @@
       <ExProperties>
         <HyperLabel>"cartao"</HyperLabel>
         <FieldSpec>PADRAO_CHAR_20</FieldSpec>
-        <InheritClassName>rightSle</InheritClassName>
         <TooltipText>"Digite o Numero Cartao Credito"</TooltipText>
       </ExProperties>
     </Control>
@@ -299,7 +268,7 @@
       <Width>171</Width>
       <Height>20</Height>
       <BrowseIndex>10</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseSize>9</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
@@ -308,7 +277,6 @@
       <ExProperties>
         <HyperLabel>"renavam"</HyperLabel>
         <FieldSpec>PADRAO_CHAR_20</FieldSpec>
-        <InheritClassName>rightSle</InheritClassName>
         <TooltipText>"Digite o Numero Renavam"</TooltipText>
       </ExProperties>
     </Control>
@@ -322,7 +290,7 @@
       <Width>171</Width>
       <Height>20</Height>
       <BrowseIndex>11</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseSize>4</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
@@ -332,7 +300,6 @@
         <HyperLabel>,"RG"</HyperLabel>
         <HyperLabel>"RG"</HyperLabel>
         <FieldSpec>PADRAO_CHAR_12</FieldSpec>
-        <InheritClassName>rightSle</InheritClassName>
         <TooltipText>"Digite o Numero RGCarteira de Identidade"</TooltipText>
       </ExProperties>
     </Control>
@@ -516,7 +483,7 @@
       <Caption>Obs: Checagem de Referência Apenas</Caption>
       <Order>21</Order>
       <Left>38</Left>
-      <Top>350</Top>
+      <Top>380</Top>
       <Width>399</Width>
       <Height>39</Height>
       <BrowseIndex>-1</BrowseIndex>
@@ -543,7 +510,7 @@
       <Width>56</Width>
       <Height>20</Height>
       <BrowseIndex>12</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseSize>7</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
@@ -814,6 +781,28 @@
         <TooltipText>"Checar Numero Renavam"</TooltipText>
       </ExProperties>
     </Control>
+    <Control Name="checkrgClick">
+      <Name>checkrgClick</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checar Numero RG</Caption>
+      <Order>35</Order>
+      <Left>281</Left>
+      <Top>257</Top>
+      <Width>132</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar Numero RG"</HyperLabel>
+        <HyperLabel>"checkrgClick"</HyperLabel>
+        <TooltipText>"Checar Numero Renavam"</TooltipText>
+      </ExProperties>
+    </Control>
     <Control Name="checkTIT">
       <Name>checkTIT</Name>
       <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
@@ -846,7 +835,7 @@
       <Width>171</Width>
       <Height>20</Height>
       <BrowseIndex>13</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseSize>8</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
@@ -856,7 +845,6 @@
         <HyperLabel>,"TITULO"</HyperLabel>
         <HyperLabel>"TITULO"</HyperLabel>
         <FieldSpec>PADRAO_CHAR_14</FieldSpec>
-        <InheritClassName>rightSle</InheritClassName>
         <TooltipText>"Digite o Numero RGCarteira de Identidade"</TooltipText>
       </ExProperties>
     </Control>
@@ -893,7 +881,7 @@
       <Width>171</Width>
       <Height>20</Height>
       <BrowseIndex>14</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseSize>5</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
@@ -902,8 +890,52 @@
       <ExProperties>
         <HyperLabel>"cns"</HyperLabel>
         <FieldSpec>padrao_char_15</FieldSpec>
-        <InheritClassName>rightSle</InheritClassName>
         <TooltipText>"Digite o Pis"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="txtEmail">
+      <Name>txtEmail</Name>
+      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Caption>
+      </Caption>
+      <Order>40</Order>
+      <Left>99</Left>
+      <Top>332</Top>
+      <Width>171</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>5</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1082196096</Styles>
+      <ExStyles>512</ExStyles>
+      <ExProperties>
+        <HyperLabel>"txtEmail"</HyperLabel>
+        <FieldSpec>padrao_char_15</FieldSpec>
+        <TooltipText>"Digite o Pis"</TooltipText>
+      </ExProperties>
+    </Control>
+    <Control Name="btnCheckEmail">
+      <Name>btnCheckEmail</Name>
+      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Caption>Checar Email</Caption>
+      <Order>41</Order>
+      <Left>282</Left>
+      <Top>334</Top>
+      <Width>135</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>1073741824</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Checar Email"</HyperLabel>
+        <HyperLabel>"btnCheckEmail"</HyperLabel>
+        <TooltipText>"Checar PIS"</TooltipText>
       </ExProperties>
     </Control>
   </VOWindow>

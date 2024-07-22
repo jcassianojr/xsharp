@@ -1,4 +1,4 @@
-FUNCTION cep2uf(cepuso)
+﻿FUNCTION cep2uf(cepuso)
 LOCAL cep2uf
 cepuso:=TIRAOUT(cepuso)
 cepuso:=Val(cepuso)
