@@ -1,212 +1,193 @@
-ï»¿#region DEFINES
-STATIC DEFINE JIMP_ANO := 112 
-STATIC DEFINE JIMP_ATUAL := 100 
-STATIC DEFINE JIMP_CHAVE := 117 
-STATIC DEFINE JIMP_CMDIMP := 101 
-STATIC DEFINE JIMP_CMDIMP1 := 104 
-STATIC DEFINE JIMP_CMDMAIS := 114 
-STATIC DEFINE JIMP_CMDMAIS2 := 110 
-STATIC DEFINE JIMP_CMDMAIS3 := 106 
-STATIC DEFINE JIMP_CMDMENOS := 113 
-STATIC DEFINE JIMP_CMDMENOS2 := 109 
-STATIC DEFINE JIMP_CMDMENOS3 := 105 
-STATIC DEFINE JIMP_CMDSAIDA := 102 
-STATIC DEFINE JIMP_DFIM := 119 
-STATIC DEFINE JIMP_DINI := 120 
-STATIC DEFINE JIMP_EMPRESA := 107 
-STATIC DEFINE JIMP_FIXEDTEXT1 := 116 
-STATIC DEFINE JIMP_FIXEDTEXT2 := 111 
-STATIC DEFINE JIMP_FIXEDTEXT3 := 103 
-STATIC DEFINE JIMP_FIXEDTEXT4 := 108 
-STATIC DEFINE JIMP_MES := 115 
-STATIC DEFINE JIMP_PER := 121 
-STATIC DEFINE JIMP_PROGBAR := 118 
-STATIC DEFINE JIMP_PUSHBUTTON9 := 122 
+#region DEFINES
+STATIC DEFINE JIMP_ANO := 112
+STATIC DEFINE JIMP_ATUAL := 100
+STATIC DEFINE JIMP_CHAVE := 117
+STATIC DEFINE JIMP_CMDIMP := 101
+STATIC DEFINE JIMP_CMDIMP1 := 104
+STATIC DEFINE JIMP_CMDMAIS := 114
+STATIC DEFINE JIMP_CMDMAIS2 := 110
+STATIC DEFINE JIMP_CMDMAIS3 := 106
+STATIC DEFINE JIMP_CMDMENOS := 113
+STATIC DEFINE JIMP_CMDMENOS2 := 109
+STATIC DEFINE JIMP_CMDMENOS3 := 105
+STATIC DEFINE JIMP_CMDSAIDA := 102
+STATIC DEFINE JIMP_DFIM := 119
+STATIC DEFINE JIMP_DINI := 120
+STATIC DEFINE JIMP_EMPRESA := 107
+STATIC DEFINE JIMP_FIXEDTEXT1 := 116
+STATIC DEFINE JIMP_FIXEDTEXT2 := 111
+STATIC DEFINE JIMP_FIXEDTEXT3 := 103
+STATIC DEFINE JIMP_FIXEDTEXT4 := 108
+STATIC DEFINE JIMP_MES := 115
+STATIC DEFINE JIMP_PER := 121
+STATIC DEFINE JIMP_PROGBAR := 118
+STATIC DEFINE JIMP_PUSHBUTTON9 := 122
 #endregion
 
-class JIMP inherit DATADIALOG 
+PARTIAL CLASS JIMP INHERIT DATADIALOG
+PROTECT oDCAtual AS CHECKBOX
+PROTECT oCCcmdimp AS PUSHBUTTON
+PROTECT oCCcmdSaida AS PUSHBUTTON
+PROTECT oDCFixedText3 AS FIXEDTEXT
+PROTECT oCCcmdimp1 AS PUSHBUTTON
+PROTECT oCCcmdmenos3 AS PUSHBUTTON
+PROTECT oCCcmdmais3 AS PUSHBUTTON
+PROTECT oDCempresa AS SINGLELINEEDIT
+PROTECT oDCFixedText4 AS FIXEDTEXT
+PROTECT oCCcmdmenos2 AS PUSHBUTTON
+PROTECT oCCcmdmais2 AS PUSHBUTTON
+PROTECT oDCFixedText2 AS FIXEDTEXT
+PROTECT oDCano AS SINGLELINEEDIT
+PROTECT oCCcmdmenos AS PUSHBUTTON
+PROTECT oCCcmdmais AS PUSHBUTTON
+PROTECT oDCmes AS SINGLELINEEDIT
+PROTECT oDCFixedText1 AS FIXEDTEXT
+PROTECT oDCchave AS FIXEDTEXT
+PROTECT oDCProgBar AS PROGRESSBAR
+PROTECT oDCDFIM AS DateSle
+PROTECT oDCDINI AS DateSle
+PROTECT oDCper AS FIXEDTEXT
+PROTECT oCCPushButton9 AS PUSHBUTTON
+PROTECT oDCDateTimePicker1 AS DATETIMEPICKER
 
-	protect oDCAtual as CHECKBOX
-	protect oCCcmdimp as PUSHBUTTON
-	protect oCCcmdSaida as PUSHBUTTON
-	protect oDCFixedText3 as FIXEDTEXT
-	protect oCCcmdimp1 as PUSHBUTTON
-	protect oCCcmdmenos3 as PUSHBUTTON
-	protect oCCcmdmais3 as PUSHBUTTON
-	protect oDCempresa as SINGLELINEEDIT
-	protect oDCFixedText4 as FIXEDTEXT
-	protect oCCcmdmenos2 as PUSHBUTTON
-	protect oCCcmdmais2 as PUSHBUTTON
-	protect oDCFixedText2 as FIXEDTEXT
-	protect oDCano as SINGLELINEEDIT
-	protect oCCcmdmenos as PUSHBUTTON
-	protect oCCcmdmais as PUSHBUTTON
-	protect oDCmes as SINGLELINEEDIT
-	protect oDCFixedText1 as FIXEDTEXT
-	protect oDCchave as FIXEDTEXT
-	protect oDCProgBar as PROGRESSBAR
-	protect oDCDFIM as DATESLE
-	protect oDCDINI as DATESLE
-	protect oDCper as FIXEDTEXT
-	protect oCCPushButton9 as PUSHBUTTON
-// 	instance Atual 
-// 	instance empresa 
-// 	instance ano 
-// 	instance mes 
-// 	instance DFIM 
-// 	instance DINI 
+// User code starts here (DO NOT remove this line)  ##USER##
 
-  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
+ACCESS ano
+RETURN SELF:FieldGet( #ano )
 
-access ano() 
-return self:FieldGet(#ano)
+ASSIGN ano( uValue )
+SELF:FieldPut( #ano , uValue )
 
+ACCESS Atual
+RETURN SELF:FieldGet( #Atual )
 
-assign ano(uValue) 
-self:FieldPut(#ano, uValue)
-return ano := uValue
+ASSIGN Atual( uValue )
+SELF:FieldPut( #Atual , uValue )
 
+ACCESS DFIM
+RETURN SELF:FieldGet( #DFIM )
 
-access Atual() 
-return self:FieldGet(#Atual)
+ASSIGN DFIM( uValue )
+SELF:FieldPut( #DFIM , uValue )
 
+ACCESS DINI
+RETURN SELF:FieldGet( #DINI )
 
-assign Atual(uValue) 
-self:FieldPut(#Atual, uValue)
-return Atual := uValue
+ASSIGN DINI( uValue )
+SELF:FieldPut( #DINI , uValue )
 
+ACCESS empresa
+RETURN SELF:FieldGet( #empresa )
 
-access DFIM() 
-return self:FieldGet(#DFIM)
+ASSIGN empresa( uValue )
+SELF:FieldPut( #empresa , uValue )
 
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)
 
-assign DFIM(uValue) 
-self:FieldPut(#DFIM, uValue)
-return DFIM := uValue
+	SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
 
+	SUPER(oWindow , ResourceID{"JIMP" , _GetInst()},iCtlID)
 
-access DINI() 
-return self:FieldGet(#DINI)
+	SELF:oDCAtual := CHECKBOX{SELF , ResourceID{ JIMP_ATUAL  , _GetInst() } }
+	SELF:oDCAtual:HyperLabel := HyperLabel{#Atual , "Competencia Atual" , NULL_STRING , NULL_STRING}
 
+	SELF:oCCcmdimp := PUSHBUTTON{SELF , ResourceID{ JIMP_CMDIMP  , _GetInst() } }
+	SELF:oCCcmdimp:HyperLabel := HyperLabel{#cmdimp , "Iniciar Importação" , NULL_STRING , NULL_STRING}
 
-assign DINI(uValue) 
-self:FieldPut(#DINI, uValue)
-return DINI := uValue
+	SELF:oCCcmdSaida := PUSHBUTTON{SELF , ResourceID{ JIMP_CMDSAIDA  , _GetInst() } }
+	SELF:oCCcmdSaida:HyperLabel := HyperLabel{#cmdSaida , NULL_STRING , NULL_STRING , NULL_STRING}
+	SELF:oCCcmdSaida:Image := ICO_SAIR{}
 
+	SELF:oDCFixedText3 := FIXEDTEXT{SELF , ResourceID{ JIMP_FIXEDTEXT3  , _GetInst() } }
+	SELF:oDCFixedText3:HyperLabel := HyperLabel{#FixedText3 , "Retornar" , NULL_STRING , NULL_STRING}
 
-access empresa() 
-return self:FieldGet(#empresa)
+	SELF:oCCcmdimp1 := PUSHBUTTON{SELF , ResourceID{ JIMP_CMDIMP1  , _GetInst() } }
+	SELF:oCCcmdimp1:HyperLabel := HyperLabel{#cmdimp1 , "Apagar Importacao" , NULL_STRING , NULL_STRING}
 
+	SELF:oCCcmdmenos3 := PUSHBUTTON{SELF , ResourceID{ JIMP_CMDMENOS3  , _GetInst() } }
+	SELF:oCCcmdmenos3:HyperLabel := HyperLabel{#cmdmenos3 , "-" , NULL_STRING , NULL_STRING}
 
-assign empresa(uValue) 
-self:FieldPut(#empresa, uValue)
-return empresa := uValue
+	SELF:oCCcmdmais3 := PUSHBUTTON{SELF , ResourceID{ JIMP_CMDMAIS3  , _GetInst() } }
+	SELF:oCCcmdmais3:HyperLabel := HyperLabel{#cmdmais3 , "+" , NULL_STRING , NULL_STRING}
 
+	SELF:oDCempresa := SINGLELINEEDIT{SELF , ResourceID{ JIMP_EMPRESA  , _GetInst() } }
+	SELF:oDCempresa:HyperLabel := HyperLabel{#empresa , NULL_STRING , NULL_STRING , NULL_STRING}
+	SELF:oDCempresa:FieldSpec := PADRAO_num_04{}
+	SELF:oDCempresa:TooltipText := "Ano Inicial"
 
-CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
+	SELF:oDCFixedText4 := FIXEDTEXT{SELF , ResourceID{ JIMP_FIXEDTEXT4  , _GetInst() } }
+	SELF:oDCFixedText4:HyperLabel := HyperLabel{#FixedText4 , "Empresa" , NULL_STRING , NULL_STRING}
 
-self:PreInit(oWindow,iCtlID,oServer,uExtra)
+	SELF:oCCcmdmenos2 := PUSHBUTTON{SELF , ResourceID{ JIMP_CMDMENOS2  , _GetInst() } }
+	SELF:oCCcmdmenos2:HyperLabel := HyperLabel{#cmdmenos2 , "-" , NULL_STRING , NULL_STRING}
 
-SUPER(oWindow,ResourceID{"JIMP",_GetInst()},iCtlID)
+	SELF:oCCcmdmais2 := PUSHBUTTON{SELF , ResourceID{ JIMP_CMDMAIS2  , _GetInst() } }
+	SELF:oCCcmdmais2:HyperLabel := HyperLabel{#cmdmais2 , "+" , NULL_STRING , NULL_STRING}
 
-oDCAtual := CheckBox{self,ResourceID{JIMP_ATUAL,_GetInst()}}
-oDCAtual:HyperLabel := HyperLabel{#Atual,"Competencia Atual",NULL_STRING,NULL_STRING}
+	SELF:oDCFixedText2 := FIXEDTEXT{SELF , ResourceID{ JIMP_FIXEDTEXT2  , _GetInst() } }
+	SELF:oDCFixedText2:HyperLabel := HyperLabel{#FixedText2 , "Ano" , NULL_STRING , NULL_STRING}
 
-oCCcmdimp := PushButton{self,ResourceID{JIMP_CMDIMP,_GetInst()}}
-oCCcmdimp:HyperLabel := HyperLabel{#cmdimp,"Iniciar ImportaÃ§Ã£o",NULL_STRING,NULL_STRING}
+	SELF:oDCano := SINGLELINEEDIT{SELF , ResourceID{ JIMP_ANO  , _GetInst() } }
+	SELF:oDCano:HyperLabel := HyperLabel{#ano , NULL_STRING , NULL_STRING , NULL_STRING}
+	SELF:oDCano:FieldSpec := PADRAO_num_04{}
+	SELF:oDCano:TooltipText := "Ano Inicial"
 
-oCCcmdSaida := PushButton{self,ResourceID{JIMP_CMDSAIDA,_GetInst()}}
-oCCcmdSaida:HyperLabel := HyperLabel{#cmdSaida,NULL_STRING,NULL_STRING,NULL_STRING}
-oCCcmdSaida:Image := ICO_SAIR{}
+	SELF:oCCcmdmenos := PUSHBUTTON{SELF , ResourceID{ JIMP_CMDMENOS  , _GetInst() } }
+	SELF:oCCcmdmenos:HyperLabel := HyperLabel{#cmdmenos , "-" , NULL_STRING , NULL_STRING}
 
-oDCFixedText3 := FixedText{self,ResourceID{JIMP_FIXEDTEXT3,_GetInst()}}
-oDCFixedText3:HyperLabel := HyperLabel{#FixedText3,"Retornar",NULL_STRING,NULL_STRING}
+	SELF:oCCcmdmais := PUSHBUTTON{SELF , ResourceID{ JIMP_CMDMAIS  , _GetInst() } }
+	SELF:oCCcmdmais:HyperLabel := HyperLabel{#cmdmais , "+" , NULL_STRING , NULL_STRING}
 
-oCCcmdimp1 := PushButton{self,ResourceID{JIMP_CMDIMP1,_GetInst()}}
-oCCcmdimp1:HyperLabel := HyperLabel{#cmdimp1,"Apagar Importacao",NULL_STRING,NULL_STRING}
+	SELF:oDCmes := SINGLELINEEDIT{SELF , ResourceID{ JIMP_MES  , _GetInst() } }
+	SELF:oDCmes:HyperLabel := HyperLabel{#mes , "1" , NULL_STRING , NULL_STRING}
+	SELF:oDCmes:FieldSpec := PADRAO_num_02{}
+	SELF:oDCmes:TooltipText := "Mes Inicial"
 
-oCCcmdmenos3 := PushButton{self,ResourceID{JIMP_CMDMENOS3,_GetInst()}}
-oCCcmdmenos3:HyperLabel := HyperLabel{#cmdmenos3,"-",NULL_STRING,NULL_STRING}
+	SELF:oDCFixedText1 := FIXEDTEXT{SELF , ResourceID{ JIMP_FIXEDTEXT1  , _GetInst() } }
+	SELF:oDCFixedText1:HyperLabel := HyperLabel{#FixedText1 , "Mes" , NULL_STRING , NULL_STRING}
 
-oCCcmdmais3 := PushButton{self,ResourceID{JIMP_CMDMAIS3,_GetInst()}}
-oCCcmdmais3:HyperLabel := HyperLabel{#cmdmais3,"+",NULL_STRING,NULL_STRING}
+	SELF:oDCchave := FIXEDTEXT{SELF , ResourceID{ JIMP_CHAVE  , _GetInst() } }
+	SELF:oDCchave:HyperLabel := HyperLabel{#chave , NULL_STRING , NULL_STRING , NULL_STRING}
 
-oDCempresa := SingleLineEdit{self,ResourceID{JIMP_EMPRESA,_GetInst()}}
-oDCempresa:HyperLabel := HyperLabel{#empresa,NULL_STRING,NULL_STRING,NULL_STRING}
-oDCempresa:TooltipText := "Ano Inicial"
-oDCempresa:FieldSpec := PADRAO_num_04{}
+	SELF:oDCProgBar := PROGRESSBAR{SELF , ResourceID{ JIMP_PROGBAR  , _GetInst() } }
+	SELF:oDCProgBar:HyperLabel := HyperLabel{#ProgBar , NULL_STRING , NULL_STRING , NULL_STRING}
+	SELF:oDCProgBar:Range := Range{0 , 100}
 
-oDCFixedText4 := FixedText{self,ResourceID{JIMP_FIXEDTEXT4,_GetInst()}}
-oDCFixedText4:HyperLabel := HyperLabel{#FixedText4,"Empresa",NULL_STRING,NULL_STRING}
+	SELF:oDCDFIM := DateSle{SELF , ResourceID{ JIMP_DFIM  , _GetInst() } }
+	SELF:oDCDFIM:HyperLabel := HyperLabel{#DFIM , NULL_STRING , NULL_STRING , NULL_STRING}
+	SELF:oDCDFIM:FieldSpec := date_field{}
 
-oCCcmdmenos2 := PushButton{self,ResourceID{JIMP_CMDMENOS2,_GetInst()}}
-oCCcmdmenos2:HyperLabel := HyperLabel{#cmdmenos2,"-",NULL_STRING,NULL_STRING}
+	SELF:oDCDINI := DateSle{SELF , ResourceID{ JIMP_DINI  , _GetInst() } }
+	SELF:oDCDINI:HyperLabel := HyperLabel{#DINI , NULL_STRING , NULL_STRING , NULL_STRING}
+	SELF:oDCDINI:FieldSpec := DATE_FIELD{}
 
-oCCcmdmais2 := PushButton{self,ResourceID{JIMP_CMDMAIS2,_GetInst()}}
-oCCcmdmais2:HyperLabel := HyperLabel{#cmdmais2,"+",NULL_STRING,NULL_STRING}
+	SELF:oDCper := FIXEDTEXT{SELF , ResourceID{ JIMP_PER  , _GetInst() } }
+	SELF:oDCper:HyperLabel := HyperLabel{#per , "Periodo" , NULL_STRING , NULL_STRING}
 
-oDCFixedText2 := FixedText{self,ResourceID{JIMP_FIXEDTEXT2,_GetInst()}}
-oDCFixedText2:HyperLabel := HyperLabel{#FixedText2,"Ano",NULL_STRING,NULL_STRING}
+	SELF:oCCPushButton9 := PUSHBUTTON{SELF , ResourceID{ JIMP_PUSHBUTTON9  , _GetInst() } }
+	SELF:oCCPushButton9:HyperLabel := HyperLabel{#PushButton9 , "Importar Integrado" , NULL_STRING , NULL_STRING}
 
-oDCano := SingleLineEdit{self,ResourceID{JIMP_ANO,_GetInst()}}
-oDCano:HyperLabel := HyperLabel{#ano,NULL_STRING,NULL_STRING,NULL_STRING}
-oDCano:TooltipText := "Ano Inicial"
-oDCano:FieldSpec := PADRAO_num_04{}
+	SELF:oDCDateTimePicker1 := DATETIMEPICKER{SELF , ResourceID{ JIMP_DATETIMEPICKER1  , _GetInst() } }
+	SELF:oDCDateTimePicker1:HyperLabel := HyperLabel{#DateTimePicker1 , NULL_STRING , NULL_STRING , NULL_STRING}
+	SELF:oDCDateTimePicker1:FieldSpec := date_field{}
 
-oCCcmdmenos := PushButton{self,ResourceID{JIMP_CMDMENOS,_GetInst()}}
-oCCcmdmenos:HyperLabel := HyperLabel{#cmdmenos,"-",NULL_STRING,NULL_STRING}
-
-oCCcmdmais := PushButton{self,ResourceID{JIMP_CMDMAIS,_GetInst()}}
-oCCcmdmais:HyperLabel := HyperLabel{#cmdmais,"+",NULL_STRING,NULL_STRING}
-
-oDCmes := SingleLineEdit{self,ResourceID{JIMP_MES,_GetInst()}}
-oDCmes:HyperLabel := HyperLabel{#mes,"1",NULL_STRING,NULL_STRING}
-oDCmes:TooltipText := "Mes Inicial"
-oDCmes:FieldSpec := PADRAO_num_02{}
-
-oDCFixedText1 := FixedText{self,ResourceID{JIMP_FIXEDTEXT1,_GetInst()}}
-oDCFixedText1:HyperLabel := HyperLabel{#FixedText1,"Mes",NULL_STRING,NULL_STRING}
-
-oDCchave := FixedText{self,ResourceID{JIMP_CHAVE,_GetInst()}}
-oDCchave:HyperLabel := HyperLabel{#chave,NULL_STRING,NULL_STRING,NULL_STRING}
-
-oDCProgBar := ProgressBar{self,ResourceID{JIMP_PROGBAR,_GetInst()}}
-oDCProgBar:Range := Range{0,100}
-oDCProgBar:HyperLabel := HyperLabel{#ProgBar,NULL_STRING,NULL_STRING,NULL_STRING}
-
-oDCDFIM := DateSle{self,ResourceID{JIMP_DFIM,_GetInst()}}
-oDCDFIM:FieldSpec := DATE_FIELD{}
-oDCDFIM:HyperLabel := HyperLabel{#DFIM,NULL_STRING,NULL_STRING,NULL_STRING}
-
-oDCDINI := DateSle{self,ResourceID{JIMP_DINI,_GetInst()}}
-oDCDINI:FieldSpec := DATE_FIELD{}
-oDCDINI:HyperLabel := HyperLabel{#DINI,NULL_STRING,NULL_STRING,NULL_STRING}
-
-oDCper := FixedText{self,ResourceID{JIMP_PER,_GetInst()}}
-oDCper:HyperLabel := HyperLabel{#per,"Periodo",NULL_STRING,NULL_STRING}
-
-oCCPushButton9 := PushButton{self,ResourceID{JIMP_PUSHBUTTON9,_GetInst()}}
-oCCPushButton9:HyperLabel := HyperLabel{#PushButton9,"Importar Integrado",NULL_STRING,NULL_STRING}
-
-self:Caption := "Importar Contas Pagas"
-self:HyperLabel := HyperLabel{#JIMP,"Importar Contas Pagas",NULL_STRING,NULL_STRING}
-
-if !IsNil(oServer)
-	self:Use(oServer)
-endif
-
-self:PostInit(oWindow,iCtlID,oServer,uExtra)
-
-return self
+	SELF:Caption := "Importar Contas Pagas"
+	SELF:HyperLabel := HyperLabel{#JIMP , "Importar Contas Pagas" , NULL_STRING , NULL_STRING}
+	IF !IsNil(oServer)
+		SELF:Use(oServer)
+	ENDIF
 
 
-access mes() 
-return self:FieldGet(#mes)
+	SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
+
+RETURN
 
 
-assign mes(uValue) 
-self:FieldPut(#mes, uValue)
-return mes := uValue
+ACCESS mes
+RETURN SELF:FieldGet( #mes )
 
+ASSIGN mes( uValue )
+SELF:FieldPut( #mes , uValue )
 
 END CLASS
+STATIC DEFINE JIMP_DATETIMEPICKER1 := 123

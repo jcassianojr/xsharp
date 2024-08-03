@@ -1,0 +1,29 @@
+; DefaultProperties.vicfg
+; Defines default values of Control Properties to be used by the Forms Designer
+
+; By placing this file in VIDE's main folder it will have effect to apps in all projects
+; If you place it in a Project's \Config\ folder it will have effect only to that Project
+; and override the one placed in VIDE's main folder.
+; Different Projects can have different sets of Default Properties (DefaultProperties.vicfg files)
+
+; USAGE :
+; CONTROL =  Name of the control (standard or custom) to add default properties
+;   {PROPERTY} = {VALUE} Name of property = Default value (TRUE/FALSE for Logic properties)
+;   {PROPERTY} = {VALUE}
+;   ....
+; END
+
+; SAMPLE :
+; (if you uncomment the following lines, every new Button you put on a form will have
+; an initial size of (100,100), Flat style and its Enabled property will be set to FALSE
+; Also TextBox controls will have their "Inherit" property set to "MyTextBoxSubclass"
+
+;CONTROL = Button
+;  Size = 100 , 100
+;  FlatStyle = Flat
+;  Enabled = FALSE
+;END
+;
+;CONTROL = TextBox
+;  Inherit = MyButtonSubclass
+;END

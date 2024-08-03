@@ -1,50 +1,169 @@
 DESIGNERSTART = VOWindowEditor,DATADIALOG,JIMP
 GUID=8D73E0AA-B632-4C7E-B121-657EFDE3E652
   Name=JIMP
-  Class=DATADIALOG
+  Class=FORM:DATADIALOG
   Caption=Importar Contas Pagas
   Order=0
-  Left=46
+  Left=0
   Width=400
-  Top=46
+  Top=0
   Height=240
-  Browseindex=-1
+  Browseindex=0
   Browsesize=0
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,"Importar Contas Pagas",,
-  Property=HyperLabel=#JIMP,,,
-
+  Property=HyperLabel=,Importar Contas Pagas
+  Property=HyperLabel=JIMP
+SavedOnce=1
 SUBCONTROLSSTART
+CONTROL=DATETIMEPICKER
+GUID=B9A98B5A-63B9-493F-A94A-EAE4AFEAAC7F
+  Name=DateTimePicker1
+  Class=CONTROL:TEXTCONTROL:DATETIMEPICKER
+  Caption=
+  Order=24
+  Left=63
+  Width=89
+  Top=199
+  Height=25
+  Browseindex=0
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=DateTimePicker1
+  Property=FieldSpec=date_field
+CONTROL=SINGLELINEEDIT
+GUID=4D22F144-01E3-4030-B04A-9BCCA06FA117
+  Name=DFIM
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=20
+  Left=168
+  Width=104
+  Top=176
+  Height=20
+  Browseindex=5
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=DFIM
+  Property=FieldSpec=date_field
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=9E56A17F-FF71-4330-BBD1-BBCD4C645DDF
+  Name=DINI
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=21
+  Left=61
+  Width=104
+  Top=173
+  Height=20
+  Browseindex=6
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=DINI
+  Property=FieldSpec=DATE_FIELD
+  Property=InheritClassName=DateSle
+CONTROL=SINGLELINEEDIT
+GUID=26E5797C-2196-41BC-8A9C-98637B6AA1A7
+  Name=empresa
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=8
+  Left=177
+  Width=47
+  Top=45
+  Height=20
+  Browseindex=2
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=empresa
+  Property=FieldSpec=PADRAO_num_04
+  Property=TooltipText=Ano Inicial
+CONTROL=SINGLELINEEDIT
+GUID=4C91C830-0FD2-4B93-AA94-E920B74D21FC
+  Name=ano
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=
+  Order=13
+  Left=97
+  Width=47
+  Top=45
+  Height=20
+  Browseindex=3
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=ano
+  Property=FieldSpec=PADRAO_num_04
+  Property=TooltipText=Ano Inicial
+CONTROL=SINGLELINEEDIT
+GUID=6D6101A0-5251-463A-BFDA-67B9DE15976D
+  Name=mes
+  Class=CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT
+  Caption=1
+  Order=16
+  Left=13
+  Width=47
+  Top=45
+  Height=20
+  Browseindex=4
+  Browsesize=17
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=512
+  Property=HyperLabel=,1
+  Property=HyperLabel=mes
+  Property=FieldSpec=PADRAO_num_02
+  Property=TooltipText=Mes Inicial
 CONTROL=CHECKBOX
 GUID=809DE4BE-3425-4E75-9C50-6592A4882A28
   Name=Atual
-  Class=CHECKBOX
+  Class=CONTROL:TEXTCONTROL:BUTTON:CHECKBOX
   Caption=Competencia Atual
   Order=1
   Left=17
   Width=140
   Top=9
   Height=18
-  Browseindex=-1
-  Browsesize=0
+  Browseindex=1
+  Browsesize=17
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073807363
   Exstyles=0
-  Property=HyperLabel=,"Competencia Atual",,
-  Property=HyperLabel=#Atual,,,
-
+  Property=HyperLabel=,Competencia Atual
+  Property=HyperLabel=Atual
 CONTROL=PUSHBUTTON
 GUID=2845867A-0FC6-420B-A66F-84E6E756AA49
   Name=cmdimp
-  Class=PUSHBUTTON
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
   Caption=Iniciar Importação
-  Order=6
+  Order=2
   Left=165
   Width=116
   Top=89
@@ -53,18 +172,17 @@ GUID=2845867A-0FC6-420B-A66F-84E6E756AA49
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073807360
   Exstyles=0
-  Property=HyperLabel=,"Iniciar Importação",,
-  Property=HyperLabel=#cmdimp,,,
-
+  Property=HyperLabel=,Iniciar Importação
+  Property=HyperLabel=cmdimp
 CONTROL=PUSHBUTTON
 GUID=7D1EF68B-3660-4135-BAB8-F53AF77F8708
   Name=cmdSaida
-  Class=PUSHBUTTON
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
   Caption=
-  Order=7
+  Order=3
   Left=321
   Width=64
   Top=25
@@ -73,18 +191,17 @@ GUID=7D1EF68B-3660-4135-BAB8-F53AF77F8708
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073807424
   Exstyles=0
-  Property=HyperLabel=#cmdSaida,,,
+  Property=HyperLabel=cmdSaida
   Property=Image=ICO_SAIR
-
 CONTROL=FIXEDTEXT
 GUID=9EF2BD33-0C06-4736-BBD3-6C26B83CD663
   Name=FixedText3
-  Class=FIXEDTEXT
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
   Caption=Retornar
-  Order=8
+  Order=4
   Left=321
   Width=64
   Top=77
@@ -93,18 +210,17 @@ GUID=9EF2BD33-0C06-4736-BBD3-6C26B83CD663
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073741825
   Exstyles=0
-  Property=HyperLabel=,"Retornar",,
-  Property=HyperLabel=#FixedText3,,,
-
+  Property=HyperLabel=,Retornar
+  Property=HyperLabel=FixedText3
 CONTROL=PUSHBUTTON
 GUID=343318F1-7C83-4E7F-ADF4-B4AE0FE7204E
   Name=cmdimp1
-  Class=PUSHBUTTON
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
   Caption=Apagar Importacao
-  Order=11
+  Order=5
   Left=17
   Width=116
   Top=89
@@ -113,18 +229,17 @@ GUID=343318F1-7C83-4E7F-ADF4-B4AE0FE7204E
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073807360
   Exstyles=0
-  Property=HyperLabel=,"Apagar Importacao",,
-  Property=HyperLabel=#cmdimp1,,,
-
+  Property=HyperLabel=,Apagar Importacao
+  Property=HyperLabel=cmdimp1
 CONTROL=PUSHBUTTON
 GUID=CC37B845-1C3B-4D0E-9593-1058DFCCACFE
   Name=cmdmenos3
-  Class=PUSHBUTTON
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
   Caption=-
-  Order=12
+  Order=6
   Left=229
   Width=20
   Top=49
@@ -133,18 +248,17 @@ GUID=CC37B845-1C3B-4D0E-9593-1058DFCCACFE
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,"-",,
-  Property=HyperLabel=#cmdmenos3,,,
-
+  Property=HyperLabel=,-
+  Property=HyperLabel=cmdmenos3
 CONTROL=PUSHBUTTON
 GUID=C9ADBCAF-977F-4FD0-8559-2F9142161472
   Name=cmdmais3
-  Class=PUSHBUTTON
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
   Caption=+
-  Order=13
+  Order=7
   Left=229
   Width=20
   Top=29
@@ -153,39 +267,17 @@ GUID=C9ADBCAF-977F-4FD0-8559-2F9142161472
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,"+",,
-  Property=HyperLabel=#cmdmais3,,,
-
-CONTROL=SINGLELINEEDIT
-GUID=26E5797C-2196-41BC-8A9C-98637B6AA1A7
-  Name=empresa
-  Class=SINGLELINEEDIT
-  Caption=
-  Order=14
-  Left=177
-  Width=47
-  Top=45
-  Height=20
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1082196096
-  Exstyles=512
-  Property=HyperLabel=#empresa,,,
-  Property=TooltipText="Ano Inicial"
-  Property=FieldSpec=PADRAO_num_04
-
+  Property=HyperLabel=,+
+  Property=HyperLabel=cmdmais3
 CONTROL=FIXEDTEXT
 GUID=03EB7FE9-8648-4FBD-A4AD-01EBF116EB4A
   Name=FixedText4
-  Class=FIXEDTEXT
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
   Caption=Empresa
-  Order=15
+  Order=9
   Left=177
   Width=44
   Top=29
@@ -194,18 +286,17 @@ GUID=03EB7FE9-8648-4FBD-A4AD-01EBF116EB4A
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,"Empresa",,
-  Property=HyperLabel=#FixedText4,,,
-
+  Property=HyperLabel=,Empresa
+  Property=HyperLabel=FixedText4
 CONTROL=PUSHBUTTON
 GUID=95B21F42-3942-486A-8ECC-2C0E9F507E70
   Name=cmdmenos2
-  Class=PUSHBUTTON
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
   Caption=-
-  Order=16
+  Order=10
   Left=145
   Width=20
   Top=49
@@ -214,18 +305,17 @@ GUID=95B21F42-3942-486A-8ECC-2C0E9F507E70
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,"-",,
-  Property=HyperLabel=#cmdmenos2,,,
-
+  Property=HyperLabel=,-
+  Property=HyperLabel=cmdmenos2
 CONTROL=PUSHBUTTON
 GUID=3C9DE619-EC4F-480D-B32E-56503782A574
   Name=cmdmais2
-  Class=PUSHBUTTON
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
   Caption=+
-  Order=17
+  Order=11
   Left=145
   Width=20
   Top=29
@@ -234,18 +324,17 @@ GUID=3C9DE619-EC4F-480D-B32E-56503782A574
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,"+",,
-  Property=HyperLabel=#cmdmais2,,,
-
+  Property=HyperLabel=,+
+  Property=HyperLabel=cmdmais2
 CONTROL=FIXEDTEXT
 GUID=BCA8218E-9034-4BC4-9EF8-53BC409C828A
   Name=FixedText2
-  Class=FIXEDTEXT
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
   Caption=Ano
-  Order=18
+  Order=12
   Left=101
   Width=36
   Top=29
@@ -254,39 +343,17 @@ GUID=BCA8218E-9034-4BC4-9EF8-53BC409C828A
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,"Ano",,
-  Property=HyperLabel=#FixedText2,,,
-
-CONTROL=SINGLELINEEDIT
-GUID=4C91C830-0FD2-4B93-AA94-E920B74D21FC
-  Name=ano
-  Class=SINGLELINEEDIT
-  Caption=
-  Order=19
-  Left=97
-  Width=47
-  Top=45
-  Height=20
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1082196096
-  Exstyles=512
-  Property=HyperLabel=#ano,,,
-  Property=TooltipText="Ano Inicial"
-  Property=FieldSpec=PADRAO_num_04
-
+  Property=HyperLabel=,Ano
+  Property=HyperLabel=FixedText2
 CONTROL=PUSHBUTTON
 GUID=28714125-0A00-469F-B2D0-C638C8A5D58B
   Name=cmdmenos
-  Class=PUSHBUTTON
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
   Caption=-
-  Order=20
+  Order=14
   Left=65
   Width=20
   Top=49
@@ -295,18 +362,17 @@ GUID=28714125-0A00-469F-B2D0-C638C8A5D58B
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,"-",,
-  Property=HyperLabel=#cmdmenos,,,
-
+  Property=HyperLabel=,-
+  Property=HyperLabel=cmdmenos
 CONTROL=PUSHBUTTON
 GUID=4FDEF5E0-43CB-4E9D-A71B-99EC7A0F5CAF
   Name=cmdmais
-  Class=PUSHBUTTON
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
   Caption=+
-  Order=21
+  Order=15
   Left=65
   Width=20
   Top=29
@@ -315,40 +381,17 @@ GUID=4FDEF5E0-43CB-4E9D-A71B-99EC7A0F5CAF
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,"+",,
-  Property=HyperLabel=#cmdmais,,,
-
-CONTROL=SINGLELINEEDIT
-GUID=6D6101A0-5251-463A-BFDA-67B9DE15976D
-  Name=mes
-  Class=SINGLELINEEDIT
-  Caption=
-  Order=22
-  Left=13
-  Width=47
-  Top=45
-  Height=20
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1082196096
-  Exstyles=512
-  Property=HyperLabel=,"1",,
-  Property=HyperLabel=#mes,,,
-  Property=TooltipText="Mes Inicial"
-  Property=FieldSpec=PADRAO_num_02
-
+  Property=HyperLabel=,+
+  Property=HyperLabel=cmdmais
 CONTROL=FIXEDTEXT
 GUID=9E6C8D95-7A77-4D8F-96FF-BE7B3F5507FA
   Name=FixedText1
-  Class=FIXEDTEXT
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
   Caption=Mes
-  Order=23
+  Order=17
   Left=17
   Width=36
   Top=29
@@ -357,18 +400,17 @@ GUID=9E6C8D95-7A77-4D8F-96FF-BE7B3F5507FA
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,"Mes",,
-  Property=HyperLabel=#FixedText1,,,
-
+  Property=HyperLabel=,Mes
+  Property=HyperLabel=FixedText1
 CONTROL=FIXEDTEXT
 GUID=D1090D5A-8ABB-4FE4-B297-E644D79168C7
   Name=chave
-  Class=FIXEDTEXT
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
   Caption=
-  Order=24
+  Order=18
   Left=18
   Width=307
   Top=118
@@ -377,17 +419,16 @@ GUID=D1090D5A-8ABB-4FE4-B297-E644D79168C7
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=#chave,,,
-
+  Property=HyperLabel=chave
 CONTROL=PROGRESSBAR
 GUID=B5254DA2-E2EF-4030-BCF5-3867A8625FC4
   Name=ProgBar
-  Class=PROGRESSBAR
+  Class=CONTROL:COMMONCONTROL:PROGRESSBAR
   Caption=
-  Order=25
+  Order=19
   Left=17
   Width=309
   Top=145
@@ -396,61 +437,18 @@ GUID=B5254DA2-E2EF-4030-BCF5-3867A8625FC4
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=Range=0,
+  Property=HyperLabel=ProgBar
+  Property=Range=0
   Property=Range=,100
-  Property=HyperLabel=#ProgBar,,,
-
-CONTROL=SINGLELINEEDIT
-GUID=4D22F144-01E3-4030-B04A-9BCCA06FA117
-  Name=DFIM
-  Class=SINGLELINEEDIT
-  Caption=
-  Order=26
-  Left=165
-  Width=104
-  Top=173
-  Height=20
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1082196096
-  Exstyles=512
-  Property=FieldSpec=DATE_FIELD
-  Property=InheritClassName=DateSle
-  Property=HyperLabel=#DFIM,,,
-
-CONTROL=SINGLELINEEDIT
-GUID=9E56A17F-FF71-4330-BBD1-BBCD4C645DDF
-  Name=DINI
-  Class=SINGLELINEEDIT
-  Caption=
-  Order=27
-  Left=61
-  Width=104
-  Top=173
-  Height=20
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1082196096
-  Exstyles=512
-  Property=InheritClassName=DateSle
-  Property=FieldSpec=DATE_FIELD
-  Property=HyperLabel=#DINI,,,
-
 CONTROL=FIXEDTEXT
 GUID=8A719C83-8330-4134-AB23-4D618B03C28C
   Name=per
-  Class=FIXEDTEXT
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
   Caption=Periodo
-  Order=28
+  Order=22
   Left=17
   Width=44
   Top=173
@@ -459,18 +457,17 @@ GUID=8A719C83-8330-4134-AB23-4D618B03C28C
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,"Periodo",,
-  Property=HyperLabel=#per,,,
-
+  Property=HyperLabel=,Periodo
+  Property=HyperLabel=per
 CONTROL=PUSHBUTTON
 GUID=3F3D5358-0C72-4531-8827-B2C6AE72D78B
   Name=PushButton9
-  Class=PUSHBUTTON
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
   Caption=Importar Integrado
-  Order=29
+  Order=23
   Left=273
   Width=107
   Top=173
@@ -479,12 +476,12 @@ GUID=3F3D5358-0C72-4531-8827-B2C6AE72D78B
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1073807360
   Exstyles=0
-  Property=HyperLabel=,"Importar Integrado",,
-  Property=HyperLabel=#PushButton9,,,
-
+  Property=HyperLabel=,Importar Integrado
+  Property=HyperLabel=PushButton9
 SUBCONTROLSEND
 DESIGNEREND = JIMP
+
 

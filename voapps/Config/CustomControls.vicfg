@@ -1,0 +1,58 @@
+; CustomControls.vicfg
+; Defines Custom Controls (and their Properties) to be added to the ToolBox
+
+; By placing this file in XIDE's main folder it will have effect to apps in all projects
+; If you place it in a Project's \Config\ folder it will have effect only to that Project
+; and override the one placed in XIDE's main folder.
+; Different Projects can have different sets of Custom Controls (CustomControls.vicfg files)
+
+; USAGE :
+
+; declaring enums :
+; ENUM = Name of a custom ENUM to be used by properties
+;   NAMESPACE = the namespace of the enum (optional)
+;   MEMBER = enum item name
+;   MEMBER = another enum item name etc
+; END
+
+; declaring controls and base controls :
+; CONTROL = Name of Custom Control to be added to the ToolBox
+; (or)
+; BASECONTROL = Name of virtual Base Control containing properties to be used by many custom controls
+;
+;   STANDARD = One of the Standard Toolbox Controls that the Custom Control is based on
+;   (or)
+;   BASE = One of the Base Controls defined earlier
+;
+;   TOOLBOX = Caption of TabPage in the ToolBox containing the control (Default = Custom) (optional)
+;   TOOLBOXBITMAP = C:\MyBitmap.bmp Bitmap to be used for the control in the ToolBox (optional)
+;
+;   PROPERTY = Name of additional property
+;     TYPE = Property type (INT,REAL,DECIMAL,STRING,CHAR,LOGIC,OBJECT,COLOR,FONT,IMAGE,ICON,EVENT,
+;            or one of the ENUMs declared earlier or one of the System.Windows.Forms enums)
+;   END
+;
+; END
+
+
+; SAMPLE :
+
+;CONTROL = TestComboControl
+;  STANDARD = ComboBox
+;  TOOLBOX = NewToolboxPage
+;  PROPERTY = ANumber
+;    TYPE = INT
+;  END
+;  PROPERTY = SomeReal
+;    TYPE = REAL
+;  END
+;  PROPERTY = YesOrNo
+;    TYPE = LOGIC
+;  END
+;  PROPERTY = ColorProp
+;    TYPE = COLOR
+;  END
+;  PROPERTY = FontProp
+;    TYPE = FONT
+;  END
+;END
