@@ -33,6 +33,7 @@ RecentReference = Browse:d:\devprg\XIDE\VOFabPaintLib.dll
 RecentReference = Browse:d:\devprg\XIDE\VOFabPaintLib_Control.dll
 RecentReference = Browse:d:\devprg\XIDE\FreeImageNET.dll
 RecentReference = Browse:d:\devprg\XIDE\dlls\FreeImageNET.dll
+RecentReference = GAC:System.Windows.Forms,v4,4.0.0.0
 
 [Application Groups]
 
@@ -5738,6 +5739,10 @@ File = %AppPath%\AssemblyInfo.prg
 FileGUID = B77D8A62-F25E-4B60-9936-E839DA6E3FDE
 FileType = Code
 CopyToBin = 0
+File = %AppPath%\MenuPrincipal.prg
+FileGUID = D07A08CE-F045-4E06-B8AA-AC3F548221E8
+FileType = Code
+CopyToBin = 0
 [Banco References]
 ReferenceGAC = CLR4,System,1,0,4.0.0.0
 ReferenceGAC = CLR4,XSharp.Core,1,0,2.6.0.0
@@ -5758,6 +5763,7 @@ ReferenceProject = 3F447BFB-7AEC-47B9-B63C-E279857F0F6C,1,0,Mail
 ReferenceProject = 2D82464E-60D4-43D2-9EEB-64E74948A580,1,0,rh_pto
 ReferenceGAC = CLR4,System.Net,1,0,4.0.0.0
 ReferenceProject = A0D63BC7-CEC0-4174-BF00-F5E89967A8F3,1,0,RightSLEVO
+ReferenceGAC = CLR4,System.Windows.Forms,1,0,4.0.0.0
 [Banco Resources]
 [Banco Native Resources]
 NativeResourceFile = %AppPath%\Menus.rc

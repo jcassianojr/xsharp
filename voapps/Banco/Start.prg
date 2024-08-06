@@ -1,4 +1,4 @@
-﻿#region DEFINES
+#region DEFINES
 DEFINE CREATEPROCESS_MANIFEST_RESOURCE_ID := 1
 DEFINE RC_RT_MANIFEST                     := 24
 #endregion
@@ -19,8 +19,8 @@ METHOD Start()
 	LOCAL oWindow AS BCOSHELL //StandardShellWindow
 	LOCAL oLogonDialog AS LogonDialog
 	LOCAL oMAIL AS XJMAIL	
-	LOCAL aDAD,aLOGIN AS ARRAY
-	
+	LOCAL aDAD,aLOGIN AS ARRAY  
+                
 	SetExclusive(FALSE)
 	SetDeleted(TRUE)
 	SetSoftSeek(TRUE)
@@ -92,7 +92,7 @@ ELSE
         oMAIL:SHOW()		
 	    oWindow:Show(SHOWZOOMED)//	oWindow:Show()		
   	    oWindow:statusBar:SetText (Str(ZFOLHA,8)+"-"+ZUSER, #SBUser)
-	    oWINDOW:Caption := "Módulo BANCO  Empresa: "+StrZero(Zempresa,3)+" Competencia: "+StrZero(Zmes,2)+"/"+StrZero(Zano,4)
+	    oWINDOW:Caption := "M�dulo BANCO  Empresa: "+StrZero(Zempresa,3)+" Competencia: "+StrZero(Zmes,2)+"/"+StrZero(Zano,4)
 	    SELF:Exec()
     ELSE
 	   // Exit program
