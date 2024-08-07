@@ -1,0 +1,104 @@
+Exemplo 01 so padrao
+Exemplo 02 com sqlite vo lib
+
+
+
+	//
+	// odbc requer no wchar marcado senao tras so a primeira letra
+	//
+	//
+	//
+	
+	
+	LOCAL GLOoCONNECTION AS  SQLConnection   
+	LOCAL cStatement AS STRING   
+	LOCAL cCONN AS STRING
+	LOCAL GLOoSTATEMENT AS SQLStatemenT    
+	LOCAL GLOcDATABASE AS STRING                
+	LOCAL GLOcALIAS AS STRING 
+	LOCAL CSQL AS STRING
+	LOCAL OREG AS SQLSelect 
+	LOCAL cVALOR AS STRING
+	
+	SQLConnectErrorMsg( TRUE )         
+	cCONN :=   "SQLite3"
+//	cCONN :=   "Access"
+	GLOoCONNECTION := SQLConnection{cCONN, "", "" }	    
+	
+	GLOoCONNECTION:connect()
+  IF GLOoCONNECTION:Connected    
+  	 alert ("Connected")
+  ENDIF  
+ 
+ // if there's a secondary database, attach it first    
+ // 	GLOcDATABASE := "d:\develop\modelos\banco\banco.sqlite"     
+//  	GLOcDATABASE := "d:\develop\modelos\controle\pf.mdb"     
+//  	GLOcALIAS := "banco"
+ // 	GLOcALIAS := "pf"       
+ 
+    GLOcDATABASE := "c:\temp\chinook.sqlite "	  
+    GLOcALIAS :=  "chinook"
+    
+  cStatement := "ATTACH DATABASE '"+GLOcDATABASE+"' AS "+ GLOcALIAS
+ 	GLOoSTATEMENT := SQLStatement{cStatement , GLOoCONNECTION }
+
+ IF !GLOoSTATEMENT:Execute()
+		// we've used this method primarily to test for correct syntax
+		ALERT( "didn't execute " + cStatement) 
+		RETURN FALSE
+ ENDIF  
+ 
+ cSQL :="SELECT  name as nome  FROM genres;"
+
+  oreg:= SQLSelect{cSQL,GLOoCONNECTION}
+   WHILE ! OREG:EoF
+         cVALOR := OREG:FIELDGET("NOME")	
+    //   cVALOR:=oREG:FieldGetFormatted("Nome") 
+    //   cVALOR:=  oreg:FieldGet(1)
+       ALERT(cVALOR)
+    Oreg:skip()
+   ENDDO    
+   
+ //GLOoSTATEMENT:FreeStmt( SQL_DROP  )
+ */
+
+//
+// exemplo 2 com sqlite vo lib
+//
+
+LOCAL cStatement AS STRING
+	LOCAL cVALOR AS STRING
+	LOCAL oREG AS  XSQLSelect
+   	SQLConnectErrorMsg( TRUE )
+	GLOcCONN  :=   "SQLite3"
+	GLOoCONNECTION:= SQLConnection{GLOcCONN, "", "" }	
+	
+	GLOoCONNECTION:connect()
+    IF GLOoCONNECTION:Connected
+  	   alert ("Connected")
+    ENDIF
+
+    GLOcDATABASE := "c:\temp\chinook.sqlite "	
+    GLOcALIAS :=  "chinook"
+    cStatement := "ATTACH DATABASE '"+GLOcDATABASE+"' AS "+ GLOcALIAS
+ 	GLOoSTATEMENT := SQLStatement{cStatement , GLOoCONNECTION }
+
+    IF GLOoSTATEMENT:Execute()
+		// we've used this method primarily to test for correct syntax
+		alert( "execute " + cStatement)
+    ENDIF
+    GLOoSTATEMENT:FreeStmt( SQL_DROP  )
+
+
+   cStatement :="SELECT  name as nome  FROM genres;"
+
+   oreg:= XSQLSelect{cStatement,GLOoCONNECTION}
+   WHILE ! OREG:EoF
+         cVALOR := OREG:FIELDGET("NOME")	
+    //   cVALOR:=oREG:FieldGetFormatted("Nome")
+    //   cVALOR:=  oreg:FieldGet(1)
+       alert(cVALOR)
+    Oreg:skip()
+   ENDDO
+
+    
