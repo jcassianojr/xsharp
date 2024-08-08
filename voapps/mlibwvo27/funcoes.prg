@@ -266,9 +266,13 @@ ENDIF
 RETU cCAMPO
 
 FUNCTION GRAVALOG(cERRO,cOPR,cARQ)
-//	FUNCTION GRAVALOG(cERRO,cOPR,cARQ,cUSER,cCURINI,cCURDIR)
 LOCAL oMANERR AS USEREDE	
 LOCAL aRET AS ARRAY
+LOCAL cCAMERRO AS STRING
+LOCAL cARQVAZIO AS STRING
+LOCAL oCONN AS  SQLConnection
+LOCAL oSTATEMENT AS SQLStatemenT
+LOCAL cSQL AS STRING
 IF ValType(cERRO)="U"
    cERRO:=""
 ENDIF
@@ -278,22 +282,87 @@ ENDIF
 IF ValType(cARQ)="U"
    cARQ:=Alias()
 ENDIF
+
+IF Empty(zTIPERRO)
+   cARQVAZIO:=Lower(PEGINIVAL(ZCURINI,"PATH","LOG"))
+   DO CASE
+   	  CASE At(".sqlite",carqvazio)>0
+   	  	  zTIPERRO:="SQLITE"
+     CASE At(".mdb",carqvazio)>0
+   	  	  zTIPERRO:="MDB"
+     OTHERWISE
+   	  	  zTIPERRO:="DBF"
+   ENDCASE	
+ENDIF	
+	
+
+IF Empty(ZARQERRO)
+   cARQVAZIO:=PEGINIVAL(ZCURINI,"PATH","LOG")
+   cCAMERRO:=PEGINIVAL(ZCURINI,"PATH","LOGCAM")
+   ZARQERRO:=cCAMERRO+"log"+StrZero(zANO,4,0)+StrZero(zmes,2,0)+"."+Lower(zTIPERRO)
+   IF zTIPERRO="SQLITE" .OR. zTIPERRO="MDB"
+	   IF .NOT. File(ZARQERRO)
+	   	  FCopy(cARQVAZIO,ZARQERRO)
+	   ENDIF
+	ENDIF
+ENDIF
+
+
 cERRO:=AllTrim(Strval(cERRO))
 cERRO:=StrTran(cERRO," ","")
-aRET:={zCURINI,"MANERR.DBF",zCURDIR}
-oMANERR:=USEREDE{aRET}
-IF oMANERR:nERRO#0
-   RETURN .F.
-ENDIF
-oMANERR:Append()
-oMANERR:FIELDPUT("USUARIO",zUSER)
-oMANERR:FIELDPUT("DATA",Today())
-oMANERR:FIELDPUT("HORA",Time())
-oMANERR:FIELDPUT("ERRO",cERRO)
-oMANERR:FIELDPUT("ARQUIVO",cARQ)
-oMANERR:FIELDPUT("OPR",cOPR)
-oMANERR:CLOSE()
-RETURN .T.
+
+IF zTIPERRO="SQLITE"
+//	alert("SQLITE")
+	oCONN := SQLConnection{"SQLite3", "", "" }	
+	oCONN:connect()
+    IF oCONN:Connected
+//       alert("conectado")
+	   cSQL := "ATTACH DATABASE '"+ ZARQERRO +"' AS LOG"
+	   oSTATEMENT := SQLStatement{cSQL ,oCONN }
+	    IF oSTATEMENT:Execute()
+	      oSTATEMENT:FreeStmt( SQL_DROP  )	
+	   //   alert("anexado")
+	      cSQL:="INSERT INTO manerr ( usuario,  data, hora, erro, opr, arquivo  )  VALUES ("
+			cSQL:=cSQL+ "'"+ZUSER+"',"
+			cSQL:=cSQL+ " current_timestamp,"
+			cSQL:=cSQL+ "'"+Time()+"',"
+			cSQL:=cSQL+ "'"+Cerro+"',"
+			cSQL:=cSQL+ "'"+Copr+"',"
+			cSQL:=cSQL+ "'"+Carq+"'"
+			cSQL:=cSQL+ " );"
+            oSTATEMENT := SQLStatement{cSQL ,oCONN }
+	        IF oSTATEMENT:Execute()
+	        //	alert("incluido")
+	        ELSE
+              //  MemoWrit("TESTE.SQL",cSQL)
+	        ENDIF
+		ENDIF
+    ENDIF
+ENDIF	
+	
+
+//
+//  mdb implantar grava no dbf
+//  verificar opcao de attach como sqlit
+// ou tem que ter um odbc
+//
+
+IF zTIPERRO="DBF" .OR. zTIPERRO="MDB"
+	aRET:={zCURINI,"MANERR.DBF",zCURDIR}
+	oMANERR:=USEREDE{aRET}
+	IF oMANERR:nERRO#0
+	   RETURN FALSE
+	ENDIF
+	oMANERR:Append()
+	oMANERR:FIELDPUT("USUARIO",zUSER)
+	oMANERR:FIELDPUT("DATA",Today())
+	oMANERR:FIELDPUT("HORA",Time())
+	oMANERR:FIELDPUT("ERRO",cERRO)
+	oMANERR:FIELDPUT("ARQUIVO",cARQ)
+	oMANERR:FIELDPUT("OPR",cOPR)
+	oMANERR:CLOSE()
+ENDIF	
+RETURN TRUE
 
 
 FUNCTION GRVVAL( nVAL, nTAM, nDEC )
