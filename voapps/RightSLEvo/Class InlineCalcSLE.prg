@@ -1,8 +1,4 @@
-DEFINE nCONST_MAX_INTEGER_ACCURACY := 15 
-DEFINE nCONST_MAX_NUMERIC_ACCURACY := 18 
-DEFINE nCONST_MAX_NUMERIC_NUMBER := 999999999999999
-
-CLASS inlineCalcSLE INHERIT rightsle
+﻿CLASS inlineCalcSLE INHERIT rightsle
 // Author		: Willie Moore
 // Email		: williem@wmconsulting.com
 // Address		:
@@ -27,6 +23,7 @@ CLASS inlineCalcSLE INHERIT rightsle
   	PROTECT sOP1		AS STRING	// First operation
   	PROTECT nEditLevel	AS LONGINT		// Allow overwrite on next entry
   	PROTECT nOpLevel	AS LONGINT		// Building 1st or 2nd operand
+//  	PROTECT LastFocus	AS OBJECT	// Last control to have focus
   	PROTECT OldFixed	AS LOGIC	// system status of SetFixed(), kept for restoration
   	PROTECT fMemory		AS FLOAT	// Memory button
   	PROTECT oOwner		AS OBJECT	// calling entity
@@ -36,9 +33,8 @@ CLASS inlineCalcSLE INHERIT rightsle
   										// solely on this times's value (ie it gets
   										// reset eachtime the control regains focus)
 
-/****************************************************************************/
-METHOD AutoClear() AS VOID 
 
+METHOD AutoClear() AS VOID PASCAL 
 	//p Method to clear the calculator
 	//r VOID
 	//a None
@@ -51,9 +47,7 @@ METHOD AutoClear() AS VOID
 	ENDIF
 	RETURN
 
-/****************************************************************************/
-METHOD BClear( ) AS VOID 
-
+METHOD BClear( ) AS VOID PASCAL 
 	//p Method to clear the calculator
 	//r VOID
 	//a None
@@ -63,16 +57,14 @@ METHOD BClear( ) AS VOID
 	SELF:nEditLevel	:= 0
 	RETURN
 
-/****************************************************************************/
 METHOD Dispatch ( oEvent ) 
-
 
 	/*
 		Only the messages, that inlineCalcSLE wants to know about.
 	 	All the rest go through to rightSLES's dispatch and every other class's dispatch that is involved from there - There are lots of them!!!!
 
     */
-    	IF !(SELF:FieldSpec == NULL_OBJECT ) .and. SELF:FieldSpec:Valtype == "N"
+    	IF !(SELF:FieldSpec == NULL_OBJECT )  .AND. SELF:FieldSpec:Valtype == 'N'
     		DO CASE
     			CASE SELF:ReadOnly
     				// dont do anything if it is readonly
@@ -86,8 +78,8 @@ METHOD Dispatch ( oEvent )
 				CASE oEvent:Message == WM_COMMAND
 					IF oEvent:wParam == IDM_CalcSLEContextMenu_File_Calculator_ID
 						// Pop up the calculator
-						IF IsMethod(self,self:symCalcMethod)
-							Send(self,self:symCalcMethod)
+						IF IsMethod(SELF,SELF:symCalcMethod)
+							Send(SELF,SELF:symCalcMethod)
 							RETURN 1L
 						ENDIF	
 					ENDIF	
@@ -105,7 +97,7 @@ METHOD Dispatch ( oEvent )
 					ENDIF
 					SELF:autoClear()
 					DO CASE
-						CASE Instr(CHR(oEvent:wParam), _chr(8)+"0123456789.," )
+						CASE Instr(CHR(oEvent:wParam), _CHR(8)+"0123456789.," )
 							// printable result
 							SELF:DoOperation (CHR(oEvent:wParam))
 						CASE Instr(CHR(oEvent:wParam), "cC+*-/=^" )          		// gcs - 16/07/00
@@ -122,9 +114,7 @@ METHOD Dispatch ( oEvent )
 		
 RETURN SUPER:Dispatch( oEvent )
 
-/****************************************************************************/
-METHOD DoOperation(sKey AS STRING) AS VOID 
-
+METHOD DoOperation(sKey AS STRING) AS VOID PASCAL 
 	//p Method to perform the operation
 	//r VOID
 	//a sKey as string - Operation to perform
@@ -139,40 +129,40 @@ METHOD DoOperation(sKey AS STRING) AS VOID
 			RETURN	// we don't want to set the lsessionchange on nothing
 		CASE Instr(sKey, "Cc")										// gcs 16/07/00
 			SELF:BClear()
-		CASE Instr(sKey, "S") .and. (nOpLevel==1)
+		CASE Instr(sKey, "S")  .AND. (nOpLevel==1)
 			SELF:fXX := SELF:StringToFloat(SELF:CurrentText)
 			fZZ := SQRT(SELF:fXX)
 			SELF:TextValue := SELF:FloatToString(SELF:fZZ)
 			SELF:nEditLevel := 0	// edit the next entry
 			SELF:nOpLevel := 1		// go back to first operand
-		CASE Instr(sKey, "S") .and. (nOpLevel==2)
+		CASE Instr(sKey, "S")  .AND. (nOpLevel==2)
 			SELF:fYY := SELF:StringToFloat(SELF:CurrentText)
 			fZZ := SQRT(fYY)
 			SELF:TextValue := SELF:FloatToString(SELF:fZZ)
 			SELF:nEditLevel := 0	// edit the next entry
 			SELF:nOpLevel := 2		// go back to first operand
-		CASE Instr(sKey, "I") .and. (nOpLevel==1)
+		CASE Instr(sKey, "I")  .AND. (nOpLevel==1)
 			SELF:fXX := SELF:StringToFloat(SELF:CurrentText)
 			fZZ := SELF:MyDiv(1.0, fXX)
 			SELF:TextValue := SELF:FloatToString(fZZ)
 			SELF:nEditLevel := 0	// edit the next entry
 			SELF:nOpLevel := 1		// go back to first operand
-		CASE Instr(sKey, "I") .and. (nOpLevel==2)
+		CASE Instr(sKey, "I")  .AND. (nOpLevel==2)
 			SELF:fYY := SELF:StringToFloat(SELF:CurrentText)
 			fZZ := SELF:MyDiv(1.0, SELF:fYY)
 			SELF:TextValue := SELF:FloatToString(SELF:fZZ)
 			SELF:nEditLevel := 0	// edit the next entry
 			SELF:nOpLevel := 2		// go back to first operand
-		CASE Instr(sKey, "^%*+/-") .and. (nOpLevel==1)
+		CASE Instr(sKey, "^%*+/-")  .AND. (nOpLevel==1)
 			SELF:nOpLevel := 2				// advance to second operand
 			SELF:nEditLevel := 0
 			SELF:sOp1   := sKey				// save the operation type
 			SELF:fXX := SELF:StringToFloat(SELF:CurrentText)
-		CASE Instr(sKey, "=") .and. (nOpLevel==1) // accumulation		// gcs 16/07/00			
+		CASE Instr(sKey, "=")  .AND. (nOpLevel==1) // accumulation		// gcs 16/07/00			
 			SELF:fYY := SELF:StringToFloat(SELF:CurrentText)// gcs 16/07/00
 			DO CASE														// gcs 16/07/00
 				CASE sOP1=="%"  ;   SELF:fZZ := SELF:fYY * (SELF:fXX/100.0)			// gcs 16/07/00
-				CASE sOP1=="^"  ;   SELF:fZZ := SELF:fXX ^ SELF:fYY					// gcs 16/07/00 // wcm 2007-0709 removed to get rightSLE to compile. put back in when the compiler supports this
+				CASE sOP1=="^"  ;   SELF:fZZ := SELF:fXX ^ SELF:fYY					// gcs 16/07/00
 				CASE sOP1=="+"  ;   SELF:fZZ := SELF:fXX + SELF:fYY					// gcs 16/07/00
 				CASE sOP1=="/"  ;	SELF:fZZ := SELF:MyDiv(SELF:fXX, SELF:fYY)			// gcs 16/07/00
 				CASE sOP1=="-"  ;   SELF:fZZ := SELF:fXX - SELF:fYY					// gcs 16/07/00
@@ -186,11 +176,11 @@ METHOD DoOperation(sKey AS STRING) AS VOID
 			SELF:fXX 			:= SELF:StringToFloat(SELF:CurrentText)// gcs 16/07/00
 			SELF:nEditLevel 	:= 1	// edit the next entry				// wcm 01/29/2001
 			SELF:nOpLevel 		:= 1		// go back to first operand			// gcs 16/07/00
-		CASE Instr(sKey, "=") .and. (nOpLevel==2)   // perform the last operation			
+		CASE Instr(sKey, "=")  .AND. (nOpLevel==2)   // perform the last operation			
 			SELF:fYY := SELF:StringToFloat(SELF:CurrentText)
 			DO CASE
 				CASE sOP1=="%"  ;   SELF:fZZ := SELF:fYY * (SELF:fXX/100.0)
-				CASE sOP1=="^"  ;   SELF:fZZ := SELF:fXX ^ SELF:fYY // wcm 2007-0709 removed to get rightSLE to compile. put back in when the compiler supports this
+				CASE sOP1=="^"  ;   SELF:fZZ := SELF:fXX ^ SELF:fYY
 				CASE sOP1=="+"  ;   SELF:fZZ := SELF:fXX + SELF:fYY
 				CASE sOP1=="/"  ;	SELF:fZZ := SELF:MyDiv(SELF:fXX, SELF:fYY)
 				CASE sOP1=="-"  ;   SELF:fZZ := SELF:fXX - SELF:fYY
@@ -203,11 +193,11 @@ METHOD DoOperation(sKey AS STRING) AS VOID
 		    SELF:ValueChanged 	:= TRUE
 			SELF:nEditLevel := 1	// edit the next entry wcm01/29/2001
 			SELF:nOpLevel := 1		// go back to first operand
-		CASE Instr(sKey, "+/-*") .and. (nOpLevel==2)   // perform the last operation and return new one
+		CASE Instr(sKey, "+/-*")  .AND. (nOpLevel==2)   // perform the last operation and return new one
 			SELF:fYY := SELF:StringtoFloat(SELF:CurrentText)
 			DO CASE
 				CASE sOP1=="%"  ;   SELF:fZZ := SELF:fYY * (SELF:fXX/100.0)
-				CASE sOP1=="^"  ;   SELF:fZZ := SELF:fXX ^ SELF:fYY // wcm 2007-0709 removed to get rightSLE to compile. put back in when the compiler supports this
+				CASE sOP1=="^"  ;   SELF:fZZ := SELF:fXX ^ SELF:fYY
 				CASE sOP1=="+"  ;   SELF:fZZ := SELF:fXX + SELF:fYY
 				CASE sOP1=="/"  ;	SELF:fZZ := SELF:MyDiv(SELF:fXX, SELF:fYY)
 				CASE sOP1=="-"  ;   SELF:fZZ := SELF:fXX - SELF:fYY
@@ -218,11 +208,11 @@ METHOD DoOperation(sKey AS STRING) AS VOID
 			SELF:nEditLevel := 0	// edit the next entry
 			SELF:nOpLevel := 2		// stay at second operand
 			SELF:sOp1 := sKey
-		CASE Instr(sKey, "%") .and. (nOpLevel==2)   // perform the last operation with "Y" % of the first value
+		CASE Instr(sKey, "%")  .AND. (nOpLevel==2)   // perform the last operation with "Y" % of the first value
 			SELF:fYY := SELF:fXX/100.0 *SELF:StringtoFloat(SELF:CurrentText)  // gets y% of X first
 			DO CASE
 				CASE sOP1=="%"  ;   SELF:fZZ := SELF:fYY * (SELF:fXX/100.0)
-				CASE sOP1=="^"  ;   SELF:fZZ := SELF:fXX ^ SELF:fYY // wcm 2007-0709 removed to get rightSLE to compile. put back in when the compiler supports this
+				CASE sOP1=="^"  ;   SELF:fZZ := SELF:fXX ^ SELF:fYY
 				CASE sOP1=="+"  ;   SELF:fZZ := SELF:fXX + SELF:fYY
 				CASE sOP1=="/"  ;	SELF:fZZ := SELF:MyDiv(SELF:fXX, SELF:fYY)
 				CASE sOP1=="-"  ;   SELF:fZZ := SELF:fXX - SELF:fYY
@@ -247,7 +237,7 @@ METHOD DoOperation(sKey AS STRING) AS VOID
 			// set it at the end of the sle
 			nPos := SLen(SELF:CurrentText)
 		ENDIF
-		PostMessage(SELF:Handle(), EM_SETSEL, nPos,LONGINT(_CAST,nPos))					
+		PostMessage(SELF:Handle(), EM_SETSEL, nPos,LONGINT(nPos))					
 	ENDIF
 
 	SELF:lSessionChange := TRUE
@@ -259,9 +249,9 @@ METHOD DoOperation(sKey AS STRING) AS VOID
 	RETURN
 
 
-/****************************************************************************/
-METHOD FloatToString (fFloatVal AS FLOAT) AS STRING 
 
+
+METHOD FloatToString (fFloatVal AS FLOAT) AS STRING 
 	//p Method to convert a float to a string
 	//r String
 	//a fFloatVal as float - value to convert
@@ -299,7 +289,7 @@ METHOD FloatToString (fFloatVal AS FLOAT) AS STRING
 	     // First strip out end zeros except last one after "."
 	     DO WHILE Right(sFloatResult,1)=="0"  // don't worry about all other instances
 	        dwDecPlaces:= SLen(sFloatResult) - At(".", sFloatResult )
-	        IF dwDecPlaces > 0 .and. Right(sFloatResult,1)=="0"
+	        IF dwDecPlaces > 0  .and. Right(sFloatResult,1)=="0"
 	           sFloatResult := SubStr3( sFloatResult, 1, SLen(sFloatResult)-1 )
 	           dwDecPlaces--
 	        ENDIF
@@ -309,26 +299,23 @@ METHOD FloatToString (fFloatVal AS FLOAT) AS STRING
 	ENDIF
 	
 	RETURN sFloatResult
-	
-/****************************************************************************/	
-METHOD FocusChange(oFocusChangeEvent) 
 
+METHOD FocusChange(oFocusChangeEvent) 
 	//p Custom Focuschange method for inline calculator functionality
 	//r VOID
 	//a oFocusChangeEvent - A VO Generated FocusChangeEvent
 
 	SUPER:FocusChange(oFocusChangeEvent)	
 	SELF:lEnter := FALSE	// reset the enter key to mean = for the first time
-	IF (wFocusSel == FSEL_ALL)
+	IF (wFocusSel == FSEL_RALL)
 		// reset the sumations to start over
 		SELF:nEditLevel := 0		
     ENDIF
 	SELF:lSessionChange := FALSE
 	RETURN NIL
 
-/****************************************************************************/
-Constructor(oOwner, nId, oPoint, oDim, kStyle,lDataAware ) 
 
+CONSTRUCTOR(oOwner, nId, oPoint, oDim, kStyle,lDataAware ) 
 	SUPER( oOwner, nID, oPoint, oDim, kStyle, lDataAware )
     SELF:ContextMenu 	:= CalcSLEContextMenu{ SELF }
     SELF:lEnter			:= FALSE
@@ -336,11 +323,9 @@ Constructor(oOwner, nId, oPoint, oDim, kStyle,lDataAware )
     SELF:lTurnOffEnter	:= FALSE	// for the inline to work properly, we must allow enter keys
     self:symCalcMethod	:= #showcalc
     SELF:initcalc()
-    RETURN  
-    
-/****************************************************************************/    
-METHOD initcalc() AS VOID 
+    RETURN SELF
 
+METHOD initcalc() AS VOID PASCAL 
 	//p Method to setup the calculator back to default values
 	//r Void
 	
@@ -360,10 +345,8 @@ METHOD initcalc() AS VOID
 	SetScience(FALSE)
 	
 	RETURN
-	
-/****************************************************************************/	
-METHOD MyDiv (fInXVal AS FLOAT, fInYVal AS FLOAT) AS FLOAT
 
+METHOD MyDiv (fInXVal AS FLOAT, fInYVal AS FLOAT) AS FLOAT PASCAL 
 	//p custom divison to advoid runtime error
 	//r float
 	//a fInXval as float - Left side of the operation \line
@@ -380,14 +363,15 @@ METHOD MyDiv (fInXVal AS FLOAT, fInYVal AS FLOAT) AS FLOAT
 	ENDIF
 
  	RETURN Result
- 	
-/****************************************************************************/ 	
-METHOD ProcessEnter() AS LONG
 
+METHOD processEnter() AS LONGINT PASCAL 
 	//p custom enter key handler for the inline calc
 	//r VOID
 	//a None
-	IF !SELF:lenter .and. SELF:lSessionChange .and. SELF:nOpLevel > 1  // wcm 2006-05-10 changed so it on first opp only, process the normal enter key
+	#IFDEF __DEBUG	
+		AltD()
+	#ENDIF
+	IF !SELF:lenter  .and. SELF:lSessionChange  .and. SELF:nOpLevel > 1  // wcm 2006-05-10 changed so it on first opp only, process the normal enter key
 		SELF:DoOperation("=")
 		SELF:lEnter := TRUE
 	ELSE
@@ -397,9 +381,8 @@ METHOD ProcessEnter() AS LONG
 	// Don't print this, so merely return
 	RETURN 1L
 
-/****************************************************************************/
-METHOD StringToFloat(sDisplay AS STRING ) AS FLOAT 
 
+METHOD StringToFloat(sDisplay AS STRING ) AS FLOAT 
 	//p Method to convert a string to a float
 	//r float
 	//a sDisplay as string - value to convert
@@ -424,8 +407,8 @@ METHOD StringToFloat(sDisplay AS STRING ) AS FLOAT
 	ENDIF
 	
 	RETURN Result
-END CLASS
 
+END CLASS
 CLASS pbinlineCalcSLE INHERIT inlineCalcSLE
 // Author		: Willie Moore
 // Email		: williem@wmconsulting.com
@@ -443,10 +426,11 @@ CLASS pbinlineCalcSLE INHERIT inlineCalcSLE
 //d calculations without having to pop up the calculator.
 //d Put a SLE on your window and have it INHERIT from calcSLE.
 //g Edit Controls
-Constructor(oOwner, nId, oPoint, oDim, kStyle,lDataAware ) 
 
-	super( oOwner, nID, oPoint, oDim, kStyle, lDataAware )
+CONSTRUCTOR(oOwner, nId, oPoint, oDim, kStyle,lDataAware ) 
+	SUPER( oOwner, nID, oPoint, oDim, kStyle, lDataAware )
 	SELF:AssignImage("rsle_Calcup")
-	RETURN  
-END CLASS
+	RETURN SELF
 
+
+END CLASS

@@ -2,22 +2,20 @@
 <Designers>
   <VOMenu Name="PEDateSleContextMenu">
     <Name>PEDateSleContextMenu</Name>
+    <Toolbar>Raised Toolbar</Toolbar>
+    <Show>Icon</Show>
+    <UseBands>No</UseBands>
     <Inherit>
     </Inherit>
     <ToolbarInherit>
     </ToolbarInherit>
-    <Toolbar>Raised Toolbar</Toolbar>
-    <Ribbon>
-    </Ribbon>
-    <RibbonFilename>
-    </RibbonFilename>
-    <Show>Icon</Show>
-    <UseBands>No</UseBands>
-    <BaseID>11000</BaseID>
     <MenuItems>
       <MenuItem>
-        <EventName>File</EventName>
         <Caption>&amp;File</Caption>
+        <OriginalDefineValue>22579</OriginalDefineValue>
+        <EventName>File</EventName>
+        <ID>
+        </ID>
         <Description>
         </Description>
         <HelpContext>File</HelpContext>
@@ -31,14 +29,14 @@
         <ButtonToolTip>
         </ButtonToolTip>
         <ButtonPos>-1</ButtonPos>
-        <ID>
-        </ID>
-        <OriginalDefineValue>22579</OriginalDefineValue>
         <MenuItems>
           <MenuItem>
+            <Caption>&amp;Today</Caption>
+            <OriginalDefineValue>22580</OriginalDefineValue>
             <EventName>
             </EventName>
-            <Caption>&amp;Today</Caption>
+            <ID>
+            </ID>
             <Description>Today's Date</Description>
             <HelpContext>
             </HelpContext>
@@ -52,14 +50,14 @@
             <ButtonToolTip>
             </ButtonToolTip>
             <ButtonPos>-1</ButtonPos>
-            <ID>
-            </ID>
-            <OriginalDefineValue>22580</OriginalDefineValue>
           </MenuItem>
           <MenuItem>
+            <Caption>&amp;Calendar...</Caption>
+            <OriginalDefineValue>22581</OriginalDefineValue>
             <EventName>
             </EventName>
-            <Caption>&amp;Calendar...</Caption>
+            <ID>
+            </ID>
             <Description>Open the calendar</Description>
             <HelpContext>
             </HelpContext>
@@ -73,9 +71,6 @@
             <ButtonToolTip>
             </ButtonToolTip>
             <ButtonPos>-1</ButtonPos>
-            <ID>
-            </ID>
-            <OriginalDefineValue>22581</OriginalDefineValue>
           </MenuItem>
         </MenuItems>
       </MenuItem>

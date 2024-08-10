@@ -1,4 +1,4 @@
-CLASS SLEButtonOld INHERIT wmBitmapButton
+﻿CLASS SLEButtonOld INHERIT wmBitmapButton
 	// Author		: Willie Moore
 	// Email		: williem@wmconsulting.com
 	// Address		:
@@ -20,11 +20,10 @@ CLASS SLEButtonOld INHERIT wmBitmapButton
 	PROTECT lInEvent 	AS LOGIC
 	EXPORT nMessage		AS DWORD
 
-/****************************************************************************/
-METHOD Dispatch(oE)
 
+METHOD Dispatch(oE) 
 	DO CASE
-		CASE oE:Message == WM_LBUTTONUP .and. SELF:lInEvent
+		CASE oE:Message == WM_LBUTTONUP  .and. SELF:lInEvent
 			SELF:lInEvent 					:= FALSE
 			SELF:EventReturnValue			:= 1L
 			SELF:oJoinedSLE:lSendFromButton	:= TRUE
@@ -36,14 +35,13 @@ METHOD Dispatch(oE)
 	ENDCASE
 RETURN SUPER:Dispatch(oE)
 
-/****************************************************************************/
-Constructor(oForm,oResID,oPoint,oDim,oSLE) 
-
+CONSTRUCTOR(oForm,oResID,oPoint,oDim,oSLE) 
 	SELF:oJoinedSLE := oSLE
-	super(oForm,oResID,oPoint,oDim )
-//	super(oForm,oResID,oPoint,oDim,,WS_TABSTOP)
+	SUPER(oForm,oResID,oPoint,oDim )
+//	SUPER(oForm,oResID,oPoint,oDim,,WS_TABSTOP)
 	nMessage := WM_LBUTTONDBLCLK 	// default message to send
 	SELF:lInEvent := FALSE
-	RETURN  
-END CLASS
+	RETURN SELF
 
+
+END CLASS

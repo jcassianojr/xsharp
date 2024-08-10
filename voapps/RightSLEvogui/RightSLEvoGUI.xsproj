@@ -10,7 +10,7 @@
     <Nologo>true</Nologo>
     <GenerateFullPaths>false</GenerateFullPaths>
     <Name>RightSLEvoGUI</Name>
-    <RootNamespace>wmConsulting.vorightSLE</RootNamespace>
+    <RootNamespace>rightSLEvoGui</RootNamespace>
     <VO3>true</VO3>
     <UnSafe>true</UnSafe>
     <VO5>true</VO5>

@@ -1,4 +1,4 @@
-CLASS FileSLE INHERIT rightSLE
+﻿CLASS FileSLE INHERIT rightSLE
 // Author		: Willie Moore
 // Email		: williem@wmconsulting.com
 // Address		:
@@ -19,7 +19,7 @@ CLASS FileSLE INHERIT rightSLE
 //d there.
 //e Initialize this SLE in the owning window's PostInit() as follows:
 //e PostInit(oWindow,iCtlID,oServer,uExtra) CLASS MyDialog
-//e 	SELF:oDCSingleLineEdit1:TEXTvalue := "d:\DOWNLOAD\*.AEF"
+//e 	SELF:oDCSingleLineEdit1:TEXTvalue := "C:\DOWNLOAD\*.AEF"
 //e 	SELF:oDCSingleLineEdit1:xFilter := { "*.AEF", "*.*" }
 //e 	SELF:oDCSingleLineEdit1:xFilterDesc := { "Application Export Files", "All Files" }
 //g Edit Controls
@@ -29,78 +29,73 @@ CLASS FileSLE INHERIT rightSLE
 	EXPORT	sTitle				AS STRING
 	
 	// methods
-	//DECLARE METHOD ShowFileDialog
 	
 	// accesses
-	//DECLARE ACCESS DialogType
 	
 	// assigns
-	//DECLARE ASSIGN Title
-	//DECLARE ASSIGN DialogType
-	//DECLARE ASSIGN Filter, FilterDescription
-	//DECLARE ASSIGN InitialDirectory
-	//DECLARE ASSIGN Title
-ACCESS DialogType() AS LONGINT 
 
+ACCESS DialogType() AS LONGINT PASCAL 
 	//l Access to return the dialogtype.
 	//p Access to return the dialogtype.
 	//d DialogType will return the file dialogtype \line
 	//r long
 	//a None
 	RETURN SELF:nDialogType
-ASSIGN DialogType(nVar AS LONGINT) AS void  
 
+ASSIGN DialogType(nVar AS LONGINT) AS LONGINT PASCAL 
 	//l Assign to set the dialogtype.
 	//p Assign to set the dialogtype.
 	//d DialogType will set the type of file dialog that is displayed. \line
 	//r long
 	//a None
 	SELF:nDialogType := nVar
-	RETURN
-METHOD Dispatch(oEvent) 
+	RETURN SELF:nDialogType
 
+METHOD Dispatch(oEvent) 
 	DO CASE
 		CASE oEvent:Message == WM_LBUTTONDBLCLK
 			SELF:showFileDialog()
 			RETURN 1L
 	ENDCASE
 RETURN SUPER:Dispatch(oEvent)
-ASSIGN Filter(uVar AS USUAL) AS void  
 
+ASSIGN Filter(uVar AS USUAL) AS USUAL PASCAL 
 	//l Assign to set the dialog's file filter.
 	//p Assign to set the dialog's file filter.
 	//d Filter will set the filter that the standard file dialog uses. \line
 	//r String
 	//a None
 	SELF:xFilter := uVar
-	RETURN
-ASSIGN FilterDescription(uVar AS USUAL) AS void 
+	RETURN SELF:xFilter
 
+ASSIGN FilterDescription(uVar AS USUAL) AS USUAL PASCAL 
 	//l Assign to set the dialog's filter description.
 	//p Assign to set the dialog's filter description.
 	//d filerDescription will set the filter description combo box on the standard file dialog. \line
 	//r String
 	//a None
 	SELF:xFilterDesc := uVar
-	RETURN
+	RETURN SELF:xFilterDesc
 
 	
-constructor(oOwner, nId, oPoint, oDim, kStyle, lDataAware ) 
 
+CONSTRUCTOR(oOwner, nId, oPoint, oDim, kStyle, lDataAware ) 
+    //Vulcan.NET-Transporter: This method was automatically created
     SUPER(oOwner, nId, oPoint, oDim, kStyle, lDataAware )
 
-    RETURN 
-ASSIGN InitialDirectory(sVar AS STRING) AS void 
+//Vulcan.NET-Transporter: To Do: the following line has been inserted. Please check the return value is correct
+RETURN SELF
 
+ASSIGN InitialDirectory(sVar AS STRING) AS STRING PASCAL 
 	//l Assign to set the dialog's initial directory.
 	//p Assign to set the dialog's initial directory.
 	//d InitialDirectory will set the file dilog's initial directory. \line
 	//r String
 	//a None
 	SELF:sInitdir := sVar
-	RETURN 
-METHOD showFileDialog() AS VOID 
+	RETURN SELF:sInitdir
 
+METHOD showFileDialog() AS VOID PASCAL 
 		LOCAL oFileDLG AS StandardFileDialog
 		IF nDialogType == 1			// Open File Dialog
 			oFileDLG := OpenDialog{SELF:owner,SELF:currenttext}
@@ -113,7 +108,7 @@ METHOD showFileDialog() AS VOID
 			// check o see if they have set an initial directory
 			// use it if they havent typed anything into the field
 			// self:CurrentText overrides the initial dir
-			IF !Empty(SELF:sInitDir) .and. Empty(SELF:CurrentText)					// gcs 21/11/02
+			IF !Empty(SELF:sInitDir)  .and. Empty(SELF:CurrentText)					// gcs 21/11/02
 				oFileDLG:InitialDirectory := SELF:sInitDir
 			ENDIF
 			IF !Empty(SELF:sTitle)						// gcs 21/11/02
@@ -137,7 +132,7 @@ METHOD showFileDialog() AS VOID
 			// check o see if they have set an initial directory
 			// use it if they havent typed anything into the field
 			// self:CurrentText overrides the initial dir
-			IF !Empty(SELF:sInitDir) .and. Empty(SELF:CurrentText)					// gcs 21/11/02
+			IF !Empty(SELF:sInitDir)  .and. Empty(SELF:CurrentText)					// gcs 21/11/02
 				oFileDLG:InitialDirectory := SELF:sInitDir
 			ENDIF
 			IF !Empty(SELF:sTitle)						// gcs 21/11/02
@@ -152,17 +147,17 @@ METHOD showFileDialog() AS VOID
 			SetFocus(SELF:handle())
 		ENDIF
 	RETURN
-ASSIGN Title(sVar AS STRING) AS void 
 
+ASSIGN Title(sVar AS STRING) AS STRING PASCAL 
 	//l Assign to set the dialog title.
 	//p Assign to set the dialog title.
 	//d Title will set the file dilog's caption. \line
 	//r String
 	//a None
 	SELF:sTitle := sVar
-	RETURN 
-END CLASS
+	RETURN SELF:sTitle
 
+END CLASS
 CLASS pbFileSLE INHERIT FileSLE
 // Author		: Willie Moore
 // Email		: williem@wmconsulting.com
@@ -182,15 +177,16 @@ CLASS pbFileSLE INHERIT FileSLE
 //d full path of the user's selection.
 //e Initialize this SLE in the owning window's PostInit() as follows:
 //e PostInit(oWindow,iCtlID,oServer,uExtra) CLASS MyDialog
-//e 	SELF:oDCSingleLineEdit1:TEXTvalue := "d:\DOWNLOAD\*.AEF"
+//e 	SELF:oDCSingleLineEdit1:TEXTvalue := "C:\DOWNLOAD\*.AEF"
 //e 	SELF:oDCSingleLineEdit1:xFilter := { "*.AEF", "*.*" }
 //e 	SELF:oDCSingleLineEdit1:xFilterDesc := { "Application Export Files", "All Files" }
 //g Edit Controls
 
-constructor(oForm,oResID,oPoint,oDim,kStyle,lDataAware) 
 
+CONSTRUCTOR(oForm,oResID,oPoint,oDim,kStyle,lDataAware) 
 	SUPER(oForm,oResID,oPoint,oDim,kStyle,lDataAware)
 	SELF:AssignImage("rsle_FOLDUP")
-	RETURN  
-END CLASS
+	RETURN SELF
 
+
+END CLASS

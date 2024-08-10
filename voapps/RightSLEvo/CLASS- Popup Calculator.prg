@@ -1,287 +1,243 @@
-STATIC DEFINE _POPUPCALC_DISPLAYZ := 100
-STATIC DEFINE _POPUPCALC_SAVEEXITBUTTON := 101
-STATIC DEFINE _POPUPCALC_QUITBUTTON := 102
-STATIC DEFINE _POPUPCALC_B7 := 103
-STATIC DEFINE _POPUPCALC_B8 := 104
-STATIC DEFINE _POPUPCALC_B9 := 105
-STATIC DEFINE _POPUPCALC_B4 := 106
-STATIC DEFINE _POPUPCALC_B5 := 107
-STATIC DEFINE _POPUPCALC_B6 := 108
-STATIC DEFINE _POPUPCALC_B1 := 109
-STATIC DEFINE _POPUPCALC_B2 := 110
-STATIC DEFINE _POPUPCALC_B3 := 111
-STATIC DEFINE _POPUPCALC_B0 := 112
-STATIC DEFINE _POPUPCALC_BDOT := 113
-STATIC DEFINE _POPUPCALC_BPOWER := 114
-STATIC DEFINE _POPUPCALC_BPERCENT := 115
-STATIC DEFINE _POPUPCALC_BPLUSMINUS := 116
-STATIC DEFINE _POPUPCALC_BSQUAREROOT := 117
-STATIC DEFINE _POPUPCALC_BINVERT := 118
-STATIC DEFINE _POPUPCALC_BTIMES := 119
-STATIC DEFINE _POPUPCALC_BDIVIDE := 120
-STATIC DEFINE _POPUPCALC_BMINUS := 121
-STATIC DEFINE _POPUPCALC_BPLUS := 122
-STATIC DEFINE _POPUPCALC_BMEMRECALL := 123
-STATIC DEFINE _POPUPCALC_BMEMPLUS := 124
-STATIC DEFINE _POPUPCALC_BMEMMINUS := 125
-STATIC DEFINE _POPUPCALC_BMEMTIMES := 126
-STATIC DEFINE _POPUPCALC_BMEMCLEAR := 127
-STATIC DEFINE _POPUPCALC_BCLEARENTRY := 128
-STATIC DEFINE _POPUPCALC_BCLEAR := 129
-STATIC DEFINE _POPUPCALC_BEQUALS := 130
-STATIC DEFINE _POPUPCALC_MEMTEXT := 131
-PARTIAL CLASS _PopUpCalc INHERIT DIALOGWINDOW
-	PROTECT oDCDisplayZ AS CALCSINGLELINEEDIT
-	PROTECT oCCSaveExitButton AS PUSHBUTTON
-	PROTECT oCCQuitButton AS PUSHBUTTON
-	PROTECT oCCB7 AS PUSHBUTTON
-	PROTECT oCCB8 AS PUSHBUTTON
-	PROTECT oCCB9 AS PUSHBUTTON
-	PROTECT oCCB4 AS PUSHBUTTON
-	PROTECT oCCB5 AS PUSHBUTTON
-	PROTECT oCCB6 AS PUSHBUTTON
-	PROTECT oCCB1 AS PUSHBUTTON
-	PROTECT oCCB2 AS PUSHBUTTON
-	PROTECT oCCB3 AS PUSHBUTTON
-	PROTECT oCCB0 AS PUSHBUTTON
-	PROTECT oCCBDot AS PUSHBUTTON
-	PROTECT oCCBPower AS PUSHBUTTON
-	PROTECT oCCBPercent AS PUSHBUTTON
-	PROTECT oCCBPlusMinus AS PUSHBUTTON
-	PROTECT oCCBSquareRoot AS PUSHBUTTON
-	PROTECT oCCBInvert AS PUSHBUTTON
-	PROTECT oCCBtimes AS PUSHBUTTON
-	PROTECT oCCBdivide AS PUSHBUTTON
-	PROTECT oCCBMinus AS PUSHBUTTON
-	PROTECT oCCBPlus AS PUSHBUTTON
-	PROTECT oCCBMemRecall AS PUSHBUTTON
-	PROTECT oCCBMemPlus AS PUSHBUTTON
-	PROTECT oCCBMemMinus AS PUSHBUTTON
-	PROTECT oCCBMemTimes AS PUSHBUTTON
-	PROTECT oCCBMemClear AS PUSHBUTTON
-	PROTECT oCCBClearEntry AS PUSHBUTTON
-	PROTECT oCCBClear AS PUSHBUTTON
-	PROTECT oCCBEquals AS PUSHBUTTON
-	PROTECT oDCMemText AS FIXEDTEXT
+﻿#region DEFINES
+STATIC DEFINE _POPUPCALC_B0 := 112 
+STATIC DEFINE _POPUPCALC_B1 := 109 
+STATIC DEFINE _POPUPCALC_B2 := 110 
+STATIC DEFINE _POPUPCALC_B3 := 111 
+STATIC DEFINE _POPUPCALC_B4 := 106 
+STATIC DEFINE _POPUPCALC_B5 := 107 
+STATIC DEFINE _POPUPCALC_B6 := 108 
+STATIC DEFINE _POPUPCALC_B7 := 103 
+STATIC DEFINE _POPUPCALC_B8 := 104 
+STATIC DEFINE _POPUPCALC_B9 := 105 
+STATIC DEFINE _POPUPCALC_BCLEAR := 129 
+STATIC DEFINE _POPUPCALC_BCLEARENTRY := 128 
+STATIC DEFINE _POPUPCALC_BDIVIDE := 120 
+STATIC DEFINE _POPUPCALC_BDOT := 113 
+STATIC DEFINE _POPUPCALC_BEQUALS := 130 
+STATIC DEFINE _POPUPCALC_BINVERT := 118 
+STATIC DEFINE _POPUPCALC_BMEMCLEAR := 127 
+STATIC DEFINE _POPUPCALC_BMEMMINUS := 125 
+STATIC DEFINE _POPUPCALC_BMEMPLUS := 124 
+STATIC DEFINE _POPUPCALC_BMEMRECALL := 123 
+STATIC DEFINE _POPUPCALC_BMEMTIMES := 126 
+STATIC DEFINE _POPUPCALC_BMINUS := 121 
+STATIC DEFINE _POPUPCALC_BPERCENT := 115 
+STATIC DEFINE _POPUPCALC_BPLUS := 122 
+STATIC DEFINE _POPUPCALC_BPLUSMINUS := 116 
+STATIC DEFINE _POPUPCALC_BPOWER := 114 
+STATIC DEFINE _POPUPCALC_BSQUAREROOT := 117 
+STATIC DEFINE _POPUPCALC_BTIMES := 119 
+STATIC DEFINE _POPUPCALC_DISPLAYZ := 100 
+STATIC DEFINE _POPUPCALC_MEMTEXT := 131 
+STATIC DEFINE _POPUPCALC_QUITBUTTON := 102 
+STATIC DEFINE _POPUPCALC_SAVEEXITBUTTON := 101 
+DEFINE nCONST_MAX_INTEGER_ACCURACY := 15     // only 15 digit integers
+DEFINE nCONST_MAX_NUMERIC_ACCURACY := 18     // upto 18 with decimals
+DEFINE nCONST_MAX_NUMERIC_NUMBER   := 999999999999999
+#endregion
 
-	// {{%UC%}} User code starts here (DO NOT remove this line)  
+class _PopUpCalc inherit DIALOGWINDOW 
 
-CONSTRUCTOR(oParent,uExtra)
-	LOCAL oFont AS Font
+	protect oDCDisplayZ as CALCSINGLELINEEDIT
+	protect oCCSaveExitButton as PUSHBUTTON
+	protect oCCQuitButton as PUSHBUTTON
+	protect oCCB7 as PUSHBUTTON
+	protect oCCB8 as PUSHBUTTON
+	protect oCCB9 as PUSHBUTTON
+	protect oCCB4 as PUSHBUTTON
+	protect oCCB5 as PUSHBUTTON
+	protect oCCB6 as PUSHBUTTON
+	protect oCCB1 as PUSHBUTTON
+	protect oCCB2 as PUSHBUTTON
+	protect oCCB3 as PUSHBUTTON
+	protect oCCB0 as PUSHBUTTON
+	protect oCCBDot as PUSHBUTTON
+	protect oCCBPower as PUSHBUTTON
+	protect oCCBPercent as PUSHBUTTON
+	protect oCCBPlusMinus as PUSHBUTTON
+	protect oCCBSquareRoot as PUSHBUTTON
+	protect oCCBInvert as PUSHBUTTON
+	protect oCCBtimes as PUSHBUTTON
+	protect oCCBdivide as PUSHBUTTON
+	protect oCCBMinus as PUSHBUTTON
+	protect oCCBPlus as PUSHBUTTON
+	protect oCCBMemRecall as PUSHBUTTON
+	protect oCCBMemPlus as PUSHBUTTON
+	protect oCCBMemMinus as PUSHBUTTON
+	protect oCCBMemTimes as PUSHBUTTON
+	protect oCCBMemClear as PUSHBUTTON
+	protect oCCBClearEntry as PUSHBUTTON
+	protect oCCBClear as PUSHBUTTON
+	protect oCCBEquals as PUSHBUTTON
+	protect oDCMemText as FIXEDTEXT
 
-	SELF:PreInit(oParent,uExtra)
+  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
 
-	SUPER(oParent , ResourceID{"_PopUpCalc" , _GetInst()} , TRUE)
 
-	SELF:oDCDisplayZ := CALCSINGLELINEEDIT{SELF , ResourceID{ _POPUPCALC_DISPLAYZ  , _GetInst() } }
-	SELF:oDCDisplayZ:TextColor := Color{ COLORBLUE }
-	oFont := Font{  , 10 , "Microsoft Sans Serif" }
-	SELF:oDCDisplayZ:Font( oFont )
-	SELF:oDCDisplayZ:HyperLabel := HyperLabel{#DisplayZ , NULL_STRING , NULL_STRING , NULL_STRING}
+CONSTRUCTOR(oParent,uExtra)  
+local dim aFonts[2] AS OBJECT
+local dim aBrushes[1] AS OBJECT
 
-	SELF:oCCSaveExitButton := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_SAVEEXITBUTTON  , _GetInst() } }
-	SELF:oCCSaveExitButton:HyperLabel := HyperLabel{#SaveExitButton , "SAVE/EXIT" , NULL_STRING , NULL_STRING}
+self:PreInit(oParent,uExtra)
 
-	SELF:oCCQuitButton := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_QUITBUTTON  , _GetInst() } }
-	SELF:oCCQuitButton:HyperLabel := HyperLabel{#QuitButton , "QUIT" , NULL_STRING , NULL_STRING}
+SUPER(oParent,ResourceID{"_PopUpCalc",_GetInst()},TRUE)
 
-	SELF:oCCB7 := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_B7  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCB7:Font( oFont )
-	SELF:oCCB7:HyperLabel := HyperLabel{#B7 , "7" , NULL_STRING , NULL_STRING}
+aFonts[1] := Font{,10,"MS Sans Serif"}
+aFonts[2] := Font{,10,"Times New Roman"}
+aFonts[2]:Bold := TRUE
+aBrushes[1] := Brush{Color{181,181,106}}
 
-	SELF:oCCB8 := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_B8  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCB8:Font( oFont )
-	SELF:oCCB8:HyperLabel := HyperLabel{#B8 , "8" , NULL_STRING , NULL_STRING}
+oDCDisplayZ := CALCSINGLELINEEDIT{self,ResourceID{_POPUPCALC_DISPLAYZ,_GetInst()}}
+oDCDisplayZ:HyperLabel := HyperLabel{#DisplayZ,NULL_STRING,NULL_STRING,NULL_STRING}
+oDCDisplayZ:Font(aFonts[1], FALSE)
+oDCDisplayZ:TextColor := Color{COLORBLUE}
 
-	SELF:oCCB9 := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_B9  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCB9:Font( oFont )
-	SELF:oCCB9:HyperLabel := HyperLabel{#B9 , "9" , NULL_STRING , NULL_STRING}
+oCCSaveExitButton := PushButton{self,ResourceID{_POPUPCALC_SAVEEXITBUTTON,_GetInst()}}
+oCCSaveExitButton:HyperLabel := HyperLabel{#SaveExitButton,"SAVE/EXIT",NULL_STRING,NULL_STRING}
 
-	SELF:oCCB4 := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_B4  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCB4:Font( oFont )
-	SELF:oCCB4:HyperLabel := HyperLabel{#B4 , "4" , NULL_STRING , NULL_STRING}
+oCCQuitButton := PushButton{self,ResourceID{_POPUPCALC_QUITBUTTON,_GetInst()}}
+oCCQuitButton:HyperLabel := HyperLabel{#QuitButton,"QUIT",NULL_STRING,NULL_STRING}
 
-	SELF:oCCB5 := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_B5  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCB5:Font( oFont )
-	SELF:oCCB5:HyperLabel := HyperLabel{#B5 , "5" , NULL_STRING , NULL_STRING}
+oCCB7 := PushButton{self,ResourceID{_POPUPCALC_B7,_GetInst()}}
+oCCB7:HyperLabel := HyperLabel{#B7,"7",NULL_STRING,NULL_STRING}
+oCCB7:Font(aFonts[2], FALSE)
 
-	SELF:oCCB6 := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_B6  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCB6:Font( oFont )
-	SELF:oCCB6:HyperLabel := HyperLabel{#B6 , "6" , NULL_STRING , NULL_STRING}
+oCCB8 := PushButton{self,ResourceID{_POPUPCALC_B8,_GetInst()}}
+oCCB8:HyperLabel := HyperLabel{#B8,"8",NULL_STRING,NULL_STRING}
+oCCB8:Font(aFonts[2], FALSE)
 
-	SELF:oCCB1 := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_B1  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCB1:Font( oFont )
-	SELF:oCCB1:HyperLabel := HyperLabel{#B1 , "1" , NULL_STRING , NULL_STRING}
+oCCB9 := PushButton{self,ResourceID{_POPUPCALC_B9,_GetInst()}}
+oCCB9:HyperLabel := HyperLabel{#B9,"9",NULL_STRING,NULL_STRING}
+oCCB9:Font(aFonts[2], FALSE)
 
-	SELF:oCCB2 := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_B2  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCB2:Font( oFont )
-	SELF:oCCB2:HyperLabel := HyperLabel{#B2 , "2" , NULL_STRING , NULL_STRING}
+oCCB4 := PushButton{self,ResourceID{_POPUPCALC_B4,_GetInst()}}
+oCCB4:HyperLabel := HyperLabel{#B4,"4",NULL_STRING,NULL_STRING}
+oCCB4:Font(aFonts[2], FALSE)
 
-	SELF:oCCB3 := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_B3  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCB3:Font( oFont )
-	SELF:oCCB3:HyperLabel := HyperLabel{#B3 , "3" , NULL_STRING , NULL_STRING}
+oCCB5 := PushButton{self,ResourceID{_POPUPCALC_B5,_GetInst()}}
+oCCB5:HyperLabel := HyperLabel{#B5,"5",NULL_STRING,NULL_STRING}
+oCCB5:Font(aFonts[2], FALSE)
 
-	SELF:oCCB0 := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_B0  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCB0:Font( oFont )
-	SELF:oCCB0:HyperLabel := HyperLabel{#B0 , "0" , NULL_STRING , NULL_STRING}
+oCCB6 := PushButton{self,ResourceID{_POPUPCALC_B6,_GetInst()}}
+oCCB6:HyperLabel := HyperLabel{#B6,"6",NULL_STRING,NULL_STRING}
+oCCB6:Font(aFonts[2], FALSE)
 
-	SELF:oCCBDot := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BDOT  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBDot:Font( oFont )
-	SELF:oCCBDot:HyperLabel := HyperLabel{#BDot , "." , NULL_STRING , NULL_STRING}
+oCCB1 := PushButton{self,ResourceID{_POPUPCALC_B1,_GetInst()}}
+oCCB1:HyperLabel := HyperLabel{#B1,"1",NULL_STRING,NULL_STRING}
+oCCB1:Font(aFonts[2], FALSE)
 
-	SELF:oCCBPower := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BPOWER  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBPower:Font( oFont )
-	SELF:oCCBPower:HyperLabel := HyperLabel{#BPower , "^" , NULL_STRING , NULL_STRING}
+oCCB2 := PushButton{self,ResourceID{_POPUPCALC_B2,_GetInst()}}
+oCCB2:HyperLabel := HyperLabel{#B2,"2",NULL_STRING,NULL_STRING}
+oCCB2:Font(aFonts[2], FALSE)
 
-	SELF:oCCBPercent := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BPERCENT  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBPercent:Font( oFont )
-	SELF:oCCBPercent:HyperLabel := HyperLabel{#BPercent , "%" , NULL_STRING , NULL_STRING}
+oCCB3 := PushButton{self,ResourceID{_POPUPCALC_B3,_GetInst()}}
+oCCB3:HyperLabel := HyperLabel{#B3,"3",NULL_STRING,NULL_STRING}
+oCCB3:Font(aFonts[2], FALSE)
 
-	SELF:oCCBPlusMinus := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BPLUSMINUS  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBPlusMinus:Font( oFont )
-	SELF:oCCBPlusMinus:HyperLabel := HyperLabel{#BPlusMinus , "+/-" , NULL_STRING , NULL_STRING}
+oCCB0 := PushButton{self,ResourceID{_POPUPCALC_B0,_GetInst()}}
+oCCB0:HyperLabel := HyperLabel{#B0,"0",NULL_STRING,NULL_STRING}
+oCCB0:Font(aFonts[2], FALSE)
 
-	SELF:oCCBSquareRoot := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BSQUAREROOT  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBSquareRoot:Font( oFont )
-	SELF:oCCBSquareRoot:HyperLabel := HyperLabel{#BSquareRoot , "Sq" , NULL_STRING , NULL_STRING}
+oCCBDot := PushButton{self,ResourceID{_POPUPCALC_BDOT,_GetInst()}}
+oCCBDot:HyperLabel := HyperLabel{#BDot,".",NULL_STRING,NULL_STRING}
+oCCBDot:Font(aFonts[2], FALSE)
 
-	SELF:oCCBInvert := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BINVERT  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBInvert:Font( oFont )
-	SELF:oCCBInvert:HyperLabel := HyperLabel{#BInvert , "1/x" , NULL_STRING , NULL_STRING}
+oCCBPower := PushButton{self,ResourceID{_POPUPCALC_BPOWER,_GetInst()}}
+oCCBPower:HyperLabel := HyperLabel{#BPower,"^",NULL_STRING,NULL_STRING}
+oCCBPower:Font(aFonts[2], FALSE)
 
-	SELF:oCCBtimes := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BTIMES  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBtimes:Font( oFont )
-	SELF:oCCBtimes:HyperLabel := HyperLabel{#Btimes , "x" , NULL_STRING , NULL_STRING}
+oCCBPercent := PushButton{self,ResourceID{_POPUPCALC_BPERCENT,_GetInst()}}
+oCCBPercent:HyperLabel := HyperLabel{#BPercent,"%",NULL_STRING,NULL_STRING}
+oCCBPercent:Font(aFonts[2], FALSE)
 
-	SELF:oCCBdivide := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BDIVIDE  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBdivide:Font( oFont )
-	SELF:oCCBdivide:HyperLabel := HyperLabel{#Bdivide , "/" , NULL_STRING , NULL_STRING}
+oCCBPlusMinus := PushButton{self,ResourceID{_POPUPCALC_BPLUSMINUS,_GetInst()}}
+oCCBPlusMinus:HyperLabel := HyperLabel{#BPlusMinus,"+/-",NULL_STRING,NULL_STRING}
+oCCBPlusMinus:Font(aFonts[2], FALSE)
 
-	SELF:oCCBMinus := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BMINUS  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBMinus:Font( oFont )
-	SELF:oCCBMinus:HyperLabel := HyperLabel{#BMinus , "-" , NULL_STRING , NULL_STRING}
+oCCBSquareRoot := PushButton{self,ResourceID{_POPUPCALC_BSQUAREROOT,_GetInst()}}
+oCCBSquareRoot:HyperLabel := HyperLabel{#BSquareRoot,"Sq",NULL_STRING,NULL_STRING}
+oCCBSquareRoot:Font(aFonts[2], FALSE)
 
-	SELF:oCCBPlus := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BPLUS  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBPlus:Font( oFont )
-	SELF:oCCBPlus:HyperLabel := HyperLabel{#BPlus , "+" , NULL_STRING , NULL_STRING}
+oCCBInvert := PushButton{self,ResourceID{_POPUPCALC_BINVERT,_GetInst()}}
+oCCBInvert:HyperLabel := HyperLabel{#BInvert,"1/x",NULL_STRING,NULL_STRING}
+oCCBInvert:Font(aFonts[2], FALSE)
 
-	SELF:oCCBMemRecall := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BMEMRECALL  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBMemRecall:Font( oFont )
-	SELF:oCCBMemRecall:HyperLabel := HyperLabel{#BMemRecall , "MR" , NULL_STRING , NULL_STRING}
+oCCBtimes := PushButton{self,ResourceID{_POPUPCALC_BTIMES,_GetInst()}}
+oCCBtimes:HyperLabel := HyperLabel{#Btimes,"x",NULL_STRING,NULL_STRING}
+oCCBtimes:Font(aFonts[2], FALSE)
 
-	SELF:oCCBMemPlus := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BMEMPLUS  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBMemPlus:Font( oFont )
-	SELF:oCCBMemPlus:HyperLabel := HyperLabel{#BMemPlus , "M+" , NULL_STRING , NULL_STRING}
+oCCBdivide := PushButton{self,ResourceID{_POPUPCALC_BDIVIDE,_GetInst()}}
+oCCBdivide:HyperLabel := HyperLabel{#Bdivide,"/",NULL_STRING,NULL_STRING}
+oCCBdivide:Font(aFonts[2], FALSE)
 
-	SELF:oCCBMemMinus := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BMEMMINUS  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBMemMinus:Font( oFont )
-	SELF:oCCBMemMinus:HyperLabel := HyperLabel{#BMemMinus , "M-" , NULL_STRING , NULL_STRING}
+oCCBMinus := PushButton{self,ResourceID{_POPUPCALC_BMINUS,_GetInst()}}
+oCCBMinus:HyperLabel := HyperLabel{#BMinus,"-",NULL_STRING,NULL_STRING}
+oCCBMinus:Font(aFonts[2], FALSE)
 
-	SELF:oCCBMemTimes := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BMEMTIMES  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBMemTimes:Font( oFont )
-	SELF:oCCBMemTimes:HyperLabel := HyperLabel{#BMemTimes , "Mx" , NULL_STRING , NULL_STRING}
+oCCBPlus := PushButton{self,ResourceID{_POPUPCALC_BPLUS,_GetInst()}}
+oCCBPlus:HyperLabel := HyperLabel{#BPlus,"+",NULL_STRING,NULL_STRING}
+oCCBPlus:Font(aFonts[2], FALSE)
 
-	SELF:oCCBMemClear := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BMEMCLEAR  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBMemClear:Font( oFont )
-	SELF:oCCBMemClear:HyperLabel := HyperLabel{#BMemClear , "MC" , NULL_STRING , NULL_STRING}
+oCCBMemRecall := PushButton{self,ResourceID{_POPUPCALC_BMEMRECALL,_GetInst()}}
+oCCBMemRecall:HyperLabel := HyperLabel{#BMemRecall,"MR",NULL_STRING,NULL_STRING}
+oCCBMemRecall:Font(aFonts[2], FALSE)
 
-	SELF:oCCBClearEntry := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BCLEARENTRY  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBClearEntry:Font( oFont )
-	SELF:oCCBClearEntry:HyperLabel := HyperLabel{#BClearEntry , "CE" , NULL_STRING , NULL_STRING}
+oCCBMemPlus := PushButton{self,ResourceID{_POPUPCALC_BMEMPLUS,_GetInst()}}
+oCCBMemPlus:HyperLabel := HyperLabel{#BMemPlus,"M+",NULL_STRING,NULL_STRING}
+oCCBMemPlus:Font(aFonts[2], FALSE)
 
-	SELF:oCCBClear := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BCLEAR  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBClear:Font( oFont )
-	SELF:oCCBClear:HyperLabel := HyperLabel{#BClear , "C" , NULL_STRING , NULL_STRING}
+oCCBMemMinus := PushButton{self,ResourceID{_POPUPCALC_BMEMMINUS,_GetInst()}}
+oCCBMemMinus:HyperLabel := HyperLabel{#BMemMinus,"M-",NULL_STRING,NULL_STRING}
+oCCBMemMinus:Font(aFonts[2], FALSE)
 
-	SELF:oCCBEquals := PUSHBUTTON{SELF , ResourceID{ _POPUPCALC_BEQUALS  , _GetInst() } }
-	oFont := Font{  , 10 , "Times New Roman" }
-	oFont:Bold := TRUE
-	SELF:oCCBEquals:Font( oFont )
-	SELF:oCCBEquals:HyperLabel := HyperLabel{#BEquals , "=" , NULL_STRING , NULL_STRING}
+oCCBMemTimes := PushButton{self,ResourceID{_POPUPCALC_BMEMTIMES,_GetInst()}}
+oCCBMemTimes:HyperLabel := HyperLabel{#BMemTimes,"Mx",NULL_STRING,NULL_STRING}
+oCCBMemTimes:Font(aFonts[2], FALSE)
 
-	SELF:oDCMemText := FIXEDTEXT{SELF , ResourceID{ _POPUPCALC_MEMTEXT  , _GetInst() } }
-	SELF:oDCMemText:HyperLabel := HyperLabel{#MemText , "Memory Contents" , NULL_STRING , NULL_STRING}
+oCCBMemClear := PushButton{self,ResourceID{_POPUPCALC_BMEMCLEAR,_GetInst()}}
+oCCBMemClear:HyperLabel := HyperLabel{#BMemClear,"MC",NULL_STRING,NULL_STRING}
+oCCBMemClear:Font(aFonts[2], FALSE)
 
-	SELF:Caption := "Calculator"
-	SELF:Background := Brush{ Color{ 181 , 181 , 106 } }
-	SELF:HyperLabel := HyperLabel{#_PopUpCalc , "Calculator" , NULL_STRING , NULL_STRING}
+oCCBClearEntry := PushButton{self,ResourceID{_POPUPCALC_BCLEARENTRY,_GetInst()}}
+oCCBClearEntry:HyperLabel := HyperLabel{#BClearEntry,"CE",NULL_STRING,NULL_STRING}
+oCCBClearEntry:Font(aFonts[2], FALSE)
 
-	SELF:PostInit(oParent,uExtra)
+oCCBClear := PushButton{self,ResourceID{_POPUPCALC_BCLEAR,_GetInst()}}
+oCCBClear:HyperLabel := HyperLabel{#BClear,"C",NULL_STRING,NULL_STRING}
+oCCBClear:Font(aFonts[2], FALSE)
 
-RETURN
+oCCBEquals := PushButton{self,ResourceID{_POPUPCALC_BEQUALS,_GetInst()}}
+oCCBEquals:HyperLabel := HyperLabel{#BEquals,"=",NULL_STRING,NULL_STRING}
+oCCBEquals:Font(aFonts[2], FALSE)
+
+oDCMemText := FixedText{self,ResourceID{_POPUPCALC_MEMTEXT,_GetInst()}}
+oDCMemText:HyperLabel := HyperLabel{#MemText,"Memory Contents",NULL_STRING,NULL_STRING}
+
+self:Caption := "Calculator"
+self:HyperLabel := HyperLabel{#_PopUpCalc,"Calculator",NULL_STRING,NULL_STRING}
+Self:BackGround := aBrushes[1]
+
+self:PostInit(oParent,uExtra)
+
+return self
 
 
 END CLASS
-
-PARTIAL CLASS CalcSingleLineEdit INHERIT SingleLineEdit
+CLASS CalcSingleLineEdit INHERIT SingleLineEdit
 	//l subclass of SingleLineEdit just for the popup calculator.
 	//p subclass of SingleLineEdit just for the popup calculator.
 	//d The calculator class needs a SLE that is in raw format. \line
 	//d That is why it inherits from singleLineEdit instead of rightSLE. \par
 	//d The output from this class will eventually feed backinto a rightSLE.
 
+
 METHOD Dispatch(oEvent) 
 
-
-	IF oEvent:Message = WM_GETDLGCODE .AND. oEvent:wParam = KEYENTER	// gcs - 16/07/00
+	IF oEvent:Message = WM_GETDLGCODE  .AND. oEvent:wParam = KEYENTER	// gcs - 16/07/00
 		SendMessage(SELF:owner:Handle(), WM_CHAR, oEvent:wParam, 1L)
 		RETURN 1L
 	ENDIF
-	IF oEvent:Message=WM_COMMAND .and. oEvent:WParam==KEYESCAPE
+	IF oEvent:Message=WM_COMMAND  .and. oEvent:WParam==KEYESCAPE
 		SendMessage(SELF:owner:Handle(), WM_COMMAND, IDCANCEL, 0L)
 		RETURN 1L
 	ENDIF
@@ -301,14 +257,16 @@ METHOD Dispatch(oEvent)
 
 	RETURN SUPER:dispatch(oEvent)
 
-CONSTRUCTOR(oOwner, xID, oPoint, oDimension, kStyle) 
 
+CONSTRUCTOR(oOwner, xID, oPoint, oDimension, kStyle) 
+    //Vulcan.NET-Transporter: This method was automatically created
     SUPER(oOwner, xID, oPoint, oDimension, kStyle)
 
-    RETURN  
-END CLASS
+//Vulcan.NET-Transporter: To Do: the following line has been inserted. Please check the return value is correct
+RETURN SELF
 
-PARTIAL CLASS PopUpCalc INHERIT _PopUpCalc
+END CLASS
+CLASS PopUpCalc INHERIT _PopUpCalc
 // Author		: Geoff Schaller Modified by Willie Moore
 // Email		: williem@bigfoot.com
 // Address		:
@@ -336,20 +294,14 @@ PARTIAL CLASS PopUpCalc INHERIT _PopUpCalc
   	PROTECT sOP1		AS STRING	// First operation
   	PROTECT nEditLevel	AS LONGINT		// Allow overwrite on next entry
   	PROTECT nOpLevel	AS LONGINT		// Building 1st or 2nd operand
+//  	PROTECT LastFocus	AS OBJECT	// Last control to have focus
   	PROTECT OldFixed	AS LOGIC	// system status of SetFixed(), kept for restoration
   	PROTECT fMemory		AS FLOAT	// Memory button
   	PROTECT oOwner		AS OBJECT	// calling entity
   	PROTECT lError		AS LOGIC	// Error condition Flag
 
-  	//DECLARE METHOD autoclear,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9
-  	//DECLARE METHOD bclear,bclearentry,bdivide,bdot,bequals
-  	//DECLARE METHOD binvert,bmemclear,bmemminus,bmemplus
-  	//DECLARE METHOD bmemrecall,bmemtimes,bminus,bpercent
-  	//DECLARE METHOD bplus,bplusminus,bpower,bsquareroot,btimes
-  	//DECLARE METHOD DoOperation,FloatToString,mydiv,stringtofloat
-  	//DECLARE METHOD quitButton,saveexitbutton,initCalc
-METHOD AutoClear() AS VOID 
 
+METHOD AutoClear() AS VOID PASCAL 
 	//p Method to clear the buffer
 	//r VOID
 	//a None
@@ -361,8 +313,8 @@ METHOD AutoClear() AS VOID
 		SELF:lError := FALSE
 	ENDIF
 	RETURN
-METHOD B0( ) AS VOID 
 
+METHOD B0( ) AS VOID PASCAL 
 	//p Button 0
 	//r VOID
 	//a None
@@ -371,8 +323,8 @@ METHOD B0( ) AS VOID
 	SELF:oDCDisplayZ:TextValue += "0"
 	SELF:DoOperation("")
 	RETURN
-METHOD B1( ) AS VOID 
 
+METHOD B1( ) AS VOID PASCAL 
 	//p Button 1
 	//r VOID
 	//a None
@@ -381,8 +333,8 @@ METHOD B1( ) AS VOID
 	SELF:oDCDisplayZ:TextValue += "1"
 	SELF:DoOperation("")
 	RETURN
-METHOD B2( ) AS VOID 
 
+METHOD B2( ) AS VOID PASCAL 
 	//p Button 2
 	//r VOID
 	//a None
@@ -391,8 +343,8 @@ METHOD B2( ) AS VOID
 	SELF:oDCDisplayZ:TextValue += "2"
 	SELF:DoOperation("")
 	RETURN
-METHOD B3( ) AS VOID 
 
+METHOD B3( ) AS VOID PASCAL 
 	//p Button 3
 	//r VOID
 	//a None
@@ -401,8 +353,8 @@ METHOD B3( ) AS VOID
 	SELF:oDCDisplayZ:TextValue += "3"
 	SELF:DoOperation("")
 	RETURN
-METHOD B4( ) AS VOID 
 
+METHOD B4( ) AS VOID PASCAL 
 	//p Button 4
 	//r VOID
 	//a None
@@ -411,8 +363,8 @@ METHOD B4( ) AS VOID
 	SELF:oDCDisplayZ:TextValue += "4"
 	SELF:DoOperation("")
 	RETURN
-METHOD B5( ) AS VOID 
 
+METHOD B5( ) AS VOID PASCAL 
 	//p Button 5
 	//r VOID
 	//a None
@@ -421,8 +373,8 @@ METHOD B5( ) AS VOID
 	SELF:oDCDisplayZ:TextValue += "5"
 	SELF:DoOperation("")
 	RETURN
-METHOD B6( ) AS VOID 
 
+METHOD B6( ) AS VOID PASCAL 
 	//p Button 6
 	//r VOID
 	//a None
@@ -431,8 +383,8 @@ METHOD B6( ) AS VOID
 	SELF:oDCDisplayZ:TextValue += "6"
 	SELF:DoOperation("")
 	RETURN
-METHOD B7( ) AS VOID 
 
+METHOD B7( ) AS VOID PASCAL 
 	//p Button 7
 	//r VOID
 	//a None
@@ -441,8 +393,8 @@ METHOD B7( ) AS VOID
 	SELF:oDCDisplayZ:TextValue += "7"
 	SELF:DoOperation("")
 	RETURN
-METHOD B8( ) AS VOID 
 
+METHOD B8( ) AS VOID PASCAL 
 	//p Button 8
 	//r VOID
 	//a None
@@ -451,8 +403,8 @@ METHOD B8( ) AS VOID
 	SELF:oDCDisplayZ:TextValue += "8"
 	SELF:DoOperation("")
 	RETURN
-METHOD B9( ) AS VOID 
 
+METHOD B9( ) AS VOID PASCAL 
 	//p Button 9
 	//r VOID
 	//a None
@@ -461,8 +413,8 @@ METHOD B9( ) AS VOID
 	SELF:oDCDisplayZ:TextValue += "9"
 	SELF:DoOperation("")
 	RETURN
-METHOD BClear( ) AS VOID 
 
+METHOD BClear( ) AS VOID PASCAL 
 	//p method to clear display
 	//r VOID
 	//a None
@@ -472,8 +424,8 @@ METHOD BClear( ) AS VOID
 	SELF:oDCDisplayZ:SetFocus()
 
 	RETURN
-METHOD BClearEntry( ) AS VOID 
 
+METHOD BClearEntry( ) AS VOID PASCAL 
 	//p Button to Clear the current entry
 	//r VOID
 	//a None
@@ -482,16 +434,16 @@ METHOD BClearEntry( ) AS VOID
 	SELF:nEditLevel := 0
 	SELF:oDCDisplayZ:SetFocus()
 	RETURN
-METHOD Bdivide( ) AS VOID 
 
+METHOD Bdivide( ) AS VOID PASCAL 
 	//p Button for division
 	//r VOID
 	//a None
 	
 	SELF:DoOperation ("/")
 	RETURN
-METHOD BDot( ) AS VOID 
 
+METHOD BDot( ) AS VOID PASCAL 
 	//p Button to enter a decimal
 	//r VOID
 	//a None
@@ -502,8 +454,8 @@ METHOD BDot( ) AS VOID
 	ENDIF
 	SELF:DoOperation(".")
 	RETURN
- METHOD BEquals( ) AS VOID 
 
+ METHOD BEquals( ) AS VOID PASCAL 
 	//p Button for the enter key
 	//r VOID
 	//a None
@@ -511,16 +463,16 @@ METHOD BDot( ) AS VOID
 	SELF:DoOperation ("=")
 	RETURN
 
-METHOD BInvert( ) AS VOID 
 
+METHOD BInvert( ) AS VOID PASCAL 
 	//p Button to invert
 	//r VOID
 	//a None
 	
 	SELF:DoOperation("I")
 	RETURN
-METHOD BMemClear( ) AS VOID 
 
+METHOD BMemClear( ) AS VOID PASCAL 
 	//p Button to clear memory
 	//r VOID
 	//a None
@@ -529,8 +481,8 @@ METHOD BMemClear( ) AS VOID
 	SELF:oDCMemText:TextValue := ""
 	SELF:DoOperation("")   // null value to obtain other deault activity
 	RETURN
-METHOD BMemMinus( ) AS VOID 
 
+METHOD BMemMinus( ) AS VOID PASCAL 
 	//p Button to subtract from memory
 	//r VOID
 	//a None
@@ -549,8 +501,8 @@ METHOD BMemMinus( ) AS VOID
 	ENDIF
 	
 	RETURN
-METHOD BMemPlus( ) AS VOID 
 
+METHOD BMemPlus( ) AS VOID PASCAL 
 	//p Button to add to memory
 	//r VOID
 	//a None
@@ -569,8 +521,8 @@ METHOD BMemPlus( ) AS VOID
 	
 	RETURN
 
-METHOD BMemRecall( ) AS VOID 
 
+METHOD BMemRecall( ) AS VOID PASCAL 
 	//p Button to recall memory
 	//r VOID
 	//a None
@@ -582,8 +534,8 @@ METHOD BMemRecall( ) AS VOID
 	SELF:DoOperation("")   // Achieve default behaviour
 	
 	RETURN
-METHOD BMemTimes( ) AS VOID 
 
+METHOD BMemTimes( ) AS VOID PASCAL 
 	//p Button to multiply memory
 	//r VOID
 	//a None
@@ -602,32 +554,32 @@ METHOD BMemTimes( ) AS VOID
 	
 	RETURN
 
-METHOD BMinus( ) AS VOID 
 
+METHOD BMinus( ) AS VOID PASCAL 
 	//p Button to subtract
 	//r VOID
 	//a None
 	
 	SELF:DoOperation ("-")
 	RETURN
-METHOD BPercent( ) AS VOID 
 
+METHOD BPercent( ) AS VOID PASCAL 
 	//p Button for percentage
 	//r VOID
 	//a None
 	
 	SELF:DoOperation("%")
 	RETURN
-METHOD BPlus( ) AS VOID 
 
+METHOD BPlus( ) AS VOID PASCAL 
 	//p Button for addition
 	//r VOID
 	//a None
 	
 	SELF:DoOperation ("+")
 	RETURN
-METHOD BPlusMinus( ) AS VOID 
 
+METHOD BPlusMinus( ) AS VOID PASCAL 
 	//p Button to toggle plus minus
 	//r VOID
 	//a None
@@ -644,42 +596,42 @@ METHOD BPlusMinus( ) AS VOID
 	ENDIF
 
 	RETURN
-METHOD BPower( ) AS VOID 
 
+METHOD BPower( ) AS VOID PASCAL 
 	//p Button to raise to a power
 	//r VOID
 	//a None
 	
 	SELF:DoOperation("^")
 	RETURN
-METHOD BSquareRoot( ) AS VOID
 
+METHOD BSquareRoot( ) AS VOID PASCAL 
 	//p Button for square root
 	//r VOID
 	//a None
 	
 	SELF:DoOperation("S")
 	RETURN
-METHOD BTimes( ) AS VOID 
 
+METHOD BTimes( ) AS VOID PASCAL 
 	//p Button for multiplication
 	//r VOID
 	//a None
 	
 	SELF:DoOperation ("*")
 	RETURN
-METHOD Close(oEvent) 
 
+METHOD Close(oEvent) 
 	
 	SetFixed(SELF:OldFixed)  // restore settings
 	RETURN SUPER:Close(oEvent)
 
-METHOD Dispatch (oEvent) 
 
+METHOD Dispatch (oEvent) 
 
 	LOCAL sOperation AS STRING
 	
-	IF (oEvent:Message == WM_COMMAND) .and. (LoWord(oEvent:wParam) == IDCANCEL)
+	IF (oEvent:Message == WM_COMMAND)  .and. (LoWord(oEvent:wParam) == IDCANCEL)
 		// abort window on ESCAPE key
 		SELF:EndDialog(0)
 		RETURN 1l
@@ -700,8 +652,8 @@ METHOD Dispatch (oEvent)
 	ENDIF
 	
 	RETURN SUPER:Dispatch (oEvent)
-METHOD DoOperation(sKey AS STRING) AS VOID 
 
+METHOD DoOperation(sKey AS STRING) AS VOID PASCAL 
 	//p Method to perform the operation
 	//r VOID
 	//a sKey as string - Operation to perform
@@ -712,53 +664,54 @@ METHOD DoOperation(sKey AS STRING) AS VOID
 			// Do nothing!
 		CASE Instr(sKey, "Cc")										// gcs 16/07/00
 			SELF:BClear()
-		CASE Instr(sKey, "S") .and. (nOpLevel==1)
+		CASE Instr(sKey, "S")  .and. (nOpLevel==1)
 			SELF:fXX := SELF:StringToFloat(SELF:oDCDisplayZ:CurrentText)
 			fZZ := SQRT(fXX)
 			SELF:oDCDisplayZ:TextValue := SELF:FloatToString(fZZ)
 			SELF:nEditLevel := 0	// edit the next entry
 			SELF:nOpLevel := 1		// go back to first operand
-		CASE Instr(sKey, "S") .and. (nOpLevel==2)
+		CASE Instr(sKey, "S")  .and. (nOpLevel==2)
 			SELF:fYY := SELF:StringToFloat(SELF:oDCDisplayZ:CurrentText)
 			fZZ := SQRT(fYY)
 			SELF:oDCDisplayZ:TextValue := SELF:FloatToString(fZZ)
 			SELF:nEditLevel := 0	// edit the next entry
 			SELF:nOpLevel := 2		// go back to first operand
-		CASE Instr(sKey, "I") .and. (nOpLevel==1)
+		CASE Instr(sKey, "I")  .and. (nOpLevel==1)
 			SELF:fXX := SELF:StringToFloat(SELF:oDCDisplayZ:CurrentText)
 			fZZ := SELF:MyDiv(1.0, fXX)
 			SELF:oDCDisplayZ:TextValue := SELF:FloatToString(fZZ)
 			SELF:nEditLevel := 0	// edit the next entry
 			SELF:nOpLevel := 1		// go back to first operand
-		CASE Instr(sKey, "I") .and. (nOpLevel==2)
+		CASE Instr(sKey, "I")  .and. (nOpLevel==2)
 			SELF:fYY := SELF:StringToFloat(SELF:oDCDisplayZ:CurrentText)
 			fZZ := SELF:MyDiv(1.0, fYY)
 			SELF:oDCDisplayZ:TextValue := SELF:FloatToString(fZZ)
 			SELF:nEditLevel := 0	// edit the next entry
 			SELF:nOpLevel := 2		// go back to first operand
-		CASE Instr(sKey, "^%*+/-") .and. (nOpLevel==1)
+		CASE Instr(sKey, "^%*+/-")  .and. (nOpLevel==1)
 			SELF:nOpLevel := 2				// advance to second operand
 			SELF:nEditLevel := 0
 			SELF:sOp1   := sKey				// save the operation type
 			SELF:fXX := SELF:StringToFloat(SELF:oDCDisplayZ:CurrentText)
-		CASE Instr(sKey, "=") .and. (nOpLevel==1) // accumulation		// gcs 16/07/00
+		CASE Instr(sKey, "=")  .and. (nOpLevel==1) // accumulation		// gcs 16/07/00
 			SELF:fYY := SELF:StringToFloat(SELF:oDCDisplayZ:CurrentText)// gcs 16/07/00
 			DO CASE														// gcs 16/07/00
 				CASE sOP1=="%"  ;   fZZ := fYY * (fXX/100.0)			// gcs 16/07/00
-				CASE sOP1=="^"  ;   fZZ := fXX ^ fYY					// gcs 16/07/00 // wcm 2007-0709 removed to get rightSLE to compile. put back in when the compiler supports this
+				CASE sOP1=="^"  ;   fZZ := fXX ^ fYY					// gcs 16/07/00
 				CASE sOP1=="+"  ;   fZZ := fXX + fYY					// gcs 16/07/00
 				CASE sOP1=="/"  ;	fZZ := SELF:MyDiv(fXX, fYY)			// gcs 16/07/00
 				CASE sOP1=="-"  ;   fZZ := fXX - fYY					// gcs 16/07/00
 				CASE sOP1=="*"  ;   fZZ := fXX * fYY					// gcs 16/07/00
 			ENDCASE														// gcs 16/07/00
 			SELF:oDCDisplayZ:TextValue := SELF:FloatToString(fZZ)		// gcs 16/07/00
+//			SELF:fXX := SELF:StringToFloat(SELF:oDCDisplayZ:CurrentText)// gcs 16/07/00
 			SELF:nEditLevel := 0	// edit the next entry				// gcs 16/07/00
 			SELF:nOpLevel := 1		// go back to first operand			// gcs 16/07/00
-		CASE Instr(sKey, "=") .and. (nOpLevel==2)   // perform the last operation
+		CASE Instr(sKey, "=")  .and. (nOpLevel==2)   // perform the last operation
 			SELF:fYY := SELF:StringToFloat(SELF:oDCDisplayZ:CurrentText)
 			DO CASE
 				CASE sOP1=="%"  ;   fZZ := fYY * (fXX/100.0)
-				CASE sOP1=="^"  ;   fZZ := fXX ^ fYY // wcm 2007-0709 removed to get rightSLE to compile. put back in when the compiler supports this
+				CASE sOP1=="^"  ;   fZZ := fXX ^ fYY
 				CASE sOP1=="+"  ;   fZZ := fXX + fYY
 				CASE sOP1=="/"  ;	fZZ := SELF:MyDiv(fXX, fYY)
 				CASE sOP1=="-"  ;   fZZ := fXX - fYY
@@ -767,11 +720,11 @@ METHOD DoOperation(sKey AS STRING) AS VOID
 			SELF:oDCDisplayZ:TextValue := SELF:FloatToString(fZZ)
 			SELF:nEditLevel := 0	// edit the next entry
 			SELF:nOpLevel := 1		// go back to first operand
-		CASE Instr(sKey, "+/-*") .and. (nOpLevel==2)   // perform the last operation and return new one
+		CASE Instr(sKey, "+/-*")  .and. (nOpLevel==2)   // perform the last operation and return new one
 			SELF:fYY := SELF:StringtoFloat(SELF:oDCDisplayZ:CurrentText)
 			DO CASE
 				CASE sOP1=="%"  ;   fZZ := fYY * (fXX/100.0)
-				CASE sOP1=="^"  ;   fZZ := fXX ^ fYY // wcm 2007-0709 removed to get rightSLE to compile. put back in when the compiler supports this
+				CASE sOP1=="^"  ;   fZZ := fXX ^ fYY
 				CASE sOP1=="+"  ;   fZZ := fXX + fYY
 				CASE sOP1=="/"  ;	fZZ := SELF:MyDiv(fXX, fYY)
 				CASE sOP1=="-"  ;   fZZ := fXX - fYY
@@ -782,11 +735,11 @@ METHOD DoOperation(sKey AS STRING) AS VOID
 			SELF:nEditLevel := 0	// edit the next entry
 			SELF:nOpLevel := 2		// stay at second operand
 			SELF:sOp1 := sKey
-		CASE Instr(sKey, "%") .and. (nOpLevel==2)   // perform the last operation with "Y" % of the first value
+		CASE Instr(sKey, "%")  .and. (nOpLevel==2)   // perform the last operation with "Y" % of the first value
 			SELF:fYY := fXX/100.0 *SELF:StringtoFloat(SELF:oDCDisplayZ:CurrentText)  // gets y% of X first
 			DO CASE
 				CASE sOP1=="%"  ;   fZZ := fYY * (fXX/100.0)
-				CASE sOP1=="^"  ;   fZZ := fXX ^ fYY // wcm 2007-0709 removed to get rightSLE to compile. put back in when the compiler supports this
+				CASE sOP1=="^"  ;   fZZ := fXX ^ fYY
 				CASE sOP1=="+"  ;   fZZ := fXX + fYY
 				CASE sOP1=="/"  ;	fZZ := SELF:MyDiv(fXX, fYY)
 				CASE sOP1=="-"  ;   fZZ := fXX - fYY
@@ -803,21 +756,21 @@ METHOD DoOperation(sKey AS STRING) AS VOID
 
 	RETURN
 
-METHOD EditChange(oControlEvent) 
 
+METHOD EditChange(oControlEvent) 
 
 	// commented lines left in place for "scientific" version later
 	LOCAL oControl AS Control
 	LOCAL nDotPosn AS DWORD
 
-	oControl := IIF(oControlEvent == NULL_OBJECT, NULL_OBJECT, oControlEvent:Control)
+	oControl := IIf(oControlEvent == NULL_OBJECT, NULL_OBJECT, oControlEvent:Control)
 	SUPER:EditChange(oControlEvent)
 	//Put your changes here
 	IF oControl:NameSym == #DisplayZ
 		// Check first for multiple instances of control chars
 		DO CASE
-			CASE Occurs(".", SELF:oDCDisplayZ:TextValue)>1 // strip out first occurrence
-				nDotPosn := At(".", SELF:oDCDisplayZ:TextValue)
+			CASE Occurs('.', SELF:oDCDisplayZ:TextValue)>1 // strip out first occurrence
+				nDotPosn := At('.', SELF:oDCDisplayZ:TextValue)
 				IF Left(SELF:oDCDisplayZ:TextValue, 1)=="."
 					SELF:oDCDisplayZ:Textvalue := SubStr(SELF:oDCDisplayZ:TextValue, 2)
 				ELSE
@@ -838,8 +791,8 @@ METHOD EditChange(oControlEvent)
 	ENDIF
 
 	RETURN NIL
-METHOD FloatToString (fFloatVal AS FLOAT) AS STRING 
 
+METHOD FloatToString (fFloatVal AS FLOAT) AS STRING 
 	//p Convert float to a string
 	//r String
 	//a fFloatVal as float - Number to convert
@@ -877,7 +830,7 @@ METHOD FloatToString (fFloatVal AS FLOAT) AS STRING
 	     // First strip out end zeros except last one after "."
 	     DO WHILE Right(sFloatResult,1)=="0"  // don't worry about all other instances
 	        dwDecPlaces:= SLen(sFloatResult) - At(".", sFloatResult )
-	        IF dwDecPlaces > 0 .and. Right(sFloatResult,1)=="0"
+	        IF dwDecPlaces > 0  .and. Right(sFloatResult,1)=="0"
 	           sFloatResult := SubStr3( sFloatResult, 1, SLen(sFloatResult)-1 )
 	           dwDecPlaces--
 	        ENDIF
@@ -888,14 +841,14 @@ METHOD FloatToString (fFloatVal AS FLOAT) AS STRING
 	
 	RETURN sFloatResult
 
-CONSTRUCTOR(oParent,uExtra) 
 
+CONSTRUCTOR(oParent,uExtra) 
 	SUPER(oParent,uExtra)
 	SELF:PostInit(oParent,uExtra)
-	RETURN  
+	RETURN SELF
 
-METHOD initcalc() AS VOID 
 
+METHOD initcalc() AS VOID PASCAL 
 	//p Method to setup the calculator back to default values
 	//r Void
 	
@@ -911,8 +864,8 @@ METHOD initcalc() AS VOID
 	SELF:oDCDisplayZ:TextValue := "0.0"   // reset display
 		
 	RETURN
-METHOD MyDiv (fInXVal AS FLOAT, fInYVal AS FLOAT) AS FLOAT 
 
+METHOD MyDiv (fInXVal AS FLOAT, fInYVal AS FLOAT) AS FLOAT PASCAL 
 	//p custom Div Method to avoid runtime error
 	//r Float
 	//a fInxVal as float - Left hand side of the operation \line
@@ -929,8 +882,8 @@ METHOD MyDiv (fInXVal AS FLOAT, fInYVal AS FLOAT) AS FLOAT
 	ENDIF
 
  	RETURN Result
-METHOD PostInit(oParent,uExtra)
 
+METHOD PostInit(oParent,uExtra) 
 	
 	SELF:fMemory := 0		// we reset memory here as initcalc can be called from other buttons
 	SELF:initcalc()
@@ -950,29 +903,29 @@ METHOD PostInit(oParent,uExtra)
 	SetScience(FALSE)
 	
 	RETURN NIL
-METHOD QuitButton( ) AS VOID 
 
+METHOD QuitButton( ) AS VOID PASCAL 	
 	//p Button to quit without saving
 	//r VOID
 	//a None
 
 	SELF:EndDialog(0)
 	RETURN
-METHOD SaveExitButton( ) AS VOID 
 
+METHOD SaveExitButton( ) AS VOID PASCAL 
 	//p Button to save and return value to owner
 	//r VOID
 	//a None
 
-	IF Instr(SELF:sOp1, "^%*+/-") .and. (SELF:nOpLevel==2)     // Force to perform the last operation
+	IF Instr(SELF:sOp1, "^%*+/-")  .and. (SELF:nOpLevel==2)     // Force to perform the last operation
 		SELF:DoOperation("=")                                  //
 	ENDIF                                                      // JR 2002/08/08
 
 	SELF:sExport := SELF:oDCDisplayZ:TextValue
 	SELF:EndDialog(1)
 	RETURN
-METHOD StringToFloat(sDisplay AS STRING ) AS FLOAT 
 
+METHOD StringToFloat(sDisplay AS STRING ) AS FLOAT 
 	//p Convert String back to a float
 	//r Float
 	//a sDisplay as string - Value to convert
@@ -995,5 +948,6 @@ METHOD StringToFloat(sDisplay AS STRING ) AS FLOAT
 	ENDIF
 	
 	RETURN Result
-END CLASS
 
+
+END CLASS

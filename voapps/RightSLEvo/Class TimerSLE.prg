@@ -1,4 +1,4 @@
-CLASS TimerSLE INHERIT rightSLE
+﻿CLASS TimerSLE INHERIT rightSLE
 // Author		: Willie Moore
 // Email		: williem@wmconsulting.com
 // Address		:
@@ -20,9 +20,8 @@ CLASS TimerSLE INHERIT rightSLE
 	PROTECT nStyle 			:= 1	AS LONGINT		// Display Style - Default is seconds
 	PROTECT nTimeOut 		:= 500	AS LONGINT		// Time between messages - Default is 1/2 second
 	
-/****************************************************************************/
-METHOD Destroy(oCE)
 
+METHOD destroy(oCE) 	
 	// If a timer is still active
 	IF SELF:nTimerHandle > 0
 		// Kill it
@@ -30,9 +29,7 @@ METHOD Destroy(oCE)
 	ENDIF	
 	RETURN SUPER:destroy(oCE)
 
-/****************************************************************************/
-METHOD Dispatch(oE)
-
+METHOD Dispatch(oE) 
 
 	IF oE:Message == WM_TIMER
 		// If we get a timer message, call our timer event
@@ -41,27 +38,25 @@ METHOD Dispatch(oE)
 	// Now continue with deafult processing
 	RETURN SUPER:dispatch(oE)
 
-/****************************************************************************/	
-Constructor(oOwner, nId, oPoint, oDim, kStyle, lDataAware )
+CONSTRUCTOR(oOwner, nId, oPoint, oDim, kStyle, lDataAware ) 
+    //Vulcan.NET-Transporter: This method was automatically created
+    SUPER(oOwner, nId, oPoint, oDim, kStyle, lDataAware )
 
-    super(oOwner, nId, oPoint, oDim, kStyle, lDataAware )
+//Vulcan.NET-Transporter: To Do: the following line has been inserted. Please check the return value is correct
+RETURN SELF
 
-    RETURN 
-
-/****************************************************************************/
-ASSIGN Interval(n AS LONGINT) AS void 
-
+ASSIGN Interval(n AS LONGINT) AS LONGINT PASCAL 
 	//p Sets up the timer interval.
 	//r LONG
 	//a n \tab LONG \tab Interval in seconds \line
 
 	// Set the interval
 	SELF:nTimeOut := n
-	RETURN 
-		
-/****************************************************************************/
-METHOD Reset() AS VOID 
+	RETURN n
+	
+	
 
+METHOD Reset() AS VOID PASCAL 
 	//p Resets the current timer.
 	//r VOID
 	//a None
@@ -74,10 +69,8 @@ METHOD Reset() AS VOID
 	SELF:nPrevCount := 0
 	SELF:value := 0
 	RETURN		
-	
-/****************************************************************************/
-METHOD sleTimer() AS VOID
 
+METHOD sleTimer() AS VOID PASCAL 	
    	//p sets current value based upon style.
 	//r VOID
 	//a None
@@ -97,9 +90,8 @@ METHOD sleTimer() AS VOID
 			SELF:value := Round((nPrevCount+Seconds()-SELF:nStartSeconds)/60,2)
 	ENDCASE
 	RETURN
-/****************************************************************************/
-METHOD Start() AS VOID
 
+METHOD Start() AS VOID PASCAL 
 	//p Starts up the timer.
 	//r VOID
 	//a None
@@ -107,7 +99,7 @@ METHOD Start() AS VOID
 	// If there is no timer active
 	IF nTimerHandle == 0
 		// Create a new times
-		nTimerHandle := SetTimer(SELF:handle(),1,(dword)SELF:nTimeOut,NULL_PTR)
+		nTimerHandle := SetTimer(SELF:handle(),1,DWORD(nTimeOut),NULL_PTR)
 		// Initialize our start time
 		nStartSeconds := Seconds()
 		// Call the timer Method
@@ -115,9 +107,7 @@ METHOD Start() AS VOID
 	ENDIF
 	RETURN
 
-/****************************************************************************/
-METHOD Stop() AS VOID
-
+METHOD Stop() AS VOID PASCAL 
 	//p Stops the current time.
 	//r VOID
 	//a None
@@ -134,9 +124,8 @@ METHOD Stop() AS VOID
 	ENDIF	
 	RETURN
 
-/****************************************************************************/
-ASSIGN Style(n AS USUAL) AS void
 
+ASSIGN Style(n AS USUAL) AS LONGINT PASCAL 
 	//p Sets up the timer style.
 	//r LONG
 	//a n \tab LONG \tab Style to set \line
@@ -148,6 +137,7 @@ ASSIGN Style(n AS USUAL) AS void
 
 	// Set the timer style
 	SELF:nStyle := n
-	RETURN 
-END CLASS
+	RETURN n
 
+
+END CLASS

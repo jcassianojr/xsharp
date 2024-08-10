@@ -1,3 +1,90 @@
+﻿/*
+TEXTBLOCK _Contact Willie
+//l Contact information
+//d I am always interested in feedback on rightSLE. \line
+//d
+//d For bug or enhancements requests, please contact me at: \line
+//d {\b Williem@wmconsulting.com}
+ENDTEXT
+
+
+*/
+/*
+TEXTBLOCK Compiling under VO 2.0b-4
+//l Compiling under 2.0b-4
+//d
+//d
+//d rightSLE 2.1c can be compiled under VO 2.0b4. To do this simply \line
+//d change the _IsVO2 define from false to true. \par
+//d \line
+//d \tab _IsVO2 IS located IN Module {\b CLASS rightSLE} \par
+//d \line
+//d Once you have changed _IsVO2, Please touch and recompile. \line
+//d the sample app "TestrightSLE" has also been modified where it
+//d will work with VO 2.0b-4 with no modifications.
+ENDTEXT
+
+*/
+/*
+TEXTBLOCK Postinit
+//l { \b Use of Postinit with rightSLE}
+//d
+//d
+//d rightSLE now includes a postinit. This will give you the ability to make \line
+//d global changes to SLEs without having to go to each of your \line
+//d screens. \par
+//d {\b Things that you can control in the postinit:} \line
+//d {\f4\'B7} \tab lTurnOffEnter - Default is FALSE to allow enter key processing \line
+//d   \tab you can set this to TRUE if you do not want the enterkey to be processes \line
+//d   \tab of you are using clipperkeys. \line
+//d {\f4\'B7} \tab lObeyFocusChangeAlways - default is FALSE. This will let you \line
+//d   \tab click into an SLE via the mouse and always obey the rules if the SLE is empty. \line
+//d   \tab If the SLE has something in it, the mouse will go to the click position. \line
+//d   \tab Set the to TRUE is you always want to obey the FSEL setting and ignore the \line
+//d   \tab mouse click position. \line
+//d {\f4\'B7} \tab wFocusSel - This is the initial focus selection. rightSLE's default is FSEL_HOME. \line
+//d   \tab You can change this to ANY valid focus selection code. The current valid ones for VO 2.7b are: \line
+//d   \tab FSEL_ALL \tab \tab - All text selected \line
+//d   \tab FSEL_HOME \tab \tab - Cursor to the left most position of the SLE. \line
+//d   \tab FSEL_END \tab  \tab - Cursor to the right most character of the SLE. \line
+//d   \tab FSEL_TRIMMED \tab - Cursor to the right most filled in character of the SLE (trimed position). \line
+//d {\f4\'B7} \tab lAlignCalendarLeft - calendar allignment in relation to the SLE. \line
+//d   \tab rightSLE default is TRUE. This will allign the calendar to the left of the SLE where possible. \line
+//d   \tab By setting this to FALSE, you will cause a right allignment of the calendar. \line
+//d {\f4\'B7} \tab lAllowCutandPaste - This controls rightSLE's ability to process \line
+//b   \tab the windows cut, copy, paste, undo messages. This is set to \line
+//b   \tab {\b TRUE} by default. \line
+//d {\f4\'B7} \tab lDoubleAsToday - This controls rightSLE's calendar. Bu setting this to true \line
+//d   \tab you will cause a double click on a dateSLE (with button only) to put \line
+//d   \tab in today's date. The button wil still function as normal. This has no affect \line
+//d   \tab on a rightSLE that has only a date fieldspec (no button). There is also an assign: \line
+//d   \tab DoubleAsToday(lVar) that allows this setting to be set on an individual SLE. \line
+//d {\f4\'B7} \tab lAllowNumericFocus - This controls rightSLE's numeric SLEs \line
+//d	  \tab TRUE \tab \tab - When changing focus, the SLE positions itself to the left of the decimal \line
+//d   \tab \tab \tab Please note that this does not work is wFocusSel is set to FSEL_ALL. \line
+//d   \tab \tab \tab If there is no decimal, the cursor if put to the far side of the SLE. This will \line
+//d   \tab \tab \tab let input happen the way most users expect. \line
+//d   \tab FALSE \tab - rightSLE default to maintain backward compatibility. \line
+//d {\f4\'B7} \tab ProcessArrowKeys - This controls rightSLE's arrow processing logic \line
+//d	  \tab TRUE \tab \tab - When user hits up or down arrow, focus is changed to the next or previous control \line
+//d   \tab FALSE \tab - rightSLE default to maintain backward compatibility. \line
+//d {\f4\'B7} \tab symImageType - This controls the push buttons for rightSLE \line
+//d	  \tab #BITMAP \tab - Use bitmap images \line
+//d   \tab #ICON \tab \tab - Use icon images \line
+//d {\f4\'B7} \tab lUseOldButtons - This controls which button class that rightSLE uses. \line
+//d	  \tab TRUE \tab - Use the original buttons included with rightSLE \line
+//d	  \tab FALSE \tab - Use the new buttons that support XP Styles. \line
+//d {\f4\'B7} \tab lRememberPosition - This controls which button class that rightSLE uses. \line
+//d	  \tab TRUE \tab - rightSLE will remember the last position you were in and reposition the \line
+//d   \tab \tab \tab cursor to the last position each time you tab into the control. \line
+//d   \tab \tab \tab Please note. This ivar {\b ONLY} works if lObeyFocusRuleAlways is set to false! \line
+//d	  \tab FALSE \tab - Follow the normal focuschange logic. \line
+//d {\f4\'B7} \tab symCalandarClass - This controls the class that get instanciated when you click on a calendard button \line
+//d {\f4\'B7} \tab symCalcClass - This controls the class that get instanciated when you click on a calculator button \line
+//d   \par
+ENDTEXT
+
+*/
 /*
 TEXTBLOCK Readme 2001
 //l Release Notes for 2001
@@ -147,76 +234,309 @@ TEXTBLOCK Readme 2001
 //d {\f4\'B7} \tab Cleaned up the CODE inside OF PECalendar:Dispatch TO make it more readable \line
 //d   \par
 ENDTEXT
-TEXTBLOCK Compiling under VO 2.0b-4
-//l Compiling under 2.0b-4
+
+*/
+/*
+TEXTBLOCK Readme 2002
+//l Release Notes for 2002
 //d
+//d {\b Version 2.6b (12/01/2002)} \line
+//d {\f4\'B7} \tab Changes to processnum to change problems with movement on the right side \line
+//d \tab of the decimal. the cause the curror to be positioned on the wrong side of \line
+//d \tab the character if the delete or back key was pressed. \line
+//d {\f4\'B7} \tab Changed processnum to retain the right side of a decimal if the caracter is being inserted. Thanks Józef!!! \line
+//d {\f4\'B7} \tab Changed processnum to not delete charaters in a selection if it is just a movement key. \line
+//d {\f4\'B7} \tab Changed processnum to move selection to beginning or end of selection block if it is a movement key. \line
+//d {\f4\'B7} \tab Removed the init of class dlgPECalendar as it was causing postinit to be called twice and was contributing nothing. \line
+//d {\f4\'B7} \tab Changed the bitmap size in the init of dateSLE,pbFolderSLe,pbFileSLE to reflect that actual bitmap size. \line
+//d {\f4\'B7} \tab Changed the offset in processnum (line 96) to  properly allow an overwrite of the last character if the fieldspec is exactly the size of an integerSLE. \line
+//d \par
+//d {\b Version 2.6a (11/20/2002)} \line
+//d {\f4\'B7} \tab Changes to processnum to remove a hardcoded decimal. \line
+//d {\f4\'B7} \tab Changed showcalendar to change a focus selection problem with the tab control. \line
+//d {\f4\'B7} \tab Changed showcalc to change a focus selection problem with the tab control. \line
+//d {\f4\'B7} \tab Commented out the setfocus postmessage in SLEButton to correct a problem \line
+//d \tab with focus selection after hitting ESC from the calculator or calendar. \line
+//d \tab The focus was in the correct place, the carrot showing cursor position as not showing up. \line
+//d \tab Please not that this was only occuring when you placed a dateSLE on a tab control! \line
+//d \tab If you want to reenable the focus message, it is commented out in method: \line
+//d \tab \tab SLEButton:dispatch() \line
+//d {\f4\'B7} \tab Changed rightSLE dispatch to allow shift right_arrow to properly control selection. \line
+//d {\f4\'B7} \tab Added new ivars to fileSLE to set the initial dir and title. Thanks Geoff!!! \line
+//d \tab \tab sInitDir \tab Initial directory to position the Open / save dialog. \line
+//d \tab \tab \tab \tab This setting is overritten by anything typed into the field. \line
+//d \tab \tab sTitle \tab \tab The title of the Open / Save dialog. \line
+//d \par
 //d
-//d rightSLE 2.1c can be compiled under VO 2.0b4. To do this simply \line
-//d change the _IsVO2 define from false to true. \par
-//d \line
-//d \tab _IsVO2 IS located IN Module {\b CLASS rightSLE} \par
-//d \line
-//d Once you have changed _IsVO2, Please touch and recompile. \line
-//d the sample app "TestrightSLE" has also been modified where it
-//d will work with VO 2.0b-4 with no modifications.
+//d {\b Version 2.6 (09/26/2002)} \line
+//d {\f4\'B7} \tab Changes for VO 2.6 \line
+//d \par
+//d
+//d {\b Version 2.3a (09/17/2002)} \line
+//d {\f4\'B7} \tab Change to the float2string method for inline and popupcalculator. Thanks U.C Mehaboob!!! \line
+//d \par
+//d
+//d {\b Version 2.3 (09/16/2002)} \line
+//d {\f4\'B7} \tab Changes to the calculator classes to fix some misc bugs. Thanks U.C Mehaboob!!! \line
+//d {\f4\'B7} \tab Changes to the rightSLE dispatch to clean up some code \line
+//d {\f4\'B7} \tab Changes to the rightSLE dispatch to allow for cntrl enter to post a WM_LBUTTONDBLCLK message. \line
+//d \tab This will allow the keyboard to be used to enter into the calendar/calc/fileSLE/etc. \line
+//d \par
+//d
+//d {\b Version 2.2h (09/07/2002)} \line
+//d {\f4\'B7} \tab Changes to the calculator classes to fix some str() issues. Thanks Jorge Rosado!! \line
+//d {\f4\'B7} \tab Changes to context menu for the calendar to remove some refrences to fileopen \line
+//d \tab that should not have been there. \line
+//d {\f4\'B7} \tab Changed the init of dateSLE to correct an error that the compiler missed <g> \line
+//d {\f4\'B7} \tab Changed the showCalendar method of rightSLE to remove the setinternational(#windows) \line
+//d \tab This fixes a problem introduced with the last release \line
+//d {\f4\'B7} \tab Changed postinit of the calculator to call initcalc like the inline version. \line
+//d \par
+//d
+//d {\b Version 2.2g (07/20/2002)} \line
+//d {\f4\'B7} \tab moved the getlocaleinfo out of the rightSLE init to the showcalendar dialog as it \line
+//d \tab is not needed in most cases. It only affects the Calendar \line
+//d {\f4\'B7} \tab Made changes to class inlineCalc to properly allow \line
+//d \tab a value to be inserted when the SLE is first created. \line
+//d {\f4\'B7} \tab Changed inlineCalcSLE method postinit to initcalc. This \line
+//d \tab fixes a problem where the rightSLE postinit was not being called. The new \line
+//d \tab name properly identifies the function of the method. \line
+//d {\f4\'B7} \tab Added logic in the buttondown to give focus to the SLE that the \line
+//d \tab button is attached to. \line
+//d {\f4\'B7} \tab Added a new protected ivar lAllowNumericFocus. This is initially \line
+//d \tab set to FALSE to maintain backwards compatibility with current rightSLE installations. \line
+//d \tab Set it to TRUE and your numeric SLES will automatically position the cursor to the \line
+//d \tab end of the SLE or imidiately to the left of the decimal. \line
+//d {\f4\'B7} \tab Fixed a bug with folderSLE not going to the contents of the SLE the \line
+//d \tab the first time called. \line
+//d {\f4\'B7} \tab A special thanks to Zygmunt Stasiak who has given me many suggestions \line
+//d \tab on how I can improve rightSLE. Some of his suggestions are included in 2.2g \line
+//d \par
+//d
+//d {\b Version 2.2f (03/14/2002)} \line
+//d {\f4\'B7} \tab Fixed a bug in the Selection where highlighting the entire \line
+//d   \tab line and hitting 0 would not erase the past behind the decimal. \line
+//d {\f4\'B7} \tab Added access PB to class right SLE so resize events \line
+//d   \tab would be able to access and move the underlying button. \line
+//d {\f4\'B7} \tab Redid some of processnums logic to use the strongly typed \line
+//d   \tab versions of the commands (substr3 instead of substr). Thanks Ivo!! \line
+//d \par
 ENDTEXT
-TEXTBLOCK Postinit
-//l { \b Use of Postinit with rightSLE}
+
+
+*/
+/*
+TEXTBLOCK Readme 2003
+//l Release Notes for 2003
 //d
-//d
-//d rightSLE now includes a postinit. This will give you the ability to make \line
-//d global changes to SLEs without having to go to each of your \line
-//d screens. \par
-//d {\b Things that you can control in the postinit:} \line
-//d {\f4\'B7} \tab lTurnOffEnter - Default is FALSE to allow enter key processing \line
-//d   \tab you can set this to TRUE if you do not want the enterkey to be processes \line
-//d   \tab of you are using clipperkeys. \line
-//d {\f4\'B7} \tab lObeyFocusChangeAlways - default is FALSE. This will let you \line
-//d   \tab click into an SLE via the mouse and always obey the rules if the SLE is empty. \line
-//d   \tab If the SLE has something in it, the mouse will go to the click position. \line
-//d   \tab Set the to TRUE is you always want to obey the FSEL setting and ignore the \line
-//d   \tab mouse click position. \line
-//d {\f4\'B7} \tab wFocusSel - This is the initial focus selection. rightSLE's default is FSEL_HOME. \line
-//d   \tab You can change this to ANY valid focus selection code. The current valid ones for VO 2.7b are: \line
-//d   \tab FSEL_ALL \tab \tab - All text selected \line
-//d   \tab FSEL_HOME \tab \tab - Cursor to the left most position of the SLE. \line
-//d   \tab FSEL_END \tab  \tab - Cursor to the right most character of the SLE. \line
-//d   \tab FSEL_TRIMMED \tab - Cursor to the right most filled in character of the SLE (trimed position). \line
-//d {\f4\'B7} \tab lAlignCalendarLeft - calendar allignment in relation to the SLE. \line
-//d   \tab rightSLE default is TRUE. This will allign the calendar to the left of the SLE where possible. \line
-//d   \tab By setting this to FALSE, you will cause a right allignment of the calendar. \line
-//d {\f4\'B7} \tab lAllowCutandPaste - This controls rightSLE's ability to process \line
-//b   \tab the windows cut, copy, paste, undo messages. This is set to \line
-//b   \tab {\b TRUE} by default. \line
-//d {\f4\'B7} \tab lDoubleAsToday - This controls rightSLE's calendar. Bu setting this to true \line
-//d   \tab you will cause a double click on a dateSLE (with button only) to put \line
-//d   \tab in today's date. The button wil still function as normal. This has no affect \line
-//d   \tab on a rightSLE that has only a date fieldspec (no button). There is also an assign: \line
-//d   \tab DoubleAsToday(lVar) that allows this setting to be set on an individual SLE. \line
-//d {\f4\'B7} \tab lAllowNumericFocus - This controls rightSLE's numeric SLEs \line
-//d	  \tab TRUE \tab \tab - When changing focus, the SLE positions itself to the left of the decimal \line
-//d   \tab \tab \tab Please note that this does not work is wFocusSel is set to FSEL_ALL. \line
-//d   \tab \tab \tab If there is no decimal, the cursor if put to the far side of the SLE. This will \line
-//d   \tab \tab \tab let input happen the way most users expect. \line
-//d   \tab FALSE \tab - rightSLE default to maintain backward compatibility. \line
-//d {\f4\'B7} \tab ProcessArrowKeys - This controls rightSLE's arrow processing logic \line
-//d	  \tab TRUE \tab \tab - When user hits up or down arrow, focus is changed to the next or previous control \line
-//d   \tab FALSE \tab - rightSLE default to maintain backward compatibility. \line
-//d {\f4\'B7} \tab symImageType - This controls the push buttons for rightSLE \line
-//d	  \tab #BITMAP \tab - Use bitmap images \line
-//d   \tab #ICON \tab \tab - Use icon images \line
-//d {\f4\'B7} \tab lUseOldButtons - This controls which button class that rightSLE uses. \line
-//d	  \tab TRUE \tab - Use the original buttons included with rightSLE \line
-//d	  \tab FALSE \tab - Use the new buttons that support XP Styles. \line
-//d {\f4\'B7} \tab lRememberPosition - This controls which button class that rightSLE uses. \line
-//d	  \tab TRUE \tab - rightSLE will remember the last position you were in and reposition the \line
-//d   \tab \tab \tab cursor to the last position each time you tab into the control. \line
-//d   \tab \tab \tab Please note. This ivar {\b ONLY} works if lObeyFocusRuleAlways is set to false! \line
-//d	  \tab FALSE \tab - Follow the normal focuschange logic. \line
-//d {\f4\'B7} \tab symCalandarClass - This controls the class that get instanciated when you click on a calendard button \line
-//d {\f4\'B7} \tab symCalcClass - This controls the class that get instanciated when you click on a calculator button \line
-//d   \par
+//d {\b Version 2.7 (12/06/2003)} \line
+//d {\f4\'B7} \tab Changes to processnum to correct problems with databound controls calling \line
+//d \tab validateion after each keystroke. \line
+//d {\f4\'B7} \tab Initial compile for VO 2.7 \line
+//d \par
+//d {\b Version 2.6c (03/01/2003) Devfest 2003} \line
+//d {\f4\'B7} \tab Changes to processnum to correct problems with the delete key and thousand seperators \line
+//d {\f4\'B7} \tab Changes to processnum to delete if 1st chat is a non-editable char \line
+//d {\f4\'B7} \tab New option lRememberPosition. This will remember the SLE position between focus changes. \line
+//d \par
 ENDTEXT
+
+*/
+/*
+TEXTBLOCK Readme 2004
+//l Release Notes for 2004
+//d
+//d {\b Version 2.7e (11/12/2004)} \line
+//d {\f4\'B7} \tab Added a new ivar to control which button type is used. \line
+//d \tab set to lUseOldButtons of you want to use the VO 2.6 button style. \line
+//d {\f4\'B7} \tab changed the default for lUseRecoucesforIcons to true. This will \line
+//d \tab use the resouce statements included with rightSLE instead of user defined resouces. \line
+//d \tab If you want to use your own bitmaps instead of the ones included, simply set \line
+//d \tab lUseRecoucesforIcons to false in your rightSLE postinit and make sure that you \line
+//d \tab have the bmps in your exe's directory. \line
+//d
+//d {\b Version 2.7d (11/11/2004)} \line
+//d {\f4\'B7} \tab Recomplied in 2.7b to remove errors with class initialization mismatches \line
+//d \tab Thanks Robert and Dev Team for the tighter compiler!!! \line
+//d
+//d {\b Version 2.7c (08/07/2004)} \line
+//d {\f4\'B7} \tab Change in the focuschange method to reflect that the super class can return \line
+//d \tab a value and I need to pass that value on (Thanks Thomas!) \line
+//d
+//d {\b Version 2.7c (06/24/2004)} \line
+//d {\f4\'B7} \tab Redid the button assignment logic to reduce code bloat \line
+//d \tab and to allow the user to use bitmaps or icons (Thanks Simon) \line
+//d {\f4\'B7} \tab Strongly typed accesses and assigns for fileSLE and folderSLE \line
+//d \tab Please note that at a future date, the exports in these classes will become \line
+//d \tab protects. Please adjust your code so you do not get caught in the future!! \line
+//d {\f4\'B7} \tab Reworked the button class to better handle xp themes \line
+//d {\f4\'B7} \tab Added a new assign ProcessArrowKeys \line
+//d \tab This setting will turn on / off arrowkey processing in the SLE (Thanks Joze) \line
+//d {\f4\'B7} \tab Changed showpb to disable the oPB is the window is readonly instead of the SLE (Thanks Nick) \line
+//d \par
+//d {\b Version 2.7b (06/09/2004)} \line
+//d {\f4\'B7} \tab Added selection assign to make rightSLE compatible with VO 2.7a \line
+//d {\f4\'B7} \tab Corrected a bug where Shift Home would only select to the left of the decimal. (thanks Chris!) \line
+//d {\f4\'B7} \tab Redid the logic in the focuschange method to reduce unneeded postmessages \line
+//d \tab Paul changed the sendmessages to postmessages in the super class so I no longer needed to send \line
+//d \tab most OF what I was sending before. \line
+//d \par
+//d {\b Version 2.7a (01/29/2004)} \line
+//d {\f4\'B7} \tab Recompiled and tested for the 2.7 official release \line
+//d \par
+ENDTEXT
+
+*/
+/*
+TEXTBLOCK Readme 2005
+//l Release Notes for 2005
+//d
+//d {\b Version 2.7g4 (11/26/2005)} \line
+//d {\f4\'B7} \tab Fixed an issue with the picture assign. It was not reseting the oEditString \line
+//d \tab  before assigning the new pcture and would not show the string properly. (Thanks Tracy Thomas!!). \line
+//d {\f4\'B7} \tab Added a new method upDateFieldSpect. This will let you change the fieldspec on the fly. \line
+//d \par
+//d {\b Version 2.7g2 (09/23/2005)} \line
+//d {\f4\'B7} \tab Changed showcalendar to allow bbrowser to save back into the control. \line
+//d {\f4\'B7} \tab Added checks for a valid date before calling the calendar routine. \line
+//d \tab Also made the tests when the + or - keys are hit to increment or decrement a date. (Thanks Barbara!!) \line
+//d {\f4\'B7} \tab Changed my assigns to return void. \line
+//d \par
+//d
+//d {\b Version 2.7g1 (08/31/2005)} \line
+//d {\f4\'B7} \tab Added a new ivar called lTurnNumericPictureNumeric. \line
+//d \tab the default for this is FALSE. this fixes transformation issues when changing \line
+//d \tab picture clause on the fly (thanks Tracy Thomas!!) \line
+//d \par
+//d
+//d {\b Version 2.7g (08/12/2005)} \line
+//d {\f4\'B7} \tab Added a new class called wmDateRange. \line
+//d \tab This class is the container for the new date range logic implemented in the \line
+//d \tab PEcalendar class. \line
+//d \tab a BIG thanks to V.Vekov for suggestion the new feature!!!!!! \line
+//d {\f4\'B7} \tab Added a new ivar called oDateRange to class rightSLE. \line
+//d {\f4\'B7} \tab Added an access/assign pair for DateRange for class rightSLE. \line
+//d {\f4\'B7} \tab Added an protected iVar called nOwnerAlignment. \line
+//d \tab This will save the curent owneralignment so the push button can be dynamically \line
+//d \tab reset. This will also allow you to set the owner alignment in the rightSLE postinit \line
+//d \tab and it will take care of the SLEs and associated push buttons. \line
+//d {\f4\'B7} \tab Added an origin assign to let you hard code a phyical placement of the SLE. \line
+//d \tab This method also resets the owneralignment if present (thanks Geoff!! ) \line
+//d {\f4\'B7} \tab corrected a bug in the picture assign. I was being too agressive in assigning a \line
+//d \tab numeric attribute to a picture clause. I should not mess with the type is the picture begins with \line
+//d \tab @R \line
+//d \par
+//d {\b Version 2.7f (03/10/2005)} \line
+//d {\f4\'B7} \tab Added a new ivar called cCurSymbol to hold the currency symbol ($,R, etc). \line
+//d {\f4\'B7} \tab Added a new method called CurrencySymbol to set the currency symbol and adjust the template string \line
+//d \tab for pictures. \line
+//d {\f4\'B7} \tab Added a new method to class rightSLEFormattedString to look at the empty picture that \line
+//d \tab is initially assigned to a formatted string. If it sees a $ in the template string, it will \line
+//d \tab adjust the picture to "@R " + the locale currency string. It will also adjust the fieldspec picture. \line
+//d \tab the effect will be that the currency string will appear at the left of the SLE. \line
+//d {\f4\'B7} \tab Added a new access called CurrencyPosition.\line
+//d \tab This access is used from rightSLEFormattedString:EmptyValue to deturmine which side \line
+//d \tab to place the currency marker. 0 and 2 means to the left, 1 and 3 mean to the right. \line
+//d {\f4\'B7} \tab Removed the restriction for a fieldspec. rightSLE now works with pictures as well as fieldspecs. \line
+//d \tab Thanks Richard for giving me the push to finally make this change \line
+//d {\f4\'B7} \tab Removed some warning messages from CurrencySymbol (thanks Geoff!). \line
+//d {\f4\'B7} \tab Made changes for the tighter VO compiler. \line
+//d
+ENDTEXT
+
+*/
+/*
+TEXTBLOCK Readme 2006
+//l Release Notes for 2006
+//d
+//d {\b Version 2.7g8 (10/24/2006)} \line
+//d {\f4\'B7} \tab Changed class dateSLE to inherit from dateSLENoPB (No push button). \line
+//d \tab This gives the prgorammer the ability to get the dateSLE without the pushbutton \line
+//d \tab but still retain the context menu (Thanks Barbara)  \line
+//d \par
+//d {\b Version 2.7g7 (07/24/2006)} \line
+//d {\f4\'B7} \tab Changed processEnter for class inlinecalcSLE to process the normal enterkey if there is only 1 operand. \line
+//d {\f4\'B7} \tab Worked on copy/paste issues in the main rightSLE dispatch. \line
+//d {\f4\'B7} \tab Added a check to the fieldspec assign so it wont reset the textvalue the first time through. \line
+//d \par
+//d {\b Version 2.7g6 (04/01/2006)} \line
+//d {\f4\'B7} \tab Added a Type access so you can change the oeditString:Type from your program.\line
+//d \tab This is helpful for resetting pictures dynamically. \line
+//d \par
+//d {\b Version 2.7g5 (01/06/2006)} \line
+//d {\f4\'B7} \tab Changes to the updatefieldspec (thanks Geoff!!) \line
+//d {\f4\'B7} \tab added a new assign (fieldspec) to properly reset the fieldspec if that is all you want to do \line
+//d {\f4\'B7} \tab added callbacks to the PECalendar Class. this will allow the programmer to control \line
+//d \tab how the holiday array or anything else is set up in the calendar control on a month/year change \line
+//d \tab or when a highlighted day (in the aHoliday array) is rightclicked. (Thanks John Parker!!) \line
+//d \line
+//d \tab Method onMonthYear(dNewDate) class myclass \tab This must return a new Holiday array \line
+//d \tab Method onholidayrightClick(oDlg,nDate) class myclass \tab this returns NIL \line
+//d \tab \tab onHolidayrightClick also passes the oDlg that holds the calendar so you can do calendar manipulations \line
+//d \line
+//d {\f4\'B7} \tab added a new export symCalcMethod which represents the method that gets called when the calc button his hit. \line
+//d \tab This was changed from symMethod to allow the user to change the popup calculator method \line
+//d \tab in the same way as the calendar. Previously, the #showCalc method was hardcoded in the calcSLe init. \line
+//d {\f4\'B7} \tab added a new export symCalcClass which represents the class that is instanciated \line
+//d \tab when the calculator button is hit. \line
+//d {\f4\'B7} \tab added a new export symCalendarClass which represents the class that is instanciated \line
+//d \tab when the calendar button is hit. \line
+//d {\f4\'B7} \tab moved the location of all resource statements to \\%cavodir%\\IMDATA \line
+//d \par
+ENDTEXT
+
+*/
+/*
+TEXTBLOCK Readme 2007
+//l Release Notes for 2007
+//d
+//d {\b Version 2.8a (07/25/2007)} \line
+//d {\f4\'B7} \tab Made changes to the PECalendar Class based on what the transporter reported. \line
+//d \tab There were functions that the sending side was asking for a date but the method was returning \line
+//d \tab a long. These have been corrected. \line
+//d {\f4\'B7} \tab cleanup of the main dispatch based on transper found issues. \line
+//d {\f4\'B7} \tab Added axit and destroy to PECaldendar to cleanup brushes that were created during init. \line
+//d \par
+//d {\b Version 2.8 (04/25/2007)} \line
+//d {\f4\'B7} \tab Changed the dispatch in calcSLE to correct the symMethod to symCalcMethod (Thanks John!). \line
+//d {\f4\'B7} \tab added the ability to the dateSLE to allow t or T to put in today's Thanks John!). \line
+//d \par
+//d
+//d {\b Version 2.7g9 (01/05/2007)} \line
+//d {\f4\'B7} \tab Changed class dlgPECalendar to handle a day callback (thanks Erik!!). \line
+//d {\f4\'B7} \tab Optimized the callback methods in class dlgPECalendar so they only check \line
+//d \tab the owner on init instead of each time a callback happens. This should improve speed \\line
+//d \tab of the calendar in general movement. \line
+//d {\f4\'B7} \tab Optimized the callback methods in class PECalendar for the same reasons as above. \line
+//d \par
+ENDTEXT
+
+*/
+/*
+TEXTBLOCK Readme 2008
+//l Release Notes for 2008
+//d
+//d {\b Version 2.8c (03/27/2008)} \line
+//d {\f4\'B7} \tab Fixed another issue with owner alingment nd p[ush buttons. \line
+//d {\f4\'B7} \tab emoved all calls to pclone as it is not supported in Vulcan. \line
+//d \par
+//d {\b Version 2.8b (03/15/2008)} \line
+//d {\f4\'B7} \tab Fixed an issue with owner alingment. \line
+//d \par
+ENDTEXT        
+
+*/
+/*
+TEXTBLOCK Readme 2009
+//l Release Notes for 2009
+//d
+//d {\b Version 2.8d (04/09/2009)} \line
+//d {\f4\'B7} \tab Fixed issue with the verticle spinner form the dataSLE control. \line
+//d \par
+ENDTEXT
+
+*/
+/*
 TEXTBLOCK Readme pre 2001
 //l Release Notes pre 2001
 //d
@@ -390,263 +710,6 @@ TEXTBLOCK Readme pre 2001
 //d Willie Moore
 //d williem@wmConsulting
 ENDTEXT
-TEXTBLOCK _Contact Willie
-//l Contact information
-//d I am always interested in feedback on rightSLE. \line
-//d
-//d For bug or enhancements requests, please contact me at: \line
-//d {\b Williem@wmconsulting.com}
-ENDTEXT
 
-TEXTBLOCK Readme 2002
-//l Release Notes for 2002
-//d
-//d {\b Version 2.6b (12/01/2002)} \line
-//d {\f4\'B7} \tab Changes to processnum to change problems with movement on the right side \line
-//d \tab of the decimal. the cause the curror to be positioned on the wrong side of \line
-//d \tab the character if the delete or back key was pressed. \line
-//d {\f4\'B7} \tab Changed processnum to retain the right side of a decimal if the caracter is being inserted. Thanks J�zef!!! \line
-//d {\f4\'B7} \tab Changed processnum to not delete charaters in a selection if it is just a movement key. \line
-//d {\f4\'B7} \tab Changed processnum to move selection to beginning or end of selection block if it is a movement key. \line
-//d {\f4\'B7} \tab Removed the init of class dlgPECalendar as it was causing postinit to be called twice and was contributing nothing. \line
-//d {\f4\'B7} \tab Changed the bitmap size in the init of dateSLE,pbFolderSLe,pbFileSLE to reflect that actual bitmap size. \line
-//d {\f4\'B7} \tab Changed the offset in processnum (line 96) to  properly allow an overwrite of the last character if the fieldspec is exactly the size of an integerSLE. \line
-//d \par
-//d {\b Version 2.6a (11/20/2002)} \line
-//d {\f4\'B7} \tab Changes to processnum to remove a hardcoded decimal. \line
-//d {\f4\'B7} \tab Changed showcalendar to change a focus selection problem with the tab control. \line
-//d {\f4\'B7} \tab Changed showcalc to change a focus selection problem with the tab control. \line
-//d {\f4\'B7} \tab Commented out the setfocus postmessage in SLEButton to correct a problem \line
-//d \tab with focus selection after hitting ESC from the calculator or calendar. \line
-//d \tab The focus was in the correct place, the carrot showing cursor position as not showing up. \line
-//d \tab Please not that this was only occuring when you placed a dateSLE on a tab control! \line
-//d \tab If you want to reenable the focus message, it is commented out in method: \line
-//d \tab \tab SLEButton:dispatch() \line
-//d {\f4\'B7} \tab Changed rightSLE dispatch to allow shift right_arrow to properly control selection. \line
-//d {\f4\'B7} \tab Added new ivars to fileSLE to set the initial dir and title. Thanks Geoff!!! \line
-//d \tab \tab sInitDir \tab Initial directory to position the Open / save dialog. \line
-//d \tab \tab \tab \tab This setting is overritten by anything typed into the field. \line
-//d \tab \tab sTitle \tab \tab The title of the Open / Save dialog. \line
-//d \par
-//d
-//d {\b Version 2.6 (09/26/2002)} \line
-//d {\f4\'B7} \tab Changes for VO 2.6 \line
-//d \par
-//d
-//d {\b Version 2.3a (09/17/2002)} \line
-//d {\f4\'B7} \tab Change to the float2string method for inline and popupcalculator. Thanks U.C Mehaboob!!! \line
-//d \par
-//d
-//d {\b Version 2.3 (09/16/2002)} \line
-//d {\f4\'B7} \tab Changes to the calculator classes to fix some misc bugs. Thanks U.C Mehaboob!!! \line
-//d {\f4\'B7} \tab Changes to the rightSLE dispatch to clean up some code \line
-//d {\f4\'B7} \tab Changes to the rightSLE dispatch to allow for cntrl enter to post a WM_LBUTTONDBLCLK message. \line
-//d \tab This will allow the keyboard to be used to enter into the calendar/calc/fileSLE/etc. \line
-//d \par
-//d
-//d {\b Version 2.2h (09/07/2002)} \line
-//d {\f4\'B7} \tab Changes to the calculator classes to fix some str() issues. Thanks Jorge Rosado!! \line
-//d {\f4\'B7} \tab Changes to context menu for the calendar to remove some refrences to fileopen \line
-//d \tab that should not have been there. \line
-//d {\f4\'B7} \tab Changed the init of dateSLE to correct an error that the compiler missed <g> \line
-//d {\f4\'B7} \tab Changed the showCalendar method of rightSLE to remove the setinternational(#windows) \line
-//d \tab This fixes a problem introduced with the last release \line
-//d {\f4\'B7} \tab Changed postinit of the calculator to call initcalc like the inline version. \line
-//d \par
-//d
-//d {\b Version 2.2g (07/20/2002)} \line
-//d {\f4\'B7} \tab moved the getlocaleinfo out of the rightSLE init to the showcalendar dialog as it \line
-//d \tab is not needed in most cases. It only affects the Calendar \line
-//d {\f4\'B7} \tab Made changes to class inlineCalc to properly allow \line
-//d \tab a value to be inserted when the SLE is first created. \line
-//d {\f4\'B7} \tab Changed inlineCalcSLE method postinit to initcalc. This \line
-//d \tab fixes a problem where the rightSLE postinit was not being called. The new \line
-//d \tab name properly identifies the function of the method. \line
-//d {\f4\'B7} \tab Added logic in the buttondown to give focus to the SLE that the \line
-//d \tab button is attached to. \line
-//d {\f4\'B7} \tab Added a new protected ivar lAllowNumericFocus. This is initially \line
-//d \tab set to FALSE to maintain backwards compatibility with current rightSLE installations. \line
-//d \tab Set it to TRUE and your numeric SLES will automatically position the cursor to the \line
-//d \tab end of the SLE or imidiately to the left of the decimal. \line
-//d {\f4\'B7} \tab Fixed a bug with folderSLE not going to the contents of the SLE the \line
-//d \tab the first time called. \line
-//d {\f4\'B7} \tab A special thanks to Zygmunt Stasiak who has given me many suggestions \line
-//d \tab on how I can improve rightSLE. Some of his suggestions are included in 2.2g \line
-//d \par
-//d
-//d {\b Version 2.2f (03/14/2002)} \line
-//d {\f4\'B7} \tab Fixed a bug in the Selection where highlighting the entire \line
-//d   \tab line and hitting 0 would not erase the past behind the decimal. \line
-//d {\f4\'B7} \tab Added access PB to class right SLE so resize events \line
-//d   \tab would be able to access and move the underlying button. \line
-//d {\f4\'B7} \tab Redid some of processnums logic to use the strongly typed \line
-//d   \tab versions of the commands (substr3 instead of substr). Thanks Ivo!! \line
-//d \par
-ENDTEXT
 
-TEXTBLOCK Readme 2003
-//l Release Notes for 2003
-//d
-//d {\b Version 2.7 (12/06/2003)} \line
-//d {\f4\'B7} \tab Changes to processnum to correct problems with databound controls calling \line
-//d \tab validateion after each keystroke. \line
-//d {\f4\'B7} \tab Initial compile for VO 2.7 \line
-//d \par
-//d {\b Version 2.6c (03/01/2003) Devfest 2003} \line
-//d {\f4\'B7} \tab Changes to processnum to correct problems with the delete key and thousand seperators \line
-//d {\f4\'B7} \tab Changes to processnum to delete if 1st chat is a non-editable char \line
-//d {\f4\'B7} \tab New option lRememberPosition. This will remember the SLE position between focus changes. \line
-//d \par
-ENDTEXT
-TEXTBLOCK Readme 2004
-//l Release Notes for 2004
-//d
-//d {\b Version 2.7e (11/12/2004)} \line
-//d {\f4\'B7} \tab Added a new ivar to control which button type is used. \line
-//d \tab set to lUseOldButtons of you want to use the VO 2.6 button style. \line
-//d {\f4\'B7} \tab changed the default for lUseRecoucesforIcons to true. This will \line
-//d \tab use the resouce statements included with rightSLE instead of user defined resouces. \line
-//d \tab If you want to use your own bitmaps instead of the ones included, simply set \line
-//d \tab lUseRecoucesforIcons to false in your rightSLE postinit and make sure that you \line
-//d \tab have the bmps in your exe's directory. \line
-//d
-//d {\b Version 2.7d (11/11/2004)} \line
-//d {\f4\'B7} \tab Recomplied in 2.7b to remove errors with class initialization mismatches \line
-//d \tab Thanks Robert and Dev Team for the tighter compiler!!! \line
-//d
-//d {\b Version 2.7c (08/07/2004)} \line
-//d {\f4\'B7} \tab Change in the focuschange method to reflect that the super class can return \line
-//d \tab a value and I need to pass that value on (Thanks Thomas!) \line
-//d
-//d {\b Version 2.7c (06/24/2004)} \line
-//d {\f4\'B7} \tab Redid the button assignment logic to reduce code bloat \line
-//d \tab and to allow the user to use bitmaps or icons (Thanks Simon) \line
-//d {\f4\'B7} \tab Strongly typed accesses and assigns for fileSLE and folderSLE \line
-//d \tab Please note that at a future date, the exports in these classes will become \line
-//d \tab protects. Please adjust your code so you do not get caught in the future!! \line
-//d {\f4\'B7} \tab Reworked the button class to better handle xp themes \line
-//d {\f4\'B7} \tab Added a new assign ProcessArrowKeys \line
-//d \tab This setting will turn on / off arrowkey processing in the SLE (Thanks Joze) \line
-//d {\f4\'B7} \tab Changed showpb to disable the oPB is the window is readonly instead of the SLE (Thanks Nick) \line
-//d \par
-//d {\b Version 2.7b (06/09/2004)} \line
-//d {\f4\'B7} \tab Added selection assign to make rightSLE compatible with VO 2.7a \line
-//d {\f4\'B7} \tab Corrected a bug where Shift Home would only select to the left of the decimal. (thanks Chris!) \line
-//d {\f4\'B7} \tab Redid the logic in the focuschange method to reduce unneeded postmessages \line
-//d \tab Paul changed the sendmessages to postmessages in the super class so I no longer needed to send \line
-//d \tab most OF what I was sending before. \line
-//d \par
-//d {\b Version 2.7a (01/29/2004)} \line
-//d {\f4\'B7} \tab Recompiled and tested for the 2.7 official release \line
-//d \par
-ENDTEXT
-TEXTBLOCK Readme 2005
-//l Release Notes for 2005
-//d
-//d {\b Version 2.7g4 (11/26/2005)} \line
-//d {\f4\'B7} \tab Fixed an issue with the picture assign. It was not reseting the oEditString \line
-//d \tab  before assigning the new pcture and would not show the string properly. (Thanks Tracy Thomas!!). \line
-//d {\f4\'B7} \tab Added a new method upDateFieldSpect. This will let you change the fieldspec on the fly. \line
-//d \par
-//d {\b Version 2.7g2 (09/23/2005)} \line
-//d {\f4\'B7} \tab Changed showcalendar to allow bbrowser to save back into the control. \line
-//d {\f4\'B7} \tab Added checks for a valid date before calling the calendar routine. \line
-//d \tab Also made the tests when the + or - keys are hit to increment or decrement a date. (Thanks Barbara!!) \line
-//d {\f4\'B7} \tab Changed my assigns to return void. \line
-//d \par
-//d
-//d {\b Version 2.7g1 (08/31/2005)} \line
-//d {\f4\'B7} \tab Added a new ivar called lTurnNumericPictureNumeric. \line
-//d \tab the default for this is FALSE. this fixes transformation issues when changing \line
-//d \tab picture clause on the fly (thanks Tracy Thomas!!) \line
-//d \par
-//d
-//d {\b Version 2.7g (08/12/2005)} \line
-//d {\f4\'B7} \tab Added a new class called wmDateRange. \line
-//d \tab This class is the container for the new date range logic implemented in the \line
-//d \tab PEcalendar class. \line
-//d \tab a BIG thanks to V.Vekov for suggestion the new feature!!!!!! \line
-//d {\f4\'B7} \tab Added a new ivar called oDateRange to class rightSLE. \line
-//d {\f4\'B7} \tab Added an access/assign pair for DateRange for class rightSLE. \line
-//d {\f4\'B7} \tab Added an protected iVar called nOwnerAlignment. \line
-//d \tab This will save the curent owneralignment so the push button can be dynamically \line
-//d \tab reset. This will also allow you to set the owner alignment in the rightSLE postinit \line
-//d \tab and it will take care of the SLEs and associated push buttons. \line
-//d {\f4\'B7} \tab Added an origin assign to let you hard code a phyical placement of the SLE. \line
-//d \tab This method also resets the owneralignment if present (thanks Geoff!! ) \line
-//d {\f4\'B7} \tab corrected a bug in the picture assign. I was being too agressive in assigning a \line
-//d \tab numeric attribute to a picture clause. I should not mess with the type is the picture begins with \line
-//d \tab @R \line
-//d \par
-//d {\b Version 2.7f (03/10/2005)} \line
-//d {\f4\'B7} \tab Added a new ivar called cCurSymbol to hold the currency symbol ($,R, etc). \line
-//d {\f4\'B7} \tab Added a new method called CurrencySymbol to set the currency symbol and adjust the template string \line
-//d \tab for pictures. \line
-//d {\f4\'B7} \tab Added a new method to class rightSLEFormattedString to look at the empty picture that \line
-//d \tab is initially assigned to a formatted string. If it sees a $ in the template string, it will \line
-//d \tab adjust the picture to "@R " + the locale currency string. It will also adjust the fieldspec picture. \line
-//d \tab the effect will be that the currency string will appear at the left of the SLE. \line
-//d {\f4\'B7} \tab Added a new access called CurrencyPosition.\line
-//d \tab This access is used from rightSLEFormattedString:EmptyValue to deturmine which side \line
-//d \tab to place the currency marker. 0 and 2 means to the left, 1 and 3 mean to the right. \line
-//d {\f4\'B7} \tab Removed the restriction for a fieldspec. rightSLE now works with pictures as well as fieldspecs. \line
-//d \tab Thanks Richard for giving me the push to finally make this change \line
-//d {\f4\'B7} \tab Removed some warning messages from CurrencySymbol (thanks Geoff!). \line
-//d {\f4\'B7} \tab Made changes for the tighter VO compiler. \line
-//d
-ENDTEXT
-TEXTBLOCK Readme 2006
-//l Release Notes for 2006
-//d
-//d {\b Version 2.7g8 (10/24/2006)} \line
-//d {\f4\'B7} \tab Changed class dateSLE to inherit from dateSLENoPB (No push button). \line
-//d \tab This gives the prgorammer the ability to get the dateSLE without the pushbutton \line
-//d \tab but still retain the context menu (Thanks Barbara)  \line
-//d \par
-//d {\b Version 2.7g7 (07/24/2006)} \line
-//d {\f4\'B7} \tab Changed processEnter for class inlinecalcSLE to process the normal enterkey if there is only 1 operand. \line
-//d {\f4\'B7} \tab Worked on copy/paste issues in the main rightSLE dispatch. \line
-//d {\f4\'B7} \tab Added a check to the fieldspec assign so it wont reset the textvalue the first time through. \line
-//d \par
-//d {\b Version 2.7g6 (04/01/2006)} \line
-//d {\f4\'B7} \tab Added a Type access so you can change the oeditString:Type from your program.\line
-//d \tab This is helpful for resetting pictures dynamically. \line
-//d \par
-//d {\b Version 2.7g5 (01/06/2006)} \line
-//d {\f4\'B7} \tab Changes to the updatefieldspec (thanks Geoff!!) \line
-//d {\f4\'B7} \tab added a new assign (fieldspec) to properly reset the fieldspec if that is all you want to do \line
-//d {\f4\'B7} \tab added callbacks to the PECalendar Class. this will allow the programmer to control \line
-//d \tab how the holiday array or anything else is set up in the calendar control on a month/year change \line
-//d \tab or when a highlighted day (in the aHoliday array) is rightclicked. (Thanks John Parker!!) \line
-//d \line
-//d \tab Method onMonthYear(dNewDate) class myclass \tab This must return a new Holiday array \line
-//d \tab Method onholidayrightClick(oDlg,nDate) class myclass \tab this returns NIL \line
-//d \tab \tab onHolidayrightClick also passes the oDlg that holds the calendar so you can do calendar manipulations \line
-//d \line
-//d {\f4\'B7} \tab added a new export symCalcMethod which represents the method that gets called when the calc button his hit. \line
-//d \tab This was changed from symMethod to allow the user to change the popup calculator method \line
-//d \tab in the same way as the calendar. Previously, the #showCalc method was hardcoded in the calcSLe init. \line
-//d {\f4\'B7} \tab added a new export symCalcClass which represents the class that is instanciated \line
-//d \tab when the calculator button is hit. \line
-//d {\f4\'B7} \tab added a new export symCalendarClass which represents the class that is instanciated \line
-//d \tab when the calendar button is hit. \line
-//d {\f4\'B7} \tab moved the location of all resource statements to \\%cavodir%\\IMDATA \line
-//d \par
-ENDTEXT
-TEXTBLOCK Readme 2007
-//l Release Notes for 2007
-//d
-//d {\b Version 2.8 (04/25/2007)} \line
-//d {\f4\'B7} \tab Changed the dispatch in calcSLE to correct the symMethod to symCalcMethod (Thanks John!). \line
-//d {\f4\'B7} \tab added the ability to the dateSLE to allow t or T to put in today's Thanks John!). \line
-//d \par
-//d
-//d {\b Version 2.7g9 (01/05/2007)} \line
-//d {\f4\'B7} \tab Changed class dlgPECalendar to handle a day callback (thanks Erik!!). \line
-//d {\f4\'B7} \tab Optimized the callback methods in class dlgPECalendar so they only check \line
-//d \tab the owner on init instead of each time a callback happens. This should improve speed \\line
-//d \tab of the calendar in general movement. \line
-//d {\f4\'B7} \tab Optimized the callback methods in class PECalendar for the same reasons as above. \line
-//d \par
-ENDTEXT
 */

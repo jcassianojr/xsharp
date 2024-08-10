@@ -1,29 +1,32 @@
-#define DLGPECALENDAR_CALENDAR 100
-#define _DLGPECALENDAR_CALENDAR 100 
+﻿#region DEFINES
+STATIC DEFINE _DLGPECALENDAR_CALENDAR := 100 
+STATIC DEFINE DLGPECALENDAR_CALENDAR := 100
+#endregion
+
 class _dlgPECalendar inherit DIALOGWINDOW 
 
 	protect oDCCalendar as PECALENDAR
 
   //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
-constructor(oParent,uExtra) 
 
+CONSTRUCTOR(oParent,uExtra)  
 
-    self:PreInit(oParent,uExtra)
+self:PreInit(oParent,uExtra)
 
-    super(oParent,ResourceID{"_dlgPECalendar",_GetInst()},TRUE)
+SUPER(oParent,ResourceID{"_dlgPECalendar",_GetInst()},TRUE)
 
-    oDCCalendar := PECALENDAR{self,ResourceID{_DLGPECALENDAR_CALENDAR,_GetInst()}}
-    oDCCalendar:HyperLabel := HyperLabel{#Calendar,NULL_STRING,NULL_STRING,NULL_STRING}
+oDCCalendar := PECALENDAR{self,ResourceID{_DLGPECALENDAR_CALENDAR,_GetInst()}}
+oDCCalendar:HyperLabel := HyperLabel{#Calendar,NULL_STRING,NULL_STRING,NULL_STRING}
 
-    self:Caption := "Calendar"
-    self:HyperLabel := HyperLabel{#_dlgPECalendar,"Calendar",NULL_STRING,NULL_STRING}
+self:Caption := "Calendar"
+self:HyperLabel := HyperLabel{#_dlgPECalendar,"Calendar",NULL_STRING,NULL_STRING}
 
-    self:PostInit(oParent,uExtra)
+self:PostInit(oParent,uExtra)
 
-    return 
+return self
+
 
 END CLASS
-
 CLASS dlgPECalendar INHERIT _dlgPECalendar
 	//l default Dialog to display the calendar.
 	//p default Dialog to display the calendar.
@@ -35,24 +38,23 @@ CLASS dlgPECalendar INHERIT _dlgPECalendar
    EXPORT dSelected				AS DATE
    EXPORT oDateSLE				AS OBJECT
    
-/****************************************************************************/
-ACCESS Calendar() AS PECalendar 
+   // DECLARE my callbacks         
 
+
+ACCESS Calendar() AS PECalendar PASCAL 
 	//l Retrieve the Calendar control
 	//p Retrieve the Calendar control
 	//r PECalendar
    	RETURN SELF:oDCCalendar
 
-/****************************************************************************/
-constructor(oParent,uExtra)
-
+CONSTRUCTOR(oParent,uExtra) 
+    //Vulcan.NET-Transporter: This method was automatically created
     SUPER(oParent,uExtra)
 
-    RETURN 
+//Vulcan.NET-Transporter: To Do: the following line has been inserted. Please check the return value is correct
+RETURN SELF
 
-/****************************************************************************/
-METHOD onDayMove(dNewDate AS DATE) AS VOID 
-
+METHOD onDayMove(dNewDate AS DATE) AS VOID PASCAL 
 	//l Callback Method on a day move
 	//p Callback Method on a day move
 	//d This callback method will be invoked each time a new day is highlighted. \line
@@ -68,10 +70,8 @@ METHOD onDayMove(dNewDate AS DATE) AS VOID
 		ENDIF
     ENDIF
     RETURN
-    
-/****************************************************************************/    
-METHOD onHolidayDateRightClick(dMouseDate AS DATE) AS VOID
 
+METHOD onHolidayDateRightClick(dMouseDate AS DATE) AS VOID PASCAL 
 	//l Callback Method for right clicking on a Holiday
 	//p Callback Method for right clicking on a Holiday
 	//d This callback method will check to see if there is a corresponding \line
@@ -82,10 +82,8 @@ METHOD onHolidayDateRightClick(dMouseDate AS DATE) AS VOID
 		SELF:Owner:onHolidayDateRightClick(SELF,dMouseDate)
 	ENDIF
     RETURN
-    
-/****************************************************************************/    
-METHOD onMonthYearMove(dNewDate AS DATE) AS VOID 
 
+METHOD onMonthYearMove(dNewDate AS DATE) AS VOID PASCAL 
 	//l Callback Method on a month or year move
 	//p Callback Method on a month or year move
 	//d This callback method will be invoked each time a month or year is changed. \line
@@ -101,14 +99,12 @@ METHOD onMonthYearMove(dNewDate AS DATE) AS VOID
 		ENDIF
     ENDIF
     RETURN
-    
-/****************************************************************************/    
-METHOD PostInit(oParent,uExtra)  
 
+METHOD PostInit(oParent,uExtra)  
 	
 	LOCAL oOrigin 		AS Point
 	LOCAL oSize 		AS Dimension
-    LOCAL lAlignLeft 	AS LOGIC
+   LOCAL lAlignLeft 	AS LOGIC
 	LOCAL dOldDate		AS DATE
 		
 	SELF:oDateSle 	:= uExtra
@@ -120,22 +116,25 @@ METHOD PostInit(oParent,uExtra)
 	ENDIF
 
 	// Get the the stuff about the sle that we need
-	oOrigin		:= oDateSle:Origin // PClone( oDateSle:Origin )
-	oSize 		:= oDateSle:Size // PClone( oDateSle:Size )
+	oOrigin  	:= Point{ oDateSle:Origin:x , oDateSle:Origin:y }
+	oSize   		:= Dimension{ oDateSle:Size:Width , oDateSle:Size:Height}
+//	oOrigin		:=  PClone( oDateSle:Origin )
+//	oSize 		:= PClone( oDateSle:Size )
+	
 	lAlignLeft 	:= oDateSle:lAlignCalendarLeft
 
 	// Origin:x is always the Sle's origin:x unless the alignment is right-
-	oOrigin:x 	:= iif( ! lAlignLeft, oOrigin:x + oSize:Width, oOrigin:x )
+	oOrigin:x 	:= IIF( ! lAlignLeft, oOrigin:x + oSize:Width, oOrigin:x )
 
 	//  Origin:y has to be fiddled with to make the calendar align just below the Sle. Jeez I hate Cartesian coorordinates
 	// - one line of code and how long does it take to figure it out. Bloody CommonView, why didn't they take it all out
 	SELF:Origin 								:= Point{ oOrigin:x, SELF:Owner:Size:Height - SELF:Size:Height - ( SELF:Owner:Size:Height - oOrigin:y ) }	
 	SELF:oDCCalendar:CurrentDate 			:= dOldDate
 	SELF:oDCCalendar:FirstDayoftheWeek	:= oDateSLE:FirstDayoftheWeek	
-	IF IsAccess(oDateSLE,#DateRange) .and. !Empty(oDateSLE:DateRange)
+	IF IsAccess(oDateSLE,#DateRange)  .AND. !Empty(oDateSLE:DateRange)
 		SELF:oDCCalendar:DateRange 		:= oDateSLE:DateRange
 	ENDIF
-	IF IsAccess(oDateSLE,#Holiday) .and. !Empty(oDateSLE:Holiday)
+	IF IsAccess(oDateSLE,#Holiday)  .AND. !Empty(oDateSLE:Holiday)
 		SELF:oDCCalendar:Holiday 			:= oDateSLE:Holiday
 	ENDIF                 
 	
@@ -151,5 +150,5 @@ METHOD PostInit(oParent,uExtra)
 	ENDIF
 
 	RETURN NIL
-END CLASS
 
+END CLASS

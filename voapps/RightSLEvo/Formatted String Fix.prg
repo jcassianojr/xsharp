@@ -1,3 +1,26 @@
+﻿/*
+TEXTBLOCK TestFirstChar
+/-*
+uncomment this for VO 2.6
+METHOD TestFirstChar(cChar) CLASS __FormattedString
+	LOCAL iCurPos    AS LONG
+	LOCAL cTemplChar AS STRING
+
+	iCurPos    := oEditOwner:__CurPos
+	cTemplChar := CharPos(sTemplate, iCurPos)
+
+	iCurPos := 1
+	IF !SELF:IsEditPos(iCurPos)
+		iCurPos := SELF:NextEditPos(iCurPos)
+		oEditOwner:__CurPos := iCurPos
+    ENDIF
+	RETURN NIL
+
+*-/
+ENDTEXT
+
+
+*/
 CLASS rightSLEFormattedString INHERIT __FormattedString
 // Author		: Willie Moore
 // Email		: williem@wmconsulting.com
@@ -14,9 +37,8 @@ CLASS rightSLEFormattedString INHERIT __FormattedString
 //d and resets the way selection deletes are handled with template characters.
 //g Internal Methods
 
-/****************************************************************************/
-METHOD DeleteSelection(iStart AS INT, iEnd AS INT) AS VOID 
 
+METHOD DeleteSelection(iStart AS INT, iEnd AS INT) AS VOID PASCAL 
 	//p Method to delete a selection
 	//l DeleteSelection method
 	//r VOID
@@ -41,11 +63,11 @@ METHOD DeleteSelection(iStart AS INT, iEnd AS INT) AS VOID
 
 	lNumeric := (cType == "N")
 
-	IF lNumeric .and. ((iDecPos := INT(_CAST, At2(CHR(wDecSep), sValue))) > istart) .and. (iDecPos < iEnd)
+	IF lNumeric  .AND. ((iDecPos := LONG(At2(CHR(wDecSep), sValue))) > iStart)  .AND. (iDecPos < iEnd)
 		SELF:DeleteSelection(iStart, iDecPos)
 		SELF:DeleteSelection(iDecPos+1, iEnd+1)
 	ELSE
-		lInvert := ((lNumeric) .and. (At3(CHR(wDecSep), sValue, (dword)iEnd) > 0))
+		lInvert := ((lNumeric)  .AND. (At3(CHR(wDecSep), sValue, DWORD(iEnd)) > 0))
 		IF !lInvert
 			iDelPos := iStart
 			// wcm 2004-06-09 - replaced for next with a while to weed out
@@ -60,7 +82,7 @@ METHOD DeleteSelection(iStart AS INT, iEnd AS INT) AS VOID
 			ENDDO
 		ELSE
 			IF (lNumeric)
-				iSignPos := INT(_CAST, At2("-", sValue))
+				iSignPos := LONG(At2("-", sValue))
 				IF (iSignPos > 0)
 					SELF:PutChar(" ", iSignPos)
 				ENDIF
@@ -77,7 +99,7 @@ METHOD DeleteSelection(iStart AS INT, iEnd AS INT) AS VOID
 		ENDIF
 		SELF:UpdateEditOwner()
 
-		IF (lInvert .or. (wScrMode == SCRMODE_NO))
+		IF (lInvert  .OR. (wScrMode == SCRMODE_NO))
 			oEditOwner:__CurPos := SELF:PrevEditPos(iEnd+1)
 		ENDIF
 	ENDIF
@@ -86,9 +108,7 @@ METHOD DeleteSelection(iStart AS INT, iEnd AS INT) AS VOID
 
 	RETURN	
 
-/****************************************************************************/
-ACCESS EmptyValue AS STRING 
-
+ACCESS EmptyValue AS STRING PASCAL 
 	//p Access to return an empty value for a given picture
 	//l Access to return an empty value for a given picture
 	//d this access will return an empty string for a given picture
@@ -127,7 +147,7 @@ ACCESS EmptyValue AS STRING
 	ENDIF
 
 	FOR i:=1 UPTO iTemplLen
-		cCurTplChar := CharPos(sTemplate, (dword)i)
+		cCurTplChar := CharPos(sTemplate, DWORD(i))
 		IF IsEditTemplChar(cCurTplChar)
 			IF (sEmpty == NULL_STRING)
 				sEmpty := Space(1)
@@ -135,9 +155,9 @@ ACCESS EmptyValue AS STRING
 				sEmpty += " "
 			ENDIF
 		ELSE
-			IF (cCurTplChar == ".") .and. (cType == "N")
+			IF (cCurTplChar == ".")  .AND. (cType == "N")
 				sEmpty += CHR(wDecSep)
-			ELSEIF (cCurTplChar == ",") .and. (cType == "N")
+			ELSEIF (cCurTplChar == ",")  .AND. (cType == "N")
 				sEmpty += CHR(wThousSep)
 			ELSE
 				sEmpty += cCurTplChar
@@ -146,30 +166,26 @@ ACCESS EmptyValue AS STRING
 	NEXT
 
 	RETURN sEmpty
-	
-/****************************************************************************/
-Constructor(Owner, PicString, Type, OverWrite, DefTempl, ScrMode)
 
-    super(Owner, PicString, Type, OverWrite, DefTempl, ScrMode)
-//ToDo Remove the workaround when the new build comes out
-    // **************************************************
-    // * work around till the @d gets fixed             *
-    // **************************************************
-    if lower(trim(PicString)) == "@d"
-        self:sTemplate := "99/99/9999"
-    endif
-    // **************************************************
-    // * end of workaround                              *
-    // **************************************************        
-RETURN 
+
+
+
+CONSTRUCTOR(Owner, PicString, Type, OverWrite, DefTempl, ScrMode) 
+    //Vulcan.NET-Transporter: This method was automatically created
+    SUPER(Owner, PicString, Type, OverWrite, DefTempl, ScrMode)
+
+//Vulcan.NET-Transporter: To Do: the following line has been inserted. Please check the return value is correct
+RETURN SELF
+
 END CLASS
-
-/****************************************************************************/
-STATIC FUNCTION IsEditTemplChar(cTest AS STRING) AS LOGIC
+STATIC FUNCTION IsEditTemplChar(cTest AS STRING) AS LOGIC PASCAL
 	//p function to see if a character is in the edit template
 	//l function to see if a character is in the edit template
 	//d this function takes a character as input and tests to see if it part of the \line
 	//d standard VO edit template characters.
 	//r LOGIC
 	//a cTest \tab - String \tab - Character to test
-   RETURN At2(cTest, "ANX9!YL#") != 0
+   RETURN LOGIC(_CAST, At2(cTest, "ANX9!YL#"))
+
+
+

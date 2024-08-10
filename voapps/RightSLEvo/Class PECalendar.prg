@@ -1,81 +1,20 @@
-#USING System.Runtime.InteropServices	
-#USING vorightSLE.Internal
+﻿#region DEFINES
+Define BUFLEN 		:= 80				
+Define ID_MONTH1 	:= 3001			// January
+Define ID_MONTH10 	:= 3010			// October
+Define ID_MONTH11 	:= 3011			// November
+Define ID_MONTH12 	:= 3012			// December
+Define ID_MONTH2 	:= 3002			// February
+Define ID_MONTH3 	:= 3003			// March
+Define ID_MONTH4 	:= 3004			// April
+Define ID_MONTH5 	:= 3005			// May
+Define ID_MONTH6 	:= 3006			// June
+Define ID_MONTH7 	:= 3007			// July
+Define ID_MONTH8 	:= 3008			// August
+Define ID_MONTH9 	:= 3009			// September
+Define MAXLEN 		:= 12					// Should make these static defines
+#endregion
 
-#define ID_MONTH1 3001 
-#define ID_MONTH2 3002 
-#define ID_MONTH3 3003 
-#define ID_MONTH4 3004 
-#define ID_MONTH5 3005 
-#define ID_MONTH6 3006 
-#define ID_MONTH7 3007 
-#define ID_MONTH8 3008 
-#define ID_MONTH9 3009 
-#define ID_MONTH10 3010 
-#define ID_MONTH11 3011 
-#define ID_MONTH12 3012 
-#define MAXLEN 12 
-
-begin namespace vorightSLE.Internal
-internal _DLL FUNCTION InflateRect( rect REF winRect, dx AS INT, dy AS INT ) AS LOGIC PASCAL:USER32.InflateRect
-internal _DLL FUNCTION FillRect( hdc AS PTR, rect REF winRect, hbr AS PTR)	AS INT PASCAL:USER32.FillRect
-internal _DLL FUNCTION  GetTextExtentPoint( hdc AS PTR, lpsz AS PSZ, cbString AS INT, lpSize REF winSize) AS LOGIC PASCAL:gdi32.GetTextExtentPointA
-internal _DLL FUNCTION GetTextExtentPoint32( hdC AS PTR, lpsz AS PSZ, cbString AS INT, lpSize REF winSIZE) AS LOGIC PASCAL:GDI32.GetTextExtentPoint32A
-internal _DLL FUNCTION ExtTextOut(hdc AS PTR,   X AS INT, Y AS INT, fOptions AS DWORD,;
-	lprc REF winRect,  lpString AS PSZ,	  nCount AS DWORD,;
-	lpDx AS INT PTR) AS LOGIC PASCAL:GDI32.ExtTextOutA
-internal _DLL FUNCTION DrawText(hdc AS PTR, lpString AS PSZ, nCount AS INT, lpRect REF winRECT,;
-	uFormat AS DWORD) AS INT PASCAL:USER32.DrawTextA
-internal _DLL FUNCTION ClientToScreen(hwnd AS PTR, lpPoint ref winPOINT)	AS LOGIC PASCAL:USER32.ClientToScreen
-
-/****************************************************************************/
-[StructLayout( LayoutKind.Sequential ) ];
-internal STRUCTURE winRect
-     EXPORT Left AS INT
-     EXPORT Top AS INT
-     EXPORT Right AS INT
-     EXPORT Bottom AS INT
-
-     CONSTRUCTOR( l AS INT, t AS INT, r AS INT, b AS INT )
-        Left := 1
-        Top := t
-        Right := r
-        Bottom := b
-        RETURN
-
-     METHOD Copy() AS winRect
-        RETURN winRect{ Left, Top, Right, Bottom }
-  END STRUCTURE
-
-/****************************************************************************/
-[StructLayout( LayoutKind.Sequential ) ];
-internal STRUCTURE winSize
-     EXPORT x AS INT
-     EXPORT y AS INT
-
-     CONSTRUCTOR( cx AS INT, cy AS INT )
-        x := cx
-        y := cy
-        RETURN
-
-     METHOD Copy() AS winSize
-        RETURN winSize{ x, y }
-  END STRUCTURE
-
-/****************************************************************************/
-[StructLayout( LayoutKind.Sequential ) ];
-internal STRUCTURE winPoint
-	EXPORT x AS INT
-	EXPORT y AS INT
-     CONSTRUCTOR( cx AS INT, cy AS INT )
-        x := cx
-        y := cy
-        RETURN
-
-     METHOD Copy() AS winPoint
-        RETURN winPoint{ x, y }
-END STRUCTURE
-end namespace
-/****************************************************************************/
 CLASS PECalendar INHERIT CustomControl
 // Author		: Graham McKenie Modified by Willie Moore
 // Email		: williem@bigfoot.com
@@ -99,95 +38,98 @@ CLASS PECalendar INHERIT CustomControl
 
 	
 	PROTECT liLeft       	AS LONGINT
-	PROTECT liTop			AS LONGINT
+	PROTECT liTop				AS LONGINT
 	PROTECT liRight			AS LONGINT
 	PROTECT liBottom       	AS LONGINT
 	PROTECT liWidth			AS LONGINT
-	PROTECT liHeight		AS LONGINT
+	PROTECT liHeight			AS LONGINT
 
-	PROTECT y1				AS LONGINT
-	PROTECT y2				AS LONGINT
-	PROTECT x1				AS LONGINT
-	PROTECT x2				AS LONGINT
-	PROTECT dCurrent		AS DATE
-	PROTECT dFirst			AS DATE
-	PROTECT dLast			AS DATE
+	PROTECT y1					AS LONGINT
+	PROTECT y2					AS LONGINT
+	PROTECT x1					AS LONGINT
+	PROTECT x2					AS LONGINT
+	PROTECT dCurrent			AS DATE
+	PROTECT dFirst				AS DATE
+	PROTECT dLast				AS DATE
 
 	PROTECT liStartDay		AS LONGINT
-	PROTECT liNumberDays	AS LONGINT
+	PROTECT liNumberDays		AS LONGINT
 
-	PROTECT liHead			AS LONGINT
+	PROTECT liHead				AS LONGINT
 
-	PROTECT hDC				AS PTR
+	PROTECT hDC					AS PTR
 
-	PROTECT MonthRect		AS winRect
-	PROTECT YearRect		AS winRect
+	PROTECT MonthRect			IS _winRect
+	PROTECT YearRect			IS _winRect
 	
 
-	EXPORT Brush 			AS Brush
-	EXPORT hWhitePen		AS PTR
+	EXPORT Brush 				AS Brush
+	EXPORT hWhitePen			AS PTR
 	EXPORT hGreyPen			AS PTR
 
 	// Added these
   	EXPORT oYearSle			AS PECalendarSLE
-  	PROTECT oYearVS			AS Spinner
-	PROTECT dwYear			AS DWORD
+  	EXPORT oYearVS				AS Spinner
+	PROTECT dwYear				AS DWORD
 	PROTECT dwMonth			AS DWORD	
 	PROTECT oDateRange		AS wmDateRange
 	
 	// The First Day of the Week
 	PROTECT dwFirstDayoftheWeek 	AS DWORD	// I set this variable in PECalendar:Init()
-	PROTECT aMonthsbyName			AS ARRAY	// array to hold the months in international format
+	PROTECT aMonthsbyName			AS ARRAY		// array to hold the months in international format
 
 	// for Holidays	
 	PROTECT dMouseDate			AS DATE			// GCS 18/11/2005
-	PROTECT aHolidays			AS ARRAY		// GCS 18/11/2005 
+	PROTECT aHolidays				AS ARRAY				// GCS 18/11/2005 
 	
 	// for callbacks
-	PROTECT lDayCallback		AS LOGIC     
-	PROTECT lHolidayRightclick  AS LOGIC
+	PROTECT lDayCallback			AS LOGIC     
+	PROTECT lHolidayRightclick AS LOGIC
 	PROTECT lMonthCallback 		AS LOGIC	
+	
+	
 
-/****************************************************************************/
-METHOD VerticalSpin(oEvent) AS Void
-    LOCAL oSpinEvent    as SpinnerEvent
-    oSpinEvent := oEvent    
-    RETURN	
-/****************************************************************************/
-METHOD CastDate2Column( dDate AS DATE ) AS LONGINT 
 
+	
+   
+
+DESTRUCTOR 
+	IF !InCollect()
+		SELF:Destroy()
+	ENDIF
+	RETURN NIL     
+
+METHOD CastDate2Column( dDate AS DATE ) AS LONGINT PASCAL 
 	//l Method to change a date into the column location
 	//p Method to change a date into the column location
 	//r LONG
 	//a dDate \tab - Date \tab - Date to transform into a column
-	LOCAL nReturnVal AS LONGINT
-	nReturnVal := INT(_CAST,(DoW(dDate) - ( SELF:dwFirstDayoftheWeek -1 )))
+	LOCAL nReturnVal AS LONG
+	nReturnVal := LONG((DoW(dDate) - ( SELF:dwFirstDayoftheWeek -1 )))
 	IF nReturnVal < 1
 		nReturnVal += 7
 	ENDIF
-RETURN nReturnVal	
+	RETURN nReturnVal	
 
-/****************************************************************************/
-METHOD CastRowCol2Date( nRow AS LONGINT, nCol AS LONGINT ) AS date
-
+METHOD CastRowCol2Date( nRow AS LONGINT, nCol AS LONGINT ) AS DATE PASCAL  
 	//l Method to change row,column into a date location
 	//p Method to change row,column into a date location
-	//r Date
+	//r DATE
 	//a nRow \tab - LONG \tab - row in the grid \line
 	//a ncol \tab - LONG \tab - col in the grid \line
-	LOCAL nColumnAdjustment 	AS LONGINT
-	LOCAL dDate                 AS DATE
-    LOCAL dBeginningOfMonth 	AS DATE
-	LOCAL dResult               AS DATE
-	ddate               := SELF:dCurrent
-	dBeginningOfMonth   := ConDate(Year(ddate),Month(ddate),1)
-	nColumnAdjustment   := SELF:CastDate2Column( dBeginningOfMonth )
-	dResult             := dBeginningOfMonth + 7 * (nRow-1) + (nCol-nColumnAdjustment)
-	RETURN  dResult
+	LOCAL nColumnAdjustment AS LONG
+	LOCAL dDate					AS DATE
+	LOCAL dBeginningOfMonth	AS DATE
+	LOCAL dResult				AS DATE
+	dDate 				:= SELF:dCurrent
+	dBeginningOfMonth := ConDate(Year(ddate),Month(ddate),1)
+	nColumnAdjustment := SELF:CastDate2Column( dBeginningOfMonth )      
+	dResult           := dBeginningOfMonth + 7 * (nRow-1) + (nCol-nColumnAdjustment)
 	
-/****************************************************************************/
-METHOD CreateBrushFromHoliday(dwPos AS DWORD) AS PTR 
+	RETURN dResult // INT(_CAST,dBeginningOfMonth) + 7*(nRow-1) + (nCol-nColumnAdjustment)
+	
 
+METHOD CreateBrushFromHoliday(dwPos AS DWORD) AS PTR PASCAL 
 	//l Method to create a brush for painting a holiday cell
 	//p Method to create a brush for painting a holiday cell
 	//r PRT
@@ -197,25 +139,23 @@ METHOD CreateBrushFromHoliday(dwPos AS DWORD) AS PTR
 	IF ALen(SELF:aHolidays[dwPos]) > 2
 		IF Empty(SELF:aHolidays[dwPos][3])
 			// The highlight color element is created, there just isnt a color defined for this element
-			hBrush 	:= CreateSolidBrush( (dword)RGB(160,160,160) )
+			hbrush 	:= CreateSolidBrush( DWORD(RGB(160,160,160)) )
 		ELSE
 			acolors	:= SELF:CreateColorArray(SELF:aHolidays[dwPos][3])
 			IF ALen(aColors) <> 3
 				// invalid number of parameters
-				hBrush 	:= CreateSolidBrush( (dword)RGB(160,160,160) )
+				hbrush 	:= CreateSolidBrush( DWORD(RGB(160,160,160)) )
 			ELSE
-				hBrush 	:= CreateSolidBrush( (dword)RGB(Val(aColors[1]),Val(aColors[2]),Val(aColors[3])) )
+				hBrush 	:= CreateSolidBrush( DWORD(RGB(Val(aColors[1]),Val(aColors[2]),Val(aColors[3]))) )
 			ENDIF
 		ENDIF
 	ELSE
 		// no custom highlight color defined. use our default
-		hBrush 	:= CreateSolidBrush( (dword)RGB(160,160,160) )
+		hbrush 	:= CreateSolidBrush( DWORD(RGB(160,160,160)) )
 	ENDIF
 	RETURN hBrush
 
-/****************************************************************************/
-METHOD CreateColorArray(cList AS STRING) AS ARRAY 
-
+METHOD CreateColorArray(cList AS STRING) AS ARRAY PASCAL 
 	//l Method to take a RGB colol list as a string and turn it into a single demension array
 	//p Method to take a RGB colol list as a string and turn it into a single demension array
 	//r ARRAY
@@ -246,26 +186,21 @@ METHOD CreateColorArray(cList AS STRING) AS ARRAY
 
     RETURN aRet		
 
-/****************************************************************************/
-ACCESS CurrentColumnNumber AS LONGINT 
-
+ACCESS CurrentColumnNumber AS LONGINT PASCAL 
 	//l Access to return the current column number
 	//p Access to return the current column number
 	//r LONG
 	//a None
 	RETURN SELF:CastDate2Column( SELF:dCurrent )
 
-/****************************************************************************/
-ACCESS CurrentDate() AS DATE 
-
+ACCESS CurrentDate() AS DATE PASCAL 
 	//l Retrieve the current Date from the control
 	//p Retrieve the current Date from the control
 	//r DATE
 	RETURN SELF:dCurrent
 
-/****************************************************************************/
-ASSIGN CurrentDate( dDate AS DATE ) AS VOID
 
+ASSIGN CurrentDate( dDate AS DATE ) AS VOID PASCAL 
 	//l Set the current Date
 	//p Set the current Date
 	//r VOID
@@ -273,7 +208,7 @@ ASSIGN CurrentDate( dDate AS DATE ) AS VOID
 
 	IF ! ( dDate == SELF:dCurrent )
 		// These four conditions warrant an InvalidateRect - a complete redraw.
-		IF dDate > LastDayofMonth( dDate ) .or. dDate < FirstDayofMonth( dDate ) .or.  ! ( Year( dDate ) == SELF:dwYear ) .or. ! ( Month( dDate ) == SELF:dwMonth )
+		IF dDate > LastDayofMonth( dDate )  .or. dDate < FirstDayofMonth( dDate )  .or.  ! ( Year( dDate ) == SELF:dwYear )  .or. ! ( Month( dDate ) == SELF:dwMonth )
 			// If we are changing months, set the new date
 			SELF:dCurrent := dDate
 			SELF:dwYear := Year( dDate )
@@ -298,41 +233,47 @@ ASSIGN CurrentDate( dDate AS DATE ) AS VOID
 
 	RETURN
 
-/****************************************************************************/
-ACCESS CurrentRowNumber AS LONGINT 
-
+ACCESS CurrentRowNumber AS LONGINT PASCAL 
 	//l Retrieve the current row from the control
 	//p Retrieve the current row from the control
 	//r LONG
 	LOCAL dFirst 		AS DATE
 	dFirst 	:= FirstDayofMonth( SELF:dCurrent )
-	RETURN Integer( ( INT(_CAST,Day(SELF:dCurrent)) + SELF:CastDate2Column( dFirst ) - 2 ) / 7 ) + 1
+	RETURN Integer( ( LONG(Day(SELF:dCurrent)) + SELF:CastDate2Column( dFirst ) - 2 ) / 7 ) + 1
 
-/****************************************************************************/
-ACCESS DateRange() AS wmDateRange 
 
+ACCESS DateRange() AS wmDateRange PASCAL 
 	//l Gets the DateRange for a calendar.
 	//p Gets the DateRange for a calendar.
 	//r OBJECT of type wmDateRange
 	//a NONE \line
 	RETURN SELF:oDateRange
 
-/****************************************************************************/
-ASSIGN DateRange(oRange AS wmDateRange) AS VOID 
-
+ASSIGN DateRange(oRange AS wmDateRange) AS VOID PASCAL 
 	//l Sets the DateRange for a calendar.
 	//p Sets the DateRange for a calendar.
 	//r OBJECT of type wmDateRange
 	//a oRange \tab - wmDateRange object. \line
 	SELF:oDateRange	:= oRange
-	IF (SELF:CurrentDate < SELF:oDateRange:Min .or. SELF:CurrentDate > SELF:oDateRange:Max)
+	IF (SELF:CurrentDate < SELF:oDateRange:Min  .or. SELF:CurrentDate > SELF:oDateRange:Max)
 		SELF:CurrentDate := SELF:oDateRange:Max
 	ENDIF
 	RETURN
 
-/****************************************************************************/
-METHOD Dispatch( oEvent ) 
+METHOD Destroy() 
+	SUPER:Destroy()            
+	IF SELF:hGreyPen <> NULL_PTR
+		DeleteObject(SELF:hGreyPen)
+	ENDIF
+	IF SELF:hWhitePen <> NULL_PTR
+		DeleteObject(SELF:hWhitePen)
+	ENDIF
+	IF !InCollect()
+		UnRegisterAxit(SELF)
+	ENDIF
+	RETURN NIL 	
 
+METHOD Dispatch( oEvent ) 
 	
 	// I've added three extra messages to Trevor's original dispatch, to handle the new UpDown/Control for the years and the new popup menu for the months
 
@@ -346,18 +287,10 @@ METHOD Dispatch( oEvent )
 	LOCAL iDelta		AS LONGINT
 	LOCAL MenuItemID	AS DWORD
 	LOCAL MonthsToMove	AS LONGINT
-	LOCAL uMsg		    AS DWORD
-	LOCAL oEvt			AS @@event   
-	LOCAL wp 			AS DWORD
- 	
-  	oEvt 					:= oEvent
-    SELF:EventReturnValue 	:= 0L
-    uMsg 					:= oEvt:uMsg
-    wp 						:= oEvt:wparam
-
+	
 	DO CASE
-		CASE uMsg == WM_GETDLGCODE
-			IF wp == VK_RETURN
+		CASE oEvent:Message == WM_GETDLGCODE
+			IF oEvent:wparam == VK_RETURN
 				SELF:Owner:dSelected := SELF:CurrentDate
 				SELF:EventReturnValue	:= 1L
 				PostMessage( SELF:Owner:Handle(), WM_CLOSE, 0, 0L )
@@ -368,36 +301,33 @@ METHOD Dispatch( oEvent )
 				// return 1L (TRUE) to prevent calling of the default window procedure
 				RETURN 1L
 			ENDIF
-		CASE uMsg == WM_NOTIFY
+		CASE oEvent:Message == WM_NOTIFY
 			strucUpDown := PTR( _CAST, oEvent:lParam )
-//			iOld 		:= strucUpDown:iPos			
-			iOld 		:= val(SELF:oYearSle:Value)
-			iDelta 	:= strucUpDown:iDelta	
+			iOld 		:= strucUpDown.iPos
+			iDelta 	:= strucUpDown.iDelta	
 			// Update the Sle every time they change it
-			SELF:oYearSle:Value := ntrim(iOld  + iDelta )
-			SELF:EventReturnValue	:= 1L
+			SELF:oYearSle:Value := AllTrim( Str( iOld  + iDelta ))	
 			RETURN 1L
 
 		// If the calendar control is getting focus, hide the year Sle and the Spinner
-		CASE uMsg == WM_SETFOCUS
+		CASE oEvent:Message == WM_SETFOCUS
 			SELF:handleYearSLE()
        		RETURN 1L		
 
-		CASE uMsg == WM_COMMAND
+		CASE oEvent:Message == WM_COMMAND
 			// The TrackPopUpMenuEx() creates a WM_COMMAND message, the wParam will contain the MenuItemID of the prompt that was selected
-			IF wp >= ID_MONTH1 .and. wp <= ID_MONTH12
+			IF oEvent:wParam >= ID_MONTH1  .AND. oEvent:wParam <= ID_MONTH12
 				// GDM 22/09/98 Fixed bug where we could end up with a Null_Date coming back from ConDate() eg 31/01/2000 then select
 				// Feb from the pull down
 	
 				// Get the number of months to move
 	          	MenuItemID := oEvent:wParam
-				MonthsToMove := GetMonth( MenuItemID ) -  LONGINT( _CAST, Month( SELF:CurrentDate ))
+				MonthsToMove := GetMonth( MenuItemID ) -  LONG(Month( SELF:CurrentDate ))
 	            SELF:MoveMonths( MonthsToMove )
 			ENDIF
-			SELF:EventReturnValue	:= 1L
 			RETURN 1L			
 		// GDM Jan 27th '98 Added Escape key for a close of the window. Alt F4 still works
-		CASE uMsg == WM_KEYUP .and. wp == KEYESCAPE
+		CASE oEvent:Message == WM_KEYUP  .AND. oEvent:wParam == KEYESCAPE
 			SELF:EventReturnValue	:= 1L
 			PostMessage( SELF:Owner:Handle(), WM_CLOSE, 0, 0L )
 			RETURN 1L
@@ -406,9 +336,9 @@ METHOD Dispatch( oEvent )
 	END CASE
 	RETURN SUPER:Dispatch( oEvent )
 
-/****************************************************************************/
-METHOD Draw3DBox(x1 AS LONGINT,y1 AS LONGINT,x2 AS LONGINT,y2 AS LONGINT) AS VOID 
 
+
+METHOD Draw3DBox(x1 AS LONGINT,y1 AS LONGINT,x2 AS LONGINT,y2 AS LONGINT) AS VOID PASCAL 
 	//l Method to draw the 3d box
 	//p Method to draw the 3d box
 	//r VOID
@@ -428,9 +358,8 @@ METHOD Draw3DBox(x1 AS LONGINT,y1 AS LONGINT,x2 AS LONGINT,y2 AS LONGINT) AS VOI
 	RETURN
 
 
-/****************************************************************************/
-METHOD DrawArrows() AS VOID 
 
+METHOD DrawArrows() AS VOID PASCAL 	
 	//l Method to draw the arrows in the hearder area
 	//p Method to draw the arrows in the hearder area
 	//r VOID
@@ -438,12 +367,12 @@ METHOD DrawArrows() AS VOID
 
 	LOCAL DIM aPt[3] IS _WINPOINT
 
-	aPt[1]:x := 10
-	aPt[1]:y := 13
-	aPt[2]:x := 14
-	aPt[2]:y := 9
-   	aPt[3]:x := 14
-	aPt[3]:y := 17	
+	aPt[1].x := 10
+	aPt[1].y := 13
+	aPt[2].x := 14
+	aPt[2].y := 9
+   	aPt[3].x := 14
+	aPt[3].y := 17	
 	// Select black pen and brush
 	SelectObject(hDC,GetStockObject(BLACK_PEN))
 	SelectObject(hDC,GetStockObject(BLACK_BRUSH))
@@ -452,55 +381,54 @@ METHOD DrawArrows() AS VOID
 	// Draw the polygon
 	Polygon(SELF:hDC,@aPt,3)
 	// Create a polygon to draw a triangle on the right hand side
-	aPt[1]:x := LONGINT( _CAST, SELF:liRight - 10)
-	aPt[1]:y := 13L
-	aPt[2]:x := LONGINT( _CAST, SELF:liRight - 14)
-	aPt[2]:y := 9L	
-	aPt[3]:x := LONGINT( _CAST, SELF:liRight - 14)
-	aPt[3]:y := 17L
+	aPt[1].x := LONG(SELF:liRight - 10)
+	aPt[1].y := 13L
+	aPt[2].x := LONG(SELF:liRight - 14)
+	aPt[2].y := 9L	
+	aPt[3].x := LONG(SELF:liRight - 14)
+	aPt[3].y := 17L
 	SetPolyFillMode(hDC,WINDING)
 	// Draw rhw polygon
 	Polygon(SELF:hDC,@aPt,3)
 	
 	RETURN
 
-/****************************************************************************/
-METHOD DrawDays() AS VOID 
 
+METHOD DrawDays() AS VOID PASCAL 
 	//l Method to draw the days on the calendar
 	//p Method to draw the days on the calendar
 	//r VOID
 	//a None
 
 	LOCAL cDatePart					AS STRING		// GCS 18/11/2005	
-	LOCAL rect 						AS winRECT
-	LOCAL strucWinSize				AS winSize
-	LOCAL i							AS LONGINT
+	LOCAL rect 							IS _winRECT
+	LOCAL strucWinSize				IS _WinSize
+	LOCAL i								AS LONGINT
 	LOCAL dFirstCalendarDay			AS DATE
-	LOCAL dFirst					AS DATE
-	LOCAL dLast						AS DATE
-	LOCAL dThis						AS DATE			// GCS 18/11/2005
-	LOCAL dTarget					AS DATE
-	LOCAL sShortName 				AS STRING
+	LOCAL dFirst						AS DATE
+	LOCAL dLast							AS DATE
+	LOCAL dThis							AS DATE			// GCS 18/11/2005
+	LOCAL dTarget						AS DATE
+	LOCAL sShortName 					AS STRING
 	LOCAL hOldFont 					AS PTR
-	LOCAL hBrushGrey				AS PTR
-	LOCAL hFont						AS PTR
+	LOCAL hBrushGrey					AS PTR
+	LOCAL hFont							AS PTR
 	LOCAL iBackMode					AS PTR
-	LOCAL iDays						AS LONGINT
-	LOCAL nCol						AS LONGINT
-	LOCAL nRow						AS LONGINT
-	LOCAL pszText					AS PSZ
-	LOCAL siHeight					AS SHORTINT
+	LOCAL iDays							AS LONGINT
+	LOCAL nCol							AS LONGINT
+	LOCAL nRow							AS LONGINT
+	LOCAL pszText						AS PSZ
+	LOCAL siHeight						AS SHORTINT
 	LOCAL liMonthTextWidth			AS LONGINT
-//	LOCAL liMonthTextHeight			AS LONGINT
+	LOCAL liMonthTextHeight			AS LONGINT
 	LOCAL liMonthYearTextWidth		AS LONGINT
-	LOCAL liMonthYearTextHeight	    AS LONGINT
+	LOCAL liMonthYearTextHeight	AS LONGINT
 	LOCAL liYearTextWidth			AS LONGINT
-//	LOCAL liYearTextHeight			AS LONGINT
-	LOCAL x							AS LONGINT
-	LOCAL y							AS LONGINT
+	LOCAL liYearTextHeight			AS LONGINT
+	LOCAL x								AS LONGINT
+	LOCAL y								AS LONGINT
 	LOCAL dwOldBkColor				AS DWORD
-	LOCAL dwOldTextColor			AS DWORD
+	LOCAL dwOldTextColor				AS DWORD
 	LOCAL dwHolidayPos				AS DWORD
 	LOCAL nLocalWidht 				AS LONGINT         // Danilo//
 	LOCAL nLocalHeight 				AS LONGINT        // Danilo//
@@ -514,54 +442,54 @@ METHOD DrawDays() AS VOID
 	ENDIF
 
 	// Set the rect for the header
-	rect:left   	:= x1
-	rect:right  	:= x2
-	rect:top    	:= 0
-	rect:bottom 	:= SELF:liHead-2
+	rect.left   	:= x1
+	rect.right  	:= x2
+	rect.top    	:= 0
+	rect.bottom 	:= SELF:liHead-2
 
 	// The string for the title (Month + Year) eg "October 1997"
 	pszText := String2Psz( CMonth(dFirst)+" " +Transform(Year(dFirst),"####") )
-	GetTextExtentPoint32( hDc, PszText,  INT(PszLen(pszText)), REF strucWinSize )
+	GetTextExtentPoint32( hDC, pszText,  LONG(PszLen(pszText)), @strucWinSize )
 	// Store the width, so we can centre it
-	liMonthYearTextWidth 	:=  strucWinSize:x
-	liMonthYearTextHeight 	:=  strucWinSize:y
+	liMonthYearTextWidth 	:=  strucWinSize.cx
+	liMonthYearTextHeight 	:=  strucWinSize.cy
 
 	// Get the centre for x and y
-	x := ( ( rect:right - rect:left ) /2  ) -    (  liMonthYearTextWidth /2  )
-    y := (( rect:bottom - rect:top) /2 ) - ( liMonthYearTextHeight /2 )
+	x := ( ( rect.right - rect.left ) /2  ) -    (  liMonthYearTextWidth /2  )
+   y := (( rect.bottom - rect.top) /2 ) - ( liMonthYearTextHeight /2 )
 
 	// Set the text to be transparent
 	iBackMode 		:= SetBkMode( SELF:hDC, TRANSPARENT )	
 	dwOldBkColor 	:= SetBkColor( SELF:hDC,  GetSysColor( COLOR_BTNFACE ) )
-	dwOldTextColor 	:= SetTextColor( SELF:hDC,  GetSysColor( COLOR_WINDOWTEXT  ))
+	dwOldTextColor	:= SetTextColor( SELF:hDC,  GetSysColor( COLOR_WINDOWTEXT  ))
 	// Print the month and year as a centred title. Obviously a different position for each month
-	ExtTextOut( hDc, x, y, ETO_CLIPPED + ETO_OPAQUE, REF rect, pszText,  PszLen( pszText ) , NULL_PTR )	
+	ExtTextOut( hDc, x, y, ETO_CLIPPED + ETO_OPAQUE, @rect, pszText,  PszLen( pszText ) , NULL_PTR )	
 
 
 	// Now just the month
-	pszText := String2Psz( CMonth(dFirst)+" " )
-	GetTextExtentPoint32( hDc, PszText,  INT(PszLen(pszText)), REF strucWinSize )
-	liMonthTextWidth 	:=  strucWinSize:x
-//	liMonthTextHeight 	:=  strucWinSize:y
+	pszText 				:= String2Psz( CMonth(dFirst)+" " )
+	GetTextExtentPoint32( hDC, pszText,  LONG(PszLen(pszText)), @strucWinSize )
+	liMonthTextWidth 	:=  strucWinSize.cx
+	liMonthTextHeight :=  strucWinSize.cy
 
 	// Two rects, so we can know later where to place the months popup menu and the Year Sle.
 	//  Values stored are different for each month year combination - depends on x and y and the width of the string	
-	SELF:MonthRect:Left     := rect:Left + x
-	SELF:MonthRect:Top		:= rect:top + y
-	SELF:MonthRect:Right	:= MonthRect:Left + liMonthTextWidth
-	SELF:MonthRect:Bottom	:= rect:Bottom
+	SELF:MonthRect.Left     := rect.Left + x
+	SELF:MonthRect.Top		:= rect.top + y
+	SELF:MonthRect.right		:= MonthRect.left + liMonthTextWidth
+	SELF:MonthRect.Bottom	:= rect.Bottom
 	
 	// The year
-	pszText := String2Psz( Transform(Year(dFirst),"####") )
-	GetTextExtentPoint32( hDc, PszText,  INT(PszLen(pszText)),REF strucWinSize )
-	liYearTextWidth 	:=  strucWinSize:x
-//	liYearTextHeight 	:=  strucWinSize:y
+	pszText 				:= String2Psz( Transform(Year(dFirst),"####") )
+	GetTextExtentPoint32( hDC, pszText,  LONG(PszLen(pszText)), @strucWinSize )
+	liYearTextWidth 	:=  strucWinSize.cx
+	liYearTextHeight 	:=  strucWinSize.cy
 
 	// The year rect
-	SELF:YearRect:Left 		:= SELF:MonthRect:Right
-	SELF:YearRect:Top 		:= SELF:MonthRect:Top
-	SELF:YearRect:Right 	:= SELF:YearRect:Left + liYearTextWidth
- 	SELF:YearRect:Bottom 	:= SELF:MonthRect:Bottom
+	SELF:YearRect.Left 		:= SELF:MonthRect.Right
+	SELF:YearRect.Top 		:= SELF:MonthRect.Top
+	SELF:YearRect.Right 		:= SELF:YearRect.Left + liYearTextWidth
+ 	SELF:YearRect.Bottom 	:= SELF:MonthRect.Bottom
 
 	// Now the days of the week - Sun and Sat are in red
 	hOldFont 	:= SelectObject( SELF:hDC, GetStockObject( ANSI_VAR_FONT ) )
@@ -576,27 +504,27 @@ METHOD DrawDays() AS VOID
 	FOR i := 0 UPTO 6
 		
 		sShortName 	:= Left( CDoW( dFirstCalendarDay + i ), 3 )
-		rect:Left 	:= SELF:liLeft + ( i * SELF:liWidth / 7 )
-		rect:Top 	:= SELF:liTop + ( 0 * ( SELF:liHeight / 7 )) + 1
-		rect:Right 	:= rect:Left + ( SELF:liWidth / 7 )
-		rect:Bottom	:= rect:Top + SELF:liHeight / 7
+		rect.Left 	:= SELF:liLeft + ( i * SELF:liWidth / 7 )
+		rect.Top 	:= SELF:liTop + ( 0 * ( SELF:liHeight / 7 )) + 1
+		rect.Right 	:= rect.Left + ( SELF:liWidth / 7 )
+		rect.Bottom	:= rect.Top + SELF:liHeight / 7
 		
 		IF SELF:dwFirstDayoftheWeek = 1
-			SetTextColor( SELF:hDC, (dword)RGB( IIF( i = 0 .OR. i = 6, 255, 0 ), 0, 0 ))
+			SetTextColor( SELF:hDc, DWORD(RGB( IIF( i = 0  .OR. i = 6, 255, 0 ), 0, 0 )))
 		ELSE
-			SetTextColor( SELF:hDC, (dword)RGB( IIF( i = 5 .OR. i = 6, 255, 0 ), 0, 0 ))
+			SetTextColor( SELF:hDc, DWORD(RGB( IIF( i = 5  .OR. i = 6, 255, 0 ), 0, 0 )))
 		ENDIF
 		
-		DrawText( SELF:hDC, String2Psz(sShortName), INT(SLen(sShortName)), REF rect, DT_CENTER + DT_WORDBREAK )
+		DrawText( SELF:hDc, String2Psz(sShortName), LONG(SLen(sShortName)), @rect, DT_CENTER + DT_WORDBREAK )
 		
 	NEXT		
 
-	SetTextColor( SELF:hDC, (dword)RGB( 0,0,0) )	
+	SetTextColor( SELF:hDc, DWORD(RGB( 0,0,0)) )	
 
 	iDays 			:= dLast - dFirst + 1
 	dTarget			:= dFirst	
-    nRow 			:= 1
-    nCol 			:= SELF:CastDate2Column( dFirst )	
+   nRow 				:= 1
+   nCol 				:= SELF:CastDate2Column( dFirst )	
 	cDatePart		:= NTrim(Year(SELF:dCurrent)) + "/" + StrZero(Month(SELF:dCurrent),2) + "/"	
 	nLocalWidht 	:= Integer(SELF:liWidth / 7)
 	nLocalHeight 	:= Integer(SELF:liHeight /7)
@@ -605,42 +533,42 @@ METHOD DrawDays() AS VOID
 	// Now the numbers
 	FOR i := 1 UPTO iDays
 
-		rect:left 	:= SELF:liLeft + ( nCol - 1) * ( nLocalWidht)
-		rect:top 	:= SELF:liTop + ( nRow * ( nLocalHeight ) ) + 2
-		rect:right	:= rect:left + nLocalWidht
-		rect:Bottom	:= rect:Top +  nLocalHeight
+		rect.left 	:= SELF:liLeft + ( nCol - 1) * ( nLocalWidht)
+		rect.top 	:= SELF:liTop + ( nRow * ( nLocalHeight ) ) + 2
+		rect.right	:= rect.left + nLocalWidht
+		rect.Bottom	:= rect.Top +  nLocalHeight
 		dThis 		:= CToDAnsi(cDatepart + StrZero(i,2))
 		
 		IF !Empty(SELF:oDateRange)
-			IF dTarget < SELF:oDateRange:Min .OR. dTarget > SELF:oDateRange:Max
+			IF dTarget < SELF:oDateRange:Min  .OR. dTarget > SELF:oDateRange:Max
 				// Date is not in the range so adjust the color
-				SetTextColor( SELF:hDC, (dword)RGB( 192,192,192) )	
+				SetTextColor( SELF:hDc, DWORD(RGB( 192,192,192) ))	
 				dwHolidayPos := SELF:isInHoliday(dThis)
 				IF dwHolidayPos > 0
 					hBrushGrey	:= SELF:CreateBrushFromHoliday(dwHolidayPos)
-					rect:Bottom -= 2
-					rect:Left += 3
-					SetTextColor(SELF:hDC, (dword)RGB(255,0,0))
-					FillRect( SELF:hDC, REF rect, hBrushGrey)	// paint the area for the holiday only
+					rect.Bottom -= 2
+					rect.Left += 3
+					SetTextColor(SELF:hDc, DWORD(RGB(255,0,0)))
+					FillRect( SELF:hDC, @rect, hBrushGrey)	// paint the area for the holiday only
 					SelectObject(SELF:hDC, hFont )
-					rect:Bottom += 2
-					rect:Left -= 3			
+					rect.Bottom += 2
+					rect.Left -= 3			
 					DeleteObject(hBrushGrey)
 				ENDIF
 			ELSE
 				dwHolidayPos := SELF:isInHoliday(dThis)
 				IF dwHolidayPos > 0
 					hBrushGrey	:= SELF:CreateBrushFromHoliday(dwHolidayPos)
-					rect:Bottom -= 2
-					rect:Left += 3
-					SetTextColor(SELF:hDC, (dword)RGB(255,0,0))
-					FillRect( SELF:hDC, REF rect, hBrushGrey)	// paint the area for the holiday only
+					rect.Bottom -= 2
+					rect.Left += 3
+					SetTextColor(SELF:hDc, DWORD(RGB(255,0,0)))
+					FillRect( SELF:hDC, @rect, hBrushGrey)	// paint the area for the holiday only
 					SelectObject(SELF:hDC, hFont )
-					rect:Bottom += 2
-					rect:Left -= 3			
+					rect.Bottom += 2
+					rect.Left -= 3			
 					DeleteObject(hBrushGrey)
 				ELSE
-					SetTextColor( SELF:hDC, (dword)RGB(0,0,0) )					
+					SetTextColor( SELF:hDc, DWORD(RGB(0,0,0)) )					
 					SelectObject(SELF:hDC, GetStockObject(ANSI_VAR_FONT))
 				ENDIF
 			ENDIF
@@ -648,21 +576,21 @@ METHOD DrawDays() AS VOID
 			dwHolidayPos := SELF:isInHoliday(dThis)
 			IF dwHolidayPos > 0
 				hBrushGrey	:= SELF:CreateBrushFromHoliday(dwHolidayPos)
-				rect:Bottom -= 2
-				rect:Left += 3
-				SetTextColor(SELF:hDC, (dword)RGB(255,0,0))
-				FillRect( SELF:hDC, REF rect, hBrushGrey)	// paint the area for the holiday only
+				rect.Bottom -= 2
+				rect.Left += 3
+				SetTextColor(SELF:hDc, DWORD(RGB(255,0,0)))
+				FillRect( SELF:hDC, @rect, hBrushGrey)	// paint the area for the holiday only
 				SelectObject(SELF:hDC, hFont )
-				rect:Bottom += 2
-				rect:Left -= 3			
+				rect.Bottom += 2
+				rect.Left -= 3			
 				DeleteObject(hBrushGrey)
 			ELSE
-				SetTextColor( SELF:hDC, (dword)RGB(0,0,0) )					
+				SetTextColor( SELF:hDc, DWORD(RGB(0,0,0)) )					
 				SelectObject(SELF:hDC, GetStockObject(ANSI_VAR_FONT))
 			ENDIF
 		ENDIF		
 		
-		DrawText( SELF:hDC, String2Psz( Str( i, 2, 0) ) , 2, REF rect, DT_CENTER + DT_WORDBREAK )
+		DrawText( SELF:hDC, String2Psz( Str( i, 2, 0) ) , 2, @rect, DT_CENTER + DT_WORDBREAK )
 
 		IF nCol = 7
 			// Increment the row
@@ -687,9 +615,7 @@ METHOD DrawDays() AS VOID
 
 	RETURN
 
-/****************************************************************************/
-METHOD DrawOutLine() AS VOID 
-
+METHOD DrawOutLine() AS VOID PASCAL 
 	//l Method to draw the calendar outline
 	//p Method to draw the calendar outline
 	//r VOID
@@ -736,9 +662,7 @@ METHOD DrawOutLine() AS VOID
 
 	RETURN		
 
-/****************************************************************************/
-METHOD EditMonth() AS VOID 
-
+METHOD EditMonth() AS VOID PASCAL 
 	//l Method to select a new month from a drop down list
 	//p Method to select a new month from a drop down list
 	//r VOID
@@ -746,51 +670,50 @@ METHOD EditMonth() AS VOID
 
 
 	LOCAL hMenu 			AS PTR
-	LOCAL strucWinPoint		as winPoint
+	LOCAL strucWinPoint		IS _winPoint
 	LOCAL i					AS LONGINT
 
 	hMenu := CreatePopupMenu()
 	
 	FOR i := 1 UPTO MAXLEN
-		AppendMenu( hMenu, MF_STRING, ID_MONTH1 + (dword)(i-1), SELF:aMonthsbyName[i])
+		AppendMenu( hMenu, MF_STRING, DWORD(ID_MONTH1 + (i-1)), String2Psz(SELF:aMonthsbyName[i]))
 	NEXT
 
 	// Use MonthRect to position the PopUpMenu
-	strucWinPoint:x := SELF:MonthRect:Left
-	strucWinPoint:y := SELF:MonthRect:Bottom
+	strucWinPoint.x := SELF:MonthRect.Left
+	strucWinPoint.y := SELF:MonthRect.Bottom
 	
 	// TrackPopUpMenuEx takes screen coordinates, so we have to convert
-	ClientToScreen( SELF:Handle(), REF strucWinPoint )
+	ClientToScreen( SELF:Handle(), @strucWinPoint )
 
-	TrackPopupMenuEx( hMenu, TPM_LEFTALIGN, strucWinPoint:x, strucWinPoint:y, SELF:Handle(), NULL )
+	TrackPopupMenuEx( hMenu, TPM_LEFTALIGN, strucWinPoint.x, strucWinPoint.y, SELF:Handle(), NULL )
 	
 	// Finished with
 	DestroyMenu( hMenu )
 
 	RETURN
 
-/****************************************************************************/
-METHOD EditYear() AS VOID 
 
+METHOD EditYear() AS VOID PASCAL 
 	//l Method to edit year
 	//p Method to edit year
 	//r VOID
 	//a None
 	LOCAL nSleWidth		AS LONGINT
-	LOCAL nSleHeight	AS LONGINT	
-	LOCAL dwStyle		AS DWORD
-	LOCAL y 			AS LONGINT
-	LOCAL x				AS LONGINT
+	LOCAL nSleHeight		AS LONGINT	
+	LOCAL dwStyle			AS DWORD
+	LOCAL y 					AS LONGINT
+	LOCAL x					AS LONGINT
 
-	nSleWidth 		:= SELF:YearRect:Right - SELF:YearRect:Left  + 18
-	nSleHeight 		:= SELF:YearRect:Bottom - SELF:YearRect:Top
-	x		 		:= SELF:YearRect:Left
-	y			 	:= SELF:Size:Height - SELF:YearRect:Top - nSleHeight		// Correct y for VO
+	nSleWidth 		:= YearRect.Right - YearRect.Left  + 1
+	nSleHeight 		:= YearRect.Bottom - YearRect.Top
+	x		 			:= YearRect.Left
+	y			 		:= SELF:Size:Height - YearRect.Top - nSleHeight		// Correct y for VO
 
 	// Create the sle
-	dwStyle 						:= _Or( WS_CHILD , WS_TABSTOP , WS_BORDER )		
-	SELF:oYearSle					:= PECalendarSLE{ SELF, -1, Point{ x, y }, Dimension{ nSleWidth, nSleHeight }, dwStyle }
-	SELF:oYearSLE:FocusSelect		:= FSEL_ALL
+	dwStyle 								:= _OR( WS_CHILD , WS_TABSTOP , WS_BORDER )		
+	SELF:oYearSle						:= PECalendarSLE{ SELF, -1, Point{ x, y }, Dimension{ nSleWidth, nSleHeight }, dwStyle }
+	SELF:oYearSLE:FocusSelect		:= FSEL_RALL
 	SELF:oYearSLE:ObeyFocus 		:= TRUE
 	SELF:oYearSle:processEnterKey	:= TRUE
 
@@ -799,7 +722,8 @@ METHOD EditYear() AS VOID
 	x := SELF:oYearSle:Origin:x + SELF:oYearSle:Size:Width
 
 	// Create the spinner
-	dwStyle 		:=  _OR(UDS_ARROWKEYS, UDS_SETBUDDYINT, UDS_ALIGNRIGHT) //UDS_ARROWKEYS
+	dwStyle 		:=  _OR(UDS_ARROWKEYS, UDS_SETBUDDYINT)
+//	dwStyle 		:=  UDS_ARROWKEYS
 	SELF:oYearVs 	:= VerticalSpinner{ SELF, -1, Point{ x, y}, Dimension{ 20,20 }, dwStyle }
 
 	// Set the range before the position, otherwise it defaults to range either high or low
@@ -816,8 +740,7 @@ METHOD EditYear() AS VOID
 	SELF:oYearVs:Client 	:= SELF:oYearSle	// You need this for the arrow keys to work as updown keys otherwise it uses the arrow keys to cursor in the sle
 
 	// Don't assign to CurrentText, before we build the spinner, I got wierd stuff when I did
-	SELF:oYearSle:CurrentText 	:= Str(  Year(SELF:dCurrent) ,4,0 )
-
+	SELF:oYearSle:CurrentText 	:= NTrim(SELF:dwYear) //Str(  Year(SELF:dCurrent) ,4,0 )
 	// Show 'em both and set focus to the sle
 	SELF:oYearSle:Show()
 	SELF:oYearVs:Show()
@@ -825,9 +748,8 @@ METHOD EditYear() AS VOID
 	
 	RETURN
 
-/****************************************************************************/
-METHOD Expose( oEE )
 
+METHOD Expose( oEE ) 
 
 	LOCAL struPS IS _winPaintStruct
 
@@ -854,9 +776,7 @@ METHOD Expose( oEE )
 
 	RETURN NIL
 
-/****************************************************************************/
-ASSIGN FirstDayoftheweek(nDayofWeek AS DWORD) AS VOID 
-
+ASSIGN FirstDayoftheweek(nDayofWeek AS DWORD) AS VOID PASCAL 
 	//l Set the First Day of the Week
 	//p Set the First Day of the Week
 	//r DWORD
@@ -867,9 +787,7 @@ ASSIGN FirstDayoftheweek(nDayofWeek AS DWORD) AS VOID
 	SELF:dwfirstdayoftheweek	:= nDayofWeek
 	RETURN
 
-/****************************************************************************/
-ACCESS FirstDayOfWeek() AS DWORD 
-
+ACCESS FirstDayOfWeek() AS DWORD PASCAL 
 	//l Retrieve the First Day of the Week
 	//p Retrieve the First Day of the Week
 	//r DWORD
@@ -878,9 +796,7 @@ ACCESS FirstDayOfWeek() AS DWORD
 	//r \tab \tab \tab 2 = Sunday \line
 	RETURN SELF:dwfirstdayoftheweek
 
-/****************************************************************************/
-METHOD handleYearSLE() AS VOID 
-
+METHOD handleYearSLE() AS VOID PASCAL 
 	//l callback method to handle removing the YearSLE
 	//p callback method to handle removing the YearSLE
 	//d callback method to handle removing the YearSLE. This will \line
@@ -890,10 +806,10 @@ METHOD handleYearSLE() AS VOID
 	//a None	
 	LOCAL YearsToMove		AS LONGINT
 	
-	IF ! ( SELF:oYearSle == Null_OBJECT )		
+	IF ! ( SELF:oYearSle == NULL_OBJECT )		
 		// Force the calendar to update to the selected year
 		// GDM 23/09/98 Intoduced new method MoveYears()
-		YearsToMove := Val( SELF:oYearSle:CurrentText) - LONG( Year( SELF:CurrentDate ))
+		YearsToMove := Val( SELF:oYearSle:CurrentText) - LONG(Year( SELF:CurrentDate ))
      	SELF:MoveYears( YearsToMove )
 		SELF:oYearSle:Hide()
 		SELF:oYearVS:Hide()
@@ -903,9 +819,8 @@ METHOD handleYearSLE() AS VOID
 	ENDIF	
 	RETURN
 	
-/****************************************************************************/
-METHOD HighlightDay() AS VOID 
 
+METHOD HighlightDay() AS VOID PASCAL 
 	//l highlight a day
 	//p highlight a day
 	//r VOID
@@ -914,34 +829,34 @@ METHOD HighlightDay() AS VOID
 	LOCAL nCol 				AS LONGINT
 	LOCAL hBrush	 		AS PTR
 	LOCAL dThis				AS DATE
-	LOCAL dwHolidayPos	    AS DWORD
-	LOCAL rect 				AS winRECT
-	LOCAL nLocalWidht 	    AS LONGINT
-	LOCAL nLocalHeight 	    AS LONGINT
+	LOCAL dwHolidayPos	AS DWORD
+	LOCAL rect 				IS _winRECT
+	LOCAL nLocalWidht 	AS LONGINT
+	LOCAL nLocalHeight 	AS LONGINT
  
 	
 	IF SELF:lDayCallback
 		SELF:owner:onDayMove(SELF:dCurrent)
 	ENDIF
 
-	nCol			:= SELF:CurrentColumnNumber
-	nRow			:= SELF:CurrentRowNumber
-	dThis			:= SELF:dCurrent  
+	nCol				:= SELF:CurrentColumnNumber
+	nRow				:= SELF:CurrentRowNumber
+	dThis				:= SELF:dCurrent  
 	nLocalWidht 	:= Integer(liWidth / 7)     // Danilo //
 	nLocalHeight	:= Integer(liHeight /7)    // Danilo //
 
 
 	// set the rectangle like normal then deflate it
-	rect:Left := SELF:liLeft + (( nCol - 1) * nLocalWidht) +2    // Danilo //
-	rect:Top := SELF:liTop + ( nRow * nLocalHeight ) +1     // Danilo //
-	rect:Right := rect:Left + nLocalWidht -1    // Danilo //
-	rect:Bottom := rect:Top + nLocalHeight
-	InflateRect( REF rect, -1, -2 )    // Danilo //
+	rect.Left := SELF:liLeft + (( nCol - 1) * nLocalWidht) +2    // Danilo //
+	rect.Top := SELF:liTop + ( nRow * nLocalHeight ) +1     // Danilo //
+	rect.Right := rect.Left + nLocalWidht -1    // Danilo //
+	rect.Bottom := rect.Top + nLocalHeight
+	InflateRect( @rect, -1, -2 )    // Danilo //
 	
 	// Create a grey brush in background color.
 	hBrush := CreateSolidBrush( GetSysColor( COLOR_ACTIVECAPTION ) )
 	// Fill the area
-	FillRect( SELF:hDC, REF rect, hBrush )
+	FillRect( SELF:hDC, @rect, hBrush )
 	// Set our font
 	SelectObject( SELF:hDC, GetStockObject( ANSI_VAR_FONT ) )
 	// Set background mode to transparent
@@ -949,20 +864,20 @@ METHOD HighlightDay() AS VOID
 	// Set color to caption color
 	dwHolidayPos := SELF:isInHoliday(dThis)
 	IF dwHolidayPos > 0
-		SetTextColor(SELF:hDC, (dword)RGB(255,0,0))
+		SetTextColor(SELF:hDC, DWORD(RGB(255,0,0)))
 	ELSE
 		SetTextColor(SELF:hDC, GetSysColor(COLOR_CAPTIONTEXT))
 	ENDIF
 
 	// Set the rectangle
-	rect:Left 	:= SELF:liLeft + (( nCol -1) * nLocalWidht )     // Danilo //
-	rect:Top 	:= SELF:liTop + ( nRow * nLocalHeight ) +2    // Danilo //
-	rect:Right 	:= rect:Left + nLocalWidht    // Danilo //
-	rect:Bottom := rect:Top + nLocalHeight    // Danilo //
+	rect.Left 	:= SELF:liLeft + (( nCol -1) * nLocalWidht )     // Danilo //
+	rect.Top 	:= SELF:liTop + ( nRow * nLocalHeight ) +2    // Danilo //
+	rect.Right 	:= rect.Left + nLocalWidht    // Danilo //
+	rect.Bottom := rect.Top + nLocalHeight    // Danilo //
 
 
 	// Draw the text
-	DrawText(hDC,String2Psz( Str( Day( SELF:dCurrent ),2,0)),2,REF rect, DT_CENTER+DT_WORDBREAK)
+	DrawText(hDC,String2Psz( Str( Day( SELF:dCurrent ),2,0)),2,@rect, DT_CENTER+DT_WORDBREAK)
 
 
 	// Delete our brush
@@ -970,9 +885,7 @@ METHOD HighlightDay() AS VOID
 
 	RETURN
 
-/****************************************************************************/
-ASSIGN Holiday(aDates AS ARRAY) AS VOID 
-
+ASSIGN Holiday(aDates AS ARRAY) AS VOID PASCAL 
 	//l Holiday array.
 	//p Holiday array.
 	//d This assign will set the array containing days to be highlighted. \line
@@ -983,9 +896,11 @@ ASSIGN Holiday(aDates AS ARRAY) AS VOID
 	SELF:aHolidays	:= aDates
 	RETURN
 
-/****************************************************************************/
-Constructor(oOwner, xId,oPoint,oDim, kStyle, lDataAware) 
+METHOD HorizontalSpin(oSpinEvent) 
+	//Put your changes here                 
+	RETURN NIL
 
+CONSTRUCTOR(oOwner, xId,oPoint,oDim, kStyle, lDataAware) 
    LOCAL i 				AS DWORD
    LOCAL DIM firstDay[2]	AS BYTE
 
@@ -996,7 +911,7 @@ Constructor(oOwner, xId,oPoint,oDim, kStyle, lDataAware)
 	SELF:oDateRange	:= NULL_OBJECT
 
 	// Call the super
-	super( oOwner, xID,oPoint, oDim, kStyle, lDataAware)		
+	SUPER( oOwner, xID,oPoint, oDim, kStyle, lDataAware)		
 
 	// First rectangle
 	SELF:x1 := 0
@@ -1010,7 +925,7 @@ Constructor(oOwner, xId,oPoint,oDim, kStyle, lDataAware)
 
 	// Create handles to our pens
 	SELF:hWhitePen := GetStockObject( WHITE_PEN )
-	SELF:hGreyPen  := CreatePen( PS_SOLID,1,(dword) RGB(128,128,128) )
+	SELF:hGreyPen  := CreatePen( PS_SOLID,1,DWORD(RGB(128,128,128)) )
 
 	// Set up our variables
 	SELF:liTop  	:= SELF:liHead
@@ -1060,31 +975,28 @@ Constructor(oOwner, xId,oPoint,oDim, kStyle, lDataAware)
 	ENDIF
 	IF IsMethod(SELF:Owner,#onDayMove)
 		SELF:lDayCallback			:= TRUE
-	ENDIF
+	ENDIF             
+	
+	// register an axit so I an cleanup after myself
+	RegisterAxit(SELF)
 
-RETURN  
+RETURN SELF
 
-/****************************************************************************/
-METHOD isInHoliday(dThis AS DATE) AS DWORD 
 
+METHOD isInHoliday(dThis AS DATE) AS DWORD PASCAL 
 	//l Method to check to see if a date is in the holiday range
 	//p Method to check to see if a date is in the holiday range
 	//r DWORD	\tab 0 means date not in array. \line
 	//r \tab any other positive number is the element that contains the date.
 	//a dThis	- Date	- Date to check the holiday array for.
 	LOCAL dwResult	AS DWORD
-	IF !Empty(self:aHolidays)
-	    dwResult    := AScan(SELF:aHolidays, {|elm| elm[1] = dThis})
-	ELSE
-	    dwResult    := 0
-	ENDIF
+	dwResult := AScan(SELF:aHolidays, {|elm| elm[1] = dThis})
 
 	RETURN dwResult
 
 
-/****************************************************************************/
-METHOD isMouseInCalendar(oMouseEvent AS MouseEvent,nrow REF LONGINT, ncol REF LONGINT) AS LOGIC 
 
+METHOD isMouseInCalendar(oMouseEvent AS MouseEvent,nrow REF LONGINT, ncol REF LONGINT) AS LOGIC PASCAL 
 	//l Method isMouseIncalendar will check the mouse position against the grid
 	//p Method isMouseIncalendar will check the mouse position against the grid
 	//d Method used to see if the mosue position is in the calendar grid. If the mouse is in \line
@@ -1104,15 +1016,13 @@ METHOD isMouseInCalendar(oMouseEvent AS MouseEvent,nrow REF LONGINT, ncol REF LO
 		nRow 	:= LONGINT(( y - SELF:liHead ) / ( SELF:liHeight / 7 ) )
 		nCol 	:= LONGINT( x / ( SELF:liWidth / 7 ) ) +1
 
-		IF y > (SELF:liHead + SELF:liHeight/7	) .and. ( nRow > 0 .and. nCol > 0 )	// Account for the header and the row of days
+		IF y > (SELF:liHead + SELF:liHeight/7	)  .and. ( nRow > 0  .and. nCol > 0 )	// Account for the header and the row of days
 			lResult := TRUE
 		ENDIF
 	END SEQUENCE
 	RETURN lResult
 
-/****************************************************************************/
-METHOD KeyDown(oE)
-
+METHOD KeyDown(oE) 
 	//l Method to handle keystrokes
 	//p Method to handle keystrokes
 	//r VOID
@@ -1149,9 +1059,7 @@ METHOD KeyDown(oE)
 	ENDCASE
 	RETURN NIL
 
-/****************************************************************************/	
 METHOD MouseButtonDoubleClick(oME) 
-
 	//l Method to handle MouseButtondoubleclick
 	//p Method to handle MouseButtondoubleclick
 	//r VOID
@@ -1170,13 +1078,13 @@ METHOD MouseButtonDoubleClick(oME)
 		// Need an extra check in here to make sure we are in the date area.
 	    IF SELF:isMouseInCalendar(oME,@nRow,@ncol)
 				dNew := SELF:CastRowCol2Date(nRow,nCol)
-				IF !Empty(SELF:oDateRange) .and. ;
-					(dNew < SELF:oDateRange:Min .or. dNew > SELF:oDateRange:Max)
+				IF !Empty(SELF:oDateRange)  .and. ;
+					(dNew < SELF:oDateRange:Min  .or. dNew > SELF:oDateRange:Max)
 					// dont need to do anything here
 					BREAK S_OK
 				ENDIF
 				// If dNew is a valid date in the current month
-				IF dNew <= LastDayofMonth(dDate) .and. dNew >=  FirstDayofMonth( dDate )	
+				IF dNew <= LastDayofMonth(dDate)  .and. dNew >=  FirstDayofMonth( dDate )	
 					SELF:Owner:dSelected := SELF:CurrentDate
 					SELF:EventReturnValue	:= 1L
 	                PostMessage( SELF:owner:Handle(), WM_CLOSE,0, 0L )
@@ -1185,9 +1093,7 @@ METHOD MouseButtonDoubleClick(oME)
 	END SEQUENCE	
 	RETURN NIL
 
-/****************************************************************************/
 METHOD MouseButtonDown(oMouseEvent) 
-
 	//l Method to handle MouseButtondown
 	//p Method to handle MouseButtondown
 	//r VOID
@@ -1200,6 +1106,9 @@ METHOD MouseButtonDown(oMouseEvent)
 		IF SELF:isMouseInCalendar(oMouseEvent,@nrow,@nCol)
 			dNew := SELF:CastRowCol2Date(nRow,nCol)
 
+			#IFDEF __DEBUG
+				_DebOut32(PSZ("Mouse button pressed:" + NTrim(oMouseEvent:buttonid)))
+			#ENDIF
 			IF oMouseEvent:IsRightButton
 				dwPos := SELF:isInHoliday(dNew)
 				IF dwPos > 0
@@ -1212,9 +1121,7 @@ METHOD MouseButtonDown(oMouseEvent)
 	END SEQUENCE
 	RETURN NIL	
 
-/****************************************************************************/
 METHOD MouseButtonUp(oME) 
-
 	//l Method to handle MouseButtonUp
 	//p Method to handle MouseButtonUP
 	//r VOID
@@ -1226,8 +1133,8 @@ METHOD MouseButtonUp(oME)
 	LOCAL x 	AS LONGINT
 	LOCAL y 	AS LONGINT
 
-	LOCAL strucMonthRect 	AS winRect
-	LOCAL strucYearRect		AS winRect
+	LOCAL strucMonthRect 	IS _winRect
+	LOCAL strucYearRect		IS _winRect
 
 	BEGIN SEQUENCE
 		SetFocus(SELF:Handle())
@@ -1257,26 +1164,26 @@ METHOD MouseButtonUp(oME)
 				SELF:MoveMonths(1)
 	
 				// Two additions methods here, to handle the month and year
-			ELSEIF PointInSide( REF StrucMonthRect, x, y )
+			ELSEIF PointInSide( @StrucMonthRect, x, y )
 				SELF:EditMonth()
 	
-			ELSEIF PointInSide( REF StrucYearRect, x, y )
+			ELSEIF PointInSide( @StrucYearRect, x, y )
 	
 				SELF:EditYear()					
 	
 				ENDIF				
 	
 		// Otherwise make sure we have positive values
-		ELSEIF nRow > 0 .and. nCol > 0
+		ELSEIF nRow > 0  .and. nCol > 0
 			// get the day of week of the first date
 			dNew	:= SELF:CastRowCol2Date(nRow,nCol)
-			IF !Empty(SELF:oDateRange) .and. ;
-				(dNew < SELF:oDateRange:Min .or. dNew > SELF:oDateRange:Max)
+			IF !Empty(SELF:oDateRange)  .and. ;
+				(dNew < SELF:oDateRange:Min  .or. dNew > SELF:oDateRange:Max)
 				// dont need to do anything here
 				BREAK S_OK
 			ENDIF
 			// If dNew is a valid date in the current month
-			IF dNew <= LastDayofMonth(dDate) .and. dNew >=  FirstDayofMonth( dDate )
+			IF dNew <= LastDayofMonth(dDate)  .and. dNew >=  FirstDayofMonth( dDate )
 				// Get a DC
 				SELF:hDC := GetDC( SELF:handle())
 				// Unhighlight the current day
@@ -1293,9 +1200,8 @@ METHOD MouseButtonUp(oME)
 
 	RETURN NIL
 
-/****************************************************************************/
-METHOD MouseMove(oMouseEvent) 
 
+METHOD MouseMove(oMouseEvent) 
 	//l Method to handle MouseMove
 	//p Method to handle MouseMove
 	//r VOID
@@ -1327,9 +1233,7 @@ METHOD MouseMove(oMouseEvent)
 
 	RETURN NIL
 
-/****************************************************************************/
-METHOD MoveDays( n AS LONGINT ) AS VOID 
-
+METHOD MoveDays( n AS LONGINT ) AS VOID PASCAL 
 	//p Method to move n number of days
 	//r VOID
 	//a n as int - Number of days to move
@@ -1337,8 +1241,8 @@ METHOD MoveDays( n AS LONGINT ) AS VOID
 	BEGIN SEQUENCE
 		dTarget := dCurrent + n
 
-		IF !Empty(SELF:oDateRange) .and. ;
-			(dTarget < SELF:oDateRange:Min .or. dTarget > SELF:oDateRange:Max)
+		IF !Empty(SELF:oDateRange)  .and. ;
+			(dTarget < SELF:oDateRange:Min  .or. dTarget > SELF:oDateRange:Max)
 			// dont need to do anything here
 			BREAK S_OK
 		ENDIF
@@ -1346,7 +1250,7 @@ METHOD MoveDays( n AS LONGINT ) AS VOID
 	
 	
 		// If we have moved to a different month
-		IF dTarget > LastDayofMonth( SELF:dCurrent ) .or. dTarget < FirstDayofMonth( SELF:dCurrent )
+		IF dTarget > LastDayofMonth( SELF:dCurrent )  .or. dTarget < FirstDayofMonth( SELF:dCurrent )
 			// Set the new date
 			SELF:dCurrent := dTarget
 			// Invalidate the area to force a redraw
@@ -1366,9 +1270,7 @@ METHOD MoveDays( n AS LONGINT ) AS VOID
 	END SEQUENCE
 	RETURN
 
-/****************************************************************************/
-METHOD MoveFirstOfMonth() AS VOID 
-
+METHOD MoveFirstOfMonth() AS VOID PASCAL 
 	//l Method to move the First Day of the Month
 	//p Method to move the First Day of the Month
 	//r VOID
@@ -1377,8 +1279,8 @@ METHOD MoveFirstOfMonth() AS VOID
 	
 		dTarget := FirstDayofMonth( SELF:dCurrent )
 
-		IF !Empty(SELF:oDateRange) .and. ;
-			(dTarget < SELF:oDateRange:Min .or. dTarget > SELF:oDateRange:Max)
+		IF !Empty(SELF:oDateRange)  .and. ;
+			(dTarget < SELF:oDateRange:Min  .or. dTarget > SELF:oDateRange:Max)
 			// move to the first day in the daterance
 			dTarget := SELF:oDateRange:Min
 		ENDIF
@@ -1397,9 +1299,7 @@ METHOD MoveFirstOfMonth() AS VOID
 	END SEQUENCE
 	RETURN
 
-/****************************************************************************/
-METHOD MoveLastOfMonth() AS VOID 
-
+METHOD MoveLastOfMonth() AS VOID PASCAL 
 	//l Method to move the Last Day of the Month
 	//p Method to move the Last Day of the Month
 	//r VOID
@@ -1408,8 +1308,8 @@ METHOD MoveLastOfMonth() AS VOID
 	BEGIN SEQUENCE
 		dTarget := LastDayofMonth( SELF:dCurrent )
 
-		IF !Empty(SELF:oDateRange) .and. ;
-			(dTarget < SELF:oDateRange:Min .or. dTarget > SELF:oDateRange:Max)
+		IF !Empty(SELF:oDateRange)  .and. ;
+			(dTarget < SELF:oDateRange:Min  .or. dTarget > SELF:oDateRange:Max)
 			// move to the last day of the range
 			dTarget := SELF:oDateRange:Max
 		ENDIF
@@ -1428,9 +1328,7 @@ METHOD MoveLastOfMonth() AS VOID
 	END SEQUENCE
 	RETURN
 
-/****************************************************************************/
-METHOD MoveMonths(n AS LONGINT) AS VOID 
-
+METHOD MoveMonths(n AS LONGINT) AS VOID PASCAL 
 	//l Method to move n number of moths
 	//p Method to move n number of moths
 	//r VOID
@@ -1441,7 +1339,7 @@ METHOD MoveMonths(n AS LONGINT) AS VOID
 	LOCAL nMonth	AS LONGINT
 	
 	BEGIN SEQUENCE
-		nMonth := INT(_CAST,Month(SELF:dCurrent))
+		nMonth := LONG(Month(SELF:dCurrent))
 	
 		// If we have gone back a year
 		IF nMonth + n < 1
@@ -1460,15 +1358,15 @@ METHOD MoveMonths(n AS LONGINT) AS VOID
 			ENDIF	
 		ELSE
 			// Set the month within the current year
-			dTarget := ConDate( Year( SELF:dCurrent ), DWORD(_CAST,nMonth + n), Day( SELF:dCurrent ))
+			dTarget := ConDate( Year( SELF:dCurrent ), DWORD(nMonth + n), Day( SELF:dCurrent ))
 			IF dTarget == NULL_DATE
 				// We have a day > last day of the month
-				dTarget := ConDate( Year( SELF:dCurrent ), DWORD(_CAST,nMonth + n + 1),1)-1
+				dTarget := ConDate( Year( SELF:dCurrent ), DWORD(nMonth + n + 1),1)-1
 			ENDIF	
 		ENDIF	
 	
-		IF !Empty(SELF:oDateRange) .and. ;
-			(dTarget < SELF:oDateRange:Min .or. dTarget > SELF:oDateRange:Max)
+		IF !Empty(SELF:oDateRange)  .AND. ;
+			(dTarget < SELF:oDateRange:Min  .OR. dTarget > SELF:oDateRange:Max)
 			// dont need to do anything here
 			BREAK S_OK
 		ENDIF
@@ -1481,47 +1379,41 @@ METHOD MoveMonths(n AS LONGINT) AS VOID
 	END SEQUENCE
 	RETURN
 
-/****************************************************************************/
-METHOD MoveYears(n AS LONGINT) AS VOID 
-
+METHOD MoveYears(n AS LONGINT) AS VOID PASCAL 
 	//l Method to move n number of years
 	//p Method to move n number of years
 	//r VOID
 	//a n as int - number of years to move
-	LOCAL dTarget 		AS DATE
-	LOCAL lCurrent29Feb AS LOGIC
-	LOCAL nYear			AS LONGINT
-	LOCAL nMonth		AS LONGINT
-	LOCAL nDay			AS LONGINT
+	LOCAL dTarget 			AS DATE
+	LOCAL lCurrent29Feb 	AS LOGIC
+	LOCAL nYear				AS LONG
+	LOCAL nMonth			AS LONG
+	LOCAL nDay				AS LONG
 	
 	BEGIN SEQUENCE
-		nYear 	:= INT(_CAST,Year(SELF:dCurrent))
-		nMonth 	:= INT(_CAST,Month(SELF:dCurrent))
-		nDay	:= INT(_CAST,Day(SELF:dCurrent))
+		nYear 	:= LONG(Year(SELF:dCurrent))
+		nMonth 	:= LONG(Month(SELF:dCurrent))
+		nDay		:= LONG(Day(SELF:dCurrent))
 	
-		if nMonth == 2 .and. nDay == 29
-		    lCurrent29Feb := TRUE
-		ELSE
-		    lCurrent29Feb := FALSE 
-		END IF
+		lCurrent29Feb := IIF( nMonth == 2  .AND. nDay == 29, TRUE, FALSE )
 		
 		// New year is a leap year
 		IF IsLeapYear( nYear + n )
 			
 			// Doesn't matter what date we end up on
-			dTarget := ConDate( DWORD(_CAST,nYear + n), Month(SELF:dCurrent), Day(SELF:dCurrent) )			
+			dTarget := ConDate( DWORD(nYear + n), Month(SELF:dCurrent), Day(SELF:dCurrent) )			
 	
 			// New year not a leap year
 		ELSE
 			// Were we on a leap year, hanging out on Feb 29
-			dTarget := iif( lCurrent29Feb, 	;
-							ConDate( DWORD(_CAST,nYear + n), Month( SELF:dCurrent ), 28 ),  ;
-							ConDate( DWORD(_CAST,nYear + n), Month( SELF:dCurrent ), Day( SELF:dCurrent ) ) )
+			dTarget := IIF( lCurrent29Feb, 	;
+							ConDate( DWORD(nYear + n), Month( SELF:dCurrent ), 28 ),  ;
+							ConDate( DWORD(nYear + n), Month( SELF:dCurrent ), Day( SELF:dCurrent ) ) )
 	
 		ENDIF
 
-		IF !Empty(SELF:oDateRange) .and. ;
-			(dTarget < SELF:oDateRange:Min .or. dTarget > SELF:oDateRange:Max)
+		IF !Empty(SELF:oDateRange)  .AND. ;
+			(dTarget < SELF:oDateRange:Min  .OR. dTarget > SELF:oDateRange:Max)
 			// dont need to do anything here
 			BREAK S_OK
 		ENDIF
@@ -1533,15 +1425,12 @@ METHOD MoveYears(n AS LONGINT) AS VOID
 	END SEQUENCE	
 	RETURN
 
-/****************************************************************************/
 METHOD Show() 
-
 	
 	RETURN SUPER:show()
 
-/****************************************************************************/
-METHOD UnHighlightDay() AS VOID 
 
+METHOD UnHighlightDay() AS VOID PASCAL 
    	//l Unhighlight a highlighted day
    	//p Unhighlight a highlighted day
 	//r VOID
@@ -1554,7 +1443,7 @@ METHOD UnHighlightDay() AS VOID
 	LOCAL siHeight		AS SHORTINT
 	LOCAL dThis			AS DATE
 	LOCAL dwHolidayPos	AS DWORD
-	LOCAL rect 			AS winRECT
+	LOCAL rect 			IS _winRECT
 
 	nCol 		:= SELF:CurrentColumnNumber
 	nRow 		:= SELF:CurrentRowNumber
@@ -1567,25 +1456,25 @@ METHOD UnHighlightDay() AS VOID
 	
 
 	// set the rectangle like normal then deflate it
-	rect:Left 	:= SELF:liLeft + ( nCol - 1) * ( liWidth / 7 ) + 1
-	rect:Top 	:= SELF:liTop + ( nRow * ( liHeight /7 ) ) + 1
-	rect:Right	:= rect:Left + ( liWidth / 7 ) -1
-	rect:Bottom	:= rect:Top +  (liHeight / 7 ) -1
+	rect.Left 		:= SELF:liLeft + ( nCol - 1) * ( liWidth / 7 ) + 1
+	rect.Top 		:= SELF:liTop + ( nRow * ( liHeight /7 ) ) + 1
+	rect.Right	:= rect.Left + ( liWidth / 7 ) -1
+	rect.Bottom	:= rect.Top +  (liHeight / 7 ) -1
 
 	// Create a grey brush in background color.
 	dwHolidayPos := SELF:isInHoliday(dThis)
 	IF dwHolidayPos > 0
 		hBrush := SELF:CreateBrushFromHoliday(dwHolidayPos)
-		SetTextColor(SELF:hDC, (dword)RGB(255,0,0))
+		SetTextColor(SELF:hDC, DWORD(RGB(255,0,0)))
 		hOldFont := SelectObject(SELF:hDC, hFont)
 	ELSE
 		hBrush := CreateSolidBrush( GetSysColor(COLOR_BTNFACE ) )
-		SetTextColor(SELF:hDC, (dword)RGB(0,0,0))
+		SetTextColor(SELF:hDC, DWORD(RGB(0,0,0)))
 		hOldFont := SelectObject(SELF:hDC, GetStockObject(ANSI_VAR_FONT))
 	ENDIF
 
 	// Fill the area
-	FillRect( SELF:hDC, REF rect, hBrush )
+	FillRect( SELF:hDC, @rect, hBrush )
 
 	// Set our font
 	SelectObject( hDC, GetStockObject( ANSI_VAR_FONT ) )
@@ -1593,13 +1482,13 @@ METHOD UnHighlightDay() AS VOID
 	SetBkMode( SELF:hDC, TRANSPARENT )
 
 	// Set the rectangle
-	rect:Left 	:= SELF:liLeft + (( nCol -1) * ( SELF:liWidth / 7 ) )
-	rect:Top 	:= SELF:liTop + ( nRow * ( SELF:liHeight /7 ) ) + 2
-	rect:Right	:= rect:Left + ( SELF:liWidth / 7 )
-	rect:Bottom	:= rect:Top +  (SELF:liHeight / 7 )
+	rect.Left 		:= SELF:liLeft + (( nCol -1) * ( SELF:liWidth / 7 ) )
+	rect.Top 		:= SELF:liTop + ( nRow * ( SELF:liHeight /7 ) ) + 2
+	rect.Right	:= rect.Left + ( SELF:liWidth / 7 )
+	rect.Bottom	:= rect.Top +  (SELF:liHeight / 7 )
 
 	// Draw the text
-	DrawText(hDC,String2Psz( Str( Day( SELF:dCurrent ),2,0)),2,REF rect, DT_CENTER+DT_WORDBREAK)
+	DrawText(hDC,String2Psz( Str( Day( SELF:dCurrent ),2,0)),2,@rect, DT_CENTER+DT_WORDBREAK)
 
 	// restore the font
 	SelectObject(SELF:hDC, hOldFont)
@@ -1616,9 +1505,16 @@ METHOD UnHighlightDay() AS VOID
 
 	RETURN
 
-END CLASS
 
-/****************************************************************************/
+METHOD VerticalSpin(oSE) 
+	//Put your changes here     
+	LOCAL oSpinEvent	AS SpinnerEvent
+	oSpinEvent	:= oSE            
+	SELF:oYearVS:Position	  := oSpinEvent:Position  
+	SELF:oYearSle:CurrentText := NTrim(SELF:oYearVS:VALUE)
+	RETURN NIL
+
+END CLASS
 CLASS PECalendarSLE INHERIT rightSLE
 //l Calendar Class SLE
 //p Calendar Class SLE
@@ -1626,59 +1522,22 @@ CLASS PECalendarSLE INHERIT rightSLE
 //d in the same mannor as the tab key.
 //j CL:rightSLE,CL:dateSLE
 //g Edit Controls
-	//DECLARE METHOD ProcessEnter
 
-/****************************************************************************/
-Constructor(oOwner, nId, oPoint, oDim, kStyle, lDataAware )
+CONSTRUCTOR(oOwner, nId, oPoint, oDim, kStyle, lDataAware ) 
+    //Vulcan.NET-Transporter: This method was automatically created
+    SUPER(oOwner, nId, oPoint, oDim, kStyle, lDataAware )
 
-    super(oOwner, nId, oPoint, oDim, kStyle, lDataAware )
+//Vulcan.NET-Transporter: To Do: the following line has been inserted. Please check the return value is correct
+RETURN SELF
 
-RETURN  
-
-/****************************************************************************/
-METHOD ProcessEnter() AS LONG
-
+METHOD ProcessEnter() AS LONGINT PASCAL 
 	//p Method to process the enterKey
 	//r long
 	//a None
 	SetFocus(SELF:Owner:handle())
 	RETURN 1L
+
 END CLASS
-
-/****************************************************************************/
-FUNCTION MoveTo( hDC AS PTR, x AS INT, y AS INT ) AS VOID
-	//l function - Saves changing all the MoveTo's for 32bit
-	//p function - Saves changing all the MoveTo's for 32bit
-	//r VOID
-	//a Same parameters as MovetoEx
-
-	// GMcK Added 06/05/95 - Saves changing all the MoveTo's for 32bit
-	MoveToEx( hDC, x, y, NULL_PTR )
-	
-	RETURN
-
-/****************************************************************************/
-FUNCTION PointInSide( rc REF vorightSLE.internal.winRect, x AS LONGINT, y AS LONGINT ) AS LOGIC
-
-	LOCAL lRetVal	AS LOGIC
-
-	lRetVal := FALSE
-
-	IF x < rc:Left
-		lRetVal := FALSE
-	ELSEIF y < rc:Top
-		lRetVal := FALSE
-	ELSEIF x > rc:right
-		lRetVal := FALSE		
-	ELSEIF y > rc:bottom			
-		lRetVal := FALSE
-	ELSE
-		lRetVal := TRUE		
-	ENDIF		
-
-	RETURN lRetVal
-
-/****************************************************************************/
 FUNCTION GetMonth( MenuItemID AS DWORD )  AS LONGINT
 	//l function to get the month number based on a resourceID
 	//p function to get the month number based on a resourceID
@@ -1693,3 +1552,36 @@ FUNCTION GetMonth( MenuItemID AS DWORD )  AS LONGINT
 RETURN aMonths[ MenuItemID - ( ID_MONTH1 - 1 ) ]
 
 	
+
+FUNCTION MoveTo( hDC AS PTR, x AS INT, y AS INT ) AS VOID
+	//l function - Saves changing all the MoveTo's for 32bit
+	//p function - Saves changing all the MoveTo's for 32bit
+	//r VOID
+	//a Same parameters as MovetoEx
+
+	// GMcK Added 06/05/95 - Saves changing all the MoveTo's for 32bit
+	MoveToEx( hDC, x, y, NULL_PTR )
+	
+	RETURN
+
+FUNCTION PointInSide( rc AS _WinRect, x AS LONGINT, y AS LONGINT ) AS LOGIC
+
+	LOCAL lRetVal	AS LOGIC
+
+	lRetVal := FALSE
+
+	IF x < rc.Left
+		lRetVal := FALSE
+	ELSEIF y < rc.Top
+		lRetVal := FALSE
+	ELSEIF x > rc.right
+		lRetVal := FALSE		
+	ELSEIF y > rc.bottom			
+		lRetVal := FALSE
+	ELSE
+		lRetVal := TRUE		
+	ENDIF		
+
+	RETURN lRetVal
+
+

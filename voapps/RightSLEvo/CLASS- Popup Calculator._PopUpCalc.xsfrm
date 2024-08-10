@@ -2,31 +2,30 @@
 <Designers>
   <VOWindow Name="_PopUpCalc">
     <Window Name="_PopUpCalc">
-      <SavedOnce>Yes</SavedOnce>
       <Name>_PopUpCalc</Name>
-      <Class>FORM:DIALOGWINDOW</Class>
+      <Class>DIALOGWINDOW</Class>
       <Caption>Calculator</Caption>
       <Order>0</Order>
-      <Left>5</Left>
-      <Top>5</Top>
+      <Left>90</Left>
+      <Top>45</Top>
       <Width>214</Width>
-      <Height>328</Height>
-      <BrowseIndex>0</BrowseIndex>
+      <Height>352</Height>
+      <BrowseIndex>-1</BrowseIndex>
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
       <Deleted>0</Deleted>
-      <Styles>3234332804</Styles>
-      <ExStyles>0</ExStyles>
+      <Styles>2160590980</Styles>
+      <ExStyles>257</ExStyles>
       <ExProperties>
-        <HyperLabel>,"Calculator"</HyperLabel>
-        <HyperLabel>"_PopUpCalc"</HyperLabel>
+        <HyperLabel>,"Calculator",,</HyperLabel>
+        <HyperLabel>#_PopUpCalc,,,</HyperLabel>
         <Background>181 181 106</Background>
       </ExProperties>
     </Window>
     <Control Name="DisplayZ">
       <Name>DisplayZ</Name>
-      <Class>CONTROL:TEXTCONTROL:EDIT:SINGLELINEEDIT</Class>
+      <Class>SINGLELINEEDIT</Class>
       <Caption>
       </Caption>
       <Order>1</Order>
@@ -34,23 +33,23 @@
       <Top>12</Top>
       <Width>190</Width>
       <Height>28</Height>
-      <BrowseIndex>0</BrowseIndex>
-      <BrowseSize>17</BrowseSize>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
-      <Styles>1082196106</Styles>
+      <Deleted>2</Deleted>
+      <Styles>1082196110</Styles>
       <ExStyles>512</ExStyles>
       <ExProperties>
-        <HyperLabel>"DisplayZ"</HyperLabel>
-        <TextColor>COLORBLUE</TextColor>
+        <HyperLabel>#DisplayZ,,,</HyperLabel>
+        <NewFont>10:MS Sans Serif</NewFont>
         <InheritClassName>CALCSINGLELINEEDIT</InheritClassName>
-        <NewFont>10:Microsoft Sans Serif</NewFont>
+        <TextColor>COLORBLUE</TextColor>
       </ExProperties>
     </Control>
     <Control Name="SaveExitButton">
       <Name>SaveExitButton</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>SAVE/EXIT</Caption>
       <Order>2</Order>
       <Left>121</Left>
@@ -61,17 +60,17 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
-      <ExStyles>1</ExStyles>
+      <ExStyles>257</ExStyles>
       <ExProperties>
-        <HyperLabel>,"SAVE/EXIT"</HyperLabel>
-        <HyperLabel>"SaveExitButton"</HyperLabel>
+        <HyperLabel>,"SAVE/EXIT",,</HyperLabel>
+        <HyperLabel>#SaveExitButton,,,</HyperLabel>
       </ExProperties>
     </Control>
     <Control Name="QuitButton">
       <Name>QuitButton</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>QUIT</Caption>
       <Order>3</Order>
       <Left>11</Left>
@@ -82,17 +81,17 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"QUIT"</HyperLabel>
-        <HyperLabel>"QuitButton"</HyperLabel>
+        <HyperLabel>,"QUIT",,</HyperLabel>
+        <HyperLabel>#QuitButton,,,</HyperLabel>
       </ExProperties>
     </Control>
     <Control Name="B7">
       <Name>B7</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>7</Caption>
       <Order>4</Order>
       <Left>11</Left>
@@ -103,18 +102,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073840128</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"7"</HyperLabel>
-        <HyperLabel>"B7"</HyperLabel>
+        <HyperLabel>,"7",,</HyperLabel>
+        <HyperLabel>#B7,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="B8">
       <Name>B8</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>8</Caption>
       <Order>5</Order>
       <Left>51</Left>
@@ -125,18 +124,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073840128</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"8"</HyperLabel>
-        <HyperLabel>"B8"</HyperLabel>
+        <HyperLabel>,"8",,</HyperLabel>
+        <HyperLabel>#B8,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="B9">
       <Name>B9</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>9</Caption>
       <Order>6</Order>
       <Left>91</Left>
@@ -147,18 +146,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073840128</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"9"</HyperLabel>
-        <HyperLabel>"B9"</HyperLabel>
+        <HyperLabel>,"9",,</HyperLabel>
+        <HyperLabel>#B9,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="B4">
       <Name>B4</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>4</Caption>
       <Order>7</Order>
       <Left>11</Left>
@@ -169,18 +168,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073840128</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"4"</HyperLabel>
-        <HyperLabel>"B4"</HyperLabel>
+        <HyperLabel>,"4",,</HyperLabel>
+        <HyperLabel>#B4,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="B5">
       <Name>B5</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>5</Caption>
       <Order>8</Order>
       <Left>51</Left>
@@ -191,18 +190,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073840128</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"5"</HyperLabel>
-        <HyperLabel>"B5"</HyperLabel>
+        <HyperLabel>,"5",,</HyperLabel>
+        <HyperLabel>#B5,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="B6">
       <Name>B6</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>6</Caption>
       <Order>9</Order>
       <Left>90</Left>
@@ -213,18 +212,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073840128</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"6"</HyperLabel>
-        <HyperLabel>"B6"</HyperLabel>
+        <HyperLabel>,"6",,</HyperLabel>
+        <HyperLabel>#B6,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="B1">
       <Name>B1</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>1</Caption>
       <Order>10</Order>
       <Left>11</Left>
@@ -235,18 +234,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073840128</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"1"</HyperLabel>
-        <HyperLabel>"B1"</HyperLabel>
+        <HyperLabel>,"1",,</HyperLabel>
+        <HyperLabel>#B1,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="B2">
       <Name>B2</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>2</Caption>
       <Order>11</Order>
       <Left>51</Left>
@@ -257,18 +256,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073840128</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"2"</HyperLabel>
-        <HyperLabel>"B2"</HyperLabel>
+        <HyperLabel>,"2",,</HyperLabel>
+        <HyperLabel>#B2,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="B3">
       <Name>B3</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>3</Caption>
       <Order>12</Order>
       <Left>91</Left>
@@ -279,18 +278,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073840128</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"3"</HyperLabel>
-        <HyperLabel>"B3"</HyperLabel>
+        <HyperLabel>,"3",,</HyperLabel>
+        <HyperLabel>#B3,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="B0">
       <Name>B0</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>0</Caption>
       <Order>13</Order>
       <Left>11</Left>
@@ -301,18 +300,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073840128</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"0"</HyperLabel>
-        <HyperLabel>"B0"</HyperLabel>
+        <HyperLabel>,"0",,</HyperLabel>
+        <HyperLabel>#B0,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BDot">
       <Name>BDot</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>.</Caption>
       <Order>14</Order>
       <Left>91</Left>
@@ -323,18 +322,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073840128</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"."</HyperLabel>
-        <HyperLabel>"BDot"</HyperLabel>
+        <HyperLabel>,".",,</HyperLabel>
+        <HyperLabel>#BDot,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BPower">
       <Name>BPower</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>^</Caption>
       <Order>15</Order>
       <Left>11</Left>
@@ -345,18 +344,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"^"</HyperLabel>
-        <HyperLabel>"BPower"</HyperLabel>
+        <HyperLabel>,"^",,</HyperLabel>
+        <HyperLabel>#BPower,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BPercent">
       <Name>BPercent</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>%</Caption>
       <Order>16</Order>
       <Left>51</Left>
@@ -367,18 +366,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"%"</HyperLabel>
-        <HyperLabel>"BPercent"</HyperLabel>
+        <HyperLabel>,"%",,</HyperLabel>
+        <HyperLabel>#BPercent,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BPlusMinus">
       <Name>BPlusMinus</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>+/-</Caption>
       <Order>17</Order>
       <Left>91</Left>
@@ -389,18 +388,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"+/-"</HyperLabel>
-        <HyperLabel>"BPlusMinus"</HyperLabel>
+        <HyperLabel>,"+/-",,</HyperLabel>
+        <HyperLabel>#BPlusMinus,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BSquareRoot">
       <Name>BSquareRoot</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>Sq</Caption>
       <Order>18</Order>
       <Left>131</Left>
@@ -411,18 +410,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"Sq"</HyperLabel>
-        <HyperLabel>"BSquareRoot"</HyperLabel>
+        <HyperLabel>,"Sq",,</HyperLabel>
+        <HyperLabel>#BSquareRoot,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BInvert">
       <Name>BInvert</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>1/x</Caption>
       <Order>19</Order>
       <Left>171</Left>
@@ -433,18 +432,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"1/x"</HyperLabel>
-        <HyperLabel>"BInvert"</HyperLabel>
+        <HyperLabel>,"1/x",,</HyperLabel>
+        <HyperLabel>#BInvert,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="Btimes">
       <Name>Btimes</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>x</Caption>
       <Order>20</Order>
       <Left>131</Left>
@@ -455,18 +454,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"x"</HyperLabel>
-        <HyperLabel>"Btimes"</HyperLabel>
+        <HyperLabel>,"x",,</HyperLabel>
+        <HyperLabel>#Btimes,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="Bdivide">
       <Name>Bdivide</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>/</Caption>
       <Order>21</Order>
       <Left>131</Left>
@@ -477,18 +476,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"/"</HyperLabel>
-        <HyperLabel>"Bdivide"</HyperLabel>
+        <HyperLabel>,"/",,</HyperLabel>
+        <HyperLabel>#Bdivide,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BMinus">
       <Name>BMinus</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>-</Caption>
       <Order>22</Order>
       <Left>131</Left>
@@ -499,18 +498,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"-"</HyperLabel>
-        <HyperLabel>"BMinus"</HyperLabel>
+        <HyperLabel>,"-",,</HyperLabel>
+        <HyperLabel>#BMinus,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BPlus">
       <Name>BPlus</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>+</Caption>
       <Order>23</Order>
       <Left>131</Left>
@@ -521,18 +520,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"+"</HyperLabel>
-        <HyperLabel>"BPlus"</HyperLabel>
+        <HyperLabel>,"+",,</HyperLabel>
+        <HyperLabel>#BPlus,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BMemRecall">
       <Name>BMemRecall</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>MR</Caption>
       <Order>24</Order>
       <Left>11</Left>
@@ -543,18 +542,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"MR"</HyperLabel>
-        <HyperLabel>"BMemRecall"</HyperLabel>
+        <HyperLabel>,"MR",,</HyperLabel>
+        <HyperLabel>#BMemRecall,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BMemPlus">
       <Name>BMemPlus</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>M+</Caption>
       <Order>25</Order>
       <Left>51</Left>
@@ -565,18 +564,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"M+"</HyperLabel>
-        <HyperLabel>"BMemPlus"</HyperLabel>
+        <HyperLabel>,"M+",,</HyperLabel>
+        <HyperLabel>#BMemPlus,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BMemMinus">
       <Name>BMemMinus</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>M-</Caption>
       <Order>26</Order>
       <Left>91</Left>
@@ -587,18 +586,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"M-"</HyperLabel>
-        <HyperLabel>"BMemMinus"</HyperLabel>
+        <HyperLabel>,"M-",,</HyperLabel>
+        <HyperLabel>#BMemMinus,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BMemTimes">
       <Name>BMemTimes</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>Mx</Caption>
       <Order>27</Order>
       <Left>131</Left>
@@ -609,18 +608,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"Mx"</HyperLabel>
-        <HyperLabel>"BMemTimes"</HyperLabel>
+        <HyperLabel>,"Mx",,</HyperLabel>
+        <HyperLabel>#BMemTimes,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BMemClear">
       <Name>BMemClear</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>MC</Caption>
       <Order>28</Order>
       <Left>171</Left>
@@ -631,18 +630,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"MC"</HyperLabel>
-        <HyperLabel>"BMemClear"</HyperLabel>
+        <HyperLabel>,"MC",,</HyperLabel>
+        <HyperLabel>#BMemClear,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BClearEntry">
       <Name>BClearEntry</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>CE</Caption>
       <Order>29</Order>
       <Left>171</Left>
@@ -653,18 +652,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"CE"</HyperLabel>
-        <HyperLabel>"BClearEntry"</HyperLabel>
+        <HyperLabel>,"CE",,</HyperLabel>
+        <HyperLabel>#BClearEntry,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BClear">
       <Name>BClear</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>C</Caption>
       <Order>30</Order>
       <Left>171</Left>
@@ -675,18 +674,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"C"</HyperLabel>
-        <HyperLabel>"BClear"</HyperLabel>
+        <HyperLabel>,"C",,</HyperLabel>
+        <HyperLabel>#BClear,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="BEquals">
       <Name>BEquals</Name>
-      <Class>CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON</Class>
+      <Class>PUSHBUTTON</Class>
       <Caption>=</Caption>
       <Order>31</Order>
       <Left>171</Left>
@@ -697,18 +696,18 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073807360</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"="</HyperLabel>
-        <HyperLabel>"BEquals"</HyperLabel>
+        <HyperLabel>,"=",,</HyperLabel>
+        <HyperLabel>#BEquals,,,</HyperLabel>
         <NewFont>10:Times New Roman:Bold</NewFont>
       </ExProperties>
     </Control>
     <Control Name="MemText">
       <Name>MemText</Name>
-      <Class>CONTROL:TEXTCONTROL:FIXEDTEXT</Class>
+      <Class>FIXEDTEXT</Class>
       <Caption>Memory Contents</Caption>
       <Order>32</Order>
       <Left>61</Left>
@@ -719,12 +718,12 @@
       <BrowseSize>0</BrowseSize>
       <SubForm>No</SubForm>
       <NoSave>No</NoSave>
-      <Deleted>0</Deleted>
+      <Deleted>2</Deleted>
       <Styles>1073741826</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <HyperLabel>,"Memory Contents"</HyperLabel>
-        <HyperLabel>"MemText"</HyperLabel>
+        <HyperLabel>,"Memory Contents",,</HyperLabel>
+        <HyperLabel>#MemText,,,</HyperLabel>
       </ExProperties>
     </Control>
   </VOWindow>

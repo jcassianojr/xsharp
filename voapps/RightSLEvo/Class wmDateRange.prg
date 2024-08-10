@@ -1,4 +1,4 @@
-CLASS wmDateRange
+﻿CLASS wmDateRange
 // Author		: Willie Moore
 // Email		: williem@wmconsulting.com
 // Address		:
@@ -16,9 +16,8 @@ CLASS wmDateRange
 	PROTECT dMin 	AS DATE
 	PROTECT dMax	AS DATE
 	
-/****************************************************************************/
-Constructor(dMinDate, dMaxDate)
 
+CONSTRUCTOR(dMinDate, dMaxDate) 
 	// handle the min date
 	IF !Empty(dMinDate)
 		IF IsDate(dMinDate)
@@ -41,11 +40,9 @@ Constructor(dMinDate, dMaxDate)
 		ENDIF
 	ENDIF
 
-	RETURN 
+	RETURN SELF
 
-/****************************************************************************/
-ACCESS Max() AS DATE 
-
+ACCESS Max() AS DATE PASCAL 
 	//l Returns the maxmum date in a date range.
 	//p Returns the maximum date in a date range.
 	//d Max represents the maximum date in the date range.
@@ -53,20 +50,16 @@ ACCESS Max() AS DATE
 	//a None
 	RETURN SELF:dMax
 
-/****************************************************************************/
-ASSIGN Max(dMaxDate AS DATE) AS void 
-
+ASSIGN Max(dMaxDate AS DATE) AS DATE PASCAL 
 	//l Assign the maximum date in a date range.
 	//p Assign the maximum date in a date range.
 	//d Max represents the maximum date in the date range.
 	//r Date
 	//a dMaxDate as date - Max Date in Range.
 	SELF:dMax := dMaxDate
-	RETURN 
+	RETURN SELF:dMax
 
-/****************************************************************************/
-ACCESS Min() AS DATE 
-
+ACCESS Min() AS DATE PASCAL 
 	//l Represents the minimum date in a date range.
 	//p Represents the minimum date in a date range.
 	//d Min represents the minimum date in the date range.
@@ -74,15 +67,14 @@ ACCESS Min() AS DATE
 	//a None
 	RETURN SELF:dMin
 
-/****************************************************************************/
-ASSIGN Min(dMinDate AS DATE) AS void 
-
+ASSIGN Min(dMinDate AS DATE) AS DATE PASCAL 
 	//l Assign the minimum date in a date range.
 	//p Assign the minimum date in a date range.
 	//d Min represents the minimum date in the date range.
 	//r Date
 	//a dMinDate as date - Min Date in Range.
 	SELF:dMin := dMinDate
-	RETURN 
-END CLASS
+	RETURN SELF:dMin
 
+
+END CLASS

@@ -88,7 +88,7 @@ IF Empty(cVAR) .OR. IN_LEN<1
 ENDIF
 FOR counter:= IN_LEN DOWNTO 1
     //out_string:=out_string+CHR((Asc(SubStr(cVAR,counter,1))/2)-ADJVAL)
-    nASC:=Asc(SubStr(cVAR,counter,1))
+    nASC:=INT(Asc(SubStr(cVAR,counter,1)) )
     IF nASC<85            //-255 gerava caracteres de controle minimo = 32 espaco 255-32=223 usando 220 z(122)=304 - 220 = 84
         nASC:= nASC +220  // z ultimo valor aceitaVel
     ENDIF
@@ -157,11 +157,11 @@ RETURN out_string
 
 
 
-FUNCTION ENCODED(dDAT AS DATE,lCONVOEM,lUPPER) AS STRING
+FUNCTION ENCODED(dDAT AS DATE,lCONVOEM AS LOGIC,lUPPER AS LOGIC) AS STRING
 LOCAL cVAR AS STRING
 cVAR:=DToS(dDAT)
 cVAR:=ENCODE(cVAR,8,LCONVOEM,lUPPER)
-RETU cVAR
+RETURN cVAR
 
 FUNCTION entramenu(cGRU,nPOS,cARQ)
 LOCAL lRETU:=.F.
@@ -331,10 +331,12 @@ IF zTIPERRO="SQLITE"
 			cSQL:=cSQL+ "'"+Carq+"'"
 			cSQL:=cSQL+ " );"
             oSTATEMENT := SQLStatement{cSQL ,oCONN }
-	        IF oSTATEMENT:Execute()
+	        IF oSTATEMENT:Execute()       
+	        	NOP
 	        //	alert("incluido")
 	        ELSE
-              //  MemoWrit("TESTE.SQL",cSQL)
+              //  MemoWrit("TESTE.SQL",cSQL) 
+               NOP
 	        ENDIF
 		ENDIF
     ENDIF
@@ -395,7 +397,7 @@ IF ValType(nSUP)="N"
 ENDIF
 RETU nRETU
 
-FUNCTION ListAsArray( cList AS STRING , cDelimiter  )  AS ARRAY
+FUNCTION ListAsArray( cList AS STRING , cDelimiter AS STRING )  AS ARRAY
 LOCAL nPos AS DWORD, aList := {} AS ARRAY
 IF ValType(cDelimiter)#"C"
    cDelimiter:=","

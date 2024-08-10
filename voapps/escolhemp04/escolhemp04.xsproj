@@ -80,14 +80,14 @@
   </PropertyGroup>
   <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
+      <Name>RightSLEvo</Name>
+      <Project>{3d4263c5-a701-43d6-a424-e160b4f00966}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
-      <Name>RightSLEvo</Name>
-      <Project>{E1A8DAF4-3BDA-434A-9753-2B6F30230B1E}</Project>
-      <Private>True</Private>
-    </ProjectReference>
     <ProjectReference Include="..\mlibwvo27\mlibwvo27.xsproj">
       <Name>mlibwvo27</Name>
       <Project>{B907C405-BE16-49E4-A05A-1C51DF577CA2}</Project>

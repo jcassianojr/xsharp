@@ -1,4 +1,4 @@
-CLASS CalcSLE INHERIT rightsle
+﻿CLASS CalcSLE INHERIT rightsle
 // Author		: Willie Moore
 // Email		: williem@wmconsulting.com
 // Address		:
@@ -13,16 +13,15 @@ CLASS CalcSLE INHERIT rightsle
 //d	calcSLE is a subclass if rightSLE that adds a popup calculator.
 //d Put a SLE on your window and have it INHERIT from calcSLE.
 //g Edit Controls
-METHOD Dispatch ( oEvent ) 
 
+METHOD Dispatch ( oEvent ) 
 
 	/*
 		Only the messages, that calcSle wants to know about.
 	 	All the rest go through to rightSLES's dispatch and every other class's dispatch that is involved from there - There are lots of them!!!!
 
     */
-        
-    	IF !(SELF:FieldSpec == NULL_OBJECT ) .and. SELF:FieldSpec:Valtype == "N"
+    	IF !(SELF:FieldSpec == NULL_OBJECT )  .and. SELF:FieldSpec:Valtype == 'N'
     		DO CASE
     			CASE SELF:ReadOnly
     				// dont do anything if it is readonly
@@ -49,13 +48,13 @@ METHOD Dispatch ( oEvent )
 RETURN SUPER:Dispatch( oEvent )
 
 
-constructor(oOwner, nId, oPoint, oDim, kStyle,lDataAware )
 
+CONSTRUCTOR(oOwner, nId, oPoint, oDim, kStyle,lDataAware ) 
 	SUPER( oOwner, nID, oPoint, oDim, kStyle, lDataAware )
     SELF:ContextMenu := CalcSLEContextMenu{ SELF }
-    RETURN  
-END CLASS
+    RETURN SELF
 
+END CLASS
 CLASS pbCalcSlE INHERIT CalcSLE
 // Author		: Willie Moore
 // Email		: williem@wmconsulting.com
@@ -72,11 +71,11 @@ CLASS pbCalcSlE INHERIT CalcSLE
 //d Put a SLE on your window and have it INHERIT from pbcalcSLE.
 //g Edit Controls
 
-/****************************************************************************/
-constructor(oOwner, nId, oPoint, oDim, kStyle,lDataAware )
 
+CONSTRUCTOR(oOwner, nId, oPoint, oDim, kStyle,lDataAware ) 
 	SUPER( oOwner, nID, oPoint, oDim, kStyle, lDataAware )
 	SELF:AssignImage("rsle_calcup")
-	RETURN  
-END CLASS
+	RETURN SELF
 
+
+END CLASS

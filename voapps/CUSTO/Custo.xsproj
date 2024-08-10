@@ -46,6 +46,7 @@
     <EnforceSelf>True</EnforceSelf>
     <IncludePaths />
     <TargetFrameworkProfile />
+    <NamedArgs>False</NamedArgs>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
     <PlatformTarget>x86</PlatformTarget>
@@ -462,11 +463,6 @@
     <ProjectReference Include="..\peg.met\peg.met.xsproj">
       <Name>peg.met</Name>
       <Project>{b1f0f2ce-18c1-4ac6-b6db-a20f12e81432}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
-      <Name>RightSLEvo</Name>
-      <Project>{e1a8daf4-3bda-434a-9753-2b6f30230b1e}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>

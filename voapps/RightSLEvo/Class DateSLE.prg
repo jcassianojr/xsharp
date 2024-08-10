@@ -1,4 +1,4 @@
-CLASS DateSle INHERIT DateSleNoPB
+﻿CLASS DateSle INHERIT DateSleNoPB
 // Author		: Willie Moore
 // Email		: williem@wmconsulting.colm
 // Address		:
@@ -13,14 +13,14 @@ CLASS DateSle INHERIT DateSleNoPB
 //d Place a SLE on your window and have it inherit from DateSLE.
 //d DateSLE automatically assigns a fieldspec.
 //g Edit Controls
-constructor(oOwner, nId, oPoint, oDim, kStyle, lDataAware ) 
 
+CONSTRUCTOR(oOwner, nId, oPoint, oDim, kStyle, lDataAware ) 
 	SUPER( oOwner, nId, oPoint, oDim, kStyle, lDataAware )
 	SELF:AssignImage("rsle_CALUP")
-	RETURN  
+	RETURN SELF
 	
-END CLASS
 
+END CLASS
 CLASS DateSleNoPB INHERIT rightsle
 // Author			: Willie Moore
 // Email				: williem@wmconsulting.colm
@@ -37,8 +37,8 @@ CLASS DateSleNoPB INHERIT rightsle
 //d DateSLE automatically assigns a fieldspec.
 //g Edit Controls
 
-METHOD Dispatch ( oEvent ) 
 
+METHOD Dispatch ( oEvent ) 
 		
       //CAL 300502
       DO CASE
@@ -55,8 +55,8 @@ METHOD Dispatch ( oEvent )
 			
 	RETURN SUPER:Dispatch( oEvent )
 
-constructor(oOwner, nId, oPoint, oDim, kStyle, lDataAware ) 
 
+CONSTRUCTOR(oOwner, nId, oPoint, oDim, kStyle, lDataAware ) 
 	LOCAL DIM firstDay[2] AS BYTE
 	
 	SUPER( oOwner, nID, oPoint, oDim, kStyle, lDataAware )
@@ -75,6 +75,7 @@ constructor(oOwner, nId, oPoint, oDim, kStyle, lDataAware )
 	ELSEIF firstDay[1] = 54	// Sunday 1st Day of Week
 		SELF:FirstDayoftheWeek	:= 1		// set up Sunday as initial day of the week
 	ENDIF
-	RETURN  
-END CLASS
+	RETURN SELF     
 
+
+END CLASS

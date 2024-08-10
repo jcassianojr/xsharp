@@ -82,7 +82,7 @@
   <ItemGroup>
     <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
       <Name>RightSLEvo</Name>
-      <Project>{e1a8daf4-3bda-434a-9753-2b6f30230b1e}</Project>
+      <Project>{3d4263c5-a701-43d6-a424-e160b4f00966}</Project>
       <Private>True</Private>
     </ProjectReference>
     <Reference Include="mscorlib" />

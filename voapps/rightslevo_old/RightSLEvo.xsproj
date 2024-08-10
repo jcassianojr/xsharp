@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
+  <PropertyGroup>
+    <ProjectGuid>E1A8DAF4-3BDA-434A-9753-2B6F30230B1E</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RightSLEvo</RootNamespace>
+    <AssemblyName>RightSLEvo</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Name>RightSLEvo</Name>
+    <Nologo>true</Nologo>
+    <GenerateFullPaths>true</GenerateFullPaths>
+    <Dialect>VO</Dialect>
+    <LB>true</LB>
+    <OutputName>RightSLEvo</OutputName>
+    <StartupObject />
+    <ApplicationIcon />
+    <Prefer32Bit>True</Prefer32Bit>
+    <VulcanCompatibleResources>False</VulcanCompatibleResources>
+    <AZ>false</AZ>
+    <CS>false</CS>
+    <OVF>false</OVF>
+    <Unsafe>true</Unsafe>
+    <INS>true</INS>
+    <NS>false</NS>
+    <VO1>true</VO1>
+    <VO2>true</VO2>
+    <VO3>true</VO3>
+    <VO4>true</VO4>
+    <VO5>true</VO5>
+    <VO6>true</VO6>
+    <VO7>true</VO7>
+    <VO8>true</VO8>
+    <VO9>true</VO9>
+    <VO10>true</VO10>
+    <VO11>false</VO11>
+    <VO12>false</VO12>
+    <VO13>true</VO13>
+    <VO14>false</VO14>
+    <VO15>true</VO15>
+    <VO16>true</VO16>
+    <MemVar>false</MemVar>
+    <Undeclared>false</Undeclared>
+    <NoStandardDefs>false</NoStandardDefs>
+    <EnforceSelf>True</EnforceSelf>
+    <IncludePaths />
+    <TargetFrameworkProfile />
+    <NamedArgs>False</NamedArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
+    <PlatformTarget>x86</PlatformTarget>
+    <EmitDebugInformation>true</EmitDebugInformation>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
+    <UseSharedCompilation>true</UseSharedCompilation>
+    <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
+    <WarningLevel>4</WarningLevel>
+    <PPO>false</PPO>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Prefer32Bit>False</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Label="Configuration">
+    <PlatformTarget>x86</PlatformTarget>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <EmitDebugInformation>false</EmitDebugInformation>
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseSharedCompilation>true</UseSharedCompilation>
+    <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
+    <PPO>false</PPO>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="XSharp.Core">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="XSharp.RT">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="XSharp.VO">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOGUIClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOSystemClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOWin32APILibrary">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bitmap Button.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CLASS- Popup Calculator.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="CLASS- Popup Calculator._PopUpCalc.rc">
+      <DependentUpon>CLASS- Popup Calculator.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="CLASS- Popup Calculator._PopUpCalc.xsfrm">
+      <DependentUpon>CLASS- Popup Calculator.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="Class DateSLE.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Class dlgPECalendar.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Class dlgPECalendar._dlgPECalendar.rc">
+      <DependentUpon>Class dlgPECalendar.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="Class dlgPECalendar._dlgPECalendar.xsfrm">
+      <DependentUpon>Class dlgPECalendar.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="Class FileSLE.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Class FileSLE.IBM_FOLDDN.rc">
+      <DependentUpon>Class FileSLE.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="Class FileSLE.IBM_FOLDUP.rc">
+      <DependentUpon>Class FileSLE.prg</DependentUpon>
+    </NativeResource>
+    <Compile Include="Class SearchSLE.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Class TimerSLE.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Formatted String Fix.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Functions  PEDateSLE.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Menu CalcSLE.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Menu CalcSLE.CalcSLEContextMenu.rc">
+      <DependentUpon>Menu CalcSLE.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="Menu CalcSLE.CalcSLEContextMenu.xsmnu">
+      <DependentUpon>Menu CalcSLE.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="Menu PEDateSle.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Menu PEDateSle.PEDateSleContextMenu.rc">
+      <DependentUpon>Menu PEDateSle.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="Menu PEDateSle.PEDateSleContextMenu.xsmnu">
+      <DependentUpon>Menu PEDateSle.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="Class CalcSLE.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Class InlineCalcSLE.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Class PECalendar.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Class PECalendar.MonthMenu.rc">
+      <DependentUpon>Class PECalendar.prg</DependentUpon>
+    </NativeResource>
+    <Compile Include="Class SLEButton.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Class rightSLE.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Class FolderSLE.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Version Info.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Release Notes.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="rightSLE Resource Statements.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="rightSLE Resource Statements.RSLE_CALCDN.rc">
+      <DependentUpon>rightSLE Resource Statements.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="rightSLE Resource Statements.RSLE_CALCUP.rc">
+      <DependentUpon>rightSLE Resource Statements.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="rightSLE Resource Statements.RSLE_CALDN.rc">
+      <DependentUpon>rightSLE Resource Statements.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="rightSLE Resource Statements.RSLE_CALUP.rc">
+      <DependentUpon>rightSLE Resource Statements.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="rightSLE Resource Statements.RSLE_FOLDDN.rc">
+      <DependentUpon>rightSLE Resource Statements.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="rightSLE Resource Statements.RSLE_FOLDUP.rc">
+      <DependentUpon>rightSLE Resource Statements.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="rightSLE Resource Statements.RSLE_MAGNIFDN.rc">
+      <DependentUpon>rightSLE Resource Statements.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="rightSLE Resource Statements.RSLE_MAGNIFUP.rc">
+      <DependentUpon>rightSLE Resource Statements.prg</DependentUpon>
+    </NativeResource>
+    <Compile Include="Class SLEButtonOld.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Class wmDateRange.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="Resources\FOLDDOWN.BMP" />
+    <None Include="Resources\FOLDUP.BMP" />
+    <None Include="Resources\rsle_CALCDN.BMP" />
+    <None Include="Resources\rsle_CALCUP.BMP" />
+    <None Include="Resources\rsle_CALDOWN.BMP" />
+    <None Include="Resources\rsle_CALUP.BMP" />
+    <None Include="Resources\RSLE_FOLDDOWN.BMP" />
+    <None Include="Resources\RSLE_FOLDUP.BMP" />
+    <None Include="Resources\RSLE_MAGNIFDN.BMP" />
+    <None Include="Resources\RSLE_MAGNIFUP.BMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
+  <ProjectExtensions>
+    <ProjectCapabilities>
+      <ProjectConfigurationsDeclaredAsItems />
+    </ProjectCapabilities>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+</Project>

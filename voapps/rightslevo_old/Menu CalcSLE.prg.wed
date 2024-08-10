@@ -1,0 +1,46 @@
+DESIGNERSTART = VOMenu,Menu,CalcSLEContextMenu
+GUID=4EC02868-EBBE-4B74-83B1-DE08F554CE23
+Name=CalcSLEContextMenu
+Toolbar=No Toolbar
+Show=Icon
+UseBands=No
+
+SUBCONTROLSSTART
+
+CONTROL=MENUITEM
+GUID=EE3F0642-06CD-42EC-BF44-E48C0A9287B0
+EventName=
+Caption=&File
+Description=
+HelpContext=
+Accelerator=None
+Enabled=Yes
+Checked=No
+ButtonBmp=
+ButtonCaption=
+ButtonToolTip=
+ButtonPos=-1
+
+SUBCONTROLSSTART
+
+CONTROL=MENUITEM
+GUID=33D58BDF-8D7D-4236-B221-8039ED18C27A
+EventName=
+Caption=&Calculator
+Description=Popup Calculator
+HelpContext=
+Accelerator=None
+Enabled=Yes
+Checked=No
+ButtonBmp=
+ButtonCaption=
+ButtonToolTip=
+ButtonPos=-1
+
+SUBCONTROLSEND
+
+
+SUBCONTROLSEND
+
+DESIGNEREND = CalcSLEContextMenu
+

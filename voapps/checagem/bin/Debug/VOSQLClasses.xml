@@ -1,0 +1,1789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>VOSQLClasses</name>
+  </assembly>
+  <members>
+    <member name="T:VO.SQLCatalogQuery">
+      <summary>
+            Provide the base class from which all X# catalog classes are subclassed.
+        </summary>
+    </member>
+    <member name="M:VO.SQLCatalogQuery.#ctor(XSharp.__Usual)">
+      <summary>
+            Construct an SQLCatalogQuery object.
+        </summary>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+    </member>
+    <member name="P:VO.SQLCatalogQuery.CursorName">
+      <summary>
+            This property is provided to override the inherited functionality from the SQLSelect class, as it does not apply to SQLCatalogQuery.
+        </summary>
+      <value>This property is provided to override the inherited functionality from the SQLSelect class, as it does not apply to SQLCatalogQuery.</value>
+    </member>
+    <member name="M:VO.SQLCatalogQuery.Delete">
+      <summary>
+            This method is provided to override the inherited functionality from the SQLSelect class, as it does not apply to SQLCatalogQuery; therefore it generates an error and returns FALSE.
+        </summary>
+    </member>
+    <member name="M:VO.SQLCatalogQuery.Execute"></member>
+    <member name="M:VO.SQLCatalogQuery.FIELDPUT">
+      <summary>
+            This method is provided to override the inherited functionality from the SQLSelect class, as it does not apply to SQLCatalogQuery; therefore it generates an error and returns FALSE.
+        </summary>
+    </member>
+    <member name="M:VO.SQLCatalogQuery.GoTop">
+      <summary>
+            Open the query and fetch the first result.
+        </summary>
+    </member>
+    <member name="M:VO.SQLCatalogQuery.Skip(XSharp.__Usual)">
+      <summary>
+            Fetch a new row of the result set.
+        </summary>
+      <param name="nRecordCount">Number of rows to skip</param>
+      <returns>TRUE when successful.</returns>
+    </member>
+    <member name="P:VO.SQLCatalogQuery.TableName">
+      <summary>
+            This property is provided to override the inherited functionality from the SQLSelect class, as it does not apply to SQLCatalogQuery.
+        </summary>
+      <value>This property is provided to override the inherited functionality from the SQLSelect class, as it does not apply to SQLCatalogQuery.</value>
+    </member>
+    <member name="M:VO.SQLCatalogQuery.Update">
+      <summary>
+            This method is provided to override the inherited functionality from the SQLSelect class, as it does not apply to SQLCatalogQuery; therefore it generates an error and returns FALSE.
+        </summary>
+    </member>
+    <member name="T:VO.SQLColumn">
+      <summary>
+            Describe an SQL column.
+        </summary>
+    </member>
+    <member name="M:VO.SQLColumn.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct an SQL column.
+        </summary>
+      <param name="oHyperLabel">The hyperlabel for the SQL column.</param>
+      <param name="oFieldSpec">The field specification for the SQL column.</param>
+      <param name="nODBCType">The ODBC data type of the SQL column (for example, SQL_INTEGER, SQL_CHAR, and SQL_FLOAT).  Refer to your ODBC documentation for a complete list of ODBC data types that are available.</param>
+      <param name="nScale">The decimal precision of the SQL column.  This is specified only when the ODBC data type is numeric.</param>
+      <param name="lNullable">Specify TRUE if the value can be NULL; otherwise, FALSE.</param>
+      <param name="nIndex">The SQL column number.</param>
+      <param name="cColName">The SQL column name.</param>
+      <param name="cAlias">The SQL column alias name.</param>
+    </member>
+    <member name="F:VO.SQLColumn.AliasName"></member>
+    <member name="F:VO.SQLColumn.ColName"></member>
+    <member name="F:VO.SQLColumn.DisplaySize"></member>
+    <member name="F:VO.SQLColumn.Index"></member>
+    <member name="F:VO.SQLColumn.Length"></member>
+    <member name="T:VO.SQLColumnAttributes">
+      <summary>
+            Describe the attributes of an SQL column.
+        </summary>
+    </member>
+    <member name="M:VO.SQLColumnAttributes.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct an SQLColumnAttributes object.
+        </summary>
+      <param name="oHyperLabel">The hyperlabel for the SQLColumnAttributes object.</param>
+      <param name="oFieldSpec">The field specification for the SQLColumnAttributes object.</param>
+      <param name="nODBCType">The ODBC data type of the SQL column(for example, SQL_INTEGER, SQL_CHAR, and SQL_FLOAT)</param>
+      <param name="nScale">The decimal precision of the SQL value.  This is specified only when the ODBC data type is numeric.</param>
+      <param name="lNullable">TRUE if the value can be NULL; otherwise, FALSE.</param>
+      <param name="nIndex">The SQL column number.</param>
+      <param name="cColName">The SQL column name.</param>
+      <param name="cAliasName">The SQL column alias name.</param>
+    </member>
+    <member name="F:VO.SQLColumnAttributes.AutoIncrement"></member>
+    <member name="F:VO.SQLColumnAttributes.CaseSensitive"></member>
+    <member name="F:VO.SQLColumnAttributes.Money"></member>
+    <member name="F:VO.SQLColumnAttributes.Searchable"></member>
+    <member name="F:VO.SQLColumnAttributes.Unsigned"></member>
+    <member name="F:VO.SQLColumnAttributes.Updatable"></member>
+    <member name="T:VO.SQLConnection">
+      <summary>
+            Manage an SQL connection to an ODBC data source.  A SQLConnection object is needed before any database operations can be performed.
+        </summary>
+    </member>
+    <member name="M:VO.SQLConnection.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct an SQL connection.
+        </summary>
+      <param name="cDataSourceName">The ODBC data source name.  If not specified, the default is NULL_STRING.</param>
+      <param name="cUserID">The ODBC user ID.  If not specified, the default is NULL_STRING.</param>
+      <param name="cPassword">The ODBC password (authorization string).  If not specified, the default is NULL_STRING.</param>
+    </member>
+    <member name="P:VO.SQLConnection.AccessMode">
+      <summary>
+            A constant representing the SQL connection's access mode.
+        </summary>
+      <value>A constant representing the SQL connection's access mode.</value>
+    </member>
+    <member name="P:VO.SQLConnection.ActiveStmts">
+      <summary>
+            List of active statements for the connection
+        </summary>
+    </member>
+    <member name="M:VO.SQLConnection.BeginTransaction"></member>
+    <member name="M:VO.SQLConnection.Commit"></member>
+    <member name="M:VO.SQLConnection.Connect(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Connect a user to an ODBC data source.
+        </summary>
+      <param name="cDataSource">The ODBC data source name.  If not specified, the default is NULL_STRING.</param>
+      <param name="cUserID">The ODBC user ID.  If not specified, the default is NULL_STRING.</param>
+      <param name="cPassword">The ODBC password (authorization string).  If not specified, the default is NULL_STRING.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.SQLConnection.Connected">
+      <summary>
+            A logical value representing whether the SQL connection object is connected.
+        </summary>
+      <value>A logical value representing whether the SQL connection object is connected.</value>
+    </member>
+    <member name="P:VO.SQLConnection.ConnectString">
+      <summary>
+            A string representing the connection parameters (for example, "DSN=&lt;Source&gt;;UID=&lt;UserID&gt;;PWD=&lt;Authorization&gt;").  This string is initialized during the SQLConnection:Connect() or SQLConnection:DriverConnect() methods.
+        </summary>
+      <value>A string representing the connection parameters (for example, "DSN=&lt;Source&gt;;UID=&lt;UserID&gt;;PWD=&lt;Authorization&gt;").  This string is initialized during the SQLConnection:Connect() or SQLConnection:DriverConnect() methods.</value>
+    </member>
+    <member name="P:VO.SQLConnection.ConnHandle">
+      <summary>
+            A long integer representing the connection handle.
+        </summary>
+      <value>A long integer representing the connection handle.</value>
+    </member>
+    <member name="P:VO.SQLConnection.DataSource">
+      <summary>
+            A string representing the ODBC data source name.
+        </summary>
+      <value>A string representing the ODBC data source name.</value>
+    </member>
+    <member name="M:VO.SQLConnection.Disconnect">
+      <summary>
+            Disconnect the current user from an ODBC data source.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLConnection.DriverConnect(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Display a dialog box prompting for a source; after a source is selected, displays the driver's connection dialog box; then connects to the selected data source.
+        </summary>
+      <param name="nHandle">The handle of the application window.  If not specified, the active window handle is used.</param>
+      <param name="kDriverCompletion">The driver completion type, represented by one of the following constants:</param>
+      <param name="cConnStrIn">A string representing an input connection.  If omitted, the SQL_DRIVER_PROMPT option should be used to prompt for the driver.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+
+            Level 1
+        </returns>
+    </member>
+    <member name="M:VO.SQLConnection.EndTransaction"></member>
+    <member name="P:VO.SQLConnection.EnvHandle">
+      <summary>
+            A long integer representing the environment handle.
+        </summary>
+      <value>A long integer representing the environment handle.</value>
+    </member>
+    <member name="P:VO.SQLConnection.ErrInfo">
+      <summary>SqlErrorInfo object for the last error occured for the connection or NIL.</summary>
+    </member>
+    <member name="M:VO.SQLConnection.GetConnectOption(XSharp.__Usual)">
+      <summary>
+            Return current setting for a connection option.
+        </summary>
+      <param name="kOption">The connection option (for example, SQL_ACCESS_MODE or SQL_AUTOCOMMIT).  Refer to SQLGetConnectOption() in your ODBC documentation for a complete list of ODBC connection options that are available.</param>
+    </member>
+    <member name="P:VO.SQLConnection.HyperLabel">
+      <summary>
+            The hyperlabel of the connection containing the name of the data source, or NIL, if there is no data source name.
+        </summary>
+      <value>The hyperlabel of the connection containing the name of the data source, or NIL, if there is no data source name.</value>
+    </member>
+    <member name="P:VO.SQLConnection.IdentifierQuoteChar">
+      <summary>
+            A string used to surround a delimited identifier for this connection.
+        </summary>
+      <value>A string used to surround a delimited identifier for this connection.</value>
+    </member>
+    <member name="M:VO.SQLConnection.Info(XSharp.__Usual)">
+      <summary>
+            Return current setting for connection information.
+        </summary>
+      <param name="kInfoType">The connection information type (for example, SQL_ODBC_API_CONFORMANCE and SQL_DRIVER_NAME).  Refer to SQLGetInfo() — a method of the SQLConnection class — in your ODBC documentation for a complete list of ODBC information types that are available.</param>
+    </member>
+    <member name="M:VO.SQLConnection.isFunction(XSharp.__Usual)">
+      <summary>
+            Determine whether an ODBC function is supported by the driver.
+        </summary>
+      <param name="kFunction">The ODBC function (for example, SQL_API_SQLTABLES and SQL_API_SQLCOLUMNS).  Refer to your ODBC documentation for a complete list of ODBC functions that are available.</param>
+      <returns>
+            TRUE if the function is supported; otherwise, FALSE.
+
+            Level 1
+        </returns>
+    </member>
+    <member name="P:VO.SQLConnection.IsolationOption">
+      <summary>
+            A constant representing the isolation level of the SQL connection.
+        </summary>
+      <value>A constant representing the isolation level of the SQL connection.</value>
+    </member>
+    <member name="F:VO.SQLConnection.lSelect4Update"></member>
+    <member name="F:VO.SQLConnection.lUseSingleConnection"></member>
+    <member name="F:VO.SQLConnection.nActiveStmts"></member>
+    <member name="P:VO.SQLConnection.ODBCCursors">
+      <summary>
+            A constant representing the cursor type for the SQL connection.
+        </summary>
+      <value>A constant representing the cursor type for the SQL connection.</value>
+    </member>
+    <member name="P:VO.SQLConnection.Password">
+      <summary>
+            A string containing the ODBC password (authorization string).
+        </summary>
+      <value>A string containing the ODBC password (authorization string).</value>
+    </member>
+    <member name="P:VO.SQLConnection.PositionOps">
+      <summary>
+            A logical value representing whether the driver supports positioned operations
+        </summary>
+      <value>A logical value representing whether the driver supports positioned operations</value>
+    </member>
+    <member name="M:VO.SQLConnection.Reconnect">
+      <summary>
+            Disconnect the current user from a data source; if connected; then, connect.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLConnection.Rollback"></member>
+    <member name="F:VO.SQLConnection.saInfoDWord"></member>
+    <member name="F:VO.SQLConnection.saInfoString"></member>
+    <member name="F:VO.SQLConnection.saInfoWord"></member>
+    <member name="P:VO.SQLConnection.ScrollConcurrency">
+      <summary>
+            A constant representing the concurrency level of the SQL connection.
+        </summary>
+      <value>A constant representing the concurrency level of the SQL connection.</value>
+    </member>
+    <member name="P:VO.SQLConnection.ScrollCsr">
+      <summary>
+            A logical value representing whether the driver supports scrollable cursors.
+        </summary>
+      <value>A logical value representing whether the driver supports scrollable cursors.</value>
+    </member>
+    <member name="M:VO.SQLConnection.SetConnectOption(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Set the value of a connection option.
+        </summary>
+      <param name="kOption">The connection option to set (for example, SQL_ACCESS_MODE and SQL_AUTOCOMMIT).  Refer to SQLGetConnectOption() in your ODBC documentation for a complete list of ODBC connection options that are available.</param>
+      <param name="uNewValue">The new value of the connection option.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+
+            Level 1
+        </returns>
+    </member>
+    <member name="P:VO.SQLConnection.Status">
+      <summary>
+            A hyperlabel of the SQLConnection object containing the error message, or NULL_OBJECT, if no error has occurred.
+        </summary>
+      <value>A hyperlabel of the SQLConnection object containing the error message, or NULL_OBJECT, if no error has occurred.</value>
+    </member>
+    <member name="P:VO.SQLConnection.UserID">
+      <summary>
+            A string representing the ODBC user ID.
+        </summary>
+      <value>A string representing the ODBC user ID.</value>
+    </member>
+    <member name="T:VO.SQLData">
+      <summary>
+            Represent an SQL data value; used internally by SQL classes.
+        </summary>
+    </member>
+    <member name="M:VO.SQLData.#ctor">
+      <summary>
+            Construct an SQLData object.
+        </summary>
+      <param name="uValue">The data value to be assigned to the SQLData object.  If not specified, the default is NIL.</param>
+      <param name="lNull">Specify TRUE if the data value is NULL; otherwise, FALSE.  If not specified, the default is FALSE.</param>
+      <param name="lChanged">Specify TRUE if the data value has changed; otherwise, FALSE.  If not specified, the default is FALSE.</param>
+    </member>
+    <member name="M:VO.SQLData.Clear"></member>
+    <member name="F:VO.SQLData.HasValue"></member>
+    <member name="M:VO.SQLData.Initialize(System.Void*,System.Void*,System.UInt32,System.Boolean,System.Boolean)"></member>
+    <member name="F:VO.SQLData.Length"></member>
+    <member name="F:VO.SQLData.LongValue"></member>
+    <member name="F:VO.SQLData.Null"></member>
+    <member name="F:VO.SQLData.ptrLength"></member>
+    <member name="F:VO.SQLData.ptrValue"></member>
+    <member name="F:VO.SQLData.ValueChanged"></member>
+    <member name="T:VO.SQLErrorInfo">
+      <summary>
+            Describe a SQL error.
+        </summary>
+    </member>
+    <member name="M:VO.SQLErrorInfo.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLErrorInfo object.
+        </summary>
+      <param name="oOriginator">The object in which the error occurred.</param>
+      <param name="symMethod">The name of the method of the object in which the error occurred.</param>
+      <param name="hEnv">The environment handle.</param>
+      <param name="hDbc">The connection handle.</param>
+      <param name="hStmt">The statement handle.</param>
+    </member>
+    <member name="P:VO.SQLErrorInfo.ErrorFlag">
+      <summary>
+            A logical value representing whether a SQL error has just occurred.
+        </summary>
+      <value>A logical value representing whether a SQL error has just occurred.</value>
+    </member>
+    <member name="P:VO.SQLErrorInfo.ErrorList"></member>
+    <member name="P:VO.SQLErrorInfo.ErrorMessage">
+      <summary>
+            A string that contains the SQL error message.
+        </summary>
+      <value>A string that contains the SQL error message.</value>
+    </member>
+    <member name="P:VO.SQLErrorInfo.ErrorMessageLen">
+      <summary>
+            A numeric value that represents the SQL error message length.
+        </summary>
+      <value>A numeric value that represents the SQL error message length.</value>
+    </member>
+    <member name="P:VO.SQLErrorInfo.NativeError">
+      <summary>
+            A numeric value that represents the native SQL error.
+        </summary>
+      <value>A numeric value that represents the native SQL error.</value>
+    </member>
+    <member name="P:VO.SQLErrorInfo.ReturnCode">
+      <summary>
+            A numeric value that represents the SQL return code value (for example, SQL_ERROR, SQL_SUCCESS_WITH_INFO, etc.).
+        </summary>
+      <value>A numeric value that represents the SQL return code value (for example, SQL_ERROR, SQL_SUCCESS_WITH_INFO, etc.).</value>
+    </member>
+    <member name="M:VO.SQLErrorInfo.ShowErrorMsg">
+      <summary>
+            Display an SQL error message.
+        </summary>
+    </member>
+    <member name="P:VO.SQLErrorInfo.SQLState">
+      <summary>
+            A string that contains the SQL error state (for example, S1000, which is a general error).
+        </summary>
+      <value>A string that contains the SQL error state (for example, S1000, which is a general error).</value>
+    </member>
+    <member name="M:VO.SQLErrorInfo.Throw"></member>
+    <member name="T:VO.SQLListColumnPrivileges">
+      <summary>
+            List the columns and associated privileges for one or more tables.
+        </summary>
+    </member>
+    <member name="M:VO.SQLListColumnPrivileges.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLListColumnPrivileges object.
+        </summary>
+      <param name="cQualifier">The search string or name of the table qualifier.</param>
+      <param name="cOwner">The search string or name of the table owner.</param>
+      <param name="cTableName">The search string or name of the table.</param>
+      <param name="cColName">The search string or column name.</param>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+    </member>
+    <member name="F:VO.SQLListColumnPrivileges.ColName"></member>
+    <member name="M:VO.SQLListColumnPrivileges.Execute">
+      <summary>
+            Retrieve the list of column privileges.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+
+            Level 2
+        </returns>
+    </member>
+    <member name="F:VO.SQLListColumnPrivileges.Owner"></member>
+    <member name="F:VO.SQLListColumnPrivileges.Qualifier"></member>
+    <member name="F:VO.SQLListColumnPrivileges.TableName"></member>
+    <member name="T:VO.SQLListColumns">
+      <summary>
+            List the column names in specified tables.
+        </summary>
+    </member>
+    <member name="M:VO.SQLListColumns.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLListColumns object.
+        </summary>
+      <param name="cQualifier">The search string or name of the table qualifier.</param>
+      <param name="cOwner">The search string or name of the table owner.</param>
+      <param name="cTableName">The search string or name of the table.</param>
+      <param name="cColName">The search string or column name.</param>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+    </member>
+    <member name="F:VO.SQLListColumns.ColName"></member>
+    <member name="M:VO.SQLListColumns.Execute">
+      <summary>
+            Retrieve the list of columns.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+
+            Level 1
+        </returns>
+    </member>
+    <member name="F:VO.SQLListColumns.Owner"></member>
+    <member name="F:VO.SQLListColumns.Qualifier"></member>
+    <member name="F:VO.SQLListColumns.TableName"></member>
+    <member name="T:VO.SQLListForeignKeys">
+      <summary>
+            List the column names that comprise foreign keys, if they exist for a specified table.
+        </summary>
+    </member>
+    <member name="M:VO.SQLListForeignKeys.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLListForeignKeys object.
+        </summary>
+      <param name="cPQualifier">The search string or name of the primary key table qualifier.</param>
+      <param name="cpOwner">The search string or name of the primary key table owner.</param>
+      <param name="cPTableName">The search string or name of the primary key table.</param>
+      <param name="cFQualifier">The search string or name of the foreign key table qualifier.</param>
+      <param name="cFOwner">The search string or name of the foreign key table owner.</param>
+      <param name="cFTableName">The search string or name of the foreign key table.</param>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+    </member>
+    <member name="M:VO.SQLListForeignKeys.Execute">
+      <summary>
+            Retrieve the list of columns representing foreign keys.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="F:VO.SQLListForeignKeys.FOwner"></member>
+    <member name="F:VO.SQLListForeignKeys.FQualifier"></member>
+    <member name="F:VO.SQLListForeignKeys.FTableName"></member>
+    <member name="F:VO.SQLListForeignKeys.POwner"></member>
+    <member name="F:VO.SQLListForeignKeys.PQualifier"></member>
+    <member name="F:VO.SQLListForeignKeys.PTableName"></member>
+    <member name="T:VO.SQLListPrimaryKeys">
+      <summary>
+            List the column names that comprise the primary key for a table.
+        </summary>
+    </member>
+    <member name="M:VO.SQLListPrimaryKeys.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLListPrimaryKeys object.
+        </summary>
+      <param name="cQualifier">The search string or name of the primary key table qualifier.</param>
+      <param name="cOwner">The search string or name of the primary key table owner.</param>
+      <param name="cTableName">The search string or name of the primary key table.</param>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+    </member>
+    <member name="M:VO.SQLListPrimaryKeys.Execute">
+      <summary>
+            Retrieve the list of primary keys.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="F:VO.SQLListPrimaryKeys.Owner"></member>
+    <member name="F:VO.SQLListPrimaryKeys.Qualifier"></member>
+    <member name="F:VO.SQLListPrimaryKeys.TableName"></member>
+    <member name="T:VO.SQLListProcedureColumns">
+      <summary>
+            List the input and output procedure parameters and columns that make up the result set for the specified procedures.
+        </summary>
+    </member>
+    <member name="M:VO.SQLListProcedureColumns.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLListProcedureColumns object.
+        </summary>
+      <param name="cQualifier">The search string or name of the procedure qualifier.</param>
+      <param name="cOwner">The search string or name of the procedure owner.</param>
+      <param name="cProcName">The search string or name of the procedure.</param>
+      <param name="cColName">The search string or name of the column.</param>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+    </member>
+    <member name="F:VO.SQLListProcedureColumns.ColName"></member>
+    <member name="M:VO.SQLListProcedureColumns.Execute">
+      <summary>
+            Retrieve a list of procedure columns.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="F:VO.SQLListProcedureColumns.Owner"></member>
+    <member name="F:VO.SQLListProcedureColumns.ProcName"></member>
+    <member name="F:VO.SQLListProcedureColumns.Qualifier"></member>
+    <member name="T:VO.SQLListProcedures">
+      <summary>
+            List the procedure names stored in a specific data source.
+        </summary>
+    </member>
+    <member name="M:VO.SQLListProcedures.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLListProcedures object.
+        </summary>
+      <param name="cQualifier">The search string or name of the procedure qualifier.</param>
+      <param name="cOwner">The search string or name of the procedure owner.</param>
+      <param name="cProcName">The search string or name of the procedure.</param>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+    </member>
+    <member name="M:VO.SQLListProcedures.Execute">
+      <summary>
+            Retrieve the list of procedure names in a specific data source.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="F:VO.SQLListProcedures.Owner"></member>
+    <member name="F:VO.SQLListProcedures.ProcName"></member>
+    <member name="F:VO.SQLListProcedures.Qualifier"></member>
+    <member name="T:VO.SQLListSpecialColumns">
+      <summary>
+            List information about the optimal set of columns that uniquely identifies a row in a specified table or the columns that are updated automatically when any value in the row is updated by a transaction.
+        </summary>
+    </member>
+    <member name="M:VO.SQLListSpecialColumns.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct an SQLListSpecialColumns object.
+        </summary>
+      <param name="nColType">A search string or one of the following constants representing the type of column to return:</param>
+      <param name="cQualifier">The search string or name of the table qualifier.</param>
+      <param name="cOwner">The search string or name of the table owner.</param>
+      <param name="cTableName">The search string or name of the table.</param>
+      <param name="nScope">One of the following constants representing the minimum required scope of the current row ID (the returned row ID can be of greater scope.):</param>
+      <param name="nNullable">One of the following constants representing whether to return special columns that can have a NULL value:</param>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+    </member>
+    <member name="F:VO.SQLListSpecialColumns.ColType"></member>
+    <member name="M:VO.SQLListSpecialColumns.Execute">
+      <summary>
+            Initiate the retrieval of the list of special columns.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="F:VO.SQLListSpecialColumns.Nullable"></member>
+    <member name="F:VO.SQLListSpecialColumns.Owner"></member>
+    <member name="F:VO.SQLListSpecialColumns.Qualifier"></member>
+    <member name="F:VO.SQLListSpecialColumns.Scope"></member>
+    <member name="F:VO.SQLListSpecialColumns.TableName"></member>
+    <member name="T:VO.SQLListStatistics">
+      <summary>
+            List the table statistics and the indexes.
+        </summary>
+    </member>
+    <member name="M:VO.SQLListStatistics.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLListStatistics object.
+        </summary>
+      <param name="cQualifier">The search string or name of the table qualifier.</param>
+      <param name="cOwner">The search string or name of the table owner.</param>
+      <param name="cTableName">The search string or name of the table.</param>
+      <param name="nUnique">One of the following constants representing the type of index associated with the table:</param>
+      <param name="nAccuracy">One of the following constants representing the importance of the CARDINALITY and PAGES columns in the result set:</param>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+    </member>
+    <member name="F:VO.SQLListStatistics.Accuracy"></member>
+    <member name="M:VO.SQLListStatistics.Execute">
+      <summary>
+            Retrieve the list of statistics about a table and indexes associated with the table.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+
+            Level 1
+        </returns>
+    </member>
+    <member name="F:VO.SQLListStatistics.Owner"></member>
+    <member name="F:VO.SQLListStatistics.Qualifier"></member>
+    <member name="F:VO.SQLListStatistics.TableName"></member>
+    <member name="F:VO.SQLListStatistics.Unique"></member>
+    <member name="T:VO.SQLListTablePrivileges">
+      <summary>
+            List the tables and associated privileges.
+        </summary>
+    </member>
+    <member name="M:VO.SQLListTablePrivileges.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLListTablePrivileges object.
+        </summary>
+      <param name="cQualifier">The search string or name of the table qualifier.</param>
+      <param name="cOwner">The search string or name of the table owner.</param>
+      <param name="cTable">The search string or name of the table.</param>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+    </member>
+    <member name="M:VO.SQLListTablePrivileges.Execute">
+      <summary>
+            Retrieve the list of table privileges.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="F:VO.SQLListTablePrivileges.Owner"></member>
+    <member name="F:VO.SQLListTablePrivileges.Qualifier"></member>
+    <member name="F:VO.SQLListTablePrivileges.TableName"></member>
+    <member name="T:VO.SQLListTables">
+      <summary>
+            List the table names stored in a specific data source.
+        </summary>
+    </member>
+    <member name="M:VO.SQLListTables.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLListTables object.
+        </summary>
+      <param name="cQualifier">The search string or name of the table qualifier.</param>
+      <param name="cOwner">The search string or name of the table owner.</param>
+      <param name="cTableName">The search string or name of the table.</param>
+      <param name="cTableType">The list of table types to match (for example, ''Table', 'View', 'Synonym', 'System Table', 'Alias'').  Refer to your driver documentation for a complete list of table types that are available.</param>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+    </member>
+    <member name="M:VO.SQLListTables.Execute">
+      <summary>
+            Retrieve the list of tables.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="F:VO.SQLListTables.Owner"></member>
+    <member name="F:VO.SQLListTables.Qualifier"></member>
+    <member name="F:VO.SQLListTables.TableName"></member>
+    <member name="F:VO.SQLListTables.TableType"></member>
+    <member name="T:VO.SQLListTypeInfo">
+      <summary>
+            List the ODBC data types that are supported by this connection.
+        </summary>
+    </member>
+    <member name="M:VO.SQLListTypeInfo.#ctor(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLListTypeInfo object.
+        </summary>
+      <param name="nSqlType">The ODBC data type of the SQLListTypeInfo object (for example, SQL_INTEGER, SQL_CHAR, SQL_FLOAT, etc.)</param>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+    </member>
+    <member name="M:VO.SQLListTypeInfo.Execute">
+      <summary>
+            Retrieve the list of type information.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="F:VO.SQLListTypeInfo.SqlType"></member>
+    <member name="T:VO.SqlParameter"></member>
+    <member name="M:VO.SqlParameter.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLParameter object.
+        </summary>
+      <param name="oHLParam">The hyperlabel for the SQLParameter object.</param>
+      <param name="oFSParam">The column specification for the SQLParameter object.</param>
+      <param name="nODBCType">
+            The ODBC data type of the SQLParameter object (for example, SQL_INTEGER, SQL_CHAR, SQL_FLOAT, etc.).
+        </param>
+      <param name="nScale">The decimal precision of the SQLParameter object.  This is specified only when the data type is numeric.</param>
+      <param name="lNullable">TRUE if the value can be NULL; otherwise, FALSE.</param>
+      <param name="nIndex">The index of the SQLParameter object.</param>
+    </member>
+    <member name="M:VO.SqlParameter.bind(VO.SQLStatement,System.UInt32)"></member>
+    <member name="F:VO.SqlParameter.CType"></member>
+    <member name="M:VO.SqlParameter.Destroy"></member>
+    <member name="F:VO.SqlParameter.InternalParam"></member>
+    <member name="F:VO.SqlParameter.IO"></member>
+    <member name="F:VO.SqlParameter.ODBCType"></member>
+    <member name="F:VO.SqlParameter.pBytes"></member>
+    <member name="F:VO.SqlParameter.pData"></member>
+    <member name="F:VO.SqlParameter.Precision"></member>
+    <member name="F:VO.SqlParameter.Scale"></member>
+    <member name="M:VO.SqlParameter.SetValue(XSharp.__Usual,System.Int32)"></member>
+    <member name="F:VO.SqlParameter.UsualType"></member>
+    <member name="P:VO.SqlParameter.Value"></member>
+    <member name="T:VO.SQLSelect">
+      <summary>
+            Manage a SQL select statement to select a set of rows from an ODBC data source.  The rows can be read, modified, or deleted using the SQLSelect methods.
+        </summary>
+    </member>
+    <member name="M:VO.SQLSelect.#ctor(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQL select object.
+        </summary>
+      <param name="cSQLSelect">A SQL select statement (for example 'SELECT * FROM employee').</param>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+      <returns>
+            As with all Init() methods, the instantiation returns the object.  An object is created even if the table was not successfully opened, perhaps because the table does not exist, is corrupted or is locked by another user.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.AddDateVal(XSharp.__Usual,XSharp.__Usual)"></member>
+    <member name="M:VO.SQLSelect.AddTimeString(XSharp.__Usual,XSharp.__Usual)"></member>
+    <member name="M:VO.SQLSelect.Append">
+      <summary>
+            Create a blank row in the buffer; this blank row becomes the current position and is ready for assignment of data values.  The SQLSelect:RecNo of this buffer is SQLSelect:RecCount+1.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.SQLSelect.AppendData"></member>
+    <member name="P:VO.SQLSelect.AppendFlag">
+      <summary>**Missing documentation **</summary>
+      <value>**Missing documentation **</value>
+    </member>
+    <member name="M:VO.SQLSelect.AppendRow(XSharp.__Usual)">
+      <summary>
+            Insert the row that has been created in the buffer since the last SQLSelect:Append() operation.
+        </summary>
+      <param name="lForce">A logical value determining whether the update should occur.  If omitted, the default is TRUE.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.BindColumn(XSharp.__Usual)"></member>
+    <member name="P:VO.SQLSelect.BoF">
+      <summary>
+            A logical value indicating whether the server is positioned at the beginning of the result set, on the first row.
+        </summary>
+      <value>A logical value indicating whether the server is positioned at the beginning of the result set, on the first row.</value>
+    </member>
+    <member name="P:VO.SQLSelect.BoundedColumns">
+      <summary>**Missing documentation **</summary>
+      <value>**Missing documentation **</value>
+    </member>
+    <member name="M:VO.SQLSelect.Close">
+      <summary>
+            Close the cursor corresponding to the server.  Note that the database connection is not closed, only the cursor.
+        </summary>
+      <returns>
+            TRUE if the operation was successful; FALSE if not.  (How can closing down a server be unsuccessful?  If you are accessing a database over a network, and the network goes down before the server is closed, the SQLSelect:Close() operation may be the first one to fail, but it is still important to respond to this failure since it may indicate that database changes are not committed.)
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.Column(XSharp.__Usual)">
+      <summary>
+            Return a specified SQL column.
+        </summary>
+      <param name="siCol">The name, number, or symbol representing the desired column.</param>
+      <returns>
+            A SQLColumn object if successful; otherwise, NULL_OBJECT.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.ColumnAttributes(XSharp.__Usual)">
+      <summary>
+            Return the SQL column attributes for a specified column.
+        </summary>
+      <param name="siCol">The name, number, or symbol representing the desired column.</param>
+      <returns>
+            A SQLColumnAttributes object if successful; otherwise, NULL_OBJECT.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.Commit">
+      <summary>
+            Save the changes (updates and deletes) made since the last Commit().
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.  Commit() can fail for many reasons, from a lack of capability in the server to lock conflicts to technical problems such as network crashes.  Use the SQLSelect:Status property to determine the exact cause of the failure.
+        </returns>
+    </member>
+    <member name="P:VO.SQLSelect.Connection">
+      <summary>
+            The SQL connection object that the SQLSelect is using to manipulate the result set.
+        </summary>
+      <value>The SQL connection object that the SQLSelect is using to manipulate the result set.</value>
+    </member>
+    <member name="P:VO.SQLSelect.CursorName">
+      <summary>
+            A string containing the cursor name.
+        </summary>
+      <value>A string containing the cursor name.</value>
+    </member>
+    <member name="P:VO.SQLSelect.CursorType">
+      <summary>
+            A constant, which describes the cursor type used by the SQL statement:
+        </summary>
+      <value>A constant, which describes the cursor type used by the SQL statement:</value>
+    </member>
+    <member name="M:VO.SQLSelect.DataField(XSharp.__Usual)">
+      <summary>
+            Return the data (DataField object) at a specified column position.
+        </summary>
+      <param name="uFieldPos">The name, number, or symbol representing the desired column.</param>
+      <returns>
+            A DataField object if successful; otherwise, -1.
+        </returns>
+    </member>
+    <member name="P:VO.SQLSelect.DBStruct">
+      <summary>
+            An array containing the structure of this data server.
+        </summary>
+      <value>An array containing the structure of this data server.</value>
+    </member>
+    <member name="M:VO.SQLSelect.Delete">
+      <summary>
+            Delete the current row.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.SQLSelect.Deleted">
+      <summary>
+            A logical value indicating whether the current row has been deleted.
+        </summary>
+      <value>A logical value indicating whether the current row has been deleted.</value>
+    </member>
+    <member name="M:VO.SQLSelect.DirectSkip(XSharp.__Usual)"></member>
+    <member name="P:VO.SQLSelect.EoF">
+      <summary>
+            A logical value indicating whether the server is positioned at the end of the result set, after the last row.
+        </summary>
+      <value>A logical value indicating whether the server is positioned at the end of the result set, after the last row.</value>
+    </member>
+    <member name="P:VO.SQLSelect.ErrInfo">
+      <summary>
+            An SQLErrorInformation object.
+        </summary>
+      <value>An SQLErrorInformation object.</value>
+    </member>
+    <member name="M:VO.SQLSelect.Error(XSharp.__Usual)">
+      <summary>
+            Provide a method for handling error conditions raised during database processing.  This is an event handler: it is automatically called by other methods; the developer does not normally need to call the error method, but might want to replace or amend it.
+        </summary>
+      <param name="oError">An Error object describing the error condition.</param>
+    </member>
+    <member name="M:VO.SQLSelect.Execute(XSharp.__Usual)">
+      <summary>
+            Open the cursor.
+        </summary>
+      <param name="uParam">
+            The array of parameters to execute.
+            &lt;cParam&gt; [, &lt;cParam&gt; …] | &lt;nParam&gt; [ , &lt;nParam&gt; …]
+            The list of parameters to execute.
+        </param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.ExtendedFetch(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Provide extended fetch capabilities, specifying type and row.
+        </summary>
+      <param name="kFetchType">The type of fetch (for example, SQL_FETCH_NEXT, SQL_FETCH_PREV, SQL_FETCH_FIRST, SQL_FETCH_LAST, SQL_FETCH_ABSOLUTE, SQL_FETCH_RELATIVE).  Refer to your ODBC documentation for a complete list of ODBC fetch types that are available.</param>
+      <param name="kRow">The row to be fetched, specified by SQL_FETCH_ABSOLUTE or SQL_FETCH_RELATIVE.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.SQLSelect.FCount">
+      <summary>
+            The number of columns in the result set.  A value of -1 indicates an error.
+        </summary>
+      <value>The number of columns in the result set.  A value of -1 indicates an error.</value>
+    </member>
+    <member name="M:VO.SQLSelect.Fetch">
+      <summary>
+            Fetch the next row.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.FIELDGET(XSharp.__Usual)">
+      <summary>
+            Retrieve the contents of the specified column.
+        </summary>
+      <param name="uField">The name, number, or symbol representing the desired column.</param>
+      <returns>
+            The contents of the specified column, whose data type depends on the data type of the column, which is available from the Column() or ColumnAttributes() method.
+            The following table shows how the ODBC database data type is mapped to the X# return value and the return value if the SQL value of the column is NULL:
+            <list type="table"><listheader><term>ODBC Data Type</term><description>Return Value - NULL Return Value</description></listheader><item><term>SQL_BIGINT</term><description>DWORD - NIL</description></item><item><term>SQL_BIT</term><description>LOGIC - NIL</description></item><item><term>SQL_CHAR</term><description>STRING - NULL_STRING</description></item><item><term>SQL_DATE</term><description>DATE - NULL_DATE</description></item><item><term>SQL_DECIMAL</term><description>REAL8 - NIL</description></item><item><term>SQL_DOUBLE</term><description>REAL8 - NIL</description></item><item><term>SQL_FLOAT</term><description>REAL8 - NIL</description></item><item><term>SQL_INTEGER</term><description>LONGINT - NIL</description></item><item><term>SQL_LONGVARBINARY</term><description>MEMO - NULL_STRING</description></item><item><term>SQL_LONGVARCHAR</term><description>MEMO - NULL_STRING</description></item><item><term>SQL_NUMERIC</term><description>REAL8 - NIL</description></item><item><term>SQL_REAL </term><description>REAL4 N- IL</description></item><item><term>SQL_SMALLINT</term><description>SHORTINT - NIL</description></item><item><term>SQL_TIME </term><description>STRING - NULL_STRING</description></item><item><term>SQL_TIMESTAMP</term><description>STRING - NULL_DATE</description></item><item><term>SQL_TINYINT</term><description>BYTE - NIL</description></item><item><term>SQL_VARCHAR</term><description>STRING - NULL_STRING</description></item></list></returns>
+    </member>
+    <member name="M:VO.SQLSelect.FieldGetFormatted(XSharp.__Usual)">
+      <summary>
+            Retrieve the contents of the specified column according to the formatting specifications of its field specification.
+        </summary>
+      <param name="uFieldPos">The name, number, or symbol representing the desired column.</param>
+    </member>
+    <member name="M:VO.SQLSelect.FieldHyperLabel(XSharp.__Usual)">
+      <summary>
+            Return the hyperlabel of a specified column.
+        </summary>
+      <param name="uFieldPos">The name, number, or symbol representing the desired column.</param>
+      <returns>
+            The column hyperlabel object if successful; otherwise, NULL_OBJECT.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.FieldInfo(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Retrieve information about or set an alias for the indicated column.
+        </summary>
+      <param name="kFieldInfoType">
+            The type of information, as specified by the following constants:
+        </param>
+      <param name="uFieldPos">The name, number, or symbol representing the desired column.</param>
+      <param name="uFieldVal">
+            The alias name to be assigned to the column.  This argument is only used if DB_ALIAS is specified for <paramref name="kColumnInfoType" />.
+        </param>
+      <returns>
+            A value (whose data type depends on the value requested) if successful; otherwise, NIL.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.FieldName(XSharp.__Usual)">
+      <summary>
+            Return the name of a specified column.  Note that the column's hyperlabel also contains a name.
+        </summary>
+      <param name="siFieldPosition">The name, number, or symbol representing the desired column.</param>
+      <returns>
+            The name of the specified column if successful; otherwise, NULL_STRING.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.FieldPos(XSharp.__Usual)">
+      <summary>
+            Return the position of a specified column within the data server, as a number starting with 1.
+        </summary>
+      <param name="cFieldName">The name, number, or symbol representing the desired column.</param>
+      <returns>
+            The position of the specified column if successful; otherwise, 0.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.FIELDPUT(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Assign a value to a column in a data server.
+        </summary>
+      <param name="uFieldPos">The name, number, or symbol representing the desired column.</param>
+      <param name="uValue">The value to be assigned to the column.  The data type of the value should match the data type of the column (refer to SQLSelect:FieldGet() for data types); if not, it is converted.</param>
+      <returns>
+            The value assigned to the column if successful; otherwise, NIL.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.FieldSpec(XSharp.__Usual)">
+      <summary>
+            Return the field specification object for the indicated column.
+        </summary>
+      <param name="uFieldPos">The name, number, or symbol representing the desired column.</param>
+      <returns>
+            The field specification object if successful; otherwise, NULL_OBJECT.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.FieldStatus(XSharp.__Usual)">
+      <summary>
+            Return a hyperlabel object identifying the status after the last operation.
+        </summary>
+      <param name="uFieldPos">The name, number, or symbol representing the desired column.</param>
+      <returns>
+            Returns a hyperlabel object if any error condition had occurred or if a validation has failed, NIL if everything is OK, if the validation passed, or if there has been no validation attempt.  In particular, SQLSelect:FieldStatus() can be used to find out more about a validation failure.
+            By accessing the properties of this hyperlabel, you can retrieve not only a description but also context-sensitive help on the condition that was raised:
+            <code language="X#">
+                oServer:FieldStatus(#LastName):Caption
+                oServer:FieldStatus(#LastName):Description
+                oServer:FieldStatus(#LastName):HelpContext
+            </code></returns>
+    </member>
+    <member name="M:VO.SQLSelect.FieldSym(XSharp.__Usual)">
+      <summary>
+            Return the symbolic name of a specified column.  Note that the column's hyperlabel also contains a name; these two names are the same in the code generated by the SQL Editor.
+        </summary>
+      <param name="uFieldPos">The name, number, or symbol representing the desired column.</param>
+      <returns>
+            The symbolic name if successful; otherwise, NULL_SYMBOL.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.FieldValidate(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Validate the provided value according to the validation rules of the indicated column's FieldSpec.
+        </summary>
+      <param name="uFieldPos">The name, number, or symbol representing the desired column.</param>
+      <param name="uValue">
+            The value that is to be validated.  It should be of a type compatible with the data type of the column;
+            if the type cannot be converted to the appropriate data type, it is considered to have failed validation.
+        </param>
+    </member>
+    <member name="M:VO.SQLSelect.FLOCK">
+      <summary>
+            This method is provided to override the inherited functionality from the DataServer class, as it does not apply to SQLSelect.
+        </summary>
+    </member>
+    <member name="P:VO.SQLSelect.FOUND">
+      <summary>
+            A logical value indicating whether the previous search operation succeeded.
+        </summary>
+      <value>A logical value indicating whether the previous search operation succeeded.</value>
+    </member>
+    <member name="M:VO.SQLSelect.FreeStmt(XSharp.__Usual)">
+      <summary>
+            Free the statement, according to the specified option.
+        </summary>
+      <param name="kOption">The option used when the statement is freed, specified by one of the following constants:</param>
+      <param name="Constant">Description</param>
+      <param name="SQL_CLOSE">Closes the cursor.</param>
+      <param name="SQL_DROP">Closes the cursor, unbinds and resets the parameters, and frees the statement.</param>
+      <param name="SQL_RESET_PARAMS">Resets the parameters.</param>
+      <param name="SQL_UNBIND">Unbinds the parameters.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.GetData(XSharp.__Usual)">
+      <summary>
+            Retrieve the contents of the specified column.
+        </summary>
+      <returns>
+            The data type of the return value depends on the data type of the column, which is available from Column() or ColumnAttributes() methods.  If the SQL value of the column is NULL, then NIL is returned.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.GetdateVal(XSharp.__Usual)"></member>
+    <member name="M:VO.SQLSelect.GetLookupTable(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Retrieve a two-column array of values from two fields in the server.
+        </summary>
+      <param name="nMaxRows">
+            The maximum number of rows that should be retrieved.  If omitted, the default is 100.
+            The name, number, or symbol of the first field to be retrieved.  If omitted, the first field is retrieved.
+            The name, number, or symbol of the second field to be retrieved.  If omitted, the second field is retrieved.
+        </param>
+      <returns>
+            The method returns a two-column array of values found for the specified fields, moving sequentially until the specified maximum number of rows or until end of file.
+            Note that the method does not reposition to the beginning before starting to fill the array.  Either provide a start value, or explicitly position the server before using the method.  (This allows incremental reading, building up an array in pieces.)
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.GetStatementOption(XSharp.__Usual)">
+      <summary>
+            Retrieve the current setting for a statement option.
+        </summary>
+      <param name="kStmtOption">The statement option (for example, SQL_MAX_LENGTH or SQL_NOSCAN).  Refer to SQLGetStmtOption() in your ODBC documentation for a complete list of ODBC connection options that are available.</param>
+      <returns>
+            The current settings for a statement option if successful; otherwise, NIL.
+
+            Level 1
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.GetTimeStamp(XSharp.__Usual)"></member>
+    <member name="M:VO.SQLSelect.GetTimeString(XSharp.__Usual)"></member>
+    <member name="M:VO.SQLSelect.GoBottom">
+      <summary>
+            Position the data server on the last row.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.GoTo(XSharp.__Usual)">
+      <summary>
+            Position the data server on the specified row number.
+        </summary>
+      <param name="nRow">The row number that the server should be positioned to.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.GoTop">
+      <summary>
+            Position the data server on the first row.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.SQLSelect.IndexColumns"></member>
+    <member name="P:VO.SQLSelect.LASTREC">
+      <summary>**Missing documentation **</summary>
+      <value>**Missing documentation **</value>
+    </member>
+    <member name="P:VO.SQLSelect.Modified"></member>
+    <member name="P:VO.SQLSelect.MoreResults">
+      <summary>
+            A logical value representing whether there are more rows to retrieve.
+        </summary>
+      <value>A logical value representing whether there are more rows to retrieve.</value>
+    </member>
+    <member name="P:VO.SQLSelect.NativeSQL">
+      <summary>
+            A string containing the native SQL text of the statement.
+
+            Level 2
+        </summary>
+      <value>
+            A string containing the native SQL text of the statement.
+
+            Level 2
+        </value>
+    </member>
+    <member name="M:VO.SQLSelect.NoIVarGet(XSharp.__Usual)">
+      <summary>
+            Provide a general error interception that is automatically called (in any class) whenever an access reference is made to a non-existent exported instance variable.  In the SQLSelect class, it is used to implement the virtual column variable.
+            <br />Important!  NoIVarGet() should not be called directly; it is called by the system for handling invalid references.
+        </summary>
+      <param name="symFieldName">he name, number, or symbol representing the desired column.</param>
+    </member>
+    <member name="M:VO.SQLSelect.NoIVarPut(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Provide a general error interception that is automatically called (in any class) whenever an assignment reference is made to a non-existent exported instance variable.
+            <br />Important!  NoIVarPut() should not be called directly; it is called by the system for handling invalid references.
+        </summary>
+      <param name="symFieldName">The name, number, or symbol representing the desired column.</param>
+      <param name="uValue">
+            The corresponding value to be assigned.  <paramref name="uValue" /> should be compatible with the column type.
+        </param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.Notify(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Provide a method that is automatically called by the action methods of the server after completion of some significant event:  a column has changed, the server position has changed, some operation has been completed.  Its standard implementation is to broadcast the same notification to its attached clients.
+        </summary>
+      <param name="kNotifyName">
+            The identification of the event, specified as one of the following constants:
+            symbol describing the event.  Used only with some notification types, as described above.
+        </param>
+      <param name="kNotification">Identifies the event, specified as one of the constants in the table below.</param>
+      <param name="uDescription">Used only with some notification types. See descriptions in the table below</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.SQLSelect.NullAsBlank">
+      <summary>
+            A logical value determining whether SQL NULL values are strongly typed (TRUE) or not (FALSE, default value).
+        </summary>
+      <value>A logical value determining whether SQL NULL values are strongly typed (TRUE) or not (FALSE, default value).</value>
+    </member>
+    <member name="P:VO.SQLSelect.NumCols"></member>
+    <member name="P:VO.SQLSelect.NumParameters">
+      <summary>
+            A numeric value containing the number of parameters.  A value of -1 indicates an error.
+
+            Level 2
+        </summary>
+      <value>
+            A numeric value containing the number of parameters.  A value of -1 indicates an error.
+
+            Level 2
+        </value>
+    </member>
+    <member name="M:VO.SQLSelect.NumResultCols">
+      <summary>
+            Return the number of columns in the result set.
+        </summary>
+      <returns>
+            The number of columns if successful; otherwise, -1.
+        </returns>
+    </member>
+    <member name="P:VO.SQLSelect.NumResultColumns">
+      <summary>
+            A numeric value containing the number of columns in the result set.
+        </summary>
+      <value>A numeric value containing the number of columns in the result set.</value>
+    </member>
+    <member name="P:VO.SQLSelect.NumSuccessfulRows">
+      <summary>
+            A numeric value containing the number of rows that were modified by a delete, append, or update operation.
+        </summary>
+      <value>A numeric value containing the number of rows that were modified by a delete, append, or update operation.</value>
+    </member>
+    <member name="M:VO.SQLSelect.PreExecute(XSharp.__Usual)">
+      <summary>
+            Return the SQL command that is generated by X#.
+        </summary>
+      <param name="cSQLString">A string containing the SQL statement which will be passed to the SQL driver.</param>
+      <returns>
+            A possibly updated SQL string that will be passed to the SQL driver.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.Prepare">
+      <summary>
+            Prepare the statement.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.SQLSelect.PrepFlag">
+      <summary>
+            A logical value that indicates if the select statement has been prepared.
+        </summary>
+      <value>A logical value that indicates if the select statement has been prepared.</value>
+    </member>
+    <member name="P:VO.SQLSelect.RecCount">
+      <summary>
+            A numeric value representing the number of rows in the data server.
+        </summary>
+      <value>A numeric value representing the number of rows in the data server.</value>
+    </member>
+    <member name="P:VO.SQLSelect.Recno">
+      <summary>
+            A numeric value representing the relative position in the data server.
+        </summary>
+      <value>A numeric value representing the relative position in the data server.</value>
+    </member>
+    <member name="M:VO.SQLSelect.Refresh">
+      <summary>
+            Refresh the current row in the buffer, discarding any changes that have been made.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.ReReadRow"></member>
+    <member name="M:VO.SQLSelect.ResetCursor(XSharp.__Usual)"></member>
+    <member name="M:VO.SQLSelect.ResetNotification">
+      <summary>
+            Resume the broadcasting of Notify messages to the server's attached clients (after SQLSelect:SuspendNotification() has been called).
+        </summary>
+    </member>
+    <member name="M:VO.SQLSelect.RLOCK(XSharp.__Usual)">
+      <summary>
+            This method is provided to override the inherited functionality from the DataServer class, as it does not apply to SQLSelect.
+        </summary>
+    </member>
+    <member name="M:VO.SQLSelect.RLockVerify">
+      <summary>
+            This method is provided to override the inherited functionality from the DataServer class, as it does not apply to SQLSelect.
+        </summary>
+    </member>
+    <member name="M:VO.SQLSelect.Rollback"></member>
+    <member name="P:VO.SQLSelect.RowCount"></member>
+    <member name="P:VO.SQLSelect.ScrollConcurrency">
+      <summary>
+            A constant, which describes the concurrency mode used by the SQL statement:
+        </summary>
+      <value>A constant, which describes the concurrency mode used by the SQL statement:</value>
+    </member>
+    <member name="P:VO.SQLSelect.ScrollUpdateType">
+      <summary>
+            A constant, which describes the type of SQL statement to use during append, update or delete operations.
+        </summary>
+      <value>A constant, which describes the type of SQL statement to use during append, update or delete operations.</value>
+    </member>
+    <member name="M:VO.SQLSelect.SetColumnAttributes(XSharp.__Usual,XSharp.__Usual)"></member>
+    <member name="M:VO.SQLSelect.SetDataField(XSharp.__Usual,XSharp.__Usual)"></member>
+    <member name="M:VO.SQLSelect.SetPos(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)"></member>
+    <member name="M:VO.SQLSelect.SetPrimaryKey(XSharp.__Usual)">
+      <summary>
+            Specify a column to be used as a unique index in searched updates or deletes that require a key (i.e., SQLSelect:ScrollUpdateType = SQL_SC_UPD_KEY).
+        </summary>
+      <param name="uFieldPos">The name, number, or symbol representing the desired column.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.SetStatementOption(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Change a statement option.
+        </summary>
+      <param name="fOption">
+            The statement option to set (for example, SQL_MAX_LENGTH or SQL_NOSCAN).
+        </param>
+      <param name="uValue">The value of the statement option.</param>
+    </member>
+    <member name="M:VO.SQLSelect.SetTimeStamp(XSharp.__Usual,XSharp.__Usual)"></member>
+    <member name="P:VO.SQLSelect.SimulateCursor">
+      <summary>
+            A constant, which describes the way the ODBC drivers tries to guarantee that update or delete statements only affect one single row.
+        </summary>
+      <value>A constant, which describes the way the ODBC drivers tries to guarantee that update or delete statements only affect one single row.</value>
+    </member>
+    <member name="M:VO.SQLSelect.Skip(XSharp.__Usual)">
+      <summary>
+            Move forward or backward relative to the current row.  (Similar to the Skip() function).
+        </summary>
+      <param name="nRowCount">The number of rows to skip.  Positive numbers more forward; negative numbers move backward.  If omitted, +1 is assumed.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE (including if beginning or end of data was encountered).
+        </returns>
+    </member>
+    <member name="P:VO.SQLSelect.SQLColumns">
+      <summary>**Missing documentation **</summary>
+      <value>**Missing documentation **</value>
+    </member>
+    <member name="P:VO.SQLSelect.SqlData">
+      <summary>**Missing documentation **</summary>
+      <value>**Missing documentation **</value>
+    </member>
+    <member name="P:VO.SQLSelect.SQLString">
+      <summary>
+            A string representing the SQL statement text.
+        </summary>
+      <value>A string representing the SQL statement text.</value>
+    </member>
+    <member name="P:VO.SQLSelect.Statement">
+      <summary>
+            A SQL statement object.
+        </summary>
+      <value>A SQL statement object.</value>
+    </member>
+    <member name="P:VO.SQLSelect.StatementHandle">
+      <summary>
+            A numeric value representing the statement handle.
+        </summary>
+      <value>A numeric value representing the statement handle.</value>
+    </member>
+    <member name="P:VO.SQLSelect.Status">
+      <summary>
+            A hyperlabel object identifying the status after the last operation.
+        </summary>
+      <value>A hyperlabel object identifying the status after the last operation.</value>
+    </member>
+    <member name="M:VO.SQLSelect.SuspendNotification">
+      <summary>
+            Suspend the broadcasting of Notify messages to the server's attached clients.
+        </summary>
+    </member>
+    <member name="P:VO.SQLSelect.TableName">
+      <summary>
+            A string representing the name of the table.
+        </summary>
+      <value>A string representing the name of the table.</value>
+    </member>
+    <member name="P:VO.SQLSelect.TimeStampAsDate">
+      <summary>**Missing documentation **</summary>
+      <value>**Missing documentation **</value>
+    </member>
+    <member name="M:VO.SQLSelect.Unlock(XSharp.__Usual)">
+      <summary>
+            This method is provided to override the inherited functionality from the DataServer class, as it does not apply to SQLSelect.
+        </summary>
+    </member>
+    <member name="M:VO.SQLSelect.Update(XSharp.__Usual)">
+      <summary>
+            Update the current row or restore the original values of the row.
+        </summary>
+      <param name="lUpdate">TRUE updates the row; FALSE cancels the update and restores the original values of the row.  The default is TRUE.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLSelect.UpdateCursor"></member>
+    <member name="M:VO.SQLSelect.UpdateKey"></member>
+    <member name="M:VO.SQLSelect.UpdateVal"></member>
+    <member name="P:VO.SQLSelect.Used">
+      <summary>
+            A logical value indicating whether the current query is active.
+            It returns TRUE if the current query is active; otherwise, it returns FALSE.
+        </summary>
+      <value>
+            A logical value indicating whether the current query is active.
+            It returns TRUE if the current query is active; otherwise, it returns FALSE.
+        </value>
+    </member>
+    <member name="T:VO.SQLStatement">
+      <summary>
+            Manage a SQL statement.
+        </summary>
+    </member>
+    <member name="M:VO.SQLStatement.#ctor(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLStatement object.
+        </summary>
+      <param name="cSQLStatement">The statement text.</param>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+    </member>
+    <member name="M:VO.SQLStatement.Commit">
+      <summary>
+            Save the changes made since the last Commit().
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.SQLStatement.Connection">
+      <summary>
+            The data source — a SQLConnection object — that this statement is connected to.
+        </summary>
+      <value>The data source — a SQLConnection object — that this statement is connected to.</value>
+    </member>
+    <member name="P:VO.SQLStatement.CursorType"></member>
+    <member name="M:VO.SQLStatement.Destroy"></member>
+    <member name="P:VO.SQLStatement.ErrInfo">
+      <summary>
+            An SQL statement error information (SQLErrorInfo) object.  Use the error flag of the returned object to determine if an error occurred.
+        </summary>
+      <value>An SQL statement error information (SQLErrorInfo) object.  Use the error flag of the returned object to determine if an error occurred.</value>
+    </member>
+    <member name="M:VO.SQLStatement.Execute(XSharp.__Usual)">
+      <summary>
+            Execute the statement.
+        </summary>
+      <param name="uParm">The array of parameters to execute., or a list of parameters to execute.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLStatement.FreeStmt(XSharp.__Usual)">
+      <summary>
+            Free the statement, according to the specified option.
+        </summary>
+      <param name="kOption">
+            The option used when the statement is freed, specified by one of the following constants:
+            Constant	Description
+            SQL_CLOSE	Closes the cursor.
+            SQL_DROP	Closes the cursor, unbinds and resets the parameters, and frees the statement.
+            SQL_RESET_PARAMS	Resets the parameters.
+            SQL_UNBIND	Unbinds the parameters.
+        </param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLStatement.GetStatementOption(XSharp.__Usual)">
+      <summary>
+            Return current setting for a statement option or NIL, if an error occurred.
+        </summary>
+      <param name="kOption">The statement option (for example, SQL_BIND_TYPE, etc.).  Refer to SQLGetStmtOption() in your ODBC documentation for a complete list of ODBC connection options that are available.</param>
+    </member>
+    <member name="P:VO.SQLStatement.HyperLabel">
+      <summary>
+            A hyperlabel containing a description of the statement.
+        </summary>
+      <value>A hyperlabel containing a description of the statement.</value>
+    </member>
+    <member name="P:VO.SQLStatement.KeySet"></member>
+    <member name="M:VO.SQLStatement.MakeErrorInfo(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)"></member>
+    <member name="P:VO.SQLStatement.NativeSQL">
+      <summary>
+            A string containing the native text of the statement.
+
+            Level 2
+        </summary>
+      <value>
+            A string containing the native text of the statement.
+
+            Level 2
+        </value>
+    </member>
+    <member name="P:VO.SQLStatement.NumParameters">
+      <summary>
+            A numeric value containing the number of parameters in the statement.  A return value of -1 indicates an error.
+
+            Level 2
+        </summary>
+      <value>
+            A numeric value containing the number of parameters in the statement.  A return value of -1 indicates an error.
+
+            Level 2
+        </value>
+    </member>
+    <member name="P:VO.SQLStatement.NumSuccessfulRows">
+      <summary>
+            A numeric value containing the number of rows that were affected by the insert, update, or delete statement.  A return value of -1 indicates an error.
+        </summary>
+      <value>A numeric value containing the number of rows that were affected by the insert, update, or delete statement.  A return value of -1 indicates an error.</value>
+    </member>
+    <member name="P:VO.SQLStatement.Params"></member>
+    <member name="M:VO.SQLStatement.Prepare">
+      <summary>
+            Prepare a statement.
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.SQLStatement.PrepFlag">
+      <summary>
+            A logical value that indicates if the statement has been prepared.
+        </summary>
+      <value>A logical value that indicates if the statement has been prepared.</value>
+    </member>
+    <member name="P:VO.SQLStatement.RecCount"></member>
+    <member name="M:VO.SQLStatement.RollBack">
+      <summary>
+            Undo the changes made since the last Commit().
+        </summary>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.SQLStatement.RowSet"></member>
+    <member name="P:VO.SQLStatement.ScrollConcurrency"></member>
+    <member name="M:VO.SQLStatement.SetStatementOption(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Set current setting for a statement option.
+        </summary>
+      <param name="fOption">The statement option (for example, SQL_BIND_TYPE, etc.).  Refer to SQLSetStatement Option() in your ODBC documentation for a complete list of ODBC statement options that are available.</param>
+      <param name="uValue">The value to set the statement option to.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.SQLStatement.SimulateCursor"></member>
+    <member name="P:VO.SQLStatement.SQLString">
+      <summary>
+            A string containing the text of the statement.
+        </summary>
+      <value>A string containing the text of the statement.</value>
+    </member>
+    <member name="P:VO.SQLStatement.StatementHandle">
+      <summary>
+            A long integer representing the statement handle.
+        </summary>
+      <value>A long integer representing the statement handle.</value>
+    </member>
+    <member name="P:VO.SQLStatement.Status">
+      <summary>
+            A hyperlabel describing the error, or NULL_OBJECT if no error has occurred.
+        </summary>
+      <value>A hyperlabel describing the error, or NULL_OBJECT if no error has occurred.</value>
+    </member>
+    <member name="T:VO.SQLTable">
+      <summary>
+            Manage a table.
+        </summary>
+    </member>
+    <member name="M:VO.SQLTable.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLTable object.
+        </summary>
+      <param name="symTableName">The symbol representing the name of the table.</param>
+      <param name="aFieldList">The array of column names from the table to be included.  If not specified, all columns are included.</param>
+      <param name="oSQLConnection">The SQL connection indicating where the table can be found.  If not specified, the current default connection is used, if any; if none is defined, the system asks the end user to log on to a database.</param>
+    </member>
+    <member name="M:VO.SQLTable.ClearRelation(XSharp.__Usual)">
+      <summary>
+            Clear a relation (or all relations) held by this server to other servers.
+        </summary>
+      <param name="nRelation">The number of the relation to clear.  If omitted, all relations are cleared.</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLTable.Condition(XSharp.__Usual)">
+      <summary>
+            Store any other condition that is appended to the end of the SQL statement.
+        </summary>
+      <param name="cOtherConditions">A string representing other conditions appended to the end of the SQL statement, such as 'GROUPBY' and 'HAVING'.</param>
+    </member>
+    <member name="P:VO.SQLTable.Fields"></member>
+    <member name="M:VO.SQLTable.Notify(XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Provide a method that is automatically called by the action methods of the server after completion of some significant event:  a column has changed, the server position has changed, some operation has been completed.  Its standard implementation is to broadcast the same notification to its attached clients.
+        </summary>
+      <param name="kNotification">Identifies the event, specified as one of the constants in the table below.</param>
+      <param name="uDescription">Used only with some notification types. See descriptions in the table below</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLTable.OrderBy">
+      <summary>
+            Specify an ORDER BY clause.
+        </summary>
+      <param name="cOrder [, cOrder]">The list of strings comprising the ORDER BY clause.  The list will be concatenated, separated by commas.  The strings can contain any valid ORDER BY syntax that is accepted by the driver, including ASC and DESC keywords.</param>
+    </member>
+    <member name="P:VO.SQLTable.OrderByClause"></member>
+    <member name="P:VO.SQLTable.OrderSeek"></member>
+    <member name="M:VO.SQLTable.Relation(XSharp.__Usual)">
+      <summary>
+            Return the linking expression of a specified relation.
+        </summary>
+      <param name="nRelation">The position of the desired relation in the list of current relations.  The relations are numbered according to the order in which they were defined with SetRelation().</param>
+      <returns>
+            A string containing the linking expression of the relation specified by <paramref name="nRelation" />.  If there is no relation set for <paramref name="nRelation" />, SQLTable:Relation() returns a NULL_STRING.
+        </returns>
+    </member>
+    <member name="M:VO.SQLTable.Seek(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Search for a value based on a controlling search order.
+        </summary>
+      <param name="asymColumn">The array of columns that is to be searched for.</param>
+      <param name="auValue">
+            The array of values that is to be searched for of a type compatible with <paramref name="asymColumn" />.  The number of elements in this array and <paramref name="asymColumn" /> must be identical.
+        </param>
+      <param name="symColumn">The column that is to be searched for.</param>
+      <param name="uValue">
+            The value that is to be searched for of a type compatible with <paramref name="symColumn" />.
+        </param>
+      <param name="lSoftSeek">Indicates whether the '&gt;=' operator is to used in the where clause (TRUE) or if the '=' operator is to be used (FALSE).</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE. (whether this is because the server is incapable of searching, or because the value was not found).
+        </returns>
+    </member>
+    <member name="M:VO.SQLTable.SetRelation(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Set a relation from this server to the child server; standard database operations are restricted to those records that match the relation.
+        </summary>
+      <param name="oChild">The server attached to the child server must be specified as a SQLTable object.  If omitted, all relations for this server are removed (the recommended way of doing this is the ClearRelations() method).</param>
+      <param name="uRelation">The field name representing the relation for the server.  An alias can be used for the field name.  (See the SQLSelect:FieldInfo() method to set an alias name).</param>
+      <param name="cRelation">The array of field names representing the relation for the server.  The array can also contain complex relational operators (SQL_RELOP_AND, SQL_RELOP_OR, SQL_RELOP_NOT, SQL_RELOP_OPENP, SQL_RELOP_CLOSEP).</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="M:VO.SQLTable.SetSelectiveRelation(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Set a selective relation from this server to the child server; standard database operations are restricted to those records that match the relation.
+        </summary>
+      <param name="oChild">
+            The server attached to the child server must be specified as a SQLTable object.  If <paramref name="oSQLChild" /> is omitted, all relations for this server are removed (the recommended way of doing this is the ClearRelations() method).
+        </param>
+      <param name="uRelation">The field name from this server.  An alias can be used for the field name.  (See the SQLSelect:FieldInfo() method to set an alias name).</param>
+      <param name="cRelation">The array of field names representing the relation for the server.  The array can also contain complex relational operators (SQL_RELOP_AND, SQL_RELOP_OR, SQL_RELOP_NOT, SQL_RELOP_OPENP, SQL_RELOP_CLOSEP).</param>
+      <returns>
+            TRUE if successful; otherwise, FALSE.
+        </returns>
+    </member>
+    <member name="P:VO.SQLTable.Suffix"></member>
+    <member name="P:VO.SQLTable.Table"></member>
+    <member name="M:VO.SQLTable.Where">
+      <summary>
+            Specify a WHERE condition.  The where clause is built by concatenating these conditions with the AND operator.
+        </summary>
+      <param name="cCondition [, cCondition]">The list of conditions (for example, 'STATE = 'NY'', etc.).</param>
+    </member>
+    <member name="P:VO.SQLTable.WhereClause"></member>
+    <member name="P:VO.SQLTable.WhereSeek"></member>
+    <member name="T:VO.SQLValue">
+      <summary>
+            Describe a SQL value.
+        </summary>
+    </member>
+    <member name="M:VO.SQLValue.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Construct a SQLValue object.
+        </summary>
+      <param name="oHyperLabel">The hyperlabel for the SQL value.</param>
+      <param name="oFieldSpec">The column specification for the SQL value.</param>
+      <param name="nODBCType">The ODBC data type of the SQL value (for example, SQL_INTEGER, SQL_CHAR, SQL_FLOAT, etc.).  Refer to your ODBC documentation for a complete list of ODBC data types that are available.</param>
+      <param name="nScale">The decimal precision of the SQL value.  This is specified only when the ODBC data type is numeric.</param>
+      <param name="lNullable">Specify TRUE if the value can be NULL; otherwise, FALSE.</param>
+    </member>
+    <member name="F:VO.SQLValue.Nullable"></member>
+    <member name="F:VO.SQLValue.ODBCType"></member>
+    <member name="F:VO.SQLValue.Scale"></member>
+    <member name="P:VO.SQLValue.UsualType">
+      <summary>
+            A string representing the X# usual type corresponding to the originating ODBC type (for example, SQL_INTEGER returns LONG).
+        </summary>
+      <value>A string representing the X# usual type corresponding to the originating ODBC type (for example, SQL_INTEGER returns LONG).</value>
+    </member>
+    <member name="T:VOSQLClasses.Functions">
+      <summary>This compiler generated class contains all the functions, globals and defines that are defined in the VOSQLClasses.dll assembly. </summary>
+    </member>
+    <member name="M:VOSQLClasses.Functions.DToCSQL(XSharp.__Date)">
+      <summary>Convert a date to a string in "YYYY-MM-DD" format</summary>
+      <param name="dDate">Date to convert</param>
+      <returns>date in "YYYY-MM-DD" format</returns>
+    </member>
+    <member name="M:VOSQLClasses.Functions.MakeTimeStamp(XSharp.__Usual,XSharp.__Usual)">
+      <summary>Convert a date and seconds to a timestamp string in "YYYY-MM-DD HH:MM:SS.NNN" format</summary>
+      <param name="dDate">Date to convert</param>
+      <param name="nSeconds">Seconds to add to the timestamp</param>
+      <returns>A timestamp string in "YYYY-MM-DD HH:MM:SS.NNN" format</returns>
+    </member>
+    <member name="M:VOSQLClasses.Functions.SQLConnectErrorMsg(XSharp.__Usual)">
+      <summary>
+            Return and optionally change the setting that determines whether to display connection error messages.
+        </summary>
+      <param name="lValue">
+            TRUE enables the connection error message; FALSE disables the connection error message.
+            The initial default is TRUE.
+        </param>
+      <returns>
+            If <paramref name="lNewSetting" /> is not specified, SQLConnectErrorMsg() returns the current setting.
+            If <paramref name="lNewSetting" /> is specified, the previous setting is returned.
+        </returns>
+    </member>
+    <member name="M:VOSQLClasses.Functions.SqlDeleteWhiteSpace(System.String)">
+      <summary>**Missing documentation **</summary>
+    </member>
+    <member name="M:VOSQLClasses.Functions.SQLDropMyConnection(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Disconnect the ODBC data source.
+        </summary>
+      <param name="cMySourceName">The source for this connection.</param>
+      <param name="cMyUserid">The user id that was used to connect to the source.</param>
+      <param name="cMyPassword">The password that was used to connect to the source.</param>
+      <returns>
+            TRUE if a connection is found; otherwise FALSE.
+        </returns>
+    </member>
+    <member name="M:VOSQLClasses.Functions.SQLGetDataSources">
+      <summary>
+            Identify the available ODBC data sources.
+        </summary>
+      <returns>
+            An array of strings identifying the available ODBC data sources.
+            If no sources are available, SQLGetDataSources() returns a NULL_ARRAY.
+        </returns>
+    </member>
+    <member name="M:VOSQLClasses.Functions.SQLGetMyConnection(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
+      <summary>
+            Connect to the ODBC source specified.
+        </summary>
+      <param name="cMySourceName">The source to connect to.</param>
+      <param name="cMyUserID">The user ID that will be used to connect to the source.</param>
+      <param name="cMyPassword">The password that will be used to connect to the source.</param>
+      <returns>
+            If a connection to the source is found, it is returned as an SQLConnection object.
+            If a connection is not found, one is created and returned as an object.
+        </returns>
+    </member>
+    <member name="M:VOSQLClasses.Functions.SqlIsBinaryType(System.Int32)">
+      <summary>Helper function to determine if an ODBC type is Binary</summary>
+    </member>
+    <member name="M:VOSQLClasses.Functions.SqlIsCharType(System.Int32)">
+      <summary>Helper function to determine if an ODBC type is Character</summary>
+    </member>
+    <member name="M:VOSQLClasses.Functions.SqlIsLongType(System.Int32)">
+      <summary>Helper function to determine if an ODBC type is Long (BLOB, MEMO etc)</summary>
+    </member>
+    <member name="M:VOSQLClasses.Functions.SQLOpenConnection">
+      <summary>
+            Connect to a list of ODBC sources.
+        </summary>
+      <returns>
+            An SQLConnection object.
+        </returns>
+    </member>
+    <member name="M:VOSQLClasses.Functions.SQLSetConnection(XSharp.__Usual)">
+      <summary>
+            Return and optionally change the default SQL connection.
+        </summary>
+      <param name="oSQLConnection">The default SQL connection that will be used by any function or class that requires a connection.</param>
+      <returns>
+            If <paramref name="oSQLConnection" /> is not specified, SQLSetConnection() returns the current setting.
+            If <paramref name="oSQLConnection" /> is specified, the new setting is returned.
+        </returns>
+    </member>
+    <member name="M:VOSQLClasses.Functions.SqlSetStmtConcurrency(XSharp.__Usual)">
+      <summary>
+            Return and optionally change the default concurrency mode for SQLSelect objects
+        </summary>
+      <param name="nNew">The default  concurrency strategy that will be used by new SqlSelect objects</param>
+      <returns>
+            If <paramref name="nNew" /> is not specified, SQLSetStmtConcurrency() returns the current setting.
+            If <paramref name="nNew" /> is specified, the new setting is returned.
+        </returns>
+    </member>
+    <member name="M:VOSQLClasses.Functions.SqlSetStmtCursorType(XSharp.__Usual)">
+      <summary>
+            Return and optionally change the default cursor type used by for SQLSelect objects
+        </summary>
+      <param name="nNew">The default  concurrency strategy that will be used by new SqlSelect objects</param>
+      <returns>
+            If <paramref name="nNew" /> is not specified, SQLSetStmtCursorType() returns the current setting.
+            If <paramref name="nNew" /> is specified, the new setting is returned.
+        </returns>
+    </member>
+    <member name="M:VOSQLClasses.Functions.SqlSetStmtSimulateCursor(XSharp.__Usual)">
+      <summary>
+            Return and optionally change the default cursor simulation mode used by for SQLSelect objects
+        </summary>
+      <param name="nNew">The default cursor simulation mode that will be used by new SqlSelect objects</param>
+      <returns>
+            If <paramref name="nNew" /> is not specified, SQLSetStmtSimulateCursor() returns the current setting.
+            If <paramref name="nNew" /> is specified, the new setting is returned.
+        </returns>
+    </member>
+  </members>
+</doc>

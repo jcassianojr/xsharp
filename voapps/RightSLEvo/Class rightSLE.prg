@@ -1,3 +1,13 @@
+﻿#region DEFINES
+DEFINE FSEL_END     := 3
+DEFINE FSEL_HOME    := 2
+DEFINE FSEL_RALL     := 0
+DEFINE FSEL_TRIM    := 1
+DEFINE FSEL_TRIMEND := 4
+DEFINE LOCALE_SYSTEM_DEFAULT := 2048
+DEFINE LOCALE_USER_DEFAULT	:= 1024
+#endregion
+
 CLASS rightSLE INHERIT SingleLineEdit
 // Author		: Willie Moore
 // Email		: williem@bigfoot.com
@@ -25,7 +35,7 @@ CLASS rightSLE INHERIT SingleLineEdit
 //d set the symMethod in your datawindows's postinit. \par
 //d If you need to change the init of rightSLE, add a method postinit() class rightSLE to your
 //d app and make your changes there. This is useful if you want to change the
-//d focus selection to default to FSEL_ALL.
+//d focus selection to default to FSEL_RALL.
 //e Initialize this SLE in the owning window's PostInit() as follows:
 //e PostInit(oWindow,iCtlID,oServer,uExtra) CLASS MyDialog
 //e 	SELF:oDCsledMyDate:symMethod := str2symbol("myCustomDateDialog")
@@ -45,20 +55,20 @@ CLASS rightSLE INHERIT SingleLineEdit
 	PROTECT cTemplateChar				AS STRING
 	PROTECT lTruePicture				AS LOGIC     	// If TRUE then $ sign overwrite.. use available fieldspec length else do not overwrite	
 	PROTECT lDoubleAsToday				AS LOGIC		// if a date button is present, put today instead of showing the calendar
-	PROTECT nLastPosition				AS LONGINT		// last cursor position in SLE - set in processnum
+	PROTECT nLastPosition				AS LONGINT			// last cursor position in SLE - set in processnum
 	PROTECT lUseResourcesforIcons		AS LOGIC		// if true, use resource statements for the icons, else use the bmp from the disk
 	PROTECT symImageType   				AS SYMBOL  		// Either #ICON or #BITMAP
 	PROTECT lUseOldButtons				AS LOGIC		// Which button logic to use
 	PROTECT cCurSymbol					AS STRING		// currency symbol for the $ template value in a picture
-	PROTECT nCurrencyPos				AS LONGINT		// Position of of the currency symbol 0,2 = left --- 1,3 = right
+	PROTECT nCurrencyPos				AS LONGINT			// Position of of the currency symbol 0,2 = left --- 1,3 = right
 	PROTECT oDateRange					AS wmDateRange	// this object will hold a daterange that rightSLe or dateSLE can use to limit user input
-	PROTECT nOwneralignment				AS LONGINT		// save the owner alingment for PB settigns
+	PROTECT nOwneralignment				AS LONGINT			// save the owner alingment for PB settigns
 	PROTECT lTurnNumericPictureNumeric	AS LOGIC		// Controls if rightSLE takes a picture cause without a field spec and makes
 														// it numeric if it has all "9" for the picture
 	PROTECT aCalendarHoliday			AS ARRAY		// array of calendar holiday's
 	EXPORT lAlignCalendarLeft 			AS LOGIC		// Used to make calendar align either left or right on the sle
 	EXPORT FirstDayoftheWeek			AS DWORD		// for the dataSLE
-	EXPORT nDirection					AS LONGINT		// to control the direction of the enterkey
+	EXPORT nDirection					AS LONGINT			// to control the direction of the enterkey
 	EXPORT symMethod					AS SYMBOL		// symbol to hold the calendar method to invoke on a double click
 	EXPORT symCalcMethod				AS SYMBOL		// symbol to hold the default calculator method
 	EXPORT lSendFromButton				AS LOGIC		// is the buttondoubleclick comming from a button
@@ -66,40 +76,28 @@ CLASS rightSLE INHERIT SingleLineEdit
 	EXPORT symCalcClass					AS SYMBOL		// symbol for the class to instanciate for the popup calculator
 	EXPORT symCalandarClass				AS SYMBOL		// symbol for the class to instanciate for the calandar dialog
 
-	// **********************************************************
-	// * Global Settings iVars. These are static so             *
-	// * they can affect multible SLEs                          *
-	// **********************************************************
-	STATIC HIDDEN DefaultEnterHandling      := FALSE        AS LOGIC
-	STATIC HIDDEN DefaultArrowHandling      := TRUE         AS LOGIC
-	STATIC HIDDEN DefaultOBeyFocusRules     := FALSE        AS LOGIC
-	STATIC HIDDEN DefaultFocusBehavior      := FSEL_HOME    AS LONG
-	STATIC HIDDEN DefaultNumericFocus       := FALSE        AS LOGIC
-//	STATIC HIDDEN DefaultOverWriteBehavior  := overwriteBehavior.Never as overwriteBehavior
-//	STATIC HIDDEN DefaultScrlModeBehavior   := scrlModeBehavior.Full as scrlModeBehavior
-	// **********************************************************
-	// * end global settings section                            *
-	// **********************************************************
 
 
-/****************************************************************************/
-METHOD AssignImage(xImage AS STRING) AS VOID 
 
+	// access and assigns
+	
+
+METHOD AssignImage(xImage AS STRING) AS VOID PASCAL 
 	//l AssignImage processing method for a SLE Buytton.
 	//p AssignImage processing method for a SLE Buytton.
 	//d This method handles the task of assigning the imgage to a SLe Pushbutton. \line
 	//r VOID
 	//a xImage \tab String \tab Name of the bitmap or icon to load
 
-	LOCAL oPoint 			AS Point
+ 	LOCAL oPoint 			AS Point
 	LOCAL oDim 				AS Dimension
 	LOCAL cBaseName		AS STRING            
 	LOCAL nOldAlignment	AS LONG
 
 	//Copy the position and size of the current SLE
-	oPoint := Point{ SELF:Origin:X , SELF:Origin:Y }
-	oDim   := Dimension{ SELF:size:width , SELF:size:height}
-		
+    oPoint := Point{ SELF:Origin:X , SELF:Origin:Y }
+    oDim   := Dimension{ SELF:size:width , SELF:size:height}
+    	
 //	oPoint	:= PClone(SELF:origin)
 //	oDim		:= PClone(SELF:size)
 	
@@ -110,7 +108,7 @@ METHOD AssignImage(xImage AS STRING) AS VOID
 	// *****************************************************************************
    nOldAlignment			:= SELF:nOwneralignment           
 	IF nOldAlignment <> OA_NO
-		SELF:Owneralignment	:= OA_NO
+    	SELF:Owneralignment	:= OA_NO
 	ENDIF
 
 	IF SELF:lUseOldButtons
@@ -161,22 +159,19 @@ METHOD AssignImage(xImage AS STRING) AS VOID
 		SetWindowPos(SELF:handle(),0L,0,0,SELF:size:width-oDim:Width,SELF:size:height,SWP_NOMOVE+0x14)
 	ENDIF
 
-	// *******************************************************************
-	// * wcm 2008-03-27                                                  *
+    // *******************************************************************
+    // * wcm 2008-03-27                                                  *
 	//  * now that the button has beenc reated, we must apply the         *
 	//  * owner alignment. This call works on the control plus the button *
 	//  *******************************************************************
-	IF nOldAlignment <> OA_NO
-		SELF:Owneralignment  := nOldAlignment	
-	ENDIF
+    IF nOldAlignment <> OA_NO
+    	SELF:Owneralignment  := nOldAlignment	
+    ENDIF
 
 	SELF:showpb()
-
 	RETURN
 
-/****************************************************************************/
-METHOD CalKeyDown( oEvent ) AS VOID 
-
+METHOD CalKeyDown( oEvent ) AS VOID PASCAL 
 	//l keydown processing method for a calendar.
 	//p keydown processing method for a calendar.
 	//d This method handles the + and - keys and will adjust the SLE \line
@@ -184,46 +179,44 @@ METHOD CalKeyDown( oEvent ) AS VOID
 	//r VOID
 	//a Event Message
 
-	LOCAL dExistingDate AS DATE
+	LOCAL dExistingDate	 AS DATE
 	LOCAL uOldValue 	AS USUAL
 
 	IF oEvent:wParam == VK_ADD
 		IF  !( CToD( SELF:TextValue ) == NULL_DATE )
-			dExistingDate               := CToD( SELF:TextValue )
+			dExistingDate 				:= CToD( SELF:TextValue )
 			uOldValue   				:= SELF:uValue  // Save uValue unchanged. Let VO deal with it.
-			SELF:TextValue              := DToC( dExistingDate + 1)
-			SELF:Modified 				:= TRUE       	// This must be uncommented.
-			SELF:uValue 				:= uOldValue    // Restore uValue in its original form.
-			SELF:EventReturnValue       := 1
+			SELF:TextValue 			:= DToC( dExistingDate + 1)
+		 	SELF:Modified 				:= TRUE       	// This must be uncommented.
+		 	SELF:uValue 				:= uOldValue    // Restore uValue in its original form.
+			SELF:EventReturnValue 	:= 1
 		ENDIF			
-	ENDIF
+    ENDIF
 
 	IF oEvent:wParam == VK_SUBTRACT
 		IF !( CToD( SELF:TextValue) == NULL_DATE )
-			dExistingDate               := CToD( SELF:TextValue )
+			dExistingDate := CToD( SELF:TextValue )
 			uOldValue   				:= SELF:uValue  // Save uValue unchanged. Let VO deal with it.
-			SELF:TextValue              := DToC( dExistingDate - 1)
-			SELF:Modified 				:= TRUE       	// This must be uncommented.
-			SELF:uValue 				:= uOldValue    // Restore uValue in its original form.
+			SELF:TextValue := DToC( dExistingDate - 1)
+		 	SELF:Modified 				:= TRUE       	// This must be uncommented.
+		 	SELF:uValue 				:= uOldValue    // Restore uValue in its original form.
 			SELF:EventReturnValue := 1
 		ENDIF			
 	ENDIF        
 	
    // JL*** John Lewis Modification
-   IF oEvent:wParam == 84 .or. oEvent:wParam == 116 // T or t
+   IF oEvent:wParam == 84  .OR. oEvent:wParam == 116 // T or t
 		uOldValue   				:= SELF:uValue  // Save uValue unchanged. Let VO deal with it.
-		self:TextValue              :=  DToC(Today())
-		SELF:Modified 				:= TRUE       	// This must be uncommented.
-		SELF:uValue 				:= uOldValue    // Restore uValue in its original form.
-		self:EventReturnValue       := 1
+   	SELF:TextValue 			:=  DToC(Today())
+	 	SELF:Modified 				:= TRUE       	// This must be uncommented.
+	 	SELF:uValue 				:= uOldValue    // Restore uValue in its original form.
+      SELF:EventReturnValue 	:= 1
 	ENDIF
 
 
 	RETURN
 
-/****************************************************************************/
-METHOD CreateFormattedString(cPicture, cType, cDefTempl)
-
+METHOD CreateFormattedString(cPicture, cType, cDefTempl) 
 	//l CreateFormattedString method.
 	//p CreateFormattedString method.
 	//d The CreateFormattedString method subsitutes my rightSLEFormattedString class
@@ -236,9 +229,7 @@ METHOD CreateFormattedString(cPicture, cType, cDefTempl)
 	SELF:oEditString := rightSLEFormattedString{SELF, cPicture, cType, wOverWrite, cDefTempl, wScrMode}
 	RETURN SELF
 
-/****************************************************************************/
-ACCESS CurrencyPosition() AS LONGINT 
-
+ACCESS CurrencyPosition() AS LONGINT PASCAL 
 	//l Access method to Get the CurrencyPosition.
 	//p Access method to Get the CurrencyPosition.
 	//d CurrencyPositon represents the position of the currency symbol in the picture template. \line
@@ -252,9 +243,8 @@ ACCESS CurrencyPosition() AS LONGINT
 
 	RETURN SELF:nCurrencyPos
 
-/****************************************************************************/
-METHOD CurrencySymbol() AS STRING 
 
+METHOD CurrencySymbol() AS STRING PASCAL 
 	//l Method to get the current currencysymbol.
 	//p Method to get the current currencysymbol.
 	//d currencySymbol will return the local user's currency symbol \line
@@ -284,18 +274,14 @@ METHOD CurrencySymbol() AS STRING
 
 	RETURN SELF:cCurSymbol
 
-/****************************************************************************/
-ACCESS DateRange() AS wmDateRange
-
+ACCESS DateRange() AS wmDateRange PASCAL 
 	//l Gets the DateRange for a calendar.
 	//p Gets the DateRange for a calendar.
 	//r OBJECT of type wmDateRange
 	//a NONE \line
 	RETURN SELF:oDateRange
 
-/****************************************************************************/
-ASSIGN DateRange(oRange AS wmDateRange) AS VOID
-
+ASSIGN DateRange(oRange AS wmDateRange) AS VOID PASCAL 
 	//l Sets the DateRange for a calendar.
 	//p Sets the DateRange for a calendar.
 	//r VOID
@@ -303,9 +289,7 @@ ASSIGN DateRange(oRange AS wmDateRange) AS VOID
 	SELF:oDateRange	:= oRange
 	RETURN
 
-/****************************************************************************/
 METHOD Destroy() 
-
 	//l VO callback method.
 	//p VO callback method.
 	//d This method gets called before VO's destroy. We want \line
@@ -319,9 +303,8 @@ METHOD Destroy()
 	ENDIF
 	RETURN SUPER:Destroy()
 	
-/****************************************************************************/
-METHOD Disable()
 
+METHOD disable() 
 	//l stub method to process a button if it exists.
 	//p stub method to process a button if it exists.
 	//d disable is designed to handle the button classes \line
@@ -336,9 +319,7 @@ METHOD Disable()
 	ENDIF
 	RETURN SUPER:disable()
 
-/****************************************************************************/
-METHOD Dispatch ( oEvent )
-
+METHOD Dispatch ( oEvent ) 
 	//l dispatch logic for rightSLE.
 	//p dispatch logic for rightSLE.
 	//r LONG
@@ -349,7 +330,7 @@ METHOD Dispatch ( oEvent )
 	LOCAL lShiftOn	AS LOGIC
 	LOCAL lCtrlOn  	AS LOGIC
 	LOCAL lAltOn	AS LOGIC
-//	LOCAL lExtSel  	AS LOGIC
+	LOCAL lExtSel  	AS LOGIC
 	LOCAL lAllDone	AS LOGIC
 	LOCAL lDAToday AS LOGIC // mz
 	LOCAL cChar		AS STRING	
@@ -362,114 +343,110 @@ METHOD Dispatch ( oEvent )
 
 	/*
 		Only the messages, that rightSle wants to know about.
-		All the rest go through to SingleLineEdit's dispatch and every other class's dispatch that is involved from there - There are lots of them!!!!
+	 	All the rest go through to SingleLineEdit's dispatch and every other class's dispatch that is involved from there - There are lots of them!!!!
 
-	*/
-	lallDone	:= FALSE
-	IF uMsg == WM_KEYDOWN .or. uMsg == WM_KEYUP .or. uMsg == WM_CHAR
+    */
+    lallDone	:= FALSE
+	IF uMsg == WM_KEYDOWN  .or. uMsg == WM_KEYUP  .or. uMsg == WM_CHAR
 	   lShiftOn := LOGIC(_CAST, _And(GetKeyState(VK_SHIFT), SHORTINT(_CAST, 0x8000)))
 	   lCtrlOn  := LOGIC(_CAST, _And(GetKeyState(VK_CONTROL), SHORTINT(_CAST, 0x8000)))
-	   lAltOn 	:= LOGIC(_CAST, _And(GetKeyState(VK_MENU), SHORTINT(_CAST, 0x8000)))
-//	   lExtSel  := lShiftOn .and. (uMsg == WM_KEYDOWN .or. uMsg == WM_KEYUP) .and.;
-//			      (wParam == VK_LEFT .or. wParam == VK_RIGHT .or. wParam == VK_END .or. wParam == VK_HOME)
+       lAltOn 	:= LOGIC(_CAST, _And(GetKeyState(VK_MENU), SHORTINT(_CAST, 0x8000)))
+	   lExtSel  := lShiftOn  .and. (uMsg == WM_KEYDOWN  .or. uMsg == WM_KEYUP)  .and. ;
+			      (wParam == VK_LEFT  .or. wParam == VK_RIGHT  .or. wParam == VK_END  .or. wParam == VK_HOME)
 	ENDIF
-	if wParam <= 256
-		cChar := Upper(CHR(wParam))
-	else
-		cChar := ""
-	endif
+  	cChar := Upper(CHR(wParam))
 
 	// cut and paste stuff goes here
-	IF SELF:lAllowcutandPaste	
-		/*
-		IF ( (uMsg <> WM_KEYDOWN) .and. (uMsg <> WM_KEYUP) .and. (uMsg <> WM_CHAR) ) ;
-			.or. ;
-		(InList(cChar,"X","C","V","Z") .AND. ;
-			 lCtrlOn .and. !lAlton .and. !SELF:ReadOnly .and. ;
+    IF SELF:lAllowcutandPaste	
+    	/*
+    	IF ( (uMsg <> WM_KEYDOWN)  .and. (uMsg <> WM_KEYUP)  .and. (uMsg <> WM_CHAR) ) ;
+    		 .or. ;
+    	(InList(cChar,"X","C","V","Z")  .AND. ;
+			 lCtrlOn  .and. !lAlton  .and. !SELF:ReadOnly  .and. ;
 			 uMsg == WM_KEYDOWN)
-			DO CASE
-				CASE uMsg == WM_CUT .or. cChar == "X"
-					IF !Empty(SELF:Picture) .and. SELF:oEditString:Type == "N"		
-						SELF:oEditString:Cut()
-						nStop						:= SELF:Selection:Finish
-						cText						:= SELF:TextValue
-						SELF:TextValue				:= SELF:SetField(cText,1)
-						SELF:Modified 				:= TRUE       	// This must be uncommented.
+	    	DO CASE
+	    	 	CASE uMsg == WM_CUT  .or. cChar == "X"
+					IF !Empty(SELF:Picture)  .and. SELF:oEditString:Type == "N"		
+					    SELF:oEditString:Cut()
+					    nStop						:= SELF:Selection:Finish
+				    	cText						:= SELF:TextValue
+			    	 	SELF:TextValue				:= SELF:SetField(cText,1)
+	   	 			 	SELF:Modified 				:= TRUE       	// This must be uncommented.
 						SELF:EventReturnValue		:= 1
 						SELF:selection				:= selection{nStop,nStop}
 					ELSE
-						SELF:cut()
-					ENDIF
-					RETURN 1L
-				CASE uMsg == WM_COPY .or. cChar == "C"
-					// we let the menu message flow up to the parent class
-					IF cChar == "C"
-						SELF:Copy()
-						RETURN 1L
-					ENDIF
-				CASE uMsg == WM_PASTE .or. cChar == "V"
-					IF  !Empty(SELF:Picture) .and. ;
-						(SELF:oEditString:Type == 'C' .or. ;
+		                SELF:cut()
+		            ENDIF
+			        RETURN 1L
+	    	 	CASE uMsg == WM_COPY  .or. cChar == "C"
+	    	 		// we let the menu message flow up to the parent class
+	    	 		IF cChar == "C"
+				    	SELF:Copy()
+				    	RETURN 1L
+				    ENDIF
+	    	 	CASE uMsg == WM_PASTE  .or. cChar == "V"
+			    	IF  !Empty(SELF:Picture)  .and. ;
+						(SELF:oEditString:Type == 'C'  .or. ;
 						SELF:oEditString:Type == 'D')
 						SELF:paste()
-					ELSEIF !Empty(SELF:Picture) .and. ;
+					ELSEIF !Empty(SELF:Picture)  .and. ;
 						SELF:oEditString:Type == 'N'
-						SELF:rslePaste()
+				    	SELF:rslePaste()
 					ELSE
 						SELF:paste()
 					ENDIF
 					RETURN 1L
-				CASE uMsg == WM_UNDO .or. cChar == "Z"
-					SELF:Undo()
-					RETURN 1L
-			ENDCASE
-		ENDIF
+				CASE uMsg == WM_UNDO  .or. cChar == "Z"
+			 	    SELF:Undo()
+			 	    RETURN 1L
+	    	ENDCASE
+	    ENDIF
 		*/
 
-		IF InList(cChar,"X","C","V","Z") .AND. ;
-			 lCtrlOn .and. !lAlton .and. !SELF:ReadOnly .and. ;
+		IF InList(cChar,"X","C","V","Z")  .AND. ;
+			 lCtrlOn  .and. !lAlton  .and. !SELF:ReadOnly  .and. ;
 			 uMsg == WM_KEYDOWN
-			IF cChar = "X"
-				IF !Empty(SELF:Picture) .and. SELF:oEditString:Type == "N"		
-					SELF:oEditString:Cut()
-					nStop						:= SELF:Selection:Finish
-					cText						:= SELF:TextValue
-					SELF:TextValue				:= SELF:SetField(cText,1)
-					SELF:Modified 				:= TRUE       	// This must be uncommented.
+		    IF cChar = "X"
+				IF !Empty(SELF:Picture)  .and. SELF:oEditString:Type == "N"		
+				    SELF:oEditString:Cut()
+				    nStop						:= SELF:Selection:Finish
+			    	cText						:= SELF:TextValue
+		    	 	SELF:TextValue				:= SELF:SetField(cText,1)
+   	 			 	SELF:Modified 				:= TRUE       	// This must be uncommented.
 					SELF:EventReturnValue		:= 1
 					SELF:selection				:= selection{nStop,nStop}
 				ELSE
-					SELF:cut()
-				ENDIF
-			ELSEIF cChar = "C"
-				SELF:Copy()
-			ELSEIF cChar = "V"
-				IF  !Empty(SELF:Picture) .and. ;
-					(SELF:oEditString:Type == "C" .or. ;
-					SELF:oEditString:Type == "D")
+	                SELF:cut()
+	            ENDIF
+		    ELSEIF cChar = "C"
+		    	SELF:Copy()
+		    ELSEIF cChar = "V"
+		    	IF  !Empty(SELF:Picture)  .and. ;
+					(SELF:oEditString:Type == 'C'  .or. ;
+					SELF:oEditString:Type == 'D')
 					SELF:paste()
-				ELSEIF !Empty(SELF:Picture) .and. ;
-					SELF:oEditString:Type == "N"
-					SELF:rslePaste()
+				ELSEIF !Empty(SELF:Picture)  .and. ;
+					SELF:oEditString:Type == 'N'
+			    	SELF:rslePaste()
 				ELSE
 					SELF:paste()
 				ENDIF
-			ELSEIF cChar = "Z"
-				SELF:Undo()
-			ENDIF
+		    ELSEIF cChar = "Z"
+		 	    SELF:Undo()
+		    ENDIF
 		   RETURN 1L
 		 ENDIF
 		
-	ENDIF
+    ENDIF
 
-	DO CASE
-		CASE SELF:ReadOnly
-			// we do not want to do anything here
+    DO CASE
+    	CASE SELF:ReadOnly
+    		// we do not want to do anything here
 			// Process keys as required
 
 		CASE uMsg == WM_GETDLGCODE // WM_KEYUP
 				IF wParam == VK_RETURN
-					IF lCtrlOn .and. IsMethod(SELF,SELF:symMethod)
+					IF lCtrlOn  .and. IsMethod(SELF,SELF:symMethod)
 						PostMessage(SELF:handle(),WM_LBUTTONDBLCLK,0,0L)						
 						RETURN 1L
 					ELSEIF !SELF:lTurnOffEnter
@@ -480,15 +457,15 @@ METHOD Dispatch ( oEvent )
 					ENDIF
 				ENDIF
 			
-		CASE uMsg == WM_KEYDOWN .and. ;
-			(wParam = VK_UP .or. wParam = VK_DOWN)
+		CASE uMsg == WM_KEYDOWN  .and. ;
+			(wParam = VK_UP  .or. wParam = VK_DOWN)
 			IF !SELF:lturnOffArrows
 				nRet := SELF:ProcessArrow(wParam)
 				RETURN nRet
 			ENDIF
 		
-		CASE !Empty(SELF:Picture) .and. SELF:oEditString:Type == "D"
-			DO CASE
+    	CASE !Empty(SELF:Picture)  .and. SELF:oEditString:Type == 'D'
+    		DO CASE
 
 				CASE uMsg == WM_LBUTTONDBLCLK
 					IF IsMethod(SELF,SELF:symMethod)
@@ -496,21 +473,23 @@ METHOD Dispatch ( oEvent )
 						RETURN 1L
 					ENDIF	
 
-				// Support for VK_ADD and VK_SUBTRACT like in Quicken
-				CASE uMsg == WM_KEYDOWN .And. ( wParam == VK_ADD .Or. wParam == VK_SUBTRACT )
+	    		// Support for VK_ADD and VK_SUBTRACT like in Quicken
+				CASE uMsg == WM_KEYDOWN  .And. ( wParam == VK_ADD  .Or. wParam == VK_SUBTRACT )
 	
-					// Grab the event, the KeyDown and send it over to PEDateSle's KeyDown
+		  			// Grab the event, the KeyDown and send it over to PEDateSle's KeyDown
 					SELF:CalKeyDown( oEvent)	
-				RETURN 1L         
+	         	RETURN 1L         
 
-			// JL*** John Lewis Modification
-			CASE  uMsg == WM_CHAR
-				if (wParam == 84 .or. wParam == 116) // T or t
-					// Grab the event, the KeyDown and send it over to PEDateSle's KeyDown
+            // JL*** John Lewis Modification
+            CASE  uMsg == WM_CHAR  .and. (wParam == 84  .or. wParam == 116) // T or t
+	            // Grab the event, the KeyDown and send it over to PEDateSle's KeyDown
 					self:CalKeyDown( oEvent)      
-					RETURN 1L
-				elseif	( CHR( wParam )  == "+" .Or. CHR( wParam ) == "-" )	
-					// Stop the beeping
+               RETURN 1L
+		         	
+	
+				// Stop the beeping
+				CASE uMsg == WM_CHAR  .And. ( CHR( wParam )  == "+"  .Or. CHR( wParam ) == "-" )
+	
 					// Beep if you have too, but don't process either of these keys
 					IF CToD( SELF:TextValue ) == NULL_DATE
 						MessageBeep( 0xFFFFFFFF )	
@@ -521,33 +500,30 @@ METHOD Dispatch ( oEvent )
 						ProcessKeyEvent() of  __FormattedString calls ProcessChar() which in turn calls MatchesTemplChar() which will fail because of the + or - .
 						When it fails it calls InvalidAction() of __FormattedString which is the MesssageBeep which was driving me up the wall.
 						Comment out the above lines to see ( hear ) what I was complaining about.
-					 */
+			         */
 	
 					RETURN 1L	
-				ENDIF
-			CASE uMsg == WM_COMMAND
+				CASE uMsg == WM_COMMAND
 					IF wParam == IDM_PEDateSleContextMenu_File_Calendar_ID
 						// Pop up the calendar
 						IF IsMethod(SELF,SELF:symMethod)
-							// MZ
-							lDAToday 			:= SELF:lDoubleAsToday // Save, MZ Show Calendar from contextmenu
-							SELF:lDoubleAsToday := FALSE
-							Send(SELF,SELF:symMethod)
-							SELF:lDoubleAsToday := lDAToday // restore
-							SELF:EventReturnValue := 1L
+					    	// MZ
+    						lDAToday 			:= SELF:lDoubleAsToday // Save, MZ Show Calendar from contextmenu
+					    	SELF:lDoubleAsToday := FALSE
+					    	Send(SELF,SELF:symMethod)
+					    	SELF:lDoubleAsToday := lDAToday // restore
 							RETURN 1L
 						ENDIF
 					ELSEIF wParam == IDM_PEDateSleContextMenu_File_Today_ID
 						// Just stuff today's date back into PEDateSle
 						SELF:Value := Today()
-						SELF:EventReturnValue := 1L
 						RETURN 1L	
 					ENDIF		
 			END CASE	
-		CASE !Empty(SELF:Picture) .and. ;
-			(SELF:oEditString:Type == "N" .or. ;
-			(SELF:oEditString:Type == "C" .and. ;
-			Instr("99:99", SELF:Picture)))
+		CASE !Empty(SELF:Picture)  .and. ;
+		    (SELF:oEditString:Type == 'N'  .or. ;
+		    (SELF:oEditString:Type == 'C'  .and. ;
+		    Instr("99:99", SELF:Picture)))
 		
 			DO CASE	
 /*
@@ -569,21 +545,21 @@ METHOD Dispatch ( oEvent )
 					RETURN 1L	
 				CASE uMsg == WM_KEYDOWN
 					DO CASE
-						CASE wparam == VK_BACK .or. wparam == VK_END .or. ;
-							wparam == VK_HOME .or. wparam == VK_LEFT .or. ;
-							wparam == VK_RIGHT .or. wParam == VK_DELETE
+						CASE wparam == VK_BACK  .or. wparam == VK_END  .or. ;
+							wparam == VK_HOME  .or. wparam == VK_LEFT  .or. ;
+							wparam == VK_RIGHT  .or. wParam == VK_DELETE
 							IF SELF:lAllowcutandPaste
-								IF !(InList(cChar,"X","C","V","Z") .AND. lCtrlOn)
-									IF !(lShiftOn .and. (wParam == VK_RIGHT  .or. wParam == VK_LEFT))
+								IF !(InList(cChar,"X","C","V","Z")  .AND. lCtrlOn)
+									IF !(lShiftOn  .and. (wParam == VK_RIGHT   .or. wParam == VK_LEFT))
 										SELF:processNum( oEvent)
-										IF wparam == VK_BACK .or. wParam == VK_DELETE 	// movement keys OTHER than backspace need TO finish processing
+										IF wparam == VK_BACK  .or. wParam == VK_DELETE 	// movement keys OTHER than backspace need TO finish processing
 											lAlldone := TRUE
 										ENDIF
 									ENDIF
 								ENDIF
 							ELSE
 								SELF:processNum( oEvent)
-								IF wparam == VK_BACK .or. wParam == VK_DELETE 	// movement keys OTHER than backspace need TO finish processing
+								IF wparam == VK_BACK  .or. wParam == VK_DELETE 	// movement keys OTHER than backspace need TO finish processing
 									lAllDone := TRUE
 								ENDIF
 							ENDIF
@@ -593,20 +569,20 @@ METHOD Dispatch ( oEvent )
 					ENDCASE
 				CASE uMsg == WM_CHAR
 					IF SELF:lAllowcutandPaste
-						IF (InList(oEvent:wparam,3,22,24,26) .and. lCtrlOn) .or. ;
-						   (InList(cChar,"X","C","V","Z") .AND. lCtrlOn)
+						IF (InList(oEvent:wparam,3,22,24,26)  .and. lCtrlOn)  .or. ;
+						   (InList(cChar,"X","C","V","Z")  .AND. lCtrlOn)
 						   // kill the wmchar message for the cut/copy/paste messages
 						   RETURN 1L
 						ELSE
-							// Grab the event, the KeyDown and send it over to rightSle's KeyDown
+				  			// Grab the event, the KeyDown and send it over to rightSle's KeyDown
 							SELF:processNum( oEvent)
 							lAllDone	:= TRUE
-						ENDIF
-					ELSE
-						// Grab the event, the KeyDown and send it over to rightSle's KeyDown
+				  		ENDIF
+				  	ELSE
+			  			// Grab the event, the KeyDown and send it over to rightSle's KeyDown
 						SELF:processNum( oEvent)
 						lAllDone := TRUE
-					ENDIF
+				  	ENDIF
 					IF lAllDone
 						RETURN 1L
 					ENDIF
@@ -622,14 +598,14 @@ METHOD Dispatch ( oEvent )
 			DO CASE				
 				CASE uMsg == WM_CHAR
 					IF SELF:lAllowcutandPaste
-						IF (InList(oEvent:wparam,3,22,24,26) .and. lCtrlOn) .or. ;
-						   (InList(cChar,"X","C","V","Z") .AND. lCtrlOn)
+						IF (InList(oEvent:wparam,3,22,24,26)  .and. lCtrlOn)  .or. ;
+						   (InList(cChar,"X","C","V","Z")  .AND. lCtrlOn)
 						   // kill the wmchar message for the cut/copy/paste messages
 						   RETURN 1L
 						ENDIF
 					ENDIF
 					/*   uncomment for VO 2.6
-					IF SELF:Selection:Start = 0 .and. SELF:oEditString <> NULL_OBJECT
+					IF SELF:Selection:Start = 0  .and. SELF:oEditString <> NULL_OBJECT
 						SELF:oEditString:TestFirstChar(CHR( oEvent:wParam))
 					ENDIF
 					*/
@@ -643,9 +619,7 @@ METHOD Dispatch ( oEvent )
 			
 	RETURN SUPER:Dispatch( oEvent )
 
-/****************************************************************************/
-ASSIGN DoubleAsToday(lVal AS LOGIC) AS VOID
-
+ASSIGN DoubleAsToday(lVal AS LOGIC) AS VOID PASCAL 
 	//l Assign method for the lDoubleAsToday.
 	//p Assign method for the lDoubleAsToday.
 	//d DoubleAsToday will let you override the calendar on an  \line
@@ -657,9 +631,7 @@ ASSIGN DoubleAsToday(lVal AS LOGIC) AS VOID
 	ENDIF
 	RETURN
 
-/****************************************************************************/
-METHOD Enable()
-
+METHOD enable() 
 	//l stub method to process a button if it exists.
 	//p stub method to process a button if it exists.
 	//d enable is designed to handle the button classes \line
@@ -674,18 +646,15 @@ METHOD Enable()
 	ENDIF
 	RETURN SUPER:enable()
 
-/****************************************************************************/
 ASSIGN FieldSpec(oNewFS) 
-
-	IF SELF:oFieldspec <> NULL .OR. !Empty(SELF:oEditString)    // wcm 2006-07-24 added a check so i wont reset the textvalue if it is the first set of a fieldspec
+	IF !Empty(oFieldSpec)  .OR. !Empty(SELF:oEditString)    // wcm 2006-07-24 added a check so i wont reset the textvalue if it is the first set of a fieldspec
 		SELF:TextValue	:= ""		// corrects a GUI class bug
 	ENDIF
 	SELF:Picture	:= ""		// also clears oEditString
 	SUPER:FieldSpec	:= oNewFS
+	RETURN oNewFS
 
-/****************************************************************************/
-METHOD FocusChange(oFocusChangeEvent)
-
+METHOD FocusChange(oFocusChangeEvent) 
 	//l focusChange method.
 	//p focusChange method.
 	//d The focusChange method gets fired whenever a control gains focus. \par
@@ -703,36 +672,36 @@ METHOD FocusChange(oFocusChangeEvent)
 	uRet	:= SUPER:FocusChange(oFocusChangeEvent)	
 
 	IF oFocusChangeEvent:GotFocus
-		IF wFocusSel = FSEL_ALL   // wcm 4/10/2001
+		IF wFocusSel = FSEL_RALL   // wcm 4/10/2001
 			// we have to reset allselected to true to make sure rightSLE behaves properly
 			SELF:lAllSelected := TRUE
 		ENDIF
 	
-		IF Empty(SELF:value) .or. SELF:lObeyFocusRuleAlways .or. SELF:lRememberPosition		// wcm 2/25/2003
-			IF SELF:lRememberPosition .and. SELF:nLastPosition >= 0 .and. !SELF:lObeyFocusRuleAlways
-				PostMessage(SELF:handle(),EM_SETSEL,DWORD(_CAST,SELF:nLastPosition),SELF:nLastPosition)	 // Set position back to last selection
+		IF Empty(SELF:value)  .OR. SELF:lObeyFocusRuleAlways  .OR. SELF:lRememberPosition		// wcm 2/25/2003
+			IF SELF:lRememberPosition  .AND. SELF:nLastPosition >= 0  .AND. !SELF:lObeyFocusRuleAlways
+				PostMessage(SELF:Handle(),EM_SETSEL,DWORD(SELF:nLastPosition),SELF:nLastPosition)	 // Set position back to last selection
 			ELSEIF wFocusSel == FSEL_HOME
 				iPos := 0
 				IF oEditString != NULL_OBJECT
-					IF oEditString:Type == "N" .and. SELF:lAllowNumericFocus	// wcm 7/19/2002
-						iPos 	:= LONGINT(_CAST,At2(CHR(SetDecimalSep()),SELF:CurrentText))
+					IF oEditString:Type == "N"  .AND. SELF:lAllowNumericFocus	// wcm 7/19/2002
+						iPos 	:= LONG(At2(CHR(SetDecimalSep()),SELF:CurrentText))
 						IF iPos > 0
 							// set the cursor before the decimal Sep
 							iPos--
 						ELSE
 							// set it at the end of the sle
-							iPos := LONGINT(_CAST,SLen(SELF:CurrentText))
+							iPos := LONG(SLen(SELF:CurrentText))
 						ENDIF
 					ENDIF
 				ENDIF
-				PostMessage(SELF:Handle(), EM_SETSEL, DWORD(_CAST, iPos), iPos)
+				PostMessage(SELF:Handle(), EM_SETSEL, DWORD(iPos), iPos)
 			ELSEIF wFocusSel = FSEL_END
-				iPos := oEditString:PrevEditPos(INT(_CAST,SLen(SELF:CurrentText)))
-				PostMessage(SELF:Handle(), EM_SETSEL, DWORD(_CAST, iPos), iPos)
+				iPos := oEditString:PrevEditPos(LONG(SLen(SELF:CurrentText)))
+				PostMessage(SELF:Handle(), EM_SETSEL, DWORD(iPos), iPos)
 			ELSEIF wFocusSel = FSEL_TRIM
-				iPos := INT(_CAST,SLen(RTrim(SELF:CurrentText)))
+				iPos := LONG(SLen(RTrim(SELF:CurrentText)))
 				PostMessage(SELF:Handle(), EM_SETSEL, 0, iPos)
-			ELSEIF wFocusSel = FSEL_ALL     		         // Change by SG 26/09/00
+			ELSEIF wFocusSel = FSEL_RALL     		         // Change by SG 26/09/00
 				PostMessage(SELF:handle(),EM_SETSEL,0,-1)	 // This selects all the current test
 				SELF:lAllSelected := TRUE
 			ENDIF
@@ -743,9 +712,7 @@ METHOD FocusChange(oFocusChangeEvent)
 						
 	RETURN uRet
 
-/****************************************************************************/
 METHOD Hide() 
-
 	//l stub method to process a button if it exists.
 	//p stub method to process a button if it exists.
 	//r super:hide()
@@ -756,9 +723,7 @@ METHOD Hide()
 	ENDIF
 	RETURN SUPER:hide()
 
-/****************************************************************************/
-ACCESS Holiday() AS ARRAY
-
+ACCESS Holiday() AS ARRAY PASCAL 
 	//l Holiday array.
 	//p Holiday array.
 	//d This access wil return the array containing days to be highlighted. \line
@@ -769,9 +734,7 @@ ACCESS Holiday() AS ARRAY
 	//a None
 	RETURN SELF:aCalendarHoliday
 
-/****************************************************************************/
-ASSIGN Holiday(aDates AS ARRAY) AS VOID
-
+ASSIGN Holiday(aDates AS ARRAY) AS VOID PASCAL 
 	//l Holiday array.
 	//p Holiday array.
 	//d This assign will set the array containing days to be highlighted. \line
@@ -782,9 +745,7 @@ ASSIGN Holiday(aDates AS ARRAY) AS VOID
 	SELF:aCalendarHoliday := aDates
 	RETURN
 
-/****************************************************************************/
-Constructor(oOwner, nId, oPoint, oDim, kStyle, lDataAware ) 
-
+CONSTRUCTOR(oOwner, nId, oPoint, oDim, kStyle, lDataAware ) 
 	//l init for class rightSLE
 	//p init for class rightSLE
 	//d This is the init for class rightSLE
@@ -797,51 +758,47 @@ Constructor(oOwner, nId, oPoint, oDim, kStyle, lDataAware )
 	//a lDataAware \tab Logic for control being data aware
 
 
-	SELF:lAllSelected				:= FALSE    		// start of with nothing selected
-	SELF:lAlignCalendarLeft			:= TRUE				// Default to left align
-	SELF:lTurnNegative				:= FALSE			// start off with positive numbers
-	SELF:oPB						:= NULL_OBJECT		// default our pushbutton holder
-	SELF:nDirection					:= 1				// go to the next field on an enter
-														// set to 0 to disable enter key movements!
-	SELF:lUseResourcesforIcons		:= TRUE				// set to false if you are using custom bitmaps
-	SELF:symImageType   			:= #BITMAP  		// Use ICONS instead of Bitmaps
-	SELF:lUseOldButtons				:= FALSE			// use new button logic
-	SELF:cCurSymbol					:= NULL_STRING		// start off NULL, the $ picture will trigger
+	SELF:lAllSelected						:= FALSE    		// start of with nothing selected
+	SELF:lAlignCalendarLeft				:= TRUE				// Default to left align
+	SELF:lTurnNegative					:= FALSE				// start off with positive numbers
+	SELF:oPB									:= NULL_OBJECT		// default our pushbutton holder
+	SELF:nDirection						:= 1					// go to the next field on an enter
+																		// set to 0 to disable enter key movements!
+	SELF:lUseResourcesforIcons			:= TRUE				// set to false if you are using custom bitmaps
+  	SELF:symImageType   					:= #BITMAP 			// Use ICONS instead of Bitmaps
+  	SELF:lUseOldButtons					:= FALSE				// use new button logic
+  	SELF:cCurSymbol						:= NULL_STRING		// start off NULL, the $ picture will trigger
 	
 	SUPER( oOwner, nID, oPoint, oDim, kStyle, lDataAware )
-	SELF:wFocusSel := FSEL_HOME							// I want the home position to be the default
-														// comment this out for VO's default
-	SELF:symMethod					:= #showCalendar
-	SELF:symCalcMethod 				:= #showcalc
+	SELF:wFocusSel 						:= FSEL_HOME		// I want the home position to be the default
+																		// comment this out for VO's default
+	SELF:symMethod							:= #showCalendar
+   SELF:symCalcMethod 					:= #showcalc
 
-	SELF:lTruePicture				:= TRUE 			// If TRUE Num_08_02 $9999.99 would allow 12345.67 else $1234.56										
-	SELF:lObeyFocusRuleAlways 		:= FALSE
-	SELF:lTurnOffEnter				:= FALSE			// by default we want to allow the enter
-														// change this globablly by using rightSLE's postinit
-	SELF:lturnOffArrows				:= TRUE				// arrowkey processing is turned off by default
-	SELF:lallowcutandPaste			:= TRUE				// by default allow cut and paste											
-	SELF:lDoubleAsToday				:= FALSE			// keep the old rightSLE default of always showing the calendar by default
-	SELF:lSendFromButton			:= FALSE			// we start off from the SLE, not the button
-	SELF:cTemplateChar := CHR(SetThousandSep()) + "()$ "
-	SELF:FirstDayoftheWeek			:= 99				// junk value to show that it is un-initialized
-	SELF:lAllowNumericFocus			:= FALSE			// keep rightSLE the way it used to be by default
-	SELF:lRememberPosition			:= FALSE			// start off in compatiblilty mode
-	SELF:nLastPosition				:= -1				// make sure that we init the lastpos to -1 to show that we are uninitalized
-	SELF:oDateRange					:= NULL_OBJECT		// start off the calendar without restrictions
-	SELF:nOwneralignment			:= OA_NO			// start off with no owner alingment
-	SELF:lTurnNumericPictureNumeric	:= FALSE			// backwards compatibility
-	SELF:symCalandarClass			:= #dlgPECalendar	// class for calandar dialog
-	SELF:symCalcClass				:= #PopupCalc		// class for popup calculator
-	
-	self:SetDefaults()
-	IF IsMethod(SELF,#postinit)
+	SELF:lTruePicture						:= TRUE 				// If TRUE Num_08_02 $9999.99 would allow 12345.67 else $1234.56										
+	SELF:lObeyFocusRuleAlways 			:= FALSE
+	SELF:lTurnOffEnter					:= FALSE				// by default we want to allow the enter
+																		// change this globablly by using rightSLE's postinit
+	SELF:lturnOffArrows					:= TRUE				// arrowkey processing is turned off by default
+	SELF:lallowcutandPaste				:= TRUE				// by default allow cut and paste											
+	SELF:lDoubleAsToday					:= FALSE				// keep the old rightSLE default of always showing the calendar by default
+	SELF:lSendFromButton					:= FALSE				// we start off from the SLE, not the button
+ 	SELF:cTemplateChar 					:= CHR(SetThousandSep()) + "()$ "
+ 	SELF:FirstDayoftheWeek				:= 99					// junk value to show that it is un-initialized
+ 	SELF:lAllowNumericFocus				:= FALSE				// keep rightSLE the way it used to be by default
+ 	SELF:lRememberPosition				:= FALSE				// start off in compatiblilty mode
+ 	SELF:nLastPosition					:= -1					// make sure that we init the lastpos to -1 to show that we are uninitalized
+ 	SELF:oDateRange						:= NULL_OBJECT		// start off the calendar without restrictions
+ 	SELF:nOwneralignment					:= OA_NO				// start off with no owner alingment
+ 	SELF:lTurnNumericPictureNumeric	:= FALSE				// backwards compatibility
+ 	SELF:symCalandarClass				:= #dlgPECalendar	// class for calandar dialog
+ 	SELF:symCalcClass						:= #PopupCalc		// class for popup calculator
+ 	IF IsMethod(SELF,#postinit)
 		Send(SELF,#postinit)
 	ENDIF
-RETURN
+RETURN SELF
 
-/****************************************************************************/
-METHOD InvalidAction() AS VOID
-
+METHOD InvalidAction() AS VOID PASCAL 
 	//l Sends a beep on an invalid key.
 	//p Sends a beep on an invalid key.
 	//d You can override invalidaction in a subclass to \line
@@ -849,12 +806,10 @@ METHOD InvalidAction() AS VOID
 	//r VOID
 	//a None
 
-	MessageBeep(0xFFFFFFFF)	
-	RETURN
+    MessageBeep(0xFFFFFFFF)	
+    RETURN
 
-/****************************************************************************/
-ASSIGN ObeyFocus(lVal AS LOGIC) AS VOID
-
+ASSIGN ObeyFocus(lVal AS LOGIC) AS VOID PASCAL 
 	//l Assign method for lObeyFocusruleAlways.
 	//p Assign method for lObeyFocusruleAlways.
 	//d ObeyFocus will let you override the focus rules set up in postinit \line
@@ -866,7 +821,6 @@ ASSIGN ObeyFocus(lVal AS LOGIC) AS VOID
 	ENDIF
 	RETURN
 
-/****************************************************************************/
 ASSIGN Origin(oNewOrigin) 
 	LOCAL nXDiff	AS LONGINT
 	LOCAL nYDiff 	AS LONGINT
@@ -899,14 +853,14 @@ ASSIGN Origin(oNewOrigin)
 		SELF:Owneralignment	:= nOA_Save
 	ENDIF
 
-	
+	RETURN NIL
 
-/****************************************************************************/
-ASSIGN OwnerAlignment(iNewVal)
 
-	IF !IsInstanceOf(oFormSurface, #Window) .or. !IsInstanceOf(oParent, #Window)
+
+ASSIGN OwnerAlignment(iNewVal) 
+	IF !IsInstanceOf(oFormSurface, #Window)  .or. !IsInstanceOf(oParent, #Window)
 		SELF:nOwneralignment	:= OA_NO
-		RETURN //OA_NO
+		RETURN OA_NO
 	ELSEIF IsInstanceOf(oFormSurface, #Window)
 		oFormSurface:__AddAlign(SELF, iNewVal)
 		IF SELF:oPB <> NULL_OBJECT
@@ -921,10 +875,9 @@ ASSIGN OwnerAlignment(iNewVal)
 
 	SELF:nOwneralignment := iNewVal		// wcm 2005-07-12 - save the current owner alignment
 
+	RETURN NIL
 
-/****************************************************************************/
-ACCESS pb() AS OBJECT 
-
+ACCESS pb() AS OBJECT PASCAL 
 	//l Access method to return the attached pushbutton.
 	//p Access method to return the attached pushbutton.
 	//d PPB will return the attached pushbutton. \line
@@ -934,18 +887,17 @@ ACCESS pb() AS OBJECT
 	RETURN SELF:oPB
 
 
-/****************************************************************************/
-ASSIGN Picture(cNewPicture)
 
+ASSIGN Picture(cNewPicture) 
 
 	// null out the editstring so the new picture will be built correctly
-	IF self:oFieldSpec <> NULL .or. !Empty(SELF:oEditString)
+	IF !Empty(oFieldSpec)  .or. !Empty(SELF:oEditString)
 		SUPER:Picture		:= ""
 //		SELF:oEditString	:= NULL_OBJECT
 	ENDIF
 
 	// reset the fieldspec's picture if it exists
-	IF IsInstanceOf(oFieldSpec, #FieldSpec) .and. SELF:oFieldSpec <> NULL
+	IF IsInstanceOf(oFieldSpec, #FieldSpec)  .and. !Empty(oFieldSpec)
 		oFieldspec:picture	:= cNewPicture
 	ENDIF
 
@@ -954,16 +906,15 @@ ASSIGN Picture(cNewPicture)
 	
 
 
-	IF Instr("9",cNewPicture) .or. Instr(".",cNewPicture) .and. Upper(Left(cNewPicture,2)) <> "@R"
+	IF Instr("9",cNewPicture)  .or. Instr(".",cNewPicture)  .and. Upper(Left(cNewPicture,2)) <> "@R"
 		IF SELF:lTurnNumericPictureNumeric
 			oEditString:Type := "N"
 		ENDIF
 	ENDIF
 
+	RETURN NIL
 
-/****************************************************************************/
-METHOD ProcessArrow(nMessage AS DWORD) AS LONG 
-
+METHOD ProcessArrow(nMessage AS DWORD) AS LONGINT PASCAL 
 	//l ArrowKey Logic.
 	//p ArrowKey Logic.
 	//d This method can be overridden to provide custom \line
@@ -978,20 +929,18 @@ METHOD ProcessArrow(nMessage AS DWORD) AS LONG
 	nRet := 1
 	DO CASE
 	   CASE nMessage == VK_DOWN
-			// Set focus to next control on window
-			hCTL := GetNextDlgTabItem(GetParent(SELF:handle()),SELF:handle(),FALSE)
-			SetFocus(hCtl)
+   			// Set focus to next control on window
+	      	hCTL := GetNextDlgTabItem(GetParent(SELF:handle()),SELF:handle(),FALSE)
+	      	SetFocus(hCtl)
 		CASE nMessage == VK_UP
 			hCTL := GetNextDlgTabItem(GetParent(SELF:handle()),SELF:handle(),TRUE)
-			SetFocus(hCtl)
+	      	SetFocus(hCtl)
 		OTHERWISE
 			nRet	:= 0
 	END CASE
 	RETURN nRet	
 
-/****************************************************************************/
-ASSIGN ProcessArrowKeys(lVal AS LOGIC) AS VOID 
-
+ASSIGN ProcessArrowKeys(lVal AS LOGIC) AS VOID PASCAL 
 	//l Assign method for the lturnOffEnter.
 	//p Assign method for the lturnOffEnter.
 	//d ProcessEnterKey will let you oeverride the enterkey processing rule \line
@@ -1003,23 +952,7 @@ ASSIGN ProcessArrowKeys(lVal AS LOGIC) AS VOID
 	ENDIF
 	RETURN
 
-/****************************************************************************/
-ASSIGN ProcessNumericFocus(lVal AS LOGIC) AS VOID 
-
-	//l Assign method for the lAllowNumericFocus.
-	//p Assign method for the lAllowNumericFocus.
-	//d ProcessNumericFocus will let you oeverride the numeric focus processing rule \line
-	//d for a single SLE.
-	//r VOID
-	//a lVal - New setting for lAllowNumericFocus.
-	IF !Empty(lVal)
-		SELF:lAllowNumericFocus := !lVal
-	ENDIF
-	RETURN
-
-/****************************************************************************/
-METHOD ProcessEnter() AS LONG
-
+METHOD processEnter() AS LONGINT PASCAL 
 	//l EnterKey Logic.
 	//p EnterKey Logic.
 	//d This method can be overridden to provide custom \line
@@ -1034,20 +967,18 @@ METHOD ProcessEnter() AS LONG
 		nRet := 1
 		DO CASE
 		   CASE SELF:nDirection = 1
-				// Set focus to next control on window
-				hCTL := GetNextDlgTabItem(GetParent(SELF:handle()),SELF:handle(),FALSE)
-				SetFocus(hCtl)
+    			// Set focus to next control on window
+		      	hCTL := GetNextDlgTabItem(GetParent(SELF:handle()),SELF:handle(),FALSE)
+		      	SetFocus(hCtl)
 			CASE SELF:nDirection = 2
 				hCTL := GetNextDlgTabItem(GetParent(SELF:handle()),SELF:handle(),TRUE)
-				SetFocus(hCtl)
+		      	SetFocus(hCtl)
 			OTHERWISE
 				nRet	:= 0
 		END CASE
 		RETURN nRet
 
-/****************************************************************************/
-ASSIGN ProcessEnterKey(lVal AS LOGIC) AS VOID 
-
+ASSIGN ProcessEnterKey(lVal AS LOGIC) AS VOID PASCAL 
 	//l Assign method for the lturnOffEnter.
 	//p Assign method for the lturnOffEnter.
 	//d ProcessEnterKey will let you oeverride the enterkey processing rule \line
@@ -1059,9 +990,7 @@ ASSIGN ProcessEnterKey(lVal AS LOGIC) AS VOID
 	ENDIF
 	RETURN
 
-/****************************************************************************/
-METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
-
+METHOD ProcessNum( oEvent AS OBJECT ) AS VOID PASCAL 
 	//l Numeric processing method.
 	//p Numeric processing method.
 	//d ProcessNum is the main numeric processing method.
@@ -1125,12 +1054,12 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 			ENDIF
 		ENDIF
 		// check to see if allselected is set on when it shouldn't be
-		IF SELF:lAllSelected .and. !(nStart = 0 .and. nStop = Len(cText))
+		IF SELF:lAllSelected  .AND. !(nStart = 0  .AND. nStop = Len(cText))
 			SELF:lAllSelected := FALSE
 		ENDIF
 		
 		IF nDecimals > 0							// see what side of the decimal we are on and process accordingly
-			IF At2(".",cPicture) = 0 .and. ;		// wcm 7/25/00 decimal seperator is always '.' in a fieldspec's picture
+			IF At2('.',cPicture) = 0  .AND. ;		// wcm 7/25/00 decimal seperator is always '.' in a fieldspec's picture
 				!Empty(cPicture) 					// wcm 2/16/00
 				// we have a SLE with decimals with a picture that does not
 				nDecimals	:= 0
@@ -1138,7 +1067,7 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 				IF At2(cDecimal,cText) < nStart+1
 					lPoint := TRUE		// we have moved to the decimal part. set it up
 				ELSE
-					IF At2(cDecimal,cText) = (nStart + 1) .and. nStop > (nStart + 1)
+					IF At2(cDecimal,cText) = (nStart + 1)  .AND. nStop > (nStart + 1)
 						lPoint	:= TRUE
 						nStart += 1	// we have started on the decimal point. cant have that
 					ELSE
@@ -1153,49 +1082,48 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 		// * if it is, we check the overwrite settings of the SLE class *
 		// * and respond accordingly.                                   *
 		// **************************************************************
-		IF SELF:IsOverWriteModeEnabled() .and. ;
-			(wOverWrite = OVERWRITE_ALWAYS .or. wOverWrite = OVERWRITE_ONKEY) ;
-			.and. (nStart = nStop)
-			IF wparam == VK_END .or. wparam == VK_HOME .or. ;
-				wparam == VK_LEFT .or. wparam == VK_RIGHT .or. ;
-				wparam == VK_RETURN .or. wparam == VK_TAB .or. ;
-				wParam == VK_BACK .or. wParam == VK_DELETE
+	    IF IsOverWriteModeEnabled()  .AND. ;
+			(wOverWrite = OVERWRITE_ALWAYS  .OR. wOverWrite = OVERWRITE_ONKEY) ;
+	    	 .AND. (nStart = nStop)
+	    	IF wparam == VK_END  .OR. wparam == VK_HOME  .OR. ;
+				wparam == VK_LEFT  .OR. wparam == VK_RIGHT  .OR. ;
+				wparam == VK_RETURN  .OR. wparam == VK_TAB  .OR. ;
+				wParam == VK_BACK  .OR. wParam == VK_DELETE
 				// we dont want to do anything here. leave the movement keys alone!!
-				break  // makes the compiler happy
 			ELSE
 				// now we check to see if the nStop is over a template char
 				nOffset := 1
 				IF SubStr3(cText,nStart + nOffset,1) == cThousands
 					nOffset += 1
 				ENDIF
-				IF nStart + nOffset <= Len(cText)
-					nStop += nOffset
-				ENDIF
+		    	IF nStart + nOffset <= Len(cText)
+			    	nStop += nOffset
+			    ENDIF
 				nOffset := 0	// this is used latter on so we reset it
 			ENDIF
-		ENDIF
+	    ENDIF
 	
 	
-		IF nStart <> nStop .and. !SELF:lAllSelected 					// we have a group action
-			IF nStart = 0 .and. nStop = Len(cText)
+		IF nStart <> nStop  .AND. !SELF:lAllSelected 					// we have a group action
+			IF nStart = 0  .AND. nStop = Len(cText)
 				SELF:lallselected := TRUE
 				lPoint := FALSE
-			ELSEIF !(wparam == VK_END .or. wparam == VK_HOME .or. ;		// wcm 11/23/2002	changed so group movement keys
-			wparam == VK_LEFT .or. wparam == VK_RIGHT .or. ;			//					no longer delete the selection
-			wparam == VK_RETURN .or. wparam == VK_TAB)		
+			ELSEIF !(wparam == VK_END  .OR. wparam == VK_HOME  .OR. ;		// wcm 11/23/2002	changed so group movement keys
+			wparam == VK_LEFT  .OR. wparam == VK_RIGHT  .OR. ;			//					no longer delete the selection
+			wparam == VK_RETURN  .OR. wparam == VK_TAB)		
 			
 				nDecimalPos := At2(cDecimal,cText)
-				IF nDecimalPos > 0 .and. nDecimalPos <= nStop
+				IF nDecimalPos > 0  .AND. nDecimalPos <= nStop
 					cLeftDecimal  := SubStr3(cText,1,At2(cDecimal,cText)- 1)
 					cRightDecimal := SubStr2(cText,At2(cDecimal,cText) + 1)
 					cText := Stuff(cLeftDecimal,nStart+1,nStop-nStart,"")
 					cText += cDecimal
 					IF nStop > nDecimalPos
 						IF nStart >= nDecimalPos   //  whole selection is in decimal part
-						   cText += Stuff(cRightDecimal,nStart - nDecimalPos + 1,nStop - nStart,"")
+	                       cText += Stuff(cRightDecimal,nStart - nDecimalPos + 1,nStop - nStart,"")
 						ELSE   // the selection starts in the integer part and ends in the decimal part of the number)
-						   cText += Stuff(cRightDecimal,1, nStop - nDecimalPos,"")	
-						ENDIF
+		                   cText += Stuff(cRightDecimal,1, nStop - nDecimalPos,"")	
+				        ENDIF
 					ELSE
 						cText += cRightDecimal
 					ENDIF
@@ -1205,13 +1133,13 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 						nStart	:= nPos
 						nStop	:= nPos
 					ELSE
-						IF wParam == VK_DELETE .or. wParam == VK_BACK
+						IF wParam == VK_DELETE  .OR. wParam == VK_BACK
 							nPos 	:= nStart
 						ELSE
 							nPos	:= nStart + 1
 						ENDIF
 					ENDIF
-				ELSEIF nDecimalPos > 0 .and. nStop = nDecimalPos .and. (nStop - nStart) = 1
+				ELSEIF nDecimalPos > 0  .AND. nStop = nDecimalPos  .AND. (nStop - nStart) = 1
 					nPos 	:= nStop - 1
 				ELSE
 					cText 	:= Stuff(cText,nStart+1,nStop-nStart,"")
@@ -1219,7 +1147,7 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 				ENDIF
 			ENDIF
 			
-			IF wparam == VK_DELETE .or. wparam == VK_BACK
+			IF wparam == VK_DELETE  .OR. wparam == VK_BACK
 				nStart	+= 1
 				lIgnore := TRUE
 			ELSEIF oEvent:message == WM_CHAR
@@ -1230,7 +1158,7 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 		ENDIF
 	
 		IF !Empty(SELF:cCurSymbol)
-			IF Instr(SELF:cCurSymbol,cText)				// wcm 8/2/2001 remove the $ template char if it exists
+		   	IF Instr(SELF:cCurSymbol,cText)				// wcm 8/2/2001 remove the $ template char if it exists
 				cText := Stuff(cText,At(SELF:cCurSymbol,cText),At(SELF:cCurSymbol,cText)," ")
 				IF !SELF:lTruePicture	
 					nSLELength -= 1				// wcm 8/7/2001 reduce the SLe length by 1 to adjust for the $ template character.
@@ -1245,10 +1173,10 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 		//              key erasing the fields value
 		// 11/24.02 wcm changed the logic to properly move the selection if only a part
 		//				of the field is selected and an arrow key is used
-		IF (wparam == VK_END .or. wparam == VK_HOME .or. ;
-			wparam == VK_LEFT .or. wparam == VK_RIGHT .or. ;
-			wparam == VK_RETURN .or. wparam == VK_TAB) .and. ;
-			(SELF:lAllSelected .or. (nStart <> nStop))		// movement keys turn off group actions
+		IF (wparam == VK_END  .OR. wparam == VK_HOME  .OR. ;
+			wparam == VK_LEFT  .OR. wparam == VK_RIGHT  .OR. ;
+			wparam == VK_RETURN  .OR. wparam == VK_TAB)  .AND. ;
+			(SELF:lAllSelected  .OR. (nStart <> nStop))		// movement keys turn off group actions
 			cText				:= SELF:textValue
 			SELF:lAllselected 	:= FALSE
 			IF wparam == VK_LEFT
@@ -1276,8 +1204,8 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 				
 		// Set the left and right decimal strings
 		IF nDecimals > 0
-			IF At2(cDecimal,cTEXT) == 0 .or. Len(cText) == 0
-				cLeftDecimal  	:= "0"
+	        IF At2(cDecimal,cTEXT) == 0  .OR. Len(cText) == 0
+	   			cLeftDecimal  	:= "0"
 				cRightDecimal 	:= "0"
 			ELSE
 				cLeftDecimal  := SubStr3(cText,1,At(cDecimal,cText)- 1)
@@ -1291,7 +1219,7 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 			cRightDecimal	:= ""
 		ENDIF
 		IF SELF:lAllSelected
-			IF (cChar == "." .or. cChar == "," ).and.(uMsg <> WM_KEYDOWN) // cDecimal wcm 3/15/01
+			IF (cChar == "."  .OR. cChar == "," ) .AND. (uMsg <> WM_KEYDOWN) // cDecimal wcm 3/15/01
 				IF lPoint
 					lApplyKey := FALSE
 					SELF:EventReturnValue	:= 1
@@ -1325,7 +1253,7 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 			ENDIF
 		ELSE
 			DO CASE
-				CASE (wparam == VK_BACK .or. wparam == VK_DELETE) .and. uMsg == WM_KEYDOWN	// the user hit the back space key
+				CASE (wparam == VK_BACK  .OR. wparam == VK_DELETE)  .AND. uMsg == WM_KEYDOWN	// the user hit the back space key
 					IF !lIgnore	
 						IF lPoint
 							DO CASE
@@ -1333,7 +1261,7 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 									nDecimalPos -= 1		// lets get the the real # of decimals showing	
 									DO CASE
 										CASE nDecimalPos == 0
-											cRightDecimal	:= ""
+											crightDecimal	:= ""
 										CASE nDecimalPos == 1
 											cRightDecimal	:= Stuff(cRightDecimal,nDecimalPos,1,"")
 										OTHERWISE
@@ -1372,7 +1300,7 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 								/* Now we have to see if the changed have resulted in a 0 SLE
 								   If so, reset the cursor to just left of the decimal
 								*/
-								IF Val(iif(SubStr3(cText,1,1) = "$",SubStr2(cText,2),cText)) = 0 // wcm 8/2/2001
+								IF Val(IIF(SubStr3(cText,1,1) = "$",SubStr2(cText,2),cText)) = 0 // wcm 8/2/2001
 									IF nDecimals > 0
 										nPos	:= At2(cDecimal,cText) -1
 										nStart 	:= nPos
@@ -1391,16 +1319,16 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 						lPoint := TRUE
 					ENDIF
 				CASE wparam == VK_HOME	// the user hit the home key
-					// if this is true then
-					// the user hit a shift_home and we will select the entire SLE
-					// so we do nothing
-					IF _AND(GetKeyState(VK_SHIFT), SHORTINT(_CAST, 0x8000)) == 0
+					IF LOGIC(_CAST,_AND(GetKeyState(VK_SHIFT), SHORT(_CAST,0x8000)))
+						// the user hit a shift_home and we will select the entire SLE
+						// so we do nothing
+					ELSE						
 						lPoint	:= FALSE
 					ENDIF
 				CASE wparam == VK_LEFT	// the user hit the left arrow key
 				CASE wparam == VK_RIGHT	// the user hit the right arrow key
-				CASE Instr(cChar,"-") .and. !Instr("-",cText)
-					IF Val(LTrim(cLeftDecimal)) = 0 .and. Val(cRightDecimal) = 0	// wcm 9/17/2000
+				CASE Instr(cChar,"-")  .AND. !Instr("-",cText)
+					IF Val(LTrim(cLeftDecimal)) = 0  .AND. Val(cRightDecimal) = 0	// wcm 9/17/2000
 						SELF:lTurnNegative := TRUE
 					ELSE
 						IF nDecimals > 0	
@@ -1417,11 +1345,11 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 							ENDIF
 						ENDIF
 					ENDIF
-				CASE Instr(cChar,"+") .and. Instr("-",cText)
+				CASE Instr(cChar,"+")  .AND. Instr("-",cText)
 					// Plus sign entered
 					cText := SELF:setField(cLeftDecimal + cDecimal + Left(cRightDecimal,nDecimals), -1)
 				CASE Instr(cChar,",.1234567890") // cDecimal+"0123456789") wcm 7/24/00
-					IF cChar == "," .or. cChar == "."  // cDecimal  wcm 7/24/00
+					IF cChar == ","  .OR. cChar == "."  // cDecimal  wcm 7/24/00
 						IF lPoint
 							lApplyKey := FALSE
 						ELSE
@@ -1439,9 +1367,9 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 							IF nDecimalPos == 1
 								cRightDecimal := cChar + cRightDecimal
 							ELSE
-								cRightDecimal := Stuff(cRightDecimal,nDecimalPos,0,cChar)
-							ENDIF		
-							IF SELF:lTurnNegative
+		  						cRightDecimal := Stuff(cRightDecimal,nDecimalPos,0,cChar)
+		  					ENDIF		
+		  					IF SELF:lTurnNegative
 								cText := SELF:setField(cLeftDecimal + cDecimal + Left(cRightDecimal,nDecimals),-1)
 							ELSE
 								cText := SELF:setField(cLeftDecimal + cDecimal + Left(cRightDecimal,nDecimals),1)
@@ -1452,9 +1380,9 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 						ELSE
 							// on the left of the decimal. Normal processing
 							IF SubStr3(cLeftDecimal,nStart,1) == " "
-								DO WHILE (SubStr3(cLeftDecimal,nStart,1) == " " .or. ;
-										 SubStr3(cLeftDecimal,nStart,1) == "-" .or. ;
-										 SubStr3(cLeftDecimal,nStart,1) == ":") .and. nStart <= Len(cLeftDecimal)
+								DO WHILE (SubStr3(cLeftDecimal,nStart,1) == " "  .OR. ;
+										 SubStr3(cLeftDecimal,nStart,1) == "-"  .OR. ;
+										 SubStr3(cLeftDecimal,nStart,1) == ":")  .AND. nStart <= Len(cLeftDecimal)
 									// we are adjusting the nstart forward untill we reach a character
 									nStart += 1
 									nOffset += 1
@@ -1466,9 +1394,9 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 							ENDIF
 							// wcm 6-6-98 added check for lengh before I add the new character
 							IF nDecimals > 0	
-								IF (Len(LTrim(cLeftDecimal) + cDecimal + Left(cRightDecimal,nDecimals)) < nSLELength) .or. (Val(LTrim(cLeftDecimal)) = 0)	// wcm 7/1/2000
-									IF (Val(LTrim(cLeftDecimal)) = 0 .and. Val(cOrgValue) = 0) .or. ;
-										(Val(LTrim(cLeftDecimal)) = 0 .and.nStop >= nDecimalPos)
+								IF (Len(LTrim(cLeftDecimal) + cDecimal + Left(cRightDecimal,nDecimals)) < nSLELength)  .OR. (Val(LTrim(cLeftDecimal)) = 0)	// wcm 7/1/2000
+									IF (Val(LTrim(cLeftDecimal)) = 0  .AND. Val(cOrgValue) = 0)  .OR. ;
+										(Val(LTrim(cLeftDecimal)) = 0  .AND. nStop >= nDecimalPos)
 										cLeftDecimal := cChar
 										nPos := 32767
 										lIgnore := FALSE	// we never ignore once we get into number processing
@@ -1486,32 +1414,32 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 								cTemp := Right(cLeftDecimal + cDecimal + Left(cRightDecimal,nDecimals),nSLEOrigLen)				
 							ELSE
 								DO CASE
-									CASE (SELF:oEditString:Type == "C") .and. ;
-										(Len(LTrim(cLeftDecimal)) < nSLELength)
-										cLeftDecimal := Left(cLeftDecimal,nStart) + cChar + ;
-										SubStr2 (cLeftDecimal,nStart+1)
+								    CASE (SELF:oEditString:Type == "C")  .AND. ;
+								        (Len(LTrim(cLeftDecimal)) < nSLELength)
+								        cLeftDecimal := Left(cLeftDecimal,nStart) + cChar + ;
+								        SubStr2 (cLeftDecimal,nStart+1)
 										IF lStripSpace		// this should only happen if the selection was in the left space infront of the SLE
 											nPos := nStop + nOffset
 										ELSE
 											nPos := nStop
 										ENDIF
-									CASE (Len(LTrim(cLeftDecimal)) < nSLELength) .or. ;
-										(Val(LTrim(cLeftDecimal)) = 0) //wcm 7-1-2000
-										IF Val(LTrim(cLeftDecimal)) = 0 .and. Val(cOrgValue) = 0
-											cLeftDecimal := cChar
-											nPos := nSLEOrigLen
-										ELSE
-											cLeftDecimal := Left(cLeftDecimal,nStart) + cChar + ;
-											SubStr2(cLeftDecimal,nStart+1)
+								    CASE (Len(LTrim(cLeftDecimal)) < nSLELength)  .OR. ;
+								        (Val(LTrim(cLeftDecimal)) = 0) //wcm 7-1-2000
+								        IF Val(LTrim(cLeftDecimal)) = 0  .AND. Val(cOrgValue) = 0
+								            cLeftDecimal := cChar
+								            nPos := nSLEOrigLen
+								        ELSE
+								            cLeftDecimal := Left(cLeftDecimal,nStart) + cChar + ;
+								            SubStr2(cLeftDecimal,nStart+1)
 											IF lStripSpace		// this should only happen if the selection was in the left space infront of the SLE
 												nPos := nStop + nOffset
 											ELSE
-												nPos := nStop
+						           				nPos := nStop
 											ENDIF
-										ENDIF
-									OTHERWISE
-										SELF:invalidAction()
-								ENDCASE
+								        ENDIF
+								    OTHERWISE
+								        SELF:invalidAction()
+							    ENDCASE
 								cTemp := Right(cLeftDecimal,nSLEOrigLen)
 							ENDIF
 							IF SELF:lTurnNegative		
@@ -1528,21 +1456,21 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 		ENDIF
 	
 		// adjust to the decimal place if needed
-		IF !lPoint .and. nDecimals > 0
+		IF !lPoint  .AND. nDecimals > 0
 			nDecimalPos := At2(cDecimal,cText) -1
-			IF nPos >= nDecimalPos .and. !lIgnore
+			IF nPos >= nDecimalPos  .AND. !lIgnore
 				nPos	:= nDecimalPos
 			ENDIF
 		ENDIF
 
 		IF Instr( "*", cText )
-			SELF:invalidAction()       // the number would be too large
-		ELSE
-			cText := SELF:SetField( cText, 1 )   		// this places thousand separators in cText
+    	   	SELF:invalidAction()       // the number would be too large
+    	ELSE
+	      	cText := SELF:SetField( cText, 1 )   		// this places thousand separators in cText
 			uOldValue   				:= SELF:uValue  // Save uValue unchanged. Let VO deal with it.
-			SELF:TextValue := cText
-			SELF:uValue 				:= uOldValue    // Restore uValue in its original form.
-			SELF:Modified 				:= TRUE       	// This must be uncommented.
+		 	SELF:TextValue := cText
+		 	SELF:uValue 				:= uOldValue    // Restore uValue in its original form.
+		 	SELF:Modified 				:= TRUE       	// This must be uncommented.
 			SELF:EventReturnValue		:= 1
 			nStart						:= nPos
 			SELF:Selection				:= selection{nStart,nStart}
@@ -1550,21 +1478,19 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID
 	END SEQUENCE
 	RETURN
 
-/****************************************************************************/
-ASSIGN ReadOnly(lNewValue)
-
+ASSIGN ReadOnly(lNewValue) 
 //l Readonly Assign.
 //p ReadOnly Assign.
 //d This is the readonly assign fro the SDK with added logic\line
 //d to handle the possibilty of push buttons.
 //r NIL
 	IF SELF:ValidateControl()
-		SendMessage(SELF:Handle(), EM_SETREADONLY, DWORD(_CAST, lNewValue), 0L)
+		SendMessage(SELF:Handle(), EM_SETREADONLY, DWORD(_CAST,lNewValue), 0L)
 	ELSE
 		IF (lNewValue)
-		  dwStyle := (dword)_Or(dwStyle, ES_READONLY)
+		  dwStyle := _OR(dwStyle, DWORD(ES_READONLY))
 		ELSE
-		  dwStyle := (dword)_And(dwStyle, _Not(ES_READONLY))
+		  dwStyle := _AND(dwStyle, DWORD(_NOT(ES_READONLY)))
 		ENDIF
 	ENDIF
 
@@ -1577,11 +1503,9 @@ ASSIGN ReadOnly(lNewValue)
 			SELF:oPB:enable()
 		ENDIF
 	ENDIF
-	
+	RETURN NIL
 
-/****************************************************************************/
-METHOD rslePaste() AS LOGIC 
-
+METHOD rslePaste() AS LOGIC PASCAL 
 	//l paste method.
 	//p paste method.
 	//d rslePaste is a specialized version of paste that processes \line
@@ -1606,18 +1530,18 @@ METHOD rslePaste() AS LOGIC
 
 	IF hGlb != NULL_PTR
 		pszPaste := GlobalLock(hGlb)
-		IF (PTR(_CAST, pszPaste) != NULL_PTR)
-			SendMessage(SELF:Handle(), EM_GETSEL, DWORD(_CAST, @iStart), LONGINT(_CAST, @iEnd))
+		IF (PTR(_CAST,pszPaste) != NULL_PTR)
+			SendMessage(SELF:Handle(), EM_GETSEL, DWORD(@iStart), LONGINT(@iEnd))
 			IF ((iEnd - iStart) > 0)
-				PostMessage(SELF:Handle(), EM_SETSEL, (dword)iStart, iEnd)
+				PostMessage(SELF:Handle(), EM_SETSEL, DWORD(iStart), iEnd)
 				PostMessage(SELF:Handle(), WM_KEYDOWN,VK_DELETE,0)	
 			ENDIF
 			sPaste := Psz2String(pszPaste)
-			iLen   := INT(_CAST, SLen(sPaste))
+			iLen   := LONG(SLen(sPaste))
 			FOR i := 1 UPTO iLen
-				IF !Instr(CharPos(sPaste,(dword)i),SELF:cTemplateChar)	// have to only send valid characters
-					PostMessage(SELF:handle(),WM_CHAR,Asc(CharPos(sPaste,(dword)i)),0)
-				ENDIF
+	        	IF !Instr(CharPos(sPaste,DWORD(i)),SELF:cTemplateChar)	// have to only send valid characters
+					PostMessage(SELF:Handle(),WM_CHAR,Asc(CharPos(sPaste,DWORD(i))),0)
+	            ENDIF
 			NEXT
 		ENDIF
 		GlobalUnlock(hGlb)
@@ -1627,87 +1551,25 @@ METHOD rslePaste() AS LOGIC
 
 	RETURN TRUE
 
-/****************************************************************************/
-STATIC ACCESS DefaultProcessEnter() AS logic
-	RETURN DefaultEnterHandling
-
-/****************************************************************************/
-STATIC ASSIGN DefaultProcessEnter(newValue AS Logic) AS VOID 
-	// The default needs to be a definite action
-	DefaultEnterHandling := !newValue
-	RETURN
-
-/****************************************************************************/
-STATIC ACCESS DefaultProcessArrows() AS logic
-	RETURN DefaultArrowHandling
-
-/****************************************************************************/
-STATIC ASSIGN DefaultProcessArrows(newValue AS Logic) AS VOID 
-	// The default needs to be a definite action
-	DefaultArrowHandling := !newValue
-	RETURN
-
-/****************************************************************************/
-STATIC ASSIGN DefaultSelectionOnFocus(newValue AS LONG) AS VOID
-	// The default needs to be a definite action
-	DefaultFocusBehavior := newValue
-	RETURN
-
-/****************************************************************************/
-STATIC ACCESS DefaultSelectionOnFocus() AS LONG
-	RETURN DefaultFocusBehavior
-
-/****************************************************************************/
-STATIC ASSIGN DefaultObeyFocusRulesAlways(newValue AS logic) AS VOID
-	// The default needs to be a definite action
-	DefaultOBeyFocusRules := newValue
-	RETURN
-
-/****************************************************************************/
-STATIC ACCESS DefaultObeyFocusRulesAlways() AS LOGIC
-	RETURN DefaultOBeyFocusRules
-
-/****************************************************************************/
-STATIC ASSIGN DefaultAllowNumericFocus(newValue AS logic) AS VOID
-	// The default needs to be a definite action
-	DefaultNumericFocus := newValue
-	RETURN
-
-/****************************************************************************/
-STATIC ACCESS DefaultAllowNumericFocus() AS LOGIC
-	RETURN DefaultNumericFocus
-
-/****************************************************************************/
 ASSIGN Selection(oSelection) 
-
 	//l Sets the Selection setting for the SLE.
 	//p Sets the Selection setting for the SLE.
 	//r NIL
 	//a oSelection \tab - Selection object. \line
 
-//	IF !IsInstanceOfUsual(oSelection,#Selection)
-//		WCError{#Selection,#RIGHTSLE,"Data Type Error",oSelection,1}:Throw()
-//	ENDIF
+	IF !IsInstanceOfUsual(oSelection,#Selection)
+		WCError{#Selection,#RIGHTSLE,"Data Type Error",oSelection,1}:@@Throw()
+	ENDIF
 
 	IF SELF:ValidateControl()
 		//rightSLE must have the selection processed before the super is called
 		SendMessage(SELF:Handle(), EM_SETSEL, oSelection:Start, oSelection:Finish)
 	ENDIF
 
-	
-/****************************************************************************/
-METHOD SetDefaults() AS VOID
-	SELF:wFocussel              := DefaultFocusBehavior
-	SELF:lTurnOffEnter          := DefaultEnterHandling   
-	SELF:lObeyFocusRuleAlways   := DefaultOBeyFocusRules
-	SELF:lturnOffArrows         := DefaultArrowHandling
-	SELF:lAllowNumericFocus     := DefaultNumericFocus
-		
-	RETURN
+	RETURN NIL
 
-/****************************************************************************/
-METHOD SetField(cText AS STRING,nMult AS LONGINT) AS STRING 
 
+METHOD SetField(cText AS STRING,nMult AS LONGINT) AS STRING PASCAL 
 	//l formats the string based on the picture.
 	//p formats the string based on the picture.
 	//r STRING
@@ -1720,60 +1582,58 @@ METHOD SetField(cText AS STRING,nMult AS LONGINT) AS STRING
 	LOCAL nStrLen		AS DWORD
 
 	DO CASE
-		CASE Instr(CHR(SetThousandSep()),cText)
-			cTmpString := ""
-			nStrLen  := Len(cText)
-			FOR i := 1 UPTO nStrLen
-				IF !Instr(SubStr(cText,i,1),SELF:cTemplateChar)
-					cTmpString += SubStr(cText,i,1)
-				ENDIF
-			NEXT
-			IF !Empty(SELF:FieldSpec)
-				cRetString := SELF:fieldspec:Transform(Val(cTmpstring) * nMult)
-			ELSE
-				cRetString := Transform(Val(cTmpstring) * nMult,SELF:Picture)
-			ENDIF
-		CASE Instr(":",cText) // Added for ":" in picture = wem (06/15/00)
-			cTmpString := ""
-			nStrLen  := Len(cText)
-			FOR i := 1 UPTO nStrLen
-				IF SubStr(cText,i,1) <> ":"
-					cTmpString += SubStr(cText,i,1)
-				ENDIF
-			NEXT
-			IF !Empty(SELF:FieldSpec)
-				cRetString := SELF:fieldspec:Transform(Val(cTmpstring))
-			ELSE
-				cRetString := Transform(Val(cTmpstring),SELF:Picture)
-			ENDIF
-		OTHERWISE
-			cTmpString := ""
-			nStrLen  := Len(cText)
-			FOR i := 1 UPTO nStrLen
-				IF !Instr(SubStr(cText,i,1),SELF:cTemplateChar)
-					cTmpString += SubStr(cText,i,1)
-				ENDIF
-			NEXT
-			IF !Empty(SELF:FieldSpec)
-				cRetString := SELF:fieldspec:Transform(Val(cTmpstring) * nMult)
-			ELSE
-				cRetString := Transform(Val(cTmpstring) * nMult,SELF:Picture)
-			ENDIF
+	    CASE Instr(CHR(SetThousandSep()),cText)
+	        cTmpString := ""
+	        nStrLen  := Len(cText)
+	        FOR i := 1 UPTO nStrLen
+	        	IF !Instr(SubStr(cText,i,1),SELF:cTemplateChar)
+	                cTmpString += SubStr(cText,i,1)
+	            ENDIF
+	        NEXT
+	    	IF !Empty(SELF:FieldSpec)
+		        cRetString := SELF:fieldspec:Transform(Val(cTmpstring) * nMult)
+		    ELSE
+		        cRetString := Transform(Val(cTmpstring) * nMult,SELF:Picture)
+		    ENDIF
+	    CASE Instr(":",cText) // Added for ":" in picture = wem (06/15/00)
+	        cTmpString := ""
+	        nStrLen  := Len(cText)
+	        FOR i := 1 UPTO nStrLen
+	            IF SubStr(cText,i,1) <> ":"
+	                cTmpString += SubStr(cText,i,1)
+	            ENDIF
+	        NEXT
+	    	IF !Empty(SELF:FieldSpec)
+		        cRetString := SELF:fieldspec:Transform(Val(cTmpstring))
+		    ELSE
+		        cRetString := Transform(Val(cTmpstring),SELF:Picture)
+		    ENDIF
+	    OTHERWISE
+	        cTmpString := ""
+	        nStrLen  := Len(cText)
+		    FOR i := 1 UPTO nStrLen
+	           	IF !Instr(SubStr(cText,i,1),SELF:cTemplateChar)
+	                cTmpString += SubStr(cText,i,1)
+	            ENDIF
+	        NEXT
+	    	IF !Empty(SELF:FieldSpec)
+		        cRetString := SELF:fieldspec:Transform(Val(cTmpstring) * nMult)
+		    ELSE
+		        cRetString := Transform(Val(cTmpstring) * nMult,SELF:Picture)
+		    ENDIF
 	ENDCASE
-	// wcm 2001-01-29
-	// added check to see if a small negative number
-	// is being entered. -0.01 should now
-	// stay negative
-	IF SELF:lTurnNegative .and. !Instr(":",cText)		
-		IF (Val(cTmpstring)* nMult) <> 0
-			SELF:lTurnNegative := FALSE
-		ENDIF
-	 ENDIF
+    // wcm 2001-01-29
+    // added check to see if a small negative number
+    // is being entered. -0.01 should now
+    // stay negative
+    IF SELF:lTurnNegative  .and. !Instr(":",cText)		
+      	IF (Val(cTmpstring)* nMult) <> 0
+       		SELF:lTurnNegative := FALSE
+       	ENDIF
+     ENDIF
 	RETURN cRetString
 
-/****************************************************************************/
-METHOD SetOrigin(oDW AS window) AS VOID
-
+METHOD SetOrigin(oDW AS window) AS VOID PASCAL 
 	//l Sets the origin of a data/dialog window
 	//p Sets the origin of a data/dialog window
 	//d Sets the origin of a data or dialog window to stay within the bounds
@@ -1791,44 +1651,42 @@ METHOD SetOrigin(oDW AS window) AS VOID
 	LOCAL siHeight, siWidth AS LONGINT
 
 	GetWindowRect( SELF:Handle(), @Rect )
-	siYBottomCoord := Rect:Bottom + 2
-	siYTopCoord := Rect:Top - 2
-	siXRightCoord := Rect:Right - 2
+	siYBottomCoord := Rect.Bottom + 2
+	siYTopCoord := Rect.Top - 2
+	siXRightCoord := Rect.Right - 2
 //	GetWindowRect( GetDesktopWindow(), @RectOwner )
 	SystemParametersInfo(SPI_GETWORKAREA, 0, @RectOwner, 0) // wcm 2007-03-24 change per suggestion by Camille for increasing performance
 	siHeight := oDW:Size:Height
 	siWidth := oDW:Size:Width
 	
 	// If we are off the bottom of the screen
-	IF (( siYTopCoord + siHeight) > RectOwner:Bottom )
+	IF (( siYTopCoord + siHeight) > RectOwner.Bottom )
 		// Move Up
-		siYCoord := Rect:Top - 2 - siHeight
+		siYCoord := Rect.Top - 2 - siHeight
 	ELSE
-		siYCoord := Rect:Top + 2 + SELF:Size:Height
+		siYCoord := Rect.Top + 2 + SELF:Size:Height
 	ENDIF
 
 	// In limited cases (640x480 screen), the dialog can be off the screen a small
 	// amount if set above or below the button SLE. 	In this case, set it even with
 	// the RectOwner.Bottom parameter.
-	IF ( ( siYTopCoord - siHeight) < RectOwner:Top ) .And. ( ( siYBottomCoord + siHeight) > RectOwner:Bottom )
-		siYCoord := RectOwner:Bottom - 2 - SELF:Size:Height - siHeight
+	IF ( ( siYTopCoord - siHeight) < RectOwner.Top )  .And. ( ( siYBottomCoord + siHeight) > RectOwner.Bottom )
+		siYCoord := RectOwner.Bottom - 2 - SELF:Size:Height - siHeight
 	ENDIF
 
 	// If we are off the right side of the screen
-	IF ( ( siXRightCoord + siWidth ) > RectOwner:Right )
+	IF ( ( siXRightCoord + siWidth ) > RectOwner.Right )
 		// Move Left
-		siXCoord := Rect:Right - 2 - siWidth
+		siXCoord := Rect.Right - 2 - siWidth
 	ELSE
-		siXCoord := Rect:Left + 2
-	ENDIF
+		siXCoord := Rect.Left + 2
+ 	ENDIF
 
 	oDW:origin:=point{SELF:origin:x,SELF:origin:y-oDW:size:height}
 	MoveWindow( oDW:Handle(), siXCoord, siYCoord, siWidth, siHeight, TRUE )
 	RETURN
 
-/****************************************************************************/
-METHOD Show()
-
+METHOD Show() 
 	//l show method for dynamically created SLEs.
 	//p show method for dynamically created SLEs. This also handles the button
 	//r NIL
@@ -1838,9 +1696,7 @@ METHOD Show()
 	SELF:showpb()
 	RETURN NIL
 
-/****************************************************************************/
-METHOD ShowCalc() AS VOID 
-
+METHOD ShowCalc() AS VOID PASCAL 
 	//l Processing logic to show a calculator popup.
 	//p Processing logic to show a calculator popup.
 	//r VOID
@@ -1876,9 +1732,7 @@ METHOD ShowCalc() AS VOID
 	SetFocus(SELF:Handle())
 	RETURN
 
-/****************************************************************************/
-METHOD ShowCalendar() AS VOID 
-
+METHOD ShowCalendar() AS VOID PASCAL 
 	//l processing method to show a popup calendar.
 	//p processing method to show a popup calendar.
 	//r VOID
@@ -1891,12 +1745,12 @@ METHOD ShowCalendar() AS VOID
 	LOCAL dOldTextValue			AS STRING
 
 	BEGIN SEQUENCE
-		IF oPB <> NULL_OBJECT .and. SELF:lDoubleAsToday .and. !SELF:lSendFromButton
+		IF oPB <> NULL_OBJECT  .and. SELF:lDoubleAsToday  .and. !SELF:lSendFromButton
 			SELF:textvalue			:= DToC(Today())
-			SELF:ValueChanged 		:= TRUE
+	        SELF:ValueChanged 		:= TRUE
 			BREAK		
 		ENDIF
-		SELF:lSendFromButton	:= FALSE	// we got here from a button or a non linked double click. Turn it off regardless
+        SELF:lSendFromButton	:= FALSE	// we got here from a button or a non linked double click. Turn it off regardless
 		// If it is pass the PEDateSle to to dlgCalendar and pop up a calendar.
 		// We adjust the Calendar's origin in dlgCalendar's PostInit to align the calendar just below the Sle
 		
@@ -1951,18 +1805,16 @@ METHOD ShowCalendar() AS VOID
 			SELF:Value		:= oDlgPECalendar:dSelected
 			SELF:textvalue	:= DToC(oDlgPECalendar:dSelected)
 			IF SubStr(SELF:textvalue,1,1) > " "
-				SELF:ValueChanged 	:= TRUE // wcm 9/27/2000
+		        SELF:ValueChanged 	:= TRUE // wcm 9/27/2000
 			ELSE
 				SELF:ValueChanged	:= FALSE  //wcm 09/27/2000
-			ENDIF
+		    ENDIF
 
 			// added for bbrowser support wcm 2005-09-23
-		   IF IsInstanceOf(self:owner, #BBrowser) .and. self:owner:InEdit() // 2012-10-06 JB
-//		      SELF:Owner:Edit()
+		   IF IsInstanceOf(SELF:Owner, #BBrowser)
+		      SELF:Owner:Edit()
 		      SELF:Owner:EditControl:Value := oDlgPECalendar:dSelected
 		      SELF:Owner:EditClose()
-		   ELSE		// 2012-10-06 JB
-		   	SetFocus(self:Handle())
 		   ENDIF
 		ELSE
 			IF SELF:ValueChanged
@@ -1971,21 +1823,17 @@ METHOD ShowCalendar() AS VOID
 				SELF:TextValue	:= dOldTextValue
 				SELF:ValueChanged := FALSE
 			ENDIF
-		   SetFocus(SELF:Handle())		// 2012-10-06 JB:
 		ENDIF	
 	
 		// this makes sure that we get focus back to the SLE we want
 		// added for bbrowser support wcm 2005-09-23
-// 2012-10-06 JB
-// 		IF .not. IsInstanceOf(SELF:Owner, #BBrowser)
-// 		   SetFocus(SELF:Handle())
-// 		ENDIF
+		IF .not. IsInstanceOf(SELF:Owner, #BBrowser)
+		   SetFocus(SELF:Handle())
+		ENDIF
 	END SEQUENCE
 	RETURN
 
-/****************************************************************************/
 METHOD Showpb() 
-
 	//l stub method to show a button if it exists.
 	//p stub method to show a button if it exists.
 	//r super:show()
@@ -1994,15 +1842,13 @@ METHOD Showpb()
 		IF SELF:IsVisible()
 			SELF:oPB:show()
 		ENDIF
-		IF SELF:ReadOnly .or. !IsWindowEnabled(SELF:handle())
+		IF SELF:ReadOnly  .or. !IsWindowEnabled(SELF:handle())
 			SELF:oPB:disable()
 		ENDIF
 	ENDIF
 	RETURN NIL
 
-/****************************************************************************/
-ACCESS TrimValue() AS STRING 
-
+ACCESS TrimValue() AS STRING PASCAL 
 	//l Access method to return a trimmed SLE.
 	//p Access method to return a trimmed SLE.
 	//d TrimValue will return an alltrimmed value if it is a char or an ntrimed if it is numeric. \line
@@ -2019,15 +1865,11 @@ ACCESS TrimValue() AS STRING
 	ENDIF
 	RETURN cResult
 
-/****************************************************************************/
-ASSIGN TYPE(cVar AS STRING) AS VOID
-
+ASSIGN TYPE(cVar AS STRING) AS VOID PASCAL 
 	SELF:oEditString:Type := cVar
 	RETURN	
 
-/****************************************************************************/
-METHOD updateFieldspec(OFS AS FieldSpec) AS VOID
-
+METHOD updateFieldspec(OFS AS FieldSpec) AS VOID PASCAL 
 	LOCAL sPicture	AS STRING
 	LOCAL cTextVal	AS STRING
 	
@@ -2043,27 +1885,24 @@ METHOD updateFieldspec(OFS AS FieldSpec) AS VOID
 	SUPER:Picture	:= sPicture
 	
 	// reset the value of the SLE
-	SELF:TextValue 				:= cTextVal		 	// restore the textval. Let VO deal with the rest
-	SELF:Modified 				:= TRUE     		// This must be uncommented.
+ 	SELF:TextValue 				:= cTextVal		 	// restore the textval. Let VO deal with the rest
+ 	SELF:Modified 				:= TRUE     		// This must be uncommented.
 	SELF:EventReturnValue		:= 1
 
 	RETURN	
 
-/****************************************************************************/
-ACCESS Value
-
-	IF !(SELF:FieldSpec == NULL_OBJECT ) .and.  (SELF:FieldSpec:Valtype == "N")
-		RETURN SELF:FieldSpec:Val(SELF:TextValue)
-	ELSE
-		RETURN SUPER:Value
-	ENDIF
+ACCESS Value 
+    IF !(SELF:FieldSpec == NULL_OBJECT )  .and.  (SELF:FieldSpec:Valtype == 'N')
+        RETURN SELF:FieldSpec:Val(SELF:TextValue)
+    ELSE
+        RETURN SUPER:Value
+    ENDIF
 	//	this should not be needed. added to get rid of the compiler warning
-	// RETURN NIL
+	RETURN NIL
 
 
-/****************************************************************************/
-ACCESS ZeroPad() AS STRING 
 
+ACCESS ZeroPad() AS STRING PASCAL 
 	//l Access method to left zero fill a SLE.
 	//p Access method to left zero fill a SLE.
 	//d ZeroPad will left fill your SLE with zeros (0) \line
@@ -2074,18 +1913,11 @@ ACCESS ZeroPad() AS STRING
 	RETURN iif(ValType(SELF:value) == "C", ;
 			StrZero(Val(SELF:value),SELF:length), ;
 			StrZero(SELF:value,SELF:length) )			
-/****************************************************************************/
-METHOD IsOverWriteModeEnabled() AS LOGIC 
-   LOCAL DIM aKeyStates[256] AS BYTE // compiler bug!!!
 
-
-   //LOCAL aKeyStates AS BYTE[]
-   //aKeyStates := byte[]{256}
-
-   GetKeyboardState(@aKeyStates)
-
-   RETURN !LOGIC(_CAST, _And(aKeyStates[VK_INSERT + 1], 1))
 
 END CLASS
-
+STATIC FUNCTION IsOverWriteModeEnabled() AS LOGIC PASCAL
+	STATIC LOCAL DIM aKeyStates[256] AS BYTE
+	GetKeyboardState(@aKeyStates)	
+	RETURN !LOGIC(_CAST,_AND(aKeyStates[VK_INSERT + 1], 1))
 

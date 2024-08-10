@@ -2,23 +2,21 @@
 <Designers>
   <VOMenu Name="CalcSLEContextMenu">
     <Name>CalcSLEContextMenu</Name>
+    <Toolbar>No Toolbar</Toolbar>
+    <Show>Icon</Show>
+    <UseBands>No</UseBands>
     <Inherit>
     </Inherit>
     <ToolbarInherit>
     </ToolbarInherit>
-    <Toolbar>No Toolbar</Toolbar>
-    <Ribbon>
-    </Ribbon>
-    <RibbonFilename>
-    </RibbonFilename>
-    <Show>Icon</Show>
-    <UseBands>No</UseBands>
-    <BaseID>29500</BaseID>
     <MenuItems>
       <MenuItem>
+        <Caption>&amp;File</Caption>
+        <OriginalDefineValue>22567</OriginalDefineValue>
         <EventName>
         </EventName>
-        <Caption>&amp;File</Caption>
+        <ID>
+        </ID>
         <Description>
         </Description>
         <HelpContext>
@@ -33,14 +31,14 @@
         <ButtonToolTip>
         </ButtonToolTip>
         <ButtonPos>-1</ButtonPos>
-        <ID>
-        </ID>
-        <OriginalDefineValue>22567</OriginalDefineValue>
         <MenuItems>
           <MenuItem>
+            <Caption>&amp;Calculator</Caption>
+            <OriginalDefineValue>22568</OriginalDefineValue>
             <EventName>
             </EventName>
-            <Caption>&amp;Calculator</Caption>
+            <ID>
+            </ID>
             <Description>Popup Calculator</Description>
             <HelpContext>
             </HelpContext>
@@ -54,9 +52,6 @@
             <ButtonToolTip>
             </ButtonToolTip>
             <ButtonPos>-1</ButtonPos>
-            <ID>
-            </ID>
-            <OriginalDefineValue>22568</OriginalDefineValue>
           </MenuItem>
         </MenuItems>
       </MenuItem>

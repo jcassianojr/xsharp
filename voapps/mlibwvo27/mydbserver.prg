@@ -1,4 +1,15 @@
 CLASS MYDBSERVER INHERIT DBSERVER
+	PROTECT _aFieldDesc 	AS ARRAY
+    PROTECT	_aDataFields    AS ARRAY
+    PROTECT _nNamePos		AS DWORD
+
+
+// constructor inserted by xPorter, remove superfluous arguments
+CONSTRUCTOR(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9) CLIPPER
+SUPER(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9)
+ACCESS aFields 
+	// allows us late-bound access to this PROTECT
+	RETURN SELF:aStruct
 
 METHOD BuscaPalavra(cFind,lUpper) 
 LOCAL pHandle 	AS PTR
@@ -9,9 +20,7 @@ LOCAL aRETU AS ARRAY
 LOCAL oPROGWIN AS PROGWIN
 LOCAL nLASTREC AS DWORD
 LOCAL nPOS AS DWORD
-LOCAL nPERC AS INT //WORD
-
-
+LOCAL nPERC AS INT
 
 nCURRECNO:=SELF:RecNo
 
@@ -93,6 +102,9 @@ RETURN lRetVal
 
 
 
+METHOD EnableNotification( ) 
+    siSuspendNotification := 0
+
 METHOD FieldPutC(cCAMPO,cValor) 
 LOCAL cATUAL AS STRING //grava se houver diferenca campos texto analisando o tamanho do campo
 cATUAL:=SELF:FIELDGET(cCAMPO)	
@@ -114,6 +126,70 @@ IF ! Empty(eVALOR)  //grava se o banco estiver vazio e o valor nao
      SELF:FIELDPUT(cCAMPO,eVALOR)	
    ENDIF	
 ENDIF	
+
+
+ACCESS FilePtr 
+RETURN SELF:Info(DBI_FILEHANDLE)
+
+ACCESS HasOLEField 
+LOCAL aStruct AS ARRAY
+
+	aStruct := SELF:DBStruct
+	IF  AScan(aStruct,{|a| a[2] = "O"}) == 0
+		RETURN FALSE
+	ELSE
+		RETURN TRUE
+	ENDIF
+
+
+ACCESS IsAnsi 
+RETURN SELF:Info(DBI_ISANSI)
+
+METHOD IsFieldInIndex(uFieldID) 
+LOCAL cIdxKey		AS STRING
+LOCAL cFieldname	AS STRING	
+
+	IF SELF:INDEXORD() == 0
+		RETURN FALSE
+	ENDIF
+
+	cIdxKey := SELF:OrderInfo(DBOI_EXPRESSION)
+			
+	IF Empty(cIdxKey)
+		RETURN FALSE
+	ENDIF
+
+	IF IsString(uFieldID)
+		cFieldName := uFieldID
+	ELSE
+		cFieldName := SELF:FieldName( SELF:FieldPos(uFieldID) )
+	ENDIF		
+
+	IF cFieldName $ cIdxKey
+		RETURN TRUE
+	ELSE
+		RETURN FALSE
+	ENDIF
+
+
+ACCESS IsFilterSet 
+RETURN !Empty(SELF:Filter)
+
+METHOD OrderList() 
+LOCAL aOrders	:= {}	AS ARRAY
+LOCAL nOrders 	AS DWORD
+LOCAL nI 		AS DWORD
+
+	 nOrders := SELF:Orderinfo(DBOI_ORDERCOUNT)
+
+	 FOR nI := 1 TO nOrders
+	 	AAdd( aOrders, SELF:Orderinfo(DBOI_NAME, , nI ))
+	 NEXT	
+
+RETURN aOrders
+
+ACCESS Path 
+RETURN SELF:FileSpec:Path
 
 
 METHOD RecordArrayGet(aSkip) 
@@ -152,7 +228,6 @@ METHOD RecordArrayPut(aData, aSkip)
 RETURN NIL
 
 METHOD SkipEx(nRecordCount) 
-	
 	SELF:Skip(nRecordCount)	
 	IF SELF:BoF
 		SELF:GoTOP()
@@ -160,14 +235,10 @@ METHOD SkipEx(nRecordCount)
 		SELF:gobottom()
 	ENDIF
 
-
-
 METHOD ValidateDataRecords() 
 LOCAL aInvalid,aBadFields,aRecord AS ARRAY
 LOCAL pHandle AS PTR
-LOCAL n,nRecNo	AS LONG    
-      LOCAL nLen	AS DWORD   
-
+LOCAL n,nLen,nRecNo	AS LONG
 LOCAL cTemp,cType,cFieldValue AS STRING
 LOCAL lBadField	AS LOGIC
 LOCAL oProgWin AS ProgWin
@@ -312,7 +383,7 @@ METHOD ValidateMemo(lNonPrinting)
 	LOCAL oProgWin AS ProgWin
 	LOCAL aInvalid AS ARRAY
 	LOCAL ptrMemo AS PTR
-	LOCAL nSize, nCount AS SHORT
+	LOCAL  nSize, nCount AS SHORT
 	LOCAL nType AS DWORD
 	LOCAL nActual AS DWORD
 	LOCAL nOffset, nLastByte AS LONG
@@ -321,12 +392,8 @@ METHOD ValidateMemo(lNonPrinting)
 
     Default(@lNonPrinting, FALSE)
 	
-	nType := 0
-	nSize :=  0
-	 nActual :=  0
-	  nCount := 0
-	nOffset :=  0
-	nLastByte := 0
+	nType := nSize := nActual := nCount := 0
+	nOffset := nLastByte := 0
 	cBuffer := ""
 	bVal := 0
 
@@ -367,7 +434,7 @@ METHOD ValidateMemo(lNonPrinting)
 					// First test: nType = 1 for a valid memo (Big-endian = 256 MSB First order)
 					IF !(nType = 256)
 						AAdd(aInvalid, "Invalid memo type at Record: " + NTrim(SELF:RecNo) + " for field " + NTrim(aMemoFields[nN]))
-					ELSE  
+					ELSE     
 						NOP
 //						alert("type " + NTrim(nType))
 					ENDIF
@@ -378,9 +445,9 @@ METHOD ValidateMemo(lNonPrinting)
 					IF FRead3(ptrMemo, @bVal, 1) = 1
 						IF !(bVal = 175)
 							AAdd(aInvalid, "Invalid memo length at Record: " + NTrim(SELF:RecNo) + " for field " + NTrim(aMemoFields[nN]))
-						ELSE
-//							alert("length " + NTrim(nSize))  
+						ELSE      
 							NOP
+//							alert("length " + NTrim(nSize))
 						ENDIF
 					ELSE
 						AAdd(aInvalid, "Failed to read last byte of memo length at Record: " + NTrim(SELF:RecNo) + " for field " + NTrim(aMemoFields[nN]))
@@ -391,7 +458,7 @@ METHOD ValidateMemo(lNonPrinting)
 					nActual := FRead(ptrMemo, @cBuffer, DWORD(nSize))
 					IF !(nActual = DWORD(nSize))
 						AAdd(aInvalid, "Failed to read full memo length at Record: " + NTrim(SELF:RecNo) + " for field " + NTrim(aMemoFields[nN]))
-					ELSE 
+					ELSE       
 						NOP
 //						alert("read the memo OK " )
 					ENDIF			// fourth test for TEXT MEMOS ONLY: all chars must be printable chars
@@ -410,9 +477,9 @@ METHOD ValidateMemo(lNonPrinting)
 								EXIT
 							ENDIF
 						NEXT
-					ELSE
-//						alert("Not testing for printable characters") 
+					ELSE        
 						NOP
+//						alert("Not testing for printable characters")
 					ENDIF
 				ENDIF
 			NEXT
@@ -433,6 +500,7 @@ METHOD ValidateMemo(lNonPrinting)
 	oProgWin:EndDialog()
 
 	RETURN aInvalid
+
 
 
 

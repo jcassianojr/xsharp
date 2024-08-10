@@ -6,7 +6,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FabPaintLibControlvo</RootNamespace>
-    <AssemblyName>Fab PaintLib Controlvo</AssemblyName>
+    <AssemblyName>FabPaintLibControlvo</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <Name>Fab PaintLib Controlvo</Name>
     <Nologo>true</Nologo>

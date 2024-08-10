@@ -84,11 +84,6 @@
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
-      <Name>RightSLEvo</Name>
-      <Project>{E1A8DAF4-3BDA-434A-9753-2B6F30230B1E}</Project>
-      <Private>True</Private>
-    </ProjectReference>
     <ProjectReference Include="..\Login\Login.xsproj">
       <Name>Login</Name>
       <Project>{08AAB0AA-E234-4810-A5E3-631EC7691F69}</Project>

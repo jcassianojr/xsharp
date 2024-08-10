@@ -1,4 +1,4 @@
-CLASS wmBitmapButton INHERIT PushButton
+﻿CLASS wmBitmapButton INHERIT PushButton
 // Author		: Willie Moore
 // Email		: williem@wmconsulting.com
 // Address		:
@@ -23,26 +23,23 @@ CLASS wmBitmapButton INHERIT PushButton
 	EXPORT lTwoState := FALSE	AS LOGIC	
 	EXPORT lInState := FALSE	AS LOGIC
 
-/****************************************************************************/
-Method Destroy()
+METHOD destroy() 
 	DeleteObject(SELF:hBitmapUp)
 	DeleteObject(SELF:hBitmapDown)
 	SELF:hBitmapUp		:= NULL_PTR
 	SELF:hbitmapDown	:= NULL_PTR
 	RETURN SUPER:destroy()
-	
-/****************************************************************************/	
-METHOD Dispatch(oE) 
 
+METHOD Dispatch(oE) 
 	DO CASE
 		CASE oE:Message == WM_SETFOCUS
 			SELF:SetFocus()			
 		CASE oE:Message == BM_SETSTATE
 			IF lTwoState
-				IF oE:wParam == 1 .and. !lDown
+				IF oE:wParam == 1  .and. !lDown
 					SELF:lInState := TRUE
 					SELF:lDown := TRUE
-				ELSEIF oE:wParam <> 1 .and. lInState
+				ELSEIF oE:wParam <> 1  .and. lInState
 					SELF:lInState := FALSE
 				ELSEIF oE:wParam <> 1
 					SELF:lDown := FALSE
@@ -57,9 +54,7 @@ METHOD Dispatch(oE)
 	
 RETURN SUPER:dispatch(oE)
 
-/****************************************************************************/
-METHOD Expose(oExposeEvent) 
-
+METHOD expose(oExposeEvent) 
 	LOCAL hDC 				AS PTR					// Device Context
 	LOCAL lpRect 			IS _WINRECT				// Rect to hold button coords
 	LOCAL hMemDC 			AS PTR					// Memory compatible DC
@@ -78,7 +73,7 @@ METHOD Expose(oExposeEvent)
 		SelectObject( hMemDC, hBitmapUp)
 	ENDIF
 	// Bit Blast this puppy!
-	BitBlt(hDC, lpRect:left, lpRect:top, lprect:right, lpRect:bottom, hMemDC, 0, 0, SRCCOPY)
+	BitBlt(hDC, lpRect.left, lpRect.top, lprect.right, lpRect.bottom, hMemDC, 0, 0, SRCCOPY)
 	// Delete the compatible DC
 	DeleteDC(hMemDC)	
 	// End the paint cycle	
@@ -88,33 +83,32 @@ METHOD Expose(oExposeEvent)
 	
 	RETURN NIL
 	
-/****************************************************************************/
-constructor(oOwner, nID, oPoint, oDimension, cText, kStyle) 
 
+CONSTRUCTOR(oOwner, nID, oPoint, oDimension, cText, kStyle) 
 	
 	SUPER( oOwner, nID, oPoint, oDimension, cText, kStyle )
 	SELF:setstyle(BS_OWNERDRAW)
-	RETURN  
-END CLASS
+	RETURN SELF
 
+END CLASS
 CLASS wmBitmapFromDisk INHERIT Bitmap
 
-/****************************************************************************/
-constructor(cFile as string )
-
+CONSTRUCTOR(cFile ) 
 	SUPER( ResourceID{"", _GetInst()} )
 	//  replace internal HBITMAP protect variable,
 //	hBitMap	:= LoadBitmap(_GetInst(),String2Psz(cFile))
 	hBitmap	 := LoadImage( 0, String2Psz( cFile ), IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE )
-	RETURN  
-END CLASS
+	RETURN SELF
 
+END CLASS
 CLASS wmNewBitmapButton INHERIT PUSHBUTTON
 	PROTECT lUseResource	AS LOGIC
+	
+	// methods
+	
+	// assigns
 
-/****************************************************************************/	
-METHOD AssignBitmap(xImage AS USUAL) AS USUAL 
-
+METHOD AssignBitmap(xImage AS USUAL) AS USUAL PASCAL 
 	LOCAL oImage		AS OBJECT
 	LOCAL cBitmapName	AS STRING
 	IF !Empty(xImage)
@@ -133,9 +127,7 @@ METHOD AssignBitmap(xImage AS USUAL) AS USUAL
 	ENDIF
 	RETURN oImage		
 
-/****************************************************************************/
-METHOD AssignIcon(sResourceName AS STRING) AS USUAL 
-
+METHOD AssignIcon(sResourceName AS STRING) AS USUAL PASCAL 
 	LOCAL oImage	AS OBJECT
 
 	oImage := Icon{ResourceID{sResourceName, _GetInst()}}
@@ -146,10 +138,8 @@ METHOD AssignIcon(sResourceName AS STRING) AS USUAL
 	ENDIF
 
 	RETURN oImage
-	
-/****************************************************************************/	
-METHOD Dispatch(oE) 
 
+METHOD Dispatch(oE) 
 	DO CASE
 		CASE oE:Message == WM_GETDLGCODE
 			RETURN DLGC_WANTARROWS
@@ -157,17 +147,14 @@ METHOD Dispatch(oE)
 	
 RETURN SUPER:dispatch(oE)
 
-/****************************************************************************/
-constructor(oOwner, nID, oPoint, oDimension, cText, kStyle) 
-
+CONSTRUCTOR(oOwner, nID, oPoint, oDimension, cText, kStyle) 
 	SELF:lUseResource	:= FALSE
 	SUPER( oOwner, nID, oPoint, oDimension, cText, kStyle )
-	RETURN 
+	RETURN SELF
 
-/****************************************************************************/
-ASSIGN UseResource(lVar AS LOGIC) AS void 
-
+ASSIGN UseResource(lVar AS LOGIC) AS LOGIC PASCAL 
 	SELF:lUseResource	:= lvar
-	RETURN
-END CLASS
+	RETURN SELF:lUseResource
 
+
+END CLASS

@@ -9,7 +9,7 @@
     <ProjectGuid>{492034C5-BA31-40AF-A859-8EE2AD8B8E3D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>wmGUI.wpf</RootNamespace>
+    <RootNamespace>rightSLEWPF</RootNamespace>
     <AssemblyName>rightSLEWPF</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <ProjectTypeGuids>{5ADB76EC-7017-476A-A8E0-25D4202FFCF0};{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{AA6C8D78-22FF-423A-9C7C-5F2393824E04}</ProjectTypeGuids>

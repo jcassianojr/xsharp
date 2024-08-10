@@ -1,4 +1,4 @@
-CLASS FolderSLE INHERIT rightSLE
+﻿CLASS FolderSLE INHERIT rightSLE
 // Author		: Ed Ratcliffe / Willie Moore
 // Email		: williem@wmconsulting.com
 // Address		:
@@ -18,7 +18,7 @@ CLASS FolderSLE INHERIT rightSLE
 //d there.
 //e Initialize this SLE in the owning window's PostInit() as follows:
 //e PostInit(oWindow,iCtlID,oServer,uExtra) CLASS MyDialog
-//e 	SELF:oDCSingleLineEdit1:xStartFolder := "d:\DOWNLOAD\"
+//e 	SELF:oDCSingleLineEdit1:xStartFolder := "C:\DOWNLOAD\"
 //e 	SELF:oDCSingleLineEdit1:xTitle := "My Folder dialog"
 //g Edit Controls
 	
@@ -26,35 +26,32 @@ CLASS FolderSLE INHERIT rightSLE
 	EXPORT xTitle 		AS STRING
 	
 	//methods
-	//DECLARE METHOD ShowFolderDialog
 	
 	//assigns
-	//DECLARE ASSIGN Title
-	//DECLARE ASSIGN Initialdirectory
-METHOD Dispatch(oEvent) 
 
+METHOD Dispatch(oEvent) 
 	DO CASE
 		CASE oEvent:Message == WM_LBUTTONDBLCLK
 			SELF:showFolderDialog()
 			RETURN 1L
 	ENDCASE
 	RETURN SUPER:Dispatch(oEvent)
-constructor(oForm,oResID,oPoint,oDim,kStyle,lDataAware) 
 
-	super(oForm,oResID,oPoint,oDim,kStyle,lDataAware)
+CONSTRUCTOR(oForm,oResID,oPoint,oDim,kStyle,lDataAware) 
+	SUPER(oForm,oResID,oPoint,oDim,kStyle,lDataAware)
 	SELF:xTitle := "Enter Folder"
-	RETURN  
-ASSIGN InitialDirectory(sVar AS STRING) AS void 
+	RETURN SELF
 
+ASSIGN InitialDirectory(sVar AS STRING) AS STRING PASCAL 
 	//l Assign to set the dialog's initial directory.
 	//p Assign to set the dialog's initial directory.
 	//d InitialDirectory will set the file dilog's initial directory. \line
 	//r String
 	//a None
 	SELF:xStartFolder := sVar
-	RETURN
-METHOD ShowFolderDialog() AS VOID
+	RETURN SELF:xStartFolder
 
+METHOD ShowFolderDialog() AS VOID PASCAL 
 	LOCAL oFolderDLG AS StandardFolderDialog
 
 	IF Empty(SELF:TextValue)
@@ -72,17 +69,17 @@ METHOD ShowFolderDialog() AS VOID
 	ENDIF
 	SetFocus(SELF:handle())
 	RETURN
-ASSIGN Title(sVar AS STRING) AS void 
 
+ASSIGN Title(sVar AS STRING) AS STRING PASCAL 
 	//l Assign to set the dialog title.
 	//p Assign to set the dialog title.
 	//d Title will set the file dilog's caption. \line
 	//r String
 	//a None
 	SELF:xTitle := sVar
-	RETURN
-END CLASS
+	RETURN SELF:xTitle	
 
+END CLASS
 CLASS pbFolderSLE INHERIT FolderSLE
 // Author		: Willie Moore
 // Email		: williem@wmconsulting.com
@@ -103,13 +100,14 @@ CLASS pbFolderSLE INHERIT FolderSLE
 //d there.
 //e Initialize this SLE in the owning window's PostInit() as follows:
 //e PostInit(oWindow,iCtlID,oServer,uExtra) CLASS MyDialog
-//e 	SELF:oDCSingleLineEdit1:xStartFolder := "d:\DOWNLOAD\"
+//e 	SELF:oDCSingleLineEdit1:xStartFolder := "C:\DOWNLOAD\"
 //e 	SELF:oDCSingleLineEdit1:xTitle := "My Folder dialog"
 //g Edit Controls
-constructor(oForm,oResID,oPoint,oDim,kStyle,lDataAware) 
 
+CONSTRUCTOR(oForm,oResID,oPoint,oDim,kStyle,lDataAware) 
 	SUPER(oForm,oResID,oPoint,oDim,kStyle,lDataAware)
 	SELF:AssignImage("rsle_FOLDUP")
-	RETURN  
-END CLASS
+	RETURN SELF
 
+
+END CLASS
