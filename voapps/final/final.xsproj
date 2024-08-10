@@ -91,6 +91,11 @@
       <Project>{83698c26-4e7c-4a53-aba8-994b8c4c7592}</Project>
       <Private>True</Private>
     </ProjectReference>
+    <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
+      <Name>RightSLEvo</Name>
+      <Project>{3d4263c5-a701-43d6-a424-e160b4f00966}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />

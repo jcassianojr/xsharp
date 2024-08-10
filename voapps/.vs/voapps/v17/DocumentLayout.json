@@ -3,81 +3,12 @@
   "WorkspaceRootPath": "D:\\develop\\xsharp\\voapps\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Me04.jan||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{3D4263C5-A701-43D6-A424-E160B4F00966}|RightSLEvo\\RightSLEvo.xsproj|D:\\develop\\xsharp\\voapps\\RightSLEvo\\Class PECalendar.prg||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|",
+      "RelativeMoniker": "D:0:0:{3D4263C5-A701-43D6-A424-E160B4F00966}|RightSLEvo\\RightSLEvo.xsproj|solutionrelative:RightSLEvo\\Class PECalendar.prg||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|FabPaintLibvo||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|FabPaintLibControlvo||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|escolhemp04||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|esccodmon||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Engenharia||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Emailprg||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Custo||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|CRM||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|checagem||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Banco||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0599A978-2A64-449C-B367-757F6A1F9EB8}|Banco\\Banco.xsproj|D:\\develop\\xsharp\\voapps\\Banco\\Banco.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{0599A978-2A64-449C-B367-757F6A1F9EB8}|Banco\\Banco.xsproj|solutionrelative:Banco\\Banco.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91F5A977-216A-4591-9E7A-BC3526FEE24F}|checagem\\checagem.xsproj|D:\\develop\\xsharp\\voapps\\checagem\\checagem.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{91F5A977-216A-4591-9E7A-BC3526FEE24F}|checagem\\checagem.xsproj|solutionrelative:checagem\\checagem.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8FEB4D97-7DF3-457A-BF27-ADCD603ED700}|CRM\\CRM.xsproj|D:\\develop\\xsharp\\voapps\\CRM\\CRM.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{8FEB4D97-7DF3-457A-BF27-ADCD603ED700}|CRM\\CRM.xsproj|solutionrelative:CRM\\CRM.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0823537B-52EF-441F-A2F1-F8D4A38E93AB}|Custo\\Custo.xsproj|D:\\develop\\xsharp\\voapps\\Custo\\Custo.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{0823537B-52EF-441F-A2F1-F8D4A38E93AB}|Custo\\Custo.xsproj|solutionrelative:Custo\\Custo.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C31B2453-CA15-40ED-87E4-38B1CED641C2}|Emailprg\\Emailprg.xsproj|D:\\develop\\xsharp\\voapps\\Emailprg\\Emailprg.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{C31B2453-CA15-40ED-87E4-38B1CED641C2}|Emailprg\\Emailprg.xsproj|solutionrelative:Emailprg\\Emailprg.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7F7CEDE-3FAE-42AF-B6E3-3E8B7917DE3C}|Engenharia\\Engenharia.xsproj|D:\\develop\\xsharp\\voapps\\Engenharia\\Engenharia.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{D7F7CEDE-3FAE-42AF-B6E3-3E8B7917DE3C}|Engenharia\\Engenharia.xsproj|solutionrelative:Engenharia\\Engenharia.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70C2FCF-2F9E-45B9-B780-D9A82056831C}|esccodmon\\esccodmon.xsproj|D:\\develop\\xsharp\\voapps\\esccodmon\\esccodmon.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{B70C2FCF-2F9E-45B9-B780-D9A82056831C}|esccodmon\\esccodmon.xsproj|solutionrelative:esccodmon\\esccodmon.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47215673-C8DC-4E7B-9AF4-8A316A3B26EC}|escolhemp04\\escolhemp04.xsproj|D:\\develop\\xsharp\\voapps\\escolhemp04\\escolhemp04.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{47215673-C8DC-4E7B-9AF4-8A316A3B26EC}|escolhemp04\\escolhemp04.xsproj|solutionrelative:escolhemp04\\escolhemp04.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BC53417-899E-4B1B-BDB4-B01B063EF143}|FabPaintLibControlvo\\FabPaintLibControlvo.xsproj|D:\\develop\\xsharp\\voapps\\FabPaintLibControlvo\\FabPaintLibControlvo.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{9BC53417-899E-4B1B-BDB4-B01B063EF143}|FabPaintLibControlvo\\FabPaintLibControlvo.xsproj|solutionrelative:FabPaintLibControlvo\\FabPaintLibControlvo.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83698C26-4E7C-4A53-ABA8-994B8C4C7592}|FabPaintLibvo\\FabPaintLibvo.xsproj|D:\\develop\\xsharp\\voapps\\FabPaintLibvo\\FabPaintLibvo.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{83698C26-4E7C-4A53-ABA8-994B8C4C7592}|FabPaintLibvo\\FabPaintLibvo.xsproj|solutionrelative:FabPaintLibvo\\FabPaintLibvo.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26E915F8-5C7D-4746-B87C-6EBCF336E4C6}|Me04.jan\\Me04.jan.xsproj|D:\\develop\\xsharp\\voapps\\Me04.jan\\Me04.jan.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{26E915F8-5C7D-4746-B87C-6EBCF336E4C6}|Me04.jan\\Me04.jan.xsproj|solutionrelative:Me04.jan\\Me04.jan.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
+      "AbsoluteMoniker": "D:0:0:{3D4263C5-A701-43D6-A424-E160B4F00966}|RightSLEvo\\RightSLEvo.xsproj|D:\\develop\\xsharp\\voapps\\RightSLEvo\\Class rightSLE.prg||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|",
+      "RelativeMoniker": "D:0:0:{3D4263C5-A701-43D6-A424-E160B4F00966}|RightSLEvo\\RightSLEvo.xsproj|solutionrelative:RightSLEvo\\Class rightSLE.prg||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -92,133 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Me04.jan",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Me04.jan\\Me04.jan.xsproj",
-              "RelativeDocumentMoniker": "Me04.jan\\Me04.jan.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\Me04.jan\\Me04.jan.xsproj",
-              "RelativeToolTip": "Me04.jan\\Me04.jan.xsproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-10T00:01:48.89Z",
+              "Title": "Class PECalendar.prg",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\RightSLEvo\\Class PECalendar.prg",
+              "RelativeDocumentMoniker": "RightSLEvo\\Class PECalendar.prg",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\RightSLEvo\\Class PECalendar.prg",
+              "RelativeToolTip": "RightSLEvo\\Class PECalendar.prg",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAiwGAAAAAFAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALvSURBVDhPzZFJTFNRFIbPva\u002BDryBTaRlSRkVkEFpAXKAQEqMIVqERSZVAQkLisNNEE9wguHCIMS4UF8QBAgmTE0TUiEYxQRmjIi0EBSpjoaHF1veg9D7fe2Fp4sKN3\u002Brce/5z7vnvgX\u002BC4zi0Ef6VhuY3vB4BRhyEaVRCLWRm7ADU/nxIrs/RrVZUtyVJKPy5qqJALKgZuAY21qrjdcC/MoQ/ZuCKs/nkSOktaH1wWtQIUKtYSzh5yrppbOHEvuz4Jtp/ly38whwEKULPvJ/talteXTL6bwq8TC/GbrHYoq2\u002BPvQlH1WGK323Id78\u002BdlDPDI6y\u002BXnJR/jgEM3al4PM6wb\u002BcuVqHvm5VWEgOiji1Teg/tiTKOzJ/kj8vORFbp\u002BsXKpBJjKK4/SsPljNSw7fjV70TKG90XRtKyRlije8dPhGN/4JgfrcE9YbOnWpZ\u002BFGAHHsB4DRwgiBMIqzxf0Y8FHQmwoGPRaP4QQ\u002BWKaLppzTmfwzskaWSueao\u002BA5ITgBoqSWhVe9KLTtWoERBGDXnfcumgHSmjQ2VEHhw1lRCantthVfcnstD8Ys/OyvjtGLfb\u002BSPgwMNUzN7\u002BsAyBS/lMNDLsWOjI6vxfA0yxOICBP/wSy3M5EhAl4nAoYexwa9eGiFooK0kCfoz3FAaYiI1R1\u002BgO6ct6d5\u002BD\u002B5PLEuHC72KB26CYoN6k3W5zjWuWeSXB\u002B1UDHi\u002BF727YG4/y8VKit7x5yuz1chCagKzCANguLvd/YM5i9Jw7EBuN2E6o33V7ix0NH40qz1CqfEf4aO13st3OVLbArNRLMvdWSlCRNhzpws9vcWyXdmRImlALObUkDtSKk2E3WpAqJFzOxMtatoGVJfI7Mza\u002BEx0SpYxl2XRSXGDPZQ7mpbiGuv8M74cEh3hr0yvL0rrAB4/ZyZbxSC5M/bKTwsK5EEFy/3TU8Nr4giv8EmnZMQc/M2yA5lnsYj2upKKFMTLQ\u002B6YOVn0yQeABYKCvO3Aj/LwB\u002BA7SQL5DO3iBFAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-08-10T02:05:23.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FabPaintLibvo",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\FabPaintLibvo\\FabPaintLibvo.xsproj",
-              "RelativeDocumentMoniker": "FabPaintLibvo\\FabPaintLibvo.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\FabPaintLibvo\\FabPaintLibvo.xsproj",
-              "RelativeToolTip": "FabPaintLibvo\\FabPaintLibvo.xsproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-10T00:01:37.091Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FabPaintLibControlvo",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\FabPaintLibControlvo\\FabPaintLibControlvo.xsproj",
-              "RelativeDocumentMoniker": "FabPaintLibControlvo\\FabPaintLibControlvo.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\FabPaintLibControlvo\\FabPaintLibControlvo.xsproj",
-              "RelativeToolTip": "FabPaintLibControlvo\\FabPaintLibControlvo.xsproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-10T00:01:30.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "escolhemp04",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\escolhemp04\\escolhemp04.xsproj",
-              "RelativeDocumentMoniker": "escolhemp04\\escolhemp04.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\escolhemp04\\escolhemp04.xsproj",
-              "RelativeToolTip": "escolhemp04\\escolhemp04.xsproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-10T00:00:36.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "esccodmon",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\esccodmon\\esccodmon.xsproj",
-              "RelativeDocumentMoniker": "esccodmon\\esccodmon.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\esccodmon\\esccodmon.xsproj",
-              "RelativeToolTip": "esccodmon\\esccodmon.xsproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-10T00:00:26.567Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Engenharia",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Engenharia\\Engenharia.xsproj",
-              "RelativeDocumentMoniker": "Engenharia\\Engenharia.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\Engenharia\\Engenharia.xsproj",
-              "RelativeToolTip": "Engenharia\\Engenharia.xsproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-10T00:00:16.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Emailprg",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Emailprg\\Emailprg.xsproj",
-              "RelativeDocumentMoniker": "Emailprg\\Emailprg.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\Emailprg\\Emailprg.xsproj",
-              "RelativeToolTip": "Emailprg\\Emailprg.xsproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-10T00:00:03.584Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Custo",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Custo\\Custo.xsproj",
-              "RelativeDocumentMoniker": "Custo\\Custo.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\Custo\\Custo.xsproj",
-              "RelativeToolTip": "Custo\\Custo.xsproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-09T23:59:50.962Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CRM",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\CRM\\CRM.xsproj",
-              "RelativeDocumentMoniker": "CRM\\CRM.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\CRM\\CRM.xsproj",
-              "RelativeToolTip": "CRM\\CRM.xsproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-09T23:59:41.541Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "checagem",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\checagem\\checagem.xsproj",
-              "RelativeDocumentMoniker": "checagem\\checagem.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\checagem\\checagem.xsproj",
-              "RelativeToolTip": "checagem\\checagem.xsproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-09T23:59:36.119Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Banco",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Banco\\Banco.xsproj",
-              "RelativeDocumentMoniker": "Banco\\Banco.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\Banco\\Banco.xsproj",
-              "RelativeToolTip": "Banco\\Banco.xsproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-09T23:59:30.742Z",
+              "Title": "Class rightSLE.prg",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\RightSLEvo\\Class rightSLE.prg",
+              "RelativeDocumentMoniker": "RightSLEvo\\Class rightSLE.prg",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\RightSLEvo\\Class rightSLE.prg",
+              "RelativeToolTip": "RightSLEvo\\Class rightSLE.prg",
+              "ViewState": "AQIAAGEHAAAAAAAAAADgv2wHAAABAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALvSURBVDhPzZFJTFNRFIbPva\u002BDryBTaRlSRkVkEFpAXKAQEqMIVqERSZVAQkLisNNEE9wguHCIMS4UF8QBAgmTE0TUiEYxQRmjIi0EBSpjoaHF1veg9D7fe2Fp4sKN3\u002Brce/5z7vnvgX\u002BC4zi0Ef6VhuY3vB4BRhyEaVRCLWRm7ADU/nxIrs/RrVZUtyVJKPy5qqJALKgZuAY21qrjdcC/MoQ/ZuCKs/nkSOktaH1wWtQIUKtYSzh5yrppbOHEvuz4Jtp/ly38whwEKULPvJ/talteXTL6bwq8TC/GbrHYoq2\u002BPvQlH1WGK323Id78\u002BdlDPDI6y\u002BXnJR/jgEM3al4PM6wb\u002BcuVqHvm5VWEgOiji1Teg/tiTKOzJ/kj8vORFbp\u002BsXKpBJjKK4/SsPljNSw7fjV70TKG90XRtKyRlije8dPhGN/4JgfrcE9YbOnWpZ\u002BFGAHHsB4DRwgiBMIqzxf0Y8FHQmwoGPRaP4QQ\u002BWKaLppzTmfwzskaWSueao\u002BA5ITgBoqSWhVe9KLTtWoERBGDXnfcumgHSmjQ2VEHhw1lRCantthVfcnstD8Ys/OyvjtGLfb\u002BSPgwMNUzN7\u002BsAyBS/lMNDLsWOjI6vxfA0yxOICBP/wSy3M5EhAl4nAoYexwa9eGiFooK0kCfoz3FAaYiI1R1\u002BgO6ct6d5\u002BD\u002B5PLEuHC72KB26CYoN6k3W5zjWuWeSXB\u002B1UDHi\u002BF727YG4/y8VKit7x5yuz1chCagKzCANguLvd/YM5i9Jw7EBuN2E6o33V7ix0NH40qz1CqfEf4aO13st3OVLbArNRLMvdWSlCRNhzpws9vcWyXdmRImlALObUkDtSKk2E3WpAqJFzOxMtatoGVJfI7Mza\u002BEx0SpYxl2XRSXGDPZQ7mpbiGuv8M74cEh3hr0yvL0rrAB4/ZyZbxSC5M/bKTwsK5EEFy/3TU8Nr4giv8EmnZMQc/M2yA5lnsYj2upKKFMTLQ\u002B6YOVn0yQeABYKCvO3Aj/LwB\u002BA7SQL5DO3iBFAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-08-10T02:04:13.31Z",
               "EditorCaption": ""
             }
           ]
