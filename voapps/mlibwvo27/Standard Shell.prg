@@ -51,13 +51,18 @@ METHOD HelpUsingHelp
 
 METHOD lstview() 
 LOCAL cARQ AS STRING
-LOCAL nFout AS PTR
 cARQ:=PEGINIVAL(ZCURINI,"PATH","LSTVIEW")
-//nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("LSTVIEW"),String2Psz(""),String2Psz(carq),SW_SHOWNORMAL)  
 //abre o lstview ja disponivel no wrptx nao precisando de um exe separado
-nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTX"),String2Psz("lstview"),String2Psz(carq),SW_SHOWNORMAL)  
-ShellExecuteErro(nFout) 
+ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTX"),String2Psz("lstview"),String2Psz(carq),SW_SHOWNORMAL)
 
+
+METHOD xversao()
+LOCAL cARQ,cARQHLP AS STRING
+cARQHLP:=PEGINIVAL(ZCURINI,"HELP","ALTERADO")
+cARQ:=PEGINIVAL(ZCURINI,"PATH","RPT")
+//wrptx abre preview quando passao um txt
+ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTX"),String2Psz(carqHLP),String2Psz(carq),SW_SHOWNORMAL)
+		
 METHOD WindowCascade() 
 
 	SELF:Arrange(ARRANGECASCADE)
