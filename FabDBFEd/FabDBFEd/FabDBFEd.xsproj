@@ -56,12 +56,12 @@
   </PropertyGroup>
   <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
   <ItemGroup>
-    <Reference Include="ICSharpCode.TextEditorEx, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null">
+    <Reference Include="ICSharpCode.TextEditorEx, Version=1.3.0.0, Culture=neutral, PublicKeyToken=null">
       <Name>ICSharpCode.TextEditorEx</Name>
       <AssemblyName>ICSharpCode.TextEditorEx.dll</AssemblyName>
       <SpecificVersion>False</SpecificVersion>
       <Private>True</Private>
-      <HintPath>..\packages\ICSharpCode.TextEditorEx.1.1.0\lib\net40\ICSharpCode.TextEditorEx.dll</HintPath>
+      <HintPath>..\packages\ICSharpCode.TextEditorEx.1.3.0\lib\net40\ICSharpCode.TextEditorEx.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp">
       <Name>Microsoft.CSharp</Name>
@@ -73,13 +73,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data.SQLite, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139">
-      <Name>System.Data.SQLite</Name>
-      <AssemblyName>System.Data.SQLite.dll</AssemblyName>
-      <SpecificVersion>False</SpecificVersion>
-      <Private>True</Private>
-      <HintPath>System.Data.SQLite.dll</HintPath>
-    </Reference>
     <Reference Include="System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Name>System.Design</Name>
       <AssemblyName>System.Design.dll</AssemblyName>
