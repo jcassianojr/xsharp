@@ -2,11 +2,11 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
   <PropertyGroup>
-    <ProjectGuid>DFC66EC1-1D6C-471D-ACFB-6609EA4A7633</ProjectGuid>
+    <ProjectGuid>E05C204E-5953-41C2-87E6-BFF32F04DD2B</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>SQLite</RootNamespace>
     <AssemblyName>SQLite</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <Name>SQLite</Name>
     <Dialect>VO</Dialect>
     <LB>true</LB>
@@ -39,18 +39,12 @@
     <Undeclared>false</Undeclared>
     <NoStandardDefs>false</NoStandardDefs>
     <EnforceSelf>True</EnforceSelf>
-    <TargetFrameworkProfile />
-    <StartupObject />
-    <NamedArgs>False</NamedArgs>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
     <PlatformTarget>x86</PlatformTarget>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DisabledWarnings>9032;9043;165;649;9025;9026;9076;9020;9021</DisabledWarnings>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <Prefer32Bit>False</Prefer32Bit>
-    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
-    <OutputPath>d:\develop\modelos\xsharpexe\debugnet\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Label="Configuration">
     <PlatformTarget>x86</PlatformTarget>
@@ -85,30 +79,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SQLite Functions.prg">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SQLite Classes.prg">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Globals.prg">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Notes.prg">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SQLite Script.prg">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SQLite Connection.prg">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="sqlfunctionscnv.prg">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties" />
+<Compile Include="SQLite Functions.prg">
+  <SubType>Code</SubType>
+</Compile>
+<Compile Include="SQLite Classes.prg">
+  <SubType>Code</SubType>
+</Compile>
+<Compile Include="Globals.prg">
+  <SubType>Code</SubType>
+</Compile>
+<Compile Include="Notes.prg">
+  <SubType>Code</SubType>
+</Compile>
   </ItemGroup>
   <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
   <ProjectExtensions>

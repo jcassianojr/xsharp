@@ -1,4 +1,4 @@
-FUNCTION DBF2CSV(cCSVFile AS STRING, cDBFFile AS STRING) AS VOID STRICT
+﻿FUNCTION DBF2CSV(cCSVFile AS STRING, cDBFFile AS STRING) AS VOID STRICT
 	// cCSVFile is the name of the output file; cDBFFile is the name of the DBF
 	LOCAL phandle  AS PTR 
   LOCAL oOutput  AS DBServer  
@@ -10,7 +10,7 @@ FUNCTION DBF2CSV(cCSVFile AS STRING, cDBFFile AS STRING) AS VOID STRICT
   LOCAL cSeparator AS STRING
   LOCAL CRLF     AS STRING
   
-  CRLF := Chr( 13 ) + Chr(10) // line terminator
+  CRLF := CHR( 13 ) + CHR(10) // line terminator
   
   cSeparator := "|"  // SQLite uses pipe characters as CSV separators
   
@@ -47,9 +47,9 @@ FUNCTION DBF2CSV(cCSVFile AS STRING, cDBFFile AS STRING) AS VOID STRICT
         // here we strip characters that will get in the way of the import
 		    cVar := Trim( StrTran( oOutput:FIELDGET( nTemCnt ), e"\"") ) // no quotes
 		    cVar := StrTran( cVar, CRLF, "<CR>" ) // no returns
-		    cVar := StrTran( cVar, Chr( 13 ) )  // found this in a notepad file
-		    cVar := StrTran( cVar, Chr( 10 ) )  // found this in a notepad file
-		    cVar := StrTran( cVar, Chr( 2 ) )  // found this in a notepad file
+		    cVar := StrTran( cVar, CHR( 13 ) )  // found this in a notepad file
+		    cVar := StrTran( cVar, CHR( 10 ) )  // found this in a notepad file
+		    cVar := StrTran( cVar, CHR( 2 ) )  // found this in a notepad file
 
 	 	 	CASE aResAry[nTemCnt, DBS_TYPE ] = "N"   // if it's a numeric field
 	 	   	IF oOutput:FIELDGET(nTemCnt) = 0
@@ -194,38 +194,66 @@ FUNCTION XDefaultVal( cType AS STRING ) AS USUAL
 	RETURN uReturn
 
 FUNCTION XInsertStmt( cTable AS STRING, aSave AS ARRAY ) AS STRING STRICT
-	LOCAL cReturn AS STRING                  
-	LOCAL nTemCnt, nTemLen AS DWORD     
+	LOCAL cReturn AS STRING
+	LOCAL nTemCnt, nTemLen AS DWORD
 	// creates a SQL INSERT statement based on the aSave array of fields and values
 	
 	
 	// aSave is a multi-dimensional array of variables to be saved.
-  // { { cFieldName, uVar } }  
+  // { { cFieldName, uVar } }
   // Example: { { "ACCOUNT", nClient }, {"ADDRESS", cAddr}, {"CITY", cCity} }
 
 	cReturn := "INSERT INTO " + cTable + "("
 	nTemLen := ALen( aSave )
   IF nTemLen = 0
   	RETURN Space(1)
-  ENDIF 
+  ENDIF
   cReturn += RTrim( aSave[ 1, 1] )
-	FOR nTemCnt := 2 UPTO (nTemLen) 
+	FOR nTemCnt := 2 UPTO (nTemLen)
 		cReturn += 	", " + RTrim( aSave[ nTemCnt, 1 ] ) + ","
-	NEXT 
+	NEXT
 	cReturn += ") VALUES ("
 
-  
-  FOR nTemCnt := 1 UPTO nTemLen 
+
+  FOR nTemCnt := 1 UPTO nTemLen
 		cReturn := Usual2Stmt( aSave[ nTemCnt, 2] )
     IF nTemCnt < nTemLen
     	cReturn += ","
     ENDIF
   NEXT
   cReturn += ")"
-  
+
 *  FWrite( GLOpHANDLE, cReturn )
 
 	RETURN cReturn
+
+FUNCTION XRecCount( oTable AS XSQLTable, cWhere AS STRING ) AS INT STRICT 
+	LOCAL nReturn AS INT
+	LOCAL oSelect AS XSQLSelect
+	LOCAL cStatement AS STRING    
+  // a work-around for RecCount().  Creates a select cursor and a field
+  // named XCount, which contains the count.  WHERE clause is optional
+	cStatement := "SELECT count(*) AS XCOUNT FROM " + oTable:Name
+	IF !Empty( cWhere ) 
+		cStatement += " WHERE " + cWhere
+	ENDIF
+	oSelect := XSQLSelect{ cStatement, GLOoCONNECTION }  
+	nReturn := oSelect:FIELDGET(#XCOUNT) 
+	oSelect:Close()
+  RETURN nReturn
+
+FUNCTION XReplQ( cFile AS STRING ) AS STRING STRICT
+	LOCAL nSeconds AS DWORD
+  LOCAL cNumber, cTemStr  AS STRING
+  STATIC nRand  := 0 AS INT
+  // creates a new ID
+  nRand ++
+  cTemStr := Str3(Rand(nRand), 12, 9)
+	cNumber := Right( cTemStr, 7) 
+  // 4th character runs chr(63) "?" through chr(122) "z" 
+  // NOTE: IT NEVER CAN BE 39 (' single quote, which plays hell with SQLite)
+  nSeconds := Val(SubStr(Time(),7,2)) + 63
+  RETURN PadR( cFile, 3, "_") + CHR( nSeconds ) + cNumber
 
 FUNCTION XStatement( cStatement AS STRING ) AS LOGIC STRICT
 	LOCAL oStmt AS SQLStatement

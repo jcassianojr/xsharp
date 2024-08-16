@@ -1,4 +1,4 @@
-CLASS XSQLSelect INHERIT SQLSelect
+﻿CLASS XSQLSelect INHERIT SQLSelect
 
 // constructor inserted by xPorter, remove superfluous arguments
 CONSTRUCTOR(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9) CLIPPER
@@ -20,20 +20,21 @@ METHOD CountRecs()
   	SELF:GoTop()
   ENDIF
   RETURN nReturn
- 
-METHOD GetDateField( sField )  
+
+METHOD GetDateField( sField ) 
 	// returns a YYYYMMDD to a date variable
 	RETURN SToD( SELF:FIELDGET(sField) )
 
-METHOD NoNilGet( sField )  
-	LOCAL cReturn AS STRING  
-  // works on Char fields; fixes the problem of NULL values in the merge file 
-	IF IsNil( SELF:FIELDGET(sField) ) 
+METHOD NoNilGet( sField ) 
+	LOCAL cReturn AS STRING
+  // works on Char fields; fixes the problem of NULL values in the merge file
+	IF IsNil( SELF:FIELDGET(sField) )
 		cReturn := Space(1)
 	ELSE
 		cReturn := SELF:FIELDGET( sField )
 	ENDIF
-	RETURN cReturn      
+	RETURN cReturn
+
 METHOD XSkip( nSkip ) 
   // IF YOU'RE GETTING AN ERROR THAT POINTS TO SKIP(), it's probably because of a FIELDGET(# error
   // (at least it was today 6-20-2015).  Check the fields in both the code and in the selection
@@ -83,21 +84,21 @@ METHOD AppendNew()
   RETURN TRUE
 
 METHOD CopyStructure( cNewTable ) 
-	LOCAL oSelect AS XSQLSelect 
+	LOCAL oSelect AS XSQLSelect
 	LOCAL cStatement AS STRING
 	LOCAL lReturn  AS LOGIC
   // creates a new table with the structure from the current table
 	cStatement := Space(0)
   // get the structure
-	oSelect := XSQLSelect{ "SELECT sql FROM sqlite_master WHERE type = 'table' AND tbl_name = '" + SELF:Name + "'", GLOoCONNECTION }  
-	oSelect:GoTop()   
+	oSelect := XSQLSelect{ "SELECT sql FROM sqlite_master WHERE type = 'table' AND tbl_name = '" + SELF:Name + "'", GLOoCONNECTION }
+	oSelect:GoTop()
 	cStatement := oSelect:FIELDGET(#sql)
   // create the new table
   cStatement := "CREATE TABLE " + AllTrim( cNewTable) + SubStr2( cStatement, At( "(", cStatement ) )
-  oSelect:SQLString := cStatement 
+  oSelect:SQLString := cStatement
   lReturn := oSelect:Statement:Execute()
-	oSelect:Close() 
-	RETURN lreturn
+	oSelect:Close()
+	RETURN lReturn
 
 METHOD dbOutStruct() 
 	LOCAL oSelect AS XSQLSelect 
@@ -256,31 +257,3 @@ METHOD XReplDT()
 
 
 END CLASS
-FUNCTION XRecCount( oTable AS XSQLTable, cWhere AS STRING ) AS INT STRICT 
-	LOCAL nReturn AS INT
-	LOCAL oSelect AS XSQLSelect
-	LOCAL cStatement AS STRING    
-  // a work-around for RecCount().  Creates a select cursor and a field
-  // named XCount, which contains the count.  WHERE clause is optional
-	cStatement := "SELECT count(*) AS XCOUNT FROM " + oTable:Name
-	IF !Empty( cWhere ) 
-		cStatement += " WHERE " + cWhere
-	ENDIF
-	oSelect := XSQLSelect{ cStatement, GLOoCONNECTION }  
-	nReturn := oSelect:FIELDGET(#XCOUNT) 
-	oSelect:Close()
-  RETURN nReturn
-
-FUNCTION XReplQ( cFile AS STRING ) AS STRING STRICT
-	LOCAL nSeconds AS DWORD
-  LOCAL cNumber, cTemStr  AS STRING
-  STATIC nRand  := 0 AS INT
-  // creates a new ID
-  nRand ++
-  cTemStr := Str3(Rand(nRand), 12, 9)
-	cNumber := Right( cTemStr, 7) 
-  // 4th character runs chr(63) "?" through chr(122) "z" 
-  // NOTE: IT NEVER CAN BE 39 (' single quote, which plays hell with SQLite)
-  nSeconds := Val(SubStr(Time(),7,2)) + 63
-  RETURN PadR( cFile, 3, "_") + Chr( nSeconds ) + cNumber
-
