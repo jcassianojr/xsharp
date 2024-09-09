@@ -5,9 +5,11 @@ DEFINE RC_RT_MANIFEST                     := 24
 
 [STAThread];
 FUNCTION Start() AS INT
-	LOCAL oXApp AS XApp
+	LOCAL oXApp AS XApp  
+//	Application.EnableVisualStyles()
+//Application.SetCompatibleTextRenderingDefault( FALSE )
 	TRY
-		oXApp := XApp{}
+		oXApp := XApp{}         
 		oXApp:Start()
 	CATCH oException AS Exception
 		ErrorDialog(oException)
@@ -22,67 +24,6 @@ METHOD Start()
 	LOCAL aDAD,aLOGIN AS ARRAY       
 	
 	 
-	 /*
-	//
-	// odbc requer no wchar marcado senao tras so a primeira letra
-	//
-	//
-	//
-	
-	
-	LOCAL GLOoCONNECTION AS  SQLConnection   
-	LOCAL cStatement AS STRING   
-	LOCAL cCONN AS STRING
-	LOCAL GLOoSTATEMENT AS SQLStatemenT    
-	LOCAL GLOcDATABASE AS STRING                
-	LOCAL GLOcALIAS AS STRING 
-	LOCAL CSQL AS STRING
-	LOCAL OREG AS SQLSelect 
-	LOCAL cVALOR AS STRING
-	
-	SQLConnectErrorMsg( TRUE )         
-	cCONN :=   "SQLite3"
-//	cCONN :=   "Access"
-	GLOoCONNECTION := SQLConnection{cCONN, "", "" }	    
-	
-	GLOoCONNECTION:connect()
-  IF GLOoCONNECTION:Connected    
-  	 alert ("Connected")
-  ENDIF  
- 
- // if there's a secondary database, attach it first    
- // 	GLOcDATABASE := "d:\develop\modelos\banco\banco.sqlite"     
-//  	GLOcDATABASE := "d:\develop\modelos\controle\pf.mdb"     
-//  	GLOcALIAS := "banco"
- // 	GLOcALIAS := "pf"       
- 
-    GLOcDATABASE := "c:\temp\chinook.sqlite "	  
-    GLOcALIAS :=  "chinook"
-    
-  cStatement := "ATTACH DATABASE '"+GLOcDATABASE+"' AS "+ GLOcALIAS
- 	GLOoSTATEMENT := SQLStatement{cStatement , GLOoCONNECTION }
-
- IF !GLOoSTATEMENT:Execute()
-		// we've used this method primarily to test for correct syntax
-		ALERT( "didn't execute " + cStatement) 
-		RETURN FALSE
- ENDIF  
- 
- cSQL :="SELECT  name as nome  FROM genres;"
-
-  oreg:= SQLSelect{cSQL,GLOoCONNECTION}
-   WHILE ! OREG:EoF	
-    //   cVALOR:=oREG:FieldGetFormatted("Nome") 
-       cVALOR:=  oreg:FieldGet(1)
-    //   ALERT(Str(Len(oREG:FIELDGET("Name"))))   
-     //  alert(ValType(oREG:FIELDGET("Name")) )
-       ALERT(cVALOR)
-    Oreg:skip()
-   ENDDO    
-   
- //GLOoSTATEMENT:FreeStmt( SQL_DROP  )
- */
-                
 	SetExclusive(FALSE)
 	SetDeleted(TRUE)
 	SetSoftSeek(TRUE)
@@ -93,7 +34,9 @@ METHOD Start()
     SetEpoch(Year(Today())-60)
     SetDateFormat("DD/MM/YYYY")
     SetDeleted( .T. )
-
+    
+   // Application.EnableVisualStyles()
+    //Application.SetCompatibleTextRenderingDefault( FALSE )
     EnableAppVisualTheme(TRUE)
     DisableProcessWindowsGhosting()
 
