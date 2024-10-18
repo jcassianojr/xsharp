@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\develop\\xsharp\\voapps\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4263C5-A701-43D6-A424-E160B4F00966}|RightSLEvo\\RightSLEvo.xsproj|D:\\develop\\xsharp\\voapps\\RightSLEvo\\Class PECalendar.prg||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|",
+      "RelativeMoniker": "D:0:0:{3D4263C5-A701-43D6-A424-E160B4F00966}|RightSLEvo\\RightSLEvo.xsproj|solutionrelative:RightSLEvo\\Class PECalendar.prg||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D4263C5-A701-43D6-A424-E160B4F00966}|RightSLEvo\\RightSLEvo.xsproj|D:\\develop\\xsharp\\voapps\\RightSLEvo\\Class rightSLE.prg||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|",
+      "RelativeMoniker": "D:0:0:{3D4263C5-A701-43D6-A424-E160B4F00966}|RightSLEvo\\RightSLEvo.xsproj|solutionrelative:RightSLEvo\\Class rightSLE.prg||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 195,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class PECalendar.prg",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\RightSLEvo\\Class PECalendar.prg",
+              "RelativeDocumentMoniker": "RightSLEvo\\Class PECalendar.prg",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\RightSLEvo\\Class PECalendar.prg",
+              "RelativeToolTip": "RightSLEvo\\Class PECalendar.prg",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAiwGAAAAAFAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALvSURBVDhPzZFJTFNRFIbPva\u002BDryBTaRlSRkVkEFpAXKAQEqMIVqERSZVAQkLisNNEE9wguHCIMS4UF8QBAgmTE0TUiEYxQRmjIi0EBSpjoaHF1veg9D7fe2Fp4sKN3\u002Brce/5z7vnvgX\u002BC4zi0Ef6VhuY3vB4BRhyEaVRCLWRm7ADU/nxIrs/RrVZUtyVJKPy5qqJALKgZuAY21qrjdcC/MoQ/ZuCKs/nkSOktaH1wWtQIUKtYSzh5yrppbOHEvuz4Jtp/ly38whwEKULPvJ/talteXTL6bwq8TC/GbrHYoq2\u002BPvQlH1WGK323Id78\u002BdlDPDI6y\u002BXnJR/jgEM3al4PM6wb\u002BcuVqHvm5VWEgOiji1Teg/tiTKOzJ/kj8vORFbp\u002BsXKpBJjKK4/SsPljNSw7fjV70TKG90XRtKyRlije8dPhGN/4JgfrcE9YbOnWpZ\u002BFGAHHsB4DRwgiBMIqzxf0Y8FHQmwoGPRaP4QQ\u002BWKaLppzTmfwzskaWSueao\u002BA5ITgBoqSWhVe9KLTtWoERBGDXnfcumgHSmjQ2VEHhw1lRCantthVfcnstD8Ys/OyvjtGLfb\u002BSPgwMNUzN7\u002BsAyBS/lMNDLsWOjI6vxfA0yxOICBP/wSy3M5EhAl4nAoYexwa9eGiFooK0kCfoz3FAaYiI1R1\u002BgO6ct6d5\u002BD\u002B5PLEuHC72KB26CYoN6k3W5zjWuWeSXB\u002B1UDHi\u002BF727YG4/y8VKit7x5yuz1chCagKzCANguLvd/YM5i9Jw7EBuN2E6o33V7ix0NH40qz1CqfEf4aO13st3OVLbArNRLMvdWSlCRNhzpws9vcWyXdmRImlALObUkDtSKk2E3WpAqJFzOxMtatoGVJfI7Mza\u002BEx0SpYxl2XRSXGDPZQ7mpbiGuv8M74cEh3hr0yvL0rrAB4/ZyZbxSC5M/bKTwsK5EEFy/3TU8Nr4giv8EmnZMQc/M2yA5lnsYj2upKKFMTLQ\u002B6YOVn0yQeABYKCvO3Aj/LwB\u002BA7SQL5DO3iBFAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-08-10T02:05:23.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class rightSLE.prg",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\RightSLEvo\\Class rightSLE.prg",
+              "RelativeDocumentMoniker": "RightSLEvo\\Class rightSLE.prg",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\RightSLEvo\\Class rightSLE.prg",
+              "RelativeToolTip": "RightSLEvo\\Class rightSLE.prg",
+              "ViewState": "AQIAAGEHAAAAAAAAAADgv2wHAAABAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALvSURBVDhPzZFJTFNRFIbPva\u002BDryBTaRlSRkVkEFpAXKAQEqMIVqERSZVAQkLisNNEE9wguHCIMS4UF8QBAgmTE0TUiEYxQRmjIi0EBSpjoaHF1veg9D7fe2Fp4sKN3\u002Brce/5z7vnvgX\u002BC4zi0Ef6VhuY3vB4BRhyEaVRCLWRm7ADU/nxIrs/RrVZUtyVJKPy5qqJALKgZuAY21qrjdcC/MoQ/ZuCKs/nkSOktaH1wWtQIUKtYSzh5yrppbOHEvuz4Jtp/ly38whwEKULPvJ/talteXTL6bwq8TC/GbrHYoq2\u002BPvQlH1WGK323Id78\u002BdlDPDI6y\u002BXnJR/jgEM3al4PM6wb\u002BcuVqHvm5VWEgOiji1Teg/tiTKOzJ/kj8vORFbp\u002BsXKpBJjKK4/SsPljNSw7fjV70TKG90XRtKyRlije8dPhGN/4JgfrcE9YbOnWpZ\u002BFGAHHsB4DRwgiBMIqzxf0Y8FHQmwoGPRaP4QQ\u002BWKaLppzTmfwzskaWSueao\u002BA5ITgBoqSWhVe9KLTtWoERBGDXnfcumgHSmjQ2VEHhw1lRCantthVfcnstD8Ys/OyvjtGLfb\u002BSPgwMNUzN7\u002BsAyBS/lMNDLsWOjI6vxfA0yxOICBP/wSy3M5EhAl4nAoYexwa9eGiFooK0kCfoz3FAaYiI1R1\u002BgO6ct6d5\u002BD\u002B5PLEuHC72KB26CYoN6k3W5zjWuWeSXB\u002B1UDHi\u002BF727YG4/y8VKit7x5yuz1chCagKzCANguLvd/YM5i9Jw7EBuN2E6o33V7ix0NH40qz1CqfEf4aO13st3OVLbArNRLMvdWSlCRNhzpws9vcWyXdmRImlALObUkDtSKk2E3WpAqJFzOxMtatoGVJfI7Mza\u002BEx0SpYxl2XRSXGDPZQ7mpbiGuv8M74cEh3hr0yvL0rrAB4/ZyZbxSC5M/bKTwsK5EEFy/3TU8Nr4giv8EmnZMQc/M2yA5lnsYj2upKKFMTLQ\u002B6YOVn0yQeABYKCvO3Aj/LwB\u002BA7SQL5DO3iBFAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-08-10T02:04:13.31Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
