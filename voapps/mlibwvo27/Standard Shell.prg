@@ -53,7 +53,7 @@ METHOD lstview()
 LOCAL cARQ AS STRING
 cARQ:=PEGINIVAL(ZCURINI,"PATH","LSTVIEW")
 //abre o lstview ja disponivel no wrptx nao precisando de um exe separado
-ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTX"),String2Psz("lstview"),String2Psz(carq),SW_SHOWNORMAL)
+ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPT"),String2Psz("lstview"),String2Psz(carq),SW_SHOWNORMAL)
 
 
 METHOD xversao()
@@ -61,7 +61,7 @@ LOCAL cARQ,cARQHLP AS STRING
 cARQHLP:=PEGINIVAL(ZCURINI,"HELP","ALTERADO")
 cARQ:=PEGINIVAL(ZCURINI,"PATH","RPT")
 //wrptx abre preview quando passao um txt
-ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTX"),String2Psz(carqHLP),String2Psz(carq),SW_SHOWNORMAL)
+ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPT"),String2Psz(carqHLP),String2Psz(carq),SW_SHOWNORMAL)
 		
 METHOD WindowCascade() 
 
@@ -86,7 +86,7 @@ IF cNOME="SUPERVISOR" .OR. cNOME="SOFTEC"
    cNOME:="ADMIN"	
 ENDIF
 cARQ:=PEGINIVAL(ZCURINI,"WRPT","CAMINHO")
-nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTX"),String2Psz("$"+cNOME+"%#"),String2Psz(carq),SW_SHOWNORMAL)  
+nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPT"),String2Psz("X$"+cNOME+"%#"),String2Psz(carq),SW_SHOWNORMAL)  
 ShellExecuteErro(nFout) 
 
 METHOD XWRPTGRP(cGRP,cSUB) 
@@ -97,7 +97,7 @@ IF cNOME="SUPERVISOR" .OR. cNOME="SOFTEC"
    cNOME:="ADMIN"	
 ENDIF
 cARQ:=PEGINIVAL(ZCURINI,"WRPT","CAMINHO")
-nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTX"),String2Psz("$"+CNOME+"%"+cGRP+"#"+cSUB),String2Psz(carq),SW_SHOWNORMAL)  
+nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPT"),String2Psz("X$"+CNOME+"%"+cGRP+"#"+cSUB),String2Psz(carq),SW_SHOWNORMAL)  
 ShellExecuteErro(nFout) 
 
 
@@ -113,7 +113,7 @@ ENDIF
 cARQ:=PEGINIVAL(ZCURINI,"WRPT","CAMINHO")
 //cARQ+="WRPTF.EXE $"+cNOME+"%#"
 //oRUN:RUN(cARQ)	
-nfout:=ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTF"),String2Psz("$"+cNOME+"%#"),String2Psz(carq),SW_SHOWNORMAL) 
+nfout:=ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPT"),String2Psz("F$"+cNOME+"%#"),String2Psz(carq),SW_SHOWNORMAL) 
 ShellExecuteErro(nFout)  
 		
 
@@ -129,7 +129,7 @@ ENDIF
 cARQ:=PEGINIVAL(ZCURINI,"WRPT","CAMINHO")
 //cARQ+="WRPTF.EXE $"+CNOME+"%"+cGRP+"#"+cSUB
 //oRUN:RUN(cARQ)		
-Nfout:=ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTF"),String2Psz("$"+CNOME+"%"+cGRP+"#"+cSUB),String2Psz(carq),SW_SHOWNORMAL) 
+Nfout:=ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPT"),String2Psz("F$"+CNOME+"%"+cGRP+"#"+cSUB),String2Psz(carq),SW_SHOWNORMAL) 
 ShellExecuteErro(nFout)  
 
 
@@ -141,7 +141,7 @@ IF cNOME="SUPERVISOR" .OR. cNOME="SOFTEC"
    cNOME:="ADMIN"	
 ENDIF
 cARQ:=PEGINIVAL(ZCURINI,"WRPT","CAMINHO")
-nfout:=ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTI"),String2Psz("$"+cNOME+"%#"),String2Psz(carq),SW_SHOWNORMAL)  
+nfout:=ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPT"),String2Psz("I$"+cNOME+"%#"),String2Psz(carq),SW_SHOWNORMAL)  
 ShellExecuteErro(nFout) 
 
 METHOD XWRPTIGRP(cGRP,cSUB) 
@@ -152,6 +152,6 @@ IF cNOME="SUPERVISOR" .OR. cNOME="SOFTEC"
    cNOME:="ADMIN"	
 ENDIF
 cARQ:=PEGINIVAL(ZCURINI,"WRPT","CAMINHO")
-Nfout:=ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTI"),String2Psz("$"+CNOME+"%"+cGRP+"#"+cSUB),String2Psz(carq),SW_SHOWNORMAL)  
+Nfout:=ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPT"),String2Psz("I$"+CNOME+"%"+cGRP+"#"+cSUB),String2Psz(carq),SW_SHOWNORMAL)  
 ShellExecuteErro(nFout) 
 END CLASS

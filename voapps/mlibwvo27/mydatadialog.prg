@@ -59,7 +59,7 @@ IF cNOME="SUPERVISOR" .OR. cNOME="SOFTEC"
    cNOME:="ADMIN"	
 ENDIF
 cARQ:=PEGINIVAL(ZCURINI,"WRPT","CAMINHO")
-nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTX"),String2Psz("$"+CNOME+"%"+cGRP+"#"+cSUB),String2Psz(carq),SW_SHOWNORMAL)  
+nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPT"),String2Psz("X$"+CNOME+"%"+cGRP+"#"+cSUB),String2Psz(carq),SW_SHOWNORMAL)  
 ShellExecuteErro(nFout) 
 
 END CLASS

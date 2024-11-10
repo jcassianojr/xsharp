@@ -73,9 +73,6 @@ oJAN:SHOW()
 	 ENDIF
 	
 
-
-
-
 METHOD XWRPTFGRP(cGRP,cSUB) 
 LOCAL cARQ,CNOME AS STRING  
 LOCAL nFout AS PTR
@@ -84,7 +81,7 @@ IF cNOME="SUPERVISOR" .OR. cNOME="SOFTEC"
    cNOME:="ADMIN"	
 ENDIF
 cARQ:=PEGINIVAL(ZCURINI,"WRPT","CAMINHO")
-nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTX"),String2Psz("$"+CNOME+"%"+cGRP+"#"+cSUB),String2Psz(carq),SW_SHOWNORMAL)  
+nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPT"),String2Psz("X$"+CNOME+"%"+cGRP+"#"+cSUB),String2Psz(carq),SW_SHOWNORMAL)  
 ShellExecuteErro(nFout) 
 
 METHOD XWRPTGRP(cGRP,cSUB) 
@@ -95,7 +92,7 @@ IF cNOME="SUPERVISOR" .OR. cNOME="SOFTEC"
    cNOME:="ADMIN"	
 ENDIF
 cARQ:=PEGINIVAL(ZCURINI,"WRPT","CAMINHO")
-nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTX"),String2Psz("$"+CNOME+"%"+cGRP+"#"+cSUB),String2Psz(carq),SW_SHOWNORMAL)  
+nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPT"),String2Psz("X$"+CNOME+"%"+cGRP+"#"+cSUB),String2Psz(carq),SW_SHOWNORMAL)  
 ShellExecuteErro(nFout) 
 
 METHOD XWRPTIGRP(cGRP,cSUB) 
@@ -106,6 +103,6 @@ IF cNOME="SUPERVISOR" .OR. cNOME="SOFTEC"
    cNOME:="ADMIN"	
 ENDIF
 cARQ:=PEGINIVAL(ZCURINI,"WRPT","CAMINHO")
-nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPTI"),String2Psz("$"+CNOME+"%"+cGRP+"#"+cSUB),String2Psz(carq),SW_SHOWNORMAL) 
+nFout := ShellExecute(SELF:owner:handle(),String2Psz("open"),String2Psz("WRPT"),String2Psz("I$"+CNOME+"%"+cGRP+"#"+cSUB),String2Psz(carq),SW_SHOWNORMAL) 
 ShellExecuteErro(nFout)  		
 END CLASS
