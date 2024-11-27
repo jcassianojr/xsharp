@@ -3,11 +3,18 @@
   "WorkspaceRootPath": "D:\\develop\\xsharp\\voapps\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Instrumentos||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SQLite||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DFB3E267-A28E-4423-80D0-A8755FB96E8D}|Instrumentos\\Instrumentos.xsproj|D:\\develop\\xsharp\\voapps\\Instrumentos\\Instrumentos.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b",
-      "RelativeMoniker": "D:0:0:{DFB3E267-A28E-4423-80D0-A8755FB96E8D}|Instrumentos\\Instrumentos.xsproj|solutionrelative:Instrumentos\\Instrumentos.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|e994c210-9d6d-4cf4-a061-ebbea2bc626b"
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Engenharia||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57D0CE82-BAFE-4503-9A33-6ED7BC1FF13A}|Engenharia\\Engenharia.xsproj|D:\\develop\\xsharp\\voapps\\Engenharia\\Engenharia.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
+      "RelativeMoniker": "D:0:0:{57D0CE82-BAFE-4503-9A33-6ED7BC1FF13A}|Engenharia\\Engenharia.xsproj|solutionrelative:Engenharia\\Engenharia.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{579ACACB-1A26-422B-996D-4367C3A3C5E0}|sqlite\\SQLite.xsproj|D:\\develop\\xsharp\\voapps\\sqlite\\SQLite.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
+      "RelativeMoniker": "D:0:0:{579ACACB-1A26-422B-996D-4367C3A3C5E0}|sqlite\\SQLite.xsproj|solutionrelative:sqlite\\SQLite.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,14 +29,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Instrumentos",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Instrumentos\\Instrumentos.xsproj",
-              "RelativeDocumentMoniker": "Instrumentos\\Instrumentos.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\Instrumentos\\Instrumentos.xsproj",
-              "RelativeToolTip": "Instrumentos\\Instrumentos.xsproj",
+              "Title": "SQLite",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\sqlite\\SQLite.xsproj",
+              "RelativeDocumentMoniker": "sqlite\\SQLite.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\sqlite\\SQLite.xsproj",
+              "RelativeToolTip": "sqlite\\SQLite.xsproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-26T22:08:53.141Z",
+              "WhenOpened": "2024-11-27T17:59:06.548Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Engenharia",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Engenharia\\Engenharia.xsproj",
+              "RelativeDocumentMoniker": "Engenharia\\Engenharia.xsproj",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\Engenharia\\Engenharia.xsproj",
+              "RelativeToolTip": "Engenharia\\Engenharia.xsproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-27T17:57:26.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
