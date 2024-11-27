@@ -1,4 +1,4 @@
-CLASS XINDEXAR INHERIT Indexar
+﻿CLASS XINDEXAR INHERIT Indexar
 
 CONSTRUCTOR(oOWNER) 
 IF ! entramenu("ENG",5)
@@ -56,4 +56,5 @@ SELF:Browser:SetStandardStyle(gBsreadonly)
 SELF:USE(oSERVER)
 SELF:SHOW()
 
-END CLASS  
+
+END CLASS

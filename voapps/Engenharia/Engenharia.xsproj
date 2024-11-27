@@ -1,21 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
   <PropertyGroup>
-    <ProjectGuid>D7F7CEDE-3FAE-42AF-B6E3-3E8B7917DE3C</ProjectGuid>
+    <ProjectGuid>57D0CE82-BAFE-4503-9A33-6ED7BC1FF13A</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Engenharia</RootNamespace>
     <AssemblyName>Engenharia</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <Name>Engenharia</Name>
-    <Nologo>true</Nologo>
-    <GenerateFullPaths>true</GenerateFullPaths>
     <Dialect>VO</Dialect>
     <LB>true</LB>
     <OutputName>Engenharia</OutputName>
-    <StartupObject />
-    <ApplicationIcon />
     <Prefer32Bit>True</Prefer32Bit>
     <VulcanCompatibleResources>False</VulcanCompatibleResources>
     <AZ>false</AZ>
@@ -43,60 +38,45 @@
     <MemVar>false</MemVar>
     <Undeclared>false</Undeclared>
     <NoStandardDefs>false</NoStandardDefs>
-    <EnforceSelf>True</EnforceSelf>
-    <IncludePaths />
+    <EnforceSelf>false</EnforceSelf>
+    <NamedArgs>False</NamedArgs>
+    <Allowdot>false</Allowdot>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
     <PlatformTarget>x86</PlatformTarget>
-    <EmitDebugInformation>true</EmitDebugInformation>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>d:\develop\modelos\xsharpexe\debugnet\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
-    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
-    <UseSharedCompilation>true</UseSharedCompilation>
-    <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
-    <WarningLevel>4</WarningLevel>
-    <PPO>false</PPO>
+    <DisabledWarnings>9032;9043;165;649;9025;9026;9076;9020;9021</DisabledWarnings>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <Prefer32Bit>False</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Label="Configuration">
     <PlatformTarget>x86</PlatformTarget>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
-    <EmitDebugInformation>false</EmitDebugInformation>
-    <DebugType>pdbonly</DebugType>
-    <OutputPath>$(SolutionDir)$(Configuration)</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <UseSharedCompilation>true</UseSharedCompilation>
     <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
-    <PPO>false</PPO>
-    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Configuration)\</IntermediateOutputPath>
   </PropertyGroup>
   <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\mlibwvo27\mlibwvo27.xsproj">
-      <Name>mlibwvo27</Name>
-      <Project>{4bf79407-1c84-4cb1-88e6-d3f435490afb}</Project>
-      <Private>True</Private>
-    </ProjectReference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <ProjectReference Include="..\FabPaintLibvo\FabPaintLibvo.xsproj">
+      <Name>FabPaintLibvo</Name>
+      <Project>{7EE9CF1B-B750-4503-9FF9-097AEF752766}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\mlibwvo27\mlibwvo27.xsproj">
+      <Name>mlibwvo27</Name>
+      <Project>{013F14E2-172F-476C-B0F4-F4496D3180B4}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\Login\Login.xsproj">
       <Name>Login</Name>
-      <Project>{C74D47F3-832A-4082-8F2D-17E303CBB3DA}</Project>
+      <Project>{EE4C79A8-D809-428F-BBD4-A3D064C11FE1}</Project>
       <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\Mail\Mail.xsproj">
       <Name>Mail</Name>
-      <Project>{82484E5D-4FD7-4F59-9077-821F3F7C750B}</Project>
+      <Project>{7BD6887C-9C41-4C9C-A688-CE08D12FE470}</Project>
       <Private>True</Private>
     </ProjectReference>
     <Reference Include="XSharp.Core">
@@ -170,9 +150,6 @@
     <Compile Include="xclassesshell.prg">
       <SubType>Code</SubType>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties" />
   </ItemGroup>
   <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
   <ProjectExtensions>

@@ -1,7 +1,7 @@
-//#region DEFINES
-//DEFINE CREATEPROCESS_MANIFEST_RESOURCE_ID := 1
-//DEFINE RC_RT_MANIFEST                     := 24
-//#endregion
+﻿#region DEFINES
+DEFINE CREATEPROCESS_MANIFEST_RESOURCE_ID := 1
+DEFINE RC_RT_MANIFEST                     := 24
+#endregion
 
 [STAThread];
 FUNCTION Start() AS INT
@@ -20,7 +20,7 @@ METHOD Start()
 	LOCAL oLogonDialog AS LogonDialog
 	LOCAL oMAIL AS XJMAIL	
 	LOCAL aDAD,aLOGIN AS ARRAY
-	//LOCAL cPARAM
+//	LOCAL cPARAM
 
 	SetExclusive(FALSE)
 	SetDeleted(TRUE)
@@ -31,39 +31,35 @@ METHOD Start()
     SetInternational(#CLIPPER)
     SetEpoch(Year(Today())-60)
     SetDateFormat("DD/MM/YYYY")
- //   SetDeleted( .T. ) 
-    SetCollation("Clipper")     
 
+        EnableAppVisualTheme(TRUE)
+DisableProcessWindowsGhosting()
 
- //   EnableAppVisualTheme(TRUE)
-  //  DisableProcessWindowsGhosting()
-   //   SetMaxDynSize( 0x4000000)               // 64MB dynamic RAM instead of 16MB
-  //   DynSize(250)                            // increase the initial GC allocation to 12MB
-  //   SetMaxRegisteredAxitMethods(64000) //Standard is 16000
- 
+//     SetMaxDynSize( 0x4000000)               // 64MB dynamic RAM instead of 16MB
+//     DynSize(250)                            // increase the initial GC allocation to 12MB
+ //    SetMaxRegisteredAxitMethods(64000) //Standard is 16000
 
 
 
 
 	ZCURDIR:= DiskName()+":\"+CurDir()+"\"
 	ZCURINI:=ZCURDIR+"ENGENHA.INI"
-    ZDATA:=Today()     
+    ZDATA:=Today()
        ZEMPRESA:=1
     ZMES:=Month(Today())
     ZANO:=Year(Today())
 
-    
 	oWindow := engshell{SELF}
-
+	
+	
   cHELP:=PEGINIVAL(ZCURINI,"HELP","CAMINHO")
-  //  cHELP+="engenha.chm"       //hlp nao funciona em versao novos sistema operacional migrados para chm
+//    cHELP+="engenha.chm"       //hlp nao funciona em versao novos sistema operacional migrados para chm
     IF File(cHELP)
       oWINDOW:HelpDisplay := HelpDisplay{cHELP}	// Hook in help subsystem
       oWINDOW:HelpDisplay:EnableHTMLHelp(TRUE) //true chm //hlp comentar linha
-    ELSE 
-      ALERT("Arquivo de ajuda nao encontrado: "+cHELP)	
+    ELSE
+      alert(cHELP)	
     ENDIF	
-    
 	oWINDOW:Caption := "Modulo ENGENHARIA"
     aDIR:=PEGCONFIGU(ZCURINI,ZCURDIR)
     IF aDIR[1]=" "
@@ -88,10 +84,7 @@ ELSE
 	     aLOGIN[3] := oLOGONDIALOG:logonFOLHA
          aLOGIN[4] := oLogonDialog:logonWRPT
          aLOGIN[5]:= oLogonDialog:logonNome
-         aLOGIN[1]:=.T.   
-          ZEMPRESA:=oLogonDialog:nEMPRESA
-    		ZMES:=oLogonDialog:nMES
-    		ZANO:=oLogonDialog:nANO
+         aLOGIN[1]:=.T.
       ENDIF
     ENDIF
     ZUSER:=aLOGIN[2]
@@ -99,7 +92,9 @@ ELSE
     zWRPT:=aLOGIN[4]
     ZNOMEFOLHA:=aLOGIN[5]
 
-   
+    ZEMPRESA:=oLogonDialog:nEMPRESA
+    ZMES:=oLogonDialog:nMES
+    ZANO:=oLogonDialog:nANO
    	oWINDOW:Caption := "Modulo Engenharia  Empresa: "+StrZero(Zempresa,3)+" Competencia: "+StrZero(Zmes,2)+"/"+StrZero(Zano,4)
 
 

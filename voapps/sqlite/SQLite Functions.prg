@@ -1,4 +1,4 @@
-﻿FUNCTION DBF2CSV(cCSVFile AS STRING, cDBFFile AS STRING) AS VOID STRICT
+FUNCTION DBF2CSV(cCSVFile AS STRING, cDBFFile AS STRING) AS VOID STRICT
 	// cCSVFile is the name of the output file; cDBFFile is the name of the DBF
 	LOCAL phandle  AS PTR 
   LOCAL oOutput  AS DBServer  
@@ -10,7 +10,7 @@
   LOCAL cSeparator AS STRING
   LOCAL CRLF     AS STRING
   
-  CRLF := CHR( 13 ) + CHR(10) // line terminator
+  CRLF := Chr( 13 ) + Chr(10) // line terminator
   
   cSeparator := "|"  // SQLite uses pipe characters as CSV separators
   
@@ -47,9 +47,9 @@
         // here we strip characters that will get in the way of the import
 		    cVar := Trim( StrTran( oOutput:FIELDGET( nTemCnt ), e"\"") ) // no quotes
 		    cVar := StrTran( cVar, CRLF, "<CR>" ) // no returns
-		    cVar := StrTran( cVar, CHR( 13 ) )  // found this in a notepad file
-		    cVar := StrTran( cVar, CHR( 10 ) )  // found this in a notepad file
-		    cVar := StrTran( cVar, CHR( 2 ) )  // found this in a notepad file
+		    cVar := StrTran( cVar, Chr( 13 ) )  // found this in a notepad file
+		    cVar := StrTran( cVar, Chr( 10 ) )  // found this in a notepad file
+		    cVar := StrTran( cVar, Chr( 2 ) )  // found this in a notepad file
 
 	 	 	CASE aResAry[nTemCnt, DBS_TYPE ] = "N"   // if it's a numeric field
 	 	   	IF oOutput:FIELDGET(nTemCnt) = 0
@@ -87,7 +87,7 @@
 
   RETURN
 
-FUNCTION MsgBox( cText, cCaption, iFlags ) AS LONG
+FUNCTION MsgBox( cText, cCaption, iFlags ) AS USUAL
 
 	Default(@cCaption,"Message")
 	Default(@iFlags,MB_OK)
@@ -253,7 +253,7 @@ FUNCTION XReplQ( cFile AS STRING ) AS STRING STRICT
   // 4th character runs chr(63) "?" through chr(122) "z" 
   // NOTE: IT NEVER CAN BE 39 (' single quote, which plays hell with SQLite)
   nSeconds := Val(SubStr(Time(),7,2)) + 63
-  RETURN PadR( cFile, 3, "_") + CHR( nSeconds ) + cNumber
+  RETURN PadR( cFile, 3, "_") + Chr( nSeconds ) + cNumber
 
 FUNCTION XStatement( cStatement AS STRING ) AS LOGIC STRICT
 	LOCAL oStmt AS SQLStatement

@@ -1,9 +1,9 @@
 [General]
 PROJECT = voapps
-IDEVersion = 2.20
+IDEVersion = 2.21
 OutputFolder = d:\develop\modelos\xsharpexe\
 Description = 
-GUID = 3B73F74D-3E8E-41BF-8E73-841DDB4BC09D
+GUID = F1C050CA-D998-43CC-8000-10E3018A30E0
 StartUpApp = 
 PrgEncoding = Default
 SupportCF = 0
@@ -29,21 +29,6 @@ CustomControlsGuid =
 DefaultPropertiesGuid = 
 
 [Recent References]
-RecentReference = Browse:d:\devprg\XIDE\VOFabPaintLib.dll
-RecentReference = Browse:d:\devprg\XIDE\VOFabPaintLib_Control.dll
-RecentReference = Browse:d:\devprg\XIDE\FreeImageNET.dll
-RecentReference = Browse:d:\devprg\XIDE\dlls\FreeImageNET.dll
-RecentReference = GAC:System.Windows.Forms,v4,4.0.0.0
-RecentReference = GAC:VOSQLClasses,v4,2.6.0.0
-RecentReference = GAC:XSharp.Core,v4,2.6.0.0
-RecentReference = GAC:XSharp.RT,v4,2.6.0.0
-RecentReference = GAC:XSharp.VO,v4,2.6.0.0
-RecentReference = GAC:System,v4,4.0.0.0
-RecentReference = GAC:System.Drawing,v4,4.0.0.0
-RecentReference = GAC:System.Data,v4,4.0.0.0
-RecentReference = GAC:System.Xml,v4,4.0.0.0
-RecentReference = GAC:VOSystemClasses,v4,2.6.0.0
-RecentReference = GAC:VOWin32APILibrary,v4,2.6.0.0
 
 [Application Groups]
 
@@ -51,7 +36,7 @@ RecentReference = GAC:VOWin32APILibrary,v4,2.6.0.0
 
 ; ************** APPLICATION Emailprg *************
 Application = Emailprg
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -126,6 +111,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -145,6 +131,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [Emailprg Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -177,162 +164,9 @@ AppConfig = Release,22222222-2222-2222-2222-222222222222
   Optimize=0
 ENDApplication = Emailprg
 
-; ************** APPLICATION Engenharia *************
-Application = Engenharia
-IDEVersion = 2.20
-GalleryName = 
-GalleryPage = 
-GalleryDefaultName = 
-Target = 1
-Platform = x86
-Language = XSharp
-Runtime = CLR4
-Dialect = VO
-Folder = %ProjectPath%\Engenharia\
-PrgSubFolder = \
-ResourcesSubFolder = \
-Description = 
-NameSpace = 
-Assembly = Engenharia
-Extension = 
-ApplicationIcon = 
-OutputFolder = 
-Frameworks = 1
-GUID = 5858ECBB-4982-4228-BE36-0D4B853F90A1
-IncludeInProjectBuild = 1
-IncludeInProjectSearch = 1
-IncludeInProjectExport = 1
-IncludePath = 
-StdDefsFile = 
-AppToRun = 
-SignAssembly = 0
-KeyFile = 
-
-[ExportOptions]
-ExportResources = 0
-ExportImages = 0
-[Engenharia FileGroups]
-[Engenharia Files]
-File = %AppPath%\Menus.prg
-FileGUID = 84B20B74-7CA7-4098-BDAB-FB8B1DF8E13B
-FileType = Code
-CopyToBin = 0
-File = %AppPath%\LC.JAN.prg
-FileGUID = 73350501-C4BD-4E9C-AD1A-52F8AAC0136B
-FileType = Code
-CopyToBin = 0
-File = %AppPath%\LCT.JAN.prg
-FileGUID = 6CDFDBB9-1991-4468-B81A-D311F3C8FB5C
-FileType = Code
-CopyToBin = 0
-File = %AppPath%\X.Classes.prg
-FileGUID = 419751B6-FBA3-4BD4-962F-C7CEE0CC58AE
-FileType = Code
-CopyToBin = 0
-File = %AppPath%\funcoes.prg
-FileGUID = 04B881C9-FFF6-47EB-981E-F03CC635EF24
-FileType = Code
-CopyToBin = 0
-File = %AppPath%\Start.prg
-FileGUID = 5323236A-2989-4A38-85AD-CCC7A0C1AACA
-FileType = Code
-CopyToBin = 0
-File = %AppPath%\xclassesshell.prg
-FileGUID = 3206845C-8094-411B-BF42-538008039BAF
-FileType = Code
-CopyToBin = 0
-File = %AppPath%\AssemblyInfo.prg
-FileGUID = 54B7B812-F0D2-46BC-A854-31BF8EA9E9AE
-FileType = Code
-CopyToBin = 0
-[Engenharia References]
-ReferenceGAC = CLR4,System,1,0,4.0.0.0
-ReferenceProject = 4BF79407-1C84-4CB1-88E6-D3F435490AFB,1,0,mlibwvo27
-ReferenceProject = F1F864DD-EF02-461B-B15D-7BEB6DF7C20A,1,0,Login
-ReferenceGAC = CLR4,XSharp.Core,1,0,2.6.0.0
-ReferenceGAC = CLR4,XSharp.RT,1,0,2.6.0.0
-ReferenceGAC = CLR4,XSharp.VO,1,0,2.6.0.0
-ReferenceGAC = CLR4,VORDDClasses,1,0,2.6.0.0
-ReferenceGAC = CLR4,VOGUIClasses,1,0,2.6.0.0
-ReferenceGAC = CLR4,VOSystemClasses,1,0,2.6.0.0
-ReferenceGAC = CLR4,VOWin32APILibrary,1,0,2.6.0.0
-ReferenceProject = 3F447BFB-7AEC-47B9-B63C-E279857F0F6C,1,0,Mail
-[Engenharia Resources]
-[Engenharia Native Resources]
-[Engenharia License files]
-[Engenharia General Options]
-Switches=/nowarn:9025,9032
-ZeroArrays=0
-CaseSensitive=0
-ImplicitNamespace=1
-VO1=1
-VO2=1
-VO3=1
-VO4=1
-VO5=1
-VO6=1
-VO7=1
-VO8=1
-VO9=1
-VO10=1
-VO11=1
-VO12=0
-VO13=1
-VO14=1
-VO16=1
-VO17=0
-FOX1=0
-FOX2=0
-XPP1=0
-LateBound=1
-Unsafe=1
-Undeclared=0
-EnforceSelf=0
-EnforceOverride=0
-UseNativeVersion=0
-MemVar=0
-IgnoreStdDefs=0
-Ovf=1
-FOvf=1
-ModernSyntax=0
-NamedArgs=0
-InitLocals=0
-AllowOldStyleAssignments=0
-ResponseOnly=0
-[Engenharia Configurations]
-AppConfig = Debug,11111111-1111-1111-1111-111111111111
-  Switches=
-  SwitchesCF=
-  CommandLine=
-  CommandLineCF=
-  Debug=1
-  DebugInit=1
-  DefineDebug=1
-  DefineTrace=0
-  SyntaxOnly=0
-  WarningsErrors=0
-  ForceConsole=0
-  ForceX86=0
-  Optimize=0
-AppConfig = Release,22222222-2222-2222-2222-222222222222
-  Switches=
-  SwitchesCF=
-  CommandLine=
-  CommandLineCF=
-  Debug=0
-  DebugInit=0
-  DefineDebug=0
-  DefineTrace=0
-  SyntaxOnly=0
-  WarningsErrors=0
-  ForceConsole=0
-  ForceX86=0
-  Optimize=0
-ENDApplication = Engenharia
-
 ; ************** APPLICATION esccodmon *************
 Application = esccodmon
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -406,6 +240,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -425,6 +260,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [esccodmon Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -459,7 +295,7 @@ ENDApplication = esccodmon
 
 ; ************** APPLICATION escferram *************
 Application = escferram
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -529,6 +365,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -548,6 +385,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [escferram Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -582,7 +420,7 @@ ENDApplication = escferram
 
 ; ************** APPLICATION escnumnom *************
 Application = escnumnom
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -652,6 +490,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -671,6 +510,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [escnumnom Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -705,7 +545,7 @@ ENDApplication = escnumnom
 
 ; ************** APPLICATION Ferramental *************
 Application = Ferramental
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -971,6 +811,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -990,6 +831,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [Ferramental Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -1024,7 +866,7 @@ ENDApplication = Ferramental
 
 ; ************** APPLICATION folhapto *************
 Application = folhapto
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -1335,6 +1177,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -1354,6 +1197,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [folhapto Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -1388,7 +1232,7 @@ ENDApplication = folhapto
 
 ; ************** APPLICATION Instrumentos *************
 Application = Instrumentos
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -1549,6 +1393,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -1568,6 +1413,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [Instrumentos Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -1602,7 +1448,7 @@ ENDApplication = Instrumentos
 
 ; ************** APPLICATION jOSCRT *************
 Application = jOSCRT
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -1686,6 +1532,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -1705,6 +1552,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [jOSCRT Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -1739,7 +1587,7 @@ ENDApplication = jOSCRT
 
 ; ************** APPLICATION Login *************
 Application = Login
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -1818,6 +1666,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -1837,6 +1686,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [Login Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -1871,7 +1721,7 @@ ENDApplication = Login
 
 ; ************** APPLICATION Logix *************
 Application = Logix
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -1944,6 +1794,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -1963,6 +1814,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [Logix Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -1997,7 +1849,7 @@ ENDApplication = Logix
 
 ; ************** APPLICATION MA01.JAN *************
 Application = MA01.JAN
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -2068,6 +1920,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -2087,6 +1940,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [MA01.JAN Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -2121,7 +1975,7 @@ ENDApplication = MA01.JAN
 
 ; ************** APPLICATION MB01.jan *************
 Application = MB01.jan
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -2192,6 +2046,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -2211,6 +2066,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [MB01.jan Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -2245,7 +2101,7 @@ ENDApplication = MB01.jan
 
 ; ************** APPLICATION Me04.jan *************
 Application = Me04.jan
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -2341,6 +2197,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -2360,6 +2217,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [Me04.jan Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -2394,7 +2252,7 @@ ENDApplication = Me04.jan
 
 ; ************** APPLICATION mlibwvo27 *************
 Application = mlibwvo27
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -2629,6 +2487,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -2648,6 +2507,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [mlibwvo27 Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -2682,7 +2542,7 @@ ENDApplication = mlibwvo27
 
 ; ************** APPLICATION MP04.Jan *************
 Application = MP04.Jan
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -2752,6 +2612,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -2771,6 +2632,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [MP04.Jan Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -2805,7 +2667,7 @@ ENDApplication = MP04.Jan
 
 ; ************** APPLICATION MP05.JAN *************
 Application = MP05.JAN
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -2875,6 +2737,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -2894,6 +2757,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [MP05.JAN Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -2928,7 +2792,7 @@ ENDApplication = MP05.JAN
 
 ; ************** APPLICATION msseqcom *************
 Application = msseqcom
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -3008,6 +2872,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -3027,6 +2892,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [msseqcom Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -3061,7 +2927,7 @@ ENDApplication = msseqcom
 
 ; ************** APPLICATION PCP *************
 Application = PCP
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -3242,6 +3108,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -3261,6 +3128,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [PCP Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -3295,7 +3163,7 @@ ENDApplication = PCP
 
 ; ************** APPLICATION peg.met *************
 Application = peg.met
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -3416,6 +3284,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -3435,6 +3304,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [peg.met Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -3469,7 +3339,7 @@ ENDApplication = peg.met
 
 ; ************** APPLICATION Producao *************
 Application = Producao
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -3625,6 +3495,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -3644,6 +3515,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [Producao Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -3678,7 +3550,7 @@ ENDApplication = Producao
 
 ; ************** APPLICATION Qualidade *************
 Application = Qualidade
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -3920,6 +3792,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -3939,6 +3812,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [Qualidade Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -3973,7 +3847,7 @@ ENDApplication = Qualidade
 
 ; ************** APPLICATION RH *************
 Application = RH
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -4217,6 +4091,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -4236,6 +4111,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [RH Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -4270,7 +4146,7 @@ ENDApplication = RH
 
 ; ************** APPLICATION rh_pto *************
 Application = rh_pto
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -4400,6 +4276,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -4419,6 +4296,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [rh_pto Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -4453,7 +4331,7 @@ ENDApplication = rh_pto
 
 ; ************** APPLICATION Sintegra *************
 Application = Sintegra
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -4597,6 +4475,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -4616,6 +4495,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [Sintegra Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -4650,7 +4530,7 @@ ENDApplication = Sintegra
 
 ; ************** APPLICATION TGQ *************
 Application = TGQ
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -4942,6 +4822,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -4961,6 +4842,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [TGQ Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -4995,7 +4877,7 @@ ENDApplication = TGQ
 
 ; ************** APPLICATION voretrun *************
 Application = voretrun
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -5079,6 +4961,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -5098,6 +4981,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [voretrun Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -5132,7 +5016,7 @@ ENDApplication = voretrun
 
 ; ************** APPLICATION escolhemp04 *************
 Application = escolhemp04
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -5211,6 +5095,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -5230,6 +5115,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [escolhemp04 Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -5264,7 +5150,7 @@ ENDApplication = escolhemp04
 
 ; ************** APPLICATION escpf *************
 Application = escpf
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -5346,6 +5232,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -5365,6 +5252,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [escpf Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -5399,7 +5287,7 @@ ENDApplication = escpf
 
 ; ************** APPLICATION final *************
 Application = final
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -5567,6 +5455,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -5586,6 +5475,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [final Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -5620,7 +5510,7 @@ ENDApplication = final
 
 ; ************** APPLICATION Banco *************
 Application = Banco
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -5795,6 +5685,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -5814,6 +5705,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [Banco Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -5848,7 +5740,7 @@ ENDApplication = Banco
 
 ; ************** APPLICATION checagem *************
 Application = checagem
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -5990,6 +5882,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -6009,6 +5902,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [checagem Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -6043,7 +5937,7 @@ ENDApplication = checagem
 
 ; ************** APPLICATION SomaAno *************
 Application = SomaAno
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -6125,6 +6019,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -6144,6 +6039,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [SomaAno Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -6178,7 +6074,7 @@ ENDApplication = SomaAno
 
 ; ************** APPLICATION Mail *************
 Application = Mail
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -6280,6 +6176,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -6299,6 +6196,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [Mail Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -6333,7 +6231,7 @@ ENDApplication = Mail
 
 ; ************** APPLICATION Viabilidade *************
 Application = Viabilidade
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -6529,6 +6427,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -6548,6 +6447,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [Viabilidade Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -6582,7 +6482,7 @@ ENDApplication = Viabilidade
 
 ; ************** APPLICATION CUSTO *************
 Application = CUSTO
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -6820,6 +6720,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -6839,6 +6740,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [CUSTO Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -6873,7 +6775,7 @@ ENDApplication = CUSTO
 
 ; ************** APPLICATION sistema *************
 Application = sistema
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -6961,6 +6863,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -6980,6 +6883,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [sistema Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -7014,7 +6918,7 @@ ENDApplication = sistema
 
 ; ************** APPLICATION CRM *************
 Application = CRM
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -7368,6 +7272,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -7387,6 +7292,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [CRM Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -7421,7 +7327,7 @@ ENDApplication = CRM
 
 ; ************** APPLICATION RightSLEVO *************
 Application = RightSLEVO
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -7569,6 +7475,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -7588,6 +7495,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [RightSLEVO Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -7622,7 +7530,7 @@ ENDApplication = RightSLEVO
 
 ; ************** APPLICATION FabPaintLibvo *************
 Application = FabPaintLibvo
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -7711,6 +7619,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -7730,6 +7639,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [FabPaintLibvo Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -7764,7 +7674,7 @@ ENDApplication = FabPaintLibvo
 
 ; ************** APPLICATION FabPaintLibControlvo *************
 Application = FabPaintLibControlvo
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -7843,6 +7753,7 @@ VO11=1
 VO12=0
 VO13=1
 VO14=1
+VO15=1
 VO16=1
 VO17=0
 FOX1=0
@@ -7862,6 +7773,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [FabPaintLibControlvo Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -7894,155 +7806,9 @@ AppConfig = Release,22222222-2222-2222-2222-222222222222
   Optimize=0
 ENDApplication = FabPaintLibControlvo
 
-; ************** APPLICATION SQLite *************
-Application = SQLite
-IDEVersion = 2.20
-GalleryName = 
-GalleryPage = 
-GalleryDefaultName = 
-Target = 2
-Platform = x86
-Language = XSharp
-Runtime = CLR4
-Dialect = VO
-Folder = D:\develop\xsharp\voapps\SQLite\
-PrgSubFolder = \
-ResourcesSubFolder = \
-Description = 
-NameSpace = 
-Assembly = SQLite
-Extension = 
-ApplicationIcon = 
-OutputFolder = 
-Frameworks = 1
-GUID = 2C8ACF39-CC81-468F-92DB-97D509218557
-IncludeInProjectBuild = 1
-IncludeInProjectSearch = 1
-IncludeInProjectExport = 1
-IncludePath = 
-StdDefsFile = 
-AppToRun = 
-SignAssembly = 0
-KeyFile = 
-
-[ExportOptions]
-ExportResources = 0
-ExportImages = 0
-[SQLite FileGroups]
-[SQLite Files]
-File = %AppPath%\SQLite Functions.prg
-FileGUID = 73C5E5F5-BFCB-485E-8EFD-2FBE0376672A
-FileType = Code
-CopyToBin = 0
-File = %AppPath%\SQLite Classes.prg
-FileGUID = 60125DBB-65BF-468F-9967-CD82D2334FB0
-FileType = Code
-CopyToBin = 0
-File = %AppPath%\Globals.prg
-FileGUID = 7B64BF9E-8E40-4010-911B-DBE99CA18DDB
-FileType = Code
-CopyToBin = 0
-File = %AppPath%\Notes.prg
-FileGUID = 5BC6B0B4-1939-4A64-82BA-4FC53BA83E7E
-FileType = Code
-CopyToBin = 0
-File = %AppPath%\SQLite Script.prg
-FileGUID = 56841C82-DEB4-4CA9-A20F-1BFD4A099715
-FileType = Code
-CopyToBin = 0
-File = %AppPath%\SQLite Connection.prg
-FileGUID = 52031A2C-4C76-4305-961A-9F926E0E0155
-FileType = Code
-CopyToBin = 0
-File = %AppPath%\sqlfunctionscnv.prg
-FileGUID = 7C70375F-26B6-465F-9B70-A260F1F7A385
-FileType = Code
-CopyToBin = 0
-[SQLite References]
-ReferenceGAC = CLR4,System,1,0,4.0.0.0
-ReferenceGAC = CLR4,XSharp.Core,1,0,2.6.0.0
-ReferenceGAC = CLR4,XSharp.RT,1,0,2.6.0.0
-ReferenceGAC = CLR4,XSharp.VO,1,0,2.6.0.0
-ReferenceGAC = CLR4,VOSystemClasses,1,0,2.6.0.0
-ReferenceGAC = CLR4,VOSQLClasses,1,0,2.6.0.0
-ReferenceGAC = CLR4,VORDDClasses,1,0,2.6.0.0
-ReferenceGAC = CLR4,VOWin32APILibrary,1,0,2.6.0.0
-[SQLite Resources]
-[SQLite Native Resources]
-[SQLite License files]
-[SQLite General Options]
-Switches=/nowarn:9032,9043,165,649,9025,9026,9076,9020,9021
-ZeroArrays=0
-CaseSensitive=0
-ImplicitNamespace=1
-VO1=1
-VO2=1
-VO3=1
-VO4=1
-VO5=1
-VO6=1
-VO7=1
-VO8=1
-VO9=1
-VO10=1
-VO11=1
-VO12=0
-VO13=1
-VO14=1
-VO16=1
-VO17=0
-FOX1=0
-FOX2=0
-XPP1=0
-LateBound=1
-Unsafe=1
-Undeclared=0
-EnforceSelf=1
-EnforceOverride=0
-UseNativeVersion=0
-MemVar=0
-IgnoreStdDefs=0
-Ovf=1
-FOvf=1
-ModernSyntax=0
-NamedArgs=0
-InitLocals=0
-AllowOldStyleAssignments=0
-ResponseOnly=0
-[SQLite Configurations]
-AppConfig = Debug,11111111-1111-1111-1111-111111111111
-  Switches=
-  SwitchesCF=
-  CommandLine=
-  CommandLineCF=
-  Debug=1
-  DebugInit=1
-  DefineDebug=1
-  DefineTrace=0
-  SyntaxOnly=0
-  WarningsErrors=0
-  ForceConsole=0
-  ForceX86=0
-  Optimize=0
-AppConfig = Release,22222222-2222-2222-2222-222222222222
-  Switches=
-  SwitchesCF=
-  CommandLine=
-  CommandLineCF=
-  Debug=0
-  DebugInit=0
-  DefineDebug=0
-  DefineTrace=0
-  SyntaxOnly=0
-  WarningsErrors=0
-  ForceConsole=0
-  ForceX86=0
-  Optimize=0
-ENDApplication = SQLite
-
 ; ************** APPLICATION classemapi *************
 Application = classemapi
-IDEVersion = 2.20
+IDEVersion = 2.21
 GalleryName = 
 GalleryPage = 
 GalleryDefaultName = 
@@ -8124,6 +7890,7 @@ VO11=0
 VO12=0
 VO13=0
 VO14=0
+VO15=1
 VO16=0
 VO17=0
 FOX1=0
@@ -8143,6 +7910,7 @@ ModernSyntax=0
 NamedArgs=0
 InitLocals=0
 AllowOldStyleAssignments=0
+AllowDotOption=1
 ResponseOnly=0
 [classemapi Configurations]
 AppConfig = Debug,11111111-1111-1111-1111-111111111111
@@ -8174,6 +7942,294 @@ AppConfig = Release,22222222-2222-2222-2222-222222222222
   ForceX86=0
   Optimize=0
 ENDApplication = classemapi
+
+; ************** APPLICATION SQLite *************
+Application = SQLite
+IDEVersion = 2.21
+GalleryName = 
+GalleryPage = 
+GalleryDefaultName = 
+Target = 2
+Platform = x86
+Language = XSharp
+Runtime = CLR4
+Dialect = VO
+Folder = D:\develop\xsharp\voapps\SQLite\
+PrgSubFolder = \
+ResourcesSubFolder = \
+Description = 
+NameSpace = 
+Assembly = SQLite
+Extension = 
+ApplicationIcon = 
+OutputFolder = 
+Frameworks = 1
+GUID = EB86D673-29CC-4FE3-8DE5-D959D0AEA3E7
+IncludeInProjectBuild = 1
+IncludeInProjectSearch = 1
+IncludeInProjectExport = 1
+IncludePath = 
+StdDefsFile = 
+AppToRun = 
+SignAssembly = 0
+KeyFile = 
+
+[ExportOptions]
+ExportResources = 0
+ExportImages = 0
+[SQLite FileGroups]
+[SQLite Files]
+File = %AppPath%\SQLite Functions.prg
+FileGUID = 93B6CED0-8C72-4F83-B50F-21596F2C0EB4
+FileType = Code
+CopyToBin = 0
+File = %AppPath%\SQLite Classes.prg
+FileGUID = AAAFF6AF-919C-476C-A88B-0B90D00CADC2
+FileType = Code
+CopyToBin = 0
+File = %AppPath%\Globals.prg
+FileGUID = EA021627-008F-422B-B4E0-941F649078D6
+FileType = Code
+CopyToBin = 0
+File = %AppPath%\Notes.prg
+FileGUID = 558814E3-9894-464D-AB94-04E2C830AFBE
+FileType = Code
+CopyToBin = 0
+[SQLite References]
+ReferenceGAC = CLR4,System,1,0,4.0.0.0
+ReferenceGAC = CLR4,XSharp.Core,1,0,2.6.0.0
+ReferenceGAC = CLR4,XSharp.RT,1,0,2.6.0.0
+ReferenceGAC = CLR4,XSharp.VO,1,0,2.6.0.0
+ReferenceGAC = CLR4,VOSystemClasses,1,0,2.6.0.0
+ReferenceGAC = CLR4,VOSQLClasses,1,0,2.6.0.0
+ReferenceGAC = CLR4,VORDDClasses,1,0,2.6.0.0
+ReferenceGAC = CLR4,VOWin32APILibrary,1,0,2.6.0.0
+[SQLite Resources]
+[SQLite Native Resources]
+[SQLite License files]
+[SQLite General Options]
+Switches=/nowarn:9032,9043,165,649,9025,9026,9076,9020,9021
+ZeroArrays=0
+CaseSensitive=0
+ImplicitNamespace=1
+VO1=1
+VO2=1
+VO3=1
+VO4=1
+VO5=1
+VO6=1
+VO7=1
+VO8=1
+VO9=1
+VO10=1
+VO11=1
+VO12=0
+VO13=1
+VO14=1
+VO15=1
+VO16=1
+VO17=0
+FOX1=0
+FOX2=0
+XPP1=0
+LateBound=1
+Unsafe=1
+Undeclared=0
+EnforceSelf=0
+EnforceOverride=0
+UseNativeVersion=0
+MemVar=0
+IgnoreStdDefs=0
+Ovf=1
+FOvf=1
+ModernSyntax=0
+NamedArgs=0
+InitLocals=0
+AllowOldStyleAssignments=0
+AllowDotOption=1
+ResponseOnly=0
+[SQLite Configurations]
+AppConfig = Debug,11111111-1111-1111-1111-111111111111
+  Switches=
+  SwitchesCF=
+  CommandLine=
+  CommandLineCF=
+  Debug=1
+  DebugInit=1
+  DefineDebug=1
+  DefineTrace=0
+  SyntaxOnly=0
+  WarningsErrors=0
+  ForceConsole=0
+  ForceX86=0
+  Optimize=0
+AppConfig = Release,22222222-2222-2222-2222-222222222222
+  Switches=
+  SwitchesCF=
+  CommandLine=
+  CommandLineCF=
+  Debug=0
+  DebugInit=0
+  DefineDebug=0
+  DefineTrace=0
+  SyntaxOnly=0
+  WarningsErrors=0
+  ForceConsole=0
+  ForceX86=0
+  Optimize=0
+ENDApplication = SQLite
+
+; ************** APPLICATION Engenharia *************
+Application = Engenharia
+IDEVersion = 2.21
+GalleryName = 
+GalleryPage = 
+GalleryDefaultName = 
+Target = 1
+Platform = x86
+Language = XSharp
+Runtime = CLR4
+Dialect = VO
+Folder = D:\develop\xsharp\voapps\Engenharia\
+PrgSubFolder = \
+ResourcesSubFolder = \
+Description = 
+NameSpace = 
+Assembly = Engenharia
+Extension = 
+ApplicationIcon = 
+OutputFolder = 
+Frameworks = 1
+GUID = 3B713C00-CAC6-456E-8407-63CE4075F11D
+IncludeInProjectBuild = 1
+IncludeInProjectSearch = 1
+IncludeInProjectExport = 1
+IncludePath = 
+StdDefsFile = 
+AppToRun = 
+SignAssembly = 0
+KeyFile = 
+
+[ExportOptions]
+ExportResources = 0
+ExportImages = 0
+[Engenharia FileGroups]
+[Engenharia Files]
+File = %AppPath%\Menus.prg
+FileGUID = 186DB5B3-279F-4DAF-8F3A-8F7ADEBB14AD
+FileType = Code
+CopyToBin = 0
+File = %AppPath%\LC.JAN.prg
+FileGUID = 7B6ADC0A-62F3-4855-B661-4F62940038F0
+FileType = Code
+CopyToBin = 0
+File = %AppPath%\LCT.JAN.prg
+FileGUID = B38C32C6-563A-4C5E-8A06-FDD1CB2C7612
+FileType = Code
+CopyToBin = 0
+File = %AppPath%\X.Classes.prg
+FileGUID = A6AC9FDF-5060-4B3F-8466-B4D2C2E8CFD9
+FileType = Code
+CopyToBin = 0
+File = %AppPath%\funcoes.prg
+FileGUID = DD21C340-7AAA-456E-8653-B041CD0E7B72
+FileType = Code
+CopyToBin = 0
+File = %AppPath%\Start.prg
+FileGUID = 25A13529-385C-4E2E-B914-D02FAC587EF5
+FileType = Code
+CopyToBin = 0
+File = %AppPath%\xclassesshell.prg
+FileGUID = DEC77B3A-3725-442A-96C6-853C8FC53362
+FileType = Code
+CopyToBin = 0
+[Engenharia References]
+ReferenceGAC = CLR4,System,1,0,4.0.0.0
+ReferenceProject = 6E02D6F9-C529-4D58-88E8-BF790C7764BA,1,0,FabPaintLibvo
+ReferenceProject = 4BF79407-1C84-4CB1-88E6-D3F435490AFB,1,0,mlibwvo27
+ReferenceProject = F1F864DD-EF02-461B-B15D-7BEB6DF7C20A,1,0,Login
+ReferenceProject = 3F447BFB-7AEC-47B9-B63C-E279857F0F6C,1,0,Mail
+ReferenceGAC = CLR4,XSharp.Core,1,0,2.6.0.0
+ReferenceGAC = CLR4,XSharp.RT,1,0,2.6.0.0
+ReferenceGAC = CLR4,XSharp.VO,1,0,2.6.0.0
+ReferenceGAC = CLR4,VORDDClasses,1,0,2.6.0.0
+ReferenceGAC = CLR4,VOGUIClasses,1,0,2.6.0.0
+ReferenceGAC = CLR4,VOSystemClasses,1,0,2.6.0.0
+ReferenceGAC = CLR4,VOWin32APILibrary,1,0,2.6.0.0
+[Engenharia Resources]
+[Engenharia Native Resources]
+[Engenharia License files]
+[Engenharia General Options]
+Switches=/nowarn:9032,9043,165,649,9025,9026,9076,9020,9021
+ZeroArrays=0
+CaseSensitive=0
+ImplicitNamespace=1
+VO1=1
+VO2=1
+VO3=1
+VO4=1
+VO5=1
+VO6=1
+VO7=1
+VO8=1
+VO9=1
+VO10=1
+VO11=1
+VO12=0
+VO13=1
+VO14=1
+VO15=1
+VO16=1
+VO17=0
+FOX1=0
+FOX2=0
+XPP1=0
+LateBound=1
+Unsafe=1
+Undeclared=0
+EnforceSelf=0
+EnforceOverride=0
+UseNativeVersion=0
+MemVar=0
+IgnoreStdDefs=0
+Ovf=1
+FOvf=1
+ModernSyntax=0
+NamedArgs=0
+InitLocals=0
+AllowOldStyleAssignments=0
+AllowDotOption=0
+ResponseOnly=0
+[Engenharia Configurations]
+AppConfig = Debug,11111111-1111-1111-1111-111111111111
+  Switches=
+  SwitchesCF=
+  CommandLine=
+  CommandLineCF=
+  Debug=1
+  DebugInit=1
+  DefineDebug=1
+  DefineTrace=0
+  SyntaxOnly=0
+  WarningsErrors=0
+  ForceConsole=0
+  ForceX86=0
+  Optimize=0
+AppConfig = Release,22222222-2222-2222-2222-222222222222
+  Switches=
+  SwitchesCF=
+  CommandLine=
+  CommandLineCF=
+  Debug=0
+  DebugInit=0
+  DefineDebug=0
+  DefineTrace=0
+  SyntaxOnly=0
+  WarningsErrors=0
+  ForceConsole=0
+  ForceX86=0
+  Optimize=0
+ENDApplication = Engenharia
 [EndApplications]
 
 [Configurations]

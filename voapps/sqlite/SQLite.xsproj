@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
   <PropertyGroup>
-    <ProjectGuid>E05C204E-5953-41C2-87E6-BFF32F04DD2B</ProjectGuid>
+    <ProjectGuid>579ACACB-1A26-422B-996D-4367C3A3C5E0</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>SQLite</RootNamespace>
     <AssemblyName>SQLite</AssemblyName>
@@ -38,7 +38,9 @@
     <MemVar>false</MemVar>
     <Undeclared>false</Undeclared>
     <NoStandardDefs>false</NoStandardDefs>
-    <EnforceSelf>True</EnforceSelf>
+    <EnforceSelf>false</EnforceSelf>
+    <NamedArgs>False</NamedArgs>
+    <Allowdot>false</Allowdot>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">

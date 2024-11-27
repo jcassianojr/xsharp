@@ -21,7 +21,7 @@
     </summary>
       <param name="oAccelerator">Existing Accelerator objects, whose accelerator keys are copied. </param>
       <returns>
-      TRUE when successful, FALSE when not, for example because the object not dynamic anymore
+      TRUE if successful; otherwise, FALSE.
     </returns>
     </member>
     <member name="M:VO.Accelerator.AddKey(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
@@ -34,7 +34,7 @@
       <param name="lAlt">When TRUE, the ALT key must be held down when the accelerator key is pressed.</param>
       <param name="lShift">When TRUE, the SHIFT key must be held down when the accelerator key is pressed.</param>
       <returns>
-      TRUE when successful, FALSE when not, for example because the object not dynamic anymore
+      TRUE if successful; otherwise, FALSE.
     </returns>
     </member>
     <member name="M:VO.Accelerator.Create">
@@ -2197,7 +2197,7 @@
     </summary>
       <param name="lEnable">TRUE shows column titles; FALSE hides them. The default is TRUE. </param>
       <returns>
-      A logical value indicating whether or not the operation was successful.
+      TRUE if successful; otherwise, FALSE.
     </returns>
     </member>
     <member name="M:VO.DataBrowser.EnableGrid(XSharp.__Usual)">
@@ -2692,7 +2692,7 @@
       Delete all items in a data list view.
     </summary>
       <returns>
-      TRUE if all items were deleted successfully; otherwise, FALSE.
+      TRUE if successful; otherwise, FALSE.
     </returns>
     </member>
     <member name="M:VO.DataListView.Destroy">
@@ -2735,7 +2735,7 @@
     </summary>
       <param name="oNewServer">The data server to be associated with the data list view.</param>
       <returns>
-      TRUE, if the server could be assigned successfully; otherwise, FALSE.
+      TRUE if successful; otherwise, FALSE.
     </returns>
     </member>
     <member name="T:VO.DataWindow">
@@ -3368,7 +3368,7 @@
       Move to the next record (identical to Skip(1)).
     </summary>
       <returns>
-      TRUE if operation was successful; otherwise, FALSE.
+      TRUE if successful; otherwise, FALSE.
     </returns>
     </member>
     <member name="M:VO.DataWindow.SkipPrevious">
@@ -3376,7 +3376,7 @@
       Move to the previous record (identical to Skip(-1)).
     </summary>
       <returns>
-      TRUE if operation was successful; otherwise, FALSE.
+      TRUE if successful; otherwise, FALSE.
     </returns>
     </member>
     <member name="P:VO.DataWindow.Status">
@@ -10835,7 +10835,7 @@
       <param name="symParentName">The symbolic name of the parent tree view item. This can be the symbolic name of any tree view item or one of the following items: #Root, #First, #Last, and, if the tree view style is sorted, #Sort.</param>
       <param name="oTreeViewItem">The tree view item to add.</param>
       <returns>
-      TRUE if the item was added successfully; otherwise, FALSE.
+      TRUE if successful; otherwise, FALSE.
     </returns>
     </member>
     <member name="M:VO.TreeView.Collapse(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
@@ -10859,7 +10859,7 @@
       Delete all items of the tree view.
     </summary>
       <returns>
-      TRUE if all items were deleted successfully; otherwise, FALSE.
+      TRUE if successful; otherwise, FALSE.
     </returns>
     </member>
     <member name="M:VO.TreeView.DeleteItem(XSharp.__Usual,XSharp.__Usual)">
@@ -10873,7 +10873,7 @@
       If lChildrenOnly is TRUE only the child items are deleted
     </param>
       <returns>
-      TRUE if the item was deleted successfully; otherwise, FALSE.
+      TRUE if successful; otherwise, FALSE.
     </returns>
     </member>
     <member name="P:VO.TreeView.DragDropEnabled">
@@ -10900,7 +10900,7 @@
     </summary>
       <param name="lEnable">A logical value that determines whether drag-and-drop is enabled or disabled.</param>
       <returns>
-      TRUE if drag-and-drop could be enabled or disabled; otherwise, FALSE.
+      TRUE if successful; otherwise, FALSE.
     </returns>
     </member>
     <member name="M:VO.TreeView.EnableSort(XSharp.__Usual)">
@@ -11322,10 +11322,16 @@
     </member>
     <member name="M:VO.TreeViewItem.Collapse(XSharp.__Usual,XSharp.__Usual)">
       <summary>
-      Collapse the tree view item, hiding its child items.
+      Collapse a tree view item, hiding its child items.
     </summary>
-      <param name="lAll">** missing parameter documentation **</param>
-      <param name="lForceNotify">** missing parameter documentation **</param>
+      <param name="symName">The symbolic name of the tree view item to be collapsed.</param>
+      <param name="oItem">The TreeViewItem object representing the tree view item to be collapsed.</param>
+      <param name="lRemoveChildItems">A logical value indicating whether child tree view items of the specified item will be removed when the item is collapsed. If omitted, the default is FALSE.</param>
+      <param name="lAll">If lAll is TRUE(default = FALSE), the operation is done for the complete subtree of the specified item.</param>
+      <param name="lForceNotify">
+      If lForceNotify is TRUE(default = FALSE), a notify message Window:TreeViewItemExpanding() and Window:TreeViewItemExpanded() is sent for each item whose expand state is changed.
+      Generally windows will only send these messages when an item is first expanded. It depends on the TVIS_EXPANDEDONCE state. (see in Platform SDK the TVM_EXPAND Message for more details.)
+    </param>
       <returns>
       TRUE if successful; otherwise, FALSE.
     </returns>
@@ -11356,10 +11362,15 @@
     </member>
     <member name="M:VO.TreeViewItem.Expand(XSharp.__Usual,XSharp.__Usual)">
       <summary>
-      Expand the tree view item, showing its child items.
+      Expand a tree view item, showing its child items.
     </summary>
-      <param name="lAll">** missing parameter documentation **</param>
-      <param name="lForceNotify">** missing parameter documentation **</param>
+      <param name="symName">The symbolic name of the tree view item to be expanded.</param>
+      <param name="oItem">The treeview item to be expanded.</param>
+      <param name="lAll">If lAll is TRUE(default = FALSE), the operation is done for the complete subtree of the specified item.</param>
+      <param name="lForceNotify">
+      If lForceNotify is TRUE(default = FALSE), a notify message Window:TreeViewItemExpanding() and Window:TreeViewItemExpanded() is sent for each item whose expand state is changed.
+      Generally windows will only send these messages when an item is first expanded. It depends on the TVIS_EXPANDEDONCE state. (see in Platform SDK the TVM_EXPAND Message for more details.)
+    </param>
       <returns>
       TRUE if successful; otherwise, FALSE.
     </returns>
@@ -12993,6 +13004,12 @@
     <member name="M:VOGUIClasses.Functions.SetClassStyle(System.Void*,System.UInt32,System.Boolean)"></member>
     <member name="M:VOGUIClasses.Functions.THTMLHelp(System.Void*,XSharp.__Psz,System.UInt32,System.UInt32)"></member>
     <member name="M:VOGUIClasses.Functions.UseColonInAutoLayoutCaptions(System.Boolean)"></member>
+    <member name="M:VOGUIClasses.Functions.Win32GetSubMenu(System.Void*,System.Int32)"></member>
+    <member name="M:VOGUIClasses.Functions.Win32IsIconic(System.Void*)"></member>
+    <member name="M:VOGUIClasses.Functions.Win32IsZoomed(System.Void*)"></member>
+    <member name="M:VOGUIClasses.Functions.Win32LineTo(System.Void*,System.Int32,System.Int32)"></member>
+    <member name="M:VOGUIClasses.Functions.Win32SetFocus(System.Void*)"></member>
+    <member name="M:VOGUIClasses.Functions.Win32SetParent(System.Void*,System.Void*)"></member>
     <member name="T:XSharp.ChildWinForm">
       <summary>Special Subclass of ChildAppWindow to host a windows forms window in a VO GUI hierarchy</summary>
     </member>

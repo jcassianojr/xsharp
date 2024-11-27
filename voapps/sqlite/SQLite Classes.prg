@@ -1,9 +1,9 @@
-﻿CLASS XSQLSelect INHERIT SQLSelect
+CLASS XSQLSelect INHERIT SQLSelect
 
 // constructor inserted by xPorter, remove superfluous arguments
 CONSTRUCTOR(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9) CLIPPER
 SUPER(arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9)
-METHOD CountRecs()  
+METHOD CountRecs() AS USUAL 
 	LOCAL nReturn AS INT
 	LOCAL nTemRec AS INT
   // counts the rows in a Selection
@@ -215,7 +215,7 @@ ACCESS Unique_ID
 	ENDIF
 	RETURN SELF:cUnique
 
-METHOD UpdateRow( a, cField, nClient, cQ )  
+METHOD UpdateRow( a, cField, nClient, cQ )          AS USUAL
   // updates an existing row in the table.  This method is used in any AppendNew
   // or update operation because we always append first and add the row.  
   // Appending and updating fields before adding the row doesn't always seem to work.
@@ -250,7 +250,7 @@ METHOD UpdateRow( a, cField, nClient, cQ )
   GLOoSTATEMENT:SQLString := cStatement
   RETURN GLOoSTATEMENT:Execute()
 
-METHOD XReplDT() 
+METHOD XReplDT()    AS USUAL
 	// makes a date and time string which is used to fill a last update field
 	SELF:cUpdate := DToS( Today() ) + SubStr3( Time24(), 1, 5 ) 
 	RETURN SELF:cUpdate

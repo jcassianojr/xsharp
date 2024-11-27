@@ -1,0 +1,5 @@
+#include "C:\Program Files (x86)\XSharp\\Include\NativeResourceDefines.xh"
+#include "d:\develop\xsharp\voapps\RightSLEvo\CLASS- Popup Calculator.prg.rc"
+#include "d:\develop\xsharp\voapps\RightSLEvo\Class dlgPECalendar.prg.rc"
+#include "d:\develop\xsharp\voapps\RightSLEvo\Menu CalcSLE.prg.rc"
+#include "d:\develop\xsharp\voapps\RightSLEvo\Menu PEDateSle.prg.rc"

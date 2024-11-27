@@ -6,8 +6,8 @@
       <Class>DATAWINDOW</Class>
       <Caption>Controle de Normas</Caption>
       <Order>0</Order>
-      <Left>24</Left>
-      <Top>24</Top>
+      <Left>30</Left>
+      <Top>30</Top>
       <Width>643</Width>
       <Height>320</Height>
       <BrowseIndex>-1</BrowseIndex>
@@ -335,7 +335,6 @@
       <Styles>1075904770</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <FillUsing>Self:PEGTIPO </FillUsing>
         <FieldSpec>PADRAO_CHAR_20</FieldSpec>
         <HyperLabel>#TIPO,,,</HyperLabel>
         <HyperLabel>,"Tipo",,</HyperLabel>
@@ -634,7 +633,6 @@
       <Styles>1075904770</Styles>
       <ExStyles>0</ExStyles>
       <ExProperties>
-        <FillUsing>Self:PEGTIPO </FillUsing>
         <FieldSpec>PADRAO_CHAR_20</FieldSpec>
         <HyperLabel>#cTIPO,,,</HyperLabel>
         <HyperLabel>,"Tipo",,</HyperLabel>

@@ -1,4 +1,4 @@
-CLASS engshell INHERIT StandardShellWindow
+﻿CLASS engshell INHERIT StandardShellWindow
 
 CONSTRUCTOR( oOwnerApp ) 
 //	LOCAL oSB AS StatusBar
@@ -10,7 +10,10 @@ CONSTRUCTOR( oOwnerApp )
 	
 	aChildWindows := {}
 
+	SetDeleted( .T. )
 	
+	//AltD()
+
         oSBIDate := StatusBarItem{}
 	oSBIDate:Style := SBITEMSUNKEN
 	cDate := Ddia(Today()) //+ //FullDate(Today())
@@ -48,7 +51,7 @@ METHOD sayCOM()
   LOCAL oJCOM AS JCOM
   oJCOM:=jCOM{SELF}
   OjCOM:show()		
-  SELF:Caption:="M�dulo Engenharia - Empresa:"+StrZero(ZEMPRESA,3)+" Competencia:"+StrZero(ZMES,2)+"/"+StrZero(ZANO,4)		
+  SELF:Caption:="Módulo Engenharia - Empresa:"+StrZero(ZEMPRESA,3)+" Competencia:"+StrZero(ZMES,2)+"/"+StrZero(ZANO,4)		
 
 METHOD XWRPTEN 
 	SELF:XWRPTGRP("EN","")

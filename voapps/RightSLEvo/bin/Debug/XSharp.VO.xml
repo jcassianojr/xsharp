@@ -145,25 +145,25 @@
     <member name="M:XSharp.VO.Functions._Run(System.String)">
       <summary>Execute a Windows or DOS application, a batch file, or a DOS command.</summary>
       <param name="cProgram">
-            The command line (file name plus optional parameters) for the application to be executed.
-            If the name of the executable file in the lpCmdLine parameter does not contain a directory path,
-            the system searches for the executable file in this sequence:<br />
-            1) The directory from which the application loaded.<br />
-            2) The current directory.<br />
-            3) The Windows system directory. The GetSystemDirectory function retrieves the path of this directory.<br />
-            4) The Windows directory. The GetWindowsDirectory function retrieves the path of this directory.<br />
-            5) The directories listed in the PATH environment variable.<br /></param>
+      The command line (file name plus optional parameters) for the application to be executed.
+      If the name of the executable file in the lpCmdLine parameter does not contain a directory path,
+      the system searches for the executable file in this sequence:<br />
+      1) The directory from which the application loaded.<br />
+      2) The current directory.<br />
+      3) The Windows system directory. The GetSystemDirectory function retrieves the path of this directory.<br />
+      4) The Windows directory. The GetWindowsDirectory function retrieves the path of this directory.<br />
+      5) The directories listed in the PATH environment variable.<br /></param>
       <returns>
-            If the function succeeds, the return value is greater than 31. f the function fails, the return value is one of the following error values.
-            <list><listheader><term>Return code/value</term><description>Description</description></listheader><item><term>
-                        0
-                    </term><description>
-                        The system is out of memory or resources.
-                    </description></item><item><term>
-                        ERROR_BAD_FORMAT (1)
-                    </term><description>The .exe file is invalid.</description></item><item><term>ERROR_FILE_NOT_FOUND (2)</term><description>
-                        The specified file was not found.
-                    </description></item><item><term>ERROR_PATH_NOT_FOUND (3)</term><description>The specified path was not found</description></item></list></returns>
+      If the function succeeds, the return value is greater than 31. f the function fails, the return value is one of the following error values.
+      <list><listheader><term>Return code/value</term><description>Description</description></listheader><item><term>
+            0
+          </term><description>
+            The system is out of memory or resources.
+          </description></item><item><term>
+            ERROR_BAD_FORMAT (1)
+          </term><description>The .exe file is invalid.</description></item><item><term>ERROR_FILE_NOT_FOUND (2)</term><description>
+            The specified file was not found.
+          </description></item><item><term>ERROR_PATH_NOT_FOUND (3)</term><description>The specified path was not found</description></item></list></returns>
     </member>
     <member name="M:XSharp.VO.Functions.Crypt(System.Byte[],System.Byte[])">
       <summary>
@@ -174,23 +174,23 @@
     </member>
     <member name="M:XSharp.VO.Functions.Crypt(System.String,System.String)">
       <summary>
-            Encrypt or decrypt a string.
-        </summary>
+      Encrypt or decrypt a string.
+    </summary>
       <param name="cSource">The string that will be encrypted or decrypted.</param>
       <param name="cKey">The encryption/decryption key to be used.</param>
       <returns>
-            The encrypted/decrypted string.
-        </returns>
+      The encrypted/decrypted string.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.CryptA(System.String,System.String)">
       <summary>
-            Encrypt or decrypt a string, changing the contents of the original string as well as returning the encrypted string.
-        </summary>
+      Encrypt or decrypt a string, changing the contents of the original string as well as returning the encrypted string.
+    </summary>
       <param name="cSource">The string that will be encrypted or decrypted.</param>
       <param name="cKey">The encryption/decryption key to be used.</param>
       <returns>
-            The encrypted/decrypted string.
-        </returns>
+      The encrypted/decrypted string.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.CryptRaw(System.String,System.String)">
       <summary>
@@ -202,12 +202,12 @@
     </member>
     <member name="M:XSharp.VO.Functions.DeleteRTRegKey(System.String)">
       <summary>
-            Delete a subtree from the VO registry branches
-        </summary>
+      Delete a subtree from the VO registry branches
+    </summary>
       <param name="cSubkey">The subkey that you want to delete.</param>
       <returns>
-            TRUE if successful; otherwise, FALSE.
-        </returns>
+      TRUE if successful; otherwise, FALSE.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.DoSendMail(System.IntPtr,System.String,System.Boolean)">
       <summary></summary>
@@ -222,11 +222,11 @@
     <member name="M:XSharp.VO.Functions.ErrorNew"></member>
     <member name="M:XSharp.VO.Functions.GetAppLocaleID">
       <summary>
-            Gets the locale ID that the runtime uses for comparing strings when running in Windows collation mode (SetCollation(#Windows)).
-        </summary>
+      Gets the locale ID that the runtime uses for comparing strings when running in Windows collation mode (SetCollation(#Windows)).
+    </summary>
       <returns>
-            The current installed Locale.
-        </returns>
+      The current installed Locale.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.GetDASPtr"></member>
     <member name="M:XSharp.VO.Functions.GetMimeType(System.String)"></member>
@@ -250,210 +250,210 @@
     </member>
     <member name="M:XSharp.VO.Functions.MBAllTrim(System.String)">
       <summary>
-            Remove leading and trailing spaces — including double-byte spaces — from a string.
-        </summary>
+      Remove leading and trailing spaces — including double-byte spaces — from a string.
+    </summary>
       <param name="cMBString">The string to trim.</param>
       <returns>
-            A trimmed string, with leading and trailing spaces removed.
-        </returns>
+      A trimmed string, with leading and trailing spaces removed.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBAt(System.String,System.String)">
       <summary>
-            Return the position of the first occurrence of a substring within a string — both the substring and the string can contain double-byte characters.
-        </summary>
+      Return the position of the first occurrence of a substring within a string — both the substring and the string can contain double-byte characters.
+    </summary>
       <param name="cMBSearch">The substring to search for.</param>
       <param name="cMBTarget">The string in which to search.  (To start at a specific offset, use MBAt3().)</param>
       <returns>
-            The position of the first occurrence of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
-            If <paramref name="cMBSearch" /> is not found, MBAt() returns zero.
-        </returns>
+      The position of the first occurrence of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
+      If <paramref name="cMBSearch" /> is not found, MBAt() returns zero.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBAt2(System.String,System.String)">
       <summary>
-            Return the position of the first occurrence of a substring within a string — both the substring and the string can contain double-byte characters.
-        </summary>
+      Return the position of the first occurrence of a substring within a string — both the substring and the string can contain double-byte characters.
+    </summary>
       <param name="cMBSearch">The substring for which to search.</param>
       <param name="cMBTarget">The string in which to search.  (To start at a specific offset, use MBAt3().)</param>
       <returns>
-            The position of the first occurrence of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
-            If <paramref name="cMBSearch" /> is not found, MBAt2() returns zero.
-        </returns>
+      The position of the first occurrence of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
+      If <paramref name="cMBSearch" /> is not found, MBAt2() returns zero.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBAt3(System.String,System.String,System.UInt32)">
       <summary>
-            Return the position of the first occurrence of a substring within a string, starting at a specific position — both the substring and the string can contain double-byte characters.
-        </summary>
+      Return the position of the first occurrence of a substring within a string, starting at a specific position — both the substring and the string can contain double-byte characters.
+    </summary>
       <param name="cMBSearch">The substring to search for.</param>
       <param name="cMBTarget">The string in which to search.</param>
       <param name="wOffset">
-            The position in the string at which to start searching.<br />
-            A value of zero corresponds to the first byte.
-        </param>
+      The position in the string at which to start searching.<br />
+      A value of zero corresponds to the first byte.
+    </param>
       <returns>
-            The position of the first occurrence of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
-            If <paramref name="cMBSearch" /> is not found, MBAt3() returns zero.
-        </returns>
+      The position of the first occurrence of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
+      If <paramref name="cMBSearch" /> is not found, MBAt3() returns zero.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBAtC(System.String,System.String)">
       <summary>
-            Return the position of the first occurrence of a sub string within a string, without regard for case — both the substring and the string can contain double-byte characters.
-        </summary>
+      Return the position of the first occurrence of a sub string within a string, without regard for case — both the substring and the string can contain double-byte characters.
+    </summary>
       <param name="cMBSearch">The substring to search for.</param>
       <param name="cMBTarget">The string in which to search.</param>
       <returns>
-            The position of the first occurrence of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
-            If <paramref name="cMBSearch" /> is not found, MBAtC() returns zero.
-        </returns>
+      The position of the first occurrence of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
+      If <paramref name="cMBSearch" /> is not found, MBAtC() returns zero.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBAtC2(System.String,System.String)">
       <summary>
-            Return the position of the first occurrence of a substring within a string, without regard for case — both the substring and the string can contain double-byte characters.
-        </summary>
+      Return the position of the first occurrence of a substring within a string, without regard for case — both the substring and the string can contain double-byte characters.
+    </summary>
       <param name="cMBSearch">The substring for which to search.</param>
       <param name="cMBTarget">The string in which to search.</param>
       <returns>
-            The position of the first occurrence of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
-            If <paramref name="cMBSearch" /> is not found, MBAtC2() returns zero.
-        </returns>
+      The position of the first occurrence of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
+      If <paramref name="cMBSearch" /> is not found, MBAtC2() returns zero.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBAtLine(System.String,System.String)">
       <summary>
-            Return the line number of the first occurrence of a substring within a multiple line string — both the substring and the string can contain double-byte characters.
-        </summary>
+      Return the line number of the first occurrence of a substring within a multiple line string — both the substring and the string can contain double-byte characters.
+    </summary>
       <param name="cMBSearch">The substring to search for.</param>
       <param name="cMBTarget">The string in which to search.</param>
       <returns>
-            The position of the first occurrence of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
-            If <paramref name="cMBSearch" /> is not found, MBAtLine() returns zero.
-        </returns>
+      The position of the first occurrence of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
+      If <paramref name="cMBSearch" /> is not found, MBAtLine() returns zero.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBAtLine2(System.String,System.String)">
       <summary>
-            Return the line number of the first occurrence of a substring within a multiple line string — both the substring and the string can contain double-byte characters.
-        </summary>
+      Return the line number of the first occurrence of a substring within a multiple line string — both the substring and the string can contain double-byte characters.
+    </summary>
       <param name="cMBSearch">The substring for which to search.</param>
       <param name="cMBTarget">The string in which to search.</param>
       <returns>
-            The position of the first occurrence of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
-            If <paramref name="cMBSearch" /> is not found, MBAtLine2() returns zero.
-        </returns>
+      The position of the first occurrence of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
+      If <paramref name="cMBSearch" /> is not found, MBAtLine2() returns zero.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBLEFT(System.String,System.UInt32)">
       <summary>
-            Return a substring beginning with the first character of a string containing double-byte characters.
-        </summary>
+      Return a substring beginning with the first character of a string containing double-byte characters.
+    </summary>
       <param name="cMBString">The string from which to extract characters.</param>
       <param name="wCount">The number of characters to extract.</param>
       <returns>
-            The leftmost <paramref name="wCount" /> characters of <paramref name="cMBString" /> — each double-byte character counts as one character.<br />
-            If <paramref name="wCount" /> is zero, MBLeft() returns a NULL_STRING.<br />
-            If <paramref name="wCount" /> is larger than the length of the string, MBLeft() returns the entire string.
-        </returns>
+      The leftmost <paramref name="wCount" /> characters of <paramref name="cMBString" /> — each double-byte character counts as one character.<br />
+      If <paramref name="wCount" /> is zero, MBLeft() returns a NULL_STRING.<br />
+      If <paramref name="wCount" /> is larger than the length of the string, MBLeft() returns the entire string.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBLen(System.String)">
       <summary>
-            Return the length of a string containing double-byte characters or an array.
-        </summary>
+      Return the length of a string containing double-byte characters or an array.
+    </summary>
       <param name="uMBValue">
-            The string or array to measure.  In a string, each single-byte character counts as one, including an embedded null character (Chr(0)).  Double-byte characters also count as one.<br />
-            A NULL_STRING counts as zero.  In an array, each element counts as one.
-        </param>
+      The string or array to measure.  In a string, each single-byte character counts as one, including an embedded null character (Chr(0)).  Double-byte characters also count as one.<br />
+      A NULL_STRING counts as zero.  In an array, each element counts as one.
+    </param>
       <returns>
-            The length of <paramref name="uMBValue" /> in which each double-byte character counts as one character.
-        </returns>
+      The length of <paramref name="uMBValue" /> in which each double-byte character counts as one character.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBLTrim(System.String)">
       <summary>
-            Remove leading spaces — including double-byte spaces — from a string.
-        </summary>
+      Remove leading spaces — including double-byte spaces — from a string.
+    </summary>
       <param name="cMBString">The string to trim.</param>
       <returns>
         <paramref name="cMBString" /> with the leading spaces removed.<br />
-            If <paramref name="cMBString" /> is a NULL_STRING or all spaces, MBLTrim() returns a NULL_STRING.
-        </returns>
+      If <paramref name="cMBString" /> is a NULL_STRING or all spaces, MBLTrim() returns a NULL_STRING.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBRat(System.String,System.String)">
       <summary>
-            Return the position of the last occurrence of a substring within a string — both the substring and the string can contain double-byte characters.
-        </summary>
+      Return the position of the last occurrence of a substring within a string — both the substring and the string can contain double-byte characters.
+    </summary>
       <param name="cMBSearch">The substring for which to search.</param>
       <param name="cMBTarget">The string in which to search.  (To start at a specific offset, use MBRAt3().)</param>
       <returns>
-            The position of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
-            If <paramref name="cMBSearch" /> is not found, MBRAt() returns zero.
-        </returns>
+      The position of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
+      If <paramref name="cMBSearch" /> is not found, MBRAt() returns zero.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBRat2(System.String,System.String)">
       <summary>
-            Return the position of the last occurrence of a substring within a string — both the substring and the string can contain double-byte characters.
-        </summary>
+      Return the position of the last occurrence of a substring within a string — both the substring and the string can contain double-byte characters.
+    </summary>
       <param name="cMBSearch">The substring for which to search.</param>
       <param name="cMBTarget">The string in which to search.  (To start at a specific offset, use MBRAt3().)</param>
       <returns>
-            The position of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
-            If <paramref name="cMBSearch" /> is not found, MBRAt2() returns zero.
-        </returns>
+      The position of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
+      If <paramref name="cMBSearch" /> is not found, MBRAt2() returns zero.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBRat3(System.String,System.String,System.UInt32)">
       <summary>
-            Return the position of the last occurrence of a substring within a string, starting at a specific position — both the substring and the string can contain double-byte characters.
-        </summary>
+      Return the position of the last occurrence of a substring within a string, starting at a specific position — both the substring and the string can contain double-byte characters.
+    </summary>
       <param name="cMBSearch">The substring for which to search.</param>
       <param name="cMBTarget">The string in which to search.</param>
       <param name="wOffset">
-            The position in the string at which to start searching.<br />
-            A value of zero specifies the first byte.
-        </param>
+      The position in the string at which to start searching.<br />
+      A value of zero specifies the first byte.
+    </param>
       <returns>
-            The position of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
-            If <paramref name="cMBSearch" /> is not found, MBRAt3() returns zero.
-        </returns>
+      The position of <paramref name="cMBSearch" /> within <paramref name="cMBTarget" />.<br />
+      If <paramref name="cMBSearch" /> is not found, MBRAt3() returns zero.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBRight(System.String,System.UInt32)">
       <summary>
-            Return a substring beginning with the last character of a string containing double-byte characters.
-        </summary>
+      Return a substring beginning with the last character of a string containing double-byte characters.
+    </summary>
       <param name="cMBString">The string from which to extract characters.</param>
       <param name="wCount">The number of characters to extract.</param>
       <returns>
-            The rightmost <paramref name="wCount" /> characters of <paramref name="cMBString" /> — each double-byte character counts as one character.<br />
-            If <paramref name="wCount" /> is zero, MBRight() returns a NULL_STRING.<br />
-            If <paramref name="wCount" /> is larger than the length of the string, MBRight() returns <paramref name="cMBString" />.
-        </returns>
+      The rightmost <paramref name="wCount" /> characters of <paramref name="cMBString" /> — each double-byte character counts as one character.<br />
+      If <paramref name="wCount" /> is zero, MBRight() returns a NULL_STRING.<br />
+      If <paramref name="wCount" /> is larger than the length of the string, MBRight() returns <paramref name="cMBString" />.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBRTrim(System.String)">
       <summary>
-            Remove trailing spaces — including double-byte spaces — from a string.
-        </summary>
+      Remove trailing spaces — including double-byte spaces — from a string.
+    </summary>
       <param name="cMBString">The string to trim.</param>
       <returns>
         <paramref name="cMBString" /> with the trailing spaces removed.<br />
-            If <paramref name="cMBString" /> is a NULL_STRING or all spaces, MBRTrim() returns a NULL_STRING.
-        </returns>
+      If <paramref name="cMBString" /> is a NULL_STRING or all spaces, MBRTrim() returns a NULL_STRING.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBSLen(System.String)">
       <summary>
-            Return the length of a strongly typed string containing double-byte characters.
-        </summary>
+      Return the length of a strongly typed string containing double-byte characters.
+    </summary>
       <param name="cMBString">The string to count.</param>
       <returns>
-            The length of <paramref name="cMBString" /> in which each double-byte character counts as one character.<br />
-            If the string is a NULL_STRING, MBSLen() returns zero.
-        </returns>
+      The length of <paramref name="cMBString" /> in which each double-byte character counts as one character.<br />
+      If the string is a NULL_STRING, MBSLen() returns zero.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBStuff(System.String,System.UInt32,System.UInt32,System.String)">
       <summary>
-            Insert a string into another string, optionally deleting a specified number of characters from the original string — both strings can contain double-byte characters.
-        </summary>
+      Insert a string into another string, optionally deleting a specified number of characters from the original string — both strings can contain double-byte characters.
+    </summary>
       <param name="cMBTarget">The string into which characters are inserted and deleted.</param>
       <param name="wStart">
-            The position in <paramref name="cMBTarget" /> where the insertion/deletion occurs.
-        </param>
+      The position in <paramref name="cMBTarget" /> where the insertion/deletion occurs.
+    </param>
       <param name="wDelete">The number of characters to delete — each double-byte character counts as one character.</param>
       <param name="cMBInsert">The string to insert.</param>
       <returns>
         <paramref name="cMBTarget" /> with the specified characters deleted and <paramref name="cMBInsert" /> inserted.
-        </returns>
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBSubstr(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
       <summary>
@@ -466,48 +466,48 @@
     </member>
     <member name="M:XSharp.VO.Functions.MBSubstr2(System.String,System.UInt32)">
       <summary>
-            Extract a substring from a string, using strong typing and only two arguments — both the substring and the string can contain double-byte characters.
-        </summary>
+      Extract a substring from a string, using strong typing and only two arguments — both the substring and the string can contain double-byte characters.
+    </summary>
       <param name="cMBTarget">The string from which to extract a substring.</param>
       <param name="wStart">
-            The starting position relative to the leftmost character in <paramref name="cMBTarget" />.
-        </param>
+      The starting position relative to the leftmost character in <paramref name="cMBTarget" />.
+    </param>
       <returns>
-            The substring.<br />
-            If the substring is not present, or if you specify <paramref name="wStart" /> as zero, MBSubstr2() returns a NULL_STRING.
-        </returns>
+      The substring.<br />
+      If the substring is not present, or if you specify <paramref name="wStart" /> as zero, MBSubstr2() returns a NULL_STRING.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBSubstr3(System.String,System.UInt32,System.UInt32)">
       <summary>
-            Extract a substring from a string, using strong typing and three required arguments — both the substring and the string can contain double-byte characters.
-        </summary>
+      Extract a substring from a string, using strong typing and three required arguments — both the substring and the string can contain double-byte characters.
+    </summary>
       <param name="cMBTarget">The string from which to extract a substring.</param>
       <param name="wStart">
-            The starting position relative to the leftmost character in <paramref name="cMBTarget" />.
-        </param>
+      The starting position relative to the leftmost character in <paramref name="cMBTarget" />.
+    </param>
       <param name="wCount">
-            The number of characters to extract — double-byte characters count as one character.<br />
-            If <paramref name="wCount" /> is greater than the number of characters from <paramref name="wStart" /> to the end of <paramref name="cMBTarget" />, the extra is ignored.
-        </param>
+      The number of characters to extract — double-byte characters count as one character.<br />
+      If <paramref name="wCount" /> is greater than the number of characters from <paramref name="wStart" /> to the end of <paramref name="cMBTarget" />, the extra is ignored.
+    </param>
       <returns>
-            The substring.<br />
-            If the substring is not present, or if you specify <paramref name="wStart" /> as zero, MBSubstr3() returns a NULL_STRING.
-        </returns>
+      The substring.<br />
+      If the substring is not present, or if you specify <paramref name="wStart" /> as zero, MBSubstr3() returns a NULL_STRING.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.MBTrim(System.String)">
       <summary>
-            Remove trailing spaces — including double-byte spaces — from a string.
-        </summary>
+      Remove trailing spaces — including double-byte spaces — from a string.
+    </summary>
       <param name="cMBString">The string to trim.</param>
       <returns>
         <paramref name="cMBString" /> with the trailing spaces removed.<br />
-            If <paramref name="cMBString" /> is a NULL_STRING or all spaces, MBTrim() returns a NULL_STRING.
-        </returns>
+      If <paramref name="cMBString" /> is a NULL_STRING or all spaces, MBTrim() returns a NULL_STRING.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.NVersion">
       <summary>
-            Identify a character set by its nation driver.
-        </summary>
+      Identify a character set by its nation driver.
+    </summary>
       <returns></returns>
     </member>
     <member name="M:XSharp.VO.Functions.OClone(System.Object)">
@@ -524,52 +524,52 @@
     </member>
     <member name="M:XSharp.VO.Functions.PtrLen(System.IntPtr)">
       <summary>
-            Determine the number of bytes that can be read at a given pointer.
-        </summary>
+      Determine the number of bytes that can be read at a given pointer.
+    </summary>
       <param name="ptrRead">The pointer to examine.</param>
       <returns>
-            The number of bytes that can be read, starting from the location pointed to by <paramref name="ptrRead" />.<br />
-            If <paramref name="ptrRead" /> is an invalid pointer, a value of 0 is returned.
-        </returns>
+      The number of bytes that can be read, starting from the location pointed to by <paramref name="ptrRead" />.<br />
+      If <paramref name="ptrRead" /> is an invalid pointer, a value of 0 is returned.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.PtrLenWrite(System.IntPtr)">
       <summary>
-            Determine the number of bytes that can be written at a given pointer.
-        </summary>
+      Determine the number of bytes that can be written at a given pointer.
+    </summary>
       <param name="ptrWrite">The pointer to examine.</param>
       <returns>
-            The number of bytes that can be written, starting from the location pointed to by <paramref name="ptrRead" />.<br />
-            If <paramref name="ptrRead" /> is an invalid pointer or a write-protected pointer, a value of 0 is returned.
-        </returns>
+      The number of bytes that can be written, starting from the location pointed to by <paramref name="ptrRead" />.<br />
+      If <paramref name="ptrRead" /> is an invalid pointer or a write-protected pointer, a value of 0 is returned.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.QueryRTRegInt(System.String,System.String)">
       <summary>
-            Retrieve a numeric value from the Registry.
-        </summary>
+      Retrieve a numeric value from the Registry.
+    </summary>
       <param name="cSubkey">The subkey under which you want to search for a numeric value.</param>
       <param name="cKey">The key under which you want to search for a numeric value.</param>
       <returns>
         <paramref name="dwValue" /> if the entry <paramref name="cKey" /> = <paramref name="dwValue" /> exists; otherwise, zero.
-        </returns>
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.QueryRTRegString(System.String,System.String)">
       <summary>
-            Retrieve a string value from the Registry.
-        </summary>
+      Retrieve a string value from the Registry.
+    </summary>
       <param name="cSubkey">The subkey under which you want to search for a string value.</param>
       <param name="cKey">The key under which you want to search for a string value.</param>
       <returns>
         <paramref name="cValue" /> if the entry <paramref name="cKey" /> = <paramref name="cValue" /> exists; otherwise, zero.
-        </returns>
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.SetAppLocaleID(System.UInt32)">
       <summary>
-            Sets the locale that the runtime uses for comparing strings when running in Windows collation mode (SetCollation(#Windows)).
-        </summary>
+      Sets the locale that the runtime uses for comparing strings when running in Windows collation mode (SetCollation(#Windows)).
+    </summary>
       <param name="uiNewLocale">Must be a valid LocaleId and can be constructed using the MAKELCID() and MAKELANGID() functions.</param>
       <returns>
-            The previously installed Locale.
-        </returns>
+      The previously installed Locale.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.SetClipCompFunc(System.Object)">
       <summary>This function is not implemented yet</summary>
@@ -578,25 +578,25 @@
     </member>
     <member name="M:XSharp.VO.Functions.SetRTRegInt(System.String,System.String,System.UInt32)">
       <summary>
-            Save a numeric value to the Registry.
-        </summary>
+      Save a numeric value to the Registry.
+    </summary>
       <param name="cSubkey">The subkey under which you want to add the number.</param>
       <param name="cKey">The key under which you want to add the number.</param>
       <param name="dwKeyValue">The key value you want to add to the Registry.</param>
       <returns>
-            TRUE if successful; otherwise, FALSE.
-        </returns>
+      TRUE if successful; otherwise, FALSE.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.SetRTRegString(System.String,System.String,System.String)">
       <summary>
-            Save a string value to the Registry.
-        </summary>
+      Save a string value to the Registry.
+    </summary>
       <param name="cSubkey">The subkey under which you want to add the string.</param>
       <param name="cKey">The key under which you want to add the string.</param>
       <param name="cValue">The key value you want to add to the Registry.</param>
       <returns>
-            TRUE if successful; otherwise, FALSE.
-        </returns>
+      TRUE if successful; otherwise, FALSE.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.SetWinCompFlags(System.Object)">
       <summary>This function is not implemented yet</summary>
@@ -610,47 +610,47 @@
     </member>
     <member name="M:XSharp.VO.Functions.ShowBitmap(System.IntPtr,System.String,System.String)">
       <summary>
-            Display a bitmap in a window or control.
-        </summary>
+      Display a bitmap in a window or control.
+    </summary>
       <param name="hWnd">Handle of the window or control in which you want to display the bitmap.</param>
       <param name="cFileName">The bitmap file to display.</param>
       <param name="cTitle">Caption for the window or control.</param>
       <returns>
-            TRUE if successful, otherwise FALSE.
-        </returns>
+      TRUE if successful, otherwise FALSE.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.StretchBitmap(System.IntPtr,System.String,System.String)">
       <summary>
-            Display a bitmap stretched or shrunk to fit a window or control.
-        </summary>
+      Display a bitmap stretched or shrunk to fit a window or control.
+    </summary>
       <param name="hWnd">Handle of the window or control in which you want to display the bitmap.</param>
       <param name="cFileName">The bitmap file to display.</param>
       <param name="cTitle">Caption for the window or control.</param>
       <returns>
-            TRUE if successful; otherwise, FALSE.
-        </returns>
+      TRUE if successful; otherwise, FALSE.
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.SysObject">
       <summary>
-            Install a system-wide object. Please not that this works a bit different from Visual Objects.
-        </summary>
+      Install a system-wide object. Please not that this works a bit different from Visual Objects.
+    </summary>
       <param name="oSys">
-            The object to be installed. <paramref name="oSys" /> can be a NULL_OBJECT, in which case the system object is cleared.
-        </param>
+      The object to be installed. <paramref name="oSys" /> can be a NULL_OBJECT, in which case the system object is cleared.
+    </param>
       <returns>
         <paramref name="oSys" /> or, if <paramref name="oSys" /> is not specified, the currently installed object.
-        </returns>
+    </returns>
     </member>
     <member name="M:XSharp.VO.Functions.SysObject(System.Object)">
       <summary>
-            Install a system-wide object. Please not that this works a bit different from Visual Objects.
-        </summary>
+      Install a system-wide object. Please not that this works a bit different from Visual Objects.
+    </summary>
       <param name="oSys">
-            The object to be installed. <paramref name="oSys" /> can be a NULL_OBJECT, in which case the system object is cleared.
-        </param>
+      The object to be installed. <paramref name="oSys" /> can be a NULL_OBJECT, in which case the system object is cleared.
+    </param>
       <returns>
         <paramref name="oSys" /> or, if <paramref name="oSys" /> is not specified, the currently installed object.
-        </returns>
+    </returns>
     </member>
   </members>
 </doc>

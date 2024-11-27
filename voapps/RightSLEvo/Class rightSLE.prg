@@ -1,8 +1,8 @@
-﻿#region DEFINES
+#region DEFINES
 DEFINE FSEL_END     := 3
-DEFINE FSEL_HOME    := 2
+//DEFINE FSEL_HOME    := 2
 DEFINE FSEL_RALL     := 0
-DEFINE FSEL_TRIM    := 1
+//DEFINE FSEL_TRIM    := 1
 DEFINE FSEL_TRIMEND := 4
 DEFINE LOCALE_SYSTEM_DEFAULT := 2048
 DEFINE LOCALE_USER_DEFAULT	:= 1024
@@ -354,7 +354,7 @@ METHOD Dispatch ( oEvent )
 	   lExtSel  := lShiftOn  .and. (uMsg == WM_KEYDOWN  .or. uMsg == WM_KEYUP)  .and. ;
 			      (wParam == VK_LEFT  .or. wParam == VK_RIGHT  .or. wParam == VK_END  .or. wParam == VK_HOME)
 	ENDIF
-  	cChar := Upper(CHR(wParam))
+  	cChar := Upper(Chr(wParam))
 
 	// cut and paste stuff goes here
     IF SELF:lAllowcutandPaste	
@@ -483,12 +483,12 @@ METHOD Dispatch ( oEvent )
             // JL*** John Lewis Modification
             CASE  uMsg == WM_CHAR  .and. (wParam == 84  .or. wParam == 116) // T or t
 	            // Grab the event, the KeyDown and send it over to PEDateSle's KeyDown
-					self:CalKeyDown( oEvent)      
+					SELF:CalKeyDown( oEvent)      
                RETURN 1L
 		         	
 	
 				// Stop the beeping
-				CASE uMsg == WM_CHAR  .And. ( CHR( wParam )  == "+"  .Or. CHR( wParam ) == "-" )
+				CASE uMsg == WM_CHAR  .And. ( Chr( wParam )  == "+"  .Or. CHR( wParam ) == "-" )
 	
 					// Beep if you have too, but don't process either of these keys
 					IF CToD( SELF:TextValue ) == NULL_DATE
@@ -684,7 +684,7 @@ METHOD FocusChange(oFocusChangeEvent)
 				iPos := 0
 				IF oEditString != NULL_OBJECT
 					IF oEditString:Type == "N"  .AND. SELF:lAllowNumericFocus	// wcm 7/19/2002
-						iPos 	:= LONG(At2(CHR(SetDecimalSep()),SELF:CurrentText))
+						iPos 	:= LONG(At2(Chr(SetDecimalSep()),SELF:CurrentText))
 						IF iPos > 0
 							// set the cursor before the decimal Sep
 							iPos--
@@ -783,7 +783,7 @@ CONSTRUCTOR(oOwner, nId, oPoint, oDim, kStyle, lDataAware )
 	SELF:lallowcutandPaste				:= TRUE				// by default allow cut and paste											
 	SELF:lDoubleAsToday					:= FALSE				// keep the old rightSLE default of always showing the calendar by default
 	SELF:lSendFromButton					:= FALSE				// we start off from the SLE, not the button
- 	SELF:cTemplateChar 					:= CHR(SetThousandSep()) + "()$ "
+ 	SELF:cTemplateChar 					:= Chr(SetThousandSep()) + "()$ "
  	SELF:FirstDayoftheWeek				:= 99					// junk value to show that it is un-initialized
  	SELF:lAllowNumericFocus				:= FALSE				// keep rightSLE the way it used to be by default
  	SELF:lRememberPosition				:= FALSE				// start off in compatiblilty mode
@@ -1025,15 +1025,15 @@ METHOD ProcessNum( oEvent AS OBJECT ) AS VOID PASCAL
 	BEGIN SEQUENCE		
 		uMsg   		:= oEvent:umsg
 		wParam 		:= oEvent:wParam
-		cChar		:= CHR(wparam)
+		cChar		:= Chr(wparam)
 		nStart		:= SELF:Selection:Start
 		nStop		:= SELF:Selection:Finish
 		lApplyKey	:= TRUE
 		cText		:= SELF:textValue
 		cOrgValue	:= SELF:textValue
 		nPos		:= nStart
-		cDecimal	:= CHR(SetDecimalSep())
-		cThousands	:= CHR(SetThousandSep())	// wcm 7/24/2001
+		cDecimal	:= Chr(SetDecimalSep())
+		cThousands	:= Chr(SetThousandSep())	// wcm 7/24/2001
 		lPoint		:= FALSE					// we are in the left side by default
 		lIgnore		:= FALSE					// by default we want to process everything
 		nOffset		:= 0						// this is an offset to adjust the position if we left strip spaces
@@ -1582,7 +1582,7 @@ METHOD SetField(cText AS STRING,nMult AS LONGINT) AS STRING PASCAL
 	LOCAL nStrLen		AS DWORD
 
 	DO CASE
-	    CASE Instr(CHR(SetThousandSep()),cText)
+	    CASE Instr(Chr(SetThousandSep()),cText)
 	        cTmpString := ""
 	        nStrLen  := Len(cText)
 	        FOR i := 1 UPTO nStrLen

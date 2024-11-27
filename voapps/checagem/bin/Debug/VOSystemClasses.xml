@@ -440,11 +440,7 @@
         </summary>
       <param name="oHLName">The hyperlabel that contains the field name and other attributes (i.e., caption, description, and help context) to be used to create the new date field specification.</param>
     </member>
-    <member name="T:VO.FieldSpec">
-      <summary>
-            Create a field specification, which holds general data type information about data elements, such as database fields and window controls.
-        </summary>
-    </member>
+    <member name="T:VO.FieldSpec"></member>
     <member name="M:VO.FieldSpec.#ctor(XSharp.__Usual,XSharp.__Usual,XSharp.__Usual,XSharp.__Usual)">
       <summary>
             Construct a field specification.
