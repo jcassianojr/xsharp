@@ -1,277 +1,29 @@
 DESIGNERSTART = VOWindowEditor,DATADIALOG,JRifDia
 GUID=1C4DBFBC-40D9-4910-86C3-01EF9F055524
   Name=JRifDia
-  Class=DATADIALOG
+  Class=FORM:DATADIALOG
   Caption=Confirmação
   Order=0
-  Left=50
+  Left=0
   Width=596
-  Top=50
+  Top=0
   Height=325
-  Browseindex=-1
+  Browseindex=0
   Browsesize=0
   Subform=No
   Nosave=No
   Deleted=0
   Styles=1073741824
   Exstyles=0
-  Property=HyperLabel=,"Confirmação",,
-  Property=HyperLabel=#JRifDia,,,
+  Property=HyperLabel=,Confirmação
+  Property=HyperLabel=JRifDia
   Property=InheritClassName=MYDatadialog
-
+SavedOnce=1
 SUBCONTROLSSTART
-CONTROL=PUSHBUTTON
-GUID=DEB3311A-B765-44D5-BC71-4029FC025465
-  Name=OK
-  Class=PUSHBUTTON
-  Caption=
-  Order=1
-  Left=521
-  Width=64
-  Top=77
-  Height=48
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1073807424
-  Exstyles=0
-  Property=HyperLabel=#OK,,,
-  Property=Image=ico_ok
-
-CONTROL=PUSHBUTTON
-GUID=868CE605-1773-452B-9416-B817CE0D6871
-  Name=Cancelar
-  Class=PUSHBUTTON
-  Caption=
-  Order=2
-  Left=521
-  Width=64
-  Top=5
-  Height=48
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1073807424
-  Exstyles=0
-  Property=HyperLabel=#Cancelar,,,
-  Property=Image=ico_sair
-
-CONTROL=FIXEDTEXT
-GUID=1A06DB7F-96F4-4D29-AB7F-81AF3655AA71
-  Name=theFixedText10
-  Class=FIXEDTEXT
-  Caption=OK
-  Order=3
-  Left=521
-  Width=64
-  Top=125
-  Height=20
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1073741825
-  Exstyles=0
-  Property=HyperLabel=,"OK",,
-  Property=HyperLabel=#theFixedText10,,,
-
-CONTROL=FIXEDTEXT
-GUID=6B41CA4E-9A13-4FF9-BBBD-9198D6C9DB70
-  Name=codigo
-  Class=FIXEDTEXT
-  Caption=codigo
-  Order=4
-  Left=5
-  Width=476
-  Top=5
-  Height=71
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1073741824
-  Exstyles=0
-  Property=HyperLabel=,"codigo",,
-  Property=HyperLabel=#codigo,,,
-  Property=NewFont=28:Times New Roman:Bold
-
-CONTROL=FIXEDTEXT
-GUID=641C8B54-BA56-46F4-81A0-F66E7DEE41CB
-  Name=theFixedText9
-  Class=FIXEDTEXT
-  Caption=Cancelar
-  Order=5
-  Left=521
-  Width=64
-  Top=53
-  Height=20
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1073741825
-  Exstyles=0
-  Property=HyperLabel=,"Cancelar",,
-  Property=HyperLabel=#theFixedText9,,,
-
-CONTROL=FIXEDTEXT
-GUID=605FE2C1-75BE-4EAD-B80F-984CAEB809EC
-  Name=cPF
-  Class=FIXEDTEXT
-  Caption=PF
-  Order=6
-  Left=9
-  Width=44
-  Top=141
-  Height=55
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1073741824
-  Exstyles=0
-  Property=HyperLabel=,"PF",,
-  Property=NewFont=26:Times New Roman
-  Property=HyperLabel=#cPF,,,
-
-CONTROL=FIXEDTEXT
-GUID=E92E9BF0-ED8F-48A8-9B74-807B4D0B59B4
-  Name=cOS
-  Class=FIXEDTEXT
-  Caption=OS
-  Order=7
-  Left=9
-  Width=48
-  Top=201
-  Height=55
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1073741824
-  Exstyles=0
-  Property=HyperLabel=,"OS",,
-  Property=NewFont=26:Times New Roman
-  Property=HyperLabel=#cOS,,,
-
-CONTROL=FIXEDTEXT
-GUID=F9F43F54-5394-4BF1-A332-23A2ECBA07F0
-  Name=nPF
-  Class=FIXEDTEXT
-  Caption=PF
-  Order=8
-  Left=61
-  Width=120
-  Top=141
-  Height=55
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1073741824
-  Exstyles=0
-  Property=HyperLabel=,"PF",,
-  Property=NewFont=26:Times New Roman
-  Property=HyperLabel=#nPF,,,
-
-CONTROL=FIXEDTEXT
-GUID=830F718F-65D1-44DA-9069-4CC2AE73E0B1
-  Name=nOS
-  Class=FIXEDTEXT
-  Caption=OS
-  Order=9
-  Left=65
-  Width=120
-  Top=201
-  Height=55
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1073741824
-  Exstyles=0
-  Property=HyperLabel=,"OS",,
-  Property=NewFont=26:Times New Roman
-  Property=HyperLabel=#nOS,,,
-
-CONTROL=FIXEDTEXT
-GUID=1E88CD85-18EA-4FBC-84F3-3D70A9695CC4
-  Name=cNOME
-  Class=FIXEDTEXT
-  Caption=codigo
-  Order=10
-  Left=5
-  Width=476
-  Top=81
-  Height=56
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1073741824
-  Exstyles=0
-  Property=HyperLabel=,"codigo",,
-  Property=HyperLabel=#cNOME,,,
-  Property=NewFont=16:Times New Roman:Bold
-
-CONTROL=FIXEDTEXT
-GUID=D02CD510-69B0-4074-BEAE-D0E11CC0F293
-  Name=cdata
-  Class=FIXEDTEXT
-  Caption=Data
-  Order=11
-  Left=5
-  Width=72
-  Top=261
-  Height=55
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1073741824
-  Exstyles=0
-  Property=HyperLabel=,"Data",,
-  Property=NewFont=26:Times New Roman
-  Property=HyperLabel=#cdata,,,
-
-CONTROL=FIXEDTEXT
-GUID=94B3081D-3087-4DEC-96D1-26152BDED77E
-  Name=dDATA
-  Class=FIXEDTEXT
-  Caption=DATA
-  Order=12
-  Left=81
-  Width=160
-  Top=261
-  Height=55
-  Browseindex=-1
-  Browsesize=0
-  Subform=No
-  Nosave=No
-  Deleted=2
-  Styles=1073741824
-  Exstyles=0
-  Property=HyperLabel=,"DATA",,
-  Property=NewFont=26:Times New Roman
-  Property=HyperLabel=#dDATA,,,
-
 CONTROL=CUSTOMCONTROL
 GUID=B8AEF183-4E57-4896-A723-DB0284449A87
   Name=FOTO
-  Class=CUSTOMCONTROL
+  Class=CONTROL:CUSTOMCONTROL
   Caption=
   Order=13
   Left=278
@@ -282,12 +34,248 @@ GUID=B8AEF183-4E57-4896-A723-DB0284449A87
   Browsesize=0
   Subform=No
   Nosave=No
-  Deleted=2
+  Deleted=0
   Styles=1082130432
   Exstyles=0
-  Property=HyperLabel=#FOTO,,,
-  Property=InheritClassName=FabPaintLibCtrl
-
+  Property=HyperLabel=FOTO
+  Property=InheritClassName=FabPaintLib.Control.FabPaintLibCtrl
+CONTROL=PUSHBUTTON
+GUID=DEB3311A-B765-44D5-BC71-4029FC025465
+  Name=OK
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=1
+  Left=521
+  Width=64
+  Top=77
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=OK
+  Property=Image=ico_ok
+CONTROL=PUSHBUTTON
+GUID=868CE605-1773-452B-9416-B817CE0D6871
+  Name=Cancelar
+  Class=CONTROL:TEXTCONTROL:BUTTON:PUSHBUTTON
+  Caption=
+  Order=2
+  Left=521
+  Width=64
+  Top=5
+  Height=48
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807424
+  Exstyles=0
+  Property=HyperLabel=Cancelar
+  Property=Image=ico_sair
+CONTROL=FIXEDTEXT
+GUID=1A06DB7F-96F4-4D29-AB7F-81AF3655AA71
+  Name=theFixedText10
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=OK
+  Order=3
+  Left=521
+  Width=64
+  Top=125
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,OK
+  Property=HyperLabel=theFixedText10
+CONTROL=FIXEDTEXT
+GUID=6B41CA4E-9A13-4FF9-BBBD-9198D6C9DB70
+  Name=codigo
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=codigo
+  Order=4
+  Left=5
+  Width=476
+  Top=5
+  Height=71
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,codigo
+  Property=HyperLabel=codigo
+  Property=NewFont=28:Times New Roman:Bold
+CONTROL=FIXEDTEXT
+GUID=641C8B54-BA56-46F4-81A0-F66E7DEE41CB
+  Name=theFixedText9
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Cancelar
+  Order=5
+  Left=521
+  Width=64
+  Top=53
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,Cancelar
+  Property=HyperLabel=theFixedText9
+CONTROL=FIXEDTEXT
+GUID=605FE2C1-75BE-4EAD-B80F-984CAEB809EC
+  Name=cPF
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=PF
+  Order=6
+  Left=9
+  Width=44
+  Top=141
+  Height=55
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,PF
+  Property=HyperLabel=cPF
+  Property=NewFont=26:Times New Roman
+CONTROL=FIXEDTEXT
+GUID=E92E9BF0-ED8F-48A8-9B74-807B4D0B59B4
+  Name=cOS
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=OS
+  Order=7
+  Left=9
+  Width=48
+  Top=201
+  Height=55
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,OS
+  Property=HyperLabel=cOS
+  Property=NewFont=26:Times New Roman
+CONTROL=FIXEDTEXT
+GUID=F9F43F54-5394-4BF1-A332-23A2ECBA07F0
+  Name=nPF
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=PF
+  Order=8
+  Left=61
+  Width=120
+  Top=141
+  Height=55
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,PF
+  Property=HyperLabel=nPF
+  Property=NewFont=26:Times New Roman
+CONTROL=FIXEDTEXT
+GUID=830F718F-65D1-44DA-9069-4CC2AE73E0B1
+  Name=nOS
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=OS
+  Order=9
+  Left=65
+  Width=120
+  Top=201
+  Height=55
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,OS
+  Property=HyperLabel=nOS
+  Property=NewFont=26:Times New Roman
+CONTROL=FIXEDTEXT
+GUID=1E88CD85-18EA-4FBC-84F3-3D70A9695CC4
+  Name=cNOME
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=codigo
+  Order=10
+  Left=5
+  Width=476
+  Top=81
+  Height=56
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,codigo
+  Property=HyperLabel=cNOME
+  Property=NewFont=16:Times New Roman:Bold
+CONTROL=FIXEDTEXT
+GUID=D02CD510-69B0-4074-BEAE-D0E11CC0F293
+  Name=cdata
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=Data
+  Order=11
+  Left=5
+  Width=72
+  Top=261
+  Height=55
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,Data
+  Property=HyperLabel=cdata
+  Property=NewFont=26:Times New Roman
+CONTROL=FIXEDTEXT
+GUID=94B3081D-3087-4DEC-96D1-26152BDED77E
+  Name=dDATA
+  Class=CONTROL:TEXTCONTROL:FIXEDTEXT
+  Caption=DATA
+  Order=12
+  Left=81
+  Width=160
+  Top=261
+  Height=55
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,DATA
+  Property=HyperLabel=dDATA
+  Property=NewFont=26:Times New Roman
 SUBCONTROLSEND
 DESIGNEREND = JRifDia
+
 

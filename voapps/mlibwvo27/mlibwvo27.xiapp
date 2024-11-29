@@ -205,9 +205,9 @@ ReferenceGAC = CLR4,VOWin32APILibrary,1,0,2.6.0.0
 ReferenceGAC = CLR4,System.Windows.Forms,1,0,4.0.0.0
 ReferenceGAC = CLR4,System.Drawing,1,0,4.0.0.0
 ReferenceProject = A0D63BC7-CEC0-4174-BF00-F5E89967A8F3,1,0,RightSLEVO
-ReferenceProject = 6E02D6F9-C529-4D58-88E8-BF790C7764BA,1,0,FabPaintLibvo
-ReferenceProject = A73BC68D-4D56-44F8-BF58-2B29168F604F,1,0,FabPaintLibControlvo
 ReferenceGAC = CLR4,VOSQLClasses,1,0,2.6.0.0
+ReferenceProject = 80EB9798-E867-4437-92FC-C72E39FD1F15,1,0,FabPaintlib
+ReferenceProject = F647E3BD-CDB1-4896-A914-1F021F79F534,1,0,FabPaintLib_control
 [mlibwvo27 Resources]
 [mlibwvo27 Native Resources]
 NativeResourceFile = %AppPath%\icones.rc

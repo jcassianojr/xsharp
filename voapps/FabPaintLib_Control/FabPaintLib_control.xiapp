@@ -46,7 +46,7 @@ FileGUID = C865E361-B71B-4154-9FDF-51E835C2A45F
 FileType = Code
 CopyToBin = 0
 File = %AppPath%\XSControl.prg
-FileGUID = 1633044D-4A12-49BE-A343-869B60D627C3
+FileGUID = 722BEAC4-8CB5-4733-B776-4CA3852614E9
 FileType = Code
 CopyToBin = 0
 [FabPaintLib_control References]
@@ -60,6 +60,7 @@ ReferenceGAC = CLR4,VOWin32APILibrary,1,0,2.6.0.0
 ReferenceGAC = CLR4,System.Windows.Forms,1,0,4.0.0.0
 ReferenceBrowse = d:\devprg\XIDE\dlls\FreeImageNET.dll,1,1
 ReferenceProject = 80EB9798-E867-4437-92FC-C72E39FD1F15,1,0,FabPaintlib
+ReferenceGAC = CLR4,System.Drawing,1,0,4.0.0.0
 [FabPaintLib_control Resources]
 [FabPaintLib_control Native Resources]
 [FabPaintLib_control License files]

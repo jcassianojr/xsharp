@@ -143,8 +143,8 @@ ReferenceProject = F1F864DD-EF02-461B-B15D-7BEB6DF7C20A,1,0,Login
 ReferenceProject = 3F447BFB-7AEC-47B9-B63C-E279857F0F6C,1,0,Mail
 ReferenceBrowse = d:\devprg\XIDE\dlls\FreeImageNET.dll,1,1
 ReferenceProject = A0D63BC7-CEC0-4174-BF00-F5E89967A8F3,1,0,RightSLEVO
-ReferenceProject = A73BC68D-4D56-44F8-BF58-2B29168F604F,1,0,FabPaintLibControlvo
-ReferenceProject = 6E02D6F9-C529-4D58-88E8-BF790C7764BA,1,0,FabPaintLibvo
+ReferenceProject = 80EB9798-E867-4437-92FC-C72E39FD1F15,1,0,FabPaintlib
+ReferenceProject = F647E3BD-CDB1-4896-A914-1F021F79F534,1,0,FabPaintLib_control
 [final Resources]
 [final Native Resources]
 [final License files]

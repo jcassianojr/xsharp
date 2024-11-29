@@ -1,64 +1,61 @@
-﻿#region DEFINES
-STATIC DEFINE _FOTOVIEW_CANCELAR := 102 
-STATIC DEFINE _FOTOVIEW_FOTO := 100 
-STATIC DEFINE _FOTOVIEW_FOTOJPG := 104 
-STATIC DEFINE _FOTOVIEW_THEFIXEDTEXT9 := 101 
-STATIC DEFINE _FOTOVIEW_TITULO := 103 
+USING FabPaintLib
+#region DEFINES
+STATIC DEFINE _FOTOVIEW_CANCELAR := 101
+STATIC DEFINE _FOTOVIEW_FOTO := 104
+STATIC DEFINE _FOTOVIEW_FOTOJPG := 103
+STATIC DEFINE _FOTOVIEW_THEFIXEDTEXT9 := 100
+STATIC DEFINE _FOTOVIEW_TITULO := 102
 #endregion
 
-class _fotoview inherit DATADIALOG 
+PARTIAL CLASS _fotoview INHERIT DATADIALOG
+PROTECT oDCtheFixedText9 AS FIXEDTEXT
+PROTECT oCCCancelar AS PUSHBUTTON
+PROTECT oDCTITULO AS FIXEDTEXT
+PROTECT oDCfotojpg AS FIXEDBITMAP
+PROTECT oDCfoto AS FabPaintLib.Control.FabPaintLibCtrl
 
-	protect oDCFOTO as FABPAINTLIBCTRL
-	protect oDCtheFixedText9 as FIXEDTEXT
-	protect oCCCancelar as PUSHBUTTON
-	protect oDCTITULO as FIXEDTEXT
-	protect oDCfotojpg as FIXEDBITMAP
-
-  //{{%UC%}} USER CODE STARTS HERE (do NOT remove this line)
+// User code starts here (DO NOT remove this line)  ##USER##
 
 METHOD Cancelar( ) 
 	SELF:EndWindow()
 
-CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)  
-local dim aFonts[1] AS OBJECT
-local dim aBrushes[1] AS OBJECT
+CONSTRUCTOR(oWindow,iCtlID,oServer,uExtra)
+	LOCAL oFont AS Font
 
-self:PreInit(oWindow,iCtlID,oServer,uExtra)
+	SELF:PreInit(oWindow,iCtlID,oServer,uExtra)
 
-SUPER(oWindow,ResourceID{"_fotoview",_GetInst()},iCtlID)
+	SUPER(oWindow , ResourceID{"_fotoview" , _GetInst()},iCtlID)
 
-aFonts[1] := Font{,12,"Times New Roman"}
-aFonts[1]:Bold := TRUE
-aBrushes[1] := Brush{Color{255,255,200}}
+	SELF:oDCtheFixedText9 := FIXEDTEXT{SELF , ResourceID{ _FOTOVIEW_THEFIXEDTEXT9  , _GetInst() } }
+	SELF:oDCtheFixedText9:HyperLabel := HyperLabel{#theFixedText9 , "Retornar" , NULL_STRING , NULL_STRING}
 
-oDCFOTO := FabPaintLibCtrl{self,ResourceID{_FOTOVIEW_FOTO,_GetInst()}}
-oDCFOTO:HyperLabel := HyperLabel{#FOTO,NULL_STRING,NULL_STRING,NULL_STRING}
+	SELF:oCCCancelar := PUSHBUTTON{SELF , ResourceID{ _FOTOVIEW_CANCELAR  , _GetInst() } }
+	SELF:oCCCancelar:HyperLabel := HyperLabel{#Cancelar , NULL_STRING , NULL_STRING , NULL_STRING}
+	SELF:oCCCancelar:Image := ico_sair{}
 
-oDCtheFixedText9 := FixedText{self,ResourceID{_FOTOVIEW_THEFIXEDTEXT9,_GetInst()}}
-oDCtheFixedText9:HyperLabel := HyperLabel{#theFixedText9,"Retornar",NULL_STRING,NULL_STRING}
+	SELF:oDCTITULO := FIXEDTEXT{SELF , ResourceID{ _FOTOVIEW_TITULO  , _GetInst() } }
+	SELF:oDCTITULO:HyperLabel := HyperLabel{#TITULO , NULL_STRING , NULL_STRING , NULL_STRING}
+	SELF:oDCTITULO:Background := Brush{ Color{ 255 , 255 , 200 } }
+	oFont := Font{  , 12 , "Times New Roman" }
+	oFont:Bold := TRUE
+	SELF:oDCTITULO:Font( oFont )
 
-oCCCancelar := PushButton{self,ResourceID{_FOTOVIEW_CANCELAR,_GetInst()}}
-oCCCancelar:HyperLabel := HyperLabel{#Cancelar,NULL_STRING,NULL_STRING,NULL_STRING}
-oCCCancelar:Image := ico_sair{}
+	SELF:oDCfotojpg := FIXEDBITMAP{SELF , ResourceID{ _FOTOVIEW_FOTOJPG  , _GetInst() } }
+	SELF:oDCfotojpg:HyperLabel := HyperLabel{#fotojpg , NULL_STRING , NULL_STRING , NULL_STRING}
 
-oDCTITULO := FixedText{self,ResourceID{_FOTOVIEW_TITULO,_GetInst()}}
-oDCTITULO:HyperLabel := HyperLabel{#TITULO,NULL_STRING,NULL_STRING,NULL_STRING}
-oDCTITULO:Font(aFonts[1], FALSE)
-oDCTITULO:BackGround := aBrushes[1]
+	SELF:oDCfoto := FabPaintLib.Control.FabPaintLibCtrl{SELF , ResourceID{ _FOTOVIEW_FOTO  , _GetInst() } }
+	SELF:oDCfoto:HyperLabel := HyperLabel{#foto , NULL_STRING , NULL_STRING , NULL_STRING}
 
-oDCfotojpg := FIXEDBITMAP{self,ResourceID{_FOTOVIEW_FOTOJPG,_GetInst()}}
-oDCfotojpg:HyperLabel := HyperLabel{#fotojpg,NULL_STRING,NULL_STRING,NULL_STRING}
+	SELF:Caption := "Visualizar"
+	SELF:HyperLabel := HyperLabel{#_fotoview , "Visualizar" , NULL_STRING , NULL_STRING}
+	IF !IsNil(oServer)
+		SELF:Use(oServer)
+	ENDIF
 
-self:Caption := "Visualizar"
-self:HyperLabel := HyperLabel{#_fotoview,"Visualizar",NULL_STRING,NULL_STRING}
 
-if !IsNil(oServer)
-	self:Use(oServer)
-endif
+	SELF:PostInit(oWindow,iCtlID,oServer,uExtra)
 
-self:PostInit(oWindow,iCtlID,oServer,uExtra)
-
-return self
+RETURN
 
 
 METHOD PostInit(oWindow,iCtlID,oServer,uExtra) 

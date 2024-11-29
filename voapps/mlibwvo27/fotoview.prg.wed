@@ -37,7 +37,7 @@ GUID=3EEFC74A-F89F-4B2D-B09D-B9EA1D290C14
   Styles=1082130432
   Exstyles=0
   Property=HyperLabel=foto
-  Property=InheritClassName=FabPaintLibCtrl
+  Property=InheritClassName=FabPaintLib.Control.FabPaintLibCtrl
 CONTROL=FIXEDBITMAP
 GUID=43BEF2C3-D513-4445-B561-E2B416F9531C
   Name=fotojpg

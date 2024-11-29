@@ -1,5 +1,5 @@
 ;// designer generated file, do not modify
-;// WINDOW _fotoview from d:\develop\xsharp\voapps\mlibwvo27\fotoview.prg.rc
+;// WINDOW _fotoview from D:\develop\xsharp\voapps\mlibwvo27\fotoview.prg.rc
 #define _FOTOVIEW_THEFIXEDTEXT9 100
 #define _FOTOVIEW_CANCELAR 101
 #define _FOTOVIEW_TITULO 102
