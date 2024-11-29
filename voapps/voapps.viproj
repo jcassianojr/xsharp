@@ -7708,16 +7708,16 @@ ExportResources = 0
 ExportImages = 0
 [FabPaintLibControlvo FileGroups]
 [FabPaintLibControlvo Files]
-File = %AppPath%\Control.prg
-FileGUID = 51374CBA-C7AE-4F8E-BDBC-2C3CDADD9E6F
-FileType = Code
-CopyToBin = 0
 File = %AppPath%\! Read Me.prg
 FileGUID = 6F297AB6-52C4-477E-8096-4FE7E63085F6
 FileType = Code
 CopyToBin = 0
 File = %AppPath%\TrackMouse.prg
 FileGUID = 9FA9D217-E18F-4488-9998-4674DEC9B6C5
+FileType = Code
+CopyToBin = 0
+File = %AppPath%\Control.prg
+FileGUID = 4E9B753C-A8BB-40D7-8B13-A604F46B9A4F
 FileType = Code
 CopyToBin = 0
 [FabPaintLibControlvo References]

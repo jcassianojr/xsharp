@@ -60,11 +60,6 @@
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <ProjectReference Include="..\FabPaintLibvo\FabPaintLibvo.xsproj">
-      <Name>FabPaintLibvo</Name>
-      <Project>{7EE9CF1B-B750-4503-9FF9-097AEF752766}</Project>
-      <Private>True</Private>
-    </ProjectReference>
     <ProjectReference Include="..\mlibwvo27\mlibwvo27.xsproj">
       <Name>mlibwvo27</Name>
       <Project>{013F14E2-172F-476C-B0F4-F4496D3180B4}</Project>

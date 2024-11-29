@@ -419,14 +419,14 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FabPaintLibControlvo\FabPaintLibControlvo.xsproj">
-      <Name>FabPaintLibControlvo</Name>
-      <Project>{9bc53417-899e-4b1b-bdb4-b01b063ef143}</Project>
+    <ProjectReference Include="..\FabPaintLib\FabPaintLib.xsproj">
+      <Name>FabPaintLib</Name>
+      <Project>{0272327b-fc8c-4b26-a0cb-41eb7f1d945e}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="..\FabPaintLibvo\FabPaintLibvo.xsproj">
-      <Name>FabPaintLibvo</Name>
-      <Project>{83698c26-4e7c-4a53-aba8-994b8c4c7592}</Project>
+    <ProjectReference Include="..\FabPaintLib_Control\FabPaintLib_Control.xsproj">
+      <Name>FabPaintLib_Control</Name>
+      <Project>{e7092356-5697-44df-a3e2-3921f23d78c9}</Project>
       <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">

@@ -3,22 +3,12 @@
   "WorkspaceRootPath": "D:\\develop\\xsharp\\voapps\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BF79407-1C84-4CB1-88E6-D3F435490AFB}|mlibwvo27\\mlibwvo27.xsproj|D:\\develop\\xsharp\\voapps\\mlibwvo27\\funcoes.prg||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|",
-      "RelativeMoniker": "D:0:0:{4BF79407-1C84-4CB1-88E6-D3F435490AFB}|mlibwvo27\\mlibwvo27.xsproj|solutionrelative:mlibwvo27\\funcoes.prg||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|"
+      "AbsoluteMoniker": "D:0:0:{E7092356-5697-44DF-A3E2-3921F23D78C9}|FabPaintLib_Control\\FabPaintLib_Control.xsproj|D:\\develop\\xsharp\\voapps\\FabPaintLib_Control\\XSControl.prg||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|",
+      "RelativeMoniker": "D:0:0:{E7092356-5697-44DF-A3E2-3921F23D78C9}|FabPaintLib_Control\\FabPaintLib_Control.xsproj|solutionrelative:FabPaintLib_Control\\XSControl.prg||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|SQLite||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Engenharia||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57D0CE82-BAFE-4503-9A33-6ED7BC1FF13A}|Engenharia\\Engenharia.xsproj|D:\\develop\\xsharp\\voapps\\Engenharia\\Engenharia.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{57D0CE82-BAFE-4503-9A33-6ED7BC1FF13A}|Engenharia\\Engenharia.xsproj|solutionrelative:Engenharia\\Engenharia.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{579ACACB-1A26-422B-996D-4367C3A3C5E0}|sqlite\\SQLite.xsproj|D:\\develop\\xsharp\\voapps\\sqlite\\SQLite.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{579ACACB-1A26-422B-996D-4367C3A3C5E0}|sqlite\\SQLite.xsproj|solutionrelative:sqlite\\SQLite.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
+      "AbsoluteMoniker": "D:0:0:{E7092356-5697-44DF-A3E2-3921F23D78C9}|FabPaintLib_Control\\FabPaintLib_Control.xsproj|D:\\develop\\xsharp\\voapps\\FabPaintLib_Control\\VOControl.prg||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|",
+      "RelativeMoniker": "D:0:0:{E7092356-5697-44DF-A3E2-3921F23D78C9}|FabPaintLib_Control\\FabPaintLib_Control.xsproj|solutionrelative:FabPaintLib_Control\\VOControl.prg||{B4829761-2BFA-44B7-8F8F-D2625EBCF218}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,48 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "funcoes.prg",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\mlibwvo27\\funcoes.prg",
-              "RelativeDocumentMoniker": "mlibwvo27\\funcoes.prg",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\mlibwvo27\\funcoes.prg",
-              "RelativeToolTip": "mlibwvo27\\funcoes.prg",
-              "ViewState": "AgIAAIMAAAAAAAAAAADwv5kAAAARAAAAAAAAAA==",
+              "Title": "XSControl.prg",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\FabPaintLib_Control\\XSControl.prg",
+              "RelativeDocumentMoniker": "FabPaintLib_Control\\XSControl.prg",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\FabPaintLib_Control\\XSControl.prg",
+              "RelativeToolTip": "FabPaintLib_Control\\XSControl.prg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALvSURBVDhPzZFJTFNRFIbPva\u002BDryBTaRlSRkVkEFpAXKAQEqMIVqERSZVAQkLisNNEE9wguHCIMS4UF8QBAgmTE0TUiEYxQRmjIi0EBSpjoaHF1veg9D7fe2Fp4sKN3\u002Brce/5z7vnvgX\u002BC4zi0Ef6VhuY3vB4BRhyEaVRCLWRm7ADU/nxIrs/RrVZUtyVJKPy5qqJALKgZuAY21qrjdcC/MoQ/ZuCKs/nkSOktaH1wWtQIUKtYSzh5yrppbOHEvuz4Jtp/ly38whwEKULPvJ/talteXTL6bwq8TC/GbrHYoq2\u002BPvQlH1WGK323Id78\u002BdlDPDI6y\u002BXnJR/jgEM3al4PM6wb\u002BcuVqHvm5VWEgOiji1Teg/tiTKOzJ/kj8vORFbp\u002BsXKpBJjKK4/SsPljNSw7fjV70TKG90XRtKyRlije8dPhGN/4JgfrcE9YbOnWpZ\u002BFGAHHsB4DRwgiBMIqzxf0Y8FHQmwoGPRaP4QQ\u002BWKaLppzTmfwzskaWSueao\u002BA5ITgBoqSWhVe9KLTtWoERBGDXnfcumgHSmjQ2VEHhw1lRCantthVfcnstD8Ys/OyvjtGLfb\u002BSPgwMNUzN7\u002BsAyBS/lMNDLsWOjI6vxfA0yxOICBP/wSy3M5EhAl4nAoYexwa9eGiFooK0kCfoz3FAaYiI1R1\u002BgO6ct6d5\u002BD\u002B5PLEuHC72KB26CYoN6k3W5zjWuWeSXB\u002B1UDHi\u002BF727YG4/y8VKit7x5yuz1chCagKzCANguLvd/YM5i9Jw7EBuN2E6o33V7ix0NH40qz1CqfEf4aO13st3OVLbArNRLMvdWSlCRNhzpws9vcWyXdmRImlALObUkDtSKk2E3WpAqJFzOxMtatoGVJfI7Mza\u002BEx0SpYxl2XRSXGDPZQ7mpbiGuv8M74cEh3hr0yvL0rrAB4/ZyZbxSC5M/bKTwsK5EEFy/3TU8Nr4giv8EmnZMQc/M2yA5lnsYj2upKKFMTLQ\u002B6YOVn0yQeABYKCvO3Aj/LwB\u002BA7SQL5DO3iBFAAAAAElFTkSuQmCC",
-              "WhenOpened": "2024-11-27T18:04:45.412Z",
+              "WhenOpened": "2024-11-29T01:20:35.893Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SQLite",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\sqlite\\SQLite.xsproj",
-              "RelativeDocumentMoniker": "sqlite\\SQLite.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\sqlite\\SQLite.xsproj",
-              "RelativeToolTip": "sqlite\\SQLite.xsproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-27T17:59:06.548Z",
+              "Title": "VOControl.prg",
+              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\FabPaintLib_Control\\VOControl.prg",
+              "RelativeDocumentMoniker": "FabPaintLib_Control\\VOControl.prg",
+              "ToolTip": "D:\\develop\\xsharp\\voapps\\FabPaintLib_Control\\VOControl.prg",
+              "RelativeToolTip": "FabPaintLib_Control\\VOControl.prg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALvSURBVDhPzZFJTFNRFIbPva\u002BDryBTaRlSRkVkEFpAXKAQEqMIVqERSZVAQkLisNNEE9wguHCIMS4UF8QBAgmTE0TUiEYxQRmjIi0EBSpjoaHF1veg9D7fe2Fp4sKN3\u002Brce/5z7vnvgX\u002BC4zi0Ef6VhuY3vB4BRhyEaVRCLWRm7ADU/nxIrs/RrVZUtyVJKPy5qqJALKgZuAY21qrjdcC/MoQ/ZuCKs/nkSOktaH1wWtQIUKtYSzh5yrppbOHEvuz4Jtp/ly38whwEKULPvJ/talteXTL6bwq8TC/GbrHYoq2\u002BPvQlH1WGK323Id78\u002BdlDPDI6y\u002BXnJR/jgEM3al4PM6wb\u002BcuVqHvm5VWEgOiji1Teg/tiTKOzJ/kj8vORFbp\u002BsXKpBJjKK4/SsPljNSw7fjV70TKG90XRtKyRlije8dPhGN/4JgfrcE9YbOnWpZ\u002BFGAHHsB4DRwgiBMIqzxf0Y8FHQmwoGPRaP4QQ\u002BWKaLppzTmfwzskaWSueao\u002BA5ITgBoqSWhVe9KLTtWoERBGDXnfcumgHSmjQ2VEHhw1lRCantthVfcnstD8Ys/OyvjtGLfb\u002BSPgwMNUzN7\u002BsAyBS/lMNDLsWOjI6vxfA0yxOICBP/wSy3M5EhAl4nAoYexwa9eGiFooK0kCfoz3FAaYiI1R1\u002BgO6ct6d5\u002BD\u002B5PLEuHC72KB26CYoN6k3W5zjWuWeSXB\u002B1UDHi\u002BF727YG4/y8VKit7x5yuz1chCagKzCANguLvd/YM5i9Jw7EBuN2E6o33V7ix0NH40qz1CqfEf4aO13st3OVLbArNRLMvdWSlCRNhzpws9vcWyXdmRImlALObUkDtSKk2E3WpAqJFzOxMtatoGVJfI7Mza\u002BEx0SpYxl2XRSXGDPZQ7mpbiGuv8M74cEh3hr0yvL0rrAB4/ZyZbxSC5M/bKTwsK5EEFy/3TU8Nr4giv8EmnZMQc/M2yA5lnsYj2upKKFMTLQ\u002B6YOVn0yQeABYKCvO3Aj/LwB\u002BA7SQL5DO3iBFAAAAAElFTkSuQmCC",
+              "WhenOpened": "2024-11-29T01:20:27.259Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Engenharia",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\Engenharia\\Engenharia.xsproj",
-              "RelativeDocumentMoniker": "Engenharia\\Engenharia.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\Engenharia\\Engenharia.xsproj",
-              "RelativeToolTip": "Engenharia\\Engenharia.xsproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-27T17:57:26.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

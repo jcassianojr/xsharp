@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
+  <PropertyGroup>
+    <Dialect>VO</Dialect>
+    <PlatformTarget>x86</PlatformTarget>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <TransporterVersion>1.1.157.0</TransporterVersion>
+    <ProjectGuid>{0272327B-FC8C-4B26-A0CB-41EB7F1D945E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <Nologo>true</Nologo>
+    <GenerateFullPaths>true</GenerateFullPaths>
+    <Name>FabPaintLib</Name>
+    <RootNamespace>FabPaintLib</RootNamespace>
+    <VO3>true</VO3>
+    <UnSafe>true</UnSafe>
+    <VO5>false</VO5>
+    <VO10>true</VO10>
+    <VO11>true</VO11>
+    <VO9>true</VO9>
+    <VO2>true</VO2>
+    <VO4>true</VO4>
+    <OVF>true</OVF>
+    <FOVF>true</FOVF>
+    <VO12>false</VO12>
+    <LB>true</LB>
+    <CS>false</CS>
+    <AZ>false</AZ>
+    <VO6>true</VO6>
+    <VO7>true</VO7>
+    <VO8>true</VO8>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AssemblyName>FabPaintLib</AssemblyName>
+    <Comments>
+    </Comments>
+    <INS>true</INS>
+    <NS>True</NS>
+    <StartupObject />
+    <ApplicationIcon />
+    <VulcanCompatibleResources>False</VulcanCompatibleResources>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <TargetFrameworkProfile />
+    <NamedArgs>false</NamedArgs>
+    <Memvar>false</Memvar>
+    <Undeclared>false</Undeclared>
+    <NoStandardDefs>false</NoStandardDefs>
+    <IncludePaths />
+    <StandardDefs />
+    <InitLocals>true</InitLocals>
+    <Vo15>true</Vo15>
+    <Allowdot>false</Allowdot>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <EmitDebugInformation>true</EmitDebugInformation>
+    <DefineConstants>DEBUG</DefineConstants>
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <Optimize>false</Optimize>
+    <UseSharedCompilation>true</UseSharedCompilation>
+    <DisabledWarnings>9071,9076</DisabledWarnings>
+    <WarningLevel>4</WarningLevel>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile />
+    <CommandLineOption />
+    <PPO>false</PPO>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>False</Prefer32Bit>
+    <RegisterForComInterop>False</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <EmitDebugInformation>false</EmitDebugInformation>
+    <DefineConstants>NDEBUG</DefineConstants>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <Optimize>true</Optimize>
+    <UseSharedCompilation>true</UseSharedCompilation>
+    <DisabledWarnings>9071,9076</DisabledWarnings>
+    <WarningLevel>4</WarningLevel>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile />
+    <CommandLineOption />
+    <PPO>false</PPO>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>False</Prefer32Bit>
+    <RegisterForComInterop>False</RegisterForComInterop>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FreeImageNET, Version=3.13.1.1, Culture=neutral, PublicKeyToken=null">
+      <Name>FreeImageNET</Name>
+      <AssemblyName>FreeImageNET.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>FreeImage\FreeImageNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <AssemblyName>System.Drawing.dll</AssemblyName>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <AssemblyName>System.Windows.Forms.dll</AssemblyName>
+    </Reference>
+    <Reference Include="VOWin32APILibrary, Version=2.1.0.0, Culture=neutral, PublicKeyToken=a967d8055360a7b9">
+      <Name>VOWin32APILibrary</Name>
+      <AssemblyName>VOWin32APILibrary.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\Program Files (x86)\XSharp\Redist\VOWin32APILibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="XSharp.Core, Version=2.1.0.0, Culture=neutral, PublicKeyToken=ed555a0467764586">
+      <Name>XSharp.Core</Name>
+      <AssemblyName>XSharp.Core.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\Program Files (x86)\XSharp\Assemblies\XSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="XSharp.RT, Version=2.1.0.0, Culture=neutral, PublicKeyToken=ed555a0467764586">
+      <Name>XSharp.RT</Name>
+      <AssemblyName>XSharp.RT.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\Program Files (x86)\XSharp\Assemblies\XSharp.RT.dll</HintPath>
+    </Reference>
+    <Reference Include="XSharp.VO, Version=2.1.0.0, Culture=neutral, PublicKeyToken=ed555a0467764586">
+      <Name>XSharp.VO</Name>
+      <AssemblyName>XSharp.VO.dll</AssemblyName>
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <HintPath>C:\Program Files (x86)\XSharp\Assemblies\XSharp.VO.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.prg" />
+    <Compile Include="!Read Me.prg" />
+    <Compile Include="Add On.prg" />
+    <Compile Include="CallBack.prg" />
+    <Compile Include="FabMultiPage.prg" />
+    <Compile Include="FabPaintLib.prg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FreeImage\FreeImage.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="FreeImage\FreeImageNET.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\CavoWED.inf" />
+    <None Include="Properties\CavoWED.tpl" />
+    <None Include="Properties\CavoDED.tpl" />
+    <None Include="Properties\CavoFED.tpl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FreeImage" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent>xcopy $(ProjectDir)bin\$(Configuration) $(SolutionDir)bin\$(Configuration) /y /s /i</PostBuildEvent>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent>xcopy $(ProjectDir)bin\$(Configuration) $(SolutionDir)bin\$(Configuration) /y /s /i</PostBuildEvent>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <ProjectCapabilities>
+      <ProjectConfigurationsDeclaredAsItems />
+    </ProjectCapabilities>
+  </ProjectExtensions>
+</Project>
