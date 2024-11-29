@@ -63,7 +63,6 @@ FileType = Code
 CopyToBin = 0
 [Engenharia References]
 ReferenceGAC = CLR4,System,1,0,4.0.0.0
-ReferenceProject = 6E02D6F9-C529-4D58-88E8-BF790C7764BA,1,0,FabPaintLibvo
 ReferenceProject = 4BF79407-1C84-4CB1-88E6-D3F435490AFB,1,0,mlibwvo27
 ReferenceProject = F1F864DD-EF02-461B-B15D-7BEB6DF7C20A,1,0,Login
 ReferenceProject = 3F447BFB-7AEC-47B9-B63C-E279857F0F6C,1,0,Mail
