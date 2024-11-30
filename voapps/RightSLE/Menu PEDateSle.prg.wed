@@ -1,0 +1,62 @@
+DESIGNERSTART = VOMenu,Menu,PEDateSleContextMenu
+GUID=ADBC24DC-FA26-4DD9-ACF1-50C11546F72D
+Name=PEDateSleContextMenu
+Toolbar=Raised Toolbar
+Show=Icon
+UseBands=No
+
+SUBCONTROLSSTART
+
+CONTROL=MENUITEM
+GUID=7CD27BA6-9C6A-4690-8904-6766B540F14A
+OriginalDefineValue=22579
+EventName=File
+Caption=&File
+Description=
+HelpContext=File
+Accelerator=None
+Enabled=Yes
+Checked=No
+ButtonBmp=
+ButtonCaption=
+ButtonToolTip=
+ButtonPos=-1
+
+SUBCONTROLSSTART
+
+CONTROL=MENUITEM
+GUID=D2BD5AFF-6A34-4269-A8ED-65BBD55182D2
+OriginalDefineValue=22580
+EventName=
+Caption=&Today
+Description=Today's Date
+HelpContext=
+Accelerator=None
+Enabled=Yes
+Checked=No
+ButtonBmp=
+ButtonCaption=
+ButtonToolTip=
+ButtonPos=-1
+CONTROL=MENUITEM
+GUID=735F8DD1-137E-4D3F-AEC2-79684EA13EA0
+OriginalDefineValue=22581
+EventName=
+Caption=&Calendar...
+Description=Open the calendar
+HelpContext=
+Accelerator=None
+Enabled=Yes
+Checked=No
+ButtonBmp=
+ButtonCaption=
+ButtonToolTip=
+ButtonPos=-1
+
+SUBCONTROLSEND
+
+
+SUBCONTROLSEND
+
+DESIGNEREND = PEDateSleContextMenu
+

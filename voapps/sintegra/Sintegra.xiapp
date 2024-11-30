@@ -120,7 +120,7 @@ ReferenceGAC = CLR4,VORDDClasses,1,0,2.6.0.0
 ReferenceGAC = CLR4,VOWin32APILibrary,1,0,2.6.0.0
 ReferenceProject = D1117BA1-E31A-45FE-B419-02E2CAF2C497,1,0,checagem
 ReferenceProject = 3F447BFB-7AEC-47B9-B63C-E279857F0F6C,1,0,Mail
-ReferenceProject = A0D63BC7-CEC0-4174-BF00-F5E89967A8F3,1,0,RightSLEVO
+ReferenceProject = 71D563B8-6E2B-4258-8307-C4C98C41A5AA,1,0,RightSLE
 [Sintegra Resources]
 [Sintegra Native Resources]
 [Sintegra License files]

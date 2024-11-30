@@ -1,0 +1,32 @@
+#define ID_MONTH1 3001 
+#define ID_MONTH2 3002 
+#define ID_MONTH3 3003 
+#define ID_MONTH4 3004 
+#define ID_MONTH5 3005 
+#define ID_MONTH6 3006 
+#define ID_MONTH7 3007 
+#define ID_MONTH8 3008 
+#define ID_MONTH9 3009 
+#define ID_MONTH10 3010 
+#define ID_MONTH11 3011 
+#define ID_MONTH12 3012 
+STRINGTABLE
+
+	// Menu ItemID and corresponding Strings for the Month menu of the PECalendar
+
+	// RHP put into PECalendar ID_MONTHxx is defined in PECalendar
+
+Begin
+	ID_MONTH1,		"January"
+	ID_MONTH2,		"February"	
+	ID_MONTH3,		"March"
+	ID_MONTH4,		"April"
+	ID_MONTH5,		"May"
+	ID_MONTH6,		"June"
+	ID_MONTH7,		"July"
+	ID_MONTH8,		"August"
+	ID_MONTH9,		"September"
+	ID_MONTH10,	"October"
+	ID_MONTH11,	"November"
+	ID_MONTH12,	"December"
+End	

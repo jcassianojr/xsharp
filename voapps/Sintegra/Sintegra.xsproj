@@ -83,9 +83,9 @@
   </PropertyGroup>
   <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
-      <Name>RightSLEvo</Name>
-      <Project>{3d4263c5-a701-43d6-a424-e160b4f00966}</Project>
+    <ProjectReference Include="..\RightSLE\RightSLE.xsproj">
+      <Name>RightSLE</Name>
+      <Project>{aeff5f90-789f-40c7-93ef-00a737258b89}</Project>
       <Private>True</Private>
     </ProjectReference>
     <Reference Include="mscorlib" />

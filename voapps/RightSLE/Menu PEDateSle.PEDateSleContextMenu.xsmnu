@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOMenu Name="PEDateSleContextMenu">
+    <Name>PEDateSleContextMenu</Name>
+    <Inherit>
+    </Inherit>
+    <ToolbarInherit>
+    </ToolbarInherit>
+    <Toolbar>Raised Toolbar</Toolbar>
+    <Ribbon>
+    </Ribbon>
+    <RibbonFilename>
+    </RibbonFilename>
+    <Show>Icon</Show>
+    <UseBands>No</UseBands>
+    <BaseID>11000</BaseID>
+    <MenuItems>
+      <MenuItem>
+        <EventName>File</EventName>
+        <Caption>&amp;File</Caption>
+        <Description>
+        </Description>
+        <HelpContext>File</HelpContext>
+        <Accelerator>None</Accelerator>
+        <Enabled>Yes</Enabled>
+        <Checked>No</Checked>
+        <ButtonBmp>
+        </ButtonBmp>
+        <ButtonCaption>
+        </ButtonCaption>
+        <ButtonToolTip>
+        </ButtonToolTip>
+        <ButtonPos>-1</ButtonPos>
+        <ID>
+        </ID>
+        <OriginalDefineValue>22579</OriginalDefineValue>
+        <MenuItems>
+          <MenuItem>
+            <EventName>
+            </EventName>
+            <Caption>&amp;Today</Caption>
+            <Description>Today's Date</Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>
+            </ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+            <ID>
+            </ID>
+            <OriginalDefineValue>22580</OriginalDefineValue>
+          </MenuItem>
+          <MenuItem>
+            <EventName>
+            </EventName>
+            <Caption>&amp;Calendar...</Caption>
+            <Description>Open the calendar</Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>
+            </ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+            <ID>
+            </ID>
+            <OriginalDefineValue>22581</OriginalDefineValue>
+          </MenuItem>
+        </MenuItems>
+      </MenuItem>
+    </MenuItems>
+  </VOMenu>
+</Designers>
