@@ -207,10 +207,6 @@ FUNCTION FilePrint(oOWNER,cFileNm AS STRING,cMode AS STRING) AS LOGIC
         LOCAL lFuncResult := TRUE AS LOGIC
         LOCAL nFout AS PTR
         IF File(cFileNm)
-//                nFout := ShellExecute(MyShellWindow():Handle(),PSZ("print"),PSZ(cFileNm),PSZ(""),PSZ(""),SW_SHOWNORMAL)
-//ShellExecute ( NIL, "Open", cDANFEVIEW+"danfeview.exe", cARQIMP, cDANFEVIEW, SW_SHOWNORMAL )
-//ShellExecute ( NIL, funcao, arquivo, parametros, diretorio, tipo de janela )
-             //   nFout := ShellExecute(oOWNER:Handle(),String2Psz("print"),String2Psz(cFileNm),String2Psz(""),String2Psz(""),SW_SHOWNORMAL)   
                nFout := ShellExecute(NIL,String2Psz("print"),String2Psz(cFileNm),String2Psz(""),String2Psz(""),SW_SHOWNORMAL)   
                 ShellExecuteErro(nFout) 
   //              IF INT(@nFout) <= 32

@@ -2462,6 +2462,7 @@ ReferenceProject = A0D63BC7-CEC0-4174-BF00-F5E89967A8F3,1,0,RightSLEVO
 ReferenceGAC = CLR4,VOSQLClasses,1,0,2.6.0.0
 ReferenceProject = 80EB9798-E867-4437-92FC-C72E39FD1F15,1,0,FabPaintlib
 ReferenceProject = F647E3BD-CDB1-4896-A914-1F021F79F534,1,0,FabPaintLib_control
+ReferenceProject = A2BFFEC6-640F-4CDF-9FA7-91B751A34676,1,0,BLPrinter
 [mlibwvo27 Resources]
 [mlibwvo27 Native Resources]
 NativeResourceFile = %AppPath%\icones.rc

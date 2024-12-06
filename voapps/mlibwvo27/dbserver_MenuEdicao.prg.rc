@@ -1,50 +1,51 @@
- STANDARDSHELLMENU ACCELERATORS
-Begin
-	36, 27152, CONTROL, VIRTKEY
-	35, 27155, CONTROL, VIRTKEY
-	113, 27163, SHIFT, VIRTKEY
-	113, 27164, VIRTKEY
-	112, 27166, VIRTKEY
-	112, 27167, CONTROL, VIRTKEY
-End
- 
- STANDARDSHELLMENU MENU
-Begin
+;// designer generated file, do not modify
+;// MENU STANDARDSHELLMENU from D:\develop\xsharp\voapps\mlibwvo27\dbserver_MenuEdicao.prg.rc
+STANDARDSHELLMENU MENU
+BEGIN
 	POPUP "&Arquivo"
 	BEGIN
-		MENUITEM "Imprimir", 27144
-		MENUITEM "C&onfigurar Impressora ..", 27145
+		MENUITEM "&Fechar" , 15001
 		MENUITEM SEPARATOR
-		MENUITEM "&Fechar", 27147
+		MENUITEM "Imprimir" , 15003
+		MENUITEM "Preview" , 15004
+		MENUITEM "C&onfigurar Impressora .." , 15005
 	END
 	POPUP "&Editar"
 	BEGIN
-		MENUITEM "&Inserir  Registro", 27149
-		MENUITEM "&Deletar Registro", 27150
+		MENUITEM "&Inserir  Registro" , 15007
+		MENUITEM "&Deletar Registro" , 15008
 		MENUITEM SEPARATOR
-		MENUITEM "&Primeiro\tCtrl+Home", 27152
-		MENUITEM "&Anterior", 27153
-		MENUITEM "Pro&Ximo", 27154
-		MENUITEM "&Ultimo\tCtrl+End", 27155
+		MENUITEM "&Primeiro\tCtrl+Home" , 15010
+		MENUITEM "&Anterior" , 15011
+		MENUITEM "Pro&Ximo" , 15012
+		MENUITEM "&Ultimo\tCtrl+End" , 15013
 		MENUITEM SEPARATOR
-		MENUITEM "Busca Avançada", 27157
-		MENUITEM "Busca Indexada/Ordenação", 27158
+		MENUITEM "Busca Avançada" , 15015
+		MENUITEM "Busca Indexada/Ordenação" , 15016
 		MENUITEM SEPARATOR
-		MENUITEM "Filtrar Dados", 27160
-		MENUITEM "Apagar Filtro", 27161
+		MENUITEM "Filtrar Dados" , 15018
+		MENUITEM "Apagar Filtro" , 15019
 	END
 	POPUP "&Visualizar"
 	BEGIN
-		MENUITEM "&Editar\tShift+F2", 27163
-		MENUITEM "&Exiblir\tF2", 27164
+		MENUITEM "&Editar\tShift+F2" , 15021
+		MENUITEM "&Exiblir\tF2" , 15022
 	END
 	POPUP "&?"
 	BEGIN
-		MENUITEM "&Indice\tF1", 27166
-		MENUITEM "&Ajuda de Contexto\tCtrl+F1", 27167
-		MENUITEM "&Usando a Ajuda", 27168
+		MENUITEM "&Indice\tF1" , 15024
+		MENUITEM "&Ajuda de Contexto\tCtrl+F1" , 15025
+		MENUITEM "&Usando a Ajuda" , 15026
 		MENUITEM SEPARATOR
-		MENUITEM "&Sobre...", 27170
+		MENUITEM "&Sobre..." , 15028
 	END
-End
- 
+END
+STANDARDSHELLMENU_Accelerator ACCELERATORS
+BEGIN
+	36, 15010, CONTROL ,VIRTKEY
+	35, 15013, CONTROL ,VIRTKEY
+	113, 15021, SHIFT ,VIRTKEY
+	113, 15022, VIRTKEY
+	112, 15024, VIRTKEY
+	112, 15025, CONTROL ,VIRTKEY
+END

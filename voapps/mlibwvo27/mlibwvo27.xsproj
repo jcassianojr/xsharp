@@ -419,6 +419,11 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BL Printer\BLPrinter.xsproj">
+      <Name>BLPrinter</Name>
+      <Project>{c3416137-9745-4eb6-8801-04769998785d}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\FabPaintLib\FabPaintLib.xsproj">
       <Name>FabPaintLib</Name>
       <Project>{0272327b-fc8c-4b26-a0cb-41eb7f1d945e}</Project>
@@ -429,9 +434,9 @@
       <Project>{e7092356-5697-44df-a3e2-3921f23d78c9}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
-      <Name>RightSLEvo</Name>
-      <Project>{3d4263c5-a701-43d6-a424-e160b4f00966}</Project>
+    <ProjectReference Include="..\RightSLE\RightSLE.xsproj">
+      <Name>RightSLE</Name>
+      <Project>{aeff5f90-789f-40c7-93ef-00a737258b89}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>

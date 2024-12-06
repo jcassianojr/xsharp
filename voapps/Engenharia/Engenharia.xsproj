@@ -6,7 +6,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Engenharia</RootNamespace>
     <AssemblyName>Engenharia</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <Name>Engenharia</Name>
     <Dialect>VO</Dialect>
     <LB>true</LB>
@@ -40,6 +40,9 @@
     <NoStandardDefs>false</NoStandardDefs>
     <EnforceSelf>false</EnforceSelf>
     <NamedArgs>False</NamedArgs>
+    <Allowdot>false</Allowdot>
+    <TargetFrameworkProfile />
+    <StartupObject />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
     <PlatformTarget>x86</PlatformTarget>
@@ -57,6 +60,11 @@
     <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <ProjectReference Include="..\BL Printer\BLPrinter.xsproj">
+      <Name>BLPrinter</Name>
+      <Project>{c3416137-9745-4eb6-8801-04769998785d}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\mlibwvo27\mlibwvo27.xsproj">
       <Name>mlibwvo27</Name>
       <Project>{807DBF7E-FFC8-4FCB-9F92-77CB1919310E}</Project>
@@ -70,11 +78,6 @@
     <ProjectReference Include="..\Mail\Mail.xsproj">
       <Name>Mail</Name>
       <Project>{A48335B1-9CA6-494E-9E61-59DCF33781AF}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\BL Printer\BL Printer.xsproj">
-      <Name>BL Printer</Name>
-      <Project>{C3416137-9745-4EB6-8801-04769998785D}</Project>
       <Private>True</Private>
     </ProjectReference>
     <Reference Include="XSharp.Core">
@@ -100,60 +103,63 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<Compile Include="Menus.prg">
-  <SubType>Code</SubType>
-</Compile>
-<NativeResource Include="Menus.EMPTYSHELLMENU_Accelerator.rc">
-  <DependentUpon>Menus.prg</DependentUpon>
-</NativeResource>
-<NativeResource Include="Menus.EMPTYSHELLMENU.rc">
-  <DependentUpon>Menus.prg</DependentUpon>
-</NativeResource>
-<VOBinary Include="Menus.EMPTYSHELLMENU.xsmnu">
-  <DependentUpon>Menus.prg</DependentUpon>
-</VOBinary>
-<Compile Include="jlc.prg">
-  <SubType>Code</SubType>
-</Compile>
-<NativeResource Include="jlc.JLC.rc">
-  <DependentUpon>jlc.prg</DependentUpon>
-</NativeResource>
-<VOBinary Include="jlc.JLC.xsfrm">
-  <DependentUpon>jlc.prg</DependentUpon>
-</VOBinary>
-<Compile Include="jlct.prg">
-  <SubType>Code</SubType>
-</Compile>
-<NativeResource Include="jlct.JLCT.rc">
-  <DependentUpon>jlct.prg</DependentUpon>
-</NativeResource>
-<VOBinary Include="jlct.JLCT.xsfrm">
-  <DependentUpon>jlct.prg</DependentUpon>
-</VOBinary>
-<Compile Include="xclasses.prg">
-  <SubType>Code</SubType>
-</Compile>
-<Compile Include="funcoes.prg">
-  <SubType>Code</SubType>
-</Compile>
-<Compile Include="Start.prg">
-  <SubType>Code</SubType>
-</Compile>
-<NativeResource Include="Start.VS_VERSION_INFO.rc">
-  <DependentUpon>Start.prg</DependentUpon>
-</NativeResource>
-<Compile Include="xclassesshell.prg">
-  <SubType>Code</SubType>
-</Compile>
-<Compile Include="preview.teste.prg">
-  <SubType>Code</SubType>
-</Compile>
-<Compile Include="xjlc.prg">
-  <SubType>Code</SubType>
-</Compile>
-<Compile Include="xjlct.prg">
-  <SubType>Code</SubType>
-</Compile>
+    <Compile Include="Menus.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Menus.EMPTYSHELLMENU_Accelerator.rc">
+      <DependentUpon>Menus.prg</DependentUpon>
+    </NativeResource>
+    <NativeResource Include="Menus.EMPTYSHELLMENU.rc">
+      <DependentUpon>Menus.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="Menus.EMPTYSHELLMENU.xsmnu">
+      <DependentUpon>Menus.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="jlc.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="jlc.JLC.rc">
+      <DependentUpon>jlc.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="jlc.JLC.xsfrm">
+      <DependentUpon>jlc.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="jlct.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="jlct.JLCT.rc">
+      <DependentUpon>jlct.prg</DependentUpon>
+    </NativeResource>
+    <VOBinary Include="jlct.JLCT.xsfrm">
+      <DependentUpon>jlct.prg</DependentUpon>
+    </VOBinary>
+    <Compile Include="xclasses.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="funcoes.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Start.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <NativeResource Include="Start.VS_VERSION_INFO.rc">
+      <DependentUpon>Start.prg</DependentUpon>
+    </NativeResource>
+    <Compile Include="xclassesshell.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="preview.teste.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="xjlc.prg">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="xjlct.prg">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties" />
   </ItemGroup>
   <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
   <ProjectExtensions>

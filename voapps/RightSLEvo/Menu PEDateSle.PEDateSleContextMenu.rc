@@ -1,9 +1,0 @@
-PEDateSleContextMenu MENU
-Begin
-	POPUP "&File"
-	BEGIN
-		MENUITEM "&Today", 22580
-		MENUITEM "&Calendar...", 22581
-	END
-End
- 

@@ -466,11 +466,6 @@
       <Project>{b1f0f2ce-18c1-4ac6-b6db-a20f12e81432}</Project>
       <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="..\RightSLEvo\RightSLEvo.xsproj">
-      <Name>RightSLEvo</Name>
-      <Project>{3d4263c5-a701-43d6-a424-e160b4f00966}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
   <ProjectExtensions>

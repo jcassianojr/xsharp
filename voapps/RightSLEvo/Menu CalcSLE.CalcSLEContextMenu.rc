@@ -1,8 +1,0 @@
-CalcSLEContextMenu MENU
-Begin
-	POPUP "&File"
-	BEGIN
-		MENUITEM "&Calculator", 22568
-	END
-End
- 

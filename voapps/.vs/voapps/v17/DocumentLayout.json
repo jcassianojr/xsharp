@@ -1,39 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\develop\\xsharp\\voapps\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|RightSLE||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AEFF5F90-789F-40C7-93EF-00A737258B89}|RightSLE\\RightSLE.xsproj|D:\\develop\\xsharp\\voapps\\RightSLE\\RightSLE.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219",
-      "RelativeMoniker": "D:0:0:{AEFF5F90-789F-40C7-93EF-00A737258B89}|RightSLE\\RightSLE.xsproj|solutionrelative:RightSLE\\RightSLE.xsproj||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|53651bea-799a-45eb-b58c-c884f5417219"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 195,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RightSLE",
-              "DocumentMoniker": "D:\\develop\\xsharp\\voapps\\RightSLE\\RightSLE.xsproj",
-              "RelativeDocumentMoniker": "RightSLE\\RightSLE.xsproj",
-              "ToolTip": "D:\\develop\\xsharp\\voapps\\RightSLE\\RightSLE.xsproj",
-              "RelativeToolTip": "RightSLE\\RightSLE.xsproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-11-30T01:43:19.262Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
