@@ -1,0 +1,645 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,JLC
+GUID=69092F08-045A-46B3-8803-0C8330D10028
+  Name=JLC
+  Class=DATAWINDOW
+  Caption=Controle de Normas
+  Order=0
+  Left=30
+  Width=643
+  Top=30
+  Height=320
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082130432
+  Exstyles=0
+  Property=HyperLabel=,"Controle de Normas",,
+  Property=HyperLabel=#JLC,,,
+  Property=Menu=STANDARDSHELLMENU
+  Property=ViewAs=#FormView
+  Property=InheritClassName=MYDataWindow
+
+SUBCONTROLSSTART
+CONTROL=PUSHBUTTON
+GUID=F802679F-9031-46AA-8E72-DFA73CC05E07
+  Name=ordem
+  Class=PUSHBUTTON
+  Caption=
+  Order=1
+  Left=577
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=Image=ico_az
+  Property=HyperLabel=#ordem,,,
+  Property=TooltipText="Ordenar Por Numero"
+
+CONTROL=PUSHBUTTON
+GUID=4C3C5AF2-824B-4E29-B4E3-F6083B093AE8
+  Name=busca
+  Class=PUSHBUTTON
+  Caption=
+  Order=2
+  Left=545
+  Width=32
+  Top=13
+  Height=32
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=Image=ICO_FIND
+  Property=HyperLabel=#busca,,,
+
+CONTROL=FIXEDTEXT
+GUID=90C66A28-9F66-4988-880C-F02A0A42B542
+  Name=SC_DOCUMENTO
+  Class=FIXEDTEXT
+  Caption=Documento:
+  Order=-1
+  Left=13
+  Width=72
+  Top=7
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Documento:",,
+  Property=HyperLabel=#SC_DOCUMENTO,,,
+
+CONTROL=FIXEDTEXT
+GUID=FA0ED07A-1861-466F-9C40-8F623AFEA4FC
+  Name=theFixedText6
+  Class=FIXEDTEXT
+  Caption=Numero
+  Order=-1
+  Left=211
+  Width=72
+  Top=7
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero",,
+  Property=HyperLabel=#theFixedText6,,,
+
+CONTROL=FIXEDTEXT
+GUID=1230BDBA-66E2-4EB1-8B27-C4ABF1F68800
+  Name=theFixedText9
+  Class=FIXEDTEXT
+  Caption=Comp.
+  Order=-1
+  Left=331
+  Width=72
+  Top=7
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Comp.",,
+  Property=HyperLabel=#theFixedText9,,,
+
+CONTROL=FIXEDTEXT
+GUID=952F6AC4-7E24-49B3-BD06-3EEDE2992516
+  Name=SC_DATA
+  Class=FIXEDTEXT
+  Caption=Data:
+  Order=-1
+  Left=433
+  Width=36
+  Top=7
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=#SC_DATA,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=6E4F9093-945F-4A3F-A0C7-17505C4D0EC6
+  Name=DOCUMENTO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=13
+  Width=192
+  Top=25
+  Height=18
+  Browseindex=0
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_20
+  Property=HyperLabel=#DOCUMENTO,,,
+  Property=HyperLabel=,"Documento:",,
+  Property=HyperLabel=,,,"LC_DOCUMENTO"
+  Property=TooltipText="Numero do Documento"
+
+CONTROL=SINGLELINEEDIT
+GUID=AA96B946-B9D9-4567-BC5B-5A3689EAA656
+  Name=NUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=211
+  Width=114
+  Top=25
+  Height=18
+  Browseindex=1
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_10
+  Property=HyperLabel=#NUMERO,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"LC_DOCUMENTO"
+  Property=TooltipText="Numero "
+
+CONTROL=SINGLELINEEDIT
+GUID=1768C8C2-3FFB-4E53-AC4B-6D877330BBCB
+  Name=NUMCOMP
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=331
+  Width=90
+  Top=25
+  Height=18
+  Browseindex=2
+  Browsesize=13
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_10
+  Property=HyperLabel=#NUMCOMP,,,
+  Property=HyperLabel=,"Comp",,
+  Property=HyperLabel=,,,"LC_DOCUMENTO"
+  Property=TooltipText="Complemento"
+
+CONTROL=SINGLELINEEDIT
+GUID=6039DCDC-D426-44F1-92CC-D32B5F214531
+  Name=DATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=429
+  Width=96
+  Top=25
+  Height=18
+  Browseindex=3
+  Browsesize=11
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_10
+  Property=HyperLabel=#DATA,,,
+  Property=HyperLabel=,"Data:",,
+  Property=HyperLabel=,,,"LC_DATA"
+  Property=TooltipText="Data"
+
+CONTROL=FIXEDTEXT
+GUID=C88F6FC0-E18E-4871-8524-C6B34580F987
+  Name=SC_NOVODOC
+  Class=FIXEDTEXT
+  Caption=Substituição/Atualização
+  Order=-1
+  Left=13
+  Width=192
+  Top=49
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Substituição/Atualização",,
+  Property=HyperLabel=#SC_NOVODOC,,,
+
+CONTROL=FIXEDTEXT
+GUID=DC0B2E85-4481-4AE8-996D-45BF93F9AB2C
+  Name=SC_NOVODATA
+  Class=FIXEDTEXT
+  Caption=Data
+  Order=-1
+  Left=217
+  Width=66
+  Top=49
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=#SC_NOVODATA,,,
+
+CONTROL=FIXEDTEXT
+GUID=3389292F-103B-4CBF-8A26-CD7FA8CB6A41
+  Name=theFixedText8
+  Class=FIXEDTEXT
+  Caption=Tipo
+  Order=-1
+  Left=325
+  Width=66
+  Top=49
+  Height=16
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Tipo",,
+  Property=HyperLabel=#theFixedText8,,,
+
+CONTROL=COMBOBOX
+GUID=D82D3C48-C04F-4C60-B673-7387627F0DDB
+  Name=TIPO
+  Class=COMBOBOX
+  Caption=
+  Order=-1
+  Left=325
+  Width=185
+  Top=65
+  Height=77
+  Browseindex=6
+  Browsesize=14
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1075904770
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_20
+  Property=HyperLabel=#TIPO,,,
+  Property=HyperLabel=,"Tipo",,
+  Property=TooltipText="Tipo de Norma"
+
+CONTROL=SINGLELINEEDIT
+GUID=F36AC4EC-AC6D-4484-B782-A393113ACD70
+  Name=NOVODOC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=13
+  Width=198
+  Top=67
+  Height=18
+  Browseindex=4
+  Browsesize=18
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#NOVODOC,,,
+  Property=HyperLabel=,"Sub/Alt",,
+  Property=HyperLabel=,,,"LC_NOVODOC"
+  Property=TooltipText="Substituição/Atualizacao"
+
+CONTROL=SINGLELINEEDIT
+GUID=3079B4A2-B6B9-4161-ADE2-AAAC4CC7DDB1
+  Name=NOVODATA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=217
+  Width=96
+  Top=67
+  Height=18
+  Browseindex=5
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_10
+  Property=HyperLabel=#NOVODATA,,,
+  Property=HyperLabel=,"Data",,
+  Property=HyperLabel=,,,"LC_NOVODATA"
+  Property=TooltipText="Data Sub/Alt"
+
+CONTROL=FIXEDTEXT
+GUID=36199DFB-3529-4284-91F0-C224A297C865
+  Name=theFixedText10
+  Class=FIXEDTEXT
+  Caption=Pasta
+  Order=-1
+  Left=13
+  Width=72
+  Top=91
+  Height=21
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Pasta",,
+  Property=HyperLabel=#theFixedText10,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=0A5109F7-81ED-45CE-ADF7-33E1727DBEBA
+  Name=PASTA
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=13
+  Width=90
+  Top=109
+  Height=18
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_10
+  Property=HyperLabel=#PASTA,,,
+  Property=HyperLabel=,"Numero:",,
+  Property=HyperLabel=,,,"LC_DOCUMENTO"
+  Property=TooltipText="Pasta"
+
+CONTROL=GROUPBOX
+GUID=E8FAF81D-1D29-4F08-983B-115486DDCD0E
+  Name=GBox
+  Class=GROUPBOX
+  Caption=Busca
+  Order=-1
+  Left=13
+  Width=606
+  Top=139
+  Height=114
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073872903
+  Exstyles=0
+  Property=HyperLabel=,"Busca",,
+  Property=HyperLabel=#GBox,,,
+
+CONTROL=PUSHBUTTON
+GUID=226EE609-E9F7-4C82-9401-3A3B9A955956
+  Name=Busca01
+  Class=PUSHBUTTON
+  Caption=Busca
+  Order=-1
+  Left=523
+  Width=80
+  Top=151
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Busca",,
+  Property=HyperLabel=#Busca01,,,
+  Property=TooltipText="Clique para Busca o Documento"
+
+CONTROL=FIXEDTEXT
+GUID=12C36A3D-DFE9-4931-AE63-384340813313
+  Name=theFixedText4
+  Class=FIXEDTEXT
+  Caption=Documento:
+  Order=-1
+  Left=18
+  Width=72
+  Top=156
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Documento:",,
+  Property=HyperLabel=#theFixedText4,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=FAA141CF-FDD1-4F53-976E-ACB5EC5F2A22
+  Name=cDOCUMENTO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=97
+  Width=306
+  Top=157
+  Height=18
+  Browseindex=5
+  Browsesize=12
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_20
+  Property=HyperLabel=#cDOCUMENTO,,,
+  Property=HyperLabel=,"Documento:",,
+  Property=HyperLabel=,,,"LC_DOCUMENTO"
+  Property=TooltipText="Digite o Codigo do Documento Para Busca"
+
+CONTROL=PUSHBUTTON
+GUID=BA6C8DE3-4228-4F18-AD72-998964C20B02
+  Name=Busca02
+  Class=PUSHBUTTON
+  Caption=Busca
+  Order=-1
+  Left=523
+  Width=80
+  Top=181
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Busca",,
+  Property=HyperLabel=#Busca02,,,
+  Property=TooltipText="Clique para Buscar Sub/Atual"
+
+CONTROL=FIXEDTEXT
+GUID=24D37962-F060-449C-BF43-7F066BDD6624
+  Name=theFixedText5
+  Class=FIXEDTEXT
+  Caption=Sub./Atual.
+  Order=-1
+  Left=18
+  Width=78
+  Top=186
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Sub./Atual.",,
+  Property=HyperLabel=#theFixedText5,,,
+
+CONTROL=SINGLELINEEDIT
+GUID=A369EEBD-4FBF-4A0E-ACC9-853B7B78270B
+  Name=cNOVODOC
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=97
+  Width=306
+  Top=187
+  Height=18
+  Browseindex=6
+  Browsesize=10
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_40
+  Property=HyperLabel=#cNOVODOC,,,
+  Property=HyperLabel=,"Novodoc:",,
+  Property=HyperLabel=,,,"LC_NOVODOC"
+  Property=TooltipText="Digite  A Sub/Atualização Para Busca"
+
+CONTROL=FIXEDTEXT
+GUID=613CE991-34DB-4CC2-B807-8AAA3F1EEB43
+  Name=theFixedText7
+  Class=FIXEDTEXT
+  Caption=Numero
+  Order=-1
+  Left=19
+  Width=72
+  Top=211
+  Height=24
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"Numero",,
+  Property=HyperLabel=#theFixedText7,,,
+
+CONTROL=COMBOBOX
+GUID=CC745633-54B6-4779-8BA0-63CD2C2C9DD2
+  Name=cTIPO
+  Class=COMBOBOX
+  Caption=
+  Order=-1
+  Left=229
+  Width=185
+  Top=211
+  Height=74
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1075904770
+  Exstyles=0
+  Property=FieldSpec=PADRAO_CHAR_20
+  Property=HyperLabel=#cTIPO,,,
+  Property=HyperLabel=,"Tipo",,
+  Property=TooltipText="Digite O Tipo Para Busca"
+
+CONTROL=PUSHBUTTON
+GUID=599CA0BF-5A7D-4429-8634-5D432C2324BC
+  Name=BUSC03
+  Class=PUSHBUTTON
+  Caption=Busca
+  Order=-1
+  Left=523
+  Width=80
+  Top=211
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073807360
+  Exstyles=0
+  Property=HyperLabel=,"Busca",,
+  Property=HyperLabel=#BUSC03,,,
+  Property=TooltipText="Clique Para Busca Numero/tipo"
+
+CONTROL=SINGLELINEEDIT
+GUID=6129A848-076D-4C78-9ABF-279798611464
+  Name=cNUMERO
+  Class=SINGLELINEEDIT
+  Caption=
+  Order=-1
+  Left=97
+  Width=114
+  Top=217
+  Height=18
+  Browseindex=7
+  Browsesize=9
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082196096
+  Exstyles=0
+  Property=FieldSpec=PADRAO_NUM_10
+  Property=HyperLabel=#cNUMERO,,,
+  Property=HyperLabel=,"Documento:",,
+  Property=HyperLabel=,,,"LC_DOCUMENTO"
+  Property=TooltipText="Digite o Numero"
+
+SUBCONTROLSEND
+DESIGNEREND = JLC
+

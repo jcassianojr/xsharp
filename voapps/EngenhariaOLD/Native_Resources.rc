@@ -1,0 +1,4 @@
+#include "C:\Program Files (x86)\XSharp\\Include\NativeResourceDefines.xh"
+#include "D:\develop\xsharp\voapps\Engenharia\Menus.prg.rc"
+#include "D:\develop\xsharp\voapps\Engenharia\LC.JAN.prg.rc"
+#include "D:\develop\xsharp\voapps\Engenharia\LCT.JAN.prg.rc"

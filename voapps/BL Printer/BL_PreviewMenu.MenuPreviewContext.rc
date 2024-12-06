@@ -1,0 +1,8 @@
+MenuPreviewContext MENU
+Begin
+	POPUP "&Zoom"
+	BEGIN
+		MENUITEM "Dummy", 25648
+	END
+End
+ 

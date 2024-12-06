@@ -1,0 +1,6 @@
+#include "C:\Program Files (x86)\XSharp\\Include\NativeResourceDefines.xh"
+#include "D:\develop\xsharp\voapps\BL Printer\BL_PreviewDta.prg.rc"
+#include "D:\develop\xsharp\voapps\BL Printer\BL_PreviewMenu.prg.rc"
+#include "D:\develop\xsharp\voapps\BL Printer\BL_PrintInfoDlg.prg.rc"
+#include "D:\develop\xsharp\voapps\BL Printer\BL_PreviewMenuGe.prg.rc"
+#include "D:\develop\xsharp\voapps\BL Printer\BL_Resources.rc"

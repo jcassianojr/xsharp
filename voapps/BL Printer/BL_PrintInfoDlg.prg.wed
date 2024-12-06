@@ -1,0 +1,65 @@
+DESIGNERSTART = VOWindowEditor,DIALOGWINDOW,DlgPrintInfo
+GUID=3CBF872C-085C-4967-A980-577B25CE51D2
+  Name=DlgPrintInfo
+  Class=DIALOGWINDOW
+  Caption=Print with BL_Printer
+  Order=0
+  Left=133
+  Width=237
+  Top=105
+  Height=118
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=2160590852
+  Exstyles=257
+  Property=HyperLabel=,"Print with BL_Printer",,
+  Property=HyperLabel=#DlgPrintInfo,,,
+  Property=Modeless=Yes
+
+SUBCONTROLSSTART
+CONTROL=FIXEDTEXT
+GUID=0EB6CEB7-450C-4C15-AB83-6D592C49B8A9
+  Name=txtPrinting
+  Class=FIXEDTEXT
+  Caption=Printing page 
+  Order=1
+  Left=41
+  Width=160
+  Top=21
+  Height=22
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741825
+  Exstyles=0
+  Property=HyperLabel=,"Printing page ",,
+  Property=HyperLabel=#txtPrinting,,,
+
+CONTROL=PUSHBUTTON
+GUID=7E526665-EEF0-40CF-8112-7A7EF112BF3A
+  Name=btnAbort
+  Class=PUSHBUTTON
+  Caption=Abort
+  Order=2
+  Left=71
+  Width=90
+  Top=61
+  Height=23
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807361
+  Exstyles=0
+  Property=HyperLabel=,"Abort",,
+  Property=HyperLabel=#btnAbort,,,
+
+SUBCONTROLSEND
+DESIGNEREND = DlgPrintInfo
+

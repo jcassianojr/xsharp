@@ -1,0 +1,44 @@
+DESIGNERSTART = VOWindowEditor,DATAWINDOW,DtaPreview_vo
+GUID=491E44F8-6B89-4FA0-982C-AABC828CD128
+  Name=DtaPreview_vo
+  Class=DATAWINDOW
+  Caption=DataWindow Caption
+  Order=0
+  Left=44
+  Width=278
+  Top=44
+  Height=177
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=1073741824
+  Exstyles=0
+  Property=HyperLabel=,"DataWindow Caption",,
+  Property=HyperLabel=#DtaPreview_vo,,,
+
+SUBCONTROLSSTART
+CONTROL=CUSTOMCONTROL
+GUID=E3E05A79-5F9F-4141-A6FE-584C10381344
+  Name=Preview
+  Class=CUSTOMCONTROL
+  Caption=
+  Order=1
+  Left=21
+  Width=240
+  Top=21
+  Height=140
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741824
+  Exstyles=0
+  Property=InheritClassName=CcPreview
+  Property=HyperLabel=#Preview,,,
+
+SUBCONTROLSEND
+DESIGNEREND = DtaPreview_vo
+

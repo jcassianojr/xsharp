@@ -1,0 +1,30 @@
+DemoChildMenu MENU
+Begin
+	POPUP "&File"
+	BEGIN
+		MENUITEM "Pre&view", 24612
+		MENUITEM "Preview German", 24613
+		MENUITEM "Preview like Acrobat", 24614
+		MENUITEM "Preview Database", 24615
+		MENUITEM "Preview Bitmap", 24616
+		MENUITEM "Preview Textfile", 24617
+		MENUITEM "Preview Large", 24618
+		MENUITEM "Preview Large Callback", 24619
+		MENUITEM "Preview RTF Background", 24620
+		MENUITEM SEPARATOR
+		MENUITEM "&Print...", 24622
+		MENUITEM "P&rint Setup...", 24623
+		MENUITEM SEPARATOR
+		MENUITEM "&Exit", 24625
+	END
+	POPUP "&Window"
+	BEGIN
+		MENUITEM "&Cascade", 24627
+		MENUITEM "&Tile", 24628
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Info", 24630
+	END
+End
+ 

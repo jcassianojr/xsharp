@@ -1,0 +1,10 @@
+DlgPrintInfo DIALOGEX  88, 76, 154, 57
+STYLE	4|2147483648|12582912|524288
+CAPTION	"Print with BL_Printer"
+FONT	8, "MS Shell Dlg"
+BEGIN
+	CONTROL	"Printing page ", 100, "Static", 1|1073741824, 26, 12, 107, 13
+	CONTROL	"Abort", 101, "Button", 1|65536|1073741824, 46, 36, 60, 15
+END
+
+

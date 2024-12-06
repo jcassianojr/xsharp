@@ -1,4 +1,11 @@
-﻿CLASS engshell INHERIT StandardShellWindow
+﻿PARTIAL CLASS engshell INHERIT StandardShellWindow
+	PROTECT oPrinter   		AS BL_Printer
+	PROTECT oMenuVorschau 	AS BL_PrinterMenu
+	
+	PROTECT oPrinterRTF		AS BL_Printer
+	PROTECT cFileRTF		AS STRING
+	
+	EXPORT OWNER
 
 CONSTRUCTOR( oOwnerApp ) 
 //	LOCAL oSB AS StatusBar
@@ -36,6 +43,18 @@ CONSTRUCTOR( oOwnerApp )
 //	SELF:statusBar:SetText (Str(ZFOLHA,8)+"-"+ZUSER, #SBUser)
 // mudado startup para refresh var
 
+
+	oPrinter := BL_Printer{SELF, "Druck mit BL_Printer", , FALSE}
+  	// oPrinter:PrintingDevice:Orientation := DMORIENT_PORTRAIT   // 1
+  	oPrinter:PrintingDevice:Orientation := DMORIENT_LANDSCAPE 	// 2
+  	// oPrinter:ClipPage := FALSE
+  	oPrinter:Update()
+  	// oPrinter:PrinterInfo()
+
+  	oPrinterRTF := BL_Printer{SELF, "Druck mit BL_Printer", , FALSE}
+  	oPrinterRTF:PrintingDevice:Orientation := DMORIENT_PORTRAIT   // 1
+  	// oPrinterRTF:ClipPage := FALSE
+  	cFileRTF := ""
 
 
 

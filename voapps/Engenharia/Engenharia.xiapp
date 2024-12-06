@@ -18,7 +18,7 @@ Extension =
 ApplicationIcon = 
 OutputFolder = 
 Frameworks = 1
-GUID = 3B713C00-CAC6-456E-8407-63CE4075F11D
+GUID = 3D9C03E6-5CDF-4ECD-B161-B6B7C3C9FD8C
 IncludeInProjectBuild = 1
 IncludeInProjectSearch = 1
 IncludeInProjectExport = 1
@@ -34,31 +34,43 @@ ExportImages = 0
 [Engenharia FileGroups]
 [Engenharia Files]
 File = %AppPath%\Menus.prg
-FileGUID = 186DB5B3-279F-4DAF-8F3A-8F7ADEBB14AD
+FileGUID = 4AEB299A-ABB5-467D-BB7B-4B2E8FE69CA5
 FileType = Code
 CopyToBin = 0
-File = %AppPath%\LC.JAN.prg
-FileGUID = 7B6ADC0A-62F3-4855-B661-4F62940038F0
+File = %AppPath%\jlc.prg
+FileGUID = CB17E14D-0E1A-4A5D-B2B9-CC92F26A1AD5
 FileType = Code
 CopyToBin = 0
-File = %AppPath%\LCT.JAN.prg
-FileGUID = B38C32C6-563A-4C5E-8A06-FDD1CB2C7612
+File = %AppPath%\jlct.prg
+FileGUID = 5028DC11-7EEF-4602-BD54-4DB422E668C4
 FileType = Code
 CopyToBin = 0
-File = %AppPath%\X.Classes.prg
-FileGUID = A6AC9FDF-5060-4B3F-8466-B4D2C2E8CFD9
+File = %AppPath%\xclasses.prg
+FileGUID = A943DE0A-F068-4B35-8345-4424B1C0F3A9
 FileType = Code
 CopyToBin = 0
 File = %AppPath%\funcoes.prg
-FileGUID = DD21C340-7AAA-456E-8653-B041CD0E7B72
+FileGUID = 19DB22DC-A042-4319-B27A-8609F3D5F97C
 FileType = Code
 CopyToBin = 0
 File = %AppPath%\Start.prg
-FileGUID = 25A13529-385C-4E2E-B914-D02FAC587EF5
+FileGUID = B5BEB916-A78A-4598-9F2E-7901DF52E248
 FileType = Code
 CopyToBin = 0
 File = %AppPath%\xclassesshell.prg
-FileGUID = DEC77B3A-3725-442A-96C6-853C8FC53362
+FileGUID = 478F936C-6E53-4B6A-A76A-DF70784025C4
+FileType = Code
+CopyToBin = 0
+File = %AppPath%\preview.teste.prg
+FileGUID = 0372D93F-CC86-4304-B981-098897F002EA
+FileType = Code
+CopyToBin = 0
+File = %AppPath%\xjlc.prg
+FileGUID = 9AF3EEF3-56DC-4C5C-95FA-B7FD118AEC52
+FileType = Code
+CopyToBin = 0
+File = %AppPath%\xjlct.prg
+FileGUID = B7686068-B4DB-4038-BA8A-7FF3EAC2D1E7
 FileType = Code
 CopyToBin = 0
 [Engenharia References]
@@ -73,8 +85,11 @@ ReferenceGAC = CLR4,VORDDClasses,1,0,2.6.0.0
 ReferenceGAC = CLR4,VOGUIClasses,1,0,2.6.0.0
 ReferenceGAC = CLR4,VOSystemClasses,1,0,2.6.0.0
 ReferenceGAC = CLR4,VOWin32APILibrary,1,0,2.6.0.0
+ReferenceProject = A2BFFEC6-640F-4CDF-9FA7-91B751A34676,1,0,BLPrinter
 [Engenharia Resources]
 [Engenharia Native Resources]
+NativeResourceFile = %AppPath%\Start.rc
+ResourceFileGuid = 03E5A940-B2FC-4CBE-B47C-4A3B315F0018
 [Engenharia License files]
 [Engenharia General Options]
 Switches=/nowarn:9032,9043,165,649,9025,9026,9076,9020,9021

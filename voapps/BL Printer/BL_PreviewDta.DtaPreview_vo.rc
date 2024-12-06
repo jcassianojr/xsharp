@@ -1,0 +1,8 @@
+DtaPreview_vo DIALOGEX  28, 25, 184, 108
+STYLE	1073741824
+FONT	8, "MS Shell Dlg"
+BEGIN
+	CONTROL	"", 100, "_VOCustomControl", 0x40000000L, 13, 12, 160, 86
+END
+
+

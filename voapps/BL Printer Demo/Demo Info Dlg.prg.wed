@@ -1,0 +1,144 @@
+DESIGNERSTART = VOWindowEditor,DIALOGWINDOW,DlgInfo_vo
+GUID=C4B93CBE-A831-4BE8-859B-FD371EFE779B
+  Name=DlgInfo_vo
+  Class=DIALOGWINDOW
+  Caption=Info about BL_Printer Demo
+  Order=0
+  Left=56
+  Width=326
+  Top=56
+  Height=183
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=2160593028
+  Exstyles=257
+  Property=HyperLabel=,"Info about BL_Printer Demo",,
+  Property=HyperLabel=#DlgInfo_vo,,,
+
+SUBCONTROLSSTART
+CONTROL=FIXEDICON
+GUID=F7448DD7-A1AA-47E4-953E-7A4A9B4AFC47
+  Name=FixedIcon1
+  Class=FIXEDICON
+  Caption=
+  Order=1
+  Left=21
+  Width=40
+  Top=21
+  Height=40
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1082130435
+  Exstyles=0
+  Property=HyperLabel=,"APP_ICON",,
+  Property=HyperLabel=#FixedIcon1,,,
+
+CONTROL=FIXEDTEXT
+GUID=79026418-8095-494C-9577-3C4A47445C5B
+  Name=Name
+  Class=FIXEDTEXT
+  Caption=Demo of using the BL_Printer class
+  Order=2
+  Left=81
+  Width=230
+  Top=21
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741964
+  Exstyles=0
+  Property=HyperLabel=,"Demo of using the BL_Printer class",,
+  Property=HyperLabel=#Name,,,
+
+CONTROL=FIXEDTEXT
+GUID=2F29E737-CBEA-49DC-820F-5A4787FB706B
+  Name=Version
+  Class=FIXEDTEXT
+  Caption=Version 1.00 beta  from 01.05.2002
+  Order=3
+  Left=81
+  Width=230
+  Top=46
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741964
+  Exstyles=0
+  Property=HyperLabel=,"Version 1.00 beta  from 01.05.2002",,
+  Property=HyperLabel=#Version,,,
+
+CONTROL=FIXEDTEXT
+GUID=04F170A3-2B2E-478B-88FD-99AFC045B1B3
+  Name=Copyright
+  Class=FIXEDTEXT
+  Caption=Copyright 2002-2003 ©  Bernhard Lehmbrock
+  Order=4
+  Left=81
+  Width=230
+  Top=71
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741964
+  Exstyles=0
+  Property=HyperLabel=,"Copyright 2002-2003 ©  Bernhard Lehmbrock",,
+  Property=HyperLabel=#Copyright,,,
+
+CONTROL=PUSHBUTTON
+GUID=BCFA9EF6-538D-48F4-84D8-0451851F46D2
+  Name=btnOK
+  Class=PUSHBUTTON
+  Caption=OK
+  Order=5
+  Left=115
+  Width=93
+  Top=121
+  Height=25
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073807361
+  Exstyles=0
+  Property=HyperLabel=,"OK",,
+  Property=HyperLabel=#btnOK,,,
+
+CONTROL=FIXEDTEXT
+GUID=E235A3D1-ED5D-41BC-8644-829DBE8C4F20
+  Name=Copyright2
+  Class=FIXEDTEXT
+  Caption=Lehmbrock@t-online.de
+  Order=6
+  Left=81
+  Width=230
+  Top=91
+  Height=20
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=2
+  Styles=1073741964
+  Exstyles=0
+  Property=HyperLabel=,"Lehmbrock@t-online.de",,
+  Property=HyperLabel=#Copyright2,,,
+
+SUBCONTROLSEND
+DESIGNEREND = DlgInfo_vo
+

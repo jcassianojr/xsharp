@@ -1,47 +1,51 @@
-;// designer generated file, do not modify
-;// MENU EMPTYSHELLMENU from D:\develop\xsharp\voapps\Engenharia\Menus.prg.rc
+EMPTYSHELLMENU ACCELERATORS
+Begin
+	115, 21790, ALT, VIRTKEY
+	112, 21803, VIRTKEY
+End
+ 
 EMPTYSHELLMENU MENU
-BEGIN
+Begin
 	POPUP "&Arquivo"
 	BEGIN
 		POPUP "Controle de Normas"
 		BEGIN
-			MENUITEM "Normas" , 28544
-			MENUITEM "Tipos" , 28545
+			MENUITEM "Normas", 21781
+			MENUITEM "Tipos", 21782
 		END
-		MENUITEM "Indexar" , 28546
-		MENUITEM "C&onfigurar Impressora .." , 28547
+		MENUITEM "Indexar", 21783
+		MENUITEM "C&onfigurar Impressora ..", 21784
+		MENUITEM "teste preview RTF", 21785
+		MENUITEM "teste preview txt", 21786
+		MENUITEM "teste preview bmp", 21787
+		MENUITEM "teste preview dbf", 21788
 		MENUITEM SEPARATOR
-		MENUITEM "&Sair\tAlt+F4" , 28549
+		MENUITEM "&Sair\tAlt+F4", 21790
 	END
 	POPUP "&Relatorios"
 	BEGIN
-		MENUITEM "Relatorios Engenharia" , 28551
-		MENUITEM "WRPT" , 28552
-		MENUITEM "WRPT Integrado" , 28553
-		MENUITEM "lstview logix" , 28554
+		MENUITEM "Relatorios Engenharia", 21792
+		MENUITEM "WRPT", 21793
+		MENUITEM "WRPT Integrado", 21794
+		MENUITEM "lstview logix", 21795
 	END
 	POPUP "Utilitarios"
 	BEGIN
 		POPUP "Email"
 		BEGIN
-			MENUITEM "Consulta" , 28557
-			MENUITEM "Geral" , 28558
-			MENUITEM "Configuracao" , 28559
+			MENUITEM "Consulta", 21798
+			MENUITEM "Geral", 21799
+			MENUITEM "Configuracao", 21800
 		END
-		MENUITEM "Checar CGC/CPF/IE..." , 28560
+		MENUITEM "Checar CGC/CPF/IE...", 21801
 	END
 	POPUP "&?"
 	BEGIN
-		MENUITEM "&Indice\tF1" , 28562
-		MENUITEM "&Usando a Ajuda" , 28563
+		MENUITEM "&Indice\tF1", 21803
+		MENUITEM "&Usando a Ajuda", 21804
 		MENUITEM SEPARATOR
-		MENUITEM "Atualização" , 28565
-		MENUITEM "&Sobre..." , 32031
+		MENUITEM "Atualização", 21806
+		MENUITEM "&Sobre...", 21807
 	END
-END
-EMPTYSHELLMENU_Accelerator ACCELERATORS
-BEGIN
-	115, 28549, ALT ,VIRTKEY
-	112, 28562, VIRTKEY
-END
+End
+ 

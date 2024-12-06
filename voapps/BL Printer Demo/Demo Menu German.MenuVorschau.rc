@@ -1,0 +1,50 @@
+MenuVorschau MENU
+Begin
+	POPUP "&Datei"
+	BEGIN
+		MENUITEM "&Schließen", 1353
+		MENUITEM SEPARATOR
+		MENUITEM "Seite &drucken", 1355
+		MENUITEM SEPARATOR
+		MENUITEM "&Beenden", 1357
+	END
+	POPUP "&Ansicht"
+	BEGIN
+		MENUITEM "&Erste Seite\tPOS1", 1359
+		MENUITEM "&Vorherige Seite\tBILD-NACH-OBEN", 1360
+		MENUITEM "&Nächste Seite\tBILD-NACH-UNTEN", 1361
+		MENUITEM "&Letzte Seite\tENDE", 1362
+		MENUITEM SEPARATOR
+		MENUITEM "Lupe", 1364
+	END
+	POPUP "&Zoom"
+	BEGIN
+		MENUITEM "1600 %", 1366
+		MENUITEM "800 %", 1367
+		MENUITEM SEPARATOR
+		MENUITEM "400 %", 1369
+		MENUITEM "300 %", 1370
+		MENUITEM "250 %", 1371
+		MENUITEM "200 %", 1372
+		MENUITEM "150 %", 1373
+		MENUITEM "100 %", 1374
+		MENUITEM "  75 %", 1375
+		MENUITEM "  50 %", 1376
+		MENUITEM "  25 %", 1377
+		MENUITEM SEPARATOR
+		MENUITEM "Ganze Seite", 1379
+		MENUITEM "Seitenbreite", 1380
+		MENUITEM "Seitenhöhe", 1381
+	END
+	POPUP "&Fenster"
+	BEGIN
+		MENUITEM "&Überlappend", 1383
+		MENUITEM "&Nebeneinander", 1384
+		MENUITEM "&Untereinander", 1385
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Info", 1387
+	END
+End
+ 

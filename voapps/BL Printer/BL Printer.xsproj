@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(XSharpMsBuildDir)\XSharp.Default.props" />
+  <PropertyGroup>
+    <ProjectGuid>C3416137-9745-4EB6-8801-04769998785D</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BLPrinter</RootNamespace>
+    <AssemblyName>BL Printer</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <Name>BL Printer</Name>
+    <Dialect>VO</Dialect>
+    <LB>true</LB>
+    <OutputName>BL Printer</OutputName>
+    <Prefer32Bit>True</Prefer32Bit>
+    <VulcanCompatibleResources>False</VulcanCompatibleResources>
+    <AZ>false</AZ>
+    <CS>false</CS>
+    <OVF>true</OVF>
+    <Unsafe>true</Unsafe>
+    <INS>true</INS>
+    <NS>false</NS>
+    <VO1>true</VO1>
+    <VO2>true</VO2>
+    <VO3>true</VO3>
+    <VO4>true</VO4>
+    <VO5>true</VO5>
+    <VO6>true</VO6>
+    <VO7>true</VO7>
+    <VO8>true</VO8>
+    <VO9>true</VO9>
+    <VO10>true</VO10>
+    <VO11>false</VO11>
+    <VO12>false</VO12>
+    <VO13>true</VO13>
+    <VO14>false</VO14>
+    <VO15>true</VO15>
+    <VO16>true</VO16>
+    <MemVar>false</MemVar>
+    <Undeclared>false</Undeclared>
+    <NoStandardDefs>false</NoStandardDefs>
+    <EnforceSelf>false</EnforceSelf>
+    <NamedArgs>False</NamedArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'" Label="Configuration">
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DisabledWarnings>9032;9043;165;649;9025;9026;9076;9020;9021</DisabledWarnings>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'" Label="Configuration">
+    <PlatformTarget>x86</PlatformTarget>
+    <DefineConstants>TRACE</DefineConstants>
+    <DisabledWarnings>9032;9043;618;162;165;649;9025</DisabledWarnings>
+  </PropertyGroup>
+  <Import Project="$(XSharpMsBuildDir)\XSharp.targets" />
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="XSharp.Core">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="XSharp.RT">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="XSharp.VO">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOSystemClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOGUIClasses">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+    <Reference Include="VOWin32APILibrary">
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+<Compile Include="BL_Printer.prg">
+  <SubType>Code</SubType>
+</Compile>
+<Compile Include="BL_PreviewCc.prg">
+  <SubType>Code</SubType>
+</Compile>
+<Compile Include="BL_PreviewDta.prg">
+  <SubType>Code</SubType>
+</Compile>
+<NativeResource Include="BL_PreviewDta.DtaPreview_vo.rc">
+  <DependentUpon>BL_PreviewDta.prg</DependentUpon>
+</NativeResource>
+<VOBinary Include="BL_PreviewDta.DtaPreview_vo.xsfrm">
+  <DependentUpon>BL_PreviewDta.prg</DependentUpon>
+</VOBinary>
+<Compile Include="BL_PreviewMenu.prg">
+  <SubType>Code</SubType>
+</Compile>
+<NativeResource Include="BL_PreviewMenu.MenuPreview_Accelerator.rc">
+  <DependentUpon>BL_PreviewMenu.prg</DependentUpon>
+</NativeResource>
+<NativeResource Include="BL_PreviewMenu.MenuPreview.rc">
+  <DependentUpon>BL_PreviewMenu.prg</DependentUpon>
+</NativeResource>
+<NativeResource Include="BL_PreviewMenu.MenuPreviewContext.rc">
+  <DependentUpon>BL_PreviewMenu.prg</DependentUpon>
+</NativeResource>
+<VOBinary Include="BL_PreviewMenu.MenuPreview.xsmnu">
+  <DependentUpon>BL_PreviewMenu.prg</DependentUpon>
+</VOBinary>
+<VOBinary Include="BL_PreviewMenu.MenuPreviewContext.xsmnu">
+  <DependentUpon>BL_PreviewMenu.prg</DependentUpon>
+</VOBinary>
+<Compile Include="BL_Func.prg">
+  <SubType>Code</SubType>
+</Compile>
+<Compile Include="BL_PrintInfoDlg.prg">
+  <SubType>Code</SubType>
+</Compile>
+<NativeResource Include="BL_PrintInfoDlg.DlgPrintInfo.rc">
+  <DependentUpon>BL_PrintInfoDlg.prg</DependentUpon>
+</NativeResource>
+<VOBinary Include="BL_PrintInfoDlg.DlgPrintInfo.xsfrm">
+  <DependentUpon>BL_PrintInfoDlg.prg</DependentUpon>
+</VOBinary>
+<Compile Include="BL_Resources.prg">
+  <SubType>Code</SubType>
+</Compile>
+<NativeResource Include="BL_Resources.CurFaust.rc">
+  <DependentUpon>BL_Resources.prg</DependentUpon>
+</NativeResource>
+<NativeResource Include="BL_Resources.CurHand.rc">
+  <DependentUpon>BL_Resources.prg</DependentUpon>
+</NativeResource>
+<NativeResource Include="BL_Resources.CurZoomIn.rc">
+  <DependentUpon>BL_Resources.prg</DependentUpon>
+</NativeResource>
+<NativeResource Include="BL_Resources.CurZoomOut.rc">
+  <DependentUpon>BL_Resources.prg</DependentUpon>
+</NativeResource>
+<NativeResource Include="BL_Resources.POWVOBMP.rc">
+  <DependentUpon>BL_Resources.prg</DependentUpon>
+</NativeResource>
+<NativeResource Include="BL_Resources.TB_BL_PRINTER.rc">
+  <DependentUpon>BL_Resources.prg</DependentUpon>
+</NativeResource>
+<Compile Include="! Read Me.prg">
+  <SubType>Code</SubType>
+</Compile>
+<Compile Include="BL_PrinterMenu.prg">
+  <SubType>Code</SubType>
+</Compile>
+<Compile Include="BL_PreviewMenuGe.prg">
+  <SubType>Code</SubType>
+</Compile>
+<NativeResource Include="BL_PreviewMenuGe.MenuPreviewGe_Accelerator.rc">
+  <DependentUpon>BL_PreviewMenuGe.prg</DependentUpon>
+</NativeResource>
+<NativeResource Include="BL_PreviewMenuGe.MenuPreviewGe.rc">
+  <DependentUpon>BL_PreviewMenuGe.prg</DependentUpon>
+</NativeResource>
+<VOBinary Include="BL_PreviewMenuGe.MenuPreviewGe.xsmnu">
+  <DependentUpon>BL_PreviewMenuGe.prg</DependentUpon>
+</VOBinary>
+<Compile Include="BL_Printer Events.prg">
+  <SubType>Code</SubType>
+</Compile>
+<Compile Include="BL_PrintingDevice.prg">
+  <SubType>Code</SubType>
+</Compile>
+<None Include="Resources\TB BL-Printer.bmp" />
+  </ItemGroup>
+  <!-- This next bit is required unless the macro used to Import your targets is defined in an MSBuild toolset. -->
+  <ProjectExtensions>
+    <ProjectCapabilities>
+      <ProjectConfigurationsDeclaredAsItems />
+    </ProjectCapabilities>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PreBuildEvent />
+    <PostBuildEvent />
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+</Project>

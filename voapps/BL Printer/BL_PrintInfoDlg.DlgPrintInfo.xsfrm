@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="DlgPrintInfo">
+    <Window Name="DlgPrintInfo">
+      <Name>DlgPrintInfo</Name>
+      <Class>DIALOGWINDOW</Class>
+      <Caption>Print with BL_Printer</Caption>
+      <Order>0</Order>
+      <Left>133</Left>
+      <Top>105</Top>
+      <Width>237</Width>
+      <Height>118</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>2160590852</Styles>
+      <ExStyles>257</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Print with BL_Printer",,</HyperLabel>
+        <HyperLabel>#DlgPrintInfo,,,</HyperLabel>
+        <Modeless>Yes</Modeless>
+      </ExProperties>
+    </Window>
+    <Control Name="txtPrinting">
+      <Name>txtPrinting</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Printing page </Caption>
+      <Order>1</Order>
+      <Left>41</Left>
+      <Top>21</Top>
+      <Width>160</Width>
+      <Height>22</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741825</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Printing page ",,</HyperLabel>
+        <HyperLabel>#txtPrinting,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="btnAbort">
+      <Name>btnAbort</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>Abort</Caption>
+      <Order>2</Order>
+      <Left>71</Left>
+      <Top>61</Top>
+      <Width>90</Width>
+      <Height>23</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807361</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Abort",,</HyperLabel>
+        <HyperLabel>#btnAbort,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

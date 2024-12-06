@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Designers>
+  <VOWindow Name="DlgInfo_vo">
+    <Window Name="DlgInfo_vo">
+      <Name>DlgInfo_vo</Name>
+      <Class>DIALOGWINDOW</Class>
+      <Caption>Info about BL_Printer Demo</Caption>
+      <Order>0</Order>
+      <Left>56</Left>
+      <Top>56</Top>
+      <Width>326</Width>
+      <Height>183</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>0</Deleted>
+      <Styles>2160593028</Styles>
+      <ExStyles>257</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Info about BL_Printer Demo",,</HyperLabel>
+        <HyperLabel>#DlgInfo_vo,,,</HyperLabel>
+      </ExProperties>
+    </Window>
+    <Control Name="FixedIcon1">
+      <Name>FixedIcon1</Name>
+      <Class>FIXEDICON</Class>
+      <Caption>
+      </Caption>
+      <Order>1</Order>
+      <Left>21</Left>
+      <Top>21</Top>
+      <Width>40</Width>
+      <Height>40</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1082130435</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"APP_ICON",,</HyperLabel>
+        <HyperLabel>#FixedIcon1,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Name">
+      <Name>Name</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Demo of using the BL_Printer class</Caption>
+      <Order>2</Order>
+      <Left>81</Left>
+      <Top>21</Top>
+      <Width>230</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741964</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Demo of using the BL_Printer class",,</HyperLabel>
+        <HyperLabel>#Name,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Version">
+      <Name>Version</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Version 1.00 beta  from 01.05.2002</Caption>
+      <Order>3</Order>
+      <Left>81</Left>
+      <Top>46</Top>
+      <Width>230</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741964</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Version 1.00 beta  from 01.05.2002",,</HyperLabel>
+        <HyperLabel>#Version,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Copyright">
+      <Name>Copyright</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Copyright 2002-2003 ©  Bernhard Lehmbrock</Caption>
+      <Order>4</Order>
+      <Left>81</Left>
+      <Top>71</Top>
+      <Width>230</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741964</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Copyright 2002-2003 ©  Bernhard Lehmbrock",,</HyperLabel>
+        <HyperLabel>#Copyright,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="btnOK">
+      <Name>btnOK</Name>
+      <Class>PUSHBUTTON</Class>
+      <Caption>OK</Caption>
+      <Order>5</Order>
+      <Left>115</Left>
+      <Top>121</Top>
+      <Width>93</Width>
+      <Height>25</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073807361</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"OK",,</HyperLabel>
+        <HyperLabel>#btnOK,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+    <Control Name="Copyright2">
+      <Name>Copyright2</Name>
+      <Class>FIXEDTEXT</Class>
+      <Caption>Lehmbrock@t-online.de</Caption>
+      <Order>6</Order>
+      <Left>81</Left>
+      <Top>91</Top>
+      <Width>230</Width>
+      <Height>20</Height>
+      <BrowseIndex>-1</BrowseIndex>
+      <BrowseSize>0</BrowseSize>
+      <SubForm>No</SubForm>
+      <NoSave>No</NoSave>
+      <Deleted>2</Deleted>
+      <Styles>1073741964</Styles>
+      <ExStyles>0</ExStyles>
+      <ExProperties>
+        <HyperLabel>,"Lehmbrock@t-online.de",,</HyperLabel>
+        <HyperLabel>#Copyright2,,,</HyperLabel>
+      </ExProperties>
+    </Control>
+  </VOWindow>
+</Designers>

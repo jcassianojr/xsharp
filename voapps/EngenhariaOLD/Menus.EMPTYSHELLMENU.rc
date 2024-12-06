@@ -1,0 +1,41 @@
+EMPTYSHELLMENU MENU
+Begin
+	POPUP "&Arquivo"
+	BEGIN
+		POPUP "Controle de Normas"
+		BEGIN
+			MENUITEM "Normas", 28544
+			MENUITEM "Tipos", 28545
+		END
+		MENUITEM "Indexar", 28546
+		MENUITEM "C&onfigurar Impressora ..", 28547
+		MENUITEM SEPARATOR
+		MENUITEM "&Sair\tAlt+F4", 28549
+	END
+	POPUP "&Relatorios"
+	BEGIN
+		MENUITEM "Relatorios Engenharia", 28551
+		MENUITEM "WRPT", 28552
+		MENUITEM "WRPT Integrado", 28553
+		MENUITEM "lstview logix", 28554
+	END
+	POPUP "Utilitarios"
+	BEGIN
+		POPUP "Email"
+		BEGIN
+			MENUITEM "Consulta", 28557
+			MENUITEM "Geral", 28558
+			MENUITEM "Configuracao", 28559
+		END
+		MENUITEM "Checar CGC/CPF/IE...", 28560
+	END
+	POPUP "&?"
+	BEGIN
+		MENUITEM "&Indice\tF1", 28562
+		MENUITEM "&Usando a Ajuda", 28563
+		MENUITEM SEPARATOR
+		MENUITEM "Atualização", 28565
+		MENUITEM "&Sobre...", 32031
+	END
+End
+ 

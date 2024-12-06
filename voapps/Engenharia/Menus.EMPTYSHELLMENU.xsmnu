@@ -12,7 +12,7 @@
     <MenuItems>
       <MenuItem>
         <Caption>&amp;Arquivo</Caption>
-        <OriginalDefineValue>28542</OriginalDefineValue>
+        <OriginalDefineValue>21779</OriginalDefineValue>
         <EventName>File</EventName>
         <ID>
         </ID>
@@ -31,7 +31,7 @@
         <MenuItems>
           <MenuItem>
             <Caption>Controle de Normas</Caption>
-            <OriginalDefineValue>28543</OriginalDefineValue>
+            <OriginalDefineValue>21780</OriginalDefineValue>
             <EventName>JLC</EventName>
             <ID>
             </ID>
@@ -51,7 +51,7 @@
             <MenuItems>
               <MenuItem>
                 <Caption>Normas</Caption>
-                <OriginalDefineValue>28544</OriginalDefineValue>
+                <OriginalDefineValue>21781</OriginalDefineValue>
                 <EventName>XJLC</EventName>
                 <ID>
                 </ID>
@@ -71,7 +71,7 @@
               </MenuItem>
               <MenuItem>
                 <Caption>Tipos</Caption>
-                <OriginalDefineValue>28545</OriginalDefineValue>
+                <OriginalDefineValue>21782</OriginalDefineValue>
                 <EventName>XJLCT</EventName>
                 <ID>
                 </ID>
@@ -93,7 +93,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Indexar</Caption>
-            <OriginalDefineValue>28546</OriginalDefineValue>
+            <OriginalDefineValue>21783</OriginalDefineValue>
             <EventName>XINDEXAR</EventName>
             <ID>
             </ID>
@@ -113,8 +113,8 @@
           </MenuItem>
           <MenuItem>
             <Caption>C&amp;onfigurar Impressora ..</Caption>
-            <OriginalDefineValue>28547</OriginalDefineValue>
-            <EventName>IMPRESSORA</EventName>
+            <OriginalDefineValue>21784</OriginalDefineValue>
+            <EventName>FilePrinterSetup</EventName>
             <ID>
             </ID>
             <Description>Configurar as Opções da Impressora</Description>
@@ -131,8 +131,92 @@
             <ButtonPos>-1</ButtonPos>
           </MenuItem>
           <MenuItem>
+            <Caption>teste preview RTF</Caption>
+            <OriginalDefineValue>21785</OriginalDefineValue>
+            <EventName>PreviewRTF</EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>
+            </ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>teste preview txt</Caption>
+            <OriginalDefineValue>21786</OriginalDefineValue>
+            <EventName>Previewtxt</EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>
+            </ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>teste preview bmp</Caption>
+            <OriginalDefineValue>21787</OriginalDefineValue>
+            <EventName>Previewbmp</EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>
+            </ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+          </MenuItem>
+          <MenuItem>
+            <Caption>teste preview dbf</Caption>
+            <OriginalDefineValue>21788</OriginalDefineValue>
+            <EventName>Previewdbf</EventName>
+            <ID>
+            </ID>
+            <Description>
+            </Description>
+            <HelpContext>
+            </HelpContext>
+            <Accelerator>None</Accelerator>
+            <Enabled>Yes</Enabled>
+            <Checked>No</Checked>
+            <ButtonBmp>
+            </ButtonBmp>
+            <ButtonCaption>
+            </ButtonCaption>
+            <ButtonToolTip>
+            </ButtonToolTip>
+            <ButtonPos>-1</ButtonPos>
+          </MenuItem>
+          <MenuItem>
             <Caption>-------------------------</Caption>
-            <OriginalDefineValue>28548</OriginalDefineValue>
+            <OriginalDefineValue>21789</OriginalDefineValue>
             <EventName>
             </EventName>
             <ID>
@@ -154,7 +238,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>&amp;Sair</Caption>
-            <OriginalDefineValue>28549</OriginalDefineValue>
+            <OriginalDefineValue>21790</OriginalDefineValue>
             <EventName>FileExit</EventName>
             <ID>
             </ID>
@@ -175,7 +259,7 @@
       </MenuItem>
       <MenuItem>
         <Caption>&amp;Relatorios</Caption>
-        <OriginalDefineValue>28550</OriginalDefineValue>
+        <OriginalDefineValue>21791</OriginalDefineValue>
         <EventName>XWRPTEN</EventName>
         <ID>
         </ID>
@@ -195,7 +279,7 @@
         <MenuItems>
           <MenuItem>
             <Caption>Relatorios Engenharia</Caption>
-            <OriginalDefineValue>28551</OriginalDefineValue>
+            <OriginalDefineValue>21792</OriginalDefineValue>
             <EventName>XWRPTEN</EventName>
             <ID>
             </ID>
@@ -215,7 +299,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>WRPT</Caption>
-            <OriginalDefineValue>28552</OriginalDefineValue>
+            <OriginalDefineValue>21793</OriginalDefineValue>
             <EventName>XWRPT</EventName>
             <ID>
             </ID>
@@ -235,7 +319,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>WRPT Integrado</Caption>
-            <OriginalDefineValue>28553</OriginalDefineValue>
+            <OriginalDefineValue>21794</OriginalDefineValue>
             <EventName>XWRPTI</EventName>
             <ID>
             </ID>
@@ -256,7 +340,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>lstview logix</Caption>
-            <OriginalDefineValue>28554</OriginalDefineValue>
+            <OriginalDefineValue>21795</OriginalDefineValue>
             <EventName>lstview</EventName>
             <ID>
             </ID>
@@ -279,7 +363,7 @@
       </MenuItem>
       <MenuItem>
         <Caption>Utilitarios</Caption>
-        <OriginalDefineValue>28555</OriginalDefineValue>
+        <OriginalDefineValue>21796</OriginalDefineValue>
         <EventName>
         </EventName>
         <ID>
@@ -300,7 +384,7 @@
         <MenuItems>
           <MenuItem>
             <Caption>Email</Caption>
-            <OriginalDefineValue>28556</OriginalDefineValue>
+            <OriginalDefineValue>21797</OriginalDefineValue>
             <EventName>
             </EventName>
             <ID>
@@ -321,7 +405,7 @@
             <MenuItems>
               <MenuItem>
                 <Caption>Consulta</Caption>
-                <OriginalDefineValue>28557</OriginalDefineValue>
+                <OriginalDefineValue>21798</OriginalDefineValue>
                 <EventName>XJMAIL</EventName>
                 <ID>
                 </ID>
@@ -341,7 +425,7 @@
               </MenuItem>
               <MenuItem>
                 <Caption>Geral</Caption>
-                <OriginalDefineValue>28558</OriginalDefineValue>
+                <OriginalDefineValue>21799</OriginalDefineValue>
                 <EventName>XJMAILGER</EventName>
                 <ID>
                 </ID>
@@ -361,7 +445,7 @@
               </MenuItem>
               <MenuItem>
                 <Caption>Configuracao</Caption>
-                <OriginalDefineValue>28559</OriginalDefineValue>
+                <OriginalDefineValue>21800</OriginalDefineValue>
                 <EventName>XJMAILCFG</EventName>
                 <ID>
                 </ID>
@@ -383,7 +467,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Checar CGC/CPF/IE...</Caption>
-            <OriginalDefineValue>28560</OriginalDefineValue>
+            <OriginalDefineValue>21801</OriginalDefineValue>
             <EventName>JCHECK</EventName>
             <ID>
             </ID>
@@ -405,7 +489,7 @@
       </MenuItem>
       <MenuItem>
         <Caption>&amp;?</Caption>
-        <OriginalDefineValue>28561</OriginalDefineValue>
+        <OriginalDefineValue>21802</OriginalDefineValue>
         <EventName>Help</EventName>
         <ID>
         </ID>
@@ -425,7 +509,7 @@
         <MenuItems>
           <MenuItem>
             <Caption>&amp;Indice</Caption>
-            <OriginalDefineValue>28562</OriginalDefineValue>
+            <OriginalDefineValue>21803</OriginalDefineValue>
             <EventName>HelpIndex</EventName>
             <ID>
             </ID>
@@ -444,7 +528,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>&amp;Usando a Ajuda</Caption>
-            <OriginalDefineValue>28563</OriginalDefineValue>
+            <OriginalDefineValue>21804</OriginalDefineValue>
             <EventName>HelpUsingHelp</EventName>
             <ID>
             </ID>
@@ -463,7 +547,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>-------------------------</Caption>
-            <OriginalDefineValue>28564</OriginalDefineValue>
+            <OriginalDefineValue>21805</OriginalDefineValue>
             <EventName>
             </EventName>
             <ID>
@@ -485,7 +569,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>Atualização</Caption>
-            <OriginalDefineValue>28565</OriginalDefineValue>
+            <OriginalDefineValue>21806</OriginalDefineValue>
             <EventName>XVERSAO</EventName>
             <ID>
             </ID>
@@ -505,7 +589,7 @@
           </MenuItem>
           <MenuItem>
             <Caption>&amp;Sobre...</Caption>
-            <OriginalDefineValue>32031</OriginalDefineValue>
+            <OriginalDefineValue>21807</OriginalDefineValue>
             <EventName>HelpAboutDialog</EventName>
             <ID>IDM_HELP_ABOUT</ID>
             <Description>Sobre a Aplicação</Description>

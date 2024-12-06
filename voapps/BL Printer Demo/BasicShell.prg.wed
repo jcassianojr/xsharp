@@ -1,0 +1,25 @@
+DESIGNERSTART = VOWindowEditor,SHELLWINDOW,BasicShellWindow
+GUID=7475D916-EEA9-49AC-AED1-9B8823BCA430
+  Name=BasicShellWindow
+  Class=SHELLWINDOW
+  Caption=Basic MDI Shell Window
+  Order=0
+  Left=20
+  Width=400
+  Top=20
+  Height=300
+  Browseindex=-1
+  Browsesize=0
+  Subform=No
+  Nosave=No
+  Deleted=0
+  Styles=13565952
+  Exstyles=256
+  Property=HyperLabel=,"Basic MDI Shell Window",,
+  Property=HyperLabel=#BasicShellWindow,,,
+  Property=Menu=BASICMENU
+
+SUBCONTROLSSTART
+SUBCONTROLSEND
+DESIGNEREND = BasicShellWindow
+
