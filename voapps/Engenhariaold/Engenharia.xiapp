@@ -73,10 +73,6 @@ File = %AppPath%\xjlct.prg
 FileGUID = B7686068-B4DB-4038-BA8A-7FF3EAC2D1E7
 FileType = Code
 CopyToBin = 0
-File = %AppPath%\sqliteclass.prg
-FileGUID = 5A719AD7-576D-4742-BD03-C609D3DF6ACC
-FileType = Code
-CopyToBin = 0
 [Engenharia References]
 ReferenceGAC = CLR4,System,1,0,4.0.0.0
 ReferenceProject = 4BF79407-1C84-4CB1-88E6-D3F435490AFB,1,0,mlibwvo27
@@ -90,7 +86,6 @@ ReferenceGAC = CLR4,VOGUIClasses,1,0,2.6.0.0
 ReferenceGAC = CLR4,VOSystemClasses,1,0,2.6.0.0
 ReferenceGAC = CLR4,VOWin32APILibrary,1,0,2.6.0.0
 ReferenceProject = A2BFFEC6-640F-4CDF-9FA7-91B751A34676,1,0,BLPrinter
-ReferenceGAC = CLR4,VOSQLClasses,1,0,2.6.0.0
 [Engenharia Resources]
 [Engenharia Native Resources]
 NativeResourceFile = %AppPath%\Start.rc
