@@ -1,5 +1,5 @@
 FUNCTION CRIANTX(aDAD,aCOM)
-	LOCAL cDBF,cCAM,cVAR,cIND,cDRIVER,cTAG,cPOS AS STRING
+	LOCAL cDBF,cCAM,cVAR,cIND,cDRIVER,cTAG,cPOS,CDBE AS STRING
 LOCAL oARQ AS DBSERVER
 LOCAL nIND,X AS BYTE
 LOCAL nREG AS DWORD
@@ -27,7 +27,14 @@ cCAM:=CAMINEX(cCAM,aCOM[1],aCOM[2],aCOM[3])
 
 
 //Abra o Banco de Dados
-cDBF:=cCAM+aDAD[2]
+cDBF:=cCAM+aDAD[2]      
+
+//Cria o dbf com o dbe
+IF ! File(cDBF)
+   cDBE:=StrTran(cDBF,".DBF",".DBE")
+   dbecriadbf(cDBE,cCAM)
+ENDIF
+
 IF ! File(cDBF)
    alert("Falta Arquivo de Dados: "+CDBF,"Arquivo Inexistente")
     RETU .F.

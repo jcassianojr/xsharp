@@ -3,7 +3,7 @@ EXPORT nERRO AS BYTE
 
 
 CONSTRUCTOR(aDAD, lShareMode, lReadOnlyMode, cDriver, aCOM) 
-LOCAL cCAM,cVAR AS STRING
+LOCAL cCAM,cVAR,cDBE AS STRING
 LOCAL nIND,X AS BYTE
 LOCAL oTB AS TEXTBOX
 nERRO:=0
@@ -34,7 +34,15 @@ ENDIF
 cCAM:=CAMINEX(cCAM,aCOM[1],aCOM[2],aCOM[3])
 
 //Abra o Banco de Dados
-cVAR:=cCAM+aDAD[2]
+cVAR:=cCAM+aDAD[2]    
+                      
+
+//Cria o dbf com o dbe
+IF ! File(cVAR)
+   cDBE:=StrTran(cVAR,".DBF",".DBE")
+   dbecriadbf(cDBE,cCAM)
+ENDIF
+
 IF ! File(cVAR)
      Otb:=TEXTBOX{,"Erro","Falta Arquivo de Dados: "+Cvar}
      Otb:show()
@@ -52,7 +60,11 @@ IF nIND>0
       nIND:=1 //Somente um Indice	
     ENDIF
 	FOR X:=0 TO nIND-1
-		cVAR:=cCAM+PEGINIVAL(aDAD[1],aDAD[2],"MAINTAIN"+StrZero(X,1))
+		cVAR:=cCAM+PEGINIVAL(aDAD[1],aDAD[2],"MAINTAIN"+StrZero(X,1))  
+		 //tenta criar os indices
+		IF ! File(cVAR)
+		    CRIANTX({ZCURINI,aDAD[2],ZCURDIR})
+		ENDIF  
 		IF ! File(cVAR)
          Otb:=TEXTBOX{,"Erro","Falta Arquivo de Indice: "+Cvar}
          Otb:show()

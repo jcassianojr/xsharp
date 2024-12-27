@@ -2,7 +2,7 @@ CLASS USEMANA5 INHERIT MYDBSERVER
 EXPORT nERRO AS BYTE
 
 CONSTRUCTOR(aDAD, lShareMode, lReadOnlyMode, cDriver, aHidden) 
-LOCAL cCAM,cVAR AS STRING
+LOCAL cCAM,cVAR,cDBE AS STRING
 LOCAL nIND,X AS DWORD
 LOCAL oTB AS TEXTBOX
 LOCAL aIND,aRETU AS ARRAY
@@ -30,7 +30,14 @@ IF cCAM="_"
 	RETU SELF
 ENDIF	
 //Abra o Banco de Dados
-cVAR:=cCAM+aDAD[2]+".DBF"
+cVAR:=cCAM+aDAD[2]+".DBF"     
+
+//Cria o dbf com o dbe
+IF ! File(cVAR)
+   cDBE:=cCAM+aDAD[2]+".DBE"
+   dbecriadbf(cDBE,cCAM)
+ENDIF
+
 IF ! File(cVAR)
      Otb:=TEXTBOX{,"Erro","Falta Arquivo: "+Cvar}
      Otb:show()
