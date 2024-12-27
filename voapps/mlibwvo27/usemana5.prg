@@ -60,10 +60,19 @@ IF cDRIVER<>"DBFCDX"
       SELF:SetIndex(cVAR)
     NEXT X
 ELSE
-   cVAR:=cCAM+aDAD[2]+".CDX"	
-   SELF:SetIndex(cVAR)
+  cVAR:=cCAM+aDAD[2]+".CDX"	
+   	IF ! File(cVAR)
+		CRIANTX({ZCURINI,aDAD[2]+".DBF",ZCURDIR})
+	ENDIF
+   	IF ! File(cVAR)
+		alert("Falta Arquivo: "+Cvar)
+        nERRO:=2
+        RETURN SELF
+    ELSE
+      SELF:SetIndex(cVAR)
+    ENDIF  
 ENDIF
-RETU SELF
+RETURN SELF
 
 
 END CLASS
