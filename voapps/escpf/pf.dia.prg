@@ -1,4 +1,4 @@
-#region DEFINES
+ï»¿#region DEFINES
 STATIC DEFINE JPFDIA_BUSCA := 107 
 STATIC DEFINE JPFDIA_BUSCA3D := 112 
 STATIC DEFINE JPFDIA_BUSCACODFIN := 109 
@@ -106,8 +106,8 @@ oCCBuscacodINT := PushButton{self,ResourceID{JPFDIA_BUSCACODINT,_GetInst()}}
 oCCBuscacodINT:Image := ico_find{}
 oCCBuscacodINT:HyperLabel := HyperLabel{#BuscacodINT,NULL_STRING,NULL_STRING,NULL_STRING}
 
-self:Caption := "Escolhendo Processo Fabricação"
-self:HyperLabel := HyperLabel{#JPFDIA,"Escolhendo Processo Fabricação",NULL_STRING,NULL_STRING}
+self:Caption := "Escolhendo Processo FabricaÃ§Ã£o"
+self:HyperLabel := HyperLabel{#JPFDIA,"Escolhendo Processo FabricaÃ§Ã£o",NULL_STRING,NULL_STRING}
 
 if !IsNil(oServer)
 	self:Use(oServer)

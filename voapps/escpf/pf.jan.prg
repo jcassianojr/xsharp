@@ -1,4 +1,4 @@
-#region DEFINES
+ï»¿#region DEFINES
 STATIC DEFINE JPF_CODFINAL := 106 
 STATIC DEFINE JPF_CODIGO := 105 
 STATIC DEFINE JPF_CODIGOINT := 108 
@@ -104,7 +104,7 @@ oDCCODFINAL:HyperLabel := HyperLabel{#CODFINAL,"Codfinal:",NULL_STRING,"PF_CODFI
 
 oDCDESCR := SingleLineEdit{self,ResourceID{JPF_DESCR,_GetInst()}}
 oDCDESCR:FieldSpec := pfsql_DESCR{}
-oDCDESCR:HyperLabel := HyperLabel{#DESCR,"Descriçao",NULL_STRING,"PF_DESCR"}
+oDCDESCR:HyperLabel := HyperLabel{#DESCR,"DescriÃ§ao",NULL_STRING,"PF_DESCR"}
 
 oDCCODIGOINT := SingleLineEdit{self,ResourceID{JPF_CODIGOINT,_GetInst()}}
 oDCCODIGOINT:FieldSpec := pfsql_CODIGOINT{}
@@ -150,7 +150,7 @@ self:Browser:AddColumn(oDBCODIGOINT)
 oDBDESCR := DataColumn{pfsql_DESCR{}}
 oDBDESCR:Width := 26
 oDBDESCR:HyperLabel := oDCDESCR:HyperLabel 
-oDBDESCR:Caption := "Descriçao"
+oDBDESCR:Caption := "DescriÃ§ao"
 self:Browser:AddColumn(oDBDESCR)
 
 
