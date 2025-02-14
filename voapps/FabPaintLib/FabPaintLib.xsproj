@@ -29,7 +29,7 @@
     <VO6>true</VO6>
     <VO7>true</VO7>
     <VO8>true</VO8>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <AssemblyName>FabPaintLib</AssemblyName>
     <Comments>
     </Comments>

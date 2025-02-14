@@ -29,11 +29,12 @@
     <VO6>true</VO6>
     <VO7>true</VO7>
     <VO8>true</VO8>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <Comments>
     </Comments>
     <INS>true</INS>
     <NS>True</NS>
+    <XSharpProjectversion>2.13.0.5</XSharpProjectversion>
     <StartupObject />
     <ApplicationIcon />
     <VulcanCompatibleResources>False</VulcanCompatibleResources>
