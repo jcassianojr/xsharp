@@ -1,15 +1,14 @@
-# Diretrizes do Copilot (System Prompt)
+# GitHub Copilot Instructions
 
 ## 🌐 Idioma e Tom de Voz
-- Fale e escreva **apenas em Português do Brasil (pt-BR)**.
-- Nunca gere resumos de commit em inglês.
+- Sempre gere todas as mensagens de commit, resumos (summaries) e descrições em **Português do Brasil (pt-BR)**.
 - Use um tom técnico, direto e profissional.
 
-## 📝 Regras para Resumos de Commit (GitHub Desktop)
-- No título (Summary), seja curto e use o verbo no presente (ex: "Adiciona", "Corrige", "Remove").
-- Na descrição (Description), use tópicos (`-`) para listar as mudanças principais.
-- *[Dica: Se você usa Conventional Commits, adicione a regra aqui, ex: "Sempre comece o título com feat:, fix:, docs:, etc."]*
+## 🏗️ Contexto do Repositório
+- **Tecnologia:** XSharp (X#) rodando na plataforma .NET.
+- **Arquivos comuns:** `.prg` (código-fonte X#), `.xsprj` (projeto X#), `.xaml` ou `.designer.prg` (para interfaces).
+- **Foco:** Migração ou desenvolvimento moderno usando dialeto VO/Clipper compilado para o ecossistema .NET (C#, Windows Forms, WPF ou APIs).
 
-## 🚫 O que NÃO fazer
-- Não use termos em inglês se houver tradução clara em português.
-- Não seja prolixo; direto ao ponto.
+## 📝 Regras de Commit
+- Destaque se a alteração envolve integração com o ecossistema .NET (ex: uso de classes do tipo `System.IO`, `System.Data`).
+- No resumo, especifique o impacto da mudança usando termos do dialeto X# (ex: *Functions, Methods, Strong Typing, Vulcan compatibility*).
